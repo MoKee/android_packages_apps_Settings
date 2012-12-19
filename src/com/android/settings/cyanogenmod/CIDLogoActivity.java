@@ -58,7 +58,7 @@ public class CIDLogoActivity extends Activity {
         Typeface light = Typeface.create("sans-serif-light", Typeface.NORMAL);
         Typeface normal = Typeface.create("sans-serif", Typeface.BOLD);
 
-        String cmversion = SystemProperties.get("ro.cm.version");
+        String mkversion = SystemProperties.get("ro.mk.version");
 
         final float size = 14 * metrics.density;
         final LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
@@ -80,7 +80,7 @@ public class CIDLogoActivity extends Activity {
         tv.setTextSize(size);
         tv.setTextColor(0xFFFFFFFF);
         tv.setShadowLayer(4*metrics.density, 0, 2*metrics.density, 0x66000000);
-        tv.setText(cmversion.replaceAll("(.+?)-.*","$1"));
+        tv.setText(mkversion.replaceAll("(.+?)-.*","$1"));
         view.addView(tv, lp);
 
         return view;
