@@ -2412,7 +2412,7 @@
     <string name="device_hostname">Hostname uređaja</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">CyanogenMod verzija</string>
+    <string name="mod_version">MoKee verzija</string>
     <string name="mod_version_default">Nepoznati</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build datum</string>

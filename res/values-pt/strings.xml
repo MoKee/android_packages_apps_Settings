@@ -2201,7 +2201,7 @@
     <string name="kill_app_longpress_back">Matar app com botão voltar</string>
     <string name="kill_app_longpress_back_summary">Matar o aplicativo mantendo pressionado o botão voltar</string>
     <string name="device_hostname">Nome do dispositivo</string>
-    <string name="mod_version">Versão CyanogenMod</string>
+    <string name="mod_version">Versão MoKee</string>
     <string name="mod_version_default">Desconhecida</string>
     <string name="build_date">Data de compilação</string>
     <string name="build_date_default">2012-01-01-0000</string>

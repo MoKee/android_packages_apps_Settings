@@ -2282,7 +2282,7 @@
     <string name="kill_app_longpress_back">Ukončit aplikaci při dlouhém stisku tlačítka</string>
     <string name="kill_app_longpress_back_summary">Dlouhý stisk tlačítka zpět provede nucené ukončení aplikace na popředí.</string>
     <string name="device_hostname">Hostitelské jméno zařízení</string>
-    <string name="mod_version">Verze CyanogenModu</string>
+    <string name="mod_version">Verze MoKee</string>
     <string name="mod_version_default">Neznámý</string>
     <string name="build_date">Datum sestavení</string>
     <string name="cpu_info">Informace o CPU</string>

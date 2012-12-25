@@ -2268,7 +2268,7 @@
     <string name="kill_app_longpress_back">"Termina app con tasto"</string>
     <string name="kill_app_longpress_back_summary">"Termina l\'applicazione in primo piano tenendo premuto il tasto indietro"</string>
     <string name="device_hostname">Hostname dispositivo</string>
-    <string name="mod_version">Versione CyanogenMod</string>
+    <string name="mod_version">Versione MoKee</string>
     <string name="mod_version_default">Sconoscito</string>
     <string name="build_date">"Data build"</string>
     <string name="build_date_default">2012-01-01-0000</string>

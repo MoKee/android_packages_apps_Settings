@@ -2367,7 +2367,7 @@
     <!-- Hostname setting -->
     <string name="device_hostname">Cihaz adı</string>
     <!-- About phone screen -->
-    <string name="mod_version">CyanogenMod sürümü</string>
+    <string name="mod_version">MoKee sürümü</string>
     <string name="mod_version_default">Bilinmiyor</string>
     <string name="build_date">Derleme tarihi</string>
     <string name="cpu_info">İşlemci</string>

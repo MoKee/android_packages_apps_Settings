@@ -2207,7 +2207,7 @@
     <string name="kill_app_longpress_back">Tapa sovellus</string>
     <string name="kill_app_longpress_back_summary">Tappaa etualalla olevan sovelluksen takaisin-painikkeella</string>
     <string name="device_hostname">Laitteen verkkonimi</string>
-    <string name="mod_version">CyanogenMod-versio</string>
+    <string name="mod_version">MoKee-versio</string>
     <string name="mod_version_default">Tuntematon</string>
     <string name="build_date">Luontipäivä</string>
     <string name="build_date_default">2012-01-01-0000</string>

@@ -2454,7 +2454,7 @@ ice shows the slider widgets before the unlock option [CHAR LIMIT=28]-->
     <string name="device_hostname">Hostname des Geräts</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">CyanogenMod-Version</string>
+    <string name="mod_version">MoKee-Version</string>
     <string name="mod_version_default">Unbekannt</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build-Datum</string>

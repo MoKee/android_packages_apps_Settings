@@ -2272,7 +2272,7 @@
     <string name="kill_app_longpress_back">"Botón Volver"</string>
     <string name="kill_app_longpress_back_summary">"Cerrar aplicaciones mediante la pulsación prolongada del botón Volver"</string>
     <string name="device_hostname">Nombre del dispositivo</string>
-    <string name="mod_version">"Versión CyanogenMod"</string>
+    <string name="mod_version">"Versión MoKee"</string>
     <string name="mod_version_default">"Desconocida"</string>
     <string name="build_date">"Fecha de compilación"</string>
     <string name="mem_info">"Memoria"</string>
