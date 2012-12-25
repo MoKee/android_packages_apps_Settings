@@ -171,7 +171,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         // Set the clock align value
         if (mClockAlign != null) {
             int clockAlign = Settings.System.getInt(mResolver,
-                    Settings.System.LOCKSCREEN_CLOCK_ALIGN, 2);
+                    Settings.System.LOCKSCREEN_CLOCK_ALIGN, 1);
             mClockAlign.setValue(String.valueOf(clockAlign));
             mClockAlign.setSummary(mClockAlign.getEntries()[clockAlign]);
         }
