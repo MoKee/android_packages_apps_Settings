@@ -35,18 +35,14 @@ import com.android.settings.R;
 
 public class TimeRangePreference extends Preference implements
     View.OnClickListener {
+
     private static final String TAG = TimeRangePreference.class.getSimpleName();
-
     private static final int DIALOG_START_TIME = 1;
-
     private static final int DIALOG_END_TIME = 2;
 
     private TextView mStartTimeText;
-
     private TextView mEndTimeText;
-
     private int mStartTime;
-
     private int mEndTime;
 
     /**

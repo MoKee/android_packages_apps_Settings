@@ -29,12 +29,17 @@ import android.text.format.DateUtils;
 
 import com.android.settings.R;
 
+import android.text.format.Time;
+import android.util.Log;
+
 /**
  * BluetoothDiscoverableEnabler is a helper to manage the "Discoverable"
  * checkbox. It sets/unsets discoverability and keeps track of how much time
  * until the the discoverability is automatically turned off.
  */
 final class BluetoothDiscoverableEnabler implements Preference.OnPreferenceClickListener {
+
+    private static final String TAG = "BluetoothDiscoverableEnabler";
 
     private static final String SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT =
             "debug.bt.discoverable_time";
@@ -128,15 +133,20 @@ final class BluetoothDiscoverableEnabler implements Preference.OnPreferenceClick
     private void setEnabled(boolean enable) {
         if (enable) {
             int timeout = getDiscoverableTimeout();
-            mLocalAdapter.setDiscoverableTimeout(timeout);
-
             long endTimestamp = System.currentTimeMillis() + timeout * 1000L;
             LocalBluetoothPreferences.persistDiscoverableEndTimestamp(mContext, endTimestamp);
 
             mLocalAdapter.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE, timeout);
             updateCountdownSummary();
+
+            Log.d(TAG, "setEnabled(): enabled = " + enable + "timeout = " + timeout);
+
+            if (timeout > 0) {
+                BluetoothDiscoverableTimeoutReceiver.setDiscoverableAlarm(mContext, endTimestamp);
+            }
         } else {
             mLocalAdapter.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE);
+            BluetoothDiscoverableTimeoutReceiver.cancelDiscoverableAlarm(mContext);
         }
     }
 
@@ -238,6 +248,7 @@ final class BluetoothDiscoverableEnabler implements Preference.OnPreferenceClick
     }
 
     void handleModeChanged(int mode) {
+        Log.d(TAG, "handleModeChanged(): mode = " + mode);
         if (mode == BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
             mDiscoverable = true;
             updateCountdownSummary();

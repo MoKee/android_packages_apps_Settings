@@ -32,6 +32,7 @@ import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.os.storage.IMountService;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
@@ -56,6 +57,7 @@ import android.widget.TextView;
 
 import com.android.internal.telephony.ITelephony;
 import com.android.internal.telephony.Phone;
+import com.android.internal.telephony.PhoneConstants;
 
 import java.util.List;
 
@@ -243,10 +245,8 @@ public class CryptKeeper extends Activity implements TextView.OnEditorActionList
      */
     private void notifyUser() {
         if (mNotificationCountdown > 0) {
-            Log.d(TAG, "Counting down to notify user..." + mNotificationCountdown);
             --mNotificationCountdown;
         } else if (mAudioManager != null) {
-            Log.d(TAG, "Notifying user that we are waiting for input...");
             try {
                 // Play the standard keypress sound at full volume. This should be available on
                 // every device. We cannot play a ringtone here because media services aren't
@@ -637,13 +637,13 @@ public class CryptKeeper extends Activity implements TextView.OnEditorActionList
      */
     private final void setAirplaneModeIfNecessary() {
         final boolean isLteDevice =
-                TelephonyManager.getDefault().getLteOnCdmaMode() == Phone.LTE_ON_CDMA_TRUE;
+                TelephonyManager.getDefault().getLteOnCdmaMode() == PhoneConstants.LTE_ON_CDMA_TRUE;
         if (!isLteDevice) {
             Log.d(TAG, "Going into airplane mode.");
-            Settings.System.putInt(getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 1);
+            Settings.Global.putInt(getContentResolver(), Settings.Global.AIRPLANE_MODE_ON, 1);
             final Intent intent = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
             intent.putExtra("state", true);
-            sendBroadcast(intent);
+            sendBroadcastAsUser(intent, UserHandle.ALL);
         }
     }
 
@@ -722,7 +722,6 @@ public class CryptKeeper extends Activity implements TextView.OnEditorActionList
      * Listen to key events so we can disable sounds when we get a keyinput in EditText.
      */
     private void delayAudioNotification() {
-        Log.d(TAG, "User entering password: delay audio notification");
         mNotificationCountdown = 20;
     }
 

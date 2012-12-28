@@ -16,51 +16,64 @@
 
 package com.android.settings.vpn2;
 
-import com.android.settings.R;
-
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
+import android.net.ConnectivityManager;
 import android.net.IConnectivityManager;
-import android.net.LinkProperties;
-import android.net.RouteInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.security.Credentials;
 import android.security.KeyStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.internal.net.LegacyVpnInfo;
 import com.android.internal.net.VpnConfig;
+import com.android.internal.net.VpnProfile;
+import com.android.internal.util.ArrayUtils;
+import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.google.android.collect.Lists;
 
-import java.net.Inet4Address;
-import java.nio.charset.Charsets;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class VpnSettings extends SettingsPreferenceFragment implements
         Handler.Callback, Preference.OnPreferenceClickListener,
         DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
-
     private static final String TAG = "VpnSettings";
+
+    private static final String TAG_LOCKDOWN = "lockdown";
+
+    // TODO: migrate to using DialogFragment when editing
 
     private final IConnectivityManager mService = IConnectivityManager.Stub
             .asInterface(ServiceManager.getService(Context.CONNECTIVITY_SERVICE));
     private final KeyStore mKeyStore = KeyStore.getInstance();
     private boolean mUnlocking = false;
 
-    private HashMap<String, VpnPreference> mPreferences;
+    private HashMap<String, VpnPreference> mPreferences = new HashMap<String, VpnPreference>();
     private VpnDialog mDialog;
 
     private Handler mUpdater;
@@ -72,8 +85,9 @@ public class VpnSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+
+        setHasOptionsMenu(true);
         addPreferencesFromResource(R.xml.vpn_settings2);
-        getPreferenceScreen().setOrderingAsAdded(false);
 
         if (savedState != null) {
             VpnProfile profile = VpnProfile.decode(savedState.getString("VpnKey"),
@@ -83,6 +97,45 @@ public class VpnSettings extends SettingsPreferenceFragment implements
                         savedState.getBoolean("VpnEditing"));
             }
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.vpn, menu);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+
+        // Hide lockdown VPN on devices that require IMS authentication
+        if (SystemProperties.getBoolean("persist.radio.imsregrequired", false)) {
+            menu.findItem(R.id.vpn_lockdown).setVisible(false);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.vpn_create: {
+                // Generate a new key. Here we just use the current time.
+                long millis = System.currentTimeMillis();
+                while (mPreferences.containsKey(Long.toHexString(millis))) {
+                    ++millis;
+                }
+                mDialog = new VpnDialog(
+                        getActivity(), this, new VpnProfile(Long.toHexString(millis)), true);
+                mDialog.setOnDismissListener(this);
+                mDialog.show();
+                return true;
+            }
+            case R.id.vpn_lockdown: {
+                LockdownConfigFragment.show(this);
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -120,28 +173,17 @@ public class VpnSettings extends SettingsPreferenceFragment implements
         // Currently we are the only user of profiles in KeyStore.
         // Assuming KeyStore and KeyGuard do the right thing, we can
         // safely cache profiles in the memory.
-        if (mPreferences == null) {
-            mPreferences = new HashMap<String, VpnPreference>();
+        if (mPreferences.size() == 0) {
             PreferenceGroup group = getPreferenceScreen();
 
-            String[] keys = mKeyStore.saw(Credentials.VPN);
-            if (keys != null && keys.length > 0) {
-                Context context = getActivity();
-
-                for (String key : keys) {
-                    VpnProfile profile = VpnProfile.decode(key,
-                            mKeyStore.get(Credentials.VPN + key));
-                    if (profile == null) {
-                        Log.w(TAG, "bad profile: key = " + key);
-                        mKeyStore.delete(Credentials.VPN + key);
-                    } else {
-                        VpnPreference preference = new VpnPreference(context, profile);
-                        mPreferences.put(key, preference);
-                        group.addPreference(preference);
-                    }
-                }
+            final Context context = getActivity();
+            final List<VpnProfile> profiles = loadVpnProfiles(mKeyStore);
+            for (VpnProfile profile : profiles) {
+                final VpnPreference pref = new VpnPreference(context, profile);
+                pref.setOnPreferenceClickListener(this);
+                mPreferences.put(profile.key, pref);
+                group.addPreference(pref);
             }
-            group.findPreference("add_network").setOnPreferenceClickListener(this);
         }
 
         // Show the dialog if there is one.
@@ -196,6 +238,7 @@ public class VpnSettings extends SettingsPreferenceFragment implements
                 preference.update(profile);
             } else {
                 preference = new VpnPreference(getActivity(), profile);
+                preference.setOnPreferenceClickListener(this);
                 mPreferences.put(profile.key, preference);
                 getPreferenceScreen().addPreference(preference);
             }
@@ -322,136 +365,12 @@ public class VpnSettings extends SettingsPreferenceFragment implements
         return true;
     }
 
-    private String[] getDefaultNetwork() throws Exception {
-        LinkProperties network = mService.getActiveLinkProperties();
-        if (network == null) {
-            Toast.makeText(getActivity(), R.string.vpn_no_network, Toast.LENGTH_LONG).show();
-            throw new IllegalStateException("Network is not available");
-        }
-        String interfaze = network.getInterfaceName();
-        if (interfaze == null) {
-            Toast.makeText(getActivity(), R.string.vpn_no_network, Toast.LENGTH_LONG).show();
-            throw new IllegalStateException("Cannot get the default interface");
-        }
-        String gateway = null;
-        for (RouteInfo route : network.getRoutes()) {
-            // Currently legacy VPN only works on IPv4.
-            if (route.isDefaultRoute() && route.getGateway() instanceof Inet4Address) {
-                gateway = route.getGateway().getHostAddress();
-                break;
-            }
-        }
-        if (gateway == null) {
-            Toast.makeText(getActivity(), R.string.vpn_no_network, Toast.LENGTH_LONG).show();
-            throw new IllegalStateException("Cannot get the default gateway");
-        }
-        return new String[] {interfaze, gateway};
-    }
-
     private void connect(VpnProfile profile) throws Exception {
-        // Get the default interface and the default gateway.
-        String[] network = getDefaultNetwork();
-        String interfaze = network[0];
-        String gateway = network[1];
-
-        // Load certificates.
-        String privateKey = "";
-        String userCert = "";
-        String caCert = "";
-        String serverCert = "";
-        if (!profile.ipsecUserCert.isEmpty()) {
-            /*
-             * VPN has a special exception in keystore to allow it to use system
-             * UID certs.
-             */
-            privateKey = Credentials.USER_PRIVATE_KEY + profile.ipsecUserCert;
-            byte[] value = mKeyStore.get(Credentials.USER_CERTIFICATE + profile.ipsecUserCert);
-            userCert = (value == null) ? null : new String(value, Charsets.UTF_8);
+        try {
+            mService.startLegacyVpn(profile);
+        } catch (IllegalStateException e) {
+            Toast.makeText(getActivity(), R.string.vpn_no_network, Toast.LENGTH_LONG).show();
         }
-        if (!profile.ipsecCaCert.isEmpty()) {
-            byte[] value = mKeyStore.get(Credentials.CA_CERTIFICATE + profile.ipsecCaCert);
-            caCert = (value == null) ? null : new String(value, Charsets.UTF_8);
-        }
-        if (!profile.ipsecServerCert.isEmpty()) {
-            byte[] value = mKeyStore.get(Credentials.USER_CERTIFICATE + profile.ipsecServerCert);
-            serverCert = (value == null) ? null : new String(value, Charsets.UTF_8);
-        }
-        if (privateKey == null || userCert == null || caCert == null || serverCert == null) {
-            Toast.makeText(getActivity(), R.string.vpn_missing_cert, Toast.LENGTH_LONG).show();
-            throw new IllegalStateException("Cannot load credentials");
-        }
-
-        // Prepare arguments for racoon.
-        String[] racoon = null;
-        switch (profile.type) {
-            case VpnProfile.TYPE_L2TP_IPSEC_PSK:
-                racoon = new String[] {
-                    interfaze, profile.server, "udppsk", profile.ipsecIdentifier,
-                    profile.ipsecSecret, "1701",
-                };
-                break;
-            case VpnProfile.TYPE_L2TP_IPSEC_RSA:
-                racoon = new String[] {
-                    interfaze, profile.server, "udprsa", privateKey, userCert,
-                    caCert, serverCert, "1701",
-                };
-                break;
-            case VpnProfile.TYPE_IPSEC_XAUTH_PSK:
-                racoon = new String[] {
-                    interfaze, profile.server, "xauthpsk", profile.ipsecIdentifier,
-                    profile.ipsecSecret, profile.username, profile.password, "", gateway,
-                };
-                break;
-            case VpnProfile.TYPE_IPSEC_XAUTH_RSA:
-                racoon = new String[] {
-                    interfaze, profile.server, "xauthrsa", privateKey, userCert,
-                    caCert, serverCert, profile.username, profile.password, "", gateway,
-                };
-                break;
-            case VpnProfile.TYPE_IPSEC_HYBRID_RSA:
-                racoon = new String[] {
-                    interfaze, profile.server, "hybridrsa",
-                    caCert, serverCert, profile.username, profile.password, "", gateway,
-                };
-                break;
-        }
-
-        // Prepare arguments for mtpd.
-        String[] mtpd = null;
-        switch (profile.type) {
-            case VpnProfile.TYPE_PPTP:
-                mtpd = new String[] {
-                    interfaze, "pptp", profile.server, "1723",
-                    "name", profile.username, "password", profile.password,
-                    "linkname", "vpn", "refuse-eap", "nodefaultroute",
-                    "usepeerdns", "idle", "1800", "mtu", "1400", "mru", "1400",
-                    (profile.mppe ? "+mppe" : "nomppe"),
-                };
-                break;
-            case VpnProfile.TYPE_L2TP_IPSEC_PSK:
-            case VpnProfile.TYPE_L2TP_IPSEC_RSA:
-                mtpd = new String[] {
-                    interfaze, "l2tp", profile.server, "1701", profile.l2tpSecret,
-                    "name", profile.username, "password", profile.password,
-                    "linkname", "vpn", "refuse-eap", "nodefaultroute",
-                    "usepeerdns", "idle", "1800", "mtu", "1400", "mru", "1400",
-                };
-                break;
-        }
-
-        VpnConfig config = new VpnConfig();
-        config.user = profile.key;
-        config.interfaze = interfaze;
-        config.session = profile.name;
-        config.routes = profile.routes;
-        if (!profile.dnsServers.isEmpty()) {
-            config.dnsServers = Arrays.asList(profile.dnsServers.split(" +"));
-        }
-        if (!profile.searchDomains.isEmpty()) {
-            config.searchDomains = Arrays.asList(profile.searchDomains.split(" +"));
-        }
-
-        mService.startLegacyVpn(config, racoon, mtpd);
     }
 
     private void disconnect(String key) {
@@ -469,7 +388,7 @@ public class VpnSettings extends SettingsPreferenceFragment implements
         return R.string.help_url_vpn;
     }
 
-    private class VpnPreference extends Preference {
+    private static class VpnPreference extends Preference {
         private VpnProfile mProfile;
         private int mState = -1;
 
@@ -477,7 +396,6 @@ public class VpnSettings extends SettingsPreferenceFragment implements
             super(context);
             setPersistent(false);
             setOrder(0);
-            setOnPreferenceClickListener(VpnSettings.this);
 
             mProfile = profile;
             update();
@@ -524,5 +442,110 @@ public class VpnSettings extends SettingsPreferenceFragment implements
             }
             return result;
         }
+    }
+
+    /**
+     * Dialog to configure always-on VPN.
+     */
+    public static class LockdownConfigFragment extends DialogFragment {
+        private List<VpnProfile> mProfiles;
+        private List<CharSequence> mTitles;
+        private int mCurrentIndex;
+
+        private static class TitleAdapter extends ArrayAdapter<CharSequence> {
+            public TitleAdapter(Context context, List<CharSequence> objects) {
+                super(context, com.android.internal.R.layout.select_dialog_singlechoice_holo,
+                        android.R.id.text1, objects);
+            }
+        }
+
+        public static void show(VpnSettings parent) {
+            if (!parent.isAdded()) return;
+
+            final LockdownConfigFragment dialog = new LockdownConfigFragment();
+            dialog.show(parent.getFragmentManager(), TAG_LOCKDOWN);
+        }
+
+        private static String getStringOrNull(KeyStore keyStore, String key) {
+            final byte[] value = keyStore.get(Credentials.LOCKDOWN_VPN);
+            return value == null ? null : new String(value);
+        }
+
+        private void initProfiles(KeyStore keyStore, Resources res) {
+            final String lockdownKey = getStringOrNull(keyStore, Credentials.LOCKDOWN_VPN);
+
+            mProfiles = loadVpnProfiles(keyStore, VpnProfile.TYPE_PPTP);
+            mTitles = Lists.newArrayList();
+            mTitles.add(res.getText(R.string.vpn_lockdown_none));
+            mCurrentIndex = 0;
+
+            for (VpnProfile profile : mProfiles) {
+                if (TextUtils.equals(profile.key, lockdownKey)) {
+                    mCurrentIndex = mTitles.size();
+                }
+                mTitles.add(profile.name);
+            }
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            final Context context = getActivity();
+            final KeyStore keyStore = KeyStore.getInstance();
+
+            initProfiles(keyStore, context.getResources());
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            final LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
+
+            builder.setTitle(R.string.vpn_menu_lockdown);
+
+            final View view = dialogInflater.inflate(R.layout.vpn_lockdown_editor, null, false);
+            final ListView listView = (ListView) view.findViewById(android.R.id.list);
+            listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+            listView.setAdapter(new TitleAdapter(context, mTitles));
+            listView.setItemChecked(mCurrentIndex, true);
+            builder.setView(view);
+
+            builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    final int newIndex = listView.getCheckedItemPosition();
+                    if (mCurrentIndex == newIndex) return;
+
+                    if (newIndex == 0) {
+                        keyStore.delete(Credentials.LOCKDOWN_VPN);
+
+                    } else {
+                        final VpnProfile profile = mProfiles.get(newIndex - 1);
+                        if (!profile.isValidLockdownProfile()) {
+                            Toast.makeText(context, R.string.vpn_lockdown_config_error,
+                                    Toast.LENGTH_LONG).show();
+                            return;
+                        }
+                        keyStore.put(Credentials.LOCKDOWN_VPN, profile.key.getBytes());
+                    }
+
+                    // kick profiles since we changed them
+                    ConnectivityManager.from(getActivity()).updateLockdownVpn();
+                }
+            });
+
+            return builder.create();
+        }
+    }
+
+    private static List<VpnProfile> loadVpnProfiles(KeyStore keyStore, int... excludeTypes) {
+        final ArrayList<VpnProfile> result = Lists.newArrayList();
+        final String[] keys = keyStore.saw(Credentials.VPN);
+        if (keys != null) {
+            for (String key : keys) {
+                final VpnProfile profile = VpnProfile.decode(
+                        key, keyStore.get(Credentials.VPN + key));
+                if (profile != null && !ArrayUtils.contains(excludeTypes, profile.type)) {
+                    result.add(profile);
+                }
+            }
+        }
+        return result;
     }
 }

@@ -1,8 +1,8 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_JAVA_LIBRARIES := bouncycastle
-LOCAL_STATIC_JAVA_LIBRARIES := guava android-support-v4
+LOCAL_JAVA_LIBRARIES := bouncycastle telephony-common
+LOCAL_STATIC_JAVA_LIBRARIES := guava android-support-v4 jsr305
 
 LOCAL_MODULE_TAGS := optional
 

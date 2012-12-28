@@ -220,10 +220,10 @@ public class ApplicationLightPreference extends Preference implements
             }
         });
 
-        if (Utils.isTablet(getContext())) {
+        /*if (Utils.isTablet(getContext())) {
             // Make the dialog smaller on large screen devices
             d.getWindow().setLayout(width, LayoutParams.WRAP_CONTENT);
-        }
+        }*/
     }
 
     private void showTestDialog(int color, int speedOn, int speedOff) {

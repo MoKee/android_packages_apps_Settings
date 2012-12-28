@@ -20,6 +20,8 @@ import static android.net.wifi.WifiConfiguration.INVALID_NETWORK_ID;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -45,6 +47,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.security.Credentials;
 import android.security.KeyStore;
+import android.telephony.TelephonyManager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -58,6 +61,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
@@ -101,6 +105,8 @@ public class WifiSettings extends SettingsPreferenceFragment
     private static final int WIFI_DIALOG_ID = 1;
     private static final int WPS_PBC_DIALOG_ID = 2;
     private static final int WPS_PIN_DIALOG_ID = 3;
+    private static final int WIFI_SKIPPED_DIALOG_ID = 4;
+    private static final int WIFI_AND_MOBILE_SKIPPED_DIALOG_ID = 5;
 
     // Combo scans can take 5-6s to complete - set to 10s.
     private static final int WIFI_RESCAN_INTERVAL_MS = 10 * 1000;
@@ -114,7 +120,6 @@ public class WifiSettings extends SettingsPreferenceFragment
     private final Scanner mScanner;
 
     private WifiManager mWifiManager;
-    private WifiManager.Channel mChannel;
     private WifiManager.ActionListener mConnectListener;
     private WifiManager.ActionListener mSaveListener;
     private WifiManager.ActionListener mForgetListener;
@@ -143,6 +148,12 @@ public class WifiSettings extends SettingsPreferenceFragment
 
     // this boolean extra specifies whether to auto finish when connection is established
     private static final String EXTRA_AUTO_FINISH_ON_CONNECT = "wifi_auto_finish_on_connect";
+
+    // this boolean extra shows a custom button that we can control
+    protected static final String EXTRA_SHOW_CUSTOM_BUTTON = "wifi_show_custom_button";
+
+    // show a text regarding data charges when wifi connection is required during setup wizard
+    protected static final String EXTRA_SHOW_WIFI_REQUIRED_INFO = "wifi_show_wifi_required_info";
 
     // this boolean extra is set if we are being invoked by the Setup Wizard
     private static final String EXTRA_IS_FIRST_RUN = "firstRun";
@@ -229,6 +240,32 @@ public class WifiSettings extends SettingsPreferenceFragment
                     }
                 });
             }
+
+            Intent intent = getActivity().getIntent();
+            if (intent.getBooleanExtra(EXTRA_SHOW_CUSTOM_BUTTON, false)) {
+                view.findViewById(R.id.button_bar).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.back_button).setVisibility(View.INVISIBLE);
+                view.findViewById(R.id.skip_button).setVisibility(View.INVISIBLE);
+                view.findViewById(R.id.next_button).setVisibility(View.INVISIBLE);
+
+                Button customButton = (Button) view.findViewById(R.id.custom_button);
+                customButton.setVisibility(View.VISIBLE);
+                customButton.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (isPhone() && !hasSimProblem()) {
+                            showDialog(WIFI_SKIPPED_DIALOG_ID);
+                        } else {
+                            showDialog(WIFI_AND_MOBILE_SKIPPED_DIALOG_ID);
+                        }
+                    }
+                });
+            }
+
+            if (intent.getBooleanExtra(EXTRA_SHOW_WIFI_REQUIRED_INFO, false)) {
+                view.findViewById(R.id.wifi_required_info).setVisibility(View.VISIBLE);
+            }
+
             return view;
         } else {
             return super.onCreateView(inflater, container, savedInstanceState);
@@ -237,21 +274,21 @@ public class WifiSettings extends SettingsPreferenceFragment
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        // We don't call super.onActivityCreated() here, since it assumes we already set up
-        // Preference (probably in onCreate()), while WifiSettings exceptionally set it up in
-        // this method.
+        super.onActivityCreated(savedInstanceState);
 
         mP2pSupported = getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI_DIRECT);
         mWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-        mChannel = mWifiManager.initialize(getActivity(), getActivity().getMainLooper(), null);
 
         mConnectListener = new WifiManager.ActionListener() {
                                    public void onSuccess() {
                                    }
                                    public void onFailure(int reason) {
-                                        Toast.makeText(getActivity(),
-                                            R.string.wifi_failed_connect_message,
-                                            Toast.LENGTH_SHORT).show();
+                                       Activity activity = getActivity();
+                                       if (activity != null) {
+                                           Toast.makeText(activity,
+                                                R.string.wifi_failed_connect_message,
+                                                Toast.LENGTH_SHORT).show();
+                                       }
                                    }
                                };
 
@@ -259,9 +296,12 @@ public class WifiSettings extends SettingsPreferenceFragment
                                 public void onSuccess() {
                                 }
                                 public void onFailure(int reason) {
-                                    Toast.makeText(getActivity(),
-                                        R.string.wifi_failed_save_message,
-                                        Toast.LENGTH_SHORT).show();
+                                    Activity activity = getActivity();
+                                    if (activity != null) {
+                                        Toast.makeText(activity,
+                                            R.string.wifi_failed_save_message,
+                                            Toast.LENGTH_SHORT).show();
+                                    }
                                 }
                             };
 
@@ -269,9 +309,12 @@ public class WifiSettings extends SettingsPreferenceFragment
                                    public void onSuccess() {
                                    }
                                    public void onFailure(int reason) {
-                                        Toast.makeText(getActivity(),
-                                            R.string.wifi_failed_forget_message,
-                                            Toast.LENGTH_SHORT).show();
+                                       Activity activity = getActivity();
+                                       if (activity != null) {
+                                           Toast.makeText(activity,
+                                               R.string.wifi_failed_forget_message,
+                                               Toast.LENGTH_SHORT).show();
+                                       }
                                    }
                                };
 
@@ -294,9 +337,10 @@ public class WifiSettings extends SettingsPreferenceFragment
             }
 
             final ConnectivityManager connectivity = (ConnectivityManager)
-                    getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+                    activity.getSystemService(Context.CONNECTIVITY_SERVICE);
             if (connectivity != null
                     && connectivity.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected()) {
+                activity.setResult(Activity.RESULT_OK);
                 activity.finish();
                 return;
             }
@@ -309,7 +353,7 @@ public class WifiSettings extends SettingsPreferenceFragment
         if (mEnableNextOnConnection) {
             if (hasNextButton()) {
                 final ConnectivityManager connectivity = (ConnectivityManager)
-                        getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+                        activity.getSystemService(Context.CONNECTIVITY_SERVICE);
                 if (connectivity != null) {
                     NetworkInfo info = connectivity.getNetworkInfo(
                             ConnectivityManager.TYPE_WIFI);
@@ -344,7 +388,7 @@ public class WifiSettings extends SettingsPreferenceFragment
                     activity.getActionBar().setCustomView(actionBarSwitch, new ActionBar.LayoutParams(
                             ActionBar.LayoutParams.WRAP_CONTENT,
                             ActionBar.LayoutParams.WRAP_CONTENT,
-                            Gravity.CENTER_VERTICAL | Gravity.RIGHT));
+                            Gravity.CENTER_VERTICAL | Gravity.END));
                 }
             }
 
@@ -358,9 +402,6 @@ public class WifiSettings extends SettingsPreferenceFragment
             registerForContextMenu(getListView());
         }
         setHasOptionsMenu(true);
-
-        // After confirming PreferenceScreen is available, we call super.
-        super.onActivityCreated(savedInstanceState);
     }
 
     @Override
@@ -373,7 +414,7 @@ public class WifiSettings extends SettingsPreferenceFragment
         getActivity().registerReceiver(mReceiver, mFilter);
         if (mKeyStoreNetworkId != INVALID_NETWORK_ID &&
                 KeyStore.getInstance().state() == KeyStore.State.UNLOCKED) {
-            mWifiManager.connect(mChannel, mKeyStoreNetworkId, mConnectListener);
+            mWifiManager.connect(mKeyStoreNetworkId, mConnectListener);
         }
         mKeyStoreNetworkId = INVALID_NETWORK_ID;
 
@@ -520,13 +561,13 @@ public class WifiSettings extends SettingsPreferenceFragment
             case MENU_ID_CONNECT: {
                 if (mSelectedAccessPoint.networkId != INVALID_NETWORK_ID) {
                     if (!requireKeyStore(mSelectedAccessPoint.getConfig())) {
-                        mWifiManager.connect(mChannel, mSelectedAccessPoint.networkId,
+                        mWifiManager.connect(mSelectedAccessPoint.networkId,
                                 mConnectListener);
                     }
                 } else if (mSelectedAccessPoint.security == AccessPoint.SECURITY_NONE) {
                     /** Bypass dialog for unsecured networks */
                     mSelectedAccessPoint.generateOpenNetworkConfig();
-                    mWifiManager.connect(mChannel, mSelectedAccessPoint.getConfig(),
+                    mWifiManager.connect(mSelectedAccessPoint.getConfig(),
                             mConnectListener);
                 } else {
                     showDialog(mSelectedAccessPoint, true);
@@ -534,7 +575,7 @@ public class WifiSettings extends SettingsPreferenceFragment
                 return true;
             }
             case MENU_ID_FORGET: {
-                mWifiManager.forget(mChannel, mSelectedAccessPoint.networkId, mForgetListener);
+                mWifiManager.forget(mSelectedAccessPoint.networkId, mForgetListener);
                 return true;
             }
             case MENU_ID_MODIFY: {
@@ -553,7 +594,7 @@ public class WifiSettings extends SettingsPreferenceFragment
             if (mSelectedAccessPoint.security == AccessPoint.SECURITY_NONE &&
                     mSelectedAccessPoint.networkId == INVALID_NETWORK_ID) {
                 mSelectedAccessPoint.generateOpenNetworkConfig();
-                mWifiManager.connect(mChannel, mSelectedAccessPoint.getConfig(), mConnectListener);
+                mWifiManager.connect(mSelectedAccessPoint.getConfig(), mConnectListener);
             } else {
                 showDialog(mSelectedAccessPoint, false);
             }
@@ -596,9 +637,68 @@ public class WifiSettings extends SettingsPreferenceFragment
                 return new WpsDialog(getActivity(), WpsInfo.PBC);
             case WPS_PIN_DIALOG_ID:
                 return new WpsDialog(getActivity(), WpsInfo.DISPLAY);
+            case WIFI_SKIPPED_DIALOG_ID:
+                return new AlertDialog.Builder(getActivity())
+                            .setMessage(R.string.wifi_skipped_message)
+                            .setCancelable(false)
+                            .setNegativeButton(R.string.wifi_skip_anyway,
+                                    new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int id) {
+                                    getActivity().setResult(Activity.RESULT_CANCELED);
+                                    getActivity().finish();
+                                }
+                            })
+                            .setPositiveButton(R.string.wifi_dont_skip,
+                                    new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int id) {
+                                }
+                            })
+                            .create();
+            case WIFI_AND_MOBILE_SKIPPED_DIALOG_ID:
+                return new AlertDialog.Builder(getActivity())
+                            .setMessage(R.string.wifi_and_mobile_skipped_message)
+                            .setCancelable(false)
+                            .setNegativeButton(R.string.wifi_skip_anyway,
+                                    new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int id) {
+                                    getActivity().setResult(Activity.RESULT_CANCELED);
+                                    getActivity().finish();
+                                }
+                            })
+                            .setPositiveButton(R.string.wifi_dont_skip,
+                                    new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int id) {
+                                }
+                            })
+                            .create();
+
         }
         return super.onCreateDialog(dialogId);
     }
+
+    private boolean isPhone() {
+        final TelephonyManager telephonyManager = (TelephonyManager)this.getSystemService(
+                Context.TELEPHONY_SERVICE);
+        return telephonyManager != null
+                && telephonyManager.getPhoneType() != TelephonyManager.PHONE_TYPE_NONE;
+    }
+
+    /**
+    * Return true if there's any SIM related impediment to connectivity.
+    * Treats Unknown as OK. (Only returns true if we're sure of a SIM problem.)
+    */
+   protected boolean hasSimProblem() {
+       final TelephonyManager telephonyManager = (TelephonyManager)this.getSystemService(
+               Context.TELEPHONY_SERVICE);
+       return telephonyManager != null
+               && telephonyManager.getCurrentPhoneType() == TelephonyManager.PHONE_TYPE_GSM
+               && telephonyManager.getSimState() != TelephonyManager.SIM_STATE_READY
+               && telephonyManager.getSimState() != TelephonyManager.SIM_STATE_UNKNOWN;
+   }
 
     private boolean requireKeyStore(WifiConfiguration config) {
         if (WifiConfigController.requireKeyStore(config) &&
@@ -744,7 +844,11 @@ public class WifiSettings extends SettingsPreferenceFragment
             updateAccessPoints();
             updateConnectionState(info.getDetailedState());
             if (mAutoFinishOnConnection && info.isConnected()) {
-                getActivity().finish();
+                Activity activity = getActivity();
+                if (activity != null) {
+                    activity.setResult(Activity.RESULT_OK);
+                    activity.finish();
+                }
                 return;
             }
         } else if (WifiManager.RSSI_CHANGED_ACTION.equals(action)) {
@@ -781,7 +885,10 @@ public class WifiSettings extends SettingsPreferenceFragment
     }
 
     private void updateWifiState(int state) {
-        getActivity().invalidateOptionsMenu();
+        Activity activity = getActivity();
+        if (activity != null) {
+            activity.invalidateOptionsMenu();
+        }
 
         switch (state) {
             case WifiManager.WIFI_STATE_ENABLED:
@@ -827,8 +934,11 @@ public class WifiSettings extends SettingsPreferenceFragment
                 mRetry = 0;
             } else if (++mRetry >= 3) {
                 mRetry = 0;
-                Toast.makeText(getActivity(), R.string.wifi_fail_to_scan,
-                        Toast.LENGTH_LONG).show();
+                Activity activity = getActivity();
+                if (activity != null) {
+                    Toast.makeText(activity, R.string.wifi_fail_to_scan,
+                            Toast.LENGTH_LONG).show();
+                }
                 return;
             }
             sendEmptyMessageDelayed(0, WIFI_RESCAN_INTERVAL_MS);
@@ -863,18 +973,18 @@ public class WifiSettings extends SettingsPreferenceFragment
             if (mSelectedAccessPoint != null
                     && !requireKeyStore(mSelectedAccessPoint.getConfig())
                     && mSelectedAccessPoint.networkId != INVALID_NETWORK_ID) {
-                mWifiManager.connect(mChannel, mSelectedAccessPoint.networkId,
+                mWifiManager.connect(mSelectedAccessPoint.networkId,
                         mConnectListener);
             }
         } else if (config.networkId != INVALID_NETWORK_ID) {
             if (mSelectedAccessPoint != null) {
-                mWifiManager.save(mChannel, config, mSaveListener);
+                mWifiManager.save(config, mSaveListener);
             }
         } else {
             if (configController.isEdit() || requireKeyStore(config)) {
-                mWifiManager.save(mChannel, config, mSaveListener);
+                mWifiManager.save(config, mSaveListener);
             } else {
-                mWifiManager.connect(mChannel, config, mConnectListener);
+                mWifiManager.connect(config, mConnectListener);
             }
         }
 
@@ -891,7 +1001,7 @@ public class WifiSettings extends SettingsPreferenceFragment
             return;
         }
 
-        mWifiManager.forget(mChannel, mSelectedAccessPoint.networkId, mForgetListener);
+        mWifiManager.forget(mSelectedAccessPoint.networkId, mForgetListener);
 
         if (mWifiManager.isWifiEnabled()) {
             mScanner.resume();

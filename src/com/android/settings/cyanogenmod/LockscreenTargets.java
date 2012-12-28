@@ -160,7 +160,7 @@ public class LockscreenTargets extends Fragment implements ShortcutPickHelper.On
 
     private void initializeView(String input) {
         if (input == null) {
-            input = GlowPadView.DEFAULT_TARGETS;
+            input = GlowPadView.EMPTY_TARGET;
         }
         mTargetStore.clear();
         final int maxTargets = mIsScreenLarge ? GlowPadView.MAX_TABLET_TARGETS : GlowPadView.MAX_PHONE_TARGETS;
@@ -306,11 +306,8 @@ public class LockscreenTargets extends Fragment implements ShortcutPickHelper.On
         .setMessage(R.string.lockscreen_target_reset_message)
         .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                initializeView("empty|#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;" +
-                        "component=com.google.android.googlequicksearchbox/.SearchActivity;S.icon_resource=ic_lockscreen_google_normal;" +
-                        "end|empty|#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;" +
-                        "component=com.android.gallery3d/com.android.camera.CameraLauncher;S.icon_resource=ic_lockscreen_camera_normal;end");
-                saveAll();
+                initializeView(null);
+                Settings.System.putString(mActivity.getContentResolver(), Settings.System.LOCKSCREEN_TARGETS, null);
                 Toast.makeText(mActivity, R.string.lockscreen_target_reset, Toast.LENGTH_LONG).show();
             }
         }).setNegativeButton(R.string.cancel, null)

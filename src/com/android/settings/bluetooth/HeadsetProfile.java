@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2012 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 package com.android.settings.bluetooth;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothHeadset;
@@ -27,6 +28,7 @@ import android.util.Log;
 
 import com.android.settings.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,9 +36,10 @@ import java.util.List;
  */
 final class HeadsetProfile implements LocalBluetoothProfile {
     private static final String TAG = "HeadsetProfile";
+    private static boolean V = true;
 
     private BluetoothHeadset mService;
-    private boolean mProfileReady;
+    private boolean mIsProfileReady;
 
     private final LocalBluetoothAdapter mLocalAdapter;
     private final CachedBluetoothDeviceManager mDeviceManager;
@@ -57,38 +60,38 @@ final class HeadsetProfile implements LocalBluetoothProfile {
             implements BluetoothProfile.ServiceListener {
 
         public void onServiceConnected(int profile, BluetoothProfile proxy) {
+            if (V) Log.d(TAG,"Bluetooth service connected");
             mService = (BluetoothHeadset) proxy;
-            mProfileReady = true;
             // We just bound to the service, so refresh the UI of the
             // headset device.
             List<BluetoothDevice> deviceList = mService.getConnectedDevices();
-            if (deviceList.isEmpty()) {
-                return;
+            if (!deviceList.isEmpty()) {
+                BluetoothDevice firstDevice = deviceList.get(0);
+                CachedBluetoothDevice device = mDeviceManager.findDevice(firstDevice);
+                // we may add a new device here, but generally this should not happen
+                if (device == null) {
+                    Log.w(TAG, "HeadsetProfile found new device: " + firstDevice);
+                    device = mDeviceManager.addDevice(mLocalAdapter, mProfileManager, firstDevice);
+                }
+                device.onProfileStateChanged(HeadsetProfile.this,
+                        BluetoothProfile.STATE_CONNECTED);
             }
-            BluetoothDevice firstDevice = deviceList.get(0);
-            CachedBluetoothDevice device = mDeviceManager.findDevice(firstDevice);
-            // we may add a new device here, but generally this should not happen
-            if (device == null) {
-                Log.w(TAG, "HeadsetProfile found new device: " + firstDevice);
-                device = mDeviceManager.addDevice(mLocalAdapter, mProfileManager, firstDevice);
-            }
-            device.onProfileStateChanged(HeadsetProfile.this,
-                    BluetoothProfile.STATE_CONNECTED);
 
             mProfileManager.callServiceConnectedListeners();
+            mIsProfileReady=true;
         }
 
         public void onServiceDisconnected(int profile) {
-            mProfileReady = false;
-            mService = null;
+            if (V) Log.d(TAG,"Bluetooth service disconnected");
             mProfileManager.callServiceDisconnectedListeners();
+            mIsProfileReady=false;
         }
     }
 
-    // TODO(): The calls must get queued if mService becomes null.
-    // It can happen when the phone app crashes for some reason.
-    // All callers should have service listeners. Dock Service is the only
-    // one right now.
+    public boolean isProfileReady() {
+        return mIsProfileReady;
+    }
+
     HeadsetProfile(Context context, LocalBluetoothAdapter adapter,
             CachedBluetoothDeviceManager deviceManager,
             LocalBluetoothProfileManager profileManager) {
@@ -108,6 +111,7 @@ final class HeadsetProfile implements LocalBluetoothProfile {
     }
 
     public boolean connect(BluetoothDevice device) {
+        if (mService == null) return false;
         List<BluetoothDevice> sinks = mService.getConnectedDevices();
         if (sinks != null) {
             for (BluetoothDevice sink : sinks) {
@@ -118,6 +122,7 @@ final class HeadsetProfile implements LocalBluetoothProfile {
     }
 
     public boolean disconnect(BluetoothDevice device) {
+        if (mService == null) return false;
         List<BluetoothDevice> deviceList = mService.getConnectedDevices();
         if (!deviceList.isEmpty() && deviceList.get(0).equals(device)) {
             // Downgrade priority as user is disconnecting the headset.
@@ -132,7 +137,6 @@ final class HeadsetProfile implements LocalBluetoothProfile {
 
     public int getConnectionStatus(BluetoothDevice device) {
         if (mService == null) return BluetoothProfile.STATE_DISCONNECTED;
-
         List<BluetoothDevice> deviceList = mService.getConnectedDevices();
 
         return !deviceList.isEmpty() && deviceList.get(0).equals(device)
@@ -141,14 +145,17 @@ final class HeadsetProfile implements LocalBluetoothProfile {
     }
 
     public boolean isPreferred(BluetoothDevice device) {
+        if (mService == null) return false;
         return mService.getPriority(device) > BluetoothProfile.PRIORITY_OFF;
     }
 
     public int getPreferred(BluetoothDevice device) {
+        if (mService == null) return BluetoothProfile.PRIORITY_OFF;
         return mService.getPriority(device);
     }
 
     public void setPreferred(BluetoothDevice device, boolean preferred) {
+        if (mService == null) return;
         if (preferred) {
             if (mService.getPriority(device) < BluetoothProfile.PRIORITY_ON) {
                 mService.setPriority(device, BluetoothProfile.PRIORITY_ON);
@@ -158,8 +165,12 @@ final class HeadsetProfile implements LocalBluetoothProfile {
         }
     }
 
-    public synchronized boolean isProfileReady() {
-        return mProfileReady;
+    public List<BluetoothDevice> getConnectedDevices() {
+        if (mService == null) return new ArrayList<BluetoothDevice>(0);
+        return mService.getDevicesMatchingConnectionStates(
+              new int[] {BluetoothProfile.STATE_CONNECTED,
+                         BluetoothProfile.STATE_CONNECTING,
+                         BluetoothProfile.STATE_DISCONNECTING});
     }
 
     public String toString() {
@@ -175,7 +186,7 @@ final class HeadsetProfile implements LocalBluetoothProfile {
     }
 
     public int getSummaryResourceForDevice(BluetoothDevice device) {
-        int state = mService.getConnectionState(device);
+        int state = getConnectionStatus(device);
         switch (state) {
             case BluetoothProfile.STATE_DISCONNECTED:
                 return R.string.bluetooth_headset_profile_summary_use_for;
@@ -190,5 +201,18 @@ final class HeadsetProfile implements LocalBluetoothProfile {
 
     public int getDrawableResource(BluetoothClass btClass) {
         return R.drawable.ic_bt_headset_hfp;
+    }
+
+    protected void finalize() {
+        if (V) Log.d(TAG, "finalize()");
+        if (mService != null) {
+            try {
+                BluetoothAdapter.getDefaultAdapter().closeProfileProxy(BluetoothProfile.HEADSET,
+                                                                       mService);
+                mService = null;
+            }catch (Throwable t) {
+                Log.w(TAG, "Error cleaning up HID proxy", t);
+            }
+        }
     }
 }

@@ -253,6 +253,19 @@
     <item msgid="3170120558236848008">"アニメーションスケール5x"</item>
     <item msgid="1069584980746680398">"アニメーションスケール10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"なし"</item>
+    <item msgid="688482401508173818">"720x480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280x720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920x1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280x720 tvdpiと1920x1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"なし"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace（画像）"</item>
+    <item msgid="1340692776955662664">"glGetErrorでのスタック呼び出し"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"標準の上限"</item>
     <item msgid="4071574792028999443">"バックグラウンドプロセスを使用しない"</item>
@@ -277,132 +290,9 @@
     <item msgid="4042143101664725090">"タイムアウト"</item>
     <item msgid="7664124146786465092">"失敗しました"</item>
   </string-array>
-
-    <string-array name="volume_overlay_entries">
-        <item>シングル</item>
-        <item>拡張可能</item>
-        <item>拡張</item>
-        <item>なし</item>
-    </string-array>
-
-    <string-array name="silent_mode_entries">
-        <item>オフ</item>
-        <item>バイブ</item>
-        <item>ミュート</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_window">
-        <item>2秒</item>
-        <item>5秒</item>
-        <item>10秒</item>
-        <item>20秒</item>
-        <item>30秒</item>
-        <item>60秒</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_reset">
-        <item>無効</item>
-        <item>400ルクス</item>
-        <item>500ルクス</item>
-        <item>600ルクス</item>
-        <item>700ルクス</item>
-        <item>800ルクス</item>
-        <item>900ルクス</item>
-        <item>1000ルクス</item>
-        <item>1500ルクス</item>
-        <item>2000ルクス</item>
-        <item>2500ルクス</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_interval">
-        <item>0.5秒</item>
-        <item>1秒</item>
-        <item>2秒</item>
-        <item>5秒</item>
-        <item>10秒</item>
-    </string-array>
-
-    <string-array name="entries_light_levels_dim">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>14</item>
-        <item>16</item>
-        <item>18</item>
-        <item>20(デフォルト)</item>
-        <item>22</item>
-        <item>24</item>
-        <item>26</item>
-    </string-array>
-
-    <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>
-        <item>2G/3Gのみ</item>
-        <item>2G/3Gのみ/3G+2G</item>
-    </string-array>
-
-    <string-array name="entries_screentimeout_widget">
-        <item>15秒/1分/5分</item>
-        <item>30秒/2分/5分</item>
-    </string-array>
-
-    <string-array name="entries_flash_widget">
-        <item>ノーマル</item>
-        <item>ハイ / デスレイ</item>
-    </string-array>
-
-    <string-array name="haptic_feedback_entries">
-        <item>グローバルの設定</item>
-        <item>オン</item>
-        <item>オフ</item>
-    </string-array>
-
-    <string-array name="pref_zram_size_entries">
-        <item>無効</item>
-        <item>10%</item>
-        <item>18%(デフォルト)</item>
-        <item>26%</item>
-    </string-array>
-
-    <string-array name="entries_status_bar_am_pm">
-        <item>ノーマル</item>
-        <item>小さく</item>
-        <item>無し(デフォルト)</item>
-    </string-array>
-
-    <string-array name="profile_entries">
-        <item>オン</item>
-        <item>オフ</item>
-        <item>オーバーライドしない</item>
-    </string-array>
-
-    <string-array name="profile_connection_entries">
-        <item>無効</item>
-        <item>有効</item>
-    </string-array>
-
-    <string-array name="location_entries_gps_source">
-        <item>内蔵GPSを使う</item>
-    </string-array>
-
-    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
-    <string-array name="wifi_countrycode_entries">
-        <item>アメリカ合衆国</item>
-        <item>カナダ, 台湾</item>
-        <item>ドイツ</item>
-        <item>ヨーロッパ</item>
-        <item>日本, ロシア</item>
-        <item>オーストラリア</item>
-        <item>中国</item>
-        <item>韓国</item>
-        <item>トルコ</item>
-        <item>シンガポール</item>
-        <item>ブラジル</item>
-    </string-array>
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"確認する"</item>
+    <item msgid="5077768429488260031">"許可しない"</item>
+    <item msgid="1417929597727989746">"常に許可する"</item>
+  </string-array>
 </resources>

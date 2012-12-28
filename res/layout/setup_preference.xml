@@ -30,7 +30,7 @@
         android:gravity="bottom">
 
         <LinearLayout
-            android:id="@+id/button_bar"
+            android:id="@+id/title_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/title"
@@ -49,12 +49,12 @@
                 android:id="@+id/more"
                 android:layout_width="@dimen/setup_button_size"
                 android:layout_height="@dimen/setup_button_size"
-                android:layout_marginLeft="8dip"
-                android:layout_marginRight="8dip"
+                android:layout_marginStart="8dip"
+                android:layout_marginEnd="8dip"
                 android:layout_marginBottom="8dip"
                 android:src="@*android:drawable/ic_menu_moreoverflow_holo_dark"
                 android:background="?android:attr/actionBarItemBackground"
-                android:contentDescription="@string/wifi_menu_wps_pbc" />
+                android:contentDescription="@string/wifi_menu_more_options" />
 
         </LinearLayout>
 
@@ -62,7 +62,7 @@
         <View
             android:id="@+id/top_divider"
             style="@style/TopDivider"
-            android:layout_below="@id/button_bar" />
+            android:layout_below="@id/title_bar" />
 
     </RelativeLayout>
 
@@ -73,6 +73,15 @@
         android:layout_below="@id/title_area"
         android:background="@android:color/transparent"
         android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wifi_required_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/wifi_required_info_text"
+            android:visibility="gone" />
 
         <ListView
             android:id="@android:id/list"
@@ -88,7 +97,8 @@
         <TextView
             android:id="@android:id/empty"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
             android:gravity="center"
             android:visibility="gone" />
 
@@ -107,7 +117,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:gravity="center_vertical"
             android:minHeight="?android:attr/listPreferredItemHeight"
-            android:paddingRight="?android:attr/scrollbarSize" >
+            android:paddingEnd="?android:attr/scrollbarSize" >
 
             <ImageView
                 android:id="@+id/add_icon"
@@ -121,8 +131,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dip"
-                android:layout_marginLeft="15dip"
-                android:layout_marginRight="6dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginEnd="6dip"
                 android:layout_marginTop="6dip"
                 android:layout_weight="1"
                 android:ellipsize="marquee"
@@ -144,14 +154,22 @@
                 android:id="@+id/back_button"
                 android:layout_width="150dip"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_margin="5dip"
                 android:text="@string/wifi_setup_back" />
+
+            <Button
+                android:id="@+id/custom_button"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dip"
+                android:text="@string/wifi_setup_skip" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:orientation="horizontal" >
 
                 <Button
@@ -167,8 +185,9 @@
                     android:layout_width="150dip"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dip"
-                    android:text="@string/wifi_setup_next" />
-            </LinearLayout>
+                    android:text="@string/wifi_setup_next"
+                    android:visibility="gone" />
+                </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
 </view>

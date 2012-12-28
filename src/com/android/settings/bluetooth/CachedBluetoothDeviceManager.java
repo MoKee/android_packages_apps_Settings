@@ -16,6 +16,7 @@
 
 package com.android.settings.bluetooth;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.util.Log;
@@ -134,6 +135,24 @@ final class CachedBluetoothDeviceManager {
         }
     }
 
+    public synchronized void onBluetoothStateChanged(int bluetoothState) {
+        // When Bluetooth is turning off, we need to clear the non-bonded devices
+        // Otherwise, they end up showing up on the next BT enable
+        if (bluetoothState == BluetoothAdapter.STATE_TURNING_OFF) {
+            for (int i = mCachedDevices.size() - 1; i >= 0; i--) {
+                CachedBluetoothDevice cachedDevice = mCachedDevices.get(i);
+                if (cachedDevice.getBondState() != BluetoothDevice.BOND_BONDED) {
+                   cachedDevice.setVisible(false);
+                   mCachedDevices.remove(i);
+                } else {
+                    // For bonded devices, we need to clear the connection status so that
+                    // when BT is enabled next time, device connection status shall be retrieved
+                    // by making a binder call.
+                    cachedDevice.clearProfileConnectionState();
+                }
+            }
+        }
+    }
     private void log(String msg) {
         if (DEBUG) {
             Log.d(TAG, msg);

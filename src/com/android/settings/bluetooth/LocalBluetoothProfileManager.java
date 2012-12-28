@@ -21,17 +21,22 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothHeadset;
 import android.bluetooth.BluetoothInputDevice;
 import android.bluetooth.BluetoothPan;
+import android.bluetooth.BluetoothPbap;
 import android.bluetooth.BluetoothProfile;
 import android.bluetooth.BluetoothUuid;
 import android.content.Context;
 import android.content.Intent;
 import android.os.ParcelUuid;
 import android.util.Log;
+import android.os.Handler;
+import android.os.Message;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.List;
 
 /**
  * LocalBluetoothProfileManager provides access to the LocalBluetoothProfile
@@ -77,6 +82,7 @@ final class LocalBluetoothProfileManager {
     private final HidProfile mHidProfile;
     private OppProfile mOppProfile;
     private final PanProfile mPanProfile;
+    private final PbapServerProfile mPbapProfile;
 
     /**
      * Mapping from profile name, e.g. "HEADSET" to profile object.
@@ -113,6 +119,10 @@ final class LocalBluetoothProfileManager {
         addPanProfile(mPanProfile, PanProfile.NAME,
                 BluetoothPan.ACTION_CONNECTION_STATE_CHANGED);
 
+       //Create PBAP server profile, but do not add it to list of profiles
+       // as we do not need to monitor the profile as part of profile list
+        mPbapProfile = new PbapServerProfile(context);
+
         Log.d(TAG, "LocalBluetoothProfileManager construction complete");
     }
 
@@ -128,7 +138,7 @@ final class LocalBluetoothProfileManager {
         if (BluetoothUuid.isUuidPresent(uuids, BluetoothUuid.AudioSource)) {
             if (mA2dpProfile == null) {
                 Log.d(TAG, "Adding local A2DP profile");
-                mA2dpProfile = new A2dpProfile(mContext);
+                mA2dpProfile = new A2dpProfile(mContext, this);
                 addProfile(mA2dpProfile, A2dpProfile.NAME,
                         BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED);
             }
@@ -287,6 +297,11 @@ final class LocalBluetoothProfileManager {
         return mHeadsetProfile;
     }
 
+    PbapServerProfile getPbapProfile(){
+        return mPbapProfile;
+    }
+
+
     /**
      * Fill in a list of LocalBluetoothProfile objects that are supported by
      * the local device and the remote device.
@@ -298,7 +313,8 @@ final class LocalBluetoothProfileManager {
      */
     synchronized void updateProfiles(ParcelUuid[] uuids, ParcelUuid[] localUuids,
             Collection<LocalBluetoothProfile> profiles,
-            Collection<LocalBluetoothProfile> removedProfiles) {
+            Collection<LocalBluetoothProfile> removedProfiles,
+            boolean isPanNapConnected) {
         // Copy previous profile list into removedProfiles
         removedProfiles.clear();
         removedProfiles.addAll(profiles);
@@ -336,10 +352,13 @@ final class LocalBluetoothProfileManager {
             removedProfiles.remove(mHidProfile);
         }
 
-        if (BluetoothUuid.isUuidPresent(uuids, BluetoothUuid.NAP) &&
-            mPanProfile != null) {
+        if(isPanNapConnected)
+            Log.d(TAG, "Valid PAN-NAP connection exists.");
+        if ((BluetoothUuid.isUuidPresent(uuids, BluetoothUuid.NAP) &&
+            mPanProfile != null) || isPanNapConnected) {
             profiles.add(mPanProfile);
             removedProfiles.remove(mPanProfile);
         }
     }
+
 }

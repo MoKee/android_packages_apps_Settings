@@ -17,7 +17,6 @@
 package com.android.settings;
 
 import static android.os.BatteryManager.BATTERY_STATUS_UNKNOWN;
-import static android.provider.Telephony.Intents.SPN_STRINGS_UPDATED_ACTION;
 
 import com.android.internal.telephony.TelephonyIntents;
 
@@ -48,7 +47,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Special preference type that allows configuration of both the ring volume and

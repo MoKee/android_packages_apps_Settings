@@ -33,6 +33,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
@@ -43,6 +44,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
 import com.android.internal.telephony.Phone;
+import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.PhoneFactory;
 import com.android.internal.telephony.PhoneStateIntentReceiver;
 import com.android.internal.telephony.TelephonyProperties;
@@ -115,7 +117,7 @@ public class Status extends PreferenceActivity {
     private Preference mSignalStrength;
     private Preference mUptime;
 
-    private static String sUnknown;
+    private String sUnknown;
 
     private Preference mBatteryStatus;
     private Preference mBatteryLevel;
@@ -188,16 +190,15 @@ public class Status extends PreferenceActivity {
         mBatteryStatus = findPreference(KEY_BATTERY_STATUS);
 
         mRes = getResources();
-        if (sUnknown == null) {
-            sUnknown = mRes.getString(R.string.device_info_default);
+        sUnknown = mRes.getString(R.string.device_info_default);
+        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+            mPhone = PhoneFactory.getDefaultPhone();
         }
-
-        mPhone = PhoneFactory.getDefaultPhone();
         // Note - missing in zaku build, be careful later...
         mSignalStrength = findPreference(KEY_SIGNAL_STRENGTH);
         mUptime = findPreference("up_time");
 
-        if (Utils.isWifiOnly(getApplicationContext())) {
+        if (mPhone == null || Utils.isWifiOnly(getApplicationContext())) {
             for (String key : PHONE_RELATED_ENTRIES) {
                 removePreferenceFromScreen(key);
             }
@@ -213,7 +214,7 @@ public class Status extends PreferenceActivity {
                 setSummaryText(KEY_PRL_VERSION, mPhone.getCdmaPrlVersion());
                 removePreferenceFromScreen(KEY_IMEI_SV);
 
-                if (mPhone.getLteOnCdmaMode() == Phone.LTE_ON_CDMA_TRUE) {
+                if (mPhone.getLteOnCdmaMode() == PhoneConstants.LTE_ON_CDMA_TRUE) {
                     // Show ICC ID and IMEI for LTE device
                     setSummaryText(KEY_ICC_ID, mPhone.getIccSerialNumber());
                     setSummaryText(KEY_IMEI, mPhone.getImei());
@@ -268,7 +269,7 @@ public class Status extends PreferenceActivity {
     protected void onResume() {
         super.onResume();
 
-        if (!Utils.isWifiOnly(getApplicationContext())) {
+        if (mPhone != null && !Utils.isWifiOnly(getApplicationContext())) {
             mPhoneStateReceiver.registerIntent();
 
             updateSignalStrength();
@@ -286,7 +287,7 @@ public class Status extends PreferenceActivity {
     public void onPause() {
         super.onPause();
 
-        if (!Utils.isWifiOnly(getApplicationContext())) {
+        if (mPhone != null && !Utils.isWifiOnly(getApplicationContext())) {
             mPhoneStateReceiver.unregisterIntent();
             mTelephonyManager.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
         }

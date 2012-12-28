@@ -246,6 +246,19 @@
     <item msgid="3170120558236848008">"Animaation mittakaava 5-kertainen"</item>
     <item msgid="1069584980746680398">"Animaation mittakaava 10-kertainen"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Ei mitään"</item>
+    <item msgid="688482401508173818">"720x480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280x720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920x1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280x720 tvdpi ja 1920x1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Ei mitään"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (grafiikka)"</item>
+    <item msgid="1340692776955662664">"Kutsu pinoa, jos glGetError tapaht."</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Vakioraja"</item>
     <item msgid="4071574792028999443">"Ei taustaprosesseja"</item>
@@ -270,116 +283,45 @@
     <item msgid="4042143101664725090">"Aikaraja"</item>
     <item msgid="7664124146786465092">"Epäonnistui"</item>
   </string-array>
-<!-- **** CYANOGENMOD EDITS START **** -->
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Kysy"</item>
+    <item msgid="5077768429488260031">"Älä salli koskaan"</item>
+    <item msgid="1417929597727989746">"Salli aina"</item>
+  </string-array>
+    <!-- **** CYANOGENMOD EDITS START **** -->
   <string-array name="volume_overlay_entries">
     <item>Yksittäinen</item>
     <item>Laajennettava</item>
     <item>Laajennettu</item>
     <item>Pois käytöstä</item>
   </string-array>
-  <string-array name="silent_mode_entries">
-    <item>Pois</item>
-    <item>Värinä</item>
-    <item>Äänetön</item>
+  <string-array name="profile_entries">
+     <item>On</item>
+     <item>Off</item>
+     <item>No override</item>
   </string-array>
-  <string-array name="entries_light_filter_window">
-    <item>2 s</item>
-    <item>5 s</item>
-    <item>10 s</item>
-    <item>20 s</item>
-    <item>30 s</item>
-    <item>60 s</item>
-  </string-array>
-  <string-array name="entries_light_filter_reset">
-    <item>Pois käytöstä</item>
-    <item>400 lux</item>
-    <item>500 lux</item>
-    <item>600 lux</item>
-    <item>700 lux</item>
-    <item>800 lux</item>
-    <item>900 lux</item>
-    <item>1000 lux</item>
-    <item>1500 lux</item>
-    <item>2000 lux</item>
-    <item>2500 lux</item>
-  </string-array>
-  <string-array name="entries_light_filter_interval">
-    <item>0.5 s</item>
-    <item>1 s</item>
-    <item>2 s</item>
-    <item>5 s</item>
-    <item>10 s</item>
-  </string-array>
-  <string-array name="entries_light_levels_dim">
-    <item>1</item>
-    <item>2</item>
-    <item>3</item>
-    <item>4</item>
-    <item>5</item>
-    <item>6</item>
-    <item>8</item>
-    <item>10</item>
-    <item>12</item>
-    <item>14</item>
-    <item>16</item>
-    <item>18</item>
-    <item>20 (oletus)</item>
-    <item>22</item>
-    <item>24</item>
-    <item>26</item>
-  </string-array>
-  <string-array name="entries_light_decrease_hysteresis">
-    <item>0 %</item>
-    <item>10 %</item>
-    <item>20 %</item>
-    <item>30 %</item>
-    <item>40 %</item>
-    <item>50 %</item>
-    <item>60 %</item>
-    <item>70 %</item>
-    <item>80 %</item>
-    <item>90 %</item>
+  <string-array name="profile_connection_entries">
+     <item>Pois käytöstä</item>
+     <item>Ota käyttöön</item>
   </string-array>
   <string-array name="entries_network_widget">
-    <item>2G/3G+2G</item>
-    <item>Vain 2G/3G</item>
-    <item>Vain 2G/3G /3G+2G</item>
-  </string-array>
-  <string-array name="entries_screentimeout_widget">
-    <item>15s/1m/5m</item>
-    <item>30s/2m/5m</item>
+     <item>2G/3G+2G</item>
+     <item>Vain 2G/3G</item>
+     <item>Vain 2G/3G /3G+2G</item>
   </string-array>
   <string-array name="entries_flash_widget">
-    <item>Normaali</item>
-    <item>Korkea</item>
+     <item>Normaali</item>
+     <item>Korkea</item>
   </string-array>
   <string-array name="haptic_feedback_entries">
     <item>Käytä yleisiä asetuksia</item>
     <item>Päällä</item>
     <item>Pois</item>
   </string-array>
-  <string-array name="pref_zram_size_entries">
-    <item>Pois käytöstä</item>
-    <item>10%</item>
-    <item>18% (oletus)</item>
-    <item>26%</item>
-  </string-array>
   <string-array name="entries_status_bar_am_pm">
-    <item>Normaali</item>
-    <item>Pieni</item>
-    <item>Ei käytössä (oletus)</item>
-  </string-array>
-  <string-array name="profile_entries">
-    <item>Päällä</item>
-    <item>Pois</item>
-    <item>Älä ohita</item>
-  </string-array>
-  <string-array name="profile_connection_entries">
-    <item>Pois käytöstä</item>
-    <item>Ota käyttöön</item>
-  </string-array>
-  <string-array name="location_entries_gps_source">
-    <item>Käytä sisäistä GPS:ää</item>
+     <item>Normaali</item>
+     <item>Pieni</item>
+     <item>Ei käytössä</item>
   </string-array>
     <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>

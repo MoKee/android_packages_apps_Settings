@@ -16,6 +16,8 @@
 
 package com.android.settings.applications;
 
+import com.android.internal.telephony.ISms;
+import com.android.internal.telephony.SmsUsageMonitor;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.applications.ApplicationsState.AppEntry;
@@ -53,6 +55,8 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.preference.PreferenceActivity;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -64,14 +68,20 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.AppSecurityPermissions;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 /**
@@ -87,22 +97,27 @@ public class InstalledAppDetails extends Fragment
         implements View.OnClickListener, CompoundButton.OnCheckedChangeListener,
         ApplicationsState.Callbacks {
     private static final String TAG="InstalledAppDetails";
-    static final boolean SUPPORT_DISABLE_APPS = true;
     private static final boolean localLOGV = false;
     
     public static final String ARG_PACKAGE_NAME = "package";
 
     private PackageManager mPm;
+    private UserManager mUserManager;
     private IUsbManager mUsbManager;
     private AppWidgetManager mAppWidgetManager;
     private DevicePolicyManager mDpm;
+    private ISms mSmsManager;
     private ApplicationsState mState;
     private ApplicationsState.Session mSession;
     private ApplicationsState.AppEntry mAppEntry;
+    private boolean mInitialized;
+    private boolean mShowUninstalled;
     private PackageInfo mPackageInfo;
     private CanBeOnSdCardChecker mCanBeOnSdCardChecker;
     private View mRootView;
     private Button mUninstallButton;
+    private View mMoreControlButtons;
+    private Button mSpecialDisableButton;
     private boolean mMoveInProgress = false;
     private boolean mUpdatedSysApp = false;
     private Button mActivitiesButton;
@@ -127,7 +142,9 @@ public class InstalledAppDetails extends Fragment
     private CompoundButton mNotificationSwitch;
 
     private PackageMoveObserver mPackageMoveObserver;
-    
+
+    private boolean mDisableAfterUninstall;
+
     private boolean mHaveSizes = false;
     private long mLastCodeSize = -1;
     private long mLastDataSize = -1;
@@ -161,7 +178,15 @@ public class InstalledAppDetails extends Fragment
     private static final int DLG_MOVE_FAILED = DLG_BASE + 6;
     private static final int DLG_DISABLE = DLG_BASE + 7;
     private static final int DLG_DISABLE_NOTIFICATIONS = DLG_BASE + 8;
-    
+    private static final int DLG_SPECIAL_DISABLE = DLG_BASE + 9;
+
+    // Menu identifiers
+    public static final int UNINSTALL_ALL_USERS_MENU = 1;
+
+    // Result code identifiers
+    public static final int REQUEST_UNINSTALL = 1;
+    public static final int REQUEST_MANAGE_SPACE = 2;
+
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
             // If the fragment is gone, don't process any more messages.
@@ -289,39 +314,56 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private boolean handleDisableable(Button button) {
+        boolean disableable = false;
+        try {
+            // Try to prevent the user from bricking their phone
+            // by not allowing disabling of apps signed with the
+            // system cert and any launcher app in the system.
+            PackageInfo sys = mPm.getPackageInfo("android",
+                    PackageManager.GET_SIGNATURES);
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setPackage(mAppEntry.info.packageName);
+            List<ResolveInfo> homes = mPm.queryIntentActivities(intent, 0);
+            if ((homes != null && homes.size() > 0) || isThisASystemPackage()) {
+                // Disable button for core system applications.
+                button.setText(R.string.disable_text);
+            } else if (mAppEntry.info.enabled) {
+                button.setText(R.string.disable_text);
+                disableable = true;
+            } else {
+                button.setText(R.string.enable_text);
+                disableable = true;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.w(TAG, "Unable to get package info", e);
+        }
+        return disableable;
+    }
+
     private void initUninstallButtons() {
         mUpdatedSysApp = (mAppEntry.info.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0;
         boolean enabled = true;
         if (mUpdatedSysApp) {
             mUninstallButton.setText(R.string.app_factory_reset);
-        } else {
+            boolean specialDisable = false;
             if ((mAppEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
+                specialDisable = handleDisableable(mSpecialDisableButton);
+                mSpecialDisableButton.setOnClickListener(this);
+            }
+            mMoreControlButtons.setVisibility(specialDisable ? View.VISIBLE : View.GONE);
+        } else {
+            mMoreControlButtons.setVisibility(View.GONE);
+            if ((mAppEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
+                enabled = handleDisableable(mUninstallButton);
+            } else if ((mPackageInfo.applicationInfo.flags
+                    & ApplicationInfo.FLAG_INSTALLED) == 0
+                    && mUserManager.getUsers().size() >= 2) {
+                // When we have multiple users, there is a separate menu
+                // to uninstall for all users.
+                mUninstallButton.setText(R.string.uninstall_text);
                 enabled = false;
-                if (SUPPORT_DISABLE_APPS) {
-                    try {
-                        // Try to prevent the user from bricking their phone
-                        // by not allowing disabling of apps signed with the
-                        // system cert and any launcher app in the system.
-                        PackageInfo sys = mPm.getPackageInfo("android",
-                                PackageManager.GET_SIGNATURES);
-                        Intent intent = new Intent(Intent.ACTION_MAIN);
-                        intent.addCategory(Intent.CATEGORY_HOME);
-                        intent.setPackage(mAppEntry.info.packageName);
-                        List<ResolveInfo> homes = mPm.queryIntentActivities(intent, 0);
-                        if ((homes != null && homes.size() > 0) || isThisASystemPackage()) {
-                            // Disable button for core system applications.
-                            mUninstallButton.setText(R.string.disable_text);
-                        } else if (mAppEntry.info.enabled) {
-                            mUninstallButton.setText(R.string.disable_text);
-                            enabled = true;
-                        } else {
-                            mUninstallButton.setText(R.string.enable_text);
-                            enabled = true;
-                        }
-                    } catch (PackageManager.NameNotFoundException e) {
-                        Log.w(TAG, "Unable to get package info", e);
-                    }
-                }
             } else {
                 mUninstallButton.setText(R.string.uninstall_text);
             }
@@ -360,16 +402,25 @@ public class InstalledAppDetails extends Fragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        
+
         mState = ApplicationsState.getInstance(getActivity().getApplication());
         mSession = mState.newSession(this);
         mPm = getActivity().getPackageManager();
+        mUserManager = (UserManager)getActivity().getSystemService(Context.USER_SERVICE);
         IBinder b = ServiceManager.getService(Context.USB_SERVICE);
         mUsbManager = IUsbManager.Stub.asInterface(b);
         mAppWidgetManager = AppWidgetManager.getInstance(getActivity());
         mDpm = (DevicePolicyManager)getActivity().getSystemService(Context.DEVICE_POLICY_SERVICE);
+        mSmsManager = ISms.Stub.asInterface(ServiceManager.getService("isms"));
 
         mCanBeOnSdCardChecker = new CanBeOnSdCardChecker();
+
+        // Need to make sure we have loaded applications at this point.
+        mSession.resume();
+
+        retrieveAppEntry();
+
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -384,13 +435,24 @@ public class InstalledAppDetails extends Fragment
         mDataSize = (TextView)view.findViewById(R.id.data_size_text);
         mExternalCodeSize = (TextView)view.findViewById(R.id.external_code_size_text);
         mExternalDataSize = (TextView)view.findViewById(R.id.external_data_size_text);
-        
+
+        if (Environment.isExternalStorageEmulated()) {
+            ((View)mExternalCodeSize.getParent()).setVisibility(View.GONE);
+            ((View)mExternalDataSize.getParent()).setVisibility(View.GONE);
+        }
+
         // Get Control button panel
         View btnPanel = view.findViewById(R.id.control_buttons_panel);
         mForceStopButton = (Button) btnPanel.findViewById(R.id.left_button);
         mForceStopButton.setText(R.string.force_stop);
         mUninstallButton = (Button)btnPanel.findViewById(R.id.right_button);
         mForceStopButton.setEnabled(false);
+        
+        // Get More Control button panel
+        mMoreControlButtons = view.findViewById(R.id.more_control_buttons_panel);
+        mMoreControlButtons.findViewById(R.id.left_button).setVisibility(View.INVISIBLE);
+        mSpecialDisableButton = (Button)mMoreControlButtons.findViewById(R.id.right_button);
+        mMoreControlButtons.setVisibility(View.GONE);
         
         // Initialize clear data and move install location buttons
         View data_buttons_panel = view.findViewById(R.id.data_buttons_panel);
@@ -411,6 +473,65 @@ public class InstalledAppDetails extends Fragment
         mNotificationSwitch = (CompoundButton) view.findViewById(R.id.notification_switch);
 
         return view;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, UNINSTALL_ALL_USERS_MENU, 1, R.string.uninstall_all_users_text)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        boolean showIt = true;
+        if (mUpdatedSysApp) {
+            showIt = false;
+        } else if (mAppEntry == null) {
+            showIt = false;
+        } else if ((mAppEntry.info.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
+            showIt = false;
+        } else if (mPackageInfo == null || mDpm.packageHasActiveAdmins(mPackageInfo.packageName)) {
+            showIt = false;
+        } else if (UserHandle.myUserId() != 0) {
+            showIt = false;
+        } else if (mUserManager.getUsers().size() < 2) {
+            showIt = false;
+        }
+        menu.findItem(UNINSTALL_ALL_USERS_MENU).setVisible(showIt);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int menuId = item.getItemId();
+        if (menuId == UNINSTALL_ALL_USERS_MENU) {
+            uninstallPkg(mAppEntry.info.packageName, true, false);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_UNINSTALL) {
+            if (mDisableAfterUninstall) {
+                mDisableAfterUninstall = false;
+                try {
+                    ApplicationInfo ainfo = getActivity().getPackageManager().getApplicationInfo(
+                            mAppEntry.info.packageName, PackageManager.GET_UNINSTALLED_PACKAGES
+                            | PackageManager.GET_DISABLED_COMPONENTS);
+                    if ((ainfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0) {
+                        new DisableChanger(this, mAppEntry.info,
+                                PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER)
+                                .execute((Object)null);
+                    }
+                } catch (NameNotFoundException e) {
+                }
+            }
+            if (!refreshUi()) {
+                setIntentAndFinish(true, true);
+            }
+        }
     }
 
     // Utility method to set applicaiton label and icon.
@@ -478,10 +599,7 @@ public class InstalledAppDetails extends Fragment
     public void onRunningStateChanged(boolean running) {
     }
 
-    private boolean refreshUi() {
-        if (mMoveInProgress) {
-            return true;
-        }
+    private String retrieveAppEntry() {
         final Bundle args = getArguments();
         String packageName = (args != null) ? args.getString(ARG_PACKAGE_NAME) : null;
         if (packageName == null) {
@@ -492,22 +610,38 @@ public class InstalledAppDetails extends Fragment
             }
         }
         mAppEntry = mState.getEntry(packageName);
-        
+        if (mAppEntry != null) {
+            // Get application info again to refresh changed properties of application
+            try {
+                mPackageInfo = mPm.getPackageInfo(mAppEntry.info.packageName,
+                        PackageManager.GET_DISABLED_COMPONENTS |
+                        PackageManager.GET_UNINSTALLED_PACKAGES |
+                        PackageManager.GET_SIGNATURES);
+            } catch (NameNotFoundException e) {
+                Log.e(TAG, "Exception when retrieving package:" + mAppEntry.info.packageName, e);
+            }
+        } else {
+            Log.w(TAG, "Missing AppEntry; maybe reinstalling?");
+            mPackageInfo = null;
+        }
+
+        return packageName;
+    }
+
+    private boolean refreshUi() {
+        if (mMoveInProgress) {
+            return true;
+        }
+        final String packageName = retrieveAppEntry();
+
         if (mAppEntry == null) {
             return false; // onCreate must have failed, make sure to exit
         }
-        
-        // Get application info again to refresh changed properties of application
-        try {
-            mPackageInfo = mPm.getPackageInfo(mAppEntry.info.packageName,
-                    PackageManager.GET_DISABLED_COMPONENTS |
-                    PackageManager.GET_UNINSTALLED_PACKAGES |
-                    PackageManager.GET_SIGNATURES);
-        } catch (NameNotFoundException e) {
-            Log.e(TAG, "Exception when retrieving package:" + mAppEntry.info.packageName, e);
+
+        if (mPackageInfo == null) {
             return false; // onCreate must have failed, make sure to exit
         }
-        
+
         // Get list of preferred activities
         List<ComponentName> prefActList = new ArrayList<ComponentName>();
         
@@ -518,7 +652,7 @@ public class InstalledAppDetails extends Fragment
             Log.i(TAG, "Have " + prefActList.size() + " number of activities in preferred list");
         boolean hasUsbDefaults = false;
         try {
-            hasUsbDefaults = mUsbManager.hasDefaults(packageName);
+            hasUsbDefaults = mUsbManager.hasDefaults(packageName, UserHandle.myUserId());
         } catch (RemoteException e) {
             Log.e(TAG, "mUsbManager.hasDefaults", e);
         }
@@ -587,8 +721,43 @@ public class InstalledAppDetails extends Fragment
         // Security permissions section
         LinearLayout permsView = (LinearLayout) mRootView.findViewById(R.id.permissions_section);
         AppSecurityPermissions asp = new AppSecurityPermissions(getActivity(), packageName);
-        if (asp.getPermissionCount() > 0) {
+        int premiumSmsPermission = getPremiumSmsPermission(packageName);
+        // Premium SMS permission implies the app also has SEND_SMS permission, so the original
+        // application permissions list doesn't have to be shown/hidden separately. The premium
+        // SMS subsection should only be visible if the app has tried to send to a premium SMS.
+        if (asp.getPermissionCount() > 0
+                || premiumSmsPermission != SmsUsageMonitor.PREMIUM_SMS_PERMISSION_UNKNOWN) {
             permsView.setVisibility(View.VISIBLE);
+        } else {
+            permsView.setVisibility(View.GONE);
+        }
+        // Premium SMS permission subsection
+        TextView securityBillingDesc = (TextView) permsView.findViewById(
+                R.id.security_settings_billing_desc);
+        LinearLayout securityBillingList = (LinearLayout) permsView.findViewById(
+                R.id.security_settings_billing_list);
+        if (premiumSmsPermission != SmsUsageMonitor.PREMIUM_SMS_PERMISSION_UNKNOWN) {
+            // Show the premium SMS permission selector
+            securityBillingDesc.setVisibility(View.VISIBLE);
+            securityBillingList.setVisibility(View.VISIBLE);
+            Spinner spinner = (Spinner) permsView.findViewById(
+                    R.id.security_settings_premium_sms_list);
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+                    R.array.security_settings_premium_sms_values,
+                    android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(adapter);
+            // List items are in the same order as SmsUsageMonitor constants, offset by 1.
+            spinner.setSelection(premiumSmsPermission - 1);
+            spinner.setOnItemSelectedListener(new PremiumSmsSelectionListener(
+                    packageName, mSmsManager));
+        } else {
+            // Hide the premium SMS permission selector
+            securityBillingDesc.setVisibility(View.GONE);
+            securityBillingList.setVisibility(View.GONE);
+        }
+        // App permissions subsection
+        if (asp.getPermissionCount() > 0) {
             // Make the security sections header visible
             LinearLayout securityList = (LinearLayout) permsView.findViewById(
                     R.id.security_settings_list);
@@ -634,15 +803,72 @@ public class InstalledAppDetails extends Fragment
                             mPackageInfo.applicationInfo.loadLabel(mPm), appListStr));
                 }
             }
-        } else {
-            permsView.setVisibility(View.GONE);
         }
         
         checkForceStop();
         setAppLabelAndIcon(mPackageInfo);
         refreshButtons();
         refreshSizeInfo();
+
+        if (!mInitialized) {
+            // First time init: are we displaying an uninstalled app?
+            mInitialized = true;
+            mShowUninstalled = (mAppEntry.info.flags&ApplicationInfo.FLAG_INSTALLED) == 0;
+        } else {
+            // All other times: if the app no longer exists then we want
+            // to go away.
+            try {
+                ApplicationInfo ainfo = getActivity().getPackageManager().getApplicationInfo(
+                        mAppEntry.info.packageName, PackageManager.GET_UNINSTALLED_PACKAGES
+                        | PackageManager.GET_DISABLED_COMPONENTS);
+                if (!mShowUninstalled) {
+                    // If we did not start out with the app uninstalled, then
+                    // it transitioning to the uninstalled state for the current
+                    // user means we should go away as well.
+                    return (ainfo.flags&ApplicationInfo.FLAG_INSTALLED) != 0;
+                }
+            } catch (NameNotFoundException e) {
+                return false;
+            }
+        }
+
         return true;
+    }
+
+    private static class PremiumSmsSelectionListener implements AdapterView.OnItemSelectedListener {
+        private final String mPackageName;
+        private final ISms mSmsManager;
+
+        PremiumSmsSelectionListener(String packageName, ISms smsManager) {
+            mPackageName = packageName;
+            mSmsManager = smsManager;
+        }
+
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position,
+                long id) {
+            if (position >= 0 && position < 3) {
+                Log.d(TAG, "Selected premium SMS policy " + position);
+                setPremiumSmsPermission(mPackageName, (position + 1));
+            } else {
+                Log.e(TAG, "Error: unknown premium SMS policy " + position);
+            }
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+            // Ignored
+        }
+
+        private void setPremiumSmsPermission(String packageName, int permission) {
+            try {
+                if (mSmsManager != null) {
+                    mSmsManager.setPremiumSmsPermission(packageName, permission);
+                }
+            } catch (RemoteException ex) {
+                // ignored
+            }
+        }
     }
     
     private void resetLaunchDefaultsUi(TextView title, TextView autoLaunchView) {
@@ -675,22 +901,28 @@ public class InstalledAppDetails extends Fragment
             
         } else {
             mHaveSizes = true;
-            if (mLastCodeSize != mAppEntry.codeSize) {
-                mLastCodeSize = mAppEntry.codeSize;
-                mAppSize.setText(getSizeStr(mAppEntry.codeSize));
+            long codeSize = mAppEntry.codeSize;
+            long dataSize = mAppEntry.dataSize;
+            if (Environment.isExternalStorageEmulated()) {
+                codeSize += mAppEntry.externalCodeSize;
+                dataSize +=  mAppEntry.externalDataSize;
+            } else {
+                if (mLastExternalCodeSize != mAppEntry.externalCodeSize) {
+                    mLastExternalCodeSize = mAppEntry.externalCodeSize;
+                    mExternalCodeSize.setText(getSizeStr(mAppEntry.externalCodeSize));
+                }
+                if (mLastExternalDataSize !=  mAppEntry.externalDataSize) {
+                    mLastExternalDataSize =  mAppEntry.externalDataSize;
+                    mExternalDataSize.setText(getSizeStr( mAppEntry.externalDataSize));
+                }
             }
-            if (mLastDataSize != mAppEntry.dataSize) {
-                mLastDataSize = mAppEntry.dataSize;
-                mDataSize.setText(getSizeStr(mAppEntry.dataSize));
+            if (mLastCodeSize != codeSize) {
+                mLastCodeSize = codeSize;
+                mAppSize.setText(getSizeStr(codeSize));
             }
-            if (mLastExternalCodeSize != mAppEntry.externalCodeSize) {
-                mLastExternalCodeSize = mAppEntry.externalCodeSize;
-                mExternalCodeSize.setText(getSizeStr(mAppEntry.externalCodeSize));
-            }
-            long nonCacheExtDataSize = mAppEntry.externalDataSize - mAppEntry.externalCacheSize;
-            if (mLastExternalDataSize != nonCacheExtDataSize) {
-                mLastExternalDataSize = nonCacheExtDataSize;
-                mExternalDataSize.setText(getSizeStr(nonCacheExtDataSize));
+            if (mLastDataSize != dataSize) {
+                mLastDataSize = dataSize;
+                mDataSize.setText(getSizeStr(dataSize));
             }
             long cacheSize = mAppEntry.cacheSize + mAppEntry.externalCacheSize;
             if (mLastCacheSize != cacheSize) {
@@ -702,7 +934,7 @@ public class InstalledAppDetails extends Fragment
                 mTotalSize.setText(getSizeStr(mAppEntry.size));
             }
             
-            if ((mAppEntry.dataSize+nonCacheExtDataSize) <= 0 || !mCanClearData) {
+            if ((mAppEntry.dataSize+ mAppEntry.externalDataSize) <= 0 || !mCanClearData) {
                 mClearDataButton.setEnabled(false);
             } else {
                 mClearDataButton.setEnabled(true);
@@ -744,6 +976,7 @@ public class InstalledAppDetails extends Fragment
             mMoveAppButton.setText(R.string.moving);
             mMoveAppButton.setEnabled(false);
             mUninstallButton.setEnabled(false);
+            mSpecialDisableButton.setEnabled(false);
         }
     }
 
@@ -835,7 +1068,8 @@ public class InstalledAppDetails extends Fragment
                             new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // Clear user data here
-                            getOwner().uninstallPkg(getOwner().mAppEntry.info.packageName);
+                            getOwner().uninstallPkg(getOwner().mAppEntry.info.packageName,
+                                    false, false);
                         }
                     })
                     .setNegativeButton(R.string.dlg_cancel, null)
@@ -926,17 +1160,33 @@ public class InstalledAppDetails extends Fragment
                         }
                     })
                     .create();
+                case DLG_SPECIAL_DISABLE:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(getActivity().getText(R.string.app_special_disable_dlg_title))
+                    .setIconAttribute(android.R.attr.alertDialogIcon)
+                    .setMessage(getActivity().getText(R.string.app_special_disable_dlg_text))
+                    .setPositiveButton(R.string.dlg_ok,
+                            new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Clear user data here
+                            getOwner().uninstallPkg(getOwner().mAppEntry.info.packageName,
+                                    false, true);
+                        }
+                    })
+                    .setNegativeButton(R.string.dlg_cancel, null)
+                    .create();
             }
             throw new IllegalArgumentException("unknown id " + id);
         }
     }
 
-    private void uninstallPkg(String packageName) {
+    private void uninstallPkg(String packageName, boolean allUsers, boolean andDisable) {
          // Create new intent to launch Uninstaller activity
         Uri packageURI = Uri.parse("package:"+packageName);
-        Intent uninstallIntent = new Intent(Intent.ACTION_DELETE, packageURI);
-        startActivity(uninstallIntent);
-        setIntentAndFinish(true, true);
+        Intent uninstallIntent = new Intent(Intent.ACTION_UNINSTALL_PACKAGE, packageURI);
+        uninstallIntent.putExtra(Intent.EXTRA_UNINSTALL_ALL_USERS, allUsers);
+        startActivityForResult(uninstallIntent, REQUEST_UNINSTALL);
+        mDisableAfterUninstall = andDisable;
     }
 
     private void forceStopPackage(String pkgName) {
@@ -976,6 +1226,7 @@ public class InstalledAppDetails extends Fragment
                     Uri.fromParts("package", mAppEntry.info.packageName, null));
             intent.putExtra(Intent.EXTRA_PACKAGES, new String[] { mAppEntry.info.packageName });
             intent.putExtra(Intent.EXTRA_UID, mAppEntry.info.uid);
+            intent.putExtra(Intent.EXTRA_USER_HANDLE, UserHandle.getUserId(mAppEntry.info.uid));
             getActivity().sendOrderedBroadcast(intent, null, mCheckKillProcessesReceiver, null,
                     Activity.RESULT_CANCELED, null, null);
         }
@@ -1013,6 +1264,17 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private int getPremiumSmsPermission(String packageName) {
+        try {
+            if (mSmsManager != null) {
+                return mSmsManager.getPremiumSmsPermission(packageName);
+            }
+        } catch (RemoteException ex) {
+            // ignored
+        }
+        return SmsUsageMonitor.PREMIUM_SMS_PERMISSION_UNKNOWN;
+    }
+
     /*
      * Method implementing functionality of buttons clicked
      * @see android.view.View.OnClickListener#onClick(android.view.View)
@@ -1031,14 +1293,18 @@ public class InstalledAppDetails extends Fragment
                                 PackageManager.COMPONENT_ENABLED_STATE_DEFAULT)
                         .execute((Object)null);
                     }
+                } else if ((mAppEntry.info.flags & ApplicationInfo.FLAG_INSTALLED) == 0) {
+                    uninstallPkg(packageName, true, false);
                 } else {
-                    uninstallPkg(packageName);
+                    uninstallPkg(packageName, false, false);
                 }
             }
+        } else if(v == mSpecialDisableButton) {
+            showDialogInner(DLG_SPECIAL_DISABLE, 0);
         } else if(v == mActivitiesButton) {
             mPm.clearPackagePreferredActivities(packageName);
             try {
-                mUsbManager.clearDefaults(packageName);
+                mUsbManager.clearDefaults(packageName, UserHandle.myUserId());
             } catch (RemoteException e) {
                 Log.e(TAG, "mUsbManager.clearDefaults", e);
             }
@@ -1053,7 +1319,7 @@ public class InstalledAppDetails extends Fragment
                     Intent intent = new Intent(Intent.ACTION_DEFAULT);
                     intent.setClassName(mAppEntry.info.packageName,
                             mAppEntry.info.manageSpaceActivityName);
-                    startActivityForResult(intent, -1);
+                    startActivityForResult(intent, REQUEST_MANAGE_SPACE);
                 }
             } else {
                 showDialogInner(DLG_CLEAR_DATA, 0);

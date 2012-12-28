@@ -159,19 +159,6 @@
     <item msgid="6670588712989942178">"Nur 5 GHz"</item>
     <item msgid="2715516524973207876">"Nur 2,4 GHz"</item>
   </string-array>
-  <string-array name="wifi_countrycode_entries">
-    <item>Vereinigte Staaten</item>
-    <item>Kanada, Taiwan</item>
-    <item>Deutschland</item>
-    <item>Europa</item>
-    <item>Japan, Russland</item>
-    <item>Australien</item>
-    <item>China</item>
-    <item>Korea</item>
-    <item>Türkei</item>
-    <item>Singapur</item>
-    <item>Brasilien</item>
-  </string-array>
   <string-array name="usage_stats_display_order_types">
     <item msgid="2100172576767439288">"Nutzungszeit"</item>
     <item msgid="3703676222230317933">"Startzähler"</item>
@@ -266,6 +253,19 @@
     <item msgid="3170120558236848008">"Animationsmaßstab: 5x"</item>
     <item msgid="1069584980746680398">"Animationsmaßstab: 10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Keine"</item>
+    <item msgid="688482401508173818">"720 x 480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280 x 720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920 x 1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280 x 720 tvdpi und 1920 x 1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Keine"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (Grafik)"</item>
+    <item msgid="1340692776955662664">"Aufrufliste für glGetError"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Standardlimit"</item>
     <item msgid="4071574792028999443">"Keine Hintergrundprozesse"</item>
@@ -290,126 +290,66 @@
     <item msgid="4042143101664725090">"Timeout"</item>
     <item msgid="7664124146786465092">"Nicht erfolgreich"</item>
   </string-array>
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Fragen"</item>
+    <item msgid="5077768429488260031">"Nie zulassen"</item>
+    <item msgid="1417929597727989746">"Immer zulassen"</item>
+  </string-array>
 
-    <!-- **** CYANOGENMOD EDITS START **** -->
+  <!-- **** CYANOGENMOD EDITS START **** -->
 
-    <!-- Volume Overlay options. -->
-    <string-array name="volume_overlay_entries">
-        <item>Einzeln</item>
-        <item>Erweiterbar</item>
-        <item>Erweitert</item>
-        <item>Keine</item>
-    </string-array>
+  <!-- Volume Overlay options -->
+  <string-array name="volume_overlay_entries">
+    <item>Einzeln</item>
+    <item>Erweiterbar</item>
+    <item>Erweitert</item>
+    <item>Keine</item>
+  </string-array>
 
-    <!-- Silent mode options. -->
-    <string-array name="silent_mode_entries">
-      <item>"Aus"</item>
-      <item>"Vibrieren"</item>
-      <item>"Stummschalten"</item>
-    </string-array>
+  <!-- Performance settings -->
+  <string-array name="pref_zram_size_entries">
+    <item>Deaktiviert</item>
+    <item>10 %</item>
+    <item>18 % (Standard)</item>
+    <item>26 %</item>
+  </string-array>
 
-    <!-- Arrays required by Automatic Backlight. -->
-    <string-array name="entries_light_filter_window">
-      <item>2 Sekunden</item>
-      <item>5 Sekunden</item>
-      <item>10 Sekunden</item>
-      <item>20 Sekunden</item>
-      <item>30 Sekunden</item>
-      <item>60 Sekunden</item>
-    </string-array>
+  <!-- Profile mode options. -->
+  <string-array name="profile_entries">
+    <item>Aktivieren</item>
+    <item>Deaktivieren</item>
+    <item>Nicht ändern</item>
+  </string-array>
 
-    <string-array name="entries_light_filter_reset">
-      <item>Aus</item>
-      <item>400 Lux</item>
-      <item>500 Lux</item>
-      <item>600 Lux</item>
-      <item>700 Lux</item>
-      <item>800 Lux</item>
-      <item>900 Lux</item>
-      <item>1000 Lux</item>
-      <item>1500 Lux</item>
-      <item>2000 Lux</item>
-      <item>2500 Lux</item>
-    </string-array>
+  <!-- Profile mode options. -->
+  <string-array name="profile_connection_entries">
+    <item>Deaktivieren</item>
+    <item>Aktivieren</item>
+  </string-array>
 
-    <string-array name="entries_light_filter_interval">
-      <item>0.5 Sekunden</item>
-      <item>1 Sekunde</item>
-      <item>2 Sekunden</item>
-      <item>5 Sekunden</item>
-      <item>10 Sekunden</item>
-    </string-array>
+  <!-- Arrays required by Notification Widgets. -->
+  <string-array name="entries_network_widget">
+    <item>2G&#x2009;/&#x2009;3G+2G</item>
+    <item>Nur 2G&#x2009;/&#x2009;nur 3G</item>
+    <item>Nur 2G&#x2009;/&#x2009;nur 3G&#x2009;/&#x2009;3G+2G</item>
+  </string-array>
 
-    <string-array name="entries_light_levels_dim">
-      <item>1</item>
-      <item>2</item>
-      <item>3</item>
-      <item>4</item>
-      <item>5</item>
-      <item>6</item>
-      <item>8</item>
-      <item>10</item>
-      <item>12</item>
-      <item>14</item>
-      <item>16</item>
-      <item>18</item>
-      <item>20 (Standard)</item>
-      <item>22</item>
-      <item>24</item>
-      <item>26</item>
-    </string-array>
+  <string-array name="entries_flash_widget">
+    <item>Normal</item>
+    <item>Hoch</item>
+  </string-array>
 
-    <!-- Arrays required by Notification Widgets. -->
-    <string-array name="entries_network_widget">
-      <item>2G&#x2009;/&#x2009;3G+2G</item>
-      <item>Nur 2G&#x2009;/&#x2009;nur 3G</item>
-      <item>Nur 2G&#x2009;/&#x2009;nur 3G&#x2009;/&#x2009;3G+2G</item>
-    </string-array>
+  <string-array name="haptic_feedback_entries">
+    <item>Globale Einstellungen verwenden</item>
+    <item>Aktivieren</item>
+    <item>Deaktivieren</item>
+  </string-array>
 
-    <string-array name="entries_screentimeout_widget">
-      <item>15s/1m/5m</item>
-      <item>30s/2m/5m</item>
-    </string-array>
+  <string-array name="entries_status_bar_am_pm">
+    <item>Normal</item>
+    <item>Klein</item>
+    <item>Aus (Standard)</item>
+  </string-array>
 
-    <string-array name="entries_flash_widget">
-      <item>Normal</item>
-      <item>Hoch</item>
-    </string-array>
-
-    <string-array name="haptic_feedback_entries">
-        <item>Benutze globale Einstellungen</item>
-        <item>Aktivieren</item>
-        <item>Deaktivieren</item>
-    </string-array>
-
-    <string-array name="pref_zram_size_entries">
-      <item>Deaktiviert</item>
-      <item>10%</item>
-      <item>18% (Standard)</item>
-      <item>26%</item>
-    </string-array>
-
-    <string-array name="entries_status_bar_am_pm">
-      <item>Normal</item>
-      <item>Klein</item>
-      <item>Aus (Standard)</item>
-    </string-array>
-
-    <!-- Profile mode options. -->
-    <string-array name="profile_entries">
-        <item>Aktivieren</item>
-        <item>Deaktivieren</item>
-        <item>Nicht modifizieren</item>
-    </string-array>
-
-    <!-- Profile mode options. -->
-    <string-array name="profile_connection_entries">
-        <item>Deaktivieren</item>
-        <item>Aktivieren</item>
-    </string-array>
-
-    <string-array name="location_entries_gps_source">
-        <item>Interne GPS-Antenne</item>
-    </string-array>
-    <!-- **** CYANOGENMOD EDITS END **** -->
+  <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>

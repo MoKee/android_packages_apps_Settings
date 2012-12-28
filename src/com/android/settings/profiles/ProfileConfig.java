@@ -19,13 +19,14 @@ package com.android.settings.profiles;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import android.app.AirplaneModeSettings;
 import android.app.AlertDialog;
 import android.app.ConnectionSettings;
 import android.app.Profile;
 import android.app.ProfileGroup;
 import android.app.ProfileManager;
+import android.app.RingModeSettings;
 import android.app.StreamSettings;
-import android.app.VibratorSettings;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -66,8 +67,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
 
     private ListPreference mScreenLockModePreference;
 
-    private ListPreference mAirplaneModePreference;
-
     // constant value that can be used to check return code from sub activity.
     private static final int PROFILE_GROUP_DETAILS = 1;
 
@@ -75,7 +74,9 @@ public class ProfileConfig extends SettingsPreferenceFragment
 
     private ArrayList<ConnectionItem> mConnections;
 
-    private VibratorItem[] mVibrators;
+    private RingModeItem mRingMode;
+
+    private AirplaneModeItem mAirplaneMode;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -98,11 +99,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
         if (WimaxHelper.isWimaxSupported(getActivity())) {
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIMAX, getString(R.string.toggleWimax)));
         }
-
-        mVibrators = new VibratorItem[] {
-                new VibratorItem(AudioManager.VIBRATE_TYPE_RINGER, getString(R.string.vibrator_type_ringer)),
-                new VibratorItem(AudioManager.VIBRATE_TYPE_NOTIFICATION, getString(R.string.vibrator_type_notification)),
-        };
 
         addPreferencesFromResource(R.xml.profile_config);
 
@@ -190,6 +186,43 @@ public class ProfileConfig extends SettingsPreferenceFragment
         PreferenceGroup systemPrefs = (PreferenceGroup) prefSet.findPreference("profile_system_settings");
         if (systemPrefs != null) {
             systemPrefs.removeAll();
+            // Ring mode preference
+            if (mRingMode == null) {
+                mRingMode = new RingModeItem();
+            }
+            RingModeSettings rms = mProfile.getRingMode();
+            if (rms == null) {
+                rms = new RingModeSettings();
+                mProfile.setRingMode(rms);
+            }
+            mRingMode.mSettings = rms;
+            ProfileRingModePreference rmp = new ProfileRingModePreference(getActivity());
+            rmp.setRingModeItem(mRingMode);
+            rmp.setTitle(R.string.ring_mode_title);
+            rmp.setPersistent(false);
+            rmp.setSummary(getActivity());
+            rmp.setOnPreferenceChangeListener(this);
+            mRingMode.mCheckbox = rmp;
+            systemPrefs.addPreference(rmp);
+
+            // Airplane mode preference
+            if (mAirplaneMode == null) {
+                mAirplaneMode = new AirplaneModeItem();
+            }
+            AirplaneModeSettings ams = mProfile.getAirplaneMode();
+            if (ams == null) {
+                ams = new AirplaneModeSettings();
+                mProfile.setAirplaneMode(ams);
+            }
+            mAirplaneMode.mSettings = ams;
+            ProfileAirplaneModePreference amp = new ProfileAirplaneModePreference(getActivity());
+            amp.setAirplaneModeItem(mAirplaneMode);
+            amp.setTitle(R.string.profile_airplanemode_title);
+            amp.setPersistent(false);
+            amp.setSummary(getActivity());
+            amp.setOnPreferenceChangeListener(this);
+            mAirplaneMode.mCheckbox = amp;
+            systemPrefs.addPreference(amp);
 
             // Lockscreen mode preference
             mScreenLockModePreference = new ListPreference(getActivity());
@@ -202,18 +235,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
             mScreenLockModePreference.setValue(String.valueOf(mProfile.getScreenLockMode()));
             mScreenLockModePreference.setOnPreferenceChangeListener(this);
             systemPrefs.addPreference(mScreenLockModePreference);
-
-            // Airplane mode preference
-            mAirplaneModePreference = new ListPreference(getActivity());
-            mAirplaneModePreference.setTitle(R.string.profile_airplanemode_title);
-                mAirplaneModePreference.setEntries(R.array.profile_airplanemode_entries);
-            mAirplaneModePreference.setEntryValues(R.array.profile_airplanemode_values);
-            mAirplaneModePreference.setPersistent(false);
-            mAirplaneModePreference.setSummary(getResources().getStringArray(
-                    R.array.profile_airplanemode_summaries)[mProfile.getAirplaneMode()]);
-            mAirplaneModePreference.setValue(String.valueOf(mProfile.getAirplaneMode()));
-            mAirplaneModePreference.setOnPreferenceChangeListener(this);
-            systemPrefs.addPreference(mAirplaneModePreference);
         }
 
         // Populate the audio streams list
@@ -237,38 +258,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
                 pref.setStreamItem(stream);
                 stream.mCheckbox = pref;
                 streamList.addPreference(pref);
-            }
-        }
-
-        // Populate the vibrator list
-        PreferenceGroup vibratorList = (PreferenceGroup) prefSet.findPreference("profile_vibratoroverrides");
-        if (vibratorList != null) {
-            vibratorList.removeAll();
-            for (VibratorItem vibrator : mVibrators) {
-                VibratorSettings settings = mProfile.getSettingsForVibrator(vibrator.mVibratorId);
-                if (settings == null) {
-                    settings = new VibratorSettings(vibrator.mVibratorId);
-                    mProfile.setVibratorSettings(settings);
-                }
-                vibrator.mSettings = settings;
-                VibratorPreference pref = new VibratorPreference(getActivity());
-                pref.setKey("vibrator_" + vibrator.mVibratorId);
-                pref.setTitle(vibrator.mLabel);
-                switch (settings.getValue()) {
-                case VibratorSettings.OFF:
-                    pref.setSummary(getString(R.string.vibrator_state_disabled));
-                    break;
-                case VibratorSettings.SILENT:
-                    pref.setSummary(getString(R.string.vibrator_state_silent));
-                    break;
-                default:
-                    pref.setSummary(getString(R.string.vibrator_state_enabled));
-                    break;
-                }
-                pref.setPersistent(false);
-                pref.setVibratorItem(vibrator);
-                vibrator.mCheckbox = pref;
-                vibratorList.addPreference(pref);
             }
         }
 
@@ -326,6 +315,10 @@ public class ProfileConfig extends SettingsPreferenceFragment
                     connection.mSettings.setOverride((Boolean) newValue);
                 }
             }
+        } else if (preference == mRingMode.mCheckbox) {
+            mRingMode.mSettings.setOverride((Boolean) newValue);
+        } else if (preference == mAirplaneMode.mCheckbox) {
+            mAirplaneMode.mSettings.setOverride((Boolean) newValue);
         } else if (preference == mNamePreference) {
             String name = mNamePreference.getName().toString();
             if (!name.equals(mProfile.getName())) {
@@ -340,11 +333,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
             mProfile.setScreenLockMode(Integer.valueOf((String) newValue));
             mScreenLockModePreference.setSummary(getResources().getStringArray(
                     R.array.profile_lockmode_summaries)[mProfile.getScreenLockMode()]);
-        } else if (preference == mAirplaneModePreference) {
-            mProfile.setAirplaneMode(Integer.valueOf((String) newValue));
-            mAirplaneModePreference
-                    .setSummary(getResources().getStringArray(R.array.profile_airplanemode_summaries)[mProfile
-                            .getAirplaneMode()]);
         }
         return true;
     }
@@ -379,7 +367,7 @@ public class ProfileConfig extends SettingsPreferenceFragment
         } else {
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setTitle(R.string.profile_menu_delete);
-            alert.setIcon(android.R.drawable.ic_dialog_alert);
+            alert.setIconAttribute(android.R.attr.alertDialogIcon);
             alert.setMessage(R.string.profile_delete_confirm);
             alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
@@ -425,15 +413,21 @@ public class ProfileConfig extends SettingsPreferenceFragment
         }
     }
 
-    static class VibratorItem {
-        int mVibratorId;
-        String mLabel;
-        VibratorSettings mSettings;
-        VibratorPreference mCheckbox;
+    static class RingModeItem {
+        RingModeSettings mSettings;
+        ProfileRingModePreference mCheckbox;
 
-        public VibratorItem(int vibratorId, String label) {
-            mVibratorId = vibratorId;
-            mLabel = label;
+        public RingModeItem() {
+            // nothing to do
+        }
+    }
+
+    static class AirplaneModeItem {
+        AirplaneModeSettings mSettings;
+        ProfileAirplaneModePreference mCheckbox;
+
+        public AirplaneModeItem() {
+            // nothing to do
         }
     }
 }

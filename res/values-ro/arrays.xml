@@ -253,6 +253,19 @@
     <item msgid="3170120558236848008">"Animaţie la scara 5x"</item>
     <item msgid="1069584980746680398">"Animaţie la scara 10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Niciuna"</item>
+    <item msgid="688482401508173818">"720x480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280x720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920x1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280x720 tvdpi şi 1920x1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Niciuna"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (imagini)"</item>
+    <item msgid="1340692776955662664">"Apelaţi stiva pentru glGetError"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Limita standard"</item>
     <item msgid="4071574792028999443">"Nu există procese de fundal"</item>
@@ -277,47 +290,31 @@
     <item msgid="4042143101664725090">"Timp limită"</item>
     <item msgid="7664124146786465092">"Nereuşită"</item>
   </string-array>
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Întrebaţi"</item>
+    <item msgid="5077768429488260031">"Nu permiteţi niciodată"</item>
+    <item msgid="1417929597727989746">"Permiteţi întotdeauna"</item>
+  </string-array>
   <string-array name="volume_overlay_entries">
     <item>"Singur"</item>
     <item>"Extensibil"</item>
     <item>"Extins"</item>
     <item>"Nici unul"</item>
   </string-array>
-  <string-array name="silent_mode_entries">
+  <string-array name="pref_zram_size_entries">
     <item>"Dezactivat"</item>
-    <item>"Vibrare"</item>
-    <item>"Mut"</item>
+    <item>10%</item>
+    <item>18% (prestabilit)</item>
+    <item>26%</item>
   </string-array>
-  <string-array name="entries_light_filter_reset">
+  <string-array name="profile_entries">
+    <item>"Activat"</item>
     <item>"Dezactivat"</item>
-    <item>"400 lx"</item>
-    <item>"500 lx"</item>
-    <item>"600 lx"</item>
-    <item>"700 lx"</item>
-    <item>"800 lx"</item>
-    <item>"900 lx"</item>
-    <item>"1000 lx"</item>
-    <item>"1500 lx"</item>
-    <item>"2000 lx"</item>
-    <item>"2500 lx"</item>
+    <item>"Fără modificări"</item>
   </string-array>
-  <string-array name="entries_light_levels_dim">
-    <item>"1"</item>
-    <item>"2"</item>
-    <item>"3"</item>
-    <item>"4"</item>
-    <item>"5"</item>
-    <item>"6"</item>
-    <item>"8"</item>
-    <item>"10"</item>
-    <item>"12"</item>
-    <item>"14"</item>
-    <item>"16"</item>
-    <item>"18"</item>
-    <item>"20 (prestabilit)"</item>
-    <item>"22"</item>
-    <item>"24"</item>
-    <item>"26"</item>
+  <string-array name="profile_connection_entries">
+    <item>"Dezactivare"</item>
+    <item>"Activare"</item>
   </string-array>
   <string-array name="entries_network_widget">
     <item>"2G/3G+2G"</item>
@@ -338,28 +335,4 @@
     <item>"Mic"</item>
     <item>"Nici unul (prestabilit)"</item>
   </string-array>
-  <string-array name="profile_entries">
-    <item>"Activat"</item>
-    <item>"Dezactivat"</item>
-    <item>"Fără modificări"</item>
-    </string-array>
-  <string-array name="profile_connection_entries">
-    <item>"Dezactivare"</item>
-    <item>"Activare"</item>
-  </string-array>
-  <string-array name="location_entries_gps_source">
-    <item>"Utilizaţi GPS-ul intern"</item>
-  </string-array>
-  <string-array name="wifi_countrycode_entries">
-    <item>"Statele Unite"</item>
-    <item>"Canada, Taiwan"</item>
-    <item>"Germania"</item>
-    <item>"Europa"</item>
-    <item>"Japonia, Rusia"</item>
-    <item>"Australia"</item>
-    <item>"China"</item>
-    <item>"Corea"</item>
-    <item>"Turcia"</item>
-    <item>"Singapore"</item>
-    </string-array>
 </resources>

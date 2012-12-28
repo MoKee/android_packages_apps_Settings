@@ -22,6 +22,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothPan;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
+import android.util.Log;
 
 import com.android.settings.R;
 
@@ -32,7 +33,11 @@ import java.util.List;
  * PanProfile handles Bluetooth PAN profile (NAP and PANU).
  */
 final class PanProfile implements LocalBluetoothProfile {
+    private static final String TAG = "PanProfile";
+    private static boolean V = true;
+
     private BluetoothPan mService;
+    private boolean mIsProfileReady;
 
     // Tethering direction for each device
     private final HashMap<BluetoothDevice, Integer> mDeviceRoleMap =
@@ -48,12 +53,19 @@ final class PanProfile implements LocalBluetoothProfile {
             implements BluetoothProfile.ServiceListener {
 
         public void onServiceConnected(int profile, BluetoothProfile proxy) {
+            if (V) Log.d(TAG,"Bluetooth service connected");
             mService = (BluetoothPan) proxy;
+            mIsProfileReady=true;
         }
 
         public void onServiceDisconnected(int profile) {
-            mService = null;
+            if (V) Log.d(TAG,"Bluetooth service disconnected");
+            mIsProfileReady=false;
         }
+    }
+
+    public boolean isProfileReady() {
+        return mIsProfileReady;
     }
 
     PanProfile(Context context) {
@@ -71,6 +83,7 @@ final class PanProfile implements LocalBluetoothProfile {
     }
 
     public boolean connect(BluetoothDevice device) {
+        if (mService == null) return false;
         List<BluetoothDevice> sinks = mService.getConnectedDevices();
         if (sinks != null) {
             for (BluetoothDevice sink : sinks) {
@@ -81,15 +94,20 @@ final class PanProfile implements LocalBluetoothProfile {
     }
 
     public boolean disconnect(BluetoothDevice device) {
+        if (mService == null) return false;
         return mService.disconnect(device);
     }
 
     public int getConnectionStatus(BluetoothDevice device) {
+        if (mService == null) {
+            return BluetoothProfile.STATE_DISCONNECTED;
+        }
         return mService.getConnectionState(device);
     }
 
     public boolean isPreferred(BluetoothDevice device) {
-        return true;
+        // return current connection status so profile checkbox is set correctly
+        return getConnectionStatus(device) == BluetoothProfile.STATE_CONNECTED;
     }
 
     public int getPreferred(BluetoothDevice device) {
@@ -98,10 +116,6 @@ final class PanProfile implements LocalBluetoothProfile {
 
     public void setPreferred(BluetoothDevice device, boolean preferred) {
         // ignore: isPreferred is always true for PAN
-    }
-
-    public boolean isProfileReady() {
-        return true;
     }
 
     public String toString() {
@@ -121,7 +135,7 @@ final class PanProfile implements LocalBluetoothProfile {
     }
 
     public int getSummaryResourceForDevice(BluetoothDevice device) {
-        int state = mService.getConnectionState(device);
+        int state = getConnectionStatus(device);
         switch (state) {
             case BluetoothProfile.STATE_DISCONNECTED:
                 return R.string.bluetooth_pan_profile_summary_use_for;
@@ -152,6 +166,18 @@ final class PanProfile implements LocalBluetoothProfile {
             return mDeviceRoleMap.get(device) == BluetoothPan.LOCAL_NAP_ROLE;
         } else {
             return false;
+        }
+    }
+
+    protected void finalize() {
+        if (V) Log.d(TAG, "finalize()");
+        if (mService != null) {
+            try {
+                BluetoothAdapter.getDefaultAdapter().closeProfileProxy(BluetoothProfile.PAN, mService);
+                mService = null;
+            }catch (Throwable t) {
+                Log.w(TAG, "Error cleaning up PAN proxy", t);
+            }
         }
     }
 }

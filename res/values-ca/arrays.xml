@@ -60,7 +60,7 @@
     <item msgid="4322676235684793329">"30 minuts"</item>
   </string-array>
   <string-array name="entries_font_size">
-    <item msgid="8166647333858618801">"Petit"</item>
+    <item msgid="8166647333858618801">"Petita"</item>
     <item msgid="1932071435506638315">"Normal"</item>
     <item msgid="38373998008112077">"Gran"</item>
     <item msgid="7786168277516233536">"Enorme"</item>
@@ -70,13 +70,13 @@
     <item msgid="2361722960903353554">"Lenta"</item>
     <item msgid="1145554631248513562">"Normal"</item>
     <item msgid="7553665153391107454">"Ràpida"</item>
-    <item msgid="2538100882620724753">"Molt ràpid"</item>
+    <item msgid="2538100882620724753">"Molt ràpida"</item>
   </string-array>
   <string-array name="tts_pitch_entries">
     <item msgid="7526050907652687351">"Molt baix"</item>
     <item msgid="2692137425242433765">"Baixa"</item>
     <item msgid="3332408460740717754">"Normal"</item>
-    <item msgid="4907380534957572531">"Alta"</item>
+    <item msgid="4907380534957572531">"Alt"</item>
     <item msgid="4699640516390840297">"Molt alt"</item>
   </string-array>
   <string-array name="wifi_status">
@@ -213,7 +213,7 @@
   </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"Curt"</item>
-    <item msgid="2560532955514699713">"Mitjana"</item>
+    <item msgid="2560532955514699713">"Mitjà"</item>
     <item msgid="2372711992605524591">"Llarg"</item>
   </string-array>
   <string-array name="hdcp_checking_titles">
@@ -228,34 +228,47 @@
   </string-array>
   <string-array name="window_animation_scale_entries">
     <item msgid="8134156599370824081">"Animació desactivada"</item>
-    <item msgid="6624864048416710414">"Animació a escala 0,5x"</item>
-    <item msgid="2219332261255416635">"Animació a escala 1x"</item>
-    <item msgid="3544428804137048509">"Animació a escala 1,5x"</item>
-    <item msgid="3110710404225974514">"Animació a escala 2x"</item>
+    <item msgid="6624864048416710414">"Escala d\'animació 0,5x"</item>
+    <item msgid="2219332261255416635">"Escala d\'animació 1x"</item>
+    <item msgid="3544428804137048509">"Escala d\'animació 1,5x"</item>
+    <item msgid="3110710404225974514">"Escala d\'animació 2x"</item>
     <item msgid="4402738611528318731">"Animació a escala 5x"</item>
-    <item msgid="6189539267968330656">"Animació a escala 10x"</item>
+    <item msgid="6189539267968330656">"Escala d\'animació 10x"</item>
   </string-array>
   <string-array name="transition_animation_scale_entries">
     <item msgid="8464255836173039442">"Animació desactivada"</item>
-    <item msgid="3375781541913316411">"Animació a escala 0,5x"</item>
-    <item msgid="1991041427801869945">"Animació a escala 1x"</item>
-    <item msgid="4012689927622382874">"Animació a escala 1,5x"</item>
-    <item msgid="3289156759925947169">"Animació a escala 2x"</item>
-    <item msgid="7705857441213621835">"Animació a escala 5x"</item>
-    <item msgid="6660750935954853365">"Animació a escala 10x"</item>
+    <item msgid="3375781541913316411">"Escala d\'animació 0,5x"</item>
+    <item msgid="1991041427801869945">"Escala d\'animació 1x"</item>
+    <item msgid="4012689927622382874">"Escala d\'animació 1,5x"</item>
+    <item msgid="3289156759925947169">"Escala d\'animació 2x"</item>
+    <item msgid="7705857441213621835">"Escala d\'animació 5x"</item>
+    <item msgid="6660750935954853365">"Escala d\'animació 10x"</item>
   </string-array>
   <string-array name="animator_duration_scale_entries">
     <item msgid="6039901060648228241">"Animació desactivada"</item>
-    <item msgid="1138649021950863198">"Animació a escala 0,5x"</item>
-    <item msgid="4394388961370833040">"Animació a escala 1x"</item>
-    <item msgid="8125427921655194973">"Animació a escala 1,5x"</item>
+    <item msgid="1138649021950863198">"Escala d\'animació 0,5x"</item>
+    <item msgid="4394388961370833040">"Escala d\'animació 1x"</item>
+    <item msgid="8125427921655194973">"Escala d\'animació 1,5x"</item>
     <item msgid="3334024790739189573">"Animació a escala 2x"</item>
     <item msgid="3170120558236848008">"Animació a escala 5x"</item>
     <item msgid="1069584980746680398">"Animació a escala 10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Cap"</item>
+    <item msgid="688482401508173818">"720x480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280x720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920x1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280x720 tvdpi i 1920x1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Cap"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (gràfics)"</item>
+    <item msgid="1340692776955662664">"Pila de trucades de glGetError"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Límit estàndard"</item>
-    <item msgid="4071574792028999443">"Cap procés de fons"</item>
+    <item msgid="4071574792028999443">"Sense processos en segon pla"</item>
     <item msgid="4810006996171705398">"Com a màxim 1 procés"</item>
     <item msgid="8586370216857360863">"Com a màxim 2 processos"</item>
     <item msgid="836593137872605381">"Com a màxim 3 processos"</item>
@@ -276,5 +289,10 @@
     <item msgid="4039737283841672166">"Connectada"</item>
     <item msgid="4042143101664725090">"Temps d\'espera esgotat"</item>
     <item msgid="7664124146786465092">"Incorrecte"</item>
+  </string-array>
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Pregunta-ho"</item>
+    <item msgid="5077768429488260031">"No permetis mai"</item>
+    <item msgid="1417929597727989746">"Permet sempre"</item>
   </string-array>
 </resources>

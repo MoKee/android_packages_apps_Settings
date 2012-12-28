@@ -149,14 +149,6 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
         }
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        if ((mDefaultRatePref != null) && (mDefaultRatePref.getDialog() != null)) {
-            mDefaultRatePref.getDialog().dismiss();
-        }
-    }
-
     private void initSettings() {
         final ContentResolver resolver = getContentResolver();
 
@@ -192,56 +184,16 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
         checkVoiceData(mCurrentEngine);
     }
 
-    private Locale getPrefLocaleForEngine(String engine){
-        if (engine != null && mTts != null) {
-            final String localeString = mEnginesHelper.getLocalePrefForEngine(
-                    engine);
-            if (localeString != null) {
-                final String[] locale = TtsEngines.parseLocalePref(localeString);
-                return  new Locale(locale[0], locale[1], locale[2]);
-            }
-        }
-        return null;
-    }
-
-    // mTts.setLanguage is needed if preference locale is not the current locale
-    private Locale maybeUpdateTtsLanguage(String currentEngine) {
-        if (currentEngine != null && mTts != null) {
-            final Locale newLocale = getPrefLocaleForEngine(currentEngine);
-            final Locale engineLocale = mTts.getLanguage();
-            if (!newLocale.equals(engineLocale)) {
-                String[] locale = {
-                                    newLocale.getISO3Language(),
-                                    newLocale.getISO3Country(),
-                                    newLocale.getVariant()
-                                  };
-                if (DBG) Log.d(TAG, "Loading language ahead of sample check : " + locale);
-                if( mTts.setLanguage(newLocale) >= TextToSpeech.LANG_AVAILABLE ) {
-                    return newLocale;
-                }
-            }
-            return engineLocale;
-        }
-        return null;
-    }
-
     /**
      * Ask the current default engine to return a string of sample text to be
      * spoken to the user.
      */
     private void getSampleText() {
         String currentEngine = mTts.getCurrentEngine();
+
         if (TextUtils.isEmpty(currentEngine)) currentEngine = mTts.getDefaultEngine();
 
-        //The method TextToSpeachService#onLoadLanguage only advices of the use
-        //of a language, but not enforces to set it. So calling mTts.setLanguage()
-        //only check thats the language is available, but not loads the language.
-        //In these circumstances mTts.getLanguage() does not ensure that the
-        //language has been established. This is the case of the default PicoTTS
-        //implementation. As a solution, use the expected locale of
-        //maybeUpdateTtsLanguage method that returns this, if it is supported by
-        //the engine
-        Locale currentLocale = maybeUpdateTtsLanguage(currentEngine);
+        Locale currentLocale = mTts.getLanguage();
 
         // TODO: This is currently a hidden private API. The intent extras
         // and the intent action should be made public if we intend to make this
@@ -290,21 +242,16 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
     }
 
     private String getDefaultSampleString() {
-        if (mTts != null) {
-            String currentEngine = mTts.getCurrentEngine();
-            if (TextUtils.isEmpty(currentEngine)) currentEngine = mTts.getDefaultEngine();
-            Locale locale = getPrefLocaleForEngine(currentEngine);
-            if (locale != null) {
-                final String currentLang = locale.getISO3Language();
-                String[] strings = getActivity().getResources().getStringArray(
-                        R.array.tts_demo_strings);
-                String[] langs = getActivity().getResources().getStringArray(
-                        R.array.tts_demo_string_langs);
+        if (mTts != null && mTts.getLanguage() != null) {
+            final String currentLang = mTts.getLanguage().getISO3Language();
+            String[] strings = getActivity().getResources().getStringArray(
+                    R.array.tts_demo_strings);
+            String[] langs = getActivity().getResources().getStringArray(
+                    R.array.tts_demo_string_langs);
 
-                for (int i = 0; i < strings.length; ++i) {
-                    if (langs[i].equals(currentLang)) {
-                        return strings[i];
-                    }
+            for (int i = 0; i < strings.length; ++i) {
+                if (langs[i].equals(currentLang)) {
+                    return strings[i];
                 }
             }
         }
@@ -312,13 +259,7 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
     }
 
     private void onSampleTextReceived(int resultCode, Intent data) {
-        String sample = null;
-        //If lang is available, then the default sample string can
-        //be obtained from getPrefLocaleForEngine (currentLocale),
-        //instead of the mTts.getLanguage() that may not have been
-        //established in TextToSpeachService#onLoadLanguage method
-        if( resultCode >= TextToSpeech.LANG_AVAILABLE )
-            sample = getDefaultSampleString();
+        String sample = getDefaultSampleString();
 
         if (resultCode == TextToSpeech.LANG_AVAILABLE && data != null) {
             if (data != null && data.getStringExtra("sampleText") != null) {
@@ -334,21 +275,12 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
             // because this preference is not enabled otherwise.
             mTts.speak(sample, TextToSpeech.QUEUE_FLUSH, null);
         } else {
+            // TODO: Display an error here to the user.
             Log.e(TAG, "Did not have a sample string for the requested language");
-            new AlertDialog.Builder(getActivity())
-                        .setCancelable(false)
-                        .setIconAttribute(android.R.attr.alertDialogIcon)
-                        .setTitle(getActivity().getResources().getString(R.string.tts_play_example_not_found_title))
-                        .setMessage(getActivity().getResources().getString(R.string.tts_play_example_not_found_msg))
-                        .setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
-                                dialog.cancel();
-                            }
-                        })
-                        .show();
         }
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (KEY_DEFAULT_RATE.equals(preference.getKey())) {
             // Default rate
@@ -370,6 +302,7 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
     /**
      * Called when mPlayExample is clicked
      */
+    @Override
     public boolean onPreferenceClick(Preference preference) {
         if (preference == mPlayExample) {
             // Get the sample text from the TTS engine; onActivityResult will do
@@ -396,6 +329,7 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
         builder.setCancelable(true);
         builder.setPositiveButton(android.R.string.ok,
                 new DialogInterface.OnClickListener() {
+                    @Override
                     public void onClick(DialogInterface dialog, int which) {
                        updateDefaultEngine(key);
                     }

@@ -48,6 +48,7 @@ import static com.android.internal.util.Preconditions.checkNotNull;
 import static com.android.settings.Utils.prepareCustomPreferencesList;
 
 import android.animation.LayoutTransition;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -85,7 +86,7 @@ import android.os.Parcelable;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
-import android.os.UserId;
+import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.provider.Settings;
@@ -127,7 +128,7 @@ import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-import com.android.internal.telephony.Phone;
+import com.android.internal.telephony.PhoneConstants;
 import com.android.settings.drawable.InsetBoundsDrawable;
 import com.android.settings.net.ChartData;
 import com.android.settings.net.ChartDataLoader;
@@ -446,6 +447,7 @@ public class DataUsageSummary extends Fragment {
     public void onPrepareOptionsMenu(Menu menu) {
         final Context context = getActivity();
         final boolean appDetailMode = isAppDetailMode();
+        final boolean isOwner = ActivityManager.getCurrentUser() == UserHandle.USER_OWNER;
 
         mMenuDataRoaming = menu.findItem(R.id.data_usage_menu_roaming);
         mMenuDataRoaming.setVisible(hasReadyMobileRadio(context) && !appDetailMode);
@@ -454,12 +456,14 @@ public class DataUsageSummary extends Fragment {
         mMenuRestrictBackground = menu.findItem(R.id.data_usage_menu_restrict_background);
         mMenuRestrictBackground.setVisible(hasReadyMobileRadio(context) && !appDetailMode);
         mMenuRestrictBackground.setChecked(mPolicyManager.getRestrictBackground());
+        mMenuRestrictBackground.setVisible(isOwner);
 
         mMenuAutoSync = menu.findItem(R.id.data_usage_menu_auto_sync);
         mMenuAutoSync.setChecked(ContentResolver.getMasterSyncAutomatically());
+        mMenuAutoSync.setVisible(!appDetailMode);
 
         final MenuItem split4g = menu.findItem(R.id.data_usage_menu_split_4g);
-        split4g.setVisible(hasReadyMobile4gRadio(context) && !appDetailMode);
+        split4g.setVisible(hasReadyMobile4gRadio(context) && isOwner && !appDetailMode);
         split4g.setChecked(isMobilePolicySplit());
 
         final MenuItem showWifi = menu.findItem(R.id.data_usage_menu_show_wifi);
@@ -549,7 +553,11 @@ public class DataUsageSummary extends Fragment {
                 return true;
             }
             case R.id.data_usage_menu_auto_sync: {
-                ConfirmAutoSyncChangeFragment.show(this, !item.isChecked());
+                if (ActivityManager.isUserAMonkey()) {
+                    Log.d("SyncState", "ignoring monkey's attempt to flip global sync state");
+                } else {
+                    ConfirmAutoSyncChangeFragment.show(this, !item.isChecked());
+                }
                 return true;
             }
         }
@@ -680,6 +688,7 @@ public class DataUsageSummary extends Fragment {
 
         final Context context = getActivity();
         final String currentTab = mTabHost.getCurrentTabTag();
+        final boolean isOwner = ActivityManager.getCurrentUser() == UserHandle.USER_OWNER;
 
         if (currentTab == null) {
             Log.w(TAG, "no tab selected; hiding body");
@@ -694,7 +703,7 @@ public class DataUsageSummary extends Fragment {
 
         if (LOGD) Log.d(TAG, "updateBody() with currentTab=" + currentTab);
 
-        mDataEnabledView.setVisibility(View.VISIBLE);
+        mDataEnabledView.setVisibility(isOwner ? View.VISIBLE : View.GONE);
 
         // TODO: remove mobile tabs when SIM isn't ready
         final TelephonyManager tele = TelephonyManager.from(context);
@@ -773,8 +782,8 @@ public class DataUsageSummary extends Fragment {
         mChart.bindNetworkPolicy(null);
 
         // show icon and all labels appearing under this app
-        final int appId = mCurrentApp.appId;
-        final UidDetail detail = mUidDetailProvider.getUidDetail(appId, true);
+        final int uid = mCurrentApp.key;
+        final UidDetail detail = mUidDetailProvider.getUidDetail(uid, true);
         mAppIcon.setImageDrawable(detail.icon);
 
         mAppTitles.removeAllViews();
@@ -787,14 +796,21 @@ public class DataUsageSummary extends Fragment {
         }
 
         // enable settings button when package provides it
-        // TODO: target torwards entire UID instead of just first package
-        final String[] packageNames = pm.getPackagesForUid(appId);
+        final String[] packageNames = pm.getPackagesForUid(uid);
         if (packageNames != null && packageNames.length > 0) {
             mAppSettingsIntent = new Intent(Intent.ACTION_MANAGE_NETWORK_USAGE);
-            mAppSettingsIntent.setPackage(packageNames[0]);
             mAppSettingsIntent.addCategory(Intent.CATEGORY_DEFAULT);
 
-            final boolean matchFound = pm.resolveActivity(mAppSettingsIntent, 0) != null;
+            // Search for match across all packages
+            boolean matchFound = false;
+            for (String packageName : packageNames) {
+                mAppSettingsIntent.setPackage(packageName);
+                if (pm.resolveActivity(mAppSettingsIntent, 0) != null) {
+                    matchFound = true;
+                    break;
+                }
+            }
+
             mAppSettings.setEnabled(matchFound);
             mAppSettings.setVisibility(View.VISIBLE);
 
@@ -805,7 +821,7 @@ public class DataUsageSummary extends Fragment {
 
         updateDetailData();
 
-        if (UserId.isApp(appId) && !mPolicyManager.getRestrictBackground()
+        if (UserHandle.isApp(uid) && !mPolicyManager.getRestrictBackground()
                 && isBandwidthControlEnabled() && hasReadyMobileRadio(context)) {
             setPreferenceTitle(mAppRestrictView, R.string.data_usage_app_restrict_background);
             setPreferenceSummary(mAppRestrictView,
@@ -854,7 +870,8 @@ public class DataUsageSummary extends Fragment {
     }
 
     private boolean isNetworkPolicyModifiable(NetworkPolicy policy) {
-        return policy != null && isBandwidthControlEnabled() && mDataEnabled.isChecked();
+        return policy != null && isBandwidthControlEnabled() && mDataEnabled.isChecked()
+                && ActivityManager.getCurrentUser() == UserHandle.USER_OWNER;
     }
 
     private boolean isBandwidthControlEnabled() {
@@ -868,14 +885,14 @@ public class DataUsageSummary extends Fragment {
 
     private boolean getDataRoaming() {
         final ContentResolver resolver = getActivity().getContentResolver();
-        return Settings.Secure.getInt(resolver, Settings.Secure.DATA_ROAMING, 0) != 0;
+        return Settings.Global.getInt(resolver, Settings.Global.DATA_ROAMING, 0) != 0;
     }
 
     private void setDataRoaming(boolean enabled) {
         // TODO: teach telephony DataConnectionTracker to watch and apply
         // updates when changed.
         final ContentResolver resolver = getActivity().getContentResolver();
-        Settings.Secure.putInt(resolver, Settings.Secure.DATA_ROAMING, enabled ? 1 : 0);
+        Settings.Global.putInt(resolver, Settings.Global.DATA_ROAMING, enabled ? 1 : 0);
         mMenuDataRoaming.setChecked(enabled);
     }
 
@@ -885,16 +902,16 @@ public class DataUsageSummary extends Fragment {
     }
 
     private boolean getAppRestrictBackground() {
-        final int appId = mCurrentApp.appId;
-        final int uidPolicy = mPolicyManager.getAppPolicy(appId);
+        final int uid = mCurrentApp.key;
+        final int uidPolicy = mPolicyManager.getUidPolicy(uid);
         return (uidPolicy & POLICY_REJECT_METERED_BACKGROUND) != 0;
     }
 
     private void setAppRestrictBackground(boolean restrictBackground) {
         if (LOGD) Log.d(TAG, "setAppRestrictBackground()");
-        final int appId = mCurrentApp.appId;
-        mPolicyManager.setAppPolicy(appId,
-                restrictBackground ? POLICY_REJECT_METERED_BACKGROUND : POLICY_NONE);
+        final int uid = mCurrentApp.key;
+        mPolicyManager.setUidPolicy(
+                uid, restrictBackground ? POLICY_REJECT_METERED_BACKGROUND : POLICY_NONE);
         mAppRestrict.setChecked(restrictBackground);
     }
 
@@ -1079,7 +1096,7 @@ public class DataUsageSummary extends Fragment {
             // TODO: sigh, remove this hack once we understand 6450986
             if (mUidDetailProvider == null || app == null) return;
 
-            final UidDetail detail = mUidDetailProvider.getUidDetail(app.appId, true);
+            final UidDetail detail = mUidDetailProvider.getUidDetail(app.key, true);
             AppDetailsFragment.show(DataUsageSummary.this, app, detail.label);
         }
     };
@@ -1223,9 +1240,9 @@ public class DataUsageSummary extends Fragment {
 
         @Override
         public void onLoadFinished(Loader<NetworkStats> loader, NetworkStats data) {
-            final int[] restrictedAppIds = mPolicyManager.getAppsWithPolicy(
+            final int[] restrictedUids = mPolicyManager.getUidsWithPolicy(
                     POLICY_REJECT_METERED_BACKGROUND);
-            mAdapter.bindStats(data, restrictedAppIds);
+            mAdapter.bindStats(data, restrictedUids);
             updateEmptyVisible();
         }
 
@@ -1407,17 +1424,17 @@ public class DataUsageSummary extends Fragment {
     }
 
     public static class AppItem implements Comparable<AppItem>, Parcelable {
-        public final int appId;
+        public final int key;
         public boolean restricted;
         public SparseBooleanArray uids = new SparseBooleanArray();
         public long total;
 
-        public AppItem(int appId) {
-            this.appId = appId;
+        public AppItem(int key) {
+            this.key = key;
         }
 
         public AppItem(Parcel parcel) {
-            appId = parcel.readInt();
+            key = parcel.readInt();
             uids = parcel.readSparseBooleanArray();
             total = parcel.readLong();
         }
@@ -1428,7 +1445,7 @@ public class DataUsageSummary extends Fragment {
 
         @Override
         public void writeToParcel(Parcel dest, int flags) {
-            dest.writeInt(appId);
+            dest.writeInt(key);
             dest.writeSparseBooleanArray(uids);
             dest.writeLong(total);
         }
@@ -1474,47 +1491,54 @@ public class DataUsageSummary extends Fragment {
         /**
          * Bind the given {@link NetworkStats}, or {@code null} to clear list.
          */
-        public void bindStats(NetworkStats stats, int[] restrictedAppIds) {
+        public void bindStats(NetworkStats stats, int[] restrictedUids) {
             mItems.clear();
 
-            final AppItem systemItem = new AppItem(android.os.Process.SYSTEM_UID);
-            final SparseArray<AppItem> knownUids = new SparseArray<AppItem>();
+            final int currentUserId = ActivityManager.getCurrentUser();
+            final SparseArray<AppItem> knownItems = new SparseArray<AppItem>();
 
             NetworkStats.Entry entry = null;
             final int size = stats != null ? stats.size() : 0;
             for (int i = 0; i < size; i++) {
                 entry = stats.getValues(i, entry);
 
-                final boolean isApp = UserId.isApp(entry.uid);
-                final int appId = isApp ? UserId.getAppId(entry.uid) : entry.uid;
-                if (isApp || appId == UID_REMOVED || appId == UID_TETHERING) {
-                    AppItem item = knownUids.get(appId);
-                    if (item == null) {
-                        item = new AppItem(appId);
-                        knownUids.put(appId, item);
-                        mItems.add(item);
+                // Decide how to collapse items together
+                final int uid = entry.uid;
+                final int collapseKey;
+                if (UserHandle.isApp(uid)) {
+                    if (UserHandle.getUserId(uid) == currentUserId) {
+                        collapseKey = uid;
+                    } else {
+                        collapseKey = UidDetailProvider.buildKeyForUser(UserHandle.getUserId(uid));
                     }
-
-                    item.total += entry.rxBytes + entry.txBytes;
-                    item.addUid(entry.uid);
+                } else if (uid == UID_REMOVED || uid == UID_TETHERING) {
+                    collapseKey = uid;
                 } else {
-                    systemItem.total += entry.rxBytes + entry.txBytes;
-                    systemItem.addUid(entry.uid);
+                    collapseKey = android.os.Process.SYSTEM_UID;
                 }
+
+                AppItem item = knownItems.get(collapseKey);
+                if (item == null) {
+                    item = new AppItem(collapseKey);
+                    mItems.add(item);
+                    knownItems.put(item.key, item);
+                }
+                item.addUid(uid);
+                item.total += entry.rxBytes + entry.txBytes;
             }
 
-            for (int appId : restrictedAppIds) {
-                AppItem item = knownUids.get(appId);
+            for (int uid : restrictedUids) {
+                // Only splice in restricted state for current user
+                if (UserHandle.getUserId(uid) != currentUserId) continue;
+
+                AppItem item = knownItems.get(uid);
                 if (item == null) {
-                    item = new AppItem(appId);
+                    item = new AppItem(uid);
                     item.total = -1;
                     mItems.add(item);
+                    knownItems.put(item.key, item);
                 }
                 item.restricted = true;
-            }
-
-            if (systemItem.total > 0) {
-                mItems.add(systemItem);
             }
 
             Collections.sort(mItems);
@@ -1534,7 +1558,7 @@ public class DataUsageSummary extends Fragment {
 
         @Override
         public long getItemId(int position) {
-            return mItems.get(position).appId;
+            return mItems.get(position).key;
         }
 
         @Override
@@ -1898,7 +1922,7 @@ public class DataUsageSummary extends Fragment {
 
     /**
      * Dialog to request user confirmation before setting
-     * {@link android.provider.Settings.Secure#DATA_ROAMING}.
+     * {@link android.provider.Settings.Global#DATA_ROAMING}.
      */
     public static class ConfirmDataRoamingFragment extends DialogFragment {
         public static void show(DataUsageSummary parent) {
@@ -1915,7 +1939,11 @@ public class DataUsageSummary extends Fragment {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle(R.string.roaming_reenable_title);
-            builder.setMessage(R.string.roaming_warning);
+            if (Utils.hasMultipleUsers(context)) {
+                builder.setMessage(R.string.roaming_warning_multiuser);
+            } else {
+                builder.setMessage(R.string.roaming_warning);
+            }
 
             builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
@@ -1951,7 +1979,11 @@ public class DataUsageSummary extends Fragment {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle(R.string.data_usage_restrict_background_title);
-            builder.setMessage(getString(R.string.data_usage_restrict_background));
+            if (Utils.hasMultipleUsers(context)) {
+                builder.setMessage(R.string.data_usage_restrict_background_multiuser);
+            } else {
+                builder.setMessage(R.string.data_usage_restrict_background);
+            }
 
             builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
@@ -2125,7 +2157,7 @@ public class DataUsageSummary extends Fragment {
                 existing.cancel(false);
             }
 
-            final UidDetail cachedDetail = provider.getUidDetail(item.appId, false);
+            final UidDetail cachedDetail = provider.getUidDetail(item.key, false);
             if (cachedDetail != null) {
                 bindView(cachedDetail, target);
             } else {
@@ -2154,7 +2186,7 @@ public class DataUsageSummary extends Fragment {
 
         @Override
         protected UidDetail doInBackground(Void... params) {
-            return mProvider.getUidDetail(mItem.appId, true);
+            return mProvider.getUidDetail(mItem.key, true);
         }
 
         @Override
@@ -2193,7 +2225,7 @@ public class DataUsageSummary extends Fragment {
         final TelephonyManager tele = TelephonyManager.from(context);
 
         final boolean hasWimax = conn.isNetworkSupported(TYPE_WIMAX);
-        final boolean hasLte = (tele.getLteOnCdmaMode() == Phone.LTE_ON_CDMA_TRUE)
+        final boolean hasLte = (tele.getLteOnCdmaMode() == PhoneConstants.LTE_ON_CDMA_TRUE)
                 && hasReadyMobileRadio(context);
         return hasWimax || hasLte;
     }

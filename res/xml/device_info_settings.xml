@@ -24,7 +24,6 @@
             <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
         </PreferenceScreen> -->
 
-
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
@@ -60,10 +59,8 @@
 
         <!-- Change Log -->
         <PreferenceScreen android:key="changelog"
-                android:title="@string/changelog_title">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.cyanogenmod.ChangeLog" />
+            android:title="@string/changelog_title"
+            android:fragment="com.android.settings.cyanogenmod.ChangeLog" >
         </PreferenceScreen>
 
         <!-- Legal Information -->
@@ -114,6 +111,9 @@
         </PreferenceScreen>
         -->
 
+        <com.android.settings.RegulatoryInfoPreference android:key="regulatory_info"
+                android:title="@string/regulatory_information" />
+
         <!-- Device hardware model -->
         <Preference android:key="device_model" 
                 style="?android:preferenceInformationStyle"
@@ -131,7 +131,7 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
-                
+
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version" 
                 style="?android:preferenceInformationStyle"
@@ -173,5 +173,11 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
+
+        <!-- SELinux status information -->
+        <Preference android:key="selinux_status"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/selinux_status"
+                android:summary="@string/selinux_status_enforcing"/>
 
 </PreferenceScreen>

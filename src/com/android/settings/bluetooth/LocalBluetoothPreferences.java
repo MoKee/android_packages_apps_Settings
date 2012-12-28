@@ -19,6 +19,7 @@ package com.android.settings.bluetooth;
 import android.app.QueuedWork;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 
 /**
  * LocalBluetoothPreferences provides an interface to the preferences
@@ -66,6 +67,12 @@ final class LocalBluetoothPreferences {
         // If Bluetooth Settings is visible
         if (manager.isForegroundActivity()) {
             return true;
+        }
+
+        // If in appliance mode, do not show dialog in foreground.
+        if ((context.getResources().getConfiguration().uiMode &
+                Configuration.UI_MODE_TYPE_APPLIANCE) == Configuration.UI_MODE_TYPE_APPLIANCE) {
+            return false;
         }
 
         long currentTimeMillis = System.currentTimeMillis();

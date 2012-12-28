@@ -24,8 +24,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="?android:attr/listPreferredItemPaddingLeft"
-        android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="8dip"
-            android:layout_marginRight="8dip"
+            android:layout_marginEnd="8dip"
             android:orientation="vertical">
 
             <ImageView
@@ -48,29 +48,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dip"
-                android:orientation="vertical" />
+                android:orientation="vertical"
+                android:textAlignment="viewStart" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dip"
                 android:textColor="#d88d3a"
-                android:text="@string/data_usage_label_foreground" />
+                android:text="@string/data_usage_label_foreground"
+                android:textAlignment="viewStart" />
+
             <TextView
                 android:id="@+id/app_foreground"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#d88d3a" />
+                android:textColor="#d88d3a"
+                android:textAlignment="viewStart" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dip"
-                android:text="@string/data_usage_label_background" />
+                android:text="@string/data_usage_label_background"
+                android:textAlignment="viewStart" />
+
             <TextView
                 android:id="@+id/app_background"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart" />
 
         </LinearLayout>
 
@@ -85,8 +92,8 @@
         android:id="@+id/app_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="?android:attr/listPreferredItemPaddingLeft"
-        android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"
         android:layout_marginTop="16dip"
         android:layout_marginBottom="16dip"
         android:text="@string/data_usage_app_settings" />

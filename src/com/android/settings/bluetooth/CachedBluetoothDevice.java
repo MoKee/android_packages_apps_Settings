@@ -25,6 +25,7 @@ import android.os.ParcelUuid;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
+import android.bluetooth.BluetoothAdapter;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -118,7 +119,11 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
             Log.d(TAG, "onProfileStateChanged: profile " + profile +
                     " newProfileState " + newProfileState);
         }
-
+        if (mLocalAdapter.getBluetoothState() == BluetoothAdapter.STATE_TURNING_OFF)
+        {
+            if (Utils.D) Log.d(TAG, " BT Turninig Off...Profile conn state change ignored...");
+            return;
+        }
         mProfileConnectionState.put(profile, newProfileState);
         if (newProfileState == BluetoothProfile.STATE_CONNECTED) {
             if (!mProfiles.contains(profile)) {
@@ -156,6 +161,14 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
         for (LocalBluetoothProfile profile : mProfiles) {
             disconnect(profile);
         }
+        // Disconnect  PBAP server in case its connected
+        // This is to ensure all the profiles are disconnected as some CK/Hs do not
+        // disconnect  PBAP connection when HF connection is brought down
+        PbapServerProfile PbapProfile = mProfileManager.getPbapProfile();
+        if (PbapProfile.getConnectionStatus(mDevice) == BluetoothProfile.STATE_CONNECTED)
+        {
+            PbapProfile.disconnect(mDevice);
+        }
     }
 
     void disconnect(LocalBluetoothProfile profile) {
@@ -184,12 +197,15 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
     private void connectWithoutResettingTimer(boolean connectAllProfiles) {
         // Try to initialize the profiles if they were not.
         if (mProfiles.isEmpty()) {
-            if (!updateProfiles()) {
-                // If UUIDs are not available yet, connect will be happen
-                // upon arrival of the ACTION_UUID intent.
-                if (DEBUG) Log.d(TAG, "No profiles. Maybe we will connect later");
-                return;
-            }
+            // if mProfiles is empty, then do not invoke updateProfiles. This causes a race
+            // condition with carkits during pairing, wherein RemoteDevice.UUIDs have been updated
+            // from bluetooth stack but ACTION.uuid is not sent yet.
+            // Eventually ACTION.uuid will be received which shall trigger the connection of the
+            // various profiles
+            // If UUIDs are not available yet, connect will be happen
+            // upon arrival of the ACTION_UUID intent.
+            Log.d(TAG, "No profiles. Maybe we will connect later");
+            return;
         }
 
         // Reset the only-show-one-error-dialog tracking variable
@@ -236,9 +252,11 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
         // Reset the only-show-one-error-dialog tracking variable
         mIsConnectingErrorPossible = true;
         connectInt(profile);
+        // Refresh the UI based on profile.connect() call
+        refresh();
     }
 
-    private void connectInt(LocalBluetoothProfile profile) {
+    synchronized void connectInt(LocalBluetoothProfile profile) {
         if (!ensurePaired()) {
             return;
         }
@@ -283,8 +301,6 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
     }
 
     void unpair() {
-        disconnect();
-
         int state = getBondState();
 
         if (state == BluetoothDevice.BOND_BONDING) {
@@ -315,6 +331,16 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
             mProfileConnectionState.put(profile, state);
         }
         return mProfileConnectionState.get(profile);
+    }
+
+    public void clearProfileConnectionState ()
+    {
+        if (Utils.D) {
+            Log.d(TAG," Clearing all connection state for dev:" + mDevice.getName());
+        }
+        for (LocalBluetoothProfile profile :getProfiles()) {
+            mProfileConnectionState.put(profile, BluetoothProfile.STATE_DISCONNECTED);
+        }
     }
 
     // TODO: do any of these need to run async on a background thread?
@@ -436,7 +462,7 @@ final class CachedBluetoothDevice implements Comparable<CachedBluetoothDevice> {
         ParcelUuid[] localUuids = mLocalAdapter.getUuids();
         if (localUuids == null) return false;
 
-        mProfileManager.updateProfiles(uuids, localUuids, mProfiles, mRemovedProfiles);
+        mProfileManager.updateProfiles(uuids, localUuids, mProfiles, mRemovedProfiles, mLocalNapRoleConnected);
 
         if (DEBUG) {
             Log.e(TAG, "updating profiles for " + mDevice.getAliasName());

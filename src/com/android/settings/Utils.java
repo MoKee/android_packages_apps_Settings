@@ -16,39 +16,64 @@
 
 package com.android.settings;
 
+import android.app.Activity;
 import android.app.ActivityManager;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
+import android.content.pm.UserInfo;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
+import android.net.Uri;
 import android.os.BatteryManager;
 import android.os.Bundle;
+import android.os.ParcelFileDescriptor;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceActivity.Header;
 import android.preference.PreferenceFrameLayout;
 import android.preference.PreferenceGroup;
+import android.provider.ContactsContract.CommonDataKinds;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.provider.ContactsContract.CommonDataKinds.StructuredName;
+import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract.Data;
+import android.provider.ContactsContract.Profile;
+import android.provider.ContactsContract.RawContacts;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.DisplayInfo;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TabWidget;
 
+import com.android.settings.users.ProfileUpdateReceiver;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.Iterator;
 import java.util.List;
@@ -141,7 +166,7 @@ public class Utils {
         // Did not find a matching activity, so remove the preference
         parentPreferenceGroup.removePreference(preference);
 
-        return true;
+        return false;
     }
 
     /**
@@ -388,11 +413,15 @@ public class Utils {
         if (status == BatteryManager.BATTERY_STATUS_CHARGING) {
             statusString = res.getString(R.string.battery_info_status_charging);
             if (plugType > 0) {
-                statusString = statusString
-                        + " "
-                        + res.getString((plugType == BatteryManager.BATTERY_PLUGGED_AC)
-                                ? R.string.battery_info_status_charging_ac
-                                : R.string.battery_info_status_charging_usb);
+                int resId;
+                if (plugType == BatteryManager.BATTERY_PLUGGED_AC) {
+                    resId = R.string.battery_info_status_charging_ac;
+                } else if (plugType == BatteryManager.BATTERY_PLUGGED_USB) {
+                    resId = R.string.battery_info_status_charging_usb;
+                } else {
+                    resId = R.string.battery_info_status_charging_wireless;
+                }
+                statusString = statusString + " " + res.getString(resId);
             }
         } else if (status == BatteryManager.BATTERY_STATUS_DISCHARGING) {
             statusString = res.getString(R.string.battery_info_status_discharging);
@@ -496,12 +525,130 @@ public class Utils {
         return true;
     }
 
+    /* Used by UserSettings as well. Call this on a non-ui thread. */
+    public static boolean copyMeProfilePhoto(Context context, UserInfo user) {
+        Uri contactUri = Profile.CONTENT_URI;
+
+        InputStream avatarDataStream = Contacts.openContactPhotoInputStream(
+                    context.getContentResolver(),
+                    contactUri, true);
+        // If there's no profile photo, assign a default avatar
+        if (avatarDataStream == null) {
+            return false;
+        }
+        int userId = user != null ? user.id : UserHandle.myUserId();
+        UserManager um = (UserManager) context.getSystemService(Context.USER_SERVICE);
+        Bitmap icon = BitmapFactory.decodeStream(avatarDataStream);
+        um.setUserIcon(userId, icon);
+        try {
+            avatarDataStream.close();
+        } catch (IOException ioe) { }
+        return true;
+    }
+
+    public static String getMeProfileName(Context context, boolean full) {
+        if (full) {
+            return getProfileDisplayName(context);
+        } else {
+            return getShorterNameIfPossible(context);
+        }
+    }
+
+    private static String getShorterNameIfPossible(Context context) {
+        final String given = getLocalProfileGivenName(context);
+        return !TextUtils.isEmpty(given) ? given : getProfileDisplayName(context);
+    }
+
+    private static String getLocalProfileGivenName(Context context) {
+        final ContentResolver cr = context.getContentResolver();
+
+        // Find the raw contact ID for the local ME profile raw contact.
+        final long localRowProfileId;
+        final Cursor localRawProfile = cr.query(
+                Profile.CONTENT_RAW_CONTACTS_URI,
+                new String[] {RawContacts._ID},
+                RawContacts.ACCOUNT_TYPE + " IS NULL AND " +
+                        RawContacts.ACCOUNT_NAME + " IS NULL",
+                null, null);
+        if (localRawProfile == null) return null;
+
+        try {
+            if (!localRawProfile.moveToFirst()) {
+                return null;
+            }
+            localRowProfileId = localRawProfile.getLong(0);
+        } finally {
+            localRawProfile.close();
+        }
+
+        // Find the structured name for the raw contact.
+        final Cursor structuredName = cr.query(
+                Profile.CONTENT_URI.buildUpon().appendPath(Contacts.Data.CONTENT_DIRECTORY).build(),
+                new String[] {CommonDataKinds.StructuredName.GIVEN_NAME,
+                    CommonDataKinds.StructuredName.FAMILY_NAME},
+                Data.RAW_CONTACT_ID + "=" + localRowProfileId,
+                null, null);
+        if (structuredName == null) return null;
+
+        try {
+            if (!structuredName.moveToFirst()) {
+                return null;
+            }
+            String partialName = structuredName.getString(0);
+            if (TextUtils.isEmpty(partialName)) {
+                partialName = structuredName.getString(1);
+            }
+            return partialName;
+        } finally {
+            structuredName.close();
+        }
+    }
+
+    private static final String getProfileDisplayName(Context context) {
+        final ContentResolver cr = context.getContentResolver();
+        final Cursor profile = cr.query(Profile.CONTENT_URI,
+                new String[] {Profile.DISPLAY_NAME}, null, null, null);
+        if (profile == null) return null;
+
+        try {
+            if (!profile.moveToFirst()) {
+                return null;
+            }
+            return profile.getString(0);
+        } finally {
+            profile.close();
+        }
+    }
+
+    /** Not global warming, it's global change warning. */
+    public static Dialog buildGlobalChangeWarningDialog(final Context context, int titleResId,
+            final Runnable positiveAction) {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(titleResId);
+        builder.setMessage(R.string.global_change_warning);
+        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                positiveAction.run();
+            }
+        });
+        builder.setNegativeButton(android.R.string.cancel, null);
+
+        return builder.create();
+    }
+
+    public static boolean hasMultipleUsers(Context context) {
+        return ((UserManager) context.getSystemService(Context.USER_SERVICE))
+                .getUsers().size() > 1;
+    }
+
     private static int getScreenType(Context con) {
         if (mDeviceType == -1) {
             WindowManager wm = (WindowManager)con.getSystemService(Context.WINDOW_SERVICE);
-            android.view.Display display = wm.getDefaultDisplay();
-            int shortSize = Math.min(display.getRawHeight(), display.getRawWidth());
-            int shortSizeDp = shortSize * DisplayMetrics.DENSITY_DEFAULT / DisplayMetrics.DENSITY_DEVICE;
+            DisplayInfo outDisplayInfo = new DisplayInfo();
+            wm.getDefaultDisplay().getDisplayInfo(outDisplayInfo);
+            int shortSize = Math.min(outDisplayInfo.logicalHeight, outDisplayInfo.logicalWidth);
+            int shortSizeDp = shortSize * DisplayMetrics.DENSITY_DEFAULT / outDisplayInfo.logicalDensityDpi;
             if (shortSizeDp < 600) {
                 // 0-599dp: "phone" UI with a separate status & navigation bar
                 mDeviceType =  DEVICE_PHONE;
@@ -527,5 +674,4 @@ public class Utils {
     public static boolean isTablet(Context con) {
         return getScreenType(con) == DEVICE_TABLET;
     }
-
 }

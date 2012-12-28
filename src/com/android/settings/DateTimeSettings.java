@@ -81,8 +81,8 @@ public class DateTimeSettings extends SettingsPreferenceFragment
     }
 
     private void initUI() {
-        boolean autoTimeEnabled = getAutoState(Settings.System.AUTO_TIME);
-        boolean autoTimeZoneEnabled = getAutoState(Settings.System.AUTO_TIME_ZONE);
+        boolean autoTimeEnabled = getAutoState(Settings.Global.AUTO_TIME);
+        boolean autoTimeZoneEnabled = getAutoState(Settings.Global.AUTO_TIME_ZONE);
 
         Intent intent = getActivity().getIntent();
         boolean isFirstRun = intent.getBooleanExtra(EXTRA_IS_FIRST_RUN, false);
@@ -118,10 +118,6 @@ public class DateTimeSettings extends SettingsPreferenceFragment
         if (currentFormat == null) {
             currentFormat = "";
         }
-
-        // Prevents duplicated values on date format selector.
-        mDummyDate.set(mDummyDate.get(Calendar.YEAR), mDummyDate.DECEMBER, 31, 13, 0, 0);
-
         for (int i = 0; i < formattedDates.length; i++) {
             String formatted =
                     DateFormat.getDateFormatForSetting(getActivity(), dateFormats[i])
@@ -175,12 +171,15 @@ public class DateTimeSettings extends SettingsPreferenceFragment
         java.text.DateFormat shortDateFormat = DateFormat.getDateFormat(context);
         final Calendar now = Calendar.getInstance();
         mDummyDate.setTimeZone(now.getTimeZone());
+        // We use December 31st because it's unambiguous when demonstrating the date format.
+        // We use 13:00 so we can demonstrate the 12/24 hour options.
         mDummyDate.set(now.get(Calendar.YEAR), 11, 31, 13, 0, 0);
         Date dummyDate = mDummyDate.getTime();
         mTimePref.setSummary(DateFormat.getTimeFormat(getActivity()).format(now.getTime()));
         mTimeZone.setSummary(getTimeZoneText(now.getTimeZone()));
         mDatePref.setSummary(shortDateFormat.format(now.getTime()));
         mDateFormat.setSummary(shortDateFormat.format(dummyDate));
+        mTime24Pref.setSummary(DateFormat.getTimeFormat(getActivity()).format(dummyDate));
     }
 
     @Override
@@ -215,14 +214,14 @@ public class DateTimeSettings extends SettingsPreferenceFragment
             updateTimeAndDateDisplay(getActivity());
         } else if (key.equals(KEY_AUTO_TIME)) {
             boolean autoEnabled = preferences.getBoolean(key, true);
-            Settings.System.putInt(getContentResolver(), Settings.System.AUTO_TIME,
+            Settings.Global.putInt(getContentResolver(), Settings.Global.AUTO_TIME,
                     autoEnabled ? 1 : 0);
             mTimePref.setEnabled(!autoEnabled);
             mDatePref.setEnabled(!autoEnabled);
         } else if (key.equals(KEY_AUTO_TIME_ZONE)) {
             boolean autoZoneEnabled = preferences.getBoolean(key, true);
-            Settings.System.putInt(
-                    getContentResolver(), Settings.System.AUTO_TIME_ZONE, autoZoneEnabled ? 1 : 0);
+            Settings.Global.putInt(
+                    getContentResolver(), Settings.Global.AUTO_TIME_ZONE, autoZoneEnabled ? 1 : 0);
             mTimeZone.setEnabled(!autoZoneEnabled);
         }
     }
@@ -332,13 +331,11 @@ public class DateTimeSettings extends SettingsPreferenceFragment
 
     private boolean getAutoState(String name) {
         try {
-            return Settings.System.getInt(getContentResolver(), name) > 0;
+            return Settings.Global.getInt(getContentResolver(), name) > 0;
         } catch (SettingNotFoundException snfe) {
             return false;
         }
     }
-
-    /*  Helper routines to format timezone */
 
     /* package */ static void setDate(int year, int month, int day) {
         Calendar c = Calendar.getInstance();
@@ -367,45 +364,40 @@ public class DateTimeSettings extends SettingsPreferenceFragment
         }
     }
 
+    /*  Helper routines to format timezone */
+
     /* package */ static String getTimeZoneText(TimeZone tz) {
-        boolean daylight = tz.inDaylightTime(new Date());
-        StringBuilder sb = new StringBuilder();
-
-        sb.append(formatOffset(tz.getRawOffset() +
-                               (daylight ? tz.getDSTSavings() : 0))).
+        // Similar to new SimpleDateFormat("'GMT'Z, zzzz").format(new Date()), but
+        // we want "GMT-03:00" rather than "GMT-0300".
+        Date now = new Date();
+        return formatOffset(new StringBuilder(), tz, now).
             append(", ").
-            append(tz.getDisplayName(daylight, TimeZone.LONG));
-
-        return sb.toString();
+            append(tz.getDisplayName(tz.inDaylightTime(now), TimeZone.LONG)).toString();
     }
 
-    private static char[] formatOffset(int off) {
-        off = off / 1000 / 60;
+    private static StringBuilder formatOffset(StringBuilder sb, TimeZone tz, Date d) {
+        int off = tz.getOffset(d.getTime()) / 1000 / 60;
 
-        char[] buf = new char[9];
-        buf[0] = 'G';
-        buf[1] = 'M';
-        buf[2] = 'T';
-
+        sb.append("GMT");
         if (off < 0) {
-            buf[3] = '-';
+            sb.append('-');
             off = -off;
         } else {
-            buf[3] = '+';
+            sb.append('+');
         }
 
         int hours = off / 60;
         int minutes = off % 60;
 
-        buf[4] = (char) ('0' + hours / 10);
-        buf[5] = (char) ('0' + hours % 10);
+        sb.append((char) ('0' + hours / 10));
+        sb.append((char) ('0' + hours % 10));
 
-        buf[6] = ':';
+        sb.append(':');
 
-        buf[7] = (char) ('0' + minutes / 10);
-        buf[8] = (char) ('0' + minutes % 10);
+        sb.append((char) ('0' + minutes / 10));
+        sb.append((char) ('0' + minutes % 10));
 
-        return buf;
+        return sb;
     }
 
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {

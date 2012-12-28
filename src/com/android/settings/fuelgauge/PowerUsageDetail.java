@@ -34,6 +34,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
+import android.os.UserHandle;
 import android.preference.PreferenceActivity;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -62,7 +63,8 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         WIFI,
         BLUETOOTH,
         SCREEN,
-        APP
+        APP,
+        USER
     }
 
     // Note: Must match the sequence of the DrainType
@@ -73,7 +75,8 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         R.string.battery_desc_wifi,
         R.string.battery_desc_bluetooth,
         R.string.battery_desc_display,
-        R.string.battery_desc_apps
+        R.string.battery_desc_apps,
+        R.string.battery_desc_users,
     };
 
     public static final int ACTION_DISPLAY_SETTINGS = 1;
@@ -225,8 +228,8 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
             mReportButton.setOnClickListener(this);
             
             // check if error reporting is enabled in secure settings
-            int enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
-                    Settings.Secure.SEND_ACTION_APP_ERROR, 0);
+            int enabled = Settings.Global.getInt(getActivity().getContentResolver(),
+                    Settings.Global.SEND_ACTION_APP_ERROR, 0);
             if (enabled != 0) {
                 if (mPackages != null && mPackages.length > 0) {
                     try {
@@ -453,6 +456,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
                 Uri.fromParts("package", mPackages[0], null));
         intent.putExtra(Intent.EXTRA_PACKAGES, mPackages);
         intent.putExtra(Intent.EXTRA_UID, mUid);
+        intent.putExtra(Intent.EXTRA_USER_HANDLE, mUid);
         getActivity().sendOrderedBroadcast(intent, null, mCheckKillProcessesReceiver, null,
                 Activity.RESULT_CANCELED, null, null);
     }

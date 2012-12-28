@@ -30,33 +30,20 @@ public class QuietHours extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener  {
 
     private static final String TAG = "QuietHours";
-
     private static final String KEY_QUIET_HOURS_ENABLED = "quiet_hours_enabled";
-
     private static final String KEY_QUIET_HOURS_MUTE = "quiet_hours_mute";
-
     private static final String KEY_QUIET_HOURS_STILL = "quiet_hours_still";
-
     private static final String KEY_QUIET_HOURS_DIM = "quiet_hours_dim";
-
     private static final String KEY_QUIET_HOURS_HAPTIC = "quiet_hours_haptic";
-
     private static final String KEY_QUIET_HOURS_NOTE = "quiet_hours_note";
-
     private static final String KEY_QUIET_HOURS_TIMERANGE = "quiet_hours_timerange";
 
     private CheckBoxPreference mQuietHoursEnabled;
-
     private Preference mQuietHoursNote;
-
     private CheckBoxPreference mQuietHoursMute;
-
     private CheckBoxPreference mQuietHoursStill;
-
     private CheckBoxPreference mQuietHoursDim;
-
     private CheckBoxPreference mQuietHoursHaptic;
-
     private TimeRangePreference mQuietHoursTimeRange;
 
     @Override

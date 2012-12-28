@@ -56,7 +56,6 @@ public class WpsDialog extends AlertDialog {
     private static final int WPS_TIMEOUT_S = 120;
 
     private WifiManager mWifiManager;
-    private WifiManager.Channel mChannel;
     private WifiManager.WpsListener mWpsListener;
     private int mWpsSetup;
 
@@ -155,7 +154,6 @@ public class WpsDialog extends AlertDialog {
         });
 
         mWifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
-        mChannel = mWifiManager.initialize(mContext, mContext.getMainLooper(), null);
 
         setView(mView);
         super.onCreate(savedInstanceState);
@@ -184,13 +182,13 @@ public class WpsDialog extends AlertDialog {
 
         WpsInfo wpsConfig = new WpsInfo();
         wpsConfig.setup = mWpsSetup;
-        mWifiManager.startWps(mChannel, wpsConfig, mWpsListener);
+        mWifiManager.startWps(wpsConfig, mWpsListener);
     }
 
     @Override
     protected void onStop() {
         if (mDialogState != DialogState.WPS_COMPLETE) {
-            mWifiManager.cancelWps(mChannel, null);
+            mWifiManager.cancelWps(null);
         }
 
         if (mReceiver != null) {
@@ -203,31 +201,36 @@ public class WpsDialog extends AlertDialog {
         }
     }
 
-    private void updateDialog(DialogState state, String msg) {
+    private void updateDialog(final DialogState state, final String msg) {
         if (mDialogState.ordinal() >= state.ordinal()) {
             //ignore.
             return;
         }
         mDialogState = state;
 
-        switch(state) {
-            case WPS_COMPLETE:
-                mTimeoutBar.setVisibility(View.GONE);
-                mProgressBar.setVisibility(View.VISIBLE);
-                break;
-            case CONNECTED:
-            case WPS_FAILED:
-                mButton.setText(mContext.getString(R.string.dlg_ok));
-                mTimeoutBar.setVisibility(View.GONE);
-                mProgressBar.setVisibility(View.GONE);
-                if (mReceiver != null) {
-                    mContext.unregisterReceiver(mReceiver);
-                    mReceiver = null;
+        mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    switch(state) {
+                        case WPS_COMPLETE:
+                            mTimeoutBar.setVisibility(View.GONE);
+                            mProgressBar.setVisibility(View.VISIBLE);
+                            break;
+                        case CONNECTED:
+                        case WPS_FAILED:
+                            mButton.setText(mContext.getString(R.string.dlg_ok));
+                            mTimeoutBar.setVisibility(View.GONE);
+                            mProgressBar.setVisibility(View.GONE);
+                            if (mReceiver != null) {
+                                mContext.unregisterReceiver(mReceiver);
+                                mReceiver = null;
+                            }
+                            break;
+                    }
+                    mTextView.setText(msg);
                 }
-                break;
-        }
-        mTextView.setText(msg);
-    }
+            });
+   }
 
     private void handleEvent(Context context, Intent intent) {
         String action = intent.getAction();

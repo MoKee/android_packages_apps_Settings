@@ -98,8 +98,8 @@ public class WifiApEnabler {
     }
 
     private void enableWifiCheckBox() {
-        boolean isAirplaneMode = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.AIRPLANE_MODE_ON, 0) != 0;
+        boolean isAirplaneMode = Settings.Global.getInt(mContext.getContentResolver(),
+                Settings.Global.AIRPLANE_MODE_ON, 0) != 0;
         if(!isAirplaneMode) {
             mCheckBox.setEnabled(true);
         } else {
@@ -117,7 +117,7 @@ public class WifiApEnabler {
         if (enable && ((wifiState == WifiManager.WIFI_STATE_ENABLING) ||
                     (wifiState == WifiManager.WIFI_STATE_ENABLED))) {
             mWifiManager.setWifiEnabled(false);
-            Settings.Secure.putInt(cr, Settings.Secure.WIFI_SAVED_STATE, 1);
+            Settings.Global.putInt(cr, Settings.Global.WIFI_SAVED_STATE, 1);
         }
 
         if (mWifiManager.setWifiApEnabled(null, enable)) {
@@ -133,13 +133,13 @@ public class WifiApEnabler {
         if (!enable) {
             int wifiSavedState = 0;
             try {
-                wifiSavedState = Settings.Secure.getInt(cr, Settings.Secure.WIFI_SAVED_STATE);
+                wifiSavedState = Settings.Global.getInt(cr, Settings.Global.WIFI_SAVED_STATE);
             } catch (Settings.SettingNotFoundException e) {
                 ;
             }
             if (wifiSavedState == 1) {
                 mWifiManager.setWifiEnabled(true);
-                Settings.Secure.putInt(cr, Settings.Secure.WIFI_SAVED_STATE, 0);
+                Settings.Global.putInt(cr, Settings.Global.WIFI_SAVED_STATE, 0);
             }
         }
     }
@@ -180,7 +180,7 @@ public class WifiApEnabler {
     private void handleWifiApStateChanged(int state) {
         switch (state) {
             case WifiManager.WIFI_AP_STATE_ENABLING:
-                mCheckBox.setSummary(R.string.wifi_starting);
+                mCheckBox.setSummary(R.string.wifi_tether_starting);
                 mCheckBox.setEnabled(false);
                 break;
             case WifiManager.WIFI_AP_STATE_ENABLED:
@@ -193,7 +193,7 @@ public class WifiApEnabler {
                 mCheckBox.setEnabled(true);
                 break;
             case WifiManager.WIFI_AP_STATE_DISABLING:
-                mCheckBox.setSummary(R.string.wifi_stopping);
+                mCheckBox.setSummary(R.string.wifi_tether_stopping);
                 mCheckBox.setEnabled(false);
                 break;
             case WifiManager.WIFI_AP_STATE_DISABLED:

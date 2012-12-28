@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -52,12 +52,25 @@
     <dimen name="appwidget_min_width">260dip</dimen>
     <dimen name="appwidget_min_height">40dip</dimen>
 
+    <dimen name="pager_tabs_padding">0dp</dimen>
+
+    <!-- Size of AppWidget previews in KeyguardAppWidgetPickActivity -->
+    <dimen name="appwidget_preview_width">140dip</dimen>
+    <dimen name="appwidget_preview_height">80dip</dimen>
+    <dimen name="keyguard_appwidget_picker_max_width">800dip</dimen>
+    <dimen name="keyguard_appwidget_picker_margin_left">6dip</dimen>
+    <dimen name="keyguard_appwidget_picker_margin_right">6dip</dimen>
+    <integer name="keyguard_appwidget_picker_cols">1</integer>
+
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
+
+    <!-- Light settings dialog -->
+    <dimen name="dialog_light_settings_width">400dip</dimen>
+
     <!-- height of a normal list item in edit playlist mode -->
     <dimen name="normal_height">64dip</dimen>
     <!-- height of an expanded list item in edit playlist mode -->
     <dimen name="expanded_height">128dip</dimen>
 
-	<!-- Light settings dialog -->
-    <dimen name="dialog_light_settings_width">400dip</dimen>
-
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

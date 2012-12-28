@@ -103,8 +103,6 @@ public class ChooseLockPattern extends PreferenceActivity {
         private TextView mFooterRightButton;
         protected List<LockPatternView.Cell> mChosenPattern = null;
 
-        private int PATTERN_SIZE = 3;
-
         /**
          * The patten used during the help screen to show how to draw a pattern.
          */
@@ -309,8 +307,6 @@ public class ChooseLockPattern extends PreferenceActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
 
-            PATTERN_SIZE = getActivity().getIntent().getIntExtra("pattern_size", 3);
-
             // setupViews()
             View view = inflater.inflate(R.layout.choose_lock_pattern, null);
             mHeaderText = (TextView) view.findViewById(R.id.headerText);
@@ -318,7 +314,6 @@ public class ChooseLockPattern extends PreferenceActivity {
             mLockPatternView.setOnPatternListener(mChooseNewLockPatternListener);
             mLockPatternView.setTactileFeedbackEnabled(
                     mChooseLockSettingsHelper.utils().isTactileFeedbackEnabled());
-            mLockPatternView.setLockPatternSize(PATTERN_SIZE);
 
             mFooterText = (TextView) view.findViewById(R.id.footerText);
 
@@ -434,6 +429,7 @@ public class ChooseLockPattern extends PreferenceActivity {
          * @param stage
          */
         protected void updateStage(Stage stage) {
+            final Stage previousStage = mUiStage;
 
             mUiStage = stage;
 
@@ -498,6 +494,12 @@ public class ChooseLockPattern extends PreferenceActivity {
                 case ChoiceConfirmed:
                     break;
             }
+
+            // If the stage changed, announce the header for accessibility. This
+            // is a no-op when accessibility is disabled.
+            if (previousStage != stage) {
+                mHeaderText.announceForAccessibility(mHeaderText.getText());
+            }
         }
 
 
@@ -514,13 +516,11 @@ public class ChooseLockPattern extends PreferenceActivity {
 
             final boolean isFallback = getActivity().getIntent()
                 .getBooleanExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, false);
-            utils.setLockPatternSize(PATTERN_SIZE);
             utils.saveLockPattern(mChosenPattern, isFallback);
             utils.setLockPatternEnabled(true);
 
             if (lockVirgin) {
                 utils.setVisiblePatternEnabled(true);
-                utils.setTactileFeedbackEnabled(false);
             }
 
             getActivity().setResult(RESULT_FINISHED);

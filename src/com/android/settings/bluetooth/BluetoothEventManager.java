@@ -21,6 +21,7 @@ import com.android.settings.R;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothProfile;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -99,6 +100,7 @@ final class BluetoothEventManager {
 
         // Dock event broadcasts
         addHandler(Intent.ACTION_DOCK_EVENT, new DockEventHandler());
+
         mContext.registerReceiver(mBroadcastReceiver, mAdapterIntentFilter);
     }
 
@@ -163,6 +165,8 @@ final class BluetoothEventManager {
                     callback.onBluetoothStateChanged(state);
                 }
             }
+            // Inform CachedDeviceManager that the adapter state has changed
+            mDeviceManager.onBluetoothStateChanged(state);
         }
     }
 
@@ -365,7 +369,6 @@ final class BluetoothEventManager {
             }
         }
     }
-
     boolean readPairedDevices() {
         Set<BluetoothDevice> bondedDevices = mLocalAdapter.getBondedDevices();
         if (bondedDevices == null) {

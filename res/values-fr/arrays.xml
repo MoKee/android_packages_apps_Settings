@@ -91,7 +91,7 @@
     <item msgid="1634960474403853625">"Déconnecté"</item>
     <item msgid="746097431216080650">"Échec"</item>
     <item msgid="6367044185730295334">"Bloqué"</item>
-    <item msgid="503942654197908005">"Évite momentanément une mauvaise connexion"</item>
+    <item msgid="503942654197908005">"Mauvaise connexion évitée momentanément"</item>
   </string-array>
   <string-array name="wifi_status_with_ssid">
     <item msgid="7714855332363650812"></item>
@@ -105,7 +105,7 @@
     <item msgid="197508606402264311">"Déconnecté"</item>
     <item msgid="8578370891960825148">"Échec"</item>
     <item msgid="5660739516542454527">"Bloqué"</item>
-    <item msgid="1805837518286731242">"Évite momentanément une mauvaise connexion"</item>
+    <item msgid="1805837518286731242">"Mauvaise connexion évitée momentanément"</item>
   </string-array>
     <!-- no translation found for wifi_security:0 (8491993170197127709) -->
     <!-- no translation found for wifi_security:1 (6524315248437318854) -->
@@ -211,11 +211,6 @@
     <item msgid="3738430123799803530">"Carte SD amovible"</item>
     <item msgid="4498124044785815005">"Laisser le système décider"</item>
   </string-array>
-  <string-array name="silent_mode_entries">
-    <item msgid="783505504936446770">"Désactivé"</item>
-    <item msgid="4804571292609523335">"Vibreur"</item>
-    <item msgid="595707141547423573">"Silencieux"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"Court"</item>
     <item msgid="2560532955514699713">"Moyen"</item>
@@ -258,6 +253,19 @@
     <item msgid="3170120558236848008">"Échelle d\'animation 5x"</item>
     <item msgid="1069584980746680398">"Échelle d\'animation 10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Aucun"</item>
+    <item msgid="688482401508173818">"720 x 480 mdpi"</item>
+    <item msgid="1725473474827398815">"1 280 x 720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1 920 x 1 080 xdpi"</item>
+    <item msgid="3646519549495410112">"1 280x720 tvdpi et 1 920x1 080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Aucun"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (graphismes)"</item>
+    <item msgid="1340692776955662664">"Appeler une pile sur glGetError"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Limite standard"</item>
     <item msgid="4071574792028999443">"Aucun processus en arrière-plan"</item>
@@ -282,50 +290,9 @@
     <item msgid="4042143101664725090">"Expiration du délai"</item>
     <item msgid="7664124146786465092">"Échec."</item>
   </string-array>
-
-<!-- **** CYANOGENMOD EDITS START **** -->
-
-    <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>
-        <item>2G/3G Uniquement</item>
-        <item>2G/3G Uniquement/3G+2G</item>
-    </string-array>
-
-    <string-array name="entries_flash_widget">
-        <item>Normal</item>
-        <item>Haute (Death Ray)</item>
-    </string-array>
-
-    <string-array name="haptic_feedback_entries">
-        <item>Paramètres généraux</item>
-        <item>Actif</item>
-        <item>Désactivé</item>
-    </string-array>
-
-    <string-array name="entries_status_bar_am_pm">
-        <item>Normal</item>
-        <item>Petit</item>
-        <item>Aucun (Défaut)</item>
-    </string-array>
-
-    <string-array name="location_entries_gps_source">
-        <item>Utiliser GPS interne</item>
-    </string-array>
-
-    <!-- Profile mode options. -->
-    <string-array name="profile_connection_entries">
-        <item>Inactif</item>
-        <item>Actif</item>
-    </string-array>
-
-    <!-- Volume Overlay options. -->
-    <string-array name="volume_overlay_entries">
-        <item>Simple</item>
-        <item>Extensible</item>
-        <item>Etendu</item>
-        <item>Caché</item>
-    </string-array>
-
-    <!-- **** CYANOGENMOD EDITS END **** -->
-
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Demander"</item>
+    <item msgid="5077768429488260031">"Ne jamais autoriser"</item>
+    <item msgid="1417929597727989746">"Toujours autoriser"</item>
+  </string-array>
 </resources>

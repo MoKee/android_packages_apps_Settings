@@ -87,7 +87,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment
                     PerformanceSettings.this.finish();
                 }
             });
-
             alertDialog.show();
         }
     }

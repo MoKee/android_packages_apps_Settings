@@ -37,7 +37,8 @@
                 android:persistent="false"/>
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/device_admin_title"
+    <PreferenceCategory android:key="device_admin_category"
+            android:title="@string/device_admin_title"
             android:persistent="false">
 
         <Preference android:title="@string/manage_device_admin"
@@ -52,9 +53,16 @@
                 android:summaryOn="@string/install_unknown_applications"
                 android:persistent="false" />
 
+        <CheckBoxPreference
+                android:key="toggle_verify_applications"
+                android:title="@string/verify_applications"
+                android:summaryOff="@string/verify_applications_summary"
+                android:summaryOn="@string/verify_applications_summary"
+                android:persistent="false" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/credentials_title"
+    <PreferenceCategory android:key="credentials_management"
+            android:title="@string/credentials_title"
             android:persistent="false">
         <Preference android:title="@string/trusted_credentials"
                 android:summary="@string/trusted_credentials_summary"

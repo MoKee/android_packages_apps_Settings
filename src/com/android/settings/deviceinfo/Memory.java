@@ -18,12 +18,16 @@ package com.android.settings.deviceinfo;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.res.Resources;
+import android.content.pm.IPackageDataObserver;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -45,81 +49,72 @@ import android.widget.Toast;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * Panel showing storage usage on disk for known {@link StorageVolume} returned
+ * by {@link StorageManager}. Calculates and displays usage of data types.
+ */
 public class Memory extends SettingsPreferenceFragment {
     private static final String TAG = "MemorySettings";
+
+    private static final String TAG_CONFIRM_CLEAR_CACHE = "confirmClearCache";
 
     private static final int DLG_CONFIRM_UNMOUNT = 1;
     private static final int DLG_ERROR_UNMOUNT = 2;
 
-    private Resources mResources;
-
     // The mountToggle Preference that has last been clicked.
     // Assumes no two successive unmount event on 2 different volumes are performed before the first
     // one's preference is disabled
-    private Preference mLastClickedMountToggle;
-    private String mClickedMountPoint;
+    private static Preference sLastClickedMountToggle;
+    private static String sClickedMountPoint;
 
     // Access using getMountService()
-    private IMountService mMountService = null;
+    private IMountService mMountService;
+    private StorageManager mStorageManager;
+    private UsbManager mUsbManager;
 
-    private StorageManager mStorageManager = null;
-
-    private StorageVolumePreferenceCategory mInternalStorageVolumePreferenceCategory;
-    private StorageVolumePreferenceCategory[] mStorageVolumePreferenceCategories;
+    private ArrayList<StorageVolumePreferenceCategory> mCategories = Lists.newArrayList();
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        if (mStorageManager == null) {
-            mStorageManager = (StorageManager) getSystemService(Context.STORAGE_SERVICE);
-            mStorageManager.registerListener(mStorageListener);
-        }
+        final Context context = getActivity();
+
+        mUsbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+
+        mStorageManager = StorageManager.from(context);
+        mStorageManager.registerListener(mStorageListener);
 
         addPreferencesFromResource(R.xml.device_info_memory);
 
-        mResources = getResources();
+        addCategory(StorageVolumePreferenceCategory.buildForInternal(context));
 
-        if (!Environment.isExternalStorageEmulated()) {
-            // External storage is separate from internal storage; need to
-            // show internal storage as a separate item.
-            mInternalStorageVolumePreferenceCategory = new StorageVolumePreferenceCategory(
-                    getActivity(), mResources, null, mStorageManager, false);
-            getPreferenceScreen().addPreference(mInternalStorageVolumePreferenceCategory);
-            mInternalStorageVolumePreferenceCategory.init();
-        }
-
-        StorageVolume[] storageVolumesListRaw = mStorageManager.getVolumeList();
-        ArrayList<StorageVolume> storageVolumesList = new ArrayList<StorageVolume>();
-        for (int i = 0; i < storageVolumesListRaw.length; i++) {
-            StorageVolume storageVolume = storageVolumesListRaw[i];
-            if (!mStorageManager.getVolumeState(storageVolume.getPath()).equals(Environment.MEDIA_REMOVED)) {
-                storageVolumesList.add(storageVolume);
+        final StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
+        for (StorageVolume volume : storageVolumes) {
+            if (!volume.isEmulated()) {
+                addCategory(StorageVolumePreferenceCategory.buildForPhysical(context, volume));
             }
-        }
-        StorageVolume[] storageVolumes = storageVolumesList.toArray(new StorageVolume[storageVolumesList.size()]);
-
-        int length = storageVolumes.length;
-        mStorageVolumePreferenceCategories = new StorageVolumePreferenceCategory[length];
-        for (int i = 0; i < length; i++) {
-            StorageVolume storageVolume = storageVolumes[i];
-            boolean isPrimary = i == 0;
-            mStorageVolumePreferenceCategories[i] = new StorageVolumePreferenceCategory(
-                    getActivity(), mResources, storageVolume, mStorageManager, isPrimary);
-            getPreferenceScreen().addPreference(mStorageVolumePreferenceCategories[i]);
-            mStorageVolumePreferenceCategories[i].init();
         }
 
         setHasOptionsMenu(true);
     }
 
+    private void addCategory(StorageVolumePreferenceCategory category) {
+        mCategories.add(category);
+        getPreferenceScreen().addPreference(category);
+        category.init();
+    }
+
     private boolean isMassStorageEnabled() {
-        // mass storage is enabled if primary volume supports it
-        final StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
-        return (storageVolumes.length > 0 && storageVolumes[0].allowMassStorage());
+        // Mass storage is enabled if primary volume supports it
+        final StorageVolume[] volumes = mStorageManager.getVolumeList();
+        final StorageVolume primary = StorageManager.getPrimaryVolume(volumes);
+        return primary != null && primary.allowMassStorage();
     }
 
     @Override
@@ -130,11 +125,12 @@ public class Memory extends SettingsPreferenceFragment {
         intentFilter.addDataScheme("file");
         getActivity().registerReceiver(mMediaScannerReceiver, intentFilter);
 
-        if (mInternalStorageVolumePreferenceCategory != null) {
-            mInternalStorageVolumePreferenceCategory.onResume();
-        }
-        for (int i = 0; i < mStorageVolumePreferenceCategories.length; i++) {
-            mStorageVolumePreferenceCategories[i].onResume();
+        intentFilter = new IntentFilter();
+        intentFilter.addAction(UsbManager.ACTION_USB_STATE);
+        getActivity().registerReceiver(mMediaScannerReceiver, intentFilter);
+
+        for (StorageVolumePreferenceCategory category : mCategories) {
+            category.onResume();
         }
     }
 
@@ -143,10 +139,10 @@ public class Memory extends SettingsPreferenceFragment {
         public void onStorageStateChanged(String path, String oldState, String newState) {
             Log.i(TAG, "Received storage state changed notification that " + path +
                     " changed state from " + oldState + " to " + newState);
-            for (int i = 0; i < mStorageVolumePreferenceCategories.length; i++) {
-                StorageVolumePreferenceCategory svpc = mStorageVolumePreferenceCategories[i];
-                if (path.equals(svpc.getStorageVolume().getPath())) {
-                    svpc.onStorageStateChanged();
+            for (StorageVolumePreferenceCategory category : mCategories) {
+                final StorageVolume volume = category.getStorageVolume();
+                if (volume != null && path.equals(volume.getPath())) {
+                    category.onStorageStateChanged();
                     break;
                 }
             }
@@ -157,11 +153,8 @@ public class Memory extends SettingsPreferenceFragment {
     public void onPause() {
         super.onPause();
         getActivity().unregisterReceiver(mMediaScannerReceiver);
-        if (mInternalStorageVolumePreferenceCategory != null) {
-            mInternalStorageVolumePreferenceCategory.onPause();
-        }
-        for (int i = 0; i < mStorageVolumePreferenceCategories.length; i++) {
-            mStorageVolumePreferenceCategories[i].onPause();
+        for (StorageVolumePreferenceCategory category : mCategories) {
+            category.onPause();
         }
     }
 
@@ -181,7 +174,7 @@ public class Memory extends SettingsPreferenceFragment {
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         final MenuItem usb = menu.findItem(R.id.storage_usb);
-        usb.setVisible(true);
+        usb.setVisible(!isMassStorageEnabled());
     }
 
     @Override
@@ -216,9 +209,13 @@ public class Memory extends SettingsPreferenceFragment {
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        for (int i = 0; i < mStorageVolumePreferenceCategories.length; i++) {
-            StorageVolumePreferenceCategory svpc = mStorageVolumePreferenceCategories[i];
-            Intent intent = svpc.intentForClick(preference);
+        if (StorageVolumePreferenceCategory.KEY_CACHE.equals(preference.getKey())) {
+            ConfirmClearCacheFragment.show(this);
+            return true;
+        }
+
+        for (StorageVolumePreferenceCategory category : mCategories) {
+            Intent intent = category.intentForClick(preference);
             if (intent != null) {
                 // Don't go across app boundary if monkey is running
                 if (!Utils.isMonkeyRunning()) {
@@ -227,11 +224,11 @@ public class Memory extends SettingsPreferenceFragment {
                 return true;
             }
 
-            if (svpc.mountToggleClicked(preference)) {
-                mLastClickedMountToggle = preference;
-                final StorageVolume storageVolume = svpc.getStorageVolume();
-                mClickedMountPoint = storageVolume.getPath();
-                String state = mStorageManager.getVolumeState(storageVolume.getPath());
+            final StorageVolume volume = category.getStorageVolume();
+            if (volume != null && category.mountToggleClicked(preference)) {
+                sLastClickedMountToggle = preference;
+                sClickedMountPoint = volume.getPath();
+                String state = mStorageManager.getVolumeState(volume.getPath());
                 if (Environment.MEDIA_MOUNTED.equals(state) ||
                         Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
                     unmount();
@@ -248,9 +245,17 @@ public class Memory extends SettingsPreferenceFragment {
     private final BroadcastReceiver mMediaScannerReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            // mInternalStorageVolumePreferenceCategory is not affected by the media scanner
-            for (int i = 0; i < mStorageVolumePreferenceCategories.length; i++) {
-                mStorageVolumePreferenceCategories[i].onMediaScannerFinished();
+            String action = intent.getAction();
+            if (action.equals(UsbManager.ACTION_USB_STATE)) {
+               boolean isUsbConnected = intent.getBooleanExtra(UsbManager.USB_CONNECTED, false);
+               String usbFunction = mUsbManager.getDefaultFunction();
+               for (StorageVolumePreferenceCategory category : mCategories) {
+                   category.onUsbStateChanged(isUsbConnected, usbFunction);
+               }
+            } else if (action.equals(Intent.ACTION_MEDIA_SCANNER_FINISHED)) {
+                for (StorageVolumePreferenceCategory category : mCategories) {
+                    category.onMediaScannerFinished();
+                }
             }
         }
     };
@@ -283,10 +288,10 @@ public class Memory extends SettingsPreferenceFragment {
         Toast.makeText(getActivity(), R.string.unmount_inform_text, Toast.LENGTH_SHORT).show();
         IMountService mountService = getMountService();
         try {
-            mLastClickedMountToggle.setEnabled(false);
-            mLastClickedMountToggle.setTitle(mResources.getString(R.string.sd_ejecting_title));
-            mLastClickedMountToggle.setSummary(mResources.getString(R.string.sd_ejecting_summary));
-            mountService.unmountVolume(mClickedMountPoint, true, false);
+            sLastClickedMountToggle.setEnabled(false);
+            sLastClickedMountToggle.setTitle(getString(R.string.sd_ejecting_title));
+            sLastClickedMountToggle.setSummary(getString(R.string.sd_ejecting_summary));
+            mountService.unmountVolume(sClickedMountPoint, true, false);
         } catch (RemoteException e) {
             // Informative dialog to user that unmount failed.
             showDialogInner(DLG_ERROR_UNMOUNT);
@@ -300,7 +305,7 @@ public class Memory extends SettingsPreferenceFragment {
 
     private boolean hasAppsAccessingStorage() throws RemoteException {
         IMountService mountService = getMountService();
-        int stUsers[] = mountService.getStorageUsers(mClickedMountPoint);
+        int stUsers[] = mountService.getStorageUsers(sClickedMountPoint);
         if (stUsers != null && stUsers.length > 0) {
             return true;
         }
@@ -338,12 +343,76 @@ public class Memory extends SettingsPreferenceFragment {
         IMountService mountService = getMountService();
         try {
             if (mountService != null) {
-                mountService.mountVolume(mClickedMountPoint);
+                mountService.mountVolume(sClickedMountPoint);
             } else {
                 Log.e(TAG, "Mount service is null, can't mount");
             }
         } catch (RemoteException ex) {
             // Not much can be done
+        }
+    }
+
+    private void onCacheCleared() {
+        for (StorageVolumePreferenceCategory category : mCategories) {
+            category.onCacheCleared();
+        }
+    }
+
+    private static class ClearCacheObserver extends IPackageDataObserver.Stub {
+        private final Memory mTarget;
+        private int mRemaining;
+
+        public ClearCacheObserver(Memory target, int remaining) {
+            mTarget = target;
+            mRemaining = remaining;
+        }
+
+        @Override
+        public void onRemoveCompleted(final String packageName, final boolean succeeded) {
+            synchronized (this) {
+                if (--mRemaining == 0) {
+                    mTarget.onCacheCleared();
+                }
+            }
+        }
+    }
+
+    /**
+     * Dialog to request user confirmation before clearing all cache data.
+     */
+    public static class ConfirmClearCacheFragment extends DialogFragment {
+        public static void show(Memory parent) {
+            if (!parent.isAdded()) return;
+
+            final ConfirmClearCacheFragment dialog = new ConfirmClearCacheFragment();
+            dialog.setTargetFragment(parent, 0);
+            dialog.show(parent.getFragmentManager(), TAG_CONFIRM_CLEAR_CACHE);
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            final Context context = getActivity();
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            builder.setTitle(R.string.memory_clear_cache_title);
+            builder.setMessage(getString(R.string.memory_clear_cache_message));
+
+            builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    final Memory target = (Memory) getTargetFragment();
+                    final PackageManager pm = context.getPackageManager();
+                    final List<PackageInfo> infos = pm.getInstalledPackages(0);
+                    final ClearCacheObserver observer = new ClearCacheObserver(
+                            target, infos.size());
+                    for (PackageInfo info : infos) {
+                        pm.deleteApplicationCacheFiles(info.packageName, observer);
+                    }
+                }
+            });
+            builder.setNegativeButton(android.R.string.cancel, null);
+
+            return builder.create();
         }
     }
 }

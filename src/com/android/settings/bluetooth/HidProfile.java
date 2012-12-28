@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2012 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,13 @@
 
 package com.android.settings.bluetooth;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothInputDevice;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
+import android.util.Log;
 
 import com.android.settings.R;
 
@@ -30,8 +32,11 @@ import java.util.List;
  * HidProfile handles Bluetooth HID profile.
  */
 final class HidProfile implements LocalBluetoothProfile {
+    private static final String TAG = "HidProfile";
+    private static boolean V = true;
+
     private BluetoothInputDevice mService;
-    private boolean mProfileReady;
+    private boolean mIsProfileReady;
 
     static final String NAME = "HID";
 
@@ -43,14 +48,19 @@ final class HidProfile implements LocalBluetoothProfile {
             implements BluetoothProfile.ServiceListener {
 
         public void onServiceConnected(int profile, BluetoothProfile proxy) {
+            if (V) Log.d(TAG,"Bluetooth service connected");
             mService = (BluetoothInputDevice) proxy;
-            mProfileReady = true;
+            mIsProfileReady=true;
         }
 
         public void onServiceDisconnected(int profile) {
-            mProfileReady = false;
-            mService = null;
+            if (V) Log.d(TAG,"Bluetooth service disconnected");
+            mIsProfileReady=false;
         }
+    }
+
+    public boolean isProfileReady() {
+        return mIsProfileReady;
     }
 
     HidProfile(Context context, LocalBluetoothAdapter adapter) {
@@ -67,14 +77,19 @@ final class HidProfile implements LocalBluetoothProfile {
     }
 
     public boolean connect(BluetoothDevice device) {
+        if (mService == null) return false;
         return mService.connect(device);
     }
 
     public boolean disconnect(BluetoothDevice device) {
+        if (mService == null) return false;
         return mService.disconnect(device);
     }
 
     public int getConnectionStatus(BluetoothDevice device) {
+        if (mService == null) {
+            return BluetoothProfile.STATE_DISCONNECTED;
+        }
         List<BluetoothDevice> deviceList = mService.getConnectedDevices();
 
         return !deviceList.isEmpty() && deviceList.get(0).equals(device)
@@ -83,14 +98,17 @@ final class HidProfile implements LocalBluetoothProfile {
     }
 
     public boolean isPreferred(BluetoothDevice device) {
+        if (mService == null) return false;
         return mService.getPriority(device) > BluetoothProfile.PRIORITY_OFF;
     }
 
     public int getPreferred(BluetoothDevice device) {
+        if (mService == null) return BluetoothProfile.PRIORITY_OFF;
         return mService.getPriority(device);
     }
 
     public void setPreferred(BluetoothDevice device, boolean preferred) {
+        if (mService == null) return;
         if (preferred) {
             if (mService.getPriority(device) < BluetoothProfile.PRIORITY_ON) {
                 mService.setPriority(device, BluetoothProfile.PRIORITY_ON);
@@ -98,10 +116,6 @@ final class HidProfile implements LocalBluetoothProfile {
         } else {
             mService.setPriority(device, BluetoothProfile.PRIORITY_OFF);
         }
-    }
-
-    public boolean isProfileReady() {
-        return mProfileReady;
     }
 
     public String toString() {
@@ -118,7 +132,7 @@ final class HidProfile implements LocalBluetoothProfile {
     }
 
     public int getSummaryResourceForDevice(BluetoothDevice device) {
-        int state = mService.getConnectionState(device);
+        int state = getConnectionStatus(device);
         switch (state) {
             case BluetoothProfile.STATE_DISCONNECTED:
                 return R.string.bluetooth_hid_profile_summary_use_for;
@@ -147,6 +161,19 @@ final class HidProfile implements LocalBluetoothProfile {
                 return R.drawable.ic_bt_pointing_hid;
             default:
                 return R.drawable.ic_bt_misc_hid;
+        }
+    }
+
+    protected void finalize() {
+        if (V) Log.d(TAG, "finalize()");
+        if (mService != null) {
+            try {
+                BluetoothAdapter.getDefaultAdapter().closeProfileProxy(BluetoothProfile.INPUT_DEVICE,
+                                                                       mService);
+                mService = null;
+            }catch (Throwable t) {
+                Log.w(TAG, "Error cleaning up HID proxy", t);
+            }
         }
     }
 }

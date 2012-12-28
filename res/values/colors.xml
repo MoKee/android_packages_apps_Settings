@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2007 The Android Open Source Project
-	 Copyright (C) 2012 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -25,7 +24,10 @@
     <color name="memory_downloads">#476093</color>
     <color name="memory_dcim">#793A7F</color>
     <color name="memory_music">#8E562A</color>
+    <color name="memory_cache">#479392</color>
     <color name="memory_misc">#7C3030</color>
+    <color name="memory_user_light">#479392</color>
+    <color name="memory_user_dark">#316665</color>
 
     <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
     <color name="crypt_keeper_clock_foreground">#ff666666</color>
@@ -34,4 +36,5 @@
     <color name="divider_color">#20ffffff</color>
     <color name="title_color">@android:color/holo_blue_light</color>
     <color name="setup_divider_color">#333333</color>
+
 </resources>

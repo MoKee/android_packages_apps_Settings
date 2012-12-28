@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-**
 ** Copyright 2007 The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
@@ -108,8 +107,8 @@
         <!-- Do not translate. -->
         <item>1800000</item>
     </string-array>
-    
-    <!-- Security settings.  The delay after screen is turned off until device locks. 
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
          These are shown in a list dialog. -->
     <string-array name="lock_after_timeout_entries">
         <item>Immediately</item>
@@ -144,7 +143,7 @@
         <!-- Do not translate. -->
         <item>1800000</item>
     </string-array>
-    
+
     <string-array name="entries_font_size">
         <item msgid="6490061470416867723">Small</item>
         <item msgid="3579015730662088893">Normal</item>
@@ -158,7 +157,7 @@
         <item>1.15</item>
         <item>1.30</item>
     </string-array>
-    
+
     <!-- TTS settings -->
 
     <!-- Default speech rate choices -->
@@ -170,7 +169,7 @@
         <item>Very fast</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_rate_values" translatable="false">
+    <string-array name="tts_rate_values">
         <item>60</item>
         <item>80</item>
         <item>100</item>
@@ -186,8 +185,9 @@
         <item>High</item>
         <item>Very high</item>
     </string-array>
+
     <!-- Do not translate. -->
-    <string-array name="tts_pitch_values" translatable="false">
+    <string-array name="tts_pitch_values">
         <item>50</item>
         <item>80</item>
         <item>100</item>
@@ -210,7 +210,6 @@
         <item>ita</item>
         <item>spa</item>
     </string-array>
-
 
     <!-- Wi-Fi settings -->
 
@@ -274,7 +273,7 @@
 
     <!-- Match this with the constants in AccessPoint. --> <skip />
     <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
-    <string-array name="wifi_security" translatable="false">
+    <string-array name="wifi_security">
         <!-- The Wi-Fi network does not have any security. -->
         <item>@string/wifi_security_none</item>
         <!-- Do not translate. -->
@@ -287,7 +286,7 @@
 
     <!-- Match this with the constants in AccessPoint. --> <skip />
     <!-- Wi-Fi security types for New User Dialog. EAP is not configurable. -->
-    <string-array name="wifi_security_no_eap" translatable="false">
+    <string-array name="wifi_security_no_eap">
         <!-- The Wi-Fi network does not have any security. -->
         <item>@string/wifi_security_none</item>
         <!-- Do not translate. -->
@@ -308,7 +307,7 @@
 
     <!-- Match this with the constants in WifiDialog. --> <skip />
     <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
-    <string-array name="wifi_eap_method" translatable="false">
+    <string-array name="wifi_eap_method">
         <!-- Do not translate. -->
         <item>PEAP</item>
         <!-- Do not translate. -->
@@ -383,7 +382,7 @@
 
     <!-- Match with wifi_sleep_policy_entries and the values of the settings in Settings class. --> <skip />
     <!-- Do not translate. -->
-    <string-array name="wifi_sleep_policy_values" translatable="false">
+    <string-array name="wifi_sleep_policy_values">
         <!-- Do not translate. -->
         <item>2</item>
         <!-- Do not translate. -->
@@ -404,7 +403,7 @@
 
     <!-- Match with wifi_frequency_band_entries and the values of the settings in WifiManager. -->
     <!-- Do not translate. -->
-    <string-array name="wifi_frequency_band_values" translatable="false">
+    <string-array name="wifi_frequency_band_values">
         <!-- Do not translate. -->
         <item>0</item>
         <!-- Do not translate. -->
@@ -492,7 +491,7 @@
     </string-array>
 
     <!-- Do not translate. -->
-    <string-array name="emergency_tone_values" translatable="false">
+    <string-array name="emergency_tone_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -519,7 +518,7 @@
         <item>PAP or CHAP</item>
     </string-array>
 
-    <string-array name="apn_auth_values" translatable="false">
+    <string-array translatable="false" name="apn_auth_values">
         <!-- Do not translate. -->
         <item>0</item>
         <!-- Do not translate. -->
@@ -537,7 +536,7 @@
         <item>IPv4/IPv6</item>
     </string-array>
 
-    <string-array name="apn_protocol_values" translatable="false">
+    <string-array translatable="false" name="apn_protocol_values">
         <!-- Do not translate. -->
         <item>IP</item>
         <!-- Do not translate. -->
@@ -553,7 +552,7 @@
         <item>Unspecified</item>
     </string-array>
 
-    <string-array name="bearer_values" translatable="false">
+    <string-array translatable="false" name="bearer_values">
         <!-- Do not translate. -->
         <item>14</item>
         <!-- Do not translate. -->
@@ -580,7 +579,7 @@
     <string-array name="long_press_timeout_selector_titles">
         <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
         <item>Short</item>
-        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->        
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
         <item>Medium</item>
         <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
         <item>Long</item>
@@ -680,6 +679,40 @@
         <item>10</item>
     </string-array>
 
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <string-array name="overlay_display_devices_entries">
+        <item>None</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi and 1920x1080 xhdpi</item>
+    </string-array>
+
+    <!-- Values for overlay display devices preference. -->
+    <string-array name="overlay_display_devices_values" translatable="false" >
+        <item></item>
+        <item>720x480/160</item>
+        <item>1280x720/213</item>
+        <item>1920x1080/320</item>
+        <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <string-array name="enable_opengl_traces_entries">
+        <item>None</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+
+    <!-- Values for OpenGL traces preference. -->
+    <string-array name="enable_opengl_traces_values" translatable="false" >
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+
     <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
     <string-array name="app_process_limit_entries">
         <item>Standard limit</item>
@@ -757,6 +790,16 @@
         <item>1</item>
     </string-array>
 
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>Ask</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>Never allow</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>Always allow</item>
+    </string-array>
+
     <!-- **** CYANOGENMOD EDITS START **** -->
 
     <!-- Volume Overlay options. -->
@@ -775,224 +818,36 @@
         <item>3</item>
     </string-array>
 
-    <!-- Silent mode options. -->
-    <string-array name="silent_mode_entries">
-        <item>Off</item>
-        <item>Vibrate</item>
-        <item>Mute</item>
+    <!-- Ring mode options. -->
+    <string-array name="ring_mode_entries" translatable="false">
+        <item>@string/ring_mode_normal</item>
+        <item>@string/ring_mode_vibrate</item>
+        <item>@string/ring_mode_mute</item>
     </string-array>
 
-    <!-- Values for Silent mode. Do not translate. -->
-    <string-array name="silent_mode_values" translatable="false">
-        <item>off</item>
+    <!-- Values for Ring mode. Do not translate. -->
+    <string-array name="ring_mode_values" translatable="false">
+        <item>normal</item>
         <item>vibrate</item>
         <item>mute</item>
     </string-array>
 
-    <!-- Arrays required by Automatic Backlight. -->
-    <string-array name="entries_light_filter_window">
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
-        <item>20 s</item>
-        <item>30 s</item>
-        <item>60 s</item>
+    <!-- Arrays for root access capability -->
+    <string-array name="root_access_entries" translatable="false">
+        <item>@string/root_access_none</item>
+        <item>@string/root_access_apps</item>
+        <item>@string/root_access_adb</item>
+        <item>@string/root_access_all</item>
     </string-array>
 
-    <string-array name="values_light_filter_window" translatable="false">
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-        <item>20000</item>
-        <item>30000</item>
-        <item>60000</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_reset">
-        <item>Disabled</item>
-        <item>400 lux</item>
-        <item>500 lux</item>
-        <item>600 lux</item>
-        <item>700 lux</item>
-        <item>800 lux</item>
-        <item>900 lux</item>
-        <item>1000 lux</item>
-        <item>1500 lux</item>
-        <item>2000 lux</item>
-        <item>2500 lux</item>
-    </string-array>
-
-    <string-array name="values_light_filter_reset" translatable="false">
-        <item>-1</item>
-        <item>400</item>
-        <item>500</item>
-        <item>600</item>
-        <item>700</item>
-        <item>800</item>
-        <item>900</item>
-        <item>1000</item>
-        <item>1500</item>
-        <item>2000</item>
-        <item>2500</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_interval">
-        <item>0.5 s</item>
-        <item>1 s</item>
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
-    </string-array>
-
-    <string-array name="values_light_filter_interval" translatable="false">
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-    </string-array>
-
-    <string-array name="entries_light_levels_dim">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>14</item>
-        <item>16</item>
-        <item>18</item>
-        <item>20 (default)</item>
-        <item>22</item>
-        <item>24</item>
-        <item>26</item>
-    </string-array>
-
-    <string-array name="values_light_levels_dim" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>14</item>
-        <item>16</item>
-        <item>18</item>
-        <item>20</item>
-        <item>22</item>
-        <item>24</item>
-        <item>26</item>
-    </string-array>
-
-    <string-array name="entries_light_decrease_hysteresis">
-        <item>0 %</item>
-        <item>10 %</item>
-        <item>20 %</item>
-        <item>30 %</item>
-        <item>40 %</item>
-        <item>50 %</item>
-        <item>60 %</item>
-        <item>70 %</item>
-        <item>80 %</item>
-        <item>90 %</item>
-    </string-array>
-
-    <string-array name="values_light_decrease_hysteresis" translatable="false">
-        <item>0</item>
-        <item>10</item>
-        <item>20</item>
-        <item>30</item>
-        <item>40</item>
-        <item>50</item>
-        <item>60</item>
-        <item>70</item>
-        <item>80</item>
-        <item>90</item>
-    </string-array>
-    
-    <!-- Arrays required by Notification Widgets. -->
-    <string-array name="entries_brightness_widget" formatted="false" translatable="false">
-        <item>@string/cm_brightness_mode_auto</item>
-        <item>@string/cm_brightness_mode_dim</item>
-        <item>25%</item>
-        <item>50%</item>
-        <item>75%</item>
-        <item>100%</item>
-    </string-array>
-
-   <string-array name="values_brightness_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-
-    <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>  
-        <item>2G/3G Only</item>   
-        <item>2G/3G Only/3G+2G</item>
-    </string-array>
-
-    <string-array name="values_network_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="entries_screentimeout_widget">
-        <item>15s/1m/5m</item>
-        <item>30s/2m/5m</item>
-    </string-array>
-
-    <string-array name="values_screentimeout_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
-    <string-array name="entries_ring_widget" translatable="false">
-        <item>@string/cm_sound_mode_silent</item>
-        <item>@string/cm_sound_mode_vibrate</item>
-        <item>@string/cm_sound_mode_sound</item>
-        <item>@string/cm_sound_mode_soundVibrate</item>
-    </string-array>
-
-    <string-array name="values_ring_widget" translatable="false">
+    <string-array name="root_access_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="entries_flash_widget">
-        <item>Normal</item>
-        <item>High</item>
-    </string-array>
-
-    <string-array name="values_flash_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-  
-    <string-array name="haptic_feedback_entries">
-        <item>Use global setting</item>
-        <item>On</item>
-        <item>Off</item>
-    </string-array>
-
-    <string-array name="haptic_feedback_values" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-
+    <!-- Performance settings -->
     <string-array name="pref_zram_size_entries">
         <item>Disabled</item>
         <item>10%</item>
@@ -1007,41 +862,13 @@
         <item>26</item>
     </string-array>
 
-    <string-array name="entries_status_bar_am_pm">
-        <item>Normal</item>
-        <item>Small</item>
-        <item>None (default)</item>
+    <string-array name="dithering_entries" translatable="false">
+        <item>@string/dithering_no_dither</item>
+        <item>@string/dithering_color_banding</item>
+        <item>@string/dithering_blur_effect</item>
     </string-array>
 
-    <string-array name="values_status_bar_am_pm" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="entries_status_bar_battery" translatable="false">
-        <item>@string/status_bar_style_icon</item>
-        <item>@string/status_bar_battery_status_percentage</item>
-        <item>@string/status_bar_battery_status_circle</item>
-        <item>@string/status_bar_battery_status_circle_percentage</item>
-        <item>@string/status_bar_style_hidden</item>
-    </string-array>
-
-    <string-array name="values_status_bar_battery" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-
-     <string-array name="entries_status_bar_signal" translatable="false">
-        <item>@string/status_bar_style_icon</item>
-        <item>@string/status_bar_signal_text_show_text</item>
-        <item>@string/status_bar_style_hidden</item>
-     </string-array>
-
-     <string-array name="values_status_bar_signal" translatable="false">
+    <string-array name="dithering_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1149,20 +976,6 @@
         <item>1</item>
     </string-array>
 
-    <!-- Profile mode options. -->
-    <string-array name="profile_vibrator_entries" translatable="false">
-        <item>@string/vibrator_state_disabled</item>
-        <item>@string/vibrator_state_silent</item>
-        <item>@string/vibrator_state_enabled</item>
-    </string-array>
-
-    <!-- Values for profile vibrator. Do not translate. -->
-    <string-array name="profile_vibrator_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Profile lock mode options. Do not translate. -->
     <string-array name="profile_lockmode_entries" translatable="false">
         <item>@string/profile_lockmode_default</item>
@@ -1182,50 +995,6 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-
-    <!-- Profile airplane mode options. Do not translate. -->
-    <string-array name="profile_airplanemode_entries" translatable="false">
-        <item>@string/profile_airplanemode_default</item>
-        <item>@string/profile_airplanemode_enabled</item>
-        <item>@string/profile_airplanemode_disabled</item>
-    </string-array>
-
-    <!-- Profile airplane mode summaries. Do not translate. -->
-    <string-array name="profile_airplanemode_summaries" translatable="false">
-        <item>@string/profile_airplanemode_default_summary</item>
-        <item>@string/profile_airplanemode_enabled_summary</item>
-        <item>@string/profile_airplanemode_disabled_summary</item>
-    </string-array>
-
-    <!-- Values for profile airplane mode. Do not translate. -->
-    <string-array name="profile_airplanemode_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="location_entries_gps_source">
-        <item>Use Internal GPS</item>
-    </string-array>
-
-    <string-array name="location_values_gps_source" translatable="false">
-        <item>0</item>
-    </string-array>
-
-    <!-- Arrays for root access capability -->
-    <string-array name="root_access_entries" translatable="false">
-        <item>@string/root_access_none</item>
-        <item>@string/root_access_apps</item>
-        <item>@string/root_access_adb</item>
-        <item>@string/root_access_all</item>
-    </string-array>
-
-    <string-array name="root_access_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
     </string-array>
 
     <!-- Values for the notification light pulse spinners -->
@@ -1263,105 +1032,35 @@
         <item>5000</item>
     </string-array>
 
-    <string-array name="weather_interval_entries" translatable="false">
-        <item>@string/weather_refresh_manual</item>
-        <item>@string/weather_refresh_30min</item>
-        <item>@string/weather_refresh_60min</item>
-        <item>@string/weather_refresh_2hrs</item>
-        <item>@string/weather_refresh_4hrs</item>
-        <item>@string/weather_refresh_6hrs</item>
-        <item>@string/weather_refresh_8hrs</item>
+    <!-- Arrays required by Notification Widgets. -->
+    <string-array name="entries_brightness_widget" formatted="false" translatable="false">
+        <item>@string/cm_brightness_mode_auto</item>
+        <item>@string/cm_brightness_mode_dim</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
     </string-array>
 
-    <string-array name="weather_interval_values" translatable="false">
-        <item>0</item>
-        <item>30</item>
-        <item>60</item>
-        <item>120</item>
-        <item>240</item>
-        <item>360</item>
-        <item>480</item>
-    </string-array>
-
-    <string-array name="calendar_lookahead_entries" translatable="false">
-        <item>@string/calendar_lookahead_3hrs</item>
-        <item>@string/calendar_lookahead_6hrs</item>
-        <item>@string/calendar_lookahead_12hrs</item>
-        <item>@string/calendar_lookahead_1day</item>
-        <item>@string/calendar_lookahead_3days</item>
-        <item>@string/calendar_lookahead_1wk</item>
-    </string-array>
-
-    <string-array name="calendar_lookahead_values" translatable="false">
-        <item>10800000</item>
-        <item>21600000</item>
-        <item>43200000</item>
-        <item>86400000</item>
-        <item>259200000</item>
-        <item>604800000</item>
-    </string-array>
-
-    <string-array name="calendar_show_event_metadata_entries" translatable="false">
-        <item>@string/calendar_metadata_none</item>
-        <item>@string/calendar_metadata_first_line</item>
-        <item>@string/calendar_metadata_all</item>
-    </string-array>
-
-    <string-array name="calendar_show_event_metadata_values" translatable="false">
+   <string-array name="values_brightness_widget" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="lockscreen_background_entries" translatable="false">
-        <item>@string/lockscreen_background_color_fill</item>
-        <item>@string/lockscreen_background_custom_image</item>
-        <item>@string/lockscreen_background_default_wallpaper</item>
-    </string-array>
-
-    <string-array name="lockscreen_background_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <!-- WiFi sleep idle timeout (turn off after this period) -->
-    <string-array name="wifi_idle_mn_entries" translatable="false">
-        <item>@string/wifi_idle_5mn</item>
-        <item>@string/wifi_idle_15mn</item>
-        <item>@string/wifi_idle_30mn</item>
-        <item>@string/wifi_idle_1h</item>
-        <item>@string/wifi_idle_3h</item>
-    </string-array>
-    <string-array name="wifi_idle_mn_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
         <item>5</item>
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
     </string-array>
 
-    <!-- DHCP lease times for tethering settings -->
-    <string-array name="tethering_lease_time_entries" translatable="false">
-        <item>@string/dhcp_lease_30mn</item>
-        <!-- keep this in sync with DEFAULT_LEASE_TIME in system/netd/TetherController.h -->
-        <item>@string/dhcp_lease_1h</item>
-        <item>@string/dhcp_lease_2h</item>
-        <item>@string/dhcp_lease_4h</item>
-        <item>@string/dhcp_lease_6h</item>
-        <item>@string/dhcp_lease_12h</item>
-        <item>@string/dhcp_lease_24h</item>
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Only</item>
+        <item>2G/3G Only/3G+2G</item>
     </string-array>
 
-    <!-- Do not translate. -->
-    <string-array name="tethering_lease_time_values" translatable="false">
-        <item>1800</item>
-        <item>-1</item>
-        <item>7200</item>
-        <item>14400</item>
-        <item>21600</item>
-        <item>43200</item>
-        <item>86400</item>
+    <string-array name="values_network_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="increasing_ring_interval_entries" translatable="false">
@@ -1384,54 +1083,90 @@
         <item>10000</item>
     </integer-array>
 
-    <string-array name="dithering_entries" translatable="false">
-        <item>@string/dithering_no_dither</item>
-        <item>@string/dithering_color_banding</item>
-        <item>@string/dithering_blur_effect</item>
+    <string-array name="entries_screentimeout_widget">
+        <item>15s/1m/5m</item>
+        <item>30s/2m/5m</item>
     </string-array>
 
-    <string-array name="dithering_values" translatable="false">
+    <string-array name="values_screentimeout_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget" translatable="false">
+        <item>@string/cm_sound_mode_silent</item>
+        <item>@string/cm_sound_mode_vibrate</item>
+        <item>@string/cm_sound_mode_sound</item>
+        <item>@string/cm_sound_mode_soundVibrate</item>
+    </string-array>
+
+    <string-array name="values_ring_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="values_flash_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Use global setting</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_values" translatable="false">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Small</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="values_status_bar_am_pm" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="lockscreen_battery_status_entries" translatable="false">
-        <item>@string/lockscreen_battery_status_charging</item>
-        <item>@string/lockscreen_battery_status_alwayson</item>
+    <string-array name="entries_status_bar_battery" translatable="false">
+        <item>@string/status_bar_style_icon</item>
+        <item>@string/status_bar_battery_status_percentage</item>
+        <item>@string/status_bar_battery_status_circle</item>
+        <item>@string/status_bar_battery_status_circle_percentage</item>
+        <item>@string/status_bar_style_hidden</item>
     </string-array>
 
-    <string-array name="lockscreen_battery_status_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
-    <string-array name="lockscreen_clock_align_entries" translatable="false">
-        <item>@string/lockscreen_clock_align_left</item>
-        <item>@string/lockscreen_clock_align_center</item>
-        <item>@string/lockscreen_clock_align_right</item>
-    </string-array>
-
-    <string-array name="lockscreen_clock_align_values" translatable="false">
+    <string-array name="values_status_bar_battery" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
-    <string-array name="lockscreen_long_key_press_entries" translatable="false">
-        <item>@string/lockscreen_buttons_no_action</item>
-        <item>@string/lockscreen_buttons_next</item>
-        <item>@string/lockscreen_buttons_previous</item>
-        <item>@string/lockscreen_buttons_playpause</item>
-        <item>@string/lockscreen_buttons_toggle_sound</item>
+    <string-array name="entries_status_bar_signal" translatable="false">
+        <item>@string/status_bar_style_icon</item>
+        <item>@string/status_bar_signal_text_show_text</item>
+        <item>@string/status_bar_style_hidden</item>
     </string-array>
 
-    <string-array name="lockscreen_long_key_press_values" translatable="false">
-        <item></item>
-        <item>NEXT</item>
-        <item>PREVIOUS</item>
-        <item>PLAYPAUSE</item>
-        <item>SOUND</item>
+    <string-array name="values_status_bar_signal" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="hardware_keys_action_entries" translatable="false">
@@ -1452,6 +1187,22 @@
         <item>5</item>
     </string-array>
 
+    <string-array name="lockscreen_long_key_press_entries" translatable="false">
+        <item>@string/lockscreen_buttons_no_action</item>
+        <item>@string/lockscreen_buttons_next</item>
+        <item>@string/lockscreen_buttons_previous</item>
+        <item>@string/lockscreen_buttons_playpause</item>
+        <item>@string/lockscreen_buttons_toggle_sound</item>
+    </string-array>
+
+    <string-array name="lockscreen_long_key_press_values" translatable="false">
+        <item></item>
+        <item>NEXT</item>
+        <item>PREVIOUS</item>
+        <item>PLAYPAUSE</item>
+        <item>SOUND</item>
+    </string-array>
+
     <!--- Volume key cursor control -->
     <string-array name="volume_key_cursor_control_entries" translatable="false">
         <item>@string/volume_key_cursor_control_off</item>
@@ -1465,44 +1216,43 @@
         <item>2</item>
     </string-array>
 
+    <string-array name="lockscreen_battery_status_entries" translatable="false">
+        <item>@string/lockscreen_battery_status_charging</item>
+        <item>@string/lockscreen_battery_status_alwayson</item>
+    </string-array>
+
+    <string-array name="lockscreen_battery_status_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Quick pulldown -->
+    <string-array name="quick_pulldown_entries" translatable="false">
+        <item>@string/quick_pulldown_off</item>
+        <item>@string/quick_pulldown_right</item>
+        <item>@string/quick_pulldown_left</item>
+    </string-array>
+
+    <string-array name="quick_pulldown_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!--- Sms security limit -->
     <string-array name="sms_security_check_limit_entries" translatable="false">
-        <item>15</item>
         <item>@string/sms_security_check_limit_default</item>
         <item>50</item>
         <item>100</item>
-        <item>300</item>
-        <item>500</item>
-        <item>1000</item>
+        <item>200</item>
     </string-array>
 
     <string-array name="sms_security_check_limit_values" translatable="false">
-        <item>15</item>
         <item>30</item>
         <item>50</item>
         <item>100</item>
-        <item>300</item>
-        <item>500</item>
-        <item>1000</item>
+        <item>200</item>
     </string-array>
 
-    <!-- Stylus Gestures -->
-    <string-array name="gestures_entries" translatable="false">
-        <item>@string/gestures_action_empty</item>
-        <item>@string/gestures_action_home</item>
-        <item>@string/gestures_action_back</item>
-        <item>@string/gestures_action_menu</item>
-        <item>@string/gestures_action_search</item>
-        <item>@string/gestures_action_recent</item>
-    </string-array>
-
-    <string-array name="gestures_values" translatable="false">
-        <item>1000</item>
-        <item>1001</item>
-        <item>1002</item>
-        <item>1003</item>
-        <item>1004</item>
-        <item>1005</item>
-    </string-array>
     <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>

@@ -107,6 +107,13 @@
     <item msgid="5660739516542454527">"Bloccato"</item>
     <item msgid="1805837518286731242">"Al momento vengono evitate connessioni deboli"</item>
   </string-array>
+    <!-- no translation found for wifi_security:0 (8491993170197127709) -->
+    <!-- no translation found for wifi_security:1 (6524315248437318854) -->
+    <!-- no translation found for wifi_security:2 (1532568756571457140) -->
+    <!-- no translation found for wifi_security:3 (3620707702811709779) -->
+    <!-- no translation found for wifi_security_no_eap:0 (2084555984818107151) -->
+    <!-- no translation found for wifi_security_no_eap:1 (397579322683471524) -->
+    <!-- no translation found for wifi_security_no_eap:2 (1968820975358150484) -->
   <string-array name="wifi_eap_method">
     <item msgid="1160193392455075561">"PEAP"</item>
     <item msgid="7981731051382306293">"TLS"</item>
@@ -151,19 +158,6 @@
     <item msgid="624340809384223320">"Automatica"</item>
     <item msgid="6670588712989942178">"Solo 5 GHz"</item>
     <item msgid="2715516524973207876">"Solo 2,4 GHz"</item>
-  </string-array>
-  <string-array name="wifi_countrycode_entries">
-    <item>Stati Uniti</item>
-    <item>Canada, Taiwan</item>
-    <item>Germania</item>
-    <item>Europa</item>
-    <item>Giappone, Russia</item>
-    <item>Australia</item>
-    <item>Cina</item>
-    <item>Corea</item>
-    <item>Turchia</item>
-    <item>Singapore</item>
-    <item>Brasile</item>
   </string-array>
   <string-array name="usage_stats_display_order_types">
     <item msgid="2100172576767439288">"Tempo di utilizzo"</item>
@@ -219,8 +213,8 @@
   </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"Breve"</item>
-    <item msgid="2560532955514699713">"Media"</item>
-    <item msgid="2372711992605524591">"Lunga"</item>
+    <item msgid="2560532955514699713">"Medio"</item>
+    <item msgid="2372711992605524591">"Lungo"</item>
   </string-array>
   <string-array name="hdcp_checking_titles">
     <item msgid="441827799230089869">"Non verificare mai"</item>
@@ -259,6 +253,19 @@
     <item msgid="3170120558236848008">"Scala animazione 5x"</item>
     <item msgid="1069584980746680398">"Scala animazione 10x"</item>
   </string-array>
+  <string-array name="overlay_display_devices_entries">
+    <item msgid="1606809880904982133">"Nessuno"</item>
+    <item msgid="688482401508173818">"720 x 480 mdpi"</item>
+    <item msgid="1725473474827398815">"1280 x 720 tvdpi"</item>
+    <item msgid="6813511923592083251">"1920 x 1080 xhdpi"</item>
+    <item msgid="3646519549495410112">"1280 x 720 tvdpi e 1920 x 1080 xhdpi"</item>
+  </string-array>
+  <string-array name="enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"Nessuna"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace (grafica)"</item>
+    <item msgid="1340692776955662664">"Stack di chiamate su glGetError"</item>
+  </string-array>
   <string-array name="app_process_limit_entries">
     <item msgid="3401625457385943795">"Limite standard"</item>
     <item msgid="4071574792028999443">"Nessun processo in background"</item>
@@ -283,83 +290,65 @@
     <item msgid="4042143101664725090">"Timeout"</item>
     <item msgid="7664124146786465092">"Operazione non riuscita"</item>
   </string-array>
-  <string-array name="volume_overlay_entries">
+  <string-array name="security_settings_premium_sms_values">
+    <item msgid="7389829271787670252">"Chiedi"</item>
+    <item msgid="5077768429488260031">"Non consentire mai"</item>
+    <item msgid="1417929597727989746">"Consenti sempre"</item>
+  </string-array>
+
+    <!-- **** CYANOGENMOD EDITS START **** -->
+
+    <!-- Volume Overlay options. -->
+    <string-array name="volume_overlay_entries">
     <item>"Singolo"</item>
-    <item>"Espandibile"</item>
-    <item>"Espanso"</item>
-    <item>"Nascosto"</item>
-  </string-array>
-  <string-array name="silent_mode_entries">
-    <item>"Disattivata"</item>
-    <item>"Vibrazione"</item>
-    <item>"Disattiva audio"</item>
-  </string-array>
-  <string-array name="entries_light_filter_reset">
-    <item>Disattivato</item>
-    <item>400 lux</item>
-    <item>500 lux</item>
-    <item>600 lux</item>
-    <item>700 lux</item>
-    <item>800 lux</item>
-    <item>900 lux</item>
-    <item>1000 lux</item>
-    <item>1500 lux</item>
-    <item>2000 lux</item>
-    <item>2500 lux</item>
-  </string-array>
-  <string-array name="entries_light_levels_dim">
-    <item>1</item>
-    <item>2</item>
-    <item>3</item>
-    <item>4</item>
-    <item>5</item>
-    <item>6</item>
-    <item>8</item>
-    <item>10</item>
-    <item>12</item>
-    <item>14</item>
-    <item>16</item>
-    <item>18</item>
-    <item>20 (predefinito)</item>
-    <item>22</item>
-    <item>24</item>
-    <item>26</item>
-  </string-array>
-  <string-array name="entries_network_widget">
-    <item>"2G/3G+2G"</item>
-    <item>"2G/Solo 3G"</item>
-    <item>"2G/Solo 3G/3G+2G"</item>
-  </string-array>
-<string-array name="entries_flash_widget">
-    <item>"Normale"</item>
-    <item>"Elevato"</item>
-  </string-array>
-  <string-array name="haptic_feedback_entries">
-    <item>"Usa impostazione globale"</item>
-    <item>"Attivato"</item>
-    <item>"Disattivato"</item>
-  </string-array>
-  <string-array name="pref_zram_size_entries">
-    <item>"Disattivato"</item>
-    <item>"10%"</item>
-    <item>"18% (predefinito)"</item>
-    <item>"26%"</item>
-  </string-array>
-  <string-array name="entries_status_bar_am_pm">
-    <item>"Normale"</item>
-    <item>"Piccolo"</item>
-    <item>"Nessuno (predefinito)"</item>
-  </string-array>
-  <string-array name="profile_entries">
-    <item>"Attivato"</item>
-    <item>"Disattivato"</item>
-    <item>"Non sovrascrivere"</item>
-  </string-array>
-  <string-array name="profile_connection_entries">
-    <item>"Disattivato"</item>
-    <item>"Attivato"</item>
-  </string-array>
-  <string-array name="location_entries_gps_source">
-    <item>"Usa GPS integrato"</item>
-  </string-array>
+        <item>"Espandibile"</item>
+        <item>"Espanso"</item>
+        <item>"Nascosto"</item>
+    </string-array>
+
+    <!-- Performance settings -->
+    <string-array name="pref_zram_size_entries">
+        <item>"Disattivato"</item>
+        <item>"10%"</item>
+        <item>"18% (predefinito)"</item>
+        <item>"26%"</item>
+    </string-array>
+
+    <!-- Profile mode options. -->
+    <string-array name="profile_entries">
+        <item>"Attivato"</item>
+        <item>"Disattivato"</item>
+        <item>"Non sovrascrivere"</item>
+    </string-array>
+
+    <!-- Profile mode options. -->
+    <string-array name="profile_connection_entries">
+        <item>"Disattivato"</item>
+        <item>"Attivato"</item>
+    </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>"2G/3G+2G"</item>
+        <item>"2G/Solo 3G"</item>
+        <item>"2G/Solo 3G/3G+2G"</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>"Normale"</item>
+        <item>"Elevato"</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>"Usa impostazione globale"</item>
+        <item>"Attivato"</item>
+        <item>"Disattivato"</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_am_pm">
+        <item>"Normale"</item>
+        <item>"Piccolo"</item>
+        <item>"Nessuno (predefinito)"</item>
+    </string-array>
+
+    <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>

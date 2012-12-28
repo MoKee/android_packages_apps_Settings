@@ -20,6 +20,9 @@
     <string name="no" msgid="6731231425810196216">"いいえ"</string>
     <string name="create" msgid="3578857613172647409">"作成"</string>
     <string name="device_info_default" msgid="7847265875578739287">"不明"</string>
+    <string name="show_dev_countdown" msgid="5521163114237004821">"デベロッパーになるまであと<xliff:g id="STEP_COUNT">%1$d</xliff:g>ステップです。"</string>
+    <string name="show_dev_on" msgid="1110711554982716293">"これでデベロッパーになりました！"</string>
+    <string name="show_dev_already" msgid="2151632240145446227">"必要ありません。既にデベロッパーです。"</string>
     <string name="header_category_wireless_networks" msgid="4944823405420438623">"無線とネットワーク"</string>
     <string name="header_category_device" msgid="5781174212691167553">"端末"</string>
     <string name="header_category_personal" msgid="6225932173498802187">"ユーザー設定"</string>
@@ -84,7 +87,8 @@
     <string name="battery_info_status_charging" msgid="1705179948350365604">"充電中"</string>
     <string name="battery_info_status_charging_ac" msgid="5874340256342956252">"(AC)"</string>
     <string name="battery_info_status_charging_usb" msgid="4059070156126770959">"(USB)"</string>
-    <string name="battery_info_status_discharging" msgid="6222697503392774475">"放電中"</string>
+    <string name="battery_info_status_charging_wireless" msgid="1822125795446772771">"（無線）"</string>
+    <string name="battery_info_status_discharging" msgid="310932812698268588">"充電していません"</string>
     <string name="battery_info_status_not_charging" msgid="2820070506621483576">"充電していません"</string>
     <!-- String.format failed for translation -->
     <!-- no translation found for battery_info_status_full (2824614753861462808) -->
@@ -92,6 +96,7 @@
     <string name="battery_info_power_unplugged" msgid="5987246575519551081">"電池使用時間:"</string>
     <string name="battery_info_power_ac" msgid="6808516193001604634">"AC"</string>
     <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
+    <string name="battery_info_power_wireless" msgid="6819163295739305097">"無線"</string>
     <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"AC+USB"</string>
     <string name="battery_info_power_unknown" msgid="7344115502868899881">"不明"</string>
     <string name="battery_info_health_unknown" msgid="5664295556921944255">"不明"</string>
@@ -162,8 +167,6 @@
     <string name="bluetooth_pb_acceptance_dialog_text" msgid="6555508756987053866">"%1$sが連絡先と通話履歴にアクセスしようとしています。%2$sにアクセスを許可しますか？"</string>
     <string name="bluetooth_pb_remember_choice" msgid="2901499974259177202">"次回から表示しない"</string>
     <string name="date_and_time" msgid="4114084177056654663">"日付と時刻"</string>
-    <string name="date_time_12_hour_sample" msgid="3259617262618020574">"1:00 PM"</string>
-    <string name="date_time_24_hour_sample" msgid="8916857570746212357">"13:00"</string>
     <string name="choose_timezone" msgid="1362834506479536274">"タイムゾーンの選択"</string>
     <string name="normal_date_format" msgid="7636406984925498359">"地域（<xliff:g id="DATE">%s</xliff:g>）"</string>
     <string name="display_preview_label" msgid="1127597250917274792">"プレビュー:"</string>
@@ -194,6 +197,7 @@
     <string name="proxy_warning_limited_support" msgid="7229337138062837422">"HTTPプロキシはブラウザで使用されていますが、他のアプリでは使用できません。"</string>
     <string name="radio_info_signal_location_label" msgid="16475158265551708">"ロケーション:"</string>
     <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"近くのCID:"</string>
+    <string name="radio_info_cellinfo_label" msgid="1300937728020622362">"セル情報:"</string>
     <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"データの試行:"</string>
     <string name="radio_info_gprs_service_label" msgid="2331818110375395364">"GPRSサービス:"</string>
     <string name="radio_info_roaming_label" msgid="6141505430275138647">"ローミング:"</string>
@@ -271,6 +275,8 @@
     <string name="roaming_reenable_message" msgid="9141007271031717369">"データローミングをOFFにしたままホームネットワークの外に出たためデータ接続が切断されました。"</string>
     <string name="roaming_turn_it_on_button" msgid="4387601818162120589">"ONにする"</string>
     <string name="roaming_warning" msgid="7625933694709170887">"データローミングを許可すると高額な通信料が発生することがあります。"</string>
+    <string name="roaming_warning_multiuser" product="tablet" msgid="6458990250829214777">"データローミングを許可すると高額な通信料が発生することがあります。"\n\n"この設定はこのタブレット上のすべてのユーザーに影響します。"</string>
+    <string name="roaming_warning_multiuser" product="default" msgid="6368421100292355440">"データローミングを許可すると高額な通信料が発生することがあります。"\n\n"この設定はこの端末上のすべてのユーザーに影響します。"</string>
     <string name="roaming_reenable_title" msgid="6068100976707316772">"データ ローミングを許可しますか？"</string>
     <string name="networks" msgid="6333316876545927039">"通信事業者の選択"</string>
     <string name="sum_carrier_select" msgid="3616956422251879163">"通信事業者を選択する"</string>
@@ -301,6 +307,8 @@
     <string name="owner_info_settings_title" msgid="2723190010708381889">"所有者情報"</string>
     <string name="owner_info_settings_summary" msgid="3800834657847339570"></string>
     <string name="owner_info_settings_edit_text_hint" msgid="4608681417960923911">"ロック画面に表示するテキストを入力します"</string>
+    <string name="show_user_info_on_lockscreen_label" msgid="8408914624925608365">"ロック画面にユーザー情報を表示"</string>
+    <string name="user_info_settings_title" msgid="1195015434996724736">"ユーザー情報"</string>
     <string name="location_settings_title" msgid="4483843407328665068">"位置情報アクセス"</string>
     <string name="security_settings_title" msgid="7945465324818485460">"セキュリティ"</string>
     <string name="security_settings_summary" msgid="967393342537986570">"現在地、画面ロック、SIMカードロック、認証情報ストレージのロック"</string>
@@ -366,7 +374,7 @@
     <string name="unlock_change_lock_pin_title" msgid="806629901095938484">"ロック解除PINの変更"</string>
     <string name="unlock_change_lock_password_title" msgid="5606298470358768865">"ロック解除パスワードの変更"</string>
     <string name="lockpassword_password_too_short" msgid="7328975683669256660">"パスワードを%d文字以上で入力してください"</string>
-    <string name="lockpassword_pin_too_short" msgid="2252847623267704683">"PINを%d文字以上で入力してください"</string>
+    <string name="lockpassword_pin_too_short" msgid="1677649103470518953">"PINは%d桁以上にしてください。"</string>
     <string name="lockpassword_press_continue" msgid="122706614386757182">"終了後[次へ]をタップ"</string>
     <string name="lockpassword_continue_label" msgid="4602203784934526940">"次へ"</string>
     <string name="lockpassword_password_too_long" msgid="7016906583950201704">"パスワードは<xliff:g id="NUMBER">%d</xliff:g>文字未満で指定してください。"</string>
@@ -484,6 +492,27 @@
     <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"スピーカーフォン"</string>
     <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"音楽とメディア"</string>
     <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"設定を保存"</string>
+    <string name="wifi_display_settings_title" msgid="564299108014609382">"ワイヤレスディスプレイ"</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_off" msgid="1225626898926363100">"デバイスを表示するにはワイヤレスディスプレイをONにしてください。"</string>
+    <string name="wifi_display_settings_empty_list_wifi_display_disabled" msgid="7363832031876872257">"Wi-FiがOFFになっているためワイヤレスディスプレイは無効になっています。"</string>
+    <string name="wifi_display_search_for_devices" msgid="5065526281193354502">"ディスプレイを検索"</string>
+    <string name="wifi_display_searching_for_devices" msgid="5172373825348672137">"検索中…"</string>
+    <string name="wifi_display_no_devices_found" msgid="8180582698282377626">"付近にワイヤレスディスプレイは見つかりません。"</string>
+    <string name="wifi_display_paired_devices" msgid="7395326840730024303">"ペア設定されたディスプレイ"</string>
+    <string name="wifi_display_available_devices" msgid="4558314642853513487">"使用可能なデバイス"</string>
+    <string name="wifi_display_status_connecting" msgid="5688608834000748607">"接続中"</string>
+    <string name="wifi_display_status_connected" msgid="8364125226376985558">"接続済み"</string>
+    <string name="wifi_display_status_available" msgid="1924167525172207067">"使用可能"</string>
+    <string name="wifi_display_details" msgid="7791118209992162698">"ディスプレイの設定"</string>
+    <string name="wifi_display_disconnect_title" msgid="1543715924639003599">"切断しますか？"</string>
+    <string name="wifi_display_disconnect_text" msgid="4824860802264489088">"この操作を行うと、次のデバイスとの接続が切断されます:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;"</string>
+    <string name="wifi_display_options_title" msgid="5740656401635054838">"ワイヤレスディスプレイのオプション"</string>
+    <string name="wifi_display_options_forget" msgid="9119048225398894580">"切断"</string>
+    <string name="wifi_display_options_done" msgid="5703116500357822557">"完了"</string>
+    <string name="wifi_display_options_name" msgid="4756080222307467898">"名前"</string>
+    <string name="wifi_display_summary_on" msgid="3695429596604962531">"ON"</string>
+    <string name="wifi_display_summary_off" msgid="2445210133184740611">"OFF"</string>
+    <string name="wifi_display_summary_disabled" msgid="5318394806146587849">"無効"</string>
     <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
     <string name="nfc_quick_toggle_summary" product="tablet" msgid="8302974395787498915">"タブレットが他のデバイスと接触したときのデータ交換を許可する"</string>
     <string name="nfc_quick_toggle_summary" product="default" msgid="5237208142892767592">"端末が他のデバイスと接触したときのデータ交換を許可する"</string>
@@ -513,9 +542,12 @@
     <string name="wifi_poor_network_detection_summary" msgid="2466956369738047669">"安定したインターネット接続があるときのみWi-Fiネットワークを使用する"</string>
     <string name="wifi_setting_sleep_policy_title" msgid="9107237003911220057">"スリープ時にWi-Fi接続を維持"</string>
     <string name="wifi_setting_sleep_policy_error" msgid="8174902072673071961">"設定の変更中に問題が発生しました"</string>
+    <string name="wifi_suspend_optimizations" msgid="387215679583759376">"Wi-Fi最適化"</string>
+    <string name="wifi_suspend_optimizations_summary" msgid="7774946457510541054">"Wi-FiがONのときに電池使用を節約します"</string>
     <string name="wifi_add_network" msgid="6234851776910938957">"ネットワークを追加"</string>
     <string name="wifi_access_points" msgid="2664629396767022441">"Wi-Fiネットワーク"</string>
     <string name="wifi_menu_wps_pbc" msgid="2668564692207863017">"WPSプッシュボタン"</string>
+    <string name="wifi_menu_more_options" msgid="2448097861752719396">"その他のオプション"</string>
     <string name="wifi_menu_wps_pin" msgid="6426448256268695933">"WPS PIN入力"</string>
     <string name="wifi_menu_p2p" msgid="2575893749303670353">"Wi-Fi Direct"</string>
     <string name="wifi_menu_scan" msgid="1470911530412095868">"スキャン"</string>
@@ -528,14 +560,15 @@
     <string name="wifi_other_network" msgid="1048006316504242214">"他のネットワーク…"</string>
     <string name="wifi_more" msgid="3195296805089107950">"その他"</string>
     <string name="wifi_setup_wps" msgid="8128702488486283957">"自動設定（WPS）"</string>
+    <string name="wifi_required_info_text" msgid="9014073093293520112">"セットアップを完了するには、タブレットでWi-Fiに接続する必要があります。セットアップ後にモバイルデータ通信とWi-Fiを切り替えられます。"</string>
     <string name="wifi_show_advanced" msgid="1793703023711426246">"詳細オプションを表示"</string>
     <string name="wifi_wps_setup_title" msgid="6034518116333042484">"Wi-Fi保護設定"</string>
     <string name="wifi_wps_setup_msg" msgid="315174329121275092">"WPSを開始しています…"</string>
     <string name="wifi_wps_onstart_pbc" msgid="7204827509934892103">"ルーターのWi-Fi保護設定ボタンを押します。「WPS」と表記されている場合や、次のような記号が表示されている場合もあります:"</string>
-    <string name="wifi_wps_onstart_pin" msgid="8116564886303972764">"Wi-FiルーターでPIN「<xliff:g id="NUMBER">%1$s</xliff:g>」を入力します。セットアップの完了まで最大2分ほどかかることがあります。"</string>
+    <string name="wifi_wps_onstart_pin" msgid="8067502591043979939">"Wi-FiルーターでPIN「<xliff:g id="NUMBER">%1$s</xliff:g>」を入力します。セットアップの完了まで最大2分ほどかかることがあります。"</string>
     <string name="wifi_wps_complete" msgid="2388138550456729134">"WPSの設定に成功しました。ネットワークに接続しています…"</string>
     <string name="wifi_wps_connected" msgid="5754399645462924103">"Wi-Fiネットワーク<xliff:g id="NETWORK_NAME">%s</xliff:g>に接続しました"</string>
-    <string name="wifi_wps_in_progress" msgid="2944576520214787628">"WPSを設定中です。完了まで最大2分程度かかることがあります。"</string>
+    <string name="wifi_wps_in_progress" msgid="3372311348221357944">"WPSを設定中です。完了まで最大2分程度かかることがあります。"</string>
     <string name="wifi_wps_failed_generic" msgid="5668775022238832527">"WPSの設定に失敗しました。数分後にもう一度お試しください。"</string>
     <string name="wifi_wps_failed_wep" msgid="2702820087105284461">"無線ルーターのセキュリティ設定（WEP）はサポートされていません"</string>
     <string name="wifi_wps_failed_tkip" msgid="4282401586860713349">"無線ルーターのセキュリティ設定（TKIP）はサポートされていません"</string>
@@ -575,6 +608,14 @@
     <string name="wifi_save" msgid="3331121567988522826">"保存"</string>
     <string name="wifi_failed_save_message" msgid="6650004874143815692">"ネットワークを保存できませんでした"</string>
     <string name="wifi_cancel" msgid="6763568902542968964">"キャンセル"</string>
+    <string name="wifi_skip_anyway" msgid="6965361454438011190">"無視してスキップ"</string>
+    <string name="wifi_dont_skip" msgid="7350341524881124808">"スキップしない"</string>
+    <string name="wifi_skipped_message" product="tablet" msgid="3335132188969450252">"警告: 追加のデータ通信料が発生する可能性があります。"\n\n"タブレットのセットアップでは大量のネットワーク処理が必要となる場合があります。"</string>
+    <string name="wifi_skipped_message" product="default" msgid="1192848364146401759">"警告: 追加のデータ通信料が発生する可能性があります。"\n\n"タブレットのセットアップでは大量のネットワーク処理が必要となる場合があります。"</string>
+    <string name="wifi_and_mobile_skipped_message" product="tablet" msgid="7682836089429990118">"警告: タブレットは、ソフトウェアが最新の状態かどうかを確認できません。"</string>
+    <string name="wifi_and_mobile_skipped_message" product="default" msgid="3324261421359832263">"警告: 携帯端末は、ソフトウェアが最新の状態かどうかを確認できません。"</string>
+    <string name="wifi_connect_failed_message" product="tablet" msgid="6904081070290941807">"タブレットからこのWi-Fiネットワークに接続できませんでした。"</string>
+    <string name="wifi_connect_failed_message" product="default" msgid="3894921379368046855">"携帯端末からこのWi-Fiネットワークに接続できませんでした。"</string>
     <string name="wifi_advanced_titlebar" msgid="1627063574532930090">"Wi-Fi詳細設定"</string>
     <string name="wifi_setting_frequency_band_title" msgid="7493768705046080060">"Wi-Fi周波数帯域"</string>
     <string name="wifi_setting_frequency_band_summary" msgid="3250740757118009784">"使用する周波数帯域を指定する"</string>
@@ -599,6 +640,7 @@
     <string name="wifi_p2p_menu_searching" msgid="2396704492143633876">"検索しています…"</string>
     <string name="wifi_p2p_menu_rename" msgid="8448896306960060415">"デバイス名を変更"</string>
     <string name="wifi_p2p_peer_devices" msgid="299526878463303432">"ピアデバイス"</string>
+    <string name="wifi_p2p_remembered_groups" msgid="3847022927914068230">"接続履歴のあるグループ"</string>
     <string name="wifi_p2p_failed_connect_message" msgid="8921447388048243547">"接続できませんでした。"</string>
     <string name="wifi_p2p_failed_rename_message" msgid="2562182284946936380">"端末の名前を変更できませんでした。"</string>
     <string name="wifi_p2p_disconnect_title" msgid="3216846049677448420">"切断しますか？"</string>
@@ -606,7 +648,10 @@
     <string name="wifi_p2p_disconnect_multiple_message" msgid="3283805371034883105">"切断すると、<xliff:g id="PEER_NAME">%1$s</xliff:g>と他の<xliff:g id="PEER_COUNT">%2$s</xliff:g>個のデバイスの接続が停止します。"</string>
     <string name="wifi_p2p_cancel_connect_title" msgid="255267538099324413">"招待状のキャンセル"</string>
     <string name="wifi_p2p_cancel_connect_message" msgid="7477756213423749402">"<xliff:g id="PEER_NAME">%1$s</xliff:g>との接続への招待をキャンセルしますか？"</string>
+    <string name="wifi_p2p_delete_group_message" msgid="834559380069647086">"このグループとの接続を切断しますか？"</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"ポータブルWi-Fiアクセスポイント"</string>
+    <string name="wifi_tether_starting" msgid="1322237938998639724">"アクセスポイントをONにしています…"</string>
+    <string name="wifi_tether_stopping" msgid="4835852171686388107">"アクセスポイントをOFFにしています…"</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"ポータブルアクセスポイント<xliff:g id="NETWORK_SSID">%1$s</xliff:g>が有効です"</string>
     <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"ポータブルWi-Fiアクセスポイントエラー"</string>
     <string name="wifi_tether_configure_ap_text" msgid="61237027772641155">"Wi-Fiアクセスポイントを設定"</string>
@@ -675,15 +720,16 @@
     <string name="screen_timeout_summary" msgid="327761329263064327">"操作が行われない状態で<xliff:g id="TIMEOUT_DESCRIPTION">%1$s</xliff:g>経過後"</string>
     <string name="wallpaper_settings_title" msgid="5449180116365824625">"壁紙"</string>
     <string name="wallpaper_settings_fragment_title" msgid="519078346877860129">"壁紙の選択先:"</string>
-    <string name="screensaver_settings_title" msgid="3848608373818910549">"スクリーンセーバー"</string>
-    <string name="screensaver_settings_summary_on" msgid="433728808047613634">"電源接続時、スリープで開始"</string>
-    <string name="screensaver_settings_summary_off" msgid="7019248565878953105">"無効"</string>
-    <string name="screensaver_component_title" msgid="8596216100441725363">"選択したスクリーンセーバー"</string>
-    <string name="screensaver_timeout_title" msgid="4882666970355550822">"開始のタイミング"</string>
-    <string name="screensaver_timeout_summary" msgid="7717201094598701673">"アイドル状態が<xliff:g id="TIMEOUT_DESCRIPTION">%1$s</xliff:g>続いた後"</string>
-    <string name="screensaver_timeout_zero_summary" msgid="1274235565189071582">"設定しない"</string>
-    <string name="screensaver_test" msgid="3048249263811694128">"プレビュー"</string>
-    <string name="screensaver_activate_on_dock_title" msgid="3753003388633168862">"ホルダーに置いたときも開始する"</string>
+    <string name="screensaver_settings_title" msgid="3349790120327233241">"スクリーンセーバー"</string>
+    <string name="screensaver_settings_summary_either_long" msgid="2458481525925378465">"ホルダー装着時またはスリープ/充電時"</string>
+    <string name="screensaver_settings_summary_either_short" msgid="6140527286137331478">"いずれか"</string>
+    <string name="screensaver_settings_summary_sleep" msgid="9086186698140423493">"充電時"</string>
+    <string name="screensaver_settings_summary_dock" msgid="2072657401664633283">"ホルダー装着時"</string>
+    <string name="screensaver_settings_summary_off" msgid="2481581696365146473">"OFF"</string>
+    <string name="screensaver_settings_disabled_prompt" msgid="3857507943322777651">"携帯端末のホルダー装着時やスリープ時の動作を管理するにはスクリーンセーバーをONにします。"</string>
+    <string name="screensaver_settings_when_to_dream" msgid="8352267826043957746">"スクリーンセーバー開始のタイミング"</string>
+    <string name="screensaver_settings_dream_start" msgid="4998187847985120168">"今すぐ開始"</string>
+    <string name="screensaver_settings_button" msgid="7292214707625717013">"設定"</string>
     <string name="automatic_brightness" msgid="5014143533884135461">"明るさを自動調整"</string>
     <string name="title_font_size" msgid="4405544325522105222">"フォントサイズ"</string>
     <string name="dialog_title_font_size" msgid="2231507851258955038">"フォントサイズ"</string>
@@ -716,9 +762,11 @@
     <string name="system_update_settings_list_item_summary" msgid="3853057315907710747"></string>
     <string name="firmware_version" msgid="4801135784886859972">"Androidバージョン"</string>
     <string name="model_number" msgid="3765737700545384794">"モデル番号"</string>
+    <string name="fcc_equipment_id" msgid="149114368246356737">"装置ID"</string>
     <string name="baseband_version" msgid="1848990160763524801">"ベースバンドバージョン"</string>
     <string name="kernel_version" msgid="9192574954196167602">"カーネルバージョン"</string>
     <string name="build_number" msgid="3075795840572241758">"ビルド番号"</string>
+    <string name="selinux_status" msgid="6212165375172061672">"SELinuxのステータス"</string>
     <string name="device_info_not_available" msgid="8062521887156825182">"該当なし"</string>
     <string name="device_status_activity_title" msgid="1411201799384697904">"端末の状態"</string>
     <string name="device_status" msgid="607405385799807324">"端末の状態"</string>
@@ -751,6 +799,7 @@
     <string name="sd_memory" product="nosdcard" msgid="2510246194083052841">"USBストレージ"</string>
     <string name="sd_memory" product="default" msgid="151871913888051515">"SDカード"</string>
     <string name="memory_available" msgid="5052397223077021181">"空き容量"</string>
+    <string name="memory_available_read_only" msgid="6497534390167920206">"空き容量（読み取り専用）"</string>
     <string name="memory_size" msgid="6629067715017232195">"合計容量"</string>
     <string name="memory_calculating_size" msgid="2188358544203768588">"計算中..."</string>
     <string name="memory_apps_usage" msgid="2348501997988663688">"アプリ（アプリのデータとメディアコンテンツ）"</string>
@@ -759,6 +808,7 @@
     <string name="memory_dcim_usage" msgid="558887013613822577">"画像、動画"</string>
     <string name="memory_music_usage" msgid="1363785144783011606">"音声（音楽、着信音、ポッドキャストなど）"</string>
     <string name="memory_media_misc_usage" msgid="235452944021647124">"その他"</string>
+    <string name="memory_media_cache_usage" msgid="6704293333141177910">"キャッシュデータ"</string>
     <string name="sd_eject" product="nosdcard" msgid="4988563376492400073">"共有ストレージのマウントを解除"</string>
     <string name="sd_eject" product="default" msgid="6915293408836853020">"SDカードのマウント解除"</string>
     <string name="sd_eject_summary" product="nosdcard" msgid="5009296896648072891">"内部USBストレージのマウント解除"</string>
@@ -773,7 +823,9 @@
     <string name="sd_format" product="default" msgid="2576054280507119870">"SDカード内データを消去"</string>
     <string name="sd_format_summary" product="nosdcard" msgid="6331905044907914603">"内部USBストレージ内の全データ（音楽、写真など）の消去"</string>
     <string name="sd_format_summary" product="default" msgid="212703692181793109">"SDカード内の全データ（音楽、写真など）の消去"</string>
-    <string name="read_only" msgid="6702420168629076340">" （読み取り専用）"</string>
+    <string name="memory_clear_cache_title" msgid="5423840272171286191">"キャッシュデータを消去しますか？"</string>
+    <string name="memory_clear_cache_message" msgid="4550262490807415948">"すべてのアプリのキャッシュデータが消去されます。"</string>
+    <string name="mtp_ptp_mode_summary" msgid="3710436114807789270">"MTPまたはPTP機能が有効です"</string>
     <string name="dlg_confirm_unmount_title" product="nosdcard" msgid="3077285629197874055">"USBストレージマウント解除"</string>
     <string name="dlg_confirm_unmount_title" product="default" msgid="3634502237262534381">"SDカードのマウントを解除しますか？"</string>
     <string name="dlg_confirm_unmount_text" product="nosdcard" msgid="4322636662873269018">"USBストレージのマウントを解除すると、使用中のアプリの一部が停止し、USBストレージを再マウントするまで使用できなくなる場合があります。"</string>
@@ -796,6 +848,7 @@
     <string name="usb_ptp_title" msgid="3852760810622389620">"カメラ（PTP）"</string>
     <string name="usb_ptp_summary" msgid="7673397474756664929">"カメラソフトやMTP非対応パソコンからファイルを転送できるようにします"</string>
     <string name="usb_label_installer_cd" msgid="4331173824920630215">"ファイル転送ツールをインストール"</string>
+    <string name="storage_other_users" msgid="808708845102611856">"その他のユーザー"</string>
     <string name="battery_status_title" msgid="9159414319574976203">"電池の状態:"</string>
     <string name="battery_level_title" msgid="2965679202786873272">"電池残量"</string>
     <string name="apn_settings" msgid="3743170484827528406">"APN"</string>
@@ -920,6 +973,7 @@
     <string name="about_settings_summary" msgid="3371517697156165959">"規約、ステータス、ソフトウェアバージョン"</string>
     <string name="legal_information" msgid="5769301644270604095">"法的情報"</string>
     <string name="contributors_title" msgid="5917703088825286504">"アライアンスパートナー"</string>
+    <string name="regulatory_information" msgid="5695464367088752150">"規制情報"</string>
     <string name="copyright_title" msgid="865906688917260647">"著作権"</string>
     <string name="license_title" msgid="1990487604356037871">"ライセンス"</string>
     <string name="terms_title" msgid="7697580845616764642">"利用規約"</string>
@@ -969,6 +1023,7 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"ロック解除パターンの描き方"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"誤った回数が多すぎます。"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"<xliff:g id="NUMBER">%d</xliff:g>秒後にやり直してください。"</string>
+    <string name="activity_not_found" msgid="5551664692991605325">"アプリは端末にインストールされていません。"</string>
     <string name="skip_button_label" msgid="8680422740354436943">"キャンセル"</string>
     <string name="next_button_label" msgid="8890792540116568321">"次へ"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"タブレットの保護"</string>
@@ -984,6 +1039,8 @@
     <string name="install_unknown_applications" msgid="176855644862942064">"提供元不明のアプリのインストールを許可する"</string>
     <string name="install_all_warning" product="tablet" msgid="3263360446508268880">"提供元不明のアプリからタブレットや個人データが攻撃を受ける可能性が高くなります。このようなアプリの使用により生じる可能性があるタブレットへの損害やデータの損失について、ユーザーご自身が単独で責任を負うことに同意するものとします。"</string>
     <string name="install_all_warning" product="default" msgid="8113734576826384682">"提供元不明のアプリから携帯端末や個人データが攻撃を受ける可能性が高くなります。このようなアプリの使用により生じる可能性がある携帯端末への損害やデータの損失について、ユーザーご自身が単独で責任を負うことに同意するものとします。"</string>
+    <string name="verify_applications" msgid="2959359554974828518">"アプリを確認する"</string>
+    <string name="verify_applications_summary" msgid="6737505521913263792">"損害をもたらす可能性があるアプリのインストールを禁止またはインストール前に警告する"</string>
     <string name="advanced_settings" msgid="1777249286757067969">"詳細設定"</string>
     <string name="advanced_settings_summary" msgid="4016682978071086747">"詳細設定オプションを有効にする"</string>
     <string name="application_info_label" msgid="5736524913065714880">"アプリ情報"</string>
@@ -1004,6 +1061,8 @@
     <string name="external_data_size_label" product="nosdcard" msgid="7533821466482000453">"USBストレージデータ"</string>
     <string name="external_data_size_label" product="default" msgid="626414192825329708">"SDカード"</string>
     <string name="uninstall_text" msgid="3644892466144802466">"アンインストール"</string>
+    <string name="uninstall_all_users_text" msgid="851857393177950340">"すべてのユーザーからアンインストール"</string>
+    <string name="install_text" msgid="884360662922471113">"インストール"</string>
     <string name="disable_text" msgid="6544054052049395202">"無効にする"</string>
     <string name="enable_text" msgid="9217362512327828987">"有効にする"</string>
     <string name="clear_user_data_text" msgid="5597622864770098388">"データを消去"</string>
@@ -1033,6 +1092,7 @@
     <string name="filter_apps_onsdcard" product="nosdcard" msgid="4843063154701023349">"USBストレージ"</string>
     <string name="filter_apps_onsdcard" product="default" msgid="1477351142334784771">"SDカード上"</string>
     <string name="disabled" msgid="9206776641295849915">"無効"</string>
+    <string name="not_installed" msgid="1475144352069281880">"未インストール"</string>
     <string name="no_applications" msgid="7336588977497084921">"アプリはありません。"</string>
     <string name="internal_storage" msgid="1584700623164275282">"内部ストレージ"</string>
     <string name="sd_card_storage" product="nosdcard" msgid="2673203150465132465">"USBストレージ"</string>
@@ -1057,6 +1117,8 @@
     <string name="join_many_items_last" msgid="5925635036718502724">"<xliff:g id="ALL_BUT_LAST_ITEM">%1$s</xliff:g>、および<xliff:g id="LAST_ITEM_0">%2$s</xliff:g>"</string>
     <string name="join_many_items_first" msgid="4333907712038448660">"<xliff:g id="FIRST_ITEM">%1$s</xliff:g>、<xliff:g id="ALL_BUT_FIRST_AND_LAST_ITEM">%2$s</xliff:g>"</string>
     <string name="join_many_items_middle" msgid="7556692394478220814">"<xliff:g id="ADDED_ITEM">%1$s</xliff:g>、<xliff:g id="REST_OF_ITEMS">%2$s</xliff:g>"</string>
+    <string name="security_settings_billing_desc" msgid="8061019011821282358">"このアプリでは料金が請求される場合があります:"</string>
+    <string name="security_settings_premium_sms_desc" msgid="8734171334263713717">"プレミアムSMSを送信"</string>
     <string name="computing_size" msgid="1599186977475211186">"計算中..."</string>
     <string name="invalid_size_value" msgid="7563537715280712285">"パッケージのサイズを計算できませんでした。"</string>
     <string name="empty_list_msg" msgid="5993162337235907160">"サードパーティ製のアプリはインストールされていません。"</string>
@@ -1080,6 +1142,8 @@
     <string name="app_install_location_summary" msgid="5155453752692959098">"新しいアプリの優先インストール先を変更する"</string>
     <string name="app_disable_dlg_title" msgid="3916469657537695436">"内蔵アプリを無効にしますか？"</string>
     <string name="app_disable_dlg_text" msgid="3562567756362627323">"内蔵アプリを無効にすると、他のアプリが正常に動作しなくなることがあります。"</string>
+    <string name="app_special_disable_dlg_title" msgid="2690148680327142674">"データを削除し、アプリを無効にしますか？"</string>
+    <string name="app_special_disable_dlg_text" msgid="3447657419284854195">"内蔵アプリを無効にすると、他のアプリが正常に動作しなくなることがあります。データも削除されます。"</string>
     <string name="app_disable_notifications_dlg_title" msgid="7669264654851761857">"通知をOFFにしますか？"</string>
     <string name="app_disable_notifications_dlg_text" msgid="5088484670924769845">"このアプリの通知をOFFにすると、重要なアラートや更新を見逃すおそれがあります。"</string>
     <string name="storageuse_settings_title" msgid="5657014373502630403">"ストレージ使用状況"</string>
@@ -1097,6 +1161,8 @@
     <string name="memory" msgid="6609961111091483458">"RAM"</string>
     <!-- no translation found for service_process_name (4098932168654826656) -->
     <skip />
+    <string name="running_process_item_user_label" msgid="3129887865552025943">"ユーザー: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
+    <string name="running_process_item_removed_user_label" msgid="8250168004291472959">"削除済みのユーザー"</string>
     <string name="running_processes_item_description_s_s" msgid="5790575965282023145">"<xliff:g id="NUMPROCESS">%1$d</xliff:g>個のプロセスと<xliff:g id="NUMSERVICES">%2$d</xliff:g>個のサービス"</string>
     <string name="running_processes_item_description_s_p" msgid="8019860457123222953">"<xliff:g id="NUMPROCESS">%1$d</xliff:g>個のプロセスと<xliff:g id="NUMSERVICES">%2$d</xliff:g>個のサービス"</string>
     <string name="running_processes_item_description_p_s" msgid="744424668287252915">"<xliff:g id="NUMPROCESS">%1$d</xliff:g>個のプロセスと<xliff:g id="NUMSERVICES">%2$d</xliff:g>個のサービス"</string>
@@ -1202,13 +1268,18 @@
     <string name="development_settings_summary" msgid="1815795401632854041">"アプリ開発オプションを設定する"</string>
     <string name="enable_adb" msgid="7982306934419797485">"USBデバッグ"</string>
     <string name="enable_adb_summary" msgid="4881186971746056635">"USB接続時はデバッグモードにする"</string>
+    <string name="bugreport_in_power" msgid="4548816486587403971">"電源メニューのバグレポート"</string>
+    <string name="bugreport_in_power_summary" msgid="5764234382355067053">"電源メニューにバグレポートを取得するオプションを含める"</string>
     <string name="keep_screen_on" msgid="1146389631208760344">"スリープモードにしない"</string>
     <string name="keep_screen_on_summary" msgid="2173114350754293009">"充電中に画面をスリープにしない"</string>
     <string name="allow_mock_location" msgid="2787962564578664888">"擬似ロケーションを許可"</string>
+    <string name="allow_mock_location_summary" msgid="317615105156345626">"擬似ロケーションを許可する"</string>
     <string name="adb_warning_title" msgid="6234463310896563253">"USBデバッグを許可しますか？"</string>
     <string name="adb_warning_message" msgid="7316799925425402244">"USBデバッグは開発専用に設計されています。パソコンと端末の間でデータをコピーする場合や、アプリを通知なしで端末にインストールする場合、ログデータを読み取る場合に使用できます。"</string>
     <string name="dev_settings_warning_title" msgid="7244607768088540165">"開発用の設定を許可しますか？"</string>
     <string name="dev_settings_warning_message" msgid="2298337781139097964">"これらの設定は開発専用に設計されています。そのため端末や端末上のアプリが故障したり正常に動作しなくなったりするおそれがあります。"</string>
+    <string name="verify_apps_over_usb_title" msgid="4177086489869041953">"USB経由のアプリを確認"</string>
+    <string name="verify_apps_over_usb_summary" msgid="9164096969924529200">"ADB/ADT経由でインストールされたアプリに不正な動作がないかを確認します。"</string>
     <string name="enforce_read_external_title" product="nosdcard" msgid="7733257271454664956">"USBストレージの保護"</string>
     <string name="enforce_read_external_summary" product="nosdcard" msgid="1798088409346660567">"アプリによるUSBストレージの読み取り権限のリクエストが必要"</string>
     <string name="enforce_read_external_confirm_title" product="nosdcard" msgid="2112813067171502209">"USBストレージの保護"</string>
@@ -1236,14 +1307,23 @@
     <string name="accessibility_settings_title" msgid="2130492524656204459">"ユーザー補助の設定"</string>
     <string name="accessibility_services_title" msgid="2592221829284342237">"サービス"</string>
     <string name="accessibility_system_title" msgid="7187919089874130484">"システム"</string>
-    <string name="accessibility_toggle_large_text_title" msgid="6618674985313017711">"大きい文字サイズ"</string>
-    <string name="accessibility_power_button_ends_call_title" msgid="5468375366375940894">"電源ボタンで通話を終了"</string>
-    <string name="accessibility_speak_password_title" msgid="3344423945644925355">"パスワードの音声出力"</string>
-    <string name="accessibility_long_press_timeout_title" msgid="2373216941395035306">"押し続ける時間"</string>
-    <string name="accessibility_script_injection_title" msgid="7921388904564822855">"ウェブアクセシビリティの拡張"</string>
+    <string name="accessibility_screen_magnification_title" msgid="7001782548715744981">"拡大操作"</string>
+    <string name="accessibility_screen_magnification_summary" msgid="2380627654189671754">"この機能をオンにすると、画面をトリプルタップして画面を拡大/縮小できます。"\n\n"拡大した画面で次のことを実行できます:"\n<ul><li>"パン: 2本以上の指で画面上をドラッグします。"</li>\n<li>"拡大レベルの調整: 2本以上の指でピンチイン/ピンチアウトします。"</li></ul>\n\n"また、トリプルタップして押し続けると、指の下の部分を一時的に拡大することができます。この状態で、指をドラッグして画面の別の部分に移動することができます。指を画面から離すと元の状態に戻ります。"\n\n"注意: トリプルタップで拡大する方法は、キーボードとナビゲーションバー以外で使用できます。"</string>
+    <string name="accessibility_global_gesture_preference_title" msgid="6752037184140789970">"ユーザー補助のショートカット"</string>
+    <string name="accessibility_global_gesture_preference_summary_on" msgid="6180927399052022181">"ON"</string>
+    <string name="accessibility_global_gesture_preference_summary_off" msgid="8102103337813609849">"OFF"</string>
+    <string name="accessibility_global_gesture_preference_description" msgid="750438015254396963">"この機能を有効にすると、次の2つのステップでユーザー補助機能をすぐに有効にできます:"\n\n"ステップ1: 音が鳴るか振動するまで電源ボタンを押し続けます。"\n\n"ステップ2: 確認音が鳴るまで2本の指でタップして押し続けます。"\n\n"複数のユーザーでこの端末を使用している場合は、ロック画面でこのショートカットを使用すると、端末がロック解除されるまでユーザー補助機能が一時的に有効になります。"</string>
+    <string name="accessibility_toggle_large_text_preference_title" msgid="6307247527580207161">"大きい文字サイズ"</string>
+    <string name="accessibility_toggle_screen_magnification_preference_title" msgid="2472285215737820469">"画面の拡大"</string>
+    <string name="accessibility_toggle_screen_magnification_auto_update_preference_title" msgid="7218498768415430963">"画面の拡大を自動更新"</string>
+    <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary" msgid="4392059334816220155">"アプリの遷移時に画面の拡大を更新"</string>
+    <string name="accessibility_power_button_ends_call_prerefence_title" msgid="6673851944175874235">"電源ボタンで通話を終了"</string>
+    <string name="accessibility_toggle_speak_password_preference_title" msgid="5986628515113204844">"パスワードの音声出力"</string>
+    <string name="accessibility_long_press_timeout_preference_title" msgid="6708467774619266508">"押し続ける時間"</string>
+    <string name="accessibility_toggle_script_injection_preference_title" msgid="7950932054266694403">"ウェブアクセシビリティの拡張"</string>
     <string name="accessibility_menu_item_settings" msgid="3344942964710773365">"設定"</string>
-    <string name="accessibility_service_state_on" msgid="8791337599927106344">"ON"</string>
-    <string name="accessibility_service_state_off" msgid="2458594460762620776">"OFF"</string>
+    <string name="accessibility_feature_state_on" msgid="2864292320042673806">"ON"</string>
+    <string name="accessibility_feature_state_off" msgid="4172584906487070211">"OFF"</string>
     <string name="accessibility_script_injection_allowed" msgid="7624804397748427621">"許可"</string>
     <string name="accessibility_script_injection_disallowed" msgid="8639525487720429182">"許可していません"</string>
     <string name="accessibility_script_injection_button_allow" msgid="2201503285877102870">"許可"</string>
@@ -1326,6 +1406,7 @@
     <string name="battery_sugg_apps_info" msgid="6907588126789841231">"アプリを停止またはアンインストールします"</string>
     <string name="battery_sugg_apps_gps" msgid="7287643439298561315">"アプリが使用しないように、GPSを手動で管理します"</string>
     <string name="battery_sugg_apps_settings" msgid="3974902365643634514">"アプリ側の設定で電池使用量を抑えられる場合があります"</string>
+    <string name="battery_desc_users" msgid="7682989161885027823">"ユーザーの電池使用量"</string>
     <string name="menu_stats_unplugged" msgid="8296577130840261624">"電池使用時間: <xliff:g id="UNPLUGGED">%1$s</xliff:g>"</string>
     <string name="menu_stats_last_unplugged" msgid="5922246077592434526">"電池使用時間: <xliff:g id="UNPLUGGED">%1$s</xliff:g>"</string>
     <string name="menu_stats_total" msgid="8973377864854807854">"合計使用量"</string>
@@ -1382,6 +1463,24 @@
     <string name="gadget_title" msgid="5519037532720577836">"電源管理"</string>
     <string name="gadget_toggle_wifi" msgid="2382963973155082629">"Wi-Fi設定の更新"</string>
     <string name="gadget_toggle_bluetooth" msgid="7538903239807020826">"Bluetooth設定の更新"</string>
+    <string name="gadget_state_template" msgid="5156935629902649932">"<xliff:g id="ID_1">%1$s</xliff:g> <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+    <string name="gadget_state_on" msgid="6909119593004937688">"ON"</string>
+    <string name="gadget_state_off" msgid="5220212352953066317">"OFF"</string>
+    <string name="gadget_state_turning_on" msgid="3395992057029439039">"ONにしています"</string>
+    <string name="gadget_state_turning_off" msgid="2395546048102176157">"OFFにしています"</string>
+    <string name="gadget_wifi" msgid="5960290421313061434">"Wi-Fi"</string>
+    <string name="gadget_bluetooth" msgid="8998572807378694410">"Bluetooth"</string>
+    <string name="gadget_gps" msgid="1558173602059236567">"GPS"</string>
+    <string name="gadget_sync" msgid="858895763714222152">"同期"</string>
+    <string name="gadget_brightness_template" msgid="930541920933123603">"画面の明るさ<xliff:g id="ID_1">%1$s</xliff:g>"</string>
+    <string name="gadget_brightness_state_auto" msgid="6667967252426515446">"自動"</string>
+    <!-- String.format failed for translation -->
+    <!-- no translation found for gadget_brightness_state_full (6814570109772137631) -->
+    <skip />
+    <!-- String.format failed for translation -->
+    <!-- no translation found for gadget_brightness_state_half (3696671957608774204) -->
+    <skip />
+    <string name="gadget_brightness_state_off" msgid="946382262872753084">"OFF"</string>
     <string name="vpn_settings_title" msgid="5662579425832406705">"VPN"</string>
     <string name="credentials_title" msgid="4446234003860769883">"認証情報ストレージ"</string>
     <string name="credentials_install" product="nosdcard" msgid="466093273825150847">"ストレージからのインストール"</string>
@@ -1486,7 +1585,7 @@
     <string name="sync_disabled" msgid="8511659877596511991">"同期OFF"</string>
     <string name="sync_error" msgid="5060969083117872149">"同期エラー"</string>
     <string name="last_synced" msgid="4242919465367022234">"最終同期日時: <xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>"</string>
-    <string name="sync_in_progress" msgid="5151314196536070569">"今すぐ同期…"</string>
+    <string name="sync_in_progress" msgid="5151314196536070569">"同期しています…"</string>
     <string name="settings_backup" msgid="2274732978260797031">"設定をバックアップ"</string>
     <string name="settings_backup_summary" msgid="7916877705938054035">"設定をバックアップ"</string>
     <string name="sync_menu_sync_now" msgid="6154608350395805683">"今すぐ同期"</string>
@@ -1547,6 +1646,10 @@
     <string name="show_screen_updates_summary" msgid="2569622766672785529">"更新時にウィンドウの表示面全体を点滅させる"</string>
     <string name="show_hw_screen_updates" msgid="5036904558145941590">"GPU表示の更新を表示"</string>
     <string name="show_hw_screen_updates_summary" msgid="1115593565980196197">"GPUでの描画時にウィンドウ内の表示を点滅させる"</string>
+    <string name="show_hw_layers_updates" msgid="5645728765605699821">"ハードウェア層情報を表示"</string>
+    <string name="show_hw_layers_updates_summary" msgid="5296917233236661465">"ハードウェア層が更新されると緑を表示"</string>
+    <string name="show_hw_overdraw" msgid="1136884304711318251">"GPUオーバードローを表示"</string>
+    <string name="show_hw_overdraw_summary" msgid="4295714000923082647">"良好な状態から順に: 青、緑、薄い赤、赤"</string>
     <string name="disable_overlays" msgid="2074488440505934665">"HWオーバーレイを無効"</string>
     <string name="disable_overlays_summary" msgid="3578941133710758592">"画面合成に常にGPUを使用する"</string>
     <string name="enable_traces_title" msgid="7448835465859512430">"トレースを有効にする"</string>
@@ -1554,17 +1657,21 @@
     <string name="enable_traces_summary_none" msgid="1867562808503494163">"現在有効なトレースはない"</string>
     <string name="enable_traces_summary_num" msgid="8978230237777454269">"現在<xliff:g id="NUM">%1$d</xliff:g>件のトレースが有効"</string>
     <string name="enable_traces_summary_all" msgid="3950139649125158247">"現在トレースはすべて有効"</string>
+    <string name="enable_opengl_traces_title" msgid="6790444011053219871">"OpenGLトレースを有効化"</string>
     <string name="debug_layout" msgid="5981361776594526155">"レイアウト境界を表示"</string>
     <string name="debug_layout_summary" msgid="2001775315258637682">"クリップの境界線、マージンなどを表示"</string>
     <string name="show_cpu_usage" msgid="2389212910758076024">"CPU使用状況を表示"</string>
     <string name="show_cpu_usage_summary" msgid="2113341923988958266">"現在のCPU使用状況をオーバーレイ表示する"</string>
     <string name="force_hw_ui" msgid="6426383462520888732">"GPUレンダリングを使用"</string>
     <string name="force_hw_ui_summary" msgid="5535991166074861515">"2D描画にGPUを常に使用する"</string>
+    <string name="force_msaa" msgid="7920323238677284387">"4x MSAAを適用"</string>
+    <string name="force_msaa_summary" msgid="9123553203895817537">"OpenGL ES 2.0アプリで4x MSAAを有効にする"</string>
     <string name="track_frame_time" msgid="6146354853663863443">"GPUレンダリングのプロフィール作成"</string>
     <string name="track_frame_time_summary" msgid="447577515813970287">"adb shell dumpsys gfxinfoでレンダリング時間を測定"</string>
     <string name="window_animation_scale_title" msgid="6162587588166114700">"ウィンドウアニメスケール"</string>
     <string name="transition_animation_scale_title" msgid="387527540523595875">"トランジションアニメスケール"</string>
     <string name="animator_duration_scale_title" msgid="3406722410819934083">"Animator再生時間スケール"</string>
+    <string name="overlay_display_devices_title" msgid="5364176287998398539">"2次画面シミュレート"</string>
     <string name="debug_applications_category" msgid="4206913653849771549">"アプリ"</string>
     <string name="immediately_destroy_activities" msgid="8366775083630234121">"アクティビティを保持しない"</string>
     <string name="immediately_destroy_activities_summary" msgid="3592221124808773368">"ユーザーが離れたアクティビティを直ちに破棄する"</string>
@@ -1623,9 +1730,12 @@
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="7962145861903746827">"モバイルデータ接続は指定の制限に達した場合無効になります。"\n\n"データ利用は携帯端末で記録されますが、携帯通信会社の利用明細は異なる可能性があるため、制限にできるだけ余裕をみておくことをおすすめします。"</string>
     <string name="data_usage_restrict_background_title" msgid="2201315502223035062">"バックグラウンドデータを制限しますか？"</string>
     <string name="data_usage_restrict_background" msgid="6387252645350792955">"バックグラウンドのモバイルデータを制限すると、アプリやサービスによっては、Wi-Fiネットワーク未接続時に機能しない場合があります。"</string>
+    <string name="data_usage_restrict_background_multiuser" product="tablet" msgid="2609163428726042269">"バックグラウンドのモバイルデータを制限すると、アプリやサービスによっては、Wi-Fiネットワーク未接続時に機能しない場合があります。"\n\n"この設定はこのタブレット上のすべてのユーザーに影響します。"</string>
+    <string name="data_usage_restrict_background_multiuser" product="default" msgid="8025473178302056174">"バックグラウンドのモバイルデータを制限すると、アプリやサービスによっては、Wi-Fiネットワーク未接続時に機能しない場合があります。"\n\n"この設定はこの端末上のすべてのユーザーに影響します。"</string>
     <string name="data_usage_sweep_warning" msgid="6387081852568846982"><font size="21">"<xliff:g id="NUMBER">^1</xliff:g>"</font>" "<font size="9">"<xliff:g id="UNIT">^2</xliff:g>"</font>\n<font size="12">"警告"</font></string>
     <string name="data_usage_sweep_limit" msgid="860566507375933039"><font size="21">"<xliff:g id="NUMBER">^1</xliff:g>"</font>" "<font size="9">"<xliff:g id="UNIT">^2</xliff:g>"</font>\n<font size="12">"に制限"</font></string>
     <string name="data_usage_uninstalled_apps" msgid="614263770923231598">"削除したアプリケーション"</string>
+    <string name="data_usage_uninstalled_apps_users" msgid="7986294489899813194">"削除されたアプリとユーザー"</string>
     <string name="data_usage_received_sent" msgid="5039699009276621757">"<xliff:g id="RECEIVED">%1$s</xliff:g>受信、<xliff:g id="SENT">%2$s</xliff:g>送信"</string>
     <string name="data_usage_total_during_range" msgid="4091294280619255237">"<xliff:g id="RANGE">%2$s</xliff:g>: 約<xliff:g id="TOTAL">%1$s</xliff:g>使用"</string>
     <string name="data_usage_total_during_range_mobile" product="tablet" msgid="5961720793603268572">"<xliff:g id="RANGE">%2$s</xliff:g>: 約<xliff:g id="TOTAL">%1$s</xliff:g>使用（タブレットでの記録。携帯通信会社の利用明細は異なる場合があります）"</string>
@@ -1666,6 +1776,10 @@
     <string name="vpn_create" msgid="5628219087569761496">"VPNプロフィールの追加"</string>
     <string name="vpn_menu_edit" msgid="408275284159243490">"プロフィールを編集"</string>
     <string name="vpn_menu_delete" msgid="8098021690546891414">"プロフィールを削除"</string>
+    <string name="vpn_menu_lockdown" msgid="7863024538064268139">"常時接続VPN"</string>
+    <string name="vpn_lockdown_summary" msgid="2200032066376720339">"常時接続するVPNプロファイルを選択します。このVPNに接続しているときのみネットワークにアクセスできます。"</string>
+    <string name="vpn_lockdown_none" msgid="9214462857336483711">"なし"</string>
+    <string name="vpn_lockdown_config_error" msgid="3898576754914217248">"VPNへの常時接続にはサーバーとDNSの両方のIPアドレスが必要です。"</string>
     <string name="vpn_no_network" msgid="3050233675132726155">"ネットワークに接続できません。しばらくしてからもう一度お試しください。"</string>
     <string name="vpn_missing_cert" msgid="7972907102570411501">"証明書がありません。プロフィールを編集してください。"</string>
     <string name="trusted_credentials_system_tab" msgid="3984284264816924534">"システム"</string>
@@ -1684,871 +1798,46 @@
     <string name="backup_pw_cancel_button_text" msgid="8845630125391744615">"キャンセル"</string>
     <string name="percentage" msgid="5866131581207788624">"<xliff:g id="NUMBER">%d</xliff:g>%%"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"その他のシステムアップデート"</string>
-    <string name="user_settings_title" msgid="5189224330534906766">"ユーザーと制限"</string>
-    <string name="user_list_title" msgid="2152311434413878709">"ユーザー"</string>
+    <string name="selinux_status_disabled" msgid="924551035552323327">"Disabled"</string>
+    <string name="selinux_status_permissive" msgid="6004965534713398778">"Permissive"</string>
+    <string name="selinux_status_enforcing" msgid="2252703756208463329">"Enforcing"</string>
+    <string name="user_settings_title" msgid="6151874007858148344">"ユーザー"</string>
+    <string name="user_you_section" msgid="6247838798859425408">"自分"</string>
+    <string name="user_list_title" msgid="8866161687358773982">"その他のユーザー"</string>
     <string name="user_add_user_menu" msgid="1675956975014862382">"ユーザーを追加"</string>
-    <string name="user_details_title" msgid="3037625632127241370">"詳細情報の編集"</string>
-    <string name="user_information_heading" msgid="8728151075759863162">"ユーザー情報"</string>
-    <string name="user_name_title" msgid="7563724675699398319">"名前"</string>
-    <string name="user_restrictions_heading" msgid="4426403050397418553">"コンテンツ制限"</string>
-    <string name="user_market_requires_pin" msgid="3260702297207279414">"PINが必要"</string>
-    <string name="user_max_content_rating" msgid="8297759970216482772">"コンテンツレーティング"</string>
-    <string name="user_system_apps_heading" msgid="2408331798732183682">"システムアプリ"</string>
-    <string name="user_market_apps_heading" msgid="4657387297168308251">"インストール済みアプリ"</string>
-    <string name="user_discard_user_menu" msgid="6638388031088461242">"破棄"</string>
-    <string name="user_remove_user_menu" msgid="3210146886949340574">"ユーザーを削除"</string>
-    <string name="user_new_user_name" msgid="7603010274765911161">"Pesky kid"</string>
+    <string name="user_summary_active" msgid="4740649452346004418">"有効"</string>
+    <string name="user_summary_inactive" msgid="3758296246095054572">"無効"</string>
+    <string name="user_summary_not_set_up" msgid="8778205026866794909">"セットアップしていません"</string>
+    <string name="user_owner" msgid="3879126011135546571">"所有者"</string>
+    <string name="user_nickname" msgid="5148818000228994488">"ニックネーム"</string>
+    <string name="user_add_user_title" msgid="3961861593718285403">"新しいユーザーを追加する"</string>
+    <string name="user_add_user_message_long" msgid="2278524063301283723">"追加ユーザーを作成して、この端末を他のユーザーと共有できます。各ユーザーは各自のスペースを所有でき、アプリや壁紙などを使用してカスタマイズできます。Wi-Fiなど、すべてのユーザーに影響するタブレット設定を変更することもできます。"\n\n"新しいユーザーを作成したら、そのユーザーはセットアップ処理を完了する必要があります。"\n\n"すべてのユーザーは他のユーザーの代わりに更新されたアプリの許可を承認できます。"</string>
+    <string name="user_add_user_message_short" msgid="3310933423737035428">"新しいユーザーを作成したら、そのユーザーはセットアップ処理を完了する必要があります。"\n\n"すべてのユーザーは他のユーザーの代わりに更新されたアプリの許可を承認できます。"</string>
+    <string name="user_setup_dialog_title" msgid="1765794166801864563">"ユーザーを今すぐセットアップ"</string>
+    <string name="user_setup_dialog_message" msgid="614037943337008555">"ユーザーがタブレットを使って各自のスペースをセットアップできるよう確認してください"</string>
+    <string name="user_setup_button_setup_now" msgid="3391388430158437629">"今すぐセットアップ"</string>
+    <string name="user_setup_button_setup_later" msgid="3068729597269172401">"後で行う"</string>
+    <string name="user_cannot_manage_message" product="tablet" msgid="8440449301994432789">"ユーザーを管理できるのはタブレットの所有者のみです。"</string>
+    <string name="user_cannot_manage_message" product="default" msgid="1133251987818014757">"ユーザーを管理できるのは携帯端末の所有者のみです。"</string>
+    <string name="user_remove_user_menu" msgid="6897150520686691355">"この端末から<xliff:g id="USER_NAME">%1$s</xliff:g>を削除"</string>
+    <string name="user_new_user_name" msgid="369856859816028856">"新しいユーザー"</string>
+    <string name="user_confirm_remove_self_title" msgid="8432050170899479556">"自分を削除しますか？"</string>
     <string name="user_confirm_remove_title" msgid="3856148232937245711">"ユーザーを削除しますか？"</string>
-    <string name="user_confirm_remove_message" msgid="5284111415714437285">"ユーザーとすべての関連データを端末から削除してもよろしいですか？"</string>
+    <string name="user_confirm_remove_self_message" product="tablet" msgid="8167855311779740207">"このタブレットのスペースとデータが失われます。この操作は元に戻せません。"</string>
+    <string name="user_confirm_remove_self_message" product="default" msgid="5391888073786090274">"この携帯端末のスペースとデータが失われます。この操作は元に戻せません。"</string>
+    <string name="user_confirm_remove_message" product="tablet" msgid="4610106937214870034">"このユーザーのスペースとデータがタブレットから消去されます。この操作は元に戻せません。"</string>
+    <string name="user_confirm_remove_message" product="default" msgid="8130264611683731142">"このユーザーのスペースとデータが携帯端末から消去されます。この操作は元に戻せません。"</string>
+    <string name="user_adding_new_user" msgid="1521674650874241407">"新しいユーザーを追加中…"</string>
+    <string name="user_delete_user_description" msgid="3158592592118767056">"ユーザーを削除"</string>
+    <string name="user_delete_button" msgid="5131259553799403201">"削除"</string>
+    <string name="global_change_warning" product="tablet" msgid="8045013389464294039">"この設定はこのタブレット上のすべてのユーザーに影響します。"</string>
+    <string name="global_change_warning" product="default" msgid="2461264421590324675">"この設定はこの端末上のすべてのユーザーに影響します。"</string>
+    <string name="global_locale_change_title" msgid="5956281361384221451">"言語の変更"</string>
+    <string name="global_font_change_title" msgid="1887126466191012035">"フォントサイズの変更"</string>
     <string name="app_notifications_switch_label" msgid="9124072219553687583">"通知を表示"</string>
     <string name="help_label" msgid="1107174367904110532">"ヘルプ"</string>
+    <string name="user_account_title" msgid="1127193807312271167">"コンテンツのアカウント"</string>
+    <string name="user_picture_title" msgid="7297782792000291692">"画像ID"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"エリアメール"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"表示する緊急警報の種類を選択してください。"</string>
-
-    <!-- CM String entries bellow -->
-    <!-- force undock -->
-    <string name="dock_force_undock_title">強制的にドック解除</string>
-    <string name="dock_force_undock_summary_no_dock" product="tablet">タブレットはドックされてません</string>
-    <string name="dock_force_undock_summary_no_dock" product="default">携帯電話はドックされてません</string>
-    <string name="dock_force_undock_summary" product="tablet">タブレットをドック解除</string>
-    <string name="dock_force_undock_summary" product="default">携帯電話をドック解除</string>
-
-    <!-- Wifi sleep timeout -->
-    <string name="wifi_idle_mn_title">Wi-Fiアイドルタイムアウト</string>
-    <string name="wifi_idle_5mn">5分</string>
-    <string name="wifi_idle_15mn">15分 (デフォルト)</string>
-    <string name="wifi_idle_30mn">30分</string>
-    <string name="wifi_idle_1h">1時間</string>
-    <string name="wifi_idle_3h">3時間</string>
-    <!-- Wi-Fi settings screen, advanced, title of the item to show the Wi-Fi device's MAC address. -->
-    <string name="wifi_setting_countrycode_title">Wi-Fi地域コード</string>
-    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-    <string name="wifi_setting_countrycode_summary">Wi-Fiの地域コードを指定する</string>
-    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-    <string name="wifi_setting_countrycode_error">地域コードの設定に問題がありました</string>
-
-    <string name="lockpattern_settings_enable_error_path_title">パターンエラーを表示</string>
-    <string name="lockpattern_settings_enable_dots_title">パターンドットを表示</string>
-
-    <string name="accessibility_home_button_answers_call_title">ホームボタンで着信に応答</string>
-    <string name="tts_play_example_not_found_title">警告</string>
-    <string name="tts_play_example_not_found_msg">要求された言語ではサンプルのテキストは見つかりませんでした。</string>
-
-    <string name="battery_info_status_full">フル</string>
-
-    <string name="adb_notify">USBデバッグの通知</string>
-    <string name="adb_notify_summary">USBデバッグが接続されたときに通知する</string>
-    <string name="safe_headset_restore_title">安全なヘッドフォン音量</string>
-    <string name="safe_headset_restore_summary">最初にヘッドフォンを接続した時に大音量になるのを防ぐ</string>
-    <string name="silent_mode_title">マナーモード</string>
-    <string name="volume_ring_only_description">"着信音"</string>
-    <string name="link_volume_ringtones">"着信音と同じ音量にする"</string>
-    <string name="link_volume_mutes">"ミュート状態をリンクさせる"</string>
-    <string name="verifier_device_identifier">"開発端末ID"</string>
-    <string name="verifier_device_identifier_not_available">"端末情報を取得できません"</string>
-    <string name="icon_picker_search">検索</string>
-    <string name="icon_picker_google_small">Google (小)</string>
-
-    <!-- Advanced tethering settings -->
-    <string name="tethering_advanced_text">詳細設定</string>
-    <string name="tethering_lease_time_text">DHCPリース時間</string>
-    <string name="dhcp_lease_30mn">30分</string>
-    <string name="dhcp_lease_1h">1時間(デフォルト)</string>
-    <string name="dhcp_lease_2h">2時間</string>
-    <string name="dhcp_lease_4h">4時間</string>
-    <string name="dhcp_lease_6h">6時間</string>
-    <string name="dhcp_lease_12h">12時間</string>
-    <string name="dhcp_lease_24h">24時間</string>
-
-    <!-- String for ShortcutPickHelper -->
-    <string name="picker_activities">アクティビティ</string>
-    <string name="select_custom_app_title">カスタムアプリケーションを選択</string>
-    <string name="select_custom_activity_title">カスタムアクティビティを選択</string>
-    <string name="icon_picker_choose_icon_title">アイコンを選択</string>
-    <string name="icon_picker_alarm">アラーム</string>
-    <string name="icon_picker_browser">ブラウザ</string>
-    <string name="icon_picker_calendar">カレンダー</string>
-    <string name="icon_picker_camera">カメラ</string>
-    <string name="icon_picker_email">Eメール</string>
-    <string name="icon_picker_facebook">Facebook</string>
-    <string name="icon_picker_gallery">ギャラリー</string>
-    <string name="icon_picker_googleplus">Googleプラス</string>
-    <string name="icon_picker_googletalk">Googleトーク</string>
-    <string name="icon_picker_maps">地図</string>
-    <string name="icon_picker_movie">動画</string>
-    <string name="icon_picker_music">音楽</string>
-    <string name="icon_picker_nav_normal">ナビ</string>
-    <string name="icon_picker_phone">電話</string>
-    <string name="icon_picker_podcast">Podcast</string>
-    <string name="icon_picker_rss">Rss</string>
-    <string name="icon_picker_sms">メッセージ</string>
-    <string name="icon_picker_twitter">Twitter</string>
-
-    <!-- String for IconPicker -->
-    <string name="icon_picker_title">アイコンソースを選択</string>
-    <string name="icon_picker_system_icons_title">システムアイコン</string>
-    <string name="icon_picker_gallery_title">ギャラリー</string>
-    <string name="icon_picker_pack_title">アイコンパック</string>
-
-    <string name="vibrator_type_ringer">着信</string>
-    <string name="vibrator_type_notification">通知</string>
-    <string name="volume_overlay_title">音量パネル</string>
-
-    <!-- Battery light settings #CM -->
-    <string name="battery_light_title">バッテリーライト</string>
-    <string name="battery_low_pulse_title">残量が少なくなったら点滅</string>
-    <string name="battery_light_list_title">色</string>
-    <string name="battery_light_low_color_title">少量時</string>
-    <string name="battery_light_medium_color_title">充電中</string>
-    <string name="battery_light_full_color_title">フル時</string>
-
-    <!-- Backlight #CM -->
-    <string name="backlight_title">自動バックライト</string>
-    <string name="backlight_summary">フィルタやレベルの調整</string>
-    <string name="light_filter_title">明るさセンサのフィルタ</string>
-    <string name="light_filter_enabled_title">有効</string>
-    <string name="light_filter_enabled_summary">移動平均フィルタを適用し、フリッカを減少させる</string>
-    <string name="light_filter_window_title">分析窓長</string>
-    <string name="light_filter_window_summary">フィルタ値はこの期間でのセンサー平均値になります</string>
-    <string name="light_filter_reset_title">リセットする閾値</string>
-    <string name="light_filter_reset_summary">サンプルが現在の平均からこの値だけ逸脱した場合フィルタをリセットします</string>
-    <string name="light_filter_interval_title">サンプリング間隔</string>
-    <string name="light_filter_interval_summary">低い値は精度が良くなりますが、よりCPUを使用します</string>
-    <string name="light_levels_title">ライトレベル</string>
-    <string name="light_levels_enabled_title">カスタム</string>
-    <string name="light_levels_dim_title">スクリーンの暗さレベル</string>
-    <string name="light_levels_dim_summary">スクリーンを暗くした時の明るさ</string>
-    <string name="light_levels_editor_title">他のレベルを編集...</string>
-    <string name="light_decrease_enabled_title">ライトの減少を許可</string>
-    <string name="light_decrease_enabled_summary">ライトが減少するのを許可します。ヒステリシスを使用してフリッカを減少させてください</string>
-    <string name="light_decrease_hysteresis_title">ヒステリシスを減少させる</string>
-    <string name="light_decrease_hysteresis_summary">センサーレベルはこれより下にオーバーラップします</string>
-
-    <!-- Light sensor levels #CM -->
-    <string name="ll_title">ライトセンサーレベル</string>
-    <string name="ll_header_upper">上方</string>
-    <string name="ll_header_lower">下方</string>
-    <string name="ll_header_lcd">スクリーン</string>
-    <string name="ll_header_btn">ボタン</string>
-    <string name="ll_header_kb">キーボード</string>
-    <string name="ll_lux">センサー(フィルタ/生):</string>
-    <string name="ll_lcd">スクリーン:</string>
-    <string name="ll_btn">ボタン:</string>
-    <string name="ll_kb">キーボード:</string>
-    <string name="ll_disabled">無効にする</string>
-    <string name="ll_default">デフォルトに戻す</string>
-    <string name="ll_save">適用して保存</string>
-    <string name="ll_reload">現在の設定を再読込み</string>
-    <string name="ll_bad_levels">レベルは増加しなくてはなりません</string>
-    <string name="ll_num_levels">レベル数をセット</string>
-
-    <!-- Display settings screen, notification light settings -->
-    <string name="notification_light_general_title">一般</string>
-    <string name="notification_light_phonelist_title">電話</string>
-    <string name="notification_light_missed_call_title">不在着信</string>
-    <string name="notification_light_voicemail_title">ボイスメール</string>
-    <string name="notification_light_applist_title">アプリケーション</string>
-    <string name="notification_light_default_value">デフォルト</string>
-    <string name="notification_light_use_custom">カスタム設定を使用</string>
-    <string name="notification_light_enabled">有効</string>
-    <string name="notification_light_disabled">無効</string>
-
-    <!-- Notification light dialogs -->
-    <string name="edit_light_settings">ライトの設定を編集</string>
-    <string name="pulse_speed_title">点滅の長さと速度</string>
-    <string name="picker_arrow">→</string>
-    <string name="default_time">ノーマル</string>
-    <string name="custom_time">カスタム</string>
-    <string name="dialog_test">テスト</string>
-    <string name="dialog_delete_title">削除</string>
-    <string name="dialog_delete_message">選択したアイテムを削除しますか?</string>
-    <string name="dialog_test_message">スクリーンをオフにして選択された通知の挙動を確認、またはこのダイアログを閉じてテストを終了してください。</string>
-    <string name="dialog_test_button">閉じる</string>
-
-    <!-- Values for the notification light pulse spinners -->
-    <string name="pulse_length_always_on">常にオン</string>
-    <string name="pulse_length_very_short">とても短い</string>
-    <string name="pulse_length_short">短い</string>
-    <string name="pulse_length_normal">ノーマル</string>
-    <string name="pulse_length_long">長い</string>
-    <string name="pulse_length_very_long">とても長い</string>
-    <string name="pulse_speed_very_fast">とても速い</string>
-    <string name="pulse_speed_fast">速い</string>
-    <string name="pulse_speed_normal">ノーマル</string>
-    <string name="pulse_speed_slow">遅い</string>
-    <string name="pulse_speed_very_slow">とても遅い</string>
-
-    <!-- Advanced, Device specific (DeviceParts) settings #CM -->
-    <string name="advanced_settings_title">アドバンスド</string>
-
-    <!-- INTERFACE Settings #CM -->
-    <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_interface">インタフェース</string>
-
-    <!-- Launcher settings #CM -->
-    <string name="launcher_settings_title">ランチャー</string>
-
-    <!-- Themes settings #CM -->
-    <string name="themes_settings_title">テーマ</string>
-
-    <!-- System Interface settings #CM -->
-    <string name="system_settings_title">システム</string>
-    <string name="system_interface_title">システムインタフェース</string>
-
-    <!-- Notification Drawer #CM -->
-    <string name="notification_drawer_title">通知領域</string>
-
-    <!-- Combined Bar #CM -->
-    <string name="combined_bar_title">コンバインドバー</string>
-    <string name="combined_bar_auto_hide_title">自動的に隠す</string>
-    <string name="combined_bar_auto_hide_summary">フルスクリーンアプリを表示中にコンバインドバーを隠せるようにする</string>
-
-    <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">ナビゲーションバー</string>
-
-    <string name="navigation_bar_help_text">1 - 編集するにはロックアイコンをタップします\n\n2 - 機能の割り当てや変更をするボタンをタップします\n\n3 - 並びを変更するには長押しします\n\n4 - 保存するために再びロックアイコンをタップします\n\n5 - システムのデフォルトに戻すにはリセットボタンをタップします\n\n</string>
-    <string name="navigation_bar_tips">&#8226; アクションは一度に一つのボタンにしか割り当てられません\n\n&#8226; ホームボタンは変更できません\n\n&#8226; サイドボタンは並び替えできません</string>
-    <string name="navigation_bar_tips_title">クィックチップス</string>
-    <string name="navigation_bar_reset_message">現在の設定を破棄し、デフォルトに戻しますか?</string>
-    <string name="navigation_bar_save_message">ナビゲーションバーの設定を保存しました</string>
-    <string name="navigation_bar_reset_toast">ナビゲーションバーをデフォルトに戻しました</string>
-    <string name="navigation_bar_menu_editable">編集可能</string>
-    <string name="navigation_bar_menu_locked">ロック中</string>
-
-    <!-- Hardware keys #CM -->
-    <string name="hardware_keys_title">ハードウェアキー</string>
-    <string name="hardware_keys_bindings_title">キーアクション</string>
-    <string name="hardware_keys_enable_custom_title">カスタムアクション</string>
-    <string name="hardware_keys_home_long_press_title">ホームキー(長押し)</string>
-    <string name="hardware_keys_menu_press_title">メニューキー</string>
-    <string name="hardware_keys_menu_long_press_title">メニューキー(長押し)</string>
-    <string name="hardware_keys_assist_press_title">検索キー</string>
-    <string name="hardware_keys_assist_long_press_title">検索キー(長押し)</string>
-    <string name="hardware_keys_app_switch_press_title">タスクキー</string>
-    <string name="hardware_keys_app_switch_long_press_title">タスクキー(長押し)</string>
-    <string name="hardware_keys_show_overflow_title">オーバーフローアクション</string>
-    <string name="hardware_keys_show_overflow_summary">3ドットのオーバーフローメニューボタンをアプリ内に表示する</string>
-    <string name="hardware_keys_show_overflow_toast_enable">アクションオーバーフローボタンはアプリを再起動するまで表示されません</string>
-    <string name="hardware_keys_show_overflow_toast_disable">アクションオーバーフローボタンはアプリを再起動するまで表示されます</string>
-    <string name="hardware_keys_action_nothing">無し</string>
-    <string name="hardware_keys_action_menu">メニューを開く/閉じる</string>
-    <string name="hardware_keys_action_app_switch">最近使ったアプリ</string>
-    <string name="hardware_keys_action_search">検索アシスタント</string>
-    <string name="hardware_keys_action_voice_search">音声検索</string>
-    <string name="hardware_keys_action_in_app_search">アプリ内検索</string>
-
-    <!-- Power Widget #CM -->
-    <string name="power_widget_title">電源管理ウィジェット</string>
-    <string name="title_expanded_widget">電源管理ウィジェットを表示</string>
-    <string name="power_widget_behavior">ウィジェットの挙動</string>
-    <string name="title_expanded_hide_onchange">変更したら隠す</string>
-    <string name="title_expanded_hide_scrollbar">スクロールバーを隠す</string>
-    <string name="title_widget_picker">ウィジェットボタン</string>
-    <string name="summary_widget_picker">ウィジェットボタンを選択</string>
-    <string name="title_widget_order">ウィジェットボタンの並び</string>
-    <string name="summary_widget_order">ウィジェットボタンを並び替える</string>
-    <string name="title_buttons">ボタン</string>
-    <string name="title_toggle_wifi">Wi-Fiトグル</string>
-    <string name="title_toggle_bluetooth">Bluetoothトグル</string>
-    <string name="title_toggle_gps">GPSトグル</string>
-    <string name="title_toggle_sound">サウンドトグル</string>
-    <string name="title_toggle_brightness">明るさトグル</string>
-    <string name="title_toggle_sync">同期トグル</string>
-    <string name="title_toggle_wifiap">Wi-Fi APトグル</string>
-    <string name="title_toggle_screentimeout">スクリーンタイムアウトトグル</string>
-    <string name="title_toggle_mobiledata">モバイルデータトグル</string>
-    <string name="title_toggle_lockscreen">ロックスクリーントグル</string>
-    <string name="title_toggle_networkmode">2G/3Gトグル</string>
-    <string name="title_toggle_autorotate">回転トグル</string>
-    <string name="title_toggle_airplane">機内モードトグル</string>
-    <string name="title_toggle_flashlight">LEDフラッシュトグル</string>
-    <string name="title_toggle_sleep">スリープ</string>
-    <string name="title_toggle_media_play_pause">メディア: 再生/停止トグル</string>
-    <string name="title_toggle_media_previous">メディア: 前に戻る</string>
-    <string name="title_toggle_media_next">メディア: 次に進む</string>
-    <string name="title_toggle_wimax">WiMAXトグル</string>
-    <string name="title_toggle_lte">LTEトグル</string>
-    <string name="title_button_modes">ボタンモード</string>
-    <string name="pref_brightness_mode_title">明るさ</string>
-    <string name="pref_brightness_mode_summary">明るさトグルで変更するモードの選択</string>
-    <string name="cm_brightness_mode_auto">自動</string>
-    <string name="cm_brightness_mode_dim">暗い</string>
-    <string name="pref_network_mode_title">ネットワーク</string>
-    <string name="pref_screentimeout_mode_title">スクリーンタイムアウト</string>
-    <string name="pref_ring_mode_title">サウンド</string>
-    <string name="pref_ring_mode_summary">サウンドトグルで変更するモードの選択</string>
-    <string name="cm_sound_mode_silent">サイレント</string>
-    <string name="cm_sound_mode_vibrate">バイブレーション</string>
-    <string name="cm_sound_mode_sound">サウンド</string>
-    <string name="cm_sound_mode_soundVibrate">サウンドとバイブレーション</string>
-    <string name="pref_flash_mode_title">フラッシュ</string>
-    <string name="expanded_haptic_feedback_title">バイブフィードバック</string>
-
-    <!-- Status bar #CM -->
-    <string name="status_bar_title">ステータスバー</string>
-    <string name="status_bar_general_title">一般</string>
-    <string name="status_bar_show_clock_title">時計を表示</string>
-    <string name="status_bar_am_pm_title">AM/PMスタイル</string>
-    <string name="status_bar_am_pm_info">24時間スタイルが有効</string>
-    <string name="status_bar_clock_title">時計</string>
-    <string name="status_bar_battery_title">バッテリー状態のスタイル</string>
-    <string name="status_bar_toggle_brightness">明るさのコントロール</string>
-    <string name="status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
-    <string name="status_bar_toggle_info">自動明るさ調整は有効</string>
-    <string name="status_bar_signal_text_title">代替の電波強度表示</string>
-    <string name="status_bar_style_icon">アイコン</string>
-    <string name="status_bar_style_hidden">非表示</string>
-    <string name="status_bar_signal_text_show_text">シグナルテキスト</string>
-    <string name="status_bar_battery_status_percentage">数値</string>
-    <string name="status_bar_battery_status_circle">サークル</string>
-    <string name="status_bar_battery_status_circle_percentage">サークルに数値</string>
-
-    <!-- Lock screen #CM -->
-    <string name="lock_screen_title">ロック画面</string>
-
-    <!-- Lock Screen Shortcuts -->
-    <string name="lockscreen_target_info">ショートカットを割り当てたいターゲットにスライダーをドラッグ</string>
-    <string name="lockscreen_target_title">ロック画面のショートカット</string>
-    <string name="lockscreen_target_summary">ロック画面にショートカットを追加したり編集する</string>
-    <string name="lockscreen_target_reset">ロック画面のショートカットをデフォルトに戻す</string>
-    <string name="lockscreen_target_save">ロック画面のショートカットを保存しました</string>
-    <string name="lockscreen_target_reset_title">リセット</string>
-    <string name="lockscreen_target_reset_message">全てのロック画面ショートカットを削除してデフォルトに戻しますか?</string>
-    <string name="lockscreen_target_empty">なし</string>
-    <string name="lockscreen_target_edit_title">ショートカットの編集</string>
-    <string name="lockscreen_target_edit_msg">希望するアプリケーションやアクティビティとアイコンを選択して変更します</string>
-
-    <!-- Lock Screen Weather -->
-    <string name="lockscreen_weather_title">天気</string>
-    <string name="lockscreen_weather_summary">ロック画面に天気情報を表示する</string>
-    <string name="lockscreen_weather_enabled">有効</string>
-    <string name="weather_enable">天気を表示する</string>
-    <string name="weather_source">Yahoo! Weather</string>
-    <string name="weather_use_custom_location">カスタムの場所</string>
-    <string name="weather_geolocated">ネットーワークを使った位置情報</string>
-    <string name="weather_custom_location_dialog_title">場所を入力</string>
-    <string name="weather_custom_location_hint">市 県/国</string>
-    <string name="weather_custom_location_title">場所</string>
-    <string name="weather_show_location_title">場所を表示</string>
-    <string name="weather_show_timestamp_title">更新時刻を表示</string>
-    <string name="weather_refresh_interval">更新間隔</string>
-    <string name="weather_use_metric">メトリック表示を使用</string>
-    <string name="weather_retrieve_location_dialog_title">場所を取得できません!</string>
-    <string name="weather_retrieve_location_dialog_message">ネットワークを使った現在地の取得は利用できません.\n\nネットワークロケーションを有効にするか、カスタムの場所を設定してください.</string>
-    <string name="weather_retrieve_location_dialog_enable_button">有効</string>
-    <string name="weather_invert_lowhigh">最低/最高気温を逆にする</string>
-    <string name="weather_progress_title">場所を確認中</string>
-
-    <!-- Lock screen Weather - Update frequency -->
-    <string name="weather_refresh_manual">手動</string>
-    <string name="weather_refresh_30min">30分</string>
-    <string name="weather_refresh_60min">60分</string>
-    <string name="weather_refresh_2hrs">2時間</string>
-    <string name="weather_refresh_4hrs">4時間</string>
-    <string name="weather_refresh_6hrs">6時間</string>
-    <string name="weather_refresh_8hrs">8時間</string>
-
-    <!-- Lock screen Calendar -->
-    <string name="lockscreen_calendar_title">カレンダー</string>
-    <string name="lockscreen_calendar_summary">ロック画面に次の予定を表示する</string>
-    <string name="lockscreen_calendar_enabled">有効</string>
-    <string name="calendar_title">次の予定を表示する</string>
-    <string name="calendars_title">表示するカレンダー</string>
-    <string name="calendars_summary">これらのカレンダーから予定を探す</string>
-    <string name="calendar_reminders_only_title">リマインダーのみ</string>
-    <string name="calendar_reminders_only_summary">リマインダーのイベントのみ表示する</string>
-    <string name="calendar_lookahead_title">予定の探索期間</string>
-    <string name="calendar_show_location_title">予定の場所</string>
-    <string name="calendar_show_description_title">予定の詳細</string>
-
-    <!-- Lock screen calendar - lookahead -->
-    <string name="calendar_lookahead_3hrs">3時間</string>
-    <string name="calendar_lookahead_6hrs">6時間</string>
-    <string name="calendar_lookahead_12hrs">12時間</string>
-    <string name="calendar_lookahead_1day">1日</string>
-    <string name="calendar_lookahead_3days">3日</string>
-    <string name="calendar_lookahead_1wk">1週間</string>
-
-    <!-- Lock screen calendar - event metadata -->
-    <string name="calendar_metadata_none">表示しない</string>
-    <string name="calendar_metadata_first_line">最初の1行を表示</string>
-    <string name="calendar_metadata_all">すべて表示</string>
-
-    <!-- Lock screen background -->
-    <string name="lockscreen_custom_background_title">壁紙</string>
-    <string name="lockscreen_custom_background_dialog_title">色を選択</string>
-    <string name="lockscreen_background_result_successful">壁紙を変更しました</string>
-    <string name="lockscreen_background_result_not_successful">壁紙は変更されませんでした</string>
-    <string name="lockscreen_background_color_fill">単色の背景</string>
-    <string name="lockscreen_background_custom_image">カスタム画像</string>
-    <string name="lockscreen_background_default_wallpaper">デフォルトの壁紙</string>
-
-    <!-- Lock screen vibrate settings -->
-    <string name="lockscreen_vibrate_enabled_title">バイブレーション</string>
-    <string name="lockscreen_vibrate_enabled_head">ロック解除時にバイブさせる</string>
-
-    <!-- Lock screen misc. settings #CM -->
-    <string name="lockscreen_battery_status_title">バッテリーステータス</string>
-    <string name="lockscreen_battery_status_charging">充電中のみ</string>
-    <string name="lockscreen_battery_status_alwayson">常に表示</string>
-
-    <string name="lockscreen_clock_align_title">時計の位置</string>
-    <string name="lockscreen_clock_align_left">左</string>
-    <string name="lockscreen_clock_align_center">中央</string>
-    <string name="lockscreen_clock_align_right">右</string>
-
-    <string name="lockscreen_buttons_title">ボタンアクション</string>
-    <string name="lockscreen_buttons_summary">ロック画面のボタンアクションを確認及び編集</string>
-    <string name="lockscreen_long_press_back_title">戻るボタンの長押し</string>
-    <string name="lockscreen_long_press_home_title">ホームボタンの長押し</string>
-    <string name="lockscreen_long_press_menu_title">メニューボタンの長押し</string>
-    <string name="lockscreen_buttons_no_action">なし</string>
-    <string name="lockscreen_buttons_flashlight">フラッシュライト</string>
-    <string name="lockscreen_buttons_next">次の曲</string>
-    <string name="lockscreen_buttons_previous">前の曲</string>
-    <string name="lockscreen_buttons_playpause">音楽の再生/停止</string>
-    <string name="lockscreen_buttons_toggle_sound">サウンドのトグル</string>
-
-    <!-- Profiles settings #CM -->
-    <string name="profiles_settings_title">プロファイル</string>
-    <string name="profiles_general_title">一般</string>
-    <string name="profiles_add">追加</string>
-    <string name="profile_menu_delete">削除</string>
-    <string name="profile_settings_title">プロファイル</string>
-    <string name="profile_empty_list_profiles_off">システムプロファイルを編集して使用するにはプロファイル設定をオンにします</string>
-
-    <!-- Add Profile -->
-    <string name="add_profile_dialog_title">新規プロファイル作成</string>
-    <string name="profile_name_title">プロファイルの名前</string>
-    <string name="profile_profile_name_prompt">新しいプロファイルの名前を入力してください</string>
-    <string name="menu_new_profile">新規プロファイル</string>
-    <string name="menu_new_profile_summary">新しいプロファイルを追加して編集する</string>
-    <string name="new_profile_name">&lt;新規プロファイル&gt;</string>
-
-    <!-- Rename Dialog  -->
-    <string name="rename_dialog_title">リネーム</string>
-    <string name="rename_dialog_message">新しい名前を入力</string>
-    <string name="duplicate_profile_name">プロファイル名が重複しています!</string>
-    <string name="duplicate_appgroup_name">アプリグループ名が重複しています!</string>
-
-    <!-- Reset Profiles -->
-    <string name="profile_reset_title">リセット</string>
-    <string name="profile_reset_message">全てのプロファイルとアプリグループを削除してそれらを初期設定に戻しますか?</string>
-
-    <!-- Delete confimation messages -->
-    <string name="profile_delete_confirm">このプロファイルを削除してもよろしいですか?</string>
-    <string name="profile_app_delete_confirm">このアプリを削除してもよろしいですか?</string>
-    <string name="profile_cannot_delete">アクティブなプロファイルを削除することはできません</string>
-
-    <!-- Profile Config screen PreferenceGroup titles -->
-    <string name="profile_connectionoverrides_title">接続のオーバーライド</string>
-    <string name="profile_volumeoverrides_title">音量のオーバーライド</string>
-    <string name="profile_vibratoroverrides_title">バイブのオーバーライド</string>
-    <string name="connection_state_disabled">無効</string>
-    <string name="connection_state_enabled">有効</string>
-    <string name="volume_override_summary">設定は </string>
-    <string name="vibrator_state_disabled">無効</string>
-    <string name="vibrator_state_enabled">有効</string>
-    <string name="vibrator_state_silent">マナーモード時のみ</string>
-
-    <!-- Menu item for managing profiles -->
-    <string name="profile_profiles_manage">プロファイル</string>
-    <string name="profile_profile_manage">プロファイルの管理</string>
-    <string name="profile_applist_manage">アプリケーションリスト</string>
-    <string name="profile_appgroups_manage">アプリグループの管理</string>
-    <string name="profile_appgroup_manage">プロファイル</string>
-
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <string name="profile_settings">プロファイル設定</string>
-    <string name="profile_name">名前</string>
-
-    <!-- Profile Settings sound modes labels -->
-    <string name="sound_mode">通知モード</string>
-    <string name="ringer_mode">着信音モード</string>
-    <string name="lights_mode">ライトモード</string>
-    <string name="vibrate_mode">バイブモード</string>
-    <string name="choose_soundtone">通知音を選択</string>
-    <string name="choose_ringtone">着信音を選択</string>
-
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <string name="soundtone_title">通知音</string>
-    <string name="soundtone_summary">""</string>
-
-    <!-- Title for application group setting screen -->
-    <string name="profile_appgroups_title">アプリグループ</string>
-    <string name="profile_applist_title">アプリケーション</string>
-    <string name="profile_new_appgroup">新規アプリグループ</string>
-    <string name="profile_delete_appgroup">このグループを削除する</string>
-    <string name="profile_appgroup_name_prompt">アプリグループの名前を入力してください</string>
-    <string name="profile_appgroup_name_title">名前</string>
-    <string name="profile_add_app">アプリを追加</string>
-    <string name="profile_delete_app">アプリを削除</string>
-
-    <!-- Add application dialog box title -->
-    <string name="profile_choose_app">アプリ選択</string>
-    <string name="profile_settings_header">プロファイル設定</string>
-
-    <!-- Profiles - system settings -->
-    <string name="profile_system_settings_title">システム設定</string>
-    <string name="profile_lockmode_title">画面ロックモード</string>
-    <string name="profile_lockmode_default">デフォルト</string>
-    <string name="profile_lockmode_insecure">インセキュア</string>
-    <string name="profile_lockmode_disabled">無効</string>
-    <string name="profile_lockmode_default_summary">システムデフォルトの設定</string>
-    <string name="profile_lockmode_insecure_summary">セキュリティなしのロック</string>
-    <string name="profile_lockmode_disabled_summary">ロック画面は無効</string>
-    <string name="profile_airplanemode_title">機内モード</string>
-    <string name="profile_airplanemode_default">デフォルト</string>
-    <string name="profile_airplanemode_enabled">有効</string>
-    <string name="profile_airplanemode_disabled">無効</string>
-    <string name="profile_airplanemode_default_summary">システム設定を使用</string>
-    <string name="profile_airplanemode_enabled_summary">機内モードは有効</string>
-    <string name="profile_airplanemode_disabled_summary">機内モードは無効</string>
-
-    <string name="profile_disable_screen_lock_summary">このプロファイルを使用している間はロック画面のセキュリティを無効にする</string>
-
-    <!-- Connection override toggles (not all are used at this time ) -->
-    <string name="possibleButtons">可能なボタン</string>
-    <string name="toggleWifi">Wi-Fi</string>
-    <string name="toggleWifiAp">ポータブルアクセスポイント</string>
-    <string name="toggleBluetooth">Bluetooth</string>
-    <string name="toggleGPS">GPS</string>
-    <string name="toggleData">データ通信</string>
-    <string name="toggleSync">データ同期</string>
-    <string name="toggle2g3g">2G/3G</string>
-    <string name="toggleSound">着信モード</string>
-    <string name="toggleBrightness">明るさ</string>
-    <string name="toggleAutoRotate">回転</string>
-    <string name="toggleScreenTimeout">スクリーンタイムアウト</string>
-    <string name="toggleAirplane">機内モード</string>
-    <string name="toggleFlashlight">フラッシュライト</string>
-    <string name="toggleLockScreen">画面のロック</string>
-    <string name="toggleWimax">WiMAX</string>
-
-    <!-- misc #CM -->
-    <string name="lockpattern_settings_enable_lock_before_unlock">解除する前にウィジェットを表示</string>
-    <string name="ime_switcher_notify">入力方法セレクタの通知</string>
-    <string name="ime_switcher_notify_summary">入力方法セレクタを通知バーに表示する</string>
-
-    <!-- Screen security - Screen security  #CM -->
-    <string name="screen_security_category">画面のセキュリティ</string>
-    <string name="screen_security_title">画面のロック</string>
-    <string name="screen_security_summary">ロック画面のセキュリティを表示、変更する(遅延やタイムアウトの調整)</string>
-    <string name="additional_options_title">追加オプション</string>
-    <string name="unlock_menu_unlock_title">メニューアンロック</string>
-    <string name="unlock_menu_unlock_summary">メニューボタンを押して端末をロックから解除する</string>
-    <string name="unlock_home_unlock_title">ホームアンロック</string>
-    <string name="unlock_home_unlock_summary">ホームボタンを押して端末をロックから解除する</string>
-    <string name="unlock_quick_unlock_control_title">クイックアンロック</string>
-    <string name="unlock_quick_unlock_control_summary">PINやパワードを入力後、OKを押す必要を省く(不正入力時のカウントは無効になる)</string>
-
-    <!-- Delays and timeouts -->
-    <string name="delay_and_timeout_title">ロックの遅延</string>
-
-    <!-- Slide lock delay -->
-    <string name="slide_lock_delay_title">スライドロックの遅延</string>
-    <string name="slide_lock_timeout_delay_title">画面タイムアウト時の遅延</string>
-    <string name="slide_lock_screenoff_delay_title">画面オフ時の遅延</string>
-    <string name="slide_lock_delay_none">なし</string>
-    <string name="slide_lock_delay_1s">1秒</string>
-    <string name="slide_lock_delay_5s">5秒</string>
-    <string name="slide_lock_delay_10s">10秒</string>
-    <string name="slide_lock_delay_15s">15秒</string>
-    <string name="slide_lock_delay_30s">30秒</string>
-    <string name="slide_lock_delay_1m">1分</string>
-    <string name="slide_lock_delay_5m">5分</string>
-    <string name="slide_lock_delay_10m">10分</string>
-    <string name="slide_lock_delay_30m">30分</string>
-
-    <!-- Performance settings #CM -->
-    <string name="performance_settings_title">パフォーマンス</string>
-
-    <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">注意してください</string>
-    <string name="performance_settings_warning">これらの設定は実験中のものを含み、変更により不安定、クラッシュ、データの損失、あるいはハードウェアの故障を引き起こす可能性があります。\n\nこれらの設定を変更した後にバグリポートをしないでください。</string>
-
-    <!-- Performance Settings : Processor Settings -->
-    <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">プロセッサ</string>
-    <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">調整タイプとクロックの設定</string>
-
-    <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">現在のCPUクロック</string>
-    <string name="cpu_governors_title">CPU調整</string>
-    <string name="cpu_min_freq_title">最小CPUクロック</string>
-    <string name="cpu_max_freq_title">最大CPUクロック</string>
-    <string name="cpu_set_on_boot">起動時に適用</string>
-    <string name="cpu_set_on_boot_summary">起動時にCPU設定を適用する</string>
-
-    <!-- Performance Settings : I/O scheduler settings title -->
-    <string name="io_scheds_title">I/O スケジューラ</string>
-    <!-- Performance Settings : I/O scheduler settings summary. -->
-    <string name="io_scheds_summary">I/O スケジューラを変更する</string>
-
-    <!-- Performance Settings : I/O scheduler settings sub items -->
-    <string name="io_sched_title">I/O スケジューラ</string>
-    <string name="io_sched_summary">%S</string>
-    <string name="io_sched_set_on_boot">起動時に設定</string>
-    <string name="io_sched_set_on_boot_summary">I/O スケジューラの変更を起動時に適用する</string>
-
-    <!-- Memory Management -->
-    <string name="memory_management_title">メモリマネジメント</string>
-    <string name="memory_management_summary">システムパフォーマンスを変更するためにメモリの利用をカスタマイズする</string>
-    <!-- zRam -->
-    <string name="pref_zram_title">zRam</string>
-    <string name="pref_zram_summary">メモリを圧縮して仮想領域を増やす(要再起動)</string>
-    <!-- KSM -->
-    <string name="pref_ksm_title">Kernel samepage merging</string>
-    <string name="pref_ksm_summary">KSMは必要とする物理メモリを減らし、パフォーマンスを向上させます</string>
-    <!-- Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">アセットの排除を許可</string>
-    <string name="pref_purgeable_assets_summary">メモリ内に解放可能なビットマップアセットがあれば、システムは必要に応じてRAMを確保できます(要再起動)</string>
-
-    <!-- Performance Settings : Dithering -->
-    <string name="pref_use_dithering_title">サーフェスディザリング</string>
-    <string name="dithering_no_dither">ディザリングは無効</string>
-    <string name="dithering_color_banding">カラーバンディングを固定(デフォルト)</string>
-    <string name="dithering_blur_effect">カラーバンディングとエフェクトを固定</string>
-
-    <!-- Performance Settings : 16bpp Alpha -->
-    <string name="pref_use_16bpp_alpha_title">16ビット透過</string>
-    <string name="pref_use_16bpp_alpha_summary">16ビット透過を使用することでスクロールのパフォーマンスが向上しますが、低品質で稀に不自然に見えます(
-要再起動)</string>
-
-    <!-- Donate #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about how to donate to the CyanogenMod Project. -->
-    <string name="donate_settings_title">寄付</string>
-    <!-- About device screen, list item summary. Takes the user to the screen about how to donate to the CyanogenMod Project. -->
-    <string name="donate_settings_summary">""</string>
-
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod 利用統計</string>
-    <string name="anonymous_statistics_summary">CyanogenMod をより良くするための匿名利用統計報告をオプトインする</string>
-    <string name="anonymous_statistics_warning_title">利用統計について</string>
-    <string name="anonymous_statistics_warning">匿名利用状況の送信を許諾することによって、
-                CyanogenModの開発者がデバイス単位のユニークインストール数を
-                追跡することができます。
-                送信される情報にはユニークIDが含まれますが、これはあなたの
-                個人情報、端末のタイプ及びバージョン情報とは結びつきません。
-                データ送信は端末の起動時に毎回行われ、送信されるデータの例は
-                プレビューをクリックすることにより確認できます。</string>
-    <string name="enable_reporting_title">リポートを有効にする</string>
-    <string name="preview_data_title">データのプレビュー</string>
-    <string name="preview_data_summary">%s</string>
-    <string name="view_stats_title">ステータスを見る</string>
-    <string name="anonymous_learn_more">詳細</string>
-
-    <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">CyanogenMod 利用統計を有効/無効にする</string>
-
-    <!-- Anonymous Statistics - Preview -->
-    <string name="preview_id_title">ユニークID</string>
-    <string name="preview_device_title">デバイス</string>
-    <string name="preview_version_title">バージョン</string>
-    <string name="preview_country_title">国</string>
-    <string name="preview_carrier_title">キャリア</string>
-
-    <!-- About device screen, version of modification of Android. -->
-    <string name="mod_version">MoKee バージョン</string>
-    <string name="mod_version_default">不明</string>
-
-    <!-- About device screen, build date of ROM. -->
-    <string name="build_date">ビルド日時</string>
-
-    <!-- GPS Source selection -->
-    <string name="location_gps_source_title">GPSソース</string>
-    <string name="location_gps_source_summary">ロケーションプロバイダは内蔵の代わりに外部のBluetooth GPSモジュールを使用する</string>
-    <string name="location_gps_source_notification_title">警告</string>
-    <string name="location_gps_source_notification">GPSソースが切り替わりました！GPSは無効になります。使用するときはまた有効にして
-ください！</string>
-
-    <!-- Setting checkbox title for Whether debugging should run over TCP/IP. -->
-    <string name="adb_over_network">ADBオーバーネットワーク</string>
-    <string name="adb_over_network_summary">ネットワークインタフェース(Wi-FiやUSB)越しのTCP/IPデバッグを有効にする(この設定は再起動でリセットされます)</string>
-    <!-- Warning for Adb over Network -->
-    <string name="adb_over_network_warning">警告: ADBオーバーネットワークを有効にするとあなたの端末は、GSMを含むすべての接続可能なネットワークからの侵入を許します！\n\n信頼できるネットワークに接続している場合にのみ有効にしてください。\n\n本当にこの機能を有効にしますか？</string>
-
-    <!-- UI debug setting: kill app long-press back [CHAR LIMIT=25] -->
-    <string name="kill_app_longpress_back">戻るボタンでアプリ終了</string>
-    <!-- UI debug settting: kill app long-press back [CHAR LIMIT=50] -->
-    <string name="kill_app_longpress_back_summary">戻るボタンを長押ししてフォアグラウンドアプリを終了する</string>
-
-    <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">復帰オプション</string>
-    <string name="pref_volume_wake_title">音量ボタンで復帰</string>
-    <string name="pref_volume_wake_summary">音量アップ/ダウンボタンで端末を復帰する</string>
-
-    <!-- Quiet hours -->
-    <string name="quiet_hours_title">サイレントタイム</string>
-    <string name="quiet_hours_summary">デバイスがサイレントモードになる時間の参照や変更</string>
-    <string name="quiet_hours_note_title">ノート</string>
-    <string name="quiet_hours_note_summary">着信はサイレントタイム中でも通常の挙動になります</string>
-    <string name="quiet_hours_enabled">サイレントタイムを有効にする</string>
-    <string name="quiet_hours_enabled_on">サイレントタイムが機能します</string>
-    <string name="quiet_hours_enabled_off">通知は平常通り行われます</string>
-    <string name="quiet_hours_start">開始時刻</string>
-    <string name="quiet_hours_start_summary">サイレントタイムが始まる時刻</string>
-    <string name="quiet_hours_end">終了時刻</string>
-    <string name="quiet_hours_end_summary">サイレントタイムが終了する時刻</string>
-    <string name="quiet_hours_mute">通知音をミュート</string>
-    <string name="quiet_hours_mute_on">通知音は再生されません</string>
-    <string name="quiet_hours_mute_off">通知音は再生されます</string>
-    <string name="quiet_hours_still">バイブレーションを無効</string>
-    <string name="quiet_hours_still_on">端末はバイブしません</string>
-    <string name="quiet_hours_still_off">端末は平常通りバイブします</string>
-    <string name="quiet_hours_dim">LEDを暗くする</string>
-    <string name="quiet_hours_dim_on">可能であればLEDを暗くします</string>
-    <string name="quiet_hours_dim_off">LEDは最大照度で点灯します</string>
-    <string name="quiet_hours_haptic">バイブフィードバックを無効にする</string>
-    <string name="quiet_hours_haptic_on">バイブフィードバックは無効</string>
-    <string name="quiet_hours_haptic_off">バイブフィードバックは有効</string>
-    <string name="quiet_hours_active_from">有効時間</string>
-    <string name="quiet_hours_active_to">から</string>
-
-    <!-- time range preference -->
-    <string name="start_time_title">開始</string>
-    <string name="end_time_title">終了</string>
-
-    <!-- Display : Rotation #CM -->
-    <string name="display_rotation_title">自動回転</string>
-    <string name="display_rotation_enabled">有効</string>
-    <string name="display_rotation_disabled">無効</string>
-    <string name="display_rotation_unit">度</string>
-    <string name="display_lockscreen_rotation_title">ロック画面の回転</string>
-    <string name="display_rotation_category_title">回転モード</string>
-    <string name="display_rotation_0_title">0度</string>
-    <string name="display_rotation_90_title">90度</string>
-    <string name="display_rotation_180_title">180度</string>
-    <string name="display_rotation_270_title">270度</string>
-
-    <!-- Setting for volume rocker music controls -->
-    <string name="volbtn_music_controls_title">音量ボタン音楽コントロール</string>
-    <string name="volbtn_music_controls_summary">スクリーンOFF時、音量ボタンを長押しすることで音楽のトラックをシークする</string>
-
-    <!-- Setting checkbox title for root access -->
-    <string name="root_access">Rootアクセス</string>
-    <string name="root_access_warning_title">Rootアクセスを許可しますか?</string>
-    <string name="root_access_warning_message">アプリケーションによるrootアクセスを許可することは危険で、システムのセキュリティを危険にさらします!</string>
-    <string name="root_access_none">無効</string>
-    <string name="root_access_apps">アプリのみ</string>
-    <string name="root_access_adb">ADBのみ</string>
-    <string name="root_access_all">アプリとADB</string>
-
-    <string name="profile_write_nfc_tag">NFCタグに書き込む</string>
-    <string name="profile_write_touch_tag">書き込むタグにタッチ</string>
-    <string name="profile_write_success">タグに書き込み成功</string>
-    <string name="profile_write_failed">タグに書き込み失敗!</string>
-    <string name="profile_selected">選択中プロファイル: %1$s</string>
-    <string name="profile_nfc_text">NFCタグにプロファイルを書き込むと、タグにタッチすることでプロファイルを選択できます。タグに2回タッチすれば、以前選択していたプロファイルを選択できます。</string>
-    <string name="profile_unknown_nfc_tag">不明なプロファイル</string>
-    <string name="profile_add_nfc_text">このNFCタグは不明なプロファイルを指定しています。このNFCタグに既にあるプロファイルを割り当てることで次回よりプロファイルを選択できるようになります。</string>
-    <string name="profile_select">プロファイルを選択</string>
-
-    <!-- about page -->
-    <string name="cpu_info">プロセッサ</string>
-    <string name="mem_info">メモリ</string>
-
-    <!-- Electron Beam -->
-    <string name="display_category_animation_options_title">アニメーション</string>
-    <string name="display_electron_beam_animation_on_title">スクリーンオンアニメーション</string>
-    <string name="display_electron_beam_animation_off_title">スクリーンオフアニメーション</string>
-
-    <!-- Stylus Icon -->
-    <string name="stylus_icon_enabled_title">スタイラスポインタを表示</string>
-    <string name="stylus_icon_enabled_summary">スタイラスで描いたり操作しているときにポインタのアイコンを表示する</string>
-
-    <!-- Hostname setting -->
-    <string name="device_hostname">デバイスのホスト名</string>
-
-    <!-- Status bar notification count -->
-    <string name="status_bar_notif_count_title">通知の数を表示する</string>
-    <string name="status_bar_notif_count_summary">ステータスバーに溜まっている通知の数を表示する</string>
-
-    <string name="increasing_ring_title">着信音の増加</string>
-    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
-    <string name="checkbox_increasing_ring">有効</string>
-    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
-    <string name="increasing_ring_min_volume_title">開始時の音量</string>
-    <string name="increasing_ring_volume_notice">注意:\n開始時の音量を着信音量より高くした場合、着信音量の値で再生されます。</string>
-    <string name="increasing_ring_interval_title">増加間隔</string>
-    <string name="increasing_ring_interval_eachring">着信音のパターンごと</string>
-    <string name="increasing_ring_interval_half_second">0.5 秒</string>
-    <string name="increasing_ring_interval_1second">1 秒</string>
-    <string name="increasing_ring_interval_2seconds">2 秒</string>
-    <string name="increasing_ring_interval_3seconds">3 秒</string>
-    <string name="increasing_ring_interval_5seconds">5 秒</string>
-    <string name="increasing_ring_interval_10seconds">10 秒</string>
-
-    <!-- Change Log strings -->
-    <string name="changelog_title">更新履歴の表示</string>
-    <string name="changelog_dialog">更新履歴</string>
-    <string name="changelog_loading">更新履歴をロード中...</string>
-    <string name="changelog_error">更新履歴をロードできませんでした</string>
-    <string name="changelog_unknown">不明</string>
-    <string name="changelog_version">バージョン</string>
-
-    <!-- Power menu screenshot -->
-    <string name="power_menu_title">電源ボタンメニュー</string>
-    <string name="power_menu_reboot_title">再起動メニュー</string>
-    <string name="power_menu_screenshot_title">スクリーンショット</string>
-    <string name="power_menu_expanded_desktop">拡張デスクトップ</string>
-    <string name="power_menu_profiles_title">プロファイルスイッチャー</string>
-    <string name="power_menu_airplane_title">機内モード</string>
-    <string name="power_menu_silent_title">サウンドパネル</string>
-
-    <!-- Launches Dev Tools -->
-    <string name="development_tools_title">開発ツールの起動</string>
-    <string name="allow_mock_sms">擬似SMSを許可</string>
-
-    <!-- USB Mass Storage -->
-    <string name="usb_mass_storage_title">マスストレージ</string>
-    <string name="usb_mass_storage_summary">USBマスストレージを有効にする</string>
-
-    <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">音量キーカーソル制御</string>
-    <string name="volume_key_cursor_control_off">無効</string>
-    <string name="volume_key_cursor_control_on">音量アップ/ダウンでカーソルを左/右に移動する</string>
-    <string name="volume_key_cursor_control_on_reverse">音量アップ/ダウンでカーソルを右/左に移動する</string>
-
-    <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenModアップデート</string>
-    <string name="cmupdate_settings_summary">利用できるアップデートのチェック、表示及びインストール</string>
-
-    <!--- Sms security limit -->
-    <string name="app_security_title">アプリのセキュリティ</string>
-    <string name="sms_security_check_limit_title">SMSメッセージ制限</string>
-    <string name="sms_security_check_limit_summary">頻繁にSMSメッセージを送信するアプリに対して警告ダイアログを表示させる。現在の制限: %d通/5分</string>
-    <string name="sms_security_check_limit_default">30 (デフォルト)</string>
-
-    <!-- Stylus Gestures -->
-    <string name="gestures_settings_title">スタイラスジェスチャー</string>
-    <string name="category_spen_title">スタイラスジェスチャー</string>
-    <string name="enable_subcat_title">スタイラス</string>
-    <string name="enable_spen_title_head">スタイラスジェスチャーを使う</string>
-    <string name="enable_spen_summary_head">カスタムアクションを実行するためにスタイラスボタンでジェスチャを許可する。注意: スタイラスボタンをホールドしている間はアプリケーションは入力を受け取ることができません。</string>
-    <string name="gestures_subcat_title">ジェスチャー</string>
-    <string name="gestures_left_spen_title_head">左にスワイプ</string>
-    <string name="gestures_left_spen_summary_head">左にスワイプでアクションを実行</string>
-    <string name="gestures_right_spen_title_head">右にスワイプ</string>
-    <string name="gestures_right_spen_summary_head">右にスワイプでアクションを実行</string>
-    <string name="gestures_up_spen_title_head">上にスワイプ</string>
-    <string name="gestures_up_spen_summary_head">上にスワイプでアクションを実行</string>
-    <string name="gestures_down_spen_title_head">下にスワイプ</string>
-    <string name="gestures_down_spen_summary_head">下にスワイプでアクションを実行</string>
-    <string name="gestures_long_spen_title_head">長押し</string>
-    <string name="gestures_long_spen_summary_head">長押しでアクションを実行</string>
-    <string name="gestures_double_spen_title_head">ダブルタップ</string>
-    <string name="gestures_double_spen_summary_head">ダブルタップでアクションを実行</string>
-
-    <!-- Gestures Options -->
-    <string name="gestures_action_empty">なにもしない</string>
-    <string name="gestures_action_home">ホームへ移動</string>
-    <string name="gestures_action_back">戻るボタンをエミュレート</string>
-    <string name="gestures_action_menu">メニューボタンをエミュレート</string>
-    <string name="gestures_action_search">検索を起動</string>
-    <string name="gestures_action_recent">最近使ったアプリ</string>
-
-    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
