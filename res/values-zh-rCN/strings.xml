@@ -1891,6 +1891,8 @@
     <!-- About phone screen,  setting option name-->
     <string name="mod_version">MoKee 版本</string>
     <string name="mod_version_default">未知</string>
+    <string name="mod_support">社区支持</string>
+    <string name="mod_support_default">未知</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">编译日期</string>
     <!-- About device screen, Cpu info. -->
