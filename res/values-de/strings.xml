@@ -1929,7 +1929,7 @@
     <string name="lock_screen_title">Bildschirmsperre</string>
 
     <!-- Lock screen shortcuts -->
-    <string name="lockscreen_target_info">Schieber zur gewünschten Position ziehen, um dort eine Anwendung zu platzieren</string>
+    <string name="lockscreen_target_info">Schieber zur gewünschten Position ziehen, um dort eine Anwendung zu plazieren</string>
     <string name="lockscreen_target_title">Sperrbildschirm-Anwendungen</string>
     <string name="lockscreen_target_summary">Anwendungen zum Sperrbildschirm hinzufügen</string>
     <string name="lockscreen_target_reset">Sperrbildschirm-Anwendungen auf Standard zurückgesetzt</string>
@@ -2153,8 +2153,10 @@
 
     <!-- Display - Rotation -->
     <string name="display_rotation_title">Bildschirmausrichtung</string>
+    <string name="display_rotation_enabled">Aktiviert:</string>
     <string name="display_rotation_disabled">Deaktiviert</string>
     <string name="display_rotation_unit">Grad</string>
+    <string name="display_lockscreen_rotation_title">Für Sperrbildschirm übernehmen</string>
     <string name="display_rotation_category_title">Bei Drehung um</string>
     <string name="display_rotation_0_title">0 Grad</string>
     <string name="display_rotation_90_title">90 Grad</string>
@@ -2395,10 +2397,10 @@
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste ändern</string>
     <string name="status_bar_toggle_info">Automatische Helligkeit ist aktiviert</string>
-    <string name="status_bar_signal_text_title">Signalstärke</string>
+    <string name="status_bar_signal_text_title">Signalstärke in dBm</string>
     <string name="status_bar_style_icon">Symbol</string>
     <string name="status_bar_style_hidden">Versteckt</string>
-    <string name="status_bar_signal_text_show_text">Wert (dBm)</string>
+    <string name="status_bar_signal_text_show_text">Signalstärke (nur Wert)</string>
     <string name="status_bar_battery_status_percentage">Symbol &amp; Prozent</string>
     <string name="status_bar_battery_status_circle">Kreis</string>
     <string name="status_bar_battery_status_circle_percentage">Kreis &amp; Prozent</string>
@@ -2510,14 +2512,10 @@
     <string name="volume_key_cursor_control_on">Lautstärkewippe oben/unten bewegt den Cursor nach links/rechts</string>
     <string name="volume_key_cursor_control_on_reverse">Lautstärkewippe oben/unten bewegt den Cursor nach rechts/links</string>
 
-    <!-- Wi-Fi countrycode -->
+    <!-- Wifi countrycode -->
     <string name="wifi_setting_countrycode_title">Ländercode</string>
-    <string name="wifi_setting_countrycode_summary">WLAN-Ländercode festlegen</string>
+    <string name="wifi_setting_countrycode_summary">Den WLAN-Ländercode festlegen</string>
     <string name="wifi_setting_countrycode_error">Beim Festlegen des WLAN-Ländercodes ist ein Problem aufgetreten.</string>
-
-    <!-- Wi-Fi priority -->
-    <string name="wifi_setting_priority_title">WLAN-Priorität</string>
-    <string name="wifi_setting_priority_summary">Priorität der gespeicherten Netzwerke festlegen</string>
 
     <!-- Wireless display -->
     <string name="pref_wifi_disable_hdcp_title">HDCP-Aushandlung überspringen</string>
@@ -2531,7 +2529,7 @@
 
     <!-- Lock clock -->
     <string name="lock_clock_title">Uhr-Widget</string>
-    <string name="lock_clock_summary">\'cLock-Widget\' konfigurieren</string>
+    <string name="lock_clock_summary">\'Chronus-Widget\' konfigurieren</string>
 
     <!-- Stylus icon -->
     <string name="stylus_icon_enabled_title">Stift-Symbol</string>
@@ -2558,19 +2556,6 @@
     <!-- Start music player when headset is connected -->
     <string name="headset_category_title">Kopfhörer</string>
     <string name="headset_connect_player_title">Beim Verbinden Musik-App starten</string>
-
-    <!-- Storage settings - USB mass storage -->
-    <string name="usb_mass_storage_title">Massenspeicher</string>
-    <string name="usb_mass_storage_summary">USB-Massenspeicher aktivieren</string>
-
-    <!-- Custom lock screen background -->
-    <string name="lockscreen_custom_background_title">Hintergrund</string>
-    <string name="lockscreen_custom_background_dialog_title">Farbe auswählen</string>
-    <string name="lockscreen_background_result_successful">Hintergrund wurde geändert</string>
-    <string name="lockscreen_background_result_not_successful">Hintergrund wurde nicht geändert</string>
-    <string name="lockscreen_background_color_fill">Farbfüllung</string>
-    <string name="lockscreen_background_custom_image">Benutzerdefiniertes Bild</string>
-    <string name="lockscreen_background_default_wallpaper">Standardhintergrund</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
