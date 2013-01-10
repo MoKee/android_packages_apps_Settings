@@ -1873,7 +1873,7 @@
     <string name="start_time_title">Inicio</string>
     <string name="end_time_title">Fin</string>
     <string name="device_hostname">Nombre del dispositivo</string>
-    <string name="mod_version">Versión CyanogenMod</string>
+    <string name="mod_version">Versión MoKee</string>
     <string name="mod_version_default">Desconocida</string>
     <string name="build_date">Fecha de compilación</string>
     <string name="cpu_info">CPU</string>
