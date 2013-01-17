@@ -87,7 +87,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         }
 
         int statusBarAmPm = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.STATUS_BAR_AM_PM, 2);
+                Settings.System.STATUS_BAR_AM_PM, 0);
         mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
         mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
         mStatusBarAmPm.setOnPreferenceChangeListener(this);
