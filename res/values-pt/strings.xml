@@ -2061,8 +2061,10 @@
     <string name="pref_use_16bpp_alpha_title">Transparência 16bit</string>
     <string name="pref_use_16bpp_alpha_summary">Melhor desempenho gráfico, qualidade mais baixa e posiveis artefatos visuais (requer reinicio)</string>
     <string name="display_rotation_title">Rotação</string>
+    <string name="display_rotation_enabled">Habilitada</string>
     <string name="display_rotation_disabled">Desabilitada</string>
     <string name="display_rotation_unit">graus</string>
+    <string name="display_lockscreen_rotation_title">Incluir tela de bloqueio</string>
     <string name="display_rotation_category_title">Modos de rotação</string>
     <string name="display_rotation_0_title">0 graus</string>
     <string name="display_rotation_90_title">90 graus</string>
@@ -2346,7 +2348,7 @@
     <string name="sms_security_check_limit_summary">Alertar prevenindo que aplicações enviem muitas mensagens SMS. Limite atual: Até %d mensagens durante 15 minutos</string>
     <string name="sms_security_check_limit_default">30 (Padrão)</string>
     <string name="lock_clock_title">Widget Relógio</string>
-    <string name="lock_clock_summary">Visualizar ou alterar como o \'cLock\' e widgets de tela de bloqueio são exibidos</string>
+    <string name="lock_clock_summary">Visualizar ou alterar como o \'Chronus\' e widgets de tela de bloqueio são exibidos</string>
     <string name="quick_pulldown_summary_left">Esquerda</string>
     <string name="quick_pulldown_summary_right">Direita</string>
     <string name="stylus_icon_enabled_title">Mostrar ícone quando usando stylus</string>
@@ -2370,15 +2372,4 @@
     <string name="bluetooth_mas_request">Requisição de Acesso a Mensagem</string>
     <string name="bluetooth_mas_acceptance_dialog_text">%1$s gostaria de acessar suas mensagens. Conceder acesso para %2$s?</string>
     <string name="bluetooth_mas_remember_choice">Não perguntar novamente</string>
-    <string name="wifi_setting_priority_title">Prioridade Wi-Fi</string>
-    <string name="wifi_setting_priority_summary">Especificar a prioridade das redes Wi-Fi</string>
-    <string name="usb_mass_storage_title">Armazenamento em massa</string>
-    <string name="usb_mass_storage_summary">Ativar armazenamento em massa USB</string>
-    <string name="lockscreen_custom_background_title">Plano de fundo</string>
-    <string name="lockscreen_custom_background_dialog_title">Escolha a cor</string>
-    <string name="lockscreen_background_result_successful">Plano de fundo alterado com sucesso</string>
-    <string name="lockscreen_background_result_not_successful">Plano de fundo não pode ser alterado</string>
-    <string name="lockscreen_background_color_fill">Preenchimento de cor</string>
-    <string name="lockscreen_background_custom_image">Imagem personalizada</string>
-    <string name="lockscreen_background_default_wallpaper">Papel de parede padrão</string>
 </resources>
