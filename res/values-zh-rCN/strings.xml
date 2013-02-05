@@ -2339,6 +2339,17 @@
     <string name="navigation_bar_reset_toast">导航栏设置已还原为系统默认值</string>
     <string name="navigation_bar_menu_editable">可被编辑</string>
     <string name="navigation_bar_menu_locked">已锁定</string>
+    <string name="navigation_bar_edit_title">自定义按键</string>
+    <string name="navigation_bar_edit_summary">编辑按键布局</string>
+    <string name="navigation_bar_height">导航栏高度</string>
+    <string name="navigation_bar_height_48">48dp (默认)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
 
 
     <!-- Power Widget  -->
