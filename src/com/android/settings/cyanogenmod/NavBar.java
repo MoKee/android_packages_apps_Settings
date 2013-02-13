@@ -35,7 +35,7 @@ import android.widget.Toast;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
-public class NavBarEdit extends Fragment {
+public class NavBar extends Fragment {
 
     private boolean mEditMode;
     private ViewGroup mContainer;
