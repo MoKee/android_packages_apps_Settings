@@ -60,13 +60,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_settings);
-		
+
         mNavButtonsHeight = (ListPreference) findPreference(KEY_NAV_BUTTONS_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
 
         int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAV_BUTTONS_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
+		
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Determine which user is logged in

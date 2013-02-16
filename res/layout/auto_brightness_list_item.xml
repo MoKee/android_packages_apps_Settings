@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2010, The Android Open Source Project
+** Copyright 2013, The CyanogenMod Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,37 +18,34 @@
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingStart="8dip"
+    android:paddingEnd="8dip"
+    android:descendantFocusability="blocksDescendants">
 
-    <!--    
-    <ImageView
-        android:layout_width="match_parent"
+    <TextView android:id="@+id/lux"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
-        android:src="?android:attr/listDivider"/>
-    -->
-        
-    <!-- Icon and label of the service. -->
-    <include
-        layout="@layout/running_processes_item"
-        android:id="@+id/service"/>
+        android:layout_gravity="center_vertical" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
-        <TextView android:id="@+id/comp_description"
+        <SeekBar android:id="@+id/backlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/backlight_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <include
-            layout="@layout/two_buttons_panel"
-            android:id="@+id/control_buttons_panel" />
+            android:layout_gravity="end"
+            android:layout_marginTop="-4dp"
+            style="?android:attr/textAppearanceSmall" />
 
     </LinearLayout>
 
