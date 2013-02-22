@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.mkstats;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -62,7 +62,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
         if (getPreferenceManager() != null) {
             addPreferencesFromResource(R.xml.anonymous_stats);
             PreferenceScreen prefSet = getPreferenceScreen();
-            mPrefs = getActivity().getSharedPreferences("CMStats", 0);
+            mPrefs = getActivity().getSharedPreferences("MKStats", 0);
             mEnableReporting = (CheckBoxPreference) prefSet.findPreference(ANONYMOUS_OPT_IN);
             mViewStats = (Preference) prefSet.findPreference(VIEW_STATS);
             boolean firstBoot = mPrefs.getBoolean(ANONYMOUS_FIRST_BOOT, true);
@@ -130,7 +130,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
         } else if (which == DialogInterface.BUTTON_NEGATIVE){
             mEnableReporting.setChecked(false);
         } else {
-            Uri uri = Uri.parse("http://www.cyanogenmod.com/blog/cmstats-what-it-is-and-why-you-should-opt-in");
+            Uri uri = Uri.parse("http://www.cyanogenmod.com/blog/mkstats-what-it-is-and-why-you-should-opt-in");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         }
     }

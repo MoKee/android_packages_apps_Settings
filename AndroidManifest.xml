@@ -966,7 +966,7 @@
             android:windowSoftInputMode="stateVisible|adjustResize"/>
 
         <!-- Anonymous Statistics -->
-        <receiver android:name=".cmstats.ReportingServiceManager"
+        <receiver android:name=".mkstats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
             android:label="ReportingServiceManager">
@@ -979,7 +979,7 @@
         <service android:label="ReportingService"
             android:enabled="true"
             android:exported="false"
-            android:name=".cmstats.ReportingService">
+            android:name=".mkstats.ReportingService">
         </service>
 
         <!-- Runs in the phone process since it needs access to the Phone object -->
@@ -1556,7 +1556,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:clearTaskOnLaunch="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cmstats.AnonymousStats" />
+                android:value="com.android.settings.mkstats.AnonymousStats" />
         </activity>
 
         <!-- CyanogenMod activities End -->
@@ -1567,7 +1567,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.app.action.START_ENCRYPTION" />
-                <category android:name="android.intent.category.DEFAULT" /> />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.CryptKeeperSettings" />

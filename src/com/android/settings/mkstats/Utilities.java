@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.mkstats;
 
 import java.math.BigInteger;
 import java.net.NetworkInterface;
