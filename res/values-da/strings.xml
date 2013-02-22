@@ -1891,10 +1891,10 @@
 
     <!-- Anonymous Statistics -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod-statistikker</string>
-    <string name="anonymous_statistics_summary">Hjælp med at gøre CyanogenMod bedre ved at deltage i rapportering af anonyme statistikker</string>
+    <string name="anonymous_statistics_title">MoKee-statistikker</string>
+    <string name="anonymous_statistics_summary">Hjælp med at gøre MoKee bedre ved at deltage i rapportering af anonyme statistikker</string>
     <string name="anonymous_statistics_warning_title">Om</string>
-    <string name="anonymous_statistics_warning">Deltagelse af CyanogenMod-statistikker vil tillade ikke-personlige data, der skal forelægges for udviklerne af CyanogenMod, at spore unikke installationer på tværs af enheder. De indsendte oplysninger omfatter en entydig indikator, som ikke kompromitterer dit privatliv eller personlige data. Dataene indsendes under hver opstart.\n\nFor et eksempel på de data, der er indsendt, skal du trykke på Få vist data.</string>
+    <string name="anonymous_statistics_warning">Deltagelse af MoKee-statistikker vil tillade ikke-personlige data, der skal forelægges for udviklerne af MoKee, at spore unikke installationer på tværs af enheder. De indsendte oplysninger omfatter en entydig indikator, som ikke kompromitterer dit privatliv eller personlige data. Dataene indsendes under hver opstart.\n\nFor et eksempel på de data, der er indsendt, skal du trykke på Få vist data.</string>
     <string name="enable_reporting_title">Aktivér rapportering</string>
     <string name="preview_data_title">Få vist data</string>
     <string name="preview_data_summary">%s</string>
@@ -1902,7 +1902,7 @@
     <string name="anonymous_learn_more">Læs mere</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Aktivér eller deaktiver CyanogenMod-statistikker</string>
+    <string name="anonymous_notification_desc">Aktivér eller deaktiver MoKee-statistikker</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikt ID</string>

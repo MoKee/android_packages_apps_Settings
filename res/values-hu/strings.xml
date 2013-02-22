@@ -1910,10 +1910,10 @@
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod Statisztika</string>
-    <string name="anonymous_statistics_summary">Segítsen a CyanogenMod jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
+    <string name="anonymous_statistics_title">MoKee Statisztika</string>
+    <string name="anonymous_statistics_summary">Segítsen a MoKee jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
     <string name="anonymous_statistics_warning_title">Tudnivalók</string>
-    <string name="anonymous_statistics_warning">A CyanogenMod statisztika engedélyezése nem terjed ki személyes adatokra, csak egy egyedi azonosítóval azonosítjuk az eszközöket. A statisztika minden rendszerindításkor elküldésre kerül, hogy követni tudjuk az új telepítéseket.\n\nAz elküldött adatok menüpont alatt tekintheti meg a statisztikai adatokat.</string>
+    <string name="anonymous_statistics_warning">A MoKee statisztika engedélyezése nem terjed ki személyes adatokra, csak egy egyedi azonosítóval azonosítjuk az eszközöket. A statisztika minden rendszerindításkor elküldésre kerül, hogy követni tudjuk az új telepítéseket.\n\nAz elküldött adatok menüpont alatt tekintheti meg a statisztikai adatokat.</string>
     <string name="enable_reporting_title">Statisztika engedélyezése</string>
     <string name="preview_data_title">Elküldött adatok</string>
     <string name="preview_data_summary">%s</string>
@@ -1921,7 +1921,7 @@
     <string name="anonymous_learn_more">Tudjon meg többet</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">CyanogenMod Statisztika engedélyezése/tiltása</string>
+    <string name="anonymous_notification_desc">MoKee Statisztika engedélyezése/tiltása</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Egyedi azonosító</string>

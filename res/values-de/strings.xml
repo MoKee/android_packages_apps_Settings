@@ -1889,7 +1889,7 @@
 
     <!-- Anonymous statistics -->
     <string name="anonymous_statistics_title">Anonyme Statistiken</string>
-    <string name="anonymous_statistics_summary">Durch anonyme Gerätestatistiken dabei helfen, CyanogenMod zu verbessern</string>
+    <string name="anonymous_statistics_summary">Durch anonyme Gerätestatistiken dabei helfen, MoKee zu verbessern</string>
     <string name="anonymous_statistics_warning_title">ACHTUNG</string>
     <string name="anonymous_statistics_warning">Die bei jedem Neustart des Gerätes übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf Vorschau klicken.</string>
     <string name="enable_reporting_title">Berichte einschalten</string>

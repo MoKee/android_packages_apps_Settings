@@ -1883,10 +1883,10 @@
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-    <string name="anonymous_statistics_summary">Padėkite tobulinti CyanogenMod įjungdami statistikos siuntimą</string>
+    <string name="anonymous_statistics_title">MoKee statistika</string>
+    <string name="anonymous_statistics_summary">Padėkite tobulinti MoKee įjungdami statistikos siuntimą</string>
     <string name="anonymous_statistics_warning_title">Apie</string>
-    <string name="anonymous_statistics_warning">Dalinantis CyanogenMod Statistika nebus renkama Jūsų asmeninė informacija, o tik sistemos darbas bei klaidos. Ši informacija padės kūrėjams tobulinti CyanogenMod bei šalinti klaidas.</string>
+    <string name="anonymous_statistics_warning">Dalinantis MoKee Statistika nebus renkama Jūsų asmeninė informacija, o tik sistemos darbas bei klaidos. Ši informacija padės kūrėjams tobulinti MoKee bei šalinti klaidas.</string>
     <string name="enable_reporting_title">Įjungti raportavimą</string>
     <string name="preview_data_title">Žiūrėti duomenis</string>
     <string name="preview_data_summary">%s</string>
@@ -1894,7 +1894,7 @@
     <string name="anonymous_learn_more">Sužinok daugiau</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Įjunkite ar išjunkite CyanogenMod Statistiką</string>
+    <string name="anonymous_notification_desc">Įjunkite ar išjunkite MoKee Statistiką</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikalus ID</string>
