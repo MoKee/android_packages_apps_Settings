@@ -90,7 +90,6 @@ public class AnonymousStats extends SettingsPreferenceFragment
                         .setTitle(R.string.anonymous_statistics_warning_title)
                         .setIconAttribute(android.R.attr.alertDialogIcon)
                         .setPositiveButton(android.R.string.yes, this)
-                        .setNeutralButton(getString(R.string.anonymous_learn_more), this)
                         .setNegativeButton(android.R.string.no, this)
                         .show();
                 mOkDialog.setOnDismissListener(this);
@@ -127,12 +126,8 @@ public class AnonymousStats extends SettingsPreferenceFragment
             mOkClicked = true;
             mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, true).apply();
             ReportingServiceManager.launchService(getActivity());
-        } else if (which == DialogInterface.BUTTON_NEGATIVE){
+        } else (which == DialogInterface.BUTTON_NEGATIVE){
             mEnableReporting.setChecked(false);
-        } else {
-            Uri uri = Uri.parse("http://www.cyanogenmod.com/blog/mkstats-what-it-is-and-why-you-should-opt-in");
-            startActivity(new Intent(Intent.ACTION_VIEW, uri));
-        }
     }
 
 }
