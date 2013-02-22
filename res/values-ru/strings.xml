@@ -1898,10 +1898,10 @@
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">Статистика CyanogenMod</string>
+    <string name="anonymous_statistics_title">Статистика MoKee</string>
     <string name="anonymous_statistics_summary">Помогите сделать CM лучше, включив отправку анонимных отчётов</string>
     <string name="anonymous_statistics_warning_title">Информация об использовании</string>
-    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CyanogenMod отслеживать установки на различные устройства. Отсылаемая информацию включает в себя тип устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, нажмите \"Предпросмотр\".</string>
+    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам MoKee отслеживать установки на различные устройства. Отсылаемая информацию включает в себя тип устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, нажмите \"Предпросмотр\".</string>
     <string name="enable_reporting_title">Включить отправку отчётов</string>
     <string name="preview_data_title">Предпросмотр</string>
     <string name="preview_data_summary">%s</string>
@@ -1909,7 +1909,7 @@
     <string name="anonymous_learn_more">Подробнее</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Анонимная статистика CyanogenMod</string>
+    <string name="anonymous_notification_desc">Анонимная статистика MoKee</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Уникальный идентификатор</string>

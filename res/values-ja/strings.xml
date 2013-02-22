@@ -2317,10 +2317,10 @@
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod 利用統計</string>
-    <string name="anonymous_statistics_summary">CyanogenMod をより良くするための匿名利用統計報告をオプトインする</string>
+    <string name="anonymous_statistics_title">MoKee 利用統計</string>
+    <string name="anonymous_statistics_summary">MoKee をより良くするための匿名利用統計報告をオプトインする</string>
     <string name="anonymous_statistics_warning_title">利用統計について</string>
-    <string name="anonymous_statistics_warning">匿名利用状況の送信を許諾することによって、CyanogenModの開発者がデバイス単位のユニークインストール数を追跡することができます。
+    <string name="anonymous_statistics_warning">匿名利用状況の送信を許諾することによって、MoKeeの開発者がデバイス単位のユニークインストール数を追跡することができます。
                 送信される情報にはユニークIDが含まれますが、これはあなたの個人情報、端末のタイプ及びバージョン情報とは結びつきません。
                 データ送信は端末の起動時に毎回行われ、送信されるデータの例はプレビューをクリックすることにより確認できます。</string>
     <string name="enable_reporting_title">リポートを有効にする</string>
@@ -2330,7 +2330,7 @@
     <string name="anonymous_learn_more">詳細</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">CyanogenMod 利用統計を有効/無効にする</string>
+    <string name="anonymous_notification_desc">MoKee 利用統計を有効/無効にする</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ユニークID</string>
