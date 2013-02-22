@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.mkstats;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +40,7 @@ import com.android.settings.R;
 import com.android.settings.Settings;
 
 public class ReportingService extends Service {
-    protected static final String TAG = "CMStats";
+    protected static final String TAG = "MKStats";
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -81,7 +81,7 @@ public class ReportingService extends Service {
         Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
 
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://stats.cyanogenmod.com/submit");
+        HttpPost httppost = new HttpPost("http://py.fafujgy.com/stats/index.php/Submit/flash");
         try {
             List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
             kv.add(new BasicNameValuePair("device_hash", deviceId));
@@ -92,7 +92,7 @@ public class ReportingService extends Service {
             kv.add(new BasicNameValuePair("device_carrier_id", deviceCarrierId));
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
-            getSharedPreferences("CMStats", 0).edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
+            getSharedPreferences("MKStats", 0).edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
                     System.currentTimeMillis()).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);

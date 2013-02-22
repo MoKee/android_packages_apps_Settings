@@ -49,12 +49,12 @@
                     android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
         </PreferenceScreen>
 
-        <!-- Anonymous statistics - (CMStats) -->
+        <!-- Anonymous statistics - (MKStats) -->
         <PreferenceScreen
-            android:key="cmstats"
+            android:key="mkstats"
             android:title="@string/anonymous_statistics_title"
             android:summary="@string/anonymous_statistics_summary"
-            android:fragment="com.android.settings.cmstats.AnonymousStats" >
+            android:fragment="com.android.settings.mkstats.AnonymousStats" >
         </PreferenceScreen>
 
         <!-- Change Log -->

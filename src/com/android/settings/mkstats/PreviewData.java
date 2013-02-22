@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.mkstats;
 
 import android.os.Bundle;
 import android.preference.Preference;
