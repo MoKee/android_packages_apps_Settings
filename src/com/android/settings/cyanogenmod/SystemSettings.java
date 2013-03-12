@@ -42,7 +42,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_BATTERY_LIGHT = "battery_light";
     private static final String KEY_HARDWARE_KEYS = "hardware_keys";
     private static final String KEY_NAVIGATION_BAR = "navigation_bar";
-    private static final String KEY_NAVIGATION_BUTTONS_HEIGHT = "navigation_buttons_height";
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String KEY_NAVIGATION_RING = "navigation_ring";
     private static final String KEY_NAVIGATION_BAR_CATEGORY = "navigation_bar_category";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
@@ -62,10 +62,10 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
 
         addPreferencesFromResource(R.xml.system_settings);
 
-        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BUTTONS_HEIGHT);
+        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
 
-        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BUTTONS_HEIGHT, 48);
+        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 		
@@ -198,7 +198,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             int statusNavButtonsHeight = Integer.valueOf((String) objValue);
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.NAVIGATION_BUTTONS_HEIGHT, statusNavButtonsHeight);
+                    Settings.System.NAVIGATION_BAR_HEIGHT, statusNavButtonsHeight);
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
             return true;
         }
