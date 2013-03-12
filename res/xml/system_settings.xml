@@ -64,15 +64,19 @@
         android:fragment="com.android.settings.cyanogenmod.HardwareKeys"
         android:title="@string/hardware_keys_title" />
 
-   <PreferenceCategory
-        android:key="navigation_bar"
-        android:title="@string/navigation_bar_title">
+    <PreferenceCategory
+        android:key="navigation_bar_category"
+        android:title="@string/navigation_bar_category" >
 
         <PreferenceScreen
-            android:key="nav_buttons_edit"
+            android:key="navigation_bar"
             android:fragment="com.android.settings.cyanogenmod.NavBar"
-            android:title="@string/navigation_bar_edit_title"
-            android:summary="@string/navigation_bar_edit_summary" />
+            android:title="@string/navigation_bar_title" />
+
+        <PreferenceScreen
+            android:key="navigation_ring"
+            android:fragment="com.android.settings.cyanogenmod.NavRing"
+            android:title="@string/navigation_ring_title" />
 
         <ListPreference
             android:key="nav_buttons_height"
@@ -82,7 +86,6 @@
             android:entryValues="@array/nav_buttons_height_values"
             android:defaultValue="48"
             android:persistent="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
