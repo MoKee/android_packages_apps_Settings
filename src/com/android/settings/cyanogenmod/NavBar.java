@@ -108,7 +108,7 @@ public class NavBar extends Fragment {
                         toggleEditMode(false, false);
                     }
                     Settings.System.putString(getActivity().getContentResolver(),
-                            Settings.System.NAV_BUTTONS, null);
+                            Settings.System.NAVIGATION_BUTTONS, null);
                     toggleEditMode(true, false);
                     toggleEditMode(false, false);
                     mEditMode = false;
