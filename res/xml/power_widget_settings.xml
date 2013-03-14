@@ -24,7 +24,7 @@
         <CheckBoxPreference
             android:key="expanded_widget"
             android:title="@string/title_expanded_widget"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <PreferenceScreen
             android:key="widget_picker"
@@ -56,7 +56,7 @@
         <CheckBoxPreference
             android:key="expanded_hide_scrollbar"
             android:title="@string/title_expanded_hide_scrollbar"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:dependency="expanded_widget" />
 
         <ListPreference

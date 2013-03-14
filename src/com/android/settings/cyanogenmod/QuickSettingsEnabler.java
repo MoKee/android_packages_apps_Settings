@@ -39,7 +39,7 @@ public class QuickSettingsEnabler extends SwitchWidget {
 
     public void setState(Switch switch_) {
         boolean isEnabled = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.EXPANDED_VIEW_WIDGET, 0) == 1;
+                Settings.System.EXPANDED_VIEW_WIDGET, 1) == 1;
         mSwitch.setChecked(isEnabled);
         return;
     }
