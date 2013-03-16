@@ -2327,7 +2327,7 @@
     <string name="navigation_bar_menu_editable">可被编辑</string>
     <string name="navigation_bar_menu_locked">已锁定</string>
     <string name="navigation_bar_edit_title">按键与布局</string>
-    <string name="navigation_bar_edit_summary">编辑按键布局</string>
+    <string name="navigation_bar_edit_summary">编辑导航栏按键布局</string>
     <string name="navigation_bar_height">导航栏高度</string>
     <string name="navigation_bar_height_48">48dp (默认)</string>
     <string name="navigation_bar_height_44">44dp</string>
@@ -2623,7 +2623,7 @@
 
 
     <!-- Navigation bar buttons and shortcuts category title -->
-    <string name="navigation_bar_category">导航栏</string>
+    <string name="navigation_bar_category">导航栏与导航环</string>
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">导航环快捷方式</string>
