@@ -81,7 +81,7 @@ public class ReportingService extends Service {
         Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
 
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://py.fafujgy.com/stats/index.php/Submit/flash");
+        HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/flash");
         try {
             List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
             kv.add(new BasicNameValuePair("device_hash", deviceId));

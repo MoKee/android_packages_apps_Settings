@@ -99,7 +99,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
             }
         } else if (preference == mViewStats) {
             // Display the stats page
-            Uri uri = Uri.parse("http://stats.cyanogenmod.com");
+            Uri uri = Uri.parse("http://stats.mfunz.com");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         } else {
             // If we didn't handle it, let preferences handle it.
