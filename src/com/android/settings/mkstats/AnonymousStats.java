@@ -126,8 +126,9 @@ public class AnonymousStats extends SettingsPreferenceFragment
             mOkClicked = true;
             mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, true).apply();
             ReportingServiceManager.launchService(getActivity());
-        } else (which == DialogInterface.BUTTON_NEGATIVE){
+        } else {
             mEnableReporting.setChecked(false);
+        }
     }
 
 }
