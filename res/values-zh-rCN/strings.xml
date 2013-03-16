@@ -2315,8 +2315,6 @@
     <string name="hardware_keys_action_search">搜索助手</string>
     <string name="hardware_keys_action_voice_search">语音搜索</string>
     <string name="hardware_keys_action_in_app_search">程序内搜索</string>
-    
-    <string name="navigation_bar_category">导航栏</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_bar_title">按键与布局</string>
@@ -2328,7 +2326,7 @@
     <string name="navigation_bar_reset_toast">导航栏设置已还原为系统默认值</string>
     <string name="navigation_bar_menu_editable">可被编辑</string>
     <string name="navigation_bar_menu_locked">已锁定</string>
-    <string name="navigation_bar_edit_title">自定义按键</string>
+    <string name="navigation_bar_edit_title">按键与布局</string>
     <string name="navigation_bar_edit_summary">编辑按键布局</string>
     <string name="navigation_bar_height">导航栏高度</string>
     <string name="navigation_bar_height_48">48dp (默认)</string>
@@ -2628,10 +2626,11 @@
     <string name="navigation_bar_category">导航栏</string>
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">导航栏快捷方式</string>
-    <string name="navring_target_reset_message">确定删除所有用户创建的导航栏快捷方式并还原为默认值?</string>
-    <string name="navring_target_reset">导航栏快捷方式已还原为默认值</string>
-    <string name="navring_target_save">导航栏快捷方式已保存</string>
+    <string name="navigation_ring_title">导航环快捷方式</string>
+    <string name="navigation_ring_summary">编辑导航环快捷方式</string>  
+    <string name="navring_target_reset_message">确定删除所有用户创建的导航环快捷方式并还原为默认值?</string>
+    <string name="navring_target_reset">导航环快捷方式已还原为默认值</string>
+    <string name="navring_target_save">导航环快捷方式已保存</string>
     <string name="navring_action_open_ime_switcher">开启输入法切换器</string>
     <string name="navring_action_kill_app">终止程序</string>
     <string name="navring_action_none">无</string>

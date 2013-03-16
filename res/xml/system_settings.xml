@@ -77,7 +77,8 @@
         <PreferenceScreen
             android:key="navigation_ring"
             android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title" />
+            android:title="@string/navigation_ring_title"
+            android:summary="@string/navigation_ring_summary" />
 
         <ListPreference
             android:key="navigation_bar_height"
