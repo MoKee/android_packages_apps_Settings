@@ -602,6 +602,10 @@
     <string name="wifi_secured_first_item" msgid="4072076186051083451">"通过 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 进行保护"</string>
     <string name="wifi_secured_second_item" msgid="1326000076939056265">"，通过 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 进行保护"</string>
     <string name="wifi_security_none" msgid="7985461072596594400">"无"</string>
+
+    <string name="wifi_mode">模式</string>
+    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) 网络</string>
+
     <string name="wifi_connect" msgid="1076622875777072845">"连接"</string>
     <string name="wifi_failed_connect_message" msgid="8491902558970292871">"无法连接网络"</string>
     <string name="wifi_forget" msgid="8168174695608386644">"忘记"</string>
@@ -658,6 +662,7 @@
     <string name="wifi_tether_configure_ap_text" msgid="61237027772641155">"设置 Wi-Fi 热点"</string>
     <string name="wifi_tether_configure_subtext" msgid="1927454307836232128">"<xliff:g id="NETWORK_SSID">%1$s</xliff:g> <xliff:g id="NETWORK_SECURITY">%2$s</xliff:g> 便携式 Wi-Fi 热点"</string>
     <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"Android 热点"</string>
+
     <string name="display_settings_title" msgid="1708697328627382561">"显示"</string>
     <string name="sound_settings" msgid="5534671337768745343">"声音"</string>
     <string name="ringtone_title" msgid="5379026328015343686">"手机铃声"</string>
