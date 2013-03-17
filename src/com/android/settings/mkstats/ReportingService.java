@@ -49,7 +49,9 @@ public class ReportingService extends Service {
 
     @Override
     public int onStartCommand (Intent intent, int flags, int startId) {
-        if (intent.getBooleanExtra("firstBoot", true)) {
+        if (intent.getBooleanExtra("firstBoot", false)) {
+            Log.d(TAG, "Not firstBoot.");
+        } else {
             Log.d(TAG, "User has opted in -- reporting.");
             Thread thread = new Thread() {
                 @Override
