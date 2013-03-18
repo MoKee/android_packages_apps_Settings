@@ -108,6 +108,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             }
             if (removeNavbar) {
                 prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR));
+                prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_HEIGHT));
                 prefScreen.removePreference(findPreference(KEY_NAVIGATION_RING));
                 prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_CATEGORY));
             }
@@ -116,6 +117,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             prefScreen.removePreference(findPreference(KEY_BATTERY_LIGHT));
             prefScreen.removePreference(findPreference(KEY_HARDWARE_KEYS));
             prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR));
+            prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_HEIGHT));
             prefScreen.removePreference(findPreference(KEY_NAVIGATION_RING));
             prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_CATEGORY));
             prefScreen.removePreference(findPreference(KEY_STATUS_BAR));
