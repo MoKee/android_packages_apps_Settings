@@ -1047,6 +1047,12 @@
             android:name=".mkstats.ReportingService">
         </service>
 
+        <service android:label="UpdatingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mkstats.UpdatingService">
+        </service>
+
         <!-- Runs in the phone process since it needs access to the Phone object -->
         <activity android:name=".deviceinfo.Status"
                 android:label="@string/device_status_activity_title"

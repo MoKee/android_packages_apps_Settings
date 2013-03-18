@@ -16,6 +16,10 @@
 
 package com.android.settings.mkstats;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +29,8 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -33,6 +39,7 @@ import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.util.Log;
 
@@ -49,18 +56,19 @@ public class ReportingService extends Service {
 
     @Override
     public int onStartCommand (Intent intent, int flags, int startId) {
-        if (intent.getBooleanExtra("firstBoot", false)) {
-            Log.d(TAG, "Not firstBoot.");
-        } else {
-            Log.d(TAG, "User has opted in -- reporting.");
-            Thread thread = new Thread() {
-                @Override
-                public void run() {
-                    report();
-                }
-            };
-            thread.start();
-        }
+        SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
+        if (!prefs.getBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false)) {
+		prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, true).apply();
+		Log.d(TAG, "User has opted in -- reporting.");
+		Thread thread = new Thread() {
+			@Override
+		        public void run() {
+				report();
+		        }
+		};
+		thread.start();
+	}
+
         return Service.START_REDELIVER_INTENT;
     }
 
@@ -81,6 +89,7 @@ public class ReportingService extends Service {
 
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/flash");
+		SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
         try {
             List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
             kv.add(new BasicNameValuePair("device_hash", deviceId));
@@ -90,13 +99,27 @@ public class ReportingService extends Service {
             kv.add(new BasicNameValuePair("device_carrier", deviceCarrier));
             kv.add(new BasicNameValuePair("device_carrier_id", deviceCarrierId));
             httppost.setEntity(new UrlEncodedFormEntity(kv));
-            httpclient.execute(httppost);
-            getSharedPreferences("MKStats", 0).edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
-                    System.currentTimeMillis()).apply();
+            InputStream is = httpclient.execute(httppost).getEntity().getContent();
+            long device_flash_time = Long.valueOf(convertStreamToJSONObject(is).getString("device_flash_time"));
+            prefs.edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
+                    System.currentTimeMillis()).putLong(AnonymousStats.ANONYMOUS_FLASH_TIME,
+                                device_flash_time).putBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, false).putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
+			prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false).apply();
         }
         ReportingServiceManager.setAlarm(this);
         stopSelf();
     }
+
+	private JSONObject convertStreamToJSONObject(InputStream is) throws IOException, JSONException {
+		StringBuilder builder = new StringBuilder();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		for(String str = reader.readLine();str != null; str= reader.readLine())
+		{
+			builder.append(str);
+		}
+		return new JSONObject(builder.toString()); 
+		
+	}
 }

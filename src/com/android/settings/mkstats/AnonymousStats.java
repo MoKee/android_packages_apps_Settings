@@ -44,7 +44,9 @@ public class AnonymousStats extends SettingsPreferenceFragment
 
     protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
-    protected static final String ANONYMOUS_ALARM_SET = "pref_anonymous_alarm_set";
+    protected static final String ANONYMOUS_FLASH_TIME = "pref_anonymous_flash_time";
+	
+    protected static final String ANONYMOUS_CHECK_LOCK = "pref_anonymous_check_lock";
 
     private CheckBoxPreference mEnableReporting;
 

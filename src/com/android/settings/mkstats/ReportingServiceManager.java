@@ -43,7 +43,6 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
     protected static void setAlarm (Context ctx) {
         SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
-        prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, false).apply();
         boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
         boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
         if (!optedIn || firstBoot) {
@@ -59,7 +58,6 @@ public class ReportingServiceManager extends BroadcastReceiver {
         AlarmManager alarmManager = (AlarmManager) ctx.getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + timeLeft, PendingIntent.getBroadcast(ctx, 0, sIntent, 0));
         Log.d(ReportingService.TAG, "Next sync attempt in : " + timeLeft / dMill + " days");
-        prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, true).apply();
     }
 
     public static void launchService (Context ctx) {
@@ -70,10 +68,8 @@ public class ReportingServiceManager extends BroadcastReceiver {
             long lastSynced = prefs.getLong(AnonymousStats.ANONYMOUS_LAST_CHECKED, 0);
             boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
             boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
-            boolean alarmSet = prefs.getBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, false);
-            if (alarmSet) {
-                return;
-            }
+            boolean checklock = prefs.getBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false);
+
             boolean shouldSync = false;
             if (lastSynced == 0) {
                 shouldSync = true;
@@ -81,10 +77,17 @@ public class ReportingServiceManager extends BroadcastReceiver {
                 shouldSync = true;
             }
             if ((shouldSync && optedIn) || firstBoot) {
-                Intent sIntent = new Intent();
-                sIntent.setComponent(new ComponentName(ctx.getPackageName(), ReportingService.class.getName()));
-                sIntent.putExtra("firstBoot", firstBoot);
-                ctx.startService(sIntent);
+				if(prefs.getLong(AnonymousStats.ANONYMOUS_FLASH_TIME, 0) == 0 && !checklock) {
+					Intent sIntent = new Intent();
+	                		sIntent.setComponent(new ComponentName(ctx.getPackageName(), ReportingService.class.getName()));
+	                		ctx.startService(sIntent);
+				}
+				else if(prefs.getLong(AnonymousStats.ANONYMOUS_FLASH_TIME, 0) != 0) {
+	                		Intent sIntent = new Intent();
+	                		sIntent.setComponent(new ComponentName(ctx.getPackageName(), UpdatingService.class.getName()));
+	                		ctx.startService(sIntent);
+				}
+                
             } else if (optedIn) {
                 setAlarm(ctx);
             }
