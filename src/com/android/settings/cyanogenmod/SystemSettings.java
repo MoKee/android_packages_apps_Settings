@@ -61,14 +61,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_settings);
-
-        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
-        mNavButtonsHeight.setOnPreferenceChangeListener(this);
-
-        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
-        mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
-        mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
-		
+	
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Determine which user is logged in
@@ -105,6 +98,12 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             // Act on the above
             if (removeKeys) {
                 prefScreen.removePreference(findPreference(KEY_HARDWARE_KEYS));
+                mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
+                mNavButtonsHeight.setOnPreferenceChangeListener(this);
+
+                int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+                mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
+                mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
             }
             if (removeNavbar) {
                 prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR));
