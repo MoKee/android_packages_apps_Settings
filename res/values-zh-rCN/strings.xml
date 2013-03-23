@@ -662,7 +662,6 @@
     <string name="wifi_tether_configure_ap_text" msgid="61237027772641155">"设置 Wi-Fi 热点"</string>
     <string name="wifi_tether_configure_subtext" msgid="1927454307836232128">"<xliff:g id="NETWORK_SSID">%1$s</xliff:g> <xliff:g id="NETWORK_SECURITY">%2$s</xliff:g> 便携式 Wi-Fi 热点"</string>
     <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"Android 热点"</string>
-
     <string name="display_settings_title" msgid="1708697328627382561">"显示"</string>
     <string name="sound_settings" msgid="5534671337768745343">"声音"</string>
     <string name="ringtone_title" msgid="5379026328015343686">"手机铃声"</string>
@@ -2124,7 +2123,7 @@
 
     <!-- Performance Settings : Warning dialog  -->
     <string name="performance_settings_warning_title">请谨慎前进</string>
-    <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交 Bug 报告.</string>
+    <string name="performance_settings_warning">这些设置完全是用于测试与实验. 这里的改变将直接影响系统性能, 并可能导致系统不稳定, 数据丢失, 与硬件损伤.\n\n如果您更改了这里的设置, 我们请求您不要向我们提交错误报告.</string>
 
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
@@ -2529,7 +2528,7 @@
     <string name="dynamic_tiles_note_title">注意</string>
     <string name="dynamic_tiles_note_summary">动态按钮不是随时都会显示的, 它们仅会在有相关的系统事件时显示</string>
     <string name="title_dynamic_alarm">闹钟</string>
-    <string name="title_dynamic_bugreport">Bug 报告</string>
+    <string name="title_dynamic_bugreport">错误报告</string>
     <string name="title_dynamic_ime">输入法更改器</string>
     <string name="title_dynamic_usbtether">USB 网络共享</string>
     <string name="title_dynamic_wifi">Wi-Fi 显示</string>
@@ -2645,7 +2644,7 @@
     <string name="navring_action_ring_vibrate_silent">响铃/震动/静音</string>
     <string name="navring_action_screen_off">关闭屏幕</string>
     <string name="navring_action_torch">手电筒开关</string>
-    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_action_google_now">Google 即时</string>
     <string name="navring_choose_action_title">选择操作</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
