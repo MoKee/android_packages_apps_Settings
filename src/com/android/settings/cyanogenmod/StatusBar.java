@@ -16,6 +16,7 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.ActivityManager;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -40,6 +41,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
+    private static final String NOTIFICATION_SHADE_DIM = "notification_shade_dim";
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
@@ -48,6 +50,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
     private PreferenceCategory mPrefCategoryGeneral;
+    private CheckBoxPreference mNotificationShadeDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -108,6 +111,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarNotifCount.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1));
 
+        mNotificationShadeDim = (CheckBoxPreference) prefSet.findPreference(NOTIFICATION_SHADE_DIM);
+        mNotificationShadeDim.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.NOTIFICATION_SHADE_DIM, ActivityManager.isHighEndGfx() ? 1 : 0) == 1));
+
         mPrefCategoryGeneral = (PreferenceCategory) findPreference(STATUS_BAR_CATEGORY_GENERAL);
 
         if (Utils.isWifiOnly(getActivity())) {
@@ -116,6 +123,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         if (Utils.isTablet(getActivity())) {
             mPrefCategoryGeneral.removePreference(mStatusBarBrightnessControl);
+            mPrefCategoryGeneral.removePreference(mNotificationShadeDim);
         }
 
     }
@@ -163,6 +171,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             value = mStatusBarNotifCount.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
+            return true;
+        } else if (preference == mNotificationShadeDim) {
+            value = mNotificationShadeDim.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 :
+0);
             return true;
         }
         return false;
