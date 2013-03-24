@@ -51,11 +51,15 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
     private static final String PREF_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
+    private static final String KEY_MMS_BREATH = "mms_breath";
+    private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
     private ListPreference mNavButtonsHeight;
     private CheckBoxPreference mFullscreenKeyboard;
+    private CheckBoxPreference mMMSBreath;
+    private CheckBoxPreference mMissedCallBreath;
     private boolean mIsPrimary;
 
     @Override
@@ -67,13 +71,21 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
 
-        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
         mFullscreenKeyboard = (CheckBoxPreference) findPreference(PREF_FULLSCREEN_KEYBOARD);
-        mFullscreenKeyboard.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+        mFullscreenKeyboard.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.FULLSCREEN_KEYBOARD, 0) == 1);
+        
+        mMMSBreath = (CheckBoxPreference) findPreference(KEY_MMS_BREATH);
+        mMMSBreath.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MMS_BREATH, 0) == 1);
+        mMissedCallBreath = (CheckBoxPreference) findPreference(KEY_MISSED_CALL_BREATH);
+        mMissedCallBreath.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MISSED_CALL_BREATH, 0) == 1);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -211,7 +223,15 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             return true;
         } else if (preference == mFullscreenKeyboard) {
             Settings.System.putInt(getActivity().getContentResolver(), Settings.System.FULLSCREEN_KEYBOARD,
-                    (Boolean) objValue).booleanValue() ? 1 : 0);
+                    mFullscreenKeyboard.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mMMSBreath) {
+            Settings.System.putInt(getActivity().getContentResolver(), Settings.System.MMS_BREATH, 
+                     mMMSBreath.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mMissedCallBreath) {
+            Settings.System.putInt(getActivity().getContentResolver(), Settings.System.MISSED_CALL_BREATH, 
+                    mMissedCallBreath.isChecked() ? 1 : 0);
             return true;
         }
         return false;

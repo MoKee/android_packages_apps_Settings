@@ -2666,4 +2666,11 @@
     <string name="fullscreen_keyboard">禁用全屏键盘</string>
     <string name="fullscreen_keyboard_summary">横屏模式下输入的时候禁用全屏键盘以方便查看信息</string>
     
+    <!-- Breathing Notifications -->
+    <string name="mms_breath">呼吸短信</string>
+    <string name="mms_breath_summary">显示呼吸短信通知栏特效</string>
+    <string name="missed_call_breath">呼吸未接来电</string>
+    <string name="missed_call_breath_summary">显示呼吸未接来电通知栏特效</string>
+    
+    
 </resources>
