@@ -2320,6 +2320,10 @@
     <string name="hardware_keys_action_voice_search">语音搜索</string>
     <string name="hardware_keys_action_in_app_search">程序内搜索</string>
 
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">互换音量按键</string>
+    <string name="swap_volume_buttons_summary">当屏幕旋转时互换音量按键</string>
+
     <!-- Navigation Bar #CM -->
     <string name="navigation_bar_title">按键与布局</string>
     <string name="navigation_bar_help_text">1 - 点击锁定图标以开始编辑\n\n2 - 点击任何按键以指定或改变它的功能\n\n3 - 长按任何按键以重新排列按键顺序\n\n4 - 再次点击锁定图标将会保存您的改变\n\n5 - 如果您想还原为系统默认值, 请点击重置键\n\n</string>
