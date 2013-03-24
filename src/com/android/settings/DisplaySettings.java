@@ -448,9 +448,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
             mCrtOn.setEnabled(isCrtOffChecked);
         } else if (mCrtOn.equals(key)) {
+            isCrtOffChecked = ((Boolean) objValue).booleanValue();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_ENABLE_CRT_ON,
-                    ((Boolean) newValue).booleanValue() ? 1 : 0);
+                    (isCrtOffChecked ? 1 : 0));
         }
 
         return true;
