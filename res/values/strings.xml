@@ -5241,7 +5241,11 @@
     
     <!-- Hide Initial Page Hints -->
     <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
-    <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>	
     
-    <!-- MOKEE ADD END --> 	
+    <!-- Fullscreen Keyboard -->
+    <string name="fullscreen_keyboard">Disable fullscreen keyboard</string>
+    <string name="fullscreen_keyboard_summary">Will allow you to read the message your typing while in landscape mode.</string>
+    
+    <!-- MOKEE ADD END --> 
 </resources>
