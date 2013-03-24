@@ -78,13 +78,16 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
         mFullscreenKeyboard = (CheckBoxPreference) findPreference(PREF_FULLSCREEN_KEYBOARD);
+        mFullscreenKeyboard.setOnPreferenceChangeListener(this);
         mFullscreenKeyboard.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.FULLSCREEN_KEYBOARD, 0) == 1);
         
         mMMSBreath = (CheckBoxPreference) findPreference(KEY_MMS_BREATH);
+        mMMSBreath.setOnPreferenceChangeListener(this);
         mMMSBreath.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.MMS_BREATH, 0) == 1);
         mMissedCallBreath = (CheckBoxPreference) findPreference(KEY_MISSED_CALL_BREATH);
+        mMissedCallBreath.setOnPreferenceChangeListener(this);
         mMissedCallBreath.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.MISSED_CALL_BREATH, 0) == 1);
 

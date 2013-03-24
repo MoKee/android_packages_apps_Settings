@@ -161,7 +161,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         // respect device default configuration
         // true fades while false animates
-        boolean electronBeamFadesConfig = getResources().getBoolean(
+        boolean electronBeamFadesConfig = getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_animateScreenLights);
 
         // use this to enable/disable crt on feature
@@ -435,7 +435,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
         }
-        if (mCrtOff.equals(key)) {
+        if (mCrtOff.equals(preference)) {
             isCrtOffChecked = ((Boolean) objValue).booleanValue();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF,
@@ -447,7 +447,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mCrtOn.setChecked(false);
             }
             mCrtOn.setEnabled(isCrtOffChecked);
-        } else if (mCrtOn.equals(key)) {
+        } else if (mCrtOn.equals(preference)) {
             isCrtOffChecked = ((Boolean) objValue).booleanValue();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_ENABLE_CRT_ON,
