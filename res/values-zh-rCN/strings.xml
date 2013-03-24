@@ -2660,5 +2660,11 @@
     <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
     <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
     <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
+    
+    <!-- Fullscreen Keyboard -->
+    <string name="fullscreen_keyboard">禁用全屏键盘</string>
+    <string name="fullscreen_keyboard_summary">横屏模式下输入的时候禁用全屏键盘以方便查看信息</string>
+    
+    
     <!-- MOKEE ADD END -->
 </resources>

@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -50,10 +51,12 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_QUICK_SETTINGS = "quick_settings_panel";
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
+    private static final String PREF_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
     private ListPreference mNavButtonsHeight;
+    private CheckBoxPreference mFullscreenKeyboard;
     private boolean mIsPrimary;
 
     @Override
@@ -68,7 +71,12 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
-		
+
+        mFullscreenKeyboard = (CheckBoxPreference) findPreference(PREF_FULLSCREEN_KEYBOARD);
+        mFullscreenKeyboard.setOnPreferenceChangeListener(this);
+        mFullscreenKeyboard.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.FULLSCREEN_KEYBOARD, 0) == 1);
+
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Determine which user is logged in
@@ -202,6 +210,10 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT, statusNavButtonsHeight);
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
+            return true;
+        } else if (preference == mFullscreenKeyboard) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.FULLSCREEN_KEYBOARD,
+                    ((Boolean) objValue).booleanValue() ? 1 : 0);
             return true;
         }
         return false;

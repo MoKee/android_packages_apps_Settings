@@ -88,7 +88,12 @@
             android:fragment="com.android.settings.cyanogenmod.NavRing"
             android:title="@string/navigation_ring_title"
             android:summary="@string/navigation_ring_summary" />
-
     </PreferenceCategory>
+        
+        <CheckBoxPreference
+            android:key="fullscreen_keyboard"
+            android:title="@string/fullscreen_keyboard"
+            android:summary="@string/fullscreen_keyboard_summary"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
