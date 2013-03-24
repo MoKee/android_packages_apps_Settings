@@ -94,11 +94,27 @@
             android:title="@string/navigation_ring_title"
             android:summary="@string/navigation_ring_summary" />
     </PreferenceCategory>
-        
+
+    <PreferenceCategory
+        android:key="other_category"
+        android:title="@string/other_category" >
+
         <CheckBoxPreference
             android:key="fullscreen_keyboard"
             android:title="@string/fullscreen_keyboard"
             android:summary="@string/fullscreen_keyboard_summary"
             android:defaultValue="false" />
-
+            
+        <CheckBoxPreference
+            android:key="mms_breath"
+            android:title="@string/mms_breath"
+            android:summary="@string/mms_breath_summary"
+            android:defaultValue="false" />
+        
+        <CheckBoxPreference
+            android:key="missed_call_breath"
+            android:title="@string/missed_call_breath"
+            android:summary="@string/missed_call_breath_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>

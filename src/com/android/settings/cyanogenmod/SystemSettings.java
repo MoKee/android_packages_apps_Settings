@@ -17,6 +17,7 @@
 package com.android.settings.cyanogenmod;
 
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -52,13 +53,17 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
     private static final String KEY_PIE_CONTROL = "pie_control";
-    private static final String PREF_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
+    private static final String KEY_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
+    private static final String KEY_MMS_BREATH = "mms_breath";
+    private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
-	private PreferenceScreen mPieControl;
+    private PreferenceScreen mPieControl;
     private ListPreference mNavButtonsHeight;
     private CheckBoxPreference mFullscreenKeyboard;
+    private CheckBoxPreference mMMSBreath;
+    private CheckBoxPreference mMissedCallBreath;
     private boolean mIsPrimary;
 
     @Override
@@ -70,14 +75,23 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
 
-        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
-        mFullscreenKeyboard = (CheckBoxPreference) findPreference(PREF_FULLSCREEN_KEYBOARD);
+        mFullscreenKeyboard = (CheckBoxPreference) findPreference(KEY_FULLSCREEN_KEYBOARD);
         mFullscreenKeyboard.setOnPreferenceChangeListener(this);
         mFullscreenKeyboard.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.FULLSCREEN_KEYBOARD, 0) == 1);
+        mMMSBreath = (CheckBoxPreference) findPreference(KEY_MMS_BREATH);
+        mMMSBreath.setOnPreferenceChangeListener(this);
+        mMMSBreath.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.MMS_BREATH, 0) == 1);
+        mMissedCallBreath = (CheckBoxPreference) findPreference(KEY_MISSED_CALL_BREATH);
+        mMissedCallBreath.setOnPreferenceChangeListener(this);
+        mMissedCallBreath.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.MISSED_CALL_BREATH, 0) == 1);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -221,16 +235,24 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+    	ContentResolver resolver = getActivity().getApplicationContext().getContentResolver();
         if (preference == mNavButtonsHeight) {
-            int statusNavButtonsHeight = Integer.valueOf((String) objValue);
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT, statusNavButtonsHeight);
+            Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
+            		Integer.valueOf((String) objValue));
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
             return true;
         } else if (preference == mFullscreenKeyboard) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.FULLSCREEN_KEYBOARD,
-                    ((Boolean) objValue).booleanValue() ? 1 : 0);
+            Settings.System.putInt(resolver, Settings.System.FULLSCREEN_KEYBOARD,
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
+            return true;
+        } else if (preference == mMMSBreath) {
+            Settings.System.putInt(resolver, Settings.System.MMS_BREATH, 
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
+            return true;
+        } else if (preference == mMissedCallBreath) {
+            Settings.System.putInt(resolver, Settings.System.MISSED_CALL_BREATH, 
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
             return true;
         }
         return false;

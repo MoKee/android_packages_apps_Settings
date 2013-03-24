@@ -5231,7 +5231,9 @@
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
-    <!-- MOKEE ADD START --> 	
+    <!-- MOKEE ADD START -->
+    <!-- Other Settings Category -->
+    <string name="other_category">Other settings</string>
     <!-- CRT --> 
     <string name="crt_screen_title">CRT Screen</string>
     <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
@@ -5247,5 +5249,10 @@
     <string name="fullscreen_keyboard">Disable fullscreen keyboard</string>
     <string name="fullscreen_keyboard_summary">Will allow you to read the message your typing while in landscape mode.</string>
     
+    <!-- Breathing Notifications -->
+    <string name="mms_breath">Breathing SMS</string>
+    <string name="mms_breath_summary">Will give your sms notifications a breathing effect on the statusbar.</string>
+    <string name="missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string>
     <!-- MOKEE ADD END --> 
 </resources>
