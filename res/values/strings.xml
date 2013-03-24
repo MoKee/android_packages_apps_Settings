@@ -5215,8 +5215,15 @@
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
     <!-- Mokee Settings -->
-
+    <string name="extra_settings_title">Extra Settings</string>
     <!-- Notification shade dimming -->
     <string name="notification_shade_dim_title">Dim notification shade</string>
     <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
+
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT Screen</string>
+    <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
+    <string name="system_power_crt_screen_off_summary">Screen will animate an Electron Beam when turned off</string>
+    <string name="system_power_crt_screen_on_title">CRT Screen On</string>
+    <string name="system_power_crt_screen_on_summary">Screen will animate an Electron Beam when turned on</string>
 </resources>

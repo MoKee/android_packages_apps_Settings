@@ -2650,9 +2650,16 @@
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
     <!-- Mokee Settings -->
-
+    <string name="extra_settings_title">其他设置</string>
     <!-- Notification shade dimming -->
     <string name="notification_shade_dim_title">下拉通知栏阴影</string>
-    <string name="notification_shade_dim_summary">打开下啦通知栏阴影</string>
+    <string name="notification_shade_dim_summary">打开下拉通知栏阴影</string>
+
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT特效</string>
+    <string name="system_power_crt_screen_off_title">CRT关屏特效</string>
+    <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
+    <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
+    <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
 
 </resources>
