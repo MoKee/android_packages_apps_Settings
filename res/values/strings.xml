@@ -5213,4 +5213,10 @@
     <string name="navring_choose_action_title">Choose action</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <!-- Mokee Settings -->
+
+    <!-- Notification shade dimming -->
+    <string name="notification_shade_dim_title">Dim notification shade</string>
+    <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
 </resources>

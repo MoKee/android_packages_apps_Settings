@@ -2649,4 +2649,10 @@
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
+    <!-- Mokee Settings -->
+
+    <!-- Notification shade dimming -->
+    <string name="notification_shade_dim_title">下拉通知栏阴影</string>
+    <string name="notification_shade_dim_summary">打开下啦通知栏阴影</string>
+
 </resources>
