@@ -50,7 +50,8 @@
                 android:title="@string/install_applications"
                 android:summaryOff="@string/install_unknown_applications"
                 android:summaryOn="@string/install_unknown_applications"
-                android:persistent="false" />
+                android:persistent="false"
+                android:defaultValue="true" />
 
         <CheckBoxPreference
                 android:key="toggle_verify_applications"
