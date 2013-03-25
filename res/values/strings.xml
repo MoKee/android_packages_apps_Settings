@@ -5217,4 +5217,13 @@
     <string name="navring_choose_action_title">Choose action</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <!-- MOKEE ADD START --> 	
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT Screen</string>
+    <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
+    <string name="system_power_crt_screen_off_summary">Screen will animate an Electron Beam when turned off</string>
+    <string name="system_power_crt_screen_on_title">CRT Screen On</string>
+    <string name="system_power_crt_screen_on_summary">Screen will animate an Electron Beam when turned on</string>
+    <!-- MOKEE ADD END --> 	
 </resources>

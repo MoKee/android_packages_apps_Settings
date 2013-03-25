@@ -2653,4 +2653,12 @@
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
+    <!-- MOKEE ADD START -->
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT特效</string>
+    <string name="system_power_crt_screen_off_title">CRT关屏特效</string>
+    <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
+    <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
+    <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
+    <!-- MOKEE ADD END -->
 </resources>
