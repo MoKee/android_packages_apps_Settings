@@ -2673,5 +2673,9 @@
     <string name="pie_control_trigger_right">屏幕右侧</string>
     <string name="pie_control_trigger_top">屏幕顶部</string>
     <string name="pie_control_trigger_top_summary">仅显示导航键在屏幕顶部</string>
+    
+    <!-- Hide Initial Page Hints -->
+    <string name="lockscreen_hide_initial_page_hints_title">隐藏锁屏页面小部件提示</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">设置是否显示锁屏页面左右小部件的提示</string>
     <!-- MOKEE ADD END -->
 </resources>

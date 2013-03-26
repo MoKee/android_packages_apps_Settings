@@ -70,4 +70,9 @@
         android:title="@string/lockscreen_buttons_title"
         android:summary="@string/lockscreen_buttons_summary" />
 
+     <CheckBoxPreference
+        android:key="lockscreen_hide_initial_page_hints"
+        android:title="@string/lockscreen_hide_initial_page_hints_title"
+        android:summary="@string/lockscreen_hide_initial_page_hints_summary" />
+
 </PreferenceScreen>

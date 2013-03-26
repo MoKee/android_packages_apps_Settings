@@ -5238,5 +5238,10 @@
     <string name="system_power_crt_screen_off_summary">Screen will animate an Electron Beam when turned off</string>
     <string name="system_power_crt_screen_on_title">CRT Screen On</string>
     <string name="system_power_crt_screen_on_summary">Screen will animate an Electron Beam when turned on</string>
+    
+    <!-- Hide Initial Page Hints -->
+    <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>
+    
     <!-- MOKEE ADD END --> 	
 </resources>
