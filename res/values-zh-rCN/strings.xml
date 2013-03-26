@@ -2651,16 +2651,6 @@
     <string name="navring_action_google_now">Google 即时</string>
     <string name="navring_choose_action_title">选择操作</string>
 
-    <!-- **** CYANOGENMOD ADDITIONS END **** -->
-
-    <!-- MOKEE ADD START -->
-    <!-- CRT --> 
-    <string name="crt_screen_title">CRT特效</string>
-    <string name="system_power_crt_screen_off_title">CRT关屏特效</string>
-    <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
-    <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
-    <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
-
     <!-- Quick/Pie Control #CM -->
     <string name="pie_control_title">PIE控制</string>
     <string name="pie_control_enabled">启用扩展桌面时可用</string>
@@ -2673,6 +2663,16 @@
     <string name="pie_control_trigger_right">屏幕右侧</string>
     <string name="pie_control_trigger_top">屏幕顶部</string>
     <string name="pie_control_trigger_top_summary">仅显示导航键在屏幕顶部</string>
+    
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <!-- MOKEE ADD START -->
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT特效</string>
+    <string name="system_power_crt_screen_off_title">CRT关屏特效</string>
+    <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
+    <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
+    <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
     
     <!-- Hide Initial Page Hints -->
     <string name="lockscreen_hide_initial_page_hints_title">隐藏锁屏页面小部件提示</string>
