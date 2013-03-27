@@ -2689,5 +2689,12 @@
     <string name="mms_breath_summary">显示呼吸短信通知栏特效</string>
     <string name="missed_call_breath">呼吸未接来电</string>
     <string name="missed_call_breath_summary">显示呼吸未接来电通知栏特效</string>
+    
+    <!-- Notification shade dimming -->
+    <string name="notification_shade_dim_title">下拉通知栏阴影</string>
+    <string name="notification_shade_dim_summary">打开下拉通知栏阴影</string>
+    
     <!-- MOKEE ADD END -->
+    <!-- Mokee Settings -->
+
 </resources>
