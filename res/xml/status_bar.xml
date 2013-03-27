@@ -65,12 +65,6 @@
             android:title="@string/status_bar_notif_count_title"
             android:summary="@string/status_bar_notif_count_summary"
             android:defaultValue="false" />
-
-        <CheckBoxPreference
-            android:key="notification_shade_dim"
-            android:title="@string/notification_shade_dim_title"
-            android:summary="@string/notification_shade_dim_summary" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

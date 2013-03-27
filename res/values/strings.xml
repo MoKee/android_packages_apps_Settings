@@ -5254,12 +5254,5 @@
     <string name="mms_breath_summary">Will give your sms notifications a breathing effect on the statusbar.</string>
     <string name="missed_call_breath">Breathing Missed Call</string>
     <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string>
-    
-    <!-- Notification shade dimming -->
-    <string name="notification_shade_dim_title">Dim notification shade</string>
-    <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
-    
     <!-- MOKEE ADD END --> 
-    <!-- Mokee Settings -->
-
 </resources>
