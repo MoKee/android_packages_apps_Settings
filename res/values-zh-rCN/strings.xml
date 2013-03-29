@@ -2694,5 +2694,18 @@
     <string name="notification_shade_dim_title">下拉通知栏阴影</string>
     <string name="notification_shade_dim_summary">打开下拉通知栏阴影</string>
     
+    <!-- Alpha bar -->
+    <string name="navigation_bar_alpha_title">状态栏与导航栏透明度设置</string>
+    <string name="navigation_bar_color_title">导航栏颜色</string>
+    <string name="navigation_bar_tint_title">导航栏按钮颜色</string>
+    <string name="transparency_dialog_title">透明设置</string>
+    <string name="transparency_dialog_linked_transparency">链接状态栏与导航栏的透明度</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">状态栏与导航栏</string>
+    <string name="transparency_dialog_statusbar">状态栏</string>
+    <string name="transparency_dialog_navbar">导航栏</string>
+    <string name="transparency_dialog_match_keyguard_alpha">匹配锁屏透明度</string>
+    <string name="transparency_dialog_transparency">主页透明度</string>
+    <string name="transparency_dialog_transparency_keyguard">锁屏透明度</string>
+    
     <!-- MOKEE ADD END -->
 </resources>
