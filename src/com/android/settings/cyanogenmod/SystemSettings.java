@@ -16,8 +16,12 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -29,10 +33,20 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.IWindowManager;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
+import com.android.settings.widget.AlphaSeekBar;
+import com.android.settings.widget.SeekBarPreference;
+import com.android.settings.widget.ColorPickerPreference;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.TextView;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -56,6 +70,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
     private static final String KEY_MMS_BREATH = "mms_breath";
     private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
+    private static final String KEY_NAVBAR_ALPHA = "navigation_bar_alpha";
+    private static final String KEY_NAVBAR_COLOR = "nav_bar_color";
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -65,6 +81,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private CheckBoxPreference mMMSBreath;
     private CheckBoxPreference mMissedCallBreath;
     private boolean mIsPrimary;
+    ColorPickerPreference mNavigationBarColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,6 +109,9 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         mMissedCallBreath.setOnPreferenceChangeListener(this);
         mMissedCallBreath.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.MISSED_CALL_BREATH, 0) == 1);
+
+        mNavigationBarColor = (ColorPickerPreference) findPreference(KEY_NAVBAR_COLOR);
+        mNavigationBarColor.setOnPreferenceChangeListener(this);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -239,6 +259,22 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         }
         return false;
     }
+    
+    private void openTransparencyDialog() {
+        getFragmentManager().beginTransaction().add(new AdvancedTransparencyDialog(), null)
+                .commit();
+    }
+    
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
+            final Preference preference) {
+        if (preference.getKey().equals("transparency_dialog")) {
+            openTransparencyDialog();
+            return true;
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
     	ContentResolver resolver = getActivity().getApplicationContext().getContentResolver();
@@ -247,6 +283,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
             		Integer.valueOf((String) objValue));
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
+            return true;
+        } else if (preference == mNavigationBarColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex) & 0x00FFFFFF;
+            Settings.System.putInt(resolver,
+                    Settings.System.NAVIGATION_BAR_COLOR, intHex);
             return true;
         } else if (preference == mFullscreenKeyboard) {
             Settings.System.putInt(resolver, Settings.System.FULLSCREEN_KEYBOARD,
@@ -263,4 +307,185 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         }
         return false;
     }
+    
+    public static class AdvancedTransparencyDialog extends DialogFragment {
+        private static final int KEYGUARD_ALPHA = 112;
+
+        private static final int STATUSBAR_ALPHA = 0;
+        private static final int STATUSBAR_KG_ALPHA = 1;
+        private static final int NAVBAR_ALPHA = 2;
+        private static final int NAVBAR_KG_ALPHA = 3;
+
+        boolean linkTransparencies = true;
+        CheckBox mLinkCheckBox, mMatchStatusbarKeyguard, mMatchNavbarKeyguard;
+        ViewGroup mNavigationBarGroup;
+
+        TextView mSbLabel;
+
+        AlphaSeekBar mSeekBars[] = new AlphaSeekBar[4];
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setShowsDialog(true);
+            setRetainInstance(true);
+            linkTransparencies = getSavedLinkedState();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            View layout = View.inflate(getActivity(), R.layout.dialog_transparency, null);
+            mLinkCheckBox = (CheckBox) layout.findViewById(R.id.transparency_linked);
+            mLinkCheckBox.setChecked(linkTransparencies);
+
+            mNavigationBarGroup = (ViewGroup) layout.findViewById(R.id.navbar_layout);
+            mSbLabel = (TextView) layout.findViewById(R.id.statusbar_label);
+            mSeekBars[STATUSBAR_ALPHA] = (AlphaSeekBar) layout.findViewById(R.id.statusbar_alpha);
+            mSeekBars[STATUSBAR_KG_ALPHA] = (AlphaSeekBar) layout
+                    .findViewById(R.id.statusbar_keyguard_alpha);
+            mSeekBars[NAVBAR_ALPHA] = (AlphaSeekBar) layout.findViewById(R.id.navbar_alpha);
+            mSeekBars[NAVBAR_KG_ALPHA] = (AlphaSeekBar) layout
+                    .findViewById(R.id.navbar_keyguard_alpha);
+
+            mMatchStatusbarKeyguard = (CheckBox) layout.findViewById(R.id.statusbar_match_keyguard);
+            mMatchNavbarKeyguard = (CheckBox) layout.findViewById(R.id.navbar_match_keyguard);
+
+            try {
+                // restore any saved settings
+                int alphas[] = new int[2];
+                final String sbConfig = Settings.System.getString(getActivity()
+                        .getContentResolver(),
+                        Settings.System.STATUS_BAR_ALPHA_CONFIG);
+                if (sbConfig != null) {
+                    String split[] = sbConfig.split(";");
+                    alphas[0] = Integer.parseInt(split[0]);
+                    alphas[1] = Integer.parseInt(split[1]);
+
+                    mSeekBars[STATUSBAR_ALPHA].setCurrentAlpha(alphas[0]);
+                    mSeekBars[STATUSBAR_KG_ALPHA].setCurrentAlpha(alphas[1]);
+
+                    mMatchStatusbarKeyguard.setChecked(alphas[1] == KEYGUARD_ALPHA);
+
+                    if (linkTransparencies) {
+                        mSeekBars[NAVBAR_ALPHA].setCurrentAlpha(alphas[0]);
+                        mSeekBars[NAVBAR_KG_ALPHA].setCurrentAlpha(alphas[1]);
+                    } else {
+                        final String navConfig = Settings.System.getString(getActivity()
+                                .getContentResolver(),
+                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG);
+                        if (navConfig != null) {
+                            split = navConfig.split(";");
+                            alphas[0] = Integer.parseInt(split[0]);
+                            alphas[1] = Integer.parseInt(split[1]);
+                            mSeekBars[NAVBAR_ALPHA].setCurrentAlpha(alphas[0]);
+                            mSeekBars[NAVBAR_KG_ALPHA].setCurrentAlpha(alphas[1]);
+
+                            mMatchNavbarKeyguard.setChecked(alphas[1] == KEYGUARD_ALPHA);
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                resetSettings();
+            }
+
+            updateToggleState();
+            mMatchStatusbarKeyguard.setOnCheckedChangeListener(mUpdateStatesListener);
+            mMatchNavbarKeyguard.setOnCheckedChangeListener(mUpdateStatesListener);
+            mLinkCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    linkTransparencies = isChecked;
+                    saveSavedLinkedState(isChecked);
+                    updateToggleState();
+                }
+            });
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setView(layout);
+            builder.setTitle(getString(R.string.transparency_dialog_title));
+            builder.setNegativeButton(R.string.cancel, null);
+            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    if (linkTransparencies) {
+                        String config = mSeekBars[STATUSBAR_ALPHA].getCurrentAlpha() + ";" +
+                                mSeekBars[STATUSBAR_KG_ALPHA].getCurrentAlpha();
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.STATUS_BAR_ALPHA_CONFIG, config);
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, config);
+                    } else {
+                        String sbConfig = mSeekBars[STATUSBAR_ALPHA].getCurrentAlpha() + ";" +
+                                mSeekBars[STATUSBAR_KG_ALPHA].getCurrentAlpha();
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.STATUS_BAR_ALPHA_CONFIG, sbConfig);
+
+                        String nbConfig = mSeekBars[NAVBAR_ALPHA].getCurrentAlpha() + ";" +
+                                mSeekBars[NAVBAR_KG_ALPHA].getCurrentAlpha();
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, nbConfig);
+                    }
+                }
+            });
+
+            return builder.create();
+        }
+
+        private void resetSettings() {
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_ALPHA_CONFIG, null);
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, null);
+        }
+
+        private void updateToggleState() {
+            if (linkTransparencies) {
+                mSbLabel.setText(R.string.transparency_dialog_transparency_sb_and_nv);
+                mNavigationBarGroup.setVisibility(View.GONE);
+            } else {
+                mSbLabel.setText(R.string.transparency_dialog_statusbar);
+                mNavigationBarGroup.setVisibility(View.VISIBLE);
+            }
+
+            mSeekBars[STATUSBAR_KG_ALPHA]
+                    .setEnabled(!mMatchStatusbarKeyguard.isChecked());
+            mSeekBars[NAVBAR_KG_ALPHA]
+                    .setEnabled(!mMatchNavbarKeyguard.isChecked());
+
+            // disable keyguard alpha if needed
+            if (!mSeekBars[STATUSBAR_KG_ALPHA].isEnabled()) {
+                mSeekBars[STATUSBAR_KG_ALPHA].setCurrentAlpha(KEYGUARD_ALPHA);
+            }
+            if (!mSeekBars[NAVBAR_KG_ALPHA].isEnabled()) {
+                mSeekBars[NAVBAR_KG_ALPHA].setCurrentAlpha(KEYGUARD_ALPHA);
+            }
+        }
+
+        @Override
+        public void onDestroyView() {
+            if (getDialog() != null && getRetainInstance())
+                getDialog().setDismissMessage(null);
+            super.onDestroyView();
+        }
+
+        private CompoundButton.OnCheckedChangeListener mUpdateStatesListener = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                updateToggleState();
+            }
+        };
+
+        private boolean getSavedLinkedState() {
+            return getActivity().getSharedPreferences("transparency", Context.MODE_PRIVATE)
+                    .getBoolean("link", true);
+        }
+
+        private void saveSavedLinkedState(boolean v) {
+            getActivity().getSharedPreferences("transparency", Context.MODE_PRIVATE).edit()
+                    .putBoolean("link", v).commit();
+        }
+    }
+    
 }

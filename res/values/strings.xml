@@ -5258,6 +5258,27 @@
     <!-- Notification shade dimming -->
     <string name="notification_shade_dim_title">Dim notification shade</string>
     <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
-    
+    <!-- Alpha-Bar -->
+      <!-- Color Picker -->
+      <string name="dialog_color_picker">Color Picker</string>
+      <string name="press_color_to_apply">Press on Color to apply</string>
+      <string name="arrow_right">→</string>
+      <string name="arrow_down">↓</string>
+      <string name="hex">Hex:</string>
+      <string name="hex_hint">#FF000000</string>
+      <string name="set">Set</string>
+      <string name="ics_color">Holo</string>
+      <!-- Color Picker -->
+    <string name="navigation_bar_alpha_title">Statusbar and navigation bar opacity</string>
+    <string name="navigation_bar_color_title">Navigation bar color</string>
+    <string name="navigation_bar_tint_title">Navigation bar buttons color</string>
+    <string name="transparency_dialog_title">Transparency settings</string>
+    <string name="transparency_dialog_linked_transparency">Link statusbar &amp; navbar alpha</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">Statusbar and navigation bar</string>
+    <string name="transparency_dialog_statusbar">Statusbar</string>
+    <string name="transparency_dialog_navbar">Navigation bar</string>
+    <string name="transparency_dialog_match_keyguard_alpha">Match lockscreen alpha</string>
+    <string name="transparency_dialog_transparency">Homescreen alpha</string>
+    <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
     <!-- MOKEE ADD END -->
 </resources>
