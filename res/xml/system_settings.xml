@@ -93,11 +93,20 @@
             android:fragment="com.android.settings.cyanogenmod.NavRing"
             android:title="@string/navigation_ring_title"
             android:summary="@string/navigation_ring_summary" />
+            
+        <com.android.settings.widget.ColorPickerPreference
+                android:key="nav_bar_color"
+                android:title="@string/navigation_bar_color_title"
+                android:defaultValue="#000000" />
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="other_category"
         android:title="@string/other_category" >
+
+        <Preference
+            android:key="transparency_dialog"
+            android:title="@string/transparency_dialog_title" />
 
         <CheckBoxPreference
             android:key="fullscreen_keyboard"
