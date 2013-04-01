@@ -49,6 +49,16 @@ import com.android.settings.Settings;
 public class ReportingService extends Service {
     protected static final String TAG = "MKStats";
 
+    protected static final String ANONYMOUS_ALARM_SET = "pref_anonymous_alarm_set";
+	
+    protected static final String ANONYMOUS_CHECK_LOCK = "pref_anonymous_check_lock";
+
+    protected static final String ANONYMOUS_FIRST_BOOT = "pref_anonymous_first_boot";
+
+    protected static final String ANONYMOUS_FLASH_TIME = "pref_anonymous_flash_time";
+	
+    protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
+	
     @Override
     public IBinder onBind(Intent intent) {
         return null;
@@ -57,8 +67,8 @@ public class ReportingService extends Service {
     @Override
     public int onStartCommand (Intent intent, int flags, int startId) {
         SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
-        if (!prefs.getBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false)) {
-		prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, true).apply();
+        if (!prefs.getBoolean(ANONYMOUS_CHECK_LOCK, false)) {
+		prefs.edit().putBoolean(ANONYMOUS_CHECK_LOCK, true).apply();
 		Log.d(TAG, "User has opted in -- reporting.");
 		Thread thread = new Thread() {
 			@Override
@@ -101,12 +111,12 @@ public class ReportingService extends Service {
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             InputStream is = httpclient.execute(httppost).getEntity().getContent();
             long device_flash_time = Long.valueOf(convertStreamToJSONObject(is).getString("device_flash_time"));
-            prefs.edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
-                    System.currentTimeMillis()).putLong(AnonymousStats.ANONYMOUS_FLASH_TIME,
-                                device_flash_time).putBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, false).putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false).apply();
+            prefs.edit().putLong(ANONYMOUS_LAST_CHECKED,
+                    System.currentTimeMillis()).putLong(ANONYMOUS_FLASH_TIME,
+                                device_flash_time).putBoolean(ANONYMOUS_FIRST_BOOT, false).putBoolean(ANONYMOUS_CHECK_LOCK, false).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
-			prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false).apply();
+			prefs.edit().putBoolean(ANONYMOUS_CHECK_LOCK, false).apply();
         }
         ReportingServiceManager.setAlarm(this);
         stopSelf();

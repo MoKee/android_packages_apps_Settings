@@ -62,7 +62,7 @@ public class UpdatingService extends Service {
 
     private void update() {
         String deviceId = Utilities.getUniqueID(getApplicationContext());
-	String deviceFlashTime = String.valueOf(getSharedPreferences("MKStats", 0).getLong(AnonymousStats.ANONYMOUS_FLASH_TIME, 0));
+        String deviceFlashTime = String.valueOf(getSharedPreferences("MKStats", 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
         Log.d(TAG, "SERVICE: Device Flash Time=" + deviceFlashTime);
@@ -75,7 +75,7 @@ public class UpdatingService extends Service {
             kv.add(new BasicNameValuePair("device_flash_time", deviceFlashTime));
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
-            getSharedPreferences("MKStats", 0).edit().putLong(AnonymousStats.ANONYMOUS_LAST_CHECKED,
+            getSharedPreferences("MKStats", 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
                     System.currentTimeMillis()).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);

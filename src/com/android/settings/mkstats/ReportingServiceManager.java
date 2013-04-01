@@ -43,12 +43,11 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
     protected static void setAlarm (Context ctx) {
         SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
-        boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
-        boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
-        if (!optedIn || firstBoot) {
+        boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
+        if (firstBoot) {
             return;
         }
-        long lastSynced = prefs.getLong(AnonymousStats.ANONYMOUS_LAST_CHECKED, 0);
+        long lastSynced = prefs.getLong(ReportingService.ANONYMOUS_LAST_CHECKED, 0);
         if (lastSynced == 0) {
             return;
         }
@@ -65,10 +64,9 @@ public class ReportingServiceManager extends BroadcastReceiver {
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
             SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
-            long lastSynced = prefs.getLong(AnonymousStats.ANONYMOUS_LAST_CHECKED, 0);
-            boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
-            boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
-            boolean checklock = prefs.getBoolean(AnonymousStats.ANONYMOUS_CHECK_LOCK, false);
+            long lastSynced = prefs.getLong(ReportingService.ANONYMOUS_LAST_CHECKED, 0);
+            boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
+            boolean checklock = prefs.getBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false);
 
             boolean shouldSync = false;
             if (lastSynced == 0) {
@@ -76,19 +74,19 @@ public class ReportingServiceManager extends BroadcastReceiver {
             } else if (System.currentTimeMillis() - lastSynced >= tFrame) {
                 shouldSync = true;
             }
-            if ((shouldSync && optedIn) || firstBoot) {
-				if(prefs.getLong(AnonymousStats.ANONYMOUS_FLASH_TIME, 0) == 0 && !checklock) {
-					Intent sIntent = new Intent();
+            if (shouldSync || firstBoot) {
+				if(prefs.getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0) == 0 && !checklock) {
+	                		Intent sIntent = new Intent();
 	                		sIntent.setComponent(new ComponentName(ctx.getPackageName(), ReportingService.class.getName()));
 	                		ctx.startService(sIntent);
 				}
-				else if(prefs.getLong(AnonymousStats.ANONYMOUS_FLASH_TIME, 0) != 0) {
+				else if(prefs.getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0) != 0) {
 	                		Intent sIntent = new Intent();
 	                		sIntent.setComponent(new ComponentName(ctx.getPackageName(), UpdatingService.class.getName()));
 	                		ctx.startService(sIntent);
 				}
                 
-            } else if (optedIn) {
+            } else {
                 setAlarm(ctx);
             }
         }
