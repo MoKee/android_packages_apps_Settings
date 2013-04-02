@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAKH////Y\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5016,
+      "author": {
+        "id": 121
+      },
+      "writtenOn": "2013-04-02T13:04:33Z",
+      "side": 1,
+      "message": "move it to mokee settings",
+      "revId": "a0f04ab45e65164188d59aa20d48f7311930c90f",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    }
+  ]
+}
