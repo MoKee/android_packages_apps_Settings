@@ -2435,6 +2435,11 @@
     <string name="pref_volume_wake_title">音量键唤醒</string>
     <string name="pref_volume_wake_summary">使用音量键唤醒设备</string>
 
+    <!-- Custom Carrier Text -->
+    <string name="custom_carrier_label_title">自定义运营商名字</string>
+    <string name="custom_carrier_label_explain">请输入新的运营商名字. 留空为恢复默认运营商名字.</string>
+    <string name="custom_carrier_label_notset">当前没有设置运营商名字.</string>
+
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB 调试通知</string>
     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>

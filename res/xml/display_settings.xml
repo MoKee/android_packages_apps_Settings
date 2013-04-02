@@ -69,6 +69,10 @@
             android:summary="@string/pref_volume_wake_summary"
             android:defaultValue="false" />
 
+        <PreferenceScreen
+            android:key="custom_carrier_label"
+            android:title="@string/custom_carrier_label_title" />
+
         <PreferenceCategory
             android:key="crt_screen"
             android:title="@string/crt_screen_title"/>

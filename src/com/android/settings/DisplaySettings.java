@@ -19,7 +19,10 @@ package com.android.settings;
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import android.app.ActivityManagerNative;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -41,11 +44,14 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.text.Spannable;
 import android.util.Log;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.Utils;
+
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -63,6 +69,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
+    private static final String PREF_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String KEY_POWER_CRT_SCREEN_ON = "system_power_crt_screen_on";
     private static final String KEY_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
 
@@ -79,6 +86,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mCrtScreenOff;
     private CheckBoxPreference mCrtScreenOn;
     private CheckBoxPreference mVolumeWake;
+    private Preference mCustomLabel;
     private PreferenceScreen mDisplayRotationPreference;
     private WarnedListPreference mFontSizePref;
 
@@ -91,6 +99,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mWifiDisplayPreference;
 
     private boolean isCrtOffChecked = false;
+
+    private String mCustomLabelText = null;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -180,6 +190,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Settings.System.SYSTEM_POWER_ENABLE_CRT_ON, 0) == 1);
         mCrtScreenOn.setEnabled(isCrtOffChecked);
         mCrtScreenOn.setOnPreferenceChangeListener(this);
+
+        mCustomLabel = findPreference(PREF_CUSTOM_CARRIER_LABEL);
+        updateCustomLabelTextSummary();
 
     }
 
@@ -320,6 +333,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 fontSizeNames[index]));
     }
     
+    private void updateCustomLabelTextSummary() { 
+        mCustomLabelText = Settings.System.getString(getActivity().getContentResolver(),
+                Settings.System.CUSTOM_CARRIER_LABEL);
+    
+        if (mCustomLabelText == null || mCustomLabelText.length() == 0) {
+            mCustomLabel.setSummary(R.string.custom_carrier_label_notset);
+        } else {
+            mCustomLabel.setSummary(mCustomLabelText);
+      
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -416,6 +441,35 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
                     mVolumeWake.isChecked() ? 1 : 0);
             return true;
+    } else if (preference == mCustomLabel) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+            alert.setTitle(R.string.custom_carrier_label_title);
+            alert.setMessage(R.string.custom_carrier_label_explain);
+
+            // Set an EditText view to get user input
+            final EditText input = new EditText(getActivity());
+            input.setText(mCustomLabelText != null ? mCustomLabelText : "");
+            alert.setView(input);
+            alert.setPositiveButton(getResources().getString(R.string.ok),
+                    new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    String value = ((Spannable) input.getText()).toString();
+                    Settings.System.putString(getActivity().getContentResolver(),
+                            Settings.System.CUSTOM_CARRIER_LABEL, value);
+                    updateCustomLabelTextSummary();
+                    Intent i = new Intent();
+                    i.setAction("com.android.settings.LABEL_CHANGED");
+                    getActivity().sendBroadcast(i);
+                }
+            });
+            alert.setNegativeButton(getResources().getString(R.string.cancel),
+                    new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    // Canceled.
+                }
+            });
+
+            alert.show();
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
