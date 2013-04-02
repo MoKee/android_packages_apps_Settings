@@ -5234,7 +5234,7 @@
     <string name="notification_shade_dim_title">Dim notification shade</string>
     <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
     
-    <!-- Alpha-Bar Color Picker -->
+    <!-- Alpha-Bar -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on Color to apply</string>
     <string name="arrow_right">→</string>
@@ -5256,5 +5256,11 @@
     <string name="transparency_dialog_match_keyguard_alpha">Match lockscreen alpha</string>
     <string name="transparency_dialog_transparency">Homescreen alpha</string>
     <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
+
+    <!-- Custom Carrier Text -->
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+
     <!-- MOKEE ADDITIONS END -->
 </resources>
