@@ -43,6 +43,8 @@ import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 import com.android.settings.R;
 import com.android.settings.Settings;
 
@@ -97,6 +99,26 @@ public class ReportingService extends Service {
         Log.d(TAG, "SERVICE: Carrier=" + deviceCarrier);
         Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
 
+        // report to google analytics
+        GoogleAnalytics ga = GoogleAnalytics.getInstance(this);
+        Tracker tracker = ga.getTracker(getString(R.string.ga_trackingId));
+        tracker.sendEvent(deviceName, deviceVersion, deviceCountry, null);
+        // this really should be set at build time...
+        // format of version should be:
+        // version[-date-type]-device
+        String[] parts = deviceVersion.split("-");
+        String deviceVersionNoDevice = null;
+        if (parts.length == 2) {
+            deviceVersionNoDevice = parts[0];
+        }
+        else if (parts.length == 4) {
+            deviceVersionNoDevice = parts[0] + "-" + parts[2];
+        }
+        if (deviceVersionNoDevice != null)
+            tracker.sendEvent("checkin", deviceName, deviceVersionNoDevice, null);
+        tracker.close();
+
+        // report to the cmstats service
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/flash");
 		SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
