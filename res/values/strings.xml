@@ -5249,6 +5249,7 @@
     <string name="navigation_bar_color_title">Navigation bar color</string>
     <string name="navigation_bar_tint_title">Navigation bar buttons color</string>
     <string name="transparency_dialog_title">Transparency settings</string>
+    <string name="transparency_dialog_summary">Change statusbar and navbar alpha</string>
     <string name="transparency_dialog_linked_transparency">Link statusbar &amp; navbar alpha</string>
     <string name="transparency_dialog_transparency_sb_and_nv">Statusbar and navigation bar</string>
     <string name="transparency_dialog_statusbar">Statusbar</string>

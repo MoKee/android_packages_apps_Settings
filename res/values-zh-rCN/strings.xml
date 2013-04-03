@@ -2689,6 +2689,7 @@
     <string name="navigation_bar_color_title">导航栏颜色</string>
     <string name="navigation_bar_tint_title">导航栏按钮颜色</string>
     <string name="transparency_dialog_title">透明设置</string>
+    <string name="transparency_dialog_summary">调整状态栏与导航栏透明度</string>
     <string name="transparency_dialog_linked_transparency">链接状态栏与导航栏的透明度</string>
     <string name="transparency_dialog_transparency_sb_and_nv">状态栏与导航栏</string>
     <string name="transparency_dialog_statusbar">状态栏</string>

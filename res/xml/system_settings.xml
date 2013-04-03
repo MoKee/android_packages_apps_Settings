@@ -99,14 +99,16 @@
                 android:title="@string/navigation_bar_color_title"
                 android:defaultValue="#000000" />
 
-        <Preference
-            android:key="transparency_dialog"
-            android:title="@string/transparency_dialog_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="other_category"
         android:title="@string/other_category" >
+
+        <Preference
+            android:key="transparency_dialog"
+            android:title="@string/transparency_dialog_title"
+            android:summary="@string/transparency_dialog_summary" />
 
         <PreferenceScreen
             android:key="custom_carrier_label"
