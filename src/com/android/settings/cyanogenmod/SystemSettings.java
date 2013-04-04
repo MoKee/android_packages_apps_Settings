@@ -24,6 +24,7 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -39,6 +40,7 @@ import android.util.TypedValue;
 import android.view.IWindowManager;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManagerGlobal;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -54,7 +56,8 @@ import android.widget.TextView;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SystemSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class SystemSettings extends SettingsPreferenceFragment  implements
+        Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
@@ -70,6 +73,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
     private static final String KEY_PIE_CONTROL = "pie_control";
+	private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
+	private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String KEY_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
     private static final String KEY_MMS_BREATH = "mms_breath";
     private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
@@ -80,6 +85,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
     private PreferenceScreen mPieControl;
+	private ListPreference mExpandedDesktopPref;
+    private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private ListPreference mNavButtonsHeight;
     private CheckBoxPreference mFullscreenKeyboard;
     private CheckBoxPreference mMMSBreath;
@@ -198,6 +205,29 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             mPieControl = null;
         }
 
+        // Expanded desktop
+        mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
+        mExpandedDesktopNoNavbarPref = (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
+
+        int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STYLE, 0);
+
+        // Hide no-op "Status bar visible" mode on devices without navbar
+        try {
+            if (WindowManagerGlobal.getWindowManagerService().hasNavigationBar()) {
+                mExpandedDesktopPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
+                updateExpandedDesktop(expandedDesktopValue);
+                prefScreen.removePreference(mExpandedDesktopNoNavbarPref);
+            } else {
+                mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
+                prefScreen.removePreference(mExpandedDesktopPref);
+            }
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
+
         // Don't display the lock clock preference if its not installed
         removePreferenceIfPackageNotInstalled(findPreference(KEY_LOCK_CLOCK));
     }
@@ -235,6 +265,46 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
     @Override
     public void onPause() {
         super.onPause();
+    }
+	public boolean onPreferenceChange(Preference preference, Object objValue) {
+    	ContentResolver resolver = getActivity().getApplicationContext().getContentResolver();
+        if (preference == mNavButtonsHeight) {
+            int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
+            		Integer.valueOf((String) objValue));
+            mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
+            return true;
+        } else if (preference == mNavigationBarColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex) & 0x00FFFFFF;
+            Settings.System.putInt(resolver,
+                    Settings.System.NAVIGATION_BAR_COLOR, intHex);
+            return true;
+        } else if (preference == mFullscreenKeyboard) {
+            Settings.System.putInt(resolver, Settings.System.FULLSCREEN_KEYBOARD,
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
+            return true;
+        } else if (preference == mMMSBreath) {
+            Settings.System.putInt(resolver, Settings.System.MMS_BREATH, 
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
+            return true;
+        } else if (preference == mMissedCallBreath) {
+            Settings.System.putInt(resolver, Settings.System.MISSED_CALL_BREATH, 
+            		((Boolean) objValue).booleanValue() ? 1 : 0);
+            return true;
+        } else if (preference == mExpandedDesktopPref) {
+            int expandedDesktopValue = Integer.valueOf((String) objValue);
+            updateExpandedDesktop(expandedDesktopValue);
+            return true;
+        } else if (preference == mExpandedDesktopNoNavbarPref) {
+            boolean value = (Boolean) objValue;
+            updateExpandedDesktop(value ? 2 : 0);
+            return true;
+        }
+
+        return false;
     }
 
     private void updateLightPulseDescription() {
@@ -281,6 +351,31 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
         }
         return false;
     }
+
+    private void updateExpandedDesktop(int value) {
+        ContentResolver cr = getContentResolver();
+        Resources res = getResources();
+        int summary = -1;
+
+        Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
+
+        if (value == 0) {
+            // Expanded desktop deactivated
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
+            Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STATE, 0);
+            summary = R.string.expanded_desktop_disabled;
+        } else if (value == 1) {
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+            summary = R.string.expanded_desktop_status_bar;
+        } else if (value == 2) {
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+            summary = R.string.expanded_desktop_no_status_bar;
+        }
+
+        if (mExpandedDesktopPref != null && summary != -1) {
+            mExpandedDesktopPref.setSummary(res.getString(summary));
+        }
+    }
     
     private void openTransparencyDialog() {
         getFragmentManager().beginTransaction().add(new AdvancedTransparencyDialog(), null)
@@ -324,38 +419,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements Prefer
             alert.show();
         } 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-    	ContentResolver resolver = getActivity().getApplicationContext().getContentResolver();
-        if (preference == mNavButtonsHeight) {
-            int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
-            Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
-            		Integer.valueOf((String) objValue));
-            mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
-            return true;
-        } else if (preference == mNavigationBarColor) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex) & 0x00FFFFFF;
-            Settings.System.putInt(resolver,
-                    Settings.System.NAVIGATION_BAR_COLOR, intHex);
-            return true;
-        } else if (preference == mFullscreenKeyboard) {
-            Settings.System.putInt(resolver, Settings.System.FULLSCREEN_KEYBOARD,
-            		((Boolean) objValue).booleanValue() ? 1 : 0);
-            return true;
-        } else if (preference == mMMSBreath) {
-            Settings.System.putInt(resolver, Settings.System.MMS_BREATH, 
-            		((Boolean) objValue).booleanValue() ? 1 : 0);
-            return true;
-        } else if (preference == mMissedCallBreath) {
-            Settings.System.putInt(resolver, Settings.System.MISSED_CALL_BREATH, 
-            		((Boolean) objValue).booleanValue() ? 1 : 0);
-            return true;
-        }
-        return false;
     }
     
     public static class AdvancedTransparencyDialog extends DialogFragment {
