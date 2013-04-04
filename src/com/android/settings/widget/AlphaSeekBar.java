@@ -49,13 +49,13 @@ public class AlphaSeekBar extends LinearLayout implements OnSeekBarChangeListene
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         seekBar.setProgress(progress);
-        mAlphaText.setText(String.valueOf(progress));
+        mAlphaText.setText(String.valueOf(255 - progress));
         int percent = Math.round((new Float(progress) / new Float(MAX_VALUE)) * 100);
         mPercentText.setText(percent + "%");
     }
 
     public int getCurrentAlpha() {
-        return mSeekBar.getProgress();
+        return 255 - mSeekBar.getProgress();
     }
 
     public void setCurrentAlpha(int p) {
@@ -65,7 +65,7 @@ public class AlphaSeekBar extends LinearLayout implements OnSeekBarChangeListene
             p = 255;
         }
         if (mSeekBar != null)
-            mSeekBar.setProgress(p);
+            mSeekBar.setProgress(255 - p);
     }
     
     @Override
