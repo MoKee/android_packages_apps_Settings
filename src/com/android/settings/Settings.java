@@ -142,6 +142,10 @@ public class Settings extends PreferenceActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+	// Developers options
+	getSharedPreferences(DevelopmentSettings.PREF_FILE,
+                                Context.MODE_PRIVATE).edit().putBoolean(
+                                        DevelopmentSettings.PREF_SHOW, true).apply();
         if (getIntent().getBooleanExtra(EXTRA_CLEAR_UI_OPTIONS, false)) {
             getWindow().setUiOptions(0);
         }
