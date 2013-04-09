@@ -115,7 +115,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
 
         mPieMode = (ListPreference) prefSet.findPreference(PIE_MODE);
         int pieMode = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.PIE_MODE, 2);
+                Settings.System.PIE_MODE, 0);
         mPieMode.setValue(String.valueOf(pieMode));
         mPieMode.setOnPreferenceChangeListener(this);
 
@@ -123,7 +123,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieTrigger = (ListPreference) prefSet.findPreference(PIE_TRIGGER);
         try {
             float pieSize = Settings.System.getFloat(getActivity().getContentResolver(),
-                    Settings.System.PIE_SIZE, 0.9f);
+                    Settings.System.PIE_SIZE, 1f);
             mPieSize.setValue(String.valueOf(pieSize));
   
             float pieTrigger = Settings.System.getFloat(getActivity().getContentResolver(),

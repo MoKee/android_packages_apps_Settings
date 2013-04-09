@@ -113,8 +113,8 @@
         android:title="@string/pie_settings" >
 
         <PreferenceScreen
-            android:key="navigation_ring"
             android:fragment="com.android.settings.cyanogenmod.Pie"
+            android:key="pie_settings"
             android:title="@string/title_pie" />
 
     </PreferenceCategory>

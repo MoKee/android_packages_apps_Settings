@@ -1325,7 +1325,7 @@
 
     <string-array name="entries_pie_size">
         <item>@string/pie_size_small</item>
-        <item>@string/pie_size_default</item>
+        <item>@string/pie_size_normal</item>
         <item>@string/pie_size_large</item>
         <item>@string/pie_size_gigantic</item>
     </string-array>
@@ -1339,7 +1339,7 @@
     <string-array name="entries_pie_mode">
         <item>@string/pie_mode_bare</item>
         <item>@string/pie_mode_quick</item>
-        <item>@string/pie_mode_default</item>
+        <item>@string/pie_mode_normal</item>
         <item>@string/pie_mode_slow</item>
     </string-array>
     <string-array name="values_pie_mode" translatable="false">
