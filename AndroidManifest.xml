@@ -1576,6 +1576,24 @@
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".cyanogenmod.Pie"
+            android:label="@string/title_pie" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SHORTCUT" />
+              </intent-filter>
+        </activity>
+        <activity
+            android:name=".cyanogenmod.PieColor"
+            android:label="ColorPIE" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SHORTCUT" />
+              </intent-filter>
+        </activity>
         
         <activity android:name="Settings$QuietHoursSettingsActivity"
                 android:label="@string/quiet_hours_title"
