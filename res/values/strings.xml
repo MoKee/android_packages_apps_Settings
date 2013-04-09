@@ -4901,6 +4901,7 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">hide</string>
 
     <!-- Power Widget  -->
     <string name="power_widget_title">Power widget</string>

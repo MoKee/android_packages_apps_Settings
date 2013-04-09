@@ -2324,6 +2324,7 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">隐藏</string>
 
     <!-- Power Widget  -->
     <string name="power_widget_title">电控小部件</string>
