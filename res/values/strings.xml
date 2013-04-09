@@ -5266,5 +5266,9 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
+    <!-- show network speed -->
+    <string name="show_network_speed">network speed</string>
+    <string name="show_network_speed_summary">Show network speed in statsbar</string>
+
     <!-- MOKEE ADDITIONS END -->
 </resources>

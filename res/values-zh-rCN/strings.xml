@@ -2703,6 +2703,10 @@
     <string name="custom_carrier_label_title">自定义运营商名称</string>
     <string name="custom_carrier_label_explain">请输入新的运营商名称，留空为恢复默认运营商名称。</string>
     <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
-    
+
+    <!-- show network speed -->
+    <string name="show_network_speed_title">当前网速</string>
+    <string name="show_network_speed_summary">在状态栏显示当前网速</string>
+
     <!-- MOKEE ADDITIONS END -->
 </resources>
