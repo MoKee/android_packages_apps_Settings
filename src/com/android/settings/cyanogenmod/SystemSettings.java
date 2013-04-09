@@ -73,7 +73,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_QUICK_SETTINGS = "quick_settings_panel";
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
-    private static final String KEY_PIE_CONTROL = "pie_control";
 	private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
 	private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String KEY_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
@@ -85,7 +84,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
-    private PreferenceScreen mPieControl;
 	private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private ListPreference mNavButtonsHeight;
@@ -198,14 +196,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
             }
         }
 
-        // Pie controls
-        mPieControl = (PreferenceScreen) findPreference(KEY_PIE_CONTROL);
-        if (mPieControl != null && removeNavbar) {
-            // Remove on devices without a navbar to start with
-            prefScreen.removePreference(mPieControl);
-            mPieControl = null;
-        }
-
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref = (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
@@ -252,9 +242,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         // All users
         if (mNotificationPulse != null) {
             updateLightPulseDescription();
-        }
-        if (mPieControl != null) {
-            updatePieControlDescription();
         }
 
         // Primary user only
@@ -325,15 +312,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
             mBatteryPulse.setSummary(getString(R.string.notification_light_disabled));
         }
      }
-
-    private void updatePieControlDescription() {
-        if (Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.PIE_CONTROLS, 0) == 1) {
-            mPieControl.setSummary(getString(R.string.pie_control_enabled));
-        } else {
-            mPieControl.setSummary(getString(R.string.pie_control_disabled));
-        }
-    }
 
     private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
         String intentUri = ((PreferenceScreen) preference).getIntent().toUri(1);
