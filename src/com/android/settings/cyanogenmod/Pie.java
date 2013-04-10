@@ -158,7 +158,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
 
         mPieStick = (CheckBoxPreference) prefSet.findPreference(PIE_STICK);
         mPieStick.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.PIE_STICK, 1) == 1);
+                Settings.System.PIE_STICK, 0) == 1);
 
     }
 
