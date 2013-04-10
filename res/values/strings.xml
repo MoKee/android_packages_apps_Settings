@@ -5292,8 +5292,6 @@
     <string name="pie_trigger_normal">Normal (Default)</string>
     <string name="pie_trigger_big">Big</string>
     <string name="pie_trigger_huge">Huge</string>
-    <string name="pie_restart_launcher_title">Restart the Launcher</string>
-    <string name="pie_restart_launcher_summary">This will restart your launcher, but may have adverse effects on the screen. Some widgets may not look right either. Be careful.</string>
     <string name="pie_menu_title">Persistent menu button</string>
     <string name="pie_menu_summary">Always show menu button even when it isn\'t necessary</string>
     <string name="pie_search_title">Search button</string>

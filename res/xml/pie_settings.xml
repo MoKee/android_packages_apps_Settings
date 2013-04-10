@@ -72,12 +72,6 @@
             android:summary="@string/pie_center_summary"
             android:dependency="pie_controls" />
 
-        <CheckBoxPreference
-            android:key="pie_restart_launcher"
-            android:title="@string/pie_restart_launcher_title"
-            android:summary="@string/pie_restart_launcher_summary"
-            android:dependency="pie_controls" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
