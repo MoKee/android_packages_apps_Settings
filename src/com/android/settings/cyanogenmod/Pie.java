@@ -106,12 +106,13 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieControls = (CheckBoxPreference) findPreference(PIE_CONTROLS);
         mPieControls.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.PIE_CONTROLS, 0) == 1));
+
         mPieGravity = (ListPreference) prefSet.findPreference(PIE_GRAVITY);
         int pieGravity = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.PIE_GRAVITY, 2);//default right
+                Settings.System.PIE_GRAVITY, 3);
         mPieGravity.setValue(String.valueOf(pieGravity));
         mPieGravity.setOnPreferenceChangeListener(this);
-       
+
         mPieMode = (ListPreference) prefSet.findPreference(PIE_MODE);
         int pieMode = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.PIE_MODE, 0);
@@ -170,17 +171,8 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mPieControls) {
-            boolean isChecked=mPieControls.isChecked();
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),Settings.System.PIE_CONTROLS,isChecked ? 1 : 0);
-            if (isChecked) //open extended desktop
-            {
-               updateExpandedDesktop(0); 
-               updateExpandedDesktop(1);
-            }
-            else
-            {
-            updateExpandedDesktop(0);
-            }
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.PIE_CONTROLS, mPieControls.isChecked() ? 1 : 0);
             //Helpers.restartSystemUI();
         } else if (preference == mPieMenu) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
@@ -221,9 +213,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
             int pieGravity = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PIE_GRAVITY, pieGravity);
-             //reset
-            updateExpandedDesktop(0);
-            updateExpandedDesktop(1);
             return true;
         } else if (preference == mPieGap) {
             int pieGap = Integer.valueOf((String) newValue);
@@ -237,18 +226,5 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
             return true;
         }
         return false;
-    }
-    private void updateExpandedDesktop(int value) {
-        ContentResolver cr = getContentResolver();
-        Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
-        if (value == 0) {
-            // Expanded desktop deactivated
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
-            Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STATE, 0);
-        } else if (value == 1) {
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
-        } else if (value == 2) {
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
-        }
     }
 }
