@@ -161,7 +161,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
 
     }
 
-    private void updateExpandedDesktop(boolean value) {
+    private void updateExpandedDesktop(boolean isChecked) {
         boolean mDisabled = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STATE, 0) == 0;
         boolean mStyleOff = Settings.System.getInt(getActivity().getContentResolver(),
@@ -171,13 +171,9 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
                 Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.EXPANDED_DESKTOP_STYLE, 2);//Expanded Desktop Style default set to 2
             }
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.EXPANDED_DESKTOP_STATE, value ? 1 : 0);
         }
-        else {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.EXPANDED_DESKTOP_STATE, value ? 1 : 0);
-        }
+        Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.EXPANDED_DESKTOP_STATE, isChecked ? 1 : 0);
     }
 
     @Override
