@@ -2711,7 +2711,7 @@
     <string name="pie_controls_title">控制器</string>
     <string name="enable_pie_title">启用PIE</string>
     <string name="pie_targets_title">按键</string>
-    <string name="pie_gravity_title">PIE停靠</string>
+    <string name="pie_gravity_title">停靠位置</string>
     <string name="pie_gravity_summary">设置PIE的停靠位置</string>
     <string name="pie_gravity_top">顶部</string>
     <string name="pie_gravity_bottom">底部</string>
@@ -2728,8 +2728,8 @@
     <string name="pie_size_small">小</string>
     <string name="pie_size_large">大</string>
     <string name="pie_size_gigantic">庞大</string>
-    <string name="pie_gap_title">项目间隙</string>
-    <string name="pie_gap_summary">调整PIE控制器中的显示项目间隙</string>
+    <string name="pie_gap_title">按键间隙</string>
+    <string name="pie_gap_summary">调整PIE的按键间隙</string>
     <string name="pie_gap_none">无</string>
     <string name="pie_gap_small">小</string>
     <string name="pie_gap_big">大</string>
@@ -2739,9 +2739,9 @@
     <string name="pie_trigger_small">小</string>
     <string name="pie_trigger_normal">正常(默认)</string>
     <string name="pie_trigger_big">大</string>
-    <string name="pie_trigger_huge">巨大</string>
-    <string name="pie_menu_title">锁定菜单按钮</string>
-    <string name="pie_menu_summary">始终显示按钮，即使它是不必要的</string>
+    <string name="pie_trigger_huge">极大</string>
+    <string name="pie_menu_title">菜单键</string>
+    <string name="pie_menu_summary">始终显示菜单键，即使它是不必要的</string>
     <string name="pie_search_title">搜索键</string>
     <string name="pie_search_summary">显示搜索键</string>
     <string name="pie_lastapp_title">程序切换键</string>
