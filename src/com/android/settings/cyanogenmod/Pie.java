@@ -95,7 +95,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTitle(R.string.title_pie);
 
         addPreferencesFromResource(R.xml.pie_settings);
 
@@ -162,11 +161,32 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
 
     }
 
+    private void updateExpandedDesktop(boolean value) {
+        boolean mDisabled = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STATE, 0) == 0;
+        boolean mStyleOff = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STYLE, 0) == 0;
+        if (mDisabled) {
+            if (mStyleOff) {
+                Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.EXPANDED_DESKTOP_STYLE, 2);//Expanded Desktop Style default set to 2
+            }
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STATE, value ? 1 : 0);
+        }
+        else {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STATE, value ? 1 : 0);
+        }
+    }
+
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mPieControls) {
+            boolean mIsChecked = mPieControls.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.PIE_CONTROLS, mPieControls.isChecked() ? 1 : 0);
+                    Settings.System.PIE_CONTROLS, mIsChecked ? 1 : 0);
+            updateExpandedDesktop(mIsChecked);
             //Helpers.restartSystemUI();
         } else if (preference == mPieMenu) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
