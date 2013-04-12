@@ -84,7 +84,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
-	private ListPreference mExpandedDesktopPref;
+    private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private ListPreference mNavButtonsHeight;
     private CheckBoxPreference mFullscreenKeyboard;
@@ -239,6 +239,9 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     public void onResume() {
         super.onResume();
 
+	// Update ExpandedDesktopDescription
+        updatemExpandedDesktopDescription();
+
         // All users
         if (mNotificationPulse != null) {
             updateLightPulseDescription();
@@ -254,7 +257,8 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     public void onPause() {
         super.onPause();
     }
-	public boolean onPreferenceChange(Preference preference, Object objValue) {
+
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
     	ContentResolver resolver = getActivity().getApplicationContext().getContentResolver();
         if (preference == mNavButtonsHeight) {
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
@@ -304,6 +308,23 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         }
     }
 
+    private void updatemExpandedDesktopDescription() {
+        int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STYLE, 0);
+        switch (expandedDesktopValue) {
+            case 0:
+                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_disabled);
+                break;
+            case 1:
+                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_status_bar);
+                break;
+            case 2:
+                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_no_status_bar);
+                break;
+        }
+                mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
+    }
+
     private void updateBatteryPulseDescription() {
         if (Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
@@ -337,19 +358,22 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         int summary = -1;
 
         Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
-
-        if (value == 0) {
-            // Expanded desktop deactivated
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
-            Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STATE, 0);
-            summary = R.string.expanded_desktop_disabled;
-        } else if (value == 1) {
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
-            summary = R.string.expanded_desktop_status_bar;
-        } else if (value == 2) {
-            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
-            summary = R.string.expanded_desktop_no_status_bar;
-        }
+	switch (value) {
+            case 0:
+                // Expanded desktop deactivated
+                Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
+                Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STATE, 0);
+                summary = R.string.expanded_desktop_disabled;
+                break;
+            case 1:
+                Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+                summary = R.string.expanded_desktop_status_bar;
+                break;
+            case 2:
+                Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+                summary = R.string.expanded_desktop_no_status_bar;
+                break;
+	}
 
         if (mExpandedDesktopPref != null && summary != -1) {
             mExpandedDesktopPref.setSummary(res.getString(summary));
