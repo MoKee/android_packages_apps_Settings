@@ -1281,8 +1281,30 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+  
+    <!-- Stylus Gestures -->
+    <string-array name="gestures_entries" translatable="false">
+        <item>@string/gestures_action_empty</item>
+        <item>@string/gestures_action_home</item>
+        <item>@string/gestures_action_back</item>
+        <item>@string/gestures_action_menu</item>
+        <item>@string/gestures_action_search</item>
+        <item>@string/gestures_action_recent</item>
+    </string-array>
 
-    <!--- Nav buttons height -->
+    <string-array name="gestures_values" translatable="false">
+        <item>1000</item>
+        <item>1001</item>
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+    </string-array>
+
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <!-- Mokee Additions Start -->
+    <!-- Nav buttons height -->
     <string-array name="navigation_bar_height_entries" translatable="false">
         <item>@string/navigation_bar_height_48</item>
         <item>@string/navigation_bar_height_44</item>
@@ -1307,9 +1329,7 @@
         <item>0</item>
     </string-array>
 
-    <!-- **** CYANOGENMOD ADDITIONS END **** -->
-
-    <!-- Mokee Additions Start -->
+    <!-- PIE -->    
     <string-array name="entries_pie_gravity">
         <item>@string/pie_gravity_left</item>
         <item>@string/pie_gravity_top</item>
