@@ -606,6 +606,10 @@
     <string name="wifi_mode">模式</string>
     <string name="wifi_mode_ibss">Ad-Hoc (IBSS) 网络</string>
 
+    <string name="wifi_ibss_freq_title">频道/频率</string>
+    <string name="wifi_channel">频道</string>
+    <string name="wifi_mhz">MHz</string>
+
     <string name="wifi_connect" msgid="1076622875777072845">"连接"</string>
     <string name="wifi_failed_connect_message" msgid="8491902558970292871">"无法连接网络"</string>
     <string name="wifi_forget" msgid="8168174695608386644">"忘记"</string>
