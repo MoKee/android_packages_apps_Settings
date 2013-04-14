@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Nav buttons height -->
+    <string-array name="navigation_bar_height_entries" translatable="false">
+        <item>@string/navigation_bar_height_48</item>
+        <item>@string/navigation_bar_height_44</item>
+        <item>@string/navigation_bar_height_40</item>
+        <item>@string/navigation_bar_height_36</item>
+        <item>@string/navigation_bar_height_32</item>
+        <item>@string/navigation_bar_height_28</item>
+        <item>@string/navigation_bar_height_24</item>
+        <item>@string/navigation_bar_height_20</item>
+        <item>@string/navigation_bar_height_0</item>
+    </string-array>
+
+    <string-array name="navigation_bar_height_values" translatable="false">
+        <item>48</item>
+        <item>44</item>
+        <item>40</item>
+        <item>36</item>
+        <item>32</item>
+        <item>28</item>
+        <item>24</item>
+        <item>20</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- PIE -->    
+    <string-array name="entries_pie_gravity">
+        <item>@string/pie_gravity_left</item>
+        <item>@string/pie_gravity_top</item>
+        <item>@string/pie_gravity_right</item>
+        <item>@string/pie_gravity_bottom</item>
+    </string-array>
+    <string-array name="values_pie_gravity" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="entries_pie_size">
+        <item>@string/pie_size_small</item>
+        <item>@string/pie_size_normal</item>
+        <item>@string/pie_size_large</item>
+        <item>@string/pie_size_gigantic</item>
+    </string-array>
+    <string-array name="values_pie_size" translatable="false">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+    </string-array>
+
+    <string-array name="entries_pie_mode">
+        <item>@string/pie_mode_bare</item>
+        <item>@string/pie_mode_quick</item>
+        <item>@string/pie_mode_normal</item>
+        <item>@string/pie_mode_slow</item>
+    </string-array>
+    <string-array name="values_pie_mode" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_pie_gap">
+        <item>@string/pie_gap_none</item>
+        <item>@string/pie_gap_small</item>
+        <item>@string/pie_gap_big</item>
+        <item>@string/pie_gap_huge</item>
+    </string-array>
+
+    <string-array name="values_pie_gap" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="entries_pie_trigger">
+        <item>@string/pie_trigger_small</item>
+        <item>@string/pie_trigger_normal</item>
+        <item>@string/pie_trigger_big</item>
+        <item>@string/pie_trigger_huge</item>
+    </string-array>
+    <string-array name="values_pie_trigger" translatable="false">
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+    </string-array>
+</resources>
+

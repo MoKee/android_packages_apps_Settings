@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About version and support -->
+    <string name="mod_version">MoKee version</string>
+    <string name="mod_version_default">Unknown</string>
+    <string name="mod_support" formatted="false">Community Support</string>
+    <string name="mod_support_default" formatted="false">Unknown</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_edit_title">Button customization</string>
+    <string name="navigation_bar_edit_summary">Edit button layout</string>
+    <string name="navigation_bar_height">Button height</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">hide</string>
+    <string name="navigation_ring_summary">Edit quick launch shortcuts</string>  
+
+    <!-- Other Settings Category -->
+    <string name="other_category">Other settings</string>
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT Screen</string>
+    <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
+    <string name="system_power_crt_screen_off_summary">Screen will animate an Electron Beam when turned off</string>
+    <string name="system_power_crt_screen_on_title">CRT Screen On</string>
+    <string name="system_power_crt_screen_on_summary">Screen will animate an Electron Beam when turned on</string>
+    
+    <!-- Hide Initial Page Hints -->
+    <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>	
+    
+    <!-- Fullscreen Keyboard -->
+    <string name="fullscreen_keyboard">Disable fullscreen keyboard</string>
+    <string name="fullscreen_keyboard_summary">Will allow you to read the message your typing while in landscape mode.</string>
+    
+    <!-- Breathing Notifications -->
+    <string name="mms_breath">Breathing SMS</string>
+    <string name="mms_breath_summary">Will give your sms notifications a breathing effect on the statusbar.</string>
+    <string name="missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string>
+    
+    <!-- Notification shade dimming -->
+    <string name="notification_shade_dim_title">Dim notification shade</string>
+    <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
+    
+    <!-- Alpha-Bar -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="set">Set</string>
+    <string name="ics_color">Holo</string>
+    
+    <!-- Color Picker -->
+    <string name="navigation_bar_alpha_title">Statusbar and navigation bar opacity</string>
+    <string name="navigation_bar_color_title">Navigation bar color</string>
+    <string name="navigation_bar_tint_title">Navigation bar buttons color</string>
+    <string name="transparency_dialog_title">Transparency settings</string>
+    <string name="transparency_dialog_summary">Change statusbar and navbar alpha</string>
+    <string name="transparency_dialog_linked_transparency">Link statusbar &amp; navbar alpha</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">Statusbar and navigation bar</string>
+    <string name="transparency_dialog_statusbar">Statusbar</string>
+    <string name="transparency_dialog_navbar">Navigation bar</string>
+    <string name="transparency_dialog_match_keyguard_alpha">Match lockscreen alpha</string>
+    <string name="transparency_dialog_transparency">Homescreen alpha</string>
+    <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
+
+    <!-- Custom Carrier Text -->
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+
+    <!-- PIE Controls -->
+    <string name="pie_settings">PIE Controls</string>
+    <string name="pie">PIE™</string>
+    <string name="title_pie">PIE™</string>
+    <string name="pie_controls_title">Controls</string>
+    <string name="pie_controls_summary">@null</string>
+    <string name="enable_pie_title">Enable PIE</string>
+    <string name="pie_targets_title">Targets</string>
+    <string name="pie_gravity_title">Pie gravity</string>
+    <string name="pie_gravity_summary">Select the location where you can bring up PIE</string>
+    <string name="pie_gravity_top">Top</string>
+    <string name="pie_gravity_bottom">Bottom</string>
+    <string name="pie_gravity_right">Right</string>
+    <string name="pie_gravity_left">Left</string>
+    <string name="pie_mode_title">Pie style</string>
+    <string name="pie_mode_summary">Manage how animations and status additions will be handled</string>
+    <string name="pie_mode_bare">Bare</string>
+    <string name="pie_mode_quick">Quick(Default)</string>
+    <string name="pie_mode_normal">Normal</string>
+    <string name="pie_mode_slow">Slow</string>
+    <string name="pie_size_title">Pie size</string>
+    <string name="pie_size_summary">Define PIE controls size</string>
+    <string name="pie_size_small">Small</string>
+    <string name="pie_size_normal">@string/pie_mode_normal</string>
+    <string name="pie_size_large">Large</string>
+    <string name="pie_size_gigantic">Gigantic</string>
+    <string name="pie_gap_title">Item gap</string>
+    <string name="pie_gap_summary">Adjust the gap that separates PIE elements</string>
+    <string name="pie_gap_none">None</string>
+    <string name="pie_gap_small">Small</string>
+    <string name="pie_gap_big">Big</string>
+    <string name="pie_gap_huge">Huge (Default)</string>
+    <string name="pie_trigger_title">Trigger area</string>
+    <string name="pie_trigger_summary">Determine the size of the triggering area that will start pie controls</string>
+    <string name="pie_trigger_small">Small</string>
+    <string name="pie_trigger_normal">Normal (Default)</string>
+    <string name="pie_trigger_big">Big</string>
+    <string name="pie_trigger_huge">Huge</string>
+    <string name="pie_menu_title">Persistent menu button</string>
+    <string name="pie_menu_summary">Always show menu button even when it isn\'t necessary</string>
+    <string name="pie_search_title">Search button</string>
+    <string name="pie_search_summary">Enable search button on pie controls</string>
+    <string name="pie_lastapp_title">Last App button</string>
+    <string name="pie_lastapp_summary">Enable last app button on pie controls</string>
+    <string name="pie_center_title">Middle alignment</string>
+    <string name="pie_center_summary">Center Pie on the trigger edge</string>
+    <string name="pie_stick_title">Prevent rotation</string>
+    <string name="pie_stick_summary">If checked PIE will stay in place no matter which orientation</string>
+    <string name="pie_color_title">Color Settings</string>
+    <string name="pie_color_style_title">Enable custom colors</string>
+    <string name="pie_background_title">Background color</string>
+    <string name="pie_select_title">Selection color</string>
+    <string name="pie_outlines_title">Outlines color</string>
+    <string name="pie_status_clock_title">Clock color</string>
+    <string name="pie_status_title">Status color</string>
+    <string name="pie_chevron_left_title">Left chevron color</string>
+    <string name="pie_chevron_right_title">Right chevron color</string>
+    <string name="pie_juice_title">Battery juice color</string>
+    
+    <!-- show network speed -->
+    <string name="show_network_speed">network speed</string>
+    <string name="show_network_speed_summary">Show network speed in statsbar</string>
+
+</resources>
