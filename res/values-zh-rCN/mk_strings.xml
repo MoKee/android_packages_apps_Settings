@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">MoKee 版本</string>
+    <string name="mod_version_default">未知</string>
+    <string name="mod_support">社区支持</string>
+    <string name="mod_support_default">未知</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_edit_title">按键与布局</string>
+    <string name="navigation_bar_edit_summary">编辑导航栏按键布局</string>
+    <string name="navigation_bar_height">导航栏高度</string>
+    <string name="navigation_bar_height_48">48dp (默认)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">隐藏</string>
+    <string name="navigation_ring_summary">编辑导航环快捷方式</string>  
+
+    <!-- Other Settings Category -->
+    <string name="other_category">其它设置</string>
+
+    <!-- CRT --> 
+    <string name="crt_screen_title">CRT特效</string>
+    <string name="system_power_crt_screen_off_title">CRT关屏特效</string>
+    <string name="system_power_crt_screen_off_summary">关闭屏幕时会显示CRT特效</string>
+    <string name="system_power_crt_screen_on_title">CRT亮屏特效</string>
+    <string name="system_power_crt_screen_on_summary">打开屏幕时会显示CRT特效</string>
+    
+    <!-- Hide Initial Page Hints -->
+    <string name="lockscreen_hide_initial_page_hints_title">隐藏锁屏页面小部件提示</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">设置是否显示锁屏页面左右小部件的提示</string>
+
+    <!-- Fullscreen Keyboard -->
+    <string name="fullscreen_keyboard">禁用全屏键盘</string>
+    <string name="fullscreen_keyboard_summary">横屏模式下输入的时候禁用全屏键盘以方便查看信息</string>
+    
+    <!-- Breathing Notifications -->
+    <string name="mms_breath">呼吸短信</string>
+    <string name="mms_breath_summary">显示呼吸短信通知栏特效</string>
+    <string name="missed_call_breath">呼吸未接来电</string>
+    <string name="missed_call_breath_summary">显示呼吸未接来电通知栏特效</string>
+    
+    <!-- Notification shade dimming -->
+    <string name="notification_shade_dim_title">下拉通知栏阴影</string>
+    <string name="notification_shade_dim_summary">打开下拉通知栏阴影</string>
+    
+    <!-- Alpha bar -->
+    <string name="dialog_color_picker">选择颜色</string>
+    <string name="press_color_to_apply">点击颜色应用</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex值:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="set">选择</string>
+    <string name="ics_color">holo色</string>
+
+    <!-- Color Picker -->
+    <string name="navigation_bar_alpha_title">状态栏与导航栏透明度设置</string>
+    <string name="navigation_bar_color_title">导航栏颜色</string>
+    <string name="navigation_bar_tint_title">导航栏按钮颜色</string>
+    <string name="transparency_dialog_title">透明设置</string>
+    <string name="transparency_dialog_summary">调整状态栏与导航栏透明度</string>
+    <string name="transparency_dialog_linked_transparency">链接状态栏与导航栏的透明度</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">状态栏与导航栏</string>
+    <string name="transparency_dialog_statusbar">状态栏</string>
+    <string name="transparency_dialog_navbar">导航栏</string>
+    <string name="transparency_dialog_match_keyguard_alpha">匹配锁屏透明度</string>
+    <string name="transparency_dialog_transparency">主页透明度</string>
+    <string name="transparency_dialog_transparency_keyguard">锁屏透明度</string>
+
+    <!-- Custom Carrier Text -->
+    <string name="custom_carrier_label_title">自定义运营商名称</string>
+    <string name="custom_carrier_label_explain">请输入新的运营商名称，留空为恢复默认运营商名称。</string>
+    <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
+
+    <!-- PIE Controls -->
+    <string name="pie_settings">PIE控制器</string>
+    <string name="pie">PIE™</string>
+    <string name="title_pie">PIE™</string>
+    <string name="pie_controls_title">控制器</string>
+    <string name="enable_pie_title">启用PIE</string>
+    <string name="pie_targets_title">按键</string>
+    <string name="pie_gravity_title">停靠位置</string>
+    <string name="pie_gravity_summary">设置PIE的停靠位置</string>
+    <string name="pie_gravity_top">顶部</string>
+    <string name="pie_gravity_bottom">底部</string>
+    <string name="pie_gravity_right">右侧</string>
+    <string name="pie_gravity_left">左侧</string>
+    <string name="pie_mode_title">PIE动画</string>
+    <string name="pie_mode_summary">设置PIE动画的开启与响应速度</string>
+    <string name="pie_mode_bare">关闭</string>
+    <string name="pie_mode_quick">快速(默认)</string>
+    <string name="pie_mode_normal">正常</string>
+    <string name="pie_mode_slow">缓慢</string>
+    <string name="pie_size_title">PIE大小</string>
+    <string name="pie_size_summary">设置PIE控制器的大小</string>
+    <string name="pie_size_small">小</string>
+    <string name="pie_size_large">大</string>
+    <string name="pie_size_gigantic">庞大</string>
+    <string name="pie_gap_title">按键间隙</string>
+    <string name="pie_gap_summary">调整PIE的按键间隙</string>
+    <string name="pie_gap_none">无</string>
+    <string name="pie_gap_small">小</string>
+    <string name="pie_gap_big">大</string>
+    <string name="pie_gap_huge">极大(默认)</string>
+    <string name="pie_trigger_title">触发区域</string>
+    <string name="pie_trigger_summary">调整PIE控制器的触发区域范围</string>
+    <string name="pie_trigger_small">小</string>
+    <string name="pie_trigger_normal">正常(默认)</string>
+    <string name="pie_trigger_big">大</string>
+    <string name="pie_trigger_huge">极大</string>
+    <string name="pie_menu_title">菜单键</string>
+    <string name="pie_menu_summary">始终显示菜单键，即使它是不必要的</string>
+    <string name="pie_search_title">搜索键</string>
+    <string name="pie_search_summary">显示搜索键</string>
+    <string name="pie_lastapp_title">程序切换键</string>
+    <string name="pie_lastapp_summary">显示切换至最后运行的程序按钮</string>
+    <string name="pie_center_title">居中对齐</string>
+    <string name="pie_center_summary">在触发位置一侧居中对齐</string>
+    <string name="pie_stick_title">禁止旋转</string>
+    <string name="pie_stick_summary">锁定PIE控制器的位置，即使屏幕发生旋转</string>
+    <string name="pie_color_title">颜色设置</string>
+    <string name="pie_color_style_title">启用自定义颜色</string>
+    <string name="pie_background_title">背景颜色</string>
+    <string name="pie_select_title">选中颜色</string>
+    <string name="pie_outlines_title">按键轮廓颜色</string>
+    <string name="pie_status_clock_title">时间颜色</string>
+    <string name="pie_status_title">状态颜色</string>
+    <string name="pie_chevron_left_title">左侧轮廓颜色</string>
+    <string name="pie_chevron_right_title">右侧轮廓颜色</string>
+    <string name="pie_juice_title">电池颜色</string>
+
+    <!-- show network speed -->
+    <string name="show_network_speed_title">当前网速</string>
+    <string name="show_network_speed_summary">在状态栏显示当前网速</string>
+
+</resources>
