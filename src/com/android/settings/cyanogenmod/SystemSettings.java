@@ -334,24 +334,6 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         }
      }
 
-    private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
-        String intentUri = ((PreferenceScreen) preference).getIntent().toUri(1);
-        Pattern pattern = Pattern.compile("component=([^/]+)/");
-        Matcher matcher = pattern.matcher(intentUri);
-
-        String packageName = matcher.find() ? matcher.group(1) : null;
-        if (packageName != null) {
-            try {
-                getPackageManager().getPackageInfo(packageName, 0);
-            } catch (NameNotFoundException e) {
-                Log.e(TAG, "package " + packageName + " not installed, hiding preference.");
-                getPreferenceScreen().removePreference(preference);
-                return true;
-            }
-        }
-        return false;
-    }
-
     private void updateExpandedDesktop(int value) {
         ContentResolver cr = getContentResolver();
         Resources res = getResources();
