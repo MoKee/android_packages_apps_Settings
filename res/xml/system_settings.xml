@@ -118,6 +118,28 @@
             android:title="@string/title_pie" />
 
     </PreferenceCategory>
+    
+    <PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="interface_general"
+        android:title="@string/general_settings_title">
+<PreferenceScreen
+	        android:key="xposed_installer"
+            android:title="@string/xposed_install_title"
+	        android:summary="@string/xposed_install_summary" >
+	        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="de.robv.android.xposed.installer"
+                android:targetClass="de.robv.android.xposed.installer.XposedInstallerActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="xposed_dpi"
+            android:title="@string/xposed_dpi_title"
+	        android:summary="@string/xposed_dpi_summary" >
+	        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="de.robv.android.xposed.mods.appsettings"
+                android:targetClass="de.robv.android.xposed.mods.appsettings.XposedModActivity" />
+        </PreferenceScreen>
 
     <PreferenceCategory
         android:key="other_category"

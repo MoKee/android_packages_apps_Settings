@@ -151,6 +151,18 @@
     <string name="pie_chevron_right_title">Right chevron color</string>
     <string name="pie_juice_title">Battery juice color</string>
     
+     <!-- Interface Settings -->
+    <string name="xposed_dpi_title">Xposed DPI Settings</string>
+    <string name="xposed_dpi_summary">Customize DPI values of specific apps</string>
+    <string name="xposed_install_title">Xposed DPI Installer</string>
+    <string name="xposed_install_summary">*Install before using DPI settings app*</string>
+    
+    <!-- Xposed Density -->
+    <string name="xposed_dpi_title">Xposed DPI Settings</string>
+    <string name="xposed_dpi_summary">Customize DPI values of specific apps</string>
+    <string name="xposed_install_title">Xposed DPI Installer</string>
+    <string name="xposed_install_summary">*Install before using DPI settings app*</string>
+    
     <!-- show network speed -->
     <string name="show_network_speed">network speed</string>
     <string name="show_network_speed_summary">Show network speed in statsbar</string>
