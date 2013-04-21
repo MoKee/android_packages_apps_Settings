@@ -2494,6 +2494,7 @@
     <string name="title_tile_usb_tether">USB 网络共享</string>
     <string name="title_tile_quiet_hours">安静时段</string>
     <string name="title_tile_volume">音量</string>
+    <string name="title_tile_expanded_desktop">扩展桌面</string>
 
     <string name="title_dynamic_tiles">动态按钮</string>
     <string name="dynamic_tiles_note_title">注意</string>
@@ -2614,6 +2615,19 @@
     <string name="navring_action_torch">手电筒开关</string>
     <string name="navring_action_google_now">Google 即时</string>
     <string name="navring_choose_action_title">选择操作</string>
+
+    <!-- Category title for power sound notification specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="power_notifications_category_title">接入电源通知提示</string>
+
+    <!-- Sound settings, power notifications enable/disable, setting check box label -->
+    <string name="power_notifications_enable_title">启用</string>
+    <!-- Sound settings, power notifications vibrate enable/disable, setting check box label -->
+    <string name="power_notifications_vibrate_title">震动</string>
+    <!-- Sound settings, power notifications ringtone selection, preference label -->
+    <string name="power_notifications_ringtone_title">通知提示音</string>
+    <!-- Sound settings, power notifications label for ringtone == none -->
+    <string name="power_notifications_ringtone_silent">静音</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
