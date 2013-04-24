@@ -167,4 +167,10 @@
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">"发现MoKee OpenSource新版本"</string>
     <string name="mokee_push_newversion_msg">"新版本更新啦，点击查看详细内容！"</string>
+    
+    <!-- Center Clock -->
+    <string name="status_bar_clock_style_title">时钟类型</string>
+    <string name="clock_style_noclock">不显示时钟</string>
+    <string name="clock_style_right">靠右</string>
+    <string name="clock_style_center">居中</string>
 </resources>

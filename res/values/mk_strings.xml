@@ -168,4 +168,10 @@
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">Found the new version of MoKee OpenSource</string>
     <string name="mokee_push_newversion_msg">The new version is ready, click the view details!</string>
+
+    <!-- Center Clock -->
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="clock_style_noclock">Do not show the clock</string>
+    <string name="clock_style_right">Right clock</string>
+    <string name="clock_style_center">Center clock</string>
 </resources>
