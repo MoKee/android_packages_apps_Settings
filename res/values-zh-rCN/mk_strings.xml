@@ -154,4 +154,10 @@
     <string name="show_network_speed_title">当前网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
 
+    <!-- Center clock -->
+    <string name="status_bar_clock_style_title">时钟类型</string>
+    <string name="clock_style_noclock">不显示时钟</string>
+    <string name="clock_style_right">靠右</string>
+    <string name="clock_style_center">居中</string>
+
 </resources>
