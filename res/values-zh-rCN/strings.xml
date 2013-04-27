@@ -2630,5 +2630,6 @@
     <string name="power_notifications_ringtone_silent">静音</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
-
+<!-- Permissions Management -->
+ <string name="permissions_settings_title">权限管理</string>
 </resources>
