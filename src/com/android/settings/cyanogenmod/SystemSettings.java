@@ -73,8 +73,8 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_QUICK_SETTINGS = "quick_settings_panel";
     private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
     private static final String KEY_POWER_MENU = "power_menu";
-	private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
-	private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
+    private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
+    private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String KEY_FULLSCREEN_KEYBOARD = "fullscreen_keyboard";
     private static final String KEY_MMS_BREATH = "mms_breath";
     private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
@@ -311,18 +311,26 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     private void updatemExpandedDesktopDescription() {
         int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0);
-        switch (expandedDesktopValue) {
-            case 0:
-                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_disabled);
-                break;
-            case 1:
-                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_status_bar);
-                break;
-            case 2:
-                mExpandedDesktopPref.setSummary(R.string.expanded_desktop_no_status_bar);
-                break;
+        try {
+		if (WindowManagerGlobal.getWindowManagerService().hasNavigationBar()) {
+			switch (expandedDesktopValue) {
+			    case 0:
+				mExpandedDesktopPref.setSummary(R.string.expanded_desktop_disabled);
+				break;
+			    case 1:
+				mExpandedDesktopPref.setSummary(R.string.expanded_desktop_status_bar);
+				break;
+			    case 2:
+				mExpandedDesktopPref.setSummary(R.string.expanded_desktop_no_status_bar);
+				break;
+			}
+				mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
+		} else {
+			mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
+		}
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
         }
-                mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
     }
 
     private void updateBatteryPulseDescription() {

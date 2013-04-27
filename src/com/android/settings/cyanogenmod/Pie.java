@@ -166,12 +166,17 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
                 Settings.System.EXPANDED_DESKTOP_STATE, 0) == 0;
         boolean mStyleOff = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0) == 0;
+        boolean mPowerMenuOff = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0) == 0;
         if (mDisabled) {
             if (mStyleOff) {
                 Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.EXPANDED_DESKTOP_STYLE, 2);//Expanded Desktop Style default set to 2
             }
         }
+	if(isChecked && mPowerMenuOff)
+        Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
         Settings.System.putInt(getActivity().getContentResolver(),
             Settings.System.EXPANDED_DESKTOP_STATE, isChecked ? 1 : 0);
     }
