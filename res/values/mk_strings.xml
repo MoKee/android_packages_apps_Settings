@@ -152,7 +152,7 @@
     <string name="pie_juice_title">Battery juice color</string>
     
     <!-- show network speed -->
-    <string name="show_network_speed">network speed</string>
+    <string name="show_network_speed_title">network speed</string>
     <string name="show_network_speed_summary">Show network speed in statsbar</string>
 
     <!-- Permissions Management -->

@@ -79,23 +79,6 @@
     <string name="build_date_default">2012-01-01-0000</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Minne</string>
-    <string name="anonymous_statistics_title">CyanogenMod-statistikk</string>
-    <string name="anonymous_statistics_summary">Bidra til å gjøre CyanogenMod bedre ved å sende inn anonym statistikk.</string>
-    <string name="anonymous_statistics_warning_title">Om</string>
-    <string name="anonymous_statistics_warning">Ved å velge å sende inn statistikk til Cyanogenmod vil ikke-personlige data sendes til utviklerne
-        av CyanogenMod slik at de kan spore ulike installasjoner på tvers av enheter. Dataene blir sendt under hver oppstart.\n\nFor å
-        se hvilke data som sendes, trykk på Forhåndsvis Data.</string>
-    <string name="enable_reporting_title">Aktiver rapportering</string>
-    <string name="preview_data_title">Forhåndsvis data</string>
-    <string name="preview_data_summary">%s</string>
-    <string name="view_stats_title">Se statistikk</string>
-    <string name="anonymous_learn_more">Lær mer</string>
-    <string name="anonymous_notification_desc">Aktiver eller deaktiver CyanogenMod-statistikk</string>
-    <string name="preview_id_title">Unik ID</string>
-    <string name="preview_device_title">Enhet</string>
-    <string name="preview_version_title">Versjon</string>
-    <string name="preview_country_title">Land</string>
-    <string name="preview_carrier_title">Operatør</string>
     <string name="header_category_interface">GRENSESNITT</string>
     <string name="launcher_settings_title">Utskytningsrampe</string>
     <string name="themes_settings_title">Temaer</string>
