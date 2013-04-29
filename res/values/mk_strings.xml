@@ -155,4 +155,7 @@
     <string name="show_network_speed">network speed</string>
     <string name="show_network_speed_summary">Show network speed in statsbar</string>
 
+    <!-- Permissions Management -->
+    <string name="permissions_settings_title">Permissions Management</string>
+
 </resources>
