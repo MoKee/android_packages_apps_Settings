@@ -1314,7 +1314,6 @@ public class InstalledAppDetails extends Fragment
                 }
             }
         } else if(v == mSpecialDisableButton) {
-            showDialogInner(DLG_SPECIAL_DISABLE, 0);
             if((mAppEntry.info.flags & ApplicationInfo.FLAG_INSTALLED) != 0 && mAppEntry.info.enabled) {
                 showDialogInner(DLG_DISABLE, 0);
             } else {
