@@ -63,6 +63,14 @@
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SET_TIME" />
+    
+    <!-- MOKEE PUSH PERMISSION START -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- MOKEE PUSH PERMISSION END -->
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
@@ -1572,7 +1580,6 @@
             android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
         </activity>
@@ -1590,7 +1597,6 @@
             android:label="ColorPIE" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SHORTCUT" />
               </intent-filter>
         </activity>
@@ -1761,6 +1767,49 @@
                 <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
             </intent-filter>
         </receiver>
+        
+        <!-- MOKEE PUSH SERVICE START -->
+        <receiver android:name=".mkpush.PushServiceManager"
+            android:label="PushServiceManager" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+   
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":mokeepushservice" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
 
+        <receiver android:name="com.baidu.android.pushservice.RegistratonReceiver"
+            android:process=":mokeepushservice" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>                   
+        </receiver>    
+        
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":mokeepushservice"
+            android:label="MoKeePushService"
+            android:icon="@drawable/ic_mokee_push" />
+
+        <meta-data android:name="api_key" android:value="Z1sw17O8ir2pjYSElDohbDRr" />
+        <!-- MOKEE PUSH SERVICE END -->
+        
     </application>
 </manifest>
