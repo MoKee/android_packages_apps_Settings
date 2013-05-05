@@ -157,4 +157,8 @@
     <!-- Permissions Management -->
     <string name="permissions_settings_title">权限管理</string>
 
+    <!-- Developers -->
+    <string name="settings_developers_activity_title">开发人员</string>
+    <string name="settings_developers_activity_loading">"正在载入..."</string>
+    <string name="settings_developers_activity_unreachable" msgid="232523852222964470">"您没有数据连接。要立即查看此信息，请通过已联网的任意计算机访问 %s。"</string>
 </resources>

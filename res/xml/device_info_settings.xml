@@ -87,7 +87,13 @@
             </PreferenceScreen>
 
         </PreferenceScreen>
-        
+
+        <PreferenceScreen
+                android:key="developers"
+                android:title="@string/settings_developers_activity_title">
+            <intent android:action="android.settings.DEVELOPERS" />
+        </PreferenceScreen>
+
         <PreferenceScreen
                 android:key="safetylegal"
                 android:title="@string/settings_safetylegal_title">
