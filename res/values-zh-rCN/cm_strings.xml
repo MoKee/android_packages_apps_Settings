@@ -69,7 +69,7 @@
     <string name="notification_convert_sound_to_vibration_title">收到通知时震动</string>
     <string name="notification_convert_sound_to_vibration_summary">处于震动模式时, 所有的通知都将无视任何应用的单独设置并产生震动</string>
     <string name="device_hostname">设备网络名</string>
-    <string name="mod_version">CyanogenMod 版本</string>
+    <string name="mod_version">MoKee 版本</string>
     <string name="mod_version_default">未知</string>
     <string name="build_date">编译日期</string>
     <string name="cpu_info">处理器</string>

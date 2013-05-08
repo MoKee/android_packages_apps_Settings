@@ -73,7 +73,7 @@
     <string name="notification_convert_sound_to_vibration_title">Vibrer ved varsler</string>
     <string name="notification_convert_sound_to_vibration_summary">I vibreringsmodus vil alle varslinger vibrere, uavhengig av individuelle appinnstillinger</string>
     <string name="device_hostname">Enhetens vertsnavn</string>
-    <string name="mod_version">CyanogenMod versjon</string>
+    <string name="mod_version">MoKee versjon</string>
     <string name="mod_version_default">Ukjent</string>
     <string name="build_date">Byggdato</string>
     <string name="build_date_default">2012-01-01-0000</string>
