@@ -34,7 +34,7 @@
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">隐藏</string>
-    <string name="navigation_ring_summary">编辑导航环快捷方式</string>  
+    <string name="navigation_ring_summary">编辑导航栏快捷方式</string>  
 
     <!-- Other Settings Category -->
     <string name="other_category">其它设置</string>
