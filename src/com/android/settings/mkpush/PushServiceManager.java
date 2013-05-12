@@ -90,7 +90,7 @@ public class PushServiceManager extends BroadcastReceiver {
             String modType = intent.getExtras().getString("type");
             String url = intent.getExtras().getString("url");
             String title = intent.getExtras().getString("title");
-            int msg_id = intent.getExtras().getInt("id");
+            int msg_id = Integer.valueOf(intent.getExtras().getString("id"));
             String mod_device = Utilities.getDevice().toLowerCase();
             String mod_host = Utilities.getBuildHost().toLowerCase();
             String mod_version = Utilities.getModVersion().toLowerCase();
