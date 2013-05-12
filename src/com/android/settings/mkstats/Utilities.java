@@ -81,7 +81,11 @@ public class Utilities {
     public static String getModVersion() {
         return SystemProperties.get("ro.mk.version");
     }
-
+    
+    public static String getBuildHost() {
+        return SystemProperties.get("ro.build.host");
+    } 
+    
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");

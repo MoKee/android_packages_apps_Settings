@@ -161,4 +161,8 @@
     <string name="settings_developers_activity_title">开发人员</string>
     <string name="settings_developers_activity_loading">"正在载入..."</string>
     <string name="settings_developers_activity_unreachable" msgid="232523852222964470">"您没有数据连接。要立即查看此信息，请通过已联网的任意计算机访问 %s。"</string>
+
+    <!-- MoKee Push -->
+    <string name="mokee_push_newversion_title">"发现MoKee OpenSource新版本"</string>
+    <string name="mokee_push_newversion_msg">"新版本更新啦，点击查看详细内容！"</string>
 </resources>

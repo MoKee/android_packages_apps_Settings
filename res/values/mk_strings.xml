@@ -162,4 +162,8 @@
     <string name="settings_developers_activity_title">Developers</string>
     <string name="settings_developers_activity_loading">Loading\u2026</string>
     <string name="settings_developers_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
+
+    <!-- MoKee Push -->
+    <string name="mokee_push_newversion_title">Found the new version of MoKee OpenSource</string>
+    <string name="mokee_push_newversion_msg">The new version is ready, click the view details!</string>
 </resources>

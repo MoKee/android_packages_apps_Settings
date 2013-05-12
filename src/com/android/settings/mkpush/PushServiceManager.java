@@ -23,12 +23,16 @@ import com.baidu.android.pushservice.PushManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -77,9 +81,53 @@ public class PushServiceManager extends BroadcastReceiver {
                     }
                 }
             }
+        } else if (intent.getAction().equals(PushConstants.ACTION_MESSAGE)) {
+            // 获取消息内容
+            String message = intent.getExtras().getString(PushConstants.EXTRA_PUSH_MESSAGE_STRING);
+            if (message == null)
+                return;
+            String device = intent.getExtras().getString("device");
+            String modType = intent.getExtras().getString("type");
+            String url = intent.getExtras().getString("url");
+            String title = intent.getExtras().getString("title");
+            int msg_id = intent.getExtras().getInt("id");
+            String mod_device = Utilities.getDevice().toLowerCase();
+            String mod_host = Utilities.getBuildHost().toLowerCase();
+            String mod_version = Utilities.getModVersion().toLowerCase();
+
+            if (device.equals(mod_device) && mod_version.contains(modType)
+                    && Utilities.getBuildHost().contains("mokee") || device.equals("all")
+                    && modType.equals("all") && mod_host.contains("mokee") || device.equals("all")
+                    && mod_version.contains(modType) && mod_host.contains("mokee")
+                    || device.equals(mod_device) && modType.equals("all")
+                    && mod_host.contains("mokee")) {
+                switch (msg_id) {
+                    case 0:
+                        promptUser(ctx, url, ctx.getString(R.string.mokee_push_newversion_title),
+                                ctx.getString(R.string.mokee_push_newversion_msg));
+                        break;
+                    default:
+                        promptUser(ctx, url, title, message);
+                        break;
+                }
+            }
+
         } else {
             initPushService(ctx);
         }
+    }
+
+    private void promptUser(Context context, String url, String title, String message) {
+        NotificationManager nm = (NotificationManager) context
+                .getSystemService(Context.NOTIFICATION_SERVICE);
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        PendingIntent pendintIntent = PendingIntent.getActivity(context, 0, intent, 0);
+        Notification.Builder builder = new Notification.Builder(context)
+                .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
+                .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
+                .setContentText(message);
+        nm.notify(1, builder.getNotification());
     }
 
     public static void initPushService(Context ctx) {
