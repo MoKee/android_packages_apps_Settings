@@ -16,6 +16,8 @@
 
 package com.android.settings.mkpush;
 
+import com.android.settings.R;
+
 import com.android.settings.mkstats.Utilities;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
