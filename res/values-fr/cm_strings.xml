@@ -71,7 +71,6 @@
     <string name="mod_version">Version MoKee</string>
     <string name="mod_version_default">Inconnue</string>
     <string name="build_date">Date de compilation</string>
-    <string name="build_date_default">2012-01-01-0000</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Mémoire</string>
     <string name="header_category_interface">INTERFACE</string>
@@ -141,7 +140,6 @@
     <string name="choose_soundtone">Son de notification</string>
     <string name="choose_ringtone">Choix de la sonnerie</string>
     <string name="soundtone_title">Son de notification</string>
-    <string name="soundtone_summary">""</string>
     <string name="profile_appgroups_title">Groupes d\'applications</string>
     <string name="profile_applist_title">Applications</string>
     <string name="profile_new_appgroup">Nouveau groupe d\'applications</string>
@@ -211,17 +209,13 @@
     <string name="processor_summary">Changer la stratégie et la fréquence du processeur</string>
     <string name="cpu_cur_freq_title">Fréquence actuelle</string>
     <string name="cpu_governors_title">Stratégie</string>
-    <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">Fréquence minimale</string>
-    <string name="cpu_min_freq_summary">%s</string>
     <string name="cpu_max_freq_title">Fréquence maximale</string>
-    <string name="cpu_max_freq_summary">%s</string>
     <string name="cpu_set_on_boot">Appliquer au démarrage</string>
     <string name="cpu_set_on_boot_summary">Appliquer les paramètres du processeur au démarrage</string>
     <string name="io_scheds_title">Horloge E/S</string>
     <string name="io_scheds_summary">Changer l\'horloge E/S</string>
     <string name="io_sched_title">Horloge E/S</string>
-    <string name="io_sched_summary">%S</string>
     <string name="io_sched_set_on_boot">Appliquer au démarrage</string>
     <string name="io_sched_set_on_boot_summary">Appliquer les paramètres d\'horloge E/S au démarrage</string>
     <string name="memory_management_title">Gestion de la mémoire</string>
@@ -255,6 +249,7 @@
     <string name="icon_picker_calendar">Agenda</string>
     <string name="icon_picker_camera">Appareil photo</string>
     <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_contacts">Contacts</string>
     <string name="icon_picker_email">Email</string>
     <string name="icon_picker_email2">Email Holo</string>
     <string name="icon_picker_facebook">Facebook</string>
@@ -299,6 +294,7 @@
     <string name="profile_select">Sélectionner un profil</string>
     <string name="link_volume_ringtones">Lier le volume des alertes à la sonnerie</string>
     <string name="link_volume_mutes">Silence commun pour alertes et sonnerie</string>
+    <string name="volume_keys_control_ring_stream">Les boutons de volume contrôlent le volume de la sonnerie</string>
     <string name="notification_light_general_title">Général</string>
     <string name="notification_light_applist_title">Applications</string>
     <string name="notification_light_phonelist_title">Téléphone</string>
@@ -310,7 +306,7 @@
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
     <string name="edit_light_settings">Paramètres de la LED</string>
     <string name="pulse_speed_title">Durée d\'impulsion et vitesse</string>
-    <string name="picker_arrow">→</string>
+    <string name="picker_arrow">\u2192</string>
     <string name="default_time">Normale</string>
     <string name="custom_time">Personnalisée</string>
     <string name="dialog_test">Tester</string>
@@ -583,6 +579,7 @@
     <string name="auto_brightness_reset_confirmation">Tous les niveaux de luminosité seront réinitialisés à leurs réglages par défaut.</string>
     <string name="auto_brightness_split_lux_format">Position de coupure (entre <xliff:g id="min">%1$d</xliff:g> et <xliff:g id="max">%2$d</xliff:g> lux)</string>
     <string name="auto_brightness_level_options">Options de niveau de lumière</string>
+    <string name="auto_brightness_menu_edit">Modifier</string>
     <string name="auto_brightness_menu_split">Diviser</string>
     <string name="auto_brightness_menu_remove">Supprimer</string>
     <string name="auto_brightness_preview">Prévisualiser</string>
@@ -596,7 +593,7 @@ Pour vous aider, un aperçu de la courbe calculée peut être examiné. Noter qu
 <b>Comment éditer la courbe de luminosité\u00A0?</b>
 \n\n
 Chaque ligne de la liste correspond à un <i>point de contrôle</i> de la courbe de luminosité. Pour modifier le niveau de luminosité d\'un point, vous pouvez utiliser le curseur présent sur chaque ligne. Lorsque vous toucherez le curseur, la luminosité de l\'écran sera modifiée en conséquence pour prévisualiser le niveau de lumière.\n
-Des options supplémentaires sont disponibles en appuyant longtemps sur une ligne. En sélectionnant \'Edit\', vous pouvez modifier le niveau du point de contrôle de luminosité ambiante ou saisir manuellement la luminosité de l\'écran désirée. En sélectionnant \'Diviser\' vous pouvez séparer une ligne en deux afin d\'insérer des points de contrôle supplémentaires. Enfin, \'Supprimer\' efface la ligne sélectionnée.
+Des options supplémentaires sont disponibles en appuyant longtemps sur une ligne. En sélectionnant \'Modifier\', vous pouvez modifier le niveau du point de contrôle de luminosité ambiante ou saisir manuellement la luminosité de l\'écran désirée. En sélectionnant \'Diviser\' vous pouvez séparer une ligne en deux afin d\'insérer des points de contrôle supplémentaires. Enfin, \'Supprimer\' efface la ligne sélectionnée.
     </string>
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure les options de redémarrage en mode recovery et bootloader dans le menu marche/arrêt lorsque l\'appareil est déverrouillé</string>

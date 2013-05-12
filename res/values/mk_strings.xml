@@ -16,8 +16,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About version and support -->
-    <string name="mod_version">MoKee version</string>
-    <string name="mod_version_default">Unknown</string>
     <string name="mod_support" formatted="false">Community Support</string>
     <string name="mod_support_default" formatted="false">Unknown</string>
 

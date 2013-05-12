@@ -172,7 +172,6 @@
 
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Звук уведомления</string>
-    <string name="soundtone_summary">""</string>
 
     <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Группы приложений</string>
@@ -314,6 +313,7 @@
     <string name="icon_picker_choose_icon_title">Выбрать иконку</string>
     <string name="icon_picker_browser">Браузер</string>
     <string name="icon_picker_movie">Видео</string>
+    <string name="icon_picker_contacts">Контакты</string>
     <string name="icon_picker_gallery">Галерея</string>
     <string name="icon_picker_calendar">Календарь</string>
     <string name="icon_picker_camera">Камера</string>
@@ -362,6 +362,7 @@
 
     <string name="link_volume_ringtones">Связать громкость</string>
     <string name="link_volume_mutes">Беззвучный режим влияет на уведомления</string>
+    <string name="volume_keys_control_ring_stream">Регулировать кнопками громкости</string>
 
     <!-- Display settings screen, notification light settings -->
     <string name="notification_pulse_title">Индикатор событий</string>
@@ -378,7 +379,7 @@
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Изменить настройки индикатора</string>
     <string name="pulse_speed_title">Длительность и скорость мигания</string>
-    <string name="picker_arrow">→</string>
+    <string name="picker_arrow">\u2192</string>
     <string name="default_time">Нормально</string>
     <string name="custom_time">Пользовательский</string>
     <string name="dialog_test">Тест</string>
