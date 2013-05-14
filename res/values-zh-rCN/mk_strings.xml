@@ -152,6 +152,10 @@
     <string name="show_network_speed_title">当前网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
 
+    <!-- show carrier label -->
+    <string name="show_carrier_label_title">运营商名称</string>
+    <string name="show_carrier_label_summary">在状态栏显示运营商名称</string>
+
     <!-- Permissions Management -->
     <string name="permissions_settings_title">权限管理</string>
 

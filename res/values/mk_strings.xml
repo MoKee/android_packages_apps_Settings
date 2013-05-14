@@ -153,6 +153,10 @@
     <string name="show_network_speed_title">network speed</string>
     <string name="show_network_speed_summary">Show network speed in statsbar</string>
 
+    <!-- show carrier label -->
+    <string name="show_carrier_label_title">carrier label</string>
+    <string name="show_carrier_label_summary">Show Carrier label in statsbar</string>
+
     <!-- Permissions Management -->
     <string name="permissions_settings_title">Permissions Management</string>
 
