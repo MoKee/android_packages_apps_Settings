@@ -1798,7 +1798,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.baidu.android.pushservice.RegistratonReceiver"
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
             android:process=":mokeepushservice" >
             <intent-filter>
                 <action android:name="com.baidu.android.pushservice.action.METHOD" />

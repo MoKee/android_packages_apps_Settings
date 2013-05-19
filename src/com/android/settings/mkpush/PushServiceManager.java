@@ -35,6 +35,7 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Handler;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -94,15 +95,12 @@ public class PushServiceManager extends BroadcastReceiver {
             String title = intent.getExtras().getString("title");
             int msg_id = Integer.valueOf(intent.getExtras().getString("id"));
             String mod_device = Utilities.getDevice().toLowerCase();
-            String mod_host = Utilities.getBuildHost().toLowerCase();
             String mod_version = Utilities.getModVersion().toLowerCase();
-
-            if (device.equals(mod_device) && mod_version.contains(modType)
-                    && Utilities.getBuildHost().contains("mokee") || device.equals("all")
-                    && modType.equals("all") && mod_host.contains("mokee") || device.equals("all")
-                    && mod_version.contains(modType) && mod_host.contains("mokee")
-                    || device.equals(mod_device) && modType.equals("all")
-                    && mod_host.contains("mokee")) {
+            
+            if (allowPush(device, mod_device, 1) && allowPush(modType, mod_version, 0)
+                    || device.equals("all") && modType.equals("all")
+                    || device.equals("all") && allowPush(modType, mod_version, 0)
+                    || allowPush(device, mod_device, 1) && modType.equals("all")) {
                 switch (msg_id) {
                     case 0:
                         promptUser(ctx, url, ctx.getString(R.string.mokee_push_newversion_title),
@@ -117,6 +115,24 @@ public class PushServiceManager extends BroadcastReceiver {
         } else {
             initPushService(ctx);
         }
+    }
+    
+    private boolean allowPush(String str1, String str2 , int mode) {
+        String [] strs = str1.split(",");
+        for(int i = 0; i< strs.length; i++)
+        {
+            switch(mode)
+            {
+                case 1:
+                    if(strs[i].equals(str2))
+                        return true;
+                default:
+                    if(str2.contains(strs[i]))
+                        return true;
+            }
+            
+        }
+        return false;
     }
 
     private void promptUser(Context context, String url, String title, String message) {
@@ -137,13 +153,19 @@ public class PushServiceManager extends BroadcastReceiver {
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            SharedPreferences prefs = ctx.getSharedPreferences("MKPush", 0);
+            final SharedPreferences prefs = ctx.getSharedPreferences("MKPush", 0);
             boolean checklock = prefs.getBoolean(PUSH_CHECK_LOCK, false);
             boolean firstBoot = prefs.getBoolean(PUSH_FIRST_BOOT, true);
             if (firstBoot && !checklock) {
                 prefs.edit().putBoolean(PUSH_CHECK_LOCK, true).apply();
                 PushManager.startWork(ctx.getApplicationContext(),
-                        PushConstants.LOGIN_TYPE_API_KEY, Utils.getMetaValue(ctx, "api_key"));                
+                        PushConstants.LOGIN_TYPE_API_KEY, Utils.getMetaValue(ctx, "api_key"));
+                new Handler().postDelayed(new Runnable(){
+
+                    @Override
+                    public void run() {
+                        prefs.edit().putBoolean(PUSH_CHECK_LOCK, false).apply();
+                    }}, 1000 * 600);
             }
         }
     }

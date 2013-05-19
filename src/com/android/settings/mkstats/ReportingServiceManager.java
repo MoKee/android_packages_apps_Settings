@@ -25,6 +25,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Handler;
 import android.util.Log;
 
 public class ReportingServiceManager extends BroadcastReceiver {
@@ -79,6 +80,12 @@ public class ReportingServiceManager extends BroadcastReceiver {
 	                		Intent sIntent = new Intent();
 	                		sIntent.setComponent(new ComponentName(ctx.getPackageName(), ReportingService.class.getName()));
 	                		ctx.startService(sIntent);
+					new Handler().postDelayed(new Runnable(){
+
+					    @Override
+					    public void run() {
+						prefs.edit().putBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false).apply();
+					    }}, 1000 * 600);
 				}
 				else if(prefs.getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0) != 0) {
 	                		Intent sIntent = new Intent();
