@@ -24,7 +24,6 @@
         <item>@string/navigation_bar_height_28</item>
         <item>@string/navigation_bar_height_24</item>
         <item>@string/navigation_bar_height_20</item>
-        <item>@string/navigation_bar_height_0</item>
     </string-array>
 
     <string-array name="navigation_bar_height_values" translatable="false">
@@ -36,7 +35,6 @@
         <item>28</item>
         <item>24</item>
         <item>20</item>
-        <item>0</item>
     </string-array>
 
     <!-- PIE -->    
