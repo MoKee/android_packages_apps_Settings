@@ -94,7 +94,7 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
                 prefSet.removePreference(mSwapVolumeButtons);
             } else {
                 int swapVolumeKeys = Settings.System.getInt(getContentResolver(),
-                        Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 1);
+                        Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
                 mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
             }
         }
