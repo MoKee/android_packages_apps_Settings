@@ -26,8 +26,7 @@
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary"
-        android:dependency="accelerometer"
-        android:defaultValue="true" />
+        android:dependency="accelerometer" />
 
     <PreferenceCategory
         android:key="display_rotation_category"
