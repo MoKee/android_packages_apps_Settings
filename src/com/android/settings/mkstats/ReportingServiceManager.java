@@ -64,7 +64,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
         ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
+            final SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
             long lastSynced = prefs.getLong(ReportingService.ANONYMOUS_LAST_CHECKED, 0);
             boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
             boolean checklock = prefs.getBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false);
