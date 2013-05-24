@@ -42,7 +42,7 @@ import com.android.internal.app.AlertController;
 
 public class ChangeLog extends Fragment {
 
-    private static final String CHANGELOG_PATH = "/system/etc/CHANGELOG-CM.txt";
+    private static final String CHANGELOG_PATH = "/system/etc/CHANGELOG-MK.txt";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
