@@ -144,7 +144,7 @@ public class PushServiceManager extends BroadcastReceiver {
         Notification.Builder builder = new Notification.Builder(context)
                 .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
-                .setContentText(message);
+                .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS).setOngoing(true).setContentText(message);
         nm.notify(1, builder.getNotification());
     }
 
