@@ -23,6 +23,7 @@ import java.security.MessageDigest;
 import android.content.Context;
 import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 
 public class Utilities {
     public static String getUniqueID(Context ctx) {
@@ -30,7 +31,7 @@ public class Utilities {
                 .getSystemService(Context.TELEPHONY_SERVICE);
 
         String device_id = digest(tm.getDeviceId());
-        if (device_id == null) {
+        if (TextUtils.isEmpty(device_id)) {
             String wifiInterface = SystemProperties.get("wifi.interface");
             try {
                 String wifiMac = new String(NetworkInterface.getByName(
@@ -40,7 +41,6 @@ public class Utilities {
                 device_id = null;
             }
         }
-
         return device_id;
     }
 
@@ -48,7 +48,7 @@ public class Utilities {
         TelephonyManager tm = (TelephonyManager) ctx
                 .getSystemService(Context.TELEPHONY_SERVICE);
         String carrier = tm.getNetworkOperatorName();
-        if ("".equals(carrier)) {
+        if (TextUtils.isEmpty(carrier)) {
             carrier = "Unknown";
         }
         return carrier;
@@ -58,7 +58,7 @@ public class Utilities {
         TelephonyManager tm = (TelephonyManager) ctx
                 .getSystemService(Context.TELEPHONY_SERVICE);
         String carrierId = tm.getNetworkOperator();
-        if ("".equals(carrierId)) {
+        if (TextUtils.isEmpty(carrierId)) {
             carrierId = "0";
         }
         return carrierId;
@@ -68,29 +68,40 @@ public class Utilities {
         TelephonyManager tm = (TelephonyManager) ctx
                 .getSystemService(Context.TELEPHONY_SERVICE);
         String countryCode = tm.getNetworkCountryIso();
-        if (countryCode.equals("")) {
+        if (TextUtils.isEmpty(countryCode)) {
             countryCode = "Unknown";
         }
         return countryCode;
     }
 
     public static String getDevice() {
-        return SystemProperties.get("ro.cm.device");
+        String device = SystemProperties.get("ro.mk.device");
+        if (TextUtils.isEmpty(device)) {
+            device = "Unknown";
+        }
+        return device;
     }
 
     public static String getModVersion() {
-        return SystemProperties.get("ro.mk.version");
+        String modVersion = SystemProperties.get("ro.mk.version");
+        if (TextUtils.isEmpty(modVersion)) {
+            modVersion = "Unknown";
+        }
+        return modVersion;
     }
     
     public static String getBuildHost() {
-        return SystemProperties.get("ro.build.host");
+        String hostName = SystemProperties.get("ro.build.host");
+		if (TextUtils.isEmpty(hostName)) {
+            hostName = "Unknown";
+        }
+        return hostName;
     } 
     
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
-            return new BigInteger(1, md.digest(input.getBytes())).toString(16)
-                    .toUpperCase();
+            return new BigInteger(1, md.digest(input.getBytes())).toString(16).toUpperCase();
         } catch (Exception e) {
             return null;
         }
