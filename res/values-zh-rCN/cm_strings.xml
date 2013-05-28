@@ -591,6 +591,12 @@
 在亮度列表里的每一行都对应着一个在亮度曲线上的<i>控制点</i>. 您可以通过各行的滑块来调整每个点的亮度级别. 触摸滑块时屏幕的亮度也会做出相应的改变, 作为一个亮度级别的预览.\n
 长按任何一行将显示更多的选项. 选择 \'编辑\' 将让您编辑环境亮度级别并手动输入所需的屏幕亮度. 选择 \'分离\' 将让您把一行分离为两行并同时加入更多的控制点. 选择 \'移除\' 将移除所选行.
     </string>
+    <string name="auto_brightness_sensitivity_title">调节灵敏度</string>
+    <string name="auto_brightness_sensitivity_verylow">非常低</string>
+    <string name="auto_brightness_sensitivity_low">低</string>
+    <string name="auto_brightness_sensitivity_medium">中等</string>
+    <string name="auto_brightness_sensitivity_high">高</string>
+    <string name="auto_brightness_sensitivity_veryhigh">非常高</string>
     <string name="advanced_reboot_title">高级重启</string>
     <string name="advanced_reboot_summary">解锁设备后, 在电源菜单的重启选项下加入重启至恢复模式与引导程序的选择</string>
     <string name="navigation_bar_category">导航栏</string>
