@@ -7,56 +7,57 @@
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_button_color"
         android:title="@string/navigation_bar_tint_title"
-        android:defaultValue="ffffffff"
+        android:defaultValue="#ffffffff"
         android:dependency="pie_enable_color" />
+
     <com.android.settings.widget.ColorPickerPreference
 	android:key="pie_background"
 	android:title="@string/pie_background_title"
-	android:defaultValue="aaff005e"
+	android:defaultValue="#aaff005e"
 	android:dependency="pie_enable_color"
         alphaSlider="true" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_select"
         android:title="@string/pie_select_title"
-        android:defaultValue="aadbff00"
+        android:defaultValue="#aadbff00"
         android:dependency="pie_enable_color"
         alphaSlider="true" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_outlines"
         android:title="@string/pie_outlines_title"
-        android:defaultValue="55ffffff"
+        android:defaultValue="#55ffffff"
         android:dependency="pie_enable_color"
         alphaSlider="true" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_status_clock"
         android:title="@string/pie_status_clock_title"
-        android:defaultValue="ffffffff"
+        android:defaultValue="#ffffffff"
         android:dependency="pie_enable_color" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_status"
         android:title="@string/pie_status_title"
-        android:defaultValue="ffffffff"
+        android:defaultValue="#ffffffff"
         android:dependency="pie_enable_color" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_chevron_left"
         android:title="@string/pie_chevron_left_title"
-        android:defaultValue="ff0999cc"
+        android:defaultValue="#ff0999cc"
         android:dependency="pie_enable_color" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_chevron_right"
         android:title="@string/pie_chevron_right_title"
-        android:defaultValue="ff33b5e5"
+        android:defaultValue="#ff33b5e5"
         android:dependency="pie_enable_color" />
 
     <com.android.settings.widget.ColorPickerPreference
         android:key="pie_juice"
         android:title="@string/pie_juice_title"
-        android:defaultValue="ff33b5e5"
+        android:defaultValue="#ff33b5e5"
         android:dependency="pie_enable_color" />
 </PreferenceScreen>

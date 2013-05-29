@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <PreferenceScreen
-            android:key="pie_color"
-            android:title="@string/pie_color_title"
-            android:fragment="com.android.settings.cyanogenmod.PieColor" />
+    <PreferenceScreen
+        android:key="pie_color"
+        android:title="@string/pie_color_title"
+        android:fragment="com.android.settings.cyanogenmod.PieColor" />
 
     <PreferenceCategory
         android:key="toolbar_pie_controls"
@@ -40,6 +40,15 @@
             android:summary="@string/pie_size_summary"
             android:entries="@array/entries_pie_size"
             android:entryValues="@array/values_pie_size"
+            android:dependency="pie_controls" />
+
+        <ListPreference
+            android:key="pie_angle"
+            android:dialogTitle="@string/pie_angle_title"
+            android:title="@string/pie_angle_title"
+            android:summary="@string/pie_angle_summary"
+            android:entries="@array/entries_pie_angle"
+            android:entryValues="@array/values_pie_angle"
             android:dependency="pie_controls" />
 
         <ListPreference

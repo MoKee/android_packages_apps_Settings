@@ -73,6 +73,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private static final String PIE_MODE = "pie_mode";
     private static final String PIE_SIZE = "pie_size";
     private static final String PIE_TRIGGER = "pie_trigger";
+    private static final String PIE_ANGLE = "pie_angle";
     private static final String PIE_GAP = "pie_gap";
     private static final String PIE_LASTAPP = "pie_lastapp";
     private static final String PIE_MENU = "pie_menu";
@@ -80,17 +81,18 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private static final String PIE_CENTER = "pie_center";
     private static final String PIE_STICK = "pie_stick";
 
-    ListPreference mPieMode;
-    ListPreference mPieSize;
-    ListPreference mPieGravity;
-    ListPreference mPieTrigger;
-    ListPreference mPieGap;
-    CheckBoxPreference mPieControls;
-    CheckBoxPreference mPieMenu;
-    CheckBoxPreference mPieLastApp;
-    CheckBoxPreference mPieSearch;
-    CheckBoxPreference mPieCenter;
-    CheckBoxPreference mPieStick;
+    private ListPreference mPieMode;
+    private ListPreference mPieSize;
+    private ListPreference mPieGravity;
+    private ListPreference mPieTrigger;
+    private ListPreference mPieAngle;
+    private ListPreference mPieGap;
+    private CheckBoxPreference mPieControls;
+    private CheckBoxPreference mPieMenu;
+    private CheckBoxPreference mPieLastApp;
+    private CheckBoxPreference mPieSearch;
+    private CheckBoxPreference mPieCenter;
+    private CheckBoxPreference mPieStick;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -138,6 +140,12 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
                 Settings.System.PIE_GAP, 3);
         mPieGap.setValue(String.valueOf(pieGap));
         mPieGap.setOnPreferenceChangeListener(this);
+
+        mPieAngle = (ListPreference) prefSet.findPreference(PIE_ANGLE);
+        int pieAngle = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.PIE_ANGLE, 0);
+        mPieAngle.setValue(String.valueOf(pieAngle));
+        mPieAngle.setOnPreferenceChangeListener(this);
 
         mPieMenu = (CheckBoxPreference) prefSet.findPreference(PIE_MENU);
         mPieMenu.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
@@ -225,6 +233,11 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
             int pieGravity = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PIE_GRAVITY, pieGravity);
+            return true;
+        } else if (preference == mPieAngle) {
+            int pieAngle = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.PIE_ANGLE, pieAngle);
             return true;
         } else if (preference == mPieGap) {
             int pieGap = Integer.valueOf((String) newValue);

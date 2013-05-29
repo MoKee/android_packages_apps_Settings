@@ -98,36 +98,49 @@
     <string name="pie_controls_summary">@null</string>
     <string name="enable_pie_title">Enable PIE</string>
     <string name="pie_targets_title">Targets</string>
+
     <string name="pie_gravity_title">Pie gravity</string>
     <string name="pie_gravity_summary">Select the location where you can bring up PIE</string>
     <string name="pie_gravity_top">Top</string>
     <string name="pie_gravity_bottom">Bottom</string>
     <string name="pie_gravity_right">Right</string>
     <string name="pie_gravity_left">Left</string>
+
     <string name="pie_mode_title">Pie style</string>
     <string name="pie_mode_summary">Manage how animations and status additions will be handled</string>
     <string name="pie_mode_bare">Bare</string>
     <string name="pie_mode_quick">Quick(Default)</string>
     <string name="pie_mode_normal">Normal</string>
     <string name="pie_mode_slow">Slow</string>
+
     <string name="pie_size_title">Pie size</string>
     <string name="pie_size_summary">Define PIE controls size</string>
     <string name="pie_size_small">Small</string>
     <string name="pie_size_normal">@string/pie_mode_normal</string>
     <string name="pie_size_large">Large</string>
     <string name="pie_size_gigantic">Gigantic</string>
+
+    <string name="pie_angle_title">Pie angle</string>
+    <string name="pie_angle_summary">Adjust the angle of pie bords from pie attach</string>
+    <string name="pie_angle_none">None (default)</string>
+    <string name="pie_angle_small">Small</string>
+    <string name="pie_angle_big">Big</string>
+    <string name="pie_angle_huge">Huge</string>
+
     <string name="pie_gap_title">Item gap</string>
     <string name="pie_gap_summary">Adjust the gap that separates PIE elements</string>
     <string name="pie_gap_none">None</string>
     <string name="pie_gap_small">Small</string>
     <string name="pie_gap_big">Big</string>
     <string name="pie_gap_huge">Huge (Default)</string>
+
     <string name="pie_trigger_title">Trigger area</string>
     <string name="pie_trigger_summary">Determine the size of the triggering area that will start pie controls</string>
     <string name="pie_trigger_small">Small</string>
     <string name="pie_trigger_normal">Normal (Default)</string>
     <string name="pie_trigger_big">Big</string>
     <string name="pie_trigger_huge">Huge</string>
+
     <string name="pie_menu_title">Persistent menu button</string>
     <string name="pie_menu_summary">Always show menu button even when it isn\'t necessary</string>
     <string name="pie_search_title">Search button</string>

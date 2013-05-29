@@ -44,6 +44,7 @@
         <item>@string/pie_gravity_right</item>
         <item>@string/pie_gravity_bottom</item>
     </string-array>
+
     <string-array name="values_pie_gravity" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -57,6 +58,7 @@
         <item>@string/pie_size_large</item>
         <item>@string/pie_size_gigantic</item>
     </string-array>
+
     <string-array name="values_pie_size" translatable="false">
         <item>0.9</item>
         <item>1.0</item>
@@ -70,11 +72,26 @@
         <item>@string/pie_mode_normal</item>
         <item>@string/pie_mode_slow</item>
     </string-array>
+
     <string-array name="values_pie_mode" translatable="false">
         <item>-1</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <string-array name="entries_pie_angle">
+        <item>@string/pie_angle_none</item>
+        <item>@string/pie_angle_small</item>
+        <item>@string/pie_angle_big</item>
+        <item>@string/pie_angle_huge</item>
+    </string-array>
+
+    <string-array name="values_pie_angle" translatable="false">
+        <item>0</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
     </string-array>
 
     <string-array name="entries_pie_gap">
@@ -97,6 +114,7 @@
         <item>@string/pie_trigger_big</item>
         <item>@string/pie_trigger_huge</item>
     </string-array>
+
     <string-array name="values_pie_trigger" translatable="false">
         <item>0.5</item>
         <item>1.0</item>
