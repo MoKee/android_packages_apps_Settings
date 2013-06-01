@@ -77,7 +77,7 @@ public class Utilities {
     public static String getDevice() {
         String device = SystemProperties.get("ro.mk.device");
         if (TextUtils.isEmpty(device)) {
-            device = "Unknown";
+            device = SystemProperties.get("ro.product.device");
         }
         return device;
     }
