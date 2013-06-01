@@ -148,6 +148,8 @@
     <string name="pie_search_summary">Enable search button on pie controls</string>
     <string name="pie_lastapp_title">Last App button</string>
     <string name="pie_lastapp_summary">Enable last app button on pie controls</string>
+    <string name="pie_power_title">Power button</string>
+    <string name="pie_power_summary">Enable power button on pie controls</string>
     <string name="pie_center_title">Middle alignment</string>
     <string name="pie_center_summary">Center Pie on the trigger edge</string>
     <string name="pie_stick_title">Prevent rotation</string>

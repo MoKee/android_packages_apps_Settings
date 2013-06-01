@@ -147,6 +147,8 @@
     <string name="pie_search_summary">显示搜索键</string>
     <string name="pie_lastapp_title">程序切换键</string>
     <string name="pie_lastapp_summary">显示切换至最后运行的程序按钮</string>
+    <string name="pie_power_title">电源键</string>
+    <string name="pie_power_summary">显示电源键按钮</string>
     <string name="pie_center_title">居中对齐</string>
     <string name="pie_center_summary">在触发位置一侧居中对齐</string>
     <string name="pie_stick_title">禁止旋转</string>
