@@ -131,8 +131,8 @@
     <string name="pie_gap_summary">调整PIE的按键间隙</string>
     <string name="pie_gap_none">无</string>
     <string name="pie_gap_small">小</string>
-    <string name="pie_gap_big">大</string>
-    <string name="pie_gap_huge">极大(默认)</string>
+    <string name="pie_gap_big">大(默认)</string>
+    <string name="pie_gap_huge">极大</string>
 
     <string name="pie_trigger_title">触发区域</string>
     <string name="pie_trigger_summary">调整PIE控制器的触发区域范围</string>
