@@ -122,7 +122,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieTrigger = (ListPreference) prefSet.findPreference(PIE_TRIGGER);
         try {
             float pieSize = Settings.System.getFloat(getActivity().getContentResolver(),
-                    Settings.System.PIE_SIZE, 1f);
+                    Settings.System.PIE_SIZE, 1.0f);
             mPieSize.setValue(String.valueOf(pieSize));
   
             float pieTrigger = Settings.System.getFloat(getActivity().getContentResolver(),

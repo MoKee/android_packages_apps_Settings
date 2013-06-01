@@ -83,6 +83,7 @@
     <string-array name="entries_pie_angle">
         <item>@string/pie_angle_none</item>
         <item>@string/pie_angle_small</item>
+        <item>@string/pie_angle_default</item>
         <item>@string/pie_angle_big</item>
         <item>@string/pie_angle_huge</item>
     </string-array>
@@ -92,6 +93,7 @@
         <item>6</item>
         <item>12</item>
         <item>18</item>
+        <item>24</item>
     </string-array>
 
     <string-array name="entries_pie_gap">

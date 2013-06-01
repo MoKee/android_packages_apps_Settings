@@ -123,7 +123,8 @@
     <string name="pie_angle_summary">调整PIE控制器的触发角度</string>
     <string name="pie_angle_none">无</string>
     <string name="pie_angle_small">小</string>
-    <string name="pie_angle_big">大(默认)</string>
+    <string name="pie_angle_default">正常(默认)</string>
+    <string name="pie_angle_big">大</string>
     <string name="pie_angle_huge">极大</string>
 
     <string name="pie_gap_title">按键间隙</string>
