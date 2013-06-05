@@ -117,7 +117,8 @@
     <string name="pie_size_summary">设置PIE控制器的大小</string>
     <string name="pie_size_small">小</string>
     <string name="pie_size_large">大</string>
-    <string name="pie_size_gigantic">庞大</string>
+    <string name="pie_size_gigantic">巨大</string>
+    <string name="pie_size_monster">庞大</string>
 
     <string name="pie_angle_title">PIE角度</string>
     <string name="pie_angle_summary">调整PIE控制器的触发角度</string>

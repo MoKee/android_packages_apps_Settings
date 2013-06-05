@@ -119,6 +119,7 @@
     <string name="pie_size_normal">@string/pie_mode_normal</string>
     <string name="pie_size_large">Large</string>
     <string name="pie_size_gigantic">Gigantic</string>
+    <string name="pie_size_monster">Monster</string>
 
     <string name="pie_angle_title">Pie angle</string>
     <string name="pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
