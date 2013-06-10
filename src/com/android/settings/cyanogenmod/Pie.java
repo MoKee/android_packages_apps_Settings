@@ -66,7 +66,7 @@ import com.android.settings.widget.ColorPickerPreference;
 
 public class Pie extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String TAG = "Paranoid Android PIE";
+    private static final String TAG = "MoKee PIE";
 
     private static final String PIE_CONTROLS = "pie_controls";
     private static final String PIE_GRAVITY = "pie_gravity";

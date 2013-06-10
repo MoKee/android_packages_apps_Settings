@@ -120,6 +120,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="halo_category"
+        android:title="@string/halo_settings" >
+
+        <PreferenceScreen
+            android:fragment="com.android.settings.cyanogenmod.Halo"
+            android:key="halo_settings"
+            android:title="@string/title_halo" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="other_category"
         android:title="@string/other_category" >
 
