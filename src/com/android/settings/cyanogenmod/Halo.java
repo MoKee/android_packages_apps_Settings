@@ -32,9 +32,9 @@ public class Halo extends SettingsPreferenceFragment implements OnPreferenceChan
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext = getActivity();
 
         addPreferencesFromResource(R.xml.halo_settings);
-
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mNotificationManager = INotificationManager.Stub.asInterface(
