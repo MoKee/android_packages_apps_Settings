@@ -73,8 +73,8 @@ public class Halo extends SettingsPreferenceFragment implements OnPreferenceChan
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_REVERSED, mHaloReversed.isChecked()
                     ? 1 : 0);
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override
