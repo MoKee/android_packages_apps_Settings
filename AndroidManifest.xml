@@ -1593,18 +1593,28 @@
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".cyanogenmod.Pie"
             android:label="@string/title_pie" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SHORTCUT" />
               </intent-filter>
         </activity>
+
         <activity
             android:name=".cyanogenmod.PieColor"
             android:label="ColorPIE" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SHORTCUT" />
+              </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".cyanogenmod.Halo"
+            android:label="@string/title_Halo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SHORTCUT" />

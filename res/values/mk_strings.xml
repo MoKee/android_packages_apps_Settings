@@ -36,6 +36,7 @@
 
     <!-- Other Settings Category -->
     <string name="other_category">Other settings</string>
+    
     <!-- CRT --> 
     <string name="crt_screen_title">CRT Screen</string>
     <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
@@ -92,7 +93,6 @@
 
     <!-- PIE Controls -->
     <string name="pie_settings">PIE Controls</string>
-    <string name="pie">PIE™</string>
     <string name="title_pie">PIE™</string>
     <string name="pie_controls_title">Controls</string>
     <string name="pie_controls_summary">@null</string>
@@ -185,4 +185,20 @@
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">Found the new version of MoKee OpenSource</string>
     <string name="mokee_push_newversion_msg">The new version is ready, click the view details!</string>
+    
+    <!-- Halo -->
+    <string name="halo_settings">Halo Settings</string>
+    <string name="title_halo">Halo</string>
+
+    <string name="app_halo_label_black">Blacklist HALO notifications</string>
+    <string name="app_halo_label_white">Whitelist HALO notifications</string>
+    
+    <string name="halo_hide_title">Hide HALO after activity</string>
+    <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
+    <string name="halo_reversed_title">Reverse HALO gestures</string>
+    <string name="halo_reversed_summary">Applies tasking or dragging to the double-tap-swipe gesture</string>
+    <string name="halo_state_title">HALO policy</string>
+    <string name="halo_state_summary">For black/white-listing notifications pinging through HALO</string>
+    <string name="halo_state_black">Black list</string>
+    <string name="halo_state_white">White list</string>
 </resources>
