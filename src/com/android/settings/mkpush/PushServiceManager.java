@@ -49,7 +49,8 @@ public class PushServiceManager extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        if (intent.getAction().equals(PushConstants.ACTION_RECEIVE)) {
+        String action = intent.getAction();
+        if (action.equals(PushConstants.ACTION_RECEIVE)) {
             final int errorCode = intent.getIntExtra(PushConstants.EXTRA_ERROR_CODE,
                     PushConstants.ERROR_SUCCESS);
             final String content = new String(intent.getByteArrayExtra(PushConstants.EXTRA_CONTENT));
@@ -84,7 +85,7 @@ public class PushServiceManager extends BroadcastReceiver {
                     }
                 }
             }
-        } else if (intent.getAction().equals(PushConstants.ACTION_MESSAGE)) {
+        } else if (action.equals(PushConstants.ACTION_MESSAGE)) {
             // 获取消息内容
             String message = intent.getExtras().getString(PushConstants.EXTRA_PUSH_MESSAGE_STRING);
             if (message == null)
@@ -148,7 +149,7 @@ public class PushServiceManager extends BroadcastReceiver {
         nm.notify(1, builder.getNotification());
     }
 
-    public static void initPushService(Context ctx) {
+    public static void initPushService(final Context ctx) {
         ConnectivityManager cm = (ConnectivityManager) ctx
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
@@ -166,7 +167,14 @@ public class PushServiceManager extends BroadcastReceiver {
                     public void run() {
                         prefs.edit().putBoolean(PUSH_CHECK_LOCK, false).apply();
                     }}, 1000 * 40);
+            } else {
+                if(!PushManager.isPushEnabled(ctx))
+                {
+                    PushManager.resumeWork(ctx);
+                }
             }
+        } else {
+            PushManager.stopWork(ctx);
         }
     }
 }
