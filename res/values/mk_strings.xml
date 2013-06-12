@@ -185,6 +185,10 @@
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">Found the new version of MoKee OpenSource</string>
     <string name="mokee_push_newversion_msg">The new version is ready, click the view details!</string>
+
+    <!-- Proximity work-around -->
+    <string name="is_inaccurate_proximity_title">In-accurate proximity</string>
+    <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors, this will force phone to turn on the screen after the call is ended.</string>
     
     <!-- Halo -->
     <string name="halo_settings">Halo Settings</string>

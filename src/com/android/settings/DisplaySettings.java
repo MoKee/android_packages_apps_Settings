@@ -65,6 +65,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
     private static final String KEY_POWER_CRT_SCREEN_ON = "system_power_crt_screen_on";
     private static final String KEY_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
+    private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
 
     // Strings used for building the summary
     private static final String ROTATION_ANGLE_0 = "0";
@@ -78,6 +79,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mCrtScreenOff;
     private CheckBoxPreference mCrtScreenOn;
+    private CheckBoxPreference mInaccurateProximityPref;
     private CheckBoxPreference mVolumeWake;
     private PreferenceScreen mDisplayRotationPreference;
     private WarnedListPreference mFontSizePref;
@@ -180,6 +182,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Settings.System.SYSTEM_POWER_ENABLE_CRT_ON, 0) == 1);
         mCrtScreenOn.setEnabled(isCrtOffChecked);
         mCrtScreenOn.setOnPreferenceChangeListener(this);
+
+        /* In-accurate proximity */
+        mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
+        if (mInaccurateProximityPref != null) {
+            mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+            mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+        }
 
     }
 
@@ -450,6 +460,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else if (KEY_POWER_CRT_SCREEN_ON.equals(key)) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_ENABLE_CRT_ON,
+                    ((Boolean) objValue).booleanValue() ? 1 : 0);
+        } else if (KEY_IS_INACCURATE_PROXIMITY.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
                     ((Boolean) objValue).booleanValue() ? 1 : 0);
         }
 

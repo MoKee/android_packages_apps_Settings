@@ -184,6 +184,10 @@
     <string name="mokee_push_newversion_title">"发现MoKee OpenSource新版本"</string>
     <string name="mokee_push_newversion_msg">"新版本更新啦，点击查看详细内容！"</string>
 
+    <!-- Proximity work-around -->
+    <string name="is_inaccurate_proximity_title">精确距离</string>
+    <string name="is_inaccurate_proximity_summary">强制在通话结束后打开屏幕，解决距离感应器不准确问题。</string>
+
     <!-- Halo -->
     <string name="halo_settings">HALO设置</string>
     <string name="title_halo">HALO</string>
@@ -199,4 +203,5 @@
     <string name="halo_state_summary">HALO通过ping命令对黑/白名单通知</string>
     <string name="halo_state_black">黑名单</string>
     <string name="halo_state_white">白名单</string>
+
 </resources>

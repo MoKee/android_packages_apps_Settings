@@ -69,6 +69,12 @@
             android:summary="@string/pref_volume_wake_summary"
             android:defaultValue="false" />
 
+        <!-- Proximity wake workaround -->
+        <CheckBoxPreference
+            android:key="is_inaccurate_proximity"
+            android:title="@string/is_inaccurate_proximity_title"
+            android:summary="@string/is_inaccurate_proximity_summary" />
+
         <PreferenceCategory
             android:key="crt_screen"
             android:title="@string/crt_screen_title"/>
