@@ -192,18 +192,18 @@
     <string name="halo_settings">HALO设置</string>
     <string name="title_halo">HALO</string>
 
-    <string name="app_halo_label_black">HALO通知黑名单</string>
-    <string name="app_halo_label_white">HALO通知白名单</string>
+    <string name="app_halo_label_black">HALO黑名单</string>
+    <string name="app_halo_label_white">HALO白名单</string>
     
     <string name="halo_hide_title">活动后隐藏HALO</string>
     <string name="halo_hide_summary">HALO将出现传入的任务和滚动出视线一段时间后</string>
-    <string name="halo_reversed_title">颠倒HALO手势</string>
-    <string name="halo_reversed_summary">适用任务或双击轻扫拖动手势</string>
+    <string name="halo_reversed_title">交换HALO</string>
+    <string name="halo_reversed_summary">交换任务切换和移动的触发手势</string>
     <string name="halo_state_title">HALO策略</string>
-    <string name="halo_state_summary">HALO通过ping命令对黑/白名单通知</string>
+    <string name="halo_state_summary">启用黑/白名单列表通知</string>
     <string name="halo_state_black">黑名单</string>
     <string name="halo_state_white">白名单</string>
     <string name="halo_pause_title">暂停活动应用</string>
-    <string name="halo_pause_summary">当通过HALO打开一个应用时，相关应用将暂停。(低内存设备默认启用)</string>
+    <string name="halo_pause_summary">当通过HALO打开一个应用时，相关应用将处于暂停状态。</string>
 
 </resources>
