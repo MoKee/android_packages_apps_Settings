@@ -203,5 +203,7 @@
     <string name="halo_state_summary">HALO通过ping命令对黑/白名单通知</string>
     <string name="halo_state_black">黑名单</string>
     <string name="halo_state_white">白名单</string>
+    <string name="halo_pause_title">暂停活动应用</string>
+    <string name="halo_pause_summary">当通过HALO打开一个应用时，相关应用将暂停。(低内存设备默认启用)</string>
 
 </resources>
