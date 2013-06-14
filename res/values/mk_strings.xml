@@ -121,8 +121,8 @@
     <string name="pie_size_gigantic">Gigantic</string>
     <string name="pie_size_monster">Monster</string>
 
-    <string name="pie_angle_title">Pie angle</string>
-    <string name="pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
+    <string name="pie_angle_title">Bottom angle</string>
+    <string name="pie_angle_summary">Adjust the angle between screen\'s edge and pie</string>
     <string name="pie_angle_none">None</string>
     <string name="pie_angle_small">Small</string>
     <string name="pie_angle_default">Default (default)</string>

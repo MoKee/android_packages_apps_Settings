@@ -119,8 +119,8 @@
     <string name="pie_size_gigantic">巨大</string>
     <string name="pie_size_monster">庞大</string>
 
-    <string name="pie_angle_title">PIE角度</string>
-    <string name="pie_angle_summary">调整PIE控制器的触发角度</string>
+    <string name="pie_angle_title">底部角度</string>
+    <string name="pie_angle_summary">调整屏幕边缘与PIE之间的夹角</string>
     <string name="pie_angle_none">无</string>
     <string name="pie_angle_small">小</string>
     <string name="pie_angle_default">正常(默认)</string>
