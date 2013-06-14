@@ -179,6 +179,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 removeWakeupCategory = false;
             }
         }
+		
+        // In-accurate proximity
+        mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
+        if (mInaccurateProximityPref != null) {
+            mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+            mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+            removeWakeupCategory = false;
+        }
 
         // Remove the wake-up category if neither of the two items above are enabled
         if (removeWakeupCategory) {
@@ -206,14 +215,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Settings.System.SYSTEM_POWER_ENABLE_CRT_ON, 0) == 1);
         mCrtScreenOn.setEnabled(isCrtOffChecked);
         mCrtScreenOn.setOnPreferenceChangeListener(this);
-
-        /* In-accurate proximity */
-        mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
-        if (mInaccurateProximityPref != null) {
-            mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
-            mInaccurateProximityPref.setOnPreferenceChangeListener(this);
-        }
 
     }
 
@@ -469,11 +470,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
-        }
-        if (KEY_FONT_SIZE.equals(key)) {
+        } else if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
-        }
-        if (KEY_POWER_CRT_SCREEN_OFF.equals(key)) {
+        } else if (KEY_POWER_CRT_SCREEN_OFF.equals(key)) {
             isCrtOffChecked = ((Boolean) objValue).booleanValue();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF,
