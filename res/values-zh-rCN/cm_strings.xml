@@ -133,6 +133,9 @@
     <string name="profile_appgroup_manage">管理应用组</string>
     <string name="profile_settings">情景设置</string>
     <string name="profile_name">名称</string>
+    <string name="profile_trigger_connect">正在连接</string>
+    <string name="profile_trigger_disconnect">正在断开连接</string>
+    <string name="profile_trigger_notrigger">没有触发</string>
     <string name="sound_mode">提醒模式</string>
     <string name="ringer_mode">铃声模式</string>
     <string name="lights_mode">灯光模式</string>
