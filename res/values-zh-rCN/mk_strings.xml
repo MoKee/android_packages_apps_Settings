@@ -194,7 +194,9 @@
 
     <string name="app_halo_label_black">HALO黑名单</string>
     <string name="app_halo_label_white">HALO白名单</string>
-    
+
+    <string name="halo_enabled_title">启用HALO</string>
+    <string name="halo_enabled_summary">启用HALO悬浮窗口(最近的应用程序将不会受到影响)</string>
     <string name="halo_hide_title">活动后隐藏HALO</string>
     <string name="halo_hide_summary">HALO将出现传入的任务和滚动出视线一段时间后</string>
     <string name="halo_reversed_title">交换HALO</string>
