@@ -189,7 +189,7 @@
     <string name="is_inaccurate_proximity_summary">强制在通话结束后打开屏幕，解决距离感应器不准确问题。</string>
 
     <!-- Halo -->
-    <string name="halo_settings">HALO设置</string>
+    <string name="halo_settings">HALO悬浮窗</string>
     <string name="title_halo">HALO</string>
 
     <string name="app_halo_label_black">HALO黑名单</string>

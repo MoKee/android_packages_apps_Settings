@@ -191,7 +191,7 @@
     <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors, this will force phone to turn on the screen after the call is ended.</string>
     
     <!-- Halo -->
-    <string name="halo_settings">Halo Settings</string>
+    <string name="halo_settings">Halo Floating Window</string>
     <string name="title_halo">Halo</string>
 
     <string name="app_halo_label_black">Blacklist from HALO</string>
