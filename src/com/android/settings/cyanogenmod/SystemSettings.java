@@ -33,6 +33,7 @@ import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.Spannable;
@@ -137,6 +138,9 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         boolean removeKeys = false;
         boolean removeNavbar = false;
 
+        PreferenceCategory navbarCategory =
+                (PreferenceCategory) findPreference(KEY_NAVIGATION_BAR_CATEGORY);
+
         IWindowManager windowManager = IWindowManager.Stub.asInterface(
                 ServiceManager.getService(Context.WINDOW_SERVICE));
         try {
@@ -147,6 +151,13 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
             }
         } catch (RemoteException e) {
             // Do nothing
+        }
+
+        if (removeKeys) {
+            prefScreen.removePreference(findPreference(KEY_HARDWARE_KEYS));
+        }
+        if (removeNavbar) {
+            prefScreen.removePreference(navbarCategory);
         }
 
         // Determine which user is logged in
@@ -162,29 +173,9 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
                     mBatteryPulse = null;
                 }
             }
-
-            // Act on the above
-            if (removeKeys) {
-                prefScreen.removePreference(findPreference(KEY_HARDWARE_KEYS));
-            }
-            if (removeNavbar) {
-                prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR));
-                prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_HEIGHT));
-                prefScreen.removePreference(findPreference(KEY_NAVIGATION_RING));
-                prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_CATEGORY));
-            }
         } else {
             // Secondary user is logged in, remove all primary user specific preferences
             prefScreen.removePreference(findPreference(KEY_BATTERY_LIGHT));
-            prefScreen.removePreference(findPreference(KEY_HARDWARE_KEYS));
-            prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR));
-            prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_HEIGHT));
-            prefScreen.removePreference(findPreference(KEY_NAVIGATION_RING));
-            prefScreen.removePreference(findPreference(KEY_NAVIGATION_BAR_CATEGORY));
-            prefScreen.removePreference(findPreference(KEY_STATUS_BAR));
-            prefScreen.removePreference(findPreference(KEY_QUICK_SETTINGS));
-            prefScreen.removePreference(findPreference(KEY_POWER_MENU));
-            prefScreen.removePreference(findPreference(KEY_NOTIFICATION_DRAWER));
         }
 
         // Preferences that applies to all users

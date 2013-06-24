@@ -63,7 +63,8 @@
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SET_TIME" />
-    
+    <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE" />
+
     <!-- MOKEE PUSH PERMISSION START -->
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
@@ -1789,7 +1790,7 @@
                 <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
             </intent-filter>
         </receiver>
-        
+
         <!-- MOKEE PUSH SERVICE START -->
         <receiver android:name=".mkpush.PushServiceManager"
             android:label="PushServiceManager" >
@@ -1800,7 +1801,7 @@
                 <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
             </intent-filter>
         </receiver>
-   
+
         <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
             android:process=":mokeepushservice" >
             <intent-filter>
@@ -1822,7 +1823,7 @@
                 <data android:scheme="package" />
             </intent-filter>                   
         </receiver>    
-        
+
         <service
             android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
@@ -1832,6 +1833,6 @@
 
         <meta-data android:name="api_key" android:value="Z1sw17O8ir2pjYSElDohbDRr" />
         <!-- MOKEE PUSH SERVICE END -->
-        
+
     </application>
 </manifest>

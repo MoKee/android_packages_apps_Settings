@@ -141,7 +141,7 @@ public class InstalledAppDetails extends Fragment
     private Button mForceStopButton;
     private Button mClearDataButton;
     private Button mMoveAppButton;
-    private CompoundButton mNotificationSwitch, mHaloState;
+    private CompoundButton mNotificationSwitch, mPrivacyGuardSwitch, mHaloState;
 
     private PackageMoveObserver mPackageMoveObserver;
 
@@ -181,6 +181,7 @@ public class InstalledAppDetails extends Fragment
     private static final int DLG_DISABLE = DLG_BASE + 7;
     private static final int DLG_DISABLE_NOTIFICATIONS = DLG_BASE + 8;
     private static final int DLG_SPECIAL_DISABLE = DLG_BASE + 9;
+    private static final int DLG_PRIVACY_GUARD = DLG_BASE + 10;
 
     // Menu identifiers
     public static final int UNINSTALL_ALL_USERS_MENU = 1;
@@ -408,6 +409,13 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private void initPrivacyGuardButton() {
+        // TODO: We probably want to disable this optional for the built-in apps
+        boolean enabled = mPm.getPrivacyGuardSetting(mAppEntry.info.packageName);
+        mPrivacyGuardSwitch.setChecked(enabled);
+        mPrivacyGuardSwitch.setOnCheckedChangeListener(this);
+    }
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle icicle) {
@@ -491,6 +499,9 @@ public class InstalledAppDetails extends Fragment
         mEnableCompatibilityCB = (CheckBox)view.findViewById(R.id.enable_compatibility_cb);
         
         mNotificationSwitch = (CompoundButton) view.findViewById(R.id.notification_switch);
+
+        mPrivacyGuardSwitch = (CompoundButton) view.findViewById(R.id.privacy_guard_switch);
+
         mHaloState = (CompoundButton) view.findViewById(R.id.halo_state);
         mHaloState.setText((mHaloPolicyIsBlack ? R.string.app_halo_label_black : R.string.app_halo_label_white));
 
@@ -1000,6 +1011,7 @@ public class InstalledAppDetails extends Fragment
             initDataButtons();
             initMoveButton();
             initNotificationButton();
+            initPrivacyGuardButton();
         } else {
             mMoveAppButton.setText(R.string.moving);
             mMoveAppButton.setEnabled(false);
@@ -1206,6 +1218,25 @@ public class InstalledAppDetails extends Fragment
                     })
                     .setNegativeButton(R.string.dlg_cancel, null)
                     .create();
+                case DLG_PRIVACY_GUARD:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(getActivity().getText(R.string.privacy_guard_dlg_title))
+                    .setIconAttribute(android.R.attr.alertDialogIcon)
+                    .setMessage(getActivity().getText(R.string.privacy_guard_dlg_text))
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            getOwner().setPrivacyGuard(true);
+                        }
+                    })
+                    .setNegativeButton(R.string.dlg_cancel,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Re-enable the checkbox
+                            getOwner().mPrivacyGuardSwitch.setChecked(false);
+                        }
+                    })
+                    .create();
             }
             throw new IllegalArgumentException("unknown id " + id);
         }
@@ -1298,6 +1329,11 @@ public class InstalledAppDetails extends Fragment
         } catch (android.os.RemoteException ex) {
             mHaloState.setChecked(!state); // revert
         }
+    }
+
+    private void setPrivacyGuard(boolean enabled) {
+        String packageName = mAppEntry.info.packageName;
+        mPm.setPrivacyGuardSetting(packageName, enabled);
     }
 
     private int getPremiumSmsPermission(String packageName) {
@@ -1402,6 +1438,12 @@ public class InstalledAppDetails extends Fragment
                 showDialogInner(DLG_DISABLE_NOTIFICATIONS, 0);
             } else {
                 setNotificationsEnabled(true);
+            }
+        } else if (buttonView == mPrivacyGuardSwitch) {
+            if (isChecked) {
+                showDialogInner(DLG_PRIVACY_GUARD, 0);
+            } else {
+                setPrivacyGuard(false);
             }
         } else if (buttonView == mHaloState) {
             setHaloState(isChecked);
