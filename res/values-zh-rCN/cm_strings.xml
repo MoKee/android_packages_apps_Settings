@@ -655,4 +655,9 @@
     <string name="power_notifications_ringtone_title">选择提示音</string>
     <string name="power_notifications_ringtone_silent">静音</string>
     <string name="intent_sender_data_label"><xliff:g id="data">数据：</xliff:g></string>
+    <string name="privacy_guard_switch_label">启用隐私防护</string>
+    <string name="privacy_guard_dlg_title">启用隐私防护？</string>
+    <string name="privacy_guard_dlg_text">当隐私防护启用时，应用程序将无法访问个人数据，如联系人、邮件或通话记录。</string>
+    <string name="privacy_guard_default_title">隐私防护</string>
+    <string name="privacy_guard_default_summary">当安装新应用时启用隐私防护</string>
 </resources>
