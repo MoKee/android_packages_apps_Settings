@@ -27,6 +27,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -55,8 +56,13 @@ public class QuickSettingsTiles extends Fragment {
     Resources mSystemUiResources;
     TileAdapter mTileAdapter;
 
+    private int mTileTextSize;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        int colCount = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.QUICK_TILES_PER_ROW, 3);
+        updateTileTextSize(colCount);
         mDragView = new DraggableGridView(getActivity());
         mContainer = container;
         mContainer.setClipChildren(false);
@@ -132,8 +138,9 @@ public class QuickSettingsTiles extends Fragment {
         View tileView = null;
         if (iconRegId != 0) {
             tileView = (View) mInflater.inflate(R.layout.quick_settings_tile_generic, null, false);
-            final TextView name = (TextView) tileView.findViewById(R.id.tile_textview);
+            TextView name = (TextView) tileView.findViewById(R.id.tile_textview);
             name.setText(titleId);
+            name.setTextSize(1, mTileTextSize);
             name.setCompoundDrawablesRelativeWithIntrinsicBounds(0, iconRegId, 0, 0);
         } else {
             final boolean isUserTile = titleId == QuickSettingsUtil.TILES.get(TILE_USER).getTitleResId();
@@ -251,6 +258,22 @@ public class QuickSettingsTiles extends Fragment {
         });
         alert.setNegativeButton(R.string.cancel, null);
         alert.create().show();
+    }
+
+    private void updateTileTextSize(int column) {
+        // adjust the tile text size based on column count
+        switch (column) {
+            case 5:
+                mTileTextSize = 7;
+                break;
+            case 4:
+                mTileTextSize = 10;
+                break;
+            case 3:
+            default:
+                mTileTextSize = 12;
+                break;
+        }
     }
 
     @SuppressWarnings("rawtypes")
