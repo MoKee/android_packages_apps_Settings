@@ -32,11 +32,14 @@
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">hide</string>
-    <string name="navigation_ring_summary">Edit quick launch shortcuts</string>  
+    <string name="navigation_ring_summary">Edit quick launch shortcuts</string>
+
+    <!-- General Settings Category -->
+    <string name="general_settings">General</string>
 
     <!-- Other Settings Category -->
     <string name="other_category">Other settings</string>
-    
+
     <!-- CRT --> 
     <string name="crt_screen_title">CRT Screen</string>
     <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
