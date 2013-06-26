@@ -95,6 +95,10 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     private PreferenceScreen mCustomLabel;
     private ColorPickerPreference mNavigationBarColor;
     private boolean mIsPrimary;
+    private ListPreference mListViewAnimation;
+    private ListPreference mListViewInterpolator;
+    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
+    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
 
     private String mCustomLabelText;
 
@@ -124,6 +128,21 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         mMissedCallBreath.setOnPreferenceChangeListener(this);
         mMissedCallBreath.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.MISSED_CALL_BREATH, 0) == 1);
+
+        //ListView Animations
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        int listviewanimation = Settings.System.getInt(getActivity().getContentResolver(),
+            Settings.System.LISTVIEW_ANIMATION, 1);
+        mListViewAnimation.setValue(String.valueOf(listviewanimation));
+        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
+        mListViewAnimation.setOnPreferenceChangeListener(this);
+
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        int listviewinterpolator = Settings.System.getInt(getActivity().getContentResolver(),
+            Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
+        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
+        mListViewInterpolator.setOnPreferenceChangeListener(this);
 
         mNavigationBarColor = (ColorPickerPreference) findPreference(KEY_NAVBAR_COLOR);
         mNavigationBarColor.setOnPreferenceChangeListener(this);
@@ -286,6 +305,22 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
             return true;
+        } else if (preference == mListViewAnimation) {
+            int listviewanimation = Integer.valueOf((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LISTVIEW_ANIMATION,
+                    listviewanimation);
+            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
+            return true;
+        } else if (preference == mListViewInterpolator) {
+            int listviewinterpolator = Integer.valueOf((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LISTVIEW_INTERPOLATOR,
+                    listviewinterpolator);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true; 
         }
 
         return false;
