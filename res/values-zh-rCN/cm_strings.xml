@@ -649,8 +649,9 @@
     <string name="wifi_ibss_freq_title">频道 / 频率</string>
     <string name="wifi_channel">频道</string>
     <string name="wifi_mhz">MHz</string>
-    <string name="power_notifications_category_title">插入/拔出电源提示音</string>
+    <string name="power_notifications_category_title">充电提醒</string>
     <string name="power_notifications_enable_title">启用</string>
+    <string name="power_notifications_enable_summary">当连接/断开电源时播放提示音</string>
     <string name="power_notifications_vibrate_title">震动</string>
     <string name="power_notifications_ringtone_title">选择提示音</string>
     <string name="power_notifications_ringtone_silent">静音</string>
