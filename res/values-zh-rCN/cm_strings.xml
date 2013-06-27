@@ -496,6 +496,7 @@
     <string name="title_tile_battery">电量显示</string>
     <string name="title_tile_bluetooth">蓝牙</string>
     <string name="title_tile_brightness">亮度</string>
+    <string name="title_tile_camera">相机</string>
     <string name="title_tile_sleep">进入睡眠</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">手电筒</string>
