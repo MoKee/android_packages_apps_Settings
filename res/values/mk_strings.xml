@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About version and support -->
-    <string name="mod_support" formatted="false">Community Support</string>
+    <string name="mod_support" formatted="false">Community support</string>
     <string name="mod_support_default" formatted="false">Unknown</string>
 
     <!-- Navigation Bar -->
@@ -38,11 +38,11 @@
     <string name="other_category">Other settings</string>
     
     <!-- CRT --> 
-    <string name="crt_screen_title">CRT Screen</string>
-    <string name="system_power_crt_screen_off_title">CRT Screen Off</string>
-    <string name="system_power_crt_screen_off_summary">Screen will animate an Electron Beam when turned off</string>
-    <string name="system_power_crt_screen_on_title">CRT Screen On</string>
-    <string name="system_power_crt_screen_on_summary">Screen will animate an Electron Beam when turned on</string>
+    <string name="crt_screen_title">CRT Animation</string>
+    <string name="system_power_crt_screen_off_title">CRT off</string>
+    <string name="system_power_crt_screen_off_summary">Screen will animate an electron beam when turned off</string>
+    <string name="system_power_crt_screen_on_title">CRT on</string>
+    <string name="system_power_crt_screen_on_summary">Screen will animate an electron beam when turned on</string>
     
     <!-- Hide Initial Page Hints -->
     <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
@@ -55,7 +55,7 @@
     <!-- Breathing Notifications -->
     <string name="mms_breath">Breathing SMS</string>
     <string name="mms_breath_summary">Will give your sms notifications a breathing effect on the statusbar.</string>
-    <string name="missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath">Breathing missed call</string>
     <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string>
     
     <!-- Notification shade dimming -->
@@ -167,15 +167,15 @@
     <string name="pie_juice_title">Battery juice color</string>
     
     <!-- show network speed -->
-    <string name="show_network_speed_title">network speed</string>
-    <string name="show_network_speed_summary">Show network speed in statsbar</string>
+    <string name="show_network_speed_title">Network speed</string>
+    <string name="show_network_speed_summary">Show network speed in status bar</string>
 
     <!-- show carrier label -->
-    <string name="show_carrier_label_title">carrier label</string>
-    <string name="show_carrier_label_summary">Show Carrier label in statsbar</string>
+    <string name="show_carrier_label_title">Carrier label</string>
+    <string name="show_carrier_label_summary">Show carrier label in status bar</string>
 
     <!-- Permissions Management -->
-    <string name="permissions_settings_title">Permissions Management</string>
+    <string name="permissions_settings_title">Permissions management</string>
 
     <!-- Developers -->
     <string name="settings_developers_activity_title">Developers</string>
@@ -183,16 +183,16 @@
     <string name="settings_developers_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- MoKee Push -->
-    <string name="mokee_push_newversion_title">Found the new version of MoKee OpenSource</string>
-    <string name="mokee_push_newversion_msg">The new version is ready, click the view details!</string>
+    <string name="mokee_push_newversion_title">Found a new version of MoKee OpenSource</string>
+    <string name="mokee_push_newversion_msg">A new version is ready, click to view details!</string>
 
     <!-- Proximity work-around -->
-    <string name="is_inaccurate_proximity_title">In-accurate proximity</string>
-    <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors, this will force phone to turn on the screen after the call is ended.</string>
+    <string name="is_inaccurate_proximity_title">Inaccurate proximity</string>
+    <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors: this will force phone to turn on the screen after the call has ended.</string>
     
     <!-- Halo -->
     <string name="halo_settings">Halo Floating Window</string>
-    <string name="title_halo">Halo</string>
+    <string name="title_halo">HALO</string>
 
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
@@ -211,34 +211,34 @@
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Quick Settings style</string>
-    <string name="summary_quicksettings_tiles_style">Show or change Quick Settings style options</string>
+    <string name="quicksettings_tiles_style">Quick settings style</string>
+    <string name="summary_quicksettings_tiles_style">Show or change quick settings style options</string>
     <string name="quicksettings_tiles_style_additional_options">Additional options</string>
     <string name="tiles_per_row_title">Tiles per row</string>
     <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
     <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
 
     <!-- ListView animation -->
-    <string name="listview_animation_title">ListView Animation</string>
+    <string name="listview_animation_title">ListView animation</string>
     <string name="listview_off">Off</string>
-    <string name="listview_wave_left">Wave (Left)</string>
-    <string name="listview_wave_right">Wave (Right)</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
     <string name="listview_alpha">Alpha</string>
     <string name="listview_scale">Scale</string> 
-    <string name="listview_stack_top">Stack (Top)</string>
-    <string name="listview_stack_bottom">Stack (Bottom)</string>
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
     <string name="listview_unfold">Unfold</string>
     <string name="listview_fold">Fold</string> 
-    <string name="listview_translate_left">Translate (Left)</string>
-    <string name="listview_translate_right">Translate (Right)</string>
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView Interpolator</string>
-    <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
-    <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
-    <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
-    <string name="listview_anticipate_interpolator">anticipate_interpolator</string>
-    <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
-    <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
-    <string name="listview_bounce_interpolator">bounce_interpolator</string>
+    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
 </resources>
