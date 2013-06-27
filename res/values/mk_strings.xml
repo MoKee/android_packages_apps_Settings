@@ -217,6 +217,7 @@
     <string name="tiles_per_row_title">Tiles per row</string>
     <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
     <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
+    <string name="title_tile_fcharge">Fast charge</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView animation</string>
@@ -241,4 +242,8 @@
     <string name="listview_overshoot_interpolator">Overshoot</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Performance Settings -->
+    <string name="pref_force_fast_charge_title">USB fast charge</string>
+    <string name="pref_force_fast_charge_summary">Turns USB fast charge on/off</string>
 </resources>
