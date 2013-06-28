@@ -216,6 +216,7 @@
     <string name="tiles_per_row_title">每行按钮数</string>
     <string name="tiles_per_row_duplicate_landscape_title">自适应横向屏幕</string>
     <string name="tiles_per_row_duplicate_landscape_summary">当前为横向屏幕时每行按钮数量翻倍</string>
+    <string name="title_tile_fcharge">快速充电</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">列表动画</string>
