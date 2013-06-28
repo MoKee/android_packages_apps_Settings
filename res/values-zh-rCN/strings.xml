@@ -549,7 +549,7 @@
     <string name="wifi_menu_wps_pbc" msgid="2668564692207863017">"WPS 按钮"</string>
     <string name="wifi_menu_more_options" msgid="2448097861752719396">"更多选项"</string>
     <string name="wifi_menu_wps_pin" msgid="6426448256268695933">"WPS PIN 输入"</string>
-    <string name="wifi_menu_p2p" msgid="2575893749303670353">"Wi-Fi Direct"</string>
+    <string name="wifi_menu_p2p" msgid="2575893749303670353">"Wi-Fi 直连"</string>
     <string name="wifi_menu_scan" msgid="1470911530412095868">"扫描"</string>
     <string name="wifi_menu_advanced" msgid="7522252991919573664">"高级"</string>
     <string name="wifi_menu_connect" msgid="4996220309848349408">"连接到网络"</string>
@@ -633,7 +633,7 @@
     <string name="wifi_dns2" msgid="1368601006824882659">"域名 2"</string>
     <string name="wifi_gateway" msgid="163914742461092086">"网关"</string>
     <string name="wifi_network_prefix_length" msgid="3028785234245085998">"网络前缀长度"</string>
-    <string name="wifi_p2p_settings_title" msgid="400503541488064638">"Wi-Fi Direct"</string>
+    <string name="wifi_p2p_settings_title" msgid="400503541488064638">"Wi-Fi 直连"</string>
     <string name="wifi_p2p_device_info" msgid="3191876744469364173">"设备信息"</string>
     <string name="wifi_p2p_persist_network" msgid="1646424791818168590">"记住该连接"</string>
     <string name="wifi_p2p_menu_search" msgid="3436429984738771974">"搜索设备"</string>
