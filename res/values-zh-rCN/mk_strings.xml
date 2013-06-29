@@ -223,7 +223,7 @@
     <string name="listview_off">关闭</string>
     <string name="listview_wave_left">波浪 (左)</string>
     <string name="listview_wave_right">波浪 (右)</string>
-    <string name="listview_alpha">透明</string>
+    <string name="listview_alpha">淡入淡出</string>
     <string name="listview_scale">缩放</string> 
     <string name="listview_stack_top">堆叠 (上)</string>
     <string name="listview_stack_bottom">堆叠 (下)</string>
@@ -239,6 +239,6 @@
     <string name="listview_accelerate_decelerate_interpolator">先快后慢</string>
     <string name="listview_anticipate_interpolator">先后退一小步然后向前加速</string>
     <string name="listview_overshoot_interpolator">快速到达终点超出一小步然后回到终点</string>
-    <string name="listview_anticipate_overshoot_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
-    <string name="listview_bounce_interpolator">均匀速度</string>
+    <string name="listview_anticipate_overshoot_interpolator">到达终点超出一小步然后回到终点</string>
+    <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
 </resources>
