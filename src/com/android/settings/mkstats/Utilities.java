@@ -78,6 +78,9 @@ public class Utilities {
         String device = SystemProperties.get("ro.mk.device");
         if (TextUtils.isEmpty(device)) {
             device = SystemProperties.get("ro.product.device");
+            if (TextUtils.isEmpty(device)) {
+		device = "Unknown";
+            }
         }
         return device;
     }
@@ -85,14 +88,17 @@ public class Utilities {
     public static String getModVersion() {
         String modVersion = SystemProperties.get("ro.mk.version");
         if (TextUtils.isEmpty(modVersion)) {
-            modVersion = "Unknown";
+            modVersion = SystemProperties.get("ro.modversion");
+            if (TextUtils.isEmpty(modVersion)) {
+		modVersion = "Unknown";
+            }
         }
         return modVersion;
     }
     
     public static String getBuildHost() {
         String hostName = SystemProperties.get("ro.build.host");
-		if (TextUtils.isEmpty(hostName)) {
+        if (TextUtils.isEmpty(hostName)) {
             hostName = "Unknown";
         }
         return hostName;
