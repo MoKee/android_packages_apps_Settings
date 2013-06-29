@@ -166,7 +166,7 @@ public class PushServiceManager extends BroadcastReceiver {
                     @Override
                     public void run() {
                         prefs.edit().putBoolean(PUSH_CHECK_LOCK, false).apply();
-                    }}, 1000 * 40);
+                    }}, 1000 * 30);
             } else {
                 if(!PushManager.isPushEnabled(ctx))
                 {
