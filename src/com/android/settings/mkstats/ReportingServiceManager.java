@@ -85,7 +85,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 					    @Override
 					    public void run() {
 						prefs.edit().putBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false).apply();
-					    }}, 1000 * 40);
+					    }}, 1000 * 30);
 				}
 				else if(prefs.getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0) != 0) {
 	                		Intent sIntent = new Intent();
