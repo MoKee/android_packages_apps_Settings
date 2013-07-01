@@ -62,16 +62,19 @@ public class UpdatingService extends Service {
 
     private void update() {
         String deviceId = Utilities.getUniqueID(getApplicationContext());
+        String deviceVersion = Utilities.getModVersion();
         String deviceFlashTime = String.valueOf(getSharedPreferences("MKStats", 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
+        Log.d(TAG, "SERVICE: Device Version=" + deviceVersion);
         Log.d(TAG, "SERVICE: Device Flash Time=" + deviceFlashTime);
 
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/update");
+        HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/updatev1");
         try {
             List<NameValuePair> kv = new ArrayList<NameValuePair>(1);
             kv.add(new BasicNameValuePair("device_hash", deviceId));
+            kv.add(new BasicNameValuePair("device_version", deviceVersion));
             kv.add(new BasicNameValuePair("device_flash_time", deviceFlashTime));
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
