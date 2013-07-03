@@ -14,6 +14,8 @@
 -keep class com.android.settings.users.*
 -keep class com.koushikdutta.**
 -keep class com.android.settings.cyanogenmod.superuser.**
+-keep class com.android.settings.cyanogenmod.privacyguard.**
+
 -dontwarn com.baidu.android.common.**
 -dontwarn com.baidu.android.pushservice.**
 -dontwarn android.content.pm.**
