@@ -68,6 +68,8 @@
     <string name="end_time_title">结束</string>
     <string name="notification_convert_sound_to_vibration_title">收到通知时震动</string>
     <string name="notification_convert_sound_to_vibration_summary">处于震动模式时, 所有的通知都将无视任何应用的单独设置并产生震动</string>
+    <string name="notification_vibrate_during_calls_title">通话过程中震动</string>
+    <string name="notification_vibrate_during_calls_summary">通话过程中收到通知将会产生轻微震动</string>
     <string name="device_hostname">设备网络名</string>
     <string name="mod_version">魔趣版本</string>
     <string name="mod_version_default">未知</string>
