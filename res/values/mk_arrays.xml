@@ -163,6 +163,7 @@
         <item>@string/listview_fold</item> 
         <item>@string/listview_translate_left</item>
         <item>@string/listview_translate_right</item>
+        <item>@string/listview_rotate</item>
     </string-array>
     
     <string-array name="listview_animation_values">
@@ -177,6 +178,7 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+        <item>11</item>
     </string-array>
 
     <!-- Listview Interpolator -->

@@ -232,6 +232,7 @@
     <string name="listview_fold">Fold</string> 
     <string name="listview_translate_left">Translate (left)</string>
     <string name="listview_translate_right">Translate (right)</string>
+    <string name="listview_rotate">Rotate</string>
 
     <!-- ListView interpolator -->
     <string name="listview_interpolator_title">ListView interpolator</string>
