@@ -556,8 +556,15 @@
     <string name="lock_clock_summary">查看或改变 \'cLock\' 锁屏与主屏幕小部件的显示方式</string>
     <string name="stylus_icon_enabled_title">使用触控笔时显示指针</string>
     <string name="stylus_icon_enabled_summary">使用触控笔悬浮或绘图时将会显示指针</string>
+    <string name="lockscreen_widgets_category_title">小部件</string>
     <string name="lockscreen_maximize_widgets_title">最大化锁屏小部件</string>
     <string name="lockscreen_maximize_widgets_summary">开启屏幕时将最小化解锁界面并默认显示最大化的锁屏小部件</string>
+    <string name="lockscreen_enable_widgets_title">页面部件</string>
+    <string name="lockscreen_enable_widgets_summary">允许选择和添加多个小部件页面</string>
+    <string name="lockscreen_enable_camera_title">相机部件</string>
+    <string name="lockscreen_enable_camera_summary">显示相机部件在锁屏页面右侧</string>
+    <string name="lockscreen_music_controls_title">音乐控制台</string>
+    <string name="lockscreen_music_controls_summary">播放音乐时显示音乐控制界面</string>
     <string name="lockscreen_custom_background_title">背景</string>
     <string name="lockscreen_custom_background_dialog_title">选择颜色</string>
     <string name="lockscreen_background_result_successful">背景已成功改变</string>
