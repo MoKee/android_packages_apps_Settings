@@ -474,6 +474,8 @@
     <string name="development_tools_title">启动开发工具</string>
     <string name="usb_mass_storage_title">USB 大容量存储</string>
     <string name="usb_mass_storage_summary">使用 USB 大容量存储模式连接到计算机</string>
+    <string name="storage_rescan_media">重新扫描大容量存储上的媒体</string>
+    <string name="storage_rescan_media_complete">扫描已完成</string>
     <string name="adb_over_network">网络 ADB 调试</string>
     <string name="adb_over_network_summary">通过网络接口 (Wi-Fi, USB 网络) 启用 TCP/IP 调试.该设置重启后失效</string>
     <string name="adb_over_network_warning">警告: 网络 ADB 调试启用后, 您的设备将会在已连接的网络 (包括 GSM 数据网络) 上被视为是开放的, 并有可能被侵入!\n\n请仅在您所信任的网络上使用此功能.\n\n您确实要启用该功能吗?</string>
