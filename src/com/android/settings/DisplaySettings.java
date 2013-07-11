@@ -61,6 +61,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
+    private static final String KEY_LOCKSCREEN_ROTATION = "lockscreen_rotation";
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
     private static final String KEY_HOME_WAKE = "pref_home_wake";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
@@ -116,16 +117,25 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ContentResolver resolver = getActivity().getContentResolver();
+        Resources res = getResources();
 
         addPreferencesFromResource(R.xml.display_settings);
 
         mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
 
+        final CheckBoxPreference lockScreenRotation =
+                (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_ROTATION);
+        if (lockScreenRotation != null) {
+            if (!res.getBoolean(com.android.internal.R.bool.config_enableLockScreenRotation)) {
+                getPreferenceScreen().removePreference(lockScreenRotation);
+            }
+        }
+
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
-        if (mScreenSaverPreference != null
-                && getResources().getBoolean(
-                        com.android.internal.R.bool.config_dreamsSupported) == false) {
-            getPreferenceScreen().removePreference(mScreenSaverPreference);
+        if (mScreenSaverPreference != null) {
+            if (!res.getBoolean(com.android.internal.R.bool.config_dreamsSupported)) {
+                getPreferenceScreen().removePreference(mScreenSaverPreference);
+            }
         }
 
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
@@ -158,7 +168,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         // Home button wake
         mHomeWake = (CheckBoxPreference) findPreference(KEY_HOME_WAKE);
         if (mHomeWake != null) {
-            if (!getResources().getBoolean(R.bool.config_show_homeWake)) {
+            if (!res.getBoolean(R.bool.config_show_homeWake)) {
                 wakeupCategory.removePreference(mHomeWake);
             } else {
                 mHomeWake.setChecked(Settings.System.getInt(resolver,
@@ -170,7 +180,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         // Volume rocker wake
         mVolumeWake = (CheckBoxPreference) findPreference(KEY_VOLUME_WAKE);
         if (mVolumeWake != null) {
-            if (!getResources().getBoolean(R.bool.config_show_volumeRockerWake)
+            if (!res.getBoolean(R.bool.config_show_volumeRockerWake)
                     || !Utils.hasVolumeRocker(getActivity())) {
                 wakeupCategory.removePreference(mVolumeWake);
             } else {
@@ -196,7 +206,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         // respect device default configuration
         // true fades while false animates
-        boolean electronBeamFadesConfig = getResources().getBoolean(
+        boolean electronBeamFadesConfig = res.getBoolean(
                 com.android.internal.R.bool.config_animateScreenLights);
 
         // use this to enable/disable crt on feature
