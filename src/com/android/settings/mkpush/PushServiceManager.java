@@ -26,6 +26,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Notification;
+import android.app.Notification.BigTextStyle;
+import android.app.Notification.Builder;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -138,12 +140,13 @@ public class PushServiceManager extends BroadcastReceiver {
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         PendingIntent pendintIntent = PendingIntent.getActivity(context, 0, intent, 0);
-        Notification.Builder builder = new Notification.Builder(context)
-                .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
+        
+        BigTextStyle noti = new Notification.BigTextStyle(new Notification.Builder(context).setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
-                .setOngoing(true).setContentText(message);
-        nm.notify(1, builder.getNotification());
+                .setOngoing(true)).bigText(message);
+        
+        nm.notify(1, noti.build());
     }
 
     public static void initPushService(final Context ctx) {
