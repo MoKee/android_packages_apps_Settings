@@ -79,7 +79,7 @@ public class Utilities {
         if (TextUtils.isEmpty(device)) {
             device = SystemProperties.get("ro.product.device");
             if (TextUtils.isEmpty(device)) {
-		device = "Unknown";
+                device = "Unknown";
             }
         }
         return device;
@@ -90,20 +90,20 @@ public class Utilities {
         if (TextUtils.isEmpty(modVersion)) {
             modVersion = SystemProperties.get("ro.modversion");
             if (TextUtils.isEmpty(modVersion)) {
-		modVersion = "Unknown";
+                modVersion = "Unknown";
             }
         }
         return modVersion;
     }
-    
+
     public static String getBuildHost() {
         String hostName = SystemProperties.get("ro.build.host");
         if (TextUtils.isEmpty(hostName)) {
             hostName = "Unknown";
         }
         return hostName;
-    } 
-    
+    }
+
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
