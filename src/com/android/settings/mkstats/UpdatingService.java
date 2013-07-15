@@ -40,7 +40,7 @@ import com.android.settings.R;
 import com.android.settings.Settings;
 
 public class UpdatingService extends Service {
-    protected static final String TAG = "MKStats";
+    protected static final String TAG = UpdatingService.class.getSimpleName();
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -63,7 +63,7 @@ public class UpdatingService extends Service {
     private void update() {
         String deviceId = Utilities.getUniqueID(getApplicationContext());
         String deviceVersion = Utilities.getModVersion();
-        String deviceFlashTime = String.valueOf(getSharedPreferences("MKStats", 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
+        String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
         Log.d(TAG, "SERVICE: Device Version=" + deviceVersion);
@@ -78,7 +78,7 @@ public class UpdatingService extends Service {
             kv.add(new BasicNameValuePair("device_flash_time", deviceFlashTime));
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
-            getSharedPreferences("MKStats", 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
+            getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
                     System.currentTimeMillis()).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);

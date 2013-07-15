@@ -21,6 +21,7 @@ import java.net.NetworkInterface;
 import java.security.MessageDigest;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -30,7 +31,7 @@ public class Utilities {
         TelephonyManager tm = (TelephonyManager) ctx
                 .getSystemService(Context.TELEPHONY_SERVICE);
 
-        String device_id = digest(tm.getDeviceId());
+        String device_id = digest(tm.getDeviceId() + Build.SERIAL);
         if (TextUtils.isEmpty(device_id)) {
             String wifiInterface = SystemProperties.get("wifi.interface");
             try {
@@ -38,10 +39,16 @@ public class Utilities {
                         wifiInterface).getHardwareAddress());
                 device_id = digest(wifiMac);
             } catch (Exception e) {
-                device_id = null;
+                device_id = "Unknown";
             }
         }
         return device_id;
+    }
+
+    public static String getIMEI(Context ctx) {
+        TelephonyManager tm = (TelephonyManager) ctx
+                .getSystemService(Context.TELEPHONY_SERVICE);
+        return !TextUtils.isEmpty(tm.getDeviceId()) ? tm.getDeviceId() : "Unknown";
     }
 
     public static String getCarrier(Context ctx) {

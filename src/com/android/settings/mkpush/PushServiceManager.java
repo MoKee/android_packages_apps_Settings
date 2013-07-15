@@ -47,9 +47,13 @@ import java.util.List;
 
 public class PushServiceManager extends BroadcastReceiver {
 
-    private static final String PUSH_FIRST_BOOT = "pref_push_first_boot";
-    private static final String PUSH_CHECK_LOCK = "pref_push_check_lock";
-    private static final String TAG = PushServiceManager.class.getSimpleName();
+    protected static final String TAG = PushServiceManager.class.getSimpleName();
+
+    protected static final String PUSH_PREF = "mokee_push";
+
+    protected static final String PUSH_FIRST_BOOT = "pref_push_first_boot";
+
+    protected static final String PUSH_CHECK_LOCK = "pref_push_check_lock";
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
@@ -65,7 +69,7 @@ public class PushServiceManager extends BroadcastReceiver {
                     String appid = "";
                     String channelid = "";
                     String userid = "";
-                    SharedPreferences prefs = ctx.getSharedPreferences("MKPush", 0);
+                    SharedPreferences prefs = ctx.getSharedPreferences(PUSH_PREF, 0);
                     try {
                         JSONObject jsonContent = new JSONObject(content);
                         JSONObject params = jsonContent.getJSONObject("response_params");
@@ -101,6 +105,8 @@ public class PushServiceManager extends BroadcastReceiver {
             String url = PushUtils.getString(bundle, "url");
             String title = PushUtils.getString(bundle, "title");
             String newVersion = PushUtils.getString(bundle, "version");
+            String HASHID = PushUtils.getString(bundle, "hashid");
+            String IMEI = PushUtils.getString(bundle, "imei");
             int msg_id = Integer.valueOf(PushUtils.getString(bundle, "id"));
             String mod_device = Utilities.getDevice().toLowerCase();
             String mod_version = Utilities.getModVersion().toLowerCase();
@@ -118,10 +124,20 @@ public class PushServiceManager extends BroadcastReceiver {
                                     ctx.getString(R.string.mokee_push_newversion_msg));
 
                         break;
-                    default:
+                    case 1:
                         String currentCountry = ctx.getResources().getConfiguration().locale
                                 .getCountry();
                         if (currentCountry.equals("CN") || currentCountry.equals("TW")) {
+                            promptUser(ctx, url, title, message);
+                        }
+                        break;
+                    case 2:
+                        if (HASHID.equals(Utilities.getUniqueID(ctx))) {
+                            promptUser(ctx, url, title, message);
+                        }
+                        break;
+                    case 3:
+                        if (IMEI.equals(Utilities.getIMEI(ctx))) {
                             promptUser(ctx, url, title, message);
                         }
                         break;
@@ -140,12 +156,13 @@ public class PushServiceManager extends BroadcastReceiver {
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         PendingIntent pendintIntent = PendingIntent.getActivity(context, 0, intent, 0);
-        
-        BigTextStyle noti = new Notification.BigTextStyle(new Notification.Builder(context).setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
+
+        BigTextStyle noti = new Notification.BigTextStyle(new Notification.Builder(context)
+                .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
                 .setOngoing(true)).bigText(message);
-        
+
         nm.notify(1, noti.build());
     }
 
@@ -154,7 +171,7 @@ public class PushServiceManager extends BroadcastReceiver {
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            final SharedPreferences prefs = ctx.getSharedPreferences("MKPush", 0);
+            final SharedPreferences prefs = ctx.getSharedPreferences(PUSH_PREF, 0);
             boolean checklock = prefs.getBoolean(PUSH_CHECK_LOCK, false);
             boolean firstBoot = prefs.getBoolean(PUSH_FIRST_BOOT, true);
             if (firstBoot && !checklock) {

@@ -49,7 +49,9 @@ import com.android.settings.R;
 import com.android.settings.Settings;
 
 public class ReportingService extends Service {
-    protected static final String TAG = "MKStats";
+    protected static final String TAG = ReportingService.class.getSimpleName();
+    
+    protected static final String ANONYMOUS_PREF = "mokee_stats";
 
     protected static final String ANONYMOUS_ALARM_SET = "pref_anonymous_alarm_set";
 	
@@ -68,7 +70,7 @@ public class ReportingService extends Service {
 
     @Override
     public int onStartCommand (Intent intent, int flags, int startId) {
-        SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
+        SharedPreferences prefs =  getSharedPreferences(ANONYMOUS_PREF, 0);
         if (!prefs.getBoolean(ANONYMOUS_CHECK_LOCK, false)) {
 		prefs.edit().putBoolean(ANONYMOUS_CHECK_LOCK, true).apply();
 		Log.d(TAG, "User has opted in -- reporting.");
@@ -121,7 +123,7 @@ public class ReportingService extends Service {
         // report to the cmstats service
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/flash");
-		SharedPreferences prefs =  getSharedPreferences("MKStats", 0);
+		SharedPreferences prefs =  getSharedPreferences(ANONYMOUS_PREF, 0);
         try {
             List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
             kv.add(new BasicNameValuePair("device_hash", deviceId));

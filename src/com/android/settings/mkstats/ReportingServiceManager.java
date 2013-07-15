@@ -30,6 +30,8 @@ import android.util.Log;
 
 public class ReportingServiceManager extends BroadcastReceiver {
 
+    protected static final String TAG = ReportingServiceManager.class.getSimpleName();
+    
     public static final long dMill = 24 * 60 * 60 * 1000;
     public static final long tFrame = 7 * dMill;
 
@@ -43,7 +45,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
     }
 
     protected static void setAlarm (Context ctx) {
-        SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
+        SharedPreferences prefs = ctx.getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0);
         boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
         if (firstBoot) {
             return;
@@ -57,14 +59,14 @@ public class ReportingServiceManager extends BroadcastReceiver {
         sIntent.setComponent(new ComponentName(ctx.getPackageName(), ReportingServiceManager.class.getName()));
         AlarmManager alarmManager = (AlarmManager) ctx.getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + timeLeft, PendingIntent.getBroadcast(ctx, 0, sIntent, 0));
-        Log.d(ReportingService.TAG, "Next sync attempt in : " + timeLeft / dMill + " days");
+        Log.d(TAG, "Next sync attempt in : " + timeLeft / dMill + " days");
     }
 
     public static void launchService (Context ctx) {
         ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            final SharedPreferences prefs = ctx.getSharedPreferences("MKStats", 0);
+            final SharedPreferences prefs = ctx.getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0);
             long lastSynced = prefs.getLong(ReportingService.ANONYMOUS_LAST_CHECKED, 0);
             boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
             boolean checklock = prefs.getBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false);
