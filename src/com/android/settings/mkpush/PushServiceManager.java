@@ -111,37 +111,43 @@ public class PushServiceManager extends BroadcastReceiver {
             String mod_device = Utilities.getDevice().toLowerCase();
             String mod_version = Utilities.getModVersion().toLowerCase();
 
-            if (PushUtils.allowPush(device, mod_device, 1)
-                    && PushUtils.allowPush(modType, mod_version, 0)
-                    || device.equals("all") && modType.equals("all")
-                    || device.equals("all") && PushUtils.allowPush(modType, mod_version, 0)
-                    || PushUtils.allowPush(device, mod_device, 1) && modType.equals("all")) {
-                switch (msg_id) {
-                    case 0:
-                        if (!mod_version.contains(newVersion))
-                            promptUser(ctx, url,
-                                    ctx.getString(R.string.mokee_push_newversion_title),
-                                    ctx.getString(R.string.mokee_push_newversion_msg));
+            switch (msg_id) {
+                case 0:
+                case 1:
+                    if (PushUtils.allowPush(device, mod_device, 1)
+                            && PushUtils.allowPush(modType, mod_version, 0)
+                            || device.equals("all") && modType.equals("all")
+                            || device.equals("all") && PushUtils.allowPush(modType, mod_version, 0)
+                            || PushUtils.allowPush(device, mod_device, 1) && modType.equals("all")) {
+                        switch (msg_id) {
+                            case 0:
+                                if (!mod_version.contains(newVersion))
+                                    promptUser(ctx, url,
+                                            ctx.getString(R.string.mokee_push_newversion_title),
+                                            ctx.getString(R.string.mokee_push_newversion_msg));
 
-                        break;
-                    case 1:
-                        String currentCountry = ctx.getResources().getConfiguration().locale
-                                .getCountry();
-                        if (currentCountry.equals("CN") || currentCountry.equals("TW")) {
-                            promptUser(ctx, url, title, message);
+                                break;
+                            case 1:
+                                String currentCountry = ctx.getResources().getConfiguration().locale
+                                        .getCountry();
+                                if (currentCountry.equals("CN") || currentCountry.equals("TW")) {
+                                    promptUser(ctx, url, title, message);
+                                }
+                                break;
+
                         }
-                        break;
-                    case 2:
-                        if (HASHID.equals(Utilities.getUniqueID(ctx))) {
-                            promptUser(ctx, url, title, message);
-                        }
-                        break;
-                    case 3:
-                        if (IMEI.equals(Utilities.getIMEI(ctx))) {
-                            promptUser(ctx, url, title, message);
-                        }
-                        break;
-                }
+                    }
+                    break;
+                case 2:
+                    if (HASHID.equals(Utilities.getUniqueID(ctx))) {
+                        promptUser(ctx, url, title, message);
+                    }
+                    break;
+                case 3:
+                    if (IMEI.equals(Utilities.getIMEI(ctx))) {
+                        promptUser(ctx, url, title, message);
+                    }
+                    break;
             }
 
         } else {
