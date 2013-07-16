@@ -207,6 +207,14 @@
     <string name="halo_state_white">白名单</string>
     <string name="halo_pause_title">暂停活动应用</string>
     <string name="halo_pause_summary">当通过HALO打开一个应用时，相关应用将处于暂停状态。</string>
+    <string name="halo_size_title">HALO大小</string>
+    <string name="halo_size_summary">设置HALO的显示大小</string>
+    <string name="halo_size_miniscule">迷你</string>
+    <string name="halo_size_small">小</string>
+    <string name="halo_size_default">正常 (默认)</string>
+    <string name="halo_size_large">大</string>
+    <string name="halo_size_gigantic">巨大</string>
+    <string name="halo_size_monster">庞大</string>
 
 
     <!-- QuickSettings style options -->
