@@ -250,4 +250,8 @@
     <string name="listview_overshoot_interpolator">快速到达终点超出一小步然后回到终点</string>
     <string name="listview_anticipate_overshoot_interpolator">到达终点超出一小步然后回到终点</string>
     <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
+
+    <!-- Auto-Hide Status Bar -->
+    <string name="auto_hide_statusbar">自动隐藏状态栏</string>
+    <string name="auto_hide_statusbar_summary">没有通知时自动隐藏状态栏</string>
 </resources>
