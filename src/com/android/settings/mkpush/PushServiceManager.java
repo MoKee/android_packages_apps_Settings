@@ -124,14 +124,14 @@ public class PushServiceManager extends BroadcastReceiver {
                                 if (!mod_version.contains(newVersion))
                                     promptUser(ctx, url,
                                             ctx.getString(R.string.mokee_push_newversion_title),
-                                            ctx.getString(R.string.mokee_push_newversion_msg));
+                                            ctx.getString(R.string.mokee_push_newversion_msg), msg_id);
 
                                 break;
                             case 1:
                                 String currentCountry = ctx.getResources().getConfiguration().locale
                                         .getCountry();
                                 if (currentCountry.equals("CN") || currentCountry.equals("TW")) {
-                                    promptUser(ctx, url, title, message);
+                                    promptUser(ctx, url, title, message, msg_id);
                                 }
                                 break;
 
@@ -140,12 +140,12 @@ public class PushServiceManager extends BroadcastReceiver {
                     break;
                 case 2:
                     if (HASHID.equals(Utilities.getUniqueID(ctx))) {
-                        promptUser(ctx, url, title, message);
+                        promptUser(ctx, url, title, message, msg_id);
                     }
                     break;
                 case 3:
                     if (IMEI.equals(Utilities.getIMEI(ctx))) {
-                        promptUser(ctx, url, title, message);
+                        promptUser(ctx, url, title, message, msg_id);
                     }
                     break;
             }
@@ -156,7 +156,7 @@ public class PushServiceManager extends BroadcastReceiver {
         }
     }
 
-    private void promptUser(Context context, String url, String title, String message) {
+    private void promptUser(Context context, String url, String title, String message, int id) {
         NotificationManager nm = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
         Uri uri = Uri.parse(url);
@@ -169,7 +169,7 @@ public class PushServiceManager extends BroadcastReceiver {
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
                 .setOngoing(true)).bigText(message);
 
-        nm.notify(1, noti.build());
+        nm.notify(id, noti.build());
     }
 
     public static void initPushService(final Context ctx) {
