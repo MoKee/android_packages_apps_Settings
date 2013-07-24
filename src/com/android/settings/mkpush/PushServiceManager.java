@@ -98,8 +98,6 @@ public class PushServiceManager extends BroadcastReceiver {
             // 获取消息内容
             Bundle bundle = intent.getExtras();
             String message = bundle.getString(PushConstants.EXTRA_PUSH_MESSAGE_STRING);
-            if (message == null)
-                return;
             String device = PushUtils.getString(bundle, "device");
             String modType = PushUtils.getString(bundle, "type");
             String url = PushUtils.getString(bundle, "url");
@@ -167,7 +165,7 @@ public class PushServiceManager extends BroadcastReceiver {
                 .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
-                .setOngoing(true)).bigText(message);
+                .setOngoing(true).setContentText(message)).bigText(message);
 
         nm.notify(id, noti.build());
     }
