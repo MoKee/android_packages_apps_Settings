@@ -375,7 +375,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         int summary = -1;
 
         Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
-	switch (value) {
+        switch (value) {
             case 0:
                 // Expanded desktop deactivated
                 Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
