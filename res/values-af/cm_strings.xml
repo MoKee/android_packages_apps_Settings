@@ -577,21 +577,6 @@
     <string name="navring_action_torch">Flits</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Kies aksie</string>
-    <string name="pie_control_title">\'Pie\' kontroles</string>
-    <string name="pie_control_enabled">Geaktiveer wanneer Uitgebreide lessenaar aktief is</string>
-    <string name="pie_control_disabled">Gedeaktiveer</string>
-    <string name="pie_control_sensitivity_title">Sensitiwiteit</string>
-    <string name="pie_control_sensitivity_low">Laag</string>
-    <string name="pie_control_sensitivity_medium">Medium</string>
-    <string name="pie_control_sensitivity_high">Hoog</string>
-    <string name="pie_control_sensitivity_very_high">Baie hoog</string>
-    <string name="pie_control_size">Sleutel grote</string>
-    <string name="pie_control_trigger_positions">Aktiverings posisies</string>
-    <string name="pie_control_trigger_left">Linker skerm grens</string>
-    <string name="pie_control_trigger_bottom">Onderste skerm grens</string>
-    <string name="pie_control_trigger_right">Regter skerm grens</string>
-    <string name="pie_control_trigger_top">Boonste skerm grens</string>
-    <string name="pie_control_trigger_top_summary">Slegs navigasie sal vertoon word by boonste grens</string>
     <string name="wifi_mode">Mode</string>
     <string name="wifi_mode_ibss">Ad-Hoc (IBSS) Netwerk</string>
     <string name="wifi_mode_ibss_short">Ad-Hoc</string>
@@ -679,8 +664,6 @@ die verlangde helderheid van die skerm gestoor. Kies \'Verdeel\' om \'n item te 
     <string name="power_notifications_ringtone_title">Kennisgewing-luitoon</string>
     <string name="power_notifications_ringtone_silent">Gedemp</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
-    <string name="screen_off_animation_title">Skerm-af animasie</string>
-    <string name="screen_off_animation_summary">Wys die elektronstraal animasie wanneer die skerm afgeskakel word</string>
     <string name="confirm_delete_apn">Die TPN sal verwyder word.</string>
 
     <string name="privacy_guard_switch_label">Privaatheidswag</string>

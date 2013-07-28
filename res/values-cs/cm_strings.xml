@@ -755,22 +755,6 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Zvolit akci</string>
 
-    <string name="pie_control_title">Plovoucí nabídka</string>
-    <string name="pie_control_enabled">Plovoucí ovládání při povolené rozšířené ploše</string>
-    <string name="pie_control_disabled">Plovoucí ovládání zakázáno</string>
-    <string name="pie_control_sensitivity_title">Citlivost</string>
-    <string name="pie_control_sensitivity_low">Nízká</string>
-    <string name="pie_control_sensitivity_medium">Střední</string>
-    <string name="pie_control_sensitivity_high">Vysoká</string>
-    <string name="pie_control_sensitivity_very_high">Velmi vysoká</string>
-    <string name="pie_control_size">Velikost navigačního klíče</string>
-    <string name="pie_control_trigger_positions">Pozice spouštěče</string>
-    <string name="pie_control_trigger_left">Levý okraj obrazovky</string>
-    <string name="pie_control_trigger_bottom">Spodní okraj obrazovky</string>
-    <string name="pie_control_trigger_right">Pravý okraj obrazovkyr</string>
-    <string name="pie_control_trigger_top">Horní okraj obrazovky</string>
-    <string name="pie_control_trigger_top_summary">Nahoře bude zobrazena pouze navigace</string>
-
     <string name="gestures_settings_title">Gesta stylusem</string>
     <string name="category_spen_title">Gesta stylusem</string>
     <string name="enable_subcat_title">Stylus</string>
@@ -810,9 +794,6 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
     <string name="power_notifications_vibrate_title">Vibrovat</string>
     <string name="power_notifications_ringtone_title">Zvuk upozornění</string>
     <string name="power_notifications_ringtone_silent">Tichý</string>
-
-    <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
-    <string name="screen_off_animation_summary">Zobrazit animaci elektronového paprsku při vypnutí obrazovky</string>
 
     <string name="confirm_delete_apn">Položka APN bude smazána.</string>
 

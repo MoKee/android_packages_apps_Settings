@@ -809,23 +809,6 @@
     <string name="wifi_channel">Канал</string>
     <string name="wifi_mhz">МГц</string>
 
-    <!-- Quick/Pie Control #CM -->
-    <string name="pie_control_title">Панель навигации</string>
-    <string name="pie_control_enabled">Включается при активации Расширенного экрана</string>
-    <string name="pie_control_disabled">Выключено</string>
-    <string name="pie_control_sensitivity_title">Чувствительность</string>
-    <string name="pie_control_sensitivity_low">Низкая</string>
-    <string name="pie_control_sensitivity_medium">Средняя</string>
-    <string name="pie_control_sensitivity_high">Высокая</string>
-    <string name="pie_control_sensitivity_very_high">Очень высокая</string>
-    <string name="pie_control_size">Размер навигационных кнопок</string>
-    <string name="pie_control_trigger_positions">Расположение</string>
-    <string name="pie_control_trigger_left">Левый край экрана</string>
-    <string name="pie_control_trigger_bottom">Нижний край экрана</string>
-    <string name="pie_control_trigger_right">Правый край экрана</string>
-    <string name="pie_control_trigger_top">Верхний край экрана</string>
-    <string name="pie_control_trigger_top_summary">Наверху отображаются только навигационные кнопки</string>
-
     <!-- Stylus Gestures -->
     <string name="gestures_settings_title">Поддержка пера</string>
     <string name="category_spen_title">Жесты пера</string>
@@ -884,10 +867,6 @@
     <string name="power_notifications_ringtone_title">Звуковое уведомление</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Без звука</string>
-
-    <!-- Display Screen-on and off Electron beam animations -->
-    <string name="screen_off_animation_title">Анимация выкл. экрана</string>
-    <string name="screen_off_animation_summary">Показывать анимацию выключения экрана</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Включить режим инкогнито</string>

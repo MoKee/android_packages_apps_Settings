@@ -609,21 +609,6 @@
     <string name="navring_action_torch">Φακός</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Επιλέξτε ενέργεια</string>
-    <string name="pie_control_title">Αναδυόμενα πλήκτρα ελέγχου</string>
-    <string name="pie_control_enabled">Αναδυόμενα πλήκτρα ελέγχου όταν η Επέκταση επιφάνειας είναι ενεργή</string>
-    <string name="pie_control_disabled">Αναδυόμενα πλήκτρα ελέγχου ανενεργά</string>
-    <string name="pie_control_sensitivity_title">Ευαισθησία</string>
-    <string name="pie_control_sensitivity_low">Χαμηλή</string>
-    <string name="pie_control_sensitivity_medium">Μέτρια</string>
-    <string name="pie_control_sensitivity_high">Υψηλή</string>
-    <string name="pie_control_sensitivity_very_high">Πολύ υψηλή</string>
-    <string name="pie_control_size">Μέγεθος πλήκτρων</string>
-    <string name="pie_control_trigger_positions">Θέσεις εκκίνησης ελέγχων</string>
-    <string name="pie_control_trigger_left">Αριστερό όριο οθόνης</string>
-    <string name="pie_control_trigger_bottom">Κάτω όριο οθόνης</string>
-    <string name="pie_control_trigger_right">Δεξιό όριο οθόνης</string>
-    <string name="pie_control_trigger_top">Πάνω όριο οθόνης</string>
-    <string name="pie_control_trigger_top_summary">Μόνο η πλοήγηση θα εμφανίζεται στο πάνω μέρος</string>
     <string name="gestures_settings_title">Χειρονομίες γραφίδας</string>
     <string name="category_spen_title">Χειρονομίες γραφίδας</string>
     <string name="enable_subcat_title">Γραφίδα</string>
@@ -657,7 +642,5 @@
     <string name="power_notifications_vibrate_title">Δόνηση</string>
     <string name="power_notifications_ringtone_title">Ήχος ειδοποίησης</string>
     <string name="power_notifications_ringtone_silent">Αθόρυβο</string>
-    <string name="screen_off_animation_title">Εφέ σβησίματος οθόνης</string>
-    <string name="screen_off_animation_summary">Εμφάνιση του εφέ electron beam κατά το σβήσιμο της οθόνης</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Δεδομένα:</xliff:g></string>
 </resources>

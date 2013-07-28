@@ -590,16 +590,6 @@
     <string name="wifi_mode">Modo</string>
     <string name="wifi_mode_ibss">Rede Ad-Hoc (IBSS)</string>
     <string name="wifi_mode_ibss_short">Ad-Hoc</string>
-    <string name="pie_control_title">Controles circulares</string>
-    <string name="pie_control_enabled">Controles flutuantes quando quando a área de trabalho Expandida estiver ativa</string>
-    <string name="pie_control_disabled">Controles flutuantes desativados</string>
-    <string name="pie_control_size">Tamanho dos botões de navegação</string>
-    <string name="pie_control_trigger_positions">Posições de ativação</string>
-    <string name="pie_control_trigger_left">Borda esquerda da tela</string>
-    <string name="pie_control_trigger_bottom">Borda inferior da tela</string>
-    <string name="pie_control_trigger_right">Borda direita da tela</string>
-    <string name="pie_control_trigger_top">Borda superior da tela</string>
-    <string name="pie_control_trigger_top_summary">Somente navegação sera exibida na parte superior</string>
     <string name="title_tile_volume">Volume</string>
     <string name="title_tile_expanded_desktop">Área de trabalho expandida</string>
     <string name="title_dynamic_dock_battery">Bateria do dock</string>
@@ -680,8 +670,6 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="pie_control_sensitivity_medium">Média</string>
     <string name="pie_control_sensitivity_high">Alta</string>
     <string name="pie_control_sensitivity_very_high">Muito alta</string>
-    <string name="screen_off_animation_title">Animação ao desligar a tela</string>
-    <string name="screen_off_animation_summary">Mostrar a animação feixe de elétrons quando a tela é desligada</string>
     <string name="confirm_delete_apn">O APN vai ser removido.</string>
     <string name="pref_home_wake_title">Botão home</string>
     <string name="pref_home_wake_summary">O seu dispositivo despertará ao pressionar o botão home</string>

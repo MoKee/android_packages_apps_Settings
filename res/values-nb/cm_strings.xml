@@ -601,16 +601,6 @@
     <string name="navring_action_torch">Slå av/på lommelykt</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Velg handling</string>
-    <string name="pie_control_title">Paikontroller</string>
-    <string name="pie_control_enabled">Aktivert når Utvidet skrivebord er aktivert</string>
-    <string name="pie_control_disabled">Deaktivert</string>
-    <string name="pie_control_size">Størrelse på navigasjonstast</string>
-    <string name="pie_control_trigger_positions">Utløsende posisjoner</string>
-    <string name="pie_control_trigger_left">Venstre skjermkant</string>
-    <string name="pie_control_trigger_bottom">Nedre skjermkant</string>
-    <string name="pie_control_trigger_right">Høyre skjermkant</string>
-    <string name="pie_control_trigger_top">Øvre skjermkant</string>
-    <string name="pie_control_trigger_top_summary">Kun navigasjon vil bli vist på toppen</string>
     <string name="gestures_settings_title">Pennebevegelser</string>
     <string name="category_spen_title">Pennebevegelser</string>
     <string name="enable_subcat_title">Penn</string>

@@ -657,21 +657,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="navring_action_torch">Taschenlampe</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Aktion auswählen</string>
-    <string name="pie_control_title">Pie-Navigation</string>
-    <string name="pie_control_enabled">Ist bei erweitertem Desktop aktiviert</string>
-    <string name="pie_control_disabled">Deaktiviert</string>
-    <string name="pie_control_size">Größe der Navigationstasten</string>
-    <string name="pie_control_sensitivity_title">Empfindlichkeit</string>
-    <string name="pie_control_sensitivity_low">Niedrig</string>
-    <string name="pie_control_sensitivity_medium">Normal</string>
-    <string name="pie_control_sensitivity_high">Hoch</string>
-    <string name="pie_control_sensitivity_very_high">Sehr hoch</string>
-    <string name="pie_control_trigger_positions">Ansteuerungsposition</string>
-    <string name="pie_control_trigger_left">Linker Bildschirmrand</string>
-    <string name="pie_control_trigger_bottom">Unterer Bildschirmrand</string>
-    <string name="pie_control_trigger_right">Rechter Bildschirmrand</string>
-    <string name="pie_control_trigger_top">Oberer Bildschirmrand</string>
-    <string name="pie_control_trigger_top_summary">Es werden nur die Navigationstasten angezeigt</string>
     <string name="wifi_mode">Modus</string>
     <string name="wifi_mode_ibss">Ad-Hoc-Netzwerk (IBSS)</string>
     <string name="wifi_mode_ibss_short">Ad-Hoc</string>
@@ -710,8 +695,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="power_notifications_ringtone_title">Benachrichtigungston</string>
     <string name="power_notifications_ringtone_silent">Kein Ton</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Daten:</xliff:g></string>
-    <string name="screen_off_animation_title">Ausschaltanimation</string>
-    <string name="screen_off_animation_summary">Beim Ausschalten des Bildschirms eine Animation anzeigen</string>
     <string name="confirm_delete_apn">Der Zugangspunkt wird gelöscht.</string>
     <string name="privacy_guard_switch_label">Datenschutz aktivieren</string>
     <string name="privacy_guard_dlg_title">Datenschutz aktivieren?</string>
