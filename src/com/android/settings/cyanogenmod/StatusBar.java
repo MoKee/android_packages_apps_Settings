@@ -16,6 +16,7 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -179,7 +180,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                     Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarAutoHide) {
-            value = mStatusBarAutoHide.isChecked();
+            boolean value = mStatusBarAutoHide.isChecked();
             Settings.System.putInt(resolver,
                     Settings.System.AUTO_HIDE_STATUSBAR, value ? 1 : 0);
             return true;
@@ -188,17 +189,17 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
             return true;
         } else if (preference == mNotificationShadeDim) {
-            value = mNotificationShadeDim.isChecked();
+            boolean value = mNotificationShadeDim.isChecked();
             Settings.System.putInt(resolver,
                     Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarTraffic) {
-            value = mStatusBarTraffic.isChecked();
+            boolean value = mStatusBarTraffic.isChecked();
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarCarrierLabel) {
-            value = mStatusBarCarrierLabel.isChecked();
+            boolean value = mStatusBarCarrierLabel.isChecked();
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
             return true;
