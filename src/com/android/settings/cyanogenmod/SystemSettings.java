@@ -250,7 +250,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
     public void onResume() {
         super.onResume();
 
-	// Update ExpandedDesktopDescription
+        // Update ExpandedDesktopDescription
         updatemExpandedDesktopDescription();
 
         // All users
@@ -375,7 +375,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
         int summary = -1;
 
         Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
-	switch (value) {
+        switch (value) {
             case 0:
                 // Expanded desktop deactivated
                 Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
@@ -390,7 +390,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
                 Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
                 summary = R.string.expanded_desktop_no_status_bar;
                 break;
-	}
+        }
 
         if (mExpandedDesktopPref != null && summary != -1) {
             mExpandedDesktopPref.setSummary(res.getString(summary));
