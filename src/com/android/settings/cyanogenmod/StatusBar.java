@@ -95,11 +95,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         mStatusBarTraffic.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_TRAFFIC, 0) == 1));
+        mStatusBarTraffic.setOnPreferenceChangeListener(this);
         mStatusBarCarrierLabel.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CARRIER, 0) == 1));
+        mStatusBarCarrierLabel.setOnPreferenceChangeListener(this);
 
-        mStatusBarBrightnessControl.setChecked(Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1);
         mStatusBarBrightnessControl.setChecked(Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1);
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
@@ -131,10 +131,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarAutoHide = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_AUTO_HIDE);
         mStatusBarAutoHide.setChecked((Settings.System.getInt(resolver,
                 Settings.System.AUTO_HIDE_STATUSBAR, 0) == 1));
+        mStatusBarAutoHide.setOnPreferenceChangeListener(this);
 
         mNotificationShadeDim = (CheckBoxPreference) prefSet.findPreference(NOTIFICATION_SHADE_DIM);
         mNotificationShadeDim.setChecked((Settings.System.getInt(resolver,
                 Settings.System.NOTIFICATION_SHADE_DIM, ActivityManager.isHighEndGfx() ? 1 : 0) == 1));
+        mNotificationShadeDim.setOnPreferenceChangeListener(this);
 
         PreferenceCategory generalCategory =
                 (PreferenceCategory) findPreference(STATUS_BAR_CATEGORY_GENERAL);
@@ -180,7 +182,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                     Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarAutoHide) {
-            boolean value = mStatusBarAutoHide.isChecked();
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.AUTO_HIDE_STATUSBAR, value ? 1 : 0);
             return true;
@@ -189,17 +191,17 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
             return true;
         } else if (preference == mNotificationShadeDim) {
-            boolean value = mNotificationShadeDim.isChecked();
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarTraffic) {
-            boolean value = mStatusBarTraffic.isChecked();
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarCarrierLabel) {
-            boolean value = mStatusBarCarrierLabel.isChecked();
+            boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
             return true;
