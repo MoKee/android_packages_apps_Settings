@@ -390,7 +390,7 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
                 Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
                 summary = R.string.expanded_desktop_no_status_bar;
                 break;
-	}
+        }
 
         if (mExpandedDesktopPref != null && summary != -1) {
             mExpandedDesktopPref.setSummary(res.getString(summary));

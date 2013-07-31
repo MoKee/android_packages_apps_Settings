@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The MoKee OpenSource Project
+ * Copyright (C) 2013 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -111,6 +111,8 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private CheckBoxPreference mPieCenter;
     private CheckBoxPreference mPieStick;
 
+    private ContentResolver resolver;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,18 +121,20 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        resolver = getContentResolver();
+
         mPieControls = (CheckBoxPreference) findPreference(PIE_CONTROLS);
-        mPieControls.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+        mPieControls.setChecked((Settings.System.getInt(resolver,
                 Settings.System.PIE_CONTROLS, 0) == 1));
 
         mPieGravity = (ListPreference) prefSet.findPreference(PIE_GRAVITY);
-        int pieGravity = Settings.System.getInt(getActivity().getContentResolver(),
+        int pieGravity = Settings.System.getInt(resolver,
                 Settings.System.PIE_GRAVITY, 3);
         mPieGravity.setValue(String.valueOf(pieGravity));
         mPieGravity.setOnPreferenceChangeListener(this);
 
         mPieMode = (ListPreference) prefSet.findPreference(PIE_MODE);
-        int pieMode = Settings.System.getInt(getActivity().getContentResolver(),
+        int pieMode = Settings.System.getInt(resolver,
                 Settings.System.PIE_MODE, 0);
         mPieMode.setValue(String.valueOf(pieMode));
         mPieMode.setOnPreferenceChangeListener(this);
@@ -138,11 +142,11 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieSize = (ListPreference) prefSet.findPreference(PIE_SIZE);
         mPieTrigger = (ListPreference) prefSet.findPreference(PIE_TRIGGER);
         try {
-            float pieSize = Settings.System.getFloat(getActivity().getContentResolver(),
+            float pieSize = Settings.System.getFloat(resolver,
                     Settings.System.PIE_SIZE, 1.0f);
             mPieSize.setValue(String.valueOf(pieSize));
   
-            float pieTrigger = Settings.System.getFloat(getActivity().getContentResolver(),
+            float pieTrigger = Settings.System.getFloat(resolver,
                     Settings.System.PIE_TRIGGER);
             mPieTrigger.setValue(String.valueOf(pieTrigger));
         } catch(Settings.SettingNotFoundException ex) {
@@ -153,60 +157,60 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieTrigger.setOnPreferenceChangeListener(this);
 
         mPieGap = (ListPreference) prefSet.findPreference(PIE_GAP);
-        int pieGap = Settings.System.getInt(getActivity().getContentResolver(),
+        int pieGap = Settings.System.getInt(resolver,
                 Settings.System.PIE_GAP, 2);
         mPieGap.setValue(String.valueOf(pieGap));
         mPieGap.setOnPreferenceChangeListener(this);
 
         mPieAngle = (ListPreference) prefSet.findPreference(PIE_ANGLE);
-        int pieAngle = Settings.System.getInt(getActivity().getContentResolver(),
+        int pieAngle = Settings.System.getInt(resolver,
                 Settings.System.PIE_ANGLE, 12);
         mPieAngle.setValue(String.valueOf(pieAngle));
         mPieAngle.setOnPreferenceChangeListener(this);
 
         mPieMenu = (CheckBoxPreference) prefSet.findPreference(PIE_MENU);
-        mPieMenu.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPieMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_MENU, 1) == 1);
 
         mPiePower = (CheckBoxPreference) prefSet.findPreference(PIE_POWER);
-        mPiePower.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPiePower.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_POWER, 0) == 1);
 
         mPieLastApp = (CheckBoxPreference) prefSet.findPreference(PIE_LASTAPP);
-        mPieLastApp.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPieLastApp.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_LAST_APP, 0) == 1);
 
         mPieSearch = (CheckBoxPreference) prefSet.findPreference(PIE_SEARCH);
-        mPieSearch.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPieSearch.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_SEARCH, 1) == 1);
 
         mPieCenter = (CheckBoxPreference) prefSet.findPreference(PIE_CENTER);
-        mPieCenter.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPieCenter.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_CENTER, 1) == 1);
 
         mPieStick = (CheckBoxPreference) prefSet.findPreference(PIE_STICK);
-        mPieStick.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+        mPieStick.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_STICK, 0) == 1);
 
     }
 
     private void updateExpandedDesktop(boolean isChecked) {
-        boolean mDisabled = Settings.System.getInt(getActivity().getContentResolver(),
+        boolean mDisabled = Settings.System.getInt(resolver,
                 Settings.System.EXPANDED_DESKTOP_STATE, 0) == 0;
-        boolean mStyleOff = Settings.System.getInt(getActivity().getContentResolver(),
+        boolean mStyleOff = Settings.System.getInt(resolver,
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0) == 0;
-        boolean mPowerMenuOff = Settings.System.getInt(getActivity().getContentResolver(),
+        boolean mPowerMenuOff = Settings.System.getInt(resolver,
                 Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0) == 0;
         if (mDisabled) {
             if (mStyleOff) {
-                Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.putInt(resolver,
                     Settings.System.EXPANDED_DESKTOP_STYLE, 2);//Expanded Desktop Style default set to 2
             }
         }
 	if(isChecked && mPowerMenuOff)
-        Settings.System.putInt(getActivity().getContentResolver(),
+        Settings.System.putInt(resolver,
             Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
-        Settings.System.putInt(getActivity().getContentResolver(),
+        Settings.System.putInt(resolver,
             Settings.System.EXPANDED_DESKTOP_STATE, isChecked ? 1 : 0);
     }
 
@@ -214,27 +218,27 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mPieControls) {
             boolean mIsChecked = mPieControls.isChecked();
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_CONTROLS, mIsChecked ? 1 : 0);
             updateExpandedDesktop(mIsChecked);
             //Helpers.restartSystemUI();
         } else if (preference == mPieMenu) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_MENU, mPieMenu.isChecked() ? 1 : 0);
         } else if (preference == mPiePower) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_POWER, mPiePower.isChecked() ? 1 : 0);
         } else if (preference == mPieLastApp) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_LAST_APP, mPieLastApp.isChecked() ? 1 : 0);
         } else if (preference == mPieSearch) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_SEARCH, mPieSearch.isChecked() ? 1 : 0);
         } else if (preference == mPieCenter) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_CENTER, mPieCenter.isChecked() ? 1 : 0);
         } else if (preference == mPieStick) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_STICK, mPieStick.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -245,32 +249,32 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mPieMode) {
             int pieMode = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_MODE, pieMode);
             return true;
         } else if (preference == mPieSize) {
             float pieSize = Float.valueOf((String) newValue);
-            Settings.System.putFloat(getActivity().getContentResolver(),
+            Settings.System.putFloat(resolver,
                     Settings.System.PIE_SIZE, pieSize);
             return true;
         } else if (preference == mPieGravity) {
             int pieGravity = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_GRAVITY, pieGravity);
             return true;
         } else if (preference == mPieAngle) {
             int pieAngle = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_ANGLE, pieAngle);
             return true;
         } else if (preference == mPieGap) {
             int pieGap = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_GAP, pieGap);
             return true;
         } else if (preference == mPieTrigger) {
             float pieTrigger = Float.valueOf((String) newValue);
-            Settings.System.putFloat(getActivity().getContentResolver(),
+            Settings.System.putFloat(resolver,
                     Settings.System.PIE_TRIGGER, pieTrigger);
             return true;
         }

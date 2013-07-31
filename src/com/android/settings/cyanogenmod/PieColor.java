@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The MoKee OpenSource Project
+ * Copyright (C) 2013 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 package com.android.settings.cyanogenmod;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -48,16 +49,18 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
     private static final String PIE_CHEVRON_RIGHT = "pie_chevron_right";
     private static final String PIE_BUTTON_COLOR = "pie_button_color";
 
-    CheckBoxPreference mEnableColor;
-    ColorPickerPreference mPieBg;
-    ColorPickerPreference mJuice;
-    ColorPickerPreference mSelect;
-    ColorPickerPreference mOutlines;
-    ColorPickerPreference mStatusClock;
-    ColorPickerPreference mStatus;
-    ColorPickerPreference mChevronLeft;
-    ColorPickerPreference mChevronRight;
-    ColorPickerPreference mBtnColor;
+    private CheckBoxPreference mEnableColor;
+    private ColorPickerPreference mPieBg;
+    private ColorPickerPreference mJuice;
+    private ColorPickerPreference mSelect;
+    private ColorPickerPreference mOutlines;
+    private ColorPickerPreference mStatusClock;
+    private ColorPickerPreference mStatus;
+    private ColorPickerPreference mChevronLeft;
+    private ColorPickerPreference mChevronRight;
+    private ColorPickerPreference mBtnColor;
+
+    private ContentResolver resolver;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,8 +68,10 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.pie_color);
 
+        resolver = getContentResolver();
+
         mEnableColor = (CheckBoxPreference) findPreference(PIE_ENABLE_COLOR);
-        mEnableColor.setChecked(Settings.System.getInt(getContentResolver(),
+        mEnableColor.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_ENABLE_COLOR, 0) == 1);
 
         mPieBg = (ColorPickerPreference) findPreference(PIE_BACKGROUND);
@@ -101,7 +106,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mEnableColor) {
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_ENABLE_COLOR,
                     mEnableColor.isChecked() ? 1 : 0);
         }
@@ -116,7 +121,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_BACKGROUND, intHex);
             return true;
         } else if (preference == mSelect) {
@@ -124,7 +129,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_SELECT, intHex);
             return true;
         } else if (preference == mOutlines) {
@@ -132,7 +137,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_OUTLINES, intHex);
             return true;
         } else if (preference == mStatusClock) {
@@ -140,7 +145,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_STATUS_CLOCK, intHex);
             return true;
         } else if (preference == mStatus) {
@@ -148,7 +153,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_STATUS, intHex);
             return true;
         } else if (preference == mChevronLeft) {
@@ -156,7 +161,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_CHEVRON_LEFT, intHex);
             return true;
         } else if (preference == mChevronRight) {
@@ -164,7 +169,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_CHEVRON_RIGHT, intHex);
             return true;
         } else if (preference == mBtnColor) {
@@ -172,7 +177,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_BUTTON_COLOR, intHex);
             return true;
         } else if (preference == mJuice) {
@@ -180,7 +185,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                     .valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.PIE_JUICE, intHex);
             return true;
         }
