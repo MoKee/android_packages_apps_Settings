@@ -664,11 +664,6 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="auto_brightness_sensitivity_medium">Média</string>
     <string name="auto_brightness_sensitivity_high">Alta</string>
     <string name="auto_brightness_sensitivity_veryhigh">Muito alta</string>
-    <string name="pie_control_sensitivity_title">Responsividade</string>
-    <string name="pie_control_sensitivity_low">Baixa</string>
-    <string name="pie_control_sensitivity_medium">Média</string>
-    <string name="pie_control_sensitivity_high">Alta</string>
-    <string name="pie_control_sensitivity_very_high">Muito alta</string>
     <string name="confirm_delete_apn">O APN vai ser removido.</string>
     <string name="pref_home_wake_title">Botão home</string>
     <string name="pref_home_wake_summary">O seu dispositivo despertará ao pressionar o botão home</string>

@@ -664,11 +664,6 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="power_notifications_vibrate_title">Wibracje</string>
     <string name="power_notifications_ringtone_title">Dźwięk powiadomienia</string>
     <string name="power_notifications_ringtone_silent">Wyciszone</string>
-     <string name="pie_control_sensitivity_title">Responsywność</string>
-    <string name="pie_control_sensitivity_low">Niska</string>
-    <string name="pie_control_sensitivity_medium">Średnia</string>
-    <string name="pie_control_sensitivity_high">Wysoka</string>
-    <string name="pie_control_sensitivity_very_high">Bardzo wysoka</string>
     <string name="auto_brightness_sensitivity_title">Dostosowanie czułości</string>
     <string name="auto_brightness_sensitivity_verylow">Bardzo niska</string>
     <string name="auto_brightness_sensitivity_low">Niska</string>
