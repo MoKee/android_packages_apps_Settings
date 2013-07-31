@@ -96,6 +96,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarTraffic.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_TRAFFIC, 0) == 1));
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
+
         mStatusBarCarrierLabel.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrierLabel.setOnPreferenceChangeListener(this);
