@@ -82,6 +82,13 @@
     <string name="system_settings_title">系统</string>
     <string name="system_interface_title">系统界面</string>
     <string name="notification_drawer_title">下拉通知栏</string>
+    <string name="notification_drawer_collapse_on_dismiss_title">自动关闭策略</string>
+    <string name="collapse_on_dismiss_never">禁用</string>
+    <string name="collapse_on_dismiss_if_empty">如果没有通知</string>
+    <string name="collapse_on_dismiss_if_no_clearable">如果没有可忽略通知</string>
+    <string name="collapse_on_dismiss_never_summary">打开通知后关闭</string>
+    <string name="collapse_on_dismiss_if_empty_summary">移除通知后关闭</string>
+    <string name="collapse_on_dismiss_if_no_clearable_summary">关闭后移除最后一个可移除通知</string>
     <string name="lock_screen_title">锁屏界面</string>
     <string name="lockscreen_target_info">把滑块拉到指定的位置以选择快捷方式</string>
     <string name="lockscreen_target_title">锁屏快捷方式</string>
