@@ -695,22 +695,22 @@
     <string name="blacklist_prefs">设置</string>
     <string name="blacklist_button_delete">删除</string>
     <string name="blacklist_empty_text">您尚未设置任何黑名单号码，按(+)添加。</string>
-    <string name="blacklist_disabled_empty_text">要拦截某些号码的来电或短信，请启用黑名单。</string>
+    <string name="blacklist_disabled_empty_text">要拦截某些号码的电话或短信，请启用黑名单。</string>
     <string name="blacklist_summary_disabled">已禁用</string>
-    <string name="blacklist_summary">黑名单中电话号码的来电和短信将被阻止</string>
+    <string name="blacklist_summary">黑名单中电话号码的电话和短信将被阻止</string>
     <string name="blacklist_notify">显示通知</string>
     <string name="blacklist_private_numbers_title">私人号码</string>
-    <string name="blacklist_private_numbers_summary_disabled">不要拦截私人号码的来电</string>
-    <string name="blacklist_private_numbers_summary">拦截来自私人号码 <xliff:g id="type">%1$s</xliff:g> 的来电</string>
+    <string name="blacklist_private_numbers_summary_disabled">不要拦截私人号码的电话</string>
+    <string name="blacklist_private_numbers_summary">拦截来自私人号码的<xliff:g id="type">%1$s</xliff:g></string>
     <string name="blacklist_unknown_numbers_title">未知号码</string>
-    <string name="blacklist_unknown_numbers_summary_disabled">不要拦截来自通讯录以外的来电和短信</string>
-    <string name="blacklist_unknown_numbers_summary">拦截了通讯录以外的来电 <xliff:g id="type">%1$s</xliff:g> </string>
+    <string name="blacklist_unknown_numbers_summary_disabled">不要拦截来自通讯录以外的电话和短信</string>
+    <string name="blacklist_unknown_numbers_summary">拦截来自通讯录以外的<xliff:g id="type">%1$s</xliff:g></string>
     <string name="blacklist_summary_type_calls_only">电话</string>
     <string name="blacklist_summary_type_messages_only">短信</string>
     <string name="blacklist_summary_type_calls_and_messages">电话和短信</string>
     <string name="blacklist_regex_title">使用通配符</string>
     <string name="blacklist_regex_summary">使用 . 作为通配符和 * 作为重复字符, 例如: 123.* 将会阻止所有 123 为前缀的号码; .*123.* 将会阻止所有包含 123 的号码</string>
-    <string name="blacklist_policy_block_calls">拦截来电</string>
+    <string name="blacklist_policy_block_calls">拦截电话</string>
     <string name="blacklist_policy_block_messages">拦截短信</string>
     <string name="add_blacklist_number">添加号码</string>
     <string name="remove_blacklist_number_title">移除号码</string>
