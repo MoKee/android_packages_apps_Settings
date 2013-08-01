@@ -290,6 +290,16 @@
             android:title="@string/experimental_webview"
             android:summary="@string/experimental_webview_summary"/>
 
+        <PreferenceScreen
+            android:fragment="com.android.settings.applications.AppOpsSummary"
+            android:summary="@string/app_ops_summary"
+            android:title="@string/app_ops_title">
+            <intent
+                android:action="com.android.settings.Settings$AppOpsSummaryActivity"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.Settings$AppOpsSummaryActivity" />
+        </PreferenceScreen>
+
      </PreferenceCategory>
 
 </PreferenceScreen>

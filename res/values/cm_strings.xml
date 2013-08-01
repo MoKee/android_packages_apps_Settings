@@ -985,4 +985,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="remove_blacklist_entry">Do you want to remove this blacklist entry?</string>
     <string name="select_contact">Select contact</string>
 
+    <!-- App Ops -->
+    <string name="app_ops_title">App Ops</string>
+    <string name="app_ops_summary">Fine-grained permission controls (may not work, may break apps)</string>
 </resources>

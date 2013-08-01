@@ -716,4 +716,6 @@
     <string name="remove_blacklist_number_title">移除号码</string>
     <string name="remove_blacklist_entry">确认删除此黑名单条目？</string>
     <string name="select_contact">选择联系人</string>
+    <string name="app_ops_title">应用权限</string>
+    <string name="app_ops_summary">管理应用程序的权限（请注意，错误的设置可能导致程序无法工作）</string>
 </resources>
