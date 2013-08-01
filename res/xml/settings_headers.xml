@@ -234,17 +234,6 @@
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
 
-    <!-- Permissions Management -->
-    <header
-        android:id="@+id/permissions_settings"
-        android:icon="@drawable/ic_settings_permissions"
-        android:title="@string/permissions_settings_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.mokee.permissionsmanager"
-            android:targetClass="com.mokee.permissionsmanager.activities.MainActivity" />
-    </header>
-
     <!-- Superuser -->
     <header
         android:id="@+id/superuser"

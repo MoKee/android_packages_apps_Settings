@@ -174,9 +174,6 @@
     <string name="show_carrier_label_title">Carrier label</string>
     <string name="show_carrier_label_summary">Show carrier label in status bar</string>
 
-    <!-- Permissions Management -->
-    <string name="permissions_settings_title">Permissions management</string>
-
     <!-- Developers -->
     <string name="settings_developers_activity_title">Developers</string>
     <string name="settings_developers_activity_loading">Loading\u2026</string>
