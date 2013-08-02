@@ -701,10 +701,10 @@
     <string name="blacklist_notify">显示通知</string>
     <string name="blacklist_private_numbers_title">私人号码</string>
     <string name="blacklist_private_numbers_summary_disabled">不要拦截私人号码的电话</string>
-    <string name="blacklist_private_numbers_summary">拦截来自私人号码的<xliff:g id="type">%1$s</xliff:g></string>
+    <string name="blacklist_private_numbers_summary">拦截来自私人号码的<xliff:g id="type">%s</xliff:g></string>
     <string name="blacklist_unknown_numbers_title">未知号码</string>
     <string name="blacklist_unknown_numbers_summary_disabled">不要拦截来自通讯录以外的电话和短信</string>
-    <string name="blacklist_unknown_numbers_summary">拦截来自通讯录以外的<xliff:g id="type">%1$s</xliff:g></string>
+    <string name="blacklist_unknown_numbers_summary">拦截来自通讯录以外的<xliff:g id="type">%s</xliff:g></string>
     <string name="blacklist_summary_type_calls_only">电话</string>
     <string name="blacklist_summary_type_messages_only">短信</string>
     <string name="blacklist_summary_type_calls_and_messages">电话和短信</string>
