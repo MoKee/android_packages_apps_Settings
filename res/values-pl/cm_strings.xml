@@ -550,8 +550,8 @@
     <string name="wifi_setting_priority_summary">Określ priorytet łączenia z sieciami Wi-Fi</string>
     <string name="safe_headset_volume_title">Bezpieczna głośność słuchawek</string>
     <string name="safe_headset_volume_summary">Kiedy słuchawki są podłączone po raz pierwszy, zapobiegaj wysokim poziomom głośności</string>
-    <string name="cyanogenmod_waiver_title">Zrzeczenie się</string>
-    <string name="cyanogenmod_waiver_body">Zmiana tych ustawień może być niezgodna z lokalnym prawem.\n\nWybierając \'OK\' przyjmujesz to ostrzeżenie do wiadomości oraz odciążasz CyanogenMod i jego twórców od wszystkich konsekwencji prawnych.</string>
+    <string name="mokee_waiver_title">Zrzeczenie się</string>
+    <string name="mokee_waiver_body">Zmiana tych ustawień może być niezgodna z lokalnym prawem.\n\nWybierając \'OK\' przyjmujesz to ostrzeżenie do wiadomości oraz odciążasz MoKee OpenSource i jego twórców od wszystkich konsekwencji prawnych.</string>
     <string name="light_sensor_current_value">Aktualna wartość czujnika światła: <xliff:g id="light_level">%d</xliff:g> luksów</string>
     <string name="auto_brightness_dialog_title">Automatyczne poziomy jasności</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> luksów</string>

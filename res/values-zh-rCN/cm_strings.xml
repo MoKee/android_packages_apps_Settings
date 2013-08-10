@@ -592,8 +592,11 @@
     <string name="headset_connect_player_summary">插入耳机时启动默认音乐播放器</string>
     <string name="safe_headset_volume_title">耳机安全音量</string>
     <string name="safe_headset_volume_summary">第一次插入耳机时防止音量过大</string>
-    <string name="cyanogenmod_waiver_title">弃权声明书</string>
-    <string name="cyanogenmod_waiver_body">改变此设置可能在您所在的国家属于非法行为.\n\n选择 \'确定\' 意味着您已读此警告并放弃一切起诉权, 保证 CyanogenMod 及其贡献者免于受罚并且不承担任何法律责任.</string>
+    <string name="mokee_waiver_title">弃权声明书</string>
+    <string name="mokee_waiver_body">改变此设置可能在您所在的国家属于非法行为.\n\n选择 \'确定\' 意味着您已读此警告并放弃一切起诉权, 保证 MoKee OpenSource 及其贡献者免于受罚并且不承担任何法律责任.</string>
+    <string name="auto_brightness_setup_title">自动亮度</string>
+    <string name="auto_brightness_adjustment_title">亮度调节</string>
+    <string name="auto_brightness_twilight_adjustment">根据昼夜调节</string>
     <string name="light_sensor_current_value">目前光线传感器值: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">自动亮度级别</string>
     <string name="auto_brightness_adjust_button">调整</string>

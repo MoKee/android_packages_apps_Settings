@@ -579,8 +579,8 @@
     <string name="headset_connect_player_summary">Lancia il lettore musicale predefinito quando le cuffie vengono connesse</string>
     <string name="safe_headset_volume_title">Volume sicurezza cuffie</string>
     <string name="safe_headset_volume_summary">Evita un volume troppo elevato quando le cuffie vengono inserite per la prima volta</string>
-    <string name="cyanogenmod_waiver_title">Manleva</string>
-    <string name="cyanogenmod_waiver_body">Cambiare questa impostazione può essere contro le leggi del tuo stato/governo.\n\nPremendo \'OK\' più sotto, accetti quanto riportato in questo avviso, e dichiari di esonerare e sollevare CyanogenMod e i suoi collaboratori da ogni responsabilità civile e penale.</string>
+    <string name="mokee_waiver_title">Manleva</string>
+    <string name="mokee_waiver_body">Cambiare questa impostazione può essere contro le leggi del tuo stato/governo.\n\nPremendo \'OK\' più sotto, accetti quanto riportato in questo avviso, e dichiari di esonerare e sollevare MoKee OpenSource e i suoi collaboratori da ogni responsabilità civile e penale.</string>
     <string name="light_sensor_current_value">Valore attuale sensore luminosità: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Livelli automatici di luminosità</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

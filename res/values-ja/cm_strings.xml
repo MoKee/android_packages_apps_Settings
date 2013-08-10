@@ -556,8 +556,8 @@
     <string name="headset_connect_player_summary">ヘッドセットを接続した時に標準の音楽アプリを起動する</string>
     <string name="safe_headset_volume_title">安全なヘッドセット音量</string>
     <string name="safe_headset_volume_summary">ヘッドセットを接続したときに大音量になるのを防ぐ</string>
-    <string name="cyanogenmod_waiver_title">権利放棄</string>
-    <string name="cyanogenmod_waiver_body">この設定の変更は条例や法律に反しているかもしれません。\n\n\ここで\'OK\'を選択した場合、あなたはこの警告及び権利の放棄、CyanogenModとその貢献者に対する全ての法的責任からの免責に同意したことになります。</string>
+    <string name="mokee_waiver_title">権利放棄</string>
+    <string name="mokee_waiver_body">この設定の変更は条例や法律に反しているかもしれません。\n\n\ここで\'OK\'を選択した場合、あなたはこの警告及び権利の放棄、MoKee OpenSourceとその貢献者に対する全ての法的責任からの免責に同意したことになります。</string>
     <string name="light_sensor_current_value">現在の明るさセンサー値: <xliff:g id="light_level">%d</xliff:g> ルクス</string>
     <string name="auto_brightness_dialog_title">自動明るさレベル</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> ルクス</string>

@@ -69,7 +69,7 @@
     <string name="notification_convert_sound_to_vibration_title">Vibrovať pri upozornení</string>
     <string name="notification_convert_sound_to_vibration_summary">V režime vibrácií budú všetky upozornenia vibrovať bez ohľadu na individuálne nastavenia aplikácií</string>
     <string name="device_hostname">Názov hostiteľa pre zariadenie</string>
-    <string name="mod_version">Verzia CyanogenMod-u</string>
+    <string name="mod_version">Verzia MoKee-u</string>
     <string name="mod_version_default">Neznáma</string>
     <string name="build_date">Dátum zostavy</string>
     <string name="cpu_info">CPU</string>

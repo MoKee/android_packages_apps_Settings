@@ -547,8 +547,8 @@
     <string name="headset_connect_player_summary">Begin die standaard musiek program wanneer oorfone gekoppel word</string>
     <string name="safe_headset_volume_title">Veilige oorfone volume</string>
     <string name="safe_headset_volume_summary">Voorkom te harde volume wanneer oorfone aanvanklik gekoppel word</string>
-    <string name="cyanogenmod_waiver_title">Kwytskelding</string>
-    <string name="cyanogenmod_waiver_body">"Wysiging van hierdie instelling kan teen jou staat of regerings wette wees.\n\nRaak "<b>"OK"</b>" om hierdie waarskuwing en kwytskelding te aanvaar en CyanogenMod en sy bydraers te vrywaar van alle wetlike verpligtinge."</string>
+    <string name="mokee_waiver_title">Kwytskelding</string>
+    <string name="mokee_waiver_body">"Wysiging van hierdie instelling kan teen jou staat of regerings wette wees.\n\nRaak "<b>"OK"</b>" om hierdie waarskuwing en kwytskelding te aanvaar en MoKee OpenSource en sy bydraers te vrywaar van alle wetlike verpligtinge."</string>
     <string name="advanced_reboot_title">Gevorderde herlaai</string>
     <string name="advanced_reboot_summary">Wanneer toestel ontsluit is, maak die \'recovery\' en \'bootloader\' herlaai opsies in die kragkieslys beskikbaar</string>
     <string name="volume_adjust_sounds_enable_title">Volume verandering</string>

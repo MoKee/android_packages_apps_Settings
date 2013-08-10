@@ -89,7 +89,7 @@
 
     <string name="device_hostname">Hostitelské jméno zařízení</string>
 
-    <string name="mod_version">Verze MoKee</string>
+    <string name="mod_version">Verze MoKeeu</string>
     <string name="mod_version_default">Neznámá</string>
     <string name="build_date">Datum sestavení</string>
     <string name="cpu_info">CPU</string>
@@ -680,8 +680,8 @@
     <string name="safe_headset_volume_title">Bezpečná hlasitost</string>
     <string name="safe_headset_volume_summary">Zamezí příliš hlasitou úroveň v případě připojených sluchátek</string>
 
-    <string name="cyanogenmod_waiver_title">Zřeknutí se</string>
-    <string name="cyanogenmod_waiver_body">Změnou tohoto nastavení může dojít k porušení práva dané země.\n\nPotvrzení tlačítka \'OK\' níže přijímáte toto varování a zprošťujete povinnost jakéhokoliv odškodnění v případě újmy.</string>
+    <string name="mokee_waiver_title">Zřeknutí se</string>
+    <string name="mokee_waiver_body">Změnou tohoto nastavení může dojít k porušení práva dané země.\n\nPotvrzení tlačítka \'OK\' níže přijímáte toto varování a zprošťujete povinnost jakéhokoliv odškodnění v případě újmy.</string>
 
     <string name="light_sensor_current_value">Aktuální hodnota světelného senzoru: <xliff:g id="light_level">%d</xliff:g> luxů</string>
     <string name="auto_brightness_dialog_title">Automatická úroveň podsvícení</string>

@@ -563,8 +563,8 @@
     <string name="headset_connect_player_summary">Start standard-app til musik, når headset tilsluttes</string>
     <string name="safe_headset_volume_title">Sikker lydstyrke for håndfri</string>
     <string name="safe_headset_volume_summary">Undgå høje lydstyrkeniveauer, når håndfri tilsluttes først</string>
-    <string name="cyanogenmod_waiver_title">Ophævelse</string>
-    <string name="cyanogenmod_waiver_body">At ændre denne indstilling kan være imod loven.\n\nVed at vælge \'OK\' herunder anerkender du denne advarsel og ophæver, sikrer og holder CyanogenMod og dens bidragydere skadesløse fra alle juridiske forpligtelser.</string>
+    <string name="mokee_waiver_title">Ophævelse</string>
+    <string name="mokee_waiver_body">At ændre denne indstilling kan være imod loven.\n\nVed at vælge \'OK\' herunder anerkender du denne advarsel og ophæver, sikrer og holder MoKee OpenSource og dens bidragydere skadesløse fra alle juridiske forpligtelser.</string>
     <string name="light_sensor_current_value">Aktuel værdi for lyssensor: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Automatisk lysstyrke-niveau</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

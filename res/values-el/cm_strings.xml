@@ -586,8 +586,8 @@
     <string name="headset_connect_player_summary">Εκκίνηση της προεπιλεγμένης εφαρμογής μουσικής κατα τη σύνδεση ακουστικών</string>
     <string name="safe_headset_volume_title">Ασφαλής ένταση ακουστικών</string>
     <string name="safe_headset_volume_summary">Αποτροπή δυνατού επιπέδου έντασης ήχου όταν τα ακουστικά συνδέονται για πρώτη φορά</string>
-    <string name="cyanogenmod_waiver_title">Απαλλαγή ευθυνών</string>
-    <string name="cyanogenmod_waiver_body">Η αλλαγή αυτής της ρύθμισης μπορεί να είναι ενάντια στη νομοθεσία της πολιτείας ή της κυβέρνησης σας.\n\nΕπιλέγοντας \'OK\' παρακάτω, αποδέχεστε αυτή την προειδοποίηση και απαλλάσετε το CyanogenMod και τους συνεργάτες του από όλες τις νομικές ευθύνες και υποχρεώσεις.</string>
+    <string name="mokee_waiver_title">Απαλλαγή ευθυνών</string>
+    <string name="mokee_waiver_body">Η αλλαγή αυτής της ρύθμισης μπορεί να είναι ενάντια στη νομοθεσία της πολιτείας ή της κυβέρνησης σας.\n\nΕπιλέγοντας \'OK\' παρακάτω, αποδέχεστε αυτή την προειδοποίηση και απαλλάσετε το MoKee OpenSource και τους συνεργάτες του από όλες τις νομικές ευθύνες και υποχρεώσεις.</string>
     <string name="light_sensor_current_value">Τρέχουσα τιμή του αισθητήρα φωτός: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Επίπεδα αυτόματης φωτεινότητας</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

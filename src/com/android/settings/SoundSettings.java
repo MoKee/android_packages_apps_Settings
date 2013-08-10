@@ -569,8 +569,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                         dismissDialog();
                     }
                     mWaiverDialog = new AlertDialog.Builder(getActivity())
-                            .setMessage(R.string.cyanogenmod_waiver_body)
-                            .setTitle(R.string.cyanogenmod_waiver_title)
+                            .setMessage(R.string.mokee_waiver_body)
+                            .setTitle(R.string.mokee_waiver_title)
                             .setPositiveButton(R.string.ok, this)
                             .setNegativeButton(R.string.cancel, this)
                             .show();

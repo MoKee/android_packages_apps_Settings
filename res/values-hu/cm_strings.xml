@@ -577,8 +577,8 @@
     <string name="headset_connect_player_summary">Alapértelmezett zenelejátszó elindítása fülhallgató csatlakoztatásakor</string>
     <string name="safe_headset_volume_title">Biztonságos hangerő</string>
     <string name="safe_headset_volume_summary">Nagy hangerő megakadályozása fülhallgató csatlakoztatásakor</string>
-    <string name="cyanogenmod_waiver_title">Jogi felelősség átvállalása</string>
-    <string name="cyanogenmod_waiver_body">A beállítás módosítása halláskárosodáshoz vezethet.\n\nAz \"OK\" gombbal Ön elfogadja ezt a figyelmeztetést és ezzel felmenti a CyanogenMod csapatot és minden közreműködőt az esetleges jogi kötelezettségek alól.</string>
+    <string name="mokee_waiver_title">Jogi felelősség átvállalása</string>
+    <string name="mokee_waiver_body">A beállítás módosítása halláskárosodáshoz vezethet.\n\nAz \"OK\" gombbal Ön elfogadja ezt a figyelmeztetést és ezzel felmenti a MoKee OpenSource csapatot és minden közreműködőt az esetleges jogi kötelezettségek alól.</string>
     <string name="light_sensor_current_value">Fényérzékelő jelenlegi értéke: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Automatikus fényerő</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g>lux</string>

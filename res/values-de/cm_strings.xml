@@ -581,8 +581,8 @@
     <string name="lockscreen_background_default_wallpaper">Standardhintergrund</string>
     <string name="safe_headset_volume_title">Lautstärkebegrenzung</string>
     <string name="safe_headset_volume_summary">Schützt beim Einstecken eines Kopfhörers vor zu hoher Lautstärke</string>
-    <string name="cyanogenmod_waiver_title">Verzichtserklärung</string>
-    <string name="cyanogenmod_waiver_body">Das Deaktivieren dieser Funktion kann gegen geltendes Recht verstoßen.\n\nDurch Ihre Bestätigung erklären Sie, dass Sie CyanogenMod sowie alle daran Mitwirkenden von sämtlichen damit verbunden rechtlichen Verbindlichkeiten, u.A. Schadensersatzpflichten, befreien.</string>
+    <string name="mokee_waiver_title">Verzichtserklärung</string>
+    <string name="mokee_waiver_body">Das Deaktivieren dieser Funktion kann gegen geltendes Recht verstoßen.\n\nDurch Ihre Bestätigung erklären Sie, dass Sie MoKee OpenSource sowie alle daran Mitwirkenden von sämtlichen damit verbunden rechtlichen Verbindlichkeiten, u.A. Schadensersatzpflichten, befreien.</string>
     <string name="light_sensor_current_value">Aktueller Sensorwert: <xliff:g id="light_level">%d</xliff:g> Lux</string>
     <string name="auto_brightness_dialog_title">Helligkeitsstufen</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> Lux</string>

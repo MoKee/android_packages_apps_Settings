@@ -487,8 +487,8 @@
     <string name="headset_connect_player_summary">헤드셋이 연결되면 기본 음악 앱 실행</string>
     <string name="safe_headset_volume_title">청력 손상 방지</string>
     <string name="safe_headset_volume_summary">헤드셋 연결 시 안전한 수준의 볼륨 적용</string>
-    <string name="cyanogenmod_waiver_title">면책 사항</string>
-    <string name="cyanogenmod_waiver_body">이 설정을 변경하는 것은 법에 저촉될 수 있습니다.\n\n아래 \'확인\'을 선택하면 귀하는 이 경고와 면책 사항을 모두 이해하였으며 CyanogenMod와 그 기여자들에게 어떠한 법적 책임도 묻지 않는 것에 동의한 것으로 간주됩니다.</string>
+    <string name="mokee_waiver_title">면책 사항</string>
+    <string name="mokee_waiver_body">이 설정을 변경하는 것은 법에 저촉될 수 있습니다.\n\n아래 \'확인\'을 선택하면 귀하는 이 경고와 면책 사항을 모두 이해하였으며 MoKee OpenSource와 그 기여자들에게 어떠한 법적 책임도 묻지 않는 것에 동의한 것으로 간주됩니다.</string>
     <string name="light_sensor_current_value">현재 조도 센서 값: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">자동 밝기 수준</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

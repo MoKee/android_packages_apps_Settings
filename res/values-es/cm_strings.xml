@@ -594,8 +594,8 @@
     <string name="headset_connect_player_summary">Iniciar el reproductor de música por defecto al conectar los auriculares</string>
     <string name="safe_headset_volume_title">Volumen seguro</string>
     <string name="safe_headset_volume_summary">Prevenir un volumen alto en los auriculares cuando sean conectados por primera vez</string>
-    <string name="cyanogenmod_waiver_title">Renuncia</string>
-    <string name="cyanogenmod_waiver_body">Cambiar este ajuste puede ir en contra de la leyes de tu estado o país.\n\nPulsando \u00ABAceptar\u00BB, reconoces esta advertencia y eximes de cualquier responsabilidad legal a CyanogenMod y sus colaboradores, renunciando así a cualquier reclamación por daños y perjuicios.</string>
+    <string name="mokee_waiver_title">Renuncia</string>
+    <string name="mokee_waiver_body">Cambiar este ajuste puede ir en contra de la leyes de tu estado o país.\n\nPulsando \u00ABAceptar\u00BB, reconoces esta advertencia y eximes de cualquier responsabilidad legal a MoKee OpenSource y sus colaboradores, renunciando así a cualquier reclamación por daños y perjuicios.</string>
     <string name="auto_brightness_setup_title">Brillo automático</string>
     <string name="auto_brightness_adjustment_title">Ajustar brillo</string>
     <string name="auto_brightness_twilight_adjustment">Ajustar a la salida y puesta del sol</string>

@@ -69,7 +69,7 @@
     <string name="notification_convert_sound_to_vibration_title">Bildirimlerde titre</string>
     <string name="notification_convert_sound_to_vibration_summary">Titreşim modunda uygulama ayarlarından bağımsız olarak her bildirim titreyecektir</string>
     <string name="device_hostname">Cihaz hostname\'i</string>
-    <string name="mod_version">CyanogenMod sürümü</string>
+    <string name="mod_version">MoKee sürümü</string>
     <string name="mod_version_default">Bilinmiyor</string>
     <string name="build_date">İnşa tarihi</string>
     <string name="cpu_info">İşlemci</string>
@@ -560,8 +560,8 @@
     <string name="headset_connect_player_summary">Kulaklık takıldığında varsayılan müzik uygulamasını başlat</string>
     <string name="safe_headset_volume_title">Güvenli kulaklık ses düzeyi</string>
     <string name="safe_headset_volume_summary">Kulaklık ilk takıldığında yüksek seslere izin verme</string>
-    <string name="cyanogenmod_waiver_title">Feragat</string>
-    <string name="cyanogenmod_waiver_body">Bu ayaları değiştirme hükümet ya da eyaletinizin yasalarına aykırı olabilir.\n\nAşağıdan \'Tamam\' butonuna bastığınızda bu uyarı ve feragat\'ı dikkate aldığınız ve CyanogenMod ve katkıcılarını her türlü cezai yükümlülükten sorumlu tutmayacağınızı kabul ediyorsunuz.</string>
+    <string name="mokee_waiver_title">Feragat</string>
+    <string name="mokee_waiver_body">Bu ayaları değiştirme hükümet ya da eyaletinizin yasalarına aykırı olabilir.\n\nAşağıdan \'Tamam\' butonuna bastığınızda bu uyarı ve feragat\'ı dikkate aldığınız ve MoKee OpenSource ve katkıcılarını her türlü cezai yükümlülükten sorumlu tutmayacağınızı kabul ediyorsunuz.</string>
     <string name="light_sensor_current_value">Şu anki ışık sensörü değeri: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Automatic brightness levels</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

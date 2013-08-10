@@ -734,8 +734,8 @@
     <string name="volume_adjust_sounds_enable_summary">Воспроизводить звук при изменении громкости кнопками \"+\" или \"-\"</string>
 
     <!-- Waiver -->
-    <string name="cyanogenmod_waiver_title">Отказ от ответственности</string>
-    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам Вашего государства.\n\nНажимая \"OK\" Вы соглашаетесь с этим предупреждением и освобождаете CyanogenMod и всех его разработчиков от любых юридических обязательств.</string>
+    <string name="mokee_waiver_title">Отказ от ответственности</string>
+    <string name="mokee_waiver_body">Изменение этих настроек может противоречить законам Вашего государства.\n\nНажимая \"OK\" Вы соглашаетесь с этим предупреждением и освобождаете MoKee OpenSource и всех его разработчиков от любых юридических обязательств.</string>
 
     <!-- Automatic brightness customization -->
     <string name="light_sensor_current_value">Текущее показание датчика: <xliff:g id="light_level">%d</xliff:g> лк</string>

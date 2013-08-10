@@ -587,8 +587,8 @@
     <string name="headset_connect_player_summary">Lancer le lecteur de musique par défaut au branchement du casque</string>
     <string name="safe_headset_volume_title">Volume sécurisé du casque</string>
     <string name="safe_headset_volume_summary">Mettre en garde l\'utilisateur contre les volumes sonores élevés lors de la première utilisation du casque</string>
-    <string name="cyanogenmod_waiver_title">Renonciation</string>
-    <string name="cyanogenmod_waiver_body">Le changement de ce paramètre peut être interdit par les lois de votre gouvernement ou état.\n\nEn sélectionnant \'OK\' ci-dessous, vous reconnaissez avoir pris connaissance de cet avertissement, et vous dégagez CyanogenMod et ses contributeurs de toutes responsabilités et de toutes obligations juridiques.</string>
+    <string name="mokee_waiver_title">Renonciation</string>
+    <string name="mokee_waiver_body">Le changement de ce paramètre peut être interdit par les lois de votre gouvernement ou état.\n\nEn sélectionnant \'OK\' ci-dessous, vous reconnaissez avoir pris connaissance de cet avertissement, et vous dégagez MoKee OpenSource et ses contributeurs de toutes responsabilités et de toutes obligations juridiques.</string>
     <string name="light_sensor_current_value">Valeur actuelle du capteur de lumière\u00A0: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Niveaux d\'éclairage automatique</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>

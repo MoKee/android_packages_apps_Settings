@@ -522,8 +522,8 @@
     <string name="safe_headset_volume_summary">Зменшувати гучність при першому під’єднанні навушників</string>
     <string name="volume_adjust_sounds_enable_title">Звук при регулюванні гучності</string>
     <string name="volume_adjust_sounds_enable_summary">Відтворювати звук при зміні гучності кнопками \"+\" чи \"-\"</string>
-    <string name="cyanogenmod_waiver_title">Відмова від відповідальності</string>
-    <string name="cyanogenmod_waiver_body">Зміна цих налаштувань може суперечити законам вашох країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте CyanogenMod і всіх його розробників від любих юридичних зобов’язань.</string>
+    <string name="mokee_waiver_title">Відмова від відповідальності</string>
+    <string name="mokee_waiver_body">Зміна цих налаштувань може суперечити законам вашох країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте MoKee OpenSource і всіх його розробників від любих юридичних зобов’язань.</string>
     <string name="light_sensor_current_value">Поточний показ датчика: <xliff:g id="light_level">%d</xliff:g> лк</string>
     <string name="auto_brightness_dialog_title">Рівні автоматичної підсвітки</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> лк</string>
