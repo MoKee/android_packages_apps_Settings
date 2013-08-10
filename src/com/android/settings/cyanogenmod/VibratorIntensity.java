@@ -38,7 +38,7 @@ import android.widget.Button;
 
 import com.android.settings.R;
 
-import org.cyanogenmod.hardware.VibratorHW;
+import org.mokee.hardware.VibratorHW;
 
 import java.lang.Math;
 import java.text.DecimalFormat;

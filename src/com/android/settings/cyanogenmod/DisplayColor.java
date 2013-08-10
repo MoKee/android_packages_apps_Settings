@@ -34,7 +34,7 @@ import android.widget.Button;
 
 import com.android.settings.R;
 
-import org.cyanogenmod.hardware.DisplayColorCalibration;
+import org.mokee.hardware.DisplayColorCalibration;
 
 /**
  * Special preference type that allows configuration of Color settings
