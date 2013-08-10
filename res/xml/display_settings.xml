@@ -71,6 +71,12 @@
             android:summary="@string/wake_when_plugged_or_unplugged_summary"
             android:defaultValue="false" />
 
+        <!-- Proximity wake workaround -->
+        <CheckBoxPreference
+            android:key="is_inaccurate_proximity"
+            android:title="@string/is_inaccurate_proximity_title"
+            android:summary="@string/is_inaccurate_proximity_summary" />
+
         <PreferenceCategory
             android:key="category_wakeup_options"
             android:title="@string/display_category_wakeup_options_title" >
@@ -88,12 +94,6 @@
                 android:defaultValue="false" />
 
         </PreferenceCategory>
-
-        <!-- Proximity wake workaround -->
-        <CheckBoxPreference
-            android:key="is_inaccurate_proximity"
-            android:title="@string/is_inaccurate_proximity_title"
-            android:summary="@string/is_inaccurate_proximity_summary" />
 
         <PreferenceCategory
             android:key="crt_screen"
