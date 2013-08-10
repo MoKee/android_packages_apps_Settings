@@ -65,7 +65,6 @@
                 android:summary="@string/color_calibration_summary"
                 android:persistent="false" />
 
-
         <CheckBoxPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wake_when_plugged_or_unplugged_title"
@@ -88,25 +87,26 @@
                 android:summary="@string/pref_volume_wake_summary"
                 android:defaultValue="false" />
 
-            <!-- Proximity wake workaround -->
-            <CheckBoxPreference
-                android:key="is_inaccurate_proximity"
-                android:title="@string/is_inaccurate_proximity_title"
-                android:summary="@string/is_inaccurate_proximity_summary" />
-
-            <PreferenceCategory
-                android:key="crt_screen"
-                android:title="@string/crt_screen_title"/>
-
-            <CheckBoxPreference
-                android:key="system_power_crt_screen_off"
-                android:summary="@string/system_power_crt_screen_off_summary"
-                android:title="@string/system_power_crt_screen_off_title" />
-
-            <CheckBoxPreference
-                android:key="system_power_crt_screen_on"
-                android:summary="@string/system_power_crt_screen_on_summary"
-                android:title="@string/system_power_crt_screen_on_title" />
-
         </PreferenceCategory>
+
+        <!-- Proximity wake workaround -->
+        <CheckBoxPreference
+            android:key="is_inaccurate_proximity"
+            android:title="@string/is_inaccurate_proximity_title"
+            android:summary="@string/is_inaccurate_proximity_summary" />
+
+        <PreferenceCategory
+            android:key="crt_screen"
+            android:title="@string/crt_screen_title"/>
+
+        <CheckBoxPreference
+            android:key="system_power_crt_screen_off"
+            android:summary="@string/system_power_crt_screen_off_summary"
+            android:title="@string/system_power_crt_screen_off_title" />
+
+        <CheckBoxPreference
+            android:key="system_power_crt_screen_on"
+            android:summary="@string/system_power_crt_screen_on_summary"
+            android:title="@string/system_power_crt_screen_on_title" />
+
 </PreferenceScreen>
