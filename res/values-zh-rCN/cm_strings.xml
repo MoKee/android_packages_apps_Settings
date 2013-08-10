@@ -379,6 +379,7 @@
     <string name="hardware_keys_action_search">搜索助手</string>
     <string name="hardware_keys_action_voice_search">语音搜索</string>
     <string name="hardware_keys_action_in_app_search">程序内搜索</string>
+    <string name="hardware_keys_action_sleep">锁屏</string>
     <string name="swap_volume_buttons_title">交换音量键</string>
     <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
     <string name="navigation_bar_title">按键与布局</string>
