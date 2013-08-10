@@ -478,8 +478,8 @@
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示有多少条正在等候中的通知</string>
     <string name="display_category_wakeup_options_title">唤醒选项</string>
-    <string name="pref_home_wake_title">主页键唤醒</string>
-    <string name="pref_home_wake_summary">使用主页键唤醒设备</string>
+    <string name="pref_home_wake_title">Home 键唤醒</string>
+    <string name="pref_home_wake_summary">使用 Home 键唤醒设备</string>
     <string name="pref_volume_wake_title">音量键唤醒</string>
     <string name="pref_volume_wake_summary">使用音量键唤醒设备</string>
     <string name="adb_notify">USB 调试通知</string>
