@@ -724,4 +724,11 @@
     <string name="select_contact">选择联系人</string>
     <string name="app_ops_title">应用权限</string>
     <string name="app_ops_summary">管理应用程序的权限（请注意，错误的设置可能导致程序无法工作）</string>
+    <string name="vibrator_intensity_title">振动器强度</string>
+    <string name="vibrator_warning">不推荐数值高于%1$d</string>
+    <string name="color_calibration_title">颜色校准</string>
+    <string name="color_calibration_summary">校准屏幕上的颜色</string>
+    <string name="color_red_title">红</string>
+    <string name="color_green_title">绿</string>
+    <string name="color_blue_title">蓝</string>
 </resources>
