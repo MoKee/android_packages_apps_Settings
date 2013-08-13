@@ -167,8 +167,7 @@
     <string name="pie_juice_title">Battery juice color</string>
     
     <!-- show network speed -->
-    <string name="show_network_speed_title">Network speed</string>
-    <string name="show_network_speed_summary">Show network speed in status bar</string>
+    <string name="show_network_speed_title">Refreash Rate of Network Speed</string>
 
     <!-- show carrier label -->
     <string name="show_carrier_label_title">Carrier label</string>

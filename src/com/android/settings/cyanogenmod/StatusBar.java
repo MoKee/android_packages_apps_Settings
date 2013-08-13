@@ -46,6 +46,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
+    private static final String STATUS_BAR_TRAFFIC_INTERVAL = "status_bar_traffic_interval";
     private static final String STATUS_BAR_CARRIER_LABEL = "status_bar_carrier_label";
     private static final String NOTIFICATION_SHADE_DIM = "notification_shade_dim";
 
@@ -56,7 +57,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarAutoHide;
     private CheckBoxPreference mStatusBarNotifCount;
-    private CheckBoxPreference mStatusBarTraffic;
+    private ListPreference mStatusBarTraffic;
+    private ListPreference mStatusBarInterval;
     private CheckBoxPreference mStatusBarCarrierLabel;
     private CheckBoxPreference mNotificationShadeDim;
 
@@ -71,7 +73,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CLOCK);
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
-        mStatusBarTraffic = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC);
+        mStatusBarTraffic = (ListPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC);
+        mStatusBarInterval = (ListPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC_INTERVAL);
         mStatusBarCarrierLabel = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER_LABEL);
         mStatusBarAmPm = (ListPreference) prefSet.findPreference(STATUS_BAR_AM_PM);
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
@@ -93,8 +96,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
 
-        mStatusBarTraffic.setChecked((Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_TRAFFIC, 0) == 1));
+        int statusBarInterval = Settings.System.getInt(resolver,
+                "status_bar_traffic_interval", 4000);
+
+        mStatusBarTraffic.setValue(String.valueOf(statusBarInterval));
+        mStatusBarTraffic.setSummary(this.mStatusBarTraffic.getEntry());
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
 
         mStatusBarCarrierLabel.setChecked((Settings.System.getInt(resolver,
@@ -197,9 +203,15 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                     Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarTraffic) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
+            String rate = (String)newValue;
+            Settings.System.putInt(getContentResolver(), "status_bar_traffic_interval", Integer.valueOf(rate).intValue());
+            int isEnable = this.mStatusBarTraffic.findIndexOfValue(rate);
+            this.mStatusBarTraffic.setSummary(this.mStatusBarTraffic.getEntries()[isEnable]);
+            if (Integer.valueOf(rate).intValue() == 0) {
+                Settings.System.putInt(getContentResolver(), "status_bar_traffic", 0);
+                return true;
+            }
+            Settings.System.putInt(getContentResolver(), "status_bar_traffic", 1);
             return true;
         } else if (preference == mStatusBarCarrierLabel) {
             boolean value = (Boolean) newValue;

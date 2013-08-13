@@ -165,8 +165,7 @@
     <string name="pie_juice_title">电池颜色</string>
 
     <!-- show network speed -->
-    <string name="show_network_speed_title">当前网速</string>
-    <string name="show_network_speed_summary">在状态栏显示当前网速</string>
+    <string name="show_network_speed_title">网速刷新间隔</string>
 
     <!-- show carrier label -->
     <string name="show_carrier_label_title">运营商名称</string>

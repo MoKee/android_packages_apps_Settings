@@ -221,5 +221,25 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+
+    <string-array name="show_network_speed_entries">
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s</item>
+        <item>4s (default)</item>
+        <item>5s</item>
+        <item>6s</item>
+        <item>"don't display"</item>
+    </string-array>
+
+    <string-array name="show_network_speed_values">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>0</item>
+    </string-array>
 </resources>
 
