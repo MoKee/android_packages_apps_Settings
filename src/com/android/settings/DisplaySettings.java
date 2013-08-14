@@ -173,7 +173,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
             mInaccurateProximityPref.setOnPreferenceChangeListener(this);
-            removeWakeupCategory = false;
         }
 
         // respect device default configuration
