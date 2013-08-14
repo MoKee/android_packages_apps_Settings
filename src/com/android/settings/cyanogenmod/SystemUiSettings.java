@@ -106,19 +106,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         return false;
     }
 
-    private void updatePieControlSummary() {
-        if (mPieControl != null) {
-            boolean enabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.PIE_CONTROLS, 0) != 0;
-
-            if (enabled) {
-                mPieControl.setSummary(R.string.pie_control_enabled);
-            } else {
-                mPieControl.setSummary(R.string.pie_control_disabled);
-            }
-        }
-    }
-
     private void updateExpandedDesktop(int value) {
         ContentResolver cr = getContentResolver();
         Resources res = getResources();
