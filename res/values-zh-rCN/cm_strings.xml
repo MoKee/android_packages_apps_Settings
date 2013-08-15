@@ -33,9 +33,9 @@
     <string name="root_access_warning_title">允许 Root 授权请求?</string>
     <string name="root_access_warning_message">允许程序得到超级用户权限是有风险的! 这可能会影响您的系统的安全!</string>
     <string name="root_access_none">禁用</string>
-    <string name="root_access_apps">仅限于应用</string>
+    <string name="root_access_apps">仅限于应用程序</string>
     <string name="root_access_adb">仅限于 ADB</string>
-    <string name="root_access_all">应用与 ADB</string>
+    <string name="root_access_all">应用程序与 ADB</string>
     <string name="accessibility_home_button_answers_call_prerefence_title">使用 Home 键接听通话</string>
     <string name="headset_category_title">耳机</string>
     <string name="ok">确定</string>
@@ -387,7 +387,7 @@
     <string name="pref_flash_mode_title">手电筒切换模式</string>
     <string name="expanded_haptic_feedback_title">触动反馈</string>
     <string name="kill_app_longpress_back">使用返回键强制关闭程序</string>
-    <string name="kill_app_longpress_back_summary">长按返回键将终止前台应用</string>
+    <string name="kill_app_longpress_back_summary">长按返回键将终止前台应用程序</string>
     <string name="changelog_title">查看更改记录</string>
     <string name="changelog_loading">正在读取更改记录\u2026</string>
     <string name="changelog_error">无法读取更改记录</string>
@@ -510,7 +510,7 @@
     <string name="pref_wifi_disable_hdcp_summary">如果您可以连接但是没有任何输出, 请尝试此选项</string>
     <string name="app_security_title">应用安全</string>
     <string name="sms_security_check_limit_title">短信限制</string>
-    <string name="sms_security_check_limit_summary">应用在 30 分钟内发送 %d 条信息后需要用户认可才能继续</string>
+    <string name="sms_security_check_limit_summary">应用程序在 30 分钟内发送 %d 条信息后需要用户认可才能继续</string>
     <string name="sms_security_check_limit_default">30 (默认)</string>
     <string name="lock_clock_title">时钟小部件</string>
     <string name="lock_clock_summary">查看或改变 \'cLock\' 锁屏与主屏幕小部件的显示方式</string>
@@ -595,7 +595,7 @@
     <string name="category_spen_title">触控笔手势</string>
     <string name="enable_subcat_title">触控笔</string>
     <string name="enable_spen_title_head">启用触控笔手势</string>
-    <string name="enable_spen_summary_head">在触控笔按钮按住时允许通过手势而做出自定义操作. 警告: 应用可能无法接受在触控笔按钮按住时的用户输入</string>
+    <string name="enable_spen_summary_head">在触控笔按钮按住时允许通过手势而做出自定义操作. 警告: 应用程序可能无法接受在触控笔按钮按住时的用户输入</string>
     <string name="gestures_subcat_title">手势</string>
     <string name="gestures_left_spen_title_head">向左滑动</string>
     <string name="gestures_right_spen_title_head">向右滑动</string>
