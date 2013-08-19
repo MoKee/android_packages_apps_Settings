@@ -619,7 +619,9 @@
     <string name="power_notifications_vibrate_title">震动</string>
     <string name="power_notifications_ringtone_title">选择提示音</string>
     <string name="power_notifications_ringtone_silent">静音</string>
-    <string name="wake_when_plugged_or_unplugged_title">插件唤醒</string>
+    <string name="screen_off_animation_title">关屏动画</string>
+    <string name="screen_off_animation_summary">关闭屏幕时显示 CRT 电视关闭的动画</string>
+    <string name="wake_when_plugged_or_unplugged_title">充电唤醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">充电器连接或断开时，打开屏幕</string>
     <string name="intent_sender_data_label"><xliff:g id="data">数据：</xliff:g></string>
     <string name="privacy_guard_switch_label">启用隐私卫士</string>

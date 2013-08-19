@@ -657,6 +657,8 @@
     <string name="power_notifications_vibrate_title">Δόνηση</string>
     <string name="power_notifications_ringtone_title">Ήχος ειδοποίησης</string>
     <string name="power_notifications_ringtone_silent">Αθόρυβο</string>
+    <string name="screen_off_animation_title">Εφέ σβησίματος οθόνης</string>
+    <string name="screen_off_animation_summary">Εμφάνιση του εφέ electron beam κατά το σβήσιμο της οθόνης</string>
     <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
     <string name="wake_when_plugged_or_unplugged_summary">Ενεργοποίηση της οθόνης κατά τη σύνδεση ή την αποσύνδεση του φορτιστή</string>
     <string name="confirm_delete_apn">Το σημείο πρόσβασης θα διαγραφεί.</string>

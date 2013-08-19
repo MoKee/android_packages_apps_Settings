@@ -890,6 +890,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silent</string>
 
+    <!-- Display Screen-on and off Electron beam animations -->
+    <string name="screen_off_animation_title">Screen-off animation</string>
+    <string name="screen_off_animation_summary">Show the electron beam animation when the screen is turned off</string>
+
     <!-- Turn on display when power connected; turn off display when power disconnected -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting the charger</string>

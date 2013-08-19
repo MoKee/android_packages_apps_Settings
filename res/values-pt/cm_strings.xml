@@ -598,6 +598,8 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="auto_brightness_sensitivity_medium">Média</string>
     <string name="auto_brightness_sensitivity_high">Alta</string>
     <string name="auto_brightness_sensitivity_veryhigh">Muito alta</string>
+    <string name="screen_off_animation_title">Animação ao desligar a tela</string>
+    <string name="screen_off_animation_summary">Mostrar a animação feixe de elétrons quando a tela é desligada</string>
     <string name="confirm_delete_apn">O APN vai ser removido.</string>
     <string name="profile_trigger_connect">Ao conectar</string>
     <string name="profile_trigger_disconnect">Ao desconectar</string>

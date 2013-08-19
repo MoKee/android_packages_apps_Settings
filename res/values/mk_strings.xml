@@ -36,32 +36,25 @@
 
     <!-- Other Settings Category -->
     <string name="other_category">Other settings</string>
-    
-    <!-- CRT --> 
-    <string name="crt_screen_title">CRT Animation</string>
-    <string name="system_power_crt_screen_off_title">CRT off</string>
-    <string name="system_power_crt_screen_off_summary">Screen will animate an electron beam when turned off</string>
-    <string name="system_power_crt_screen_on_title">CRT on</string>
-    <string name="system_power_crt_screen_on_summary">Screen will animate an electron beam when turned on</string>
-    
+
     <!-- Hide Initial Page Hints -->
     <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
     <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>	
-    
+
     <!-- Fullscreen Keyboard -->
     <string name="fullscreen_keyboard">Disable fullscreen keyboard</string>
     <string name="fullscreen_keyboard_summary">Will allow you to read the message your typing while in landscape mode.</string>
-    
+
     <!-- Breathing Notifications -->
     <string name="mms_breath">Breathing SMS</string>
     <string name="mms_breath_summary">Will give your sms notifications a breathing effect on the statusbar.</string>
     <string name="missed_call_breath">Breathing missed call</string>
     <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string>
-    
+
     <!-- Notification shade dimming -->
     <string name="notification_shade_dim_title">Dim notification shade</string>
     <string name="notification_shade_dim_summary">Toggle the dimming effect when pulling down the notification shade</string>
-    
+
     <!-- Alpha-Bar -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on Color to apply</string>
@@ -71,7 +64,7 @@
     <string name="hex_hint">#FF000000</string>
     <string name="set">Set</string>
     <string name="ics_color">Holo</string>
-    
+
     <!-- Color Picker -->
     <string name="navigation_bar_alpha_title">Statusbar and navigation bar opacity</string>
     <string name="navigation_bar_color_title">Navigation bar color</string>
@@ -165,7 +158,7 @@
     <string name="pie_chevron_left_title">Left chevron color</string>
     <string name="pie_chevron_right_title">Right chevron color</string>
     <string name="pie_juice_title">Battery juice color</string>
-    
+
     <!-- show network speed -->
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>
@@ -186,7 +179,7 @@
     <!-- Proximity work-around -->
     <string name="is_inaccurate_proximity_title">Inaccurate proximity</string>
     <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors: this will force phone to turn on the screen after the call has ended.</string>
-    
+
     <!-- Halo -->
     <string name="halo_settings">Halo Floating Window</string>
     <string name="title_halo">HALO</string>

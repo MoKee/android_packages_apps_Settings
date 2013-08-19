@@ -631,6 +631,8 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="power_notifications_ringtone_title">Benachrichtigungston</string>
     <string name="power_notifications_ringtone_silent">Kein Ton</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Daten:</xliff:g></string>
+    <string name="screen_off_animation_title">Ausschaltanimation</string>
+    <string name="screen_off_animation_summary">Beim Ausschalten des Bildschirms eine Animation anzeigen</string>
     <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
     <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen des Ladegerätes das Display anschalten</string>
     <string name="confirm_delete_apn">Der Zugangspunkt wird gelöscht.</string>

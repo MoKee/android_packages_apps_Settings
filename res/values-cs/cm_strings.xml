@@ -723,6 +723,9 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
     <string name="power_notifications_ringtone_title">Zvuk upozornění</string>
     <string name="power_notifications_ringtone_silent">Tichý</string>
 
+    <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
+    <string name="screen_off_animation_summary">Zobrazit animaci elektronového paprsku při vypnutí obrazovky</string>
+
     <string name="confirm_delete_apn">Položka APN bude smazána.</string>
 
     <string name="privacy_guard_switch_label">Povolit Ochranu soukromí</string>

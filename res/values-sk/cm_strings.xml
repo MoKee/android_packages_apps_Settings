@@ -299,6 +299,8 @@
     <string name="ring_mode_normal">Normálny</string>
     <string name="ring_mode_vibrate">Vibrácie</string>
     <string name="ring_mode_mute">Umlčaný</string>
+    <string name="screen_off_animation_title">Animácia vypnutia</string>
+    <string name="screen_off_animation_summary">Zobrazí animáciu s elektrónovým lúčom pri vypnutí obrazovky</string>
     <string name="privacy_guard_switch_label">Povoliť ochranu súkromia</string>
     <string name="privacy_guard_dlg_title">Povoliť ochranu súkromia?</string>
     <string name="privacy_guard_dlg_text">Keď je povolená ochrana súkromia, aplikáciám nebude možné pristupovať k osobným údajom ako sú kontakty, správy alebo denníky hovorov.</string>

@@ -598,6 +598,8 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="auto_brightness_sensitivity_medium">Średnia</string>
     <string name="auto_brightness_sensitivity_high">Wysoka</string>
     <string name="auto_brightness_sensitivity_veryhigh">Bardzo wysoka</string>
+    <string name="screen_off_animation_title">Animacja wygaszania ekranu</string>
+    <string name="screen_off_animation_summary">Wyświetlaj animację w stylu starego telewizora podczas wygaszania ekranu</string>
     <string name="headset_category_title">Zestaw słuchawkowy</string>
     <string name="privacy_guard_switch_label">Aktywuj ochronę prywatności</string>
     <string name="privacy_guard_dlg_title">Aktywować ochronę prywatności?</string>

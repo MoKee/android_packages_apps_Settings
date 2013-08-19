@@ -64,8 +64,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_LOCKSCREEN_ROTATION = "lockscreen_rotation";
-    private static final String KEY_POWER_CRT_SCREEN_ON = "system_power_crt_screen_on";
-    private static final String KEY_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
+    private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
     private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
 
@@ -83,8 +82,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private DisplayManager mDisplayManager;
 
-    private CheckBoxPreference mCrtScreenOff;
-    private CheckBoxPreference mCrtScreenOn;
     private CheckBoxPreference mInaccurateProximityPref;
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
     private PreferenceScreen mDisplayRotationPreference;
@@ -98,7 +95,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private WifiDisplayStatus mWifiDisplayStatus;
     private Preference mWifiDisplayPreference;
 
-    private boolean isCrtOffChecked = false;
+    private CheckBoxPreference mScreenOffAnimation;
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -175,27 +172,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mInaccurateProximityPref.setOnPreferenceChangeListener(this);
         }
 
-        // respect device default configuration
-        // true fades while false animates
-        boolean electronBeamFadesConfig = res.getBoolean(
-                com.android.internal.R.bool.config_animateScreenLights);
-
-        // use this to enable/disable crt on feature
-        // crt only works if crt off is enabled
-        // total system failure if only crt on is enabled
-        isCrtOffChecked = Settings.System.getInt(resolver,
-                Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF,
-                electronBeamFadesConfig ? 0 : 1) == 1;
-
-        mCrtScreenOff = (CheckBoxPreference) findPreference(KEY_POWER_CRT_SCREEN_OFF);
-        mCrtScreenOff.setChecked(isCrtOffChecked);
-        mCrtScreenOff.setOnPreferenceChangeListener(this);
-
-        mCrtScreenOn = (CheckBoxPreference) findPreference(KEY_POWER_CRT_SCREEN_ON);
-        mCrtScreenOn.setChecked(Settings.System.getInt(resolver,
-                Settings.System.SYSTEM_POWER_ENABLE_CRT_ON, 0) == 1);
-        mCrtScreenOn.setEnabled(isCrtOffChecked);
-        mCrtScreenOn.setOnPreferenceChangeListener(this);
+        mScreenOffAnimation = (CheckBoxPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
+        if (res.getBoolean(com.android.internal.R.bool.config_screenOffAnimation)) {
+            mScreenOffAnimation.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, 1) == 1);
+        } else {
+            getPreferenceScreen().removePreference(mScreenOffAnimation);
+        }
 
         mWakeWhenPluggedOrUnplugged =
                 (CheckBoxPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
@@ -487,7 +470,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mWakeWhenPluggedOrUnplugged) {
+        if (preference == mScreenOffAnimation) {
+            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_OFF_ANIMATION,
+                    mScreenOffAnimation.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mWakeWhenPluggedOrUnplugged) {
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
                     mWakeWhenPluggedOrUnplugged.isChecked() ? 1 : 0);
@@ -509,22 +496,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         } else if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
-        } else if (KEY_POWER_CRT_SCREEN_OFF.equals(key)) {
-            isCrtOffChecked = ((Boolean) objValue).booleanValue();
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF,
-                    (isCrtOffChecked ? 1 : 0));
-            // if crt off gets turned off, crt on gets turned off and disabled
-            if (!isCrtOffChecked) {
-                Settings.System.putInt(getContentResolver(),
-                        Settings.System.SYSTEM_POWER_ENABLE_CRT_ON, 0);
-                mCrtScreenOn.setChecked(false);
-            }
-            mCrtScreenOn.setEnabled(isCrtOffChecked);
-        } else if (KEY_POWER_CRT_SCREEN_ON.equals(key)) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SYSTEM_POWER_ENABLE_CRT_ON,
-                    ((Boolean) objValue).booleanValue() ? 1 : 0);
         } else if (KEY_IS_INACCURATE_PROXIMITY.equals(key)) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
