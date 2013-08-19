@@ -61,7 +61,10 @@
     <string name="build_date">编译日期</string>
     <string name="cpu_info">处理器</string>
     <string name="mem_info">内存</string>
+    <string name="header_category_interface">个性化</string>
+    <string name="homescreen_settings_title">主屏幕</string>
     <string name="themes_settings_title">主题</string>
+    <string name="system_settings_title">接口</string>
     <string name="system_interface_title">系统界面</string>
     <string name="notification_drawer_title">下拉通知栏</string>
     <string name="notification_drawer_behaviour_title">行为</string>
@@ -275,6 +278,8 @@
     <string name="link_volume_ringtones">链接铃声与通知的音量</string>
     <string name="link_volume_mutes">静音模式将会影响通知</string>
     <string name="volume_keys_control_ring_stream">音量键将控制铃声音量</string>
+    <string name="display_lights_settings_title">显示 &amp; 指示灯</string>
+    <string name="lights_category_title">指示灯</string>
     <string name="notification_pulse_title">通知指示灯</string>
     <string name="notification_light_general_title">常规</string>
     <string name="notification_light_applist_title">应用</string>
@@ -319,6 +324,8 @@
     <string name="ring_mode_normal">正常</string>
     <string name="ring_mode_vibrate">振动</string>
     <string name="ring_mode_mute">静音</string>
+    <string name="automation_effects_title">自动操作 &amp; 效果</string>
+    <string name="button_settings">按键</string>
     <string name="hardware_keys_enable_custom_title">允许自定义的行为</string>
     <string name="hardware_keys_show_overflow_title">显示更多选项菜单键</string>
     <string name="hardware_keys_show_overflow_summary">在程序内加入更多选项菜单键</string>
@@ -333,6 +340,7 @@
     <string name="hardware_keys_action_sleep">锁屏</string>
     <string name="swap_volume_buttons_title">交换音量键</string>
     <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
+    <string name="navigation_bar_category">导航栏</string>
     <string name="navigation_bar_title">按键与布局</string>
     <string name="navigation_bar_help_text">1 - 点击锁定图标以开始编辑\n\n2 - 点击任何按键以指定或改变它的功能\n\n3 - 长按任何按键以重新排列按键顺序\n\n4 - 再次点击锁定图标将会保存您的改变\n\n5 - 如果您想还原为系统默认值, 请点击重置键\n\n</string>
     <string name="navigation_bar_tips">&#8226; 一个按键只能拥有一个行为\n\n&#8226; Home 键的行为是不能被改变的\n\n&#8226; 侧边按键的位置是不能改变的</string>
@@ -429,6 +437,8 @@
     <string name="status_bar_notif_count_summary">显示有多少条正在等候中的通知</string>
     <string name="pref_home_wake_title">Home 键唤醒</string>
     <string name="pref_home_wake_summary">使用 Home 键唤醒设备</string>
+    <string name="volume_wake_title">音量键唤醒</string>
+    <string name="volume_wake_summary">使用音量键唤醒设备</string>
     <string name="adb_notify">USB 调试通知</string>
     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
     <string name="development_tools_title">启动开发工具</string>
@@ -674,4 +684,8 @@
     <string name="color_red_title">红</string>
     <string name="color_green_title">绿</string>
     <string name="color_blue_title">蓝</string>
+    <string name="more_device_controls_title">更多\u2026</string>
+    <string name="more_device_settings_title">其它设备选项</string>
+    <string name="sensors_motors_title">传感器 &amp; 引擎</string>
+    <string name="display_calibration_title">显示校准</string>
 </resources>
