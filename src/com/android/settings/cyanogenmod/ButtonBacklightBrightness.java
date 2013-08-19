@@ -35,7 +35,7 @@ import android.widget.Button;
 
 import com.android.settings.R;
 
-import org.cyanogenmod.hardware.ButtonBacklight;
+import org.mokee.hardware.ButtonBacklight;
 
 import java.lang.Math;
 import java.text.DecimalFormat;
