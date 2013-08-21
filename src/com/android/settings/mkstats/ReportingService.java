@@ -87,12 +87,13 @@ public class ReportingService extends Service {
     }
 
     private void report() {
-        String deviceId = Utilities.getUniqueID(getApplicationContext());
+        final Context context = ReportingService.this;
+        String deviceId = Utilities.getUniqueID(context);
         String deviceName = Utilities.getDevice();
         String deviceVersion = Utilities.getModVersion();
-        String deviceCountry = Utilities.getCountryCode(getApplicationContext());
-        String deviceCarrier = Utilities.getCarrier(getApplicationContext());
-        String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
+        String deviceCountry = Utilities.getCountryCode(context);
+        String deviceCarrier = Utilities.getCarrier(context);
+        String deviceCarrierId = Utilities.getCarrierId(context);
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
         Log.d(TAG, "SERVICE: Device Name=" + deviceName);

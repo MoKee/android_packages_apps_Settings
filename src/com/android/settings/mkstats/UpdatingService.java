@@ -61,7 +61,8 @@ public class UpdatingService extends Service {
     }
 
     private void update() {
-        String deviceId = Utilities.getUniqueID(getApplicationContext());
+        final Context context = UpdatingService.this;
+        String deviceId = Utilities.getUniqueID(context);
         String deviceVersion = Utilities.getModVersion();
         String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
 
