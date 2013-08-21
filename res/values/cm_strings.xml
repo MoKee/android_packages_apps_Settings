@@ -434,6 +434,10 @@
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
 
+    <!-- Backlight brightness settings screen -->
+    <string name="adaptive_backlight_title">Adaptive backlight</string>
+    <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximize battery life</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
@@ -967,6 +971,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="key_backlight_title">Backlight</string>
     <string name="button_backlight_title">Button backlight brightness</string>
     <string name="keyboard_backlight_title">Keyboard backlight brightness</string>
+
+    <!-- Hardware tunables - Gamma calibration -->
+    <string name="category_gamma_title">Gamma</string>
+    <string name="gamma_tuning_title_head">Gamma calibration</string>
+    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
 
     <!--  Other device settings -->
     <string name="more_device_controls_title">More\u2026</string>
