@@ -62,7 +62,7 @@
     <string name="cpu_info">处理器</string>
     <string name="mem_info">内存</string>
     <string name="header_category_interface">个性化</string>
-    <string name="homescreen_settings_title">主屏幕</string>
+    <string name="homescreen_settings_title">启动器</string>
     <string name="themes_settings_title">主题</string>
     <string name="system_settings_title">接口</string>
     <string name="system_interface_title">系统界面</string>
