@@ -216,6 +216,12 @@ public class QuickSettingsUtil {
         if (!fastcharge.exists()) {
             removeTile(TILE_FCHARGE);
         }
+
+        // Don't show the Camera tile if the device has no cameras
+        if (!QSUtils.deviceSupportsCamera()) {
+            removeTile(TILE_CAMERA);
+        }
+
         sUnsupportedRemoved = true;
     }
 
