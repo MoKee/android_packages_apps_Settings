@@ -61,25 +61,8 @@
     <string name="build_date">Kørselsdato</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Hukommelse</string>
-<<<<<<< HEAD
-=======
-    <string name="anonymous_statistics_title">CyanogenMod-statistikker</string>
-    <string name="anonymous_statistics_summary">Hjælp med at gøre CyanogenMod bedre ved at deltage i rapportering af anonyme statistikker</string>
-    <string name="anonymous_statistics_warning_title">Om</string>
-    <string name="anonymous_statistics_warning">Deltagelse af CyanogenMod-statistikker vil tillade ikke-personlige data, der skal forelægges for udviklerne af CyanogenMod, at spore unikke installationer på tværs af enheder. De indsendte oplysninger omfatter en entydig indikator, som ikke kompromitterer dit privatliv eller personlige data. Dataene indsendes under hver opstart.\n\nFor et eksempel på de data, der er indsendt, skal du trykke på Få vist data.</string>
-    <string name="enable_reporting_title">Aktivér rapportering</string>
-    <string name="preview_data_title">Få vist data</string>
-    <string name="view_stats_title">Vis statistikker</string>
-    <string name="anonymous_learn_more">Læs mere</string>
-    <string name="anonymous_notification_desc">Aktivér eller deaktiver CyanogenMod-statistikker</string>
-    <string name="preview_id_title">Unikt ID</string>
-    <string name="preview_device_title">Enhed</string>
-    <string name="preview_version_title">Version</string>
-    <string name="preview_country_title">Land</string>
-    <string name="preview_carrier_title">Operatør</string>
     <string name="header_category_interface">Tilpasning</string>
     <string name="homescreen_settings_title">Startskærm</string>
->>>>>>> cm-10.2
     <string name="themes_settings_title">Temaer</string>
     <string name="system_settings_title">Brugerflade</string>
     <string name="system_interface_title">Systembrugerflade</string>
@@ -572,17 +555,12 @@
     <string name="lockscreen_background_default_wallpaper">Standardtapet</string>
     <string name="headset_connect_player_title">Start musik-app</string>
     <string name="headset_connect_player_summary">Start standard-app til musik, når headset tilsluttes</string>
-<<<<<<< HEAD
+    <string name="safe_headset_volume_title">Sikker lydstyrke for håndfri</string>
     <string name="mokee_waiver_title">Ophævelse</string>
     <string name="mokee_waiver_body">At ændre denne indstilling kan være imod loven.\n\nVed at vælge \'OK\' herunder anerkender du denne advarsel og ophæver, sikrer og holder MoKee OpenSource og dens bidragydere skadesløse fra alle juridiske forpligtelser.</string>
-=======
-    <string name="safe_headset_volume_title">Sikker lydstyrke for håndfri</string>
-    <string name="cyanogenmod_waiver_title">Ophævelse</string>
-    <string name="cyanogenmod_waiver_body">At ændre denne indstilling kan være imod loven.\n\nVed at vælge \'OK\' herunder anerkender du denne advarsel og ophæver, sikrer og holder CyanogenMod og dens bidragydere skadesløse fra alle juridiske forpligtelser.</string>
     <string name="auto_brightness_setup_title">Automatisk lysstyrke</string>
     <string name="auto_brightness_adjustment_title">Tilpasning af lysstyrke</string>
     <string name="auto_brightness_twilight_adjustment">Tilpas til solopgang og solnedgang</string>
->>>>>>> cm-10.2
     <string name="light_sensor_current_value">Aktuel værdi for lyssensor: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Automatisk lysstyrke-niveau</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
@@ -651,24 +629,6 @@ to for at indsætte yderligere kontrolpunkter. \'Fjern\' sletter den valgte linj
     <string name="navring_action_torch">Tænd/sluk lommelygte</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Vælg handling</string>
-<<<<<<< HEAD
-=======
-    <string name="pie_control_title">Lagkagekontroller</string>
-    <string name="pie_control_enabled">Slået til, når Udvidet skrivebord er aktivt</string>
-    <string name="pie_control_disabled">Slået fra</string>
-    <string name="pie_control_sensitivity_title">Følsomhed</string>
-    <string name="pie_control_sensitivity_low">Lav</string>
-    <string name="pie_control_sensitivity_medium">Normal</string>
-    <string name="pie_control_sensitivity_high">Høj</string>
-    <string name="pie_control_sensitivity_very_high">Meget høj</string>
-    <string name="pie_control_size">Størrelse på navigationstast</string>
-    <string name="pie_control_trigger_positions">Udløserpositioner</string>
-    <string name="pie_control_trigger_left">Venstre skærmkant</string>
-    <string name="pie_control_trigger_bottom">Nederste skærmkant</string>
-    <string name="pie_control_trigger_right">Højre skærmkant</string>
-    <string name="pie_control_trigger_top">Øverste skærmkant</string>
-    <string name="pie_control_trigger_top_summary">Kun navigation vil blive vist øverst</string>
->>>>>>> cm-10.2
     <string name="gestures_settings_title">Penbevægelser</string>
     <string name="category_spen_title">Penbevægelser</string>
     <string name="enable_subcat_title">Pen</string>
