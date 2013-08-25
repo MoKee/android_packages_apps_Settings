@@ -25,7 +25,6 @@ import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -54,23 +53,27 @@ public class QuickSettingsTiles extends Fragment {
 
     private static final int MENU_RESET = Menu.FIRST;
 
-    DraggableGridView mDragView;
+    private DraggableGridView mDragView;
     private ViewGroup mContainer;
-    LayoutInflater mInflater;
-    Resources mSystemUiResources;
-    TileAdapter mTileAdapter;
-    int mTileTextSize;
+    private LayoutInflater mInflater;
+    private Resources mSystemUiResources;
+    private TileAdapter mTileAdapter;
+    private boolean mConfigRibbon = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        int colCount = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.QUICK_TILES_PER_ROW, 3);
-        updateTileTextSize(colCount);
         mDragView = new DraggableGridView(getActivity());
         mContainer = container;
         mContainer.setClipChildren(false);
         mContainer.setClipToPadding(false);
         mInflater = inflater;
+
+        // We have both a panel and the ribbon config, see which one we are using
+        Bundle args = getArguments();
+        if (args != null) {
+            mConfigRibbon = args.getBoolean("config_ribbon");
+        }
+
         PackageManager pm = getActivity().getPackageManager();
         if (pm != null) {
             try {
@@ -120,7 +123,8 @@ public class QuickSettingsTiles extends Fragment {
 
     void genTiles() {
         mDragView.removeAllViews();
-        ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(QuickSettingsUtil.getCurrentTiles(getActivity()));
+        ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(
+                QuickSettingsUtil.getCurrentTiles(getActivity(), mConfigRibbon));
         for (String tileindex : tiles) {
             QuickSettingsUtil.TileInfo tile = QuickSettingsUtil.TILES.get(tileindex);
             if (tile != null) {
@@ -143,7 +147,6 @@ public class QuickSettingsTiles extends Fragment {
             tileView = (View) mInflater.inflate(R.layout.quick_settings_tile_generic, null, false);
             final TextView name = (TextView) tileView.findViewById(R.id.tile_textview);
             name.setText(titleId);
-            name.setTextSize(1, mTileTextSize);
             name.setCompoundDrawablesRelativeWithIntrinsicBounds(0, iconRegId, 0, 0);
         } else {
             final boolean isUserTile = titleId == QuickSettingsUtil.TILES.get(QSConstants.TILE_USER).getTitleResId();
@@ -180,17 +183,21 @@ public class QuickSettingsTiles extends Fragment {
         genTiles();
         mDragView.setOnRearrangeListener(new OnRearrangeListener() {
             public void onRearrange(int oldIndex, int newIndex) {
-                ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(QuickSettingsUtil.getCurrentTiles(getActivity()));
+                ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(
+                        QuickSettingsUtil.getCurrentTiles(getActivity(), mConfigRibbon));
                 String oldTile = tiles.get(oldIndex);
                 tiles.remove(oldIndex);
                 tiles.add(newIndex, oldTile);
-                QuickSettingsUtil.saveCurrentTiles(getActivity(), QuickSettingsUtil.getTileStringFromList(tiles));
+                QuickSettingsUtil.saveCurrentTiles(getActivity(),
+                        QuickSettingsUtil.getTileStringFromList(tiles), mConfigRibbon);
             }
             @Override
             public void onDelete(int index) {
-                ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(QuickSettingsUtil.getCurrentTiles(getActivity()));
+                ArrayList<String> tiles = QuickSettingsUtil.getTileListFromString(
+                        QuickSettingsUtil.getCurrentTiles(getActivity(), mConfigRibbon));
                 tiles.remove(index);
-                QuickSettingsUtil.saveCurrentTiles(getActivity(), QuickSettingsUtil.getTileStringFromList(tiles));
+                QuickSettingsUtil.saveCurrentTiles(getActivity(),
+                        QuickSettingsUtil.getTileStringFromList(tiles), mConfigRibbon);
             }
         });
         mDragView.setOnItemClickListener(new OnItemClickListener() {
@@ -204,9 +211,11 @@ public class QuickSettingsTiles extends Fragment {
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
-                                ArrayList<String> curr = QuickSettingsUtil.getTileListFromString(QuickSettingsUtil.getCurrentTiles(getActivity()));
+                                ArrayList<String> curr = QuickSettingsUtil.getTileListFromString(
+                                        QuickSettingsUtil.getCurrentTiles(getActivity(), mConfigRibbon));
                                 curr.add(mTileAdapter.getTileId(position));
-                                QuickSettingsUtil.saveCurrentTiles(getActivity(), QuickSettingsUtil.getTileStringFromList(curr));
+                                QuickSettingsUtil.saveCurrentTiles(getActivity(),
+                                        QuickSettingsUtil.getTileStringFromList(curr), mConfigRibbon);
                             }
                         }).start();
                         TileInfo info = QuickSettingsUtil.TILES.get(mTileAdapter.getTileId(position));
@@ -255,7 +264,7 @@ public class QuickSettingsTiles extends Fragment {
         alert.setMessage(R.string.tiles_reset_message);
         alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                QuickSettingsUtil.resetTiles(getActivity());
+                QuickSettingsUtil.resetTiles(getActivity(), mConfigRibbon);
                 genTiles();
             }
         });
@@ -319,21 +328,5 @@ public class QuickSettingsTiles extends Fragment {
     public interface OnRearrangeListener {
         public abstract void onRearrange(int oldIndex, int newIndex);
         public abstract void onDelete(int index);
-    }
-
-    private void updateTileTextSize(int column) {
-        // adjust the tile text size based on column count
-        switch (column) {
-            case 5:
-                mTileTextSize = 7;
-                break;
-            case 4:
-                mTileTextSize = 10;
-                break;
-            case 3:
-            default:
-                mTileTextSize = 12;
-                break;
-        }
     }
 }

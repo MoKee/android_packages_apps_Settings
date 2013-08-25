@@ -15,8 +15,7 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/quick_settings_title">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
         android:key="pref_general_settings"
@@ -33,12 +32,6 @@
             android:key="qs_collapse_panel"
             android:title="@string/title_collapse_panel"
             android:summary="@string/summary_collapse_panel" />
-
-        <PreferenceScreen
-            android:key="quicksettings_tiles_style"
-            android:fragment="com.android.settings.cyanogenmod.quicksettings.QuickSettingsTilesStyle"
-            android:title="@string/quicksettings_tiles_style"
-            android:summary="@string/summary_quicksettings_tiles_style" />
 
     </PreferenceCategory>
 

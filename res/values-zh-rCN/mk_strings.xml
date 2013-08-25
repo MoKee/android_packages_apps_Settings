@@ -207,12 +207,6 @@
     <string name="halo_size_monster">庞大</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">快速设置样式</string>
-    <string name="summary_quicksettings_tiles_style">改变快速设置的显示样式</string>
-    <string name="quicksettings_tiles_style_additional_options">附加选项</string>
-    <string name="tiles_per_row_title">每行按钮数</string>
-    <string name="tiles_per_row_duplicate_landscape_title">自适应横向屏幕</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">当前为横向屏幕时每行按钮数量翻倍</string>
     <string name="title_tile_fcharge">快速充电</string>
 
     <!-- ListView animation -->

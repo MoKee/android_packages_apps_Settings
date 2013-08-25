@@ -26,7 +26,6 @@ import android.graphics.Point;
 import android.graphics.PorterDuff.Mode;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.provider.Settings;
 import android.util.AttributeSet;
 import android.view.View.MeasureSpec;
 import android.view.View.OnClickListener;
@@ -48,8 +47,7 @@ import com.android.settings.cyanogenmod.QuickSettingsTiles.OnRearrangeListener;
 public class DraggableGridView extends ViewGroup implements
         View.OnTouchListener, View.OnClickListener, View.OnLongClickListener {
 
-    protected int colCount = 3;
-    protected int childWidth, childHeight, cellGap, scroll = 0;
+    protected int colCount, childWidth, childHeight, cellGap, scroll = 0;
     protected float lastDelta = 0;
     protected Handler handler = new Handler();
     protected int dragged = -1, lastX = -1, lastY = -1, lastTarget = -1;
@@ -59,7 +57,6 @@ public class DraggableGridView extends ViewGroup implements
     protected OnRearrangeListener onRearrangeListener;
     protected OnClickListener secondaryOnClickListener;
     private OnItemClickListener onItemClickListener;
-    private int mTileTextSize;
 
     public DraggableGridView(Context context) {
         super(context);
@@ -144,13 +141,6 @@ public class DraggableGridView extends ViewGroup implements
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        // determine number of columns
-        colCount = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.QUICK_TILES_PER_ROW, 3);
-
-        // update tile text size based on column count
-        updateTileTextSize(colCount);
-
         int N = getChildCount();
         for (int i = 0; i < N; i++) {
             View v = (View) getChildAt(i);
@@ -284,7 +274,6 @@ public class DraggableGridView extends ViewGroup implements
         TextView addDeleteTile = ((TextView) getChildAt(getChildCount() - 1).findViewById(R.id.tile_textview));
         addDeleteTile.setCompoundDrawablesRelativeWithIntrinsicBounds(0, resid, 0, 0);
         addDeleteTile.setText(stringid);
-        addDeleteTile.setTextSize(1, mTileTextSize);
     }
 
     public boolean onLongClick(View view) {
@@ -513,22 +502,6 @@ public class DraggableGridView extends ViewGroup implements
 
     public void setOnRearrangeListener(OnRearrangeListener l) {
         this.onRearrangeListener = l;
-    }
-
-    private void updateTileTextSize(int column) {
-        // adjust the tile text size based on column count
-        switch (column) {
-            case 5:
-                mTileTextSize = 7;
-                break;
-            case 4:
-                mTileTextSize = 10;
-                break;
-            case 3:
-            default:
-                mTileTextSize = 12;
-                break;
-        }
     }
 
     public void setOnItemClickListener(OnItemClickListener l) {

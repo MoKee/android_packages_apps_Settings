@@ -1650,7 +1650,7 @@
                 android:theme="@*android:style/Theme.Holo.Dialog.Alert" />
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
-        
+
         <activity
             android:name=".cyanogenmod.TransparencyDialog"
             android:theme="@android:style/Theme.Dialog" >
@@ -1686,7 +1686,7 @@
                 <category android:name="android.intent.category.SHORTCUT" />
               </intent-filter>
         </activity>
-        
+
         <activity android:name="Settings$QuietHoursSettingsActivity"
                 android:label="@string/quiet_hours_title"
                 android:taskAffinity=""
@@ -1761,7 +1761,7 @@
 
         <activity android:name=".cyanogenmod.QuickSettings" />
 
-        <activity android:name=".cyanogenmod.Quicksettings.QuickSettingsTilesStyle" />
+        <activity android:name=".cyanogenmod.NotificationDrawer" />
 
         <activity android:name=".cyanogenmod.MoreDeviceSettings" />
 
