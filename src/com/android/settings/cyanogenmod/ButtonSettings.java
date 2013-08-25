@@ -157,12 +157,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         hasAssistKey ? ACTION_NOTHING : ACTION_SEARCH);
             mMenuLongPressAction = initActionList(KEY_MENU_LONG_PRESS, longPressAction);
 
-            mShowActionOverflow = (CheckBoxPreference)
-                    prefScreen.findPreference(Settings.System.UI_FORCE_OVERFLOW_BUTTON);
-
             hasAnyBindableKey = true;
         } else {
-            prefScreen.removePreference(menuCategory);
+            menuCategory.removePreference(findPreference(KEY_MENU_PRESS));
+            menuCategory.removePreference(findPreference(KEY_MENU_LONG_PRESS));
         }
 
         if (hasAssistKey) {
@@ -191,6 +189,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(appSwitchCategory);
+        }
+
+        if (hasAnyBindableKey) {
+            mShowActionOverflow = (CheckBoxPreference)
+                prefScreen.findPreference(Settings.System.UI_FORCE_OVERFLOW_BUTTON);
+        } else {
+            prefScreen.removePreference(menuCategory);
         }
 
         if (!hasAnyBindableKey) {
