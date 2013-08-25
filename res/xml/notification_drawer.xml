@@ -32,7 +32,7 @@
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="qs_quick_access"
             android:title="@string/title_quick_access"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="qs_quick_access_linked"

@@ -477,6 +477,14 @@
     <string name="quick_pulldown_right">右</string>
     <string name="title_collapse_panel">自动关闭面板</string>
     <string name="summary_collapse_panel">做出操作后关闭快速设置面板</string>
+    <string name="pref_network_mode_title">网络切换模式</string>
+    <string name="pref_screentimeout_mode_title">屏幕超时切换模式</string>
+    <string name="pref_ring_mode_title">声音切换模式</string>
+    <string name="pref_ring_mode_summary">查看或更改声音按钮的切换模式</string>
+    <string name="cm_sound_mode_silent">静音</string>
+    <string name="cm_sound_mode_vibrate">震动</string>
+    <string name="cm_sound_mode_sound">铃声</string>
+    <string name="cm_sound_mode_soundVibrate">铃声 &amp; 震动</string>
     <string name="tiles_reset_title">重置</string>
     <string name="tiles_reset_message">您确定将显示的按钮与布局还原为默认值?</string>
     <string name="volume_key_cursor_control_title">音量键光标控制</string>
@@ -661,4 +669,8 @@
     <string name="more_device_settings_title">其它设备选项</string>
     <string name="sensors_motors_title">传感器 &amp; 引擎</string>
     <string name="display_calibration_title">显示校准</string>
+    <string name="category_quick_access">快速访问区</string>
+    <string name="title_quick_access">在下拉通知栏中显示</string>
+    <string name="title_quick_access_linked">链接布局</string>
+    <string name="summary_quick_access_linked">在快速设置窗格中使用相同的按钮和布局</string>
 </resources>
