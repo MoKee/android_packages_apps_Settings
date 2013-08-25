@@ -26,6 +26,11 @@
         android:entries="@array/notification_drawer_collapse_on_dismiss_entries"
         android:entryValues="@array/notification_drawer_collapse_on_dismiss_values" />
 
+    <CheckBoxPreference
+        android:key="notification_shade_dim"
+        android:title="@string/notification_shade_dim_title"
+        android:summary="@string/notification_shade_dim_summary" />
+
     <PreferenceCategory
         android:title="@string/category_quick_access" >
 

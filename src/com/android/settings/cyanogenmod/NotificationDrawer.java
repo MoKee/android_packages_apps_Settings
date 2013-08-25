@@ -16,6 +16,7 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -37,7 +38,11 @@ public class NotificationDrawer extends SettingsPreferenceFragment  implements
 
     private static final String UI_COLLAPSE_BEHAVIOUR = "notification_drawer_collapse_on_dismiss";
 
+    private static final String NOTIFICATION_SHADE_DIM = "notification_shade_dim";
+
     private ListPreference mCollapseOnDismiss;
+
+    private CheckBoxPreference mNotificationShadeDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +59,16 @@ public class NotificationDrawer extends SettingsPreferenceFragment  implements
         mCollapseOnDismiss.setValue(String.valueOf(collapseBehaviour));
         mCollapseOnDismiss.setOnPreferenceChangeListener(this);
         updateCollapseBehaviourSummary(collapseBehaviour);
+
+        // NotificationShadeDim
+        mNotificationShadeDim = (CheckBoxPreference) prefSet.findPreference(NOTIFICATION_SHADE_DIM);
+        mNotificationShadeDim.setChecked((Settings.System.getInt(resolver,
+                Settings.System.NOTIFICATION_SHADE_DIM, ActivityManager.isHighEndGfx() ? 1 : 0) == 1));
+        mNotificationShadeDim.setOnPreferenceChangeListener(this);
+
+        if (Utils.isTablet(getActivity())) {
+            generalCategory.removePreference(mNotificationShadeDim);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -62,6 +77,11 @@ public class NotificationDrawer extends SettingsPreferenceFragment  implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_COLLAPSE_ON_DISMISS, value);
             updateCollapseBehaviourSummary(value);
+            return true;
+        } else if (preference == mNotificationShadeDim) {
+            int value = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NOTIFICATION_SHADE_DIM, value);
             return true;
         }
 

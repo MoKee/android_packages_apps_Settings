@@ -16,7 +16,6 @@
 
 package com.android.settings.cyanogenmod;
 
-import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -44,7 +43,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
     private static final String STATUS_BAR_CARRIER_LABEL = "status_bar_carrier_label";
-    private static final String NOTIFICATION_SHADE_DIM = "notification_shade_dim";
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
@@ -52,7 +50,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private CheckBoxPreference mStatusBarAutoHide;
     private CheckBoxPreference mStatusBarTraffic;
     private CheckBoxPreference mStatusBarCarrierLabel;
-    private CheckBoxPreference mNotificationShadeDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -116,11 +113,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                 Settings.System.AUTO_HIDE_STATUSBAR, 0) == 1));
         mStatusBarAutoHide.setOnPreferenceChangeListener(this);
 
-        mNotificationShadeDim = (CheckBoxPreference) prefSet.findPreference(NOTIFICATION_SHADE_DIM);
-        mNotificationShadeDim.setChecked((Settings.System.getInt(resolver,
-                Settings.System.NOTIFICATION_SHADE_DIM, ActivityManager.isHighEndGfx() ? 1 : 0) == 1));
-        mNotificationShadeDim.setOnPreferenceChangeListener(this);
-
         PreferenceCategory generalCategory =
                 (PreferenceCategory) findPreference(STATUS_BAR_CATEGORY_GENERAL);
 
@@ -130,7 +122,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         if (Utils.isTablet(getActivity())) {
             generalCategory.removePreference(statusBarBrightnessControl);
-            generalCategory.removePreference(mNotificationShadeDim);
         }
     }
 
@@ -159,11 +150,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.AUTO_HIDE_STATUSBAR, value ? 1 : 0);
-            return true;
-        } else if (preference == mNotificationShadeDim) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarTraffic) {
             boolean value = (Boolean) newValue;
