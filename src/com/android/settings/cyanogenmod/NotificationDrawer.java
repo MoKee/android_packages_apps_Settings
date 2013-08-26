@@ -31,6 +31,7 @@ import android.view.WindowManagerGlobal;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class NotificationDrawer extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
@@ -61,13 +62,13 @@ public class NotificationDrawer extends SettingsPreferenceFragment  implements
         updateCollapseBehaviourSummary(collapseBehaviour);
 
         // NotificationShadeDim
-        mNotificationShadeDim = (CheckBoxPreference) prefSet.findPreference(NOTIFICATION_SHADE_DIM);
-        mNotificationShadeDim.setChecked((Settings.System.getInt(resolver,
+        mNotificationShadeDim = (CheckBoxPreference) findPreference(NOTIFICATION_SHADE_DIM);
+        mNotificationShadeDim.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.NOTIFICATION_SHADE_DIM, ActivityManager.isHighEndGfx() ? 1 : 0) == 1));
         mNotificationShadeDim.setOnPreferenceChangeListener(this);
 
         if (Utils.isTablet(getActivity())) {
-            generalCategory.removePreference(mNotificationShadeDim);
+            prefScreen.removePreference(mNotificationShadeDim);
         }
     }
 
@@ -79,9 +80,9 @@ public class NotificationDrawer extends SettingsPreferenceFragment  implements
             updateCollapseBehaviourSummary(value);
             return true;
         } else if (preference == mNotificationShadeDim) {
-            int value = Integer.valueOf((String) objValue);
+            boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.NOTIFICATION_SHADE_DIM, value);
+                    Settings.System.NOTIFICATION_SHADE_DIM, value ? 1 : 0);
             return true;
         }
 
