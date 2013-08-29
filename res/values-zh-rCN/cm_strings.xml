@@ -659,10 +659,20 @@
     <string name="color_red_title">红</string>
     <string name="color_green_title">绿</string>
     <string name="color_blue_title">蓝</string>
-    <string name="key_backlight_title">背光</string>
-    <string name="button_backlight_title">按键背光亮度</string>
-    <string name="keyboard_backlight_title">键盘背光亮度</string>
-    <string name="category_gamma_title">伽玛</string>
+    <string name="button_backlight_title">背光</string>
+    <string name="button_backlight_enabled">按键照明</string>
+    <string name="keyboard_backlight_enabled">键盘照明</string>
+    <string name="button_backlight_seekbar_title">按键亮度</string>
+    <string name="keyboard_backlight_seekbar_title">键盘亮度</string>
+    <string name="backlight_timeout_title">照明超时</string>
+    <string name="backlight_timeout_unlimited">永不关闭</string>
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> 秒</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> 秒</item>
+    </plurals>
+    <string name="backlight_summary_disabled">已禁用</string>
+    <string name="backlight_summary_enabled_with_timeout">启用为 <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">已启用</string>
     <string name="gamma_tuning_title_head">伽玛校准</string>
     <string name="gamma_tuning_summary_head">调整伽玛值</string>
     <string name="more_device_controls_title">更多\u2026</string>
@@ -673,4 +683,5 @@
     <string name="title_quick_access">在下拉通知栏中显示</string>
     <string name="title_quick_access_linked">链接布局</string>
     <string name="summary_quick_access_linked">在快速设置窗格中使用相同的按钮和布局</string>
+    <string name="font_size_sample">样本</string>
 </resources>
