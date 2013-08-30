@@ -410,6 +410,7 @@
     <string name="adb_notify">USB 调试通知</string>
     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
     <string name="development_tools_title">启动开发工具</string>
+    <string name="allow_mock_sms">允许模拟短信</string>
     <string name="usb_mass_storage_title">USB 大容量存储</string>
     <string name="usb_mass_storage_summary">使用 USB 大容量存储模式连接到计算机</string>
     <string name="storage_rescan_media">重新扫描存储卷上的媒体</string>
