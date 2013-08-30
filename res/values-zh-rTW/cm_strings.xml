@@ -274,7 +274,7 @@
     <string name="link_volume_ringtones">鏈接鈴聲與通知的音量</string>
     <string name="link_volume_mutes">靜音模式將會影響通知</string>
     <string name="volume_keys_control_ring_stream">音量鍵將控制鈴聲音量</string>
-    <string name="display_lights_settings_title">顯示 & 指示燈</string>
+    <string name="display_lights_settings_title">顯示 &amp; 指示燈</string>
     <string name="lights_category_title">指示燈</string>
     <string name="notification_pulse_title">通知指示燈</string>
     <string name="notification_light_general_title">常規</string>
@@ -320,7 +320,7 @@
     <string name="ring_mode_normal">正常</string>
     <string name="ring_mode_vibrate">振動</string>
     <string name="ring_mode_mute">靜音</string>
-    <string name="automation_effects_title">自動操作 & 效果</string>
+    <string name="automation_effects_title">自動操作 &amp; 效果</string>
     <string name="button_settings">按鍵</string>
     <string name="hardware_keys_enable_custom_title">允許自定義的行為</string>
     <string name="hardware_keys_home_key_title">Home 鍵</string>
@@ -361,7 +361,7 @@
     <string name="cm_sound_mode_silent">靜音</string>
     <string name="cm_sound_mode_vibrate">震動</string>
     <string name="cm_sound_mode_sound">鈴聲</string>
-    <string name="cm_sound_mode_soundVibrate">鈴聲 & 震動</string>
+    <string name="cm_sound_mode_soundVibrate">鈴聲 &amp; 震動</string>
     <string name="kill_app_longpress_back">使用返回鍵強制關閉程序</string>
     <string name="kill_app_longpress_back_summary">長按返回鍵將終止前台應用程序</string>
     <string name="changelog_title">查看更改記錄</string>
@@ -484,7 +484,7 @@
     <string name="cm_sound_mode_silent">靜音</string>
     <string name="cm_sound_mode_vibrate">震動</string>
     <string name="cm_sound_mode_sound">鈴聲</string>
-    <string name="cm_sound_mode_soundVibrate">鈴聲 & 震動</string>
+    <string name="cm_sound_mode_soundVibrate">鈴聲 &amp; 震動</string>
     <string name="tiles_reset_title">重置</string>
     <string name="tiles_reset_message">您確定將顯示的按鈕與佈局還原為預設值?</string>
     <string name="volume_key_cursor_control_title">音量鍵光標控制</string>
@@ -677,7 +677,7 @@
     <string name="gamma_tuning_summary_head">調整伽瑪值</string>
     <string name="more_device_controls_title">更多...</string>
     <string name="more_device_settings_title">其它設備選項</string>
-    <string name="sensors_motors_title">傳感器 & 引擎</string>
+    <string name="sensors_motors_title">傳感器 &amp; 引擎</string>
     <string name="display_calibration_title">顯示校準</string>
     <string name="category_quick_access">快速訪問區</string>
     <string name="title_quick_access">在下拉通知欄中顯示</string>
