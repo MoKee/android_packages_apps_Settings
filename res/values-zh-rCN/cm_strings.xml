@@ -286,6 +286,8 @@
     <string name="notification_light_default_value">默认</string>
     <string name="notification_light_missed_call_title">未接来电</string>
     <string name="notification_light_voicemail_title">语音信箱</string>
+    <string name="adaptive_backlight_title">自适应背光</string>
+    <string name="adaptive_backlight_summary">智能改变背光显示屏的亮度，有助于最大限度的延长电池寿命</string>
     <string name="edit_light_settings">编辑指示灯设置</string>
     <string name="pulse_speed_title">呼吸长度与速度</string>
     <string name="default_time">正常</string>
@@ -342,6 +344,10 @@
     <string name="hardware_keys_action_voice_search">语音搜索</string>
     <string name="hardware_keys_action_in_app_search">程序内搜索</string>
     <string name="hardware_keys_action_sleep">锁屏</string>
+    <string name="home_wake_title">Home 键唤醒</string>
+    <string name="home_wake_summary">使用 Home 键唤醒设备</string>
+    <string name="volume_wake_title">音量键唤醒</string>
+    <string name="volume_wake_summary">使用音量键唤醒设备</string>
     <string name="swap_volume_buttons_title">交换音量键</string>
     <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
     <string name="navigation_bar_category">导航栏</string>
@@ -403,10 +409,6 @@
     <string name="status_bar_battery_status_circle_percentage">环形与百分比</string>
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示有多少条正在等候中的通知</string>
-    <string name="pref_home_wake_title">Home 键唤醒</string>
-    <string name="pref_home_wake_summary">使用 Home 键唤醒设备</string>
-    <string name="volume_wake_title">音量键唤醒</string>
-    <string name="volume_wake_summary">使用音量键唤醒设备</string>
     <string name="adb_notify">USB 调试通知</string>
     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
     <string name="development_tools_title">启动开发工具</string>
