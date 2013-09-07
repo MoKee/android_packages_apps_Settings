@@ -351,8 +351,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 securityCategory.removePreference(mVisibleErrorPattern);
                 securityCategory.removePreference(mVisibleDots);
             }
-            if (securityCategory != null && mVisibleGesture != null) {
-                securityCategory.removePreference(root.findPreference(KEY_VISIBLE_GESTURE));
+            if (securityCategory != null && mVisibleGesture) {
+                securityCategory.removePreference(mVisibleGesture);
             }
         }
 
@@ -670,6 +670,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
         if (mVisibleDots != null) {
             mVisibleDots.setChecked(lockPatternUtils.isVisibleDotsEnabled());
+        }
+        if (mVisibleGesture != null) {
+            mVisibleGesture.setChecked(lockPatternUtils.isVisibleGestureEnabled());
         }
         if (mPowerButtonInstantlyLocks != null) {
             mPowerButtonInstantlyLocks.setChecked(lockPatternUtils.getPowerButtonInstantlyLocks());

@@ -28,6 +28,7 @@
 
         <CheckBoxPreference
             android:key="visiblegesture"
+            android:persistent="false"
             android:title="@string/lockgesture_settings_enable_visible_pattern_title"/>
 
         <ListPreference
