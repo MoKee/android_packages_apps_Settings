@@ -351,7 +351,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 securityCategory.removePreference(mVisibleErrorPattern);
                 securityCategory.removePreference(mVisibleDots);
             }
-            if (securityCategory != null && mVisibleGesture) {
+            if (securityCategory != null && mVisibleGesture != null) {
                 securityCategory.removePreference(mVisibleGesture);
             }
         }
