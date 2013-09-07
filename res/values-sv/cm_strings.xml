@@ -413,6 +413,7 @@
     <string name="adb_notify">USB-felsökningsavisering</string>
     <string name="adb_notify_summary">Visa en avisering när USB-felsökning är ansluten</string>
     <string name="development_tools_title">Starta Dev Tools</string>
+    <string name="allow_mock_sms">Tillåt sken-SMS</string>
     <string name="usb_mass_storage_title">Masslagring</string>
     <string name="usb_mass_storage_summary">Aktivera USB-masslagring</string>
     <string name="storage_rescan_media">Sök om media på lagringsvolymen</string>
@@ -439,7 +440,7 @@
     <string name="title_tile_airplane">Flygplansläge</string>
     <string name="title_tile_battery">Batteristatus</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
-    <string name="title_tile_brightness">Belysning</string>
+    <string name="title_tile_brightness">Ljusstyrka</string>
     <string name="title_tile_camera">Kamera</string>
     <string name="title_tile_sleep">Somna</string>
     <string name="title_tile_gps">GPS</string>
@@ -451,7 +452,7 @@
     <string name="title_tile_autorotate">Orientering</string>
     <string name="title_tile_settings">Inställningar</string>
     <string name="title_tile_sound">Ljud</string>
-    <string name="title_tile_sync">Synkronisering</string>
+    <string name="title_tile_sync">Synk</string>
     <string name="title_tile_wifiap">Wi-Fi-hotspot</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_user">Användarväxlare</string>
