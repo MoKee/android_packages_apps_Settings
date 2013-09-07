@@ -687,4 +687,9 @@
     <string name="title_quick_access_linked">链接布局</string>
     <string name="summary_quick_access_linked">在快速设置窗格中使用相同的按钮和布局</string>
     <string name="font_size_sample">样本</string>
+
+    <!-- SELinux warning -->
+    <string name="selinux_enable_title">Android安全性增强</string>
+    <string name="selinux_enable_warning">将要在您的设备上启用SEAndroid，这是一种先进的安全机制。\n\n这个选项目前处于调试阶段，您的设备不一定能够完全兼容，它可能导致您设备的部分硬件无法正常工作\n\n您确定要继续吗？</string>
+
 </resources>
