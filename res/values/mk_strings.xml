@@ -239,4 +239,16 @@
     <!-- Auto-Hide Status Bar -->
     <string name="auto_hide_statusbar">Auto hide statusbar</string>
     <string name="auto_hide_statusbar_summary">Statusbar hides itself when there are no notifications</string>
+
+    <!-- Lock screen background -->
+    <string name="lockscreen_style_options_title">Lock screen style</string>
+    <string name="lockscreen_custom_background_title">Lockscreen background</string>
+    <string name="lockscreen_custom_background_dialog_title">Choose color</string>
+    <string name="lockscreen_background_result_successful">Background changed</string>
+    <string name="lockscreen_background_result_not_successful">Background not changed</string>
+    <string name="lockscreen_background_color_fill">Color fill</string>
+    <string name="lockscreen_background_custom_image">Custom image</string>
+    <string name="lockscreen_background_full_transparent">Full transparent</string>
+    <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
+    <string name="lockscreen_alpha_title">Lockscreen background transparency</string>
 </resources>
