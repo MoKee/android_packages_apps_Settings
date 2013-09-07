@@ -46,7 +46,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
 
-        <com.android.settings.notificationlight.ColorPanelView
+        <com.android.settings.widget.ColorPanelView
             android:id="@+id/color_panel"
             android:layout_width="0px"
             android:layout_height="match_parent"

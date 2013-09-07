@@ -39,7 +39,7 @@
         android:layout_below="@id/color_picker_view"
         android:layout_marginBottom="10dp">
 
-        <com.android.settings.widget.ColorPickerPanelView
+        <com.android.settings.widget.ColorPanelView
             android:id="@+id/old_color_panel"
             android:layout_width="0px"
             android:layout_height="fill_parent"
@@ -54,7 +54,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
 
-        <com.android.settings.widget.ColorPickerPanelView
+        <com.android.settings.widget.ColorPanelView
             android:id="@+id/new_color_panel"
             android:layout_width="0px"
             android:layout_height="wrap_content"

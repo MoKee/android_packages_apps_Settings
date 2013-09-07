@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.notificationlight;
+package com.android.settings.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;

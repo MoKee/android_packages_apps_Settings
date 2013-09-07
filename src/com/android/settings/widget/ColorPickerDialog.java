@@ -37,8 +37,8 @@ public class ColorPickerDialog
 
     private ColorPickerView mColorPicker;
 
-    private ColorPickerPanelView mOldColor;
-    private ColorPickerPanelView mNewColor;
+    private ColorPanelView mOldColor;
+    private ColorPanelView mNewColor;
 
     private EditText mHex;
     private Button mSetButton;
@@ -76,8 +76,8 @@ public class ColorPickerDialog
         setTitle(R.string.dialog_color_picker);
 
         mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
-        mOldColor = (ColorPickerPanelView) layout.findViewById(R.id.old_color_panel);
-        mNewColor = (ColorPickerPanelView) layout.findViewById(R.id.new_color_panel);
+        mOldColor = (ColorPanelView) layout.findViewById(R.id.old_color_panel);
+        mNewColor = (ColorPanelView) layout.findViewById(R.id.new_color_panel);
         mHex = (EditText) layout.findViewById(R.id.hex);
         mSetButton = (Button) layout.findViewById(R.id.enter);
         mIcsColor = (Button) layout.findViewById(R.id.ics_color);
