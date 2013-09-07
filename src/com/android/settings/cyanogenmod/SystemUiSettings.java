@@ -30,6 +30,7 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.Spannable;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.widget.EditText;
@@ -242,7 +243,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
         mCustomLabelText = Settings.System.getString(getActivity().getContentResolver(),
                 Settings.System.CUSTOM_CARRIER_LABEL);
     
-        if (mCustomLabelText == null || mCustomLabelText.length() == 0) {
+        if (TextUtils.isEmpty(mCustomLabelText)) {
             mCustomLabel.setSummary(R.string.custom_carrier_label_notset);
         } else {
             mCustomLabel.setSummary(mCustomLabelText);
@@ -293,12 +294,12 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
 
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
-            input.setText(mCustomLabelText != null ? mCustomLabelText : "");
+            input.setText(TextUtils.isEmpty(mCustomLabelText) ? "" : mCustomLabelText);
             alert.setView(input);
             alert.setPositiveButton(getResources().getString(R.string.ok),
                     new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
-                    String value = ((Spannable) input.getText()).toString();
+                    String value = ((Spannable) input.getText()).toString().trim();
                     Settings.System.putString(getActivity().getContentResolver(),
                             Settings.System.CUSTOM_CARRIER_LABEL, value);
                     updateCustomLabelTextSummary();
