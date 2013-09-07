@@ -37,6 +37,10 @@
             android:entries="@array/lockscreen_background_entries"
             android:entryValues="@array/lockscreen_background_values" />
 
+        <com.android.settings.widget.SeekBarPreference
+            android:key="lockscreen_alpha"
+            android:title="@string/lockscreen_alpha_title" />
+
         <ListPreference
             android:key="lockscreen_battery_status"
             android:persistent="false"
