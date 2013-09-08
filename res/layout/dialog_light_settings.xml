@@ -18,7 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.android.settings.notificationlight.ColorPickerView
+    <com.android.settings.widget.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
