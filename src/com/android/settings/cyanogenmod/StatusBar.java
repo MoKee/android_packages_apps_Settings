@@ -40,6 +40,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
     private static final String STATUS_BAR_AUTO_HIDE = "status_bar_auto_hide";
+    private static final String STATUS_BAR_QUICK_PEEK = "status_bar_quick_peek";
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
     private static final String STATUS_BAR_CARRIER_LABEL = "status_bar_carrier_label";
@@ -48,6 +49,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarCmSignal;
     private CheckBoxPreference mStatusBarAutoHide;
+    private CheckBoxPreference mStatusBarQuickPeek;
     private CheckBoxPreference mStatusBarTraffic;
     private CheckBoxPreference mStatusBarCarrierLabel;
 
@@ -113,6 +115,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                 Settings.System.AUTO_HIDE_STATUSBAR, 0) == 1));
         mStatusBarAutoHide.setOnPreferenceChangeListener(this);
 
+        mStatusBarQuickPeek = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_QUICK_PEEK);
+        mStatusBarQuickPeek.setChecked((Settings.System.getInt(resolver,
+               Settings.System.STATUSBAR_PEEK, 0) == 1));
+        mStatusBarQuickPeek.setOnPreferenceChangeListener(this);
+
         PreferenceCategory generalCategory =
                 (PreferenceCategory) findPreference(STATUS_BAR_CATEGORY_GENERAL);
 
@@ -150,6 +157,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.AUTO_HIDE_STATUSBAR, value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarQuickPeek) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUSBAR_PEEK, value ? 1 : 0);
             return true;
         } else if (preference == mStatusBarTraffic) {
             boolean value = (Boolean) newValue;
