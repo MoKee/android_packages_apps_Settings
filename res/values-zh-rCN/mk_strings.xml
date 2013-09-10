@@ -299,4 +299,8 @@
     <string name="lockgesture_too_many_failed_confirmation_attempts_header">错误的尝试次数过多！</string>
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer"><xliff:g id="NUMBER">%d</xliff:g> 秒后重试。</string>
+
+    <!-- Statusbar Quick Peek -->
+    <string name="statusbar_quick_peek_title">全局状态栏</string>
+    <string name="statusbar_quick_peek_summary">任意界面下可以从屏幕顶端下拉状态栏</string>
 </resources>
