@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -286,6 +286,8 @@
     <string name="notification_light_default_value">預設</string>
     <string name="notification_light_missed_call_title">未接來電</string>
     <string name="notification_light_voicemail_title">語音信箱</string>
+    <string name="adaptive_backlight_title">自適應背光</string>
+    <string name="adaptive_backlight_summary">智能改變背光顯示屏的亮度，有助於最大限度的延長電池壽命</string>
     <string name="edit_light_settings">編輯指示燈設置</string>
     <string name="pulse_speed_title">呼吸長度與速度</string>
     <string name="default_time">正常</string>
@@ -342,6 +344,10 @@
     <string name="hardware_keys_action_voice_search">語音搜尋</string>
     <string name="hardware_keys_action_in_app_search">程序內搜尋</string>
     <string name="hardware_keys_action_sleep">鎖屏</string>
+    <string name="home_wake_title">Home 鍵喚醒</string>
+    <string name="home_wake_summary">使用 Home 鍵喚醒設備</string>
+    <string name="volume_wake_title">音量鍵喚醒</string>
+    <string name="volume_wake_summary">使用音量鍵喚醒設備</string>
     <string name="swap_volume_buttons_title">交換音量鍵</string>
     <string name="swap_volume_buttons_summary">旋轉螢幕時交換音量鍵的佈局</string>
     <string name="navigation_bar_category">導航欄</string>
@@ -403,13 +409,10 @@
     <string name="status_bar_battery_status_circle_percentage">環形與百分比</string>
     <string name="status_bar_notif_count_title">顯示通知數量</string>
     <string name="status_bar_notif_count_summary">顯示有多少條正在等候中的通知</string>
-    <string name="pref_home_wake_title">Home 鍵喚醒</string>
-    <string name="pref_home_wake_summary">使用 Home 鍵喚醒設備</string>
-    <string name="volume_wake_title">音量鍵喚醒</string>
-    <string name="volume_wake_summary">使用音量鍵喚醒設備</string>
     <string name="adb_notify">USB 調試通知</string>
     <string name="adb_notify_summary">USB 調試模式連接時將顯示一個通知</string>
     <string name="development_tools_title">啟動開發工具</string>
+    <string name="allow_mock_sms">允許模擬短信</string>
     <string name="usb_mass_storage_title">USB 大容量存儲</string>
     <string name="usb_mass_storage_summary">使用 USB 大容量存儲模式連接到計算機</string>
     <string name="storage_rescan_media">重新掃瞄存儲捲上的媒體</string>
@@ -519,6 +522,7 @@
     <string name="lockscreen_background_default_wallpaper">預設牆紙</string>
     <string name="headset_connect_player_title">啟動音樂播放器</string>
     <string name="headset_connect_player_summary">插入耳機時啟動預設音樂播放器</string>
+    <string name="safe_headset_volume_title">耳機安全音量</string>
     <string name="mokee_waiver_title">棄權聲明書</string>
     <string name="mokee_waiver_body">改變此設置可能在您所在的國家屬於非法行為.\n\n選擇 \'確定\' 意味著您已讀此警告並放棄一切起訴權, 保證 MoKee OpenSource 及其貢獻者免於受罰並且不承擔任何法律責任.</string>
     <string name="auto_brightness_setup_title">自動亮度</string>
@@ -684,4 +688,9 @@
     <string name="title_quick_access_linked">鏈接佈局</string>
     <string name="summary_quick_access_linked">在快速設置窗格中使用相同的按鈕和佈局</string>
     <string name="font_size_sample">樣本</string>
+	
+    <!-- SELinux warning -->
+    <string name="selinux_enable_title">Android安全性增強</string>
+    <string name="selinux_enable_warning">將要在您的設備上啟用SEAndroid，這是一種先進的安全機制。\n\n這個選項目前處於調試階段，您的設備不一定能夠完全兼容，它可能導致您設備的部分硬件無法正常工作\n\n您確定要繼續嗎？</string>
+
 </resources>
