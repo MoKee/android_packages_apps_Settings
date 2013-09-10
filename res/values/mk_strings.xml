@@ -309,4 +309,8 @@
     <string name="lockgesture_too_many_failed_confirmation_attempts_header">Too many incorrect attempts!</string>
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="NUMBER">%d</xliff:g> seconds.</string>
+
+    <!-- Statusbar Quick Peek -->
+    <string name="statusbar_quick_peek_title">Quick peek</string>
+    <string name="statusbar_quick_peek_summary">Peek at statusbar by swiping from top edge of screen</string>
 </resources>
