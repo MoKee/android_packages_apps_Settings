@@ -516,8 +516,8 @@
     <string name="headset_connect_player_title">Starta musikapp</string>
     <string name="headset_connect_player_summary">Starta standardmusikappen när hörlurar kopplas in</string>
     <string name="safe_headset_volume_title">Säker hörlursvolym</string>
-    <string name="cyanogenmod_waiver_title">Avsägelse</string>
-    <string name="cyanogenmod_waiver_body">Ändring av denna inställning kan vara mot din stats eller dina myndigheters lagar. \n\nGenom att välja \'OK\' nedan, erkänner du denna varning och är villig att upphäva, gottgöra och frigöra CyanogenMod och dess medarbetare från alla juridiska skulder.</string>
+    <string name="mokee_waiver_title">Avsägelse</string>
+    <string name="mokee_waiver_body">Ändring av denna inställning kan vara mot din stats eller dina myndigheters lagar. \n\nGenom att välja \'OK\' nedan, erkänner du denna varning och är villig att upphäva, gottgöra och frigöra MoKee OpenSource och dess medarbetare från alla juridiska skulder.</string>
     <string name="auto_brightness_setup_title">Automatisk belysning</string>
     <string name="auto_brightness_adjustment_title">Belysningsjustering</string>
     <string name="auto_brightness_twilight_adjustment">Justera till soluppgång och solnedgång</string>

@@ -494,8 +494,8 @@
     <string name="headset_connect_player_title">Käynnistä musiikkisovellus</string>
     <string name="headset_connect_player_summary">Käynnistä musiikkisovellus kytkettäessä kuulokkeet</string>
     <string name="safe_headset_volume_title">Turvallinen kuulokkeiden äänenvoimakkuus</string>
-    <string name="cyanogenmod_waiver_title">Vastuuvapautus</string>
-    <string name="cyanogenmod_waiver_body">Tämän asetuksen muuttaminen saattaa rikkoa osavaltiosi tai hallituksesi lakeja.\n\nJos valitset \'OK\' alhaalta, olet lukenut tämän varoituksen ja luovut kaikista korvausvaatimuksista ja vapautat CyanogenModin ja siihen osallistuvat henkilöt kaikesta vastuusta.</string>
+    <string name="mokee_waiver_title">Vastuuvapautus</string>
+    <string name="mokee_waiver_body">Tämän asetuksen muuttaminen saattaa rikkoa osavaltiosi tai hallituksesi lakeja.\n\nJos valitset \'OK\' alhaalta, olet lukenut tämän varoituksen ja luovut kaikista korvausvaatimuksista ja vapautat MoKee OpenSourcein ja siihen osallistuvat henkilöt kaikesta vastuusta.</string>
     <string name="auto_brightness_setup_title">Automaattinen kirkkaus</string>
     <string name="auto_brightness_adjustment_title">Kirkkauden säätö</string>
     <string name="auto_brightness_twilight_adjustment">Aseta auringonnousuun ja -laskuun</string>

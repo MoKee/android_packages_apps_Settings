@@ -529,8 +529,8 @@
     <string name="headset_connect_player_title">Spustiť aplikáciu na hudbu</string>
     <string name="headset_connect_player_summary">Spustiť predvolenú aplikáciu na hudbu, ak boli pripojené slúchadlá</string>
     <string name="safe_headset_volume_title">Bezpečná hlasitosť</string>
-    <string name="cyanogenmod_waiver_title">Zrieknutie sa zodpovednosti</string>
-    <string name="cyanogenmod_waiver_body">Zmenou tohto nastavenia môže dôjsť k porušeniu právnych predpisov danej krajiny.\n\nPotvrdením tlačidla \'OK\' potvrdzujete, že súhlasíte s touto podmienkou.</string>
+    <string name="mokee_waiver_title">Zrieknutie sa zodpovednosti</string>
+    <string name="mokee_waiver_body">Zmenou tohto nastavenia môže dôjsť k porušeniu právnych predpisov danej krajiny.\n\nPotvrdením tlačidla \'OK\' potvrdzujete, že súhlasíte s touto podmienkou.</string>
     <string name="auto_brightness_setup_title">Automatický jas</string>
     <string name="auto_brightness_adjustment_title">Úprava jasu</string>
     <string name="auto_brightness_twilight_adjustment">Upraviť podľa západu/východu slnka</string>
