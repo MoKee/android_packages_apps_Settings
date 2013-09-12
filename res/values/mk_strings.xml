@@ -181,12 +181,11 @@
     <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors: this will force phone to turn on the screen after the call has ended.</string>
 
     <!-- Halo -->
-    <string name="halo_settings">Halo Floating Window</string>
     <string name="title_halo">HALO</string>
-
+    <string name="halo_settings">Halo Floating Window</string>
+    <string name="halo_behavior_title">HALO Behavior</string>
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
-
     <string name="halo_enabled_title">Enable HALO</string>
     <string name="halo_enabled_summary">If checked enable HALO feature (floating window on recent apps would not be affected)</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
@@ -199,6 +198,12 @@
     <string name="halo_state_white">White list</string>
     <string name="halo_pause_title">Pause active app</string>
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused</string>
+    <string name="halo_ninja_title">Ninja mode</string>
+    <string name="halo_ninja_summary">HALO will disappear completely when empty</string>
+    <string name="halo_notification_msgbox_title">Enable message pop-up</string>
+    <string name="halo_notification_msgbox_summary">Show message box for incoming notifications</string>
+    <string name="halo_unlock_ping_title">Ping on unlock</string>
+    <string name="halo_unlock_ping_summary">HALO will ping when device is unlocked if new notifications were received</string>
     <string name="halo_size_title">HALO size</string>
     <string name="halo_size_summary">Defines how big HALO is going to be</string>
     <string name="halo_size_miniscule">Miniscule</string>
@@ -207,6 +212,16 @@
     <string name="halo_size_large">Large</string>
     <string name="halo_size_gigantic">Gigantic</string>
     <string name="halo_size_monster">Monster</string>
+    <string name="halo_notification_count_title">Notification count</string>
+    <string name="halo_notification_count_summary">Display notification counts on HALO</string>
+    <string name="halo_notification_count_none">None</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Per app</string>
+    <string name="halo_notification_count_both">Both</string>
+    <string name="halo_msgbox_animation_title">Message box animation</string>
+    <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
+    <string name="halo_msgbox_animation_none">None</string>
+    <string name="halo_msgbox_animation_flip">Flip</string>
 
     <!-- QuickSettings style options -->
     <string name="title_tile_fcharge">Fast charge</string>

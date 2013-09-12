@@ -37,7 +37,7 @@
         <item>20</item>
     </string-array>
 
-    <!-- PIE -->    
+    <!-- PIE -->
     <string-array name="entries_pie_gravity">
         <item>@string/pie_gravity_left</item>
         <item>@string/pie_gravity_top</item>
@@ -125,8 +125,8 @@
         <item>2.0</item>
         <item>3.0</item>
     </string-array>
-    
-    <!-- Halo -->       
+
+    <!-- HALO -->
     <string-array name="entries_halo_size">
         <item>@string/halo_size_miniscule</item>
         <item>@string/halo_size_small</item>
@@ -155,6 +155,30 @@
         <item>0</item>
     </string-array>
 
+    <string-array name="entries_halo_notification_count">
+        <item>@string/halo_notification_count_none</item>
+        <item>@string/halo_notification_count_total</item>
+        <item>@string/halo_notification_count_individual</item>
+        <item>@string/halo_notification_count_both</item>
+    </string-array>
+
+    <string-array name="values_halo_notification_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="entries_halo_msgbox_animation">
+        <item>@string/halo_msgbox_animation_none</item>
+        <item>@string/halo_msgbox_animation_flip</item>
+    </string-array>
+
+    <string-array name="values_halo_msgbox_animation">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Listview animation -->
     <string-array name="listview_animation_entries">
         <item>@string/listview_off</item>
@@ -170,7 +194,7 @@
         <item>@string/listview_translate_right</item>
         <item>@string/listview_rotate</item>
     </string-array>
-    
+
     <string-array name="listview_animation_values">
         <item>0</item>
         <item>1</item>
@@ -209,4 +233,3 @@
         <item>7</item>
     </string-array>
 </resources>
-

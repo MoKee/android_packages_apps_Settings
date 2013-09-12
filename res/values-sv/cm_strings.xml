@@ -56,7 +56,7 @@
     <string name="notification_vibrate_during_calls_title">Vibrera under samtal</string>
     <string name="notification_vibrate_during_calls_summary">Inkommande aviseringar kommer att vibrera mjukt under samtal</string>
     <string name="device_hostname">Enhetens värdnamn</string>
-    <string name="mod_version">CyanogenMod-version</string>
+    <string name="mod_version">MoKee-version</string>
     <string name="mod_version_default">Okänd</string>
     <string name="build_date">Byggdatum</string>
     <string name="cpu_info">CPU</string>
