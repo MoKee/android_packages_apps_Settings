@@ -104,6 +104,11 @@
         android:key="other_category"
         android:title="@string/other_category" >
 
+        <PreferenceScreen
+            android:id="@+id/animations"
+            android:fragment="com.android.settings.cyanogenmod.AnimationControls"
+            android:title="@string/title_animation_controls" />
+
         <ListPreference
             android:key="listview_animation"
             android:dialogTitle="@string/listview_animation_title"
