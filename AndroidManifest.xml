@@ -1691,6 +1691,15 @@
               </intent-filter>
         </activity>
 
+        <activity
+            android:name=".cyanogenmod.AnimationControls"
+            android:label="@string/title_animation_controls">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SHORTCUT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="Settings$QuietHoursSettingsActivity"
                 android:label="@string/quiet_hours_title"
                 android:taskAffinity=""
