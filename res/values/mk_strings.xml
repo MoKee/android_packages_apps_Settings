@@ -312,5 +312,5 @@
 
     <!-- Statusbar Quick Peek -->
     <string name="statusbar_quick_peek_title">Quick peek</string>
-    <string name="statusbar_quick_peek_summary">Peek at statusbar by swiping from top edge of screen</string>
+    <string name="statusbar_quick_peek_summary">Peek at statusbar by swiping from top edge of screen when statusbar is hidden or in full screen mode</string>
 </resources>
