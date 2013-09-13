@@ -9,6 +9,14 @@
         android:orientation="vertical"
         android:padding="16dp" >
 
+        <Spinner
+            android:id="@+id/transparency_alpha_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/transparency_dialog_alpha_mode"
+            android:entries="@array/transparency_dialog_alpha_mode_entries"
+            android:layout_marginBottom="10dip" />
+
         <CheckBox
             android:id="@+id/transparency_linked"
             android:layout_width="wrap_content"

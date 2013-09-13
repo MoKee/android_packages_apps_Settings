@@ -78,6 +78,9 @@
     <string name="transparency_dialog_match_keyguard_alpha">Match lockscreen alpha</string>
     <string name="transparency_dialog_transparency">Homescreen alpha</string>
     <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
+    <string name="transparency_dialog_alpha_mode">Transparency mode</string>
+    <string name="transparency_dialog_alpha_mode_home">Launcher</string>
+    <string name="transparency_dialog_alpha_mode_default">Launcher and lockscreen</string>
 
     <!-- Custom Carrier Text -->
     <string name="custom_carrier_label_title">Custom carrier label</string>

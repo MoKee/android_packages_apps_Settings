@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.android.settings.R;
@@ -28,12 +29,12 @@ import com.android.settings.R;
 
         boolean linkTransparencies = true;
         boolean removeNavbarAlpha = false;
-        CheckBox mLinkCheckBox, mMatchStatusbarKeyguard, mMatchNavbarKeyguard;
-        ViewGroup mNavigationBarGroup;
+        private CheckBox mLinkCheckBox, mMatchStatusbarKeyguard, mMatchNavbarKeyguard;
+        private ViewGroup mNavigationBarGroup;
+        private Spinner mAlphaMode;
+        private TextView mSbLabel;
 
-        TextView mSbLabel;
-
-        AlphaSeekBar mSeekBars[] = new AlphaSeekBar[4];
+        private AlphaSeekBar mSeekBars[] = new AlphaSeekBar[4];
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,12 @@ import com.android.settings.R;
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             View layout = View.inflate(getActivity(), R.layout.dialog_transparency, null);
+
+            mAlphaMode = (Spinner) layout.findViewById(R.id.transparency_alpha_mode);
+            int alphaMode = Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_NAV_BAR_ALPHA_MODE, 1);
+            mAlphaMode.setSelection(alphaMode);
+
             mLinkCheckBox = (CheckBox) layout.findViewById(R.id.transparency_linked);
             
             // check have a navbar
@@ -82,7 +89,7 @@ import com.android.settings.R;
                 int alphas[] = new int[2];
                 final String sbConfig = Settings.System.getString(getActivity()
                         .getContentResolver(),
-                        Settings.System.STATUS_BAR_ALPHA_CONFIG);
+                        Settings.System.STATUS_BAR_ALPHA);
                 if (sbConfig != null) {
                     String split[] = sbConfig.split(";");
                     alphas[0] = Integer.parseInt(split[0]);
@@ -99,7 +106,7 @@ import com.android.settings.R;
                     } else {
                         final String navConfig = Settings.System.getString(getActivity()
                                 .getContentResolver(),
-                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG);
+                                Settings.System.NAVIGATION_BAR_ALPHA);
                         if (navConfig != null) {
                             split = navConfig.split(";");
                             alphas[0] = Integer.parseInt(split[0]);
@@ -140,20 +147,22 @@ import com.android.settings.R;
                         String config = mSeekBars[STATUSBAR_ALPHA].getCurrentAlpha() + ";" +
                                 mSeekBars[STATUSBAR_KG_ALPHA].getCurrentAlpha();
                         Settings.System.putString(getActivity().getContentResolver(),
-                                Settings.System.STATUS_BAR_ALPHA_CONFIG, config);
+                                Settings.System.STATUS_BAR_ALPHA, config);
                         Settings.System.putString(getActivity().getContentResolver(),
-                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, config);
+                                Settings.System.NAVIGATION_BAR_ALPHA, config);
                     } else {
                         String sbConfig = mSeekBars[STATUSBAR_ALPHA].getCurrentAlpha() + ";" +
                                 mSeekBars[STATUSBAR_KG_ALPHA].getCurrentAlpha();
                         Settings.System.putString(getActivity().getContentResolver(),
-                                Settings.System.STATUS_BAR_ALPHA_CONFIG, sbConfig);
+                                Settings.System.STATUS_BAR_ALPHA, sbConfig);
 
                         String nbConfig = mSeekBars[NAVBAR_ALPHA].getCurrentAlpha() + ";" +
                                 mSeekBars[NAVBAR_KG_ALPHA].getCurrentAlpha();
                         Settings.System.putString(getActivity().getContentResolver(),
-                                Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, nbConfig);
+                                Settings.System.NAVIGATION_BAR_ALPHA, nbConfig);
                     }
+                    Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.STATUS_NAV_BAR_ALPHA_MODE, mAlphaMode.getSelectedItemPosition());
                 }
             });
 
@@ -162,9 +171,9 @@ import com.android.settings.R;
 
         private void resetSettings() {
             Settings.System.putString(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_ALPHA_CONFIG, null);
+                    Settings.System.STATUS_BAR_ALPHA, null);
             Settings.System.putString(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_ALPHA_CONFIG, null);
+                    Settings.System.NAVIGATION_BAR_ALPHA, null);
         }
 
         private void updateToggleState() {
@@ -213,4 +222,5 @@ import com.android.settings.R;
             getActivity().getSharedPreferences("transparency", Context.MODE_PRIVATE).edit()
                     .putBoolean("link", v).commit();
         }
+
     }

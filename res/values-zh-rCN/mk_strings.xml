@@ -78,6 +78,9 @@
     <string name="transparency_dialog_match_keyguard_alpha">匹配锁屏透明度</string>
     <string name="transparency_dialog_transparency">主页透明度</string>
     <string name="transparency_dialog_transparency_keyguard">锁屏透明度</string>
+    <string name="transparency_dialog_alpha_mode">透明模式</string>
+    <string name="transparency_dialog_alpha_mode_home">桌面</string>
+    <string name="transparency_dialog_alpha_mode_default">桌面和锁屏</string>
 
     <!-- Custom Carrier Text -->
     <string name="custom_carrier_label_title">自定义运营商名称</string>
