@@ -47,13 +47,6 @@
         android:dependency="halo_enabled" />
 
     <CheckBoxPreference
-        android:key="halo_hide"
-        android:title="@string/halo_hide_title"
-        android:summary="@string/halo_hide_summary"
-        android:defaultValue="false"
-        android:dependency="halo_enabled" />
-
-    <CheckBoxPreference
         android:key="halo_ninja"
         android:title="@string/halo_ninja_title"
         android:summary="@string/halo_ninja_summary"
