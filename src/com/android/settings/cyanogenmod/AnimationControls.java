@@ -10,7 +10,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.CheckBoxPreference;
 import android.provider.Settings;
-import com.android.settings.cyanogenmod.AnimBarPreference;
+import com.android.settings.widget.AnimBarPreference;
 import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
