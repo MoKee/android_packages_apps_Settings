@@ -348,7 +348,7 @@
     <string name="title_tile_battery">"Acumulator"</string>
     <string name="title_tile_bluetooth">"Bluetooth"</string>
     <string name="title_tile_brightness">"Luminozitate"</string>
-    <string name="title_tile_sleep">"Adormire"</string>
+    <string name="title_tile_power">"Adormire"</string>
     <string name="title_tile_gps">"GPS"</string>
     <string name="title_tile_torch">"Bliţ LED"</string>
     <string name="title_tile_lockscreen">"Blocare ecran"</string>

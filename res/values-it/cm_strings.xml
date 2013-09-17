@@ -436,7 +436,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Luminosità</string>
     <string name="title_tile_camera">Fotocamera</string>
-    <string name="title_tile_sleep">Blocca telefono</string>
+    <string name="title_tile_power">Blocca telefono</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Torcia LED</string>
     <string name="title_tile_lockscreen">Blocco schermo</string>

@@ -442,7 +442,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Fényerő</string>
     <string name="title_tile_camera">Kamera</string>
-    <string name="title_tile_sleep">Alvó mód</string>
+    <string name="title_tile_power">Alvó mód</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Zseblámpa</string>
     <string name="title_tile_lockscreen">Képernyőzár</string>

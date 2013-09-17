@@ -455,7 +455,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Jas</string>
     <string name="title_tile_camera">Fotoaparát</string>
-    <string name="title_tile_sleep">Spánok</string>
+    <string name="title_tile_power">Spánok</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Svietidlo</string>
     <string name="title_tile_lockscreen">Uzamykacia obrazovka</string>

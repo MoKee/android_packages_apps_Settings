@@ -441,7 +441,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Lysstyrke</string>
     <string name="title_tile_camera">Kamera</string>
-    <string name="title_tile_sleep">Gå i dvale</string>
+    <string name="title_tile_power">Gå i dvale</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Lommelygte</string>
     <string name="title_tile_lockscreen">Skærmlås</string>

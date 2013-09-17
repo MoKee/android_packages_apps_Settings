@@ -444,7 +444,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brillo</string>
     <string name="title_tile_camera">Cámara</string>
-    <string name="title_tile_sleep">Bloquear</string>
+    <string name="title_tile_power">Bloquear</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Linterna</string>
     <string name="title_tile_lockscreen">Bloqueo</string>

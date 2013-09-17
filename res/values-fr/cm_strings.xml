@@ -443,7 +443,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Luminosité</string>
     <string name="title_tile_camera">Appareil photo</string>
-    <string name="title_tile_sleep">Mise en veille</string>
+    <string name="title_tile_power">Mise en veille</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Lampe</string>
     <string name="title_tile_lockscreen">Verrouillage écran</string>

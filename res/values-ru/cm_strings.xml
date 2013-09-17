@@ -556,7 +556,7 @@
     <string name="title_tile_battery">Батарея</string>
     <string name="title_tile_brightness">Подсветка</string>
     <string name="title_tile_camera">Камера</string>
-    <string name="title_tile_sleep">Сон</string>
+    <string name="title_tile_power">Сон</string>
     <string name="title_tile_torch">Фонарик</string>
     <string name="title_tile_lockscreen">Экран блокировки</string>
     <string name="title_tile_mobiledata">Передача данных</string>

@@ -363,7 +363,7 @@
     <string name="title_tile_battery">Estatísticas da bateria</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brilho</string>
-    <string name="title_tile_sleep">Dormir</string>
+    <string name="title_tile_power">Dormir</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Lanterna</string>
     <string name="title_tile_lockscreen">Tela de bloqueio</string>

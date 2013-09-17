@@ -442,7 +442,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Φωτεινότητα</string>
     <string name="title_tile_camera">Φωτογραφ. μηχανή</string>
-    <string name="title_tile_sleep">Αναστολή λειτουργίας</string>
+    <string name="title_tile_power">Αναστολή λειτουργίας</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Φακός</string>
     <string name="title_tile_lockscreen">Οθόνη κλειδώματος</string>

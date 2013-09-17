@@ -436,7 +436,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Jasność</string>
     <string name="title_tile_camera">Kamera</string>
-    <string name="title_tile_sleep">Usypianie</string>
+    <string name="title_tile_power">Usypianie</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Latarka</string>
     <string name="title_tile_lockscreen">Ekran blokady</string>

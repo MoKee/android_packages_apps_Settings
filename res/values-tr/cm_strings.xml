@@ -394,7 +394,7 @@
     <string name="title_tile_battery">Pil istatistikleri</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Parlaklık</string>
-    <string name="title_tile_sleep">Uykuya al</string>
+    <string name="title_tile_power">Uykuya al</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">El feneri</string>
     <string name="title_tile_lockscreen">Kilit ekranı</string>

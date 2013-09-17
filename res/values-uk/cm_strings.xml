@@ -353,7 +353,7 @@
     <string name="title_tile_airplane">Режим польоту</string>
     <string name="title_tile_battery">Батарея</string>
     <string name="title_tile_brightness">Підсвітка</string>
-    <string name="title_tile_sleep">Сон</string>
+    <string name="title_tile_power">Сон</string>
     <string name="title_tile_torch">Ліхтарик</string>
     <string name="title_tile_lockscreen">Екран блокування</string>
     <string name="title_tile_mobiledata">Передача даних</string>

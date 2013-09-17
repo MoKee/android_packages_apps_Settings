@@ -512,7 +512,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Jas</string>
     <string name="title_tile_camera">Fotoaparát</string>
-    <string name="title_tile_sleep">Uspat</string>
+    <string name="title_tile_power">Uspat</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Svítilna</string>
     <string name="title_tile_lockscreen">Zámek obrazovky</string>

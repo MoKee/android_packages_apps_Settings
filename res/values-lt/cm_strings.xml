@@ -359,7 +359,7 @@
     <string name="title_tile_battery">Baterijos būsena</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Ryškumas</string>
-    <string name="title_tile_sleep">Užmigti</string>
+    <string name="title_tile_power">Užmigti</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Žibintuvėlis</string>
     <string name="title_tile_lockscreen">Ekrano užraktas</string>

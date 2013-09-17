@@ -365,7 +365,7 @@
     <string name="title_tile_battery">מצב הסוללה</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">בהירות</string>
-    <string name="title_tile_sleep">לך לישון</string>
+    <string name="title_tile_power">לך לישון</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">פנס</string>
     <string name="title_tile_lockscreen">מסך נעילה</string>

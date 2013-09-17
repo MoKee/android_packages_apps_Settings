@@ -446,7 +446,7 @@
     <string name="title_tile_camera">カメラ</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">画面の明るさ</string>
-    <string name="title_tile_sleep">スリープ</string>
+    <string name="title_tile_power">スリープ</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_lockscreen">ロック画面</string>
     <string name="title_tile_lte">LTE</string>

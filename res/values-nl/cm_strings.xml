@@ -430,7 +430,7 @@ Let op:\nAangezien het beginvolume hoger is ingesteld dan het beltoonvolume, wor
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Helderheid</string>
     <string name="title_tile_camera">Camera</string>
-    <string name="title_tile_sleep">Slaapstand</string>
+    <string name="title_tile_power">Slaapstand</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Zaklamp</string>
     <string name="title_tile_lockscreen">Schermvergrendeling</string>
