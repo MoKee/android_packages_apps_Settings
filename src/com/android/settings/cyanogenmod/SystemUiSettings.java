@@ -54,6 +54,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
     private static final String KEY_MISSED_CALL_BREATH = "missed_call_breath";
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String KEY_NAVBAR_COLOR = "nav_bar_color";
+    private static final String KEY_TRANSPARENCY_DIALOG = "transparency_dialog";
 
     private static final String CATEGORY_NAVBAR = "navigation_bar";
 
@@ -284,7 +285,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
             final Preference preference) {
-        if (preference.getKey().equals("transparency_dialog")) {
+        if (preference.getKey().equals(KEY_TRANSPARENCY_DIALOG)) {
             openTransparencyDialog();
             return true;
         } else if (preference.getKey().equals(KEY_CUSTOM_CARRIER_LABEL)) {

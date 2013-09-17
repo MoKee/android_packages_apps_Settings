@@ -105,7 +105,7 @@
         android:title="@string/other_category" >
 
         <PreferenceScreen
-            android:id="@+id/animations"
+            android:key="animations_controls"
             android:fragment="com.android.settings.cyanogenmod.AnimationControls"
             android:title="@string/title_animation_controls" />
 
