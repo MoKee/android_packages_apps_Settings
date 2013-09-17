@@ -321,4 +321,21 @@
     <!-- Statusbar Quick Peek -->
     <string name="statusbar_quick_peek_title">全局状态栏</string>
     <string name="statusbar_quick_peek_summary">任意界面下可以从屏幕顶端下拉状态栏</string>
+
+    <!-- Animation Controls -->
+    <string name="title_animation_controls">动画控制器</string>
+    <string name="activity_open_title">窗口打开动画</string>
+    <string name="activity_close_title">窗口关闭动画</string>
+    <string name="task_open_title">任务打开动画</string>
+    <string name="task_close_title">任务关闭动画</string>
+    <string name="task_move_to_front_title">前进动画</string>
+    <string name="task_move_to_back_title">后退动画</string>
+    <string name="wallpaper_open_title">壁纸打开动画</string>
+    <string name="wallpaper_close_title">壁纸关闭动画</string>
+    <string name="wallpaper_intra_open_title">壁纸内打开动画</string>
+    <string name="wallpaper_intra_close_title">壁纸内关闭动画</string>
+    <string name="animation_duration_title">动画时间</string>
+    <string name="title_animation_no_override">防止应用程序覆盖</string>
+    <string name="summary_animation_no_override">防止应用程序覆盖动画效果。</string>
+    <string name="animation_duration_default">默认</string>
 </resources>
