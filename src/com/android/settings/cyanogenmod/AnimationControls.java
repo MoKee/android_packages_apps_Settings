@@ -1,6 +1,7 @@
 package com.android.settings.cyanogenmod;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -33,30 +34,31 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     private static final String WALLPAPER_INTRA_OPEN = "wallpaper_intra_open";
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
 
-    ListPreference mActivityOpenPref;
-    ListPreference mActivityClosePref;
-    ListPreference mTaskOpenPref;
-    ListPreference mTaskClosePref;
-    ListPreference mTaskMoveToFrontPref;
-    ListPreference mTaskMoveToBackPref;
-    ListPreference mWallpaperOpen;
-    ListPreference mWallpaperClose;
-    ListPreference mWallpaperIntraOpen;
-    ListPreference mWallpaperIntraClose;
-    AnimBarPreference mAnimationDuration;
-    CheckBoxPreference mAnimNoOverride;
+    private ListPreference mActivityOpenPref;
+    private ListPreference mActivityClosePref;
+    private ListPreference mTaskOpenPref;
+    private ListPreference mTaskClosePref;
+    private ListPreference mTaskMoveToFrontPref;
+    private ListPreference mTaskMoveToBackPref;
+    private ListPreference mWallpaperOpen;
+    private ListPreference mWallpaperClose;
+    private ListPreference mWallpaperIntraOpen;
+    private ListPreference mWallpaperIntraClose;
+    private AnimBarPreference mAnimationDuration;
+    private CheckBoxPreference mAnimNoOverride;
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
     private String[] mAnimationsNum;
 
+    private Context mContext;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle(R.string.title_animation_controls);
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.prefs_animation_controls);
-
+        mContext = getActivity().getBaseContext();
         PreferenceScreen prefs = getPreferenceScreen();
         mAnimations = AnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;
@@ -68,8 +70,8 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
         }
 
         mAnimNoOverride = (CheckBoxPreference) findPreference(ANIMATION_NO_OVERRIDE);
-        mAnimNoOverride.setChecked(Settings.System.getBoolean(getActivity().getContentResolver(),
-                Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, false));
+        mAnimNoOverride.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, 0) == 1);
 
         mActivityOpenPref = (ListPreference) findPreference(ACTIVITY_OPEN);
         mActivityOpenPref.setOnPreferenceChangeListener(this);
@@ -141,9 +143,9 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
                                          Preference preference) {
        if (preference == mAnimNoOverride) {
-            Settings.System.putBoolean(getActivity().getContentResolver(),
+            Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE,
-                        mAnimNoOverride.isChecked());
+                        mAnimNoOverride.isChecked() ? 1 : 0);
             return true;
         }
         return false;
