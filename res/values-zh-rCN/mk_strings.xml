@@ -336,6 +336,6 @@
     <string name="wallpaper_intra_close_title">壁纸内关闭动画</string>
     <string name="animation_duration_title">动画时间</string>
     <string name="title_animation_no_override">防止应用程序覆盖</string>
-    <string name="summary_animation_no_override">防止应用程序覆盖动画效果。</string>
+    <string name="summary_animation_no_override">防止应用程序自带的动画效果替换您的配置。</string>
     <string name="animation_duration_default">默认</string>
 </resources>
