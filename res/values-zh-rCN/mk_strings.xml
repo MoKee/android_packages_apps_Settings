@@ -333,4 +333,7 @@
     <string name="title_animation_no_override">防止应用程序覆盖</string>
     <string name="summary_animation_no_override">防止应用程序自带的动画效果替换您的配置。</string>
     <string name="animation_duration_default">默认</string>
+
+    <!-- MoKee Center -->
+    <string name="mokee_center_title">魔趣中心</string>
 </resources>
