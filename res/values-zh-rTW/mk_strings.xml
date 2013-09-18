@@ -165,11 +165,6 @@
     <string name="show_carrier_label_title">運營商名稱</string>
     <string name="show_carrier_label_summary">在狀態欄顯示運營商名稱</string>
 
-    <!-- Developers -->
-    <string name="settings_developers_activity_title">開發人員</string>
-    <string name="settings_developers_activity_loading">"正在載入..."</string>
-    <string name="settings_developers_activity_unreachable" msgid="232523852222964470">"您沒有網路連接。要立即查看此信息，請通過已聯網的任意計算機訪問 %s。"</string>
-
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">"發現MoKee OpenSource新版本"</string>
     <string name="mokee_push_newversion_msg">"新版本更新啦，點擊查看詳細內容！"</string>
