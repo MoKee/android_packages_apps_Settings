@@ -78,6 +78,9 @@
     <string name="transparency_dialog_match_keyguard_alpha">匹配鎖屏透明度</string>
     <string name="transparency_dialog_transparency">主頁透明度</string>
     <string name="transparency_dialog_transparency_keyguard">鎖屏透明度</string>
+    <string name="transparency_dialog_alpha_mode">透明模式</string>
+    <string name="transparency_dialog_alpha_mode_home">桌面</string>
+    <string name="transparency_dialog_alpha_mode_default">桌面和鎖屏</string>
 
     <!-- Custom Carrier Text -->
     <string name="custom_carrier_label_title">自定義運營商名稱</string>
@@ -174,12 +177,11 @@
     <string name="is_inaccurate_proximity_summary">強制在通話結束後打開螢幕，解決距離感應器不準確問題。</string>
 
     <!-- Halo -->
-    <string name="halo_settings">HALO懸浮窗</string>
     <string name="title_halo">HALO</string>
-
+    <string name="halo_settings">HALO懸浮窗</string>
+    <string name="halo_behavior_title">HALO行為</string>
     <string name="app_halo_label_black">HALO黑名單</string>
     <string name="app_halo_label_white">HALO白名單</string>
-
     <string name="halo_enabled_title">啟用HALO</string>
     <string name="halo_enabled_summary">啟用HALO懸浮窗口(最近的應用程序將不會受到影響)</string>
     <string name="halo_hide_title">活動後隱藏HALO</string>
@@ -192,6 +194,12 @@
     <string name="halo_state_white">白名單</string>
     <string name="halo_pause_title">暫停活動應用</string>
     <string name="halo_pause_summary">當通過HALO打開一個應用時，相關應用將處於暫停狀態。</string>
+    <string name="halo_ninja_title">隱身模式</string>
+    <string name="halo_ninja_summary">當沒有通知時HALO將完全消失</string>
+    <string name="halo_notification_msgbox_title">啟用訊息彈出窗口</string>
+    <string name="halo_notification_msgbox_summary">有新通知時顯示訊息彈出窗口</string>
+    <string name="halo_unlock_ping_title">ping解鎖</string>
+    <string name="halo_unlock_ping_summary">如果收到新的通知，設備將解鎖HALO</string>
     <string name="halo_size_title">HALO大小</string>
     <string name="halo_size_summary">設置HALO的顯示大小</string>
     <string name="halo_size_miniscule">迷你</string>
@@ -200,6 +208,16 @@
     <string name="halo_size_large">大</string>
     <string name="halo_size_gigantic">巨大</string>
     <string name="halo_size_monster">龐大</string>
+    <string name="halo_notification_count_title">訊息數量</string>
+    <string name="halo_notification_count_summary">在HALO上顯示訊息數量</string>
+    <string name="halo_notification_count_none">無</string>
+    <string name="halo_notification_count_total">總數</string>
+    <string name="halo_notification_count_individual">每個應用程序</string>
+    <string name="halo_notification_count_both">兩者都顯示</string>
+    <string name="halo_msgbox_animation_title">訊息框動畫</string>
+    <string name="halo_msgbox_animation_summary">新通知HALO訊息框動畫</string>
+    <string name="halo_msgbox_animation_none">無</string>
+    <string name="halo_msgbox_animation_flip">翻轉</string>
 
     <!-- QuickSettings style options -->
     <string name="title_tile_fcharge">快速充電</string>
@@ -294,4 +312,28 @@
     <string name="lockgesture_too_many_failed_confirmation_attempts_header">錯誤的嘗試次數過多！</string>
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer"><xliff:g id="NUMBER">%d</xliff:g> 秒後重試。</string>
+
+    <!-- Statusbar Quick Peek -->
+    <string name="statusbar_quick_peek_title">全局狀態欄</string>
+    <string name="statusbar_quick_peek_summary">任意界面下可以從屏幕頂端下拉狀態欄</string>
+
+    <!-- Animation Controls -->
+    <string name="title_animation_controls">動畫控制器</string>
+    <string name="activity_open_title">窗口打開動畫</string>
+    <string name="activity_close_title">窗口關閉動畫</string>
+    <string name="task_open_title">任務打開動畫</string>
+    <string name="task_close_title">任務關閉動畫</string>
+    <string name="task_move_to_front_title">前進動畫</string>
+    <string name="task_move_to_back_title">後退動畫</string>
+    <string name="wallpaper_open_title">壁紙打開動畫</string>
+    <string name="wallpaper_close_title">壁紙關閉動畫</string>
+    <string name="wallpaper_intra_open_title">壁紙內打開動畫</string>
+    <string name="wallpaper_intra_close_title">壁紙內關閉動畫</string>
+    <string name="animation_duration_title">動畫時間</string>
+    <string name="title_animation_no_override">防止應用程序覆蓋</string>
+    <string name="summary_animation_no_override">防止應用程序自帶的動畫效果替換您的配置。</string>
+    <string name="animation_duration_default">預設</string>
+	
+    <!-- MoKee Center -->
+    <string name="mokee_center_title">魔趣中心</string>
 </resources>

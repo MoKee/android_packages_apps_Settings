@@ -400,7 +400,7 @@
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在狀態欄上左右滑動以調整亮度</string>
     <string name="status_bar_toggle_info">亮度自動調整已啟用</string>
-    <string name="status_bar_signal_text_title">信號狀態樣式</string>
+    <string name="status_bar_signal_text_title">訊號狀態樣式</string>
     <string name="status_bar_style_icon">圖標</string>
     <string name="status_bar_style_hidden">隱藏</string>
     <string name="status_bar_signal_text_show_text">文字</string>
@@ -467,7 +467,7 @@
     <string name="title_dynamic_alarm">鬧鐘</string>
     <string name="title_dynamic_bugreport">錯誤報告</string>
     <string name="title_dynamic_dock_battery">基座電池</string>
-    <string name="title_dynamic_ime">輸入法更改器</string>
+    <string name="title_dynamic_ime">輸入法切換器</string>
     <string name="title_dynamic_usbtether">USB 網絡共享</string>
     <string name="title_dynamic_wifi">Wi-Fi 顯示</string>
     <string name="title_general">常規</string>
@@ -613,19 +613,19 @@
     <string name="wake_when_plugged_or_unplugged_title">充電喚醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">充電器連接或斷開時，打開螢幕</string>
     <string name="intent_sender_data_label"><xliff:g id="data">數據：</xliff:g></string>
-    <string name="privacy_guard_switch_label">啟用隱私衛士</string>
-    <string name="privacy_guard_dlg_title">是否啟用隱私衛士?</string>
-    <string name="privacy_guard_dlg_text">當啟用隱私衛士時, 應用將無法訪問個人隱私數據, 例如: 聯絡人, 簡訊或通話記錄.</string>
-    <string name="privacy_guard_dlg_system_app_text">當對內置的應用啟用隱私衛士時, 應用將無法訪問或提供個人隱私數據. 這可能導致其他應用的異常行為.</string>
-    <string name="privacy_guard_default_title">預設啟用隱私衛士</string>
-    <string name="privacy_guard_default_summary">預設對新安裝的應用啟用隱私衛士</string>
-    <string name="privacy_guard_manager_title">隱私衛士</string>
+    <string name="privacy_guard_switch_label">啟用隱私守衛</string>
+    <string name="privacy_guard_dlg_title">是否啟用隱私守衛?</string>
+    <string name="privacy_guard_dlg_text">當啟用隱私守衛時, 應用將無法訪問個人隱私數據, 例如: 聯絡人, 簡訊或通話記錄.</string>
+    <string name="privacy_guard_dlg_system_app_text">當對內置的應用啟用隱私守衛時, 應用將無法訪問或提供個人隱私數據. 這可能導致其他應用的異常行為.</string>
+    <string name="privacy_guard_default_title">預設啟用隱私守衛</string>
+    <string name="privacy_guard_default_summary">預設對新安裝的應用啟用隱私守衛</string>
+    <string name="privacy_guard_manager_title">隱私守衛</string>
     <string name="privacy_guard_manager_summary">管理哪些應用可以訪問您的個人資料</string>
     <string name="privacy_guard_no_user_apps">未安裝應用</string>
     <string name="privacy_guard_filter_does_not_match">沒有安裝具有相關權限的應用</string>
     <string name="privacy_guard_help_title">幫助</string>
     <string name="privacy_guard_reset_title">重置</string>
-    <string name="privacy_guard_help_text">在此介面上, 您可以直接通過點擊來選擇在哪些應用上啟用隱私衛士. 選中的應用將無法訪問個人隱私數據, 例如: 聯絡人, 簡訊或通話記錄. 長按一個條目將打開此應用的詳細訊息頁面.\n\n預設情況下不顯示內置的應用. 如果您想顯示內置應用或只顯示那些在權限聲明中需要訪問個人隱私數據的應用, 請在選單中選擇相應的選項.</string>
+    <string name="privacy_guard_help_text">在此介面上, 您可以直接通過點擊來選擇在哪些應用上啟用隱私守衛. 選中的應用將無法訪問個人隱私數據, 例如: 聯絡人, 簡訊或通話記錄. 長按一個條目將打開此應用的詳細訊息頁面.\n\n預設情況下不顯示內置的應用. 如果您想顯示內置應用或只顯示那些在權限聲明中需要訪問個人隱私數據的應用, 請在選單中選擇相應的選項.</string>
     <string name="privacy_guard_manager_show_system_apps">顯示內置應用</string>
     <string name="privacy_guard_manager_filter_permissions">權限過濾器</string>
     <string name="blacklist_title">黑名單</string>
@@ -688,7 +688,7 @@
     <string name="title_quick_access_linked">鏈接佈局</string>
     <string name="summary_quick_access_linked">在快速設置窗格中使用相同的按鈕和佈局</string>
     <string name="font_size_sample">樣本</string>
-	
+
     <!-- SELinux warning -->
     <string name="selinux_enable_title">Android安全性增強</string>
     <string name="selinux_enable_warning">將要在您的設備上啟用SEAndroid，這是一種先進的安全機制。\n\n這個選項目前處於調試階段，您的設備不一定能夠完全兼容，它可能導致您設備的部分硬件無法正常工作\n\n您確定要繼續嗎？</string>
