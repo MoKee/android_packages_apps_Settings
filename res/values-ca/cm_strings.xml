@@ -495,8 +495,8 @@
     <string name="headset_connect_player_title">Llança app de la música</string>
     <string name="headset_connect_player_summary">Llança l\'app de música predeterminada quan es connecten els auriculars</string>
     <string name="safe_headset_volume_title">Volum dels auriculars segur</string>
-    <string name="cyanogenmod_waiver_title">Renúncia</string>
-    <string name="cyanogenmod_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a CyanogenMod i els seus contribuïdors de totes les responsabilitat legals.</string>
+    <string name="mokee_waiver_title">Renúncia</string>
+    <string name="mokee_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a MoKee OpenSource i els seus contribuïdors de totes les responsabilitat legals.</string>
     <string name="light_sensor_current_value">Valor actual del sensor de llum: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Nivells de brillantor automàtics</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
