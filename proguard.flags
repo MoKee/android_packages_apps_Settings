@@ -17,8 +17,9 @@
 -keep class com.android.settings.cyanogenmod.superuser.**
 -keep class com.android.settings.cyanogenmod.privacyguard.**
 
--dontwarn com.baidu.android.common.**
--dontwarn com.baidu.android.pushservice.**
+-keep class com.baidu.android.common.**
+-keep class com.baidu.android.pushservice.**
+-keep class com.baidu.loctp.str.**
 -dontwarn android.content.pm.**
 
 # Keep click responders
