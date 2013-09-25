@@ -346,4 +346,8 @@
 
     <!-- MoKee Center -->
     <string name="mokee_center_title">MoKee Center</string>
+
+    <!-- App Ops -->
+    <string name="app_ops_title">App Ops</string>
+    <string name="app_ops_summary">Fine-grained permission controls (may not work, may break apps)</string>
 </resources>

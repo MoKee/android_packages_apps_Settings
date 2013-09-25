@@ -336,4 +336,8 @@
 
     <!-- MoKee Center -->
     <string name="mokee_center_title">魔趣中心</string>
+
+    <!-- App ops -->
+    <string name="app_ops_title">应用权限</string>
+    <string name="app_ops_summary">管理应用程序的权限（请注意，错误的设置可能导致程序无法工作）</string>
 </resources>
