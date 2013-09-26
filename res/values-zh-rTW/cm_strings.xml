@@ -653,8 +653,6 @@
     <string name="remove_blacklist_number_title">移除號碼</string>
     <string name="remove_blacklist_entry">確認刪除此黑名單條目？</string>
     <string name="select_contact">選擇聯絡人</string>
-    <string name="app_ops_title">應用權限</string>
-    <string name="app_ops_summary">管理應用程序的權限（請注意，錯誤的設置可能導致程序無法工作）</string>
     <string name="vibrator_intensity_title">振動器強度</string>
     <string name="vibrator_warning">不推薦數值高於%1$d</string>
     <string name="color_calibration_title">顏色校準</string>
