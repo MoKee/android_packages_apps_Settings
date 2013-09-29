@@ -70,11 +70,15 @@ public class ReportingServiceManager extends BroadcastReceiver {
             long lastSynced = prefs.getLong(ReportingService.ANONYMOUS_LAST_CHECKED, 0);
             boolean firstBoot = prefs.getBoolean(ReportingService.ANONYMOUS_FIRST_BOOT, true);
             boolean checklock = prefs.getBoolean(ReportingService.ANONYMOUS_CHECK_LOCK, false);
+            String currentVersion = Utilities.getModVersion();
+            String prefVersion = prefs.getString(ReportingService.MODVERSION_PREF, currentVersion);
 
             boolean shouldSync = false;
             if (lastSynced == 0) {
                 shouldSync = true;
             } else if (System.currentTimeMillis() - lastSynced >= tFrame) {
+                shouldSync = true;
+            } else if (!currentVersion.equals(prefVersion)) {
                 shouldSync = true;
             }
             if (shouldSync || firstBoot) {

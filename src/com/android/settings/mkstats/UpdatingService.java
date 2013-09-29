@@ -80,7 +80,7 @@ public class UpdatingService extends Service {
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
             getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
-                    System.currentTimeMillis()).apply();
+                    System.currentTimeMillis()).putString(ReportingService.MODVERSION_PREF, deviceVersion).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
         }
