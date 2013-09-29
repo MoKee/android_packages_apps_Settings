@@ -62,6 +62,8 @@ public class ReportingService extends Service {
     protected static final String ANONYMOUS_FLASH_TIME = "pref_anonymous_flash_time";
 	
     protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
+
+    protected static final String MODVERSION_PREF = "pref_modversion";
 	
     @Override
     public IBinder onBind(Intent intent) {
@@ -82,17 +84,17 @@ public class ReportingService extends Service {
 		};
 		thread.start();
 	}
-
         return Service.START_REDELIVER_INTENT;
     }
 
     private void report() {
-        String deviceId = Utilities.getUniqueID(getApplicationContext());
+        final Context context = ReportingService.this;
+        String deviceId = Utilities.getUniqueID(context);
         String deviceName = Utilities.getDevice();
         String deviceVersion = Utilities.getModVersion();
-        String deviceCountry = Utilities.getCountryCode(getApplicationContext());
-        String deviceCarrier = Utilities.getCarrier(getApplicationContext());
-        String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
+        String deviceCountry = Utilities.getCountryCode(context);
+        String deviceCarrier = Utilities.getCarrier(context);
+        String deviceCarrierId = Utilities.getCarrierId(context);
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
         Log.d(TAG, "SERVICE: Device Name=" + deviceName);
@@ -137,7 +139,7 @@ public class ReportingService extends Service {
             long device_flash_time = Long.valueOf(convertStreamToJSONObject(is).getString("device_flash_time"));
             prefs.edit().putLong(ANONYMOUS_LAST_CHECKED,
                     System.currentTimeMillis()).putLong(ANONYMOUS_FLASH_TIME,
-                                device_flash_time).putBoolean(ANONYMOUS_FIRST_BOOT, false).putBoolean(ANONYMOUS_CHECK_LOCK, false).apply();
+                                device_flash_time).putBoolean(ANONYMOUS_FIRST_BOOT, false).putBoolean(ANONYMOUS_CHECK_LOCK, false).putString(MODVERSION_PREF, deviceVersion).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
 			prefs.edit().putBoolean(ANONYMOUS_CHECK_LOCK, false).apply();
