@@ -249,4 +249,8 @@
     <!-- Auto-Hide Status Bar -->
     <string name="auto_hide_statusbar">自动隐藏状态栏</string>
     <string name="auto_hide_statusbar_summary">没有通知时自动隐藏状态栏</string>
+
+    <!-- MoKee Center -->
+    <string name="mokee_center_title">魔趣中心</string>
+
 </resources>

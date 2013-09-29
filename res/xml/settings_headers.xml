@@ -259,6 +259,17 @@
         android:icon="@drawable/ic_settings_performance"
         android:title="@string/performance_settings_title" />
 
+    <!-- MoKee Center -->
+    <header
+        android:id="@+id/mokee_center"
+        android:icon="@drawable/ic_mokee_center"
+        android:title="@string/mokee_center_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.mokee.helper"
+            android:targetClass="com.mokee.helper.activities.MoKeeCenter" />
+    </header>
+
     <!-- About Device -->
     <header
         android:id="@+id/about_settings"
