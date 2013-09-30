@@ -346,5 +346,6 @@
 
     <!-- MoKee Center -->
     <string name="mokee_center_title">MoKee Center</string>
-
+     <!-- Permissions Management -->   
+ <string name="permissions_settings_title">Permissions Management</string>
 </resources>

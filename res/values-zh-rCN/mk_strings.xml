@@ -336,5 +336,6 @@
 
     <!-- MoKee Center -->
     <string name="mokee_center_title">魔趣中心</string>
-
+<!-- Permissions Management --> 
+ <string name="permissions_settings_title">权限管理</string>
 </resources>
