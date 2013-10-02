@@ -63,7 +63,7 @@ public class ReportingService extends Service {
 	
     protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
-    protected static final String MODVERSION_PREF = "pref_modversion";
+    protected static final String DEVICE_MOKEE_VERSION = "pref_device_mokee_version";
 	
     @Override
     public IBinder onBind(Intent intent) {
@@ -95,6 +95,7 @@ public class ReportingService extends Service {
         String deviceCountry = Utilities.getCountryCode(context);
         String deviceCarrier = Utilities.getCarrier(context);
         String deviceCarrierId = Utilities.getCarrierId(context);
+        String deviceMoKeeVersion = Utilities.getMoKeeVersion();
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
         Log.d(TAG, "SERVICE: Device Name=" + deviceName);
@@ -139,7 +140,7 @@ public class ReportingService extends Service {
             long device_flash_time = Long.valueOf(convertStreamToJSONObject(is).getString("device_flash_time"));
             prefs.edit().putLong(ANONYMOUS_LAST_CHECKED,
                     System.currentTimeMillis()).putLong(ANONYMOUS_FLASH_TIME,
-                                device_flash_time).putBoolean(ANONYMOUS_FIRST_BOOT, false).putBoolean(ANONYMOUS_CHECK_LOCK, false).putString(MODVERSION_PREF, deviceVersion).apply();
+                                device_flash_time).putBoolean(ANONYMOUS_FIRST_BOOT, false).putBoolean(ANONYMOUS_CHECK_LOCK, false).putString(DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
 			prefs.edit().putBoolean(ANONYMOUS_CHECK_LOCK, false).apply();
