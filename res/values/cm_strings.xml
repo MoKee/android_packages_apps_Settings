@@ -154,6 +154,7 @@
     <string name="lockscreen_battery_status_title">Battery status</string>
     <string name="lockscreen_battery_status_charging">Only when charging</string>
     <string name="lockscreen_battery_status_alwayson">Always on</string>
+    <string name="lockscreen_battery_status_alwaysoff">Always off</string>
 
     <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profiles</string>
@@ -481,6 +482,7 @@
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_assist_key_title">Search button</string>
     <string name="hardware_keys_appswitch_key_title">Recents button</string>
+    <string name="hardware_keys_camera_key_title">Camera button</string>
     <string name="hardware_keys_volume_keys_title">Volume buttons</string>
     <string name="hardware_keys_short_press_title">Short press action</string>
     <string name="hardware_keys_long_press_title">Long press action</string>
@@ -495,6 +497,7 @@
     <string name="hardware_keys_action_search">Search assistant</string>
     <string name="hardware_keys_action_voice_search">Voice search</string>
     <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch Camera</string>
     <string name="hardware_keys_action_sleep">Go to sleep</string>
     <string name="home_wake_title">Home button wake</string>
     <string name="home_wake_summary">Pressing the home button will wake your device</string>
@@ -604,6 +607,7 @@
     <string name="lockscreen_buttons_previous">Previous song</string>
     <string name="lockscreen_buttons_playpause">Play/Pause music</string>
     <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
+    <string name="lockscreen_buttons_sleep">Go to sleep</string>
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>
@@ -939,6 +943,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Hardware tunables - Gamma calibration -->
     <string name="gamma_tuning_title_head">Gamma calibration</string>
     <string name="gamma_tuning_summary_head">Tweak gamma values</string>
+    <string name="gamma_tuning_contrast">Contrast</string>
+    <string name="gamma_tuning_brightness">Brightness</string>
 
     <!--  Other device settings -->
     <string name="more_device_controls_title">More\u2026</string>
