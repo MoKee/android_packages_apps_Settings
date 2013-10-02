@@ -103,6 +103,12 @@ public class Utilities {
         return modVersion;
     }
 
+    public static String getMoKeeVersion() {
+        String modVersion = getModVersion();
+        int index = modVersion.indexOf("-");
+        return index == -1 ? "Unknown" : modVersion.substring(0, index);
+    }
+
     public static String getBuildHost() {
         String hostName = SystemProperties.get("ro.build.host");
         if (TextUtils.isEmpty(hostName)) {

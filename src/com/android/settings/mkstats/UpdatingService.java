@@ -64,6 +64,7 @@ public class UpdatingService extends Service {
         final Context context = UpdatingService.this;
         String deviceId = Utilities.getUniqueID(context);
         String deviceVersion = Utilities.getModVersion();
+        String deviceMoKeeVersion = Utilities.getMoKeeVersion();
         String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
 
         Log.d(TAG, "SERVICE: Device ID=" + deviceId);
@@ -80,7 +81,7 @@ public class UpdatingService extends Service {
             httppost.setEntity(new UrlEncodedFormEntity(kv));
             httpclient.execute(httppost);
             getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
-                    System.currentTimeMillis()).putString(ReportingService.MODVERSION_PREF, deviceVersion).apply();
+                    System.currentTimeMillis()).putString(ReportingService.DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
         } catch (Exception e) {
             Log.e(TAG, "Got Exception", e);
         }
