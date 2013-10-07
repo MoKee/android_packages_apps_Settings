@@ -89,6 +89,7 @@
     <string name="lockscreen_battery_status_title">Akkumulátor állapot</string>
     <string name="lockscreen_battery_status_charging">Csak töltéskor</string>
     <string name="lockscreen_battery_status_alwayson">Mindig</string>
+    <string name="lockscreen_battery_status_alwaysoff">Soha</string>
     <string name="profiles_settings_title">Profilok</string>
     <string name="profiles_add">Hozzáadás</string>
     <string name="profile_menu_delete">Törlés</string>
@@ -184,20 +185,13 @@
     <string name="performance_settings_warning_title">Innentől óvatosan</string>
     <string name="performance_settings_warning">Ezek a beállítások kísérleti jelleggel szerepelnek itt. Bármilyen változtatás a készülék instabilitásához, meghibásodásához, vagy adatvesztéshez vezethet.\n\nAz esetleges károkért nem vállalunk felelősséget.</string>
     <string name="processor_title">Processzor</string>
-    <string name="processor_summary">CPU órajel és ütemező beállítások</string>
     <string name="cpu_cur_freq_title">Jelenlegi CPU frekvencia</string>
     <string name="cpu_governors_title">CPU ütemező</string>
     <string name="cpu_min_freq_title">Minimum CPU frekvencia</string>
     <string name="cpu_max_freq_title">Maximum CPU frekvencia</string>
-    <string name="cpu_set_on_boot">Bekapcsoláskor érvénybe lép</string>
-    <string name="cpu_set_on_boot_summary">Processzor beállítása indításkor</string>
     <string name="io_scheds_title">I/O ütemező</string>
-    <string name="io_scheds_summary">I/O módosítása</string>
     <string name="io_sched_title">I/O ütemező</string>
-    <string name="io_sched_set_on_boot">Bekapcsoláskor érvénybe lép</string>
-    <string name="io_sched_set_on_boot_summary">I/O ütemező beállítása indításkor</string>
     <string name="memory_management_title">Memória kezelés</string>
-    <string name="memory_management_summary">A memóriahasználat változtatásával testreszabhatod a rendszer teljesítményét</string>
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">Memóriatömörítés virtuális kapacitásnöveléshez (újraindítás szükséges)</string>
     <string name="pref_ksm_title">KSM</string>
@@ -330,6 +324,7 @@
     <string name="hardware_keys_menu_key_title">Menü gomb</string>
     <string name="hardware_keys_assist_key_title">Keresés gomb</string>
     <string name="hardware_keys_appswitch_key_title">Előzmények gomb</string>
+    <string name="hardware_keys_camera_key_title">Kamera gomb</string>
     <string name="hardware_keys_volume_keys_title">Hangerő gombok</string>
     <string name="hardware_keys_short_press_title">Rövid érintés eseménye</string>
     <string name="hardware_keys_long_press_title">Hosszan érintés eseménye</string>
@@ -344,6 +339,7 @@
     <string name="hardware_keys_action_search">Kereső asszisztens</string>
     <string name="hardware_keys_action_voice_search">Hangalapú keresés</string>
     <string name="hardware_keys_action_in_app_search">Alkalmazáson belüli keresés</string>
+    <string name="hardware_keys_action_launch_camera">Kamera indítása</string>
     <string name="home_wake_title">Kezdő gombra ébredés</string>
     <string name="home_wake_summary">A Kezdő gomb megnyomására felébred a készülék</string>
     <string name="volume_wake_title">Hangerő gombra ébredés</string>
@@ -431,6 +427,7 @@
     <string name="lockscreen_buttons_previous">Előző zeneszám</string>
     <string name="lockscreen_buttons_playpause">Zene lejátszás/szünet</string>
     <string name="lockscreen_buttons_toggle_sound">Hang mód</string>
+    <string name="lockscreen_buttons_sleep">Alvó mód</string>
     <string name="quick_settings_panel_title">Gyorsbeállítások panel</string>
     <string name="title_static_tiles">Statikus csempék</string>
     <string name="tile_picker_title">Csempék és elrendezés</string>
@@ -678,6 +675,8 @@ Az \"Eltávolítás\" törli a kiválasztott sort.
     <string name="backlight_summary_enabled">Engedélyezve</string>
     <string name="gamma_tuning_title_head">Gamma kalibrálás</string>
     <string name="gamma_tuning_summary_head">Gamma értékek finomhangolása</string>
+    <string name="gamma_tuning_contrast">Kontraszt</string>
+    <string name="gamma_tuning_brightness">Fényerő</string>
     <string name="more_device_controls_title">Továbbiak\u2026</string>
     <string name="more_device_settings_title">További eszköz beállítások</string>
     <string name="sensors_motors_title">Szenzorok &amp; motorok</string>

@@ -16,32 +16,18 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/processor_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-    <Preference
-        android:key="pref_cpu_freq_cur"
-        style="?android:preferenceInformationStyle"
-        android:title="@string/cpu_cur_freq_title"
-        android:selectable="false" />
+    android:title="@string/perf_profile_title">
 
     <ListPreference
-        android:key="pref_cpu_gov"
-        android:dialogTitle="@string/cpu_governors_title"
-        android:title="@string/cpu_governors_title" />
-
-    <ListPreference
-        android:key="pref_cpu_freq_min"
-        android:dialogTitle="@string/cpu_min_freq_title"
-        android:title="@string/cpu_min_freq_title" />
-
-    <ListPreference
-        android:key="pref_cpu_freq_max"
-        android:dialogTitle="@string/cpu_max_freq_title"
-        android:title="@string/cpu_max_freq_title" />
+        android:key="pref_perf_profile"
+        android:dialogTitle="@string/perf_profile_title"
+        android:title="@string/perf_profile_title"
+        android:entries="@array/perf_profile_entries"
+        android:entryValues="@array/perf_profile_values"
+        android:defaultValue="@string/config_perf_profile_default_entry" />
 
     <CheckBoxPreference
-        android:key="pref_cpu_set_on_boot"
+        android:key="pref_perf_profile_set_on_boot"
         android:title="@string/performance_set_on_boot"
         android:summary="@string/performance_set_on_boot_summary"/>
 

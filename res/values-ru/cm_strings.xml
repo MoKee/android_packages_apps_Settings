@@ -103,6 +103,7 @@
     <string name="lockscreen_battery_status_title">Состояние батареи</string>
     <string name="lockscreen_battery_status_charging">Показывать во время зарядки</string>
     <string name="lockscreen_battery_status_alwayson">Показывать всегда</string>
+    <string name="lockscreen_battery_status_alwaysoff">Не показывать</string>
 
     <!-- Profiles settings -->
     <string name="profiles_settings_title">Профили</string>
@@ -229,30 +230,21 @@
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
     <string name="processor_title">Процессор</string>
-    <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">Изменение режимов и частот ЦП</string>
 
     <!-- Performance Settings : Processor settings sub items -->
     <string name="cpu_cur_freq_title">Текущая частота</string>
     <string name="cpu_governors_title">Алгоритм смены частоты</string>
     <string name="cpu_min_freq_title">Минимальная частота</string>
     <string name="cpu_max_freq_title">Максимальная частота</string>
-    <string name="cpu_set_on_boot">Выставлять при загрузке</string>
-    <string name="cpu_set_on_boot_summary">Применять текущие настройки процессора при перезагрузке</string>
 
     <!-- Performance Settings : I/O scheduler settings title -->
     <string name="io_scheds_title">Планировщик I/O</string>
-    <!-- Performance Settings : I/O scheduler settings summary. -->
-    <string name="io_scheds_summary">Изменение режима планировщика I/O (ввода/вывода)</string>
 
     <!-- Performance Settings : I/O scheduler settings sub items -->
     <string name="io_sched_title">Планировщик I/O</string>
-    <string name="io_sched_set_on_boot">Выставлять при загрузке</string>
-    <string name="io_sched_set_on_boot_summary">Применять текущие настройки планировщика I/O при перезагрузке</string>
 
     <!-- Memory Management -->
     <string name="memory_management_title">Управление памятью</string>
-    <string name="memory_management_summary">Настройка использования памяти для изменения производительности системы</string>
     <!-- zRam -->
     <string name="pref_zram_title">Использовать zRam</string>
     <string name="pref_zram_summary">Разрешает сжатие памяти для увеличения виртуальной ёмкости (требуется перезагрузка)</string>
@@ -409,6 +401,7 @@
     <string name="hardware_keys_menu_key_title">Кнопка «Меню»</string>
     <string name="hardware_keys_assist_key_title">Кнопка «Поиск»</string>
     <string name="hardware_keys_appswitch_key_title">Кнопка «Недавние приложения»</string>
+    <string name="hardware_keys_camera_key_title">Кнопка камеры</string>
     <string name="hardware_keys_volume_keys_title">Кнопки громкости</string>
     <string name="hardware_keys_short_press_title">Короткое нажатие</string>
     <string name="hardware_keys_long_press_title">Долгое нажатие</string>
@@ -423,7 +416,8 @@
     <string name="hardware_keys_action_search">Поисковый помощник</string>
     <string name="hardware_keys_action_voice_search">Голосовой поиск</string>
     <string name="hardware_keys_action_in_app_search">Поиск в приложении</string>
-    <string name="home_wake_title">Кнопка «Домой»</string>
+    <string name="hardware_keys_action_launch_camera">Запуск камеры</string>
+    <string name="home_wake_title">Пробуждение кнопкой «Домой»</string>
     <string name="home_wake_summary">Нажатие кнопки «Домой» пробуждает устройство</string>
     <string name="volume_wake_title">Пробуждение кнопками громкости</string>
     <string name="volume_wake_summary">Нажатие на кнопки громкости пробуждает устройство</string>
@@ -544,7 +538,8 @@
     <string name="lockscreen_buttons_next">Следующий трек</string>
     <string name="lockscreen_buttons_previous">Предыдущий трек</string>
     <string name="lockscreen_buttons_playpause">Воспр./Пауза</string>
-    <string name="lockscreen_buttons_toggle_sound">Режимы звука</string>
+    <string name="lockscreen_buttons_toggle_sound">Перекл. режим звонка</string>
+    <string name="lockscreen_buttons_sleep">Спящий режим</string>
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Панель быстрых настроек</string>
@@ -882,6 +877,8 @@
     <!-- Hardware tunables - Gamma calibration -->
     <string name="gamma_tuning_title_head">Гамма</string>
     <string name="gamma_tuning_summary_head">Настройка гамма-коррекции экрана</string>
+    <string name="gamma_tuning_contrast">Контрастность</string>
+    <string name="gamma_tuning_brightness">Яркость</string>
 
     <!--  Other device settings -->
     <string name="more_device_controls_title">Ещё\u2026</string>
