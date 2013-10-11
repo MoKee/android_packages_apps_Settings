@@ -671,4 +671,5 @@
     <string name="font_size_sample">示例</string>
     <string name="selinux_enable_title">安全增强式 Android</string>
     <string name="selinux_enable_warning">您将在您的设备上启用 SEAndroid，一个增强安全性的高级机制。此选项纯粹用于调试目的，并很有可能不完全在您的设备上工作，导致一部分 (或所有) 硬件阻塞或挂起。您确定要继续吗？</string>
+    <string name="gps_download_data_wifi_only">只通过 WLAN 网络下载GPS辅助数据</string>
 </resources>
