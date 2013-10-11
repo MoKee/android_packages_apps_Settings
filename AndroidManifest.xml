@@ -1928,7 +1928,6 @@
             </intent-filter>
         </receiver>
 
-<<<<<<< HEAD
         <!-- MOKEE PUSH SERVICE START -->
         <receiver android:name=".mkpush.PushServiceManager"
             android:label="PushServiceManager" >
@@ -1971,14 +1970,13 @@
 
         <meta-data android:name="api_key" android:value="Z1sw17O8ir2pjYSElDohbDRr" />
         <!-- MOKEE PUSH SERVICE END -->
-=======
+
         <!-- Lto Service -->
         <service android:label="LtoService"
             android:enabled="true"
             android:exported="false"
             android:name=".cyanogenmod.LtoService">
         </service>
->>>>>>> cm-10.2
 
     </application>
 </manifest>
