@@ -102,7 +102,7 @@ public class PushServiceManager extends BroadcastReceiver {
             String modType = PushUtils.getString(bundle, "type");
             String url = PushUtils.getString(bundle, "url");
             String title = PushUtils.getString(bundle, "title");
-            String newVersion = PushUtils.getString(bundle, "version");
+            int newVersion = Integer.parseInt(PushUtils.getString(bundle, "version"));
             String HASHID = PushUtils.getString(bundle, "hashid");
             String IMEI = PushUtils.getString(bundle, "imei");
             int msg_id = Integer.valueOf(PushUtils.getString(bundle, "id"));
@@ -119,7 +119,10 @@ public class PushServiceManager extends BroadcastReceiver {
                             || PushUtils.allowPush(device, mod_device, 1) && modType.equals("all")) {
                         switch (msg_id) {
                             case 0:
-                                if (!mod_version.contains(newVersion))
+                                String mod_version_code = mod_version.split("-")[2];
+                                if (mod_version_code.length() > 6)
+                                    mod_version_code = mod_version_code.substring(2, 8);
+                                if (newVersion > Integer.parseInt(mod_version_code))
                                     promptUser(ctx, url,
                                             ctx.getString(R.string.mokee_push_newversion_title),
                                             ctx.getString(R.string.mokee_push_newversion_msg), msg_id);
