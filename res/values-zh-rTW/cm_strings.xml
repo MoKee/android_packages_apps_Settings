@@ -57,27 +57,11 @@
     <string name="notification_vibrate_during_calls_title">通話時震動</string>
     <string name="notification_vibrate_during_calls_summary">通話時接收到通知將會輕微地震動</string>
     <string name="device_hostname">裝置主機名稱</string>
-    <string name="mod_version">CyanogenMod 版本</string>
+    <string name="mod_version">MoKee 版本</string>
     <string name="mod_version_default">未知</string>
     <string name="build_date">組建日期</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">記憶體</string>
-    <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-    <string name="anonymous_statistics_summary">加入匿名統計報告以協助改進 CyanogenMod</string>
-    <string name="anonymous_statistics_warning_title">關於</string>
-    <string name="anonymous_statistics_warning">加入 CyanogenMod 統計將允許非個人資料被提交到 CyanogenMod 的開發者，
-        以追蹤每個裝置上的獨特安裝。提交的資訊包含一個唯一識別碼，此識別碼並不會泄露您的隱私或個人資料。
-        該資料在每次啟動時被提交。\n\n輕按預覽資料以預覽被提交資料的例子。</string>
-    <string name="enable_reporting_title">啟用報告</string>
-    <string name="preview_data_title">預覽資料</string>
-    <string name="view_stats_title">檢視統計</string>
-    <string name="anonymous_learn_more">了解更多</string>
-    <string name="anonymous_notification_desc">啟用或停用 CyanogenMod 統計</string>
-    <string name="preview_id_title">Unique ID</string>
-    <string name="preview_device_title">裝置</string>
-    <string name="preview_version_title">版本</string>
-    <string name="preview_country_title">國家</string>
-    <string name="preview_carrier_title">電信業者</string>
     <string name="header_category_interface">個人化</string>
     <string name="homescreen_settings_title">主螢幕</string>
     <string name="themes_settings_title">主題</string>
