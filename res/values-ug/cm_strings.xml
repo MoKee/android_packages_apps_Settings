@@ -508,8 +508,8 @@
     <string name="headset_connect_player_title">نەغمە ئەپنى قوزغات</string>
     <string name="headset_connect_player_summary">تىڭشىغۇچ قىستۇرۇلغاندا كۆڭۈلدىكى نەغمە چالىدىغان ئەپنى قوزغىتىدۇ</string>
     <string name="safe_headset_volume_title">بىخەتەر تىڭشىغۇچ ئاۋازى</string>
-    <string name="cyanogenmod_waiver_title">ھوقۇقتىن ۋاز كېچىش باياناتى</string>
-    <string name="cyanogenmod_waiver_body">"بۇ تەڭشەكنى ئۆزگەرتىش سىز تۇرۇشلۇق دۆلەتتە قانۇنسىز قىلمىش بولۇشى مۇمكىن. \n\nتۆۋەندىكى «جەزملە» توپچىنى چەككەنلىكىڭىز سىزنىڭ بۇ ئاگاھلاندۇرۇشنى ئوقۇپ ئەرز قىلىش ھوقۇقىدىن ۋاز كەچكەنلىكىڭىزنى ھەمدە CyanogenMod ۋە ئۇنىڭ تۆھپىكارلىرىنىڭ جازاغا ئۇچرىمايدىغانلىقى ھەمدە ھېچقانداق قانۇنىي مەسئۇلىيەتنى ئۈستىگە ئالمايدىغانلىقىنى بىلدۈرىدۇ."</string>
+    <string name="mokee_waiver_title">ھوقۇقتىن ۋاز كېچىش باياناتى</string>
+    <string name="mokee_waiver_body">"بۇ تەڭشەكنى ئۆزگەرتىش سىز تۇرۇشلۇق دۆلەتتە قانۇنسىز قىلمىش بولۇشى مۇمكىن. \n\nتۆۋەندىكى «جەزملە» توپچىنى چەككەنلىكىڭىز سىزنىڭ بۇ ئاگاھلاندۇرۇشنى ئوقۇپ ئەرز قىلىش ھوقۇقىدىن ۋاز كەچكەنلىكىڭىزنى ھەمدە MoKee OpenSource ۋە ئۇنىڭ تۆھپىكارلىرىنىڭ جازاغا ئۇچرىمايدىغانلىقى ھەمدە ھېچقانداق قانۇنىي مەسئۇلىيەتنى ئۈستىگە ئالمايدىغانلىقىنى بىلدۈرىدۇ."</string>
     <string name="auto_brightness_setup_title">يورۇقلۇقنى ئۆزلۈكىدىن تەڭشەش</string>
     <string name="auto_brightness_adjustment_title">يورۇقلۇق تەڭشەش</string>
     <string name="auto_brightness_twilight_adjustment">كۈن چىقىش ۋە كۈن بېپىشقا تەڭشەيدۇ</string>

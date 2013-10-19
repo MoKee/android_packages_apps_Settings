@@ -520,8 +520,8 @@
     <string name="headset_connect_player_title">啟動音樂播放器</string>
     <string name="headset_connect_player_summary">插入耳機時啟動預設音樂播放器</string>
     <string name="safe_headset_volume_title">安全耳機音量</string>
-    <string name="cyanogenmod_waiver_title">棄權書</string>
-    <string name="cyanogenmod_waiver_body">變更此設定可能違反您的州或政府的法律。\n\n選取「確定」意味著您已讀此警告並放棄一切起訴權，保證 CyanogenMod 及其貢獻者免於受罰，並且不承擔任何法律責任。</string>
+    <string name="mokee_waiver_title">棄權書</string>
+    <string name="mokee_waiver_body">變更此設定可能違反您的州或政府的法律。\n\n選取「確定」意味著您已讀此警告並放棄一切起訴權，保證 MoKee OpenSource 及其貢獻者免於受罰，並且不承擔任何法律責任。</string>
     <string name="auto_brightness_setup_title">自動調整亮度</string>
     <string name="auto_brightness_adjustment_title">亮度調整</string>
     <string name="auto_brightness_twilight_adjustment">調整對應日出與日落</string>
