@@ -437,7 +437,7 @@
     <string name="title_tile_bluetooth">藍牙</string>
     <string name="title_tile_brightness">亮度</string>
     <string name="title_tile_camera">相機</string>
-    <string name="title_tile_sleep">進入休眠</string>
+    <string name="title_tile_power">進入休眠</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">手電筒</string>
     <string name="title_tile_lockscreen">鎖定螢幕</string>

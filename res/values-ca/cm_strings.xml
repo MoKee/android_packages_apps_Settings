@@ -433,7 +433,7 @@
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brillantor</string>
     <string name="title_tile_camera">Càmera</string>
-    <string name="title_tile_sleep">Ves a dormir</string>
+    <string name="title_tile_power">Ves a dormir</string>
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Torxa</string>
     <string name="title_tile_lockscreen">Pantalla de bloqueig</string>
