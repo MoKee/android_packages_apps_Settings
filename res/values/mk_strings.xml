@@ -148,8 +148,6 @@
     <string name="pie_power_summary">Enable power button on pie controls</string>
     <string name="pie_center_title">Middle alignment</string>
     <string name="pie_center_summary">Center Pie on the trigger edge</string>
-    <string name="pie_stick_title">Prevent rotation</string>
-    <string name="pie_stick_summary">If checked PIE will stay in place no matter which orientation</string>
     <string name="pie_color_title">Color Settings</string>
     <string name="pie_color_style_title">Enable custom colors</string>
     <string name="pie_background_title">Background color</string>

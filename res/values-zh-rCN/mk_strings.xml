@@ -146,8 +146,6 @@
     <string name="pie_power_summary">显示电源键按钮</string>
     <string name="pie_center_title">居中对齐</string>
     <string name="pie_center_summary">在触发位置一侧居中对齐</string>
-    <string name="pie_stick_title">禁止旋转</string>
-    <string name="pie_stick_summary">锁定PIE控制器的位置，即使屏幕发生旋转</string>
     <string name="pie_color_title">颜色设置</string>
     <string name="pie_color_style_title">启用自定义颜色</string>
     <string name="pie_background_title">背景颜色</string>

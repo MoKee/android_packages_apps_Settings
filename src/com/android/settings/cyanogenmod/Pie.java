@@ -95,7 +95,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private static final String PIE_MENU = "pie_menu";
     private static final String PIE_SEARCH = "pie_search";
     private static final String PIE_CENTER = "pie_center";
-    private static final String PIE_STICK = "pie_stick";
 
     private ListPreference mPieMode;
     private ListPreference mPieSize;
@@ -109,7 +108,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private CheckBoxPreference mPieLastApp;
     private CheckBoxPreference mPieSearch;
     private CheckBoxPreference mPieCenter;
-    private CheckBoxPreference mPieStick;
 
     private ContentResolver resolver;
 
@@ -188,10 +186,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieCenter.setChecked(Settings.System.getInt(resolver,
                 Settings.System.PIE_CENTER, 1) == 1);
 
-        mPieStick = (CheckBoxPreference) prefSet.findPreference(PIE_STICK);
-        mPieStick.setChecked(Settings.System.getInt(resolver,
-                Settings.System.PIE_STICK, 0) == 1);
-
     }
 
     private void updateExpandedDesktop(boolean isChecked) {
@@ -237,9 +231,6 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         } else if (preference == mPieCenter) {
             Settings.System.putInt(resolver,
                     Settings.System.PIE_CENTER, mPieCenter.isChecked() ? 1 : 0);
-        } else if (preference == mPieStick) {
-            Settings.System.putInt(resolver,
-                    Settings.System.PIE_STICK, mPieStick.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
 

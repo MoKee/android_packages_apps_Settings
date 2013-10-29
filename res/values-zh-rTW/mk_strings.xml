@@ -147,8 +147,6 @@
     <string name="pie_power_summary">顯示電源鍵按鈕</string>
     <string name="pie_center_title">居中對齊</string>
     <string name="pie_center_summary">在觸發位置一側居中對齊</string>
-    <string name="pie_stick_title">禁止旋轉</string>
-    <string name="pie_stick_summary">鎖定PIE控制器的位置，即使螢幕發生旋轉</string>
     <string name="pie_color_title">顏色設置</string>
     <string name="pie_color_style_title">啟用自定義顏色</string>
     <string name="pie_background_title">背景顏色</string>
