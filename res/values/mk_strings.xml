@@ -88,7 +88,6 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
     <!-- PIE Controls -->
-    <string name="pie_settings">PIE Controls</string>
     <string name="title_pie">PIE™</string>
     <string name="pie_controls_title">Controls</string>
     <string name="pie_controls_summary">@null</string>
@@ -180,7 +179,6 @@
 
     <!-- Halo -->
     <string name="title_halo">HALO</string>
-    <string name="halo_settings">Halo Floating Window</string>
     <string name="halo_behavior_title">HALO Behavior</string>
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
@@ -349,7 +347,6 @@
 
     <!-- Active Display -->
     <string name="ad_settings_title">Active display</string>
-    <string name="ad_settings_summary">Change active display settings</string>
     <string name="ad_enable_title">Enable</string>
     <string name="ad_enable_summary_on">Active display enabled</string>
     <string name="ad_enable_summary_off">Active display disabled</string>
@@ -382,4 +379,6 @@
     <string name="ad_redisplay_2h">2 hours</string>
     <string name="ad_redisplay_5h">5 hours</string>
 
+    <!-- HALO, PIE, Active Display Category-->
+    <string name="quick_controls_category">Quick Controls</string>
 </resources>

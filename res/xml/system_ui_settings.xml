@@ -79,34 +79,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="pie_category"
-        android:title="@string/pie_settings" >
+        android:key="quick_controls_category"
+        android:title="@string/quick_controls_category" >
 
         <PreferenceScreen
             android:fragment="com.android.settings.cyanogenmod.Pie"
             android:key="pie_settings"
             android:title="@string/title_pie" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="halo_category"
-        android:title="@string/halo_settings" >
-
         <PreferenceScreen
             android:fragment="com.android.settings.cyanogenmod.Halo"
             android:key="halo_settings"
             android:title="@string/title_halo" />
 
-    </PreferenceCategory>
+        <PreferenceScreen
+            android:key="active_display"
+            android:fragment="com.android.settings.cyanogenmod.ActiveDisplaySettings"
+            android:title="@string/ad_settings_title" />
 
-    <!-- Active display -->
-    <PreferenceScreen
-        android:key="active_display"
-        android:fragment="com.android.settings.cyanogenmod.ActiveDisplaySettings"
-        android:title="@string/ad_settings_title"
-        android:summary="@string/ad_settings_summary">
-    </PreferenceScreen>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="other_category"
