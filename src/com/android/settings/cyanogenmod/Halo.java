@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 package com.android.settings.cyanogenmod;
 
 import android.app.ActivityManager;

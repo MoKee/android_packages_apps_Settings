@@ -100,6 +100,14 @@
 
     </PreferenceCategory>
 
+    <!-- Active display -->
+    <PreferenceScreen
+        android:key="active_display"
+        android:fragment="com.android.settings.cyanogenmod.ActiveDisplaySettings"
+        android:title="@string/ad_settings_title"
+        android:summary="@string/ad_settings_summary">
+    </PreferenceScreen>
+
     <PreferenceCategory
         android:key="other_category"
         android:title="@string/other_category" >

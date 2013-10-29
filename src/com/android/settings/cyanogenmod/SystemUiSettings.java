@@ -172,6 +172,8 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
             Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
                     Integer.valueOf((String) objValue));
+            Settings.System.putInt(resolver, Settings.System.ACTIVE_DISPLAY_NAVIGATION_BAR_HEIGHT, 
+                    Integer.valueOf((String) objValue));
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
             return true;
         } else if (preference == mNavigationBarColor) {
