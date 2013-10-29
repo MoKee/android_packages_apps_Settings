@@ -79,8 +79,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="quick_controls_category"
-        android:title="@string/quick_controls_category" >
+        android:key="sepcial_features_category"
+        android:title="@string/special_faetures_category" >
 
         <PreferenceScreen
             android:fragment="com.android.settings.cyanogenmod.Pie"

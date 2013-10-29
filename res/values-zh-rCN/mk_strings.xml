@@ -370,5 +370,5 @@
     <string name="ad_redisplay_5h">5 小时</string>
 
     <!-- HALO, PIE, Active Display Category-->
-    <string name="quick_controls_category">快捷控制</string>
+    <string name="special_features_category">快捷控制</string>
 </resources>
