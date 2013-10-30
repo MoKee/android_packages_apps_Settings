@@ -366,6 +366,16 @@
     <string name="ad_redisplay_1h">1 小时</string>
     <string name="ad_redisplay_2h">2 小时</string>
     <string name="ad_redisplay_5h">5 小时</string>
+    <string name="ad_pocket_mode_off">关闭</string>
+    <string name="ad_pocket_mode_notifications">仅通知</string>
+    <string name="ad_pocket_mode_always">始终</string>
+    <string name="ad_timeout_title">显示超时</string>
+    <string name="ad_timeout_3s">3 秒</string>
+    <string name="ad_timeout_5s">5 秒</string>
+    <string name="ad_timeout_8s">8 秒</string>
+    <string name="ad_timeout_10s">10 秒</string>
+    <string name="ad_timeout_15s">15 秒</string>
+    <string name="ad_timeout_25s">25 秒</string> 
 
     <!-- HALO, PIE, Active Display Category-->
     <string name="special_features_category">快捷控制</string>
