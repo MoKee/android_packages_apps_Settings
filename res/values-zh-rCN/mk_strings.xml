@@ -367,7 +367,7 @@
     <string name="ad_redisplay_2h">2 小时</string>
     <string name="ad_redisplay_5h">5 小时</string>
     <string name="ad_pocket_mode_off">关闭</string>
-    <string name="ad_pocket_mode_notifications">仅通知</string>
+    <string name="ad_pocket_mode_notifications">仅新通知</string>
     <string name="ad_pocket_mode_always">始终</string>
     <string name="ad_timeout_title">显示超时</string>
     <string name="ad_timeout_3s">3 秒</string>
