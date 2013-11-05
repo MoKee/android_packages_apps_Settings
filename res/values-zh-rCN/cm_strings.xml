@@ -182,6 +182,8 @@
     <string name="performance_settings_title">性能</string>
     <string name="performance_settings_warning_title">请谨慎前进</string>
     <string name="performance_settings_warning">这些设置完全是用于测试与实验。这里的改变将直接影响系统性能，并可能导致系统不稳定、数据丢失与硬件损伤。\n\n如果您更改了这里的设置，我们请求您不要向我们提交错误报告。</string>
+    <string name="performance_set_on_boot">启动时设置</string>
+    <string name="performance_set_on_boot_summary">在启动时恢复当前的 CPU 设置</string>
     <string name="processor_title">处理器</string>
     <string name="cpu_cur_freq_title">当前 CPU 频率</string>
     <string name="cpu_governors_title">CPU 调节器</string>
