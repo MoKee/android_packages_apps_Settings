@@ -212,6 +212,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
             input.setText(TextUtils.isEmpty(mCustomLabelText) ? "" : mCustomLabelText);
+            input.setSelection(input.getText().length());
             alert.setView(input);
             alert.setPositiveButton(getResources().getString(R.string.ok),
                     new DialogInterface.OnClickListener() {
