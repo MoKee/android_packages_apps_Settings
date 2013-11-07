@@ -34,6 +34,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.mokee.util.MoKeeUtils;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -130,9 +131,7 @@ public class PushServiceManager extends BroadcastReceiver {
 
                                 break;
                             case 1:
-                                String currentCountry = ctx.getResources().getConfiguration().locale
-                                        .getCountry();
-                                if (currentCountry.equals("CN") || currentCountry.equals("TW")) {
+                                if (MoKeeUtils.isChineseLanguage()) {
                                     promptUser(ctx, url, title, message, msg_id);
                                 }
                                 break;

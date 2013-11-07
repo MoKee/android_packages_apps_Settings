@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2013 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.mokee;
 
 import com.android.settings.R;
 
@@ -36,7 +36,7 @@ import com.android.internal.app.AlertController;
 
 public class ChangeLog extends AlertActivity {
 
-    private static final String CHANGELOG_PATH = "/system/etc/CHANGELOG-CM.txt";
+    private static final String CHANGELOG_PATH = "/system/etc/CHANGELOG-MK.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

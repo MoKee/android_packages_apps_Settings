@@ -1815,12 +1815,6 @@
                 android:value="com.android.settings.cmstats.AnonymousStats" />
         </activity>
 
-        <activity android:name=".cyanogenmod.ChangeLog" android:label="@string/changelog_title">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
-
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"
@@ -1899,6 +1893,14 @@
 
         <meta-data android:name="api_key" android:value="Z1sw17O8ir2pjYSElDohbDRr" />
         <!-- MOKEE PUSH SERVICE END -->
+
+        <!-- MOKEE ACTIVITIES START -->
+        <activity android:name=".mokee.ChangeLog" android:label="@string/changelog_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <!-- MoKee ACTIVITIES END -->
 
         <provider
             android:name="android.support.v4.content.FileProvider"
