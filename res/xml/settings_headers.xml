@@ -139,9 +139,24 @@
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
 
+    <!-- Other device controls -->
+    <header
+        android:id="@+id/more_device_settings"
+        android:title="@string/more_device_controls_title"
+        android:breadCrumbTitle="@string/more_device_settings_title"
+        android:fragment="com.android.settings.cyanogenmod.MoreDeviceSettings"
+        android:icon="@drawable/empty_icon" />
+
     <!-- PERSONAL -->
     <header android:id="@+id/personal_section"
         android:title="@string/header_category_personal" />
+
+    <!-- Profiles -->
+    <header
+        android:id="@+id/profiles_settings"
+        android:icon="@drawable/ic_settings_profiles"
+        android:fragment="com.android.settings.profiles.ProfilesSettings"
+        android:title="@string/profiles_settings_title" />
 
     <!-- Location -->
     <header
@@ -229,6 +244,17 @@
         android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
         android:icon="@drawable/ic_settings_performance"
         android:title="@string/performance_settings_title" />
+
+    <!-- MoKee Center -->
+    <header
+        android:id="@+id/mokee_center"
+        android:icon="@drawable/ic_mokee_center"
+        android:title="@string/mokee_center_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.mokee.helper"
+            android:targetClass="com.mokee.helper.activities.MoKeeCenter" />
+    </header>
 
     <!-- About Device -->
     <header
