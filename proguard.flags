@@ -17,6 +17,11 @@
 -keep class com.koushikdutta.**
 -keep class com.android.settings.cyanogenmod.superuser.**
 
+-keep class com.baidu.android.common.**
+-keep class com.baidu.android.pushservice.**
+-keep class com.baidu.loctp.str.**
+-dontwarn android.content.pm.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
