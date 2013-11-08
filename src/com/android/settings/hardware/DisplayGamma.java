@@ -37,7 +37,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import org.cyanogenmod.hardware.DisplayGammaCalibration;
+import org.mokee.hardware.DisplayGammaCalibration;
 
 /**
  * Special preference type that allows configuration of Gamma settings
