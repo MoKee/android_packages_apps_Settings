@@ -111,6 +111,9 @@
     <string name="mem_info">Memory</string>
     <!-- About phone screen, status item label -->
 
+    <string name="app_ops_allowed">Allowed</string>
+    <string name="app_ops_ignored">Denied</string>
+
     <!-- PERSONALIZATION Settings  -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_interface">Personalization</string>
@@ -477,7 +480,6 @@
 
     <!-- Hardware keys -->
     <string name="button_settings">Buttons</string>
-    <string name="hardware_keys_enable_custom_title">Allow custom buttons</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_assist_key_title">Search button</string>
@@ -497,7 +499,7 @@
     <string name="hardware_keys_action_search">Search assistant</string>
     <string name="hardware_keys_action_voice_search">Voice search</string>
     <string name="hardware_keys_action_in_app_search">In-app search</string>
-    <string name="hardware_keys_action_launch_camera">Launch Camera</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Go to sleep</string>
     <string name="home_wake_title">Home button wake</string>
     <string name="home_wake_summary">Pressing the home button will wake your device</string>
@@ -979,4 +981,21 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
+
+    <!-- App ops -->
+    <string name="app_ops_summaries_wifi_change">wifi change</string>
+    <string name="app_ops_labels_wifi_change">Wi-Fi change</string>
+    <string name="app_ops_summaries_bluetooth_change">bluetooth change</string>
+    <string name="app_ops_labels_bluetooth_change">Bluetooth change</string>
+    <string name="app_ops_summaries_data_change">data change</string>
+    <string name="app_ops_labels_data_change">Data change</string>
+    <string name="app_ops_summaries_alarm_wakeup">wake up</string>
+    <string name="app_ops_labels_alarm_wakeup">Wake up</string>
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Show user apps</string>
+    <string name="app_ops_show_system_apps">Show built-in apps</string>
+    <string name="app_ops_reset_counters">Reset allow/deny counters</string>
+    <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
+    <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset AppOps counters ?</string>
+
 </resources>
