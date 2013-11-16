@@ -26,4 +26,8 @@
     <!-- MoKee Center -->
     <string name="mokee_center_title">魔趣中心</string>
 
+    <!-- Proximity work-around -->
+    <string name="is_inaccurate_proximity_title">精确距离</string>
+    <string name="is_inaccurate_proximity_summary">强制在通话结束后打开屏幕，解决距离感应器不准确问题。</string>
+
 </resources>

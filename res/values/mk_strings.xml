@@ -26,4 +26,8 @@
     <!-- MoKee Center -->
     <string name="mokee_center_title">MoKee Center</string>
 
+    <!-- Proximity work-around -->
+    <string name="is_inaccurate_proximity_title">Inaccurate proximity</string>
+    <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors: this will force phone to turn on the screen after the call has ended.</string>
+
 </resources>

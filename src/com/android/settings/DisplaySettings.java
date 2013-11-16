@@ -60,6 +60,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
+    private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
 
@@ -70,6 +71,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private DisplayManager mDisplayManager;
+
+    private CheckBoxPreference mInaccurateProximityPref;
 
     private CheckBoxPreference mAccelerometer;
     private WarnedListPreference mFontSizePref;
@@ -138,6 +141,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 == WifiDisplayStatus.FEATURE_STATE_UNAVAILABLE) {
             getPreferenceScreen().removePreference(mWifiDisplayPreference);
             mWifiDisplayPreference = null;
+        }
+
+        // In-accurate proximity
+        mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
+        if (mInaccurateProximityPref != null) {
+            mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+            mInaccurateProximityPref.setOnPreferenceChangeListener(this);
         }
 
         boolean hasNotificationLed = res.getBoolean(
@@ -394,9 +405,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
-        }
-        if (KEY_FONT_SIZE.equals(key)) {
+        } else if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
+        } else if (KEY_IS_INACCURATE_PROXIMITY.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
+                    ((Boolean) objValue).booleanValue() ? 1 : 0);
         }
 
         return true;

@@ -57,6 +57,12 @@
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
+        <!-- Proximity wake workaround -->
+        <CheckBoxPreference
+                android:key="is_inaccurate_proximity"
+                android:title="@string/is_inaccurate_proximity_title"
+                android:summary="@string/is_inaccurate_proximity_summary" />
+
         <PreferenceCategory
             android:key="lights_prefs"
             android:title="@string/lights_category_title">
