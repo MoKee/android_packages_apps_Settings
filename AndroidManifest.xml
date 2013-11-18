@@ -1149,29 +1149,6 @@
         <activity android:name="ChooseLockPassword" android:exported="false"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
 
-        <!-- Anonymous Statistics -->
-        <receiver android:name=".mkstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
-
-        <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".mkstats.ReportingService">
-        </service>
-
-        <service android:label="UpdatingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".mkstats.UpdatingService">
-        </service>
-
         <!-- Runs in the phone process since it needs access to the Phone object -->
         <activity android:name=".deviceinfo.Status"
                 android:label="@string/device_status_activity_title"
@@ -1779,8 +1756,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".mokee.helper.LockScreen"
+        <activity android:name=".mokee.helper.LockScreen"
             android:icon="@drawable/ic_lockscreen"
             android:label="@string/lock_screen_title"
             android:theme="@style/Transparent" >
@@ -1789,8 +1765,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mokee.helper.TipsHelp"
+
+        <activity android:name=".mokee.helper.TipsHelp"
             android:icon="@drawable/ic_forum"
             android:label="@string/tips_help_title"
             android:theme="@style/Transparent" >
@@ -1799,8 +1775,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mokee.helper.MoKeeCenter"
+
+        <activity android:name=".mokee.helper.MoKeeCenter"
             android:label="@string/mokee_center_title" >
         </activity>
         <!-- MoKee ACTIVITIES END -->
@@ -1964,6 +1940,30 @@
             </intent-filter>
         </receiver>
 
+        <!-- MOKEE ANONYMOUS STATISTICS START -->
+        <receiver android:name=".mkstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mkstats.ReportingService">
+        </service>
+
+        <service android:label="UpdatingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mkstats.UpdatingService">
+        </service>
+        <!-- MOKEE ANONYMOUS STATISTICS END -->
+
         <!-- MOKEE PUSH SERVICE START -->
         <receiver android:name=".mkpush.PushServiceManager"
             android:label="PushServiceManager" >
@@ -1997,8 +1997,7 @@
             </intent-filter>                   
         </receiver>    
 
-        <service
-            android:name="com.baidu.android.pushservice.PushService"
+        <service android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
             android:process=":mokeepushservice"
             android:label="MoKeePushService"
