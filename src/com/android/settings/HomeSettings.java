@@ -153,7 +153,7 @@ public class HomeSettings extends SettingsPreferenceFragment {
         ComponentName currentDefaultHome  = mPm.getHomeActivities(homeActivities);
 
         Intent prefsIntent = new Intent(Intent.ACTION_MAIN);
-        prefsIntent.addCategory("com.cyanogenmod.category.LAUNCHER_PREFERENCES");
+        prefsIntent.addCategory("com.mokee.category.LAUNCHER_PREFERENCES");
         List<ResolveInfo> prefsActivities = mPm.queryIntentActivities(prefsIntent, 0);
 
         Context context = getActivity();
