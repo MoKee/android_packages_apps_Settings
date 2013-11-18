@@ -78,6 +78,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- MOKEE PUSH PERMISSION END -->
 
+    <!-- MOKEE HELPER PERMISSION START -->
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <!-- MOKEE HELPER PERMISSION END -->
+
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
         android:protectionLevel="signature" />
@@ -1773,6 +1777,31 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mokee.helper.LockScreen"
+            android:icon="@drawable/ic_lockscreen"
+            android:label="@string/lock_screen_title"
+            android:theme="@style/Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mokee.helper.TipsHelp"
+            android:icon="@drawable/ic_forum"
+            android:label="@string/tips_help_title"
+            android:theme="@style/Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mokee.helper.MoKeeCenter"
+            android:label="@string/mokee_center_title" >
         </activity>
         <!-- MoKee ACTIVITIES END -->
 

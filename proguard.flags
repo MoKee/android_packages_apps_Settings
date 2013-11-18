@@ -24,6 +24,9 @@
 -keep class com.baidu.loctp.str.**
 -dontwarn android.content.pm.**
 
+-keep class com.mokee.helper.**
+-keep class com.android.settings.mokee.mokeehelper.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);

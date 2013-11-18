@@ -259,8 +259,8 @@
         android:title="@string/mokee_center_title">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.mokee.helper"
-            android:targetClass="com.mokee.helper.activities.MoKeeCenter" />
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.mokee.helper.MoKeeCenter" />
     </header>
 
     <!-- About Device -->
