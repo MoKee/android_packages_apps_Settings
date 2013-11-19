@@ -26,21 +26,18 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.android.settings.R;
-import com.android.settings.Settings;
-
 public class UpdatingService extends Service {
     protected static final String TAG = UpdatingService.class.getSimpleName();
+
+    private StatsUpdateTask mTask;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -50,42 +47,67 @@ public class UpdatingService extends Service {
     @Override
     public int onStartCommand (Intent intent, int flags, int startId) {
         Log.d(TAG, "User has opted in -- updating.");
-        Thread thread = new Thread() {
-            @Override
-            public void run() {
-                update();
-            }
-        };
-        thread.start();
+
+        if (mTask == null || mTask.getStatus() == AsyncTask.Status.FINISHED) {
+            mTask = new StatsUpdateTask();
+            mTask.execute();
+        }
+
         return Service.START_REDELIVER_INTENT;
     }
 
-    private void update() {
-        final Context context = UpdatingService.this;
-        String deviceId = Utilities.getUniqueID(context);
-        String deviceVersion = Utilities.getModVersion();
-        String deviceMoKeeVersion = Utilities.getMoKeeVersion();
-        String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).getLong(ReportingService.ANONYMOUS_FLASH_TIME, 0));
+    private class StatsUpdateTask extends AsyncTask<Void, Void, Boolean> {
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            final Context context = UpdatingService.this;
+            String deviceId = Utilities.getUniqueID(context);
+            String deviceVersion = Utilities.getModVersion();
+            String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0).getLong(ReportingServiceManager.ANONYMOUS_FLASH_TIME, 0));
 
-        Log.d(TAG, "SERVICE: Device ID=" + deviceId);
-        Log.d(TAG, "SERVICE: Device Version=" + deviceVersion);
-        Log.d(TAG, "SERVICE: Device Flash Time=" + deviceFlashTime);
+            Log.d(TAG, "SERVICE: Device ID=" + deviceId);
+            Log.d(TAG, "SERVICE: Device Version=" + deviceVersion);
+            Log.d(TAG, "SERVICE: Device Flash Time=" + deviceFlashTime);
 
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://stats.mfunz.com/index.php/Submit/updatev1");
-        try {
-            List<NameValuePair> kv = new ArrayList<NameValuePair>(1);
-            kv.add(new BasicNameValuePair("device_hash", deviceId));
-            kv.add(new BasicNameValuePair("device_version", deviceVersion));
-            kv.add(new BasicNameValuePair("device_flash_time", deviceFlashTime));
-            httppost.setEntity(new UrlEncodedFormEntity(kv));
-            httpclient.execute(httppost);
-            getSharedPreferences(ReportingService.ANONYMOUS_PREF, 0).edit().putLong(ReportingService.ANONYMOUS_LAST_CHECKED,
-                    System.currentTimeMillis()).putString(ReportingService.DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
-        } catch (Exception e) {
-            Log.e(TAG, "Got Exception", e);
+            // update to the mkstats service
+            HttpClient httpClient = new DefaultHttpClient();
+            HttpPost httpPost = new HttpPost("http://stats.mfunz.com/index.php/Submit/updatev1");
+            boolean success = false;
+
+            try {
+                List<NameValuePair> kv = new ArrayList<NameValuePair>(1);
+                kv.add(new BasicNameValuePair("device_hash", deviceId));
+                kv.add(new BasicNameValuePair("device_version", deviceVersion));
+                kv.add(new BasicNameValuePair("device_flash_time", deviceFlashTime));
+                httpPost.setEntity(new UrlEncodedFormEntity(kv));
+                httpClient.execute(httpPost);
+
+                success = true;
+            } catch (Exception e) {
+                Log.e(TAG, "Could not update stats checkin", e);
+            }
+
+            return success;
         }
-        ReportingServiceManager.setAlarm(this);
-        stopSelf();
+
+        @Override
+        protected void onPostExecute(Boolean result) {
+            final Context context = UpdatingService.this;
+            long interval;
+
+            if (result) {
+                String deviceMoKeeVersion = Utilities.getMoKeeVersion();
+                final SharedPreferences prefs = getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0);
+                prefs.edit().putLong(ReportingServiceManager.ANONYMOUS_LAST_CHECKED,
+                        System.currentTimeMillis()).putString(ReportingServiceManager.DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
+                // use set interval
+                interval = 0;
+            } else {
+                // error, try again in 3 hours
+                interval = 3L * 60L * 60L * 1000L;
+            }
+
+            ReportingServiceManager.setAlarm(context, interval);
+            stopSelf();
+        }
     }
 }
