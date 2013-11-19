@@ -86,6 +86,7 @@ public class PushServiceManager extends BroadcastReceiver {
                             .apply();
                     List<String> tags = new ArrayList<String>();
                     tags.add(Utilities.getDevice());
+                    tags.add(Utilities.getMoKeeVersion());
                     PushManager.setTags(ctx.getApplicationContext(), tags);
                 } else {
                     if (errorCode == 30607) {
@@ -194,8 +195,7 @@ public class PushServiceManager extends BroadcastReceiver {
                     }
                 }, 1000 * 30);
             } else {
-                if (!PushManager.isPushEnabled(ctx))
-                {
+                if (!PushManager.isPushEnabled(ctx)) {
                     PushManager.resumeWork(ctx);
                 }
             }
