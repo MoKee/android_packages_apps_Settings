@@ -23,7 +23,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
-import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 
 public class PushingServiceManager extends BroadcastReceiver {
@@ -37,13 +36,13 @@ public class PushingServiceManager extends BroadcastReceiver {
     }
 
     public static void initPushService(final Context ctx) {
-        ConnectivityManager cm = (ConnectivityManager) ctx
-                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
             if (!PushingUtils.hasBind(ctx)) {
-                PushManager.startWork(ctx.getApplicationContext(),
-                        PushConstants.LOGIN_TYPE_API_KEY, PushingUtils.getMetaValue(ctx, "api_key"));
+                Intent intent = new Intent();
+                intent.setClass(ctx, PushingService.class);
+                ctx.startService(intent);
             } else {
                 if (!PushManager.isPushEnabled(ctx)) {
                     PushManager.resumeWork(ctx);

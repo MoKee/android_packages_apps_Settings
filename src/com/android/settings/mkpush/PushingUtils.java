@@ -64,7 +64,6 @@ public class PushingUtils {
                     if (str2.contains(strs[i]))
                         return true;
             }
-
         }
         return false;
     }

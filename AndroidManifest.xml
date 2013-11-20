@@ -1981,6 +1981,12 @@
             </intent-filter>
         </receiver>
 
+        <service android:name=".mkpush.PushingService"
+            android:label="PushingService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
         <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
             android:process=":mokeepushservice" >
             <intent-filter>
