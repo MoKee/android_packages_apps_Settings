@@ -53,7 +53,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
         }
     }
 
-    public static void setAlarm (Context ctx, long millisFromNow) {
+    public static void setAlarm(Context ctx, long millisFromNow) {
         SharedPreferences prefs = ctx.getSharedPreferences(ANONYMOUS_PREF, 0);
 
         if (millisFromNow <= 0) {
@@ -78,7 +78,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
         Log.d(ReportingService.TAG, "Next sync attempt in : " + millisFromNow / MILLIS_PER_HOUR + " hours");
     }
 
-    public static void launchService (Context ctx) {
+    public static void launchService(Context ctx) {
         ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
