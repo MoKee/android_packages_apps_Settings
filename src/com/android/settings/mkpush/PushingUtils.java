@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The MoKee OpenSource Project
+ * Copyright (C) 2013 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,15 +16,20 @@
 
 package com.android.settings.mkpush;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.preference.PreferenceManager;
 
-public class PushUtils {
-    // 获取AppKey
+public class PushingUtils {
+
     public static String getMetaValue(Context context, String metaKey) {
         Bundle metaData = null;
         String apiKey = null;
@@ -63,9 +68,50 @@ public class PushUtils {
         }
         return false;
     }
+    
+    public static String getStringFromJson(String key, JSONObject customJson) {
+        String value = "";
+        if (!customJson.isNull(key)) {
+            try {
+                value = customJson.getString(key);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        return value;
+    }
 
-    public static String getString(Bundle bundle, String key) {
-        String value = bundle.getString(key);
-        return !TextUtils.isEmpty(value) ? value : "";
+    public static int getIntFromJson(String key, JSONObject customJson) {
+        int value = 999;
+        if (!customJson.isNull(key)) {
+            try {
+                value = Integer.valueOf(customJson.getString(key));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        return value;
+    }
+
+    public static void setBind(Context context, boolean flag) {
+        String flagStr = "not";
+        if (flag) {
+            flagStr = "ok";
+        }
+        SharedPreferences sp = PreferenceManager
+                .getDefaultSharedPreferences(context);
+        Editor editor = sp.edit();
+        editor.putString("bind_flag", flagStr);
+        editor.apply();
+    }
+
+    public static boolean hasBind(Context context) {
+        SharedPreferences sp = PreferenceManager
+                .getDefaultSharedPreferences(context);
+        String flag = sp.getString("bind_flag", "");
+        if ("ok".equalsIgnoreCase(flag)) {
+            return true;
+        }
+        return false;
     }
 }
