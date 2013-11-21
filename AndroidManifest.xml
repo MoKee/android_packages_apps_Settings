@@ -2016,7 +2016,7 @@
             android:label="MoKeePushService"
             android:icon="@drawable/ic_mokee_push" />
 
-        <meta-data android:name="api_key" android:value="Z1sw17O8ir2pjYSElDohbDRr" />
+        <meta-data android:name="api_key" android:value="MRTYpHDAzBM5D3pfhkj9V9Gh" />
         <!-- MOKEE PUSH SERVICE END -->
 
         <provider
