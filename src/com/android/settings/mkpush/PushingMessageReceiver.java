@@ -115,7 +115,7 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
 
         BigTextStyle noti = new Notification.BigTextStyle(new Notification.Builder(context)
                 .setSmallIcon(icon).setAutoCancel(true).setTicker(title)
-                .setContentIntent(pendintIntent).setWhen(System.currentTimeMillis()).setContentTitle(title)
+                .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
                 .setOngoing(true).setContentText(message)).bigText(message);
 
