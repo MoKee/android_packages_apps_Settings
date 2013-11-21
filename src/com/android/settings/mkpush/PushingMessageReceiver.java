@@ -81,12 +81,12 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
                                 }
                                 if (new_version_code > Integer.parseInt(mod_version_code)) {
                                     promptUser(ctx, url, ctx.getString(R.string.mokee_push_newversion_title),
-                                            ctx.getString(R.string.mokee_push_newversion_msg), msg_id);
+                                            ctx.getString(R.string.mokee_push_newversion_msg), msg_id, R.drawable.ic_mokee_updater);
                                 }
                                 break;
                             case 1:
                                 if (MoKeeUtils.isChineseLanguage()) {
-                                    promptUser(ctx, url, title, message, msg_id);
+                                    promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                                 }
                                 break;
                         }
@@ -94,19 +94,19 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
                     break;
                 case 2:
                     if (HASHID.equals(Utilities.getUniqueID(ctx))) {
-                        promptUser(ctx, url, title, message, msg_id);
+                        promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
                     break;
                 case 3:
                     if (IMEI.equals(Utilities.getIMEI(ctx))) {
-                        promptUser(ctx, url, title, message, msg_id);
+                        promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
                     break;
             }
         }
     }
 
-    private void promptUser(Context context, String url, String title, String message, int id) {
+    private void promptUser(Context context, String url, String title, String message, int id, int icon) {
         NotificationManager nm = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
         Uri uri = Uri.parse(url);
@@ -114,7 +114,7 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
         PendingIntent pendintIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
         BigTextStyle noti = new Notification.BigTextStyle(new Notification.Builder(context)
-                .setSmallIcon(R.drawable.ic_mokee_push).setAutoCancel(true).setTicker(title)
+                .setSmallIcon(icon).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(System.currentTimeMillis()).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
                 .setOngoing(true).setContentText(message)).bigText(message);

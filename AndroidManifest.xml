@@ -2013,8 +2013,7 @@
         <service android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
             android:process=":mokeepushservice"
-            android:label="MoKeePushService"
-            android:icon="@drawable/ic_mokee_push" />
+            android:label="MoKeePushService" />
 
         <meta-data android:name="api_key" android:value="MRTYpHDAzBM5D3pfhkj9V9Gh" />
         <!-- MOKEE PUSH SERVICE END -->
