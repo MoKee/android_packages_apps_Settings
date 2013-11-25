@@ -1783,6 +1783,10 @@
 
         <activity android:name=".mokee.helper.MoKeeCenter"
             android:label="@string/mokee_center_title" >
+            <intent-filter>
+                <action android:name="com.mokee.mkupdater.action.MOKEE_CENTER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <service
@@ -1801,6 +1805,7 @@
                 android:name="description"
                 android:value="@string/extension_description" />
         </service>
+
         <service android:name="com.mokee.helper.service.UpdateCheckService" />
 
         <receiver android:name="com.mokee.helper.receiver.UpdateCheckReceiver" >
@@ -1809,17 +1814,20 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
         <receiver android:name="com.mokee.helper.receiver.DownloadReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
                 <action android:name="com.mokee.mkupdater.action.START_DOWNLOAD" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".mokee.helper.receiver.NotificationClickReceiver" >
+
+        <receiver android:name="com.mokee.helper.receiver.NotificationClickReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
             </intent-filter>
         </receiver>
+
         <receiver android:name="com.mokee.helper.receiver.CheckFinishReceiver" >
             <intent-filter>
                 <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK_FINISHED" />
