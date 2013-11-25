@@ -84,6 +84,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private static final String TAG = "MoKee PIE";
 
     private static final String PIE_CONTROLS = "pie_controls";
+    private static final String PIE_AUTO_ENABLE = "pie_auto_enable";
     private static final String PIE_GRAVITY = "pie_gravity";
     private static final String PIE_MODE = "pie_mode";
     private static final String PIE_SIZE = "pie_size";
@@ -103,6 +104,7 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
     private ListPreference mPieAngle;
     private ListPreference mPieGap;
     private CheckBoxPreference mPieControls;
+    private CheckBoxPreference mPieAutoEnable;
     private CheckBoxPreference mPieMenu;
     private CheckBoxPreference mPiePower;
     private CheckBoxPreference mPieLastApp;
@@ -124,6 +126,10 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
         mPieControls = (CheckBoxPreference) findPreference(PIE_CONTROLS);
         mPieControls.setChecked((Settings.System.getInt(resolver,
                 Settings.System.PIE_CONTROLS, 0) == 1));
+
+        mPieAutoEnable = (CheckBoxPreference) findPreference(PIE_AUTO_ENABLE);
+        mPieAutoEnable.setChecked((Settings.System.getInt(resolver,
+                Settings.System.PIE_AUTO_ENABLE, 0) == 1));
 
         mPieGravity = (ListPreference) prefSet.findPreference(PIE_GRAVITY);
         int pieGravity = Settings.System.getInt(resolver,
@@ -216,6 +222,9 @@ public class Pie extends SettingsPreferenceFragment implements OnPreferenceChang
                     Settings.System.PIE_CONTROLS, mIsChecked ? 1 : 0);
             updateExpandedDesktop(mIsChecked);
             //Helpers.restartSystemUI();
+        } else if (preference == mPieAutoEnable) {
+            Settings.System.putInt(resolver,
+                    Settings.System.PIE_AUTO_ENABLE, mPieAutoEnable.isChecked() ? 1 : 0);
         } else if (preference == mPieMenu) {
             Settings.System.putInt(resolver,
                     Settings.System.PIE_MENU, mPieMenu.isChecked() ? 1 : 0);

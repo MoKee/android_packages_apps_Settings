@@ -93,6 +93,8 @@
     <string name="pie_controls_summary">@null</string>
     <string name="enable_pie_title">Enable PIE</string>
     <string name="pie_targets_title">Targets</string>
+    <string name="auto_enable_pie_title">Auto Enable PIE</string>
+    <string name="auto_enable_pie_summary">Auto enable/disable PIE when expanded desktop mode state changed</string>
 
     <string name="pie_gravity_title">Pie gravity</string>
     <string name="pie_gravity_summary">Select the location where you can bring up PIE</string>

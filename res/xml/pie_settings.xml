@@ -15,6 +15,12 @@
             android:title="@string/enable_pie_title"
             android:defaultValue="false" />
 
+        <CheckBoxPreference
+            android:key="pie_auto_enable"
+            android:title="@string/auto_enable_pie_title"
+            android:summary="@string/auto_enable_pie_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="pie_trigger"
             android:dialogTitle="@string/pie_trigger_title"

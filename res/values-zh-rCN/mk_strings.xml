@@ -92,6 +92,8 @@
     <string name="pie_controls_title">控制器</string>
     <string name="enable_pie_title">启用PIE</string>
     <string name="pie_targets_title">按键</string>
+    <string name="auto_enable_pie_title">自动启用PIE</string>
+    <string name="auto_enable_pie_summary">当开启/关闭扩展桌面模式的时候自动启用/禁用PIE</string>
 
     <string name="pie_gravity_title">停靠位置</string>
     <string name="pie_gravity_summary">设置PIE的停靠位置</string>
