@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.mokee.receiver;
+package com.android.settings.mokee.helper.receiver;
 
 import com.android.settings.mokee.helper.MoKeeCenter;
 
