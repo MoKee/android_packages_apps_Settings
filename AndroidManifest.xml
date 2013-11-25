@@ -105,7 +105,7 @@
         android:protectionLevel="dangerous" />
 
     <application android:label="@string/settings_label"
-            android:name="com.baidu.frontia.FrontiaApplication"
+            android:name=".mokee.MoKeeApplication"
             android:icon="@mipmap/ic_launcher_settings"
             android:taskAffinity=""
             android:theme="@style/Theme.Settings"
@@ -1756,7 +1756,9 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
+        <!-- MoKee ACTIVITIES END -->
 
+        <!-- MoKee HELPER START -->
         <activity android:name=".mokee.helper.LockScreen"
             android:icon="@drawable/ic_lockscreen"
             android:label="@string/mokee_lock_screen_title"
@@ -1780,7 +1782,48 @@
         <activity android:name=".mokee.helper.MoKeeCenter"
             android:label="@string/mokee_center_title" >
         </activity>
-        <!-- MoKee ACTIVITIES END -->
+
+        <service
+            android:name="com.mokee.helper.service.MKDashClockExtension"
+            android:icon="@drawable/ic_tab_installed"
+            android:label="@string/extension_label"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA" >
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="1" />
+            <meta-data
+                android:name="description"
+                android:value="@string/extension_description" />
+        </service>
+        <service android:name="com.mokee.helper.service.UpdateCheckService" />
+
+        <receiver android:name="com.mokee.helper.receiver.UpdateCheckReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mokee.helper.receiver.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="com.mokee.mkupdater.action.START_DOWNLOAD" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mokee.helper.receiver.NotificationClickReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mokee.helper.receiver.CheckFinishReceiver" >
+            <intent-filter>
+                <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK_FINISHED" />
+            </intent-filter>
+        </receiver>
+        <!-- MoKee HELPER END -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
