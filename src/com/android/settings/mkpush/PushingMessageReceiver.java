@@ -57,6 +57,7 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
             String title = PushingUtils.getStringFromJson("title", customJson);
             String newVersion = PushingUtils.getStringFromJson("version", customJson);
             String HASHID = PushingUtils.getStringFromJson("hashid", customJson);
+            String user = PushingUtils.getStringFromJson("user", customJson);
             String IMEI = PushingUtils.getStringFromJson("imei", customJson);
             int msg_id = PushingUtils.getIntFromJson("id", customJson);
             String mod_device = Utilities.getDevice().toLowerCase();
@@ -102,6 +103,10 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
                         promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
                     break;
+                case 4:
+                    if (user.equals(Utilities.getBuildUser())) {
+                        promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
+                    }
             }
         }
     }

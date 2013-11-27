@@ -117,6 +117,14 @@ public class Utilities {
         return hostName;
     }
 
+    public static String getBuildUser() {
+        String user = SystemProperties.get("ro.build.user");
+        if (TextUtils.isEmpty(user)) {
+            user = "Unknown";
+        }
+        return user;
+    }
+
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
