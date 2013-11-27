@@ -24,6 +24,8 @@ import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.android.settings.DisplaySettings;
+import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
@@ -72,13 +74,22 @@ public class BootReceiver extends BroadcastReceiver {
         DisplayColor.restore(ctx);
         DisplayGamma.restore(ctx);
         VibratorIntensity.restore(ctx);
+        DisplaySettings.restore(ctx);
+    }
+
+    private void initFreqCapFiles(Context ctx)
+    {
+        if (Processor.freqCapFilesInitialized) return;
+        Processor.FREQ_MAX_FILE = ctx.getResources().getString(R.string.max_cpu_freq_file);
+        Processor.FREQ_MIN_FILE = ctx.getResources().getString(R.string.min_cpu_freq_file);
+        Processor.freqCapFilesInitialized = true;
     }
 
     private void configureCPU(Context ctx) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         if (prefs.getBoolean(Processor.SOB_PREF, false) == false) {
-            Log.i(TAG, "Restore disabled by user preference.");
+            Log.i(TAG, "CPU restore disabled by user preference.");
             return;
         }
 
@@ -95,20 +106,21 @@ public class BootReceiver extends BroadcastReceiver {
         if (noSettings) {
             Log.d(TAG, "No CPU settings saved. Nothing to restore.");
         } else {
+            initFreqCapFiles(ctx);
             if (availableGovernorsLine != null){
                 governors = Arrays.asList(availableGovernorsLine.split(" "));
             }
             if (availableFrequenciesLine != null){
                 frequencies = Arrays.asList(availableFrequenciesLine.split(" "));
             }
-            if (governor != null && governors != null && governors.contains(governor)) {
-                Utils.fileWriteOneLine(Processor.GOV_FILE, governor);
-            }
             if (maxFrequency != null && frequencies != null && frequencies.contains(maxFrequency)) {
                 Utils.fileWriteOneLine(Processor.FREQ_MAX_FILE, maxFrequency);
             }
             if (minFrequency != null && frequencies != null && frequencies.contains(minFrequency)) {
                 Utils.fileWriteOneLine(Processor.FREQ_MIN_FILE, minFrequency);
+            }
+            if (governor != null && governors != null && governors.contains(governor)) {
+                Utils.fileWriteOneLine(Processor.GOV_FILE, governor);
             }
             Log.d(TAG, "CPU settings restored.");
         }
@@ -118,7 +130,7 @@ public class BootReceiver extends BroadcastReceiver {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         if (prefs.getBoolean(IOScheduler.SOB_PREF, false) == false) {
-            Log.i(TAG, "Restore disabled by user preference.");
+            Log.i(TAG, "IOSched restore disabled by user preference.");
             return;
         }
 
