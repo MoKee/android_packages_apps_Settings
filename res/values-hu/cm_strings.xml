@@ -62,6 +62,8 @@
     <string name="build_date">Build dátuma</string>
     <string name="cpu_info">Processzor</string>
     <string name="mem_info">Memória</string>
+    <string name="app_ops_allowed">Engedélyezve</string>
+    <string name="app_ops_ignored">Megtagadva</string>
     <string name="header_category_interface">Testreszabás</string>
     <string name="homescreen_settings_title">Kezdőképernyő</string>
     <string name="themes_settings_title">Témák</string>
@@ -749,4 +751,17 @@ Az \"Eltávolítás\" törli a kiválasztott sort.
     <string name="priority_sub_title">Előfizetések prioritása</string>
     <string name="priority_sub_summary">Válassza ki az előfizetések prioritását</string>
     <string name="label_global_roaming_settings">Globális roaming beállítások</string>
+    <string name="app_ops_summaries_wifi_change">wifi változás</string>
+    <string name="app_ops_labels_wifi_change">Wi-Fi változás</string>
+    <string name="app_ops_summaries_bluetooth_change">bluetooth változás</string>
+    <string name="app_ops_labels_bluetooth_change">Bluetooth változás</string>
+    <string name="app_ops_summaries_data_change">adat változás</string>
+    <string name="app_ops_labels_data_change">Adat változás</string>
+    <string name="app_ops_summaries_alarm_wakeup">felébredés</string>
+    <string name="app_ops_labels_alarm_wakeup">Felébredés</string>
+    <string name="app_ops_show_user_apps">Felhasználói alkalmazások megjelenítése</string>
+    <string name="app_ops_show_system_apps">Rendszer alkalmazások megjelenítése</string>
+    <string name="app_ops_reset_counters">Engedélyezés/tiltás számlálók nullázása</string>
+    <string name="app_ops_reset_confirm_title">Számlálók törlésének megerősítése</string>
+    <string name="app_ops_reset_confirm_mesg">Biztos benne, hogy törli a számlálókat?</string>
 </resources>
