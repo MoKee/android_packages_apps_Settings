@@ -218,8 +218,8 @@
     <string name="safe_headset_volume_title">Safe headset volume</string>
 
     <!-- Waiver -->
-    <string name="cyanogenmod_waiver_title">Waiver</string>
-    <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
+    <string name="mokee_waiver_title">Waiver</string>
+    <string name="mokee_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless MoKee OpenSource and its contributors from all legal liabilities.</string>
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>

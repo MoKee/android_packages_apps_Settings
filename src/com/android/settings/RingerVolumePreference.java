@@ -314,8 +314,8 @@ public class RingerVolumePreference extends VolumePreference {
                         dismissDialog();
                     }
                     AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                    builder.setMessage(R.string.cyanogenmod_waiver_body);
-                    builder.setTitle(R.string.cyanogenmod_waiver_title);
+                    builder.setMessage(R.string.mokee_waiver_body);
+                    builder.setTitle(R.string.mokee_waiver_title);
                     builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 
                         @Override
