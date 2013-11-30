@@ -1723,7 +1723,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".cyanogenmod.LockscreenTargets" />
+
         <activity android:name=".cyanogenmod.PerformanceSettings" />
+
+        <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".notificationlight.NotificationLightSettings" />
 
