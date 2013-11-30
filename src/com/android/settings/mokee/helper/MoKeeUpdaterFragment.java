@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-package com.android.settings.mokee;
+package com.android.settings.mokee.helper;
 
-public class MoKeeApplication extends com.mokee.helper.MoKeeApplication {
+public class MoKeeUpdater extends com.mokee.helper.fragments.MoKeeUpdaterFragment {
 
 }
