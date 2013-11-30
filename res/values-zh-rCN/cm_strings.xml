@@ -55,7 +55,7 @@
     <string name="profile_name_title">名称</string>
     <string name="profile_profile_name_prompt">为新的情景模式输入一个名称</string>
     <string name="menu_new_profile">新情景模式</string>
-    <string name="new_profile_name">&lt;新情景模式></string>
+    <string name="new_profile_name">&lt;新情景模式&gt;</string>
     <string name="rename_dialog_title">重命名</string>
     <string name="rename_dialog_message">输入一个新名称</string>
     <string name="duplicate_profile_name">此情景名称已被使用！</string>
@@ -242,7 +242,6 @@
     <string name="auto_brightness_preview">预览</string>
     <string name="auto_brightness_preview_dialog_title">亮度曲线</string>
     <string name="auto_brightness_help_dialog_title">帮助</string>
-    <string name="auto_brightness_help_text"><b>亮度是怎么被计算的？</b>" 
     <string name="auto_brightness_help_text"><b>亮度是怎么被计算的？</b>
 \n\n
 亮度曲线是通过在选定的<i>控制点</i>上进行<i>三次样条插值</i>而计算出的。这并不是一个设定了环境亮度范围内，屏幕亮度就不会改变的计算方式。通过这种特殊方式，环境亮度的细微变化将不会导致屏幕亮度的大幅度改变。由于改变控制点会导致的结果是难以预测的，我们为您提供了一个计算后的曲线预览。\n
