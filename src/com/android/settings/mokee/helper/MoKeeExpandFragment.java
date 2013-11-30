@@ -16,6 +16,6 @@
 
 package com.android.settings.mokee.helper;
 
-public class MoKeeUpdater extends com.mokee.helper.fragments.MoKeeExpandFragment {
+public class MoKeeExpandFragment extends com.mokee.helper.fragments.MoKeeExpandFragment {
 
 }
