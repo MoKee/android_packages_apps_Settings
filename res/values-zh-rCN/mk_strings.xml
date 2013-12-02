@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The MoKee OpenSource Project
+<!-- Copyright (C) 2014 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,11 +13,37 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen,  setting option name-->
     <string name="mod_support">社区支持</string>
     <string name="mod_support_default">未知</string>
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">列表动画</string>
+    <string name="listview_off">关闭</string>
+    <string name="listview_wave_left">波浪 (左)</string>
+    <string name="listview_wave_right">波浪 (右)</string>
+    <string name="listview_alpha">淡入淡出</string>
+    <string name="listview_scale">缩放</string> 
+    <string name="listview_stack_top">堆叠 (上)</string>
+    <string name="listview_stack_bottom">堆叠 (下)</string>
+    <string name="listview_unfold">展开</string>
+    <string name="listview_fold">折叠</string> 
+    <string name="listview_translate_left">飞入 (左)</string>
+    <string name="listview_translate_right">飞入 (右)</string>
+    <string name="listview_rotate">旋转</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">列表变化</string>
+    <string name="listview_accelerate_interpolator">越来越快</string>
+    <string name="listview_decelerate_interpolator">越来越慢</string>
+    <string name="listview_accelerate_decelerate_interpolator">先快后慢</string>
+    <string name="listview_anticipate_interpolator">先后退一小步然后向前加速</string>
+    <string name="listview_overshoot_interpolator">快速到达终点超出一小步然后回到终点</string>
+    <string name="listview_anticipate_overshoot_interpolator">到达终点超出一小步然后回到终点</string>
+    <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
 
     <!-- MoKee Push -->
     <string name="mokee_push_newversion_title">"发现MoKee OpenSource新版本"</string>
@@ -25,6 +51,9 @@
 
     <!-- MoKee Center -->
     <string name="mokee_center_title">魔趣中心</string>
+
+    <!-- Other Settings Category -->
+    <string name="other_category">其它设置</string>
 
     <!-- Proximity work-around -->
     <string name="is_inaccurate_proximity_title">精确距离</string>
