@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
+ * Portions Copyright (C) 2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -262,7 +263,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
 
         mEnableAdb = findAndInitCheckboxPref(ENABLE_ADB);
-        mAdbNotify = findAndInitCheckboxPref(ADB_NOTIFY);
+        mAdbNotify = (CheckBoxPreference) findPreference(ADB_NOTIFY);
+        mAllPrefs.add(mAdbNotify);
         mClearAdbKeys = findPreference(CLEAR_ADB_KEYS);
         if (!SystemProperties.getBoolean("ro.adb.secure", false)) {
             if (debugDebuggingCategory != null) {
@@ -296,7 +298,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mDebugAppPref = findPreference(DEBUG_APP_KEY);
         mAllPrefs.add(mDebugAppPref);
         mWaitForDebugger = findAndInitCheckboxPref(WAIT_FOR_DEBUGGER_KEY);
-        mVerifyAppsOverUsb = findAndInitCheckboxPref(VERIFY_APPS_OVER_USB_KEY);
+        mVerifyAppsOverUsb = (CheckBoxPreference) findPreference(VERIFY_APPS_OVER_USB_KEY);
+        mAllPrefs.add(mVerifyAppsOverUsb);
         if (!showVerifierSetting()) {
             if (debugDebuggingCategory != null) {
                 debugDebuggingCategory.removePreference(mVerifyAppsOverUsb);
@@ -558,11 +561,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateAdvancedRebootOptions();
     }
 
-    private void resetAdvancedRebootOptions() {
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT, 0);
-    }
-
     private void writeAdvancedRebootOptions() {
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.ADVANCED_REBOOT,
@@ -613,7 +611,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
         resetDebuggerOptions();
         resetRootAccessOptions();
-        resetAdvancedRebootOptions();
+        resetAdbNotifyOptions();
+        resetVerifyAppsOverUsbOptions();
         writeAnimationScaleOption(0, mWindowAnimationScale, null);
         writeAnimationScaleOption(1, mTransitionAnimationScale, null);
         writeAnimationScaleOption(2, mAnimatorDurationScale, null);
@@ -711,6 +710,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateRootAccessOptions();
     }
 
+    private void resetAdbNotifyOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.ADB_NOTIFY, 1);
+    }
+
     private void updateHdcpValues() {
         ListPreference hdcpChecking = (ListPreference) findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
@@ -799,6 +803,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             mDebugAppPref.setSummary(getResources().getString(R.string.debug_app_not_set));
             mWaitForDebugger.setEnabled(false);
         }
+    }
+
+    private void resetVerifyAppsOverUsbOptions() {
+        Settings.Global.putInt(getActivity().getContentResolver(),
+              Settings.Global.PACKAGE_VERIFIER_INCLUDE_ADB, 1);
     }
 
     private void updateVerifyAppsOverUsbOptions() {
@@ -1294,6 +1303,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                             Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0);
                     mLastEnabledState = isChecked;
                     setPrefsEnabledState(mLastEnabledState);
+
+                    // Hide development settings from the Settings menu (Android 4.2 behaviour)
+                    getActivity().getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE).edit()
+                        .putBoolean(PREF_SHOW, false)
+                        .apply();
                 }
             }
         }
@@ -1507,7 +1521,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 mRootDialog = new AlertDialog.Builder(getActivity())
                         .setMessage(getResources().getString(R.string.root_access_warning_message))
                         .setTitle(R.string.root_access_warning_title)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIconAttribute(android.R.attr.alertDialogIcon)
                         .setPositiveButton(android.R.string.yes, this)
                         .setNegativeButton(android.R.string.no, this).show();
                 mRootDialog.setOnDismissListener(this);
@@ -1574,8 +1588,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                         Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1);
                 mLastEnabledState = true;
                 setPrefsEnabledState(mLastEnabledState);
-            }
 
+                // Make sure the development settings is visible in the main Settings menu
+                // This is needed since we may have just turned off dev settings and want to
+                // turn it on again
+                getActivity().getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE).edit()
+                    .putBoolean(PREF_SHOW, true)
+                    .apply();
+            }
         } else if (dialog == mRootDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
                 writeRootAccessOptions(mSelectedRootValue);
