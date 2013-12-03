@@ -534,4 +534,13 @@
     <string name="backlight_summary_disabled">已禁用</string>
     <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">已启用</string>
+    <string name="usb_mass_storage_title">大容量存储</string>
+    <string name="usb_mass_storage_summary">开启USB大容量存储</string>
+    <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_battery_title">时钟</string>
+    <string name="status_bar_style_icon">图标</string>
+    <string name="status_bar_style_hidden">隐藏</string>
+    <string name="status_bar_battery_status_circle">环形</string>
+    <string name="status_bar_battery_status_circle_percentage">环形与百分比</string>
+
 </resources>
