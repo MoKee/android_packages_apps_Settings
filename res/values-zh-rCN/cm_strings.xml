@@ -538,9 +538,12 @@
     <string name="usb_mass_storage_summary">开启USB大容量存储</string>
     <string name="confirm_delete_apn">此APN将被删除.</string>
     <string name="status_bar_title">状态栏</string>
-    <string name="status_bar_battery_title">时钟</string>
+    <string name="status_bar_battery_title">电池状态样式</string>
     <string name="status_bar_style_icon">图标</string>
     <string name="status_bar_style_hidden">隐藏</string>
     <string name="status_bar_battery_status_circle">环形</string>
     <string name="status_bar_battery_status_circle_percentage">环形与百分比</string>
+    <string name="advanced_settings_title">高级</string>
+    <string name="lock_clock_title">时钟小部件</string>
+    <string name="lock_clock_summary">查看或改变 \'cLock\' 锁屏与主屏幕小部件的显示方式</string>
 </resources>
