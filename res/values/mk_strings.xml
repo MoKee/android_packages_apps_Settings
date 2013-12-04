@@ -59,4 +59,8 @@
     <string name="is_inaccurate_proximity_title">Inaccurate proximity</string>
     <string name="is_inaccurate_proximity_summary">Work-around for inaccurate proximity sensors: this will force phone to turn on the screen after the call has ended.</string>
 
+    <!-- show network speed -->
+    <string name="show_network_speed_title">Network speed</string>
+    <string name="show_network_speed_summary">Show network speed in status bar</string>
+
 </resources>

@@ -59,4 +59,7 @@
     <string name="is_inaccurate_proximity_title">精确距离</string>
     <string name="is_inaccurate_proximity_summary">强制在通话结束后打开屏幕，解决距离感应器不准确问题。</string>
 
+    <!-- show network speed -->
+    <string name="show_network_speed_title">当前网速</string>
+    <string name="show_network_speed_summary">在状态栏显示当前网速</string>
 </resources>
