@@ -302,7 +302,7 @@
     <string name="cpu_max_freq_title">最高 CPU 频率</string>
     <string name="io_scheds_title">I/O 调度器</string>
     <string name="io_sched_title">I/O 调度器</string>
-    <string name="perf_profile_title">情景模式</string>
+    <string name="perf_profile_title">运行模式</string>
     <string name="memory_management_title">内存管理</string>
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">压缩内存以增加虚拟容量 (需要重启)</string>
