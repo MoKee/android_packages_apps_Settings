@@ -546,4 +546,6 @@
     <string name="advanced_settings_title">高级</string>
     <string name="lock_clock_title">时钟小部件</string>
     <string name="lock_clock_summary">查看或改变 \'cLock\' 锁屏与主屏幕小部件的显示方式</string>
+    <string name="development_shortcut_title">快捷开发选项</string>
+    <string name="development_shortcut_summary">在通知中心和最近程序列表显示 \"清除数据\" 和 \"强行停止\" 选项</string>
 </resources>
