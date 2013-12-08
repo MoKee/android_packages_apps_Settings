@@ -548,4 +548,6 @@
     <string name="lock_clock_summary">查看或改变 \'cLock\' 锁屏与主屏幕小部件的显示方式</string>
     <string name="development_shortcut_title">快捷开发选项</string>
     <string name="development_shortcut_summary">在通知中心和最近程序列表显示 \"清除数据\" 和 \"强行停止\" 选项</string>
+    <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或断开充电器时点亮屏幕</string>
 </resources>
