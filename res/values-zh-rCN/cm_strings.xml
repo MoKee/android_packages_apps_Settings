@@ -550,4 +550,16 @@
     <string name="development_shortcut_summary">在通知中心和最近程序列表显示 \"清除数据\" 和 \"强行停止\" 选项</string>
     <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
     <string name="wake_when_plugged_or_unplugged_summary">连接或断开充电器时点亮屏幕</string>
+    <string name="wifi_setting_countrycode_title">WLAN 区域代码</string>
+    <string name="wifi_setting_countrycode_summary">指定 WLAN 使用的区域码</string>
+    <string name="wifi_setting_countrycode_error">设置区域码时遇到了问题。</string>
+    <string name="display_rotation_title">旋转</string>
+    <string name="display_rotation_disabled">已禁用</string>
+    <string name="display_rotation_unit">度</string>
+    <string name="display_lockscreen_rotation_title">旋转锁屏界面</string>
+    <string name="display_rotation_category_title">旋转模式</string>
+    <string name="display_rotation_0_title">0 度</string>
+    <string name="display_rotation_90_title">90 度</string>
+    <string name="display_rotation_180_title">180 度</string>
+    <string name="display_rotation_270_title">270 度</string>
 </resources>
