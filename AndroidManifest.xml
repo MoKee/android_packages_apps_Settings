@@ -1777,11 +1777,7 @@
         <!-- CyanogenMod activities End -->
 
         <!-- MOKEE ACTIVITIES START -->
-        <activity android:name=".mokee.ChangeLog" android:label="@string/changelog_title">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".mokee.ChangeLog" />
         <!-- MoKee ACTIVITIES END -->
 
         <!-- MoKee HELPER START -->
