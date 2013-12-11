@@ -562,4 +562,8 @@
     <string name="display_rotation_90_title">90 度</string>
     <string name="display_rotation_180_title">180 度</string>
     <string name="display_rotation_270_title">270 度</string>
+    <string name="lockscreen_quick_unlock_control_title">快速解锁</string>
+    <string name="lockscreen_quick_unlock_control_summary">当PIN/密码输入正确时自动解锁</string>
+    <string name="wifi_setting_priority_title">WLAN 连接优先</string>
+    <string name="wifi_setting_priority_summary">设置各个 WLAN 网络的优先连接顺序</string>
 </resources>
