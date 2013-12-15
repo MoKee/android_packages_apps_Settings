@@ -41,7 +41,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
-import org.cyanogenmod.hardware.LongTermOrbits;
+import org.mokee.hardware.LongTermOrbits;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

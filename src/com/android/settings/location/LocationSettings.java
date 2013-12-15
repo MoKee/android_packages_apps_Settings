@@ -46,7 +46,7 @@ import android.widget.Switch;
 import com.android.settings.R;
 import com.android.settings.cyanogenmod.LtoService;
 
-import org.cyanogenmod.hardware.LongTermOrbits;
+import org.mokee.hardware.LongTermOrbits;
 
 import java.util.Collections;
 import java.util.Comparator;
