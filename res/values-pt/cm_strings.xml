@@ -35,27 +35,11 @@
     <string name="start_time_title">Início</string>
     <string name="end_time_title">Fim</string>
     <string name="device_hostname">Nome do dispositivo</string>
-    <string name="mod_version">Versão CyanogenMod</string>
+    <string name="mod_version">Versão MoKee</string>
     <string name="mod_version_default">Desconhecida</string>
     <string name="build_date">Data de compilação</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Memória</string>
-    <string name="anonymous_statistics_title">Estatísticas CyanogenMod</string>
-    <string name="anonymous_statistics_summary">Ajude a melhorar o CyanogenMod optando por enviar estatísticas anonimas</string>
-    <string name="anonymous_statistics_warning_title">Sobre</string>
-    <string name="anonymous_statistics_warning">Optar por enviar estatísticas anonimas do CyanogenMod permitirá que dados não-pessoais sejam enviados para os
-        desenvolvedores do CyanogenMod para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador unico,
-        que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um exemplo de dados que são enviados, toque em Pré-visualizar Dados.</string>
-    <string name="enable_reporting_title">Habilitar relatório</string>
-    <string name="preview_data_title">Pré-visualizar dados</string>
-    <string name="view_stats_title">Ver estatísticas</string>
-    <string name="anonymous_learn_more">Saiba mais</string>
-    <string name="anonymous_notification_desc">Habilitar ou desabilitar estatísticas CyanogenMod</string>
-    <string name="preview_id_title">ID unico</string>
-    <string name="preview_device_title">Dispositivo</string>
-    <string name="preview_version_title">Versão</string>
-    <string name="preview_country_title">País</string>
-    <string name="preview_carrier_title">Operadora</string>
     <string name="themes_settings_title">Temas</string>
     <string name="system_interface_title">Interface de sistema</string>
     <string name="notification_drawer_title">Gaveta de notificação</string>
@@ -264,8 +248,6 @@
     <string name="power_menu_expanded_desktop">Área de trabalho expandida</string>
     <string name="power_menu_profiles_title">Alternador de perfil</string>
     <string name="power_menu_airplane_title">Modo avião</string>
-    <string name="cmupdate_settings_title">Atualizações CyanogenMod</string>
-    <string name="cmupdate_settings_summary">Verificar, visualizar ou instalar atualizações disponíveis</string>
     <string name="advanced_settings_title">Avançado</string>
     <string name="status_bar_title">Barra de status</string>
     <string name="status_bar_battery_title">Estilo do status da bateria</string>
@@ -348,8 +330,8 @@
     <string name="headset_category_title">Fone de ouvido</string>
     <string name="headset_connect_player_title">Abrir aplicativo de música</string>
     <string name="headset_connect_player_summary">Abrir aplicativo de música padrão quando o fone de ouvido for conectado</string>
-    <string name="cyanogenmod_waiver_title">Garantia</string>
-    <string name="cyanogenmod_waiver_body">Alterar esta configuração pode ser contra as leis do seu local.\n\nAo selecionar abaixo \'OK\', você reconhece este aviso e garantia, proteção e isenção ao CyanogenMod e seus contribuintes de todas responsabilidades legais.</string>
+    <string name="mokee_waiver_title">Garantia</string>
+    <string name="mokee_waiver_body">Alterar esta configuração pode ser contra as leis do seu local.\n\nAo selecionar abaixo \'OK\', você reconhece este aviso e garantia, proteção e isenção ao MoKee OpenSource e seus contribuintes de todas responsabilidades legais.</string>
     <string name="expanded_desktop_disabled">Desligado</string>
     <string name="expanded_desktop_status_bar">Barra de status visível</string>
     <string name="expanded_desktop_no_status_bar">Barra de status oculta</string>
@@ -605,7 +587,7 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para esquerda/direita</string>
     <string name="volbtn_cursor_control_on_reverse">Volume para cima/baixo move cursor para direita/esquerda</string>
     <string name="custom_runtime_warning_title">Aviso</string>
-    <string name="custom_runtime_warning_message">ART não é suportado por CyanogenMod. Esta configuração é incluída para apenas experimentos e pode provavelmente causar instabilidade, travamentos, perda de dados ou previnir que o sistema inicialize em seu dispositivo. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; para mais informações.&lt;br/&gt;&lt;br/&gt;Nós pedimos que você não reporte problemas se você estiver com o ART ativado.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja reiniciar para trocar de <xliff:g id="old" example="libdvm.so" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%1$s</xliff:g> para <xliff:g id="new" example="libart.so" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART não é suportado por MoKee OpenSource. Esta configuração é incluída para apenas experimentos e pode provavelmente causar instabilidade, travamentos, perda de dados ou previnir que o sistema inicialize em seu dispositivo. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; para mais informações.&lt;br/&gt;&lt;br/&gt;Nós pedimos que você não reporte problemas se você estiver com o ART ativado.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja reiniciar para trocar de <xliff:g id="old" example="libdvm.so" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%1$s</xliff:g> para <xliff:g id="new" example="libart.so" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%2$s</xliff:g>?</string>
     <string name="status_bar_style_icon_portrait">Ícone retrato</string>
     <string name="status_bar_style_icon_landscape">Ícone paisagem</string>
     <string name="status_bar_style_circle">Círculo</string>
