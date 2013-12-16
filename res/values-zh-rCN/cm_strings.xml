@@ -42,7 +42,7 @@
     <string name="start_time_title">起始</string>
     <string name="end_time_title">结束</string>
     <string name="device_hostname">设备网络名</string>
-    <string name="mod_version">MoKee 版本</string>
+    <string name="mod_version">魔趣版本</string>
     <string name="mod_version_default">未知</string>
     <string name="build_date">编译日期</string>
     <string name="cpu_info">处理器</string>
