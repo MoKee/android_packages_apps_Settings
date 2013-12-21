@@ -69,4 +69,13 @@
     <!-- show network speed -->
     <string name="show_network_speed_title">当前网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
+
+    <!-- Screen recorder -->
+    <string name="power_menu_screenrecord_title">屏幕录像</string>
+    <string name="screen_recorder_title">屏幕录像</string>
+    <string name="screen_recorder_summary">调整屏幕录像设置</string>
+    <string name="screen_recorder_video_dimensions_title">视频大小</string>
+    <string name="screen_recorder_video_bitrate_title">比特率</string>
+    <string name="screen_recorder_record_audio_title">录制音频</string>
+    <string name="screen_recorder_record_audio_summary">从麦克风录制音频</string>
 </resources>

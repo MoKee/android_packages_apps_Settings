@@ -32,7 +32,7 @@
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="power_menu_screenrecord"
         android:title="@string/power_menu_screenrecord_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="power_menu_expanded_desktop_enabled"
