@@ -34,9 +34,6 @@ public class PowerMenu extends SettingsPreferenceFragment {
 
         final ContentResolver resolver = getContentResolver();
 
-        findPreference(Settings.System.POWER_MENU_SCREENRECORD_ENABLED).setEnabled(
-                Settings.System.getInt(resolver, Settings.System.POWER_MENU_SCREENRECORD_ENABLED, 0) != 0);
-
         // Only enable expanded desktop item if expanded desktop support is also enabled
         findPreference(Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED).setEnabled(
                 Settings.System.getInt(resolver, Settings.System.EXPANDED_DESKTOP_STYLE, 0) != 0);
