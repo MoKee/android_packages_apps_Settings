@@ -52,7 +52,7 @@
         android:title="@string/ad_pocket_mode_title"
         android:summary="@string/ad_pocket_mode_summary"
         android:entries="@array/ad_pocket_mode_entries"
-        android:entryValues="@array/ad_pocket_mode_values" 
+        android:entryValues="@array/ad_pocket_mode_values"
         android:dependency="ad_enable" />
 
     <CheckBoxPreference
@@ -119,7 +119,7 @@
             android:title="@string/ad_timeout_title"
             android:entries="@array/ad_timeout_entries"
             android:entryValues="@array/ad_timeout_values"
-            android:dependency="ad_enable" /> 
+            android:dependency="ad_enable" />
 
         <SeekBarPreference
             android:key="ad_brightness"
