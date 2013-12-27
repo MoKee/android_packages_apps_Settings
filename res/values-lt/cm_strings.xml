@@ -204,8 +204,8 @@
     <string name="lockscreen_maximize_widgets_title">Didinti valdiklius</string>
     <string name="lockscreen_maximize_widgets_summary">Roditi padidintus valdiklius ir sumažintą atrakinimą, kai įrenginys pažadinamas</string>
     <string name="safe_headset_volume_title">Saugus laisvų rankų įrangos garsas</string>
-    <string name="cyanogenmod_waiver_title">Atsisakymas</string>
-    <string name="cyanogenmod_waiver_body">Pakeitus šį parametrą, gali būti šalies įstatymų pažeidimas.\n\nPaspaudus \'Gerai\', jūs patvirtinate, kad sutinkate su šia sąlyga</string>
+    <string name="mokee_waiver_title">Atsisakymas</string>
+    <string name="mokee_waiver_body">Pakeitus šį parametrą, gali būti šalies įstatymų pažeidimas.\n\nPaspaudus \'Gerai\', jūs patvirtinate, kad sutinkate su šia sąlyga</string>
     <string name="quick_settings_panel_title">Greitieji nustatymai</string>
     <string name="title_static_tiles">Statiniai mygtukai</string>
     <string name="tile_picker_title">Mygtukai ir išdėstymas</string>
@@ -334,25 +334,11 @@ Ryškumo kreivė apskaičiuojama atliekant kubinę \'spline\' interpoliaciją d�
     <string name="quiet_hours_active_to">iki</string>
     <string name="start_time_title">Pradėti</string>
     <string name="end_time_title">Baigti</string>
-    <string name="mod_version">CyanogenMod versija</string>
+    <string name="mod_version">MoKee versija</string>
     <string name="mod_version_default">Nežinoma</string>
     <string name="build_date">Surinkimo data</string>
     <string name="cpu_info">Procesorius</string>
     <string name="mem_info">Atmintis</string>
-    <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-    <string name="anonymous_statistics_summary">Padėkite tobulinti CyanogenMod įjungdami statistikos raportavimą</string>
-    <string name="anonymous_statistics_warning_title">Apie</string>
-    <string name="anonymous_statistics_warning">Raportuojant CyanogenMod statistika nebus renkama Jūsų asmeninė informacija, o tik sistemos darbas bei klaidos. Ši informacija padės kūrėjams tobulinti CyanogenMod bei šalinti klaidas.</string>
-    <string name="enable_reporting_title">Įjungti raportavimą</string>
-    <string name="preview_data_title">Žiūrėti duomenis</string>
-    <string name="view_stats_title">Žiūrėti statistiką</string>
-    <string name="anonymous_learn_more">Sužinokite daugiau</string>
-    <string name="anonymous_notification_desc">Įjunkite ar išjunkite CyanogenMod statistiką</string>
-    <string name="preview_id_title">Unikalus ID</string>
-    <string name="preview_device_title">Įrenginys</string>
-    <string name="preview_version_title">Versija</string>
-    <string name="preview_country_title">Šalis</string>
-    <string name="preview_carrier_title">Operatorius</string>
     <string name="header_category_interface">Sąsaja</string>
     <string name="themes_settings_title">Temos</string>
     <string name="performance_settings_title">Našumas</string>
@@ -384,8 +370,6 @@ Ryškumo kreivė apskaičiuojama atliekant kubinę \'spline\' interpoliaciją d�
     <string name="changelog_error">Nepavyko parodyti sąrašo</string>
     <string name="changelog_unknown">Nežinomas</string>
     <string name="changelog_version">Versija</string>
-    <string name="cmupdate_settings_title">CyanogenMod atnaujinimai</string>
-    <string name="cmupdate_settings_summary">Tikrinti, žiūrėti ar įdiegti atnaujinimus</string>
     <string name="advanced_settings_title">Išplėstinis</string>
     <string name="development_tools_title">Kūrėjo parinktis</string>
     <string name="privacy_guard_switch_label">Įjungti privatumo apsaugą</string>
@@ -623,14 +607,11 @@ spaudimas įjungs/sustabdys atkuriamą įrašą</string>
 us SMS.</string>
     <string name="whisperpush_identitykey_title">Peržiūrėti tapatybės raktus</string>
     <string name="custom_runtime_warning_title">Įspėjimas</string>
-    <string name="custom_runtime_warning_message">ART nepalaiko CyanogenMod. Ši nuostata yra įtraukta tik ekspermentiniais tikslais, tai gali sukelti nestabilumą, duomenų praradimą arba sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškylusias klaidas.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART nepalaiko MoKee OpenSource. Ši nuostata yra įtraukta tik ekspermentiniais tikslais, tai gali sukelti nestabilumą, duomenų praradimą arba sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškylusias klaidas.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">Parsisiųsti GPS pagalbinius duomenis tik per Wi-Fi tinklus</string>
     <string name="battery_info_status_charging_dock_ac">(DokasAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DokasUSB)</string>
     <string name="menu_stats_reset">Atkurti</string>
-    <string name="cmlicense_title">CyanogenMod Teisinis</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod Teisinis</string>
-    <string name="settings_cmlicense_activity_unreachable">Jūs neturite duomenų ryšio. Norėdami peržiūrėti šią informaciją dabar, eikite į %s iš bet kurio kompiuterio, prijungto prie interneto.</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Duomenys:</xliff:g></string>
     <string name="bluetooth_enter_pin_msg_hs">\nĮveskite PIN kodą norėdami suporuoti \u0022<xliff:g id="device_name">%1$s</xliff:g>\u0022. [Apsauga įjungta: Reikia 16 simbolių rakto] </string>
     <string name="bluetooth_profile_sap">SIM prieiga</string>
