@@ -39,12 +39,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
-    private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
+    private static final String STATUS_BAR_TRAFFIC_STYLE = "status_bar_traffic_style";
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
 
     private ListPreference mStatusBarBattery;
 
-    private CheckBoxPreference mStatusBarTraffic;
+    private ListPreference mStatusBarTraffic;
     private CheckBoxPreference mStatusBarCarrier;
     private PreferenceScreen mCustomStatusBarCarrierLabel;
 
@@ -58,8 +58,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarTraffic = (CheckBoxPreference) findPreference(STATUS_BAR_TRAFFIC);
-        mStatusBarTraffic.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC, 0) == 1));
+        mStatusBarTraffic = (ListPreference) findPreference(STATUS_BAR_TRAFFIC_STYLE);
+        int trafficStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC_STYLE, 0);
+        mStatusBarTraffic.setValue(String.valueOf(trafficStyle));
+        mStatusBarTraffic.setSummary(mStatusBarTraffic.getEntry());
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
 
         mStatusBarCarrier = (CheckBoxPreference) findPreference(STATUS_BAR_CARRIER);
@@ -98,8 +100,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             return true;
         } else if (preference == mStatusBarTraffic) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
+            int trafficStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarTraffic.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_TRAFFIC_STYLE, trafficStyle);
+            mStatusBarTraffic.setSummary(mStatusBarTraffic.getEntries()[index]);
             return true;
         } else if (preference == mStatusBarCarrier) {
             boolean value = (Boolean) newValue;

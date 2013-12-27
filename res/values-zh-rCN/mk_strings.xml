@@ -120,8 +120,11 @@
     <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
 
     <!-- show network speed -->
-    <string name="show_network_speed_title">当前网速</string>
+    <string name="show_network_speed_title">状态栏网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
+    <string name="status_bar_traffic_style_hidden">隐藏</string>
+    <string name="status_bar_traffic_style_rx">仅显示下载速度</string>
+    <string name="status_bar_traffic_style_rxtx">显示上传和下载速度</string>
 
     <!-- Screen recorder -->
     <string name="power_menu_screenrecord_title">屏幕录像</string>
