@@ -105,6 +105,18 @@
     <!-- MoKee Center -->
     <string name="mokee_center_title">MoKee Center</string>
 
+    <!-- Custom navigation bar height -->
+    <string name="navigation_bar_height">Button height</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">hide</string>
+
     <!-- Other Settings Category -->
     <string name="other_category">Other settings</string>
 

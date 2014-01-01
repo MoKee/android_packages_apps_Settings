@@ -37,6 +37,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
+    // Custom Navigation Bar Height Key
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
     // ListView Animations Key
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
@@ -45,6 +48,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
+
+    // Custom Navigation Bar Height Preference
+    private ListPreference mNavButtonsHeight;
 
     // ListView Animations Preference
     private ListPreference mListViewAnimation;
@@ -59,6 +65,15 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
         addPreferencesFromResource(R.xml.system_ui_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // Custom Navigation Bar Height
+        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
+        mNavButtonsHeight.setOnPreferenceChangeListener(this);
+
+        int statusNavButtonsHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
+        mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
         // ListView Animations
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
@@ -116,6 +131,12 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         } else if (preference == mExpandedDesktopNoNavbarPref) {
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
+            return true;
+        } else if (preference == mNavButtonsHeight) {
+            int index = mNavButtonsHeight.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
+                    Integer.valueOf((String) objValue));
+            mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
             return true;
         } else if (preference == mListViewAnimation) {
             int listviewanimation = Integer.valueOf((String) objValue);

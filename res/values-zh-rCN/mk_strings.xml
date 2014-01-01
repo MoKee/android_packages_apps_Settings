@@ -105,6 +105,18 @@
     <!-- MoKee Center -->
     <string name="mokee_center_title">魔趣中心</string>
 
+    <!-- Custom navigation bar height -->
+    <string name="navigation_bar_height">导航栏高度</string>
+    <string name="navigation_bar_height_48">48dp (默认)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">隐藏</string>
+
     <!-- Other Settings Category -->
     <string name="other_category">其它设置</string>
 
