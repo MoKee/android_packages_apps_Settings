@@ -22,8 +22,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.mokee.util.MoKeeUtils;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.util.Log;
 
 public class ReportingServiceManager extends BroadcastReceiver {
@@ -79,9 +79,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
     }
 
     public static void launchService(Context ctx) {
-        ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
+        if (MoKeeUtils.isOnline(ctx)) {
             final SharedPreferences prefs = ctx.getSharedPreferences(ANONYMOUS_PREF, 0);
             long lastSynced = prefs.getLong(ANONYMOUS_LAST_CHECKED, 0);
             String deviceMoKeeVersion = Utilities.getMoKeeVersion();

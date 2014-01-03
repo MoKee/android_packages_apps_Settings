@@ -19,6 +19,7 @@ package com.android.settings.mkpush;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.mokee.util.MoKeeUtils;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
@@ -36,9 +37,7 @@ public class PushingServiceManager extends BroadcastReceiver {
     }
 
     public static void initPushService(final Context ctx) {
-        ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
+        if (MoKeeUtils.isOnline(ctx)) {
             if (!PushingUtils.hasBind(ctx)) {
                 Intent intent = new Intent();
                 intent.setClass(ctx, PushingService.class);
