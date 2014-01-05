@@ -1799,9 +1799,17 @@
 
         <!-- MOKEE ACTIVITIES START -->
         <activity android:name=".mokee.ChangeLog" />
-        <!-- MoKee ACTIVITIES END -->
+        <activity
+            android:name=".mokee.Halo"
+            android:label="@string/halo_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SHORTCUT" />
+              </intent-filter>
+        </activity>
+        <!-- MOKEE ACTIVITIES END -->
 
-        <!-- MoKee HELPER START -->
+        <!-- MOKEE HELPER START -->
         <activity android:name=".mokee.helper.activities.LockScreen"
             android:icon="@drawable/ic_lockscreen"
             android:label="@string/mokee_lock_screen_title"
@@ -1876,7 +1884,7 @@
                 <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK_FINISHED" />
             </intent-filter>
         </receiver>
-        <!-- MoKee HELPER END -->
+        <!-- MOKEE HELPER END -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
