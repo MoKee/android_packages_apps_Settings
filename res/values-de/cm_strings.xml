@@ -739,9 +739,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="whisperpush_registration_title">Registrieren</string>
     <string name="whisperpush_registration_summary">Registrieren, um mit WhisperPush verschlüsselte SMS zu versenden</string>
     <string name="whisperpush_identitykey_title">Identitätsschlüssel überprüfen</string>
-    <string name="cmlicense_title">Rechtliche Hinweise zu CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Rechtliche Hinweise CyanogenMod</string>
-    <string name="settings_cmlicense_activity_unreachable">Es besteht keine Datenverbindung. Besuchen Sie %s mit einem beliebigen Computer mit Internetverbindung, um die Informationen jetzt anzusehen.</string>
 
     <!-- CAF strings -->
     <string name="bluetooth_profile_dun">Internet-Einwahlverbindung</string>
