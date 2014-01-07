@@ -225,4 +225,7 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+
 </resources>

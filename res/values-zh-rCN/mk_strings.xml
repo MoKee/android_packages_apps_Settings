@@ -192,4 +192,7 @@
     <string name="halo_msgbox_animation_none">无</string>
     <string name="halo_msgbox_animation_flip">翻转</string>
 
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">上午/下午样式</string>
+
 </resources>
