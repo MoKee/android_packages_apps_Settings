@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- * Copyright (C) 2014 The MoKee OpenSource Project
+ * Copyright (C) 2012 - 2014 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,12 +28,14 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.widget.EditText;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class StatusBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -41,8 +43,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_TRAFFIC_STYLE = "status_bar_traffic_style";
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
+    private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
     private ListPreference mStatusBarBattery;
+    private ListPreference mStatusBarCmSignal;
 
     private ListPreference mStatusBarTraffic;
     private CheckBoxPreference mStatusBarCarrier;
@@ -56,27 +60,55 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
         addPreferencesFromResource(R.xml.status_bar);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarTraffic = (ListPreference) findPreference(STATUS_BAR_TRAFFIC_STYLE);
+        mStatusBarTraffic = (ListPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC_STYLE);
         int trafficStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC_STYLE, 0);
         mStatusBarTraffic.setValue(String.valueOf(trafficStyle));
         mStatusBarTraffic.setSummary(mStatusBarTraffic.getEntry());
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
 
-        mStatusBarCarrier = (CheckBoxPreference) findPreference(STATUS_BAR_CARRIER);
+        mStatusBarCarrier = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
 
-        mCustomStatusBarCarrierLabel = (PreferenceScreen) findPreference(CUSTOM_CARRIER_LABEL);
+        mCustomStatusBarCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
 
-        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY);
+        mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
+        mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
+
+        CheckBoxPreference statusBarBrightnessControl = (CheckBoxPreference)
+                prefSet.findPreference(Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL);
+
+        try {
+            if (Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS_MODE)
+                    == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+                statusBarBrightnessControl.setEnabled(false);
+                statusBarBrightnessControl.setSummary(R.string.status_bar_toggle_info);
+            }
+        } catch (SettingNotFoundException e) {
+            // Do nothing
+        }
 
         int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_BATTERY, 2);
         mStatusBarBattery.setValue(String.valueOf(batteryStyle));
         mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
         mStatusBarBattery.setOnPreferenceChangeListener(this);
+
+        int signalStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_SIGNAL_TEXT, 0);
+        mStatusBarCmSignal.setValue(String.valueOf(signalStyle));
+        mStatusBarCmSignal.setSummary(mStatusBarCmSignal.getEntry());
+        mStatusBarCmSignal.setOnPreferenceChangeListener(this);
+
+        if (Utils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mStatusBarCmSignal);
+        }
+
+        if (Utils.isTablet(getActivity())) {
+            prefSet.removePreference(statusBarBrightnessControl);
+        }
     }
 
     private void updateCustomLabelTextSummary() {
@@ -109,7 +141,14 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
             return true;
+        } else if (preference == mStatusBarCmSignal) {
+            int signalStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarCmSignal.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_SIGNAL_TEXT, signalStyle);
+            mStatusBarCmSignal.setSummary(mStatusBarCmSignal.getEntries()[index]);
+            return true;
         }
+
         return false;
     }
 
