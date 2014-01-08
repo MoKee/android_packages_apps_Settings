@@ -616,7 +616,7 @@
 
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
-    <string name="mod_version">Версия MoKee OpenSource</string>
+    <string name="mod_version">Версия MoKee</string>
     <string name="mod_version_default">Неизвестно</string>
     <string name="build_date">Дата сборки</string>
 
