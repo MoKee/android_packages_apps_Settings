@@ -39,6 +39,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemProperties;
 import android.os.Vibrator;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -93,6 +94,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
+    private static final String KEY_CAMERA_SHUTTER_SOUND = "camera_shutter_sound";
+    private static final String PROP_CAMERA_SHUTTER_SOUND = "persist.sys.shutter.disable";
 
     private static final String RING_MODE_NORMAL = "normal";
     private static final String RING_MODE_VIBRATE = "vibrate";
@@ -119,6 +122,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mRingtonePreference;
     private Preference mNotificationPreference;
     private PreferenceScreen mQuietHours;
+    private CheckBoxPreference mCameraShutterSound;
 
     private Runnable mRingtoneLookupRunnable;
 
@@ -213,6 +217,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
+
+        mCameraShutterSound = (CheckBoxPreference) findPreference(KEY_CAMERA_SHUTTER_SOUND);
+        mCameraShutterSound.setChecked(!SystemProperties.getBoolean(PROP_CAMERA_SHUTTER_SOUND, false));
 
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         if (vibrator == null || !vibrator.hasVibrator()) {
@@ -405,6 +412,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 mAudioManager.unloadSoundEffects();
             }
 
+        } else if (preference == mCameraShutterSound) {
+            SystemProperties.set(PROP_CAMERA_SHUTTER_SOUND, mCameraShutterSound.isChecked() ? "0" : "1");
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
             return false;

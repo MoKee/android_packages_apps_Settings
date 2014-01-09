@@ -228,4 +228,8 @@
     <!-- AP/PM Indicator -->
     <string name="status_bar_am_pm_title">AM/PM style</string>
 
+    <!-- Sound settings screen, setting check box label -->
+    <string name="camera_shutter_sound_title">Camera shutter sound</string>
+    <string name="camera_shutter_sound_summary">WARNING: Disabling the camera shutter sound is illegal in some areas!</string>
+
 </resources>

@@ -138,6 +138,12 @@
             android:entries="@array/emergency_tone_entries"
             android:entryValues="@array/emergency_tone_values" />
 
+    <CheckBoxPreference
+            android:key="camera_shutter_sound"
+            android:title="@string/camera_shutter_sound_title"
+            android:summary="@string/camera_shutter_sound_summary"
+            android:defaultValue="true" />
+
     <!-- Dock -->
     <PreferenceCategory
         android:key="dock_category"
