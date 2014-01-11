@@ -216,8 +216,8 @@
     <string name="lockscreen_maximize_widgets_title">Maximiser les widgets</string>
     <string name="lockscreen_maximize_widgets_summary">Afficher les widgets maximisés au déverrouillage</string>
     <string name="safe_headset_volume_title">Volume sécurisé du casque</string>
-    <string name="cyanogenmod_waiver_title">Renonciation</string>
-    <string name="cyanogenmod_waiver_body">Le changement de ce paramètre peut être interdit par les lois de votre gouvernement ou état.\n\nEn sélectionnant \'OK\' ci-dessous, vous reconnaissez avoir pris connaissance de cet avertissement, et vous dégagez CyanogenMod et ses contributeurs de toutes responsabilités et de toutes obligations juridiques.</string>
+    <string name="mokee_waiver_title">Renonciation</string>
+    <string name="mokee_waiver_body">Le changement de ce paramètre peut être interdit par les lois de votre gouvernement ou état.\n\nEn sélectionnant \'OK\' ci-dessous, vous reconnaissez avoir pris connaissance de cet avertissement, et vous dégagez MoKee OpenSource et ses contributeurs de toutes responsabilités et de toutes obligations juridiques.</string>
     <string name="quick_settings_panel_title">Volet des paramètres</string>
     <string name="title_static_tiles">Raccourcis statiques</string>
     <string name="tile_picker_title">Raccourcis et disposition</string>
@@ -351,26 +351,11 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
     <string name="quiet_hours_active_to">jusqu\'à</string>
     <string name="start_time_title">Début</string>
     <string name="end_time_title">Fin</string>
-    <string name="mod_version">Version CyanogenMod</string>
+    <string name="mod_version">Version MoKee</string>
     <string name="mod_version_default">Inconnue</string>
     <string name="build_date">Date de compilation</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Mémoire</string>
-    <string name="anonymous_statistics_title">Statistiques CyanogenMod</string>
-    <string name="anonymous_statistics_summary">Aidez CyanogenMod en participant à l\'envoi de données anonymes pour comptabiliser les installations par type d\'appareil</string>
-    <string name="anonymous_statistics_warning_title">À propos</string>
-    <string name="anonymous_statistics_warning">Autoriser l\'envoi de statistiques permet aux développeurs du système CyanogenMod de collecter des données anonymes afin de comptabiliser le nombre d\'installations par type d\'appareil. Les informations envoyées contiennent un identifiant unique de l\'appareil et ne compromettent en aucune manière la sécurité de vos données. Ce jeu d\'informations est envoyé à chaque redémarrage pour ne conserver que les installations actives.\n\nVous pouvez visualiser ces données en sélectionnant \"Prévisualiser les données\".</string>
-    <string name="enable_reporting_title">Activer l\'envoi</string>
-    <string name="preview_data_title">Prévisualiser les données</string>
-    <string name="view_stats_title">Afficher les statistiques</string>
-    <string name="anonymous_learn_more">En savoir plus…</string>
-    <string name="anonymous_notification_desc">Activer ou non les statistiques CyanogenMod</string>
-    <string name="preview_id_title">Identifiant unique</string>
-    <string name="preview_device_title">Appareil</string>
-    <string name="preview_version_title">Version</string>
-    <string name="preview_country_title">Pays</string>
-    <string name="preview_carrier_title">Opérateur</string>
-    <string name="header_category_interface">Personnalisation</string>
     <string name="themes_settings_title">Thèmes</string>
     <string name="performance_settings_title">Performances</string>
     <string name="performance_settings_warning_title">ATTENTION\u00A0!</string>
@@ -399,8 +384,6 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
     <string name="changelog_error">Impossible de charger le rapport de version</string>
     <string name="changelog_unknown">Inconnu</string>
     <string name="changelog_version">Version</string>
-    <string name="cmupdate_settings_title">Mises à jour CyanogenMod</string>
-    <string name="cmupdate_settings_summary">Vérifier, afficher ou installer les mises à jour disponibles</string>
     <string name="advanced_settings_title">Paramètres avancés</string>
     <string name="development_tools_title">Outils de développement</string>
     <string name="privacy_guard_switch_label">Activer la protection des données</string>
@@ -635,14 +618,11 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
     <string name="whisperpush_registration_summary">Enregistrez-vous pour activer l\'encryption des SMS</string>
     <string name="whisperpush_identitykey_title">Examiner les clés d\'identité</string>
     <string name="custom_runtime_warning_title">Attention</string>
-    <string name="custom_runtime_warning_message">ART n\'est pas supporté par CyanogenMod. Ce paramètre est inclus pour des expérimentations seulement. Il peut causer des instabilités, des crashs, des pertes de données ou empêcher votre appareil de démarrer. Lisez l\'&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introduction à ART&lt;/a&gt; pour plus d\'informations.&lt;br/&gt;&lt;br/&gt;Merci de na pas remplir de rapports de bugs si vous utilisez ART.&lt;br/&gt;&lt;br/&gt;Êtes-vous sûr de vouloir redémarrer pour changer le moteur d\'exécution de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> à <xliff:g id="new" example="libart.so">%2$s</xliff:g>\\u00A0?</string>
+    <string name="custom_runtime_warning_message">ART n\'est pas supporté par MoKee OpenSource. Ce paramètre est inclus pour des expérimentations seulement. Il peut causer des instabilités, des crashs, des pertes de données ou empêcher votre appareil de démarrer. Lisez l\'&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introduction à ART&lt;/a&gt; pour plus d\'informations.&lt;br/&gt;&lt;br/&gt;Merci de na pas remplir de rapports de bugs si vous utilisez ART.&lt;br/&gt;&lt;br/&gt;Êtes-vous sûr de vouloir redémarrer pour changer le moteur d\'exécution de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> à <xliff:g id="new" example="libart.so">%2$s</xliff:g>\\u00A0?</string>
     <string name="gps_download_data_wifi_only">Télécharger les données d\'assistance GPS via Wi-Fi uniquement</string>
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
     <string name="menu_stats_reset">Réinitialiser</string>
-    <string name="cmlicense_title">Infos légales CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Infos légales CyanogenMod</string>
-    <string name="settings_cmlicense_activity_unreachable">Vous n\'avez pas de connexion de données active. Pour voir ces informations maintenant, allez sur %s via un ordinateur connecté à Internet.</string>
     <string name="stylus_icon_enabled_title">Afficher l\'icône lors de l\'utilisation du stylet</string>
     <string name="stylus_icon_enabled_summary">Afficher l\'icône du pointeur lors de l\'écriture ou du survol de l\'écran</string>
     <string name="gestures_settings_title">Gestes stylet</string>

@@ -15,8 +15,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="cyanogenmod_waiver_title">Відмова від відповідальності</string>
-    <string name="cyanogenmod_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте CyanogenMod і всіх його розробників від любих юридичних зобов’язань.</string>
+    <string name="mokee_waiver_title">Відмова від відповідальності</string>
+    <string name="mokee_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте MoKee OpenSource і всіх його розробників від любих юридичних зобов’язань.</string>
 
     <string name="wifi_disabled_association_rejected">З'єднання відхилено</string>
     <string name="wifi_setting_countrycode_title">Wi-Fi код регіону</string>
@@ -586,7 +586,7 @@
     <string name="kill_app_longpress_back">Закрити програму</string>
     <string name="kill_app_longpress_back_summary">Довгий натиск на кнопку Назад закриє запущену програму</string>
     <string name="custom_runtime_warning_title">Увага</string>
-    <string name="custom_runtime_warning_message">ART не підтримується CyanogenMod. Ця опція експериментальна і може привести до не стабільної роботи, помилки, втрату даних і навіть заважати включенню пристрою. Відвідайте сторінку «&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Вхід в ART&lt;/a&gt;» (на англ. мові) для додаткової інформації.&lt;br/&gt;&lt;br/&gt;Ми просимо не присилати баг-репорти, якщо вибрали ART в якості середовища виконання системи.&lt;br/&gt;&lt;br/&gt;Ви дійсно бажаєте перезапустити пристрій і перемкнути середовище з «<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>» на «<xliff:g id="new" example="libart.so">%2$s</xliff:g>»?</string>
+    <string name="custom_runtime_warning_message">ART не підтримується MoKee OpenSource. Ця опція експериментальна і може привести до не стабільної роботи, помилки, втрату даних і навіть заважати включенню пристрою. Відвідайте сторінку «&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Вхід в ART&lt;/a&gt;» (на англ. мові) для додаткової інформації.&lt;br/&gt;&lt;br/&gt;Ми просимо не присилати баг-репорти, якщо вибрали ART в якості середовища виконання системи.&lt;br/&gt;&lt;br/&gt;Ви дійсно бажаєте перезапустити пристрій і перемкнути середовище з «<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>» на «<xliff:g id="new" example="libart.so">%2$s</xliff:g>»?</string>
 
     <string name="performance_settings_title">Продуктивність</string>
     <string name="performance_settings_warning_title">Будьте обережні</string>
@@ -610,37 +610,15 @@
     <string name="pref_use_16bpp_alpha_title">16-бітна прозорість</string>
     <string name="pref_use_16bpp_alpha_summary">Більша продуктивність графічної системи, але можливе зниження якості та поява графічних артефактів (потрібне перезавантаження)</string>
 
-    <string name="cmupdate_settings_title">Оновлення CyanogenMod</string>
-    <string name="cmupdate_settings_summary">Перевірка та встановлення доступних оновлень</string>
-
-    <string name="anonymous_notification_desc">Анонімна статистика CyanogenMod</string>
-    <string name="anonymous_statistics_title">Статистика CyanogenMod</string>
-    <string name="anonymous_statistics_summary">Допоможіть зробити CyanogenMod кращим, надсилаючи анонімну статистику</string>
-    <string name="anonymous_statistics_warning_title">Про</string>
-    <string name="anonymous_statistics_warning">Анонімні звіти дозволяють розробникам CyanogenMod відстежувати установки на різні пристрої. Інформація включає в себе назву пристрою, версію прошивки і унікальний ідентифікатор, відправка якого ніяким чином не шкодить Вашій конфіденційності. Звіт надсилається при кожному завантаженні пристрої.</string>
-    <string name="anonymous_learn_more">Докладніше</string>
-    <string name="enable_reporting_title">включити звіт</string>
-    <string name="preview_data_title">Показати дані</string>
-    <string name="preview_id_title">Унікальний ідентифікатор</string>
-    <string name="preview_device_title">Пристрій</string>
-    <string name="preview_version_title">Версія</string>
-    <string name="preview_country_title">Країна</string>
-    <string name="preview_carrier_title">Оператор</string>
-    <string name="view_stats_title">Перегляд статистики встановлень</string>
-
     <string name="changelog_title">Подивитися changelog</string>
     <string name="changelog_loading">Завантажується changelog\u2026</string>
     <string name="changelog_error">Не можу завантажити changelog</string>
     <string name="changelog_unknown">Невідомий</string>
     <string name="changelog_version">Версія</string>
 
-    <string name="cmlicense_title">Політика конфіденційності CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Політика конфіденційності CyanogenMod</string>
-    <string name="settings_cmlicense_activity_unreachable">Пристрій не підключено до Інтернету. Щоб переглянути цю інформацію, відкрийте сторінку %s на будь-якому комп'ютері з інтернет-доступом.</string>
-
     <string name="cpu_info">Процесор</string>
     <string name="mem_info">Пам'ять</string>
-    <string name="mod_version">Версія CyanogenMod</string>
+    <string name="mod_version">Версія MoKee</string>
     <string name="mod_version_default">Невідомо</string>
     <string name="build_date">Дата збірки</string>
 
