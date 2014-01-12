@@ -133,6 +133,11 @@
     <string name="toggle2g3g">2G/3G</string>
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
+    <string name="delay_and_timeout_title">锁定延迟</string>
+    <string name="slide_lock_delay_title">延迟屏幕锁定</string>
+    <string name="slide_lock_timeout_delay_title">屏幕超时后的延迟</string>
+    <string name="slide_lock_screenoff_delay_title">屏幕关闭后的延迟</string>
+    <string name="slide_lock_delay_none">无延迟</string>
     <string name="slide_lock_delay_1s">1 秒</string>
     <string name="slide_lock_delay_5s">5 秒</string>
     <string name="slide_lock_delay_10s">10 秒</string>
