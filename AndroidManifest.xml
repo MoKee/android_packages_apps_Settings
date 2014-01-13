@@ -1807,6 +1807,14 @@
                 <category android:name="android.intent.category.SHORTCUT" />
               </intent-filter>
         </activity>
+        <activity
+            android:name=".mokee.PowerSaverSettings"
+            android:label="@string/power_saver_settings_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SHORTCUT" />
+              </intent-filter>
+        </activity>
         <!-- MOKEE ACTIVITIES END -->
 
         <!-- MOKEE HELPER START -->

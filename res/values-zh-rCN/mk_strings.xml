@@ -199,4 +199,14 @@
     <string name="camera_shutter_sound_title">相机快门音</string>
     <string name="camera_shutter_sound_summary">警告: 禁用相机快门音在部分国家属于非法行为！</string>
 
+    <!-- Powersaver settings -->
+    <string name="power_saver_settings_title">节能程序</string>
+    <string name="power_saver_settings_summary">优化电池寿命</string>
+    <string name="power_saver_toggles_mobile_title">移动网络</string>
+    <string name="power_saver_toggles_location_title">位置</string>
+    <string name="power_saver_toggles_gps_title">禁用 GPS</string>
+    <string name="power_saver_toggles_gps_summary">当屏幕关闭时将临时关闭GPS定位服务</string>
+    <string name="power_saver_toggles_mobile_data_title">禁用移动网络</string>
+    <string name="power_saver_toggles_mobile_data_summary">当屏幕关闭时将临时关闭移动网络</string>
+
 </resources>
