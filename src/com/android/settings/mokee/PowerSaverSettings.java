@@ -100,7 +100,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
                     mTogglesMobileData.isChecked() ? 1 : 0);
         } else if (preference == mTogglesGPS) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_GPS,
-                    mTogglesMobileData.isChecked() ? 1 : 0);
+                    mTogglesGPS.isChecked() ? 1 : 0);
         }
         Intent intent = new Intent("android.intent.action.POWER_SAVER_SERVICE_UPDATE");
         mActivity.sendBroadcast(intent);
