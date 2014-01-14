@@ -65,7 +65,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
         mEnabledSwitch = new Switch(mActivity);
         boolean powerSaverEnabled = Settings.System.getInt(resolver,
-                Settings.System.POWER_SAVER_ENABLED, 0) != 0;
+                Settings.System.POWER_SAVER_ENABLED, 1) != 0;
         final int padding = mActivity.getResources().getDimensionPixelSize(
                 R.dimen.action_bar_switch_padding);
         mEnabledSwitch.setPaddingRelative(0, 0, padding, 0);
@@ -83,7 +83,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(mTogglesCPU);
         } else {
             mTogglesCPU.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.POWER_SAVER_CPU, 0) != 0);
+                    Settings.System.POWER_SAVER_CPU, 1) != 0);
         }
         mTogglesMobileData = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_MOBILE_DATA);
         mTogglesMobileData.setChecked(Settings.System.getInt(resolver,
