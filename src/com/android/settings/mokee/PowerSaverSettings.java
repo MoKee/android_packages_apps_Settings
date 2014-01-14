@@ -32,15 +32,19 @@ import android.widget.Switch;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
+import com.android.settings.cyanogenmod.Processor;
 
 public class PowerSaverSettings extends SettingsPreferenceFragment implements
         CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "PowerSaverSettings";
+    private static final String KEY_TOGGLES_CPU = "power_saver_toggles_cpu";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
     private ContentResolver resolver;
     private Switch mEnabledSwitch;
+    private CheckBoxPreference mTogglesCPU;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
     private PreferenceScreen prefSet;
@@ -58,6 +62,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         super.onActivityCreated(savedInstanceState);
 
         mActivity = getActivity();
+
         mEnabledSwitch = new Switch(mActivity);
         boolean powerSaverEnabled = Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_ENABLED, 0) != 0;
@@ -68,6 +73,18 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mEnabledSwitch.setOnCheckedChangeListener(this);
 
         prefSet = getPreferenceScreen();
+        mTogglesCPU = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU);
+        /*
+         * Governor Some systems might not use governors
+         */
+        if (!Utils.fileExists(Processor.GOV_LIST_FILE) || !Utils.fileExists(Processor.GOV_FILE)
+                || Utils.fileReadOneLine(Processor.GOV_FILE) == null
+                || Utils.fileReadOneLine(Processor.GOV_LIST_FILE) == null) {
+            prefSet.removePreference(mTogglesCPU);
+        } else {
+            mTogglesCPU.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.POWER_SAVER_CPU, 0) != 0);
+        }
         mTogglesMobileData = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_MOBILE_DATA);
         mTogglesMobileData.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_MOBILE_DATA, 0) != 0);
@@ -95,7 +112,10 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mTogglesMobileData) {
+        if (preference == mTogglesCPU) {
+            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU,
+                    mTogglesCPU.isChecked() ? 1 : 0);
+        } else if (preference == mTogglesMobileData) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_MOBILE_DATA,
                     mTogglesMobileData.isChecked() ? 1 : 0);
         } else if (preference == mTogglesGPS) {

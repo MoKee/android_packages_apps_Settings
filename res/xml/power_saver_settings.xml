@@ -17,6 +17,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
+        android:key="power_saver_toggles_performance_key"
+        android:title="@string/power_saver_toggles_performance_title">
+
+        <CheckBoxPreference
+            android:key="power_saver_toggles_cpu"
+            android:title="@string/power_saver_toggles_cpu_title"
+            android:summary="@string/power_saver_toggles_cpu_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="power_saver_toggles_mobile_key"
         android:title="@string/power_saver_toggles_mobile_title">
 
