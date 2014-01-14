@@ -52,7 +52,7 @@ import com.android.internal.telephony.PhoneStateIntentReceiver;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
-import org.cyanogenmod.hardware.SerialNumber;
+import org.mokee.hardware.SerialNumber;
 
 import java.lang.ref.WeakReference;
 
