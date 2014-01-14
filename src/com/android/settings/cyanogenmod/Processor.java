@@ -244,7 +244,7 @@ public class Processor extends SettingsPreferenceFragment implements
                 if (preference == mGovernorPref) {
                     mGovernorPref.setSummary(String.format(mGovernorFormat, (String) newValue));
                     // We need update value
-                    if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU, 0) != 0) {
+                    if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU, 1) != 0) {
                         Settings.System.putString(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_DEFAULT, (String) newValue);
                     }
                 } else if (preference == mMinFrequencyPref) {

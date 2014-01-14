@@ -24,7 +24,7 @@
             android:key="power_saver_toggles_cpu"
             android:title="@string/power_saver_toggles_cpu_title"
             android:summary="@string/power_saver_toggles_cpu_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
