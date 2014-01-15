@@ -212,4 +212,10 @@
     <string name="power_saver_toggles_cpu_title">处理器性能</string>
     <string name="power_saver_toggles_cpu_summary">屏幕关闭后将切换到节能模式</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation">屏幕关闭动画</string>
+    <string name="screen_off_fadeout">渐隐</string>
+    <string name="screen_off_electronbeam">电子束</string>
+    <string name="screen_off_scaledown">缩小</string>
+
 </resources>

@@ -245,4 +245,10 @@
     <string name="power_saver_toggles_cpu_title">CPU power</string>
     <string name="power_saver_toggles_cpu_summary">Conserve CPU usage on screen off</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation">Screen-off animation</string>
+    <string name="screen_off_fadeout">Fade out</string>
+    <string name="screen_off_electronbeam">Electron beam</string>
+    <string name="screen_off_scaledown">Scale down</string>
+
 </resources>
