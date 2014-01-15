@@ -243,6 +243,6 @@
     <string name="power_saver_toggles_mobile_data_title">Disable mobile data</string>
     <string name="power_saver_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
     <string name="power_saver_toggles_cpu_title">CPU power</string>
-    <string name="power_saver_toggles_cpu_summary">Conserve CPU usage</string>
+    <string name="power_saver_toggles_cpu_summary">Conserve CPU usage on screen off</string>
 
 </resources>
