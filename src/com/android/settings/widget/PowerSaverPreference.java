@@ -51,7 +51,7 @@ public class PowerSaverPreference extends Preference implements OnCheckedChangeL
         super.onBindView(view);
         mSwitch = (Switch) view.findViewById(R.id.mswitch);
         mSwitch.setChecked(Settings.System.getInt(getContext().getContentResolver(),
-                Settings.System.POWER_SAVER_ENABLED, 1) != 0);
+                Settings.System.POWER_SAVER_ENABLED, 0) != 0);
         mSwitch.setOnCheckedChangeListener(this);
     }
 
