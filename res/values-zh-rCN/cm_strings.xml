@@ -380,7 +380,7 @@
     <string name="status_bar_battery_show_percent_title">显示电池状态百分比</string>
     <string name="status_bar_signal_text_title">信号状态样式</string>
     <string name="status_bar_signal_style_icon">图标</string>
-    <string name="status_bar_signal_style_text">隐藏</string>
+    <string name="status_bar_signal_style_text">文本</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在状态栏上左右滑动以调整亮度</string>
     <string name="status_bar_toggle_info">亮度自动调整已启用</string>
