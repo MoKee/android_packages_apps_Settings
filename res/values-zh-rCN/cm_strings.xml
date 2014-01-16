@@ -60,6 +60,10 @@
     <string name="collapse_on_dismiss_if_empty_summary">移除所有通知后关闭下拉通知栏</string>
     <string name="collapse_on_dismiss_if_no_clearable_summary">移除最后一个可移除的通知后关闭下拉通知栏</string>
     <string name="lock_screen_title">锁屏界面</string>
+    <string name="lockscreen_battery_status_title">电池状态</string>
+    <string name="lockscreen_battery_status_charging">仅在充电时显示</string>
+    <string name="lockscreen_battery_status_alwayson">始终显示</string>
+    <string name="lockscreen_battery_status_alwaysoff">始终隐藏</string>
     <string name="lockscreen_target_info">把滑块拉到指定的位置以选择快捷方式</string>
     <string name="lockscreen_target_title">锁屏快捷方式</string>
     <string name="lockscreen_target_summary">查看或改变锁屏界面上的快捷方式</string>
