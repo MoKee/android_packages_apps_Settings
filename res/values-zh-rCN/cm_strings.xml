@@ -386,7 +386,7 @@
     <string name="status_bar_toggle_info">亮度自动调整已启用</string>
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示有多少条正在等候中的通知</string>
-    <string name="status_bar_double_tap_to_sleep_title">双击关闭屏幕</string>
+    <string name="status_bar_double_tap_to_sleep_title">双击状态栏关闭屏幕</string>
     <string name="development_shortcut_title">开发者捷径</string>
     <string name="development_shortcut_summary">在最近应用程序列表和通知区域启用\'擦除数据\'、\'强制关闭\'选项</string>
     <string name="usb_mass_storage_title">USB 大容量存储</string>
