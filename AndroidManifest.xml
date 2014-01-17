@@ -1797,6 +1797,8 @@
                 android:resource="@id/security_settings" />
         </activity>
 
+        <activity android:name=".cyanogenmod.PrivacySettings" />
+
         <!-- CyanogenMod activities End -->
 
         <!-- MOKEE ACTIVITIES START -->
