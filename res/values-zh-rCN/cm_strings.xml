@@ -563,6 +563,7 @@
     <string name="privacy_guard_help_text">在这个屏幕上，您可以简单的通过点击来选择在哪些应用上启用隐私防护。选中的应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。长按一个条目将打开应用的详细页面。\n\n默认情况下将不显示内置的应用。如果您想显示内置应用或者只显示那些在权限声明中需要访问个人隐私数据的应用，请在菜单中选择相应的选项。</string>
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_manager_filter_permissions">权限过滤</string>
+    <string name="privacy_guard_advanced_settings_title">高级</string>
     <string name="blacklist_title">黑名单</string>
     <string name="blacklist_edit_dialog_title">编辑黑名单</string>
     <string name="blacklist_prefs">设置</string>
