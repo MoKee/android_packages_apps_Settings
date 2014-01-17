@@ -547,6 +547,7 @@
     <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
     <string name="wake_when_plugged_or_unplugged_summary">连接或断开充电器时点亮屏幕</string>
     <string name="confirm_delete_apn">APN 将被删除。</string>
+    <string name="privacy_settings_cyanogenmod_title">隐私</string>
     <string name="privacy_guard_switch_label">启用隐私防护</string>
     <string name="privacy_guard_dlg_title">是否启用隐私防护？</string>
     <string name="privacy_guard_dlg_text">启用隐私防护后，应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。</string>
