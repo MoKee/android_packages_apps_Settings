@@ -252,4 +252,8 @@
     <string name="screen_off_animation_scaledown">Scale down</string>
     <string name="screen_off_animation_turnoff">Turn off</string>
 
+    <!-- Force show navigation bar -->
+    <string name="force_show_navigation_bar_title">Show navigation bar</string>
+    <string name="force_show_navigation_bar_summary">Force show navigation bar (requires reboot)</string>
+
 </resources>

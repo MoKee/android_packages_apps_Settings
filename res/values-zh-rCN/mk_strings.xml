@@ -219,4 +219,8 @@
     <string name="screen_off_animation_scaledown">缩放</string>
     <string name="screen_off_animation_turnoff">关闭</string>
 
+    <!-- Force show navigation bar -->
+    <string name="force_show_navigation_bar_title">显示导航栏</string>
+    <string name="force_show_navigation_bar_summary">强制显示导航栏（需要重启）</string>
+
 </resources>
