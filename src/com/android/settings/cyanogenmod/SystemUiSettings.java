@@ -24,6 +24,7 @@ import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
@@ -44,6 +45,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
 
+    // Force show navigation bar
+    private static final String KEY_FORCE_SHOW_NAVIGATION_BAR = "force_show_navigation_bar";
+
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
@@ -55,6 +59,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     // ListView Animations Preference
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
+
+    // Force show navigation bar
+    private CheckBoxPreference mForceShowNavigationBarPref;
 
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
@@ -90,6 +97,10 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
 
+        mForceShowNavigationBarPref =
+                (CheckBoxPreference) findPreference(KEY_FORCE_SHOW_NAVIGATION_BAR);
+        mForceShowNavigationBarPref.setOnPreferenceChangeListener(this);
+
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref =
@@ -103,19 +114,24 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
         try {
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-
+            boolean mHasNavigationBar = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
             if (hasNavBar) {
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
                 updateExpandedDesktop(expandedDesktopValue);
                 prefScreen.removePreference(mExpandedDesktopNoNavbarPref);
+                if (mHasNavigationBar) {
+                    prefScreen.removePreference(mForceShowNavigationBarPref);
+                }
             } else {
                 // Hide no-op "Status bar visible" expanded desktop mode
                 mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
                 prefScreen.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
-                prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
+                PreferenceCategory mCategoryNavbar = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
+                mCategoryNavbar.removeAll();
+                mCategoryNavbar.addPreference(mForceShowNavigationBarPref);
             }
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
@@ -131,6 +147,10 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         } else if (preference == mExpandedDesktopNoNavbarPref) {
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
+            return true;
+        } else if (preference == mForceShowNavigationBarPref) {
+            Settings.System.putInt(resolver, Settings.System.FORCE_SHOW_NAVIGATION_BAR,
+                    (Boolean) objValue ? 1 : 0);
             return true;
         } else if (preference == mNavButtonsHeight) {
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);

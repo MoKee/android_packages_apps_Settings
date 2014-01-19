@@ -59,6 +59,11 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
+        <CheckBoxPreference
+            android:key="force_show_navigation_bar"
+            android:title="@string/force_show_navigation_bar_title"
+            android:defaultValue="false" />
+
 	<ListPreference
             android:key="navigation_bar_height"
             android:dialogTitle="@string/navigation_bar_height"
