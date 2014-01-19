@@ -397,7 +397,7 @@
     <string name="power_menu_sound_title">Panell de so</string>
     <string name="advanced_settings_title">Avançat</string>
     <string name="status_bar_title">Barra d\'estat</string>
-   <string name="status_bar_show_clock_title">Mostra el rellotge</string>
+    <string name="status_bar_show_clock_title">Mostra el rellotge</string>
     <string name="status_bar_battery_title">Estil de l\'estat de la bateria</string>
     <string name="status_bar_style_hidden">Amagada</string>
     <string name="status_bar_style_icon_portrait">Icona vertical</string>
