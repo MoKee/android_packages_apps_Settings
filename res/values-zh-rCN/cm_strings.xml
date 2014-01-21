@@ -31,6 +31,7 @@
     <string name="quiet_hours_title">安静时段</string>
     <string name="quiet_hours_summary">配置设备应该安静的时段</string>
     <string name="quiet_hours_enabled">开启安静时段</string>
+    <string name="quiet_hours_ringer">手机铃声</string>
     <string name="quiet_hours_mute">静音提醒</string>
     <string name="quiet_hours_system">禁用系统声音</string>
     <string name="quiet_hours_still">禁用震动</string>
@@ -38,6 +39,10 @@
     <string name="quiet_hours_haptic">禁用触控反馈</string>
     <string name="quiet_hours_active_from">从</string>
     <string name="quiet_hours_active_to">激活到</string>
+    <string name="quiet_hours_ringer_allow_all">所有来电响铃</string>
+    <string name="quiet_hours_ringer_allow_contacts">仅通讯录联系人响铃</string>
+    <string name="quiet_hours_ringer_allow_starred">仅被收藏联系人响铃</string>
+    <string name="quiet_hours_ringer_mute_all">所有来电静音</string>
     <string name="start_time_title">起始</string>
     <string name="end_time_title">结束</string>
     <string name="device_hostname">设备网络名</string>
@@ -436,6 +441,7 @@
     <string name="title_tile_quiet_hours">安静时段</string>
     <string name="title_tile_volume">音量</string>
     <string name="title_tile_expanded_desktop">扩展桌面</string>
+    <string name="title_tile_network_adb">网络 ADB 调试</string>
     <string name="title_dynamic_tiles">动态按钮</string>
     <string name="dynamic_tiles_note_title">注意</string>
     <string name="dynamic_tiles_note_summary">动态按钮不是随时都会显示的，它们仅会在有相关的系统事件时显示</string>
