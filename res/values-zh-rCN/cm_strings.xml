@@ -622,6 +622,7 @@
     <string name="more_device_settings_title">其他设备选项</string>
     <string name="sensors_motors_title">传感器 &amp; 震动</string>
     <string name="display_calibration_title">屏幕校准</string>
+    <string name="double_tap_to_wake_title">双击唤醒</string>
     <string name="category_quick_access">下拉快捷开关</string>
     <string name="title_quick_access">在下拉通知栏内显示</string>
     <string name="title_quick_access_linked">连接布局</string>
