@@ -36,25 +36,11 @@
     <string name="notification_convert_sound_to_vibration_title">Vibreer op kennisgewing</string>
     <string name="notification_convert_sound_to_vibration_summary">In vibrasie-modus sal alle kennisgewings, ongeag van individuele program instellings, vibreer</string>
     <string name="device_hostname">Toestel gasheernaam</string>
-    <string name="mod_version">CyanogenMod weergawe</string>
+    <string name="mod_version">MoKee weergawe</string>
     <string name="mod_version_default">Onbekend</string>
     <string name="build_date">Bou datum</string>
     <string name="cpu_info">SVE</string>
     <string name="mem_info">Geheue</string>
-    <string name="anonymous_statistics_title">CyanogenMod statistieke</string>
-    <string name="anonymous_statistics_summary">Help CyanogenMod verbeter deur anonieme statistiek verslagdoening te kies</string>
-    <string name="anonymous_statistics_warning_title">Inligting</string>
-    <string name="anonymous_statistics_warning">"Deur CyanogenMod statistieke toe te laat sal nie-persoonlike data ingestuur word na die ontwikkelaars van CyanogenMod installasies. Die inligting sluit in \'n unieke identifikasienommer in wat nie privaatheid of persoonlike data in gevaar stel nie. Die data word ingestuur tydens elke \'boot\'.\n\nVir \'n voorbeeld van die data wat ingestuur word, raak "<b>"Voorskou"</b>"</string>
-    <string name="enable_reporting_title">Aktiveer verslaggewing</string>
-    <string name="preview_data_title">Voorskou</string>
-    <string name="view_stats_title">Kyk na statistieke</string>
-    <string name="anonymous_learn_more">Leer meer</string>
-    <string name="anonymous_notification_desc">Aktiveer of deaktiveer unieke CyanogenMod statistieke</string>
-    <string name="preview_id_title">Unieke ID</string>
-    <string name="preview_device_title">Toestel</string>
-    <string name="preview_version_title">Weergawe</string>
-    <string name="preview_country_title">Land</string>
-    <string name="preview_carrier_title">Draer</string>
     <string name="header_category_interface">Personalisering</string>
     <string name="themes_settings_title">Temas</string>
     <string name="system_settings_title">Koppelvlak</string>
@@ -370,8 +356,6 @@
     <string name="power_menu_airplane_title">Vliegtuigmodus</string>
     <string name="power_menu_user_title">Gebruiker wisselaar</string>
     <string name="power_menu_sound_title">Klankpaneel</string>
-    <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
-    <string name="cmupdate_settings_summary">Soek vir of installeer beskikbare opgraderings</string>
     <string name="advanced_settings_title">Gevorderd</string>
     <string name="ime_switcher_notify">Kies kennisgewings</string>
     <string name="ime_switcher_notify_summary">Vertoon insetmetode kennisgewings</string>
@@ -471,8 +455,8 @@
     <string name="headset_connect_player_title">Begin musiek program</string>
     <string name="headset_connect_player_summary">Begin die standaard musiek program wanneer oorfone gekoppel word</string>
     <string name="safe_headset_volume_title">Veilige oorfone volume</string>
-    <string name="cyanogenmod_waiver_title">Kwytskelding</string>
-    <string name="cyanogenmod_waiver_body">"Wysiging van hierdie instelling kan teen jou staat of regerings wette wees.\n\nRaak "<b>"OK"</b>" om hierdie waarskuwing en kwytskelding te aanvaar en CyanogenMod en sy bydraers te vrywaar van alle wetlike verpligtinge."</string>
+    <string name="mokee_waiver_title">Kwytskelding</string>
+    <string name="mokee_waiver_body">"Wysiging van hierdie instelling kan teen jou staat of regerings wette wees.\n\nRaak "<b>"OK"</b>" om hierdie waarskuwing en kwytskelding te aanvaar en MoKee OpenSource en sy bydraers te vrywaar van alle wetlike verpligtinge."</string>
     <string name="auto_brightness_setup_title">Outomatiese helderheid</string>
     <string name="auto_brightness_adjustment_title">Helderheid aanpassing</string>
     <string name="auto_brightness_twilight_adjustment">Verander na sonsopkoms en sonsondergang</string>
@@ -719,11 +703,8 @@ die verlangde helderheid van die skerm gestoor. Kies \'Verdeel\' om \'n item te 
     <string name="whisperpush_registration_summary">Registreer vir WhisperPush om geënkripteerde SMS moontlik te maak</string>
     <string name="whisperpush_identitykey_title">Hersien identiteit sleutels</string>
     <string name="custom_runtime_warning_title">Waarskuwing</string>
-    <string name="custom_runtime_warning_message">"ART word nie ondersteun deur CyanogenMod. Hierdie instelling is ingesluit slegs vir eksperimentering en het die potensiaal om onstabiliteit, ineenstortings, data verlies te veroorsaak of te verhoed dat die toestel behoorlike sal boot. Besoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\">Bekendstelling van ART&lt;/a> vir meer inligting.&lt;br/>&lt;br/>Ons versoek jou om nie fout verslae te verskaf as jy ART geaktiveer het as jou 'runtime'.&lt;br/>&lt;br/>Is jy seker jy wil herlaai om die 'runtime' te verander van %1$s na %2$s?"</string>
+    <string name="custom_runtime_warning_message">"ART word nie ondersteun deur MoKee OpenSource. Hierdie instelling is ingesluit slegs vir eksperimentering en het die potensiaal om onstabiliteit, ineenstortings, data verlies te veroorsaak of te verhoed dat die toestel behoorlike sal boot. Besoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\">Bekendstelling van ART&lt;/a> vir meer inligting.&lt;br/>&lt;br/>Ons versoek jou om nie fout verslae te verskaf as jy ART geaktiveer het as jou 'runtime'.&lt;br/>&lt;br/>Is jy seker jy wil herlaai om die 'runtime' te verander van %1$s na %2$s?"</string>
     <string name="battery_info_status_charging_dock_ac">(DokKRAG)</string>
     <string name="battery_info_status_charging_dock_usb">(DokUSB)</string>
     <string name="menu_stats_reset">Terugstel</string>
-    <string name="cmlicense_title">CyanogenMod Regs</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod Regs</string>
-    <string name="settings_cmlicense_activity_unreachable">"Jy het nie 'n data verbinding. Om hierdie inligting nou te sien, gaan na %s van enige rekenaar wat verbind is tot die Internet."</string>
 </resources>

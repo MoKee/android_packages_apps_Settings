@@ -212,8 +212,8 @@
   <string name="lockscreen_maximize_widgets_summary">הרחב ווידג\'טים כאשר המסך מודלק</string>
   <string name="lockscreen_enable_camera_title">ווידג\'ט מצלמה</string>
   <string name="safe_headset_volume_title">עוצמת שמע בטוחה באוזניות</string>
-  <string name="cyanogenmod_waiver_title">ויתור</string>
-  <string name="cyanogenmod_waiver_body">שינוי הגדרות אלו יכול להיות מנוגד לחוקי מדינתך.\n\nבלחיצה על אישור אתה מודע לאזהרה זאת ומסכים של-CyanogenMod אין שום קשר משפטי לכך.</string>
+  <string name="mokee_waiver_title">ויתור</string>
+  <string name="mokee_waiver_body">שינוי הגדרות אלו יכול להיות מנוגד לחוקי מדינתך.\n\nבלחיצה על אישור אתה מודע לאזהרה זאת ומסכים של-MoKee OpenSource אין שום קשר משפטי לכך.</string>
   <string name="quick_settings_panel_title">לוח הגדרות מהירות</string>
   <string name="title_static_tiles">אריחים קבועים</string>
   <string name="tile_picker_title">אריחים ופריסה</string>
@@ -365,25 +365,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">השתק צלצול עבור על המתקשרים</string>
   <string name="start_time_title">זמן התחלה</string>
   <string name="end_time_title">זמן סיום</string>
-  <string name="mod_version">גרסת CyanogenMod</string>
+  <string name="mod_version">גרסת MoKee</string>
   <string name="mod_version_default">לא ידוע</string>
   <string name="build_date">תאריך בנייה</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">זיכרון</string>
-  <string name="anonymous_statistics_title">סטטיסטיקת CyanogenMod</string>
-  <string name="anonymous_statistics_summary">עזור לשפר את CyanogenMod על ידי דיווח סטטיסטיקה אנונימית</string>
-  <string name="anonymous_statistics_warning_title">אודות</string>
-  <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקת CyanogenMod יאפשר שליחת מידע לא פרטי למפתחי CyanogenMod על מנת לאתר התקנות שונות בין מכשירים. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיות שלך או במידע שלך. המידע נשלח כל איתחול.\n\nכדי לצפות בדוגמה של המידע, לחץ על תצוגה מקדימה.</string>
-  <string name="enable_reporting_title">אפשר דיווח</string>
-  <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
-  <string name="view_stats_title">הצג סטטיסטיקה</string>
-  <string name="anonymous_learn_more">למידע נוסף</string>
-  <string name="anonymous_notification_desc">אפשר או השבת סטטיסטיקת CyanogenMod</string>
-  <string name="preview_id_title">מזהה ייחודי</string>
-  <string name="preview_device_title">מכשיר</string>
-  <string name="preview_version_title">גרסה</string>
-  <string name="preview_country_title">מדינה</string>
-  <string name="preview_carrier_title">חברת סלולר</string>
   <string name="header_category_interface">התאמה אישית</string>
   <string name="themes_settings_title">ערכות עיצוב</string>
   <string name="performance_settings_title">ביצועים</string>
@@ -413,8 +399,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_error">אין אפשרות לטעון את רשימת השינויים</string>
   <string name="changelog_unknown">לא ידוע</string>
   <string name="changelog_version">גרסה</string>
-  <string name="cmupdate_settings_title">עדכוני CyanogenMod</string>
-  <string name="cmupdate_settings_summary">חפש, הצג או התקן עדכונים זמינים</string>
   <string name="advanced_settings_title">מתקדם</string>
   <string name="development_tools_title">הפעל כלי פיתוח</string>
   <string name="privacy_settings_cyanogenmod_title">פרטיות</string>
@@ -678,14 +662,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="whisperpush_registration_summary">הירשם ל-WhisperPush כדי לאפשר SMS מוצפנים.</string>
   <string name="whisperpush_identitykey_title">צפה במפתחות זיהוי</string>
   <string name="custom_runtime_warning_title">אזהרה</string>
-  <string name="custom_runtime_warning_message">ART לא נתמך כראוי על ידי CyanogenMod. הגדרה זו קיימת רק לניסוי ויש סיכוי לאי יציבות, קריסות, איבוד מידע או אתחול נכון של המכשיר. בקר ב-&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;הצגת ART&lt;/a&gt; עבור מידע נוסף.&lt;br/&gt;&lt;br/&gt;אנחנו מבקשים שאתה לא תמלא דיווחי שגיאות אם אתה משתמש ב-ART.&lt;br/&gt;&lt;br/&gt;האם אתה בטוח שאתה רוצה להחליף מ-<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ל-<xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART לא נתמך כראוי על ידי MoKee OpenSource. הגדרה זו קיימת רק לניסוי ויש סיכוי לאי יציבות, קריסות, איבוד מידע או אתחול נכון של המכשיר. בקר ב-&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;הצגת ART&lt;/a&gt; עבור מידע נוסף.&lt;br/&gt;&lt;br/&gt;אנחנו מבקשים שאתה לא תמלא דיווחי שגיאות אם אתה משתמש ב-ART.&lt;br/&gt;&lt;br/&gt;האם אתה בטוח שאתה רוצה להחליף מ-<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ל-<xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">הורד נתוני GPS מרשת Wi-Fi בלבד</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">איפוס</string>
-  <string name="cmlicense_title">CyanogenMod משפטי</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod משפטי</string>
-  <string name="settings_cmlicense_activity_unreachable">‏אין לך חיבור נתונים. כדי להציג מידע זה כעת, עבור אל %s ממחשב כלשהו המחובר לאינטרנט.</string>
   <string name="stylus_icon_enabled_title">הצג סמל בעת שימוש בעט אלקטרוני</string>
   <string name="stylus_icon_enabled_summary">הצג את סמל העט בעת ריחוף או ציור עם העט</string>
   <string name="gestures_settings_title">מחוות עט</string>
