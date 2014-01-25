@@ -637,4 +637,6 @@
     <string name="title_quick_access_linked">连接布局</string>
     <string name="summary_quick_access_linked">使用与快速设置面板中相同的按钮和布局</string>
     <string name="font_size_sample">示例</string>
+    <string name="ime_switcher_notify">输入法通知</string>
+    <string name="ime_switcher_notify_summary">在通知栏显示输入法选择器</string>
 </resources>
