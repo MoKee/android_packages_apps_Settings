@@ -135,7 +135,7 @@
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>
     <string name="status_bar_traffic_style_hidden">Hide</string>
-    <string name="status_bar_traffic_style_rx">Display upload only</string>
+    <string name="status_bar_traffic_style_rx">Display download only</string>
     <string name="status_bar_traffic_style_rxtx">Display upload and download</string>
 
     <!-- Screen recorder -->
