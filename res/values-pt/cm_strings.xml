@@ -585,8 +585,6 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="menu_stats_reset">Redefinir</string>
     <string name="usb_mass_storage_title">Armazenamento em massa</string>
     <string name="usb_mass_storage_summary">Ativar armazenamento em massa USB</string>
-    <string name="lockscreen_vibrate_enabled_title">Vibrar</string>
-    <string name="lockscreen_vibrate_enabled_head">Vibra quando desbloqueia</string>
     <string name="screen_security_category">Segurança de tela</string>
     <string name="screen_security_title">Tela de bloqueio</string>
     <string name="screen_security_summary">Ver ou alterar a segurança da tela de bloqueio, atraso e tempo limite</string>
