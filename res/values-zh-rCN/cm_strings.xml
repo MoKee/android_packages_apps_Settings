@@ -640,7 +640,7 @@
     <string name="ime_switcher_notify">输入法通知</string>
     <string name="ime_switcher_notify_summary">在通知栏显示输入法选择器</string>
     <string name="app_ops_summaries_wifi_change">wifi 更改</string>
-    <string name="app_ops_labels_wifi_change">Wi-Fi更改</string>
+    <string name="app_ops_labels_wifi_change">Wi-Fi 更改</string>
     <string name="app_ops_summaries_bluetooth_change">蓝牙更改</string>
     <string name="app_ops_labels_bluetooth_change">蓝牙更改</string>
     <string name="app_ops_summaries_data_change">数据更改</string>
