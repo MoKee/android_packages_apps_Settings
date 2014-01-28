@@ -99,6 +99,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
     private static final String CATEGORY_ADDITIONAL = "additional_options";
 
+    // MoKee Open Source Project additions
+    private static final String KEY_SEE_THROUGH = "lockscreen_see_through";
+
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
 
@@ -120,7 +123,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
-
+    private CheckBoxPreference mSeeThrough;
 
     private Preference mNotificationAccess;
 
@@ -303,6 +306,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 additionalPrefs.removePreference(cameraUnlock);
             }
         }
+
+        // lockscreen see through
+        mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_THROUGH);
 
         // biometric weak liveliness
         mBiometricWeakLiveliness =
@@ -730,6 +736,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
             } else {
                 setNonMarketAppsAllowed(false);
             }
+        } else if (preference == mSeeThrough) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH,
+                    mSeeThrough.isChecked() ? 1 : 0);
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.PACKAGE_VERIFIER_ENABLE,
                     mToggleVerifyApps.isChecked() ? 1 : 0);
