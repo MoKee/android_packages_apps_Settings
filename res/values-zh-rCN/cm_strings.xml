@@ -318,9 +318,9 @@
     <string name="ring_mode_vibrate">振动</string>
     <string name="ring_mode_mute">静音</string>
     <string name="volume_overlay_title">声控面板风格</string>
-    <string name="volume_overlay_single">单独</string>
-    <string name="volume_overlay_expandable">扩展</string>
-    <string name="volume_overlay_expanded">完整</string>
+    <string name="volume_overlay_single">单行</string>
+    <string name="volume_overlay_expandable">可展开</string>
+    <string name="volume_overlay_expanded">完全展开</string>
     <string name="volume_overlay_none">无</string>
     <string name="automation_effects_title">自动化 &amp; 音效</string>
     <string name="notification_convert_sound_to_vibration_title">收到通知时振动</string>
