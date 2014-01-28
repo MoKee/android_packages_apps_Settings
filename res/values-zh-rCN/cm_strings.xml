@@ -639,4 +639,28 @@
     <string name="font_size_sample">示例</string>
     <string name="ime_switcher_notify">输入法通知</string>
     <string name="ime_switcher_notify_summary">在通知栏显示输入法选择器</string>
+    <string name="app_ops_summaries_wifi_change">wifi 更改</string>
+    <string name="app_ops_labels_wifi_change">Wi-Fi更改</string>
+    <string name="app_ops_summaries_bluetooth_change">蓝牙更改</string>
+    <string name="app_ops_labels_bluetooth_change">蓝牙更改</string>
+    <string name="app_ops_summaries_data_change">数据更改</string>
+    <string name="app_ops_labels_data_change">数据更改</string>
+    <string name="app_ops_summaries_alarm_wakeup">唤醒</string>
+    <string name="app_ops_labels_alarm_wakeup">唤醒</string>
+    <string name="app_ops_summaries_auto_start">自启动</string>
+    <string name="app_ops_labels_auto_start">自启动</string>
+    <string name="app_ops_categories_bootup">开机</string>
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (使用 <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">允许 <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">拒绝 <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">允许 <xliff:g id="count">%1$s</xliff:g>, 拒绝 <xliff:g id="count">%2$s</xliff:g></string>
+    <plurals name="app_ops_count">
+        <item quantity="one">1次</item>
+        <item quantity="other">%d 次</item>
+    </plurals>
+    <string name="app_ops_show_user_apps">显示用户应用</string>
+    <string name="app_ops_show_system_apps">显示内建应用</string>
+    <string name="app_ops_reset_counters">重置 允许/拒绝 计数器</string>
+    <string name="app_ops_reset_confirm_title">确认计数器重置</string>
+    <string name="app_ops_reset_confirm_mesg">你确定希望重置 AppOps 计数器？</string>
 </resources>
