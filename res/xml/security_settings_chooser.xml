@@ -26,6 +26,11 @@
             android:summary="@string/unlock_set_unlock_mode_none"
             android:persistent="false"/>
 
+        <CheckBoxPreference
+            android:key="lockscreen_see_through"
+            android:title="@string/lockscreen_see_through_title"
+            android:summary="@string/lockscreen_see_through_summary"/>
+
         <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
