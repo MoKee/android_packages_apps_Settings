@@ -256,4 +256,8 @@
     <string name="force_show_navigation_bar_title">Show navigation bar</string>
     <string name="force_show_navigation_bar_summary">Force show navigation bar (requires reboot)</string>
 
+    <!-- Lockscreen see through -->
+    <string name="lockscreen_see_through_title">See through</string>
+    <string name="lockscreen_see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+
 </resources>
