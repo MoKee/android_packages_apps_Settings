@@ -105,9 +105,9 @@
         <item>定位</item>
         <item>发布通知</item>
         <item>定位</item>
-        <item>带电话</item>
-        <item>接收 短信/彩信</item>
-        <item>发送 短信/彩信</item>
+        <item>打电话</item>
+        <item>读取短信数据</item>
+        <item>写入短信数据</item>
         <item>接收 短信/彩信</item>
         <item>接收 短信/彩信</item>
         <item>接收 短信/彩信</item>
