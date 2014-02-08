@@ -256,4 +256,8 @@
     <string name="force_show_navigation_bar_title">Show navigation bar</string>
     <string name="force_show_navigation_bar_summary">Force show navigation bar (requires reboot)</string>
 
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">All numbers</string>
+    <string name="blacklist_all_numbers_summary">Block all calls</string>
+
 </resources>
