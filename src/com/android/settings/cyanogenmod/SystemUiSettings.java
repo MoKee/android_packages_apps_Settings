@@ -52,6 +52,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
+    private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
 
     // Custom Navigation Bar Height Preference
     private ListPreference mNavButtonsHeight;
@@ -65,6 +66,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
+    private CheckBoxPreference mNavigationBarLeftPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -106,6 +108,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         mExpandedDesktopNoNavbarPref =
                 (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
 
+        // Navigation bar left
+        mNavigationBarLeftPref = (CheckBoxPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
         Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
                 getPreferenceScreen(), KEY_SCREEN_GESTURE_SETTINGS);
 
@@ -123,6 +128,11 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 prefScreen.removePreference(mExpandedDesktopNoNavbarPref);
                 if (mHasNavigationBar) {
                     mCategoryNavbar.removePreference(mForceShowNavigationBarPref);
+                }
+                if (!Utils.isPhone(getActivity())) {
+                    PreferenceCategory navCategory =
+                            (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
+                    navCategory.removePreference(mNavigationBarLeftPref);
                 }
             } else {
                 // Hide no-op "Status bar visible" expanded desktop mode
