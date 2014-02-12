@@ -130,7 +130,7 @@ public class AppOpsSummary extends Fragment {
         mViewPager.setAdapter(mAdapter);
         mViewPager.setOnPageChangeListener(mAdapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
-        tabs.setTabIndicatorColorResource(R.color.tab_selector);
+        tabs.setTabIndicatorColorResource(android.R.color.holo_white_dark);
 
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
