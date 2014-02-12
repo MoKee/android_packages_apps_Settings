@@ -749,7 +749,7 @@ public class Settings extends PreferenceActivity
 
             if (homeApps.size() < 2) {
                 Intent prefsIntent = new Intent(Intent.ACTION_MAIN);
-                prefsIntent.addCategory("com.cyanogenmod.category.LAUNCHER_PREFERENCES");
+                prefsIntent.addCategory("com.mokee.category.LAUNCHER_PREFERENCES");
                 List<ResolveInfo> prefsActivities = pm.queryIntentActivities(prefsIntent, 0);
 
                 boolean hasAtleastOneSettings = false;
