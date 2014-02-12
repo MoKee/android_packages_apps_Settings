@@ -628,6 +628,7 @@
     <string name="backlight_summary_disabled">已禁用</string>
     <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">已启用</string>
+    <string name="accessibility_home_button_answers_call_prerefence_title">Home 键接通来电</string>
     <string name="gamma_tuning_title_head">伽玛校准</string>
     <string name="gamma_tuning_summary_head">调整伽玛值</string>
     <string name="more_device_controls_title">更多\u2026</string>
