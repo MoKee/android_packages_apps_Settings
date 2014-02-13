@@ -214,8 +214,8 @@
   <string name="lockscreen_maximize_widgets_summary">Ekran açıkken widgetleri genişlet</string>
   <string name="lockscreen_enable_camera_title">Kamera widgeti</string>
   <string name="safe_headset_volume_title">Güvenli kulaklık ses düzeyi</string>
-  <string name="cyanogenmod_waiver_title">Feragat</string>
-  <string name="cyanogenmod_waiver_body">Bu ayarları değiştirmek hükümet ya da eyaletinizin yasalarına aykırı olabilir.\n\nAşağıdan \'Tamam\' butonuna bastığınızda bu uyarı ve feragat\'ı dikkate aldığınızı ve CyanogenMod ve katkıcılarını her türlü cezai yükümlülükten sorumlu tutmayacağınızı kabul ediyorsunuz.</string>
+  <string name="mokee_waiver_title">Feragat</string>
+  <string name="mokee_waiver_body">Bu ayarları değiştirmek hükümet ya da eyaletinizin yasalarına aykırı olabilir.\n\nAşağıdan \'Tamam\' butonuna bastığınızda bu uyarı ve feragat\'ı dikkate aldığınızı ve MoKee OpenSource ve katkıcılarını her türlü cezai yükümlülükten sorumlu tutmayacağınızı kabul ediyorsunuz.</string>
   <string name="quick_settings_panel_title">Hızlı ayarlar paneli</string>
   <string name="title_static_tiles">Durağan kareler</string>
   <string name="tile_picker_title">Kareler ve düzen</string>
@@ -346,25 +346,11 @@
   <string name="quiet_hours_ringer_mute_all">Hiçbir arama için çalma</string>
   <string name="start_time_title">Başlangıç</string>
   <string name="end_time_title">Son</string>
-  <string name="mod_version">CyanogenMod sürümü</string>
+  <string name="mod_version">MoKee sürümü</string>
   <string name="mod_version_default">Bilinmeyen</string>
   <string name="build_date">İnşa tarihi</string>
   <string name="cpu_info">İşlemci</string>
   <string name="mem_info">Bellek</string>
-  <string name="anonymous_statistics_title">CyanogenMod istatistikleri</string>
-  <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CyanogenMod\'un daha iyi olmasına yardım edin</string>
-  <string name="anonymous_statistics_warning_title">Hakkında</string>
-  <string name="anonymous_statistics_warning">CyanogenMod İstatistiklerine dahil olmak kişisel olmayan verilerin CyanogenMod geliştirilerine cihazlar arasındaki benzersiz yüklemeleri takip etmeleri için gönderilmesine izin verir. Bu bilgi, kişisel bilgi içermeyen ve gizliliğinizi tehtit etmeyen bir benzersiz numara da içerir. Veri her başlangıçta gönderilir.\n\nGönderilecek verinin örneğini görmek için Veriyi önizle butonunu kullanın. </string>
-  <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
-  <string name="preview_data_title">Veriyi önizle</string>
-  <string name="view_stats_title">İstatistikleri görüntüle</string>
-  <string name="anonymous_learn_more">Fazlasını öğren</string>
-  <string name="anonymous_notification_desc">CyanogenMod İstatistiklerini aç/kapat</string>
-  <string name="preview_id_title">Benzersiz ID</string>
-  <string name="preview_device_title">Cihaz</string>
-  <string name="preview_version_title">Sürüm</string>
-  <string name="preview_country_title">Ülke</string>
-  <string name="preview_carrier_title">Şebeke</string>
   <string name="header_category_interface">Kişiselleştirme</string>
   <string name="themes_settings_title">Temalar</string>
   <string name="performance_settings_title">Performans</string>
@@ -394,8 +380,6 @@
   <string name="changelog_error">Değişiklik kaydı yüklenemedi</string>
   <string name="changelog_unknown">Bilinmeyen</string>
   <string name="changelog_version">Sürüm</string>
-  <string name="cmupdate_settings_title">CyanogenMod güncellemeleri</string>
-  <string name="cmupdate_settings_summary">Güncellemeleri denetleyin, görüntüleyin ve yükleyin</string>
   <string name="advanced_settings_title">Gelişmiş</string>
   <string name="development_tools_title">Araçları başlat</string>
   <string name="privacy_settings_cyanogenmod_title">Gizlilik</string>
@@ -662,14 +646,11 @@
   <string name="whisperpush_registration_summary">SMS\'lerinizi şifrelemek için WhisperPush\'a kayıt olun.</string>
   <string name="whisperpush_identitykey_title">Doğrulama anahtarlarını incele</string>
   <string name="custom_runtime_warning_title">Uyarı</string>
-  <string name="custom_runtime_warning_message">ART CyanogenMod tarafından desteklenmemektedir. Bu seçenek deneysel olarak eklenmiştir ve kararsızlık, çökme, veri kaybı ya da cihazın başlamamasına sebep olabilir. Daha fazla bilgi için &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\">ARTa Giriş&lt;/a&gt; sayfasını ziyaret edebilirsiniz..&lt;br/&gt;&lt;br/&gt;ART\'ı çalışma zamanı olarak seçtiğinizde hata raporu oluşturmamanızı istiyoruz.&lt;br/&gt;&lt;br/&gt;Çalışma zamanınızı <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> yerine <xliff:g id="new" example="libart.so">%2$s</xliff:g> olarak değiştirmek için yeniden başlatmak istediğinize emin misiniz?</string>
+  <string name="custom_runtime_warning_message">ART MoKee OpenSource tarafından desteklenmemektedir. Bu seçenek deneysel olarak eklenmiştir ve kararsızlık, çökme, veri kaybı ya da cihazın başlamamasına sebep olabilir. Daha fazla bilgi için &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\">ARTa Giriş&lt;/a&gt; sayfasını ziyaret edebilirsiniz..&lt;br/&gt;&lt;br/&gt;ART\'ı çalışma zamanı olarak seçtiğinizde hata raporu oluşturmamanızı istiyoruz.&lt;br/&gt;&lt;br/&gt;Çalışma zamanınızı <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> yerine <xliff:g id="new" example="libart.so">%2$s</xliff:g> olarak değiştirmek için yeniden başlatmak istediğinize emin misiniz?</string>
   <string name="gps_download_data_wifi_only">Yardımlı GPS verisini sadece Wi-Fi ağları üzerinden indir.</string>
   <string name="battery_info_status_charging_dock_ac">(AC Dock)</string>
   <string name="battery_info_status_charging_dock_usb">(USB Dock)</string>
   <string name="menu_stats_reset">Sıfırla</string>
-  <string name="cmlicense_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_unreachable">Veri bağlantınız yok. Bu bilgiyi görüntülemek için internete bağlı herhangi bir bilgisayardan %s adresine gidin.</string>
   <string name="stylus_icon_enabled_title">Kalem kullanırken simge göster</string>
   <string name="stylus_icon_enabled_summary">Çizerken ya da üzerinde dururken işaretçi simgesi göster</string>
   <string name="gestures_settings_title">Kalem kısa yolları</string>
