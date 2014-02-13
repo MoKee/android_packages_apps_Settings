@@ -4919,4 +4919,7 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+
+    <!-- Performance Control String -->
+    <string name="performancec_title">Performance Control</string>
 </resources>
