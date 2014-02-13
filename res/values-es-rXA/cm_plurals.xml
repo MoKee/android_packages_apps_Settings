@@ -16,11 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-    </plurals>
-    <plurals name="app_ops_count">
-        <item quantity="one">once</item>
-        <item quantity="other">%d times</item>
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> segundu</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> segundos</item>
     </plurals>
 </resources>
