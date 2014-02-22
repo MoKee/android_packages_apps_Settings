@@ -17,6 +17,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/battery_since_unplugged"
         android:key="app_list">
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.mokee.WakeLockBlocker"
+        android:title="@string/wakelock_blocker" />
     <com.android.settings.widget.PowerSaverPreference
         android:key="power_saver"
         android:defaultValue="true"
