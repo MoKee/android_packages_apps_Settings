@@ -58,6 +58,7 @@ public class PowerUsageSummary extends PreferenceFragment {
     private static final String KEY_APP_LIST = "app_list";
     private static final String KEY_BATTERY_STATUS = "battery_status";
     private static final String KEY_POWER_SAVER = "power_saver";
+    private static final String KEY_WAKELOCK_BLOCKER = "wakelock_blocker";
 
     private static final int MENU_STATS_TYPE = Menu.FIRST;
     private static final int MENU_STATS_REFRESH = Menu.FIRST + 1;
@@ -67,6 +68,7 @@ public class PowerUsageSummary extends PreferenceFragment {
     private PreferenceGroup mAppListGroup;
     private Preference mBatteryStatusPref;
     private PowerSaverPreference mPowerSaverPref;
+    private PreferenceScreen mWakelockBlockerPref;
 
     private int mStatsType = BatteryStats.STATS_SINCE_CHARGED;
 
@@ -110,6 +112,7 @@ public class PowerUsageSummary extends PreferenceFragment {
         mAppListGroup = (PreferenceGroup) findPreference(KEY_APP_LIST);
         mBatteryStatusPref = mAppListGroup.findPreference(KEY_BATTERY_STATUS);
         mPowerSaverPref = (PowerSaverPreference) mAppListGroup.findPreference(KEY_POWER_SAVER);
+        mWakelockBlockerPref = (PreferenceScreen) mAppListGroup.findPreference(KEY_WAKELOCK_BLOCKER);
         setHasOptionsMenu(true);
     }
 
@@ -156,6 +159,9 @@ public class PowerUsageSummary extends PreferenceFragment {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
         if (preference instanceof PowerSaverPreference) {
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+        }
+        if (preference instanceof PreferenceScreen) {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
         if (!(preference instanceof PowerGaugePreference)) {
@@ -228,7 +234,9 @@ public class PowerUsageSummary extends PreferenceFragment {
         mAppListGroup.setOrderingAsAdded(false);
 
         mAppListGroup.addPreference(mPowerSaverPref);
-        mPowerSaverPref.setOrder(-3);
+        mAppListGroup.addPreference(mWakelockBlockerPref);
+        mPowerSaverPref.setOrder(-4);
+        mWakelockBlockerPref.setOrder(-3);
         mBatteryStatusPref.setOrder(-2);
         mAppListGroup.addPreference(mBatteryStatusPref);
         BatteryHistoryPreference hist = new BatteryHistoryPreference(
