@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="wifi_countrycode_entries">
+        <item>美國</item>
+        <item>加拿大，台灣</item>
+        <item>德國</item>
+        <item>歐洲</item>
+        <item>日本，俄羅斯</item>
+        <item>澳大利亞</item>
+        <item>中國</item>
+        <item>韓國</item>
+        <item>土耳其</item>
+        <item>新加坡</item>
+        <item>巴西</item>
+    </string-array>
+    <string-array name="profile_entries">
+        <item>開啟</item>
+        <item>關閉</item>
+        <item>不覆蓋</item>
+    </string-array>
+    <string-array name="profile_connection_entries">
+        <item>禁用</item>
+        <item>啟用</item>
+    </string-array>
+    <string-array name="entries_screentimeout_widget">
+        <item>15 秒 | 1 分鐘 | 5 分鐘</item>
+        <item>30 秒 | 2 分鐘 | 5 分鐘</item>
+    </string-array>
+    <string-array name="app_ops_summaries_cm">
+        <item>粗略定位</item>
+        <item>詳細定位</item>
+        <item>GPS</item>
+        <item>震動</item>
+        <item>讀取聯繫人</item>
+        <item>修改聯繫人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>wi-fi 掃瞄</item>
+        <item>通知</item>
+        <item>元件掃瞄</item>
+        <item>打電話</item>
+        <item>讀簡訊</item>
+        <item>寫簡訊</item>
+        <item>接受簡訊</item>
+        <item>接收緊急簡訊</item>
+        <item>接收彩信</item>
+        <item>接收 WAP 推送</item>
+        <item>發送簡訊</item>
+        <item>讀取 ICC 簡訊</item>
+        <item>寫 ICC 簡訊</item>
+        <item>修改設定</item>
+        <item>頂部繪製</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音頻</item>
+        <item>播放音頻</item>
+        <item>讀取剪貼板</item>
+        <item>修改剪貼板</item>
+        <item>媒體按鈕</item>
+        <item>音頻焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>提醒音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒</item>
+        <item>監控定位</item>
+        <item>高頻率監控定位</item>
+        <item>@string/app_ops_summaries_wifi_change</item>
+        <item>@string/app_ops_summaries_bluetooth_change</item>
+        <item>@string/app_ops_summaries_data_change</item>
+        <item>@string/app_ops_summaries_alarm_wakeup</item>
+        <item>@string/app_ops_summaries_auto_start</item>
+    </string-array>
+
+    <string-array name="app_ops_labels_cm">
+        <item>定位</item>
+        <item>定位</item>
+        <item>定位</item>
+        <item>振動</item>
+        <item>讀取聯繫人</item>
+        <item>修改聯繫人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>定位</item>
+        <item>發佈通知</item>
+        <item>定位</item>
+        <item>打電話</item>
+        <item>讀取簡訊數據</item>
+        <item>寫入簡訊數據</item>
+        <item>接收 簡訊/彩信</item>
+        <item>接收 簡訊/彩信</item>
+        <item>接收 簡訊/彩信</item>
+        <item>接收 簡訊/彩信</item>
+        <item>發送 簡訊/彩信</item>
+        <item>接收 簡訊/彩信</item>
+        <item>發送 簡訊/彩信</item>
+        <item>修改設定</item>
+        <item>頂部繪製</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音頻</item>
+        <item>播放音頻</item>
+        <item>讀取剪貼板</item>
+        <item>修改剪貼板</item>
+        <item>媒體按鈕</item>
+        <item>音頻焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>提醒音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒</item>
+        <item>監控定位</item>
+        <item>高頻率監控定位</item>
+        <item>@string/app_ops_labels_wifi_change</item>
+        <item>@string/app_ops_labels_bluetooth_change</item>
+        <item>@string/app_ops_labels_data_change</item>
+        <item>@string/app_ops_labels_alarm_wakeup</item>
+        <item>@string/app_ops_labels_auto_start</item>
+    </string-array>
+
+    <string-array name="app_ops_categories_cm">
+        <item>位置</item>
+        <item>個人</item>
+        <item>信息</item>
+        <item>媒體</item>
+        <item>設備</item>
+        <item>@string/app_ops_categories_bootup</item>
+    </string-array>
+</resources>
