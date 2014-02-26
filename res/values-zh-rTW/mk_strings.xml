@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2014 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Active Display -->
+    <string name="active_display_title">主動顯示</string>
+    <string name="ad_enable_title">啟用主動顯示</string>
+    <string name="ad_enable_summary_on">主動顯示已啟用</string>
+    <string name="ad_enable_summary_off">主動顯示已關閉</string>
+    <string name="ad_text_title">通知內容</string>
+    <string name="ad_text_summary">環繞顯示通知內容</string>
+    <string name="ad_all_notifications_title">所有通知</string>
+    <string name="ad_all_notifications_summary">顯示所有通知，包括正在運行、不可清除的通知。</string>
+    <string name="ad_hide_low_priority_title">低優先級隱藏</string>
+    <string name="ad_hide_low_priority_summary">隱藏那些低優先級的通知。</string>
+    <string name="ad_pocket_mode_title">口袋模式</string>
+    <string name="ad_pocket_mode_summary">當你從口袋中拿出設備時主動顯示通知。</string>
+    <string name="ad_redisplay_title">重新顯示通知</string>
+    <string name="ad_timeout_title">顯示超時</string>
+    <string name="ad_threshold_title">精度闕值</string>
+    <string name="ad_customizations_title">自定義</string>
+    <string name="ad_excluded_apps_title">例外應用程序</string>
+    <string name="ad_excluded_apps_summary">例外的應用程序將不被顯示。</string>
+    <string name="ad_show_date_title">顯示日期</string>
+    <string name="ad_show_ampm_title">顯示上午/下午</string>
+    <string name="ad_sunlight_mode_title">強光模式</string>
+    <string name="ad_sunlight_mode_summary">在強光下反轉顏色，如陽光直射的地方。</string>
+    <string name="ad_brightness_title">通知亮度</string>
+    <string name="ad_brightness_summary">當未啟用自動亮度時顯示通知的屏幕亮度。</string>
+    <string name="ad_show_date_summary">在時間上方顯示日期</string>
+    <string name="ad_show_ampm_summary">使用 12 小時格式時顯示上午/下午指示器</string>
+    <string name="ad_turnoff_mode_title">關閉屏幕</string>
+    <string name="ad_turnoff_mode_summary">當設備放入口袋關閉屏幕。</string>
+    <string name="ad_redisplay_never">從不</string>
+    <string name="ad_redisplay_1m">1 分鐘</string>
+    <string name="ad_redisplay_5m">5 分鐘</string>
+    <string name="ad_redisplay_15m">15 分鐘</string>
+    <string name="ad_redisplay_30m">30 分鐘</string>
+    <string name="ad_redisplay_1h">1 小時</string>
+    <string name="ad_redisplay_2h">2 小時</string>
+    <string name="ad_redisplay_5h">5 小時</string>
+    <string name="ad_timeout_3s">3 秒</string>
+    <string name="ad_timeout_5s">5 秒</string>
+    <string name="ad_timeout_8s">8 秒</string>
+    <string name="ad_timeout_10s">10 秒</string>
+    <string name="ad_timeout_15s">15 秒</string>
+    <string name="ad_timeout_25s">25 秒</string>
+    <string name="ad_threshold_0s">立即</string>
+    <string name="ad_threshold_1s">1 秒</string>
+    <string name="ad_threshold_2s">2 秒</string>
+    <string name="ad_threshold_3s">3 秒</string>
+    <string name="ad_threshold_4s">4 秒</string>
+    <string name="ad_threshold_5s">5 秒</string>
+    <string name="ad_pocket_mode_off">關閉</string>
+    <string name="ad_pocket_mode_notifications">僅通知</string>
+    <string name="ad_pocket_mode_always">始終開啟</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_support">社區支持</string>
+    <string name="mod_support_default">未知</string>
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">列表動畫</string>
+    <string name="listview_off">關閉</string>
+    <string name="listview_wave_left">波浪 (左)</string>
+    <string name="listview_wave_right">波浪 (右)</string>
+    <string name="listview_alpha">淡入淡出</string>
+    <string name="listview_scale">縮放</string> 
+    <string name="listview_stack_top">堆疊 (上)</string>
+    <string name="listview_stack_bottom">堆疊 (下)</string>
+    <string name="listview_unfold">展開</string>
+    <string name="listview_fold">折疊</string> 
+    <string name="listview_translate_left">飛入 (左)</string>
+    <string name="listview_translate_right">飛入 (右)</string>
+    <string name="listview_rotate">旋轉</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">列表變化</string>
+    <string name="listview_accelerate_interpolator">越來越快</string>
+    <string name="listview_decelerate_interpolator">越來越慢</string>
+    <string name="listview_accelerate_decelerate_interpolator">先快後慢</string>
+    <string name="listview_anticipate_interpolator">先後退一小步然後向前加速</string>
+    <string name="listview_overshoot_interpolator">快速到達終點超出一小步然後回到終點</string>
+    <string name="listview_anticipate_overshoot_interpolator">到達終點超出一小步然後回到終點</string>
+    <string name="listview_bounce_interpolator">到達終點產生彈球效果，彈幾下回到終點</string>
+
+    <!-- MoKee Push -->
+    <string name="mokee_push_newversion_title">"發現MoKee OpenSource新版本"</string>
+    <string name="mokee_push_newversion_msg">"新版本更新啦，點擊查看詳細內容！"</string>
+
+    <!-- MoKee Center -->
+    <string name="mokee_center_title">魔趣中心</string>
+
+    <!-- Custom navigation bar height -->
+    <string name="navigation_bar_height">導航欄高度</string>
+    <string name="navigation_bar_height_48">48dp (默認)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">隱藏</string>
+
+    <!-- Other Settings Category -->
+    <string name="other_category">其它設置</string>
+
+    <!-- Proximity work-around -->
+    <string name="is_inaccurate_proximity_title">精確距離</string>
+    <string name="is_inaccurate_proximity_summary">強制在通話結束後打開屏幕，解決距離感應器不準確問題。</string>
+
+    <!-- show carrier label and custom -->
+    <string name="show_status_bar_carrier_title">運營商名稱</string>
+    <string name="show_status_bar_carrier_summary">在狀態欄顯示運營商名稱</string>
+    <string name="custom_carrier_label_title">自定義運營商名稱</string>
+    <string name="custom_carrier_label_explain">請輸入新的運營商名稱，留空為恢復默認運營商名稱。</string>
+    <string name="custom_carrier_label_notset">當前沒有設置運營商名稱</string>
+
+    <!-- show network speed -->
+    <string name="show_network_speed_title">狀態欄網速</string>
+    <string name="show_network_speed_summary">在狀態欄顯示當前網速</string>
+    <string name="status_bar_traffic_style_hidden">隱藏</string>
+    <string name="status_bar_traffic_style_rx">僅顯示下載速度</string>
+    <string name="status_bar_traffic_style_rxtx">顯示上傳和下載速度</string>
+
+    <!-- Screen recorder -->
+    <string name="power_menu_screenrecord_title">螢幕錄像</string>
+    <string name="screen_recorder_title">螢幕錄像</string>
+    <string name="screen_recorder_summary">調整螢幕錄像設置</string>
+    <string name="screen_recorder_video_dimensions_title">影片大小</string>
+    <string name="screen_recorder_video_bitrate_title">比特率</string>
+    <string name="screen_recorder_record_audio_title">錄製音頻</string>
+    <string name="screen_recorder_record_audio_summary">從麥克風錄製音頻</string>
+
+    <!-- Special Features Category-->
+    <string name="special_features_category">快捷控制</string>
+
+    <!-- Halo -->
+    <string name="halo_title">HALO</string>
+    <string name="halo_behavior_title">HALO行為</string>
+    <string name="app_halo_label_black">HALO黑名單</string>
+    <string name="app_halo_label_white">HALO白名單</string>
+    <string name="halo_enabled_title">啟用HALO</string>
+    <string name="halo_enabled_summary">啟用HALO懸浮窗口(最近的應用程序將不會受到影響)</string>
+    <string name="halo_hide_title">活動後隱藏HALO</string>
+    <string name="halo_hide_summary">HALO將出現傳入的任務和滾動出視線一段時間後</string>
+    <string name="halo_reversed_title">交換HALO</string>
+    <string name="halo_reversed_summary">交換任務切換和移動的觸發手勢</string>
+    <string name="halo_state_title">HALO策略</string>
+    <string name="halo_state_summary">啟用黑/白名單列表通知</string>
+    <string name="halo_state_black">黑名單</string>
+    <string name="halo_state_white">白名單</string>
+    <string name="halo_pause_title">暫停活動應用</string>
+    <string name="halo_pause_summary">當通過HALO打開一個應用時，相關應用將處於暫停狀態。</string>
+    <string name="halo_ninja_title">隱身模式</string>
+    <string name="halo_ninja_summary">當沒有任務時HALO將完全消失</string>
+    <string name="halo_notification_msgbox_title">啟用消息彈出窗口</string>
+    <string name="halo_notification_msgbox_summary">有新通知時顯示消息彈出窗口</string>
+    <string name="halo_unlock_ping_title">ping解鎖</string>
+    <string name="halo_unlock_ping_summary">如果收到新的通知，設備將解鎖HALO</string>
+    <string name="halo_size_title">HALO大小</string>
+    <string name="halo_size_summary">設置HALO的顯示大小</string>
+    <string name="halo_size_miniscule">迷你</string>
+    <string name="halo_size_small">小</string>
+    <string name="halo_size_default">正常 (默認)</string>
+    <string name="halo_size_large">大</string>
+    <string name="halo_size_gigantic">巨大</string>
+    <string name="halo_size_monster">龐大</string>
+    <string name="halo_notification_count_title">消息數量</string>
+    <string name="halo_notification_count_summary">在HALO上顯示消息數量</string>
+    <string name="halo_notification_count_none">無</string>
+    <string name="halo_notification_count_total">總數</string>
+    <string name="halo_notification_count_individual">每個應用程序</string>
+    <string name="halo_notification_count_both">兩者都顯示</string>
+    <string name="halo_msgbox_animation_title">消息框動畫</string>
+    <string name="halo_msgbox_animation_summary">新通知HALO消息框動畫</string>
+    <string name="halo_msgbox_animation_none">無</string>
+    <string name="halo_msgbox_animation_flip">翻轉</string>
+
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">上午/下午樣式</string>
+
+    <!-- Sound settings screen, setting check box label -->
+    <string name="camera_shutter_sound_title">相機快門聲</string>
+    <string name="camera_shutter_sound_summary">警告: 禁用相機快門聲在部分國家屬於非法行為！</string>
+
+    <!-- Powersaver settings -->
+    <string name="power_saver_settings_title">省電模式</string>
+    <string name="power_saver_settings_summary">延長待機時間</string>
+    <string name="power_saver_toggles_mobile_title">行動網絡</string>
+    <string name="power_saver_toggles_location_title">位置</string>
+    <string name="power_saver_toggles_performance_title">性能</string>
+    <string name="power_saver_toggles_gps_title">定位服務</string>
+    <string name="power_saver_toggles_gps_summary">螢幕關閉後將禁用GPS定位服務</string>
+    <string name="power_saver_toggles_mobile_data_title">行動網路</string>
+    <string name="power_saver_toggles_mobile_data_summary">螢幕關閉後將禁用行動網路</string>
+    <string name="power_saver_toggles_cpu_title">處理器性能</string>
+    <string name="power_saver_toggles_cpu_summary">螢幕關閉後將切換到節能模式</string>
+
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">螢幕關閉動畫</string>
+    <string name="screen_off_animation_fadeout">漸隱</string>
+    <string name="screen_off_animation_electronbeam">電子束</string>
+    <string name="screen_off_animation_scaledown">縮放</string>
+    <string name="screen_off_animation_turnoff">關閉</string>
+
+    <!-- Force show navigation bar -->
+    <string name="force_show_navigation_bar_title">顯示虛擬導航欄</string>
+    <string name="force_show_navigation_bar_summary">強制顯示虛擬導航欄（需要重啟）</string>
+
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">所有號碼</string>
+    <string name="blacklist_all_numbers_summary">阻止所有人的來電</string>
+
+</resources>
