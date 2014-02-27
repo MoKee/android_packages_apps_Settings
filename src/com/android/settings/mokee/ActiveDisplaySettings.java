@@ -33,6 +33,7 @@ import android.text.format.DateFormat;
 import android.text.TextUtils;
 import com.android.settings.R;
 import com.android.settings.widget.AppMultiSelectListPreference;
+import com.android.settings.widget.SeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.util.cm.QSUtils;
@@ -147,7 +148,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
 
         mSunlightModePref = (CheckBoxPreference) prefSet.findPreference(KEY_SUNLIGHT_MODE);
 
-        if (!DeviceUtils.deviceSupportsLightSensor(mContext)) {
+        if (!QSUtils.deviceSupportsLightSensor(mContext)) {
             prefSet.removePreference(mSunlightModePref);
         } else {
             mSunlightModePref.setChecked((Settings.System.getInt(mResolver,

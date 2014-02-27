@@ -143,13 +143,13 @@
             android:entryValues="@array/ad_timeout_values"
             android:dependency="ad_enable" />
 
-        <SeekBarPreference
+        <com.android.settings.widget.SeekBarPreference
             android:key="ad_brightness"
             android:persistent="false"
             android:title="@string/ad_brightness_title"
             android:summary="@string/ad_brightness_summary"
-            android:max="100"
-            android:defaultValue="100"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
             android:dependency="ad_enable" />
 
 </PreferenceScreen>
