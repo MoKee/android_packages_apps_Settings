@@ -25,8 +25,8 @@
     <string name="ad_bypass_summary">不存在通知时，将显示锁屏界面</string>
     <string name="ad_text_title">通知内容</string>
     <string name="ad_text_summary">环绕显示通知内容</string>
-    <string name="ad_content_title">使用自定义视图</string>
-    <string name="ad_content_summary">使用Active显示样式用于显示通知的详细信息，而不是系统的风格。</string>
+    <string name="ad_content_title">使用自定义样式</string>
+    <string name="ad_content_summary">使用自定义显示样式用于显示通知的详细信息，而不是系统的风格。</string>
     <string name="ad_all_notifications_title">所有通知</string>
     <string name="ad_all_notifications_summary">显示所有通知，包括正在运行、不可清除的通知。</string>
     <string name="ad_hide_low_priority_title">低优先级隐藏</string>
