@@ -50,6 +50,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
+    private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
@@ -103,6 +104,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 (CheckBoxPreference) findPreference(KEY_FORCE_SHOW_NAVIGATION_BAR);
         mForceShowNavigationBarPref.setOnPreferenceChangeListener(this);
 
+        PreferenceCategory expandedCategory =
+                (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
+
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref =
@@ -125,7 +129,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
                 updateExpandedDesktop(expandedDesktopValue);
-                prefScreen.removePreference(mExpandedDesktopNoNavbarPref);
+                expandedCategory.removePreference(mExpandedDesktopNoNavbarPref);
                 if (mHasNavigationBar) {
                     mCategoryNavbar.removePreference(mForceShowNavigationBarPref);
                 }
@@ -138,7 +142,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 // Hide no-op "Status bar visible" expanded desktop mode
                 mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
-                prefScreen.removePreference(mExpandedDesktopPref);
+                expandedCategory.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
                 mCategoryNavbar.removeAll();
                 mCategoryNavbar.addPreference(mForceShowNavigationBarPref);
