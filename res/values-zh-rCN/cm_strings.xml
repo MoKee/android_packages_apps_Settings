@@ -416,6 +416,7 @@
     <string name="storage_rescan_media">重新扫描储存器媒体</string>
     <string name="storage_rescan_media_complete">扫描完成</string>
     <string name="whisperpush_title">私密推送</string>
+    <string name="whisperpush_summary">管理安全短信设置</string>
     <string name="whisperpush_registration_title">注册</string>
     <string name="whisperpush_registration_summary">通过注册私密推送来启用加密短信</string>
     <string name="whisperpush_identitykey_title">检视身份密钥</string>
