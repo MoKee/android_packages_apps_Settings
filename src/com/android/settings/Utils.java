@@ -535,6 +535,27 @@ public class Utils {
         return new File(filename).exists();
     }
 
+    public static boolean cpuCoreDirExists(String filedir) {
+        File cpuCoreDir = new File(filedir);
+        File[] cpuCoreFiles = cpuCoreDir.listFiles(new FilenameFilter() {
+
+            @Override
+            public boolean accept(File file, String filename) {
+                boolean isNum = filename.substring(filename.length() - 1, filename.length()).matches("\\d");
+                if (filename.contains("cpu") && file.isDirectory() && isNum) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+        if (cpuCoreFiles != null && cpuCoreFiles.length != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public static String fileReadOneLine(String fname) {
         BufferedReader br;
         String line = null;

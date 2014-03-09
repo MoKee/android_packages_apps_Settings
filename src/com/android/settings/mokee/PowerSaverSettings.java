@@ -40,11 +40,16 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "PowerSaverSettings";
     private static final String KEY_TOGGLES_CPU_GOVERNOR = "power_saver_toggles_cpu_governor";
+    private static final String KEY_TOGGLES_CPU_CORE = "power_saver_toggles_cpu_core";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
+
+    private static final String CPU_CORE_DIR = "/sys/devices/system/cpu";
+
     private ContentResolver resolver;
     private Switch mEnabledSwitch;
     private CheckBoxPreference mTogglesCPUGovernor;
+    private CheckBoxPreference mTogglesCPUCore;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
     private PreferenceScreen prefSet;
@@ -85,6 +90,15 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
             mTogglesCPUGovernor.setChecked(Settings.System.getInt(resolver,
                     Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0);
         }
+
+        mTogglesCPUCore = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_CORE);
+        if (!Utils.cpuCoreDirExists(CPU_CORE_DIR)) {
+            prefSet.removePreference(mTogglesCPUCore);
+        } else {
+            mTogglesCPUCore.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.POWER_SAVER_CPU_CORE, 0) != 0);
+        }
+
         mTogglesMobileData = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_MOBILE_DATA);
         mTogglesMobileData.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_MOBILE_DATA, 0) != 0);
@@ -115,6 +129,9 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         if (preference == mTogglesCPUGovernor) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR,
                     mTogglesCPUGovernor.isChecked() ? 1 : 0);
+        } else if (preference == mTogglesCPUCore) {
+            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_CORE,
+                    mTogglesCPUCore.isChecked() ? 1 : 0);
         } else if (preference == mTogglesMobileData) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_MOBILE_DATA,
                     mTogglesMobileData.isChecked() ? 1 : 0);

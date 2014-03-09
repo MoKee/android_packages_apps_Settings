@@ -26,6 +26,12 @@
             android:summary="@string/power_saver_toggles_cpu_governor_summary"
             android:defaultValue="true" />
 
+        <CheckBoxPreference
+            android:key="power_saver_toggles_cpu_core"
+            android:title="@string/power_saver_toggles_cpu_core_title"
+            android:summary="@string/power_saver_toggles_cpu_core_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
