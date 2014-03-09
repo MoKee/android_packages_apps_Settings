@@ -39,12 +39,12 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "PowerSaverSettings";
-    private static final String KEY_TOGGLES_CPU = "power_saver_toggles_cpu";
+    private static final String KEY_TOGGLES_CPU_GOVERNOR = "power_saver_toggles_cpu_governor";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
     private ContentResolver resolver;
     private Switch mEnabledSwitch;
-    private CheckBoxPreference mTogglesCPU;
+    private CheckBoxPreference mTogglesCPUGovernor;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
     private PreferenceScreen prefSet;
@@ -73,17 +73,17 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mEnabledSwitch.setOnCheckedChangeListener(this);
 
         prefSet = getPreferenceScreen();
-        mTogglesCPU = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU);
+        mTogglesCPUGovernor = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_GOVERNOR);
         /*
          * Governor Some systems might not use governors
          */
         if (!Utils.fileExists(Processor.GOV_LIST_FILE) || !Utils.fileExists(Processor.GOV_FILE)
                 || Utils.fileReadOneLine(Processor.GOV_FILE) == null
                 || Utils.fileReadOneLine(Processor.GOV_LIST_FILE) == null) {
-            prefSet.removePreference(mTogglesCPU);
+            prefSet.removePreference(mTogglesCPUGovernor);
         } else {
-            mTogglesCPU.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.POWER_SAVER_CPU, 1) != 0);
+            mTogglesCPUGovernor.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0);
         }
         mTogglesMobileData = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_MOBILE_DATA);
         mTogglesMobileData.setChecked(Settings.System.getInt(resolver,
@@ -112,9 +112,9 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mTogglesCPU) {
-            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU,
-                    mTogglesCPU.isChecked() ? 1 : 0);
+        if (preference == mTogglesCPUGovernor) {
+            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR,
+                    mTogglesCPUGovernor.isChecked() ? 1 : 0);
         } else if (preference == mTogglesMobileData) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_MOBILE_DATA,
                     mTogglesMobileData.isChecked() ? 1 : 0);

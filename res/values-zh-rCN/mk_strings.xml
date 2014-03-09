@@ -222,8 +222,8 @@
     <string name="power_saver_toggles_gps_summary">屏幕关闭后将禁用GPS定位服务</string>
     <string name="power_saver_toggles_mobile_data_title">数据连接</string>
     <string name="power_saver_toggles_mobile_data_summary">屏幕关闭后将禁用数据连接</string>
-    <string name="power_saver_toggles_cpu_title">处理器性能</string>
-    <string name="power_saver_toggles_cpu_summary">屏幕关闭后将切换到节能模式</string>
+    <string name="power_saver_toggles_cpu_governor_title">待机节能</string>
+    <string name="power_saver_toggles_cpu_governor_summary">屏幕关闭后将切换到节能模式</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">屏幕关闭动画</string>

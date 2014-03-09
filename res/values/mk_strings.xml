@@ -255,8 +255,8 @@
     <string name="power_saver_toggles_gps_summary">GPS based location service will be disabled on screen off</string>
     <string name="power_saver_toggles_mobile_data_title">Disable mobile data</string>
     <string name="power_saver_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
-    <string name="power_saver_toggles_cpu_title">CPU power</string>
-    <string name="power_saver_toggles_cpu_summary">Conserve CPU usage on screen off</string>
+    <string name="power_saver_toggles_cpu_governor_title">sleep powersave</string>
+    <string name="power_saver_toggles_cpu_governor_summary">Conserve CPU usage on screen off</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Screen-off animation</string>

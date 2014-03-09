@@ -209,8 +209,8 @@
     <string name="power_saver_toggles_gps_summary">螢幕關閉後將禁用GPS定位服務</string>
     <string name="power_saver_toggles_mobile_data_title">行動網路</string>
     <string name="power_saver_toggles_mobile_data_summary">螢幕關閉後將禁用行動網路</string>
-    <string name="power_saver_toggles_cpu_title">處理器性能</string>
-    <string name="power_saver_toggles_cpu_summary">螢幕關閉後將切換到節能模式</string>
+    <string name="power_saver_toggles_cpu_governor_title">待機節能</string>
+    <string name="power_saver_toggles_cpu_governor_summary">螢幕關閉後將切換到節能模式</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">螢幕關閉動畫</string>
