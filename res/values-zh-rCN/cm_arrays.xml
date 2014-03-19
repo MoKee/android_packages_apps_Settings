@@ -156,4 +156,10 @@
         <item>设备</item>
         <item>@string/app_ops_categories_bootup</item>
     </string-array>
+
+    <string-array name="app_ops_permissions">
+        <item>已允许</item>
+        <item>已禁止</item>
+        <item>总是询问</item>
+    </string-array>
 </resources>
