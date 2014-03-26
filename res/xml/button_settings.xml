@@ -28,6 +28,12 @@
         android:summary="@string/disable_navkeys_summary"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="force_show_navigation_bar"
+        android:title="@string/force_show_navigation_bar_title"
+        android:summary="@string/force_show_navigation_bar_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.cyanogenmod.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
