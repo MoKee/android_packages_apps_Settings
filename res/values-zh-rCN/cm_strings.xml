@@ -671,4 +671,15 @@
     <string name="app_ops_reset_counters">重置 允许/拒绝 计数器</string>
     <string name="app_ops_reset_confirm_title">确认计数器重置</string>
     <string name="app_ops_reset_confirm_mesg">你确定希望重置 AppOps 计数器？</string>
+    <string name="edge_gesture_service_title">手势触摸事件</string>
+    <string name="edge_gesture_service_summary">不要向应用发送导航栏和状态栏的手势触摸事件</string>
+    <string name="data_usage_cycle_editor_subtitle_cm">每个周期的日期:</string>
+    <string name="data_usage_lengths_spinner_subtitle">周期长度:</string>
+    <string name="disable_navkeys_title">启用屏幕上的导航栏</string>
+    <string name="disable_navkeys_summary">启用虚拟导航栏并禁用硬件按钮</string>
+    <string name="accessibility_sync_in_progress">正在进行同步</string>
+    <string name="wifi_mode">模式</string>
+    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) 网络</string>
+    <string name="wifi_ibss_freq_title">频道 / 频率</string>
+    <string name="wifi_channel">频道</string>
 </resources>
