@@ -103,11 +103,6 @@
         android:title="@string/special_features_category" >
 
         <PreferenceScreen
-            android:fragment="com.android.settings.mokee.Halo"
-            android:key="halo_settings"
-            android:title="@string/halo_title" />
-
-        <PreferenceScreen
             android:key="active_display"
             android:fragment="com.android.settings.mokee.ActiveDisplaySettings"
             android:title="@string/active_display_title" />
