@@ -229,4 +229,8 @@
     <string name="blacklist_all_numbers_title">All numbers</string>
     <string name="blacklist_all_numbers_summary">Block all calls</string>
 
+    <!-- Shortcuts List -->
+    <string name="shortcut_bar_title">Shortcut Bar</string>
+    <string name="shortcut_bar_clear_title">Clear</string>
+
 </resources>
