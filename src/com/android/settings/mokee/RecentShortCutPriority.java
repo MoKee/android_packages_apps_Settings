@@ -21,6 +21,7 @@ import java.util.List;
 
 import android.app.ListFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -58,6 +59,9 @@ public class RecentShortCutPriority extends ListFragment {
                     Settings.System.putStringForUser(mContext.getContentResolver(),
                             Settings.System.SHORTCUT_ITEMS, shortcutItemString,
                             UserHandle.USER_CURRENT);
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_SHORTCUT_ITEMS_CHANGED);
+                    mContext.sendBroadcast(intent);
                     mAdapter.notifyDataSetChanged();
                 }
             };
@@ -106,11 +110,13 @@ public class RecentShortCutPriority extends ListFragment {
             if (mItems == null) {
                 mItems = new ArrayList<String>();
             }
+            String excluded = Settings.System.getString(mContext.getContentResolver(),
+                    Settings.System.SHORTCUT_ITEMS_EXCLUDED_APPS);
             mDeleteItems = "";
             for (String item : mShortcutItems) {
                 String packageName = item.split("\\|")[0];
                 if (packageName.equals("clear")
-                        || MoKeeUtils.isApkInstalledAndEnabled(packageName, mContext)) {
+                        || MoKeeUtils.isApkInstalledAndEnabled(packageName, mContext) && !excluded.contains(packageName)) {
                     mItems.add(item);
                 } else {
                     mDeleteItems = mDeleteItems + item + ",";
@@ -164,16 +170,17 @@ public class RecentShortCutPriority extends ListFragment {
                 }
                 name.setText(pm.getApplicationLabel(mApplicationInfo).toString());
             } else {
-                name.setText(R.string.shortcut_bar_clear_title);
+                name.setText(R.string.recent_shortcut_clear_title);
             }
-            if (pm != null ) {
+            if (pm != null) {
                 try {
                     mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
                 } catch (NameNotFoundException e) {
                 }
             }
             if (mSystemUiResources != null) {
-                String [] resPathArray = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_drawables_in_systemui);
+                String[] resPathArray = mContext.getResources().getStringArray(
+                        com.mokee.internal.R.array.shortcut_list_drawables_in_systemui);
                 String resPath = "";
                 for (String resPathStr : resPathArray) {
                     String[] resItem = resPathStr.split("\\|");
@@ -185,6 +192,7 @@ public class RecentShortCutPriority extends ListFragment {
                 Drawable d = mSystemUiResources.getDrawable(resId);
                 icon.setImageDrawable(d);
             }
+
             return v;
         }
     }
