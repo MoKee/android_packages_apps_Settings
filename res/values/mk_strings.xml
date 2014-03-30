@@ -230,7 +230,11 @@
     <string name="blacklist_all_numbers_summary">Block all calls</string>
 
     <!-- Shortcuts List -->
-    <string name="shortcut_bar_title">Shortcut Bar</string>
-    <string name="shortcut_bar_clear_title">Clear</string>
+    <string name="recent_shortcut_title">Shortcut Bar</string>
+    <string name="recent_shortcut_clear_title">Clear</string>
+    <string name="recent_shortcut_priority_title">快捷任务栏排列</string>
+    <string name="recent_shortcut_priority_summary">调整快捷任务栏的应用显示顺序</string>
+    <string name="recent_shortcut_excluded_apps_title">例外应用程序</string>
+    <string name="recent_shortcut_excluded_apps_summary">不显示指定的应用在快捷任务栏</string>
 
 </resources>

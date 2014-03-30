@@ -108,9 +108,9 @@
             android:title="@string/active_display_title" />
 
         <PreferenceScreen
-            android:key="shortcut_bar"
-            android:fragment="com.android.settings.mokee.RecentShortCutPriority"
-            android:title="@string/shortcut_bar_title" />
+            android:key="recent_shortcut"
+            android:fragment="com.android.settings.mokee.RecentShortCutSettings"
+            android:title="@string/recent_shortcut_title" />
 
     </PreferenceCategory>
 

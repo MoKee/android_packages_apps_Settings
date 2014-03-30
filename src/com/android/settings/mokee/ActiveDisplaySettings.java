@@ -16,7 +16,6 @@
 
 package com.android.settings.mokee;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
@@ -28,8 +27,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
-import android.text.format.DateFormat;
 import android.text.TextUtils;
 import com.android.settings.R;
 import com.android.settings.widget.AppMultiSelectListPreference;
@@ -41,8 +38,6 @@ import com.android.internal.util.cm.QSUtils;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import android.util.Log;
 
 public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -312,7 +307,4 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
                 Settings.System.ACTIVE_DISPLAY_PRIVACY_APPS, builder.toString());
     }
 
-    private boolean is24Hour() {
-        return DateFormat.is24HourFormat(mContext);
-    }
 }
