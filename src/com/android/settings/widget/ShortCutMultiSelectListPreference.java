@@ -72,8 +72,7 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
         mContext = context;
         String[] mShortcutItems = Settings.System.getString(context.getContentResolver(),
                 Settings.System.SHORTCUT_ITEMS).split(",");
-        for (String item : mShortcutItems) {
-            String packageName = item.split("\\|")[0];
+        for (String packageName : mShortcutItems) {
             if (!packageName.equals("clear")
                     && MoKeeUtils.isApkInstalledAndEnabled(packageName, context)) {
                 pm = context.getPackageManager();

@@ -113,13 +113,12 @@ public class RecentShortCutPriority extends ListFragment {
             String excluded = Settings.System.getString(mContext.getContentResolver(),
                     Settings.System.SHORTCUT_ITEMS_EXCLUDED_APPS);
             mDeleteItems = "";
-            for (String item : mShortcutItems) {
-                String packageName = item.split("\\|")[0];
+            for (String packageName : mShortcutItems) {
                 if (packageName.equals("clear")
                         || MoKeeUtils.isApkInstalledAndEnabled(packageName, mContext) && !excluded.contains(packageName)) {
-                    mItems.add(item);
+                    mItems.add(packageName);
                 } else {
-                    mDeleteItems = mDeleteItems + item + ",";
+                    mDeleteItems = mDeleteItems + packageName + ",";
                 }
             }
             mDeleteItems = mDeleteItems.substring(0, mDeleteItems.length() - 1);
@@ -156,8 +155,7 @@ public class RecentShortCutPriority extends ListFragment {
             } else {
                 v = convertView;
             }
-            String[] item = ((String) getItem(position)).split("\\|");
-            String packageName = item[0];
+            String packageName = ((String) getItem(position));
             final ImageView icon = (ImageView) v.findViewById(R.id.icon);
             final TextView name = (TextView) v.findViewById(R.id.name);
             PackageManager pm = mContext.getPackageManager();
