@@ -22,9 +22,7 @@ import java.util.Set;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -82,9 +80,6 @@ public class RecentShortCutSettings extends SettingsPreferenceFragment implement
         }
         Settings.System.putString(mResolver,
                 Settings.System.SHORTCUT_ITEMS_EXCLUDED_APPS, builder.toString());
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_SHORTCUT_ITEMS_CHANGED);
-        mContext.sendBroadcastAsUser(intent, UserHandle.ALL);
     }
 
     @Override

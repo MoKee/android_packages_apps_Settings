@@ -33,6 +33,7 @@ import android.mokee.util.MoKeeUtils;
 import android.os.Bundle;
 import android.preference.DialogPreference;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,9 +71,14 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
     public ShortCutMultiSelectListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
-        String[] mShortcutItems = Settings.System.getString(context.getContentResolver(),
-                Settings.System.SHORTCUT_ITEMS).split(",");
-        for (String packageName : mShortcutItems) {
+        String shortcutItemString = Settings.System.getString(context.getContentResolver(), Settings.System.SHORTCUT_ITEMS);
+        String [] mShortcutListItems = null;
+        if (TextUtils.isEmpty(shortcutItemString)) {
+            mShortcutListItems = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_items);
+        } else {
+            mShortcutListItems = shortcutItemString.split(",");
+        }
+        for (String packageName : mShortcutListItems) {
             if (!packageName.equals("clear")
                     && MoKeeUtils.isApkInstalledAndEnabled(packageName, context)) {
                 pm = context.getPackageManager();

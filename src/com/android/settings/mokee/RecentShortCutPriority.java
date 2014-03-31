@@ -21,7 +21,6 @@ import java.util.List;
 
 import android.app.ListFragment;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -29,8 +28,8 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.mokee.util.MoKeeUtils;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,12 +55,8 @@ public class RecentShortCutPriority extends ListFragment {
                         shortcutItemString = shortcutItemString + itemString + ",";
                     }
                     shortcutItemString = shortcutItemString.substring(0, shortcutItemString.length() - 1) + "," + mAdapter.getDeleteItems();
-                    Settings.System.putStringForUser(mContext.getContentResolver(),
-                            Settings.System.SHORTCUT_ITEMS, shortcutItemString,
-                            UserHandle.USER_CURRENT);
-                    Intent intent = new Intent();
-                    intent.setAction(Intent.ACTION_SHORTCUT_ITEMS_CHANGED);
-                    mContext.sendBroadcastAsUser(intent, UserHandle.ALL);
+                    Settings.System.putString(mContext.getContentResolver(),
+                            Settings.System.SHORTCUT_ITEMS, shortcutItemString);
                     mAdapter.notifyDataSetChanged();
                 }
             };
@@ -100,8 +95,12 @@ public class RecentShortCutPriority extends ListFragment {
         private String mDeleteItems;
 
         public RecentShortCutPriorityAdapter(Context ctx) {
-            mShortcutItems = Settings.System.getString(mContext.getContentResolver(),
-                    Settings.System.SHORTCUT_ITEMS).split(",");
+            String shortcutItemString = Settings.System.getString(ctx.getContentResolver(), Settings.System.SHORTCUT_ITEMS);
+            if (TextUtils.isEmpty(shortcutItemString)) {
+                mShortcutItems = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_items);
+            } else {
+                mShortcutItems = shortcutItemString.split(",");
+            }
             mInflater = LayoutInflater.from(ctx);
             reloadShortCutItems();
         }
@@ -112,6 +111,7 @@ public class RecentShortCutPriority extends ListFragment {
             }
             String excluded = Settings.System.getString(mContext.getContentResolver(),
                     Settings.System.SHORTCUT_ITEMS_EXCLUDED_APPS);
+            excluded = TextUtils.isEmpty(excluded) ? "none excluded apps" : excluded;
             mDeleteItems = "";
             for (String packageName : mShortcutItems) {
                 if (packageName.equals("clear")
