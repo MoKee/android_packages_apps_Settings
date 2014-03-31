@@ -237,4 +237,7 @@
     <string name="recent_shortcut_excluded_apps_title">Hide apps</string>
     <string name="recent_shortcut_excluded_apps_summary">Hide apps from recent apps shortcuts</string>
 
+    <!-- Stay awake -->
+    <string name="screen_timeout_awake_summary">Never sleep</string>
+
 </resources>
