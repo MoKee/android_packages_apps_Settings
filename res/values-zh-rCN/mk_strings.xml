@@ -204,4 +204,7 @@
     <string name="recent_shortcut_excluded_apps_title">例外应用程序</string>
     <string name="recent_shortcut_excluded_apps_summary">不显示指定的应用在快捷任务栏</string>
 
+    <!-- Stay awake -->
+    <string name="screen_timeout_awake_summary">从不休眠</string>
+
 </resources>
