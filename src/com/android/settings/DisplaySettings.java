@@ -283,6 +283,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (currentTimeout < 0) {
             // Unsupported value
             summary = "";
+        } else if (currentTimeout == SCREEN_TIMEOUT_AWAKE) {
+            summary = getString(R.string.screen_timeout_awake_summary);
         } else {
             final CharSequence[] entries = preference.getEntries();
             final CharSequence[] values = preference.getEntryValues();
