@@ -37,8 +37,8 @@
         <item>启用</item>
     </string-array>
     <string-array name="entries_screentimeout_widget">
-        <item>15 秒 | 1 分钟 | 5 分钟</item>
-        <item>30 秒 | 2 分钟 | 5 分钟</item>
+        <item>15 秒 | 1 分钟 | 5 分钟 | 保持唤醒</item>
+        <item>30 秒 | 2 分钟 | 5 分钟 | 保持唤醒</item>
     </string-array>
     <string-array name="app_ops_summaries_cm">
         <item>粗略定位</item>
