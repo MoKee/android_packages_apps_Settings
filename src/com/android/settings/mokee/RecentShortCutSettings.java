@@ -33,7 +33,6 @@ import android.text.TextUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.widget.AppMultiSelectListPreference;
 import com.android.settings.widget.ShortCutMultiSelectListPreference;
 
 public class RecentShortCutSettings extends SettingsPreferenceFragment implements

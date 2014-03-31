@@ -93,7 +93,6 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
             entries.add(info.label);
             entryValues.add(info.info.packageName);
         }
-        MyApplicationInfo info = new MyApplicationInfo();
         mEntries = new CharSequence[entries.size()];
         mEntryValues = new CharSequence[entries.size()];
         entries.toArray(mEntries);

@@ -170,11 +170,9 @@ public class RecentShortCutPriority extends ListFragment {
             } else {
                 name.setText(R.string.recent_shortcut_clear_title);
             }
-            if (pm != null) {
-                try {
-                    mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
-                } catch (NameNotFoundException e) {
-                }
+            try {
+                mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
+            } catch (NameNotFoundException e) {
             }
             if (mSystemUiResources != null) {
                 String[] resPathArray = mContext.getResources().getStringArray(
