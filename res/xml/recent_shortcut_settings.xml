@@ -17,15 +17,23 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/recent_shortcut_title" >
 
-        <PreferenceScreen
-            android:key="recent_shortcut_priority"
-            android:fragment="com.android.settings.mokee.RecentShortCutPriority"
-            android:title="@string/recent_shortcut_priority_title"
-            android:summary="@string/recent_shortcut_priority_summary" />
+    <ListPreference
+        android:dialogTitle="@string/recent_shortcut_gravity_title"
+        android:entries="@array/recent_shortcut_gravity_entries"
+        android:entryValues="@array/recent_shortcut_gravity_values"
+        android:key="recent_shortcut_gravity"
+        android:title="@string/recent_shortcut_gravity_title"
+        android:summary="@string/recent_shortcut_gravity_summary" />
 
-        <com.android.settings.widget.ShortCutMultiSelectListPreference
-            android:key="recent_shortcut_excluded_apps"
-            android:title="@string/recent_shortcut_excluded_apps_title"
-            android:summary="@string/recent_shortcut_excluded_apps_summary" />
+    <PreferenceScreen
+        android:fragment="com.android.settings.mokee.RecentShortCutPriority"
+        android:key="recent_shortcut_priority"
+        android:summary="@string/recent_shortcut_priority_summary"
+        android:title="@string/recent_shortcut_priority_title" />
+
+    <com.android.settings.widget.ShortCutMultiSelectListPreference
+        android:key="recent_shortcut_excluded_apps"
+        android:summary="@string/recent_shortcut_excluded_apps_summary"
+        android:title="@string/recent_shortcut_excluded_apps_title" />
 
 </PreferenceScreen>

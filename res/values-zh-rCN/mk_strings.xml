@@ -199,6 +199,12 @@
     <!-- Shortcuts List -->
     <string name="recent_shortcut_title">快捷任务栏</string>
     <string name="recent_shortcut_clear_title">清除任务</string>
+    <string name="recent_shortcut_gravity_title">快捷任务栏位置</string>
+    <string name="recent_shortcut_gravity_summary">调整快捷任务栏在屏幕上的显示顺序</string>
+    <string name="recent_shortcut_gravity_right_top">屏幕右上方</string>
+    <string name="recent_shortcut_gravity_right_bottom">屏幕右下方</string>
+    <string name="recent_shortcut_gravity_left_top">屏幕左上方</string>
+    <string name="recent_shortcut_gravity_left_bottom">屏幕左上方</string>
     <string name="recent_shortcut_priority_title">快捷任务栏排列</string>
     <string name="recent_shortcut_priority_summary">调整快捷任务栏的应用显示顺序</string>
     <string name="recent_shortcut_excluded_apps_title">例外应用程序</string>

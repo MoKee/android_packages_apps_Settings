@@ -23,6 +23,7 @@ import java.util.Set;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -36,11 +37,13 @@ import com.android.settings.widget.ShortCutMultiSelectListPreference;
 public class RecentShortCutSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String KEY_GRAVITY = "recent_shortcut_gravity";
     private static final String KEY_EXCLUDED_APPS = "recent_shortcut_excluded_apps";
 
     private ContentResolver mResolver;
     private Context mContext;
 
+    private ListPreference mGravityPref;
     private ShortCutMultiSelectListPreference mExcludedAppsPref;
 
     @Override
@@ -51,6 +54,12 @@ public class RecentShortCutSettings extends SettingsPreferenceFragment implement
         mContext = getActivity().getApplicationContext();
         mResolver = mContext.getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mGravityPref = (ListPreference) prefSet.findPreference(KEY_GRAVITY);
+        int layoutGravity = Settings.System.getInt(mResolver, Settings.System.SHORTCUT_ITEMS_GRAVITY, 0);
+        mGravityPref.setValue(String.valueOf(layoutGravity));
+        mGravityPref.setSummary(mGravityPref.getEntry());
+        mGravityPref.setOnPreferenceChangeListener(this);
 
         mExcludedAppsPref = (ShortCutMultiSelectListPreference) prefSet
                 .findPreference(KEY_EXCLUDED_APPS);
@@ -84,7 +93,13 @@ public class RecentShortCutSettings extends SettingsPreferenceFragment implement
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mExcludedAppsPref) {
+        if (preference == mGravityPref) {
+            int val = Integer.parseInt((String) newValue);
+            Settings.System.putInt(mResolver,
+                    Settings.System.SHORTCUT_ITEMS_GRAVITY, val);
+            mGravityPref.setSummary(mGravityPref.getEntries()[val]);
+            return true;
+        } else if (preference == mExcludedAppsPref) {
             storeExcludedApps((Set<String>) newValue);
             return true;
         }
