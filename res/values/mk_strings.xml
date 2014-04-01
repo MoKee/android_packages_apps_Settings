@@ -233,7 +233,7 @@
     <string name="recent_shortcut_title">Shortcut Bar</string>
     <string name="recent_shortcut_clear_title">Clear</string>
     <string name="recent_shortcut_gravity_title">Shortcut bar gravity</string>
-    <string name="recent_shortcut_gravity_summary">Customize shortcut bar gravity</string>
+    <string name="recent_shortcut_gravity_summary">Customize shortcut bar gravity in portrait mode</string>
     <string name="recent_shortcut_gravity_right_top">屏幕右上方</string>
     <string name="recent_shortcut_gravity_right_bottom">屏幕右下方</string>
     <string name="recent_shortcut_gravity_left_top">屏幕左上方</string>
