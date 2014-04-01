@@ -165,6 +165,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(mDisableNavigationKeys);
         }
 
+        boolean mHasNavigationBar = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
+        if (mHasNavigationBar) {
+            prefScreen.removePreference(mForceShowNavigationBarPref);
+        }
 
         if (hasHomeKey) {
             if (!res.getBoolean(R.bool.config_show_homeWake)) {
