@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT_OLD;
 import static android.provider.Settings.System.SCREEN_OFF_ANIMATION;
 
 import android.app.ActivityManagerNative;
@@ -487,6 +488,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_SCREEN_TIMEOUT.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
+                int screenTimeout = Settings.System.getIntForUser(getContentResolver(),
+                                     Settings.System.SCREEN_OFF_TIMEOUT, 0, UserHandle.USER_CURRENT);
+
+                if (screenTimeout != SCREEN_TIMEOUT_AWAKE) {
+                    Settings.System.putIntForUser(getContentResolver(), SCREEN_OFF_TIMEOUT_OLD, screenTimeout, UserHandle.USER_CURRENT);
+                }
                 Settings.System.putInt(getContentResolver(), SCREEN_OFF_TIMEOUT, value);
                 updateTimeoutPreferenceDescription(value);
             } catch (NumberFormatException e) {
