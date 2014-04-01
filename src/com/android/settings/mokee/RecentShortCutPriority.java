@@ -146,7 +146,9 @@ public class RecentShortCutPriority extends ListFragment {
                     addItemsDesc(excluded);
                     break;
             }
-            mDeleteItems = mDeleteItems.substring(0, mDeleteItems.length() - 1);
+            if (!TextUtils.isEmpty(mDeleteItems)){
+                mDeleteItems = mDeleteItems.substring(0, mDeleteItems.length() - 1);  
+            }
         }
 
         private void addItemsAsc(String excluded) {
