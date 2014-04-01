@@ -51,8 +51,16 @@ public class RecentShortCutPriority extends ListFragment {
                     String item = mItems.remove(from);
                     mItems.add(to, item);
                     String shortcutItemString = "";
-                    for (String itemString : mItems) {
-                        shortcutItemString = shortcutItemString + itemString + ",";
+                    int layoutGravity = Settings.System.getInt(mContext.getContentResolver(), Settings.System.SHORTCUT_ITEMS_GRAVITY, 0);
+                    switch (layoutGravity) {
+                        case 0:
+                        case 2:
+                            shortcutItemString = addItemsStringAsc(mItems, shortcutItemString);
+                            break;
+                        case 1:
+                        case 3:
+                            shortcutItemString = addItemsStringDesc(mItems, shortcutItemString);
+                            break;
                     }
                     shortcutItemString = shortcutItemString.substring(0, shortcutItemString.length() - 1) + "," + mAdapter.getDeleteItems();
                     Settings.System.putString(mContext.getContentResolver(),
@@ -68,6 +76,20 @@ public class RecentShortCutPriority extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.recent_shortcut_priority, null);
+    }
+
+    private String addItemsStringAsc(List<String> mItems, String shortcutItemString) {
+        for (String itemString : mItems) {
+            shortcutItemString = shortcutItemString + itemString + ",";
+        }
+        return shortcutItemString;
+    }
+
+    private String addItemsStringDesc(List<String> mItems, String shortcutItemString) {
+        for (int index = mItems.size() - 1; index >= 0; index --) {
+            shortcutItemString = shortcutItemString + mItems.get(index) + ",";
+        }
+        return shortcutItemString;
     }
 
     @Override
@@ -113,15 +135,40 @@ public class RecentShortCutPriority extends ListFragment {
                     Settings.System.SHORTCUT_ITEMS_EXCLUDED_APPS);
             excluded = TextUtils.isEmpty(excluded) ? "none excluded apps" : excluded;
             mDeleteItems = "";
-            for (String packageName : mShortcutItems) {
-                if (packageName.equals("clear")
-                        || MoKeeUtils.isApkInstalledAndEnabled(packageName, mContext) && !excluded.contains(packageName)) {
-                    mItems.add(packageName);
-                } else {
-                    mDeleteItems = mDeleteItems + packageName + ",";
-                }
+            int layoutGravity = Settings.System.getInt(mContext.getContentResolver(), Settings.System.SHORTCUT_ITEMS_GRAVITY, 0);
+            switch (layoutGravity) {
+                case 0:
+                case 2:
+                    addItemsAsc(excluded);
+                    break;
+                case 1:
+                case 3:
+                    addItemsDesc(excluded);
+                    break;
             }
             mDeleteItems = mDeleteItems.substring(0, mDeleteItems.length() - 1);
+        }
+
+        private void addItemsAsc(String excluded) {
+            for (int i = 0; i < mShortcutItems.length; i++) {
+                addItems(i, excluded);
+            }
+        }
+
+        private void addItemsDesc(String excluded) {
+            for (int i = mShortcutItems.length - 1; i >= 0; i--) {
+                addItems(i, excluded);
+            }
+        }
+
+        private void addItems(int index, String excluded) {
+            String packageName = mShortcutItems[index];
+            if (packageName.equals("clear")
+                    || MoKeeUtils.isApkInstalledAndEnabled(packageName, mContext) && !excluded.contains(packageName)) {
+                mItems.add(packageName);
+            } else {
+                mDeleteItems = mDeleteItems + packageName + ",";
+            }
         }
 
         List<String> getItems() {
@@ -188,7 +235,6 @@ public class RecentShortCutPriority extends ListFragment {
                 Drawable d = mSystemUiResources.getDrawable(resId);
                 icon.setImageDrawable(d);
             }
-
             return v;
         }
     }
