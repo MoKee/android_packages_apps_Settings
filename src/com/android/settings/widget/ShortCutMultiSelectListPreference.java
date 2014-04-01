@@ -247,7 +247,7 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
                 for (String resPathStr : resPathArray) {
                     String[] resItem = resPathStr.split("\\|");
                     if (resItem[0].equals(info.info.packageName)) {
-                        resPath = resItem[1];
+                        resPath = resItem[1] + "_normal";
                     }
                 }
                 int resId = mSystemUiResources.getIdentifier(resPath, null, null);

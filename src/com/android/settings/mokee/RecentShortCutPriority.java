@@ -181,7 +181,7 @@ public class RecentShortCutPriority extends ListFragment {
                 for (String resPathStr : resPathArray) {
                     String[] resItem = resPathStr.split("\\|");
                     if (resItem[0].equals(packageName)) {
-                        resPath = resItem[1];
+                        resPath = resItem[1] + "_normal";
                     }
                 }
                 int resId = mSystemUiResources.getIdentifier(resPath, null, null);
