@@ -637,7 +637,6 @@
   <string name="usb_mass_storage_summary">Et permet transferir qualsevol arxiu entre el teu ordenador i la targeta SD muntant-la com a dispositiu flash</string>
   <string name="storage_rescan_media">Cerca una altra vegada dispositius d\'emmagatzematge</string>
   <string name="storage_rescan_media_complete">Cerca completada</string>
-  <string name="whisperpush_title">WhisperPush</string>
   <string name="custom_runtime_warning_title">Alerta</string>
   <string name="gps_download_data_wifi_only">Descarrega dades de GPS assistides només sobre xarxes Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>

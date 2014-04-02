@@ -667,11 +667,6 @@
     <string name="remove_blacklist_entry">Вы действительно хотите удалить данный номер из чёрного списка?</string>
     <string name="select_contact">Выбор контакта</string>
 
-    <string name="whisperpush_title">Технология WhisperPush</string>
-    <string name="whisperpush_registration_title">Регистрация</string>
-    <string name="whisperpush_registration_summary">Зарегистрироваться в WhisperPush для шифрования SMS-сообщений.</string>
-    <string name="whisperpush_identitykey_title">Просмотреть ключи идентификации</string>
-
     <string name="ime_switcher_notify">Переключатель способа ввода</string>
     <string name="ime_switcher_notify_summary">Показывать переключатель способа ввода в панели уведомлений</string>
     <string name="gestures_settings_title">Поддержка пера</string>

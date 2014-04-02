@@ -613,10 +613,6 @@
     <string name="usb_mass_storage_summary">ساقلىغۇچ ئۈسكۈنىسى سۈپىتىدە ئېگەرلەپ سىزنىڭ خالىغان ھۆججەتنى كومپيۇتېر بىلەن SD كارتا ئارىسىدا يوللىشىڭىزغا يول قويىدۇ</string>
     <string name="storage_rescan_media">ساقلىغۇچ دىسكىدىكى ۋاستىلارنى قايتا تەكشۈرىدۇ</string>
     <string name="storage_rescan_media_complete">تەكشۈرۈش تامام</string>
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">خەتلەت</string>
-    <string name="whisperpush_registration_summary">WhisperPush قا خەتلەتكەندە شىفىرلانغان قىسقا ئۇچۇرنى قوزغىتىدۇ</string>
-    <string name="whisperpush_identitykey_title">سالاھىيەت ئاچقۇچىنى قايتا تەكشۈرۈش</string>
     <string name="custom_runtime_warning_title">ئاگاھلاندۇرۇش</string>
     <string name="gps_download_data_wifi_only">پەقەت Wi-Fi تورىدىلا GPS قوشۇمچە سانلىق مەلۇماتلىرىنى چۈشۈرىدۇ</string>
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>

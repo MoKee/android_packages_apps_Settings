@@ -547,10 +547,6 @@
   <string name="status_bar_battery_show_percent_title">แสดงสถานะของแบตเตอร์รี่</string>
   <string name="development_shortcut_title">ทางลัดการพัฒนา</string>
   <string name="development_shortcut_summary">เปิดตัวเลือก \'ล้างข้อมูล\' และ \'บังคับปิด\' ในพื้นที่การแจ้งเตือนและรายชื่อแอปที่ใช้งาน</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_registration_title">สมัคร</string>
-  <string name="whisperpush_registration_summary">สมัคร WhisperPush เพื่อเปิดการเข้ารหัส SMS</string>
-  <string name="whisperpush_identitykey_title">วิจารณ์กุญแจระบุตัวตน</string>
   <string name="custom_runtime_warning_title">คำเตือน</string>
   <string name="custom_runtime_warning_message">Android Runtime หรือ ART ยังไม่ได้รับสนับสนุนจาก MoKee OpenSource การตั้งค่านี้มีจุดประสงค์เพื่อใช้ในการทดลองและทดสอบเท่านั้นและอาจก่อให้เกิดความไม่เสถียร เกิดข้อผิดพลาด ข้อมูลสูญหาย หรือการบูทเครื่องอาจผิดพลาดได้ สำหรับข้อมูลเพิ่มเติมสามารถอ่านได้ที่ &amp;lt;a href="http://source.android.com/devices/tech/dalvik/art.html"&amp;gt;Introducing ART&amp;lt;/a&amp;gt; &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; ทางเราขอความร่วมมือท่านที่จะไม่ส่งรายงานข้อผิดพลาดที่เกิดขึ้นถ้าหากคุณเลือกที่จะใช้ ART&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; คุณแน่ใจหรือไม่ที่จะทำการรีบูทเครื่องและเปลี่ยนรันไทม์จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ไปเป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">ดาวน์โหลดข้อมูล GPS ผ่าน Wi-Fi เท่านั้น</string>

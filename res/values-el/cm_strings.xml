@@ -674,8 +674,6 @@
   <string name="usb_mass_storage_summary">Σας επιτρέπει να μεταφέρετε οποιαδήποτε αρχεία μεταξύ του υπολογιστή σας και της κάρτας SD προσαρτώντας την ως συσκευή flash</string>
   <string name="storage_rescan_media">Σάρωση για πολυμέσα στον αποθ. χώρο</string>
   <string name="storage_rescan_media_complete">Η σάρωση ολοκληρώθηκε</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Διαχείριση ρυθμίσεων ασφαλών SMS.</string>
   <string name="custom_runtime_warning_title">Προσοχή</string>
   <string name="custom_runtime_warning_message">Το ART δεν υποστηρίζεται από το MoKee OpenSource. Η ρύθμιση αυτή περιλαμβάνεται μόνο για πειραματισμό και μπορεί να προκαλέσει αστάθεια, κολλήματα, απώλεια δεδομένων ή να αποτρέψει τη σωστή εκκίνηση της συσκευής σας. Επισκευθείτε το &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; για περισσότερες πληροφορίες.&lt;br/&gt;&lt;br/&gt;Σας παρακαλούμε να μην υποβάλλετε αναφορές σφαλμάτων, αν έχετε ενεργοποιημένο το ART ως runtime.&lt;br/&gt;&lt;br/&gt;Είστε βέβαιοι ότι θέλετε να κάνετε επανεκκίνηση για να αλλάξει το runtime από <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> σε <xliff:g id="new" example="libart.so">%2$s</xliff:g>;</string>
   <string name="gps_download_data_wifi_only">Λήψη δεδομένων υποβοηθούμενου GPS μόνο μέσω δικτύων Wi-Fi</string>

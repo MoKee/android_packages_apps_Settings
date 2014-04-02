@@ -638,10 +638,6 @@
     <string name="usb_mass_storage_summary">Lehetővé teszi fájlok átvitelét az eszköz és az ön számítógépe közt, mintha csak egy pendrive-ot használna</string>
     <string name="storage_rescan_media">Médiakeresés újraindítása az adathordozón</string>
     <string name="storage_rescan_media_complete">Keresés befejezve</string>
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Regisztrálás</string>
-    <string name="whisperpush_registration_summary">WhisperPush regisztrálás a titkosított SMS-küldéshez</string>
-    <string name="whisperpush_identitykey_title">Azonosító kulcsok áttekintése</string>
     <string name="custom_runtime_warning_title">Figyelmeztetés</string>
     <string name="custom_runtime_warning_message">A MoKee OpenSource nem támogatja az ART futtatási környezetet. Ez a beállítás csak kísérleti jelleggel van jelen a rendszerben. Instabilitást, rendszerösszeomlást, adatvesztést okozhat, vagy akár elindíthatatlanná teheti az eszközt. Látogasson el az <a href="http://source.android.com/devices/tech/dalvik/art.html">Introducing ART</a> oldalra a további információkért. <br/><br/>Kérjük, ne küldjön hibabejelentést, amennyiben az ART futtatási környezet engedélyezve van. <br/><br/>Biztosan újra kívánja indítani az eszközt és a jelenlegi futtatót, <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-ról <xliff:g id="new" example="libart.so">%2$s</xliff:g>-ra cserélni?</string>
     <string name="gps_download_data_wifi_only">GPS támogatási adatok letöltése csak Wi-Fi hálózat esetén</string>

@@ -648,10 +648,6 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="usb_mass_storage_summary">Aktywuj tryb pamięci masowej USB</string>
     <string name="storage_rescan_media">Ponownie skanuj zawartość pamięci</string>
     <string name="storage_rescan_media_complete">Skanowanie zakończone</string>
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Zarejestruj</string>
-    <string name="whisperpush_registration_summary">Zarejestruj się w WhisperPush aby aktywować szyfrowane SMS\'y.</string>
-    <string name="whisperpush_identitykey_title">Przejrzyj klucze uwierzytelniające</string>
     <string name="custom_runtime_warning_title">Ostrzeżenie</string>
     <string name="custom_runtime_warning_message">ART nie jest wspierany przez MoKee OpenSource. To ustawienie jest eksperymentalne i może powodować braki stabilności, błędy w działaniu niektórych aplikacji, utratę danych lub spowodować brak możliwości włączenia urządzenia. Po więcej informacji odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Prosimy o nieprzesyłanie raportów o błędach jeśli ART jest aktywowany.&lt;br/&gt;&lt;br/&gt;Czy jesteś pewień, że chcesz zrestartować urządzenie w celu zmiany <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">Pobieraj dane wspomagające GPS tylko przez sieci Wi-Fi</string>

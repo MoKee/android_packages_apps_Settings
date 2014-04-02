@@ -417,8 +417,6 @@
     <string name="usb_mass_storage_summary">使用 USB 大容量存储模式连接到计算机</string>
     <string name="storage_rescan_media">重新扫描储存器媒体</string>
     <string name="storage_rescan_media_complete">扫描完成</string>
-    <string name="whisperpush_title">私密推送</string>
-    <string name="whisperpush_summary">管理安全短信设置</string>
     <string name="gps_download_data_wifi_only">只通过Wi-Fi网络下载GPS辅助数据</string>
     <string name="menu_stats_reset">重置</string>
     <string name="stylus_icon_enabled_title">使用手写笔时显示图标</string>

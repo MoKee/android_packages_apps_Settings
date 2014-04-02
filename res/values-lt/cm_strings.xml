@@ -646,10 +646,6 @@ Ryškumo kreivė apskaičiuojama atliekant kubinę „Spline“ interpoliaciją 
     <string name="usb_mass_storage_summary">"Leidžia perduoti visus failus tarp jūsų kompiuterio ir SD kortelės prijungiant ją kaip „Flash“ įrenginį"</string>
     <string name="storage_rescan_media">Nuskaityti atmintinę</string>
     <string name="storage_rescan_media_complete">Nuskaitymas baigtas</string>
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Registruotis</string>
-    <string name="whisperpush_registration_summary">"„WhisperPush“ registracija, norint įjungti šifruotus SMS."</string>
-    <string name="whisperpush_identitykey_title">Peržiūrėti tapatybės raktus</string>
     <string name="custom_runtime_warning_title">Įspėjimas</string>
     <string name="custom_runtime_warning_message">"ART nepalaiko „MoKee OpenSource“. Ši nuostata yra įtraukta tik ekspermentiniais tikslais, tai gali sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškilusias klaidas.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?"</string>
     <string name="gps_download_data_wifi_only">"Parsisiųsti GPS pagalbinius duomenis tik per „Wi-Fi“ tinklus"</string>

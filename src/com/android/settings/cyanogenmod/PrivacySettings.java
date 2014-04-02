@@ -41,13 +41,7 @@ public class PrivacySettings extends SettingsPreferenceFragment {
         mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
 
         // Determine options based on device telephony support
-        if (getActivity().getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
-            // WhisperPush
-            // Only add if device has telephony support and has WhisperPush installed.
-            if (isPackageInstalled("org.whispersystems.whisperpush")) {
-                addPreferencesFromResource(R.xml.security_settings_whisperpush);
-            }
-        } else {
+        if (!getActivity().getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
             // No telephony, remove dependent options
             getPreferenceScreen().removePreference(mBlacklist);
             mBlacklist = null;

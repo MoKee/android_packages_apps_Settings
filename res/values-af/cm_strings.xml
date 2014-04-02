@@ -698,10 +698,6 @@ die verlangde helderheid van die skerm gestoor. Kies \'Verdeel\' om \'n item te 
     <string name="status_bar_double_tap_to_sleep_title">Klop-Klop om te slaap</string>
     <string name="development_shortcut_title">Ontwikkeling kortpad</string>
     <string name="development_shortcut_summary">"Aktiveer 'Vee data uit' en 'Dwing stop' opsies in kennisgewings gebied en onlangse programme lys"</string>
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Registreer</string>
-    <string name="whisperpush_registration_summary">Registreer vir WhisperPush om geënkripteerde SMS moontlik te maak</string>
-    <string name="whisperpush_identitykey_title">Hersien identiteit sleutels</string>
     <string name="custom_runtime_warning_title">Waarskuwing</string>
     <string name="custom_runtime_warning_message">"ART word nie ondersteun deur MoKee OpenSource. Hierdie instelling is ingesluit slegs vir eksperimentering en het die potensiaal om onstabiliteit, ineenstortings, data verlies te veroorsaak of te verhoed dat die toestel behoorlike sal boot. Besoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\">Bekendstelling van ART&lt;/a> vir meer inligting.&lt;br/>&lt;br/>Ons versoek jou om nie fout verslae te verskaf as jy ART geaktiveer het as jou 'runtime'.&lt;br/>&lt;br/>Is jy seker jy wil herlaai om die 'runtime' te verander van %1$s na %2$s?"</string>
     <string name="battery_info_status_charging_dock_ac">(DokKRAG)</string>

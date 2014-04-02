@@ -583,11 +583,6 @@
     <string name="remove_blacklist_entry">Ви хочете вилучити цей запис?</string>
     <string name="select_contact">Вибрати контакт</string>
 
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Реєстрація</string>
-    <string name="whisperpush_registration_summary">Реєстрація для WhisperPush для включення зашифрованого SMS</string>
-    <string name="whisperpush_identitykey_title">Відгук ключів ідентифікації</string>
-
     <string name="ime_switcher_notify">Перемикач методу введення</string>
     <string name="ime_switcher_notify_summary">Показувати перемикач методу введення в панелі сповіщень</string>
 

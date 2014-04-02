@@ -412,10 +412,6 @@
     <string name="usb_mass_storage_summary">使用 USB 大容量存儲模式連接到計算機</string>
     <string name="storage_rescan_media">重新掃瞄儲存器媒體</string>
     <string name="storage_rescan_media_complete">掃瞄完成</string>
-    <string name="whisperpush_title">私密推送</string>
-    <string name="whisperpush_registration_title">註冊</string>
-    <string name="whisperpush_registration_summary">通過註冊私密推送來啟用加密短信</string>
-    <string name="whisperpush_identitykey_title">檢視身份密鑰</string>
     <string name="adb_notify">USB 調試通知</string>
     <string name="adb_notify_summary">USB 調試模式連接時將顯示一個通知</string>
     <string name="development_tools_title">啟動開發工具</string>
