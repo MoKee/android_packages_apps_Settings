@@ -234,10 +234,10 @@
     <string name="recent_shortcut_clear_title">Clear</string>
     <string name="recent_shortcut_gravity_title">Shortcut bar gravity</string>
     <string name="recent_shortcut_gravity_summary">Customize shortcut bar gravity in portrait mode</string>
-    <string name="recent_shortcut_gravity_right_top">屏幕右上方</string>
-    <string name="recent_shortcut_gravity_right_bottom">屏幕右下方</string>
-    <string name="recent_shortcut_gravity_left_top">屏幕左上方</string>
-    <string name="recent_shortcut_gravity_left_bottom">屏幕左上方</string>
+    <string name="recent_shortcut_gravity_right_top">Top right</string>
+    <string name="recent_shortcut_gravity_right_bottom">Bottom right</string>
+    <string name="recent_shortcut_gravity_left_top">Top left</string>
+    <string name="recent_shortcut_gravity_left_bottom">Bottom left</string>
     <string name="recent_shortcut_priority_title">Recent apps shortcuts arrangement</string>
     <string name="recent_shortcut_priority_summary">Customize recent apps shorcuts arrangement</string>
     <string name="recent_shortcut_excluded_apps_title">Hide apps</string>
