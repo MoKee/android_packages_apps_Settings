@@ -417,6 +417,8 @@
     <string name="usb_mass_storage_summary">使用 USB 大容量存储模式连接到计算机</string>
     <string name="storage_rescan_media">重新扫描储存器媒体</string>
     <string name="storage_rescan_media_complete">扫描完成</string>
+    <string name="custom_runtime_warning_title">警告</string>
+    <string name="custom_runtime_warning_message">ART是Google开发的尚在测试阶段的安卓运行环境，该选项处于试验阶段，有可能使您的设备崩溃、死机、数据丢失或者无法正常开机。 访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART简介&lt;/a&gt; 或更多信息。&lt;br/&gt;&lt;br/&gt;当您在使用ART模式遇到问题时，请不要向我们提交错误报告，因为这一切与MoKee OpenSource无关。&lt;br/&gt;&lt;br/&gt;你确认要重启设备并从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 运行环境更换到 <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">只通过Wi-Fi网络下载GPS辅助数据</string>
     <string name="menu_stats_reset">重置</string>
     <string name="stylus_icon_enabled_title">使用手写笔时显示图标</string>
