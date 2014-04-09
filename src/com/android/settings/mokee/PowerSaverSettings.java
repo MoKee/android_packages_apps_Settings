@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
@@ -39,6 +40,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "PowerSaverSettings";
+    private static final String KEY_PERFORMANCE_CATEGORY = "power_saver_category_performance";
     private static final String KEY_TOGGLES_CPU_GOVERNOR = "power_saver_toggles_cpu_governor";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
@@ -47,6 +49,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mTogglesCPUGovernor;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
+    private PreferenceCategory mPerformanceCategory;
     private PreferenceScreen prefSet;
     private Activity mActivity;
 
@@ -73,6 +76,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mEnabledSwitch.setOnCheckedChangeListener(this);
 
         prefSet = getPreferenceScreen();
+        mPerformanceCategory = (PreferenceCategory) prefSet.findPreference(KEY_PERFORMANCE_CATEGORY);
         mTogglesCPUGovernor = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_GOVERNOR);
         /*
          * Governor Some systems might not use governors
@@ -80,7 +84,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         if (!Utils.fileExists(Processor.GOV_LIST_FILE) || !Utils.fileExists(Processor.GOV_FILE)
                 || Utils.fileReadOneLine(Processor.GOV_FILE) == null
                 || Utils.fileReadOneLine(Processor.GOV_LIST_FILE) == null) {
-            prefSet.removePreference(mTogglesCPUGovernor);
+            prefSet.removePreference(mPerformanceCategory);
         } else {
             mTogglesCPUGovernor.setChecked(Settings.System.getInt(resolver,
                     Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0);
@@ -124,7 +128,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         }
         Intent intent = new Intent("android.intent.action.POWER_SAVER_SERVICE_UPDATE");
         mActivity.sendBroadcast(intent);
-        Log.i(TAG, "android.intent.action.POWER_SAVER_SERVICE_UPDATE");
+        // Log.i(TAG, "android.intent.action.POWER_SAVER_SERVICE_UPDATE");
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
@@ -140,7 +144,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         } else {
             mActivity.stopService(service);
         }
-        Log.i(TAG, String.valueOf("PowerSaverService Status: " + String.valueOf(isChecked)));
+        // Log.i(TAG, String.valueOf("PowerSaverService Status: " + String.valueOf(isChecked)));
     }
 
 }

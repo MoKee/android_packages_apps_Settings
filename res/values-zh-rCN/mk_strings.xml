@@ -170,7 +170,7 @@
 
     <!-- Powersaver settings -->
     <string name="power_saver_settings_title">省电模式</string>
-    <string name="power_saver_settings_summary">优化电池寿命</string>
+    <string name="power_saver_settings_summary">优化续航时间</string>
     <string name="power_saver_toggles_mobile_title">移动网络</string>
     <string name="power_saver_toggles_location_title">位置</string>
     <string name="power_saver_toggles_performance_title">性能</string>

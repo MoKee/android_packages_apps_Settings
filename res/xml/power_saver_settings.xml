@@ -17,7 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        android:key="power_saver_toggles_performance_key"
+        android:key="power_saver_category_performance"
         android:title="@string/power_saver_toggles_performance_title">
 
         <CheckBoxPreference
@@ -29,7 +29,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="power_saver_toggles_mobile_key"
+        android:key="power_saver_category_mobile"
         android:title="@string/power_saver_toggles_mobile_title">
 
         <CheckBoxPreference
@@ -41,7 +41,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="power_saver_toggles_location_key"
+        android:key="power_saver_category_location"
         android:title="@string/power_saver_toggles_location_title">
 
         <CheckBoxPreference
