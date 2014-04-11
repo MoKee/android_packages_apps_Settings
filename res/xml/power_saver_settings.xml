@@ -52,4 +52,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="power_saver_category_other"
+        android:title="@string/power_saver_toggles_other_title">
+
+        <CheckBoxPreference
+            android:key="power_saver_toggles_notification"
+            android:title="@string/power_saver_toggles_notification_title"
+            android:summary="@string/power_saver_toggles_notification_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
