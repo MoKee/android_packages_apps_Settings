@@ -44,11 +44,13 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     private static final String KEY_TOGGLES_CPU_GOVERNOR = "power_saver_toggles_cpu_governor";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
+    private static final String KEY_TOGGLES_NOTIFICATION = "power_saver_toggles_notification";
     private ContentResolver resolver;
     private Switch mEnabledSwitch;
     private CheckBoxPreference mTogglesCPUGovernor;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
+    private CheckBoxPreference mTogglesNotification;
     private PreferenceCategory mPerformanceCategory;
     private PreferenceScreen prefSet;
     private Activity mActivity;
@@ -95,6 +97,9 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mTogglesGPS = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_GPS);
         mTogglesGPS.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_GPS, 0) != 0);
+        mTogglesNotification = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_NOTIFICATION);
+        mTogglesNotification.setChecked(Settings.System.getInt(resolver,
+                Settings.System.POWER_SAVER_NOTIFICATION, 1) != 0);
         setPrefsEnabledState(powerSaverEnabled);
     }
 
@@ -125,6 +130,9 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         } else if (preference == mTogglesGPS) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_GPS,
                     mTogglesGPS.isChecked() ? 1 : 0);
+        } else if (preference == mTogglesNotification) {
+            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_NOTIFICATION,
+                    mTogglesNotification.isChecked() ? 1 : 0);
         }
         Intent intent = new Intent("android.intent.action.POWER_SAVER_SERVICE_UPDATE");
         mActivity.sendBroadcast(intent);

@@ -213,6 +213,9 @@
     <string name="power_saver_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
     <string name="power_saver_toggles_cpu_governor_title">Sleep Powersave</string>
     <string name="power_saver_toggles_cpu_governor_summary">Conserve CPU usage on screen off</string>
+    <string name="power_saver_toggles_other_title">Other</string>
+    <string name="power_saver_toggles_notification_title">Enable notification</string>
+    <string name="power_saver_toggles_notification_summary">Show notificaiton when Power Saver mode is running (toggle main switch again to take effect)</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Screen-off animation</string>
