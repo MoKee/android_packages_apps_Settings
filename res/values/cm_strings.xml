@@ -226,6 +226,12 @@
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting the charger</string>
 
+    <!-- Lights settings screen, screen animation options -->
+    <string name="screen_animation_off_title">Screen-off animation</string>
+    <string name="screen_animation_style_title">Animation style</string>
+    <string name="screen_animation_style_electronbeam">Electron beam</string>
+    <string name="screen_animation_style_fade">Fade out</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
@@ -498,12 +504,47 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="mem_info">Memory</string>
     <!-- About phone screen, status item label -->
 
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CyanogenMod statistics</string>
+    <string name="anonymous_statistics_summary">Help make CyanogenMod better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_warning_title">About</string>
+    <string name="anonymous_statistics_warning">Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the
+        developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier,
+        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
+    <string name="enable_reporting_title">Enable reporting</string>
+    <string name="preview_data_title">Preview data</string>
+    <string name="preview_data_summary" translatable="false">%s</string>
+    <string name="view_stats_title">View stats</string>
+    <string name="anonymous_learn_more">Learn more</string>
+
+    <!-- Anonymous Statistics - Notification -->
+    <string name="anonymous_notification_desc">Enable or disable CyanogenMod Statistics</string>
+
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Unique ID</string>
+    <string name="preview_device_title">Device</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Country</string>
+    <string name="preview_carrier_title">Carrier</string>
+
     <!-- INTERFACE Settings -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_interface">Personalization</string>
 
-    <!-- Themes settings -->
+    <!-- Themes Settings -->
+    <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
+
+    <!-- The following are entries under the themes menu -->
+    <string name="themepacks_settings_title">Theme Packs</string>
+    <string name="styles_settings_title">Styles</string>
+    <string name="icons_settings_title">Icons</string>
+    <string name="fonts_settings_title">Fonts</string>
+    <string name="wallpaper_settings_title">Wallpapers</string>
+    <string name="lockscreen_wallpaper_settings_title">Lockscreen Wallpapers</string>
+    <string name="bootanim_settings_title">Boot Animations</string>
+    <string name="soundpack_settings_title">Sound Packs</string>
 
     <!-- Performance settings -->
     <string name="performance_settings_title">Performance</string>
@@ -567,6 +608,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="changelog_error">Unable to load changelog</string>
     <string name="changelog_unknown">Unknown</string>
     <string name="changelog_version">Version</string>
+
+    <!-- CM Updater -->
+    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+    <string name="cmupdate_settings_summary">Check for, view or install available updates</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Advanced</string>
@@ -788,6 +833,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_buttons_playpause">Play/Pause music</string>
     <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
     <string name="lockscreen_buttons_sleep">Go to sleep</string>
+    <string name="lockscreen_enable_modlock_title">Custom lock screen</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
@@ -929,6 +975,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="storage_rescan_media">Rescan media for the storage volume</string>
     <string name="storage_rescan_media_complete">Scan completed</string>
 
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_summary">Manage secure SMS settings</string>
+
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
     <string name="custom_runtime_warning_message">ART is not supported by MoKee OpenSource. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
@@ -943,6 +993,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Reset</string>
+
+    <!-- CM Legal -->
+    <string name="cmlicense_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- Stylus Icon -->
     <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
