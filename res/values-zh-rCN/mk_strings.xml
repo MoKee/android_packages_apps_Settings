@@ -180,6 +180,9 @@
     <string name="power_saver_toggles_mobile_data_summary">屏幕关闭后将禁用数据连接</string>
     <string name="power_saver_toggles_cpu_governor_title">待机节能</string>
     <string name="power_saver_toggles_cpu_governor_summary">屏幕关闭后将切换到节能模式</string>
+    <string name="power_saver_toggles_other_title">其它</string>
+    <string name="power_saver_toggles_notification_title">启用通知</string>
+    <string name="power_saver_toggles_notification_summary">当省电模式正在运行时，在通知栏显示通知信息</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">屏幕关闭动画</string>
