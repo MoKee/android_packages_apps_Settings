@@ -678,7 +678,7 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Hallitse turvallisten tekstiviestien asetuksia</string>
   <string name="custom_runtime_warning_title">Varoitus</string>
-  <string name="custom_runtime_warning_message">CyanogenMod ei tue ART-ympäristöä. Tämä asetus on vain kokeiluja varten ja saattaa aiheuttaa epävakautta, kaatumisia, tietojen katoamista ja estää laitteen käynnistymisen. Lue lisää: &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Pyydämme, ettet lähetä virheraportteja jos valitset ART-ympäristön.&lt;br/&gt;&lt;br/&gt;Oletko varma että haluat vaihtaa suoritusympäristön <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-<xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">MoKee OpenSource ei tue ART-ympäristöä. Tämä asetus on vain kokeiluja varten ja saattaa aiheuttaa epävakautta, kaatumisia, tietojen katoamista ja estää laitteen käynnistymisen. Lue lisää: &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Pyydämme, ettet lähetä virheraportteja jos valitset ART-ympäristön.&lt;br/&gt;&lt;br/&gt;Oletko varma että haluat vaihtaa suoritusympäristön <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-<xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Lataa GPS-avusteinen data vain Wi-Fi-verkkojen yli</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
