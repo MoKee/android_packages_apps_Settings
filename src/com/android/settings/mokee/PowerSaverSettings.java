@@ -130,12 +130,18 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         } else if (preference == mTogglesGPS) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_GPS,
                     mTogglesGPS.isChecked() ? 1 : 0);
-        } else if (preference == mTogglesNotification) {
+        }
+
+        if (preference == mTogglesNotification) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_NOTIFICATION,
                     mTogglesNotification.isChecked() ? 1 : 0);
+            Intent intent = new Intent("android.intent.action.POWER_SAVER_NOTIFICATION");
+            mActivity.sendBroadcast(intent);
+        } else {
+            Intent intent = new Intent("android.intent.action.POWER_SAVER_SERVICE_UPDATE");
+            mActivity.sendBroadcast(intent);
         }
-        Intent intent = new Intent("android.intent.action.POWER_SAVER_SERVICE_UPDATE");
-        mActivity.sendBroadcast(intent);
+
         // Log.i(TAG, "android.intent.action.POWER_SAVER_SERVICE_UPDATE");
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
