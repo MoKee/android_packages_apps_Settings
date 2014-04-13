@@ -74,7 +74,7 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
         String shortcutItemString = Settings.System.getString(context.getContentResolver(), Settings.System.SHORTCUT_ITEMS);
         String [] mShortcutListItems = null;
         if (TextUtils.isEmpty(shortcutItemString)) {
-            mShortcutListItems = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_items);
+            mShortcutListItems = mContext.getResources().getStringArray(com.android.internal.R.array.shortcut_list_items);
         } else {
             mShortcutListItems = shortcutItemString.split(",");
         }
@@ -242,7 +242,7 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
             }
             if (mSystemUiResources != null) {
                 String[] resPathArray = mContext.getResources().getStringArray(
-                        com.mokee.internal.R.array.shortcut_list_drawables_in_systemui);
+                        com.android.internal.R.array.shortcut_list_drawables_in_systemui);
                 String resPath = "";
                 for (String resPathStr : resPathArray) {
                     String[] resItem = resPathStr.split("\\|");

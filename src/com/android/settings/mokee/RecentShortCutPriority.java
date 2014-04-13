@@ -119,7 +119,7 @@ public class RecentShortCutPriority extends ListFragment {
         public RecentShortCutPriorityAdapter(Context ctx) {
             String shortcutItemString = Settings.System.getString(ctx.getContentResolver(), Settings.System.SHORTCUT_ITEMS);
             if (TextUtils.isEmpty(shortcutItemString)) {
-                mShortcutItems = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_items);
+                mShortcutItems = mContext.getResources().getStringArray(com.android.internal.R.array.shortcut_list_items);
             } else {
                 mShortcutItems = shortcutItemString.split(",");
             }
@@ -225,7 +225,7 @@ public class RecentShortCutPriority extends ListFragment {
             }
             if (mSystemUiResources != null) {
                 String[] resPathArray = mContext.getResources().getStringArray(
-                        com.mokee.internal.R.array.shortcut_list_drawables_in_systemui);
+                        com.android.internal.R.array.shortcut_list_drawables_in_systemui);
                 String resPath = "";
                 for (String resPathStr : resPathArray) {
                     String[] resItem = resPathStr.split("\\|");
