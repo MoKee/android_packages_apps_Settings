@@ -110,7 +110,7 @@ public class ReportingService extends Service {
 
             // report to the mkstats service
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost("http://stats.mfunz.com/index.php/Submit/flash");
+            HttpPost httpPost = new HttpPost("http://stats.mokeedev.com/index.php/Submit/flash");
             boolean success = false;
 
             try {

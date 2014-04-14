@@ -70,7 +70,7 @@ public class UpdatingService extends Service {
 
             // update to the mkstats service
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost("http://stats.mfunz.com/index.php/Submit/updatev1");
+            HttpPost httpPost = new HttpPost("http://stats.mokeedev.com/index.php/Submit/updatev1");
             boolean success = false;
 
             try {
