@@ -53,16 +53,18 @@ public class PushingUtils {
 
     public static boolean allowPush(String str1, String str2, int mode) {
         String[] strs = str1.split(",");
-        for (int i = 0; i < strs.length; i++)
-        {
-            switch (mode)
-            {
+        for (int i = 0; i < strs.length; i++) {
+            switch (mode) {
                 case 1:
-                    if (strs[i].equals(str2))
+                    if (strs[i].equals(str2)) {
                         return true;
+                    }
+                    break;
                 default:
-                    if (str2.contains(strs[i]))
+                    if (str2.contains(strs[i])) {
                         return true;
+                    }
+                    break;
             }
         }
         return false;
