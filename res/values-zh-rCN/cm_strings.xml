@@ -428,6 +428,7 @@
   <string name="adb_notify">USB 调试通知</string>
   <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
   <string name="development_tools_title">启动开发工具</string>
+  <string name="allow_mock_sms">允许模拟短信</string>
   <string name="adb_over_network">网络 ADB 调试</string>
   <string name="adb_over_network_summary">通过网络接口 (WLAN，USB 网络) 启用 TCP/IP 调试。该设置重启后失效</string>
   <string name="adb_over_network_warning">警告：网络 ADB 调试启用后，您的设备将会在已连接的网络 (包括 GSM 数据网络) 上被视为是开放的，并有可能被侵入！\n\n请仅在您所信任的网络上使用此功能。\n\n您确实要启用该功能吗？</string>
@@ -637,6 +638,13 @@
   <string name="backlight_summary_disabled">已禁用</string>
   <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">已启用</string>
+  <string name="lockscreen_background">背景</string>
+  <string name="lockscreen_background_style_title">锁屏背景</string>
+  <string name="background_default">默认背景</string>
+  <string name="background_wallpaper">自定义背景</string>
+  <string name="background_result_successful">背景已成功改变</string>
+  <string name="background_result_not_successful">背景未被改变</string>
+  <string name="setting_lockscreen_background">正在应用背景</string>
   <string name="accessibility_home_button_answers_call_prerefence_title">Home 键接通来电</string>
   <string name="gamma_tuning_title_head">伽玛校准</string>
   <string name="gamma_tuning_summary_head">调整伽玛值</string>
