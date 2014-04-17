@@ -168,7 +168,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         mBrightnessLevel = (SeekBarPreference) prefSet.findPreference(KEY_BRIGHTNESS);
         int brightness = Settings.System.getInt(mResolver,
                 Settings.System.ACTIVE_DISPLAY_BRIGHTNESS, mMaximumBacklight);
-        int realBrightness =  (int)(((float)brightness / (float)mMaximumBacklight) * 100);
+        int realBrightness =  Math.round(((float)brightness / (float)mMaximumBacklight) * 100);
         mBrightnessLevel.setValue(realBrightness);
         mBrightnessLevel.setOnPreferenceChangeListener(this); 
 
@@ -214,7 +214,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mBrightnessLevel) {
             int brightness = ((Integer)newValue).intValue();
-            int realBrightness =  Math.max(mMinimumBacklight, (int)(((float)brightness / (float)100) * mMaximumBacklight));                   
+            int realBrightness =  Math.max(mMinimumBacklight, Math.round(((float)brightness / (float)100) * mMaximumBacklight));
             Settings.System.putInt(mResolver, Settings.System.ACTIVE_DISPLAY_BRIGHTNESS, realBrightness);
             return true;
         } else if (preference == mDisplayTimeout) {
