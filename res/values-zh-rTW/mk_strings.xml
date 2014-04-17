@@ -195,8 +195,8 @@
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有號碼</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的來電</string>
-    
-        <!-- Shortcuts List -->
+
+    <!-- Shortcuts List -->
     <string name="recent_shortcut_title">快捷任務欄</string>
     <string name="recent_shortcut_clear_title">清除任務</string>
     <string name="recent_shortcut_gravity_title">快捷任務欄位置</string>
