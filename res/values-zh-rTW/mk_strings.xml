@@ -40,9 +40,12 @@
     <string name="ad_redisplay_title">重新顯示通知</string>
     <string name="ad_timeout_title">顯示超時</string>
     <string name="ad_threshold_title">精度闕值</string>
+    <string name="ad_threshold_summary">調整感應器的識別精度</string>
     <string name="ad_customizations_title">自定義</string>
     <string name="ad_excluded_apps_title">例外應用程序</string>
     <string name="ad_excluded_apps_summary">例外的應用程序將不被顯示。</string>
+    <string name="ad_privacy_apps_title">隱私模式</string>
+    <string name="ad_privacy_apps_summary">存在新通知時將不顯示來自該通知的詳細信息</string>
     <string name="ad_show_date_title">顯示日期</string>
     <string name="ad_show_ampm_title">顯示上午/下午</string>
     <string name="ad_sunlight_mode_title">強光模式</string>
@@ -192,5 +195,22 @@
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有號碼</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的來電</string>
+    
+        <!-- Shortcuts List -->
+    <string name="recent_shortcut_title">快捷任務欄</string>
+    <string name="recent_shortcut_clear_title">清除任務</string>
+    <string name="recent_shortcut_gravity_title">快捷任務欄位置</string>
+    <string name="recent_shortcut_gravity_summary">調整豎屏模式下快捷任務欄在螢幕上的顯示順序</string>
+    <string name="recent_shortcut_gravity_right_top">螢幕右上方</string>
+    <string name="recent_shortcut_gravity_right_bottom">螢幕右下方</string>
+    <string name="recent_shortcut_gravity_left_top">螢幕左上方</string>
+    <string name="recent_shortcut_gravity_left_bottom">螢幕左下方</string>
+    <string name="recent_shortcut_priority_title">快捷任務欄排列</string>
+    <string name="recent_shortcut_priority_summary">調整快捷任務欄的應用顯示順序</string>
+    <string name="recent_shortcut_excluded_apps_title">例外應用程序</string>
+    <string name="recent_shortcut_excluded_apps_summary">不顯示指定的應用在快捷任務欄</string>
+
+    <!-- Stay awake -->
+    <string name="screen_timeout_awake_summary">從不休眠</string>
 
 </resources>
