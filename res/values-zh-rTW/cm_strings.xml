@@ -176,7 +176,9 @@
   <string name="screen_security_summary">檢視或變更鎖定螢幕安全性、延遲以及自動關閉設定</string>
   <string name="additional_options_title">更多選項</string>
   <string name="unlock_menu_unlock_title">選單鍵解鎖</string>
-  <string name="unlock_home_unlock_title">主螢幕鍵解鎖</string>
+  <string name="unlock_menu_unlock_summary">按下選單鍵即可解鎖設備</string>
+  <string name="unlock_home_unlock_title">Home 鍵解鎖</string>
+  <string name="unlock_home_unlock_summary">按下 Home 鍵即可解鎖設備</string>
   <string name="unlock_quick_unlock_control_title">快速解鎖</string>
   <string name="unlock_quick_unlock_control_summary">當正確的 PIN/密碼被輸入時自動解鎖</string>
   <string name="delay_and_timeout_title">鎖定延遲</string>
@@ -232,6 +234,7 @@
   <string name="title_tile_network_adb">網路 ADB</string>
   <string name="title_dynamic_tiles">動態磚</string>
   <string name="dynamic_tiles_note_title">注意</string>
+  <string name="dynamic_tiles_note_summary">動態按鈕不是隨時都會顯示的，它們僅會在有相關的系統事件時顯示</string>
   <string name="title_dynamic_alarm">鬧鐘</string>
   <string name="title_dynamic_bugreport">錯誤報告</string>
   <string name="title_dynamic_dock_battery">座架電池</string>
@@ -441,6 +444,7 @@
   <string name="font_size_sample">範例</string>
   <string name="sms_security_check_limit_title">SMS 訊息限制</string>
   <string name="sms_security_check_limit_default">30 (預設)</string>
+  <string name="lockscreen_custom_widgets_title">自定義小工具</string>
   <string name="sms_security_check_limit_none">無</string>
   <string name="lock_clock_title">時鐘小工具</string>
   <string name="lock_clock_summary">自訂預設的鎖定畫面與主螢幕小工具</string>
@@ -521,6 +525,8 @@
   <string name="expanded_desktop_disabled">停用</string>
   <string name="expanded_desktop_status_bar">顯示狀態列</string>
   <string name="expanded_desktop_no_status_bar">隱藏狀態列</string>
+  <string name="expanded_desktop_system_bars_visibility">鎖屏界面下禁用</string>
+  <string name="expanded_desktop_system_bars_visibility_summary">擴展桌面下的鎖屏界面依舊顯示狀態欄和導航欄</string>
   <string name="power_menu_profiles_title">設定檔切換器</string>
   <string name="power_menu_airplane_title">飛航模式</string>
   <string name="power_menu_user_title">使用者切換器</string>
@@ -537,15 +543,20 @@
   <string name="hardware_keys_double_tap_title">輕按二下動作</string>
   <string name="hardware_keys_action_nothing">無動作</string>
   <string name="hardware_keys_action_menu">開啟/關閉選單</string>
+  <string name="hardware_keys_action_app_switch">多工切換器</string>
   <string name="hardware_keys_action_search">搜尋助手</string>
   <string name="hardware_keys_action_voice_search">語音搜尋</string>
   <string name="hardware_keys_action_in_app_search">應用程式內搜尋</string>
   <string name="hardware_keys_action_launch_camera">啟動相機</string>
   <string name="home_wake_title">主螢幕鍵喚醒</string>
   <string name="volume_wake_title">音量鍵喚醒</string>
+  <string name="volume_wake_summary">按音量鍵喚醒設備</string>
   <string name="volbtn_music_controls_title">播放控制</string>
   <string name="volbtn_music_controls_summary">螢幕關閉時，長按音量鍵將可以改變音樂曲目</string>
+  <string name="volbtn_cursor_control_title">鍵盤遊標控制</string>
   <string name="volbtn_cursor_control_off">停用</string>
+  <string name="volbtn_cursor_control_on">音量增大/減小移動遊標左/右</string>
+  <string name="volbtn_cursor_control_on_reverse">音量增大/減小移動遊標右/左</string>
   <string name="swap_volume_buttons_title">重新調整音量鍵方向</string>
   <string name="swap_volume_buttons_summary">旋轉螢幕時交換上/下音量鍵</string>
   <string name="button_backlight_title">背光</string>
@@ -558,18 +569,31 @@
   <string name="backlight_summary_disabled">停用</string>
   <string name="backlight_summary_enabled_with_timeout">啟用 <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">啟用</string>
+  
+      <!-- Lockscreen background -->
+  <string name="lockscreen_background">背景</string>
+  <string name="lockscreen_background_style_title">鎖屏背景</string>
+  <string name="background_default">預設背景</string>
+  <string name="background_wallpaper">自定義背景</string>
+  <string name="background_result_successful">背景已成功更換</string>
+  <string name="background_result_not_successful">背景未被應用</string>
+  <string name="setting_lockscreen_background">正在更改背景</string>
+  
   <string name="accessibility_home_button_answers_call_prerefence_title">按主螢幕鍵接聽電話</string>
   <string name="confirm_delete_apn">APN 將會被刪除。</string>
+  <string name="privacy_settings_cyanogenmod_title">隱私</string>
   <string name="status_bar_title">狀態列</string>
   <string name="status_bar_show_clock_title">顯示時鐘</string>
   <string name="status_bar_battery_title">電池狀態樣式</string>
   <string name="status_bar_style_hidden">隱藏</string>
+  <string name="status_bar_battery_show_percent_title">顯示電池狀態百分比</string>
   <string name="status_bar_signal_text_title">訊號狀態樣式</string>
   <string name="status_bar_toggle_brightness">亮度控制</string>
   <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
   <string name="status_bar_toggle_info">已啟用自動調整亮度</string>
   <string name="status_bar_notif_count_title">顯示通知計數</string>
   <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
+  <string name="status_bar_double_tap_to_sleep_title">雙擊狀態欄關閉螢幕</string>
   <string name="storage_rescan_media">為儲存裝置重新掃描媒體</string>
   <string name="storage_rescan_media_complete">掃描完成</string>
   <string name="menu_stats_reset">重設</string>
