@@ -214,8 +214,8 @@
   <string name="lockscreen_maximize_widgets_summary">Modulok megjelenése maximális méretben a kijelző bekapcsolásakor</string>
   <string name="lockscreen_enable_camera_title">Kamera modul</string>
   <string name="safe_headset_volume_title">Biztonságos hangerő</string>
-  <string name="cyanogenmod_waiver_title">Jogi felelősség átvállalása</string>
-  <string name="cyanogenmod_waiver_body">A beállítás módosítása halláskárosodáshoz vezethet.\n\nAz \"OK\" gombbal Ön elfogadja ezt a figyelmeztetést és ezzel felmenti a CyanogenMod csapatot és minden közreműködőt az esetleges jogi kötelezettségek alól.</string>
+  <string name="mokee_waiver_title">Jogi felelősség átvállalása</string>
+  <string name="mokee_waiver_body">A beállítás módosítása halláskárosodáshoz vezethet.\n\nAz \"OK\" gombbal Ön elfogadja ezt a figyelmeztetést és ezzel felmenti a MoKee OpenSource csapatot és minden közreműködőt az esetleges jogi kötelezettségek alól.</string>
   <string name="quick_settings_panel_title">Gyorsbeállítások panel</string>
   <string name="title_static_tiles">Statikus csempék</string>
   <string name="tile_picker_title">Csempék és elrendezés</string>
@@ -340,7 +340,7 @@
   <string name="quiet_hours_ringer_mute_all">Összes hívás némítása</string>
   <string name="start_time_title">Kezdete</string>
   <string name="end_time_title">Vége</string>
-  <string name="mod_version">CyanogenMod verzió</string>
+  <string name="mod_version">MoKee verzió</string>
   <string name="mod_version_default">Ismeretlen</string>
   <string name="build_date">Build dátuma</string>
   <string name="cpu_info">Processzor</string>
@@ -663,7 +663,7 @@
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Biztonságos SMS beállítások kezelése</string>
   <string name="custom_runtime_warning_title">Figyelmeztetés</string>
-  <string name="custom_runtime_warning_message">A CyanogenMod nem támogatja az ART futtatási környezetet. Ez a beállítás csak kísérleti jelleggel van jelen a rendszerben. Instabilitást, rendszerösszeomlást, adatvesztést okozhat, vagy akár elindíthatatlanná teheti az eszközt. Látogasson el az <a href="http://source.android.com/devices/tech/dalvik/art.html">Introducing ART</a> oldalra a további információkért. <br/><br/>Kérjük, ne küldjön hibabejelentést, amennyiben az ART futtatási környezet engedélyezve van. <br/><br/>Biztosan újra kívánja indítani az eszközt és a jelenlegi futtatót, <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-ról <xliff:g id="new" example="libart.so">%2$s</xliff:g>-ra cserélni?</string>
+  <string name="custom_runtime_warning_message">A MoKee OpenSource nem támogatja az ART futtatási környezetet. Ez a beállítás csak kísérleti jelleggel van jelen a rendszerben. Instabilitást, rendszerösszeomlást, adatvesztést okozhat, vagy akár elindíthatatlanná teheti az eszközt. Látogasson el az <a href="http://source.android.com/devices/tech/dalvik/art.html">Introducing ART</a> oldalra a további információkért. <br/><br/>Kérjük, ne küldjön hibabejelentést, amennyiben az ART futtatási környezet engedélyezve van. <br/><br/>Biztosan újra kívánja indítani az eszközt és a jelenlegi futtatót, <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-ról <xliff:g id="new" example="libart.so">%2$s</xliff:g>-ra cserélni?</string>
   <string name="gps_download_data_wifi_only">GPS támogatási adatok letöltése csak Wi-Fi hálózat esetén</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
