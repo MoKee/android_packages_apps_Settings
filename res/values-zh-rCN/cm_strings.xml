@@ -169,6 +169,7 @@
   <string name="cpu_max_freq_title">最高 CPU 频率</string>
   <string name="io_scheds_title">I/O 调度器</string>
   <string name="io_sched_title">I/O 调度器</string>
+  <string name="perf_profile_title">性能配置</string>
   <string name="memory_management_title">内存管理</string>
   <string name="pref_ksm_title">KSM</string>
   <string name="pref_ksm_summary">KSM 降低系统对内存的要求并提高性能</string>
