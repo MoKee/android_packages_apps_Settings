@@ -33,11 +33,6 @@
         </PreferenceScreen>
 
         <PreferenceScreen
-                android:key="wallpaper"
-                android:title="@string/wallpaper_settings_title"
-                android:fragment="com.android.settings.WallpaperTypeSettings" />
-
-        <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
                 android:fragment="com.android.settings.mokee.ScreenRecorderSettings" />
