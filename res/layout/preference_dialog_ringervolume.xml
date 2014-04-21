@@ -91,6 +91,23 @@
                 />
         </LinearLayout>
 
+        <LinearLayout
+                android:id="@+id/not_exit_silent_mode_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dip"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+            <CheckBox
+                    android:id="@+id/volume_keys_will_not_exit_silent_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/volume_keys_will_not_exit_silent_mode"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+        </LinearLayout>
+
         <!-- Used for the ringer/notification volume -->
         <LinearLayout
                 android:id="@+id/ringer_section"
