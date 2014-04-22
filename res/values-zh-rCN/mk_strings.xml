@@ -229,4 +229,7 @@
     <!-- Stay awake -->
     <string name="screen_timeout_awake_summary">从不休眠</string>
 
+    <!-- Sound volumes panel -->
+    <string name="volume_keys_will_not_exit_silent_mode">音量键操作不会退出静音模式</string>
+
 </resources>
