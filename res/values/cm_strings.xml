@@ -228,7 +228,8 @@
 
     <!-- Lights settings screen, screen animation options -->
     <string name="screen_animation_off_title">Screen-off animation</string>
-    <string name="screen_animation_style_title">Animation style</string>
+    <string name="screen_animation_style_title">Screen-off animation style</string>
+    <string name="screen_animation_style_disabled">Disabled</string>
     <string name="screen_animation_style_electronbeam">Electron beam</string>
     <string name="screen_animation_style_fade">Fade out</string>
 
@@ -285,6 +286,7 @@
     <string name="unlock_camera_unlock_summary">Pressing the camera button unlocks the device</string>
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_buttons_disabled_by_security">Lockscreen is secure</string>
 
     <!-- Slide lock delay -->
     <string name="delay_and_timeout_title">Lock delay</string>
