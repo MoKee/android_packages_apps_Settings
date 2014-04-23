@@ -450,6 +450,7 @@
   <string name="title_tile_lte">LTE</string>
   <string name="title_tile_mobiledata">移动数据</string>
   <string name="title_tile_profile">情景模式</string>
+  <string name="title_tile_performance_profile">性能配置</string>
   <string name="title_tile_autorotate">屏幕旋转</string>
   <string name="title_tile_settings">设置</string>
   <string name="title_tile_sound">声音</string>
