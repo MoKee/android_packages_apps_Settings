@@ -21,11 +21,13 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.CompoundButton;
@@ -41,12 +43,14 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "PowerSaverSettings";
     private static final String KEY_PERFORMANCE_CATEGORY = "power_saver_category_performance";
+    private static final String KEY_TOGGLES_CPU_PROFILE = "power_saver_toggles_cpu_profile";
     private static final String KEY_TOGGLES_CPU_GOVERNOR = "power_saver_toggles_cpu_governor";
     private static final String KEY_TOGGLES_MOBILE_DATA = "power_saver_toggles_mobile_data";
     private static final String KEY_TOGGLES_GPS = "power_saver_toggles_gps";
     private static final String KEY_TOGGLES_NOTIFICATION = "power_saver_toggles_notification";
     private ContentResolver resolver;
     private Switch mEnabledSwitch;
+    private CheckBoxPreference mTogglesCPUProfile;
     private CheckBoxPreference mTogglesCPUGovernor;
     private CheckBoxPreference mTogglesMobileData;
     private CheckBoxPreference mTogglesGPS;
@@ -54,6 +58,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mPerformanceCategory;
     private PreferenceScreen prefSet;
     private Activity mActivity;
+    private String [] pwrsvValue;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +84,21 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
         prefSet = getPreferenceScreen();
         mPerformanceCategory = (PreferenceCategory) prefSet.findPreference(KEY_PERFORMANCE_CATEGORY);
+
+        mTogglesCPUProfile = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_PROFILE);
+        String perfProfileProp = getString(com.android.internal.R.string.config_perf_profile_prop);
+        if (mTogglesCPUProfile != null && TextUtils.isEmpty(perfProfileProp)) {
+            mPerformanceCategory.removePreference(mTogglesCPUProfile);
+            mTogglesCPUProfile = null;
+        } else {
+            String defValue = Settings.System.getString(getActivity().getContentResolver(), Settings.System.PERFORMANCE_PROFILE);
+            if (TextUtils.isEmpty(defValue)) {
+                defValue = getString(com.android.internal.R.string.config_perf_profile_default_entry);
+            }
+            pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
+            mTogglesCPUProfile.setChecked(defValue.equals(pwrsvValue[0]));
+        }
+
         mTogglesCPUGovernor = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_GOVERNOR);
         /*
          * Governor Some systems might not use governors
@@ -86,11 +106,16 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         if (!Utils.fileExists(Processor.GOV_LIST_FILE) || !Utils.fileExists(Processor.GOV_FILE)
                 || Utils.fileReadOneLine(Processor.GOV_FILE) == null
                 || Utils.fileReadOneLine(Processor.GOV_LIST_FILE) == null) {
-            prefSet.removePreference(mPerformanceCategory);
+            mPerformanceCategory.removePreference(mTogglesCPUGovernor);
+            mTogglesCPUGovernor = null;
         } else {
             mTogglesCPUGovernor.setChecked(Settings.System.getInt(resolver,
                     Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0);
         }
+        if (mTogglesCPUGovernor == null && mTogglesCPUProfile == null) {
+            prefSet.removePreference(mPerformanceCategory);
+        }
+
         mTogglesMobileData = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_MOBILE_DATA);
         mTogglesMobileData.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_MOBILE_DATA, 0) != 0);
@@ -121,7 +146,10 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mTogglesCPUGovernor) {
+        if (preference == mTogglesCPUProfile) {
+            Settings.System.putString(resolver, Settings.System.PERFORMANCE_PROFILE,
+                    mTogglesCPUProfile.isChecked() ? pwrsvValue[0] : pwrsvValue[1]);
+        } else if (preference == mTogglesCPUGovernor) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR,
                     mTogglesCPUGovernor.isChecked() ? 1 : 0);
         } else if (preference == mTogglesMobileData) {

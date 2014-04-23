@@ -21,6 +21,12 @@
         android:title="@string/power_saver_toggles_performance_title">
 
         <CheckBoxPreference
+            android:key="power_saver_toggles_cpu_profile"
+            android:title="@string/power_saver_toggles_cpu_profile_title"
+            android:summary="@string/power_saver_toggles_cpu_profile_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
             android:key="power_saver_toggles_cpu_governor"
             android:title="@string/power_saver_toggles_cpu_governor_title"
             android:summary="@string/power_saver_toggles_cpu_governor_summary"
