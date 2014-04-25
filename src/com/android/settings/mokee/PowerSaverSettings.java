@@ -58,7 +58,6 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mPerformanceCategory;
     private PreferenceScreen prefSet;
     private Activity mActivity;
-    private String [] pwrsvValue;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -91,12 +90,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
             mPerformanceCategory.removePreference(mTogglesCPUProfile);
             mTogglesCPUProfile = null;
         } else {
-            String defValue = Settings.System.getString(getActivity().getContentResolver(), Settings.System.PERFORMANCE_PROFILE);
-            if (TextUtils.isEmpty(defValue)) {
-                defValue = getString(com.android.internal.R.string.config_perf_profile_default_entry);
-            }
-            pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
-            mTogglesCPUProfile.setChecked(defValue.equals(pwrsvValue[0]));
+            mTogglesCPUProfile.setChecked(Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0);
         }
 
         mTogglesCPUGovernor = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_GOVERNOR);
@@ -147,8 +141,11 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mTogglesCPUProfile) {
+            String [] pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
             Settings.System.putString(resolver, Settings.System.PERFORMANCE_PROFILE,
                     mTogglesCPUProfile.isChecked() ? pwrsvValue[0] : pwrsvValue[1]);
+            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE,
+                    mTogglesCPUProfile.isChecked() ? 1 : 0);
         } else if (preference == mTogglesCPUGovernor) {
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR,
                     mTogglesCPUGovernor.isChecked() ? 1 : 0);
