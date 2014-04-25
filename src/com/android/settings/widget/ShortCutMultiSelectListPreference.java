@@ -29,7 +29,6 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.mokee.util.MoKeeUtils;
 import android.os.Bundle;
 import android.preference.DialogPreference;
 import android.provider.Settings;
@@ -44,6 +43,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import org.mokee.util.MoKeeUtils;
 
 import com.android.settings.R;
 

@@ -19,10 +19,11 @@ package com.android.settings.mkpush;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.mokee.util.MoKeeUtils;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
+
+import org.mokee.util.MoKeeUtils;
 
 import com.baidu.android.pushservice.PushManager;
 

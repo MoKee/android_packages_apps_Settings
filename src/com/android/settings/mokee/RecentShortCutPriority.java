@@ -26,7 +26,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
-import android.mokee.util.MoKeeUtils;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -36,6 +35,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.mokee.util.MoKeeUtils;
 
 import com.android.settings.R;
 import com.android.settings.cyanogenmod.TouchInterceptor;
