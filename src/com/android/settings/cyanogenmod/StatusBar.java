@@ -29,6 +29,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.telephony.MSimTelephonyManager;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
@@ -124,7 +125,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarCmSignal.setSummary(mStatusBarCmSignal.getEntry());
         mStatusBarCmSignal.setOnPreferenceChangeListener(this);
 
-        if (Utils.isWifiOnly(getActivity())) {
+        if (Utils.isWifiOnly(getActivity())
+                || (MSimTelephonyManager.getDefault().isMultiSimEnabled())) {
             prefSet.removePreference(mStatusBarCmSignal);
         }
 
