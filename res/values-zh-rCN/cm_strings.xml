@@ -255,6 +255,7 @@
   <string name="title_tile_network_adb">网络 ADB 调试</string>
   <string name="title_dynamic_tiles">动态按钮</string>
   <string name="dynamic_tiles_note_title">注意</string>
+  <string name="dynamic_tiles_note_summary">动态按钮不是随时都会显示的，它们仅会在有相关的系统事件时显示</string>
   <string name="title_dynamic_alarm">闹钟</string>
   <string name="title_dynamic_bugreport">错误报告</string>
   <string name="title_dynamic_dock_battery">基座电池</string>
