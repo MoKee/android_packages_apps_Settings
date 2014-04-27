@@ -175,7 +175,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         Settings.System.putInt(resolver, Settings.System.POWER_SAVER_ENABLED, isChecked ? 1 : 0);
         setPrefsEnabledState(isChecked);
-        Intent service = (new Intent()).setClassName("com.android.systemui", "com.android.systemui.powersaver.PowerSaverService");
+        Intent service = new Intent().setClassName("com.android.systemui", "com.android.systemui.powersaver.PowerSaverService");
         if (isChecked) {
             mActivity.stopService(service);
             mActivity.startService(service);
