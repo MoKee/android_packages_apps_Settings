@@ -170,6 +170,10 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
             if (preference == mPerfProfilePref) {
                 Settings.System.putString(getActivity().getContentResolver(),
                         Settings.System.PERFORMANCE_PROFILE, String.valueOf(newValue));
+                // We need update value
+                if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0) {
+                        Settings.System.putString(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_GOVERNOR_DEFAULT, String.valueOf(newValue));
+                }
                 setCurrentPerfProfileSummary();
                 return true;
             }
