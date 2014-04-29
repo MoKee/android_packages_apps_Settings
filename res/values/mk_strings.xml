@@ -226,6 +226,7 @@
     <string name="power_saver_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
     <string name="power_saver_toggles_cpu_profile_title">Active Powersave</string>
     <string name="power_saver_toggles_cpu_profile_summary">Limit the maximum performance of the CPU when used device</string>
+    <string name="power_saver_toggles_cpu_profile_toast">Active powersave mode is turned off</string>
     <string name="power_saver_toggles_cpu_governor_title">Sleep Powersave</string>
     <string name="power_saver_toggles_cpu_governor_summary">Conserve CPU usage on screen off</string>
     <string name="power_saver_toggles_other_title">Other</string>

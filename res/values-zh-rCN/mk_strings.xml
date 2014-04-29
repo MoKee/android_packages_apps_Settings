@@ -193,6 +193,7 @@
     <string name="power_saver_toggles_mobile_data_summary">屏幕关闭后将禁用数据连接</string>
     <string name="power_saver_toggles_cpu_profile_title">主动节能</string>
     <string name="power_saver_toggles_cpu_profile_summary">在您使用手机时，限制 CPU 的最大性能</string>
+    <string name="power_saver_toggles_cpu_profile_toast">主动节能模式已关闭</string>
     <string name="power_saver_toggles_cpu_governor_title">待机节能</string>
     <string name="power_saver_toggles_cpu_governor_summary">屏幕关闭后将切换到节能模式</string>
     <string name="power_saver_toggles_other_title">其它</string>

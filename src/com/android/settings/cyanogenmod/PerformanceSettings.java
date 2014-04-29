@@ -31,9 +31,11 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 /**
  * Performance Settings
@@ -168,9 +170,17 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (newValue != null) {
             if (preference == mPerfProfilePref) {
-                Settings.System.putString(getActivity().getContentResolver(),
-                        Settings.System.PERFORMANCE_PROFILE, String.valueOf(newValue));
+                ContentResolver resolver = getActivity().getContentResolver();
+                Settings.System.putString(resolver, Settings.System.PERFORMANCE_PROFILE, String.valueOf(newValue));
                 setCurrentPerfProfileSummary();
+                // We need update value
+                if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0) {
+                        Settings.System.putString(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR_DEFAULT, Utils.fileReadOneLine(Processor.GOV_FILE));
+                        if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0 && Integer.valueOf(String.valueOf(newValue)) != 0) {
+                            Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0);
+                            Toast.makeText(getActivity(), getString(R.string.power_saver_toggles_cpu_profile_toast), Toast.LENGTH_LONG).show();
+                        }
+                }
                 return true;
             }
         }
