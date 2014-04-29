@@ -198,6 +198,7 @@
   <string name="unlock_camera_unlock_summary">按下相机键解锁设备</string>
   <string name="unlock_quick_unlock_control_title">快速解锁</string>
   <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
+  <string name="unlock_buttons_disabled_by_security">锁屏是安全的</string>
   <string name="delay_and_timeout_title">锁定延迟</string>
   <string name="slide_lock_delay_title">延迟屏幕锁定</string>
   <string name="slide_lock_timeout_delay_title">屏幕超时后的延迟</string>
@@ -306,6 +307,16 @@
   <string name="auto_brightness_preview">预览</string>
   <string name="auto_brightness_preview_dialog_title">亮度曲线</string>
   <string name="auto_brightness_help_dialog_title">帮助</string>
+  <string name="auto_brightness_help_text"><b>亮度是怎么被计算的？</b>
+\n\n
+亮度曲线是通过在选定的<i>控制点</i>上进行<i>三次样条插值</i>而计算出的。这并不是一个设定了环境亮度范围内，屏幕亮度就不会改变的计算方式。通过这种特殊方式，环境亮度的细微变化将不会导致屏幕亮度的大幅度改变。由于改变控制点会导致的结果是难以预测的，我们为您提供了一个计算后的曲线预览。\n
+请注意：为了能够清晰的显示各个控制点，预览是使用<i>对数刻度</i>绘制的。如果使用的是线性刻度，您将无法明确地区分各个控制点，特别是处于范围底部的。
+\n\n
+<b>应该如何去编辑亮度曲线呢？</b>
+\n\n
+在亮度列表里的每一行都对应着一个在亮度曲线上的<i>控制点</i>。您可以通过各行的滑块来调整每个点的亮度级别。触摸滑块时屏幕的亮度也会做出相应的改变，作为一个亮度级别的预览。\n
+长按任何一行将显示更多的选项。选择 \'编辑\' 将让您编辑环境亮度级别并手动输入所需的屏幕亮度。选择 \'分离\' 将让您把一行分离为两行并同时加入更多的控制点。选择 \'移除\' 将移除所选行。
+  </string>
   <string name="auto_brightness_sensitivity_title">调整敏感度</string>
   <string name="auto_brightness_sensitivity_verylow">非常低</string>
   <string name="auto_brightness_sensitivity_low">低</string>
@@ -354,6 +365,7 @@
   <string name="build_date">编译日期</string>
   <string name="cpu_info">处理器</string>
   <string name="mem_info">内存</string>
+  <string name="phone_service_state">语音: <xliff:g id="voice_state">%1$s</xliff:g>, 数据: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="anonymous_statistics_title">CyanogenMod 统计</string>
   <string name="anonymous_statistics_summary">开启匿名统计报告以便帮助 CyanogenMod 未来向更好的方向发展</string>
   <string name="anonymous_statistics_warning_title">关于统计</string>
@@ -370,10 +382,13 @@
   <string name="preview_carrier_title">运营商</string>
   <string name="header_category_interface">个性化</string>
   <string name="themes_settings_title">主题</string>
+  <string name="themepacks_settings_title">主题包</string>
   <string name="styles_settings_title">样式</string>
   <string name="icons_settings_title">图标</string>
   <string name="fonts_settings_title">字体</string>
   <string name="wallpaper_settings_title">壁纸</string>
+  <string name="bootanim_settings_title">动画</string>
+  <string name="soundpack_settings_title">音频包</string>
   <string name="performance_settings_title">性能</string>
   <string name="performance_settings_warning_title">请谨慎前进</string>
   <string name="performance_settings_warning">这些设置完全是用于测试与实验。这里的改变将直接影响系统性能，并可能导致系统不稳定、数据丢失与硬件损伤。\n\n如果您更改了这里的设置，我们请求您不要向我们提交错误报告。</string>
@@ -554,6 +569,7 @@
   <string name="lockscreen_long_press_home_title">长按 Home 键</string>
   <string name="lockscreen_long_press_menu_title">长按菜单键</string>
   <string name="lockscreen_buttons_no_action">无操作</string>
+  <string name="lockscreen_buttons_flashlight">手电筒</string>
   <string name="lockscreen_buttons_next">下一首歌</string>
   <string name="lockscreen_buttons_previous">上一首歌</string>
   <string name="lockscreen_buttons_playpause">播放/暂停 音乐</string>
@@ -675,6 +691,7 @@
   <string name="development_shortcut_title">开发快捷方式</string>
   <string name="development_shortcut_summary">在通知区域和最近应用列表中启用“清除数据”和“强行停止”选项</string>
   <string name="usb_mass_storage_title">大容量存储 (UMS)</string>
+  <string name="usb_mass_storage_summary">使用 USB 大容量存储模式连接到计算机</string>
   <string name="storage_rescan_media">为存储卷重新扫描媒体</string>
   <string name="storage_rescan_media_complete">扫描完成</string>
   <string name="whisperpush_title">WhisperPush</string>
@@ -836,4 +853,5 @@
   <string name="voice_wakeup_retrain_title">重新训练您的声音</string>
   <string name="voice_wakeup_activity_title">要启动的活动</string>
   <string name="voice_wakeup_default_activity">Google 即时</string>
+  <string name="sub_no_sim">无 SIM 卡</string>
 </resources>
