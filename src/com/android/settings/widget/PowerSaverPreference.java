@@ -58,7 +58,7 @@ public class PowerSaverPreference extends Preference implements OnCheckedChangeL
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         Settings.System.putInt(getContext().getContentResolver(), Settings.System.POWER_SAVER_ENABLED, isChecked ? 1 : 0);
-        Intent service = (new Intent()).setClassName("com.android.systemui", "com.android.systemui.powersaver.PowerSaverService");
+        Intent service = (new Intent()).setClassName("org.mokee.services", "org.mokee.services.powersaver.PowerSaverService");
         if (isChecked) {
             getContext().stopService(service);
             getContext().startService(service);
