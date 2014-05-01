@@ -418,6 +418,7 @@
   <string name="changelog_error">无法读取更改记录</string>
   <string name="changelog_unknown">未知</string>
   <string name="changelog_version">版本</string>
+  <string name="contributor_cloud_title">代码贡献者</string>
   <string name="cmupdate_settings_title">CyanogenMod 更新</string>
   <string name="cmupdate_settings_summary">检查、查看或安装可用的更新</string>
   <string name="advanced_settings_title">高级</string>

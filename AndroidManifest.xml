@@ -1869,8 +1869,6 @@
 
         <activity android:name=".ApnEditor" />
 
-        <activity android:name=".cyanogenmod.ContributorsCloud" />
-
         <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".notificationlight.NotificationLightSettings" />
@@ -1916,6 +1914,7 @@
 
         <!-- MOKEE ACTIVITIES START -->
         <activity android:name=".mokee.ChangeLog" />
+        <activity android:name=".mokee.ContributorsCloud" />
         <activity android:name="Settings$PowerSaverSettingsActivity"
                   android:label="@string/power_saver_settings_title"
                   android:taskAffinity=""
