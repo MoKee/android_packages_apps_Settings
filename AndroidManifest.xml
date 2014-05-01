@@ -1869,6 +1869,8 @@
 
         <activity android:name=".ApnEditor" />
 
+        <activity android:name=".cyanogenmod.ContributorsCloud" />
+
         <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".notificationlight.NotificationLightSettings" />
