@@ -16,8 +16,10 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -31,7 +33,6 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-
 import android.view.IWindowManager;
 import android.view.WindowManagerGlobal;
 
@@ -101,10 +102,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mDisableNavigationKeys;
 
     private Handler mHandler;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext = getActivity();
 
         addPreferencesFromResource(R.xml.button_settings);
 
@@ -140,26 +143,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Force Navigation bar related options
         mDisableNavigationKeys = (CheckBoxPreference) findPreference(DISABLE_NAV_KEYS);
 
-        // Only visible on devices that does not have a navigation bar already,
-        // and don't even try unless the existing keys can be disabled
+        // Only visible on devices that does not have a navigation bar already
         boolean needsNavigationBar = false;
-        if (KeyDisabler.isSupported()) {
-            try {
-                IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                needsNavigationBar = wm.needsNavigationBar();
-            } catch (RemoteException e) {
-            }
+        try {
+            IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
+            needsNavigationBar = wm.needsNavigationBar();
+        } catch (RemoteException e) {
+        }
 
-            if (needsNavigationBar) {
-                prefScreen.removePreference(mDisableNavigationKeys);
-            } else {
-                // Remove keys that can be provided by the navbar
-                updateDisableNavkeysOption();
-            }
+        if (!needsNavigationBar) {
+            updateDisableNavkeysOption();
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
-
 
         if (hasHomeKey) {
             if (!res.getBoolean(R.bool.config_show_homeWake)) {
@@ -423,7 +419,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
     }
 
-
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSwapVolumeButtons) {
@@ -438,17 +433,40 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mCameraSleepOnRelease.setEnabled(isCameraWakeEnabled);
             return true;
         } else if (preference == mDisableNavigationKeys) {
-            mDisableNavigationKeys.setEnabled(false);
-            writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
-            updateDisableNavkeysOption();
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mDisableNavigationKeys.setEnabled(true);
-                }
-            }, 1000);
+            if (!KeyDisabler.isSupported()) {
+                confirmForceNavBar();
+            } else {
+                updateNavBar();
+            }
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void updateNavBar() {
+        mDisableNavigationKeys.setEnabled(false);
+        writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
+        updateDisableNavkeysOption();
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mDisableNavigationKeys.setEnabled(true);
+            }
+        }, 1000);
+    }
+
+    private void confirmForceNavBar() {
+        new AlertDialog.Builder(mContext).setMessage(R.string.confirm_force_navbar_dialog_message)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        updateNavBar();
+                    }
+                }).setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        mDisableNavigationKeys.setChecked(!mDisableNavigationKeys.isChecked());
+                    }
+                }).show();
     }
 }
