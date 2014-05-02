@@ -207,10 +207,6 @@
     <string name="screen_off_animation_scaledown">缩放</string>
     <string name="screen_off_animation_turnoff">关闭</string>
 
-    <!-- Force show navigation bar -->
-    <string name="force_show_navigation_bar_title">显示虚拟导航栏</string>
-    <string name="force_show_navigation_bar_summary">强制显示虚拟导航栏（需要重启）</string>
-
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有号码</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>

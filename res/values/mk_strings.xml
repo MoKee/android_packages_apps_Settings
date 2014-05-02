@@ -240,7 +240,6 @@
     <string name="screen_off_animation_scaledown">Scale down</string>
     <string name="screen_off_animation_turnoff">Turn off</string>
 
-    <!-- Force show navigation bar -->
     <string name="confirm_force_navbar_dialog_message">Hardware keys unable to be disabled, continue?</string>
 
     <!-- BlackList Ext -->
