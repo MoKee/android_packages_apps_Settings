@@ -26,6 +26,7 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -240,6 +241,14 @@ public class Processor extends SettingsPreferenceFragment implements
         if (newValue != null) {
             if (preference == mGovernorPref) {
                 fname = GOV_FILE;
+                // We need turn off active powersave mode
+                String currentGov = Utils.fileReadOneLine(GOV_FILE);
+                if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0 && !currentGov.equals((String) newValue)) {
+                    Settings.System.putInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_PROFILE, 0);
+                    String [] pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
+                    Settings.System.putString(getActivity().getContentResolver(), Settings.System.PERFORMANCE_PROFILE, pwrsvValue[1]);
+                    Toast.makeText(getActivity(), getString(R.string.power_saver_toggles_cpu_profile_toast), Toast.LENGTH_LONG).show();
+                }
             } else if (preference == mMinFrequencyPref) {
                 fname = FREQ_MIN_FILE;
             } else if (preference == mMaxFrequencyPref) {
