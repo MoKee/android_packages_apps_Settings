@@ -208,8 +208,7 @@
     <string name="screen_off_animation_turnoff">关闭</string>
 
     <!-- Force show navigation bar -->
-    <string name="force_show_navigation_bar_title">显示虚拟导航栏</string>
-    <string name="force_show_navigation_bar_summary">强制显示虚拟导航栏（需要重启）</string>
+    <string name="confirm_force_navbar_dialog_message">不能禁用硬件按钮，是否继续？</string>
 
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有号码</string>
