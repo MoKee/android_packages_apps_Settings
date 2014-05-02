@@ -57,9 +57,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_BLUETOOTH_INPUT_SETTINGS = "bluetooth_input_settings";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
 
-    // Force show navigation bar
-    private static final String KEY_FORCE_SHOW_NAVIGATION_BAR = "force_show_navigation_bar";
-
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_MENU = "menu_key";
     private static final String CATEGORY_ASSIST = "assist_key";
@@ -87,9 +84,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     public static final int KEY_MASK_ASSIST = 0x08;
     public static final int KEY_MASK_APP_SWITCH = 0x10;
     public static final int KEY_MASK_CAMERA = 0x20;
-
-    // Force show navigation bar
-    private CheckBoxPreference mForceShowNavigationBarPref;
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -146,9 +140,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Force Navigation bar related options
         mDisableNavigationKeys = (CheckBoxPreference) findPreference(DISABLE_NAV_KEYS);
 
-        mForceShowNavigationBarPref = (CheckBoxPreference) findPreference(KEY_FORCE_SHOW_NAVIGATION_BAR);
-        mForceShowNavigationBarPref.setOnPreferenceChangeListener(this);
-
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
@@ -164,7 +155,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             } else {
                 // Remove keys that can be provided by the navbar
                 updateDisableNavkeysOption();
-                prefScreen.removePreference(mForceShowNavigationBarPref);
             }
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
@@ -348,10 +338,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolumeKeyCursorControl) {
             handleActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
-            return true;
-        } else if (preference == mForceShowNavigationBarPref) {
-            Settings.System.putInt(getContentResolver(), Settings.System.FORCE_SHOW_NAVIGATION_BAR,
-                    (Boolean) newValue ? 1 : 0);
             return true;
         }
 
