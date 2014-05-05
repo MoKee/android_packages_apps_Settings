@@ -41,6 +41,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     // Custom Navigation Bar Height Key
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
+    // Force Translucent Key
+    private static final String KEY_FORCE_TRANSLUCENT_NAV_BAR = "force_translucent_nav_bar";
+
     // ListView Animations Key
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
@@ -48,12 +51,16 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
+    private static final String CATEGORY_OTHER = "other_category";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
 
     // Custom Navigation Bar Height Preference
     private ListPreference mNavButtonsHeight;
+
+    // Force Translucent Preference
+    private CheckBoxPreference mTranslucentNavBar;
 
     // ListView Animations Preference
     private ListPreference mListViewAnimation;
@@ -78,6 +85,12 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
+
+        PreferenceCategory otherCategory =
+                (PreferenceCategory) findPreference(CATEGORY_OTHER);
+
+        // Force translucent
+        mTranslucentNavBar = (CheckBoxPreference) findPreference(KEY_FORCE_TRANSLUCENT_NAV_BAR);
 
         // ListView Animations
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
@@ -137,6 +150,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 expandedCategory.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
                 prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
+                otherCategory.removePreference(mTranslucentNavBar);
             }
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
