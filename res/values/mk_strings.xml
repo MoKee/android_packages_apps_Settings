@@ -267,4 +267,9 @@
     <!-- Sound volumes panel -->
     <string name="volume_keys_will_not_exit_silent_mode">Volume keys will not exit silent mode</string>
 
+    <!-- Force translucent -->
+    <string name="force_translucent_status_bar_title">Force translucent status bar</string>
+    <string name="force_translucent_status_bar_summary">Force transparency of status bar regardless of app settings</string>
+    <string name="force_translucent_nav_bar_title">Force translucent navigation bar</string>
+    <string name="force_translucent_nav_bar_summary">Force transparency of navigation bar regardless of app settings</string>
 </resources>
