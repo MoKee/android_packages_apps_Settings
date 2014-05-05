@@ -433,7 +433,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mCameraSleepOnRelease.setEnabled(isCameraWakeEnabled);
             return true;
         } else if (preference == mDisableNavigationKeys) {
-            if (!KeyDisabler.isSupported() && !mDisableNavigationKeys.isChecked()) {
+            if (!KeyDisabler.isSupported() && mDisableNavigationKeys.isChecked()) {
                 confirmForceNavBar();
             } else {
                 updateNavBar();
