@@ -118,6 +118,18 @@
         android:key="other_category"
         android:title="@string/other_category" >
 
+       <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="force_translucent_status_bar"
+            android:title="@string/force_translucent_status_bar_title"
+            android:summary="@string/force_translucent_status_bar_summary"
+            android:defaultValue="false" />
+
+       <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="force_translucent_nav_bar"
+            android:title="@string/force_translucent_nav_bar_title"
+            android:summary="@string/force_translucent_nav_bar_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="listview_animation"
             android:dialogTitle="@string/listview_animation_title"
