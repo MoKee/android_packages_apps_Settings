@@ -41,6 +41,10 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     // Custom Navigation Bar Height Key
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
+    // Force Translucent Key
+    private static final String KEY_FORCE_TRANSLUCENT_STATUS_BAR = "force_translucent_status_bar";
+    private static final String KEY_FORCE_TRANSLUCENT_NAV_BAR = "force_translucent_nav_bar";
+
     // ListView Animations Key
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
@@ -48,12 +52,17 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
+    private static final String CATEGORY_OTHER = "other_category";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
 
     // Custom Navigation Bar Height Preference
     private ListPreference mNavButtonsHeight;
+
+    // Force Translucent Preference
+    private CheckBoxPreference mTranslucentStatusBar;
+    private CheckBoxPreference mTranslucentNavBar;
 
     // ListView Animations Preference
     private ListPreference mListViewAnimation;
@@ -79,6 +88,10 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
+        // Force translucent
+        mTranslucentStatusBar  = (CheckBoxPreference) findPreference(KEY_FORCE_TRANSLUCENT_STATUS_BAR);
+        mTranslucentNavBar = (CheckBoxPreference) findPreference(KEY_FORCE_TRANSLUCENT_NAV_BAR);
+
         // ListView Animations
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
         int listviewanimation = Settings.System.getInt(getContentResolver(),
@@ -96,6 +109,9 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
         PreferenceCategory expandedCategory =
                 (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
+
+        PreferenceCategory otherCategory =
+                (PreferenceCategory) findPreference(CATEGORY_OTHER);
 
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
@@ -137,6 +153,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 expandedCategory.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
                 prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
+                otherCategory.removePreference(mTranslucentNavBar);
             }
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
@@ -158,6 +175,16 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
             Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
                     Integer.valueOf((String) objValue));
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
+            return true;
+        } else if (preference == mTranslucentStatusBar) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.FORCE_TRANSLUCENT_STATUS_BAR,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mTranslucentNavBar) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.FORCE_TRANSLUCENT_NAV_BAR,
+                    value ? 1 : 0);
             return true;
         } else if (preference == mListViewAnimation) {
             int listviewanimation = Integer.valueOf((String) objValue);
