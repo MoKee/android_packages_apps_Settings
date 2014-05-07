@@ -635,6 +635,7 @@
   <string name="hardware_keys_action_voice_search">语音搜索</string>
   <string name="hardware_keys_action_in_app_search">程序内搜索</string>
   <string name="hardware_keys_action_launch_camera">启动相机</string>
+  <string name="button_wake_title">唤醒</string>
   <string name="home_wake_summary">按 Home 键唤醒设备</string>
   <string name="camera_wake_summary">按相机键唤醒设备</string>
   <string name="camera_sleep_on_release_title">屏幕窥探</string>
