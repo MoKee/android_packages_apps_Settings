@@ -121,7 +121,7 @@
   <string name="volume_ring_only_description">铃声</string>
   <string name="link_volume_ringtones">链接铃声与通知的音量</string>
   <string name="link_volume_mutes">静音模式将会影响通知</string>
-  <string name="volume_keys_control_ring_stream">音量键将控制铃声音量</string>
+  <string name="volume_keys_control_ring_stream">音量按钮控制铃声音量</string>
   <string name="ring_mode_title">响铃模式</string>
   <string name="ring_mode_normal">正常</string>
   <string name="ring_mode_vibrate">振动</string>
@@ -137,7 +137,7 @@
   <string name="notification_vibrate_during_calls_title">通话时振动</string>
   <string name="notification_vibrate_during_calls_summary">通话时来电会轻微振动</string>
   <string name="volume_adjust_sounds_enable_title">音量键调节声音</string>
-  <string name="volume_adjust_sounds_enable_summary">使用音量键调整音量时将播放提示音</string>
+  <string name="volume_adjust_sounds_enable_summary">用音量按钮调节音量时播放声音</string>
   <string name="icon_picker_title">选择图标来源</string>
   <string name="icon_picker_system_icons_title">系统图标</string>
   <string name="icon_picker_gallery_title">图库</string>
@@ -159,6 +159,8 @@
   <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
   <string name="screen_animation_off_title">锁屏效果</string>
+  <string name="screen_animation_style_title">关屏动画样式</string>
+  <string name="screen_animation_style_disabled">已禁用 </string>
   <string name="screen_animation_style_electronbeam">CRT</string>
   <string name="screen_animation_style_fade">淡出</string>
   <string name="edit_light_settings">编辑指示灯设置</string>
@@ -226,7 +228,7 @@
   <string name="tile_picker_summary">查看、选择并改变显示按钮的布局</string>
   <string name="tile_choose_title">选择一个按钮</string>
   <string name="title_qs_small_icons">显示小按钮</string>
-  <string name="summary_qs_small_icons">使用较小的按钮以增加每行显示的按钮数量</string>
+  <string name="summary_qs_small_icons">使用小按钮以增加列数</string>
   <string name="title_tile_airplane">飞行模式</string>
   <string name="title_tile_battery">电量显示</string>
   <string name="title_tile_bluetooth">蓝牙</string>
@@ -365,7 +367,7 @@
   <string name="build_date">编译日期</string>
   <string name="cpu_info">处理器</string>
   <string name="mem_info">内存</string>
-  <string name="phone_service_state">语音: <xliff:g id="voice_state">%1$s</xliff:g>, 数据: <xliff:g id="data_state">%2$s</xliff:g></string>
+  <string name="phone_service_state">语音：<xliff:g id="voice_state">%1$s</xliff:g>，数据：<xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="anonymous_statistics_title">CyanogenMod 统计</string>
   <string name="anonymous_statistics_summary">开启匿名统计报告以便帮助 CyanogenMod 未来向更好的方向发展</string>
   <string name="anonymous_statistics_warning_title">关于统计</string>
@@ -388,13 +390,13 @@
   <string name="fonts_settings_title">字体</string>
   <string name="wallpaper_settings_title">壁纸</string>
   <string name="lockscreen_wallpaper_settings_title">锁屏壁纸</string>
-  <string name="bootanim_settings_title">动画</string>
-  <string name="soundpack_settings_title">音频包</string>
+  <string name="bootanim_settings_title">开机动画</string>
+  <string name="soundpack_settings_title">音效包</string>
   <string name="performance_settings_title">性能</string>
   <string name="performance_settings_warning_title">请谨慎前进</string>
-  <string name="performance_settings_warning">这些设置完全是用于测试与实验。这里的改变将直接影响系统性能，并可能导致系统不稳定、数据丢失与硬件损伤。\n\n如果您更改了这里的设置，我们请求您不要向我们提交错误报告。</string>
+  <string name="performance_settings_warning">这些设置是实验性的，任何应用的改变都有可能导致不稳定、崩溃、数据丢失或硬件故障。\n\n如果您更改了默认设置，我们请求您不要提交错误报告。</string>
   <string name="performance_set_on_boot">启动时设置</string>
-  <string name="performance_set_on_boot_summary">在启动时恢复当前的 CPU 设置</string>
+  <string name="performance_set_on_boot_summary">启动时还原已应用的设置</string>
   <string name="processor_title">处理器</string>
   <string name="cpu_cur_freq_title">当前 CPU 频率</string>
   <string name="cpu_governors_title">CPU 调节器</string>
@@ -413,7 +415,7 @@
   <string name="pref_force_highend_gfx_title">强制高端图形</string>
   <string name="pref_force_highend_gfx_summary">启用高端视觉特效，如透明状态栏/导航栏 (需要重启)</string>
   <string name="kill_app_longpress_back">使用返回键强制关闭程序</string>
-  <string name="kill_app_longpress_back_summary">长按返回键将终止前台应用程序</string>
+  <string name="kill_app_longpress_back_summary">长按返回键将终止前台应用</string>
   <string name="changelog_title">查看更改记录</string>
   <string name="changelog_loading">正在读取更改记录\u2026</string>
   <string name="changelog_error">无法读取更改记录</string>
@@ -450,7 +452,7 @@
   <string name="blacklist_empty_text">您没有任何的黑名单号码。您可以点击添加 (+) 按钮来添加。</string>
   <string name="blacklist_disabled_empty_text">要阻止来自特定号码的来电或短信，请启用黑名单。</string>
   <string name="blacklist_summary_disabled">禁用</string>
-  <string name="blacklist_summary">来自黑名单上的号码的电话与短信将被阻止</string>
+  <string name="blacklist_summary">来自黑名单上电话号码的来电和信息将被拦截</string>
   <string name="blacklist_notify">显示通知</string>
   <string name="blacklist_private_numbers_title">私人号码</string>
   <string name="blacklist_private_numbers_summary_disabled">不要阻止私人号码的来电</string>
@@ -697,7 +699,7 @@
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">管理安全短信设置</string>
   <string name="custom_runtime_warning_title">警告</string>
-  <string name="custom_runtime_warning_message">ART是Google开发的尚在测试阶段的安卓运行环境，该选项处于试验阶段，有可能使您的设备崩溃、死机、数据丢失或者无法正常开机。 访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART简介&lt;/a&gt; 或更多信息。&lt;br/&gt;&lt;br/&gt;当您在使用ART模式遇到问题时，请不要向我们提交错误报告，因为这一切与MoKee OpenSource无关。&lt;br/&gt;&lt;br/&gt;你确认要重启设备并从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 运行环境更换到 <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART是Google开发的尚在测试阶段的安卓运行环境，该选项处于试验阶段，有可能造成不稳定、死机、数据丢失或导致设备不能正常开机。请访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART简介&lt;/a&gt; 了解更多信息。&lt;br/&gt;&lt;br/&gt;如果您启用 ART 作为运行环境，我们请求您不要发送错误报告，因为这一切与MoKee OpenSource无关。&lt;br/&gt;&lt;br/&gt;您要重启设备将运行环境从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 改为 <xliff:g id="new" example="libart.so">%2$s</xliff:g>吗？</string>
   <string name="gps_download_data_wifi_only">只通过 WiFi 下载 GPS 辅助数据</string>
   <string name="battery_info_status_charging_dock_ac">(基座 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(基座 USB)</string>
