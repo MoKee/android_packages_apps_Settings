@@ -387,7 +387,8 @@ public class Settings extends PreferenceActivity
         PowerSaverSettings.class.getName(),
         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
         com.android.settings.quicksettings.QuickSettingsTiles.class.getName(),
-        com.android.settings.cyanogenmod.QuietHours.class.getName()
+        com.android.settings.cyanogenmod.QuietHours.class.getName(),
+        ThemeSettings.class.getName()
     };
 
     @Override
