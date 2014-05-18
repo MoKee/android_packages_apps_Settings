@@ -2242,7 +2242,11 @@
         <service android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
             android:process=":mokeepushservice"
-            android:label="MoKeePushService" />
+            android:label="MoKeePushService" >
+            <intent-filter >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
 
         <meta-data android:name="api_key" android:value="MRTYpHDAzBM5D3pfhkj9V9Gh" />
         <!-- MOKEE PUSH SERVICE END -->
