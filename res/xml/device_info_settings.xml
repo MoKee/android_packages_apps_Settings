@@ -97,7 +97,19 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
-                
+
+        <!-- Mod version -->
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_version"
+                android:summary="@string/mod_version_default" />
+
+        <!-- Mod Support -->
+        <Preference android:key="mod_support"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_support"
+                android:summary="@string/mod_support_default" />
+
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 
                 style="?android:preferenceInformationStyle"
@@ -133,18 +145,6 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mem_info"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Mod version -->
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
-
-        <!-- Mod Support -->
-        <Preference android:key="mod_support"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_support"
-                android:summary="@string/mod_support_default" />
 
         <!-- Mod build date -->
         <Preference android:key="build_date"
