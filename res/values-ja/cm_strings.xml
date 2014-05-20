@@ -678,7 +678,7 @@
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">セキュアSMSの設定を管理する</string>
   <string name="custom_runtime_warning_title">警告</string>
-  <string name="custom_runtime_warning_message">ARTは非常に実験的であり、不安定性、クラッシュ、データの損失、端末の正常な起動を妨げる原因になる可能性があるため、CyanogenModでは公式にサポートしていません。詳細については&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;を参照してください。&lt;br/&gt;&lt;br/&gt;ARTをランタイムとして有効にしている場合はバグ報告を送信しないようにご協力をお願いします。&lt;br/&gt;&lt;br/&gt;ランタイムを<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>から<xliff:g id="new" example="libart.so">%2$s</xliff:g>に変更するために再起動してもよろしいですか？</string>
+  <string name="custom_runtime_warning_message">ARTは非常に実験的であり、不安定性、クラッシュ、データの損失、端末の正常な起動を妨げる原因になる可能性があるため、MoKee OpenSourceでは公式にサポートしていません。詳細については&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;を参照してください。&lt;br/&gt;&lt;br/&gt;ARTをランタイムとして有効にしている場合はバグ報告を送信しないようにご協力をお願いします。&lt;br/&gt;&lt;br/&gt;ランタイムを<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>から<xliff:g id="new" example="libart.so">%2$s</xliff:g>に変更するために再起動してもよろしいですか？</string>
   <string name="gps_download_data_wifi_only">GPS補助データをWi-Fiネットワーク経由でのみダウンロード</string>
   <string name="battery_info_status_charging_dock_ac">（AC接続）</string>
   <string name="battery_info_status_charging_dock_usb">（USB接続）</string>
