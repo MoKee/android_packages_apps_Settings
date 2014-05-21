@@ -856,4 +856,14 @@
   <string name="voice_wakeup_activity_title">要启动的活动</string>
   <string name="voice_wakeup_default_activity">Google 即时</string>
   <string name="sub_no_sim">无 SIM 卡</string>
+  <string name="multi_sim_settings_title">多 SIM 卡</string>
+  <string name="multi_sim_settings_group_summary">默认 SIM 卡选择</string>
+  <string name="voice_title">语音通话</string>
+  <string name="data_title">数据呼叫</string>
+  <string name="sms_title">发送短信</string>
+  <string name="priority_sub_title">优先选择</string>
+  <string name="bluetooth_accept_all_files">接受所有文件类型</string>
+  <string name="autoperf_title">启用独立的应用程序配置</string>
+  <string name="autoperf_summary">自动为应用程序切换适合的性能配置</string>
+  <string name="graphics_title">图形和渲染</string>
 </resources>
