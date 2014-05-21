@@ -184,6 +184,7 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         if (newValue != null) {
             if (preference == mPerfProfilePref) {
                 mPowerManager.setPowerProfile(String.valueOf(newValue));
+                ContentResolver resolver = getActivity().getContentResolver();
                 setCurrentPerfProfileSummary();
                 // We need update value
                 if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0) {
