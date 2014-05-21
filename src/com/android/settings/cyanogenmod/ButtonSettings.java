@@ -33,6 +33,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+
 import android.view.IWindowManager;
 import android.view.WindowManagerGlobal;
 
