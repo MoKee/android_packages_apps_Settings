@@ -2163,13 +2163,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
-        <receiver android:name=".users.ProfileUpdateReceiver">
-            <intent-filter>
-                <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
         <!-- MOKEE ANONYMOUS STATISTICS START -->
         <receiver android:name=".mkstats.ReportingServiceManager"
             android:enabled="true"
@@ -2250,6 +2243,13 @@
 
         <meta-data android:name="api_key" android:value="MRTYpHDAzBM5D3pfhkj9V9Gh" />
         <!-- MOKEE PUSH SERVICE END -->
+
+        <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
+        <receiver android:name=".users.ProfileUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="android.support.v4.content.FileProvider"

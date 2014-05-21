@@ -19,9 +19,11 @@ package com.android.settings.mokee;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.PowerManager;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
@@ -57,6 +59,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mTogglesNotification;
     private PreferenceCategory mPerformanceCategory;
     private PreferenceScreen prefSet;
+    private PowerManager mPowerManager;
     private Activity mActivity;
 
     @Override
@@ -64,6 +67,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.power_saver_settings);
         resolver = getContentResolver();
+        mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
     }
 
     @Override
@@ -85,8 +89,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mPerformanceCategory = (PreferenceCategory) prefSet.findPreference(KEY_PERFORMANCE_CATEGORY);
 
         mTogglesCPUProfile = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_PROFILE);
-        String perfProfileProp = getString(com.android.internal.R.string.config_perf_profile_prop);
-        if (mTogglesCPUProfile != null && TextUtils.isEmpty(perfProfileProp)) {
+        if (mTogglesCPUProfile != null && !mPowerManager.hasPowerProfiles()) {
             mPerformanceCategory.removePreference(mTogglesCPUProfile);
             mTogglesCPUProfile = null;
         } else {
@@ -142,8 +145,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mTogglesCPUProfile) {
             String [] pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
-            Settings.System.putString(resolver, Settings.System.PERFORMANCE_PROFILE,
-                    mTogglesCPUProfile.isChecked() ? pwrsvValue[0] : pwrsvValue[1]);
+            mPowerManager.setPowerProfile(mTogglesCPUProfile.isChecked() ? pwrsvValue[0] : pwrsvValue[1]);
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE,
                     mTogglesCPUProfile.isChecked() ? 1 : 0);
         } else if (preference == mTogglesCPUGovernor) {

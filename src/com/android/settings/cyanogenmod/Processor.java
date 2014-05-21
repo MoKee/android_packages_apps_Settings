@@ -16,9 +16,11 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.PowerManager;
 import android.os.SystemProperties;
 import android.os.SystemService;
 import android.preference.ListPreference;
@@ -62,6 +64,8 @@ public class Processor extends SettingsPreferenceFragment implements
     private String mGovernorFormat;
     private String mMinFrequencyFormat;
     private String mMaxFrequencyFormat;
+
+    private PowerManager mPowerManager;
 
     private Preference mCurFrequencyPref;
     private ListPreference mGovernorPref;
@@ -108,6 +112,8 @@ public class Processor extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
 
         initFreqCapFiles();
 
@@ -246,7 +252,7 @@ public class Processor extends SettingsPreferenceFragment implements
                 if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0 && !currentGov.equals((String) newValue)) {
                     Settings.System.putInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_PROFILE, 0);
                     String [] pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
-                    Settings.System.putString(getActivity().getContentResolver(), Settings.System.PERFORMANCE_PROFILE, pwrsvValue[1]);
+                    mPowerManager.setPowerProfile(pwrsvValue[1]);
                     Toast.makeText(getActivity(), getString(R.string.power_saver_toggles_cpu_profile_toast), Toast.LENGTH_LONG).show();
                 }
             } else if (preference == mMinFrequencyPref) {
