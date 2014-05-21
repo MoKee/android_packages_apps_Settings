@@ -349,11 +349,16 @@
   <string name="quiet_hours_summary">配置设备应该安静的时段</string>
   <string name="quiet_hours_enabled">开启安静时段</string>
   <string name="quiet_hours_ringer">电话铃声</string>
-  <string name="quiet_hours_mute">静音提醒</string>
-  <string name="quiet_hours_system">禁用系统声音</string>
-  <string name="quiet_hours_still">禁用振动</string>
-  <string name="quiet_hours_dim">禁用指示灯</string>
-  <string name="quiet_hours_haptic">禁用触控反馈</string>
+  <string name="quiet_hours_mute">提醒</string>
+  <string name="quiet_hours_mute_summary">静音提醒</string>
+  <string name="quiet_hours_system">系统声音</string>
+  <string name="quiet_hours_system_summary">禁用系统声音</string>
+  <string name="quiet_hours_still">振动</string>
+  <string name="quiet_hours_still_summary">禁用振动</string>
+  <string name="quiet_hours_dim">指示灯</string>
+  <string name="quiet_hours_dim_summary">禁用指示灯</string>
+  <string name="quiet_hours_haptic">触控反馈</string>
+  <string name="quiet_hours_haptic_summary">禁用触控反馈</string>
   <string name="quiet_hours_active_from">从</string>
   <string name="quiet_hours_active_to">激活到</string>
   <string name="quiet_hours_ringer_allow_all">所有来电响铃</string>
@@ -856,4 +861,14 @@
   <string name="voice_wakeup_activity_title">要启动的活动</string>
   <string name="voice_wakeup_default_activity">Google 即时</string>
   <string name="sub_no_sim">无 SIM 卡</string>
+  <string name="multi_sim_settings_title">多 SIM 卡</string>
+  <string name="multi_sim_settings_group_summary">默认 SIM 卡选择</string>
+  <string name="voice_title">语音通话</string>
+  <string name="data_title">数据呼叫</string>
+  <string name="sms_title">发送短信</string>
+  <string name="priority_sub_title">优先选择</string>
+  <string name="bluetooth_accept_all_files">接受所有文件类型</string>
+  <string name="autoperf_title">启用独立的应用程序配置</string>
+  <string name="autoperf_summary">自动为应用程序切换适合的性能配置</string>
+  <string name="graphics_title">图形和渲染</string>
 </resources>
