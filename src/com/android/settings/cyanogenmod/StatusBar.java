@@ -93,9 +93,13 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarCarrier = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
-
         mCustomStatusBarCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
-        updateCustomLabelTextSummary();
+        if (MSimTelephonyManager.getDefault().isMultiSimEnabled()) {
+            prefSet.removePreference(mStatusBarCarrier);
+            prefSet.removePreference(mCustomStatusBarCarrierLabel);
+        } else {
+            updateCustomLabelTextSummary();
+        }
 
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY);
         mStatusBarBatteryShowPercent =
