@@ -333,8 +333,6 @@
   <string name="root_access_apps">アプリのみ</string>
   <string name="root_access_adb">ADBのみ</string>
   <string name="root_access_all">アプリとADB</string>
-  <string name="update_recovery_title">CMリカバリーをアップデート</string>
-  <string name="update_recovery_summary">システムアップデートをインストールするときにリカバリーをアップデートする</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">おやすみモード</string>
   <string name="quiet_hours_summary">端末をサイレントモードにする時間帯を設定する</string>

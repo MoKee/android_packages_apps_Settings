@@ -358,8 +358,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="root_access_apps">Nur Apps</string>
   <string name="root_access_adb">Nur ADB</string>
   <string name="root_access_all">Apps &amp; ADB</string>
-  <string name="update_recovery_title">CM-Recovery aktualisieren</string>
-  <string name="update_recovery_summary">Recovery bei System-Updates aktualisieren</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Ruhige Stunden</string>
   <string name="quiet_hours_summary">Benachrichtigungen in einem vorgegebenen Zeitraum ändern</string>

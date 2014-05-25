@@ -342,8 +342,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="root_access_apps">Aplikasi saja</string>
   <string name="root_access_adb">ADB saja</string>
   <string name="root_access_all">Aplikasi dan ADB</string>
-  <string name="update_recovery_title">Perbarui recovery CM</string>
-  <string name="update_recovery_summary">Perbarui recovery ketika menginstal pembaruan sistem</string>
   <string name="ok">Oke</string>
   <string name="quiet_hours_title">Jam tenang</string>
   <string name="quiet_hours_summary">Mengkonfigurasi jam saat perangkat harus tenang</string>

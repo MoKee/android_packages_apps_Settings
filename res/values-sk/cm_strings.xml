@@ -343,8 +343,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="root_access_apps">Iba aplikácie</string>
   <string name="root_access_adb">Iba ADB</string>
   <string name="root_access_all">Aplikácie a ADB</string>
-  <string name="update_recovery_title">Aktualizovať CM recovery</string>
-  <string name="update_recovery_summary">Aktualizovať recovery pri inštalácii aktualizácií systému</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Čas ticha</string>
   <string name="quiet_hours_summary">Nastaviť hodiny, počas ktorých má byť zariadenie v tichom režime</string>

@@ -343,8 +343,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="root_access_apps">Somente aplicativos</string>
   <string name="root_access_adb">Somente ADB</string>
   <string name="root_access_all">Aplicativos e ADB</string>
-  <string name="update_recovery_title">Atualizar recuperação CM</string>
-  <string name="update_recovery_summary">Atualizar recuperação quando instalando atualizações de sistema</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Horas de silêncio</string>
   <string name="quiet_hours_summary">Ver ou alterar o horário que o dispositivo deve ficar em silêncio</string>

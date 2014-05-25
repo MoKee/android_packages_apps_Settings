@@ -358,8 +358,6 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="root_access_apps">Sadece uygulamalar</string>
   <string name="root_access_adb">Sadece ADB</string>
   <string name="root_access_all">Uygulamalar ve ADB</string>
-  <string name="update_recovery_title">CM kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemeleri yüklenirken kurtarma modunu güncelle</string>
   <string name="ok">Tamam</string>
   <string name="quiet_hours_title">Sessiz saatler</string>
   <string name="quiet_hours_summary">Cihazın sessiz olacağı saatleri ayarlayın</string>

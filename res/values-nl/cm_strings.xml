@@ -343,8 +343,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="root_access_apps">Alleen apps</string>
   <string name="root_access_adb">Alleen ADB</string>
   <string name="root_access_all">Apps en ADB</string>
-  <string name="update_recovery_title">CyanogenMod-recovery bijwerken</string>
-  <string name="update_recovery_summary">Recovery bijwerken bij het installeren van systeemupdates</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Stille uren</string>
   <string name="quiet_hours_summary">Uren instellen waarin apparaat stil moet zijn</string>

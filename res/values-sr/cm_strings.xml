@@ -348,8 +348,6 @@
   <string name="root_access_apps">Само апликације</string>
   <string name="root_access_adb">Само ADB</string>
   <string name="root_access_all">Апликације и ADB</string>
-  <string name="update_recovery_title">Ажурирај CM режим опоравка</string>
-  <string name="update_recovery_summary">Ажурирајте опоравак при ажурирању система</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Тихи сати</string>
   <string name="quiet_hours_summary">Подешавање сата када би уређај требао да буде миран</string>
