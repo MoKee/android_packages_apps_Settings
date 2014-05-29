@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aa78d24_2b3a19ce",
+        "filename": "src/com/android/settings/DisplaySettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 305
+      },
+      "writtenOn": "2014-05-29T16:09:41Z",
+      "side": 1,
+      "message": "Where is this coming from?",
+      "revId": "d1577360da91af88615a7edd357bcd9b3071d471",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    }
+  ]
+}
