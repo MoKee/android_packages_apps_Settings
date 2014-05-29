@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="lcd_density_entries">
+        <item>120</item>
+        <item>128</item>
+        <item>136</item>
+        <item>144</item>
+        <item>152</item>
+        <item>160</item>
+        <item>168</item>
+        <item>176</item>
+    </string-array>
+
+    <string-array name="lcd_density_values" translatable="false">
+        <item>120</item>
+        <item>128</item>
+        <item>136</item>
+        <item>144</item>
+        <item>152</item>
+        <item>160</item>
+        <item>168</item>
+        <item>176</item>
+    </string-array>
+</resources>
