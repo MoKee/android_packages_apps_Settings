@@ -756,6 +756,9 @@
     <string name="screensaver_settings_button" msgid="7292214707625717013">"设置"</string>
     <string name="automatic_brightness" msgid="5014143533884135461">"自动调整亮度"</string>
     <string name="title_font_size" msgid="4405544325522105222">"字体大小"</string>
+    <string name="lcd_density">LCD 分辨率</string>
+    <string name="dialog_title_lcd_density">LCD 分辨率</string>
+    <string name="lcd_density_summary">xxx DPI</string>
     <string name="dialog_title_font_size" msgid="2231507851258955038">"字体大小"</string>
     <string name="sim_lock_settings" msgid="3392331196873564292">"SIM 卡锁定设置"</string>
     <string name="sim_lock_settings_category" msgid="5136244267576697004">"设置 SIM 卡锁定"</string>
