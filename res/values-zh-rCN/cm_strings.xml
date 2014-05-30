@@ -262,6 +262,7 @@
   <string name="title_dynamic_alarm">闹钟</string>
   <string name="title_dynamic_bugreport">错误报告</string>
   <string name="title_dynamic_dock_battery">基座电池</string>
+  <string name="title_dynamic_equalizer">均衡器</string>
   <string name="title_dynamic_ime">输入法更改器</string>
   <string name="title_dynamic_usbtether">USB 网络共享</string>
   <string name="title_dynamic_wifi">投射屏幕</string>
@@ -392,6 +393,7 @@
   <string name="styles_settings_title">样式</string>
   <string name="icons_settings_title">图标</string>
   <string name="fonts_settings_title">字体</string>
+  <string name="wallpaper_settings_title_cm">壁纸</string>
   <string name="lockscreen_wallpaper_settings_title">锁屏壁纸</string>
   <string name="bootanim_settings_title">开机动画</string>
   <string name="soundpack_settings_title">音效包</string>
@@ -866,7 +868,7 @@
   <string name="sms_title">正在发送短信</string>
   <string name="priority_sub_title">优先订阅</string>
   <string name="bluetooth_accept_all_files">接受所有文件类型</string>
-  <string name="autoperf_title">启用独立的应用程序配置</string>
-  <string name="autoperf_summary">自动为应用程序切换适合的性能配置</string>
+  <string name="autoperf_title">启用单应用配置</string>
+  <string name="autoperf_summary">自动为各种应用选择适当的性能配置</string>
   <string name="graphics_title">图形和渲染</string>
 </resources>
