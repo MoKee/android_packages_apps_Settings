@@ -33,7 +33,7 @@ public class QuickSettingsTilesStyle extends SettingsPreferenceFragment implemen
 
     private ListPreference mTilesPerRow;
     private CheckBoxPreference mDuplicateColumnsLandscape;
-    
+
     private boolean mCheckPreferences;
 
     @Override
@@ -71,7 +71,7 @@ public class QuickSettingsTilesStyle extends SettingsPreferenceFragment implemen
         if (!Utils.isPhone(getActivity())) {
             additionalOptions.removePreference(findPreference(PREF_TILES_PER_ROW_DUPLICATE_LANDSCAPE));
         }
-	
+
         setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefs;
@@ -89,7 +89,7 @@ public class QuickSettingsTilesStyle extends SettingsPreferenceFragment implemen
                     Settings.System.QUICK_TILES_PER_ROW,
                     value);
             mTilesPerRow.setSummary(mTilesPerRow.getEntries()[index]);
-            return true;    
+            return true;
 	} else if (preference == mDuplicateColumnsLandscape) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.QUICK_TILES_PER_ROW_DUPLICATE_LANDSCAPE,

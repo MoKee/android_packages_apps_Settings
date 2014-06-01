@@ -18,7 +18,7 @@
 	<CheckBoxPreference
             android:key="tiles_per_row_duplicate_landscape"
             android:title="@string/tiles_per_row_duplicate_landscape_title"
-            android:summary="@string/tiles_per_row_duplicate_landscape_summary" /> 
+            android:summary="@string/tiles_per_row_duplicate_landscape_summary" />
 
     </PreferenceCategory>
 
