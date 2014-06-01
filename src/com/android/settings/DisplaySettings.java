@@ -43,9 +43,11 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.util.DisplayMetrics;
 import android.util.Log;
 
 import com.android.internal.view.RotationPolicy;
+import com.android.settings.util.Helpers;
 import com.android.settings.DreamSettings;
 import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.DisplayRotation;
@@ -64,6 +66,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int SCREEN_TIMEOUT_AWAKE  = Integer.MAX_VALUE;
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+    private static final String KEY_LCD_DENSITY = "lcd_density";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
@@ -86,7 +89,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mInaccurateProximityPref;
     private ListPreference mScreenOffAnimationPreference;
-
+    private ListPreference mLcdDensityPreference;
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
@@ -147,6 +150,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         disableUnusableTimeouts(mScreenTimeoutPreference);
         updateTimeoutPreferenceDescription(currentTimeout);
         updateDisplayRotationPreferenceDescription();
+
+        mLcdDensityPreference = (ListPreference) findPreference(KEY_LCD_DENSITY);
+        int currentDensity = DisplayMetrics.DENSITY_CURRENT;
+        mLcdDensityPreference.setValue(String.valueOf(currentDensity));
+        mLcdDensityPreference.setOnPreferenceChangeListener(this);
+        updateLcdDensityPreferenceDescription(currentDensity);
 
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
@@ -312,6 +321,19 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         preference.setSummary(summary);
     }
 
+    private void updateLcdDensityPreferenceDescription(int currentDensity) {
+        ListPreference preference = mLcdDensityPreference;
+        String summary;
+        if (currentDensity < 10 || currentDensity >= 1000) {
+            // Unsupported value
+            summary = "";
+        }
+        else {
+            summary = Integer.toString(currentDensity) + " DPI";
+        }
+        preference.setSummary(summary);
+    }
+
     private void disableUnusableTimeouts(ListPreference screenTimeoutPreference) {
         final DevicePolicyManager dpm =
                 (DevicePolicyManager) getActivity().getSystemService(
@@ -426,6 +448,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
+    public void writeLcdDensityPreference(int value) {
+        try {
+            Helpers.setSystemProp("persist.lcd_density", Integer.toString(value));
+            Helpers.restartJava();
+        }
+        catch (Exception e) {
+            Log.w(TAG, "Unable to save LCD density");
+        }
+    }
+	
     private void updateLightPulseSummary() {
         if (mNotificationPulse != null) {
             if (Settings.System.getInt(getActivity().getContentResolver(),
@@ -519,6 +551,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
                     ((Boolean) objValue).booleanValue() ? 1 : 0);
+        }
+        if (KEY_LCD_DENSITY.equals(key)) {
+            int value = Integer.parseInt((String) objValue);
+            writeLcdDensityPreference(value);
+            updateLcdDensityPreferenceDescription(value);
         }
 
         return true;

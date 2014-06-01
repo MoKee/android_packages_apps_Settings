@@ -1,0 +1,1614 @@
+commit 2aef186a0ca7d7922fd1e8162b69d61d81c678f1
+Author: crazyi <waal334@163.com>
+Date:   Sun Jun 1 18:24:43 2014 +0800
+
+    add lcd density setting
+    
+    Change-Id: I2440dea2b163401e090cbc611401ba39b3f7b71b
+
+diff --git a/res/values-hdpi/arrays.xml b/res/values-hdpi/arrays.xml
+new file mode 100644
+index 0000000..40c3aaa
+--- /dev/null
++++ b/res/values-hdpi/arrays.xml
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <string-array name="lcd_density_entries">
++        <item>180</item>
++        <item>192</item>
++        <item>204</item>
++        <item>216</item>
++        <item>228</item>
++        <item>240</item>
++        <item>252</item>
++        <item>264</item>
++    </string-array>
++
++    <string-array name="lcd_density_values" translatable="false">
++        <item>180</item>
++        <item>192</item>
++        <item>204</item>
++        <item>216</item>
++        <item>228</item>
++        <item>240</item>
++        <item>252</item>
++        <item>264</item>
++    </string-array>
++</resources>
+diff --git a/res/values-mdpi/arrays.xml b/res/values-mdpi/arrays.xml
+new file mode 100644
+index 0000000..9ee9633
+--- /dev/null
++++ b/res/values-mdpi/arrays.xml
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <string-array name="lcd_density_entries">
++        <item>120</item>
++        <item>128</item>
++        <item>136</item>
++        <item>144</item>
++        <item>152</item>
++        <item>160</item>
++        <item>168</item>
++        <item>176</item>
++    </string-array>
++
++    <string-array name="lcd_density_values" translatable="false">
++        <item>120</item>
++        <item>128</item>
++        <item>136</item>
++        <item>144</item>
++        <item>152</item>
++        <item>160</item>
++        <item>168</item>
++        <item>176</item>
++    </string-array>
++</resources>
+diff --git a/res/values-xhdpi/arrays.xml b/res/values-xhdpi/arrays.xml
+new file mode 100644
+index 0000000..83792fb
+--- /dev/null
++++ b/res/values-xhdpi/arrays.xml
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <string-array name="lcd_density_entries">
++        <item>240</item>
++        <item>256</item>
++        <item>272</item>
++        <item>288</item>
++        <item>304</item>
++        <item>320</item>
++        <item>336</item>
++        <item>352</item>
++    </string-array>
++
++    <string-array name="lcd_density_values" translatable="false">
++        <item>240</item>
++        <item>256</item>
++        <item>272</item>
++        <item>288</item>
++        <item>304</item>
++        <item>320</item>
++        <item>336</item>
++        <item>352</item>
++    </string-array>
++</resources>
+diff --git a/res/values-xxhdpi/arrays.xml b/res/values-xxhdpi/arrays.xml
+new file mode 100644
+index 0000000..53268bf
+--- /dev/null
++++ b/res/values-xxhdpi/arrays.xml
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <string-array name="lcd_density_entries">
++        <item>360</item>
++        <item>384</item>
++        <item>408</item>
++        <item>432</item>
++        <item>456</item>
++        <item>480</item>
++        <item>504</item>
++        <item>528</item>
++    </string-array>
++
++    <string-array name="lcd_density_values" translatable="false">
++        <item>360</item>
++        <item>384</item>
++        <item>408</item>
++        <item>432</item>
++        <item>456</item>
++        <item>480</item>
++        <item>504</item>
++        <item>528</item>
++    </string-array>
++</resources>
+diff --git a/res/values-zh-rCN/strings.xml b/res/values-zh-rCN/strings.xml
+old mode 100644
+new mode 100755
+index 160e66c..ae821de
+--- a/res/values-zh-rCN/strings.xml
++++ b/res/values-zh-rCN/strings.xml
+@@ -756,6 +756,9 @@
+     <string name="screensaver_settings_button" msgid="7292214707625717013">"设置"</string>
+     <string name="automatic_brightness" msgid="5014143533884135461">"自动调整亮度"</string>
+     <string name="title_font_size" msgid="4405544325522105222">"字体大小"</string>
++    <string name="lcd_density">LCD 分辨率</string>
++    <string name="dialog_title_lcd_density">LCD 分辨率</string>
++    <string name="lcd_density_summary">xxx DPI</string>
+     <string name="dialog_title_font_size" msgid="2231507851258955038">"字体大小"</string>
+     <string name="sim_lock_settings" msgid="3392331196873564292">"SIM 卡锁定设置"</string>
+     <string name="sim_lock_settings_category" msgid="5136244267576697004">"设置 SIM 卡锁定"</string>
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+old mode 100644
+new mode 100755
+index f3e482f..5489468
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -1899,6 +1899,9 @@
+     <string name="title_font_size">Font size</string>
+     <!-- Sound & display settings screen, setting option summary displaying the currently selected font size -->
+     <string name="summary_font_size" translatable="false">%1$s</string>
++    <string name="lcd_density">LCD density</string>
++    <string name="dialog_title_lcd_density">LCD density</string>
++    <string name="lcd_density_summary">xxx DPI</string>
+     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking font size -->
+     <string name="dialog_title_font_size">Font size</string>
+ 
+diff --git a/res/xml/display_settings.xml b/res/xml/display_settings.xml
+index dcedb4d..3bd9620 100644
+--- a/res/xml/display_settings.xml
++++ b/res/xml/display_settings.xml
+@@ -39,6 +39,14 @@
+                     android:entries="@array/screen_timeout_entries"
+                     android:entryValues="@array/screen_timeout_values" />
+ 
++            <ListPreference
++                    android:key="lcd_density"
++                    android:title="@string/lcd_density"
++                    android:summary="@string/lcd_density_summary"
++                    android:persistent="false"
++                    android:entries="@array/lcd_density_entries"
++                    android:entryValues="@array/lcd_density_values" />
++
+             <com.android.settings.FontDialogPreference
+                     android:key="font_size"
+                     android:title="@string/title_font_size"
+diff --git a/src/com/android/settings/DisplaySettings.java b/src/com/android/settings/DisplaySettings.java
+old mode 100644
+new mode 100755
+index becf54d..5ae6205
+--- a/src/com/android/settings/DisplaySettings.java
++++ b/src/com/android/settings/DisplaySettings.java
+@@ -43,9 +43,11 @@ import android.preference.Preference.OnPreferenceClickListener;
+ import android.preference.PreferenceCategory;
+ import android.preference.PreferenceScreen;
+ import android.provider.Settings;
++import android.util.DisplayMetrics;
+ import android.util.Log;
+ 
+ import com.android.internal.view.RotationPolicy;
++import com.android.settings.util.Helpers;
+ import com.android.settings.DreamSettings;
+ import com.android.settings.Utils;
+ import com.android.settings.cyanogenmod.DisplayRotation;
+@@ -64,6 +66,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+     private static final int SCREEN_TIMEOUT_AWAKE  = Integer.MAX_VALUE;
+ 
+     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
++    private static final String KEY_LCD_DENSITY = "lcd_density";
+     private static final String KEY_ACCELEROMETER = "accelerometer";
+     private static final String KEY_FONT_SIZE = "font_size";
+     private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
+@@ -86,7 +89,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+ 
+     private CheckBoxPreference mInaccurateProximityPref;
+     private ListPreference mScreenOffAnimationPreference;
+-
++    private ListPreference mLcdDensityPreference;
+     private CheckBoxPreference mAccelerometer;
+     private FontDialogPreference mFontSizePref;
+     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
+@@ -148,6 +151,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+         updateTimeoutPreferenceDescription(currentTimeout);
+         updateDisplayRotationPreferenceDescription();
+ 
++        mLcdDensityPreference = (ListPreference) findPreference(KEY_LCD_DENSITY);
++        int currentDensity = DisplayMetrics.DENSITY_CURRENT;
++        mLcdDensityPreference.setValue(String.valueOf(currentDensity));
++        mLcdDensityPreference.setOnPreferenceChangeListener(this);
++        updateLcdDensityPreferenceDescription(currentDensity);
++
+         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
+         mFontSizePref.setOnPreferenceChangeListener(this);
+         mFontSizePref.setOnPreferenceClickListener(this);
+@@ -312,6 +321,19 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+         preference.setSummary(summary);
+     }
+ 
++    private void updateLcdDensityPreferenceDescription(int currentDensity) {
++        ListPreference preference = mLcdDensityPreference;
++        String summary;
++        if (currentDensity < 10 || currentDensity >= 1000) {
++            // Unsupported value
++            summary = "";
++        }
++        else {
++            summary = Integer.toString(currentDensity) + " DPI";
++        }
++        preference.setSummary(summary);
++    }
++
+     private void disableUnusableTimeouts(ListPreference screenTimeoutPreference) {
+         final DevicePolicyManager dpm =
+                 (DevicePolicyManager) getActivity().getSystemService(
+@@ -426,6 +448,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+         }
+     }
+ 
++    public void writeLcdDensityPreference(int value) {
++        try {
++            Helpers.setSystemProp("persist.lcd_density", Integer.toString(value));
++            Helpers.restartJava();
++        }
++        catch (Exception e) {
++            Log.w(TAG, "Unable to save LCD density");
++        }
++    }
++	
+     private void updateLightPulseSummary() {
+         if (mNotificationPulse != null) {
+             if (Settings.System.getInt(getActivity().getContentResolver(),
+@@ -520,6 +552,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
+                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
+                     ((Boolean) objValue).booleanValue() ? 1 : 0);
+         }
++        if (KEY_LCD_DENSITY.equals(key)) {
++            int value = Integer.parseInt((String) objValue);
++            writeLcdDensityPreference(value);
++            updateLcdDensityPreferenceDescription(value);
++        }
+ 
+         return true;
+     }
+diff --git a/src/com/android/settings/util/AbstractAsyncSuCMDProcessor.java b/src/com/android/settings/util/AbstractAsyncSuCMDProcessor.java
+new file mode 100644
+index 0000000..f1a16fa
+--- /dev/null
++++ b/src/com/android/settings/util/AbstractAsyncSuCMDProcessor.java
+@@ -0,0 +1,104 @@
++
++package com.android.settings.util;
++
++import android.os.AsyncTask;
++
++/**
++ * An abstract implentation of AsyncTask
++ *
++ * since our needs are simple send a command, perform a task when we finish
++ * this implentation requires you send the command as String...
++ * in the .execute(String) so you can send String[] of commands if needed
++ *
++ * This class is not for you if...
++ *     1) You do not need to perform any action after command execution
++ *        you want a Thread not this.
++ *     2) You need to perform more complex tasks in doInBackground
++ *        than simple script/command sequence of commands
++ *        you want your own AsyncTask not this.
++ *
++ * This class is for you if...
++ *     1) You need to run a command/script/sequence of commands without
++ *        blocking the UI thread and you must perform actions after the
++ *        task completes.
++ *     2) see #1.
++ */
++public abstract class AbstractAsyncSuCMDProcessor extends AsyncTask<String, Void, String> {
++    // if /system needs to be mounted before command
++    private boolean mMountSystem;
++    // return if we recieve a null command or empty command
++    public final String FAILURE = "failed_no_command";
++
++    /**
++     * Constructor that allows mounting/dismounting
++     * of /system partition while in background thread
++     */
++    public AbstractAsyncSuCMDProcessor(boolean mountSystem) {
++         this.mMountSystem = mountSystem;
++    }
++
++    /**
++     * Constructor that assumes /system should not be mounted
++     */
++    public AbstractAsyncSuCMDProcessor() {
++         this.mMountSystem = false;
++    }
++
++    /**
++     * DO NOT override this method you should simply send your commands off
++     * as params and expect to handle results in {@link #onPostExecute}
++     *
++     * if you find a need to @Override this method then you should
++     * consider using a new AsyncTask implentation instead
++     *
++     * @param params The parameters of the task.
++     *
++     * @return A result, defined by the subclass of this task.
++     */
++    @Override
++    protected String doInBackground(String... params) {
++        // don't bother if we don't get a command
++        if (params[0] == null || params[0].trim().equals(""))
++            return FAILURE;
++
++        String stdout = null;
++
++        // conditionally enforce mounting
++        if (mMountSystem) {
++            Helpers.getMount("rw");
++        }
++        try {
++            // process all commands ***DO NOT SEND null OR ""; you have been warned***
++            for (int i = 0; params.length > i; i++) {
++                // always watch for null and empty strings, lazy devs :/
++                if (params[i] != null && !params[i].trim().equals("")) {
++                    stdout = CMDProcessor.runSuCommand(params[i]).getStdout();
++                } else {
++                    // bail because of careless devs
++                    return FAILURE;
++                }
++            }
++        // always unmount
++        } finally {
++            if (mMountSystem)
++                Helpers.getMount("ro");
++        }
++        // return the stdout from the command
++        return stdout;
++    }
++
++    /**
++     * <p>Runs on the UI thread after {@link #doInBackground}. The
++     * specified result is the value returned by {@link #doInBackground}.</p>
++     *
++     * <p>This method won't be invoked if the task was cancelled.</p>
++     *
++     * You MUST @Override this method if you don't need the result
++     * then you should consider using a new Thread implentation instead
++     *
++     * @param result The result of the operation computed by {@link #doInBackground}.
++     */
++    @Override
++    protected abstract void onPostExecute(String result);
++}
++
+diff --git a/src/com/android/settings/util/CMDProcessor.java b/src/com/android/settings/util/CMDProcessor.java
+new file mode 100644
+index 0000000..354338f
+--- /dev/null
++++ b/src/com/android/settings/util/CMDProcessor.java
+@@ -0,0 +1,71 @@
++package com.android.settings.util;
++
++import android.util.Log;
++
++import java.io.DataInputStream;
++import java.io.DataOutputStream;
++import java.io.IOException;
++import java.io.InputStream;
++import java.io.OutputStream;
++
++// convenience import for quick referencing of this method
++
++public final class CMDProcessor {
++    private static final String TAG = "CMDProcessor";
++
++    private CMDProcessor() {
++        // Cannot instantiate this class
++        throw new AssertionError();
++    }
++
++    /* Run a system command with full redirection */
++    public static ChildProcess startSysCmd(String[] cmdarray, String childStdin) {
++        return new ChildProcess(cmdarray, childStdin);
++    }
++
++    public static CommandResult runSysCmd(String[] cmdarray, String childStdin) {
++        ChildProcess proc = startSysCmd(cmdarray, childStdin);
++        proc.waitFinished();
++        return proc.getResult();
++    }
++
++    public static ChildProcess startShellCommand(String cmd) {
++        String[] cmdarray = new String[3];
++        cmdarray[0] = "sh";
++        cmdarray[1] = "-c";
++        cmdarray[2] = cmd;
++        return startSysCmd(cmdarray, null);
++    }
++
++    public static CommandResult runShellCommand(String cmd) {
++        ChildProcess proc = startShellCommand(cmd);
++        proc.waitFinished();
++        return proc.getResult();
++    }
++
++    public static ChildProcess startSuCommand(String cmd) {
++        String[] cmdarray = new String[3];
++        cmdarray[0] = "su";
++        cmdarray[1] = "-c";
++        cmdarray[2] = cmd;
++        return startSysCmd(cmdarray, null);
++    }
++
++    public static CommandResult runSuCommand(String cmd) {
++        ChildProcess proc = startSuCommand(cmd);
++        proc.waitFinished();
++        return proc.getResult();
++    }
++
++    public static boolean canSU() {
++        CommandResult r = runShellCommand("id");
++        StringBuilder out = new StringBuilder(0);
++        out.append(r.getStdout());
++        out.append(" ; ");
++        out.append(r.getStderr());
++        Log.d(TAG, "canSU() su[" + r.getExitValue() + "]: " + out);
++        return r.success();
++    }
++}
++
++
+diff --git a/src/com/android/settings/util/ChildProcess.java b/src/com/android/settings/util/ChildProcess.java
+new file mode 100644
+index 0000000..2f11502
+--- /dev/null
++++ b/src/com/android/settings/util/ChildProcess.java
+@@ -0,0 +1,151 @@
++package com.android.settings.util;
++
++import android.os.Environment;
++import android.util.Log;
++
++import java.io.InputStream;
++import java.io.OutputStream;
++import java.io.IOException;
++
++import static java.lang.System.nanoTime;
++
++public class ChildProcess {
++    private String TAG = getClass().getSimpleName();
++
++    private static final int PIPE_SIZE = 1024;
++
++    private class ChildReader extends Thread {
++        InputStream mStream;
++        StringBuffer mBuffer;
++        ChildReader(InputStream is, StringBuffer buf) {
++            mStream = is;
++            mBuffer = buf;
++        }
++        public void run() {
++            byte[] buf = new byte[PIPE_SIZE];
++            try {
++                int len;
++                while ((len = mStream.read(buf)) != -1) {
++                    String s = new String(buf, 0, len);
++                    mBuffer.append(s);
++                }
++            }
++            catch (IOException e) {
++                // Ignore
++            }
++            try {
++                mStream.close();
++            }
++            catch (IOException e) {
++                // Ignore
++            }
++        }
++    }
++    private class ChildWriter extends Thread {
++        OutputStream mStream;
++        String mBuffer;
++        ChildWriter(OutputStream os, String buf) {
++            mStream = os;
++            mBuffer = buf;
++        }
++        public void run() {
++            int off = 0;
++            byte[] buf = mBuffer.getBytes();
++            try {
++                while (off < buf.length) {
++                    int len = Math.min(PIPE_SIZE, buf.length - off);
++                    mStream.write(buf, off, len);
++                    off += len;
++                }
++            }
++            catch (IOException e) {
++                // Ignore
++            }
++            try {
++                mStream.close();
++            }
++            catch (IOException e) {
++                // Ignore
++            }
++        }
++    }
++
++    private long mStartTime;
++    private Process mChildProc;
++    private ChildWriter mChildStdinWriter;
++    private ChildReader mChildStdoutReader;
++    private ChildReader mChildStderrReader;
++    private StringBuffer mChildStdout;
++    private StringBuffer mChildStderr;
++    private int mExitValue;
++    private long mEndTime;
++
++    public ChildProcess(String[] cmdarray, String childStdin) {
++        mStartTime = nanoTime();
++        try {
++            mChildProc = Runtime.getRuntime().exec(cmdarray);
++            if (childStdin != null) {
++                mChildStdinWriter = new ChildWriter(mChildProc.getOutputStream(), childStdin);
++                mChildStdinWriter.start();
++            }
++            mChildStdout = new StringBuffer();
++            mChildStdoutReader = new ChildReader(mChildProc.getInputStream(), mChildStdout);
++            mChildStdoutReader.start();
++            mChildStderr = new StringBuffer();
++            mChildStderrReader = new ChildReader(mChildProc.getErrorStream(), mChildStderr);
++            mChildStderrReader.start();
++        }
++        catch (IOException e) {
++            // XXX: log
++        }
++    }
++
++    public boolean isFinished() {
++        boolean finished = true;
++        if (mChildProc != null) {
++            try {
++                mChildProc.exitValue();
++            }
++            catch (IllegalStateException e) {
++                finished = false;
++            }
++        }
++        return finished;
++    }
++
++    public int waitFinished() {
++        while (mChildProc != null) {
++            try {
++                mExitValue = mChildProc.waitFor();
++                mEndTime = nanoTime();
++                mChildProc = null;
++                mChildStderrReader.join();
++                mChildStderrReader = null;
++                mChildStdoutReader.join();
++                mChildStdoutReader = null;
++                if (mChildStdinWriter != null) {
++                    mChildStdinWriter.join();
++                    mChildStdinWriter = null;
++                }
++            }
++            catch (InterruptedException e) {
++                // Ignore
++            }
++        }
++        return mExitValue;
++    }
++
++    public CommandResult getResult() {
++        if (!isFinished()) {
++            throw new IllegalThreadStateException("Child process running");
++        }
++        return new CommandResult(
++                mStartTime,
++                mExitValue,
++                mChildStdout.toString(),
++                mChildStderr.toString(),
++                mEndTime);
++    }
++}
++
++
+diff --git a/src/com/android/settings/util/CommandResult.java b/src/com/android/settings/util/CommandResult.java
+new file mode 100644
+index 0000000..cf80ef8
+--- /dev/null
++++ b/src/com/android/settings/util/CommandResult.java
+@@ -0,0 +1,168 @@
++package com.android.settings.util;
++
++import android.os.Environment;
++import android.os.Parcel;
++import android.os.Parcelable;
++import android.util.Log;
++
++import java.io.File;
++import java.io.FileWriter;
++import java.io.IOException;
++
++@SuppressWarnings("AccessOfSystemProperties")
++public class CommandResult implements Parcelable {
++    private final String TAG = getClass().getSimpleName();
++    private final long mStartTime;
++    private final int mExitValue;
++    private final String mStdout;
++    private final String mStderr;
++    private final long mEndTime;
++
++    public CommandResult(long startTime,
++                         int exitValue,
++                         String stdout,
++                         String stderr,
++                         long endTime) {
++        mStartTime = startTime;
++        mExitValue = exitValue;
++        mStdout = stdout;
++        mStderr = stderr;
++        mEndTime = endTime;
++
++        Log.d(TAG, "Time to execute: " + (mEndTime - mStartTime) + " ns (nanoseconds)");
++        // this is set last so log from here
++        checkForErrors();
++    }
++
++    // pretty much just forward the constructor from parcelable to our main
++    // loading constructor
++    @SuppressWarnings("CastToConcreteClass")
++    public CommandResult(Parcel inParcel) {
++        this(inParcel.readLong(),
++                inParcel.readInt(),
++                inParcel.readString(),
++                inParcel.readString(),
++                inParcel.readLong());
++    }
++
++    public boolean success() {
++        return (mExitValue == 0);
++    }
++
++    public long getEndTime() {
++        return mEndTime;
++    }
++
++    public String getStderr() {
++        return new String(mStderr);
++    }
++
++    public String getStdout() {
++        return new String(mStdout);
++    }
++
++    public Integer getExitValue() {
++        return mExitValue;
++    }
++
++    public long getStartTime() {
++        return mStartTime;
++    }
++
++    @SuppressWarnings("UnnecessaryExplicitNumericCast")
++    private void checkForErrors() {
++        if (mExitValue != 0
++                || !"".equals(mStderr.trim())) {
++            // don't log the commands that failed
++            // because the cpu was offline
++            boolean skipOfflineCpu =
++                    // if core is off locking fails
++                    mStderr.contains("chmod: /sys/devices/system/cpu/cpu")
++                            // if core is off applying cpu freqs fails
++                            || mStderr.contains(": can't create /sys/devices/system/cpu/cpu");
++            String lineEnding = System.getProperty("line.separator");
++            FileWriter errorWriter = null;
++            try {
++                File errorLogFile = new File(
++                        Environment.getExternalStorageDirectory()
++                        + "/aokp/error.txt");
++                if (!errorLogFile.exists()) {
++                    errorLogFile.createNewFile();
++                }
++                errorWriter = new FileWriter(errorLogFile, true);
++                // only log the cpu state as offline while writing
++                if (skipOfflineCpu) {
++                    errorWriter.write(lineEnding);
++                    errorWriter.write("Attempted to write to an offline cpu core (ignore me).");
++                } else {
++                    errorWriter.write(TAG + " shell error detected!");
++                    errorWriter.write(lineEnding);
++                    errorWriter.write("CommandResult {" + this.toString() + '}');
++                    errorWriter.write(lineEnding);
++                }
++                errorWriter.write(lineEnding);
++            } catch (IOException e) {
++                Log.e(TAG, "Failed to write command result to error file", e);
++            } finally {
++                if (errorWriter != null) {
++                    try {
++                        errorWriter.close();
++                    } catch (IOException ignored) {
++                        // let it go
++                    }
++                }
++            }
++        }
++    }
++
++    // implement parcelable
++    @Override
++    public int describeContents() {
++        return 0;
++    }
++
++    @Override
++    public void writeToParcel(Parcel parcel, int i) {
++        parcel.writeLong(mStartTime);
++        parcel.writeInt(mExitValue);
++        parcel.writeString(mStdout);
++        parcel.writeString(mStderr);
++        parcel.writeLong(mEndTime);
++    }
++
++    @Override
++    public String toString() {
++        return "CommandResult{" +
++                ", mStartTime=" + mStartTime +
++                ", mExitValue=" + mExitValue +
++                ", stdout='" + mStdout + "'" +
++                ", stderr='" + mStderr + "'" +
++                ", mEndTime=" + mEndTime +
++                '}';
++    }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (!(o instanceof CommandResult)) return false;
++
++        CommandResult that = (CommandResult) o;
++
++        return (mStartTime == that.mStartTime &&
++                mExitValue == that.mExitValue &&
++                mStdout == that.mStdout &&
++                mStderr == that.mStderr &&
++                mEndTime == that.mEndTime);
++    }
++
++    @Override
++    public int hashCode() {
++        int result = 0;
++        result = 31 * result + (int) (mStartTime ^ (mStartTime >>> 32));
++        result = 31 * result + mExitValue;
++        result = 31 * result + (mStdout != null ? mStdout.hashCode() : 0);
++        result = 31 * result + (mStderr != null ? mStderr.hashCode() : 0);
++        result = 31 * result + (int) (mEndTime ^ (mEndTime >>> 32));
++        return result;
++    }
++}
+diff --git a/src/com/android/settings/util/Helpers.java b/src/com/android/settings/util/Helpers.java
+new file mode 100644
+index 0000000..3a731b0
+--- /dev/null
++++ b/src/com/android/settings/util/Helpers.java
+@@ -0,0 +1,377 @@
++
++package com.android.settings.util;
++
++import android.content.Context;
++import android.content.pm.PackageManager;
++import android.content.pm.PackageManager.NameNotFoundException;
++import android.net.ConnectivityManager;
++import android.net.NetworkInfo;
++import android.os.SystemProperties;
++import android.util.Log;
++import android.widget.Toast;
++
++import java.io.BufferedReader;
++import java.io.File;
++import java.io.FileNotFoundException;
++import java.io.FileReader;
++import java.io.FileWriter;
++import java.io.IOException;
++import java.util.Date;
++
++// don't show unavoidable warnings
++@SuppressWarnings({
++        "UnusedDeclaration",
++        "MethodWithMultipleReturnPoints",
++        "ReturnOfNull",
++        "NestedAssignment",
++        "DynamicRegexReplaceableByCompiledPattern",
++        "BreakStatement"})
++public class Helpers {
++    // avoids hardcoding the tag
++    private static final String TAG = Thread.currentThread().getStackTrace()[1].getClassName();
++
++    public Helpers() {
++        // dummy constructor
++    }
++
++    /**
++     * Checks device for SuperUser permission
++     *
++     * @return If SU was granted or denied
++     */
++    @SuppressWarnings("MethodWithMultipleReturnPoints")
++    public static boolean checkSu() {
++        if (!new File("/system/bin/su").exists()
++                && !new File("/system/xbin/su").exists()) {
++            Log.e(TAG, "su binary does not exist!!!");
++            return false; // tell caller to bail...
++        }
++        try {
++            if (CMDProcessor.runSuCommand("ls /data/app-private").success()) {
++                Log.i(TAG, " SU exists and we have permission");
++                return true;
++            } else {
++                Log.i(TAG, " SU exists but we don't have permission");
++                return false;
++            }
++        } catch (NullPointerException e) {
++            Log.e(TAG, "NullPointer throw while looking for su binary", e);
++            return false;
++        }
++    }
++
++    /**
++     * Checks device for network connectivity
++     *
++     * @return If the device has data connectivity
++    */
++    public static boolean isNetworkAvailable(Context context) {
++        boolean state = false;
++        if (context != null) {
++            ConnectivityManager cm =
++                    (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
++            NetworkInfo netInfo = cm.getActiveNetworkInfo();
++            if (netInfo != null && netInfo.isConnected()) {
++                Log.i(TAG, "The device currently has data connectivity");
++                state = true;
++            } else {
++                Log.i(TAG, "The device does not currently have data connectivity");
++                state = false;
++            }
++        }
++        return state;
++    }
++
++    /**
++     * Checks to see if Busybox is installed in "/system/"
++     *
++     * @return If busybox exists
++     */
++    public static boolean checkBusybox() {
++        if (!new File("/system/bin/busybox").exists()
++                && !new File("/system/xbin/busybox").exists()) {
++            Log.e(TAG, "Busybox not in xbin or bin!");
++            return false;
++        }
++        try {
++            if (!CMDProcessor.runSuCommand("busybox mount").success()) {
++                Log.e(TAG, "Busybox is there but it is borked! ");
++                return false;
++            }
++        } catch (NullPointerException e) {
++            Log.e(TAG, "NullpointerException thrown while testing busybox", e);
++            return false;
++        }
++        return true;
++    }
++
++    public static String[] getMounts(CharSequence path) {
++        BufferedReader bufferedReader = null;
++        try {
++            bufferedReader = new BufferedReader(new FileReader("/proc/mounts"), 256);
++            String line;
++            while ((line = bufferedReader.readLine()) != null) {
++                if (line.contains(path)) {
++                    return line.split(" ");
++                }
++            }
++        } catch (FileNotFoundException ignored) {
++            Log.d(TAG, "/proc/mounts does not exist");
++        } catch (IOException ignored) {
++            Log.d(TAG, "Error reading /proc/mounts");
++        } finally {
++            if (bufferedReader != null) {
++                try {
++                    bufferedReader.close();
++                } catch (IOException ignored) {
++                    // ignored
++                }
++            }
++        }
++        return null;
++    }
++
++    public static boolean getMount(String mount) {
++        String[] mounts = getMounts("/system");
++        if (mounts != null && mounts.length >= 3) {
++            String device = mounts[0];
++            String path = mounts[1];
++            String point = mounts[2];
++            String preferredMountCmd = new String("mount -o " + mount + ",remount -t " + point + ' ' + device + ' ' + path);
++            if (CMDProcessor.runSuCommand(preferredMountCmd).success()) {
++                return true;
++            }
++        }
++        String fallbackMountCmd = new String("busybox mount -o remount," + mount + " /system");
++        return CMDProcessor.runSuCommand(fallbackMountCmd).success();
++    }
++
++    public static String readOneLine(String fname) {
++        BufferedReader br = null;
++        String line = null;
++        try {
++            br = new BufferedReader(new FileReader(fname), 1024);
++            line = br.readLine();
++        } catch (FileNotFoundException ignored) {
++            Log.d(TAG, "File was not found! trying via shell...");
++            return readFileViaShell(fname, true);
++        } catch (IOException e) {
++            Log.d(TAG, "IOException while reading system file", e);
++            return readFileViaShell(fname, true);
++        } finally {
++            if (br != null) {
++                try {
++                    br.close();
++                } catch (IOException ignored) {
++                    // failed to close reader
++                }
++            }
++        }
++        return line;
++    }
++
++    public static String readFileViaShell(String filePath, boolean useSu) {
++        String command = new String("cat " + filePath);
++        return useSu ? CMDProcessor.runSuCommand(command).getStdout()
++                : CMDProcessor.runShellCommand(command).getStdout();
++    }
++
++    public static boolean writeOneLine(String filename, String value) {
++        FileWriter fileWriter = null;
++        try {
++            fileWriter = new FileWriter(filename);
++            fileWriter.write(value);
++        } catch (IOException e) {
++            String Error = "Error writing { " + value + " } to file: " + filename;
++            Log.e(TAG, Error, e);
++            return false;
++        } finally {
++            if (fileWriter != null) {
++                try {
++                    fileWriter.close();
++                } catch (IOException ignored) {
++                    // failed to close writer
++                }
++            }
++        }
++        return true;
++    }
++
++    public static String[] getAvailableIOSchedulers() {
++        String[] schedulers = null;
++        String[] aux = readStringArray("/sys/block/mmcblk0/queue/scheduler");
++        if (aux != null) {
++            schedulers = new String[aux.length];
++            for (int i = 0; i < aux.length; i++) {
++                schedulers[i] = aux[i].charAt(0) == '['
++                        ? aux[i].substring(1, aux[i].length() - 1)
++                        : aux[i];
++            }
++        }
++        return schedulers;
++    }
++
++    private static String[] readStringArray(String fname) {
++        String line = readOneLine(fname);
++        if (line != null) {
++            return line.split(" ");
++        }
++        return null;
++    }
++
++    public static String getIOScheduler() {
++        String scheduler = null;
++        String[] schedulers = readStringArray("/sys/block/mmcblk0/queue/scheduler");
++        if (schedulers != null) {
++            for (String s : schedulers) {
++                if (s.charAt(0) == '[') {
++                    scheduler = s.substring(1, s.length() - 1);
++                    break;
++                }
++            }
++        }
++        return scheduler;
++    }
++
++    /**
++     * Long toast message
++     *
++     * @param context Application Context
++     * @param msg Message to send
++     */
++    public static void msgLong(Context context, String msg) {
++        if (context != null && msg != null) {
++            Toast.makeText(context, msg.trim(), Toast.LENGTH_LONG).show();
++        }
++    }
++
++    /**
++     * Short toast message
++     *
++     * @param context Application Context
++     * @param msg Message to send
++     */
++    public static void msgShort(Context context, String msg) {
++        if (context != null && msg != null) {
++            Toast.makeText(context, msg.trim(), Toast.LENGTH_SHORT).show();
++        }
++    }
++
++    /**
++     * Long toast message
++     *
++     * @param context Application Context
++     * @param msg Message to send
++     */
++    public static void sendMsg(Context context, String msg) {
++        if (context != null && msg != null) {
++            msgLong(context, msg);
++        }
++    }
++
++    /**
++     * Return a timestamp
++     *
++     * @param context Application Context
++     */
++    @SuppressWarnings("UnnecessaryFullyQualifiedName")
++    public static String getTimestamp(Context context) {
++        String timestamp = "unknown";
++        Date now = new Date();
++        java.text.DateFormat dateFormat = android.text.format.DateFormat.getDateFormat(context);
++        java.text.DateFormat timeFormat = android.text.format.DateFormat.getTimeFormat(context);
++        if (dateFormat != null && timeFormat != null) {
++            timestamp = dateFormat.format(now) + ' ' + timeFormat.format(now);
++        }
++        return timestamp;
++    }
++
++    public static boolean isPackageInstalled(String packageName, PackageManager pm) {
++        try {
++            String mVersion = pm.getPackageInfo(packageName, 0).versionName;
++            if (mVersion == null) {
++                return false;
++            }
++        } catch (NameNotFoundException notFound) {
++            Log.e(TAG, "Package could not be found!", notFound);
++            return false;
++        }
++        return true;
++    }
++
++    public static void restartSystemUI() {
++        CMDProcessor.startSuCommand("pkill -TERM -f com.android.systemui");
++    }
++
++    public static void setSystemProp(String prop, String val) {
++        CMDProcessor.startSuCommand("setprop " + prop + " " + val);
++    }
++
++    public static String getSystemProp(String prop, String def) {
++        String result = null;
++        try {
++            result = SystemProperties.get(prop, def);
++        } catch (IllegalArgumentException iae) {
++            Log.e(TAG, "Failed to get prop: " + prop);
++        }
++        return result == null ? def : result;
++    }
++
++    public static void runSuCommand(String cmd) {
++        String[] argv = new String[3];
++        argv[0] = "su";
++        argv[1] = "-c";
++        argv[2] = cmd;
++
++        try {
++            Process proc = Runtime.getRuntime().exec(argv);
++            proc.waitFor();
++        }
++        catch (Exception e) {
++            Log.w(TAG, "runSuCommand: failed to run " + cmd);
++        }
++    }
++
++    public static void killProcessByName(String name) {
++        File procdir = new File("/proc");
++        File files[] = procdir.listFiles();
++        for (File d: files) {
++            if (!d.isDirectory()) {
++                continue;
++            }
++            int pid = 0;
++            try {
++                pid = Integer.parseInt(d.getName());
++            }
++            catch (Exception e) {
++                // Ignore
++            }
++            if (pid == 0) {
++                continue;
++            }
++            try {
++                FileReader fr = new FileReader(new File(d.getPath() + "/cmdline"));
++                char buf[] = new char[256];
++                int len = fr.read(buf);
++                for (int n = 0; n < len; ++n) {
++                    if (buf[n] == '\0') {
++                        len = n;
++                        break;
++                    }
++                }
++                String cmdline = new String(buf, 0, len);
++                if (cmdline.equals(name)) {
++                    Log.w(TAG, "killProcessByName: killing pid=" + pid);
++                    runSuCommand("kill " + pid);
++                }
++            }
++            catch (Exception e) {
++                Log.w(TAG, "killProcessByName: exception reading cmdline");
++            }
++        }
++    }
++
++    public static void restartJava() {
++        killProcessByName("zygote");
++    }
++}
+diff --git a/src/com/android/settings/util/LSCMDProcessor.java b/src/com/android/settings/util/LSCMDProcessor.java
+new file mode 100644
+index 0000000..0edc48a
+--- /dev/null
++++ b/src/com/android/settings/util/LSCMDProcessor.java
+@@ -0,0 +1,184 @@
++package com.android.settings.util;
++
++import java.io.DataInputStream;
++import java.io.DataOutputStream;
++import java.io.InputStream;
++
++import android.util.Log;
++
++public class LSCMDProcessor {
++
++    private static final String LD_LIBRARY_PATH = System.getenv("LD_LIBRARY_PATH");
++    private static final String TAG = "CMD Processor";
++    private Boolean can_su;
++    public SH sh;
++    public SH su;
++
++    public LSCMDProcessor() {
++        sh = new SH("sh");
++        su = new SH("su");
++    }
++
++    public SH suOrSH() {
++        return canSU() ? su : sh;
++    }
++
++    public boolean canSU() {
++        return canSU(false);
++    }
++
++    public class CommandResult {
++        public final String stdout;
++        public final String stderr;
++        public final Integer exit_value;
++
++        CommandResult(final Integer exit_value_in) {
++            this(exit_value_in, null, null);
++        }
++
++        CommandResult(final Integer exit_value_in, final String stdout_in,
++                final String stderr_in) {
++            exit_value = exit_value_in;
++            stdout = stdout_in;
++            stderr = stderr_in;
++        }
++
++        public boolean success() {
++            return exit_value != null && exit_value == 0;
++        }
++    }
++
++    public class SH {
++        private String SHELL = "sh";
++
++        public SH(final String SHELL_in) {
++            SHELL = SHELL_in;
++        }
++
++        private String getStreamLines(final InputStream is) {
++            String out = null;
++            StringBuffer buffer = null;
++            final DataInputStream dis = new DataInputStream(is);
++
++            try {
++                if (dis.available() > 0) {
++                    buffer = new StringBuffer(dis.readLine());
++                    while (dis.available() > 0) {
++                        buffer.append("\n").append(dis.readLine());
++                    }
++                }
++                dis.close();
++            } catch (final Exception ex) {
++                Log.e(TAG, ex.getMessage());
++            }
++            if (buffer != null) {
++                out = buffer.toString();
++            }
++            return out;
++        }
++
++        public Process run(final String cmd) {
++            Process process = null;
++            Runtime runtime = Runtime.getRuntime();
++            try {
++                process = runtime.exec(SHELL);
++                final DataOutputStream toProcess = new DataOutputStream(
++                        process.getOutputStream());
++                // On some versions of Android (ICS) LD_LIBRARY_PATH is unset when using su
++                // We need to pass LD_LIBRARY_PATH over su for some commands to work correctly.
++                String setenv = "";
++                if ("su".equals(SHELL)) {
++                    setenv = "LD_LIBRARY_PATH=" + LD_LIBRARY_PATH + " ";
++                }
++                toProcess.writeBytes(setenv + "exec " + cmd + "\n");
++                toProcess.flush();
++            } catch (final Exception e) {
++                Log.e(TAG, "Exception while trying to run: '" + cmd + "' "
++                        + e.getMessage());
++                process = null;
++            }
++            return process;
++        }
++
++        public CommandResult runWaitFor(final String s) {
++            final Process process = run(s);
++            Integer exit_value = null;
++            String stdout = null;
++            String stderr = null;
++            if (process != null) {
++                try {
++                    exit_value = process.waitFor();
++                    stdout = getStreamLines(process.getInputStream());
++                    stderr = getStreamLines(process.getErrorStream());
++                } catch (final InterruptedException e) {
++                    Log.e(TAG, "runWaitFor " + e.toString());
++                } catch (final NullPointerException e) {
++                    Log.e(TAG, "runWaitFor " + e.toString());
++                }
++            }
++            return new CommandResult(exit_value, stdout, stderr);
++        }
++
++        public Process run(final String[] cmds) {
++            Process process = null;
++            try {
++                process = Runtime.getRuntime().exec(SHELL);
++                final DataOutputStream toProcess = new DataOutputStream(
++                        process.getOutputStream());
++                // On some versions of Android (ICS) LD_LIBRARY_PATH is unset when using su
++                // We need to pass LD_LIBRARY_PATH over su for some commands to work correctly.
++                String setenv = "";
++                if (SHELL.equals("su")) {
++                    setenv = "LD_LIBRARY_PATH=" + LD_LIBRARY_PATH + " ";
++                }
++                for (String cmd : cmds) {
++                    toProcess.writeBytes(setenv + cmd + "\n");
++                }
++                toProcess.writeBytes("exit\n");
++                toProcess.flush();
++            } catch (final Exception e) {
++                Log.e(TAG, "Exception while trying to run cmds"
++                        + e.getMessage());
++                process = null;
++            }
++            return process;
++        }
++
++        public CommandResult runWaitFor(final String cmds[]) {
++            final Process process = run(cmds);
++            Integer exit_value = null;
++            String stdout = null;
++            String stderr = null;
++            if (process != null) {
++                try {
++                    exit_value = process.waitFor();
++                    stdout = getStreamLines(process.getInputStream());
++                    stderr = getStreamLines(process.getErrorStream());
++                } catch (final InterruptedException e) {
++                    Log.e(TAG, "runWaitFor " + e.toString());
++                } catch (final NullPointerException e) {
++                    Log.e(TAG, "runWaitFor " + e.toString());
++                }
++            }
++            return new CommandResult(exit_value, stdout, stderr);
++        }
++    }
++
++    public boolean canSU(final boolean force_check) {
++        if (can_su == null || force_check) {
++            final CommandResult r = su.runWaitFor("id");
++            final StringBuilder out = new StringBuilder();
++
++            if (r.stdout != null) {
++                out.append(r.stdout).append(" ; ");
++            }
++            if (r.stderr != null) {
++                out.append(r.stderr);
++            }
++
++            Log.d(TAG, "canSU() su[" + r.exit_value + "]: " + out);
++            can_su = r.success();
++        }
++        return can_su;
++    }
++}
+diff --git a/src/com/android/settings/util/LSHelpers.java b/src/com/android/settings/util/LSHelpers.java
+new file mode 100644
+index 0000000..a9f3761
+--- /dev/null
++++ b/src/com/android/settings/util/LSHelpers.java
+@@ -0,0 +1,241 @@
++package com.android.settings.util;
++
++import java.io.BufferedReader;
++import java.io.BufferedWriter;
++import java.io.File;
++import java.io.FileNotFoundException;
++import java.io.FileInputStream;
++import java.util.Properties;
++import java.io.FileReader;
++import java.io.FileWriter;
++import java.io.IOException;
++
++import android.content.Context;
++import android.content.pm.PackageManager;
++import android.content.pm.PackageManager.NameNotFoundException;
++import android.util.Log;
++import android.widget.Toast;
++
++public class LSHelpers {
++
++    private static final String TAG = "Helpers";
++
++    /**
++     * Checks device for SuperUser permission
++     *
++     * @return If SU was granted or denied
++     */
++    public static boolean checkSu() {
++        if (!new File("/system/bin/su").exists()
++                && !new File("/system/xbin/su").exists()) {
++            Log.e(TAG, "su does not exist!!!");
++            return false; // tell caller to bail...
++        }
++
++        try {
++            if ((new LSCMDProcessor().su
++                    .runWaitFor("ls /data/app-private")).success()) {
++                Log.i(TAG, " SU exists and we have permission");
++                return true;
++            } else {
++                Log.i(TAG, " SU exists but we dont have permission");
++                return false;
++            }
++        } catch (final NullPointerException e) {
++            Log.e(TAG, e.getLocalizedMessage().toString());
++            return false;
++        }
++    }
++
++    /**
++     * Checks to see if Busybox is installed in "/system/"
++     *
++     * @return If busybox exists
++     */
++    public static boolean checkBusybox() {
++        if (!new File("/system/bin/busybox").exists()
++                && !new File("/system/xbin/busybox").exists()) {
++            Log.e(TAG, "Busybox not in xbin or bin!");
++            return false;
++        }
++
++        try {
++            if (!new LSCMDProcessor().su.runWaitFor("busybox mount").success()) {
++                Log.e(TAG, " Busybox is there but it is borked! ");
++                return false;
++            }
++        } catch (final NullPointerException e) {
++            Log.e(TAG, e.getLocalizedMessage().toString());
++            return false;
++        }
++        return true;
++    }
++
++    public static String[] getMounts(final String path)
++    {
++        try
++        {
++            BufferedReader br = new BufferedReader(new FileReader("/proc/mounts"), 256);
++            String line = null;
++            while ((line = br.readLine()) != null)
++            {
++                if (line.contains(path))
++                {
++                    return line.split(" ");
++                }
++            }
++            br.close();
++        }
++        catch (FileNotFoundException e) {
++            Log.d(TAG, "/proc/mounts does not exist");
++        }
++        catch (IOException e) {
++            Log.d(TAG, "Error reading /proc/mounts");
++        }
++        return null;
++    }
++
++    public static boolean getMount(final String mount)
++    {
++        final LSCMDProcessor cmd = new LSCMDProcessor();
++        final String mounts[] = getMounts("/system");
++        if (mounts != null
++                && mounts.length >= 3)
++        {
++            final String device = mounts[0];
++            final String path = mounts[1];
++            final String point = mounts[2];
++            if (cmd.su.runWaitFor("mount -o " + mount + ",remount -t " + point + " " + device + " " + path).success())
++            {
++                return true;
++            }
++        }
++        return ( cmd.su.runWaitFor("busybox mount -o remount," + mount + " /system").success() );
++    }
++
++    public static String getFile(final String filename) {
++        String s = "";
++        final File f = new File(filename);
++
++        if (f.exists() && f.canRead()) {
++            try {
++                final BufferedReader br = new BufferedReader(new FileReader(f),
++                        256);
++                String buffer = null;
++                while ((buffer = br.readLine()) != null) {
++                    s += buffer + "\n";
++                }
++
++                br.close();
++            } catch (final Exception e) {
++                Log.e(TAG, "Error reading file: " + filename, e);
++                s = null;
++            }
++        }
++        return s;
++    }
++
++    public static void writeNewFile(String filePath, String fileContents) {
++        File f = new File(filePath);
++        if (f.exists()) {
++            f.delete();
++        }
++
++        try{
++            // Create file
++            FileWriter fstream = new FileWriter(f);
++            BufferedWriter out = new BufferedWriter(fstream);
++            out.write(fileContents);
++            //Close the output stream
++            out.close();
++        }catch (Exception e){
++            Log.d( TAG, "Failed to create " + filePath + " File contents: " + fileContents);
++        }
++    }
++
++    /**
++     * Long toast message
++     *
++     * @param c Application Context
++     * @param msg Message to send
++     */
++    public static void msgLong(final Context c, final String msg) {
++        if (c != null && msg != null) {
++            Toast.makeText(c, msg.trim(), Toast.LENGTH_LONG).show();
++        }
++    }
++
++    /**
++     * Short toast message
++     *
++     * @param c Application Context
++     * @param msg Message to send
++     */
++    public static void msgShort(final Context c, final String msg) {
++        if (c != null && msg != null) {
++            Toast.makeText(c, msg.trim(), Toast.LENGTH_SHORT).show();
++        }
++    }
++
++    /**
++     * Long toast message
++     *
++     * @param c Application Context
++     * @param msg Message to send
++     */
++    public static void sendMsg(final Context c, final String msg) {
++        if (c != null && msg != null) {
++            msgLong(c, msg);
++        }
++    }
++
++    public static boolean isPackageInstalled(final String packageName,
++            final PackageManager pm)
++    {
++        String mVersion;
++        try {
++            mVersion = pm.getPackageInfo(packageName, 0).versionName;
++            if (mVersion.equals(null)) {
++                return false;
++            }
++        } catch (NameNotFoundException e) {
++            return false;
++        }
++        return true;
++    }
++
++    public static void restartSystemUI() {
++        new LSCMDProcessor().su.run("pkill -TERM -f com.android.systemui");
++    }
++
++    /*
++     * Find value of build.prop item (/system can be ro or rw)
++     *
++     * @param prop /system/build.prop property name to find value of
++     *
++     * @returns String value of @param:prop
++     */
++    public static String findBuildPropValueOf(String prop) {
++        String mBuildPath = "/system/build.prop";
++        String DISABLE = "disable";
++        String value = null;
++        try {
++            //create properties construct and load build.prop
++            Properties mProps = new Properties();
++            mProps.load(new FileInputStream(mBuildPath));
++            //get the property
++            value = mProps.getProperty(prop, DISABLE);
++            Log.d(TAG, String.format("Helpers:findBuildPropValueOf found {%s} with the value (%s)", prop, value));
++        } catch (IOException ioe) {
++            Log.d(TAG, "failed to load input stream");
++        } catch (NullPointerException npe) {
++            //swallowed thrown by ill formatted requests
++        }
++
++        if (value != null) {
++            return value;
++        } else {
++            return DISABLE;
++        }
++    }
++}
