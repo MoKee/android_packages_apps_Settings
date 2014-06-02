@@ -103,7 +103,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Lock before Unlock
         mLockBeforeUnlock = (CheckBoxPreference) findPreference(LOCK_BEFORE_UNLOCK);
-        
+
         // Enable or disable camera widget based on device and policy
         if (Camera.getNumberOfCameras() == 0) {
             widgetsCategory.removePreference(mEnableCameraWidget);
