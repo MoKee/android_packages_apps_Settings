@@ -257,7 +257,7 @@
     <string name="skip_label" msgid="47510779345218297">"跳过"</string>
     <string name="next_label" msgid="4693520878012668114">"下一步"</string>
     <string name="language_picker_title" msgid="5349877711342869319">"语言"</string>
-    <string name="activity_picker_label" msgid="6295660302548177109">"选择活动"</string>
+    <string name="activity_picker_label" msgid="6295660302548177109">"选择 Activity"</string>
     <string name="device_info_label" msgid="6551553813651711205">"设备信息"</string>
     <string name="battery_info_label" msgid="4132685016148679403">"电池信息"</string>
     <string name="display_label" msgid="8074070940506840792">"屏幕"</string>
@@ -1824,8 +1824,8 @@
     <string name="animator_duration_scale_title" msgid="3406722410819934083">"动画程序时长缩放"</string>
     <string name="overlay_display_devices_title" msgid="5364176287998398539">"模拟辅助显示设备"</string>
     <string name="debug_applications_category" msgid="4206913653849771549">"应用"</string>
-    <string name="immediately_destroy_activities" msgid="8366775083630234121">"不保留活动"</string>
-    <string name="immediately_destroy_activities_summary" msgid="3592221124808773368">"用户离开后即销毁每个活动"</string>
+    <string name="immediately_destroy_activities" msgid="8366775083630234121">"不保留 Activity"</string>
+    <string name="immediately_destroy_activities_summary" msgid="3592221124808773368">"用户离开后即销毁每个 Activity"</string>
     <string name="app_process_limit_title" msgid="4280600650253107163">"后台进程限制"</string>
     <string name="show_all_anrs" msgid="28462979638729082">"显示所有“应用无响应”(ANR)"</string>
     <string name="show_all_anrs_summary" msgid="641908614413544127">"为后台应用显示“应用无响应”对话框"</string>
