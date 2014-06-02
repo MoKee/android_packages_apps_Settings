@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_48003fab",
+        "filename": "src/com/android/settings/DisplaySettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 460,
+      "author": {
+        "id": 305
+      },
+      "writtenOn": "2014-06-02T11:53:23Z",
+      "side": 1,
+      "message": "Please clear this",
+      "revId": "3e0ffe7b89aaf1f742924bb4deb9c89b8fefc3c3",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_883077a0",
+        "filename": "src/com/android/settings/util/Helpers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 305
+      },
+      "writtenOn": "2014-06-02T11:53:23Z",
+      "side": 1,
+      "message": "This as well, avoid SuperUser",
+      "revId": "3e0ffe7b89aaf1f742924bb4deb9c89b8fefc3c3",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_a82bbb32",
+        "filename": "src/com/android/settings/util/Helpers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 305
+      },
+      "writtenOn": "2014-06-02T11:53:23Z",
+      "side": 1,
+      "message": "Since we are able to do things at system level, avoid using SuperUser",
+      "revId": "3e0ffe7b89aaf1f742924bb4deb9c89b8fefc3c3",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    }
+  ]
+}
