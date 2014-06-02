@@ -28,7 +28,8 @@
 
         <CheckBoxPreference
             android:key="visiblegesture"
-            android:title="@string/lockgesture_settings_enable_visible_pattern_title"/>
+            android:title="@string/lockgesture_settings_enable_visible_pattern_title"
+            android:defaultValue="true"/>
 
         <ListPreference
             android:key="lock_after_timeout"
