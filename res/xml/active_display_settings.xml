@@ -18,12 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/active_display_title" >
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="ad_enable"
         android:persistent="false"
         android:title="@string/ad_enable_title"
-        android:summaryOff="@string/ad_enable_summary_off"
-        android:summaryOn="@string/ad_enable_summary_on" />
+        android:summary="@string/ad_enable_summary" />
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="active_display_content"

@@ -18,9 +18,8 @@
 
     <!-- Active Display -->
     <string name="active_display_title">主動顯示</string>
-    <string name="ad_enable_title">啟用主動顯示</string>
-    <string name="ad_enable_summary_on">主動顯示已啟用</string>
-    <string name="ad_enable_summary_off">主動顯示已關閉</string>
+    <string name="ad_enable_title">主動在屏幕上顯示新通知</string>
+    <string name="ad_enable_summary">主動顯示已啟用</string>
     <string name="ad_bypass_title">智慧模式</string>
     <string name="ad_bypass_summary">不存在通知時，將顯示鎖屏界面</string>
     <string name="ad_text_title">通知內容</string>

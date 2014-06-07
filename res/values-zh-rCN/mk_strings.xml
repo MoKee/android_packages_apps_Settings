@@ -19,8 +19,7 @@
     <!-- Active Display -->
     <string name="active_display_title">主动显示</string>
     <string name="ad_enable_title">启用主动显示</string>
-    <string name="ad_enable_summary_on">主动显示已启用</string>
-    <string name="ad_enable_summary_off">主动显示已禁用</string>
+    <string name="ad_enable_summary">主动在屏幕上显示新通知</string>
     <string name="ad_bypass_title">智能模式</string>
     <string name="ad_bypass_summary">不存在通知且启用锁屏安全保护时，将显示锁屏界面</string>
     <string name="ad_text_title">提醒文本</string>
@@ -280,4 +279,8 @@
     <string name="tiles_per_row_title">每行格数</string>
     <string name="tiles_per_row_duplicate_landscape_title">横屏双倍显示</string>
     <string name="tiles_per_row_duplicate_landscape_summary">横屏显示时每行的格数翻倍</string>
+
+    <!-- Active Display And Lockscreen Notifications Lock -->
+    <string name="ad_or_ln">%1$s 已经启用，请先关闭它。</string>
+
 </resources>

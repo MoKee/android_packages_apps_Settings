@@ -19,8 +19,7 @@
     <!-- Active Display -->
     <string name="active_display_title">Active display</string>
     <string name="ad_enable_title">Enable</string>
-    <string name="ad_enable_summary_on">Active display enabled</string>
-    <string name="ad_enable_summary_off">Active display disabled</string>
+    <string name="ad_enable_summary">Display notifications when a new notification is received</string>
     <string name="ad_bypass_title">Bypass mode</string>
     <string name="ad_bypass_summary">Pocket mode will launch the lockscreen when no notifications exist and lockscreen secure enabled</string>
     <string name="ad_text_title">Notification text</string>
@@ -360,7 +359,6 @@
     <string name="general">General</string>
     <string name="layout">Layout</string>
     <string name="privacy">Privacy</string>
-    <string name="Lockscreen_notifications_header">Lockscreen Notifications</string>
     <string name="lockscreen_notifications">Lockscreen notifications</string>
     <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
     <string name="pocket_mode">Pocket mode</string>
@@ -386,5 +384,8 @@
     <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
     <string name="excluded_apps_title">Excluded applications</string>
     <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
+
+    <!-- Active Display And Lockscreen Notifications Lock -->
+    <string name="ad_or_ln">%1$s already enabled, turn off it please.</string>
 
 </resources>
