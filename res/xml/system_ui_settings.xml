@@ -110,8 +110,7 @@
         <PreferenceScreen
             android:key="lockscreen_notifications"
             android:title="@string/lockscreen_notifications"
-            android:fragment="com.android.settings.mokee.LockscreenNotifications"
-            android:summary="@string/lockscreen_notifications_summary" />
+            android:fragment="com.android.settings.mokee.LockscreenNotifications" />
 
         <PreferenceScreen
             android:key="recent_shortcut"
