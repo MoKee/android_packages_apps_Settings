@@ -347,8 +347,6 @@ ten einde om bykomende kontrolepunte by te voeg . \'Verwyder\' verwyder die geko
   <string name="root_access_apps">Slegs programme</string>
   <string name="root_access_adb">Slegs ADB</string>
   <string name="root_access_all">Programme en ADB</string>
-  <string name="update_recovery_title">Dateer CM \'recovery\' op</string>
-  <string name="update_recovery_summary">Dateer \'recovery\' op by die installering van stelsel opgraderings</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Stille-ure</string>
   <string name="quiet_hours_summary">Konfigureer die ure wat die toestel moet stil wees</string>

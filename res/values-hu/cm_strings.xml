@@ -355,8 +355,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="root_access_apps">Csak alkalmazások</string>
   <string name="root_access_adb">Csak ADB</string>
   <string name="root_access_all">Alkalmazások és ADB</string>
-  <string name="update_recovery_title">CM helyreállítási menü frissítése</string>
-  <string name="update_recovery_summary">Rendszerfrissítések telepítése közben frissítse a helyreállítási menüt</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">Csendes órák</string>
   <string name="quiet_hours_summary">Csendes órák beállításai</string>

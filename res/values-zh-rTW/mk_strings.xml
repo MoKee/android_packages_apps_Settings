@@ -187,10 +187,6 @@
     <string name="screen_off_animation_scaledown">縮放</string>
     <string name="screen_off_animation_turnoff">關閉</string>
 
-    <!-- Force show navigation bar -->
-    <string name="force_show_navigation_bar_title">顯示虛擬導航欄</string>
-    <string name="force_show_navigation_bar_summary">強制顯示虛擬導航欄（需要重啟）</string>
-
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有號碼</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的來電</string>

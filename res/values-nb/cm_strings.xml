@@ -336,8 +336,6 @@
   <string name="root_access_apps">Kun apper</string>
   <string name="root_access_adb">Kun ADB</string>
   <string name="root_access_all">Apps og ADB</string>
-  <string name="update_recovery_title">Oppdater CM recovery</string>
-  <string name="update_recovery_summary">Oppdater recovery når du installerer systemoppdateringer</string>
   <string name="ok">Ok</string>
   <string name="quiet_hours_title">Stille nattetimer</string>
   <string name="quiet_hours_summary">Konfigurere timene enheten bør være stille</string>

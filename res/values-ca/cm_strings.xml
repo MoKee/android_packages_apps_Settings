@@ -346,8 +346,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="root_access_apps">Només Apps</string>
   <string name="root_access_adb">Només ADB</string>
   <string name="root_access_all">Apps i ADB</string>
-  <string name="update_recovery_title">Actualitza Recovery de CM</string>
-  <string name="update_recovery_summary">Actualitza el recovery quan s\'instal·lin noves actualitzacions del sistema</string>
   <string name="ok">D\'acord</string>
   <string name="quiet_hours_title">Hores silencioses</string>
   <string name="quiet_hours_summary">Configura les hores en que el dispositiu hauria d\'estar silenciós</string>
