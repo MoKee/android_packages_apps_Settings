@@ -239,7 +239,7 @@ public class AppMultiSelectListPreference extends DialogPreference {
 
         public static AppViewHolder createOrRecycle(LayoutInflater inflater, View convertView) {
             if (convertView == null) {
-                convertView = inflater.inflate(R.layout.ad_excluded_app_item, null);
+                convertView = inflater.inflate(R.layout.excluded_app_item, null);
 
                 // Creates a ViewHolder and store references to the two children views
                 // we want to bind data to.
