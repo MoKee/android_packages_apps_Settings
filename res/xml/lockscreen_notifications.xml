@@ -75,12 +75,15 @@
     <PreferenceCategory
         android:title="@string/layout" >
 
-        <SeekBarPreference
+        <com.android.settings.widget.SeekBarPreference
             android:key="offset_top"
             android:title="@string/offset_top"
+            android:summary="@string/offset_top_summary"
             android:max="100"
             android:dependency="lockscreen_notifications"
-            android:defaultValue="30" />
+            android:defaultValue="30"
+            settings:unitsLeft=""
+            settings:unitsRight="%" />
 
         <com.android.settings.widget.NumberPickerPreference
             android:key="notifications_height"

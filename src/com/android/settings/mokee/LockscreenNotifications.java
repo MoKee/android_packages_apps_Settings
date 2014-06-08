@@ -9,7 +9,6 @@ import android.preference.CheckBoxPreference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.Preference;
-import android.preference.SeekBarPreference;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.WindowManager;
@@ -17,6 +16,7 @@ import android.view.WindowManager;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.AppMultiSelectListPreference;
 import com.android.settings.widget.NumberPickerPreference;
+import com.android.settings.widget.SeekBarPreference;
 import com.android.settings.R;
 
 import java.util.Arrays;
@@ -123,9 +123,10 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
                     && !mPrivacyMode.isChecked());
 
         mOffsetTop = (SeekBarPreference) prefs.findPreference(KEY_OFFSET_TOP);
-        mOffsetTop.setProgress((int)(Settings.System.getFloat(mResolver,
-                Settings.System.LOCKSCREEN_NOTIFICATIONS_OFFSET_TOP, 0.3f) * 100));
-        mOffsetTop.setTitle(getResources().getText(R.string.offset_top) + " " + mOffsetTop.getProgress() + "%");
+        int offsetValue = (int)(Settings.System.getFloat(mResolver,
+                Settings.System.LOCKSCREEN_NOTIFICATIONS_OFFSET_TOP, 0.3f) * 100);
+        mOffsetTop.setValue(offsetValue);
+        mOffsetTop.setTitle(getResources().getText(R.string.offset_top));
         mOffsetTop.setOnPreferenceChangeListener(this);
         mOffsetTop.setEnabled(mLockscreenNotifications.isChecked());
 
@@ -134,7 +135,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
                     Settings.System.LOCKSCREEN_NOTIFICATIONS_HEIGHT, 4));
         Point displaySize = new Point();
         ((WindowManager)mContext.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(displaySize);
-        int max = Math.round((float)displaySize.y * (1f - (mOffsetTop.getProgress() / 100f)) /
+        int max = Math.round((float)displaySize.y * (1f - (offsetValue / 100f)) /
                 (float)mContext.getResources().getDimensionPixelSize(R.dimen.notification_row_min_height));
         mNotificationsHeight.setMinValue(1);
         mNotificationsHeight.setMaxValue(max);
@@ -217,12 +218,6 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
         } else if (pref == mOffsetTop) {
             Settings.System.putFloat(mResolver, Settings.System.LOCKSCREEN_NOTIFICATIONS_OFFSET_TOP,
                     (Integer)value / 100f);
-            mOffsetTop.setTitle(getResources().getText(R.string.offset_top) + " " + (Integer)value + "%");
-            Point displaySize = new Point();
-            ((WindowManager)mContext.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(displaySize);
-            int max = Math.round((float)displaySize.y * (1f - (mOffsetTop.getProgress() / 100f)) /
-                    (float)mContext.getResources().getDimensionPixelSize(R.dimen.notification_row_min_height));
-            mNotificationsHeight.setMaxValue(max);
         } else if (pref == mExcludedAppsPref) {
             storeExcludedApps((Set<String>) value);
             return true;
