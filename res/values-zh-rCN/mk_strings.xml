@@ -313,6 +313,6 @@
     <string name="excluded_apps_summary">排除应用程序将不会显示在锁屏通知中</string>
 
     <!-- Active Display And Lockscreen Notifications Lock -->
-    <string name="ad_or_ln">%1$s 已经启用，请先关闭它。</string>
+    <string name="ad_or_ln">%1$s已经启用，请先关闭它。</string>
 
 </resources>
