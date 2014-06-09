@@ -98,7 +98,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
 
         mHideNonClearable = (CheckBoxPreference) prefs.findPreference(KEY_HIDE_NON_CLEARABLE);
         mHideNonClearable.setChecked(Settings.System.getInt(mResolver,
-                    Settings.System.LOCKSCREEN_NOTIFICATIONS_HIDE_NON_CLEARABLE, 0) == 1);
+                    Settings.System.LOCKSCREEN_NOTIFICATIONS_HIDE_NON_CLEARABLE, 1) == 1);
         mHideNonClearable.setEnabled(mLockscreenNotifications.isChecked());
 
         mDismissAll = (CheckBoxPreference) prefs.findPreference(KEY_DISMISS_ALL);
