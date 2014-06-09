@@ -210,5 +210,86 @@
 
     <!-- Sound volumes panel -->
     <string name="volume_keys_will_not_exit_silent_mode">音量鍵操作不會退出靜音模式</string>
+    
+    <!-- Lockscreen gesture -->
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">手勢</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">安全性低、實驗性</string>
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">手勢</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">繪製您的手勢</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">確認您的手勢</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">手勢已設置</string>
+
+    <!-- Lock Gesture settings -->
+    <string name="lockgesture_change_lock_pattern_label">更改解鎖手勢</string>
+    <string name="lockgesture_change_lock_pin_label">更改解鎖 PIN</string>
+    <string name="lockgesture_need_to_unlock">確認已保存的手勢</string>
+    <string name="lockgesture_need_to_unlock_wrong">請重試：</string>
+    <string name="lockgesture_recording_intro_header">繪製解鎖手勢：</string>
+    <string name="lockgesture_recording_intro_footer">按 MENU 獲得幫助。</string>
+    <string name="lockgesture_recording_inprogress">完成後鬆開手指。</string>
+    <string name="lockgesture_pattern_entered_header">手勢已記錄。</string>
+    <string name="lockgesture_need_to_confirm">再次繪製手勢進行確認：</string>
+    <string name="lockgesture_pattern_confirmed_header">您的新解鎖手勢：</string>
+    <string name="lockgesture_confirm_button_text">確認</string>
+    <string name="lockgesture_restart_button_text">重新繪製</string>
+    <string name="lockgesture_retry_button_text">重試</string>
+    <string name="lockgesture_continue_button_text">繼續</string>
+    <string name="lockgesture_settings_title">解鎖手勢</string>
+    <string name="lockgesture_settings_enable_title">需要解鎖手勢</string>
+    <string name="lockgesture_settings_enable_summary">必須繪製手勢才能解鎖屏幕</string>
+    <string name="lockgesture_settings_enable_visible_pattern_title">顯示手勢</string>
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">電源按鈕即時鎖定</string>
+    <string name="lockgesture_settings_choose_lock_pattern">設置解鎖手勢</string>
+    <string name="lockgesture_settings_change_lock_pattern">更改解鎖手勢</string>
+    <string name="lockgesture_settings_help_how_to_record">如何繪製解鎖手勢</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">錯誤的嘗試次數過多！</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer"><xliff:g id="NUMBER">%d</xliff:g> 秒後重試。</string>
+
+    <string name="quicksettings_tiles_style">快速設置樣式</string>
+    <string name="summary_quicksettings_tiles_style">快速設置樣式選項</string>
+    <string name="quicksettings_tiles_style_additional_options">附加選項</string>
+    <string name="tiles_per_row_title">每行格數</string>
+    <string name="tiles_per_row_duplicate_landscape_title">橫屏雙倍顯示</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">橫屏顯示時每行的格數翻倍</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">通用</string>
+    <string name="layout">佈局</string>
+    <string name="privacy">隱私</string>
+    <string name="lockscreen_notifications">鎖屏通知</string>
+    <string name="lockscreen_notifications_summary">在鎖屏界面顯示新通知</string>
+    <string name="pocket_mode">口袋模式</string>
+    <string name="pocket_mode_summary">當設備被拿出口袋時，點亮屏幕並顯示所有通知。當設備被放回口袋時，關閉屏幕。</string>
+    <string name="show_always">始終顯示</string>
+    <string name="show_always_summary">當設備被拿出口袋時，總是點亮屏幕，即使沒有新通知。</string>
+    <string name="hide_low_priority">隱藏低優先級</string>
+    <string name="hide_low_priority_summary">隱藏低優先級通知，例如來自Google 即時的通知。</string>
+    <string name="hide_non_clearable">隱藏不可清除</string>
+    <string name="hide_non_clearable_summary">隱藏所有不可清除的通知</string>
+    <string name="dismiss_all">允許忽略所有通知</string>
+    <string name="dismiss_all_summary">允許忽略所有不可清除的通知，它們將在鎖屏界面隱藏起來。</string>
+    <string name="expanded_view">擴展通知視圖</string>
+    <string name="expanded_view_summary">可用時顯示最大化的通知信息</string>
+    <string name="force_expanded_view">強行擴展視圖</string>
+    <string name="force_expanded_view_summary">默認顯示擴展的通知，你還可以擴大和普通視圖之間切換。</string>
+    <string name="wake_on_notification">新通知喚醒</string>
+    <string name="wake_on_notification_summary">收到新通知時喚醒設備</string>
+    <string name="notifications_height">通知數量</string>
+    <string name="notifications_height_summary">更改當前屏幕顯示的通知數量</string>
+    <string name="offset_top">頂部偏移</string>
+    <string name="offset_top_summary">距屏幕頂部的偏移比例</string>
+    <string name="privacy_mode">隱私模式</string>
+    <string name="privacy_mode_summary">存在新通知時僅顯示程序圖標，而不顯示來自該通知的詳細信息。</string>
+    <string name="excluded_apps_title">不包括所有應用</string>
+    <string name="excluded_apps_summary">排除應用程序將不會顯示在鎖屏通知中</string>
+
+    <!-- Active Display And Lockscreen Notifications Lock -->
+    <string name="ad_or_ln">%1$s已經啟用，請先關閉它。</string>
 
 </resources>
