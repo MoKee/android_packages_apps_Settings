@@ -281,6 +281,20 @@
     <string name="tiles_per_row_duplicate_landscape_title">横屏双倍显示</string>
     <string name="tiles_per_row_duplicate_landscape_summary">横屏显示时每行的格数翻倍</string>
 
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">在解锁前显示滑块</string>
+    <string name="lock_before_unlock_summary">当开启安全解锁时，先显示滑动解锁界面。</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">唤醒屏蔽器</string>
+    <string name="wakelock_blocker_title">启用</string>
+    <string name="wakelock_blocker_summary">激活选中项目的唤醒屏蔽</string>
+    <string name="wakelock_blocker_save">保存</string>
+    <string name="wakelock_list_header">可拦截项目</string>
+    <string name="wakelock_blocker_reload">重新加载</string>
+    <string name="wakelock_blocker_warning_title">风险警告</string>
+    <string name="wakelock_blocker_warning">屏蔽一些项目的唤醒功能将极大的提升设备续航能力，但错误、激进的设置可能造成系统不稳定、崩溃或数据丢失。</string>
+
     <!-- Lockscreen Notifications -->
     <string name="general">通用</string>
     <string name="layout">布局</string>
