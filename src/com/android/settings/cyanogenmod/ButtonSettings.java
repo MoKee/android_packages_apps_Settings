@@ -33,11 +33,11 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-
 import android.view.IWindowManager;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -62,6 +62,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
+    private static final String KEY_HIDE_OVERFLOW_BUTTON = "hide_overflow_button";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -108,6 +109,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mDisableNavigationKeys;
     private CheckBoxPreference mPowerEndCall;
     private CheckBoxPreference mHomeAnswerCall;
+    private CheckBoxPreference mHideOverflowButton;
 
     private Handler mHandler;
     private Context mContext;
@@ -160,6 +162,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Force Navigation bar related options
         mDisableNavigationKeys = (CheckBoxPreference) findPreference(DISABLE_NAV_KEYS);
 
+        // Hide overflow button
+        mHideOverflowButton = (CheckBoxPreference) findPreference(KEY_HIDE_OVERFLOW_BUTTON);
+
         // Only visible on devices that does not have a navigation bar already
         boolean needsNavigationBar = false;
         try {
@@ -172,6 +177,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             updateDisableNavkeysOption();
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
+            prefScreen.removePreference(mHideOverflowButton);
         }
 
         if (hasPowerKey) {
@@ -499,6 +505,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mHomeAnswerCall) {
             handleToggleHomeButtonAnswersCallPreferenceClick();
+            return true;
+        } else if (preference == mHideOverflowButton) {
+            boolean enabled = mHideOverflowButton.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.UI_FORCE_HIDE_OVERFLOW_BUTTON,
+                    enabled ? 1 : 0);
+            // Show toast
+            Toast.makeText(getActivity(), R.string.hide_overflow_button_toast,
+                    Toast.LENGTH_LONG).show();
+
             return true;
         }
 
