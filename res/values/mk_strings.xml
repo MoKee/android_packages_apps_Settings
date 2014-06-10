@@ -389,4 +389,9 @@
     <!-- Active Display And Lockscreen Notifications Lock -->
     <string name="ad_or_ln">%1$s already enabled, turn off it please.</string>
 
+    <!-- Hide overflow button -->
+    <string name="hide_overflow_button_title">Hide action overflow</string>
+    <string name="hide_overflow_button_summary">Hide the 3-dot overflow menu button within apps</string>
+    <string name="hide_overflow_button_toast">Changes may not be visible until apps are restarted</string>
+
 </resources>

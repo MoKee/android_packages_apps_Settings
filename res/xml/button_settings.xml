@@ -29,6 +29,12 @@
         android:dialogTitle="@string/button_backlight_title"
         android:persistent="false" />
 
+    <CheckBoxPreference
+        android:key="hide_overflow_button"
+        android:title="@string/hide_overflow_button_title"
+        android:summary="@string/hide_overflow_button_summary"
+        android:defaultValue="false" />
+
     <!-- Device Specific Bluetooth Input settings -->
     <Preference
         android:key="bluetooth_input_settings">
