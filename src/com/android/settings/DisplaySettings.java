@@ -164,9 +164,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         // In-accurate proximity
         mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
         if (mInaccurateProximityPref != null) {
-            mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
-            mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+            if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_SENSOR_PROXIMITY)) {
+                advancedPrefs.removePreference(mInaccurateProximityPref);
+            } else {
+                mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+                mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+            }
         }
 
         mAdaptiveBacklight = (CheckBoxPreference) findPreference(KEY_ADAPTIVE_BACKLIGHT);
