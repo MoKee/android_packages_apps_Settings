@@ -180,6 +180,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(mHideOverflowButton);
         }
 
+        if (Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) == 1) {
+            mHideOverflowButton.setEnabled(false);
+        }
+
         if (hasPowerKey) {
             if (!Utils.isVoiceCapable(getActivity())) {
                 powerCategory.removePreference(mPowerEndCall);
@@ -531,6 +536,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mDisableNavigationKeys.setEnabled(true);
             }
         }, 1000);
+        mHideOverflowButton.setEnabled(!mDisableNavigationKeys.isChecked());
     }
 
     private void confirmForceNavBar() {
