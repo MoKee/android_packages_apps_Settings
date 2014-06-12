@@ -21,8 +21,8 @@
   <string name="wifi_setting_countrycode_error">设置区域码时遇到了问题。</string>
   <string name="wifi_setting_priority_title">WLAN 连接优先</string>
   <string name="wifi_setting_priority_summary">设置各个 WLAN 网络的优先连接顺序</string>
-  <string name="wifi_ssid_input_limit">SSID超出最大长度</string>
-  <string name="p2p_device_name_input_limit">P2P名称超出最大长度</string>
+  <string name="wifi_ssid_input_limit">SSID 超过长度上限</string>
+  <string name="p2p_device_name_input_limit">P2P 名称超过长度上限</string>
   <string name="change_crypt_password_title">更改密码</string>
   <string name="change_crypt_password_summary">更改用于设备加密的密码</string>
   <string name="encryptionpassword_choose_your_password_header">设置加密密码</string>
@@ -629,7 +629,7 @@
   <string name="power_menu_user_title">用户切换器</string>
   <string name="power_menu_sound_title">声音面板</string>
   <string name="button_settings">按键</string>
-  <string name="hardware_keys_power_key_title">电源键</string>
+  <string name="hardware_keys_power_key_title">电源按钮</string>
   <string name="hardware_keys_home_key_title">Home 键</string>
   <string name="hardware_keys_menu_key_title">菜单键</string>
   <string name="hardware_keys_assist_key_title">搜索键</string>
@@ -683,7 +683,6 @@
   <string name="background_result_successful">背景已更改</string>
   <string name="background_result_not_successful">背景未更改</string>
   <string name="setting_lockscreen_background">正在应用背景</string>
-  <string name="accessibility_home_button_answers_call_prerefence_title">Home 按钮接听电话</string>
   <string name="confirm_delete_apn">APN 将被删除。</string>
   <string name="status_bar_title">状态栏</string>
   <string name="status_bar_show_clock_title">显示时钟和日期</string>
@@ -711,6 +710,8 @@
   <string name="storage_rescan_media_complete">扫描完成</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">管理安全短信设置</string>
+  <string name="logger_title">匿名崩溃日志记录</string>
+  <string name="logger_summary">管理崩溃日志记录设置</string>
   <string name="custom_runtime_warning_title">警告</string>
   <string name="custom_runtime_warning_message">ART是Google开发的尚在测试阶段的安卓运行环境，该选项处于试验阶段，有可能造成不稳定、死机、数据丢失或导致设备不能正常开机。请访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART简介&lt;/a&gt; 了解更多信息。&lt;br/&gt;&lt;br/&gt;如果您启用 ART 作为运行环境，我们请求您不要发送错误报告，因为这一切与MoKee OpenSource无关。&lt;br/&gt;&lt;br/&gt;您要重启设备将运行环境从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 改为 <xliff:g id="new" example="libart.so">%2$s</xliff:g>吗？</string>
   <string name="gps_download_data_wifi_only">只通过 WiFi 下载 GPS 辅助数据</string>
