@@ -706,7 +706,7 @@
   <string name="logger_title">บันทึกการทำงานล้มเหลวแบบไม่ระบุตัวตน</string>
   <string name="logger_summary">จัดการการตั้งค่าบันทึกการทำงานล้มเหลว</string>
   <string name="custom_runtime_warning_title">คำเตือน</string>
-  <string name="custom_runtime_warning_message">ART ไม่รองรับอย่างเต็มรูปแบบบน CyanogenMod มันจึงเป็นอะไรที่อันตรายมาก อาจทำให้อุปกรณ์ ไม่สเถียร พัง หรือข้อมูลสูญหายได้ โปรดเข้า &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;แนะนำ ART &lt;/a&gt; เพื่อศึกษาเพิ่มเติม&lt;br/&gt;&lt;br/&gt; คุณต้องการที่จะเริ่มระบบใหม่โดยเปลี่ยนรันไทม?จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> เป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART ไม่รองรับอย่างเต็มรูปแบบบน MoKee OpenSource มันจึงเป็นอะไรที่อันตรายมาก อาจทำให้อุปกรณ์ ไม่สเถียร พัง หรือข้อมูลสูญหายได้ โปรดเข้า &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;แนะนำ ART &lt;/a&gt; เพื่อศึกษาเพิ่มเติม&lt;br/&gt;&lt;br/&gt; คุณต้องการที่จะเริ่มระบบใหม่โดยเปลี่ยนรันไทม?จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> เป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">ดาวน์โหลดข้อมูล GPS ผ่าน Wi-Fi เท่านั้น</string>
   <string name="battery_info_status_charging_dock_ac">(แท่นAC)</string>
   <string name="battery_info_status_charging_dock_usb">(แท่นUSB)</string>
