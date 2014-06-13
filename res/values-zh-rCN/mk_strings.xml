@@ -51,7 +51,7 @@
     <string name="ad_pocket_mode_summary">仅在你将设备拿出口袋之后主动显示通知。</string>
     <string name="ad_redisplay_title">重新显示通知</string>
     <string name="ad_timeout_title">显示超时时间</string>
-    <string name="ad_threshold_title">接近阀值</string>
+    <string name="ad_threshold_title">接近阈值</string>
     <string name="ad_threshold_summary">调整传感器的识别精度</string>
     <string name="ad_brightness_title">通知亮度</string>
     <string name="ad_customizations_title">定制</string>
