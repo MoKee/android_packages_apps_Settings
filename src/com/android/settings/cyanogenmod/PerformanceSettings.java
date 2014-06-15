@@ -187,9 +187,21 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
                 ContentResolver resolver = getActivity().getContentResolver();
                 setCurrentPerfProfileSummary();
                 // We need update value
+                int formatNewValue = 1;
+                int count = mPerfProfileValues.length;
+                for (int i = 0; i < count; i++) {
+                    try {
+                        if (mPerfProfileValues[i].equals(newValue)){
+                            formatNewValue = i;
+                            break;
+                        }
+                    } catch (IndexOutOfBoundsException ex) {
+                        // Ignore
+                    }
+                }
                 if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR, 1) != 0) {
                         Settings.System.putString(resolver, Settings.System.POWER_SAVER_CPU_GOVERNOR_DEFAULT, Utils.fileReadOneLine(Processor.GOV_FILE));
-                        if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0 && Integer.valueOf(String.valueOf(newValue)) != 0) {
+                        if (Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0 && formatNewValue != 0) {
                             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0);
                             Toast.makeText(getActivity(), getString(R.string.power_saver_toggles_cpu_profile_toast), Toast.LENGTH_LONG).show();
                         }
