@@ -105,19 +105,19 @@
         android:fragment="com.android.settings.ThemeSettings"
         android:icon="@drawable/prd_ic_themepacks" />
 
-    <!-- Smart Control -->
-    <header
-        android:id="@+id/smartcontrol_settings"
-        android:icon="@drawable/ic_settings_smartcontrol"
-        android:fragment="com.android.settings.mokee.SmartControl"
-        android:title="@string/smartcontrol_settings_title" />
-
     <!-- Status Bar -->
     <header
         android:id="@+id/status_bar_settings"
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.cyanogenmod.StatusBar"
         android:title="@string/status_bar_title" />
+
+    <!-- Smart Control -->
+    <header
+        android:id="@+id/smartcontrol_settings"
+        android:icon="@drawable/ic_settings_smartcontrol"
+        android:fragment="com.android.settings.mokee.SmartControl"
+        android:title="@string/smartcontrol_settings_title" />
 
     <!-- Notification Bar -->
     <header
