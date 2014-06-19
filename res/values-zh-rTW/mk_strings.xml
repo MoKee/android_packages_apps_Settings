@@ -157,9 +157,6 @@
     <string name="screen_recorder_record_audio_title">錄製音頻</string>
     <string name="screen_recorder_record_audio_summary">從麥克風錄製音頻</string>
 
-    <!-- Special Features Category-->
-    <string name="special_features_category">快捷控制</string>
-
     <!-- AP/PM Indicator -->
     <string name="status_bar_am_pm_title">上午/下午樣式</string>
 

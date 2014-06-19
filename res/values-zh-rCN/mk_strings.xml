@@ -171,9 +171,6 @@
     <string name="screen_recorder_record_audio_title">录制音频</string>
     <string name="screen_recorder_record_audio_summary">从麦克风录制音频</string>
 
-    <!-- Special Features Category-->
-    <string name="special_features_category">快捷控制</string>
-
     <!-- AP/PM Indicator -->
     <string name="status_bar_am_pm_title">上午/下午样式</string>
 
@@ -328,5 +325,11 @@
 
     <!-- Active Display And Lockscreen Notifications Lock -->
     <string name="ad_or_ln">%1$s已经启用，请先关闭它。</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">动画</string>
+
+    <!-- Active Display & LockScreen Notification & RecentShortcut -->
+    <string name="smartcontrol_settings_title">智能控制</string> 
 
 </resources>

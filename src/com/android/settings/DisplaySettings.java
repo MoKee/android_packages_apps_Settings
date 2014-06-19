@@ -45,6 +45,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
 
+import android.view.WindowManagerGlobal;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
 import com.android.settings.Utils;
@@ -68,6 +69,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
+    // ListView Animations Key
+    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
+    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+
     private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_SCREEN_SAVER = "screensaver";
@@ -88,8 +93,19 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
+    private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
+    private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
+    private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
+
+    private ListPreference mExpandedDesktopPref;
+    private CheckBoxPreference mExpandedDesktopNoNavbarPref;
+
     private CheckBoxPreference mInaccurateProximityPref;
     private ListPreference mScreenOffAnimationPreference;
+
+    // ListView Animations Preference
+    private ListPreference mListViewAnimation;
+    private ListPreference mListViewInterpolator;
 
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
@@ -133,6 +149,39 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.display_settings);
 
         PreferenceCategory displayPrefs = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
+        PreferenceCategory expandedCategory =
+                (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
+
+        // Expanded desktop
+        mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
+        mExpandedDesktopNoNavbarPref =
+                (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
+
+        int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STYLE, 0);
+
+        try {
+            // Only show the navigation bar category on devices that has a navigation bar
+            // unless we are forcing it via development settings
+            boolean forceNavbar = android.provider.Settings.System.getInt(getContentResolver(),
+                    android.provider.Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
+            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
+                    || forceNavbar;
+
+            if (hasNavBar) {
+                mExpandedDesktopPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
+                updateExpandedDesktop(expandedDesktopValue);
+                expandedCategory.removePreference(mExpandedDesktopNoNavbarPref);
+            } else {
+                // Hide no-op "Status bar visible" expanded desktop mode
+                mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
+                expandedCategory.removePreference(mExpandedDesktopPref);
+            }
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
 
         mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
 
@@ -176,6 +225,21 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mInaccurateProximityPref.setOnPreferenceChangeListener(this);
             }
         }
+
+        // ListView Animations
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        int listviewanimation = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_ANIMATION, 1);
+        mListViewAnimation.setValue(String.valueOf(listviewanimation));
+        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
+        mListViewAnimation.setOnPreferenceChangeListener(this);
+
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        int listviewinterpolator = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
+        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
+        mListViewInterpolator.setOnPreferenceChangeListener(this);
 
         mAdaptiveBacklight = (CheckBoxPreference) findPreference(KEY_ADAPTIVE_BACKLIGHT);
         if (!isAdaptiveBacklightSupported()) {
@@ -506,6 +570,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
+        if (KEY_EXPANDED_DESKTOP.equals(key)) {
+            int expandedDesktopValue = Integer.valueOf((String) objValue);
+            updateExpandedDesktop(expandedDesktopValue);
+        }
+        if (KEY_EXPANDED_DESKTOP_NO_NAVBAR.equals(key)) {
+            boolean value = (Boolean) objValue;
+            updateExpandedDesktop(value ? 2 : 0);
+        }
+
         if (KEY_SCREEN_TIMEOUT.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
@@ -534,6 +607,20 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
                     ((Boolean) objValue).booleanValue() ? 1 : 0);
+        } else if (preference == mListViewAnimation) {
+            int listviewanimation = Integer.valueOf((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.LISTVIEW_ANIMATION,
+                    listviewanimation);
+            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
+            return true;
+        } else if (preference == mListViewInterpolator) {
+            int listviewinterpolator = Integer.valueOf((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.LISTVIEW_INTERPOLATOR,
+                    listviewinterpolator);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
         }
 
         return true;
@@ -603,6 +690,31 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } catch (NoClassDefFoundError e) {
             // Hardware abstraction framework not installed
             return false;
+        }
+    }
+
+    private void updateExpandedDesktop(int value) {
+        ContentResolver cr = getContentResolver();
+        Resources res = getResources();
+        int summary = -1;
+
+        Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
+
+        if (value == 0) {
+            // Expanded desktop deactivated
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
+            Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STATE, 0);
+            summary = R.string.expanded_desktop_disabled;
+        } else if (value == 1) {
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+            summary = R.string.expanded_desktop_status_bar;
+        } else if (value == 2) {
+            Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
+            summary = R.string.expanded_desktop_no_status_bar;
+        }
+
+        if (mExpandedDesktopPref != null && summary != -1) {
+            mExpandedDesktopPref.setSummary(res.getString(summary));
         }
     }
 }

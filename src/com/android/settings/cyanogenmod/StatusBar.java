@@ -21,7 +21,9 @@ import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -40,6 +42,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 public class StatusBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+    private static final String TAG = "StatusBar";
 
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
@@ -157,7 +161,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_BATTERY, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
 
-            enableStatusBarBatteryDependents((String)newValue);
+            enableStatusBarBatteryDependents((String) newValue);
             return true;
         } else if (preference == mStatusBarTraffic) {
             int trafficStyle = Integer.valueOf((String) newValue);

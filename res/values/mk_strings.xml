@@ -203,9 +203,6 @@
     <string name="screen_recorder_bitrate_50000000" translatable="false">50000000</string>
     <string name="screen_recorder_bitrate_100000000" translatable="false">100000000</string>
 
-    <!-- Special Features Category-->
-    <string name="special_features_category">Special Features</string>
-
     <!-- AP/PM Indicator -->
     <string name="status_bar_am_pm_title">AM/PM style</string>
 
@@ -393,5 +390,11 @@
     <string name="hide_overflow_button_title">Hide action overflow</string>
     <string name="hide_overflow_button_summary">Hide the 3-dot overflow menu button within apps</string>
     <string name="hide_overflow_button_toast">Changes may not be visible until apps are restarted</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">animation</string>
+
+    <!-- Active Display & LockScreen Notification & RecentShortcut -->
+    <string name="smartcontrol_settings_title">Smart Control</string> 
 
 </resources>
