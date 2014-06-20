@@ -255,6 +255,20 @@
     <string name="tiles_per_row_duplicate_landscape_title">橫屏雙倍顯示</string>
     <string name="tiles_per_row_duplicate_landscape_summary">橫屏顯示時每行的格數翻倍</string>
 
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">在解鎖前顯示滑塊</string>
+    <string name="lock_before_unlock_summary">當開啟安全解鎖時，先顯示滑動解鎖界面。</string>
+
+   <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">喚醒屏蔽器</string>
+    <string name="wakelock_blocker_title">啟用</string>
+    <string name="wakelock_blocker_summary">屏蔽選中項目的喚醒</string>
+    <string name="wakelock_blocker_save">保存</string>
+    <string name="wakelock_list_header">可攔截項目</string>
+    <string name="wakelock_blocker_reload">重新加載</string>
+    <string name="wakelock_blocker_warning_title">風險警告</string>
+    <string name="wakelock_blocker_warning">屏蔽一些項目的喚醒功能將極大的提升設備續航能力，但錯誤、激進的設置可能造成系統不穩定、崩潰或數據丟失。</string>
+
     <!-- Lockscreen Notifications -->
     <string name="general">通用</string>
     <string name="layout">佈局</string>
@@ -288,5 +302,16 @@
 
     <!-- Active Display And Lockscreen Notifications Lock -->
     <string name="ad_or_ln">%1$s已經啟用，請先關閉它。</string>
+
+    <!-- Hide overflow button -->
+    <string name="hide_overflow_button_title">隱藏更多選項</string>
+    <string name="hide_overflow_button_summary">在 apps 中隱藏更多選單按鈕(三點)</string>
+    <string name="hide_overflow_button_toast">直到 apps 重新啟動才會生效</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">動畫</string>
+
+    <!-- Active Display & LockScreen Notification & RecentShortcut -->
+    <string name="smartcontrol_settings_title">智能控制</string> 
 
 </resources>
