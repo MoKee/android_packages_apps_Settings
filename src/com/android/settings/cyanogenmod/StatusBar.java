@@ -21,9 +21,10 @@ import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
+import android.database.ContentObserver;
+import android.net.Uri;
 import android.os.Bundle;
-import android.os.RemoteException;
+import android.os.Handler;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -60,6 +61,9 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private ListPreference mStatusBarBattery;
     private SystemSettingCheckBoxPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarCmSignal;
+    private CheckBoxPreference mStatusBarBrightnessControl;
+
+    private ContentObserver mSettingsObserver;
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarTraffic;
@@ -110,20 +114,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                 (SystemSettingCheckBoxPreference) findPreference(STATUS_BAR_BATTERY_SHOW_PERCENT);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
 
-        CheckBoxPreference statusBarBrightnessControl = (CheckBoxPreference)
+        mStatusBarBrightnessControl = (CheckBoxPreference)
                 prefSet.findPreference(Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL);
+        refreshBrightnessControl();
 
-        try {
-            if (Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS_MODE)
-                    == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
-                statusBarBrightnessControl.setEnabled(false);
-                statusBarBrightnessControl.setSummary(R.string.status_bar_toggle_info);
-            }
-        } catch (SettingNotFoundException e) {
-            // Do nothing
-        }
-
-        int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_BATTERY, 2);
+        int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_BATTERY, 0);
         mStatusBarBattery.setValue(String.valueOf(batteryStyle));
         mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
         mStatusBarBattery.setOnPreferenceChangeListener(this);
@@ -139,6 +134,32 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         }
 
         enableStatusBarBatteryDependents(mStatusBarBattery.getValue());
+
+        mSettingsObserver = new ContentObserver(new Handler()) {
+            @Override
+            public void onChange(boolean selfChange, Uri uri) {
+                refreshBrightnessControl();
+            }
+
+            @Override
+            public void onChange(boolean selfChange) {
+                onChange(selfChange, null);
+            }
+        };
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getContentResolver().registerContentObserver(
+                Settings.System.getUriFor(Settings.System.SCREEN_BRIGHTNESS_MODE),
+                true, mSettingsObserver);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        getContentResolver().unregisterContentObserver(mSettingsObserver);
     }
 
     private void updateCustomLabelTextSummary() {
@@ -188,6 +209,20 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         }
 
         return false;
+    }
+
+    private void refreshBrightnessControl() {
+        try {
+            if (Settings.System.getInt(getContentResolver(),
+                    Settings.System.SCREEN_BRIGHTNESS_MODE)
+                    == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+                mStatusBarBrightnessControl.setSummary(R.string.status_bar_toggle_info);
+            } else {
+                mStatusBarBrightnessControl.setSummary(R.string.status_bar_toggle_brightness_summary);
+            }
+        } catch (SettingNotFoundException e) {
+            // Do nothing
+        }
     }
 
     private void enableStatusBarBatteryDependents(String value) {
