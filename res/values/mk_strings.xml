@@ -395,6 +395,8 @@
     <string name="animation_settings_title">animation</string>
 
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
-    <string name="smartcontrol_settings_title">Smart Control</string> 
+    <string name="smartcontrol_settings_title">Smart Control</string>
+
+    <string name="sweep_screen_to_wake_title">Sweep screen to wake</string>
 
 </resources>
