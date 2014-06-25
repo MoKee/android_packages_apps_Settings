@@ -141,10 +141,13 @@
                 android:summary="@string/color_enhancement_summary"
                 android:defaultValue="true" />
 
-            <CheckBoxPreference
-                android:key="sweep_screen_wake_gesture"
+            <ListPreference
+                android:key="sweep_wake_gesture"
+                android:dialogTitle="@string/sweep_screen_to_wake_title"
                 android:title="@string/sweep_screen_to_wake_title"
-                android:defaultValue="false" />
+                android:entries="@array/sweepwake_entries"
+                android:entryValues="@array/sweepwake_values"
+                android:defaultValue="0" />
 
             <CheckBoxPreference
                 android:key="double_tap_wake_gesture"
