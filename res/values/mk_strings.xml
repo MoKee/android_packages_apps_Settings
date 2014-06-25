@@ -397,6 +397,10 @@
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
     <string name="smartcontrol_settings_title">Smart Control</string>
 
+    <!-- Sweep to wake -->
     <string name="sweep_screen_to_wake_title">Sweep screen to wake</string>
+    <string name="sweepwake_off">Off</string>
+    <string name="sweepwake_all">Sweep to wake and sleep</string>
+    <string name="sweepwake_sleep_only">Sweep to sleep only</string>
 
 </resources>

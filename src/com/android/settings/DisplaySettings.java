@@ -128,7 +128,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mColorEnhancement;
     private CheckBoxPreference mTapToWake;
-    private CheckBoxPreference mSweepToWake;
+    private ListPreference mSweepToWake;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -253,7 +253,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mAdaptiveBacklight = null;
         }
 
-        mSweepToWake = (CheckBoxPreference) findPreference(KEY_SWEEP_TO_WAKE);
+        mSweepToWake = (ListPreference) findPreference(KEY_SWEEP_TO_WAKE);
         if (!isSweepToWakeSupported()) {
             advancedPrefs.removePreference(mSweepToWake);
             mSweepToWake = null;
@@ -470,7 +470,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         if (mSweepToWake != null) {
-            mSweepToWake.setChecked(SweepToWake.isEnabled());
+            mSweepToWake.setValue(String.valueOf(SweepToWake.isEnabled()));
+            mSweepToWake.setSummary(mSweepToWake.getEntry());
+            mSweepToWake.setOnPreferenceChangeListener(this);
         }
 
         if (mColorEnhancement != null) {
@@ -589,8 +591,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
                     mWakeWhenPluggedOrUnplugged.isChecked() ? 1 : 0);
             return true;
-        } else if (preference == mSweepToWake) {
-            return SweepToWake.setEnabled(mSweepToWake.isChecked());
         } else if (preference == mTapToWake) {
             return TapToWake.setEnabled(mTapToWake.isChecked());
         }
@@ -651,6 +651,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     listviewinterpolator);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
             return true;
+        } else if (preference == mSweepToWake) {
+            int sweepwake = Integer.valueOf((String) objValue);
+            int index = mSweepToWake.findIndexOfValue((String) objValue);
+            SweepToWake.setEnabled(sweepwake);
+            mSweepToWake.setSummary(mSweepToWake.getEntries()[index]);
+            return true;
         }
 
         return true;
@@ -685,7 +691,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         if (isSweepToWakeSupported()) {
             final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
-            final boolean enabled = prefs.getBoolean(KEY_SWEEP_TO_WAKE, true);
+            final int enabled = prefs.getInt(KEY_SWEEP_TO_WAKE, 0);
             if (!SweepToWake.setEnabled(enabled)) {
                 Log.e(TAG, "Failed to restore sweep-to-wake settings.");
             } else {
