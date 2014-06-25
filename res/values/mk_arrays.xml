@@ -276,4 +276,17 @@
         <item>5</item>
     </string-array>
 
+    <!-- Sweep to wake -->
+    <string-array name="sweepwake_entries">
+        <item>@string/sweepwake_off</item>
+        <item>@string/sweepwake_all</item>
+        <item>@string/sweepwake_sleep_only</item>
+    </string-array>
+
+    <string-array name="sweepwake_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>
