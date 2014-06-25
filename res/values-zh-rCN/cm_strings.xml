@@ -158,6 +158,8 @@
   <string name="notification_light_voicemail_title">语音信箱</string>
   <string name="adaptive_backlight_title">自适应背光</string>
   <string name="adaptive_backlight_summary">动态调整屏幕的背光亮度以最大化电池寿命，同时维持可用性</string>
+  <string name="color_enhancement_title">色彩增强</string>
+  <string name="color_enhancement_summary">动态增强屏幕显示的颜色</string>
   <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
   <string name="screen_animation_off_title">锁屏效果</string>
@@ -213,6 +215,14 @@
   <string name="tile_picker_title">按钮与布局</string>
   <string name="tile_picker_summary">查看、选择并改变显示按钮的布局</string>
   <string name="tile_choose_title">选择一个按钮</string>
+  <string name="category_heads_up">顶部通知</string>
+  <string name="summary_heads_up">在屏幕顶部弹出通知</string>
+  <string name="title_heads_up_enabled">启用顶部通知</string>
+  <string name="add_heads_up_package">添加应用</string>
+  <string name="add_heads_up_dnd_summary">不在这些应用程序中显示顶部通知</string>
+  <string name="add_heads_up_blacklist_summary">不显示来自这些应用程序的顶部通知</string>
+  <string name="heads_up_dnd_title">请勿打扰</string>
+  <string name="heads_up_blacklist_title">黑名单</string>
   <string name="title_qs_small_icons">显示小按钮</string>
   <string name="summary_qs_small_icons">使用小按钮以增加列数</string>
   <string name="title_tile_airplane">飞行模式</string>
@@ -673,6 +683,7 @@
   <string name="status_bar_signal_style_text">文字</string>
   <string name="status_bar_toggle_brightness">亮度控制</string>
   <string name="status_bar_toggle_brightness_summary">由滑过状态栏调整亮度</string>
+  <string name="status_bar_toggle_info">当自动亮度启用时不可用</string>
   <string name="status_bar_notif_count_title">显示通知数量</string>
   <string name="status_bar_notif_count_summary">显示未读通知的数量</string>
   <string name="status_bar_double_tap_to_sleep_title">双击以睡眠</string>

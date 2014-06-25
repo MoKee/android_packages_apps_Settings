@@ -326,12 +326,19 @@
     <!-- Active Display And Lockscreen Notifications Lock -->
     <string name="ad_or_ln">%1$s已经启用，请先关闭它。</string>
 
+    <string name="hide_overflow_button_title">隐藏溢出菜单</string>
+    <string name="hide_overflow_button_summary">在应用程序中隐藏溢出菜单</string>
+    <string name="hide_overflow_button_toast">改动可能需要在应用程序重新启动后生效</string>
+
     <!-- Animation Settings -->
     <string name="animation_settings_title">动画</string>
 
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
     <string name="smartcontrol_settings_title">智能控制</string> 
 
-    <string name="sweep_screen_to_wake_title">滑屏解锁</string>
+    <string name="sweep_screen_to_wake_title">滑屏唤醒</string>
+    <string name="sweepwake_off">关闭</string>
+    <string name="sweepwake_all">滑屏唤醒或睡眠</string>
+    <string name="sweepwake_sleep_only">仅滑屏睡眠</string>
 
 </resources>
