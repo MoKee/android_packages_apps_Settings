@@ -2005,6 +2005,7 @@
         <receiver android:name="com.mokee.helper.receiver.NotificationClickReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="com.mokee.mkupdater.action.NOTIFICATION_CLICKED" />
             </intent-filter>
         </receiver>
 
