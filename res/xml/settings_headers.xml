@@ -118,6 +118,7 @@
 
     <!-- Smart Control -->
     <header
+        settings:includeXmlForSearch="@xml/smartcontrol_settings"
         android:id="@+id/smartcontrol_settings"
         android:icon="@drawable/ic_settings_smartcontrol"
         android:fragment="com.android.settings.mokee.SmartControl"
