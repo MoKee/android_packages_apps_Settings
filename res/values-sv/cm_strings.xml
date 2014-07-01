@@ -366,23 +366,6 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Minne</string>
   <string name="phone_service_state">Röst: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod-statistik</string>
-  <string name="anonymous_statistics_summary">Hjälp till att göra CyanogenMod bättre genom att skicka anonyma statistikrapporter</string>
-  <string name="anonymous_statistics_warning_title">Om</string>
-  <string name="anonymous_statistics_warning">Att delta i CyanogenMod Statistics kommer tillåta att icke-personlig data kommer att skickas till
-utvecklarna av CyanogenMod för att spåra unika installationer mellan enheter. Den delgivna informationen
-inkluderar en unik identifikation,
-som inte riskerar din integritet eller personliga data. Data skickas vid varje uppstart av enheten.\n\nFör ett exempel på den data som skickas, tryck på Förhandsgranska data.</string>
-  <string name="enable_reporting_title">Aktivera rapportering</string>
-  <string name="preview_data_title">Förhandsgranska data</string>
-  <string name="view_stats_title">Visa statistik</string>
-  <string name="anonymous_learn_more">Läs mer</string>
-  <string name="anonymous_notification_desc">Aktivera eller inaktivera CyanogenMod-statistik</string>
-  <string name="preview_id_title">Unikt ID</string>
-  <string name="preview_device_title">Enhet</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Operatör</string>
   <string name="header_category_interface">Anpassning</string>
   <string name="themes_settings_title">Teman</string>
   <string name="themepacks_settings_title">Temapaket</string>
@@ -423,8 +406,6 @@ som inte riskerar din integritet eller personliga data. Data skickas vid varje u
   <string name="changelog_unknown">Okänd</string>
   <string name="changelog_version">Version</string>
   <string name="contributor_cloud_title">Visa bidragsgivare</string>
-  <string name="cmupdate_settings_title">CyanogenMod-uppdateringar</string>
-  <string name="cmupdate_settings_summary">Sök efter, granska eller installera tillgängliga uppdateringar</string>
   <string name="advanced_settings_title">Avancerat</string>
   <string name="development_tools_title">Utvecklarverktyg</string>
   <string name="allow_mock_sms">Tillåt sken-SMS</string>
@@ -702,9 +683,6 @@ som inte riskerar din integritet eller personliga data. Data skickas vid varje u
   <string name="battery_info_status_charging_dock_ac">(DockaAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockaUSB)</string>
   <string name="menu_stats_reset">Återställ</string>
-  <string name="cmlicense_title">CyanogenMod Juridik</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Juridik</string>
-  <string name="settings_cmlicense_activity_unreachable">Du har ingen dataanslutning. För att se denna information nu, gå till %s från en dator ansluten till Internet.</string>
   <string name="stylus_icon_enabled_title">Visa ikon vid användning av pekpenna</string>
   <string name="stylus_icon_enabled_summary">Visa pekarikonen vid hovring eller ritning med pekpennan</string>
   <string name="gestures_settings_title">Gester för pekpenna</string>

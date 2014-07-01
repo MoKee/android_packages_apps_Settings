@@ -358,20 +358,6 @@
   <string name="cpu_info">หน่วยประมวลผล</string>
   <string name="mem_info">หน่วยความจำชั่วคราว</string>
   <string name="phone_service_state">เสียง: <xliff:g id="voice_state">%1$s</xliff:g>, ข้อมูล: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">สถิติของ CyanogenMod </string>
-  <string name="anonymous_statistics_summary">ช่วยทำให้ CyanogenMod ดีขึ้นโดยการส่งรายงานสถิติแบบไม่ระบุตัวตน</string>
-  <string name="anonymous_statistics_warning_title">เกี่ยวกับ</string>
-  <string name="anonymous_statistics_warning">การส่งสถิติแบบไม่ระบุตัวตนไปยัง CyanogenMod จะอนุญาตให้ส่งข้อมูลที่ไม่เป็นส่วนตัวไปยังนักพัฒนาของ CyanogenMod เพื่อติดตามการติดตั้งบนอุปกรณ์ต่างๆ ข้อมูลที่ถูกส่งรวมไปถึงตัวระบุที่ไม่ซ้ำกัน\n\nซึ่งไม่ได้ส่งข้อมูลที่เป็นส่วนตัวของคุณ และจะส่งข้อมูลทุกครั้งที่เริ่มระบบ\n\nเช่น ข้อมูลจะถูกส่งเมื่อแตะ แสดงตัวอย่างข้อมูล</string>
-  <string name="enable_reporting_title">เปิดให้รายงาน</string>
-  <string name="preview_data_title">แสดงตัวอย่างข้อมูล</string>
-  <string name="view_stats_title">ดูสถิติ</string>
-  <string name="anonymous_learn_more">เรียนรู้เพิ่มเติม</string>
-  <string name="anonymous_notification_desc">เปิดหรือปิดสถิติของ CyanogenMod</string>
-  <string name="preview_id_title">ตัวระบุที่ไม่ซ้ำกัน</string>
-  <string name="preview_device_title">อุปกรณ์</string>
-  <string name="preview_version_title">รุ่น</string>
-  <string name="preview_country_title">ประเทศ</string>
-  <string name="preview_carrier_title">ผู้ให้บริการ</string>
   <string name="header_category_interface">ลักษณะส่วนบุคคล</string>
   <string name="themes_settings_title">ชุดรูปแบบ</string>
   <string name="themepacks_settings_title">แพ็คชุดรูปแบบ</string>
@@ -412,8 +398,6 @@
   <string name="changelog_unknown">ไม่ทราบ</string>
   <string name="changelog_version">รุ่น</string>
   <string name="contributor_cloud_title">ดูรายชื่อผู้ร่วมพัฒนา</string>
-  <string name="cmupdate_settings_title">ปรับปรุงรุ่น CyanogenMod</string>
-  <string name="cmupdate_settings_summary">ตรวจสอบ,ดู หรือติดตั้งการอัพเดต</string>
   <string name="advanced_settings_title">ขั้นสูง</string>
   <string name="development_tools_title">เปิดอุปกรณ์ช่วยเหลือ</string>
   <string name="allow_mock_sms">อนุญาตใช้ข้อความจำลอง</string>
@@ -692,9 +676,6 @@
   <string name="battery_info_status_charging_dock_ac">(แท่นAC)</string>
   <string name="battery_info_status_charging_dock_usb">(แท่นUSB)</string>
   <string name="menu_stats_reset">รีเซ็ต</string>
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">คุณไม่มีการเชื่อมต่ออินเตอร์เน็ต, เพื่อดูข้อมูลเดียวนี้,ไปยัง %s จากคอมพิวเตอร์ที่เชื่อมต่ออินเตอร์เน็ต</string>
   <string name="stylus_icon_enabled_title">แสดงไอคอนเมื่อใช้งานปากกาสไตลัส</string>
   <string name="stylus_icon_enabled_summary">แสดงจุดบนจอเมื่อตวัดหรือวาดด้วยปากกา stylus</string>
   <string name="gestures_settings_title">ท่าทางของปากกา Stylus</string>

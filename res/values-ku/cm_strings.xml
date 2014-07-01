@@ -365,22 +365,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="cpu_info">CPU</string>
   <string name="mem_info">بیرگە</string>
   <string name="phone_service_state">دەنگ: <xliff:g id="دەنگ">%1$s</xliff:g>, داتا: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">ئاماری ساینۆجنمۆد</string>
-  <string name="anonymous_statistics_summary">یارمەتی ساینۆجنمۆد بدە بۆ باشکردنی سیستەمەکە بە ڕاپۆرتکردن بۆ دیلان کەلاری</string>
-  <string name="anonymous_statistics_warning_title">دەربارەی</string>
-  <string name="anonymous_statistics_warning">Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the
-        developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
-  <string name="enable_reporting_title">چالاکردنی ڕاپۆرتکردن</string>
-  <string name="preview_data_title">پیشاندانی داتا</string>
-  <string name="view_stats_title">پیشاندانی ئامار</string>
-  <string name="anonymous_learn_more">فێربوونی زۆر</string>
-  <string name="anonymous_notification_desc">چالاکردن یان لەکارخستنی ئاماری ساینۆنجمۆد</string>
-  <string name="preview_id_title">دانسقە ID</string>
-  <string name="preview_device_title">ئامێر</string>
-  <string name="preview_version_title">وەشان</string>
-  <string name="preview_country_title">وڵات</string>
-  <string name="preview_carrier_title">هەڵگر-کۆمپانیای سیمکارتەکە</string>
   <string name="header_category_interface">کەسایەتی</string>
   <string name="themes_settings_title">ڕووکارەکان</string>
   <string name="themepacks_settings_title">پاکێچی ڕووکارەکان</string>
@@ -421,8 +405,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_unknown">نەناسراوە</string>
   <string name="changelog_version">وەشان-فەلاح کەلاری</string>
   <string name="contributor_cloud_title">دەرخستنی هاوبەشاکان</string>
-  <string name="cmupdate_settings_title">تازەکردنەوەی ساینۆجنمۆد</string>
-  <string name="cmupdate_settings_summary">گەڕان بۆ یان نیشاندان و دامەزراندنی تازەکردنەوە لەکارە</string>
   <string name="advanced_settings_title">پەرەسەندوو</string>
   <string name="development_tools_title">خستنەکاری ئامرازەکان</string>
   <string name="allow_mock_sms">ڕێگەدان mock SMS</string>
@@ -692,9 +674,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">ڕێکخستنه‌وه‌</string>
-  <string name="cmlicense_title">یاسای ساینۆجنمۆد</string>
-  <string name="settings_cmlicense_activity_title">یاسای ساینۆجنمۆد</string>
-  <string name="settings_cmlicense_activity_unreachable">په‌یوه‌ندی داتات نیه‌ .بۆ ده‌رخستنی ئه‌م زانیاریانه‌، بڕۆ بۆ  %s له‌ کۆمپیوته‌ره‌که‌ت که‌ په‌یوه‌ندی بکه‌ به‌ تۆڕه‌وه‌</string>
   <string name="stylus_icon_enabled_title">پیشاندانی وێنۆچکه‌ به‌کارهێنانی ستایلوس</string>
   <string name="stylus_icon_enabled_summary">خاڵی وێنۆچکه‌ دیاری بده‌ بۆ ڕاکێشان</string>
   <string name="gestures_settings_title">جوڵانی ستایل</string>

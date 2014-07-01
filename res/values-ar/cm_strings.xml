@@ -362,22 +362,6 @@
   <string name="cpu_info">وحدة المعالجة المركزية</string>
   <string name="mem_info">الذاكرة</string>
   <string name="phone_service_state">صوت: <xliff:g id="voice_state">%1$s</xliff:g>, بيانات: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">إحصائيات CyanogenMod</string>
-  <string name="anonymous_statistics_summary">تساعد على جعل CyanogenMod أفضل باختيارك الإبلاغ عن إحصائيات مجهولة للمصدر</string>
-  <string name="anonymous_statistics_warning_title">حول</string>
-  <string name="anonymous_statistics_warning">سوف يختارون في CyanogenMod الاحصائيات تسمح البيانات غير الشخصية التي ستقدم إلى 
-مطوري CyanogenMod لتعقب منشآت فريدة عبر الأجهزة. وتشمل المعلومات المقدمة معرف فريدة من نوعها، 
-التي لا تساوم خصوصيتك أو البيانات الشخصية. يقدم البيانات خلال كل التمهيد \n\n للحصول على مثال عن البيانات التي يتم إرسالها، اضغط على معاينة البيانات.</string>
-  <string name="enable_reporting_title">تمكين إعداد التقارير</string>
-  <string name="preview_data_title">معاينة البيانات</string>
-  <string name="view_stats_title">عرض الإحصائيات</string>
-  <string name="anonymous_learn_more">لمعرفة المزيد</string>
-  <string name="anonymous_notification_desc">تمكين أو تعطيل إحصاءات CyanogenMod</string>
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">الجهاز</string>
-  <string name="preview_version_title">الإصدار</string>
-  <string name="preview_country_title">الدولة</string>
-  <string name="preview_carrier_title">جهة الشحن</string>
   <string name="header_category_interface">إضفاء الطابع الشخصي</string>
   <string name="themes_settings_title">المواضيع</string>
   <string name="themepacks_settings_title">حزم المواضيع</string>
@@ -418,8 +402,6 @@
   <string name="changelog_unknown">غير معروف</string>
   <string name="changelog_version">الإصدار</string>
   <string name="contributor_cloud_title">عرض المساهمين</string>
-  <string name="cmupdate_settings_title">تحديثات CyanogenMod</string>
-  <string name="cmupdate_settings_summary">التحقق من وجود أو عرض أو تثبيت التحديثات المتوفرة</string>
   <string name="advanced_settings_title">متقدم</string>
   <string name="development_tools_title">بدء تشغيل أدوات</string>
   <string name="allow_mock_sms">السماح بالرسائل القصيرة صورية</string>
@@ -701,9 +683,6 @@ href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing A
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">إعادة تعيين</string>
-  <string name="cmlicense_title">CyanogenMod قانون</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod قانون</string>
-  <string name="settings_cmlicense_activity_unreachable">لم يكن لديك اتصال بيانات. لعرض هذه المعلومات الآن، انتقل إلى %s من أي جهاز كمبيوتر متصل بالإنترنت.</string>
   <string name="stylus_icon_enabled_title">إظهار الرمز عند استخدام النمط</string>
   <string name="stylus_icon_enabled_summary">إظهار رمز المؤشر عند المرور بالماوس أو الرسم  النمط</string>
   <string name="gestures_settings_title">نمط إيماءات</string>

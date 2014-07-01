@@ -330,19 +330,6 @@
   <string name="build_date">版本日期</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">記憶體</string>
-  <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">加入匿名統計報告以協助改進 CyanogenMod</string>
-  <string name="anonymous_statistics_warning_title">關於</string>
-  <string name="enable_reporting_title">啟用報告</string>
-  <string name="preview_data_title">預覽資料</string>
-  <string name="view_stats_title">檢視統計</string>
-  <string name="anonymous_learn_more">了解更多</string>
-  <string name="anonymous_notification_desc">啟用或停用 CyanogenMod 統計</string>
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">裝置</string>
-  <string name="preview_version_title">版本</string>
-  <string name="preview_country_title">國家</string>
-  <string name="preview_carrier_title">電信業者</string>
   <string name="header_category_interface">個人化</string>
   <string name="themes_settings_title">主題</string>
   <string name="themepacks_settings_title">主題包</string>
@@ -381,8 +368,6 @@
   <string name="changelog_unknown">未知</string>
   <string name="changelog_version">版本</string>
   <string name="contributor_cloud_title">檢視貢獻者</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
-  <string name="cmupdate_settings_summary">檢查、檢視或安裝可用的更新</string>
   <string name="advanced_settings_title">進階</string>
   <string name="development_tools_title">啟動開發工具</string>
   <string name="allow_mock_sms">允許模擬簡訊</string>
@@ -628,8 +613,6 @@
   <string name="battery_info_status_charging_dock_ac">(座架 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(座架 USB)</string>
   <string name="menu_stats_reset">重設</string>
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod 法律條款</string>
   <string name="stylus_icon_enabled_title">使用觸控筆時顯示圖示</string>
   <string name="gestures_settings_title">觸控筆手勢</string>
   <string name="category_spen_title">觸控筆手勢</string>

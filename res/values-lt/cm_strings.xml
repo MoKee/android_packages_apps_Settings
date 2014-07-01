@@ -384,20 +384,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="cpu_info">Procesorius</string>
   <string name="mem_info">Atmintis</string>
   <string name="phone_service_state">Balsas: <xliff:g id="voice_state">%1$s</xliff:g>, duomenys: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">„CyanogenMod“ statistika</string>
-  <string name="anonymous_statistics_summary">Padėkite tobulinti „CyanogenMod“ įjungdami statistikos raportavimą</string>
-  <string name="anonymous_statistics_warning_title">Apie</string>
-  <string name="anonymous_statistics_warning">Raportuojant „CyanogenMod“ statistikos duomenis jūsų asmeninė informacija nebus renkama. Informacija bus renkama tik apie sistemos darbą bei triktis. Ši informacija padės kūrėjams tobulinti „CyanogenMod“ bei šalinti triktis. Duomenys pateikiami kiekvieno įsijungimo metu, norėdami peržiūrėti kokia informacija bus renkama bakstelėkite „Žiūrėti duomenis“</string>
-  <string name="enable_reporting_title">Įjungti raportavimą</string>
-  <string name="preview_data_title">Žiūrėti duomenis</string>
-  <string name="view_stats_title">Žiūrėti statistiką</string>
-  <string name="anonymous_learn_more">Sužinokite daugiau</string>
-  <string name="anonymous_notification_desc">Įjunkite arba išjunkite „CyanogenMod“ statistiką</string>
-  <string name="preview_id_title">Unikalus ID</string>
-  <string name="preview_device_title">Prietaisas</string>
-  <string name="preview_version_title">Versija</string>
-  <string name="preview_country_title">Šalis</string>
-  <string name="preview_carrier_title">Operatorius</string>
   <string name="header_category_interface">Personalizavimas</string>
   <string name="themes_settings_title">Temos</string>
   <string name="themepacks_settings_title">Temų paketai</string>
@@ -438,8 +424,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_unknown">Nežinomas</string>
   <string name="changelog_version">Versija</string>
   <string name="contributor_cloud_title">Žiūrėti pagalbininkus</string>
-  <string name="cmupdate_settings_title">„CyanogenMod“ atnaujinimai</string>
-  <string name="cmupdate_settings_summary">Tikrinti, žiūrėti ar įdiegti galimus atnaujinimus</string>
   <string name="advanced_settings_title">Išplėstinis</string>
   <string name="development_tools_title">Kūrimo įrankiai</string>
   <string name="allow_mock_sms">Leisti netikrus SMS</string>
@@ -719,9 +703,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="battery_info_status_charging_dock_ac">(DokasAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokasUSB)</string>
   <string name="menu_stats_reset">Atkurti</string>
-  <string name="cmlicense_title">Teisinė „CyanogenMod“ informacija</string>
-  <string name="settings_cmlicense_activity_title">Teisinė „CyanogenMod“ informacija</string>
-  <string name="settings_cmlicense_activity_unreachable">Nesate prisijungę prie duomenų paslaugos. Jei norite peržiūrėti šią informaciją dabar, apsilankykite šiuo adresu %s naudodami bet kurį prie interneto prijungtą kompiuterį.</string>
   <string name="stylus_icon_enabled_title">Rodyti rašiklio piktogramą</string>
   <string name="stylus_icon_enabled_summary">Rodyti žymiklio piktogramą, kai slankiojama arba piešiama su rašikliu</string>
   <string name="gestures_settings_title">Rašiklio gestai</string>

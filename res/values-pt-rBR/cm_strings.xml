@@ -370,20 +370,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memória</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, dados: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estatísticas CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajude a melhorar o CyanogenMod optando por enviar estatísticas anonimas</string>
-  <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optar por enviar estatísticas anônimas do CyanogenMod permitirá que dados não-pessoais sejam enviados para os desenvolvedores do CyanogenMod para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador unico, que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um exemplo de dados que são enviados, toque em Pré-visualizar Dados.</string>
-  <string name="enable_reporting_title">Habilitar relatório</string>
-  <string name="preview_data_title">Pré-visualizar dados</string>
-  <string name="view_stats_title">Ver estatísticas</string>
-  <string name="anonymous_learn_more">Saiba mais</string>
-  <string name="anonymous_notification_desc">Habilitar ou desabilitar estatísticas CyanogenMod</string>
-  <string name="preview_id_title">ID unico</string>
-  <string name="preview_device_title">Dispositivo</string>
-  <string name="preview_version_title">Versão</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Operadora</string>
   <string name="header_category_interface">INTERFACE</string>
   <string name="themes_settings_title">Temas</string>
   <string name="themepacks_settings_title">Pacotes de temas</string>
@@ -424,8 +410,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="changelog_unknown">Desconhecido</string>
   <string name="changelog_version">Versão</string>
   <string name="contributor_cloud_title">Visualizar colaboradores</string>
-  <string name="cmupdate_settings_title">Atualizações CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Verificar, visualizar ou instalar atualizações disponíveis</string>
   <string name="advanced_settings_title">Avançado</string>
   <string name="development_tools_title">Abrir ferramentas</string>
   <string name="allow_mock_sms">Permitir a simulação SMS</string>
@@ -705,9 +689,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Redefinir</string>
-  <string name="cmlicense_title">CyanogenMod Legal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
-  <string name="settings_cmlicense_activity_unreachable">Você não tem conexão com a Internet. Para ver esta informação agora, navegue para %s de qualquer computador conectado à Internet.</string>
   <string name="stylus_icon_enabled_title">Mostrar ícone quando usando stylus</string>
   <string name="stylus_icon_enabled_summary">Mostar ponteiro quando pairando ou desenhando com o stylus</string>
   <string name="gestures_settings_title">Gestos p/ stylus</string>

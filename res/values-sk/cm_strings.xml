@@ -370,20 +370,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Pamäť</string>
   <string name="phone_service_state">Hlas: <xliff:g id="voice_state">%1$s</xliff:g>, dátové prenosy: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Štatistiky CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomôžte zlepšiť CyanogenMod povolením anonymných štatistických hlásení</string>
-  <string name="anonymous_statistics_warning_title">O aplikácii</string>
-  <string name="anonymous_statistics_warning">Povolením štatistík CyanogenMod súhlasíte s odosielaním neosobných údajov vývojárom CyanogenModu, na účel zaznamenávania inštalácií naprieč zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
-  <string name="enable_reporting_title">Povoliť hlásenia</string>
-  <string name="preview_data_title">Prehľad údajov</string>
-  <string name="view_stats_title">Zobraziť štatistiky</string>
-  <string name="anonymous_learn_more">Zistiť viac</string>
-  <string name="anonymous_notification_desc">Povoliť alebo zakázať Štatistiky CyanogenMod</string>
-  <string name="preview_id_title">Unikátne ID</string>
-  <string name="preview_device_title">Zariadenie</string>
-  <string name="preview_version_title">Verzia</string>
-  <string name="preview_country_title">Krajina</string>
-  <string name="preview_carrier_title">Operátor</string>
   <string name="header_category_interface">Personalizácia</string>
   <string name="themes_settings_title">Témy</string>
   <string name="themepacks_settings_title">Balíky tém</string>
@@ -424,8 +410,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="changelog_unknown">Neznáme</string>
   <string name="changelog_version">Verzia</string>
   <string name="contributor_cloud_title">Zobraziť prispievateľov</string>
-  <string name="cmupdate_settings_title">Aktualizácie CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Skontrolovať, zobraziť alebo nainštalovať dostupné aktualizácie</string>
   <string name="advanced_settings_title">Pokročilé</string>
   <string name="development_tools_title">Nástroje spúšťania</string>
   <string name="allow_mock_sms">Povoliť falošné SMS</string>
@@ -705,9 +689,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="battery_info_status_charging_dock_ac">(DokAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokUSB)</string>
   <string name="menu_stats_reset">Obnoviť</string>
-  <string name="cmlicense_title">Právne informácie CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Právne informácie CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nemáte dátové pripojenie. Ak chcete tieto informácie zobraziť teraz, prejdite v ľubovoľnom počítači pripojenom na Internet na adresu %s.</string>
   <string name="stylus_icon_enabled_title">Zobraziť ikonu pri používaní stylusu</string>
   <string name="stylus_icon_enabled_summary">Zobraziť ikonu pri vznášaní alebo kreslení pomocou stylusu</string>
   <string name="gestures_settings_title">Gestá pomocou stylusu</string>

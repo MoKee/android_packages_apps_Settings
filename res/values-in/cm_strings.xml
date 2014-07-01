@@ -369,20 +369,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memori</string>
   <string name="phone_service_state">Suara: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Statistik CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Bantu CyanogenMod untuk menjadi lebih baik dengan memilih melaporkan statistik anonim</string>
-  <string name="anonymous_statistics_warning_title">Tentang</string>
-  <string name="anonymous_statistics_warning">Memilih Statistik CyanogenMod akan memungkinkan data non-pribadi dikirimkan kepada para pengembang CyanogenMod untuk melacak instalasi unik di perangkat. Informasi yang dikirimkan berisi pengenal unik, yang tidak membahayakan privasi atau data pribadi anda. Data dikirim setiap memulai perangkat.\n\nUntuk melihat contoh data yang akan dikirim, ketuk Pratinjau Data.</string>
-  <string name="enable_reporting_title">Aktifkan pelaporan</string>
-  <string name="preview_data_title">Pratinjau data</string>
-  <string name="view_stats_title">Lihat statistik</string>
-  <string name="anonymous_learn_more">Pelajadi lebih lanjut</string>
-  <string name="anonymous_notification_desc">Aktifkan atau Nonaktifkan statistik CyanogenMod</string>
-  <string name="preview_id_title">ID Unik</string>
-  <string name="preview_device_title">Perangkat</string>
-  <string name="preview_version_title">Versi</string>
-  <string name="preview_country_title">Negara</string>
-  <string name="preview_carrier_title">Provider</string>
   <string name="header_category_interface">Personalisasi</string>
   <string name="themes_settings_title">Tema</string>
   <string name="themepacks_settings_title">Paket tema</string>
@@ -423,8 +409,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="changelog_unknown">Tidak diketahui</string>
   <string name="changelog_version">Versi</string>
   <string name="contributor_cloud_title">Lihat Kontributor</string>
-  <string name="cmupdate_settings_title">Pembaruan CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Memeriksa, lihat atau menginstal pembaruan yang tersedia</string>
   <string name="advanced_settings_title">Tingkat lanjut</string>
   <string name="development_tools_title">Launch Tools</string>
   <string name="allow_mock_sms">Izinkan SMS tiruan</string>
@@ -704,9 +688,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Reset</string>
-  <string name="cmlicense_title">Hukum CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Hukum CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Anda tidak memiliki koneksi data. Untuk melihat informasi ini sekarang, pergi ke %s dari semua komputer yang terhubung ke Internet.</string>
   <string name="stylus_icon_enabled_title">Tampilkan ikon saat menggunakan stylus</string>
   <string name="stylus_icon_enabled_summary">Tunjukkan ikon pointer saat hovering atau menggambar dengan stylus</string>
   <string name="gestures_settings_title">Gerakan stylus</string>

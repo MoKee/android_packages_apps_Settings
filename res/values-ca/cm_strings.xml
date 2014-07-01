@@ -372,20 +372,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memòria</string>
   <string name="phone_service_state">Veu: <xliff:g id="voice_state">%1$s</xliff:g>, dades: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajuda a fer millor CyanogenMod optant a transmetre estadístiques anònimes</string>
-  <string name="anonymous_statistics_warning_title">Quant a</string>
-  <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetrà que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
-  <string name="enable_reporting_title">Activa informes</string>
-  <string name="preview_data_title">Vista prèvia de Dades</string>
-  <string name="view_stats_title">Mostra estadístiques</string>
-  <string name="anonymous_learn_more">Aprèn més</string>
-  <string name="anonymous_notification_desc">Activa o desactiva les estadístiques de CyanogenMod</string>
-  <string name="preview_id_title">ID únic</string>
-  <string name="preview_device_title">Dispositiu</string>
-  <string name="preview_version_title">Versió</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Portadora</string>
   <string name="header_category_interface">INTERFÍCIE</string>
   <string name="themes_settings_title">Temes</string>
   <string name="themepacks_settings_title">Paquets de temes</string>
@@ -426,8 +412,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="changelog_unknown">Desconegut</string>
   <string name="changelog_version">Versió</string>
   <string name="contributor_cloud_title">Veure els contribuidors</string>
-  <string name="cmupdate_settings_title">Actualitzacions CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Verifica, mostra o instal·la les actualitzacions disponibles</string>
   <string name="advanced_settings_title">Avançat</string>
   <string name="development_tools_title">Llança Eines</string>
   <string name="allow_mock_sms">Permet SMS simulats</string>
@@ -707,9 +691,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="battery_info_status_charging_dock_ac">(AcoblamentAC)</string>
   <string name="battery_info_status_charging_dock_usb">(AcoblamentUSB)</string>
   <string name="menu_stats_reset">Reinicia</string>
-  <string name="cmlicense_title">Llicència CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">No tens connexió de dades. Per veure aquesta informació ara, ves a %s des d\'un ordenador connectat a internet.</string>
   <string name="stylus_icon_enabled_title">Mostra una icona quan s\'utilitzi un llapis</string>
   <string name="stylus_icon_enabled_summary">Mostra la icona del punter quan suris o dibuixis amb el llapis</string>
   <string name="gestures_settings_title">Gestos del llapis</string>

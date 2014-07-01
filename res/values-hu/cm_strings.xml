@@ -376,20 +376,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="cpu_info">Processzor</string>
   <string name="mem_info">Memória</string>
   <string name="phone_service_state">Hang: <xliff:g id="voice_state">%1$s</xliff:g>, adat: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod Statisztika</string>
-  <string name="anonymous_statistics_summary">Segítsen a CyanogenMod jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
-  <string name="anonymous_statistics_warning_title">Névjegy</string>
-  <string name="anonymous_statistics_warning">A CyanogenMod statisztika engedélyezése nem terjed ki személyes adatokra, csak egy egyedi azonosítóval azonosítjuk az eszközöket. A statisztika minden rendszerindításkor elküldésre kerül, hogy követni tudjuk az új telepítéseket.\n\nAz elküldött adatok menüpont alatt tekintheti meg a statisztikai adatokat.</string>
-  <string name="enable_reporting_title">Statisztika engedélyezése</string>
-  <string name="preview_data_title">Elküldött adatok</string>
-  <string name="view_stats_title">Statisztika megtekintése</string>
-  <string name="anonymous_learn_more">Tudjon meg többet</string>
-  <string name="anonymous_notification_desc">CyanogenMod Statisztika engedélyezése/tiltása</string>
-  <string name="preview_id_title">Egyedi azonosító</string>
-  <string name="preview_device_title">Eszköz</string>
-  <string name="preview_version_title">Verzió</string>
-  <string name="preview_country_title">Ország</string>
-  <string name="preview_carrier_title">Szolgáltató</string>
   <string name="header_category_interface">Testreszabás</string>
   <string name="themes_settings_title">Témák</string>
   <string name="themepacks_settings_title">Téma csomagok</string>
@@ -430,8 +416,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="changelog_unknown">Ismeretlen</string>
   <string name="changelog_version">Verzió</string>
   <string name="contributor_cloud_title">Közreműködők megtekintése</string>
-  <string name="cmupdate_settings_title">CyanogenMod frissítések</string>
-  <string name="cmupdate_settings_summary">Elérhető frissítések keresése, megtekintése, vagy telepítése</string>
   <string name="advanced_settings_title">Haladó</string>
   <string name="development_tools_title">Fejlesztői eszközök</string>
   <string name="allow_mock_sms">SMS utánzatok engedélyezése</string>
@@ -710,9 +694,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Visszaállítás</string>
-  <string name="cmlicense_title">CyanogenMod Jogi nyilatkozat</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Jogi nyilatkozat</string>
-  <string name="settings_cmlicense_activity_unreachable">Nincs internet kapcsolat. Az információ megtekintéséhez, látogasson el a %s címre egy olyan számítógéppel, mely kapcsolódik az internethez.</string>
   <string name="stylus_icon_enabled_title">Ikon megjelenítése stylus használatakor</string>
   <string name="stylus_icon_enabled_summary">Toll használatakor megjelenít egy ikont az értesítési sávon</string>
   <string name="gestures_settings_title">Toll mozdulatok</string>

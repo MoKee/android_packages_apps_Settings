@@ -365,20 +365,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Hukommelse</string>
   <string name="phone_service_state">Stemme: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod-statistikker</string>
-  <string name="anonymous_statistics_summary">Hjælp med at gøre CyanogenMod bedre ved at deltage i rapportering af anonyme statistikker</string>
-  <string name="anonymous_statistics_warning_title">Om</string>
-  <string name="anonymous_statistics_warning">Deltagelse af CyanogenMod-statistikker vil tillade ikke-personlige data, der skal forelægges for udviklerne af CyanogenMod, at spore unikke installationer på tværs af enheder. De indsendte oplysninger omfatter en entydig indikator, som ikke kompromitterer dit privatliv eller personlige data. Dataene indsendes under hver opstart.\n\nFor et eksempel på de data, der er indsendt, skal du trykke på Få vist data.</string>
-  <string name="enable_reporting_title">Aktivér rapportering</string>
-  <string name="preview_data_title">Få vist data</string>
-  <string name="view_stats_title">Vis statistikker</string>
-  <string name="anonymous_learn_more">Læs mere</string>
-  <string name="anonymous_notification_desc">Aktivér eller deaktiver CyanogenMod-statistikker</string>
-  <string name="preview_id_title">Unikt ID</string>
-  <string name="preview_device_title">Enhed</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Operatør</string>
   <string name="header_category_interface">Tilpasning</string>
   <string name="themes_settings_title">Temaer</string>
   <string name="themepacks_settings_title">Temapakker</string>
@@ -419,8 +405,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="changelog_unknown">Ukendt</string>
   <string name="changelog_version">Version</string>
   <string name="contributor_cloud_title">Vis bidragydere</string>
-  <string name="cmupdate_settings_title">CyanogenMod-opdateringer</string>
-  <string name="cmupdate_settings_summary">Tjek for, se eller installér tilgængelige opdateringer</string>
   <string name="advanced_settings_title">Avanceret</string>
   <string name="development_tools_title">Start Værktøjer</string>
   <string name="allow_mock_sms">Tillad simuleret SMS</string>
@@ -699,9 +683,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Nulstil</string>
-  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Du har ingen dataforbindelse. Gå til %s fra en computer tilsluttet Internettet for at vise denne information nu.</string>
   <string name="stylus_icon_enabled_title">Vis ikon ved brug af pen</string>
   <string name="stylus_icon_enabled_summary">Vis markøren, når pennen benyttes</string>
   <string name="gestures_settings_title">Penbevægelser</string>

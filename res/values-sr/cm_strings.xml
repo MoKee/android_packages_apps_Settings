@@ -375,22 +375,6 @@
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Меморија</string>
   <string name="phone_service_state">Глас: <xliff:g id="voice_state">%1$s</xliff:g>, податак: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod статистика</string>
-  <string name="anonymous_statistics_summary">Помози да CyanogenMod буде бољи слањем анонимних статистика</string>
-  <string name="anonymous_statistics_warning_title">О програму</string>
-  <string name="anonymous_statistics_warning">Опредељење за CyanogenMod статистику ће омогућити не-личне податке који се достављају 
-програмерима CyanogenMod-а за праћење јединствене инсталације преко уређаја.Подаци  садрже јединствени идентификатор, 
-који не угрожава твоју приватност или личне податке.Подаци се подносе приликом сваког покретања.\n\nЗа пример података који се достављају, иди на Преглед података.</string>
-  <string name="enable_reporting_title">Омогући извештавање</string>
-  <string name="preview_data_title">Преглед података</string>
-  <string name="view_stats_title">Погледај статистике</string>
-  <string name="anonymous_learn_more">Сазнај више</string>
-  <string name="anonymous_notification_desc">Омогући или онемогући CyanogenMod статистику</string>
-  <string name="preview_id_title">Јединствен ID</string>
-  <string name="preview_device_title">Уређај</string>
-  <string name="preview_version_title">Верзија</string>
-  <string name="preview_country_title">Земља</string>
-  <string name="preview_carrier_title">Преносилац</string>
   <string name="header_category_interface">Персонализовање</string>
   <string name="themes_settings_title">Теме</string>
   <string name="themepacks_settings_title">Пакети тема</string>
@@ -431,8 +415,6 @@
   <string name="changelog_unknown">Непознато</string>
   <string name="changelog_version">Верзија</string>
   <string name="contributor_cloud_title">Погледај сараднике</string>
-  <string name="cmupdate_settings_title">Системска ажурирања</string>
-  <string name="cmupdate_settings_summary">Провери, погледај или инсталирај доступна ажурирања</string>
   <string name="advanced_settings_title">Напредно</string>
   <string name="development_tools_title">Покрени алате</string>
   <string name="allow_mock_sms">Дозволи лажни SMS</string>
@@ -712,9 +694,6 @@
   <string name="battery_info_status_charging_dock_ac">(ДokAC)</string>
   <string name="battery_info_status_charging_dock_usb">(ДokUSB)</string>
   <string name="menu_stats_reset">Ресетуј</string>
-  <string name="cmlicense_title">CyanogenMod Legal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
-  <string name="settings_cmlicense_activity_unreachable">Немаш везу за пренос података. Да би одмах видео ове информације, иди на %s са било ког рачунара који је повезан на интернет.</string>
   <string name="stylus_icon_enabled_title">Прикажи икону када користим оловку</string>
   <string name="stylus_icon_enabled_summary">Прикажи икону курсора када лебдим или цртам помоћу оловке</string>
   <string name="gestures_settings_title">Гестови оловке</string>

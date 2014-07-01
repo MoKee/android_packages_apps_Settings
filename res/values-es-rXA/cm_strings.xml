@@ -371,20 +371,6 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, datos: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ayuda a ameyorar CyanogenMod per aciu del unviu anónimu d\'estadístiques</string>
-  <string name="anonymous_statistics_warning_title">Avisu</string>
-  <string name="anonymous_statistics_warning">Permitiendo la recopilación y unviu d\'estadístiques de CyanogenMod, autorices l\'unviu d\'información de calter non personal a los desendolcadores de CyanogenMod pa facer un siguimientu de les instalaciones que faes nos preseos. La información unviada inclúi un identificador únicu que nun compromete la to privacidá nin la to información personal. Esta información únviase mientres l\'arranque.\n\nPa ver un exemplu de la información unviada, primi en \u00ABPrevisualizar datos\u00BB</string>
-  <string name="enable_reporting_title">Activar unviu d\'estadístiques</string>
-  <string name="preview_data_title">Previsualizar datos</string>
-  <string name="view_stats_title">Ver estadístiques</string>
-  <string name="anonymous_learn_more">Deprendi más</string>
-  <string name="anonymous_notification_desc">Activar o desactivar estadístiques de CyanogenMod</string>
-  <string name="preview_id_title">Identificador únicu</string>
-  <string name="preview_device_title">Preséu</string>
-  <string name="preview_version_title">Versión</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Operadora móvil</string>
   <string name="header_category_interface">Personalización</string>
   <string name="themes_settings_title">Temes</string>
   <string name="themepacks_settings_title">Paquetes de temes</string>
@@ -425,8 +411,6 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="changelog_unknown">Desconocíu</string>
   <string name="changelog_version">Versión</string>
   <string name="contributor_cloud_title">Ver collaboradores</string>
-  <string name="cmupdate_settings_title">Anovamientos CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Comprobar, ver ya instalar anovamientos disponibles</string>
   <string name="advanced_settings_title">Opciones avanzaes</string>
   <string name="development_tools_title">Aniciar Ferramientes</string>
   <string name="allow_mock_sms">Permitir SMS simulaos</string>
@@ -706,9 +690,6 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="battery_info_status_charging_dock_ac">(BaseAC)</string>
   <string name="battery_info_status_charging_dock_usb">(BaseUSB)</string>
   <string name="menu_stats_reset">Restablecer</string>
-  <string name="cmlicense_title">Llicencia de CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicencia de CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nun hai una conexón de datos disponible. Pa ver esta información agora, introduz la direición %s en cualquier ordenador con accesu a Internet.</string>
   <string name="stylus_icon_enabled_title">Stylus</string>
   <string name="stylus_icon_enabled_summary">Amosar el cursor cuando s\'arrastra o dibuxa con Stylus</string>
   <string name="gestures_settings_title">Stylus</string>

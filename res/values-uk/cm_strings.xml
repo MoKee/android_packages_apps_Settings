@@ -349,20 +349,6 @@
   <string name="cpu_info">Процесор</string>
   <string name="mem_info">Пам’ять</string>
   <string name="phone_service_state">Голосовий зв\'язок: <xliff:g id="voice_state">%1$s</xliff:g>\nПередача даних: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Статистика CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Допоможіть зробити CyanogenMod кращим, надсилаючи анонімну статистику</string>
-  <string name="anonymous_statistics_warning_title">Про</string>
-  <string name="anonymous_statistics_warning">Анонімні звіти дозволяють розробникам CyanogenMod відстежувати установки на різні пристрої. Інформація включає в себе назву пристрою, версію прошивки і унікальний ідентифікатор, надсилання якого ніяким чином не шкодить Вашій конфіденційності. Звіт надсилається при кожному завантаженні пристрої.</string>
-  <string name="enable_reporting_title">Увімкнути надсилання звітів</string>
-  <string name="preview_data_title">Показати дані</string>
-  <string name="view_stats_title">Перегляд статистики встановлень</string>
-  <string name="anonymous_learn_more">Докладніше</string>
-  <string name="anonymous_notification_desc">Увімкнути або вимкнути статистику CyanogenMod</string>
-  <string name="preview_id_title">Унікальний ідентифікатор</string>
-  <string name="preview_device_title">Пристрій</string>
-  <string name="preview_version_title">Версія</string>
-  <string name="preview_country_title">Країна</string>
-  <string name="preview_carrier_title">Оператор</string>
   <string name="header_category_interface">Персоналізація</string>
   <string name="themes_settings_title">Теми</string>
   <string name="themepacks_settings_title">Пакети тем</string>
@@ -403,8 +389,6 @@
   <string name="changelog_unknown">Невідомий</string>
   <string name="changelog_version">Версія</string>
   <string name="contributor_cloud_title">Імена розробників</string>
-  <string name="cmupdate_settings_title">Оновлення CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Перевірка та встановлення доступних оновлень</string>
   <string name="advanced_settings_title">Додаткові</string>
   <string name="development_tools_title">Запуск утиліти розробника</string>
   <string name="allow_mock_sms">Фіктивні SMS</string>
@@ -674,9 +658,6 @@
   <string name="battery_info_status_charging_dock_ac">(док-станція, від мережі)</string>
   <string name="battery_info_status_charging_dock_usb">(док-станція, від USB)</string>
   <string name="menu_stats_reset">Скинути</string>
-  <string name="cmlicense_title">Політика конфіденційності CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Політика конфіденційності CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Пристрій не підключено до Інтернету. Щоб переглянути цю інформацію, відкрийте сторінку %s на будь-якому комп’ютері з інтернет-доступом.</string>
   <string name="stylus_icon_enabled_title">Показувати курсор при використанні пера</string>
   <string name="stylus_icon_enabled_summary">Показати курсор при наведенні або малюванні пером</string>
   <string name="gestures_settings_title">Жести пера</string>

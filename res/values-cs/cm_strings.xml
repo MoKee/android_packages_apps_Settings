@@ -379,20 +379,6 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Paměť</string>
   <string name="phone_service_state">Hlas: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod statistiky</string>
-  <string name="anonymous_statistics_summary">Pomozte ke zlepšení CyanogenModu pomocí posíláním anonymních statistik</string>
-  <string name="anonymous_statistics_warning_title">Info</string>
-  <string name="anonymous_statistics_warning">Pokud povolíte zasílání anonymních statistik z vašeho zařízení, budou se odesílat data bez vašich osobních údajů k vývojářům pro zjištění statistiky počtu instalovaných zařízení a verzí. Data obsahují unikátní identifikátor zařízení, který ale žádným způsobem nekompromituje soukromá data na zařízení. Tyto data jsou odesílána během každého startu zařízení.\n\nMůžete se také podívat do náhledu odesílaných dat.</string>
-  <string name="enable_reporting_title">Povolit odesílání</string>
-  <string name="preview_data_title">Prohlédnout data</string>
-  <string name="view_stats_title">Zobrazit statistiky</string>
-  <string name="anonymous_learn_more">Zjistit více</string>
-  <string name="anonymous_notification_desc">Povolit nebo zakázat CyanogenMod statistiky</string>
-  <string name="preview_id_title">Unikátní ID</string>
-  <string name="preview_device_title">Zařízení</string>
-  <string name="preview_version_title">Verze</string>
-  <string name="preview_country_title">Země</string>
-  <string name="preview_carrier_title">Operátor</string>
   <string name="header_category_interface">Přizpůsobení</string>
   <string name="themes_settings_title">Motiv vzhledu</string>
   <string name="themepacks_settings_title">Balíčky motivů</string>
@@ -433,8 +419,6 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="changelog_unknown">Neznámý</string>
   <string name="changelog_version">Verze</string>
   <string name="contributor_cloud_title">Zobrazit přispěvatele</string>
-  <string name="cmupdate_settings_title">Aktualizace CyanogenMod</string>
-  <string name="cmupdate_settings_summary">Zjištění dostupnosti nové aktualizace</string>
   <string name="advanced_settings_title">Rozšířené</string>
   <string name="development_tools_title">Spustit vývojové nástroje</string>
   <string name="allow_mock_sms">Povolit falešné SMS</string>
@@ -719,9 +703,6 @@ z <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" exam
   <string name="battery_info_status_charging_dock_ac">(DokAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokUSB)</string>
   <string name="menu_stats_reset">Obnovit</string>
-  <string name="cmlicense_title">CyanogenMod právní ujednání</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod právní ujednání</string>
-  <string name="settings_cmlicense_activity_unreachable">Zobrazit licenční ujednání není možné, protože není aktivní žádné datové připojení. Pro zobrazení tohoto ujednání navštivte prosím stránku %s z jakéhokoliv počítače, připojeného na internet.</string>
   <string name="stylus_icon_enabled_title">Zobrazit ikonu, když je použitý stylus</string>
   <string name="stylus_icon_enabled_summary">Zobrazit ikonu při najetí kurzoru nebo kreslení pomocí tužky</string>
   <string name="gestures_settings_title">Gesta stylusem</string>
