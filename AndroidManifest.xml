@@ -114,7 +114,7 @@
             android:name=".mokee.MoKeeApplication"
             android:icon="@mipmap/ic_launcher_settings"
             android:taskAffinity=""
-            android:theme="@style/Theme.Settings"
+            android:theme="@style/Theme.Settings.Holo"
             android:hardwareAccelerated="true"
             android:requiredForAllUsers="true"
             android:supportsRtl="true">
@@ -2316,5 +2316,11 @@
         </service>
 
         <service android:name=".search.SearchPopulator"/>
+
+        <receiver android:name=".search.LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
