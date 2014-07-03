@@ -524,7 +524,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     public static void restoreKeyDisabler(Context context) {
-        if (!KeyDisabler.isSupported()) {
+        if (!isKeyDisablerSupported()) {
             return;
         }
 
@@ -546,7 +546,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mCameraSleepOnRelease.setEnabled(isCameraWakeEnabled);
             return true;
         } else if (preference == mDisableNavigationKeys) {
-            if (!KeyDisabler.isSupported() && mDisableNavigationKeys.isChecked()) {
+            if (!isKeyDisablerSupported() && mDisableNavigationKeys.isChecked()) {
                 confirmForceNavBar();
             } else {
                 updateNavBar();
@@ -598,6 +598,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         mDisableNavigationKeys.setChecked(!mDisableNavigationKeys.isChecked());
                     }
                 }).show();
+    }
+
+    private static boolean isKeyDisablerSupported() {
+        try {
+            return KeyDisabler.isSupported();
+        } catch (NoClassDefFoundError e) {
+            // Hardware abstraction framework not installed
+            return false;
+        }
     }
 
     private void handleTogglePowerButtonEndsCallPreferenceClick() {
