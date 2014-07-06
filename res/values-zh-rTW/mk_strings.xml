@@ -18,43 +18,56 @@
 
     <!-- Active Display -->
     <string name="active_display_title">主動顯示</string>
-    <string name="ad_enable_title">主動在屏幕上顯示新通知</string>
-    <string name="ad_enable_summary">主動顯示已啟用</string>
-    <string name="ad_bypass_title">智慧模式</string>
-    <string name="ad_bypass_summary">不存在通知時，將顯示鎖屏界面</string>
-    <string name="ad_text_title">通知內容</string>
-    <string name="ad_text_summary">環繞顯示通知內容</string>
+    <string name="ad_enable_title">啟用主動顯示</string>
+    <string name="ad_enable_summary">主動在螢幕上顯示新通知</string>
+    <string name="ad_bypass_title">智能模式</string>
+    <string name="ad_bypass_summary">不存在通知且啟用鎖屏安全保護時，將顯示鎖屏界面</string>
+    <string name="ad_text_title">提醒文本</string>
+    <string name="ad_text_summary">在環附近顯示提醒文本</string>
     <string name="ad_content_title">自定義通知樣式</string>
     <string name="ad_content_summary">使用自定義通知樣式顯示詳細信息，而不是系統的風格。</string>
     <string name="ad_annoying_title">通知頻率</string>
     <string name="ad_annoying_summary">限制通知，以每個時間段一次</string>
     <string name="ad_double_tap_title">雙擊睡眠</string>
     <string name="ad_double_tap_summary">雙擊螢幕進入睡眠模式</string>
+    <string name="ad_shake_event_settings_title">晃動設置</string>
+    <string name="ad_shake_event_title">晃動重新顯示</string>
+    <string name="ad_shake_event_summary">通過晃動設備來重新顯示通知</string>
+    <string name="ad_shake_force_title">默認事件</string>
+    <string name="ad_shake_force_summary">收到通知後，將不會運行活動顯示，直到用戶晃動設備。</string>
+    <string name="ad_shake_threshold_title">強度</string>
+    <string name="ad_shake_threshold_summary">晃動顯示通知的強度</string>
+    <string name="ad_shake_timeout_title">超時</string>
+    <string name="ad_shake_timeout_summary">晃動激活通知，0表示始終處於活動狀態。</string>
+    <string name="ad_shake_quiet_hours_title">安靜時段晃動</string>
+    <string name="ad_shake_quiet_hours_summary">允許在安靜時段激活晃動</string>
+    <string name="ad_shake_long_threshold_title">間隔</string>
+    <string name="ad_shake_long_threshold_summary">連續晃動的最小時間</string>
     <string name="ad_all_notifications_title">所有通知</string>
-    <string name="ad_all_notifications_summary">顯示所有通知，包括正在運行、不可清除的通知。</string>
-    <string name="ad_hide_low_priority_title">低優先級隱藏</string>
-    <string name="ad_hide_low_priority_summary">隱藏那些低優先級的通知。</string>
+    <string name="ad_all_notifications_summary">顯示所有通知，包括不間斷以及不可清除的通知。</string>
+    <string name="ad_hide_low_priority_title">隱藏低優先級</string>
+    <string name="ad_hide_low_priority_summary">隱藏低優先級通知，例如來自Google 即時的通知。</string>
     <string name="ad_pocket_mode_title">口袋模式</string>
-    <string name="ad_pocket_mode_summary">當你從口袋中拿出設備時主動顯示通知。</string>
+    <string name="ad_pocket_mode_summary">僅在你將設備拿出口袋之後主動顯示通知。</string>
     <string name="ad_redisplay_title">重新顯示通知</string>
-    <string name="ad_timeout_title">顯示超時</string>
-    <string name="ad_threshold_title">精度闕值</string>
-    <string name="ad_threshold_summary">調整感應器的識別精度</string>
-    <string name="ad_customizations_title">自定義</string>
-    <string name="ad_excluded_apps_title">例外應用程序</string>
-    <string name="ad_excluded_apps_summary">例外的應用程序將不被顯示。</string>
+    <string name="ad_timeout_title">顯示超時時間</string>
+    <string name="ad_threshold_title">接近閾值</string>
+    <string name="ad_threshold_summary">調整傳感器的識別精度</string>
+    <string name="ad_brightness_title">通知亮度</string>
+    <string name="ad_customizations_title">定制</string>
+    <string name="ad_excluded_apps_title">不包括所有應用</string>
+    <string name="ad_excluded_apps_summary">排除應用程序將不會顯示在主動顯示中</string>
     <string name="ad_privacy_apps_title">隱私模式</string>
     <string name="ad_privacy_apps_summary">存在新通知時將不顯示來自該通知的詳細信息</string>
     <string name="ad_show_date_title">顯示日期</string>
-    <string name="ad_show_ampm_title">顯示上午/下午</string>
+    <string name="ad_show_ampm_title">「上午/下午」</string>
     <string name="ad_sunlight_mode_title">強光模式</string>
-    <string name="ad_sunlight_mode_summary">在強光下反轉顏色，如陽光直射的地方。</string>
-    <string name="ad_brightness_title">通知亮度</string>
-    <string name="ad_brightness_summary">當未啟用自動亮度時顯示通知的螢幕亮度。</string>
-    <string name="ad_show_date_summary">在時間上方顯示日期</string>
-    <string name="ad_show_ampm_summary">使用 12 小時格式時顯示上午/下午指示器</string>
-    <string name="ad_turnoff_mode_title">關閉螢幕</string>
-    <string name="ad_turnoff_mode_summary">當設備放入口袋關閉螢幕。</string>
+    <string name="ad_brightness_summary">當自動亮度沒有啟用時,顯示通知的亮度等級</string>
+    <string name="ad_show_date_summary">在時鐘上顯示日期</string>
+    <string name="ad_show_ampm_summary">當使用12小時制時在時間後顯示「上午/下午」</string>
+    <string name="ad_sunlight_mode_summary">當在強光環境(例如陽光直射時)反轉顯示顏色</string>
+    <string name="ad_turnoff_mode_title">關閉顯示</string>
+    <string name="ad_turnoff_mode_summary">如果設備被主動顯示喚醒後重新放入口袋後將關閉顯示</string>
     <string name="ad_redisplay_never">從不</string>
     <string name="ad_redisplay_1m">1 分鐘</string>
     <string name="ad_redisplay_5m">5 分鐘</string>
@@ -76,7 +89,7 @@
     <string name="ad_threshold_4s">4 秒</string>
     <string name="ad_threshold_5s">5 秒</string>
     <string name="ad_pocket_mode_off">關閉</string>
-    <string name="ad_pocket_mode_notifications">僅通知</string>
+    <string name="ad_pocket_mode_notifications">僅限通知</string>
     <string name="ad_pocket_mode_always">始終開啟</string>
 
     <!-- About phone screen,  setting option name-->
@@ -173,9 +186,15 @@
     <string name="power_saver_toggles_gps_title">定位服務</string>
     <string name="power_saver_toggles_gps_summary">螢幕關閉後將禁用GPS定位服務</string>
     <string name="power_saver_toggles_mobile_data_title">行動網路</string>
-    <string name="power_saver_toggles_mobile_data_summary">螢幕關閉後將禁用行動網路</string>
+    <string name="power_saver_toggles_mobile_data_summary">螢幕關閉後將停用行動網路</string>
+    <string name="power_saver_toggles_cpu_profile_title">主動節能</string>
+    <string name="power_saver_toggles_cpu_profile_summary">在您使用手機時，限制 CPU 的最大性能</string>
+    <string name="power_saver_toggles_cpu_profile_toast">主動節能模式已關閉</string>
     <string name="power_saver_toggles_cpu_governor_title">待機節能</string>
     <string name="power_saver_toggles_cpu_governor_summary">螢幕關閉後將切換到節能模式</string>
+    <string name="power_saver_toggles_other_title">其它</string>
+    <string name="power_saver_toggles_notification_title">啟用通知</string>
+    <string name="power_saver_toggles_notification_summary">當省電模式正在運行時，在通知欄顯示通知信息</string>
 
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">螢幕關閉動畫</string>
@@ -183,6 +202,9 @@
     <string name="screen_off_animation_electronbeam">電子束</string>
     <string name="screen_off_animation_scaledown">縮放</string>
     <string name="screen_off_animation_turnoff">關閉</string>
+
+    <!-- Force show navigation bar -->
+    <string name="confirm_force_navbar_dialog_message">不能禁用硬體按鈕，是否繼續？</string>
 
     <!-- BlackList Ext -->
     <string name="blacklist_all_numbers_title">所有號碼</string>
@@ -313,5 +335,10 @@
 
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
     <string name="smartcontrol_settings_title">智能控制</string> 
+    
+    <string name="sweep_screen_to_wake_title">滑屏喚醒</string>
+    <string name="sweepwake_off">關閉</string>
+    <string name="sweepwake_all">滑屏喚醒或睡眠</string>
+    <string name="sweepwake_sleep_only">僅滑屏睡眠</string>
 
 </resources>
