@@ -335,7 +335,7 @@
 
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
     <string name="smartcontrol_settings_title">智能控制</string> 
-    
+
     <string name="sweep_screen_to_wake_title">滑屏喚醒</string>
     <string name="sweepwake_off">關閉</string>
     <string name="sweepwake_all">滑屏喚醒或睡眠</string>
