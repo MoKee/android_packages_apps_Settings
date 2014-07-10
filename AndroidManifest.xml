@@ -1959,7 +1959,8 @@
         </activity>
 
         <activity android:name=".mokee.helper.activities.MoKeeCenter"
-            android:label="@string/mokee_center_title" >
+            android:label="@string/mokee_center_title"
+            android:parentActivityName="Settings" >
             <intent-filter>
                 <action android:name="com.mokee.mkupdater.action.MOKEE_CENTER" />
                 <category android:name="android.intent.category.DEFAULT" />
