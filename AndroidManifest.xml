@@ -1948,8 +1948,19 @@
 
         <!-- MOKEE HELPER START -->
         <activity android:name=".mokee.helper.activities.TipsHelp"
-            android:icon="@drawable/ic_forum"
+            android:icon="@drawable/ic_launcher_tips_help"
             android:label="@string/tips_help_title"
+            android:theme="@style/ActivityTransparent"
+            android:excludeFromRecents="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mokee.helper.activities.MoKeeForum"
+            android:icon="@drawable/ic_launcher_forum"
+            android:label="@string/mokee_forum_title"
             android:theme="@style/ActivityTransparent"
             android:excludeFromRecents="true" >
             <intent-filter>
