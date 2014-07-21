@@ -78,7 +78,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
 
         mPocketMode = (CheckBoxPreference) prefs.findPreference(KEY_POCKET_MODE);
         mPocketMode.setChecked(Settings.System.getInt(mResolver,
-                    Settings.System.LOCKSCREEN_NOTIFICATIONS_POCKET_MODE, 1) == 1);
+                    Settings.System.LOCKSCREEN_NOTIFICATIONS_POCKET_MODE, 0) == 1);
         mPocketMode.setEnabled(mLockscreenNotifications.isChecked());
 
         mShowAlways = (CheckBoxPreference) prefs.findPreference(KEY_SHOW_ALWAYS);
