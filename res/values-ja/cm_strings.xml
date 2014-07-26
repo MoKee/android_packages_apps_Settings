@@ -43,7 +43,7 @@
   <string name="profiles_add">追加</string>
   <string name="profile_menu_delete">削除</string>
   <string name="profile_settings_title">プロファイル</string>
-  <string name="profile_empty_list_profiles_off">システムのプロファイルを設定または使用するにはプロファイルをON</string>
+  <string name="profile_empty_list_profiles_off">システムのプロファイルを設定または使用するには、プロファイルをONにしてください。</string>
   <string name="profile_trigger_configure">トリガーを設定</string>
   <string name="profile_triggers">トリガー</string>
   <string name="profile_trigger_filter_all">すべてのトリガー</string>
@@ -91,6 +91,8 @@
   <string name="profile_trigger_connect">接続時</string>
   <string name="profile_trigger_disconnect">切断時</string>
   <string name="profile_trigger_notrigger">トリガーとして使用しない</string>
+  <string name="profile_trigger_a2dp_connect">A2DP接続時</string>
+  <string name="profile_trigger_a2dp_disconnect">A2DP切断時</string>
   <string name="sound_mode">通知モード</string>
   <string name="ringer_mode">着信モード</string>
   <string name="lights_mode">ライトモード</string>
@@ -193,6 +195,8 @@
   <string name="battery_light_low_color_title">バッテリー残量低下</string>
   <string name="battery_light_medium_color_title">充電中</string>
   <string name="battery_light_full_color_title">充電完了</string>
+  <string name="lockpattern_reset_button">パターンをリセット</string>
+  <string name="lockpattern_settings_reset_summary">パターンをリセットするにはプライマリメールアカウントと関連付けられているパスワードを入力してください</string>
   <string name="lockpattern_settings_enable_error_path_title">エラーのパターンを表示する</string>
   <string name="lockpattern_settings_enable_dots_title">パターンのドットを表示する</string>
   <string name="screen_security_category">画面のセキュリティ</string>
@@ -204,7 +208,7 @@
   <string name="unlock_camera_unlock_title">カメラボタンでロック解除</string>
   <string name="unlock_camera_unlock_summary">カメラボタンを押して端末のロックを解除する</string>
   <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
-  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力された場合は自動的にロックを解除する</string>
+  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力されたときは自動的にロックを解除する</string>
   <string name="unlock_buttons_disabled_by_security">ロック画面は保護されています</string>
   <string name="lockscreen_widgets_category_title">ウィジェット</string>
   <string name="lockscreen_maximize_widgets_title">ウィジェットを最大化</string>
@@ -395,8 +399,8 @@
   <string name="performance_settings_title">パフォーマンス</string>
   <string name="performance_settings_warning_title">注意して進めてください</string>
   <string name="performance_settings_warning">これらの設定は実験的で、あらゆる変更が不安定性、クラッシュ、データの損失、ハードウェア障害を引き起こす原因になる可能性があります。\n\nこれらの設定をデフォルトから変更した場合には、バグレポートを提出しないようにお願いします。</string>
-  <string name="performance_set_on_boot">起動時に設定</string>
-  <string name="performance_set_on_boot_summary">適用した設定を起動時に復元する</string>
+  <string name="performance_set_on_boot">ブート時に設定</string>
+  <string name="performance_set_on_boot_summary">適用した設定をブート時に復元する</string>
   <string name="processor_title">プロセッサ</string>
   <string name="cpu_cur_freq_title">現在のCPU周波数</string>
   <string name="cpu_governors_title">CPUガバナ</string>
@@ -488,7 +492,7 @@
   <string name="adb_notify_summary">USBデバッグ接続時に通知を表示する</string>
   <string name="adb_over_network">ネットワーク経由のADB</string>
   <string name="adb_over_network_summary">ネットワークインターフェース（Wi-Fi、USBネットワーク）経由でのTCP/IPデバッグを有効にします。この設定は再起動時にリセットされます。</string>
-  <string name="adb_over_network_warning">警告: ネットワーク経由でのADBを有効にすると、あなたの携帯電話はデータネットワークを含むすべての接続しているネットワークから侵入できるようになります。\n\nこの機能は信頼できるネットワークに接続している場合にのみ使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
+  <string name="adb_over_network_warning">警告: ネットワーク経由でのADBを有効にすると、あなたの携帯電話はデータネットワークを含むすべての接続しているネットワークから侵入できるようになります。\n\nこの機能は信頼できるネットワークに接続しているときにのみ使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
   <string name="device_hostname">端末のホスト名</string>
   <string name="notification_drawer_title">通知ドロワー</string>
   <string name="notification_drawer_collapse_on_dismiss_title">自動で閉じる動作</string>
@@ -522,7 +526,7 @@
   <string name="lockscreen_battery_status_charging">充電中のみ</string>
   <string name="lockscreen_battery_status_alwayson">常に表示</string>
   <string name="lockscreen_battery_status_alwaysoff">表示しない</string>
-  <string name="lockscreen_target_info">ショートカットを割り当てるにはスライダーをターゲットにドラッグします</string>
+  <string name="lockscreen_target_info">ショートカットを割り当てるターゲットにスライダーをドラッグしてください</string>
   <string name="lockscreen_target_title">スライダーショートカット</string>
   <string name="lockscreen_target_summary">ロック画面のカスタムショートカットを表示または変更する</string>
   <string name="lockscreen_target_reset">ロック画面のショートカットをデフォルトにリセットしました</string>
@@ -670,7 +674,10 @@
   <string name="setting_lockscreen_background">背景を適応しています</string>
   <string name="confirm_delete_apn">APNを削除します。</string>
   <string name="status_bar_title">ステータスバー</string>
-  <string name="status_bar_show_clock_title">時計を表示</string>
+  <string name="status_bar_clock_title">時計のスタイル</string>
+  <string name="status_bar_clock_style_default">デフォルト</string>
+  <string name="status_bar_clock_style_center">中央</string>
+  <string name="status_bar_clock_style_hidden">表示しない</string>
   <string name="status_bar_battery_title">電池の状態のスタイル</string>
   <string name="status_bar_style_icon_portrait">縦向きのアイコン</string>
   <string name="status_bar_style_icon_landscape">横向きのアイコン</string>
@@ -867,12 +874,17 @@
   <string name="menu_hidden_apps_reset_lock">パターンロックをリセット</string>
   <string name="protected_apps">アプリの保護</string>
   <string name="saving_protected_components">コンポーネントの状態を保存中\u2026</string>
+  <string name="pa_login_username_hint">ユーザー名（メール）</string>
+  <string name="pa_login_password_hint">パスワード</string>
+  <string name="pa_login_submit_button">サインイン</string>
+  <string name="pa_login_checking_password">アカウントを確認中\u2026</string>
+  <string name="pa_login_incorrect_login">ログインできませんでした</string>
   <string name="keep_screen_on_summary_cm">接続中は画面をスリープにしない</string>
   <plurals name="show_dev_countdown_cm">
     <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
   </plurals>
   <string name="show_dev_on_cm">開発者向けオプションが有効になりました。</string>
-  <string name="show_dev_already_cm">必要ありません、既に開発者向けオプションを有効にしています。</string>
+  <string name="show_dev_already_cm">必要ありません、開発者向けオプションは既に有効になっています。</string>
   <string name="enable_adb_cm">Androidデバッグ</string>
-  <string name="enable_adb_summary_cm">Android Debug Bridge（adb）インターフェースを有効にする</string>
+  <string name="enable_adb_summary_cm">Androidデバッグブリッジ（ADB）インターフェースを有効にする</string>
 </resources>
