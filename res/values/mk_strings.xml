@@ -384,7 +384,7 @@
     <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
 
     <!-- Active Display And Lockscreen Notifications Lock -->
-    <string name="ad_or_ln">%1$s already enabled, turn off it please.</string>
+    <string name="ad_or_ln">%1$s already enabled, please turn it off first</string>
 
     <!-- Hide overflow button -->
     <string name="hide_overflow_button_title">Hide action overflow</string>
