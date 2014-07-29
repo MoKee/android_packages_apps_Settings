@@ -215,8 +215,8 @@
   <string name="lockscreen_maximize_widgets_summary">화면을 켤 때 위젯 확장</string>
   <string name="lockscreen_enable_camera_title">카메라 위젯</string>
   <string name="safe_headset_volume_title">안전한 헤드셋 볼륨</string>
-  <string name="cyanogenmod_waiver_title">면제</string>
-  <string name="cyanogenmod_waiver_body">해당 설정을 바꾸는 것은 당신이 거주하고 있는 주 혹은 국가의 법률에 위반 될 수도 있습니다.\n\n아래의 \'확인\' 버튼을 누르면, 위의 경고를 확인하였고, CyanogenMod와 해당 개발자들을 법적 책임에 연관 시키지 않을 것에 동의하게 됩니다.</string>
+  <string name="mokee_waiver_title">면제</string>
+  <string name="mokee_waiver_body">해당 설정을 바꾸는 것은 당신이 거주하고 있는 주 혹은 국가의 법률에 위반 될 수도 있습니다.\n\n아래의 \'확인\' 버튼을 누르면, 위의 경고를 확인하였고, MoKee OpenSource와 해당 개발자들을 법적 책임에 연관 시키지 않을 것에 동의하게 됩니다.</string>
   <string name="quick_settings_panel_title">빠른 설정 패널</string>
   <string name="title_static_tiles">정적 타일</string>
   <string name="tile_picker_title">타일 및 레이아웃</string>
@@ -364,7 +364,7 @@
   <string name="quiet_hours_ringer_mute_all">모든 수신 전화에 대해 벨소리 울리지 않음</string>
   <string name="start_time_title">시작</string>
   <string name="end_time_title">종료</string>
-  <string name="mod_version">CyanogenMod 버전</string>
+  <string name="mod_version">MoKee 버전</string>
   <string name="mod_version_default">알 수 없음</string>
   <string name="build_date">빌드 날짜</string>
   <string name="cpu_info">CPU</string>
@@ -689,7 +689,7 @@
   <string name="logger_title">익명으로 오류 보고</string>
   <string name="logger_summary">오류 보고 설정 관리</string>
   <string name="custom_runtime_warning_title">경고</string>
-  <string name="custom_runtime_warning_message">ART는 매우 실험적인 기능이며, 시스템의 불안정, 충돌, 데이터 손실 등을 야기하거나 기기를 켜지지 않게 할 수도 있으므로 CyanogenMod는 이를 공식적으로 지원하지 않고 있습니다. 자세한 정보는 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;에서 확인할 수 있습니다.&lt;br/&gt;&lt;br/&gt;ART를 런타임으로 사용할 경우 버그 리포트를 제출하지 말아주십시오.&lt;br/&gt;&lt;br/&gt;시스템을 재시작하여 런타임을 <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>에서 <xliff:g id="new" example="libart.so">%2$s</xliff:g>로 변경하시겠습니까?</string>
+  <string name="custom_runtime_warning_message">ART는 매우 실험적인 기능이며, 시스템의 불안정, 충돌, 데이터 손실 등을 야기하거나 기기를 켜지지 않게 할 수도 있으므로 MoKee OpenSource는 이를 공식적으로 지원하지 않고 있습니다. 자세한 정보는 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;에서 확인할 수 있습니다.&lt;br/&gt;&lt;br/&gt;ART를 런타임으로 사용할 경우 버그 리포트를 제출하지 말아주십시오.&lt;br/&gt;&lt;br/&gt;시스템을 재시작하여 런타임을 <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>에서 <xliff:g id="new" example="libart.so">%2$s</xliff:g>로 변경하시겠습니까?</string>
   <string name="gps_download_data_wifi_only">GPS 보조 데이터를 Wi-Fi를 통해서만 다운로드</string>
   <string name="battery_info_status_charging_dock_ac">(독 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(독 USB)</string>
