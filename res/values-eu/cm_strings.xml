@@ -379,20 +379,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
   <string name="phone_service_state">Ahotsa: <xliff:g id="voice_state">%1$s</xliff:g>, datuak: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod estatistikak</string>
-  <string name="anonymous_statistics_summary">CyanogenMod hobetzera lagundu estatistika anonimoak bidaliz</string>
-  <string name="anonymous_statistics_warning_title">Oharra</string>
-  <string name="anonymous_statistics_warning">CyanogenMod-en estatistiken bilketa eta bidaltzea baimenduz, gailuetan burutzen dituzun instalazioen segimendurako informazio ez pertsonala CyanogenMod garatzaileei bidaltzea baimentzen duzu. Bidalitako informazioak barnean identifikadore bakar eta anonimo bat hartzen du.Informazio hau gailua piztean bidaltzen da.\n\nBidalitako informazioaren adibide bat ikusteko, sakatu \u00ABDatuak aurreikusi\u00BB.</string>
-  <string name="enable_reporting_title">Estatistikak bidaltzea baimendu</string>
-  <string name="preview_data_title">Datuak aurreikusi</string>
-  <string name="view_stats_title">Estatistikak ikusi</string>
-  <string name="anonymous_learn_more">Gehiago ikasi</string>
-  <string name="anonymous_notification_desc">CyanogenMod Estatistikak gaitu edo ezgaitu</string>
-  <string name="preview_id_title">Identifikadore anonimoa</string>
-  <string name="preview_device_title">Gailua</string>
-  <string name="preview_version_title">Bertsioa</string>
-  <string name="preview_country_title">Herrialdea</string>
-  <string name="preview_carrier_title">Operadorea</string>
   <string name="header_category_interface">Pertsonalizazioa</string>
   <string name="themes_settings_title">Gaiak</string>
   <string name="themepacks_settings_title">Gai multzoak</string>
@@ -433,8 +419,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="changelog_unknown">Ezezaguna</string>
   <string name="changelog_version">Bertsioa</string>
   <string name="contributor_cloud_title">Laguntzaileak</string>
-  <string name="cmupdate_settings_title">CyanogenMod eguneraketak</string>
-  <string name="cmupdate_settings_summary">Eskuragarri dauden eguneraketak bilatu, ikusi eta instalatu</string>
   <string name="advanced_settings_title">Ezarpen aurreratuak</string>
   <string name="development_tools_title">Tresnak hasi</string>
   <string name="allow_mock_sms">Itxurazko SMS-ak baimendu</string>
@@ -719,9 +703,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="battery_info_status_charging_dock_ac">(ACOinarria)</string>
   <string name="battery_info_status_charging_dock_usb">(USBOinarria)</string>
   <string name="menu_stats_reset">Berrezarri</string>
-  <string name="cmlicense_title">CyanogenMod lizentzia</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod lizentzia</string>
-  <string name="settings_cmlicense_activity_unreachable">Ez dago datu konexiorik. informazio hau orain ikusteko, %s helbidea internet-a duen edozein ordenagailuan sartu.</string>
   <string name="stylus_icon_enabled_title">Stylus-a</string>
   <string name="stylus_icon_enabled_summary">Kurtsorea erakutsi stylus-a erabiltzean</string>
   <string name="gestures_settings_title">Stylus-a</string>
