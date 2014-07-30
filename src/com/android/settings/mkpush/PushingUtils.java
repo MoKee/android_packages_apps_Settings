@@ -41,7 +41,7 @@ public class PushingUtils {
     }
 
     public static String getStringFromJson(String key, JSONObject customJson) {
-        String value = "";
+        String value = "0";
         if (!customJson.isNull(key)) {
             try {
                 value = customJson.getString(key);
