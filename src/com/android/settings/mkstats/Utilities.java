@@ -106,6 +106,7 @@ public class Utilities {
     public static String getMoKeeVersion() {
         String modVersion = getModVersion();
         int index = modVersion.indexOf("-");
+        if (!modVersion.startsWith("MK")) index = -1;
         return index == -1 ? "Unknown" : modVersion.substring(0, index);
     }
 

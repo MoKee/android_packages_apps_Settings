@@ -16,33 +16,41 @@
 
 package com.android.settings.mkpush;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.mokee.util.MoKeeUtils;
 
 import android.app.Notification;
 import android.app.Notification.BigTextStyle;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.util.Log;
-
-import org.mokee.util.MoKeeUtils;
+import cn.jpush.android.api.JPushInterface;
 
 import com.android.settings.R;
 import com.android.settings.mkstats.Utilities;
-import com.baidu.android.pushservice.PushManager;
-import com.baidu.frontia.api.FrontiaPushMessageReceiver;
 
-public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
+public class PushingMessageReceiver extends BroadcastReceiver {
 
     protected static final String TAG = PushingMessageReceiver.class.getSimpleName();
 
     @Override
+    public void onReceive(Context ctx, Intent intent) {
+        Bundle bundle = intent.getExtras();
+        Log.d(TAG, "[MyReceiver] onReceive - " + intent.getAction() + ", extras: " + printBundle(bundle));
+        if (JPushInterface.ACTION_MESSAGE_RECEIVED.equals(intent.getAction())) {
+            String message = bundle.getString(JPushInterface.EXTRA_MESSAGE);
+            String customContentString = bundle.getString(JPushInterface.EXTRA_EXTRA);
+            onMessage(ctx, message, customContentString);
+            JPushInterface.reportNotificationOpened(ctx, bundle.getString(JPushInterface.EXTRA_MSG_ID));
+        }
+    }
+
     public void onMessage(Context ctx, String message, String customContentString) {
         if (customContentString != null & customContentString != "") {
             JSONObject customJson = null;
@@ -67,13 +75,10 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
             switch (msg_id) {
                 case 0:
                 case 1:
-                    if (PushingUtils.allowPush(device, mod_device, 1)
-                            && PushingUtils.allowPush(modType, mod_version, 0)
+                    if (PushingUtils.allowPush(device, mod_device, 1) && PushingUtils.allowPush(modType, mod_version, 0)
                             || device.equals("all") && modType.equals("all")
-                            || device.equals("all")
-                            && PushingUtils.allowPush(modType, mod_version, 0)
-                            || PushingUtils.allowPush(device, mod_device, 1)
-                            && modType.equals("all")) {
+                            || device.equals("all") && PushingUtils.allowPush(modType, mod_version, 0)
+                            || PushingUtils.allowPush(device, mod_device, 1) && modType.equals("all")) {
                         switch (msg_id) {
                             case 0:
                                 String mod_version_code = mod_version.split("-")[2];
@@ -128,61 +133,19 @@ public class PushingMessageReceiver extends FrontiaPushMessageReceiver {
         nm.notify(id, noti.build());
     }
 
-    @Override
-    public void onNotificationClicked(Context context, String title,
-            String description, String customContentString) {
-    }
-
-    @Override
-    public void onBind(Context context, int errorCode, String appid,
-            String userId, String channelId, String requestId) {
-        String responseString = "onBind errorCode=" + errorCode + " appid="
-                + appid + " userId=" + userId + " channelId=" + channelId
-                + " requestId=" + requestId;
-        Log.d(TAG, responseString);
-
-        if (errorCode == 0) {
-            PushingUtils.setBind(context, true);
-            List<String> tags = new ArrayList<String>();
-            tags.add(Utilities.getDevice());
-            tags.add(Utilities.getMoKeeVersion());
-            PushManager.setTags(context.getApplicationContext(), tags);
+    // 打印所有的 intent extra 数据
+    private static String printBundle(Bundle bundle) {
+        StringBuilder sb = new StringBuilder();
+        for (String key : bundle.keySet()) {
+            if (key.equals(JPushInterface.EXTRA_NOTIFICATION_ID)) {
+                sb.append("\nkey:" + key + ", value:" + bundle.getInt(key));
+            }else if(key.equals(JPushInterface.EXTRA_CONNECTION_CHANGE)){
+                sb.append("\nkey:" + key + ", value:" + bundle.getBoolean(key));
+            } 
+            else {
+                sb.append("\nkey:" + key + ", value:" + bundle.getString(key));
+            }
         }
-    }
-
-    @Override
-    public void onDelTags(Context context, int errorCode,
-            List<String> sucessTags, List<String> failTags, String requestId) {
-        String responseString = "onDelTags errorCode=" + errorCode + " sucessTags="
-                + sucessTags + " failTags=" + failTags + " requestId="
-                + requestId;
-        Log.d(TAG, responseString);
-    }
-
-    @Override
-    public void onListTags(Context context, int errorCode,
-            List<String> tags, String requestId) {
-        String responseString = "onListTags errorCode=" + errorCode + " tags=" + tags;
-        Log.d(TAG, responseString);
-    }
-
-    @Override
-    public void onSetTags(Context context, int errorCode,
-            List<String> sucessTags, List<String> failTags, String requestId) {
-        String responseString = "onSetTags errorCode=" + errorCode + " sucessTags="
-                + sucessTags + " failTags=" + failTags + " requestId="
-                + requestId;
-        Log.d(TAG, responseString);
-    }
-
-    @Override
-    public void onUnbind(Context context, int errorCode, String requestId) {
-        String responseString = "onUnbind errorCode=" + errorCode
-                + " requestId = " + requestId;
-        Log.d(TAG, responseString);
-
-        if (errorCode == 0) {
-            PushingUtils.setBind(context, false);
-        }
+        return sb.toString();
     }
 }

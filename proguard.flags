@@ -19,12 +19,12 @@
 -keep class com.koushikdutta.**
 -keep class com.android.settings.cyanogenmod.superuser.**
 
--dontwarn com.baidu.**
--keep class com.baidu.** { *;}
 -dontwarn io.card.**
 -keep class io.card.** { *;}
 -dontwarn com.paypal.**
 -keep class com.paypal.** { *;}
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *;}
 
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.mokeehelper.**

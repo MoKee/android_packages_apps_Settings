@@ -19,37 +19,7 @@ package com.android.settings.mkpush;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
-
 public class PushingUtils {
-
-    public static String getMetaValue(Context context, String metaKey) {
-        Bundle metaData = null;
-        String apiKey = null;
-        if (context == null || metaKey == null) {
-            return null;
-        }
-        try {
-            ApplicationInfo ai = context.getPackageManager().getApplicationInfo(
-                    context.getPackageName(), PackageManager.GET_META_DATA);
-            if (null != ai) {
-                metaData = ai.metaData;
-            }
-            if (null != metaData) {
-                apiKey = metaData.getString(metaKey);
-            }
-        } catch (NameNotFoundException e) {
-
-        }
-        return apiKey;
-    }
 
     public static boolean allowPush(String str1, String str2, int mode) {
         String[] strs = str1.split(",");
@@ -69,7 +39,7 @@ public class PushingUtils {
         }
         return false;
     }
-    
+
     public static String getStringFromJson(String key, JSONObject customJson) {
         String value = "";
         if (!customJson.isNull(key)) {
@@ -92,27 +62,5 @@ public class PushingUtils {
             }
         }
         return value;
-    }
-
-    public static void setBind(Context context, boolean flag) {
-        String flagStr = "not";
-        if (flag) {
-            flagStr = "ok";
-        }
-        SharedPreferences sp = PreferenceManager
-                .getDefaultSharedPreferences(context);
-        Editor editor = sp.edit();
-        editor.putString("bind_flag", flagStr);
-        editor.apply();
-    }
-
-    public static boolean hasBind(Context context) {
-        SharedPreferences sp = PreferenceManager
-                .getDefaultSharedPreferences(context);
-        String flag = sp.getString("bind_flag", "");
-        if ("ok".equalsIgnoreCase(flag)) {
-            return true;
-        }
-        return false;
     }
 }

@@ -16,16 +16,13 @@
 
 package com.android.settings.mkpush;
 
+import org.mokee.util.MoKeeUtils;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.util.Log;
-
-import org.mokee.util.MoKeeUtils;
-
-import com.baidu.android.pushservice.PushManager;
+import cn.jpush.android.api.JPushInterface;
 
 public class PushingServiceManager extends BroadcastReceiver {
 
@@ -33,23 +30,17 @@ public class PushingServiceManager extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        Log.d(TAG, "Start or stop service");
-        initPushService(ctx);
+        Log.d(TAG, "resume or stop service");
+        setPushService(ctx);
     }
 
-    public static void initPushService(final Context ctx) {
+    public static void setPushService(final Context ctx) {
         if (MoKeeUtils.isOnline(ctx)) {
-            if (!PushingUtils.hasBind(ctx)) {
-                Intent intent = new Intent();
-                intent.setClass(ctx, PushingService.class);
-                ctx.startService(intent);
-            } else {
-                if (!PushManager.isPushEnabled(ctx)) {
-                    PushManager.resumeWork(ctx);
-                }
+            if (JPushInterface.isPushStopped(ctx)) {
+                JPushInterface.resumePush(ctx);
             }
         } else {
-            PushManager.stopWork(ctx);
+            JPushInterface.stopPush(ctx);
         }
     }
 }
