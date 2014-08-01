@@ -340,8 +340,6 @@
   <string name="root_access_apps">애플리케이션만</string>
   <string name="root_access_adb">ADB만</string>
   <string name="root_access_all">애플리케이션과 ADB</string>
-  <string name="update_recovery_title">CM 리커버리 업데이트</string>
-  <string name="update_recovery_summary">시스템 업데이트를 설치할 때 리커버리 업데이트</string>
   <string name="ok">확인</string>
   <string name="quiet_hours_title">방해 금지 시간</string>
   <string name="quiet_hours_summary">방해 금지 시간 설정</string>
