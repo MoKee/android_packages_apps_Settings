@@ -17,7 +17,6 @@
 package com.android.settings.mokee;
 
 import android.os.Bundle;
-import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

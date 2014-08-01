@@ -22,15 +22,12 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.PowerManager;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.CompoundButton;
 import android.widget.Switch;
@@ -86,14 +83,16 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mEnabledSwitch.setOnCheckedChangeListener(this);
 
         prefSet = getPreferenceScreen();
-        mPerformanceCategory = (PreferenceCategory) prefSet.findPreference(KEY_PERFORMANCE_CATEGORY);
+        mPerformanceCategory = (PreferenceCategory) prefSet
+                .findPreference(KEY_PERFORMANCE_CATEGORY);
 
         mTogglesCPUProfile = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_PROFILE);
         if (mTogglesCPUProfile != null && !mPowerManager.hasPowerProfiles()) {
             mPerformanceCategory.removePreference(mTogglesCPUProfile);
             mTogglesCPUProfile = null;
         } else {
-            mTogglesCPUProfile.setChecked(Settings.System.getInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0);
+            mTogglesCPUProfile.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.POWER_SAVER_CPU_PROFILE, 0) != 0);
         }
 
         mTogglesCPUGovernor = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_CPU_GOVERNOR);
@@ -119,7 +118,8 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         mTogglesGPS = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_GPS);
         mTogglesGPS.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_GPS, 0) != 0);
-        mTogglesNotification = (CheckBoxPreference) prefSet.findPreference(KEY_TOGGLES_NOTIFICATION);
+        mTogglesNotification = (CheckBoxPreference) prefSet
+                .findPreference(KEY_TOGGLES_NOTIFICATION);
         mTogglesNotification.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SAVER_NOTIFICATION, 1) != 0);
         setPrefsEnabledState(powerSaverEnabled);
@@ -144,8 +144,10 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mTogglesCPUProfile) {
-            String [] pwrsvValue = getResources().getStringArray(com.android.internal.R.array.perf_profile_values);
-            mPowerManager.setPowerProfile(mTogglesCPUProfile.isChecked() ? pwrsvValue[0] : pwrsvValue[1]);
+            String[] pwrsvValue = getResources().getStringArray(
+                    com.android.internal.R.array.perf_profile_values);
+            mPowerManager.setPowerProfile(mTogglesCPUProfile.isChecked() ? pwrsvValue[0]
+                    : pwrsvValue[1]);
             Settings.System.putInt(resolver, Settings.System.POWER_SAVER_CPU_PROFILE,
                     mTogglesCPUProfile.isChecked() ? 1 : 0);
         } else if (preference == mTogglesCPUGovernor) {
@@ -177,7 +179,8 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         Settings.System.putInt(resolver, Settings.System.POWER_SAVER_ENABLED, isChecked ? 1 : 0);
         setPrefsEnabledState(isChecked);
-        Intent service = new Intent().setClassName("org.mokee.services", "org.mokee.services.powersaver.PowerSaverService");
+        Intent service = new Intent().setClassName("org.mokee.services",
+                "org.mokee.services.powersaver.PowerSaverService");
         if (isChecked) {
             mActivity.stopService(service);
             mActivity.startService(service);

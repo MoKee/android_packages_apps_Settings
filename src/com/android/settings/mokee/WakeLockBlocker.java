@@ -1,33 +1,47 @@
+/*
+ * Copyright (C) 2014 The MoKee OpenSource project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.android.settings.mokee;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
-import android.preference.PreferenceFragment;
-import android.view.LayoutInflater;
-import android.widget.Switch;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.AdapterView;
 import android.provider.Settings;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-
-import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collections;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ListView;
+import android.widget.Switch;
+import android.widget.TextView;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -60,26 +74,27 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View rowView = mInflater.inflate(R.layout.wakelock_item, parent, false);
-            final CheckBox check = (CheckBox)rowView.findViewById(R.id.wakelock_blocked);
+            final CheckBox check = (CheckBox) rowView.findViewById(R.id.wakelock_blocked);
             check.setText(mSeenWakeLocks.get(position));
 
             Boolean checked = mWakeLockState.get(check.getText().toString());
             check.setChecked(checked.booleanValue());
 
-            if(checked.booleanValue()){
+            if (checked.booleanValue()) {
                 check.setTextColor(getResources().getColor(android.R.color.holo_red_light));
             }
 
             check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(CompoundButton v, boolean checked) {
-                        mWakeLockState.put(v.getText().toString(), new Boolean(checked));
-                        if(checked){
-                            check.setTextColor(getResources().getColor(android.R.color.holo_red_light));
-                        } else {
-                            check.setTextColor(getResources().getColor(android.R.color.primary_text_dark));
-                        }
+                @Override
+                public void onCheckedChanged(CompoundButton v, boolean checked) {
+                    mWakeLockState.put(v.getText().toString(), new Boolean(checked));
+                    if (checked) {
+                        check.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+                    } else {
+                        check.setTextColor(getResources().getColor(
+                                android.R.color.primary_text_dark));
                     }
+                }
             });
             return rowView;
         }
@@ -87,7 +102,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         mInflater = inflater;
         setHasOptionsMenu(true);
         return inflater.inflate(R.layout.wakelock_blocker, container, false);
@@ -108,7 +123,8 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         mWakeLockListHeader = (TextView) getActivity().findViewById(
                 R.id.wakelock_list_header);
 
-        mListAdapter = new WakeLockListAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice,
+        mListAdapter = new WakeLockListAdapter(getActivity(),
+                android.R.layout.simple_list_item_multiple_choice,
                 mSeenWakeLocks);
         mWakeLockList.setAdapter(mListAdapter);
 
@@ -119,14 +135,14 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
                 .setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton v, boolean checked) {
-                        if (checked && isFirstEnable() && !mAlertShown){
+                        if (checked && isFirstEnable() && !mAlertShown) {
                             showAlert();
                             mAlertShown = true;
                         }
 
                         Settings.System.putInt(getActivity().getContentResolver(),
                                 Settings.System.WAKELOCK_BLOCKING_ENABLED,
-                                checked?1:0);
+                                checked ? 1 : 0);
 
                         updateSwitches();
                     }
@@ -155,24 +171,24 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
     private void updateSwitches() {
         mBlockerEnabled.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.WAKELOCK_BLOCKING_ENABLED, 0)==1?true:false);
+                Settings.System.WAKELOCK_BLOCKING_ENABLED, 0) == 1 ? true : false);
 
         mEnabled = mBlockerEnabled.isChecked();
-        //mWakeLockList.setEnabled(mEnabled);
-        mWakeLockList.setVisibility(mEnabled ?View.VISIBLE : View.INVISIBLE);
-        mWakeLockListHeader.setVisibility(mEnabled ?View.VISIBLE : View.INVISIBLE);
+        // mWakeLockList.setEnabled(mEnabled);
+        mWakeLockList.setVisibility(mEnabled ? View.VISIBLE : View.INVISIBLE);
+        mWakeLockListHeader.setVisibility(mEnabled ? View.VISIBLE : View.INVISIBLE);
     }
 
     private void updateSeenWakeLocksList() {
         PowerManager pm = (PowerManager) getActivity().getSystemService(Context.POWER_SERVICE);
         Log.d("maxwen", pm.getSeenWakeLocks());
 
-        String seenWakeLocks =  pm.getSeenWakeLocks();
+        String seenWakeLocks = pm.getSeenWakeLocks();
         mSeenWakeLocks = new ArrayList<String>();
 
-        if (seenWakeLocks!=null && seenWakeLocks.length()!=0){
+        if (seenWakeLocks != null && seenWakeLocks.length() != 0) {
             String[] parts = seenWakeLocks.split("\\|");
-            for(int i = 0; i < parts.length; i++){
+            for (int i = 0; i < parts.length; i++) {
                 mSeenWakeLocks.add(parts[i]);
                 mWakeLockState.put(parts[i], new Boolean(false));
             }
@@ -185,13 +201,13 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
         mBlockedWakeLocks = new ArrayList<String>();
 
-        if (blockedWakelockList!=null && blockedWakelockList.length()!=0){
+        if (blockedWakelockList != null && blockedWakelockList.length() != 0) {
             String[] parts = blockedWakelockList.split("\\|");
-            for(int i = 0; i < parts.length; i++){
+            for (int i = 0; i < parts.length; i++) {
                 mBlockedWakeLocks.add(parts[i]);
 
                 // add all blocked but not seen so far
-                if(!mSeenWakeLocks.contains(parts[i])){
+                if (!mSeenWakeLocks.contains(parts[i])) {
                     mSeenWakeLocks.add(parts[i]);
                 }
                 mWakeLockState.put(parts[i], new Boolean(true));
@@ -201,17 +217,17 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         Collections.sort(mSeenWakeLocks);
     }
 
-    private void save(){
+    private void save() {
         StringBuffer buffer = new StringBuffer();
         Iterator<String> nextState = mWakeLockState.keySet().iterator();
-        while(nextState.hasNext()){
+        while (nextState.hasNext()) {
             String name = nextState.next();
-            Boolean state=mWakeLockState.get(name);
-            if(state.booleanValue()){
+            Boolean state = mWakeLockState.get(name);
+            if (state.booleanValue()) {
                 buffer.append(name + "|");
             }
         }
-        if(buffer.length()>0){
+        if (buffer.length() > 0) {
             buffer.deleteCharAt(buffer.length() - 1);
         }
         Log.d("maxwen", buffer.toString());
@@ -219,12 +235,12 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
                 Settings.System.WAKELOCK_BLOCKING_LIST, buffer.toString());
     }
 
-    private void reload(){
+    private void reload() {
         mWakeLockState = new HashMap<String, Boolean>();
         updateSeenWakeLocksList();
         updateBlockedWakeLocksList();
 
-		mListAdapter.notifyDataSetChanged();
+        mListAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -245,12 +261,12 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case MENU_RELOAD:
-                if (mEnabled){
+                if (mEnabled) {
                     reload();
                 }
                 return true;
             case MENU_SAVE:
-                if (mEnabled){
+                if (mEnabled) {
                     save();
                 }
                 return true;
