@@ -93,15 +93,6 @@ public class DisplayRotation extends SettingsPreferenceFragment {
             mRotation180Pref.setDependency(null);
             mRotation270Pref.setDependency(null);
         }
-
-        final CheckBoxPreference lockScreenRotation =
-                (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_ROTATION);
-        boolean canRotateLockscreen = getResources().getBoolean(
-                com.android.internal.R.bool.config_enableLockScreenRotation);
-
-        if (lockScreenRotation != null && !canRotateLockscreen) {
-            getPreferenceScreen().removePreference(lockScreenRotation);
-        }
     }
 
     @Override
