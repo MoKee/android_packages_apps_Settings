@@ -49,7 +49,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
-    private static final String STATUS_BAR_TRAFFIC_STYLE = "status_bar_traffic_style";
+    private static final String STATUS_BAR_NETWORK_TRAFFIC_STYLE = "status_bar_network_traffic_style";
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
@@ -68,7 +68,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private ContentObserver mSettingsObserver;
 
     private ListPreference mStatusBarAmPm;
-    private ListPreference mStatusBarTraffic;
+    private ListPreference mStatusBarNetworkTraffic;
     private CheckBoxPreference mStatusBarCarrier;
     private PreferenceScreen mCustomStatusBarCarrierLabel;
 
@@ -94,11 +94,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
 
-        mStatusBarTraffic = (ListPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC_STYLE);
-        int trafficStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC_STYLE, 0);
-        mStatusBarTraffic.setValue(String.valueOf(trafficStyle));
-        mStatusBarTraffic.setSummary(mStatusBarTraffic.getEntry());
-        mStatusBarTraffic.setOnPreferenceChangeListener(this);
+        mStatusBarNetworkTraffic = (ListPreference) prefSet.findPreference(STATUS_BAR_NETWORK_TRAFFIC_STYLE);
+        int networkTrafficStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, 0);
+        mStatusBarNetworkTraffic.setValue(String.valueOf(networkTrafficStyle));
+        mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntry());
+        mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
 
         mStatusBarCarrier = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
@@ -193,11 +193,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
             enableStatusBarBatteryDependents((String) newValue);
             return true;
-        } else if (preference == mStatusBarTraffic) {
-            int trafficStyle = Integer.valueOf((String) newValue);
-            int index = mStatusBarTraffic.findIndexOfValue((String) newValue);
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_TRAFFIC_STYLE, trafficStyle);
-            mStatusBarTraffic.setSummary(mStatusBarTraffic.getEntries()[index]);
+        } else if (preference == mStatusBarNetworkTraffic) {
+            int networkTrafficStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarNetworkTraffic.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, networkTrafficStyle);
+            mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntries()[index]);
             return true;
         } else if (mStatusBarAmPm != null && preference == mStatusBarAmPm) {
             int statusBarAmPm = Integer.valueOf((String) newValue);

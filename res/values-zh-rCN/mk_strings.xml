@@ -157,11 +157,11 @@
     <!-- show network speed -->
     <string name="show_network_speed_title">状态栏网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
-    <string name="status_bar_traffic_style_hidden">隐藏</string>
-    <string name="status_bar_traffic_style_rx">仅显示下载速度</string>
-    <string name="status_bar_traffic_style_rxtx">显示上传和下载速度</string>
-    <string name="ad_excluded_apps_title">不包括所有应用</string>
-    <string name="ad_excluded_apps_summary">排除应用程序将不会显示在主动显示中</string>
+    <string name="status_bar_network_traffic_style_disable">禁用</string>
+    <string name="status_bar_network_traffic_style_up">显示上传速度</string>
+    <string name="status_bar_network_traffic_style_down">显示下载速度</string>
+    <string name="status_bar_network_traffic_style_all">显示上传和下载速度</string>
+
     <!-- Screen recorder -->
     <string name="power_menu_screenrecord_title">屏幕录像</string>
     <string name="screen_recorder_title">屏幕录像</string>

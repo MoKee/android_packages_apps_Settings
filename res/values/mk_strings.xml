@@ -157,9 +157,10 @@
     <!-- show network speed -->
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>
-    <string name="status_bar_traffic_style_hidden">Hide</string>
-    <string name="status_bar_traffic_style_rx">Display download only</string>
-    <string name="status_bar_traffic_style_rxtx">Display upload and download</string>
+    <string name="status_bar_network_traffic_style_disable">Disabled</string>
+    <string name="status_bar_network_traffic_style_up">Outgoing</string>
+    <string name="status_bar_network_traffic_style_down">Incoming</string>
+    <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
 
     <!-- Screen recorder -->
     <string name="power_menu_screenrecord_title">Screen record</string>

@@ -157,9 +157,10 @@
     <!-- show network speed -->
     <string name="show_network_speed_title">狀態欄網速</string>
     <string name="show_network_speed_summary">在狀態欄顯示當前網速</string>
-    <string name="status_bar_traffic_style_hidden">隱藏</string>
-    <string name="status_bar_traffic_style_rx">僅顯示下載速度</string>
-    <string name="status_bar_traffic_style_rxtx">顯示上傳和下載速度</string>
+    <string name="status_bar_network_traffic_style_disable">禁用</string>
+    <string name="status_bar_network_traffic_style_up">顯示上傳速度</string>
+    <string name="status_bar_network_traffic_style_down">顯示下載速度</string>
+    <string name="status_bar_network_traffic_style_all">顯示上傳和下載速度</string>
 
     <!-- Screen recorder -->
     <string name="power_menu_screenrecord_title">螢幕錄影</string>
