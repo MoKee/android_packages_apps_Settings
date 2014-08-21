@@ -2005,6 +2005,8 @@
 
         <service android:name="com.mokee.helper.service.UpdateCheckService" />
 
+        <service android:name="com.mokee.helper.service.DownloadCompleteIntentService" />
+
         <receiver android:name="com.mokee.helper.receiver.UpdateCheckReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
