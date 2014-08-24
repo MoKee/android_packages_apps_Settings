@@ -26,18 +26,18 @@
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *;}
 
--keep public interface com.wanpu.pay.** {*;}
--keep public class com.wanpu.pay.** {*;}
--keep public interface com.alipay.android.app.** {*;}
--keep public class com.alipay.android.app.** {*;}
--keep public interface com.payeco.android.plugin.** {*;}
--keep public class com.payeco.android.plugin.** {*;}
--keep public interface com.tenpay.android.service.** {*;}
--keep public class com.tenpay.android.service.** {*;}
--keep public interface com.unionpay.** {*;}
--keep public class com.unionpay.** {*;}
--keep public interface com.UCMobile.** {*;}
--keep public class com.UCMobile.** {*;}
+-dontwarn com.wanpu.pay.**
+-keep class com.wanpu.pay.** {*;}
+-dontwarn com.alipay.android.app.**
+-keep class com.alipay.android.app.** {*;}
+-dontwarn com.payeco.android.plugin.**
+-keep class com.payeco.android.plugin.** {*;}
+-dontwarn com.tenpay.android.service.**
+-keep class com.tenpay.android.service.** {*;}
+-dontwarn com.unionpay.**
+-keep class com.unionpay.** {*;}
+-dontwarn com.UCMobile.**
+-keep class com.UCMobile.** {*;}
 
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.mokeehelper.**
