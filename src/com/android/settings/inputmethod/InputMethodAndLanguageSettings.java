@@ -52,7 +52,7 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.BaseAdapter;
 
-import org.cyanogenmod.hardware.HighTouchSensitivity;
+import org.mokee.hardware.HighTouchSensitivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
