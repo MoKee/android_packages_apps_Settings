@@ -143,10 +143,6 @@
     <!-- Other Settings Category -->
     <string name="other_category">其它設置</string>
 
-    <!-- Proximity work-around -->
-    <string name="is_inaccurate_proximity_title">精確距離</string>
-    <string name="is_inaccurate_proximity_summary">強制在通話結束後打開螢幕，解決距離感應器不準確問題。</string>
-
     <!-- show carrier label and custom -->
     <string name="show_status_bar_carrier_title">運營商名稱</string>
     <string name="show_status_bar_carrier_summary">在狀態欄顯示運營商名稱</string>

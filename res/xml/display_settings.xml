@@ -178,12 +178,6 @@
                 android:entries="@array/screen_off_animation_entries"
                 android:entryValues="@array/screen_off_animation_values" />
 
-            <!-- Proximity wake workaround -->
-            <CheckBoxPreference
-                android:key="is_inaccurate_proximity"
-                android:title="@string/is_inaccurate_proximity_title"
-                android:summary="@string/is_inaccurate_proximity_summary" />
-
             <com.android.settings.hardware.DisplayColor
                 android:key="color_calibration"
                 android:title="@string/color_calibration_title"
