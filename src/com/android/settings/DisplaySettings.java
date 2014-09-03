@@ -78,6 +78,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
 
+    private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
@@ -108,6 +109,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
 
+    private CheckBoxPreference mInaccurateProximityPref;
     private ListPreference mScreenOffAnimationPreference;
 
     // ListView Animations Preference
@@ -223,6 +225,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mScreenOffAnimationPreference.setValue(String.valueOf(currentAnimation));
         mScreenOffAnimationPreference.setOnPreferenceChangeListener(this);
         updateScreenOffAnimationPreferenceDescription(currentAnimation);
+
+        // In-accurate proximity
+        mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
+        if (mInaccurateProximityPref != null) {
+            if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_SENSOR_PROXIMITY)) {
+                advancedPrefs.removePreference(mInaccurateProximityPref);
+            } else {
+                mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+                mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+            }
+        }
 
         // ListView Animations
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
@@ -658,6 +672,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen-off animation setting", e);
             }
+        } else if (KEY_IS_INACCURATE_PROXIMITY.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
+                    ((Boolean) objValue).booleanValue() ? 1 : 0);
         } else if (preference == mListViewAnimation) {
             int listviewanimation = Integer.valueOf((String) objValue);
             int index = mListViewAnimation.findIndexOfValue((String) objValue);
