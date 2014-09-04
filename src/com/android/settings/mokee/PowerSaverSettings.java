@@ -75,7 +75,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
 
         mEnabledSwitch = new Switch(mActivity);
         boolean powerSaverEnabled = Settings.System.getInt(resolver,
-                Settings.System.POWER_SAVER_ENABLED, 1) != 0;
+                Settings.System.POWER_SAVER_ENABLED, 0) != 0;
         final int padding = mActivity.getResources().getDimensionPixelSize(
                 R.dimen.action_bar_switch_padding);
         mEnabledSwitch.setPaddingRelative(0, 0, padding, 0);
@@ -132,8 +132,7 @@ public class PowerSaverSettings extends SettingsPreferenceFragment implements
         activity.getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM,
                 ActionBar.DISPLAY_SHOW_CUSTOM);
         activity.getActionBar().setCustomView(mEnabledSwitch, new ActionBar.LayoutParams(
-                ActionBar.LayoutParams.WRAP_CONTENT,
-                ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT,
                 Gravity.CENTER_VERTICAL | Gravity.END));
     }
 
