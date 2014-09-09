@@ -18,13 +18,16 @@ package com.android.settings.quicksettings;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -98,12 +101,29 @@ public class QuickSettingsTiles extends Fragment {
         if (cellGap != 0) {
             mDragView.setCellGap(cellGap);
         }
-        int columnCount = getItemFromSystemUi("quick_settings_num_columns", "integer");
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int columnCount = Settings.System.getInt(resolver,
+            Settings.System.QUICK_TILES_PER_ROW, 3);
+
+        // do not allow duplication on tablets or any device which do not have
+        // flipsettings
+        boolean mHasFlipSettingsPanel = getItemFromSystemUi("config_hasFlipSettingsPanel", "bool") == 1;
+        boolean mDuplicateColumnsLandscape = Settings.System.getInt(resolver,
+            Settings.System.QUICK_TILES_PER_ROW_DUPLICATE_LANDSCAPE, 1) == 1 && mHasFlipSettingsPanel;
+        if (mDuplicateColumnsLandscape && isLandscape()) {
+            columnCount = columnCount * 2;
+        }
         if (columnCount != 0) {
             mDragView.setColumnCount(columnCount);
         }
         mTileAdapter = new TileAdapter(getActivity(), mConfigRibbon);
         return mDragView;
+    }
+
+    private boolean isLandscape() {
+        final boolean isLandscape = Resources.getSystem().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+        return isLandscape;
     }
 
     private int getItemFromSystemUi(String name, String type) {
@@ -113,6 +133,8 @@ public class QuickSettingsTiles extends Fragment {
                 try {
                     if (type.equals("dimen")) {
                         return (int) mSystemUiResources.getDimension(resId);
+                    } else if (type.equals("bool")) {
+                        return mSystemUiResources.getBoolean(resId) ? 1 : 0;
                     } else {
                         return mSystemUiResources.getInteger(resId);
                     }
