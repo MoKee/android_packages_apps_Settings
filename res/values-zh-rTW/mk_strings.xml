@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Active Display -->
+     <!-- Active Display -->
     <string name="active_display_title">主動顯示</string>
     <string name="ad_enable_title">啟用主動顯示</string>
     <string name="ad_enable_summary">主動在螢幕上顯示新通知</string>
@@ -332,6 +332,11 @@
 
     <!-- Active Display & LockScreen Notification & RecentShortcut -->
     <string name="smartcontrol_settings_title">智能控制</string> 
+    
+    <string name="sweep_screen_to_wake_title">滑屏喚醒</string>
+    <string name="sweepwake_off">關閉</string>
+    <string name="sweepwake_all">滑屏喚醒或睡眠</string>
+    <string name="sweepwake_sleep_only">僅滑屏睡眠</string>
 
     <string name="sweep_screen_to_wake_title">滑屏喚醒</string>
     <string name="sweepwake_off">關閉</string>
