@@ -311,7 +311,7 @@
 \n\n
 <b>如何修改亮度曲線？</b>
 \n\n
-在亮度列表中的每一行對應著亮度曲線的一個<i>控制點</i>。
+在亮度清單中的每一行對應著亮度曲線的一個<i>控制點</i>。
 編輯該點的亮度水平，可以使用存在於每一行的滑塊。
 螢幕亮度也隨之改變，而觸摸滑塊給予光線水平的預覽。\n
 附加選項可長按一條線， 
@@ -373,9 +373,9 @@
   <string name="themepacks_settings_title">主題包</string>
   <string name="styles_settings_title">風格</string>
   <string name="icons_settings_title">圖示</string>
-  <string name="fonts_settings_title">字體</string>
-  <string name="wallpaper_settings_title_cm">桌布</string>
-  <string name="lockscreen_wallpaper_settings_title">鎖定螢幕桌布</string>
+  <string name="fonts_settings_title">字型</string>
+  <string name="wallpaper_settings_title_cm">牆紙</string>
+  <string name="lockscreen_wallpaper_settings_title">鎖定畫面牆紙</string>
   <string name="bootanim_settings_title">開機動畫</string>
   <string name="soundpack_settings_title">音效包</string>
   <string name="performance_settings_title">效能</string>
@@ -497,7 +497,7 @@
   <string name="sms_security_check_limit_none">無</string>
   <string name="lockscreen_custom_widgets_title">自訂小工具</string>
   <string name="lock_clock_title">時鐘小工具</string>
-  <string name="lock_clock_summary">自訂預設的鎖定畫面與主螢幕小工具</string>
+  <string name="lock_clock_summary">自訂預設的鎖定畫面與主畫面小工具</string>
   <string name="power_notifications_category_title">充電音效</string>
   <string name="power_notifications_enable_title">啟用</string>
   <string name="power_notifications_enable_summary">連接或拔除電源時播放音效</string>
@@ -510,13 +510,13 @@
   <string name="lockscreen_battery_status_alwaysoff">永遠關閉</string>
   <string name="lockscreen_target_info">拖曳解鎖環到目標以指定捷徑</string>
   <string name="lockscreen_target_title">鎖定畫面捷徑</string>
-  <string name="lockscreen_target_summary">檢視或更改自訂鎖定螢幕快捷鍵</string>
-  <string name="lockscreen_target_reset">鎖定螢幕捷徑已還原爲預設值</string>
+  <string name="lockscreen_target_summary">檢視或更改自訂鎖定畫面捷徑</string>
+  <string name="lockscreen_target_reset">鎖定畫面捷徑已還原為預設值</string>
   <string name="lockscreen_target_reset_title">重設</string>
-  <string name="lockscreen_target_reset_message">刪除所有使用者建立的鎖定螢幕捷徑，並還原爲預設值？</string>
+  <string name="lockscreen_target_reset_message">刪除所有使用者建立的鎖定畫面捷徑，並還原為預設值？</string>
   <string name="lockscreen_target_empty">空</string>
   <string name="lockscreen_target_edit_title">編輯捷徑與圖示</string>
-  <string name="picker_activities">Activities</string>
+  <string name="picker_activities">活動</string>
   <string name="select_custom_app_title">選擇自訂應用程式</string>
   <string name="select_custom_activity_title">選擇自定活動</string>
   <string name="icon_picker_choose_icon_title">選擇圖示</string>
@@ -555,7 +555,7 @@
   <string name="lockscreen_buttons_playpause">播放/暫停音樂</string>
   <string name="lockscreen_buttons_toggle_sound">切換音效模式</string>
   <string name="lockscreen_buttons_sleep">進入休眠</string>
-  <string name="lockscreen_enable_modlock_title">自訂鎖定螢幕</string>
+  <string name="lockscreen_enable_modlock_title">自訂鎖定畫面</string>
   <string name="navigation_bar_category">導覽列</string>
   <string name="navigation_bar_title">按鈕與配置</string>
   <string name="navigation_bar_left_title">左慣用手模式</string>
@@ -565,16 +565,16 @@
   <string name="navigation_bar_tips_title">小提示</string>
   <string name="navigation_bar_reset_message">刪除目前的設定並還原爲預設值？</string>
   <string name="navigation_bar_save_message">導覽列設定已儲存</string>
-  <string name="navigation_bar_reset_toast">導覽列設定已還原爲預設</string>
+  <string name="navigation_bar_reset_toast">導覽列設定已還原為預設</string>
   <string name="navigation_bar_menu_editable">可編輯</string>
   <string name="navigation_bar_menu_locked">已鎖定</string>
   <string name="navigation_ring_title">快速啟動捷徑</string>
   <string name="navring_target_reset_message">刪除所有使用者建立的導覽列捷徑並還原爲預設？</string>
-  <string name="navring_target_reset">導覽列捷徑已還原爲預設</string>
+  <string name="navring_target_reset">導覽列捷徑已還原為預設</string>
   <string name="navring_action_open_ime_switcher">打開輸入法切換器</string>
   <string name="navring_action_kill_app">終止應用程式</string>
   <string name="navring_action_none">無</string>
-  <string name="navring_action_take_screenshot">擷取螢幕截圖</string>
+  <string name="navring_action_take_screenshot">擷取畫面截圖</string>
   <string name="navring_action_ring_vibrate">鈴聲/震動</string>
   <string name="navring_action_ring_silent">鈴聲/靜音</string>
   <string name="navring_action_ring_vibrate_silent">鈴聲/震動/靜音</string>
@@ -590,7 +590,7 @@
   <string name="expanded_desktop_disabled">已停用</string>
   <string name="expanded_desktop_status_bar">顯示狀態列</string>
   <string name="expanded_desktop_no_status_bar">隱藏狀態列</string>
-  <string name="expanded_desktop_system_bars_visibility">停用鎖定螢幕</string>
+  <string name="expanded_desktop_system_bars_visibility">停用鎖定畫面</string>
   <string name="expanded_desktop_system_bars_visibility_summary">在擴展桌面模式中在鎖定畫面顯示狀態列及導覽列</string>
   <string name="power_menu_profiles_title">設定檔切換器</string>
   <string name="power_menu_airplane_title">飛航模式</string>
@@ -622,7 +622,7 @@
   <string name="camera_sleep_on_release_title">螢幕窺視</string>
   <string name="camera_sleep_on_release_summary">僅當按鈕被按下的時候，半按將會保持螢幕點亮</string>
   <string name="camera_music_controls_title">播放控制</string>
-  <string name="camera_music_controls_summary">當螢幕關閉時，長按相機鍵將播放 / 暫停當前音樂曲目</string>
+  <string name="camera_music_controls_summary">當畫面關閉時，長按相機鍵將播放 / 暫停當前音樂曲目</string>
   <string name="volume_wake_summary">按下音量鍵將喚醒您的裝置</string>
   <string name="volbtn_music_controls_title">播放控制</string>
   <string name="volbtn_music_controls_summary">螢幕關閉時，長按音量鍵將可以改變音樂曲目</string>
@@ -631,7 +631,7 @@
   <string name="volbtn_cursor_control_on">音量上/下使游標左/右移動</string>
   <string name="volbtn_cursor_control_on_reverse">音量上/下使游標右/左移動</string>
   <string name="swap_volume_buttons_title">調整方向</string>
-  <string name="swap_volume_buttons_summary">當螢幕旋轉調換音量按鈕</string>
+  <string name="swap_volume_buttons_summary">當畫面旋轉調換音量按鈕</string>
   <string name="button_backlight_title">背光</string>
   <string name="button_backlight_enabled">照亮按鈕</string>
   <string name="keyboard_backlight_enabled">照亮鍵盤</string>
@@ -643,7 +643,7 @@
   <string name="backlight_summary_enabled_with_timeout">為 <xliff:g id="timeout">%s</xliff:g> 已啟用 </string>
   <string name="backlight_summary_enabled">已啟用</string>
   <string name="lockscreen_background">背景</string>
-  <string name="lockscreen_background_style_title">鎖定螢幕背景</string>
+  <string name="lockscreen_background_style_title">鎖定畫面背景</string>
   <string name="background_default">預設背景</string>
   <string name="background_wallpaper">自訂桌布</string>
   <string name="background_result_successful">背景已更改</string>
@@ -700,7 +700,7 @@
   <string name="gestures_action_home">主頁</string>
   <string name="gestures_action_back">返回</string>
   <string name="gestures_action_menu">功能表</string>
-  <string name="gestures_action_search">引用搜索</string>
+  <string name="gestures_action_search">引用搜尋</string>
   <string name="gestures_action_recent">最近應用程式</string>
   <string name="stylus_app_not_installed">%s尚未安裝</string>
   <string name="ime_switcher_notify">選擇器通知</string>
@@ -752,8 +752,8 @@
   <string name="app_ops_summaries_bluetooth_change">藍牙更改</string>
   <string name="app_ops_summaries_data_change">數據更改</string>
   <string name="app_ops_summaries_alarm_wakeup">喚醒</string>
-  <string name="app_ops_summaries_send_mms">傳送多媒體簡訊</string>
-  <string name="app_ops_summaries_read_mms">讀取多媒體簡訊</string>
+  <string name="app_ops_summaries_send_mms">傳送多媒體短訊</string>
+  <string name="app_ops_summaries_read_mms">讀取多媒體短訊</string>
   <string name="app_ops_summaries_write_mms">撰寫多媒體短訊</string>
   <string name="app_ops_summaries_auto_start">自動啟動</string>
   <string name="app_ops_labels_location">位置</string>
@@ -816,8 +816,8 @@
   <string name="edge_gesture_service_summary">不向應用程式傳送導覽列與狀態列手勢的觸控事件</string>
   <string name="data_usage_cycle_editor_subtitle_cm">每個週期的日期：</string>
   <string name="data_usage_lengths_spinner_subtitle">週期長度：</string>
-  <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
-  <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用硬件按鈕</string>
+  <string name="disable_navkeys_title">啟用畫面上的導覽列</string>
+  <string name="disable_navkeys_summary">啟用畫面上的導覽列和停用硬件按鈕</string>
   <string name="voice_plus_summary">啟用所有的應用程式透過 Google Voice 發送短訊</string>
   <string name="accessibility_sync_in_progress">同步進行中。</string>
   <string name="wifi_mode">模式</string>
@@ -835,7 +835,7 @@
   <string name="multi_sim_settings_group_summary">預設 SIM 卡選擇</string>
   <string name="voice_title">語音通話</string>
   <string name="data_title">數據通話</string>
-  <string name="sms_title">傳送短訊</string>
+  <string name="sms_title">發送短訊</string>
   <string name="priority_sub_title">優先訂閱</string>
   <string name="bluetooth_accept_all_files">接受所有檔案類型</string>
   <string name="autoperf_title">啟用應用程式專屬 (per-app) 設定檔</string>
