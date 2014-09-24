@@ -428,4 +428,73 @@
     <string name="dynamic_status_bar_filter_title">Darker status bar</string>
     <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
 
+    <!-- PA Pie -->
+    <string name="pie_control_title">PIE</string>
+    <string name="pa_pie_title">PIE</string>
+    <string name="pa_pie_controls">Enable</string>
+    <string name="pa_pie_gravity_title">Gravity</string>
+    <string name="pa_pie_gravity_top">Top</string>
+    <string name="pa_pie_gravity_bottom">Bottom</string>
+    <string name="pa_pie_gravity_right">Right</string>
+    <string name="pa_pie_gravity_left">Left</string>
+    <string name="pa_pie_mode_title">Style</string>
+    <string name="pa_pie_mode_bare">Bare</string>
+    <string name="pa_pie_mode_quick">Quick</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_mode_slow">Slow</string>
+    <string name="pa_pie_size_title">Size</string>
+    <string name="pa_pie_size_small">Small</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Large</string>
+    <string name="pa_pie_size_gigantic">Gigantic</string>
+    <string name="pa_pie_size_monster">Monster</string>
+    <string name="pa_pie_color_title">Color settings</string>
+    <string name="pa_pie_color_style_title">Color style</string>
+    <string name="pa_pie_background_title">Background color</string>
+    <string name="pa_pie_select_title">Selection color</string>
+    <string name="pa_pie_outlines_title">Outlines color</string>
+    <string name="pa_pie_status_clock_title">Clock color</string>
+    <string name="pa_pie_status_title">Status color</string>
+    <string name="pa_pie_chevron_left_title">Left chevron color</string>
+    <string name="pa_pie_chevron_right_title">Right chevron color</string>
+    <string name="pa_pie_juice_title">Battery juice color</string>
+    <string name="pa_pie_button_color">Button color</string>
+    <string name="pa_pie_button_color_title">Buttons color</string>
+    <string name="pa_pie_gap_title">Item gap</string>
+    <string name="pa_pie_angle_title">Angle</string>
+    <string name="pa_pie_angle_none">None (old)</string>
+    <string name="pa_pie_angle_small">Small</string>
+    <string name="pa_pie_angle_big">Normal (default)</string>
+    <string name="pa_pie_angle_huge">Big</string>
+    <string name="pa_pie_angle_super">Huge</string>
+    <string name="pa_pie_gap_none">None</string>
+    <string name="pa_pie_gap_small">Small</string>
+    <string name="pa_pie_gap_big">Big (default)</string>
+    <string name="pa_pie_gap_huge">Huge</string>
+    <string name="pa_pie_center_title">Middle alignment</string>
+    <string name="pa_pie_center_summary">Center PIE on the trigger edge</string>
+    <string name="pa_pie_stick_title">Prevent rotation</string>
+    <string name="pa_pie_stick_summary">Avoids orientation change when screen rotates</string>
+    <string name="pa_pie_search_title">Search button</string>
+    <string name="pa_pie_search_summary">Enable search button on pie controls</string>
+    <string name="pa_pie_trigger_title">Trigger area</string>
+    <string name="pa_pie_trigger_small">@string/pa_pie_size_small</string>
+    <string name="pa_pie_trigger_normal">Normal</string>
+    <string name="pa_pie_trigger_big">@string/pa_pie_gap_big</string>
+    <string name="pa_pie_trigger_huge">Huge</string>
+    <string name="pa_pie_notifications_title">Enable Chevron Targets</string>
+    <string name="pa_pie_notifications_summary">Enabling this will let the Notification panel and QuickSettings tiles become available when swiping</string>
+    <string name="pa_pie_menu_title">Always show menu button</string>
+    <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
 </resources>
