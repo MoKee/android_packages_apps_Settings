@@ -492,7 +492,8 @@ public class Settings extends PreferenceActivity
         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
         com.android.settings.quicksettings.QuickSettingsTiles.class.getName(),
         com.android.settings.cyanogenmod.QuietHours.class.getName(),
-        ThemeSettings.class.getName()
+        ThemeSettings.class.getName(),
+        com.android.settings.wifi.WifiApSettings.class.getName()
     };
 
     @Override
@@ -1384,4 +1385,5 @@ public class Settings extends PreferenceActivity
     public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
     public static class PowerSaverSettingsActivity extends Settings { /* empty */ }
     public static class ThemeSettingsActivity extends Settings { /* empty */ }
+    public static class WifiApSettingsActivity extends Settings { /* empty */ }
 }
