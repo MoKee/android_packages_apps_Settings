@@ -35,6 +35,11 @@
         android:summary="@string/hide_overflow_button_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="pa_pie_control"
+        android:title="@string/pa_pie_title"
+        android:fragment="com.android.settings.mokee.Pie" />
+
     <!-- Device Specific Bluetooth Input settings -->
     <Preference
         android:key="bluetooth_input_settings">
