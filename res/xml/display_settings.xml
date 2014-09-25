@@ -58,6 +58,28 @@
         </PreferenceCategory>
 
         <PreferenceCategory
+            android:key="animation_prefs"
+            android:title="@string/animation_settings_title">
+
+            <ListPreference
+                android:key="listview_animation"
+                android:dialogTitle="@string/listview_animation_title"
+                android:title="@string/listview_animation_title"
+                android:entries="@array/listview_animation_entries"
+                android:entryValues="@array/listview_animation_values"
+                android:defaultValue="1" />
+
+            <ListPreference
+                android:key="listview_interpolator"
+                android:dialogTitle="@string/listview_interpolator_title"
+                android:title="@string/listview_interpolator_title"
+                android:entries="@array/listview_interpolator_entries"
+                android:entryValues="@array/listview_interpolator_values"
+                android:defaultValue="0" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
             android:key="expanded_desktop_category"
             android:title="@string/power_menu_expanded_desktop" >
 
@@ -102,6 +124,11 @@
             android:key="advanced_display_prefs"
             android:title="@string/advanced_settings">
 
+            <PreferenceScreen
+                android:key="screen_recorder"
+                android:title="@string/screen_recorder_title"
+                android:fragment="com.android.settings.mokee.ScreenRecorderSettings" />
+
             <CheckBoxPreference
                 android:key="adaptive_backlight"
                 android:title="@string/adaptive_backlight_title"
@@ -119,6 +146,14 @@
                 android:title="@string/color_enhancement_title"
                 android:summary="@string/color_enhancement_summary"
                 android:defaultValue="true" />
+
+            <ListPreference
+                android:key="sweep_wake_gesture"
+                android:dialogTitle="@string/sweep_screen_to_wake_title"
+                android:title="@string/sweep_screen_to_wake_title"
+                android:entries="@array/sweepwake_entries"
+                android:entryValues="@array/sweepwake_values"
+                android:defaultValue="0" />
 
             <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
                 android:key="double_tap_sleep_gesture"
@@ -142,16 +177,11 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="false" />
 
-            <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
-                android:key="screen_off_animation"
-                android:title="@string/screen_animation_off_title"
-                android:defaultValue="true" />
-
             <ListPreference
-                android:key="screen_animation_style"
-                android:title="@string/screen_animation_style_title"
-                android:entries="@array/screen_animation_style_entries"
-                android:entryValues="@array/screen_animation_style_values" />
+                android:key="screen_off_animation"
+                android:title="@string/screen_off_animation_title"
+                android:entries="@array/screen_off_animation_entries"
+                android:entryValues="@array/screen_off_animation_values" />
 
             <com.android.settings.hardware.DisplayColor
                 android:key="color_calibration"
