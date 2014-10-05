@@ -91,7 +91,7 @@ public class SetupTriggersFragment extends Fragment {
         pager.setAdapter(mAdapter);
 
         PagerTabStrip tabs = (PagerTabStrip) root.findViewById(R.id.tabs);
-        tabs.setTabIndicatorColorResource(android.R.color.holo_blue_light);
+        tabs.setTabIndicatorColorResource(android.R.color.holo_white_dark);
 
         Button nextButton = (Button) root.findViewById(R.id.next);
         nextButton.setOnClickListener(new View.OnClickListener() {
