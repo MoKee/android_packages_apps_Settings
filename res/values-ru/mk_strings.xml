@@ -89,8 +89,8 @@
   <string name="ad_pocket_mode_off">Выключен</string>
   <string name="ad_pocket_mode_notifications">Только уведомления</string>
   <string name="ad_pocket_mode_always">Всегда</string>
-  <string name="mod_support" formatted="false">Сообщество</string>
-  <string name="mod_support_default" formatted="false">Неизвестно</string>
+  <string name="mod_support">Сообщество</string>
+  <string name="mod_support_default">Неизвестно</string>
   <string name="listview_animation_title">Анимация списков</string>
   <string name="listview_off">Выключена</string>
   <string name="listview_wave_left">Волна (слева)</string>

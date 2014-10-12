@@ -89,8 +89,8 @@
   <string name="ad_pocket_mode_off">关闭</string>
   <string name="ad_pocket_mode_notifications">仅限通知</string>
   <string name="ad_pocket_mode_always">始终</string>
-  <string name="mod_support" formatted="false">社区支持</string>
-  <string name="mod_support_default" formatted="false">未知</string>
+  <string name="mod_support">社区支持</string>
+  <string name="mod_support_default">未知</string>
   <string name="listview_animation_title">列表动画</string>
   <string name="listview_off">关闭</string>
   <string name="listview_wave_left">波浪 (左)</string>
