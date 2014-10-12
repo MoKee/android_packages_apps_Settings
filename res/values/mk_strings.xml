@@ -93,8 +93,8 @@
     <string name="ad_pocket_mode_always">Always</string>
 
     <!-- About version and support -->
-    <string name="mod_support" formatted="false">Community support</string>
-    <string name="mod_support_default" formatted="false">Unknown</string>
+    <string name="mod_support">Community support</string>
+    <string name="mod_support_default">Unknown</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView animation</string>
