@@ -32,6 +32,12 @@
             android:fragment="com.android.settings.mokee.ChangeLog" >
         </PreferenceScreen>
 
+        <!-- Translator -->
+        <PreferenceScreen android:key="translator"
+            android:title="@string/translator_title"
+            android:fragment="com.android.settings.mokee.Translator" >
+        </PreferenceScreen>
+
         <!-- Contributors cloud -->
         <PreferenceScreen android:key="contributor_cloud"
             android:title="@string/contributor_cloud_title"

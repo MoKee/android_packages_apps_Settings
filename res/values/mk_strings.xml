@@ -400,4 +400,8 @@
     <string name="sweepwake_all">Sweep to wake and sleep</string>
     <string name="sweepwake_sleep_only">Sweep to sleep only</string>
 
+    <!-- Translator strings -->
+    <string name="translator_title">Translator</string>
+    <string name="translator_error">Unable to load translator</string>
+
 </resources>
