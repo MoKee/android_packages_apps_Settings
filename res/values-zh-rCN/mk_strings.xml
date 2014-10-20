@@ -264,4 +264,6 @@
   <string name="sweepwake_off">关闭</string>
   <string name="sweepwake_all">滑屏唤醒或睡眠</string>
   <string name="sweepwake_sleep_only">仅滑屏睡眠</string>
+  <string name="translator_title">翻译人员</string>
+  <string name="translator_error">无法读取翻译人员名录</string>
 </resources>
