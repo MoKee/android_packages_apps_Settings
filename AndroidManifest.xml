@@ -1938,6 +1938,7 @@
         <activity android:name=".mokee.ChangeLog" />
         <activity android:name=".mokee.ContributorsCloud" />
         <activity android:name=".mokee.SmartControl" />
+        <activity android:name=".mokee.DSBSettings" />
         <activity android:name="Settings$PowerSaverSettingsActivity"
                   android:label="@string/power_saver_settings_title"
                   android:taskAffinity=""
