@@ -386,19 +386,6 @@ Papildu opcijas ir pieejamas, ilgi pieskaroties rindai. Izvēloties \'Mainīt\',
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Atmiņa</string>
   <string name="phone_service_state">Balss: <xliff:g id="voice_state">%1$s</xliff:g>, dati: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-  <string name="anonymous_statistics_summary">Palīdziet uzlabot CyanogenMod, nosūtot anonīmu statistiku</string>
-  <string name="anonymous_statistics_warning_title">Par</string>
-  <string name="anonymous_statistics_warning">Piekrītot CyanogenMod statistikai, tā iesniedz nepersonalizētus datus par iekārtu CyanogenMod izstrādātājiem lai vāktu lietošanas statistiku. Iesniegtā informācija ietver unikālu identifikatoru, kas nerada draudus konfidencialitātei vai personīgajiem datiem. Datu tiek iesniegti katras sāknēšanas laikā.\n\nLai redzētu iesniedzamo datu paraugu, pieskarieties Datu priekšskatījumam.</string>
-  <string name="enable_reporting_title">Ieslēgt pārskatus</string>
-  <string name="preview_data_title">Pirmskatīt datus</string>
-  <string name="view_stats_title">Skatīt statistiku</string>
-  <string name="anonymous_learn_more">Uzzināt vairāk</string>
-  <string name="preview_id_title">Unikāls ID</string>
-  <string name="preview_device_title">Iekārta</string>
-  <string name="preview_version_title">Versija</string>
-  <string name="preview_country_title">Valsts</string>
-  <string name="preview_carrier_title">Piegādātājs</string>
   <string name="header_category_interface">Personalizācija</string>
   <string name="themes_settings_title">Tēmas</string>
   <string name="themepacks_settings_title">Tēmu pakas</string>
@@ -436,8 +423,6 @@ Papildu opcijas ir pieejamas, ilgi pieskaroties rindai. Izvēloties \'Mainīt\',
   <string name="changelog_title">Izmaiņu žurnāls</string>
   <string name="changelog_error">Neizdevās ielādēt izmaiņu žurnālu</string>
   <string name="contributor_cloud_title">Atbalstītāji</string>
-  <string name="cmupdate_settings_title">CyanogenMod atjaunojumi</string>
-  <string name="cmupdate_settings_summary">Pārbaudīt, apskatīt vai uzstādīt pieejamos atjaunojumus</string>
   <string name="development_tools_title">Palaist rīkus</string>
   <string name="allow_mock_sms">Atļaut viltus īsziņas</string>
   <string name="privacy_settings_cyanogenmod_title">Privātums</string>
@@ -716,9 +701,6 @@ Papildu opcijas ir pieejamas, ilgi pieskaroties rindai. Izvēloties \'Mainīt\',
   <string name="battery_info_status_charging_dock_ac">(Doks AC)</string>
   <string name="battery_info_status_charging_dock_usb">(Doks USB)</string>
   <string name="menu_stats_reset">Atstatīt</string>
-  <string name="cmlicense_title">CyanogenMod atbildība</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod atbildība</string>
-  <string name="settings_cmlicense_activity_unreachable">Jums nav datu savienojumu. Lai apskatītu šo informāciju tagad, dodieties uz %s pie jebkura datora, kas ir pievienots internetam.</string>
   <string name="stylus_icon_enabled_title">Lietojot irbuli, rādīt ikonu</string>
   <string name="stylus_icon_enabled_summary">Turot irbuli virs ekrāna, rādīt tajā kursora ikonu</string>
   <string name="gestures_settings_title">Irbuļa žesti</string>
