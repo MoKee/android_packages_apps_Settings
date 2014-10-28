@@ -522,8 +522,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="end_time_title">End</string>
 
     <!-- About phone screen,  setting option name -->
-    <string name="mod_version">MoKee version</string>
-    <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>
     <string name="build_date_default" translatable="false">2012-01-01-0000</string>
@@ -618,9 +616,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="development_tools_title">Launch Tools</string>
     <!-- Whether to allow mock SMS -->
     <string name="allow_mock_sms">Allow mock SMS</string>
-
-    <!-- Privacy Settings Header item -->
-    <string name="privacy_settings_cyanogenmod_title">Privacy</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
@@ -967,8 +962,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="whisperpush_summary">Manage secure SMS settings</string>
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
-    <string name="custom_runtime_warning_title">Warning</string>
-    <string name="custom_runtime_warning_message">ART is not officially supported by MoKee OpenSource as it is highly experimental and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi\u2011Fi networks</string>

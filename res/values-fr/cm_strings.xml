@@ -214,8 +214,6 @@
   <string name="tile_picker_title">Raccourcis et disposition</string>
   <string name="tile_picker_summary">Afficher, sélectionner ou changer la disposition des raccourcis</string>
   <string name="tile_choose_title">Choisir un raccourci</string>
-  <string name="title_qs_small_icons">Afficher de plus petits raccourcis</string>
-  <string name="summary_qs_small_icons">Utiliser de plus petits raccourcis pour augmenter le nombre de colonnes</string>
   <string name="category_heads_up">Notifications flottantes</string>
   <string name="summary_heads_up_enabled">Les notifications flottantes sont activées</string>
   <string name="summary_heads_up_disabled">Les notifications flottantes sont désactivées</string>
@@ -362,8 +360,6 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
   <string name="quiet_hours_ringer_mute_all">Sonnerie muette pour tous les appelants</string>
   <string name="start_time_title">Début</string>
   <string name="end_time_title">Fin</string>
-  <string name="mod_version">Version MoKee</string>
-  <string name="mod_version_default">Inconnue</string>
   <string name="build_date">Date de compilation</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Mémoire</string>
@@ -407,7 +403,6 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
   <string name="advanced_settings_title">Paramètres avancés</string>
   <string name="development_tools_title">Outils de développement</string>
   <string name="allow_mock_sms">Permettre les SMS simulés</string>
-  <string name="privacy_settings_cyanogenmod_title">Confidentialité</string>
   <string name="privacy_guard_switch_label">Activer la protection des données</string>
   <string name="privacy_guard_dlg_title">Activer la protection des données\u00A0?</string>
   <string name="privacy_guard_dlg_text">Lorsque la protection des données est activée, les applications n\'ont pas accès à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.</string>
@@ -673,10 +668,6 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
   <string name="storage_rescan_media_complete">Analyse terminée</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gère les paramètres de sécurité des SMS</string>
-  <string name="logger_title">Journalisation anonyme d\'incident</string>
-  <string name="logger_summary">Gérer les paramètres de journalisation d\'incident</string>
-  <string name="custom_runtime_warning_title">Attention</string>
-  <string name="custom_runtime_warning_message">ART n\'est pas supporté par MoKee OpenSource. Ce paramètre est uniquement inclus à des fin d\'expérimentations. Il peut causer des instabilités, des plantages, des pertes de données ou empêcher votre appareil de démarrer. Lisez l\'&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introduction à ART&lt;/a&gt; pour plus d\'informations.&lt;br/&gt;&lt;br/&gt;Merci de ne pas remplir de rapports de bugs si vous utilisez ART.&lt;br/&gt;&lt;br/&gt;Êtes-vous sûr de vouloir redémarrer pour changer le moteur d\'exécution de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> à <xliff:g id="new" example="libart.so">%2$s</xliff:g>\u00A0?</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Réinitialiser</string>

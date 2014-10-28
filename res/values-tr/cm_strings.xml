@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Kareler ve düzen</string>
   <string name="tile_picker_summary">Görüntülenen kareler için düzeni görüntüleyin, seçin veya değiştirin</string>
   <string name="tile_choose_title">Kare seçin</string>
-  <string name="title_qs_small_icons">Daha küçük kareler göster</string>
-  <string name="summary_qs_small_icons">Sütun sayısını arttırmak için daha küçük kareler kullan</string>
   <string name="category_heads_up">Bildirim Pencereleri</string>
   <string name="summary_heads_up_enabled">Açılır bildirimler etkinleştirildi</string>
   <string name="summary_heads_up_disabled">Açılır bildirimler devre dışı bırakıldı</string>
@@ -393,8 +391,6 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="quiet_hours_ringer_mute_all">Hiçbir arama için çalma</string>
   <string name="start_time_title">Başlangıç</string>
   <string name="end_time_title">Son</string>
-  <string name="mod_version">MoKee sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <string name="build_date">İnşa tarihi</string>
   <string name="cpu_info">İşlemci</string>
   <string name="mem_info">Bellek</string>
@@ -439,7 +435,6 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="advanced_settings_title">Gelişmiş</string>
   <string name="development_tools_title">Araçları başlat</string>
   <string name="allow_mock_sms">Sahte SMSlere izin ver</string>
-  <string name="privacy_settings_cyanogenmod_title">Gizlilik</string>
   <string name="privacy_guard_switch_label">Gizlilik Korumasını Aktifleştir</string>
   <string name="privacy_guard_dlg_title">Gizlilik Korumasını Aktifleştir?</string>
   <string name="privacy_guard_dlg_text">Gizlilik Koruması aktif olduğunda uygulama kişileriniz, mesajlarınız ya da arama kayıtlarınız gibi kişisel bilgilere erişemeyecek.</string>
@@ -708,10 +703,6 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="storage_rescan_media_complete">Tarama tamamlandı</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Güvenli SMS ayarlarını yönet</string>
-  <string name="logger_title">İsimsiz hata kaydı</string>
-  <string name="logger_summary">Hata kayıt ayarlarını yönet</string>
-  <string name="custom_runtime_warning_title">Uyarı</string>
-  <string name="custom_runtime_warning_message">ART MoKee OpenSource tarafından desteklenmemektedir çünkü oldukça tehlikeli bir deneysel özelliktir ve kararsızlık, çökme, veri kaybı sebep olabilecek ya da cihazın düzgün başlamasına engel olabilecek potansiyele sahiptir. Daha fazla bilgi için &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ARTa Giriş&lt;/a&gt; sayfasını ziyaret edebilirsiniz.&lt;br/&gt;&lt;br/&gt;ART\'ı çalışma zamanı olarak seçtiğinizde hata raporu oluşturmamanızı istiyoruz.&lt;br/&gt;&lt;br/&gt;Çalışma zamanınızı <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> yerine <xliff:g id="new" example="libart.so">%2$s</xliff:g> olarak değiştirmek için yeniden başlatmak istediğinize emin misiniz?</string>
   <string name="gps_download_data_wifi_only">GPS yardım verilerini sadece Wi\u2011Fi üzerinden indir</string>
   <string name="battery_info_status_charging_dock_ac">(AC Ünite)</string>
   <string name="battery_info_status_charging_dock_usb">(USB Ünite)</string>

@@ -215,8 +215,6 @@
   <string name="tile_picker_title">磚與配置</string>
   <string name="tile_picker_summary">檢視、選取或變更磚的配置</string>
   <string name="tile_choose_title">選擇一個磚</string>
-  <string name="title_qs_small_icons">顯示較小的磚</string>
-  <string name="summary_qs_small_icons">使用較小的磚以增加欄數</string>
   <string name="category_heads_up">浮動通知</string>
   <string name="summary_heads_up_enabled">浮動通知已啟用</string>
   <string name="summary_heads_up_disabled">浮動通知已停用</string>
@@ -367,8 +365,6 @@
   <string name="quiet_hours_ringer_mute_all">所有來電靜音</string>
   <string name="start_time_title">開始</string>
   <string name="end_time_title">結束</string>
-  <string name="mod_version">魔趣版本</string>
-  <string name="mod_version_default">未知</string>
   <string name="build_date">版本日期</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">記憶體</string>
@@ -412,7 +408,6 @@
   <string name="advanced_settings_title">進階</string>
   <string name="development_tools_title">啟動開發工具</string>
   <string name="allow_mock_sms">允許模擬簡訊</string>
-  <string name="privacy_settings_cyanogenmod_title">隱私</string>
   <string name="privacy_guard_switch_label">啟用隱私守衛</string>
   <string name="privacy_guard_dlg_title">啟用隱私守衛？</string>
   <string name="privacy_guard_dlg_text">啟用私隱守衛時，應用程式將無法存取個人資料，例如：聯絡人、訊息或通話記錄。</string>
@@ -677,10 +672,6 @@
   <string name="storage_rescan_media_complete">掃描完成</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">管理安全簡訊設定</string>
-  <string name="logger_title">匿名當機日誌記錄</string>
-  <string name="logger_summary">管理當機日誌記錄設定</string>
-  <string name="custom_runtime_warning_title">警告</string>
-  <string name="custom_runtime_warning_message">ART 不被 MoKee OpenSource 所支援. 此設定僅用作實驗，有可能造成不穩定、死機、數據丟失或導致您的設備不能正常開機。請瀏覽  &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;  細閱更多資料。&lt;br/&gt;&lt;br/&gt;作為你的運作環境，我們請求你不要發送錯誤報告給我們。&lt;br/&gt;&lt;br/&gt; 你要重啟設備將運作環境從 <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 改為 <xliff:g id="new" example="libart.so">%2$s</xliff:g> 嗎?</string>
   <string name="battery_info_status_charging_dock_ac">(座架 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(座架 USB)</string>
   <string name="menu_stats_reset">重設</string>

@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Felter og layout</string>
   <string name="tile_picker_summary">Vis, vælg eller skift de viste felters layout</string>
   <string name="tile_choose_title">Vælg et felt</string>
-  <string name="title_qs_small_icons">Vis mindre felter</string>
-  <string name="summary_qs_small_icons">Brug mindre felter til at øge antallet af kolonner</string>
   <string name="category_heads_up">Svævende meddelelser</string>
   <string name="summary_heads_up_enabled">Pop op-meddelelser er aktiveret</string>
   <string name="summary_heads_up_disabled">Pop op-meddelelser er deaktiveret</string>
@@ -378,8 +376,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="quiet_hours_ringer_mute_all">Gør alle opkald lydløse</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Slut</string>
-  <string name="mod_version">MoKee-version</string>
-  <string name="mod_version_default">Ukendt</string>
   <string name="build_date">Kørselsdato</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Hukommelse</string>
@@ -424,7 +420,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="advanced_settings_title">Avanceret</string>
   <string name="development_tools_title">Start Værktøjer</string>
   <string name="allow_mock_sms">Tillad simuleret SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatliv</string>
   <string name="privacy_guard_switch_label">Aktivér Privatlivsvagt</string>
   <string name="privacy_guard_dlg_title">Aktivér Privatlivsvagt?</string>
   <string name="privacy_guard_dlg_text">Når Privatlivsvagt er aktiveret, vil app\'en ikke tilgå personlige data såsom kontakter, beskeder eller opkaldslister.</string>
@@ -693,10 +688,6 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="storage_rescan_media_complete">Scanning fuldført</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Administrér indstillinger for sikker SMS.</string>
-  <string name="logger_title">Anonym nedbrudslogføring</string>
-  <string name="logger_summary">Administrere nedbrudslogføringsindstillinger</string>
-  <string name="custom_runtime_warning_title">Advarsel</string>
-  <string name="custom_runtime_warning_message">ART understøttes ikke officielt af MoKee OpenSource. Denne indstilling er kun medtaget til eksperimenter, og kan forårsage nedbrud, ustabilitet, datatab eller forhindre din enhed i at starte korrekt. Besøg &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for mere information.&lt;br/&gt;&lt;br/&gt;Vi anmoder dig om ikke at indrapportere fejl, hvis du har aktiveret ART.&lt;br/&gt;&lt;br/&gt;Er du sikker på, at du vil skifte runtime fra <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> til <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Download kun GPS-understøttet data via Wi\u2011Fi-netværk</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

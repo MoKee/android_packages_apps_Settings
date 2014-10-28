@@ -36,7 +36,7 @@ public class PrivacySettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.privacy_settings_cyanogenmod);
+        addPreferencesFromResource(R.xml.privacy_settings_mokee);
 
         mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
 

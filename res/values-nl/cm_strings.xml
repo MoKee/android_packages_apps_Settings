@@ -215,8 +215,6 @@
   <string name="tile_picker_title">Tegels en indeling</string>
   <string name="tile_picker_summary">Indeling van te tonen tegels beheren</string>
   <string name="tile_choose_title">Tegel kiezen</string>
-  <string name="title_qs_small_icons">Kleinere tegels</string>
-  <string name="summary_qs_small_icons">Kleinere tegels voor meer tegels per kolom</string>
   <string name="category_heads_up">Heads-up</string>
   <string name="summary_heads_up_enabled">Zwevende meldingen ingeschakeld</string>
   <string name="summary_heads_up_disabled">Zwevende meldingen uitgeschakeld</string>
@@ -362,8 +360,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="quiet_hours_ringer_mute_all">Stil bij alle oproepen</string>
   <string name="start_time_title">Begin</string>
   <string name="end_time_title">Einde</string>
-  <string name="mod_version">MoKee-versie</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Build-datum</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Geheugen</string>
@@ -407,7 +403,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="advanced_settings_title">Geavanceerd</string>
   <string name="development_tools_title">Tools openen</string>
   <string name="allow_mock_sms">Nep-sms toestaan</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <string name="privacy_guard_switch_label">Privacybescherming</string>
   <string name="privacy_guard_dlg_title">Privacybescherming inschakelen?</string>
   <string name="privacy_guard_dlg_text">Als Privacybescherming is ingeschakeld, zal de app geen toegang hebben tot persoonsgegevens zoals contacten, berichten of gespreksstatistieken.</string>
@@ -673,10 +668,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="storage_rescan_media_complete">Scannen voltooid</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Instellingen beveiligde sms-berichten</string>
-  <string name="logger_title">Anonieme logboekregistratie</string>
-  <string name="logger_summary">Logboekinstellingen voor crashes beheren</string>
-  <string name="custom_runtime_warning_title">Let op</string>
-  <string name="custom_runtime_warning_message">ART wordt niet officieel ondersteund door MoKee OpenSource. Deze instelling is opgenomen voor testdoeleinden en kan leiden tot instabiliteit, crashes, gegevensverlies en/of opstartproblemen. Ga naar &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introductie van ART (Engels)&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Wij verzoeken u geen foutenrapporten in te sturen wanneer ART is ingeschakeld.&lt;br/&gt;&lt;br/&gt;Weet u zeker dat u wilt herstarten om apps niet meer te laten draaien op <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>, maar op <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(dock-AC)</string>
   <string name="battery_info_status_charging_dock_usb">(dock-USB)</string>
   <string name="menu_stats_reset">Opnieuw instellen</string>

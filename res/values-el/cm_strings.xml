@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Πλακίδια και διάταξη</string>
   <string name="tile_picker_summary">Εμφάνιση, επιλογή ή αλλαγή της διάταξης των πλακιδίων που εμφανίζονται</string>
   <string name="tile_choose_title">Επιλέξτε ένα πλακίδιο</string>
-  <string name="title_qs_small_icons">Εμφάνιση μικρότερων πλακιδίων</string>
-  <string name="summary_qs_small_icons">Χρήση μικρότερων πλακιδίων για αύξηση του αριθμού των στηλών</string>
   <string name="category_heads_up">Αναδυόμενες ειδοποιήσεις</string>
   <string name="summary_heads_up_enabled">Οι αναδυόμενες ειδοποιήσεις είναι ενεργές</string>
   <string name="summary_heads_up_disabled">Οι αναδυόμενες ειδοποιήσεις είναι ανενεργές</string>
@@ -396,8 +394,6 @@
   <string name="quiet_hours_ringer_mute_all">Ανενεργός για όλους τους καλούντες</string>
   <string name="start_time_title">Έναρξη</string>
   <string name="end_time_title">Λήξη</string>
-  <string name="mod_version">Έκδοση MoKee</string>
-  <string name="mod_version_default">Άγνωστη</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Μνήμη</string>
@@ -442,7 +438,6 @@
   <string name="advanced_settings_title">Για προχωρημένους</string>
   <string name="development_tools_title">Εκκίνηση εργαλείων</string>
   <string name="allow_mock_sms">Να επιτρέπονται ψευδή SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Απόρρητο</string>
   <string name="privacy_guard_switch_label">Ενεργοποίηση Προστασίας Απορρήτου</string>
   <string name="privacy_guard_dlg_title">Ενεργοποίηση της Προστασίας Απορρήτου;</string>
   <string name="privacy_guard_dlg_text">Όταν η Προστασία Απορρήτου είναι ενεργή, η εφαρμογή δεν θα μπορεί να έχει πρόσβαση σε προσωπικά δεδομένα όπως επαφές, μηνύματα ή το αρχείο κλήσεων.</string>
@@ -711,10 +706,6 @@
   <string name="storage_rescan_media_complete">Η σάρωση ολοκληρώθηκε</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Διαχείριση ρυθμίσεων ασφαλών SMS</string>
-  <string name="logger_title">Ανώνυμη καταγραφή σφαλμάτων</string>
-  <string name="logger_summary">Διαχείριση ρυθμίσεων καταγραφής σφαλμάτων</string>
-  <string name="custom_runtime_warning_title">Προσοχή</string>
-  <string name="custom_runtime_warning_message">Το ART δεν υποστηρίζεται επίσημα από το MoKee OpenSource δεδομένου ότι είναι μια πειραματική ρύθμιση και μπορεί να προκαλέσει αστάθεια, κολλήματα, απώλεια δεδομένων ή να αποτρέψει τη σωστή εκκίνηση της συσκευής σας. Επισκευθείτε το &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; για περισσότερες πληροφορίες.&lt;br/&gt;&lt;br/&gt;Σας παρακαλούμε να μην υποβάλλετε αναφορές σφαλμάτων, αν έχετε ενεργοποιημένο το ART ως runtime.&lt;br/&gt;&lt;br/&gt;Είστε βέβαιοι ότι θέλετε να κάνετε επανεκκίνηση για να αλλάξει το runtime από <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> σε <xliff:g id="new" example="libart.so">%2$s</xliff:g>;</string>
   <string name="gps_download_data_wifi_only">Λήψη δεδομένων υποβοηθούμενου GPS μόνο μέσω δικτύων Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(Βάση σύνδεσης AC)</string>
   <string name="battery_info_status_charging_dock_usb">(Βάση σύνδεσης USB)</string>

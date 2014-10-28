@@ -222,8 +222,6 @@
   <string name="tile_picker_title">Kacheln anordnen</string>
   <string name="tile_picker_summary">Kacheln auswählen oder ihre Reihenfolge ändern</string>
   <string name="tile_choose_title">Kachel auswählen</string>
-  <string name="title_qs_small_icons">Kleinere Kacheln anzeigen</string>
-  <string name="summary_qs_small_icons">Kleinere Kacheln anzeigen, um die Spaltenanzahl zu erhöhen</string>
   <string name="category_heads_up">Pop-up-Benachrichtigungen</string>
   <string name="summary_heads_up_enabled">Pop-up-Benachrichtigungen sind aktiviert</string>
   <string name="summary_heads_up_disabled">Pop-up-Benachrichtigungen sind deaktiviert</string>
@@ -389,8 +387,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="quiet_hours_ringer_mute_all">Nie klingeln</string>
   <string name="start_time_title">Beginn</string>
   <string name="end_time_title">Ende</string>
-  <string name="mod_version">MoKee-Version</string>
-  <string name="mod_version_default">Unbekannt</string>
   <string name="build_date">Build-Datum</string>
   <string name="cpu_info">Prozessor</string>
   <string name="mem_info">Arbeitsspeicher</string>
@@ -435,7 +431,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="advanced_settings_title">Erweitert</string>
   <string name="development_tools_title">Entwickler-Werkzeuge</string>
   <string name="allow_mock_sms">Simulierte SMS zulassen</string>
-  <string name="privacy_settings_cyanogenmod_title">Datenschutz</string>
   <string name="privacy_guard_switch_label">Datenschutz aktivieren</string>
   <string name="privacy_guard_dlg_title">Datenschutz aktivieren?</string>
   <string name="privacy_guard_dlg_text">Bei aktiviertem Datenschutz hat die App keinen Zugriff auf persönliche Daten wie Kontakte, Nachrichten oder das Anrufprotokoll.</string>
@@ -702,11 +697,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="storage_rescan_media_complete">Suche abgeschlossen</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Einstellungen für sichere SMS</string>
-  <string name="logger_title">Anonyme Absturzberichte</string>
-  <string name="logger_summary">Absturzbericht-Einstellungen</string>
-  <string name="custom_runtime_warning_title">Warnung</string>
-  <string name="custom_runtime_warning_message">ART wird von MoKee OpenSource nicht unterstützt. Diese Einstellung ist experimentell und nur für Entwickler gedacht. Sie kann zu Instabilitäten, Abstürzen oder Datenverlust führen oder verhindern, dass Ihr Gerät startet. Besuchen Sie &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; für mehr Informationen.&lt;br/&gt;&lt;br/&gt;Melden Sie keine Fehler, wenn Sie ART als Laufzeitumgebung aktiviert haben.&lt;br/&gt;&lt;br/&gt;Sind Sie sicher, dass Sie das Gerät neu starten wollen, um die Laufzeitumgebung von <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>
-auf <xliff:g id="new" example="libart.so">%2$s</xliff:g> zu ändern?</string>
   <string name="battery_info_status_charging_dock_ac">Ladedock</string>
   <string name="battery_info_status_charging_dock_usb">USB-Dock</string>
   <string name="menu_stats_reset">Zurücksetzen</string>

@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Tile e disposizione</string>
   <string name="tile_picker_summary">Guarda, scegli o cambia la disposizione dei tile mostrati</string>
   <string name="tile_choose_title">Scegli un tile</string>
-  <string name="title_qs_small_icons">Visualizza tile più piccoli</string>
-  <string name="summary_qs_small_icons">Utilizza tile più piccoli per aumentare il numero di colonne</string>
   <string name="category_heads_up">Heads up</string>
   <string name="summary_heads_up_enabled">Le notifiche pop-up sono attivate</string>
   <string name="summary_heads_up_disabled">Le notifiche pop-up sono disattivate</string>
@@ -390,8 +388,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
   <string name="quiet_hours_ringer_mute_all">Silenzioso per tutti i chiamanti</string>
   <string name="start_time_title">Inizio</string>
   <string name="end_time_title">Fine</string>
-  <string name="mod_version">Versione MoKee</string>
-  <string name="mod_version_default">Sconosciuto</string>
   <string name="build_date">Data build</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
@@ -436,7 +432,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
   <string name="advanced_settings_title">Avanzate</string>
   <string name="development_tools_title">Esegui dev. tools</string>
   <string name="allow_mock_sms">Consenti SMS finti</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <string name="privacy_guard_switch_label">Attiva Privacy Guard</string>
   <string name="privacy_guard_dlg_title">Attivare Privacy Guard?</string>
   <string name="privacy_guard_dlg_text">Quando Privacy Guard è attivato, l\'app non è in grado di accedere a dati personali come contatti, lista chiamate, messaggi.</string>
@@ -705,10 +700,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
   <string name="storage_rescan_media_complete">Scansione completata</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gestisci le impostazioni SMS sicuri</string>
-  <string name="logger_title">Registrazione anonima errori</string>
-  <string name="logger_summary">Gestisci le impostazioni per la registrazione dei log d\'errore</string>
-  <string name="custom_runtime_warning_title">Attenzione</string>
-  <string name="custom_runtime_warning_message">ART non è ufficialmente supportato da MoKee OpenSource. Questa impostazione è disponibile solo a scopo di sperimentazione e può causare instabilità, crash, perdita di dati o impedire al dispositivo di avviarsi correttamente. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per maggiori informazioni (in lingua inglese).&lt;br/&gt;&lt;br/&gt;Ti chiediamo di non segnalarci eventuali errori se hai attivo ART come runtime.&lt;br/&gt;&lt;br/&gt;Sei sicuro di volere riavviare per cambiare runtime da <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Scarica i dati del GPS assistito solo su reti Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

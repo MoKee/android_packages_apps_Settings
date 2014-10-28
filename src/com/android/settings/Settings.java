@@ -210,7 +210,7 @@ public class Settings extends PreferenceActivity
             R.id.notification_bar_settings,
             R.id.lock_screen_settings,
             R.id.smartcontrol_settings,
-            R.id.privacy_settings_cyanogenmod,
+            R.id.privacy_settings_mokee,
             R.id.button_settings
     };
 

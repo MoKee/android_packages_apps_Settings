@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Cel·les i disposició</string>
   <string name="tile_picker_summary">Mostra, selecciona o canvia la disposició de les cel·les mostrades</string>
   <string name="tile_choose_title">Escull una cel·la</string>
-  <string name="title_qs_small_icons">Mostra les cel·les més petites</string>
-  <string name="summary_qs_small_icons">Utilitza cel·les més petites per poder incrementar el nombre de columnes</string>
   <string name="category_heads_up">Notificacions emergents</string>
   <string name="summary_heads_up_enabled">Les notificacions emergents estan activades</string>
   <string name="summary_heads_up_disabled">Les notificacions emergents estan desactivades</string>
@@ -380,8 +378,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="quiet_hours_ringer_mute_all">Silenci per totes les trucades</string>
   <string name="start_time_title">Inici</string>
   <string name="end_time_title">Fi</string>
-  <string name="mod_version">MoKee versió</string>
-  <string name="mod_version_default">Desconegut</string>
   <string name="build_date">Data d\'elaboració</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memòria</string>
@@ -426,7 +422,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="advanced_settings_title">Avançat</string>
   <string name="development_tools_title">Llança Eines</string>
   <string name="allow_mock_sms">Permet SMS simulats</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacitat</string>
   <string name="privacy_guard_switch_label">Activa el guarda de privacitat</string>
   <string name="privacy_guard_dlg_title">Vols activar el guarda de privacitat?</string>
   <string name="privacy_guard_dlg_text">Quan el guarda de privacitat està activat, l\'app no tindrà accés a dades personals com ara els contactes, missatges o registres de trucades.</string>
@@ -695,10 +690,6 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="storage_rescan_media_complete">Cerca completada</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gestiona la configuració d\'SMS segurs</string>
-  <string name="logger_title">Registre d\'errors anònim</string>
-  <string name="logger_summary">Gestiona la configuració del registre d\'errors</string>
-  <string name="custom_runtime_warning_title">Alerta</string>
-  <string name="custom_runtime_warning_message">MoKee OpenSource no dóna oficialment suport a ART ja que aquest ajustament és altament experimental i té el potencial de causar inestabilitats, fallades, pèrdua de dades o pot impedir l\'arrancada correcta del teu dispositiu. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per a més informació.&lt;br/&gt;&lt;br/&gt;Et demanem que no envïis informes d\'error si tens activada ART com la teva runtime.&lt;br/&gt;&lt;br/&gt;Estàs segur que vols reiniciar per canviar la runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Descarrega dades de GPS assistit només sobre xarxes Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(AcoblamentAC)</string>
   <string name="battery_info_status_charging_dock_usb">(AcoblamentUSB)</string>

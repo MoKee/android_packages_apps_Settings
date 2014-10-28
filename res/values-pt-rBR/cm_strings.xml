@@ -225,8 +225,6 @@
   <string name="tile_picker_title">Botões e layout</string>
   <string name="tile_picker_summary">Visualizar, selecionar e trocar o layout dos botões exibidos</string>
   <string name="tile_choose_title">Selecione um botão</string>
-  <string name="title_qs_small_icons">Exibir botões menores</string>
-  <string name="summary_qs_small_icons">Usar botões menores para aumentar o número de colunas</string>
   <string name="category_heads_up">Notificações pop-up</string>
   <string name="summary_heads_up_enabled">As notificações pop-up estão ativadas</string>
   <string name="summary_heads_up_disabled">As notificações pop-up estão desativadas</string>
@@ -378,8 +376,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="quiet_hours_ringer_mute_all">Não tocar para todas chamadas</string>
   <string name="start_time_title">Início</string>
   <string name="end_time_title">Fim</string>
-  <string name="mod_version">Versão MoKee</string>
-  <string name="mod_version_default">Desconhecida</string>
   <string name="build_date">Data de compilação</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memória</string>
@@ -424,7 +420,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="advanced_settings_title">Avançado</string>
   <string name="development_tools_title">Abrir ferramentas</string>
   <string name="allow_mock_sms">Permitir a simulação SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidade</string>
   <string name="privacy_guard_switch_label">Ativar Proteção à Privacidade</string>
   <string name="privacy_guard_dlg_title">Ativar Proteção à Privacidade?</string>
   <string name="privacy_guard_dlg_text">Quando a Proteção à Privacidade estiver ativada, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registro de chamadas.</string>
@@ -693,10 +688,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="storage_rescan_media_complete">Varredura completada</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gerenciar configurações de SMS seguro</string>
-  <string name="logger_title">Registro anônimo de erros</string>
-  <string name="logger_summary">Gerenciar configurações do registro de erros</string>
-  <string name="custom_runtime_warning_title">Aviso</string>
-  <string name="custom_runtime_warning_message">ART não é oficialmente suportado por MoKee OpenSource como é altamente experimental e pode portencialmente causar instabilidade, falhas no sistema, perda de dados ou prevenir o seu dispositivo de inicializar corretamente. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt; para mais informações.&lt;br/&gt;&lt;br/&gt;Nós pedimos que você não reporte problemas se você estiver com o ART ativado.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja reiniciar para trocar de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> para <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Transferir dados GPS assistido somente sobre redes Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

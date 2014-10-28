@@ -214,8 +214,6 @@
   <string name="tile_picker_title">אריחים ופריסה</string>
   <string name="tile_picker_summary">הצג, בחר או שנה את פריסת האריחים המוצגים</string>
   <string name="tile_choose_title">בחר אריח</string>
-  <string name="title_qs_small_icons">הצג אריחים קטנים יותר</string>
-  <string name="summary_qs_small_icons">השתמש באריחים קטנים יותר כדי להגדיל את מספר העמודות</string>
   <string name="category_heads_up">חלון קופץ</string>
   <string name="summary_heads_up_enabled">הודעות קופצות מופעלות</string>
   <string name="summary_heads_up_disabled">הודעות קופצות מושבתות</string>
@@ -371,8 +369,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">השתק צלצול עבור על המתקשרים</string>
   <string name="start_time_title">זמן התחלה</string>
   <string name="end_time_title">זמן סיום</string>
-  <string name="mod_version">גרסת MoKee</string>
-  <string name="mod_version_default">לא ידוע</string>
   <string name="build_date">תאריך בנייה</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">זיכרון</string>
@@ -416,7 +412,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="advanced_settings_title">מתקדם</string>
   <string name="development_tools_title">הפעל כלי פיתוח</string>
   <string name="allow_mock_sms">אפשר SMS מזויף</string>
-  <string name="privacy_settings_cyanogenmod_title">פרטיות</string>
   <string name="privacy_guard_switch_label">אפשר שומר פרטיות</string>
   <string name="privacy_guard_dlg_title">האם לאפשר שומר פרטיות?</string>
   <string name="privacy_guard_dlg_text">כאשר שומר הפרטיות מופעל, היישום יהיה חסר גישה למידע אישי כמו אנשי קשר, הודעות או יומן שיחות.</string>
@@ -682,10 +677,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="storage_rescan_media_complete">סריקה הושלמה</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">ניהול הגדרות SMS מאובטח</string>
-  <string name="logger_title">רשם קריסות אנונימי</string>
-  <string name="logger_summary">נהל הגדרות רישום קריסות</string>
-  <string name="custom_runtime_warning_title">אזהרה</string>
-  <string name="custom_runtime_warning_message">ART לא נתמך כראוי על ידי MoKee OpenSource. הגדרה זו קיימת רק לניסוי ויש סיכוי לאי יציבות, קריסות, איבוד מידע או אתחול לא נכון של המכשיר. בקר ב-&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;הצגת ART&lt;/a&gt; עבור מידע נוסף.&lt;br/&gt;&lt;br/&gt;אנחנו מבקשים שאתה לא תמלא דיווחי שגיאות אם אתה משתמש ב-ART.&lt;br/&gt;&lt;br/&gt;האם אתה בטוח שאתה רוצה להחליף מ-<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ל-<xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">איפוס</string>
