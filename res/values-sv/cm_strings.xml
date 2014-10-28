@@ -207,15 +207,11 @@
   <string name="lockscreen_maximize_widgets_summary">Utöka widgetar när skärmen sätts på</string>
   <string name="lockscreen_enable_camera_title">Kamerawidget</string>
   <string name="safe_headset_volume_title">Säker hörlursvolym</string>
-  <string name="mokee_waiver_title">Frånsägelse</string>
-  <string name="mokee_waiver_body">Att ändra denna inställning kan vara mot din stats eller regerings lagar.\n\nGenom att välja \"OK\" nedan bekräftar du denna varning och frånsägelse, och förbinder dig att ta fullt ansvar och hålla MoKee OpenSource och dess bidragsgivare fritt från allt juridiskt ansvar.</string>
   <string name="quick_settings_panel_title">Snabbinställningspanel</string>
   <string name="title_static_tiles">Statiska brickor</string>
   <string name="tile_picker_title">Brickor och utformning</string>
   <string name="tile_picker_summary">Visa, välj eller ändra utformningen av de visade brickorna</string>
   <string name="tile_choose_title">Välj en bricka</string>
-  <string name="title_qs_small_icons">Visa mindre brickor</string>
-  <string name="summary_qs_small_icons">Använd mindre brickor för att öka antalet kolumner</string>
   <string name="category_heads_up">Heads up</string>
   <string name="summary_heads_up_enabled">Pop-up-aviseringar är aktiverade</string>
   <string name="summary_heads_up_disabled">Pop-up-aviseringar är inaktiverade</string>
@@ -369,8 +365,6 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="quiet_hours_ringer_mute_all">Tysta ringsignal för alla samtal</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Slut</string>
-  <string name="mod_version">MoKee-version</string>
-  <string name="mod_version_default">Okänd</string>
   <string name="build_date">Byggdatum</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Minne</string>
@@ -414,7 +408,6 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="advanced_settings_title">Avancerat</string>
   <string name="development_tools_title">Utvecklarverktyg</string>
   <string name="allow_mock_sms">Tillåt sken-SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Integritet</string>
   <string name="privacy_guard_switch_label">Aktivera integritetsskydd</string>
   <string name="privacy_guard_dlg_title">Aktivera integritetsskydd?</string>
   <string name="privacy_guard_dlg_text">När integritetsskyddet är aktivt kommer appen inte få tillgång till personlig data som kontakter, meddelanden eller samtalslistor.</string>
@@ -674,12 +667,6 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="usb_mass_storage_summary">Låter dig överföra filer mellan din dator och SD-kortet genom att montera det som en flyttbar enhet</string>
   <string name="storage_rescan_media">Sök igenom media för lagringsvolymen</string>
   <string name="storage_rescan_media_complete">Sökning klar</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Hantera säkra SMS-inställningar</string>
-  <string name="logger_title">Anonym kraschloggning</string>
-  <string name="logger_summary">Hantera inställningar för kraschloggning</string>
-  <string name="custom_runtime_warning_title">Varning</string>
-  <string name="custom_runtime_warning_message">ART saknar officiellt stöd från MoKee OpenSource då det är högst experimentellt och har potential att orsaka instabilitet, krascher, dataförlust eller förhindra din enhet från att starta. Besök &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; för mer information.&lt;br/&gt;&lt;br/&gt;Vi ber dig att inte skicka några felrapporter om du har aktiverat ART som din körningstid.&lt;br/&gt;&lt;br/&gt;Är du säker på att du vill starta om för att ändra din körningstid från <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> till <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DockaAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockaUSB)</string>
   <string name="menu_stats_reset">Återställ</string>

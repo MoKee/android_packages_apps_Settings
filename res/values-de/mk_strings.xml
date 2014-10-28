@@ -90,8 +90,8 @@
   <string name="ad_pocket_mode_off">Deaktiviert</string>
   <string name="ad_pocket_mode_notifications">Nur Benachrichtigungen</string>
   <string name="ad_pocket_mode_always">Immer</string>
-  <string name="mod_support">Community Unterstützung</string>
-  <string name="mod_support_default">Unbekannt</string>
+  <string name="mokee_support">Community Unterstützung</string>
+  <string name="mokee_support_default">Unbekannt</string>
   <string name="listview_animation_title">ListView-Animation</string>
   <string name="listview_off">Deaktiviert</string>
   <string name="listview_wave_left">Wehen (nach links)</string>

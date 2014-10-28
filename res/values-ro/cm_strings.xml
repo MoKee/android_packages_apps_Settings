@@ -203,15 +203,11 @@
   <string name="lockscreen_maximize_widgets_summary">Extinde widget-urile când se deschide ecranul</string>
   <string name="lockscreen_enable_camera_title">Widget cameră</string>
   <string name="safe_headset_volume_title">Volum de siguranță pentru cască</string>
-  <string name="mokee_waiver_title">Renunțare</string>
-  <string name="mokee_waiver_body">Modificarea acestei setări poate fi împotriva legilor date de statul sau guvernul dvs.\n\nPrin selectarea \'OK\' de mai jos, dvs recunoașteți acest avertisment și renunțați la toate obligațiile legale, de a cere despăgubiri și exonerați MoKee OpenSource și contributorii lor.</string>
   <string name="quick_settings_panel_title">Panoul Setări Rapide</string>
   <string name="title_static_tiles">Carduri statice</string>
   <string name="tile_picker_title">Carduri și aspect</string>
   <string name="tile_picker_summary">Vizualizează, selectează sau schimbă aspectul cardurilor afișate</string>
   <string name="tile_choose_title">Alege un card</string>
-  <string name="title_qs_small_icons">Arată carduri mai mici</string>
-  <string name="summary_qs_small_icons">Folosește carduri mai mici pentru a mări numărul de coloane</string>
   <string name="category_heads_up">Atenționare</string>
   <string name="summary_heads_up_enabled">Notificările Pop-up sunt activate</string>
   <string name="summary_heads_up_disabled">Notificările Pop-up sunt dezactivate</string>
@@ -365,8 +361,6 @@ două pentru a adăuga puncte de control adiționale. „Ștergere” elimină l
   <string name="quiet_hours_ringer_mute_all">Oprește soneria pentru apelanți</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Sfârșit</string>
-  <string name="mod_version">versiunea MoKee</string>
-  <string name="mod_version_default">Necunoscut</string>
   <string name="build_date">Dată compilare</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memorie</string>
@@ -410,7 +404,6 @@ două pentru a adăuga puncte de control adiționale. „Ștergere” elimină l
   <string name="advanced_settings_title">Avansat</string>
   <string name="development_tools_title">Instrumente lansare</string>
   <string name="allow_mock_sms">Permite SMS false</string>
-  <string name="privacy_settings_cyanogenmod_title">Intimitate</string>
   <string name="privacy_guard_switch_label">Activare Gardian Intimitate</string>
   <string name="privacy_guard_dlg_title">Activați Gardian Intimitate?</string>
   <string name="privacy_guard_dlg_text">Când Gardianul de Intimitate este activat, o aplicație nu poate obține accesul la datele personale cum ar fi contactele, mesajele sau jurnalul de apeluri.</string>
@@ -666,12 +659,6 @@ două pentru a adăuga puncte de control adiționale. „Ștergere” elimină l
   <string name="usb_mass_storage_summary">Vă permite să transferați orice fișier între calculatorul dvs și cardul SD prin montarea ca un dispozitiv flash</string>
   <string name="storage_rescan_media">Rescanare media pentru volumul de stocare</string>
   <string name="storage_rescan_media_complete">Scanare finalizată</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestionare setări SMS sigur</string>
-  <string name="logger_title">Jurnal de erori anonim</string>
-  <string name="logger_summary">Gestionați setările jurnalului de erori</string>
-  <string name="custom_runtime_warning_title">Avertizare</string>
-  <string name="custom_runtime_warning_message">ART nu este suportat de MoKee OpenSource. Această setare este inclusă doar pentru experimentare și poate cauza instabilitate, distrugere, pierdere de date sau poate preveni pornirea normală a dispozitivului dvs. Vizitați &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducere în ART&lt;/a&gt; pentru mai multe informații.&lt;br/&gt;&lt;br/&gt;Vă cerem să nu trimiteți rapoarte cu buguri dacă aveți activat ca rutină ART.&lt;br/&gt;&lt;br/&gt;Sunteți sigur că vreți să reporniți pentru a schimba rutina de la <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> la <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Resetare</string>

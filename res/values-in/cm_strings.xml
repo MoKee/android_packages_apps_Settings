@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Widget Appcast</string>
   <string name="safe_headset_volume_title">Volume aman headset</string>
   <string name="safe_headset_volume_restore_title">Mengurangi volume suara headset pada koneksi</string>
-  <string name="mokee_waiver_title">Pengabaian</string>
-  <string name="mokee_waiver_body">Mengubah pengaturan ini mungkin melanggar negara anda atau hukum pemerintah.\n\nIn memilih \'OK\' di bawah ini, Anda mengakui peringatan ini dan membebaskan, mengganti kerugian dan tidak membahayakan MoKee OpenSource dan para kontributornya dari seluruh kewajiban hukum.</string>
   <string name="quick_settings_panel_title">Panel Pengaturan Cepat</string>
   <string name="title_static_tiles">Tiles statis</string>
   <string name="tile_picker_title">Tata letak dan tiles</string>
   <string name="tile_picker_summary">Lihat, pilih atau ubah tata letak tiles yang ditampilkan</string>
   <string name="tile_choose_title">Pilih tile</string>
-  <string name="title_qs_small_icons">Tampilkan tiles lebih kecil</string>
-  <string name="summary_qs_small_icons">Gunakan tiles kecil untuk meningkatkan jumlah kolom</string>
   <string name="category_heads_up">Heads up</string>
   <string name="summary_heads_up_enabled">Pemberitahuan pop-up diaktifkan</string>
   <string name="summary_heads_up_disabled">Pemberitahuan pop-up dinonaktifkan</string>
@@ -377,8 +373,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="quiet_hours_ringer_mute_all">Diamkan dering untuk semua panggilan</string>
   <string name="start_time_title">Mulai</string>
   <string name="end_time_title">Selesai</string>
-  <string name="mod_version">Versi MoKee</string>
-  <string name="mod_version_default">Tidak diketahui</string>
   <string name="build_date">Tanggal pembuatan</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memori</string>
@@ -423,7 +417,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="advanced_settings_title">Tingkat lanjut</string>
   <string name="development_tools_title">Launch Tools</string>
   <string name="allow_mock_sms">Izinkan SMS tiruan</string>
-  <string name="privacy_settings_cyanogenmod_title">Privasi</string>
   <string name="privacy_guard_switch_label">Aktifkan Privacy Guard</string>
   <string name="privacy_guard_dlg_title">Aktifkan Privacy Guard?</string>
   <string name="privacy_guard_dlg_text">Bila Privacy Guard diaktifkan, aplikasi tidak akan dapat mengakses data pribadi seperti kontak, pesan atau log panggilan.</string>
@@ -690,12 +683,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="usb_mass_storage_summary">Memungkinkan Anda mentransfer file antara komputer Anda dan kartu SD dengan me-mount sebagai perangkat flash</string>
   <string name="storage_rescan_media">Rescan media untuk volume penyimpanan</string>
   <string name="storage_rescan_media_complete">Scan selesai</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Kelola pengaturan secure SMS</string>
-  <string name="logger_title">Crash logging anonim</string>
-  <string name="logger_summary">Kelola pengaturan crash logging</string>
-  <string name="custom_runtime_warning_title">Peringatan</string>
-  <string name="custom_runtime_warning_message">ART tidak di support official oleh MoKee OpenSource karena itu sangat eksperimental dan dapat menyebabkan ketidak stabilan, crashes, hilang data atau mencegah perangkat anda booting dengan baik. kunjungi &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;Kami meminta anda untuk tidak me laporkan bug jika anda mengaktifkan ART sebagai runtime.&lt;br/&gt;&lt;br/&gt;Apakah anda yakin ingin restart untuk mengganti runtime dari <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ke <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Unduh bantuan data GPS hanya melalui jaringan Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

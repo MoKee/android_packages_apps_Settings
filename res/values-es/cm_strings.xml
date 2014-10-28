@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Widget de aplicación cast</string>
   <string name="safe_headset_volume_title">Volumen seguro</string>
   <string name="safe_headset_volume_restore_title">Reducir el volumen al conectar los auriculares</string>
-  <string name="mokee_waiver_title">Renuncia</string>
-  <string name="mokee_waiver_body">Cambiar este ajuste puede ir en contra de la leyes de tu estado o país.\n\nPulsando \u00ABAceptar\u00BB, reconoces esta advertencia y eximes de cualquier responsabilidad legal a MoKee OpenSource y sus colaboradores, renunciando así a cualquier reclamación por daños y perjuicios.</string>
   <string name="quick_settings_panel_title">Panel de ajustes rápidos</string>
   <string name="title_static_tiles">Controles estáticos</string>
   <string name="tile_picker_title">Controles y disposición</string>
   <string name="tile_picker_summary">Ver, seleccionar o cambiar la posición de los controles a mostrar</string>
   <string name="tile_choose_title">Elegir un control</string>
-  <string name="title_qs_small_icons">Controles pequeños</string>
-  <string name="summary_qs_small_icons">Usar controles pequeños para incrementar el número de columnas</string>
   <string name="category_heads_up">Notificaciones emergentes</string>
   <string name="summary_heads_up_enabled">Las notificaciones emergentes están habilitadas</string>
   <string name="summary_heads_up_disabled">Las notificaciones emergentes están deshabilitadas</string>
@@ -379,8 +375,6 @@ Tocando de forma prolongada cada línea se mostrarán opciones adicionales. Sele
   <string name="quiet_hours_ringer_mute_all">Silenciar todas las llamadas</string>
   <string name="start_time_title">Inicio</string>
   <string name="end_time_title">Fin</string>
-  <string name="mod_version">Versión MoKee</string>
-  <string name="mod_version_default">Desconocida</string>
   <string name="build_date">Fecha de compilación</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
@@ -425,7 +419,6 @@ Tocando de forma prolongada cada línea se mostrarán opciones adicionales. Sele
   <string name="advanced_settings_title">Opciones avanzadas</string>
   <string name="development_tools_title">Iniciar Herramientas</string>
   <string name="allow_mock_sms">Permitir SMS simulados</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidad</string>
   <string name="privacy_guard_switch_label">Habilitar privacidad</string>
   <string name="privacy_guard_dlg_title">¿Habilitar privacidad?</string>
   <string name="privacy_guard_dlg_text">Cuando la privacidad está habilitada, la aplicación no podrá acceder a los datos personales, tales como contactos, mensajes o registros de llamadas.</string>
@@ -692,12 +685,6 @@ Tocando de forma prolongada cada línea se mostrarán opciones adicionales. Sele
   <string name="usb_mass_storage_summary">Permite transferir archivos entre la tarjeta SD y el ordenador</string>
   <string name="storage_rescan_media">Refrescar contenido multimedia</string>
   <string name="storage_rescan_media_complete">Refresco completado</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Administrar ajustes para cifrado de SMS</string>
-  <string name="logger_title">Registro de errores anónimo</string>
-  <string name="logger_summary">Configurar los ajustes del registro de errores</string>
-  <string name="custom_runtime_warning_title">Aviso</string>
-  <string name="custom_runtime_warning_message">ART no está soportado oficialmente por MoKee OpenSource. Este ajuste ha sido incluido solamente para fines experimentales y puede causar inestabilidad, bloqueos, pérdida de datos e incluso impedir el correcto inicio del dispositivo. Para más información visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Te pedimos que no envíes archivos de informe de errores si has habilitado ART.&lt;br/&gt;&lt;br/&gt;¿Estás seguro de que quieres reiniciar para cambiar el tiempo de ejecución de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Descargar datos de GPS asistido solo bajo redes Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(BaseAC)</string>
   <string name="battery_info_status_charging_dock_usb">(BaseUSB)</string>

@@ -1530,10 +1530,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                             oldRuntimeValue, newRuntimeValue));
                 } else {
                     builder.setMessage(Html.fromHtml(context.getResources().getString(
-                            R.string.custom_runtime_warning_message,
+                            R.string.mokee_runtime_warning_message,
                             oldRuntimeValue, newRuntimeValue)));
                     builder.setTitle(context.getResources().getString(
-                            R.string.custom_runtime_warning_title));
+                            R.string.mokee_runtime_warning_title));
                 }
                 builder.setPositiveButton(android.R.string.ok, new OnClickListener() {
                     @Override

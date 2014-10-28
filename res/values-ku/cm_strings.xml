@@ -209,15 +209,11 @@
   <string name="lockscreen_maximize_widgets_summary">پانکردنی کورته‌وێنۆچکەکان کاتێک ڕوونماکە کرایەوە</string>
   <string name="lockscreen_enable_camera_title">کورته‌وێنۆچکەکانی کامێرا</string>
   <string name="safe_headset_volume_title">پاراستنی دەنگی بڵندگۆی سەر</string>
-  <string name="mokee_waiver_title">پاشگەزبونەوە</string>
-  <string name="mokee_waiver_body">گۆڕینی ئەم ڕێکخستنە لەوە دەچێت دژی یاسای وڵاتەکەت بێت.\n\nIn دیاریکردنی\'باشە\' لەخوارەوە, تۆ ئەم زانیاریە ئەز سایۆنجن مۆد پێت دەڵێت.</string>
   <string name="quick_settings_panel_title">پەڕەی ڕێکخستنی خێرا</string>
   <string name="title_static_tiles">نەجوڵاو  tiles</string>
   <string name="tile_picker_title">Tiles پلان  </string>
   <string name="tile_picker_summary">نیشاندان/دیاریکردن یان گۆڕینی پلانی نیشاندان</string>
   <string name="tile_choose_title">هەڵبژاردنی تایڵ</string>
-  <string name="title_qs_small_icons">نیشاندانی تایڵی بچوکراوە</string>
-  <string name="summary_qs_small_icons">بەکارهێنانی تایلس بۆ زیادکردنی ئەستوونی ژمارەکان</string>
   <string name="category_heads_up">ده‌رکه‌وته‌کان</string>
   <string name="summary_heads_up_enabled">ئاگاداری ده‌رکه‌وته‌ کارده‌کات</string>
   <string name="summary_heads_up_disabled">ئاگاداری ده‌رکه‌وته‌ کارناکات</string>
@@ -372,8 +368,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">کپکردنی زنگ بۆ هەموو تەلەفۆنەکان</string>
   <string name="start_time_title">دەستپێکردن</string>
   <string name="end_time_title">کۆتای</string>
-  <string name="mod_version">وەشانی کوردی</string>
-  <string name="mod_version_default">نەناسراو</string>
   <string name="build_date">بنیاتنانی ڕۆژ</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">بیرگە</string>
@@ -417,7 +411,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="advanced_settings_title">پەرەسەندوو</string>
   <string name="development_tools_title">خستنەکاری ئامرازەکان</string>
   <string name="allow_mock_sms">ڕێگەدان mock SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">تایبەتی</string>
   <string name="privacy_guard_switch_label">چالاکردنی بەرگری تایبەتی</string>
   <string name="privacy_guard_dlg_title">جالاکردنی پاسەوانی تایبەتی؟</string>
   <string name="privacy_guard_dlg_text">کاتێک بەرگری تایبەتی چالاکرا, بەرنامەکە ناتوانێت بچێتەناو ناوەکان, نامەکان یان تەلەفۆنی تۆمارکراو.</string>
@@ -677,12 +670,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="usb_mass_storage_summary">با دۆسیه‌کان بگوازینه‌وه‌ له‌ کۆمپیوته‌ره‌که‌ت بۆ بیرگه‌ی ده‌ره‌کی له‌ مۆبایله‌کات و فلاشی لێبده‌</string>
   <string name="storage_rescan_media">گه‌ڕان بۆ زانینی قه‌باره‌ی بیرگه‌</string>
   <string name="storage_rescan_media_complete">گه‌ڕانه‌که‌ کۆتایهات</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">ڕێکخستنی ئاسایشی SMS</string>
-  <string name="logger_title">ڕاپۆرتکردنی هه‌ڵه‌کان به‌شێوه‌ی نه‌ناسراو</string>
-  <string name="logger_summary">به‌ڕێوه‌بردنی ڕێکخستنی ڕاپۆرتی هه‌ڵه‌کان</string>
-  <string name="custom_runtime_warning_title">ئاگاداریی</string>
-  <string name="custom_runtime_warning_message">ART is not officially supported by MoKee OpenSource as it is highly experimental and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit وlt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"وgt;Introducing ARTوlt;/aوgt; for more information.وlt;br/وgt;وlt;br/وgt;We request you do not file bug reports if you have enabled ART as your runtime.وlt;br/وgt;وlt;br/وgt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">ڕێکخستنه‌وه‌</string>

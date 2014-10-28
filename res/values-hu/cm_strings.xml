@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Appcast modul</string>
   <string name="safe_headset_volume_title">Biztonságos hangerő</string>
   <string name="safe_headset_volume_restore_title">Hangerő csökkentése fejhallgató csatlakoztatásakor</string>
-  <string name="mokee_waiver_title">Jogi felelősség átvállalása</string>
-  <string name="mokee_waiver_body">A beállítás módosítása halláskárosodáshoz vezethet.\n\nAz \"OK\" gombbal Ön elfogadja ezt a figyelmeztetést és ezzel felmenti a MoKee OpenSource csapatot és minden közreműködőt az esetleges jogi kötelezettségek alól.</string>
   <string name="quick_settings_panel_title">Gyorsbeállítások panel</string>
   <string name="title_static_tiles">Statikus csempék</string>
   <string name="tile_picker_title">Csempék és elrendezés</string>
   <string name="tile_picker_summary">Csempék megtekintése, kiválasztása vagy módosítása</string>
   <string name="tile_choose_title">Válasszon csempét</string>
-  <string name="title_qs_small_icons">Kisebb csempék</string>
-  <string name="summary_qs_small_icons">Kisebb csempék használata a megjeleníthető elemek számának növeléséhez</string>
   <string name="category_heads_up">Lebegő értesítés</string>
   <string name="summary_heads_up_enabled">Lebegő értesítések engedélyezve</string>
   <string name="summary_heads_up_disabled">Lebegő értesítések letiltva</string>
@@ -389,8 +385,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="quiet_hours_ringer_mute_all">Összes hívás némítása</string>
   <string name="start_time_title">Kezdete</string>
   <string name="end_time_title">Vége</string>
-  <string name="mod_version">MoKee verzió</string>
-  <string name="mod_version_default">Ismeretlen</string>
   <string name="build_date">Build dátuma</string>
   <string name="cpu_info">Processzor</string>
   <string name="mem_info">Memória</string>
@@ -435,7 +429,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="advanced_settings_title">Haladó</string>
   <string name="development_tools_title">Fejlesztői eszközök</string>
   <string name="allow_mock_sms">SMS utánzatok engedélyezése</string>
-  <string name="privacy_settings_cyanogenmod_title">Adatvédelem</string>
   <string name="privacy_guard_switch_label">Adatvédelem engedélyezése</string>
   <string name="privacy_guard_dlg_title">Engedélyezi az adatvédelmi módot?</string>
   <string name="privacy_guard_dlg_text">Amikor az adatvédelmi mód be van kapcsolva, az alkalmazás nem fér hozzá az Ön személyes adataihoz, mint a névjegyzékéhez, üzeneteihez, vagy a hívásnaplójához.</string>
@@ -702,12 +695,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="usb_mass_storage_summary">Lehetővé teszi fájlok átvitelét az eszköz és az ön számítógépe közt, mintha csak egy pendrive-ot használna</string>
   <string name="storage_rescan_media">Médiakeresés újraindítása az adathordozón</string>
   <string name="storage_rescan_media_complete">Keresés befejezve</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Biztonságos SMS beállítások kezelése</string>
-  <string name="logger_title">Névtelen összeomlás naplózás</string>
-  <string name="logger_summary">Összeomlás naplózási beállítások</string>
-  <string name="custom_runtime_warning_title">Figyelmeztetés</string>
-  <string name="custom_runtime_warning_message">A MoKee OpenSource nem támogatja az ART futtatási környezetet. Ez a beállítás csak kísérleti jelleggel van jelen a rendszerben. Instabilitást, rendszerösszeomlást, adatvesztést okozhat, vagy akár elindíthatatlanná teheti az eszközt. Látogasson el az &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; oldalra a további információkért.&lt;br/&gt;&lt;br/&gt;Kérjük, ne küldjön hibabejelentést, amennyiben az ART futtatási környezet engedélyezve van.&lt;br/&gt;&lt;br/&gt;Biztosan újra kívánja indítani az eszközt és a jelenlegi futtatót, <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>-ról <xliff:g id="new" example="libart.so">%2$s</xliff:g>-ra cserélni?</string>
   <string name="gps_download_data_wifi_only">GPS támogatási adatok letöltése csak Wi\u2011Fi hálózaton keresztül</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

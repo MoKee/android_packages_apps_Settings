@@ -207,15 +207,11 @@
   <string name="lockscreen_maximize_widgets_summary">Wys legstukke gemaksimaliseer en die slot geminimaliseer wanneer die skerm aangeskakel word</string>
   <string name="lockscreen_enable_camera_title">Kamera</string>
   <string name="safe_headset_volume_title">Veilige oorfone volume</string>
-  <string name="mokee_waiver_title">Kwytskelding</string>
-  <string name="mokee_waiver_body">Wysiging van hierdie instelling kan teen jou staat of regerings wette wees.\n\nRaak \"<b>"OK"</b>\" om hierdie waarskuwing en kwytskelding te aanvaar en MoKee OpenSource en sy bydraers te vrywaar van alle wetlike verpligtinge.</string>
   <string name="quick_settings_panel_title">Vinnige Instellingspaneel</string>
   <string name="title_static_tiles">Statiese teëls</string>
   <string name="tile_picker_title">Teël uitleg</string>
   <string name="tile_picker_summary">Bestuur die vertoonde teëls en hulle uitleg</string>
   <string name="tile_choose_title">Kies \'n teël</string>
-  <string name="title_qs_small_icons">Wys kleiner teëls</string>
-  <string name="summary_qs_small_icons">Gebruik kleiner teëls om die aantal kolomme te verhoog</string>
   <string name="category_heads_up">Loer boodskap</string>
   <string name="summary_heads_up_enabled">Uit pop kennisgewings aangeskakel</string>
   <string name="summary_heads_up_disabled">Uit pop kennisgewings is afgeskakel</string>
@@ -364,8 +360,6 @@ ten einde om bykomende kontrolepunte by te voeg . \'Verwyder\' verwyder die geko
   <string name="quiet_hours_ringer_mute_all">Geen luitoon vir alle oproepe</string>
   <string name="start_time_title">Begin</string>
   <string name="end_time_title">Eindig</string>
-  <string name="mod_version">MoKee weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Bou datum</string>
   <string name="cpu_info">SVE</string>
   <string name="mem_info">Geheue</string>
@@ -409,7 +403,6 @@ ten einde om bykomende kontrolepunte by te voeg . \'Verwyder\' verwyder die geko
   <string name="advanced_settings_title">Gevorderd</string>
   <string name="development_tools_title">Gereedskap</string>
   <string name="allow_mock_sms">Laat skyn SMS toe</string>
-  <string name="privacy_settings_cyanogenmod_title">Privaatheid</string>
   <string name="privacy_guard_switch_label">Privaatheidswag</string>
   <string name="privacy_guard_dlg_title">Aktiveer Privaatheidswag?</string>
   <string name="privacy_guard_dlg_text">Wanneer Privaatheidswag geaktiveer is, kan programme nie toegang tot persoonlike data soos kontakte, boodskappe en oproep geskiedenis kry nie.</string>
@@ -673,12 +666,6 @@ ten einde om bykomende kontrolepunte by te voeg . \'Verwyder\' verwyder die geko
   <string name="usb_mass_storage_summary">Laat jou toe om lêers oor te dra tussen jou rekenaar en SD kaart deur dit te laai dit as \'n USB massa stoorplek</string>
   <string name="storage_rescan_media">Herskandeer die skyf spasie</string>
   <string name="storage_rescan_media_complete">Skandering het voltooi</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Bestuur veilige SMS-instellings.</string>
-  <string name="logger_title">Anonieme ineenstorting verslaggewing</string>
-  <string name="logger_summary">Bestuur ineenstorting verslaggewing instellings</string>
-  <string name="custom_runtime_warning_title">Waarskuwing</string>
-  <string name="custom_runtime_warning_message">ART word nie ondersteun deur MoKee OpenSource. Hierdie instelling is ingesluit slegs vir eksperimentering en het die potensiaal om onstabiliteit, ineenstortings, data verlies te veroorsaak of te verhoed dat die toestel behoorlike sal begin. Besoek &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Bekendstelling van ART&lt;/a&gt; vir meer inligting.&lt;br/&gt;&lt;br/&gt;Ons versoek jou om nie fout verslae te verskaf as jy ART geaktiveer het as jou \'runtime\'.&lt;br/&gt;&lt;br/&gt;Is jy seker jy wil herbegin om die \'runtime\' te verander van <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DokKRAG)</string>
   <string name="battery_info_status_charging_dock_usb">(DokUSB)</string>
   <string name="menu_stats_reset">Terugstel</string>

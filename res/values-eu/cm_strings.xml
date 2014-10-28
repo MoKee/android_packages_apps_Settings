@@ -203,15 +203,11 @@
   <string name="lockscreen_maximize_widgets_summary">Widget-ak pantaila piztean hedatu</string>
   <string name="lockscreen_enable_camera_title">Kamera widget-a</string>
   <string name="safe_headset_volume_title">Bolumen segurua</string>
-  <string name="mokee_waiver_title">Uko egin</string>
-  <string name="mokee_waiver_body">Ezarpen hau aldatzea zure estatu edo herrialdearen legeen kontra egon daiteke.\n\n\u00ABOndo da\u00BB sakatuz, ohar hau aintzakotzat hartzen duzu eta MoKee OpenSource taldea eta bere kolaboratzaileak edozein erantzukizunetik at uzten dituzu, kalteengatik erreklamazioren bat egitera uko eginik.</string>
   <string name="quick_settings_panel_title">Ezarpen azkarren taula</string>
   <string name="title_static_tiles">Kontrol estatikoak</string>
   <string name="tile_picker_title">Kontrolak eta antolaketa</string>
   <string name="tile_picker_summary">Erakusten diren kontrolen posizioa ikusi, aukeratu edo aldatu</string>
   <string name="tile_choose_title">Kontrol bat aukeratu</string>
-  <string name="title_qs_small_icons">Kontrol txikiak</string>
-  <string name="summary_qs_small_icons">Kontrol txikiak erabili zutabe kopurua handitzeko</string>
   <string name="category_heads_up">Jakinarazpen gainerakorrak</string>
   <string name="summary_heads_up_enabled">Jakinarazpen gainerakorrak gaituta daude</string>
   <string name="summary_heads_up_disabled">Jakinarazpen gainerakorrak ezgaituta daude</string>
@@ -351,8 +347,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="quiet_hours_ringer_mute_all">Dei guztiak isildu</string>
   <string name="start_time_title">Hasiera</string>
   <string name="end_time_title">Amaiera</string>
-  <string name="mod_version">MoKee bertsioa</string>
-  <string name="mod_version_default">Ezezaguna</string>
   <string name="build_date">Konpilatze data</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
@@ -396,7 +390,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="advanced_settings_title">Ezarpen aurreratuak</string>
   <string name="development_tools_title">Tresnak hasi</string>
   <string name="allow_mock_sms">Itxurazko SMS-ak baimendu</string>
-  <string name="privacy_settings_cyanogenmod_title">Pribatutasuna</string>
   <string name="privacy_guard_switch_label">Pribatutasuna gaitu</string>
   <string name="privacy_guard_dlg_title">Pribatutasuna gaitu?</string>
   <string name="privacy_guard_dlg_text">Pribatutasuna gaituta dagoenean, aplikazioa ez da datu pertsonalak irakurtzeko gai izango, kontaktuak, mezuak edo dei erregistroak kasu.</string>
@@ -652,12 +645,6 @@ Denbora luzez lerro bakoitza ikutuz ezarpen osagarriak erakutsiko dira. \u00ABEd
   <string name="usb_mass_storage_summary">Fitxategiak SD txartelaren eta ordenagailuaren artean transferitzea ahalbidetzen du</string>
   <string name="storage_rescan_media">Media berritu</string>
   <string name="storage_rescan_media_complete">Berritzea burutu da</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">SMS zifraketarako ezarpenak kudeatu</string>
-  <string name="logger_title">Akatsen erregistro anonimoa</string>
-  <string name="logger_summary">Akatsen erregistroaren ezarpenak kudeatu</string>
-  <string name="custom_runtime_warning_title">Kontuz</string>
-  <string name="custom_runtime_warning_message">Ofizialki MoKee OpenSource-ek ez du ART jasaten. Ezarpen hau esperimentalki jarrita dago eta ezegonkortasuna, blokeoak, datu galera eta gailuaren pizte ez zuzena sor ditzake. Informazio gehiagorako ikusi &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;ART gaitu baduzu akats txostenik ez bidaltzea eskatzen dizugu.&lt;br/&gt;&lt;br/&gt;¿Ziur exekuzio denbora <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> -tik <xliff:g id="new" example="libart.so">%2$s</xliff:g> -ra aldatzeko berrabiarazi nahi duzula?</string>
   <string name="battery_info_status_charging_dock_ac">(ACOinarria)</string>
   <string name="battery_info_status_charging_dock_usb">(USBOinarria)</string>
   <string name="menu_stats_reset">Berrezarri</string>

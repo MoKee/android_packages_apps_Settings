@@ -208,15 +208,11 @@
   <string name="lockscreen_enable_camera_title">Fotoaparato valdiklis</string>
   <string name="safe_headset_volume_title">Saugus laisvų rankų įrangos garsumas</string>
   <string name="safe_headset_volume_restore_title">Sumažinti garsumą prijungiant ausines</string>
-  <string name="mokee_waiver_title">Atsisakymas</string>
-  <string name="mokee_waiver_body">Pakeitus šį nustatymą, galimas jūsų valstybės įstatymų pažeidimas.\n\nPaspaudus „Gerai“, jūs patvirtinate, kad sutinkate su šia sąlyga ir atsisakote atlyginti žalą ir laikyti „MoKee OpenSource“ ir jo bendradarbius nekaltais nuo visų teisinių įsipareigojimų.</string>
   <string name="quick_settings_panel_title">Greitųjų nustatymų panėlė</string>
   <string name="title_static_tiles">Statinės plytelės</string>
   <string name="tile_picker_title">Plytelės ir išdėstymas</string>
   <string name="tile_picker_summary">Žiūrėti, rinktis arba keisti rodomų plytelių išdėstymą</string>
   <string name="tile_choose_title">Pasirinkti plytelę</string>
-  <string name="title_qs_small_icons">Rodyti mažesnes plyteles</string>
-  <string name="summary_qs_small_icons">Naudoti mažesnes plyteles norint padidinti stulpelių skaičių</string>
   <string name="category_heads_up">Plaukiojantys pranešimai</string>
   <string name="summary_heads_up_enabled">Iššokantys pranešimai įjungti</string>
   <string name="summary_heads_up_disabled">Iššokantys pranešimai išjungti</string>
@@ -376,8 +372,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">Nutildyti skambutį visiems skambintojams</string>
   <string name="start_time_title">Pradžia</string>
   <string name="end_time_title">Pabaiga</string>
-  <string name="mod_version">„MoKee“ versija</string>
-  <string name="mod_version_default">Nežinoma</string>
   <string name="build_date">Surinkimo data</string>
   <string name="cpu_info">Procesorius</string>
   <string name="mem_info">Atmintis</string>
@@ -421,7 +415,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="advanced_settings_title">Išplėstinis</string>
   <string name="development_tools_title">Kūrimo įrankiai</string>
   <string name="allow_mock_sms">Leisti netikrus SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatumas</string>
   <string name="privacy_guard_switch_label">Įjungti privatumo saugą</string>
   <string name="privacy_guard_dlg_title">Įjungti privatumo saugą?</string>
   <string name="privacy_guard_dlg_text">Kai privatumo sauga yra įjungta programa negalės gauti asmens duomenų tokių kaip adresatai, pranešimai ar skambučių žurnalas.</string>
@@ -685,12 +678,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="usb_mass_storage_summary">Leidžia perduoti failus tarp jūsų kompiuterio ir SD kortelės prijungiant ją kaip „Flash“ įrenginį</string>
   <string name="storage_rescan_media">Nuskaityti mediją</string>
   <string name="storage_rescan_media_complete">Nuskaitymas baigtas</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Valdyti saugiųjų SMS pranešimų nustatymus</string>
-  <string name="logger_title">Anoniminis gedimų registravimas</string>
-  <string name="logger_summary">Valdyti gedimų registravimo nustatymus</string>
-  <string name="custom_runtime_warning_title">Įspėjimas</string>
-  <string name="custom_runtime_warning_message">„MoKee OpenSource“ oficialiai nepalaiko ART, ši nuostata yra eksperimentinė ir turi potencialą sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškilusias triktis.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">(DokasAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokasUSB)</string>
   <string name="menu_stats_reset">Atkurti</string>

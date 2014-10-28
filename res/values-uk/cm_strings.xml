@@ -209,15 +209,11 @@
   <string name="lockscreen_enable_application_widget_title">Appcast віджет</string>
   <string name="safe_headset_volume_title">Безпечна гучність гарнітури</string>
   <string name="safe_headset_volume_restore_title">Знижувати гучність навушників при їх підключенні</string>
-  <string name="mokee_waiver_title">Відмова від відповідальності</string>
-  <string name="mokee_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \'OK\' Ви погоджуєтесь із цим попередженням та звільняєте MoKee OpenSource і всіх його розробників від будь-яких юридичних зобов’язань.</string>
   <string name="quick_settings_panel_title">Панель Швидких Налаштувань</string>
   <string name="title_static_tiles">Статичні плитки</string>
   <string name="tile_picker_title">Плитки і планування</string>
   <string name="tile_picker_summary">Подивитися, вибрати або змінити макет плиток</string>
   <string name="tile_choose_title">Виберіть плитку</string>
-  <string name="title_qs_small_icons">Малі плитки</string>
-  <string name="summary_qs_small_icons">Використовувати плитки меншого розміру для збільшення кількості стовпчиків</string>
   <string name="category_heads_up">Спливаючі сповіщення</string>
   <string name="summary_heads_up_enabled">Увімкнені</string>
   <string name="summary_heads_up_disabled">Вимкнені</string>
@@ -363,8 +359,6 @@
   <string name="quiet_hours_ringer_mute_all">Вимкнути дзвінок для всіх</string>
   <string name="start_time_title">Початок</string>
   <string name="end_time_title">Кінець</string>
-  <string name="mod_version">Версія MoKee</string>
-  <string name="mod_version_default">Невідомо</string>
   <string name="build_date">Дата збірки</string>
   <string name="cpu_info">Процесор</string>
   <string name="mem_info">Пам’ять</string>
@@ -408,7 +402,6 @@
   <string name="advanced_settings_title">Додаткові</string>
   <string name="development_tools_title">Запуск утиліти розробника</string>
   <string name="allow_mock_sms">Фіктивні SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Приватність</string>
   <string name="privacy_guard_switch_label">Увімкнути Сторожа Приватності</string>
   <string name="privacy_guard_dlg_title">Увімкнути Сторожа Приватності?</string>
   <string name="privacy_guard_dlg_text">Коли Сторож Приватності увімкнений, програма не зможе отримати доступ до особистих даних, таких як контакти, повідомлення або журнали викликів.</string>
@@ -673,12 +666,6 @@
   <string name="usb_mass_storage_summary">Увімкнути режим USB-носія (UMS)</string>
   <string name="storage_rescan_media">Пересканувати пам’ять</string>
   <string name="storage_rescan_media_complete">Сканування завершено</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Налаштування шифрування SMS-повідомлень</string>
-  <string name="logger_title">Звіт про помилки</string>
-  <string name="logger_summary">Керування налаштуваннями журналу системних помилок</string>
-  <string name="custom_runtime_warning_title">Увага</string>
-  <string name="custom_runtime_warning_message">ART не підтримується MoKee OpenSource. Ця опція є експериментальною і може спричинити нестабільну роботу, помилки, втрату даних чи навіть перешкоджати завантаженні пристрою. Відвідайте сторінку «&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Вхід в ART&lt;/a&gt;» (на англійській мові) для отримання детальних відомостей.&lt;br/&gt;&lt;br/&gt;Ми просимо не надсилати баг-репорти, якщо ви вибрали ART в якості середовища виконання системи.&lt;br/&gt;&lt;br/&gt;Ви дійсно хочете перезавантажити пристрій і перемкнути середовище виконання з «<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>» на «<xliff:g id="new" example="libart.so">%2$s</xliff:g>»?</string>
   <string name="battery_info_status_charging_dock_ac">(док-станція, від мережі)</string>
   <string name="battery_info_status_charging_dock_usb">(док-станція, від USB)</string>
   <string name="menu_stats_reset">Скинути</string>

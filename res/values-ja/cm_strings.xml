@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">アプリキャストウィジェット</string>
   <string name="safe_headset_volume_title">安全なヘッドセットの音量を使用</string>
   <string name="safe_headset_volume_restore_title">接続時にヘッドセットの音量を下げる</string>
-  <string name="mokee_waiver_title">権利放棄</string>
-  <string name="mokee_waiver_body">この設定を変更することは、お住まいの州や政府の法律に触れる可能性があります。\n\n「OK」を選択すると、この警告と権利放棄を承認し、MoKee OpenSourceおよび貢献者のあらゆる法的責任と賠償責任を免除します。</string>
   <string name="quick_settings_panel_title">クイック設定パネル</string>
   <string name="title_static_tiles">固定タイル</string>
   <string name="tile_picker_title">タイルとレイアウト</string>
   <string name="tile_picker_summary">タイルのレイアウトを表示、選択、変更する</string>
   <string name="tile_choose_title">タイルを選択</string>
-  <string name="title_qs_small_icons">小さいタイルで表示</string>
-  <string name="summary_qs_small_icons">列数を増やすために小さいタイルを使用する</string>
   <string name="category_heads_up">ヘッドアップ</string>
   <string name="summary_heads_up_enabled">ポップアップ通知は有効です</string>
   <string name="summary_heads_up_disabled">ポップアップ通知は無効です</string>
@@ -387,8 +383,6 @@
   <string name="quiet_hours_ringer_mute_all">すべての着信で着信音をミュートにする</string>
   <string name="start_time_title">開始</string>
   <string name="end_time_title">終了</string>
-  <string name="mod_version">MoKeeバージョン</string>
-  <string name="mod_version_default">不明</string>
   <string name="build_date">ビルド日時</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">メモリ</string>
@@ -433,7 +427,6 @@
   <string name="advanced_settings_title">詳細設定</string>
   <string name="development_tools_title">ツールを起動</string>
   <string name="allow_mock_sms">疑似SMSを許可</string>
-  <string name="privacy_settings_cyanogenmod_title">プライバシー</string>
   <string name="privacy_guard_switch_label">プライバシーガードを有効化</string>
   <string name="privacy_guard_dlg_title">プライバシーガードを有効にしますか？</string>
   <string name="privacy_guard_dlg_text">プライバシーガードを有効にすると、アプリは連絡先、メッセージ、通話履歴のような個人データにアクセスできなくなります。</string>
@@ -700,12 +693,6 @@
   <string name="usb_mass_storage_summary">フラッシュデバイスとしてマウントすることでパソコンとSDカードの間で任意のファイルを転送しましょう</string>
   <string name="storage_rescan_media">ストレージのボリュームのためにメディアを再スキャンする</string>
   <string name="storage_rescan_media_complete">スキャンが完了しました</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">セキュアSMSの設定を管理する</string>
-  <string name="logger_title">匿名のクラッシュログ</string>
-  <string name="logger_summary">クラッシュログの設定を管理する</string>
-  <string name="custom_runtime_warning_title">警告</string>
-  <string name="custom_runtime_warning_message">ARTは非常に実験的で、不安定性、クラッシュ、データの損失、端末の正常な起動を妨げる原因になる可能性があるため、MoKee OpenSourceでは公式にサポートされていません。詳細については&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;を参照してください。&lt;br/&gt;&lt;br/&gt;ARTをランタイムとして有効にしている場合はバグレポートを提出しないようにお願いします。&lt;br/&gt;&lt;br/&gt;ランタイムを<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>から<xliff:g id="new" example="libart.so">%2$s</xliff:g>に変更するために再起動してもよろしいですか？</string>
   <string name="gps_download_data_wifi_only">GPS補助データをWi\u2011Fiネットワーク経由でのみダウンロードする</string>
   <string name="battery_info_status_charging_dock_ac">（AC接続）</string>
   <string name="battery_info_status_charging_dock_usb">（USB接続）</string>

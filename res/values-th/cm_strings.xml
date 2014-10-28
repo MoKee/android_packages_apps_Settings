@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">วิดเจ็ด Appcast</string>
   <string name="safe_headset_volume_title">ระดับเสียงปลอดภัยต่อชุดหูฟัง</string>
   <string name="safe_headset_volume_restore_title">ลดเสียงหูฟังขณะทำการเชื่อมต่อ</string>
-  <string name="mokee_waiver_title">สละสิทธิ</string>
-  <string name="mokee_waiver_body">การเปลี่ยนการตั้งค่านี้อาจขัดต่อกฎหมายของรัฐหรือประเทศของคุณ\n\nในการเลือก \'ตกลง\' ด้านล่าง,ทีมงาน MoKee OpenSource และผู้ร่วมสมทบจะไม่ขอรับผิดชอบภาระทางกฎหมายทั้งหมด</string>
   <string name="quick_settings_panel_title">แผงตั้งค่า</string>
   <string name="title_static_tiles">ไทต์คงที่</string>
   <string name="tile_picker_title">ไทต์และรูปแบบ</string>
   <string name="tile_picker_summary">ดู,เลือกหรือเปลี่ยนรูปแบบไทต์ที่แสดง</string>
   <string name="tile_choose_title">เลือกไทต์</string>
-  <string name="title_qs_small_icons">แสดงไทต์เล็กลง</string>
-  <string name="summary_qs_small_icons">ใช้ไทต์ที่เล็กลงเพื่อเพิ่มจำนวนคอลัมน์</string>
   <string name="category_heads_up">Heads up</string>
   <string name="summary_heads_up_enabled">เปิดใช้งานการแจ้งเตือนแบบป๊อปอัพ</string>
   <string name="summary_heads_up_disabled">ไม่ใช้งานการแจ้งเตือนแบบป๊อปอัพ</string>
@@ -371,8 +367,6 @@
   <string name="quiet_hours_ringer_mute_all">ปิดเสียงสายเข้าจากทุกผู้ติดต่อ</string>
   <string name="start_time_title">เริ่มต้น</string>
   <string name="end_time_title">สิ้นสุด</string>
-  <string name="mod_version">รุ่นของ MoKee</string>
-  <string name="mod_version_default">ไม่ทราบ</string>
   <string name="build_date">วันที่บิวด์</string>
   <string name="cpu_info">หน่วยประมวลผล</string>
   <string name="mem_info">หน่วยความจำชั่วคราว</string>
@@ -417,7 +411,6 @@
   <string name="advanced_settings_title">ขั้นสูง</string>
   <string name="development_tools_title">เปิดอุปกรณ์ช่วยเหลือ</string>
   <string name="allow_mock_sms">อนุญาตใช้ข้อความจำลอง</string>
-  <string name="privacy_settings_cyanogenmod_title">ความเป็นส่วนตัว</string>
   <string name="privacy_guard_switch_label">เปิดการป้องกันความเป็นส่วนตัว</string>
   <string name="privacy_guard_dlg_title">เปิดการป้องกันความเป็นส่วนตัว?</string>
   <string name="privacy_guard_dlg_text">เมื่อการป้องกันความเป็นส่วนตัวถูกเปิด,แอปจะไม่สามารถเข้าถึงข้อมูลส่วนตัว เช่น รายชื่อผู้ติดต่อ,ข้อความหรือประวัติการโทรได้</string>
@@ -684,12 +677,6 @@
   <string name="usb_mass_storage_summary">ช่วยให้คุณสามารถส่งไฟล์ระหว่างคอมพิวเตอร์และหน่วยความจำอุปกรณ์ของคุณได้โดยการทำให้มันกลายเป็นแฟลชไดร์</string>
   <string name="storage_rescan_media">ค้นหาสื่ออีกครั้งในแหล่งเก็บไฟล์</string>
   <string name="storage_rescan_media_complete">ค้นหาเรียบร้อย</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">จัดการการตั้งค่าข้อความปลอดภัย</string>
-  <string name="logger_title">บันทึกการทำงานล้มเหลวแบบไม่ระบุตัวตน</string>
-  <string name="logger_summary">จัดการการตั้งค่าบันทึกการทำงานล้มเหลว</string>
-  <string name="custom_runtime_warning_title">คำเตือน</string>
-  <string name="custom_runtime_warning_message">ART ไม่รองรับอย่างเต็มรูปแบบบน MoKee OpenSource มันจึงเป็นอะไรที่อันตรายมาก อาจทำให้อุปกรณ์ ไม่สเถียร พัง หรือข้อมูลสูญหายได้ โปรดเข้า &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;แนะนำ ART &lt;/a&gt; เพื่อศึกษาเพิ่มเติม&lt;br/&gt;&lt;br/&gt; คุณต้องการที่จะเริ่มระบบใหม่โดยเปลี่ยนรันไทม?จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> เป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">ดาวน์โหลดข้อมูล GPS ช่วยเฉพาะผ่านทางเครือข่าย Wi\u2011Fi</string>
   <string name="battery_info_status_charging_dock_ac">(แท่นAC)</string>
   <string name="battery_info_status_charging_dock_usb">(แท่นUSB)</string>

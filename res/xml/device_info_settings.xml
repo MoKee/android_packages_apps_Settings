@@ -107,14 +107,14 @@
         <!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
+                android:title="@string/mokee_version"
+                android:summary="@string/mokee_version_default" />
 
         <!-- Mod Support -->
         <Preference android:key="mod_support"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/mod_support"
-                android:summary="@string/mod_support_default" />
+                android:title="@string/mokee_support"
+                android:summary="@string/mokee_support_default" />
 
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 

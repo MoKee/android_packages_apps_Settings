@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Appcast widget</string>
   <string name="safe_headset_volume_title">Trygt headsetvolum</string>
   <string name="safe_headset_volume_restore_title">Reduser volumet på headsettet ved tilkobling</string>
-  <string name="mokee_waiver_title">Avkall</string>
-  <string name="mokee_waiver_body">Endre denne innstillingen kan være mot din stat eller regjerings lover.\n\nVed å velge \'OK\' nedenfor, erkjenner du denne advarselen og frafaller MoKee OpenSource og bidragsytere fra alle juridiske forpliktelser.</string>
   <string name="quick_settings_panel_title">Hurtinginnstillingspanel</string>
   <string name="title_static_tiles">Statiske fliser</string>
   <string name="tile_picker_title">Fliser og oppsett</string>
   <string name="tile_picker_summary">Vise, velge eller endre viste fliser</string>
   <string name="tile_choose_title">Velg en flis</string>
-  <string name="title_qs_small_icons">Vis mindre fliser</string>
-  <string name="summary_qs_small_icons">Bruke mindre fliser til å øke antall kolonner</string>
   <string name="category_heads_up">Flytende notifikasjoner</string>
   <string name="summary_heads_up_enabled">Popup varsler er aktivert</string>
   <string name="summary_heads_up_disabled">popupvarsler er deaktivert</string>
@@ -370,8 +366,6 @@
   <string name="quiet_hours_ringer_mute_all">Demp ringer fra alle oppringere</string>
   <string name="start_time_title">Start</string>
   <string name="end_time_title">Stopp</string>
-  <string name="mod_version">MoKee versjon</string>
-  <string name="mod_version_default">Ukjent</string>
   <string name="build_date">Bygge dato</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Minne</string>
@@ -416,7 +410,6 @@
   <string name="advanced_settings_title">Avansert</string>
   <string name="development_tools_title">Start verktøy</string>
   <string name="allow_mock_sms">Tillat simulert SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Personvern</string>
   <string name="privacy_guard_switch_label">Aktiver Personvernvakt</string>
   <string name="privacy_guard_dlg_title">Aktiver Personvernvakt?</string>
   <string name="privacy_guard_dlg_text">Når Personvernvakt er aktivert, vil ikke programmet kunne få tilgang til personlig informasjon som kontakter, meldinger eller ringe loggbøker.</string>
@@ -683,12 +676,6 @@
   <string name="usb_mass_storage_summary">Lar deg overføre filer mellom datamaskinen og SD-kortet ved å montere den som en flash-enhet</string>
   <string name="storage_rescan_media">Skann media for lagringsenhet</string>
   <string name="storage_rescan_media_complete">Skanning fullført</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Administrere sikre SMS-innstillinger</string>
-  <string name="logger_title">Anonym krasj logging</string>
-  <string name="logger_summary">Administrere krasj loggingsinnstillinger</string>
-  <string name="custom_runtime_warning_title">Advarsel</string>
-  <string name="custom_runtime_warning_message">ART er ikke offisielt støttet av MoKee OpenSource, siden det er høyt eksperimentelt og har potensial til å forårsake ustabilitet, krasj, tap av data eller forhindre riktig oppstart av enheten. Besøk &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for mer informasjon.&lt;br/&gt;&lt;br/&gt;Vi ber om at du ikke sender BUG-rapporter når du har ART aktivert som din runtime.&lt;br/&gt;&lt;br/&gt;Er du sikker på at du vil restarte og endre runtime fra <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> til <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Laste ned GPS assistert data bare over WiFi\u2011 nettverk</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>

@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Appcast 小部件</string>
   <string name="safe_headset_volume_title">安全耳机音量</string>
   <string name="safe_headset_volume_restore_title">插入耳机时降低音量</string>
-  <string name="mokee_waiver_title">弃权声明书</string>
-  <string name="mokee_waiver_body">改变此设置可能在您所在的国家属于非法行为。\n\n选择 \'确定\' 意味着您已读此警告并放弃一切起诉权，保证 MoKee OpenSource 及其贡献者免于受罚并且不承担任何法律责任。</string>
   <string name="quick_settings_panel_title">快速设置面板</string>
   <string name="title_static_tiles">静态按钮</string>
   <string name="tile_picker_title">按钮与布局</string>
   <string name="tile_picker_summary">查看、选择并改变显示按钮的布局</string>
   <string name="tile_choose_title">选择一个按钮</string>
-  <string name="title_qs_small_icons">显示小按钮</string>
-  <string name="summary_qs_small_icons">使用小按钮以增加列数</string>
   <string name="category_heads_up">浮动通知</string>
   <string name="summary_heads_up_enabled">弹出通知已启用</string>
   <string name="summary_heads_up_disabled">弹出通知已禁用</string>
@@ -378,8 +374,6 @@
   <string name="quiet_hours_ringer_mute_all">所有来电静音</string>
   <string name="start_time_title">起始</string>
   <string name="end_time_title">结束</string>
-  <string name="mod_version">魔趣版本</string>
-  <string name="mod_version_default">未知</string>
   <string name="build_date">编译日期</string>
   <string name="cpu_info">处理器</string>
   <string name="mem_info">内存</string>
@@ -424,7 +418,6 @@
   <string name="advanced_settings_title">高级</string>
   <string name="development_tools_title">启动开发工具</string>
   <string name="allow_mock_sms">允许模拟短信</string>
-  <string name="privacy_settings_cyanogenmod_title">隐私</string>
   <string name="privacy_guard_switch_label">启用隐私防护</string>
   <string name="privacy_guard_dlg_title">是否启用隐私防护？</string>
   <string name="privacy_guard_dlg_text">启用隐私防护后，应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。</string>
@@ -691,12 +684,6 @@
   <string name="usb_mass_storage_summary">挂载 SD 卡为闪存设备，使您可以在计算机和 SD 卡之间传输文件</string>
   <string name="storage_rescan_media">为存储卷重新扫描媒体</string>
   <string name="storage_rescan_media_complete">扫描完成</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">管理安全短信设置</string>
-  <string name="logger_title">匿名崩溃日志记录</string>
-  <string name="logger_summary">管理崩溃日志记录设置</string>
-  <string name="custom_runtime_warning_title">警告</string>
-  <string name="custom_runtime_warning_message">ART是Google开发的尚在测试阶段的安卓运行环境，该选项处于试验阶段，有可能造成不稳定、死机、数据丢失或导致设备不能正常开机。请访问 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART简介&lt;/a&gt; 了解更多信息。&lt;br/&gt;&lt;br/&gt;如果您启用 ART 作为运行环境，我们请求您不要发送错误报告，因为这一切与MoKee OpenSource无关。&lt;br/&gt;&lt;br/&gt;您要重启设备将运行环境从<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 改为 <xliff:g id="new" example="libart.so">%2$s</xliff:g>吗？</string>
   <string name="gps_download_data_wifi_only">仅通过 Wi\u2011Fi 网络下载 GPS 辅助数据</string>
   <string name="battery_info_status_charging_dock_ac">(基座 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(基座 USB)</string>

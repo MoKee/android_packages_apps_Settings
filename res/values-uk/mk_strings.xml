@@ -49,7 +49,7 @@
   <string name="ad_threshold_5s">5 секунд</string>
   <string name="ad_pocket_mode_off">Вимк</string>
   <string name="ad_pocket_mode_always">Завжди</string>
-  <string name="mod_support_default">Невідомо</string>
+  <string name="mokee_support_default">Невідомо</string>
   <string name="listview_off">Вимк</string>
   <string name="listview_alpha">Прозорість</string>
   <string name="listview_scale">Масштаб</string>

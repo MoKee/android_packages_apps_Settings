@@ -89,8 +89,8 @@
   <string name="ad_pocket_mode_off">Desactivat</string>
   <string name="ad_pocket_mode_notifications">Notificacions només</string>
   <string name="ad_pocket_mode_always">SEMPRE</string>
-  <string name="mod_support">Suport de la comunitat</string>
-  <string name="mod_support_default">Desconeguda</string>
+  <string name="mokee_support">Suport de la comunitat</string>
+  <string name="mokee_support_default">Desconeguda</string>
   <string name="listview_animation_title">Animació de ListView</string>
   <string name="listview_off">Desactivat</string>
   <string name="listview_wave_left">Ona (esquerra)</string>

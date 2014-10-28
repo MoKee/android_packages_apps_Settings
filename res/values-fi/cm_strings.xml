@@ -209,15 +209,11 @@
   <string name="lockscreen_enable_application_widget_title">Appcast widget</string>
   <string name="safe_headset_volume_title">Turvallinen kuulokkeiden äänenvoimakkuus</string>
   <string name="safe_headset_volume_restore_title">Pienennä kuulokkeiden äänenvoimakkuutta kytkettäessä</string>
-  <string name="mokee_waiver_title">Vastuuvapautus</string>
-  <string name="mokee_waiver_body">Tämän asetuksen muuttaminen saattaa rikkoa valtiosi lakeja.\n\nJos valitset \'OK\', olet lukenut tämän varoituksen ja luovut kaikista korvausvaatimuksista ja vapautat MoKee OpenSourcein ja siihen osallistuvat henkilöt kaikesta vastuusta.</string>
   <string name="quick_settings_panel_title">Pika-asetuspaneeli</string>
   <string name="title_static_tiles">Staattiset tiilet</string>
   <string name="tile_picker_title">Tiilet ja ulkoasu</string>
   <string name="tile_picker_summary">Katso, valitse tai muokkaa tiilien järjestystä</string>
   <string name="tile_choose_title">Valitse tiili</string>
-  <string name="title_qs_small_icons">Näytä pienemmät tiilet</string>
-  <string name="summary_qs_small_icons">Käytä pienempiä tiiliä lisätäksesi sarakkeiden määrää</string>
   <string name="category_heads_up">Heads up</string>
   <string name="summary_heads_up_enabled">Ponnahdusilmoitukset ovat käytössä</string>
   <string name="summary_heads_up_disabled">Ponnahdusilmoitukset ovat pois käytöstä</string>
@@ -365,8 +361,6 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="quiet_hours_ringer_mute_all">Mykistä kaikki yhteystiedot</string>
   <string name="start_time_title">Alkaa</string>
   <string name="end_time_title">Loppuu</string>
-  <string name="mod_version">MoKee-versio</string>
-  <string name="mod_version_default">Tuntematon</string>
   <string name="build_date">Luontipäivä</string>
   <string name="cpu_info">Prosessori</string>
   <string name="mem_info">Muisti</string>
@@ -410,7 +404,6 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="advanced_settings_title">Lisäasetukset</string>
   <string name="development_tools_title">Käynnistä kehitystyökalut</string>
   <string name="allow_mock_sms">Salli valetekstiviestit</string>
-  <string name="privacy_settings_cyanogenmod_title">Yksityisyys</string>
   <string name="privacy_guard_switch_label">Ota yksityisyyden suojaus käyttöön</string>
   <string name="privacy_guard_dlg_title">Ota yksityisyyden suojaus käyttöön?</string>
   <string name="privacy_guard_dlg_text">Kun yksityisyyden suojaus on käytössä, sovelluksella ei ole pääsyä henkilökohtaisiin tietoihin kuten yhteystietoihin, viesteihin tai puhelulokiin.</string>
@@ -675,12 +668,6 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="usb_mass_storage_summary">Voit siirtää tiedostoja tietokoneen ja SD-kortin välillä liittämällä sen flash-laitteena</string>
   <string name="storage_rescan_media">Skannaa tallennustilan media uudelleen</string>
   <string name="storage_rescan_media_complete">Skannaus valmis</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Hallitse turvallisten tekstiviestien asetuksia</string>
-  <string name="logger_title">Nimettömät kaatumislokit</string>
-  <string name="logger_summary">Hallitse kaatumislokien asetuksia</string>
-  <string name="custom_runtime_warning_title">Varoitus</string>
-  <string name="custom_runtime_warning_message">MoKee OpenSource ei tue ART-ympäristöä, sillä se on kokeellinen ominaisuus ja saattaa aiheuttaa epävakautta, kaatumisia, tietojen katoamista ja estää laitteen käynnistymisen. Lue lisää: &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Pyydämme, ettet lähetä virheraportteja jos valitset ART-ympäristön.&lt;br/&gt;&lt;br/&gt;Oletko varma, että haluat vaihtaa suoritusympäristön Dalvik-ympäristöstä(<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>) ART-ympäristöksi(<xliff:g id="new" example="libart.so">%2$s</xliff:g>)?</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Palauta oletukset</string>

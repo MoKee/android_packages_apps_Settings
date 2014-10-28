@@ -208,15 +208,11 @@
   <string name="lockscreen_enable_camera_title">Widżet kamery</string>
   <string name="safe_headset_volume_title">Bezpieczna głośność słuchawek</string>
   <string name="safe_headset_volume_restore_title">Zmniejsz głośność słuchawek podczas połączenia</string>
-  <string name="mokee_waiver_title">Zrzeczenie się</string>
-  <string name="mokee_waiver_body">Zmiana tych ustawień może być niezgodna z lokalnym prawem.\n\nWybierając \'OK\' przyjmujesz to ostrzeżenie do wiadomości oraz odciążasz MoKee OpenSource i jego twórców od wszystkich konsekwencji prawnych.</string>
   <string name="quick_settings_panel_title">Panel szybkich ustawień</string>
   <string name="title_static_tiles">Statyczne przełączniki</string>
   <string name="tile_picker_title">Przełączniki i ich układ</string>
   <string name="tile_picker_summary">Zobacz, wybierz lub zmień układ wyświetlanych przełączników</string>
   <string name="tile_choose_title">Wybierz przełącznik</string>
-  <string name="title_qs_small_icons">Pokaż mniejsze ikony</string>
-  <string name="summary_qs_small_icons">Użyj mniejszych ikon, aby zwiększyć liczbę kolumn</string>
   <string name="category_heads_up">Wyskakujące powiadomienia</string>
   <string name="summary_heads_up_enabled">Wyskakujące powiadomienia są włączone</string>
   <string name="summary_heads_up_disabled">Wyskakujące powiadomienia są wyłączone</string>
@@ -363,8 +359,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="quiet_hours_ringer_mute_all">Wycisz dzwonek dla wszystkich połączeń</string>
   <string name="start_time_title">Początek</string>
   <string name="end_time_title">Koniec</string>
-  <string name="mod_version">Wersja MoKee</string>
-  <string name="mod_version_default">Nieznana</string>
   <string name="build_date">Data kompilacji</string>
   <string name="cpu_info">Procesor</string>
   <string name="mem_info">Pamięć</string>
@@ -408,7 +402,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="advanced_settings_title">Zaawansowane</string>
   <string name="development_tools_title">Narzędzia uruchamiania</string>
   <string name="allow_mock_sms">Pozorowane SMS-y</string>
-  <string name="privacy_settings_cyanogenmod_title">Prywatność</string>
   <string name="privacy_guard_switch_label">Aktywuj ochronę prywatności</string>
   <string name="privacy_guard_dlg_title">Aktywować ochronę prywatności?</string>
   <string name="privacy_guard_dlg_text">Kiedy ochrona prywatności jest aktywna, aplikacja nie będzie miała dostępu do osobistych danych, takich jak kontakty, wiadomości czy historia połączeń.</string>
@@ -672,12 +665,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="usb_mass_storage_summary">Pozwala na transfer plików pomiędzy komputerem a kartą SD zamontowaną jako urządzenie pamięci masowej</string>
   <string name="storage_rescan_media">Ponownie skanuj zawartość pamięci</string>
   <string name="storage_rescan_media_complete">Skanowanie zakończone</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Zarządzaj ustawieniami bezpiecznych SMS-ów</string>
-  <string name="logger_title">Anonimowo zarejestrowana awaria</string>
-  <string name="logger_summary">Zarządzaj ustawieniami rejestrowanych awarii</string>
-  <string name="custom_runtime_warning_title">Ostrzeżenie</string>
-  <string name="custom_runtime_warning_message">ART nie jest wspierany przez MoKee OpenSource. To ustawienie jest eksperymentalne i może powodować braki stabilności, błędy w działaniu niektórych aplikacji, utratę danych lub spowodować brak możliwości włączenia urządzenia. Po więcej informacji odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Prosimy o nieprzesyłanie raportów o błędach jeśli ART jest aktywowany.&lt;br/&gt;&lt;br/&gt;Czy jesteś pewien, że chcesz zrestartować urządzenie w celu zmiany <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="battery_info_status_charging_dock_ac">Dok (AC)</string>
   <string name="battery_info_status_charging_dock_usb">Dok (USB)</string>
   <string name="menu_stats_reset">Zresetuj</string>

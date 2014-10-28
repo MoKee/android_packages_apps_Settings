@@ -218,15 +218,11 @@
   <string name="lockscreen_enable_application_widget_title">Miniaplikácia Appcast</string>
   <string name="safe_headset_volume_title">Bezpečná hlasitosť</string>
   <string name="safe_headset_volume_restore_title">Znížiť hlasitosť slúchadiel po ich pripojení</string>
-  <string name="mokee_waiver_title">Upozornenie</string>
-  <string name="mokee_waiver_body">Zmenou tohto nastavenia môže dôjsť k porušeniu právnych predpisov danej krajiny.\n\nStlačením tlačidla \'OK\' potvrdzujete, že súhlasíte s touto podmienkou.</string>
   <string name="quick_settings_panel_title">Panel rýchlych nastavení</string>
   <string name="title_static_tiles">Statické dlaždice</string>
   <string name="tile_picker_title">Dlaždice a rozloženie</string>
   <string name="tile_picker_summary">Zobraziť, vybrať alebo zmeniť dlaždice na zobrazenie</string>
   <string name="tile_choose_title">Vyberte dlaždicu</string>
-  <string name="title_qs_small_icons">Zobraziť menšie dlaždice</string>
-  <string name="summary_qs_small_icons">Použiť menšie dlaždice pre zvýšenie počtu stĺpcov</string>
   <string name="category_heads_up">Plávajúce oznámenia</string>
   <string name="summary_heads_up_enabled">Plávajúce oznámenia sú povolené</string>
   <string name="summary_heads_up_disabled">Plávajúce oznámenia sú zakázané</string>
@@ -378,8 +374,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="quiet_hours_ringer_mute_all">Stíšiť zvonenie pri všetkých volajúcich</string>
   <string name="start_time_title">Začiatok</string>
   <string name="end_time_title">Koniec</string>
-  <string name="mod_version">Verzia MoKee</string>
-  <string name="mod_version_default">Neznáme</string>
   <string name="build_date">Dátum zostavy</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Pamäť</string>
@@ -424,7 +418,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="advanced_settings_title">Pokročilé</string>
   <string name="development_tools_title">Nástroje spúšťania</string>
   <string name="allow_mock_sms">Povoliť falošné SMS</string>
-  <string name="privacy_settings_cyanogenmod_title">Súkromie</string>
   <string name="privacy_guard_switch_label">Povoliť Ochranu súkromia</string>
   <string name="privacy_guard_dlg_title">Povoliť Ochranu súkromia?</string>
   <string name="privacy_guard_dlg_text">Keď je povolená Ochrana súkromia, aplikácie nebudú môcť pristupovať k osobným údajom ako sú kontakty, správy alebo denníky hovorov.</string>
@@ -691,12 +684,6 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="usb_mass_storage_summary">Umožňuje prenášať súbory medzi počítačom a kartou SD pripojenou ako flash zariadenie</string>
   <string name="storage_rescan_media">Preskenovať médiá na úložisku</string>
   <string name="storage_rescan_media_complete">Skenovanie bolo dokončené</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Spravovať nastavenie zabezpečených SMS</string>
-  <string name="logger_title">Anonymné zaznamenávanie pádov</string>
-  <string name="logger_summary">Spravovať nastavenia zaznamenávania pádov</string>
-  <string name="custom_runtime_warning_title">Upozornenie</string>
-  <string name="custom_runtime_warning_message">ART nie je oficiálne podporovaný MoKee OpenSource. Toto nastavenie je zahrnuté iba pre experimentovanie a môže potencionálne spôsobiť nestabilitu, pády, straty dát alebo môže zabrániť správnemu spusteniu vášho zariadenia. Navštívte &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Úvod k ART&lt;/a&gt; pre viac informácií.&lt;br/&gt;&lt;br/&gt;Žiadame vás, aby ste nepodávali hlásenia o chybách, ak ste povolili ART ako Váš modul spustenia.&lt;br/&gt;&lt;br/&gt;Ste si istí, že chcete reštartovať pre zmenu modulu spustenia z <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Stiahnuť pomocné GPS dáta len cez Wi\u2011Fi siete</string>
   <string name="battery_info_status_charging_dock_ac">(DokAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokUSB)</string>

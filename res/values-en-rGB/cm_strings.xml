@@ -4,7 +4,6 @@
      <string name="battery_light_list_title">Colours</string>
      <string name="lockscreen_maximize_widgets_title">Maximise widgets</string>
      <string name="lockscreen_maximize_widgets_summary">Show widgets maximised and the unlock minimised when the screen is turned on</string>
-     <string name="mokee_waiver_body">Changing this setting may be against your state or government laws.\n\nBy selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless MoKee OpenSource and its contributors from all legal liabilities.</string>
      <string name="title_tile_airplane">Aeroplane mode</string>
      <string name="title_collapse_panel">Auto-close panel</string>
      <string name="header_category_interface">Personalisation</string>
