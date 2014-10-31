@@ -2369,6 +2369,12 @@
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.UPPay" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
         <!-- MOKEE DONATE END -->
 
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
