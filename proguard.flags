@@ -29,12 +29,8 @@
 
 -dontwarn com.wanpu.pay.**
 -keep class com.wanpu.pay.** {*;}
--dontwarn com.alipay.android.**
--keep class com.alipay.android.** {*;}
--dontwarn com.alipay.sdk.**
--keep class com.alipay.sdk.** {*;}
--dontwarn com.alipay.mobilesecuritysdk.**
--keep class com.alipay.mobilesecuritysdk.** {*;}
+-dontwarn com.alipay.**
+-keep class com.alipay.** {*;}
 -dontwarn com.ta.utdid2.**
 -keep class com.ta.utdid2.** {*;}
 -dontwarn com.ut.device.**
