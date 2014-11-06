@@ -415,7 +415,6 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="changelog_title">Relatório de alterações</string>
   <string name="changelog_error">Não foi possível carregar as mudanças</string>
   <string name="contributor_cloud_title">Colaboradores</string>
-  <string name="advanced_settings_title">Avançado</string>
   <string name="development_tools_title">Abrir ferramentas</string>
   <string name="allow_mock_sms">Permitir a simulação SMS</string>
   <string name="privacy_guard_switch_label">Ativar Proteção à Privacidade</string>

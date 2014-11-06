@@ -412,7 +412,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_title">Pakeitimų sąrašas</string>
   <string name="changelog_error">Nepavyko įkelti pakeitimų sąrašo</string>
   <string name="contributor_cloud_title">Pagalbininkai</string>
-  <string name="advanced_settings_title">Išplėstinis</string>
   <string name="development_tools_title">Kūrimo įrankiai</string>
   <string name="allow_mock_sms">Leisti netikrus SMS</string>
   <string name="privacy_guard_switch_label">Įjungti privatumo saugą</string>

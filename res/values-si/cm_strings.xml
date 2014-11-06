@@ -416,7 +416,6 @@
   <string name="changelog_title">වෙනස්කම් ලොගය</string>
   <string name="changelog_error">වෙනස්කම් ලොගය පූරණය කළනොහැක</string>
   <string name="contributor_cloud_title">ආධාරකරුවන්</string>
-  <string name="advanced_settings_title">උසස්</string>
   <string name="development_tools_title">වර්ධක මෙවලම් දියත්කරන්න</string>
   <string name="allow_mock_sms">විහිළු කෙටි පනිවිඩ අනුමත කරන්න</string>
   <string name="privacy_guard_switch_label">පෞද්ගලිකත්වයේ මුරකරු සබල කරන්න</string>

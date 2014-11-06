@@ -424,7 +424,6 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="changelog_title">Seznam změn</string>
   <string name="changelog_error">Chyba při načítání seznamu změn</string>
   <string name="contributor_cloud_title">Přispěvatelé</string>
-  <string name="advanced_settings_title">Rozšířené</string>
   <string name="development_tools_title">Spustit vývojové nástroje</string>
   <string name="allow_mock_sms">Povolit falešné SMS</string>
   <string name="privacy_guard_switch_label">Povolit Ochranu soukromí</string>

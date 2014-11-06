@@ -433,7 +433,6 @@
   <string name="changelog_title">Αρχείο αλλαγών</string>
   <string name="changelog_error">Δεν είναι δυνατή η φόρτωση του αρχείου αλλαγών</string>
   <string name="contributor_cloud_title">Συνεισφέροντες</string>
-  <string name="advanced_settings_title">Για προχωρημένους</string>
   <string name="development_tools_title">Εκκίνηση εργαλείων</string>
   <string name="allow_mock_sms">Να επιτρέπονται ψευδή SMS</string>
   <string name="privacy_guard_switch_label">Ενεργοποίηση Προστασίας Απορρήτου</string>

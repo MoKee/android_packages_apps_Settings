@@ -399,7 +399,6 @@
   <string name="changelog_title">Журнал змін</string>
   <string name="changelog_error">Не можу завантажити журнал змін</string>
   <string name="contributor_cloud_title">Учасники</string>
-  <string name="advanced_settings_title">Додаткові</string>
   <string name="development_tools_title">Запуск утиліти розробника</string>
   <string name="allow_mock_sms">Фіктивні SMS</string>
   <string name="privacy_guard_switch_label">Увімкнути Сторожа Приватності</string>

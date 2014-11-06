@@ -427,7 +427,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
   <string name="changelog_title">Changelog</string>
   <string name="changelog_error">Impossibile caricare il changelog</string>
   <string name="contributor_cloud_title">Collaboratori</string>
-  <string name="advanced_settings_title">Avanzate</string>
   <string name="development_tools_title">Esegui dev. tools</string>
   <string name="allow_mock_sms">Consenti SMS finti</string>
   <string name="privacy_guard_switch_label">Attiva Privacy Guard</string>

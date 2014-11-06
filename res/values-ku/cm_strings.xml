@@ -408,7 +408,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_title">تۆماری گۆڕانکاری</string>
   <string name="changelog_error">دابەزاندن لەکارانیە changelog</string>
   <string name="contributor_cloud_title">به‌شداره‌کان</string>
-  <string name="advanced_settings_title">پەرەسەندوو</string>
   <string name="development_tools_title">خستنەکاری ئامرازەکان</string>
   <string name="allow_mock_sms">ڕێگەدان mock SMS</string>
   <string name="privacy_guard_switch_label">چالاکردنی بەرگری تایبەتی</string>

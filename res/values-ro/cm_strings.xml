@@ -401,7 +401,6 @@ două pentru a adăuga puncte de control adiționale. „Ștergere” elimină l
   <string name="changelog_title">Istoricul modificărilor</string>
   <string name="changelog_error">Nu am putut încărca jurnalul cu schimbări</string>
   <string name="contributor_cloud_title">Contribuitori</string>
-  <string name="advanced_settings_title">Avansat</string>
   <string name="development_tools_title">Instrumente lansare</string>
   <string name="allow_mock_sms">Permite SMS false</string>
   <string name="privacy_guard_switch_label">Activare Gardian Intimitate</string>

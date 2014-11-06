@@ -399,7 +399,6 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="changelog_title">Rexistru de cambeos</string>
   <string name="changelog_error">Imposible cargar el rexistru de cambeos</string>
   <string name="contributor_cloud_title">Collaboradores</string>
-  <string name="advanced_settings_title">Opciones avanzaes</string>
   <string name="development_tools_title">Aniciar Ferramientes</string>
   <string name="allow_mock_sms">Permitir SMS simulaos</string>
   <string name="privacy_guard_switch_label">Habilitar privacidá</string>

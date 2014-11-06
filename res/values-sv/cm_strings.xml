@@ -405,7 +405,6 @@ två för att kunna infoga ytterligare kontrollpunkter. \"Ta bort\" raderar den 
   <string name="changelog_title">Ändringslogg</string>
   <string name="changelog_error">Kan inte ladda ändringslogg</string>
   <string name="contributor_cloud_title">Bidragsgivare</string>
-  <string name="advanced_settings_title">Avancerat</string>
   <string name="development_tools_title">Utvecklarverktyg</string>
   <string name="allow_mock_sms">Tillåt sken-SMS</string>
   <string name="privacy_guard_switch_label">Aktivera integritetsskydd</string>

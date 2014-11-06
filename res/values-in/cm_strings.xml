@@ -414,7 +414,6 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="changelog_title">Log perubahan</string>
   <string name="changelog_error">Tidak dapat memuat daftar perubahan</string>
   <string name="contributor_cloud_title">Kontributor</string>
-  <string name="advanced_settings_title">Tingkat lanjut</string>
   <string name="development_tools_title">Launch Tools</string>
   <string name="allow_mock_sms">Izinkan SMS tiruan</string>
   <string name="privacy_guard_switch_label">Aktifkan Privacy Guard</string>

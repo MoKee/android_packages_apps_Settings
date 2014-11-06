@@ -400,7 +400,6 @@
   <string name="changelog_title">변경 내역</string>
   <string name="changelog_error">변경 내역을 불러올 수 없습니다</string>
   <string name="contributor_cloud_title">기여자</string>
-  <string name="advanced_settings_title">고급</string>
   <string name="development_tools_title">개발자 도구 실행</string>
   <string name="allow_mock_sms">모의 SMS 허용</string>
   <string name="privacy_guard_switch_label">프라이버시 가드 활성화</string>

@@ -424,7 +424,6 @@
   <string name="changelog_title">更新履歴</string>
   <string name="changelog_error">更新履歴を読み込めませんでした</string>
   <string name="contributor_cloud_title">貢献者</string>
-  <string name="advanced_settings_title">詳細設定</string>
   <string name="development_tools_title">ツールを起動</string>
   <string name="allow_mock_sms">疑似SMSを許可</string>
   <string name="privacy_guard_switch_label">プライバシーガードを有効化</string>

@@ -398,7 +398,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="changelog_title">Changelog</string>
   <string name="changelog_error">Kan changelog niet laden</string>
   <string name="contributor_cloud_title">Bijdragers</string>
-  <string name="advanced_settings_title">Geavanceerd</string>
   <string name="development_tools_title">Tools openen</string>
   <string name="allow_mock_sms">Nep-sms toestaan</string>
   <string name="privacy_guard_switch_label">Privacybescherming</string>

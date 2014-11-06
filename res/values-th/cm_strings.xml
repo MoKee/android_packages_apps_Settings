@@ -408,7 +408,6 @@
   <string name="changelog_title">ความเปลี่ยนแปลง</string>
   <string name="changelog_error">ไม่สามารถโหลดความเปลี่ยนแปลงได้</string>
   <string name="contributor_cloud_title">ผู้ร่วมพัฒนา</string>
-  <string name="advanced_settings_title">ขั้นสูง</string>
   <string name="development_tools_title">เปิดอุปกรณ์ช่วยเหลือ</string>
   <string name="allow_mock_sms">อนุญาตใช้ข้อความจำลอง</string>
   <string name="privacy_guard_switch_label">เปิดการป้องกันความเป็นส่วนตัว</string>

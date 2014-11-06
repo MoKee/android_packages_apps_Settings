@@ -407,7 +407,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="changelog_title">יומן שינוים</string>
   <string name="changelog_error">אין אפשרות לטעון את רשימת השינויים</string>
   <string name="contributor_cloud_title">תורמים</string>
-  <string name="advanced_settings_title">מתקדם</string>
   <string name="development_tools_title">הפעל כלי פיתוח</string>
   <string name="allow_mock_sms">אפשר SMS מזויף</string>
   <string name="privacy_guard_switch_label">אפשר שומר פרטיות</string>

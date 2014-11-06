@@ -384,7 +384,6 @@
   <string name="changelog_title">سِجل التغييرات</string>
   <string name="changelog_error">غير قادر على تحميل التغيير</string>
   <string name="contributor_cloud_title">المساهمون</string>
-  <string name="advanced_settings_title">متقدم</string>
   <string name="development_tools_title">بدء تشغيل أدوات</string>
   <string name="allow_mock_sms">السماح بالرسائل القصيرة صورية</string>
   <string name="privacy_guard_switch_label">تمكن حارس الخصوصية</string>

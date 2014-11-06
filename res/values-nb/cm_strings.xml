@@ -407,7 +407,6 @@
   <string name="changelog_title">Endringslogg</string>
   <string name="changelog_error">Kunne ikke hente endringsloggen</string>
   <string name="contributor_cloud_title">Bidragsytere</string>
-  <string name="advanced_settings_title">Avansert</string>
   <string name="development_tools_title">Start verktøy</string>
   <string name="allow_mock_sms">Tillat simulert SMS</string>
   <string name="privacy_guard_switch_label">Aktiver Personvernvakt</string>
