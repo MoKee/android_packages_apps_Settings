@@ -313,7 +313,9 @@
     <string name="lockscreen_maximize_widgets_title">Maximize widgets</string>
     <string name="lockscreen_maximize_widgets_summary">Expand widgets when the screen is turned on</string>
     <string name="lockscreen_enable_camera_title">Camera widget</string>
-    <string name="lockscreen_enable_application_widget_title">Appcast widget</string>
+    <!-- "Pass" is a proper noun and should not be translated -->
+    <string name="lockscreen_enable_application_widget_title">Pass widget</string>
+    <string name="lockscreen_application_widget_summary">Baton feature: Quick launch cloudified apps running on other devices</string>
 
     <!-- Safe headset volume checkboxes -->
     <string name="safe_headset_volume_title">Safe headset volume</string>
@@ -1149,11 +1151,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="voice_wakeup_retrain_title">Retrain your voice</string>
     <string name="voice_wakeup_activity_title">Activity to launch</string>
     <string name="voice_wakeup_default_activity">Google Now</string>
-
-    <!-- Set Subscription screen: label no sim -->
-    <string name="sub_no_sim">No SIM</string>
-    <string name="multi_sim_entry_format_no_carrier" translatable="false">SIM - <xliff:g id="index">%1$d</xliff:g></string>
-    <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g> - <xliff:g id="index">%2$d</xliff:g></string>
 
     <!-- Main settings screen, Multi Sim settings title for item to go into the Multi settings -->
     <string name="multi_sim_settings_title">SIM cards</string>
