@@ -35,7 +35,6 @@
         android:dialogTitle="@string/blacklist_private_numbers_title"
         android:entries="@array/blacklist_policy_private_entries"
         android:entryValues="@array/blacklist_policy_private_values"
-        android:persistent="false"
         android:dependency="phone_blacklist_all_number" />
 
     <MultiSelectListPreference
@@ -44,7 +43,6 @@
         android:dialogTitle="@string/blacklist_unknown_numbers_title"
         android:entries="@array/blacklist_policy_unknown_entries"
         android:entryValues="@array/blacklist_policy_unknown_values"
-        android:persistent="false"
         android:dependency="phone_blacklist_all_number" />
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
