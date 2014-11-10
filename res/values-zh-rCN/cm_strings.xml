@@ -930,8 +930,7 @@
   <string name="set_sms_error">设置短信卡时出错。激活未生效。</string>
   <string name="set_voice_error">设置通话卡时出错。激活未生效。</string>
   <string name="set_priority_sub_error">设置优先激活时出错。激活未生效。</string>
-  <string name="prompt">提示</string>
-  <string name="prompt_user">提示用户</string>
+  <string name="prompt">总是询问</string>
   <string name="maximum_head_level">头部：%1$s 瓦特/公斤</string>
   <string name="maximum_body_level">身体：%1$s 瓦特/公斤</string>
   <string name="tune_away_title">TuneAway</string>
