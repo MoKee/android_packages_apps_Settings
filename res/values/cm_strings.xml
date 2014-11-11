@@ -114,6 +114,8 @@
     <string name="connection_state_disabled">Disable</string>
     <string name="connection_state_enabled">Enable</string>
     <string name="volume_override_summary">Set to %1$s/%2$s</string>
+    <string name="volume_override_summary_no_override">Do not override</string>
+    <string name="profile_volume_override_checkbox_label">Override volume</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiles</string>
@@ -180,9 +182,10 @@
 
     <!-- Ring mode -->
     <string name="ring_mode_title">Ring mode</string>
-    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_normal">Ring</string>
     <string name="ring_mode_vibrate">Vibrate</string>
     <string name="ring_mode_mute">Mute</string>
+    <string name="ring_mode_unchanged">Unchanged</string>
 
     <!-- Volume panel style -->
     <string name="volume_overlay_title">Volume panel style</string>
