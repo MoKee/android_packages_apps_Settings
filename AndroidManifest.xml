@@ -69,6 +69,7 @@
     <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
     <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
     <uses-permission android:name="android.permission.OEM_UNLOCK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
@@ -2021,6 +2022,30 @@
                 <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
             </intent-filter>
         </provider>
+
+        <!-- MOKEE ANONYMOUS STATISTICS START -->
+        <receiver android:name=".mokee.stats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mokee.stats.ReportingService">
+        </service>
+
+        <service android:label="UpdatingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mokee.stats.UpdatingService">
+        </service>
+        <!-- MOKEE ANONYMOUS STATISTICS END -->
 
     </application>
 </manifest>
