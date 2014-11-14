@@ -233,6 +233,16 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
+        <!-- MoKee Center -->
+        <dashboard-tile
+                android:id="@+id/mokee_center"
+                android:icon="@drawable/ic_mokee_center"
+                android:title="@string/mokee_center_title">
+                <intent android:action="android.intent.action.MAIN"
+                        android:targetPackage="com.android.settings"
+                        android:targetClass="com.android.settings.mokee.helper.activities.MoKeeCenter" />
+                </dashboard-tile>
+
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"
