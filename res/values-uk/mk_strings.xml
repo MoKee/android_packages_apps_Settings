@@ -17,8 +17,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="active_display_title">Активний дисплей</string>
   <string name="ad_enable_title">Увімкнути</string>
+  <string name="ad_enable_summary">Відображати сповіщення, коли отримано нове сповіщення</string>
+  <string name="ad_bypass_title">Ігнорувати</string>
+  <string name="ad_text_title">Текст сповіщень</string>
+  <string name="ad_content_title">Стиль панелі сповіщень</string>
   <string name="ad_double_tap_title">Вдарте пальцем двічі для блокування</string>
+  <string name="ad_double_tap_summary">Подвійний тап вимикає екран</string>
   <string name="ad_shake_event_settings_title">Налаштування струшування</string>
+  <string name="ad_shake_force_title">Стандартна подія</string>
   <string name="ad_shake_threshold_title">Інтенсивність</string>
   <string name="ad_shake_timeout_title">Таймаут</string>
   <string name="ad_shake_long_threshold_title">Інтервал</string>
@@ -42,6 +48,7 @@
   <string name="ad_timeout_10s">10 секунд</string>
   <string name="ad_timeout_15s">15 секунд</string>
   <string name="ad_timeout_25s">25 секунд</string>
+  <string name="ad_threshold_0s">Миттєвий</string>
   <string name="ad_threshold_1s">1 секунда</string>
   <string name="ad_threshold_2s">2 секунди</string>
   <string name="ad_threshold_3s">3 секунди</string>
@@ -50,9 +57,14 @@
   <string name="ad_pocket_mode_off">Вимк</string>
   <string name="ad_pocket_mode_always">Завжди</string>
   <string name="mokee_support_default">Невідомо</string>
+  <string name="listview_animation_title">Анімація списків</string>
   <string name="listview_off">Вимк</string>
+  <string name="listview_wave_left">Хвиля (зліва)</string>
+  <string name="listview_wave_right">Хвиля (праворуч)</string>
   <string name="listview_alpha">Прозорість</string>
   <string name="listview_scale">Масштаб</string>
+  <string name="listview_unfold">Розгорнути</string>
+  <string name="listview_fold">Згорнути</string>
   <string name="listview_rotate">Повернути</string>
   <string name="mokee_center_title">Центр MoKee</string>
   <string name="navigation_bar_height_48">48dp (стандартно)</string>

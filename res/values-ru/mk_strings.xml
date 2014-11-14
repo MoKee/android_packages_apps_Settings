@@ -25,7 +25,7 @@
   <string name="ad_content_title">Стиль панели уведомлений</string>
   <string name="ad_content_summary">Использовать стиль активных уведомлений для оповещений</string>
   <string name="ad_annoying_title">Менее частые уведомления</string>
-  <string name="ad_annoying_summary">Огриничить количество уведомлений за промежуток времени</string>
+  <string name="ad_annoying_summary">Ограничить количество уведомлений за промежуток времени</string>
   <string name="ad_double_tap_title">Двойное нажатие для отключения экрана</string>
   <string name="ad_double_tap_summary">Двойное нажатие выключит экран</string>
   <string name="ad_shake_event_settings_title">События встряски</string>
@@ -247,7 +247,7 @@
   <string name="wake_on_notification">Просыпаться при уведомлении</string>
   <string name="wake_on_notification_summary">Пробуждать устройство при получении нового уведомления</string>
   <string name="notifications_height">Количество уведомлений</string>
-  <string name="notifications_height_summary">Количество отоброжаемых уведомлений</string>
+  <string name="notifications_height_summary">Количество отображаемых уведомлений</string>
   <string name="offset_top">Смещение</string>
   <string name="offset_top_summary">Смещение от верха экрана</string>
   <string name="privacy_mode">Режим конфиденциальности</string>
@@ -264,4 +264,6 @@
   <string name="sweepwake_off">Выключено</string>
   <string name="sweepwake_all">Повернуть для пробуждения и сна</string>
   <string name="sweepwake_sleep_only">Повернуть только для сна</string>
+  <string name="translator_title">Переводчик</string>
+  <string name="translator_error">Не удается загрузить перевод</string>
 </resources>

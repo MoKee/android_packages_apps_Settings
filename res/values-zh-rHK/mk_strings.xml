@@ -61,4 +61,34 @@
   <string name="status_bar_network_traffic_style_up">上載</string>
   <string name="status_bar_network_traffic_style_down">下載</string>
   <string name="status_bar_network_traffic_style_all">上載及下載</string>
+  <string name="screen_recorder_record_audio_summary">從咪高峰錄製音訊</string>
+  <string name="power_saver_settings_title">節能模式</string>
+  <string name="power_saver_settings_summary">延長待機時間</string>
+  <string name="lockgesture_change_lock_pattern_label">變更解鎖手勢</string>
+  <string name="lockgesture_change_lock_pin_label">變更解鎖 PIN</string>
+  <string name="lockgesture_need_to_unlock">確認已儲存的手勢</string>
+  <string name="lockgesture_need_to_unlock_wrong">試多一次：</string>
+  <string name="lockgesture_recording_intro_header">繪製解鎖手勢：</string>
+  <string name="lockgesture_recording_intro_footer">按 Menu 取得說明</string>
+  <string name="lockgesture_recording_inprogress">完成後鬆開手指。</string>
+  <string name="lockgesture_pattern_entered_header">手勢已記錄。</string>
+  <string name="lockgesture_need_to_confirm">再次繪製手勢進行確認：</string>
+  <string name="lockgesture_confirm_button_text">確認</string>
+  <string name="lockgesture_restart_button_text">重新繪製</string>
+  <string name="lockgesture_retry_button_text">重試</string>
+  <string name="lockgesture_continue_button_text">繼續</string>
+  <string name="lockgesture_settings_title">解鎖手勢</string>
+  <string name="lockgesture_settings_enable_title">需要解鎖手勢</string>
+  <string name="lockgesture_settings_enable_summary">必須繪製手勢才能解鎖畫面</string>
+  <string name="lockgesture_settings_enable_visible_pattern_title">顯示手勢</string>
+  <string name="lockgesture_settings_enable_power_button_instantly_locks">電源按鈕即時鎖定</string>
+  <string name="lockgesture_settings_choose_lock_pattern">設定解鎖手勢</string>
+  <string name="lockgesture_settings_change_lock_pattern">變更解鎖手勢</string>
+  <string name="lockgesture_settings_help_how_to_record">如何繪製解鎖手勢</string>
+  <string name="lockgesture_too_many_failed_confirmation_attempts_header">嘗試錯誤次數過多！</string>
+  <string name="lockgesture_too_many_failed_confirmation_attempts_footer"><xliff:g id="number">%d</xliff:g> 秒後重試。</string>
+  <string name="lockpassword_gesture_set_toast">手勢已設定</string>
+  <string name="quicksettings_tiles_style_additional_options">附加選項</string>
+  <string name="animation_settings_title">動畫</string>
+  <string name="smartcontrol_settings_title">智能控制</string>
 </resources>

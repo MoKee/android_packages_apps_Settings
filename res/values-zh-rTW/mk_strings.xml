@@ -16,11 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="active_display_title">主動顯示</string>
-  <string name="ad_enable_title">啟用主動顯示</string>
-  <string name="ad_enable_summary">主動在螢幕上顯示新通知</string>
+  <string name="ad_enable_title">啟用</string>
+  <string name="ad_enable_summary">當收到新的通知時顯示通知</string>
   <string name="ad_bypass_title">智能模式</string>
   <string name="ad_bypass_summary">不存在通知且啟用鎖屏安全保護時，將顯示鎖屏界面</string>
-  <string name="ad_text_title">提醒文本</string>
+  <string name="ad_text_title">通知文字</string>
   <string name="ad_text_summary">在環附近顯示提醒文本</string>
   <string name="ad_content_title">自定義通知樣式</string>
   <string name="ad_content_summary">使用自定義通知樣式顯示詳細信息，而不是系統的風格。</string>
@@ -264,4 +264,6 @@
   <string name="sweepwake_off">關閉</string>
   <string name="sweepwake_all">滑屏喚醒或睡眠</string>
   <string name="sweepwake_sleep_only">僅滑屏睡眠</string>
+  <string name="translator_title">翻譯者們</string>
+  <string name="translator_error">無法載入翻譯</string>
 </resources>
