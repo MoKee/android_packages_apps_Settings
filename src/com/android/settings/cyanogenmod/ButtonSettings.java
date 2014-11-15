@@ -403,6 +403,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+
+        updateDisableNavkeysOption();
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -578,8 +580,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private void updateDisableNavkeysOption() {
         boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+        boolean pie = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_CONTROLS, 0) != 0;
 
         mDisableNavigationKeys.setChecked(enabled);
+        if (pie) {
+            mDisableNavigationKeys.setEnabled(false);
+            mDisableNavigationKeys.setSummary(getString(R.string.pa_pie_disable));
+        } else {
+            mDisableNavigationKeys.setEnabled(true);
+            mDisableNavigationKeys.setSummary(getString(R.string.disable_navkeys_summary));
+        }
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -599,21 +610,36 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
            off if enabling */
         if (backlight != null) {
             backlight.setEnabled(!enabled);
+            if (pie) {
+                backlight.setEnabled(false);
+            }
             backlight.updateSummary();
         }
 
         /* Toggle hardkey control availability depending on navbar state */
         if (homeCategory != null) {
             homeCategory.setEnabled(!enabled);
+            if (pie) {
+                homeCategory.setEnabled(false);
+            }
         }
         if (menuCategory != null) {
             menuCategory.setEnabled(!enabled);
+            if (pie) {
+                menuCategory.setEnabled(false);
+            }
         }
         if (assistCategory != null) {
             assistCategory.setEnabled(!enabled);
+            if (pie) {
+                assistCategory.setEnabled(false);
+            }
         }
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!enabled);
+            if (pie) {
+                appSwitchCategory.setEnabled(false);
+            }
         }
     }
 
