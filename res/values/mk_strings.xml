@@ -432,6 +432,7 @@
     <string name="pie_control_title">PIE</string>
     <string name="pa_pie_title">PIE</string>
     <string name="pa_pie_controls">Enable</string>
+    <string name="pa_pie_controls_summary">Enables PIE but disables navigation bar if any</string>
     <string name="pa_pie_gravity_title">Gravity</string>
     <string name="pa_pie_gravity_top">Top</string>
     <string name="pa_pie_gravity_bottom">Bottom</string>
@@ -488,6 +489,7 @@
     <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
     <string name="pa_color_pie_reset_message">Reset all colors to default?</string>
     <string name="reset">Reset</string>
+    <string name="pa_pie_disable">Disable PIE first in order to use this</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

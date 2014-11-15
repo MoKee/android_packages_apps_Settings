@@ -23,6 +23,7 @@
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="pa_pie_controls"
         android:title="@string/pa_pie_controls"
+        android:summary="@string/pa_pie_controls_summary"
         android:defaultValue="false" />
 
     <ListPreference
