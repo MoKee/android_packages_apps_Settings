@@ -486,15 +486,14 @@
     <string name="pa_pie_notifications_summary">Enabling this will let the Notification panel and QuickSettings tiles become available when swiping</string>
     <string name="pa_pie_menu_title">Always show menu button</string>
     <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
+    <string name="pa_color_pie_reset_message">Reset all colors to default?</string>
+    <string name="reset">Reset</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
     <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
 
 </resources>

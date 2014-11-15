@@ -17,7 +17,9 @@
 package com.android.settings.mokee;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.res.Resources;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -27,6 +29,9 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuInflater;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
@@ -47,6 +52,16 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
     private static final String PA_PIE_CHEVRON_LEFT = "pa_pie_chevron_left";
     private static final String PA_PIE_CHEVRON_RIGHT = "pa_pie_chevron_right";
     private static final String PA_PIE_BUTTON_COLOR = "pa_pie_button_color";
+    private static final int MENU_RESET = Menu.FIRST;
+
+    private static final int COLOR_PIE_BACKGROUND = 0xaa333333;
+    private static final int COLOR_PIE_BUTTON = 0xb2ffffff;
+    private static final int COLOR_PIE_SELECT = 0xaa33b5e5;
+    private static final int COLOR_PIE_OUTLINES = 0xffffffff;
+    private static final int COLOR_CHEVRON_LEFT = 0xff0999cc;
+    private static final int COLOR_CHEVRON_RIGHT = 0xff33b5e5;
+    private static final int COLOR_BATTERY_JUICE = 0xff33b5e5;
+    private static final int COLOR_STATUS = 0xffffffff;
 
     CheckBoxPreference mEnableColor;
     ColorPickerPreference mPieBg;
@@ -58,6 +73,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
     ColorPickerPreference mChevronLeft;
     ColorPickerPreference mChevronRight;
     ColorPickerPreference mBtnColor;
+    MenuItem mReset;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -95,6 +111,72 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
 
         mBtnColor = (ColorPickerPreference) findPreference(PA_PIE_BUTTON_COLOR);
         mBtnColor.setOnPreferenceChangeListener(this);
+
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_RESET, 0, R.string.reset)
+                .setIcon(R.drawable.ic_settings_backup)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        mReset = menu.findItem(MENU_RESET);
+        mReset.setVisible(mEnableColor.isChecked());
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_RESET:
+                resetToDefault();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
+    private void resetToDefault() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        alertDialog.setTitle(R.string.reset);
+        alertDialog.setMessage(R.string.pa_color_pie_reset_message);
+        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                resetValues();
+            }
+        });
+        alertDialog.setNegativeButton(R.string.cancel, null);
+        alertDialog.create().show();
+    }
+
+    private void resetValues() {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_BACKGROUND, COLOR_PIE_BACKGROUND);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_SELECT, COLOR_PIE_SELECT);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_OUTLINES, COLOR_PIE_OUTLINES);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_STATUS_CLOCK, COLOR_STATUS);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_STATUS, COLOR_STATUS);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_CHEVRON_LEFT, COLOR_CHEVRON_LEFT);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_CHEVRON_RIGHT, COLOR_CHEVRON_RIGHT);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_BUTTON_COLOR, COLOR_PIE_BUTTON);
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PA_PIE_JUICE, COLOR_BATTERY_JUICE);
+
+        mPieBg.setNewPreviewColor(COLOR_PIE_BACKGROUND);
+        mJuice.setNewPreviewColor(COLOR_BATTERY_JUICE);
+        mSelect.setNewPreviewColor(COLOR_PIE_SELECT);
+        mOutlines.setNewPreviewColor(COLOR_PIE_OUTLINES);
+        mStatusClock.setNewPreviewColor(COLOR_STATUS);
+        mStatus.setNewPreviewColor(COLOR_STATUS);
+        mChevronLeft.setNewPreviewColor(COLOR_CHEVRON_LEFT);
+        mChevronRight.setNewPreviewColor(COLOR_CHEVRON_RIGHT);
+        mBtnColor.setNewPreviewColor(COLOR_PIE_BUTTON);
     }
 
     @Override
@@ -103,6 +185,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_ENABLE_COLOR,
                     mEnableColor.isChecked() ? 1 : 0);
+            mReset.setVisible(mEnableColor.isChecked());
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -112,7 +195,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         if (preference == mPieBg) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_BACKGROUND, intHex);
@@ -120,7 +202,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mSelect) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_SELECT, intHex);
@@ -128,7 +209,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mOutlines) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_OUTLINES, intHex);
@@ -136,7 +216,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mStatusClock) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_STATUS_CLOCK, intHex);
@@ -144,7 +223,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mStatus) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_STATUS, intHex);
@@ -152,7 +230,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mChevronLeft) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_CHEVRON_LEFT, intHex);
@@ -160,7 +237,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mChevronRight) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_CHEVRON_RIGHT, intHex);
@@ -168,7 +244,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mBtnColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_BUTTON_COLOR, intHex);
@@ -176,7 +251,6 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
         } else if (preference == mJuice) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
-            preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PA_PIE_JUICE, intHex);
