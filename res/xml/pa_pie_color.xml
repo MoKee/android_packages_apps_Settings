@@ -23,27 +23,27 @@
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_button_color"
         android:title="@string/pa_pie_button_color"
-        android:defaultValue="0xffffffff"
+        android:defaultValue="0xb2ffffff"
         android:dependency="pa_pie_enable_color" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_background"
         android:title="@string/pa_pie_background_title"
-        android:defaultValue="0xaaff005e"
+        android:defaultValue="0xaa333333"
         android:dependency="pa_pie_enable_color"
         alphaSlider="true" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_select"
         android:title="@string/pa_pie_select_title"
-        android:defaultValue="0xaadbff00"
+        android:defaultValue="0xaa33b5e5"
         android:dependency="pa_pie_enable_color"
         alphaSlider="true" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_outlines"
         android:title="@string/pa_pie_outlines_title"
-        android:defaultValue="0x55ffffff"
+        android:defaultValue="0xffffffff"
         android:dependency="pa_pie_enable_color"
         alphaSlider="true" />
 
