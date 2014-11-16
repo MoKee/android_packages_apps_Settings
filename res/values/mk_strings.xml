@@ -450,7 +450,7 @@
     <string name="pa_pie_size_gigantic">Gigantic</string>
     <string name="pa_pie_size_monster">Monster</string>
     <string name="pa_pie_color_title">Color settings</string>
-    <string name="pa_pie_color_style_title">Color style</string>
+    <string name="pa_pie_color_style_title">Use custom color</string>
     <string name="pa_pie_background_title">Background color</string>
     <string name="pa_pie_select_title">Selection color</string>
     <string name="pa_pie_outlines_title">Outlines color</string>
@@ -483,13 +483,14 @@
     <string name="pa_pie_trigger_normal">Normal</string>
     <string name="pa_pie_trigger_big">@string/pa_pie_gap_big</string>
     <string name="pa_pie_trigger_huge">Huge</string>
-    <string name="pa_pie_notifications_title">Enable Chevron Targets</string>
-    <string name="pa_pie_notifications_summary">Enabling this will let the Notification panel and QuickSettings tiles become available when swiping</string>
+    <string name="pa_pie_notifications_title">Enable chevron targets</string>
+    <string name="pa_pie_notifications_summary">Enabling this will let the notification panel and Quick Settings tiles become available when swiping</string>
     <string name="pa_pie_menu_title">Always show menu button</string>
     <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
     <string name="pa_color_pie_reset_message">Reset all colors to default?</string>
     <string name="reset">Reset</string>
     <string name="pa_pie_disable">Disable PIE first in order to use this</string>
+    <string name="pa_pie_disable_nav">Disable nav bar first in order to use this</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

@@ -77,6 +77,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HIDE_OVERFLOW_BUTTON = "hide_overflow_button";
     // Custom Navigation Bar Height Key
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String PA_PIE_CONTROL = "pa_pie_control";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -129,6 +130,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mHideOverflowButton;
     private CheckBoxPreference mNavigationBarLeftPref;
     private ListPreference mNavigationRecentsLongPressAction;
+    private PreferenceScreen mPiePref;
 
     // Custom Navigation Bar Height Preference
     private ListPreference mNavButtonsHeight;
@@ -185,6 +187,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Force Navigation bar related options
         mDisableNavigationKeys = (CheckBoxPreference) findPreference(DISABLE_NAV_KEYS);
+
+        mPiePref = (PreferenceScreen) findPreference(PA_PIE_CONTROL);
 
         mNavigationPreferencesCat = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
 
@@ -590,6 +594,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mDisableNavigationKeys.setSummary(getString(R.string.disable_navkeys_summary));
         }
 
+        if (enabled) {
+            mPiePref.setEnabled(false);
+            mPiePref.setSummary(getString(R.string.pa_pie_disable_nav));
+        } else {
+            mPiePref.setEnabled(true);
+            mPiePref.setSummary("");
+        }
+
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         /* Disable hw-key options if they're disabled */
@@ -614,33 +626,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         /* Toggle hardkey control availability depending on navbar state */
         if (homeCategory != null) {
             homeCategory.setEnabled(!enabled);
-            if (pie) {
-                homeCategory.setEnabled(false);
-            }
         }
         if (menuCategory != null) {
             menuCategory.setEnabled(!enabled);
-            if (pie) {
-                menuCategory.setEnabled(false);
-            }
         }
         if (assistCategory != null) {
             assistCategory.setEnabled(!enabled);
-            if (pie) {
-                assistCategory.setEnabled(false);
-            }
         }
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!enabled);
-            if (pie) {
-                appSwitchCategory.setEnabled(false);
-            }
         }
         if (mHideOverflowButton != null) {
             mHideOverflowButton.setEnabled(!enabled);
-            if (pie) {
-                mHideOverflowButton.setEnabled(false);
-            }
         }
         if (mNavigationPreferencesCat != null) {
             mNavigationPreferencesCat.setEnabled(!pie);
