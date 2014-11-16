@@ -177,9 +177,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     android.provider.Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
                     || forceNavbar;
-            boolean needsNavBar = WindowManagerGlobal.getWindowManagerService().needsNavigationBar();
 
-            if (hasNavBar || needsNavBar) {
+            if (hasNavBar) {
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
                 updateExpandedDesktop(expandedDesktopValue);
