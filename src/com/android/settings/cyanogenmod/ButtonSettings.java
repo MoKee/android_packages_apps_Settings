@@ -209,10 +209,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } catch (RemoteException e) {
         }
 
-        if (!needsNavigationBar) {
-            updateDisableNavkeysOption();
-            mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-        } else {
+        updateDisableNavkeysOption();
+        if (needsNavigationBar) {
             prefScreen.removePreference(mDisableNavigationKeys);
             prefScreen.removePreference(mHideOverflowButton);
         }
@@ -610,9 +608,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
            off if enabling */
         if (backlight != null) {
             backlight.setEnabled(!enabled);
-            if (pie) {
-                backlight.setEnabled(false);
-            }
             backlight.updateSummary();
         }
 
@@ -640,6 +635,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (pie) {
                 appSwitchCategory.setEnabled(false);
             }
+        }
+        if (mHideOverflowButton != null) {
+            mHideOverflowButton.setEnabled(!enabled);
+            if (pie) {
+                mHideOverflowButton.setEnabled(false);
+            }
+        }
+        if (mNavigationPreferencesCat != null) {
+            mNavigationPreferencesCat.setEnabled(!pie);
         }
     }
 
@@ -694,16 +698,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     private void updateNavBar() {
         mDisableNavigationKeys.setEnabled(false);
-        mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
         writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
         updateDisableNavkeysOption();
+        mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 mDisableNavigationKeys.setEnabled(true);
             }
         }, 1000);
-        mHideOverflowButton.setEnabled(!mDisableNavigationKeys.isChecked());
     }
 
     private void confirmForceNavBar() {

@@ -89,9 +89,9 @@
         android:dependency="pa_pie_controls" />
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
-        android:key="pa_pie_stick"
-        android:title="@string/pa_pie_stick_title"
-        android:summary="@string/pa_pie_stick_summary"
+        android:key="pa_pie_power"
+        android:title="@string/pa_pie_power_title"
+        android:summary="@string/pa_pie_power_summary"
         android:defaultValue="false"
         android:dependency="pa_pie_controls" />
 

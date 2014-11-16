@@ -474,10 +474,10 @@
     <string name="pa_pie_gap_huge">Huge</string>
     <string name="pa_pie_center_title">Middle alignment</string>
     <string name="pa_pie_center_summary">Center PIE on the trigger edge</string>
-    <string name="pa_pie_stick_title">Prevent rotation</string>
-    <string name="pa_pie_stick_summary">Avoids orientation change when screen rotates</string>
+    <string name="pa_pie_power_title">Sleep button</string>
+    <string name="pa_pie_power_summary">Add a sleep button to PIE</string>
     <string name="pa_pie_search_title">Search button</string>
-    <string name="pa_pie_search_summary">Enable search button on pie controls</string>
+    <string name="pa_pie_search_summary">Enable search button on PIE controls</string>
     <string name="pa_pie_trigger_title">Trigger area</string>
     <string name="pa_pie_trigger_small">@string/pa_pie_size_small</string>
     <string name="pa_pie_trigger_normal">Normal</string>
