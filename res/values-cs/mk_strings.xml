@@ -89,6 +89,10 @@
   <string name="ad_pocket_mode_off">Vypnuto</string>
   <string name="ad_pocket_mode_notifications">Pouze oznámení</string>
   <string name="ad_pocket_mode_always">Vždy</string>
+  <string name="mokee_version">Verze MoKee</string>
+  <string name="mokee_version_default">Neznámý</string>
+  <string name="mokee_support">Podpora komunitou</string>
+  <string name="mokee_support_default">Neznámý</string>
   <string name="listview_animation_title">ListView animace</string>
   <string name="listview_off">Vypnuto</string>
   <string name="listview_wave_left">Vlna (vlevo)</string>
@@ -264,4 +268,6 @@
   <string name="sweepwake_sleep_only">Zamést obrazovkou pro uspání</string>
   <string name="translator_title">Překladatelé</string>
   <string name="translator_error">Nelze načíst překladatele</string>
+  <string name="privacy_settings_mokee_title">Soukromí</string>
+  <string name="mokee_waiver_body">Změnou tohoto nastavení může dojít k porušení práva dané země.\n\nPotvrzení tlačítka \'OK\' níže přijímáte toto varování a zprošťujete povinnost jakéhokoliv odškodnění v případě újmy.</string>
 </resources>
