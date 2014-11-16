@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/pie_control_title">
 
-    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+    <CheckBoxPreference
         android:key="pa_pie_controls"
         android:title="@string/pa_pie_controls"
         android:summary="@string/pa_pie_controls_summary"

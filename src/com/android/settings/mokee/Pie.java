@@ -21,6 +21,7 @@ import android.database.ContentObserver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -32,6 +33,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class Pie extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
+    private static final String PA_PIE_CONTROLS = "pa_pie_controls";
     private static final String PA_PIE_GRAVITY = "pa_pie_gravity";
     private static final String PA_PIE_MODE = "pa_pie_mode";
     private static final String PA_PIE_SIZE = "pa_pie_size";
@@ -39,6 +41,7 @@ public class Pie extends SettingsPreferenceFragment
     private static final String PA_PIE_ANGLE = "pa_pie_angle";
     private static final String PA_PIE_GAP = "pa_pie_gap";
 
+    private CheckBoxPreference mPie;
     private ListPreference mPieMode;
     private ListPreference mPieSize;
     private ListPreference mPieGravity;
@@ -59,6 +62,11 @@ public class Pie extends SettingsPreferenceFragment
 
         Context context = getActivity();
         mResolver = context.getContentResolver();
+
+        mPie = (CheckBoxPreference) prefSet.findPreference(PA_PIE_CONTROLS);
+        int pie = Settings.System.getInt(mResolver,
+                Settings.System.PA_PIE_CONTROLS, 0);
+        mPie.setChecked(pie != 0);
 
         mPieGravity = (ListPreference) prefSet.findPreference(PA_PIE_GRAVITY);
         int pieGravity = Settings.System.getInt(mResolver,
@@ -105,7 +113,23 @@ public class Pie extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mPie) {
+            updatePieStatus(mPie.isChecked());
+        }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void updatePieStatus(boolean status) {
+         Settings.System.putInt(getActivity().getContentResolver(),
+                 Settings.System.PA_PIE_CONTROLS, status ? 1 : 0);
+         int state = Settings.System.getInt(getActivity().getContentResolver(),
+                 Settings.System.EXPANDED_DESKTOP_STYLE, 0);
+         if (state == 1 && status) {
+             Settings.System.putInt(getActivity().getContentResolver(),
+                     Settings.System.EXPANDED_DESKTOP_STATE, 0);
+             Settings.System.putInt(getActivity().getContentResolver(),
+                     Settings.System.EXPANDED_DESKTOP_STYLE, 2);
+         }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
