@@ -21,7 +21,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
         android-support-v4 \
         android-support-v13 \
         jsr305 \
-        libGoogleAnalyticsV2 \
+        libGooglePlayServices \
         libMoKeePushService \
         libDashClockAPI \
         volley \

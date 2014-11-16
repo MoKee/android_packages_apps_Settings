@@ -41,8 +41,9 @@ import android.os.IBinder;
 import android.util.Log;
 
 import com.android.settings.R;
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 
 public class ReportingService extends Service {
     protected static final String TAG = ReportingService.class.getSimpleName();
@@ -89,8 +90,9 @@ public class ReportingService extends Service {
 
             // report to google analytics
             GoogleAnalytics ga = GoogleAnalytics.getInstance(context);
-            Tracker tracker = ga.getTracker(getString(R.string.ga_trackingId));
-            tracker.sendEvent(deviceName, deviceVersion, deviceCountry, null);
+            Tracker tracker = ga.newTracker(getString(R.string.ga_trackingId));
+            tracker.send(new HitBuilders.EventBuilder().setCategory(deviceName)
+                    .setAction(deviceVersion).setLabel(deviceCountry).build());
 
             // this really should be set at build time...
             // format of version should be:
@@ -104,9 +106,9 @@ public class ReportingService extends Service {
             }
 
             if (deviceVersionNoDevice != null) {
-                tracker.sendEvent("checkin", deviceName, deviceVersionNoDevice, null);
+                tracker.send(new HitBuilders.EventBuilder().setCategory("checkin")
+                        .setAction(deviceName).setLabel(deviceVersionNoDevice).build());
             }
-            tracker.close();
 
             // report to the mkstats service
             HttpClient httpClient = new DefaultHttpClient();

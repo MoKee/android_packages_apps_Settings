@@ -42,6 +42,9 @@
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.mokeehelper.**
 
+-dontwarn com.google.android.gms.**
+-keep class com.google.android.gms.** { *;}
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
