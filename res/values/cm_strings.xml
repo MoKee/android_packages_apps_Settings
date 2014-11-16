@@ -318,6 +318,7 @@
     <string name="lockscreen_enable_camera_title">Camera widget</string>
     <!-- "Pass" is a proper noun and should not be translated -->
     <string name="lockscreen_enable_application_widget_title">Pass widget</string>
+    <!-- "Baton" is a proper noun and should not be translated -->
     <string name="lockscreen_application_widget_summary">Baton feature: Quick launch cloudified apps running on other devices</string>
 
     <!-- Safe headset volume checkboxes -->
@@ -403,7 +404,7 @@
     <string name="cm_sound_mode_sound">Sound</string>
     <string name="cm_sound_mode_soundVibrate">Sound &amp; Vibrate</string>
     <string name="pref_location_mode_title">Location modes</string>
-    <string name="pref_location_mode_summary">Uncheck all for default(old) 2&amp;2 mode</string>
+    <string name="pref_location_mode_summary">Uncheck all modes for default behavior</string>
     <string name="cm_location_mode_off">Location off</string>
     <string name="cm_location_mode_battery_saving">Battery saving</string>
     <string name="cm_location_mode_device_only">Device only</string>
