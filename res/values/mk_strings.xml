@@ -420,7 +420,7 @@
     <!-- Dynamic system bars -->
     <string name="dynamic_system_bars_title">Dynamic system bars</string>
     <string name="dynamic_status_bar_title">Dynamic status bar</string>
-    <string name="dynamic_status_bar_summary">Automatically update the background of the status bar</string>
+    <string name="dynamic_status_bar_summary">Automatically update the background of the status bar (Turn screen off and on again if does not apply)</string>
     <string name="dynamic_navigation_bar_title">Dynamic navigation bar</string>
     <string name="dynamic_navigation_bar_summary">Automatically update the background of the navigation bar</string>
     <string name="dynamic_system_bars_gradient_title">System bar gradient</string>
