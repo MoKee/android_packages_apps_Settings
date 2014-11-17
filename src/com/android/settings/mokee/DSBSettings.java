@@ -19,6 +19,7 @@ package com.android.settings.mokee;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -77,7 +78,7 @@ public class DSBSettings extends SettingsPreferenceFragment {
         final boolean isStatusBarDynamic = Settings.System.getInt(resolver,
                 Settings.System.DYNAMIC_STATUS_BAR_STATE, 0) == 1;
 
-        final boolean hasNavigationBar;
+        boolean hasNavigationBar;
         try {
             IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
             hasNavigationBar = wm.needsNavigationBar();
