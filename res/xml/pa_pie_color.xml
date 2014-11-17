@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
@@ -36,7 +37,7 @@
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_select"
         android:title="@string/pa_pie_select_title"
-        android:defaultValue="0xdfffffff"
+        android:defaultValue="0xaaffffff"
         android:dependency="pa_pie_enable_color"
         alphaSlider="true" />
 
@@ -62,13 +63,13 @@
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_chevron_left"
         android:title="@string/pa_pie_chevron_left_title"
-        android:defaultValue="0x00ffffff"
+        android:defaultValue="0xdfa9a9a9"
         android:dependency="pa_pie_enable_color" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="pa_pie_chevron_right"
         android:title="@string/pa_pie_chevron_right_title"
-        android:defaultValue="0x00ffffff"
+        android:defaultValue="0xdfe3e3e3"
         android:dependency="pa_pie_enable_color" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
