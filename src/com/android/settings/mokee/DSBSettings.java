@@ -24,6 +24,9 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
+import android.view.IWindowManager;
+import android.view.WindowManagerGlobal;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -74,15 +77,14 @@ public class DSBSettings extends SettingsPreferenceFragment {
         final boolean isStatusBarDynamic = Settings.System.getInt(resolver,
                 Settings.System.DYNAMIC_STATUS_BAR_STATE, 0) == 1;
 
-        final boolean hasNavBarByDefault = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
         final boolean hasNavigationBar;
-        if (hasNavBarByDefault) {
-            hasNavigationBar = true;
-        } else {
-            hasNavigationBar = Settings.System.getInt(resolver,
-                    Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
+        try {
+            IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
+            hasNavigationBar = wm.needsNavigationBar();
+        } catch (RemoteException e) {
+            hasNavigationBar = false;
         }
+
         final boolean isNavigationBarDynamic = hasNavigationBar && Settings.System.getInt(
                 resolver, Settings.System.DYNAMIC_NAVIGATION_BAR_STATE, 0) == 1;
 
