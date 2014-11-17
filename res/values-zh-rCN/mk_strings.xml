@@ -286,7 +286,7 @@
   <string name="pa_pie_controls_summary">启用PIE，如果有导航栏就会禁用</string>
   <string name="pa_pie_gravity_title">停靠位置</string>
   <string name="pa_pie_gravity_top">顶部</string>
-  <string name="pa_pie_gravity_bottom">顶部</string>
+  <string name="pa_pie_gravity_bottom">底部</string>
   <string name="pa_pie_gravity_right">右侧</string>
   <string name="pa_pie_gravity_left">左侧</string>
   <string name="pa_pie_mode_title">动画</string>
@@ -323,7 +323,7 @@
   <string name="pa_pie_gap_big">大(默认)</string>
   <string name="pa_pie_gap_huge">极大</string>
   <string name="pa_pie_center_title">中间对齐</string>
-  <string name="pa_pie_center_summary">把PIE对齐触发边缘中间</string>
+  <string name="pa_pie_center_summary">把PIE对齐于触发边缘中间</string>
   <string name="pa_pie_power_title">电源键</string>
   <string name="pa_pie_power_summary">显示电源键按钮</string>
   <string name="pa_pie_search_title">搜索键</string>
