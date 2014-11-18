@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="mokee_version">魔趣版本</string>
+  <string name="mokee_version_default">未知</string>
+  <string name="mokee_support">社区支持</string>
+  <string name="mokee_support_default">未知</string>
   <string name="animation_settings_title">动画</string>
   <string name="listview_animation_title">列表动画</string>
   <string name="listview_off">关闭</string>

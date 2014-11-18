@@ -15,6 +15,13 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ 
+    <!-- About version and support -->
+    <string name="mokee_version">MoKee version</string>
+    <string name="mokee_version_default">Unknown</string>
+    <string name="mokee_support">Community support</string>
+    <string name="mokee_support_default">Unknown</string>
+
     <!-- Animation Settings -->
     <string name="animation_settings_title">animation</string>
 
