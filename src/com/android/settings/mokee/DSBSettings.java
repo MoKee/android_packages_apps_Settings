@@ -81,7 +81,7 @@ public class DSBSettings extends SettingsPreferenceFragment {
         boolean hasNavigationBar;
         try {
             IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-            hasNavigationBar = wm.needsNavigationBar();
+            hasNavigationBar = wm.hasNavigationBar();
         } catch (RemoteException e) {
             hasNavigationBar = false;
         }
