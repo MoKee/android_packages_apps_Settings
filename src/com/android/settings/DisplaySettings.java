@@ -58,7 +58,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.cyanogenmod.hardware.TapToWake;
+import org.mokee.hardware.TapToWake;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener, Indexable {

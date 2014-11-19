@@ -68,7 +68,7 @@ LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
 include frameworks/opt/setupwizard/navigationbar/common.mk
 
-LOCAL_JAVA_LIBRARIES += org.cyanogenmod.hardware
+LOCAL_JAVA_LIBRARIES += org.mokee.hardware
 
 include $(BUILD_PACKAGE)
 

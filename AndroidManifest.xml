@@ -103,7 +103,7 @@
             android:allowBackup="false">
 
         <!-- Settings -->
-        <uses-library android:name="org.cyanogenmod.hardware"
+        <uses-library android:name="org.mokee.hardware"
                 android:required="false" />
 
         <activity android:name="Settings"
