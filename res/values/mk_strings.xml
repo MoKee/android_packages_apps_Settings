@@ -50,4 +50,8 @@
     <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
 
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">All numbers</string>
+    <string name="blacklist_all_numbers_summary">Block all calls</string>
+
 </resources>

@@ -22,12 +22,20 @@
         android:title="@string/blacklist_notify"
         android:defaultValue="true" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="phone_blacklist_all_number"
+        android:title="@string/blacklist_all_numbers_title"
+        android:summary="@string/blacklist_all_numbers_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
+
     <MultiSelectListPreference
         android:key="button_blacklist_private_numbers"
         android:title="@string/blacklist_private_numbers_title"
         android:dialogTitle="@string/blacklist_private_numbers_title"
         android:entries="@array/blacklist_policy_private_entries"
         android:entryValues="@array/blacklist_policy_private_values"
+	android:dependency="phone_blacklist_all_number"
         android:persistent="false" />
 
     <MultiSelectListPreference
@@ -36,11 +44,13 @@
         android:dialogTitle="@string/blacklist_unknown_numbers_title"
         android:entries="@array/blacklist_policy_unknown_entries"
         android:entryValues="@array/blacklist_policy_unknown_values"
+	android:dependency="phone_blacklist_all_number"
         android:persistent="false" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="phone_blacklist_regex_enabled"
         android:title="@string/blacklist_regex_title"
-        android:summary="@string/blacklist_regex_summary" />
+        android:summary="@string/blacklist_regex_summary"
+        android:dependency="phone_blacklist_all_number" />
 
 </PreferenceScreen>
