@@ -19,6 +19,7 @@
 -keep class io.card.** { *;}
 -dontwarn com.paypal.**
 -keep class com.paypal.** { *;}
+
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *;}
 
@@ -40,10 +41,13 @@
 -keep class com.UCMobile.** {*;}
 
 -keep class com.mokee.helper.**
--keep class com.android.settings.mokee.mokeehelper.**
+-keep class com.android.settings.mokee.**
 
 -dontwarn com.google.android.gms.**
 -keep class com.google.android.gms.** { *;}
+
+-keep class com.android.settings.cyanogenmod.*Settings
+-keep class com.android.settings.privacyguard.*
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
