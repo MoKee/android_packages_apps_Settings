@@ -71,6 +71,21 @@
 
     </dashboard-category>
 
+    <!-- INTERFACE -->
+    <dashboard-category
+            android:id="@+id/interface_section"
+            android:title="@string/header_category_interface" >
+
+        <!-- Smart Control -->
+        <dashboard-tile
+                android:id="@+id/smartcontrol_settings"
+                android:title="@string/smartcontrol_settings_title"
+                android:fragment="com.android.settings.mokee.SmartControl"
+                android:icon="@drawable/ic_settings_smartcontrol"
+                />
+
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
