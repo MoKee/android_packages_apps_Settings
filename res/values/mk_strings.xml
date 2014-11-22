@@ -54,4 +54,7 @@
     <string name="blacklist_all_numbers_title">All numbers</string>
     <string name="blacklist_all_numbers_summary">Block all calls</string>
 
+    <!-- Smart Control -->
+    <string name="smartcontrol_settings_title">Smart Control</string>
+
 </resources>

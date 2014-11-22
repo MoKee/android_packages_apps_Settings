@@ -92,6 +92,13 @@
                 android:icon="@drawable/ic_settings_home"
                 />
 
+        <!-- Smart Control -->
+        <dashboard-tile
+                android:id="@+id/smartcontrol_settings"
+                android:title="@string/smartcontrol_settings_title"
+                android:fragment="com.android.settings.mokee.SmartControl"
+                android:icon="@drawable/ic_settings_smartcontrol"
+                />
 
     </dashboard-category>
 

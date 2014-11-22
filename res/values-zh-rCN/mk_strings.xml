@@ -43,4 +43,5 @@
   <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
   <string name="blacklist_all_numbers_title">所有号码</string>
   <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
+  <string name="smartcontrol_settings_title">智能控制</string>
 </resources>
