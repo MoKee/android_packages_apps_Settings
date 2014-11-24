@@ -92,7 +92,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                                 }
                                 break;
                             case 1:
-                                if (MoKeeUtils.isChineseLanguage(true)) {
+                                if (MoKeeUtils.isSupportLanguage(true)) {
                                     promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                                 }
                                 break;
