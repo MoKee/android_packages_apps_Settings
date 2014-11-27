@@ -54,11 +54,11 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
-LOCAL_AAPT_FLAGS += --extra-packages com.mokee.helper --auto-add-overlay
+LOCAL_AAPT_FLAGS += --extra-packages com.koushikdutta.superuser:com.koushikdutta.widgets:com.mokee.helper --auto-add-overlay
 
-LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
+LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/koush/Superuser/Superuser/src) $(call all-java-files-under,../../../external/koush/Widgets/Widgets/src) $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-pay $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res $(LOCAL_PATH)/../../../external/koush/Widgets/Widgets/res $(LOCAL_PATH)/../../../external/koush/Superuser/Superuser/res $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-pay $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
 
 ifeq ($(ALTERNATE_IS_INTERNAL), true)
   LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-compat $(LOCAL_RESOURCE_DIR)
@@ -66,10 +66,9 @@ endif
 
 LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
-include frameworks/opt/setupwizard/navigationbar/common.mk
-
 LOCAL_JAVA_LIBRARIES += org.mokee.hardware
 
+include frameworks/opt/setupwizard/navigationbar/common.mk
 include $(BUILD_PACKAGE)
 
 # Use the following include to make our test apk.
