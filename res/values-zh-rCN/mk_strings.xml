@@ -48,4 +48,5 @@
   <string name="navigation_bar_height_48">48dp (默认)</string>
   <string name="navigation_bar_height_0">隐藏</string>
   <string name="navigation_bar_category">导航栏</string>
+  <string name="status_bar_am_pm_title">上午/下午样式</string>
 </resources>

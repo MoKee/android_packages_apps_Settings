@@ -72,4 +72,7 @@
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
 
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+
 </resources>
