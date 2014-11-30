@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2013-2015 The MoKee OpenSource project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,6 +54,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HOME_DOUBLE_TAP = "hardware_keys_home_double_tap";
     private static final String KEY_MENU_PRESS = "hardware_keys_menu_press";
     private static final String KEY_MENU_LONG_PRESS = "hardware_keys_menu_long_press";
+    private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     // Custom Navigation Bar Height
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
@@ -93,6 +95,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mHomeDoubleTapAction;
     private ListPreference mMenuPressAction;
     private ListPreference mMenuLongPressAction;
+    private ListPreference mVolumeKeyCursorControl;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -125,6 +128,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         final PreferenceCategory menuCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
+        final PreferenceCategory volumeCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
 
         mHandler = new Handler();
 
@@ -203,6 +208,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(menuCategory);
         }
 
+        if (Utils.hasVolumeRocker(getActivity())) {
+            int cursorControlAction = Settings.System.getInt(resolver,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+            mVolumeKeyCursorControl = initActionList(KEY_VOLUME_KEY_CURSOR_CONTROL,
+                    cursorControlAction);
+        } else {
+            prefScreen.removePreference(volumeCategory);
+        }
+
         try {
             // Only show the navigation bar category on devices that has a navigation bar
             // unless we are forcing it via development settings
@@ -258,6 +272,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mNavButtonsHeight) {
             handleActionListChange(mNavButtonsHeight, newValue,
                     Settings.System.NAVIGATION_BAR_HEIGHT);
+            return true;
+        } else if (preference == mVolumeKeyCursorControl) {
+            handleActionListChange(mVolumeKeyCursorControl, newValue,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
         }
         return false;
