@@ -33,6 +33,7 @@ import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -132,12 +133,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setTitle(R.string.custom_carrier_label_title);
             alert.setMessage(R.string.custom_carrier_label_explain);
-
+            LinearLayout parent = new LinearLayout(getActivity());
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            parent.setLayoutParams(params);
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
             input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
             input.setSelection(input.getText().length());
-            alert.setView(input);
+            params.setMargins(60, 0, 60, 0);
+            input.setLayoutParams(params);
+            parent.addView(input);
+            alert.setView(parent);
             alert.setPositiveButton(getString(android.R.string.ok),
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
