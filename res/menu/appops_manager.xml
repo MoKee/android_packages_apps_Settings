@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2014 The Android Open Source Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,12 +14,13 @@
      limitations under the License.
 -->
 
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/floating_action_button_touch_tint">
-    <item android:id="@android:id/mask">
-        <shape android:shape="oval">
-            <solid android:color="@android:color/white" />
-        </shape>
-    </item>
-    <item android:drawable="@drawable/fab_accent"/>
-</ripple>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/show_user_apps"
+          android:title="@string/app_ops_show_user_apps"
+          android:checkable="true" />
+    <item android:id="@+id/show_system_apps"
+          android:title="@string/app_ops_show_system_apps"
+          android:checkable="true" />
+    <item android:id="@+id/reset_counters"
+          android:title="@string/app_ops_reset_counters" />
+</menu>
