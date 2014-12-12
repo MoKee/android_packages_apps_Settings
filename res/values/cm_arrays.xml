@@ -355,6 +355,13 @@
         <item>@string/app_ops_categories_bootup</item>
     </string-array>
 
+    <!-- App ops permissions -->
+    <string-array name="app_ops_permissions">
+        <item>@string/app_ops_permissions_allowed</item>
+        <item>@string/app_ops_permissions_ignored</item>
+        <item>@string/app_ops_permissions_always_ask</item>
+    </string-array>
+
     <!--  Values for profile Wi-Fi triggers -->
     <string-array name="profile_trigger_wifi_options" translatable="false">
         <item>@string/profile_trigger_connect</item>
@@ -394,5 +401,17 @@
     <!-- Gamma calibration descriptors, deliberately empty as string values populated via
          per-device overlay. Required to build on non-hardware tunable devices -->
     <string-array name="gamma_descriptors" translatable="false">
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 </resources>

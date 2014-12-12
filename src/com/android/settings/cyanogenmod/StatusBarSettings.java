@@ -38,17 +38,20 @@ import android.widget.LinearLayout;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class StatusBarSettings extends SettingsPreferenceFragment
+        implements OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_NETWORK_TRAFFIC_STYLE = "status_bar_network_traffic_style";
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarNetworkTraffic;
     private CheckBoxPreference mStatusBarCarrier;
     private PreferenceScreen mCustomCarrierLabel;
+    private ListPreference mStatusBarBattery;
 
     private String mCustomCarrierLabelText;
 
@@ -88,6 +91,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
             updateCustomLabelTextSummary();
         }
 
+        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        int batteryStyle = Settings.System.getInt(
+                resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
+
     }
 
     private void updateCustomLabelTextSummary() {
@@ -104,7 +114,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (mStatusBarAmPm != null && preference == mStatusBarAmPm) {
+        if (preference == mStatusBarBattery) {
+            int batteryStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryStyle);
+            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
+            return true;
+        } else if (mStatusBarAmPm != null && preference == mStatusBarAmPm) {
             int statusBarAmPm = Integer.valueOf((String) newValue);
             int index = mStatusBarAmPm.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_AM_PM, statusBarAmPm);

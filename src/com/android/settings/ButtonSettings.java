@@ -25,12 +25,12 @@ import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.Handler;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 
 import android.util.Log;
@@ -98,10 +98,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mMenuPressAction;
     private ListPreference mMenuLongPressAction;
     private ListPreference mVolumeKeyCursorControl;
-    private CheckBoxPreference mDisableNavigationKeys;
-    private CheckBoxPreference mPowerEndCall;
-    private CheckBoxPreference mHomeAnswerCall;
-    private CheckBoxPreference mVolumeKeyWakeControl;
+    private SwitchPreference mDisableNavigationKeys;
+    private SwitchPreference mPowerEndCall;
+    private SwitchPreference mHomeAnswerCall;
+    private SwitchPreference mVolumeKeyWakeControl;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -139,15 +139,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
 
         // Power button ends calls.
-        mPowerEndCall = (CheckBoxPreference) findPreference(KEY_POWER_END_CALL);
+        mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
 
         // Home button answers calls.
-        mHomeAnswerCall = (CheckBoxPreference) findPreference(KEY_HOME_ANSWER_CALL);
+        mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
         mHandler = new Handler();
 
         // Force Navigation bar related options
-        mDisableNavigationKeys = (CheckBoxPreference) findPreference(DISABLE_NAV_KEYS);
+        mDisableNavigationKeys = (SwitchPreference) findPreference(DISABLE_NAV_KEYS);
 
         mNavigationPreferencesCat = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
 
@@ -246,7 +246,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     cursorControlAction);
             int wakeControlAction = Settings.System.getInt(resolver,
                     Settings.System.VOLUME_WAKE_SCREEN, 0);
-            mVolumeKeyWakeControl = initCheckBox(KEY_VOLUME_WAKE_DEVICE, (wakeControlAction == 1));
+            mVolumeKeyWakeControl = initSwitch(KEY_VOLUME_WAKE_DEVICE, (wakeControlAction == 1));
         } else {
             prefScreen.removePreference(volumeCategory);
         }
@@ -295,17 +295,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     }
 
-    private CheckBoxPreference initCheckBox(String key, boolean checked) {
-        CheckBoxPreference checkBoxPreference = (CheckBoxPreference) getPreferenceManager()
+    private SwitchPreference initSwitch(String key, boolean checked) {
+        SwitchPreference switchPreference = (SwitchPreference) getPreferenceManager()
                 .findPreference(key);
-        if (checkBoxPreference != null) {
-            checkBoxPreference.setChecked(checked);
-            checkBoxPreference.setOnPreferenceChangeListener(this);
+        if (switchPreference != null) {
+            switchPreference.setChecked(checked);
+            switchPreference.setOnPreferenceChangeListener(this);
         }
-        return checkBoxPreference;
+        return switchPreference;
     }
 
-    private void handleCheckBoxChange(CheckBoxPreference pref, Object newValue, String setting) {
+    private void handleSwitchChange(SwitchPreference pref, Object newValue, String setting) {
         Boolean value = (Boolean) newValue;
         int intValue = (value) ? 1 : 0;
         Settings.System.putInt(getContentResolver(), setting, intValue);
@@ -353,7 +353,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
         } else if (preference == mVolumeKeyWakeControl) {
-            handleCheckBoxChange(mVolumeKeyWakeControl, newValue,
+            handleSwitchChange(mVolumeKeyWakeControl, newValue,
                     Settings.System.VOLUME_WAKE_SCREEN);
             return true;
         }

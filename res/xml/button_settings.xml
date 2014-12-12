@@ -32,7 +32,7 @@
 
     </PreferenceCategory>
 
-    <CheckBoxPreference
+    <SwitchPreference
         android:key="disable_nav_keys"
         android:title="@string/disable_navkeys_title"
         android:summary="@string/disable_navkeys_summary"
@@ -42,7 +42,7 @@
         android:key="power_key"
         android:title="@string/hardware_keys_power_key_title" >
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="power_end_call"
             android:title="@string/power_end_call_title"
             android:summary="@string/power_end_call_summary"
@@ -60,7 +60,7 @@
             android:summary="@string/home_wake_summary"
             android:defaultValue="true" />
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="home_answer_call"
             android:title="@string/home_answer_call_title"
             android:summary="@string/home_answer_call_summary"
@@ -118,7 +118,7 @@
             android:entryValues="@array/volbtn_cursor_control_values"
             android:persistent="false" />
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="volume_key_wake_device"
             android:title="@string/volbtn_wake_device_title"
             android:summary="@string/volbtn_wake_device_summary"
