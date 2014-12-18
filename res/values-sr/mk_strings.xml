@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2014 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+
+      ## !!!!!!! Translate job still in progress !!!!!!! ##
+
+      ################### sHAKaJaada ######################  
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Active Display -->
+    <string name="active_display_title">Активни екран</string>
+    <string name="ad_enable_title">Омогући</string>
+    <string name="ad_enable_summary">Приказ обавештења када је доступна нова информација</string>
+    <string name="ad_bypass_title">Пролазни мод</string>
+    <string name="ad_bypass_summary">Џепни мод ће закључати екран ако је то омогућено када нема обавештења</string>
+    <string name="ad_text_title">Текстуална обавештења</string>
+    <string name="ad_text_summary">Приказ текста обавештења у кругу</string>
+    <string name="ad_content_title">Прилагођени приказ</string>
+    <string name="ad_content_summary">Користи активни екран за детаље обавештења</string>
+    <string name="ad_annoying_title">Смањи учесталост обавештења</string>
+    <string name="ad_annoying_summary">Ограничи обавештења на једно за период</string>
+    <string name="ad_double_tap_title">Двоструки додир за спавање</string>
+    <string name="ad_double_tap_summary">Искључи екран двоструким додиром</string>
+    <string name="ad_shake_event_settings_title">Подешавање дрмањем</string>
+    <string name="ad_shake_event_title">Протрести за приказ</string>
+    <string name="ad_shake_event_summary">Протрести за приказ обавештења</string>
+    <string name="ad_shake_force_title">Подразумевано</string>
+    <string name="ad_shake_force_summary">Екран се неће укључити по пријему обавештења док не протресете телефон</string>
+    <string name="ad_shake_threshold_title">Интезитет</string>
+    <string name="ad_shake_threshold_summary">Intensity of shake needed to display notifications</string>
+    <string name="ad_shake_timeout_title">Временски рок</string>
+    <string name="ad_shake_timeout_summary">Seconds that shake is active after receiving a notification, 0 means always active.</string>
+    <string name="ad_shake_quiet_hours_title">Занемари тихе сате</string>
+    <string name="ad_shake_quiet_hours_summary">Allow shake during Quiet Hours</string>
+    <string name="ad_shake_long_threshold_title">Интервал</string>
+    <string name="ad_shake_long_threshold_summary">Minimum time between consecutive shakes</string>
+    <string name="ad_all_notifications_title">Show ongoing</string>
+    <string name="ad_all_notifications_summary">Show non-clearable notifications</string>
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_summary">Hide notifications marked as low priority</string>
+    <string name="ad_pocket_mode_title">Pocket mode</string>
+    <string name="ad_pocket_mode_summary">Show pending notifications after taking the device out of your pocket</string>
+    <string name="ad_redisplay_title">Re-display notifications</string>
+    <string name="ad_timeout_title">Display timeout</string>
+    <string name="ad_threshold_title">Proximity time threshold</string>
+    <string name="ad_threshold_summary">Time the proximity sensor must be covered before active display is shown</string>
+    <string name="ad_brightness_title">Display brightness</string>
+    <string name="ad_customizations_title">Advanced settings</string>
+    <string name="ad_excluded_apps_title">Excluded apps</string>
+    <string name="ad_excluded_apps_summary">No notifications will be shown for these apps</string>
+    <string name="ad_privacy_apps_title">Privacy mode</string>
+    <string name="ad_privacy_apps_summary">No details will be shown for notifications from these apps</string>
+    <string name="ad_show_date_title">Show date</string>
+    <string name="ad_show_ampm_title">Show AM/PM</string>
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_brightness_summary">Used on manual brightness control</string>
+    <string name="ad_show_date_summary">Show the date above the clock</string>
+    <string name="ad_show_ampm_summary">Show AM/PM indicator when using the 12-hour time format</string>
+    <string name="ad_sunlight_mode_summary">Invert colors in bright environment</string>
+    <string name="ad_turnoff_mode_title">Auto-sleep</string>
+    <string name="ad_turnoff_mode_summary">Put to sleep after woken by pocket mode and returned to the pocket</string>
+    <string name="ad_redisplay_never">Никада</string>
+    <string name="ad_redisplay_1m">1 минут</string>
+    <string name="ad_redisplay_5m">5 минута</string>
+    <string name="ad_redisplay_15m">15 минута</string>
+    <string name="ad_redisplay_30m">30 минута</string>
+    <string name="ad_redisplay_1h">1 сат</string>
+    <string name="ad_redisplay_2h">2 сата</string>
+    <string name="ad_redisplay_5h">5 сата</string>
+    <string name="ad_timeout_3s">3 секунде</string>
+    <string name="ad_timeout_5s">5 секунди</string>
+    <string name="ad_timeout_8s">8 секунди</string>
+    <string name="ad_timeout_10s">10 секунди</string>
+    <string name="ad_timeout_15s">15 секунди</string>
+    <string name="ad_timeout_25s">25 секунди</string>
+    <string name="ad_threshold_0s">Одмах</string>
+    <string name="ad_threshold_1s">1 секунд</string>
+    <string name="ad_threshold_2s">2 секунде</string>
+    <string name="ad_threshold_3s">3 секунде</string>
+    <string name="ad_threshold_4s">4 секунде</string>
+    <string name="ad_threshold_5s">5 секунди</string>
+    <string name="ad_pocket_mode_off">Искључено</string>
+    <string name="ad_pocket_mode_notifications">Notifications only</string>
+    <string name="ad_pocket_mode_always">Always</string>
+
+    <!-- About version and support -->
+    <string name="mokee_version">MoKee верзија</string>
+    <string name="mokee_version_default">Непознато</string>
+    <string name="mokee_support">Подршка</string>
+    <string name="mokee_support_default">Непознато</string>
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">ListView анимације</string>
+    <string name="listview_off">Искључено</string>
+    <string name="listview_wave_left">Wave (лево)</string>
+    <string name="listview_wave_right">Wave (десно)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string> 
+    <string name="listview_stack_top">Stack (врх)</string>
+    <string name="listview_stack_bottom">Stack (дно)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string> 
+    <string name="listview_translate_left">Translate (лево)</string>
+    <string name="listview_translate_right">Translate (десно)</string>
+    <string name="listview_rotate">Ротација</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView интерполар</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- MoKee Push -->
+    <string name="mokee_push_newversion_title">Доступно је ново издање</string>
+    <string name="mokee_push_newversion_msg">Нова верзија је спремна, притиснути за детаље!</string>
+
+    <!-- MoKee Center -->
+    <string name="mokee_center_title">MoKee Центар</string>
+
+    <!-- Custom navigation bar height -->
+    <string name="navigation_bar_height">Величина дугмета</string>
+    <string name="navigation_bar_height_48">48dp (подразумевано)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">сакриј</string>
+
+    <!-- Other Settings Category -->
+    <string name="other_category">Додатна подешавања</string>
+
+    <!-- show carrier label  and custom -->
+    <string name="show_status_bar_carrier_title">Приказ оператера</string>
+    <string name="show_status_bar_carrier_summary">Приказ у статусној траци</string>
+    <string name="custom_carrier_label_title">Персонализовано</string>
+    <string name="custom_carrier_label_explain">Остављање непопуњеног враћа на подразумевану вредност</string>
+    <string name="custom_carrier_label_notset">Унос није подешен</string>
+
+    <!-- show network speed -->
+    <string name="show_network_speed_title">Приказ протока података</string>
+    <string name="show_network_speed_summary">Приказ протока података у статусној траци</string>
+    <string name="status_bar_network_traffic_style_disable">Искључено</string>
+    <string name="status_bar_network_traffic_style_up">Одлазни</string>
+    <string name="status_bar_network_traffic_style_down">Долазни</string>
+    <string name="status_bar_network_traffic_style_all">Одлазни и долазни</string>
+
+    <!-- Screen recorder -->
+    <string name="power_menu_screenrecord_title">Снимање екрана</string>
+    <string name="screen_recorder_title">Снимање екрана</string>
+    <string name="screen_recorder_summary">Подешавање резолуције</string>
+    <string name="screen_recorder_video_dimensions_title">Величина снимка</string>
+    <string name="screen_recorder_video_bitrate_title">Проток</string>
+    <string name="screen_recorder_record_audio_title">Снимање звука</string>
+    <string name="screen_recorder_record_audio_summary">Снимање звука из микрофона</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400" translatable="false">240x400</string>
+    <string name="screen_recorder_size_360x640" translatable="false">360x640</string>
+    <string name="screen_recorder_size_480x800" translatable="false">480x800</string>
+    <string name="screen_recorder_size_480x854" translatable="false">480x854</string>
+    <string name="screen_recorder_size_540x960" translatable="false">540x960</string>
+    <string name="screen_recorder_size_600x1024" translatable="false">600x1024</string>
+    <string name="screen_recorder_size_720x1280" translatable="false">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000" translatable="false">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000" translatable="false">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000" translatable="false">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000" translatable="false">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000" translatable="false">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000" translatable="false">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000" translatable="false">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000" translatable="false">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000" translatable="false">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000" translatable="false">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000" translatable="false">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000" translatable="false">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000" translatable="false">100000</string>
+    <string name="screen_recorder_bitrate_250000" translatable="false">250000</string>
+    <string name="screen_recorder_bitrate_500000" translatable="false">500000</string>
+    <string name="screen_recorder_bitrate_1000000" translatable="false">1000000</string>
+    <string name="screen_recorder_bitrate_2000000" translatable="false">2000000</string>
+    <string name="screen_recorder_bitrate_3000000" translatable="false">3000000</string>
+    <string name="screen_recorder_bitrate_4000000" translatable="false">4000000</string>
+    <string name="screen_recorder_bitrate_5000000" translatable="false">5000000</string>
+    <string name="screen_recorder_bitrate_10000000" translatable="false">10000000</string>
+    <string name="screen_recorder_bitrate_20000000" translatable="false">20000000</string>
+    <string name="screen_recorder_bitrate_50000000" translatable="false">50000000</string>
+    <string name="screen_recorder_bitrate_100000000" translatable="false">100000000</string>
+
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">AM/PM стил</string>
+
+    <!-- Sound settings screen, setting check box label -->
+    <string name="camera_shutter_sound_title">Звук окидача фото-апарата</string>
+    <string name="camera_shutter_sound_summary">Упозорење: Искључивање звука апарата је илегално у неким државама!</string>
+
+    <!-- Powersaver settings -->
+    <string name="power_saver_settings_title">Уштеда енергије</string>
+    <string name="power_saver_settings_summary">Оптимизација батерије</string>
+    <string name="power_saver_toggles_mobile_title">Мобилне мреже</string>
+    <string name="power_saver_toggles_location_title">Лоцирање</string>
+    <string name="power_saver_toggles_performance_title">Перформансе</string>
+    <string name="power_saver_toggles_gps_title">Искључивање GPS-а</string>
+    <string name="power_saver_toggles_gps_summary">GPS лоцирање је онемогућено када је екран неактиван</string>
+    <string name="power_saver_toggles_mobile_data_title">Пренос података</string>
+    <string name="power_saver_toggles_mobile_data_summary">Пренос података је искључен када је екран искључен</string>
+    <string name="power_saver_toggles_cpu_profile_title">Активна оптимизација</string>
+    <string name="power_saver_toggles_cpu_profile_summary">Ограничава употребу процесора када се уређај користи</string>
+    <string name="power_saver_toggles_cpu_profile_toast">Оптимизација је искључена</string>
+    <string name="power_saver_toggles_cpu_governor_title">Оптимизација у току сна</string>
+    <string name="power_saver_toggles_cpu_governor_summary">Ограничава употребу процесора када је екран искључен</string>
+    <string name="power_saver_toggles_other_title">Остало</string>
+    <string name="power_saver_toggles_notification_title">Обавештења</string>
+    <string name="power_saver_toggles_notification_summary">Приказ обавештења у статусној траци</string>
+
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Анимације искључивања екрана</string>
+    <string name="screen_off_animation_fadeout">Fade out</string>
+    <string name="screen_off_animation_electronbeam">Electron beam</string>
+    <string name="screen_off_animation_scaledown">Scale down</string>
+    <string name="screen_off_animation_turnoff">Turn off</string>
+
+    <!-- Force show navigation bar -->
+    <string name="confirm_force_navbar_dialog_message">Немогуће је искључити тастере! Наставити?!</string>
+
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">Сви позиви</string>
+    <string name="blacklist_all_numbers_summary">Блокирање свих позива</string>
+
+    <!-- Shortcuts List -->
+    <string name="recent_shortcut_title">Shortcut Bar</string>
+    <string name="recent_shortcut_clear_title">Clear</string>
+    <string name="recent_shortcut_gravity_title">Shortcut bar gravity</string>
+    <string name="recent_shortcut_gravity_summary">Customize shortcut bar gravity in portrait mode</string>
+    <string name="recent_shortcut_gravity_right_top">Top right</string>
+    <string name="recent_shortcut_gravity_right_bottom">Bottom right</string>
+    <string name="recent_shortcut_gravity_left_top">Top left</string>
+    <string name="recent_shortcut_gravity_left_bottom">Bottom left</string>
+    <string name="recent_shortcut_priority_title">Recent apps shortcuts arrangement</string>
+    <string name="recent_shortcut_priority_summary">Customize recent apps shorcuts arrangement</string>
+    <string name="recent_shortcut_excluded_apps_title">Hide apps</string>
+    <string name="recent_shortcut_excluded_apps_summary">Hide apps from recent apps shortcuts</string>
+
+    <!-- Stay awake -->
+    <string name="screen_timeout_awake_summary">Увек активно</string>
+
+    <!-- Sound volumes panel -->
+    <string name="volume_keys_will_not_exit_silent_mode">Дугмићи за звук неће деактивирати тихе сате</string>
+
+    <!-- Lock Gesture settings -->
+    <!-- Security & location settings screen, setting option name -->
+    <string name="lockgesture_change_lock_pattern_label">Промена геста откључавања</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture". We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_change_lock_pin_label">Промена PIN-а</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture". We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_need_to_unlock">Потврди</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_footer" translatable="false"/>
+    <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+    <string name="lockgesture_need_to_unlock_wrong">Покушајте поново:</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_wrong_footer" translatable="false"/>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen. This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+    <string name="lockgesture_recording_intro_header">Одаберите гест:</string>
+    <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen. We are telling them to press the menu button to see more options or help. -->
+    <string name="lockgesture_recording_intro_footer">Притиснути мени за помоћ.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+    <string name="lockgesture_recording_inprogress">Склоните прст када сте завршили.</string>
+    <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+    <string name="lockgesture_pattern_entered_header">Гест је упамћен.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+    <string name="lockgesture_need_to_confirm">Поновите гест за потврду:</string>
+    <string name="lockgesture_pattern_confirmed_header">Унос новог геста:</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. After they draw a gesture and release their finger, we display the pattern so they remember. When they are ready to draw it once again to confirm it, they press this button. -->
+    <string name="lockgesture_confirm_button_text">Потврди</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. After they draw a gesture and release their finger, we display the pattern so they remember. If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+    <string name="lockgesture_restart_button_text">Понови</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+    <string name="lockgesture_retry_button_text">Поново</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+    <string name="lockgesture_continue_button_text">Даље</string>
+    <!-- Security & location settings screen, unlock screen activity title -->
+    <string name="lockgesture_settings_title">Гест откључавања</string>
+    <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+    <string name="lockgesture_settings_enable_title">Захтев за гест</string>
+    <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+    <string name="lockgesture_settings_enable_summary">Морате нацртати гест за откључавање</string>
+   <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern. If checked, this line is drawn. If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <string name="lockgesture_settings_enable_visible_pattern_title">Прикажи гест</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Дугме за напајање закључава одмах</string>
+    <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+    <string name="lockgesture_settings_choose_lock_pattern">Подешавање геста за откључавање</string>
+    <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+    <string name="lockgesture_settings_change_lock_pattern">Промена геста</string>
+    <!-- Security & location settings screen, the help instructions (an animation) caption -->
+    <string name="lockgesture_settings_help_how_to_record">Како нацртати покрет</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Превише неуспелих покушаја!</string>
+    <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Пкушајте опет за <xliff:g id="number">%d</xliff:g> секунди.</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">Гест је подешен</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">Потврдите гест</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">Нацртајте гест</string>
+
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">Гест</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">Мање безбедно, експериментално</string>
+
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">Гест</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Стил брзог подешавања</string>
+    <string name="summary_quicksettings_tiles_style">Опције брзог подешавања</string>
+    <string name="quicksettings_tiles_style_additional_options">Додатне опције</string>
+    <string name="tiles_per_row_title">Ставки у линији</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Размер водоравног приказа</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Водоравни приказ удвостручава приказ елемената</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
+    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Wakelock блокада</string>
+    <string name="wakelock_blocker_title">Омогући</string>
+    <string name="wakelock_blocker_summary">Активиација блокаде за одабране Wakelock</string>
+    <string name="wakelock_blocker_save">Сачувај</string>
+    <string name="wakelock_list_header">Доступни Wakelocks</string>
+    <string name="wakelock_blocker_reload">Освежи</string>
+    <string name="wakelock_blocker_warning_title">Будите опрезни!</string>
+    <string name="wakelock_blocker_warning">Ова опција може изазвати нестабилност система или губитак података!</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">Опште</string>
+    <string name="layout">Изглед</string>
+    <string name="privacy">Приватност</string>
+    <string name="lockscreen_notifications">Обавештења закњучаног екрана</string>
+    <string name="lockscreen_notifications_summary">Приказ непрочитаних обавештења на закључаном екрану</string>
+    <string name="pocket_mode">Џепни мод</string>
+    <string name="pocket_mode_summary">Активира екран и приказује обавештења по извлачењу из џепа. Деактивира екран када ставите уређај у џеп.</string>
+    <string name="show_always">Приказује увек</string>
+    <string name="show_always_summary">Always turn screen on when pulled out of pocket, even when there are no notifications pending</string>
+    <string name="hide_low_priority">Hide low priority</string>
+    <string name="hide_low_priority_summary">Hide low priority notifications such as google now weather notifications</string>
+    <string name="hide_non_clearable">Hide non clearable</string>
+    <string name="hide_non_clearable_summary">Hide all non clearable notifications</string>
+    <string name="dismiss_all">Allow dismissing all notifications</string>
+    <string name="dismiss_all_summary">Allow dismissing even non clearable notifications. Of course, they\'re just hidden from lockscreen and not from the notification panel.</string>
+    <string name="expanded_view">Expanded notification view</string>
+    <string name="expanded_view_summary">Show notifications expanded when possible</string>
+    <string name="force_expanded_view">Force expanded view</string>
+    <string name="force_expanded_view_summary">Show notifications expanded by default. You still will be able to toggle between expanded and normal view.</string>
+    <string name="wake_on_notification">Wake on notification</string>
+    <string name="wake_on_notification_summary">Wake device when a new notification is received</string>
+    <string name="notifications_height">Notification count</string>
+    <string name="notifications_height_summary">Number of notifications displayed at once</string>
+    <string name="offset_top">Offset</string>
+    <string name="offset_top_summary">Offset to the top of the screen</string>
+    <string name="privacy_mode">Privacy Mode</string>
+    <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
+    <string name="excluded_apps_title">Excluded applications</string>
+    <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
+
+    <!-- Active Display And Lockscreen Notifications Lock -->
+    <string name="ad_or_ln">%1$s already enabled, please turn it off first</string>
+
+    <!-- Hide overflow button -->
+    <string name="hide_overflow_button_title">Hide action overflow</string>
+    <string name="hide_overflow_button_summary">Hide the 3-dot overflow menu button within apps</string>
+    <string name="hide_overflow_button_toast">Changes may not be visible until apps are restarted</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">animation</string>
+
+    <!-- Active Display & LockScreen Notification & RecentShortcut -->
+    <string name="smartcontrol_settings_title">Напредне опције</string>
+
+    <!-- Sweep to wake -->
+    <string name="sweep_screen_to_wake_title">Sweep screen to wake</string>
+    <string name="sweepwake_off">Off</string>
+    <string name="sweepwake_all">Sweep to wake and sleep</string>
+    <string name="sweepwake_sleep_only">Sweep to sleep only</string>
+
+    <!-- Translator strings -->
+    <string name="translator_title">Преводиоци</string>
+    <string name="translator_error">Није могуће пронаћи фајл</string>
+
+    <!-- Privacy Settings Header item -->
+    <string name="privacy_settings_mokee_title">Приватност</string>
+
+    <!-- Waiver -->
+    <string name="mokee_waiver_title">Waiver</string>
+    <string name="mokee_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless MoKee OpenSource and its contributors from all legal liabilities.</string>
+
+    <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
+    <string name="mokee_runtime_warning_title">Упозорење</string>
+    <string name="mokee_runtime_warning_message">ART није подржан од стране MoKee OpenSource јер је експерименталан и може изазвати нестабилност, пад система, губитак података и блокирање покретања уређаја. Посетите &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; за више информација.&lt;br/&gt;&lt;br/&gt;Не пријављујте грешке уколико сте омогућили ART.&lt;br/&gt;&lt;br/&gt;Да ли сте сигурни да желите пребацити из <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> у <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+
+    <!-- Dynamic system bars -->
+    <string name="dynamic_system_bars_title">Динамична статусна трака</string>
+    <string name="dynamic_status_bar_title">Динамична статусна трака</string>
+    <string name="dynamic_status_bar_summary">Аутоматски прилагођава позадину статусне траке (Искључити и укључити екран)</string>
+    <string name="dynamic_navigation_bar_title">Динамична навигациона трака</string>
+    <string name="dynamic_navigation_bar_summary">Аутоматски прилагођава позадину навигационе траке</string>
+    <string name="dynamic_system_bars_gradient_title">Постепено</string>
+    <string name="dynamic_system_bars_gradient_summary">Постепени прелаз</string>
+    <string name="dynamic_status_bar_filter_title">Затамни траку</string>
+    <string name="dynamic_status_bar_filter_summary">Постепени прелаз</string>
+
+    <!-- PA Pie -->
+    <string name="pie_control_title">PIE</string>
+    <string name="pa_pie_title">PIE</string>
+    <string name="pa_pie_controls">Омогући</string>
+    <string name="pa_pie_controls_summary">Омогући PIE али искључи навигациону траку</string>
+    <string name="pa_pie_gravity_title">Gravity</string>
+    <string name="pa_pie_gravity_top">Врх</string>
+    <string name="pa_pie_gravity_bottom">Дно</string>
+    <string name="pa_pie_gravity_right">Десно</string>
+    <string name="pa_pie_gravity_left">Лево</string>
+    <string name="pa_pie_mode_title">Стил</string>
+    <string name="pa_pie_mode_bare">Bare</string>
+    <string name="pa_pie_mode_quick">Брзо</string>
+    <string name="pa_pie_mode_default">Подразумевано</string>
+    <string name="pa_pie_mode_slow">Полако</string>
+    <string name="pa_pie_size_title">Величина</string>
+    <string name="pa_pie_size_small">Мало</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Велико</string>
+    <string name="pa_pie_size_gigantic">Веће</string>
+    <string name="pa_pie_size_monster">Огромно</string>
+    <string name="pa_pie_color_title">Подешавање боја</string>
+    <string name="pa_pie_color_style_title">Дефинисане боје</string>
+    <string name="pa_pie_background_title">Боја позадине</string>
+    <string name="pa_pie_select_title">Одабир боје</string>
+    <string name="pa_pie_outlines_title">Боја спољне линије</string>
+    <string name="pa_pie_status_clock_title">Боја сата</string>
+    <string name="pa_pie_status_title">Боја статуса</string>
+    <string name="pa_pie_chevron_left_title">Боја левог чина</string>
+    <string name="pa_pie_chevron_right_title">Боја десног чина</string>
+    <string name="pa_pie_juice_title">Battery juice color</string>
+    <string name="pa_pie_button_color">Боја дугмића</string>
+    <string name="pa_pie_button_color_title">Боја дугмића</string>
+    <string name="pa_pie_gap_title">Item gap</string>
+    <string name="pa_pie_angle_title">Angle</string>
+    <string name="pa_pie_angle_none">Без (старије)</string>
+    <string name="pa_pie_angle_small">Мало</string>
+    <string name="pa_pie_angle_big">Нормално (подразумевано)</string>
+    <string name="pa_pie_angle_huge">Велико</string>
+    <string name="pa_pie_angle_super">Huge</string>
+    <string name="pa_pie_gap_none">None</string>
+    <string name="pa_pie_gap_small">Small</string>
+    <string name="pa_pie_gap_big">Big (подразумевано)</string>
+    <string name="pa_pie_gap_huge">Huge</string>
+    <string name="pa_pie_center_title">Middle alignment</string>
+    <string name="pa_pie_center_summary">Center PIE on the trigger edge</string>
+    <string name="pa_pie_power_title">Sleep button</string>
+    <string name="pa_pie_power_summary">Add a sleep button to PIE</string>
+    <string name="pa_pie_search_title">Search button</string>
+    <string name="pa_pie_search_summary">Enable search button on PIE controls</string>
+    <string name="pa_pie_trigger_title">Trigger area</string>
+    <string name="pa_pie_trigger_small">@string/pa_pie_size_small</string>
+    <string name="pa_pie_trigger_normal">Normal</string>
+    <string name="pa_pie_trigger_big">@string/pa_pie_gap_big</string>
+    <string name="pa_pie_trigger_huge">Huge</string>
+    <string name="pa_pie_notifications_title">Enable chevron targets</string>
+    <string name="pa_pie_notifications_summary">Enabling this will let the notification panel and Quick Settings tiles become available when swiping</string>
+    <string name="pa_pie_menu_title">Увек прикажи дугме менија</string>
+    <string name="pa_pie_menu_summary">Дугме менија ће се увек приказивати, чак и када за њим нема потребе</string>
+    <string name="pa_color_pie_reset_message">Врати боје на подразумевано?</string>
+    <string name="reset">Ресетовање</string>
+    <string name="pa_pie_disable">Disable PIE first in order to use this</string>
+    <string name="pa_pie_disable_nav">Disable nav bar first in order to use this</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+
+</resources>
