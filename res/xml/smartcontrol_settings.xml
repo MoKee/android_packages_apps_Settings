@@ -20,6 +20,17 @@
     android:title="@string/smartcontrol_settings_title" >
 
     <PreferenceCategory
+        android:key="battery_optimizer"
+        android:title="@string/battery_optimizer_title" >
+
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.mokee.WakeLockBlocker"
+        android:title="@string/wakelock_blocker_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="recents_panel_settings"
         android:title="@string/recents_panel_settings_title" >
 

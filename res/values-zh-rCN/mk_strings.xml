@@ -116,4 +116,5 @@
   <string name="recents_clear_all_dismiss_all_summary">当多过一个最近任务时，忽略清理所有前台任务</string>
   <string name="status_bar_clock_show_second_title">显示秒钟</string>
   <string name="status_bar_clock_show_second_summary">时间中显示秒钟</string>
+  <string name="battery_optimizer_title">续航优化</string>
 </resources>
