@@ -170,7 +170,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
             return true;
         }
-
         return false;
     }
 
@@ -216,5 +215,4 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 || value.equals(STATUS_BAR_BATTERY_STYLE_HIDDEN));
         mStatusBarBatteryShowPercent.setEnabled(enabled);
     }
-
 }
