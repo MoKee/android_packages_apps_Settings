@@ -879,6 +879,7 @@ parlaklık seviyesini ayarlayabilir hem de istediğiniz parlaklık düzeyini ell
   <string name="pa_login_incorrect_login">Hatalı giriş</string>
   <string name="keep_screen_on_summary_cm">Telefon şarjda iken ekran hiç kapanmayacak</string>
   <plurals name="show_dev_countdown_cm">
+    <item quantity="one">Geliştirici seçeneklerinin etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
     <item quantity="other">Geliştirici seçeneklerinin etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
   </plurals>
   <string name="show_dev_on_cm">Geliştirici seçeneklerini etkinleştirdiniz!</string>

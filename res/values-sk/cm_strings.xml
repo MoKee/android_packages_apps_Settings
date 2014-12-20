@@ -301,7 +301,7 @@
   <string name="tiles_reset_title">Obnoviť</string>
   <string name="tiles_reset_message">Obnoviť predvolené nastavenia a rozloženie dlaždíc?</string>
   <string name="auto_brightness_setup_title">Automatický jas</string>
-  <string name="auto_brightness_twilight_adjustment">Upraviť podľa západu/východu Slnka</string>
+  <string name="auto_brightness_twilight_adjustment">Upraviť podľa západu/východu slnka</string>
   <string name="light_sensor_current_value">Aktuálna hodnota svetelného senzora: <xliff:g id="light_level">%d</xliff:g> lux</string>
   <string name="auto_brightness_dialog_title">Automatické úrovne jasu</string>
   <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
@@ -483,7 +483,7 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="adb_over_network_warning">VAROVANIE: Ak je povolené ADB cez sieť, zariadenie je otvorené pre pokusy o prieniky na všetkých pripojených sieťach, vrátane GSM dátových sieťach!\n\nPoužite túto funkciu iba ak ste pripojení k dôveryhodnej sieti.\n\nChcete povoliť túto funkciu?</string>
   <string name="device_hostname">Názov zariadenia</string>
   <string name="notification_drawer_title">Ponuka oznámení</string>
-  <string name="notification_drawer_collapse_on_dismiss_title">Automatické uzatváranie</string>
+  <string name="notification_drawer_collapse_on_dismiss_title">Správanie automatického zatvárania</string>
   <string name="collapse_on_dismiss_never">Zakázané</string>
   <string name="collapse_on_dismiss_if_empty">Ak nič nezostáva</string>
   <string name="collapse_on_dismiss_if_no_clearable">Ak nič odstrániteľné nezostáva</string>
