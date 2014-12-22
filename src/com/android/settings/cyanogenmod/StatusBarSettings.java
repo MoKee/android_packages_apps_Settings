@@ -22,12 +22,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.ContentObserver;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.preference.SwitchPreference;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.TextUtils;
@@ -63,7 +63,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarNetworkTraffic;
-    private CheckBoxPreference mStatusBarCarrier;
+    private SwitchPreference mStatusBarCarrier;
     private PreferenceScreen mCustomCarrierLabel;
 
     private ListPreference mStatusBarBattery;
@@ -96,7 +96,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntry());
         mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
 
-        mStatusBarCarrier = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
+        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
