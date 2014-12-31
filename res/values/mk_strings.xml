@@ -94,4 +94,8 @@
     <string name="hardware_keys_action_screenshot">screenshot</string>
     <string name="hardware_keys_action_reboot_menu">reboot menu</string>
 
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Volume key Answer</string>
+    <string name="volume_answer_call_summary">Volume up key Answer</string>
+
 </resources>
