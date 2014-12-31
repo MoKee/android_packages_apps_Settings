@@ -90,4 +90,8 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Volume key Answer</string>
+    <string name="volume_answer_call_summary">Volume up key Answer</string>
+
 </resources>
