@@ -166,7 +166,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
-        // Home button answers calls.
+        // Volume button answers calls.
         mVolumeAnswerCall = (SwitchPreference) findPreference(KEY_VOLUME_ANSWER_CALL);
 
         mHandler = new Handler();
