@@ -36,10 +36,12 @@ import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.INetworkManagementService;
 import android.os.Message;
+import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
@@ -202,6 +204,8 @@ public class SettingsActivity extends Activity
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
 
     private static final String EMPTY_QUERY = "";
+
+    private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1122,6 +1126,7 @@ public class SettingsActivity extends Activity
                 android.os.Build.TYPE.equals("eng"));
 
         final UserManager um = (UserManager) getSystemService(Context.USER_SERVICE);
+        final PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
 
         final int size = target.size();
         for (int i = 0; i < size; i++) {
@@ -1212,6 +1217,14 @@ public class SettingsActivity extends Activity
                     boolean hasDeviceKeys = getResources().getInteger(
                             com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
                     if (!hasDeviceKeys) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.voice_wakeup_settings) {
+                    if (!Utils.isPackageInstalled(this, VOICE_WAKEUP_PACKAGE_NAME)) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.performance_settings) {
+                    if (!(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
                         removeTile = true;
                     }
                 }

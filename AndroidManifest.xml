@@ -169,6 +169,16 @@
             android:name=".cyanogenmod.superuser.SuReceiver"
             android:permission="android.permission.REPORT_SUPERUSER" />
 
+        <!-- Screen color Settings Controls -->
+        <activity android:name=".ScreenColorSettings" android:label="@string/screencolor"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity android:name=".CustomScreenColor" android:label="@string/custom_screencolor"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor">
+        </activity>
+
         <!-- Settings -->
         <uses-library android:name="org.mokee.hardware"
                 android:required="false" />
@@ -1798,6 +1808,21 @@
         />
 
         <!-- CyanogenMod activities Start -->
+        <activity android:name="Settings$VoiceWakeupSettingsActivity"
+                android:label="@string/voice_wakeup_settings_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.voicewakeup.VoiceWakeupSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/voice_wakeup_settings" />
+        </activity>
+
         <activity android:name=".profiles.ProfilesSettings" />
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
@@ -1839,7 +1864,7 @@
             </intent-filter>
         </activity>
 
-        <!-- CyanogenMod activities End -->
+        <activity android:name=".cyanogenmod.ContributorsCloud" />
 
         <activity android:name=".cyanogenmod.SpamList" />
 
@@ -2126,6 +2151,7 @@
                   android:label="@string/protected_apps"
                   android:excludeFromRecents="true"
                   android:configChanges="orientation|keyboardHidden|screenSize">
+
             <intent-filter>
                 <action android:name=".applications.ProtectedAppsActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2140,6 +2166,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".cyanogenmod.PerformanceSettings" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
@@ -2164,10 +2192,10 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">$
-            <intent-filter android:priority="2147483647">$
-                <action android:name="android.intent.action.BOOT_COMPLETED" />$
-            </intent-filter>$
+        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
         </receiver>
 
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->

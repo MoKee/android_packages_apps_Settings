@@ -41,6 +41,12 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
+        <!-- Contributors cloud -->
+        <PreferenceScreen android:key="contributor_cloud"
+            android:title="@string/contributor_cloud_title"
+            android:fragment="com.android.settings.cyanogenmod.ContributorsCloud" >
+        </PreferenceScreen>
+
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
@@ -100,7 +106,7 @@
         <!-- Device hardware model -->
         <Preference android:key="device_model" 
                 style="?android:preferenceInformationStyle"
-                android:title="@string/model_number"
+                android:title="@string/model_name"
                 android:summary="@string/device_info_default"/>
 
         <!-- Mod version -->
