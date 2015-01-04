@@ -23,7 +23,7 @@
     <string name="mokee_support_default">Unknown</string>
 
     <!-- Animation Settings -->
-    <string name="animation_settings_title">animation</string>
+    <string name="animation_settings_title">Animations</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView animation</string>
