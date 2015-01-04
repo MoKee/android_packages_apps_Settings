@@ -292,6 +292,7 @@
     <string name="no_filters_title">No filters set</string>
 
     <!-- About phone screen, build date -->
+    <string name="model_name">Model name</string>
     <string name="build_date">Build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
