@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2015 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.mokee;
 
 import android.app.Fragment;
 import android.graphics.Color;
@@ -41,7 +41,7 @@ public class ContributorsCloud extends Fragment {
                 Bundle savedInstanceState) {
         mContainer = container;
         WebView view= new WebView(getActivity());
-        view.setBackgroundColor(Color.DKGRAY);
+        view.setBackgroundColor(Color.WHITE);
         view.loadDataWithBaseURL("file:///android_asset/", CONTENT_HTML, "text/html", "utf-8", null);
         view.setVerticalScrollBarEnabled(false);
         view.setHorizontalScrollBarEnabled(false);
