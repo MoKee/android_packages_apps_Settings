@@ -111,6 +111,7 @@
                 <PreferenceScreen
                     android:key="screen_recorder"
                     android:title="@string/screen_recorder_title"
+                    android:summary="@string/screen_recorder_summary"
                     android:fragment="com.android.settings.mokee.ScreenRecorderSettings" />
 
                 <SwitchPreference
@@ -129,11 +130,51 @@
                     android:summary="@string/double_tap_to_sleep_summary"
                     android:defaultValue="true" />
 
+<<<<<<< HEAD
                 <SwitchPreference
                     android:key="wake_when_plugged_or_unplugged"
                     android:title="@string/wake_when_plugged_or_unplugged_title"
                     android:summary="@string/wake_when_plugged_or_unplugged_summary"
                     android:defaultValue="false" />
+=======
+        <PreferenceCategory
+                android:key="advanced_display_prefs"
+                android:title="@string/advanced_settings">
+                
+           <!-- DeviceHandler device specific screen off gesture settings -->
+           <Preference
+                android:key="screen_off_gesture_settings"
+                android:title="@string/screen_off_gesture_settings_title">
+                <intent
+                   android:action="com.slim.action.LAUNCH_SCREEN_OFF_GESTURE_SETTINGS"
+                   android:targetPackage="com.slim.device"
+                   android:targetClass="com.slim.device.settings.ScreenOffGestureSettings" />
+           </Preference>
+	   
+        <!-- Screen Recorder -->
+        <PreferenceScreen
+                android:key="screen_recorder"
+                android:title="@string/screen_recorder_title"
+                android:summary="@string/screen_recorder_summary"
+                android:fragment="com.android.settings.bliss.ScreenRecorderSettings" />	   
+        
+               <SwitchPreference
+                   android:key="double_tap_wake_gesture"
+                   android:title="@string/double_tap_to_wake_title" />                        
+
+               <EditTextPreference
+                   android:key="display_density"
+                   android:title="@string/display_density"
+                   android:summary="@string/display_density_summary"
+                   android:persistent="false"
+                   android:inputType="numberSigned" />
+		
+               <SwitchPreference
+                   android:key="disable_immersive_message"
+                   android:title="@string/disable_immersive_message_title"
+                   android:summary="@string/disable_immersive_message_summary"
+                   android:persistent="false" /> 
+>>>>>>> 525c0e8... Move Screen Recorder Power Menu switch to rest of power menu switches.
 
                 <SwitchPreference
                     android:key="adaptive_backlight"
