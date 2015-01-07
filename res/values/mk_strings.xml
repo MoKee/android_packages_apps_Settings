@@ -128,7 +128,7 @@
     <string name="screen_recorder_bitrate_title_4000000" translatable="false">4 MB/s</string>
     <string name="screen_recorder_bitrate_title_5000000" translatable="false">5 MB/s</string>
     <string name="screen_recorder_bitrate_title_10000000" translatable="false">10 MB/s</string>
-    <string name="screen_recorder_bitrate_title_20000000 translatable="false"">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000" translatable="false"">20 MB/s</string>
     <string name="screen_recorder_bitrate_100000" translatable="false">100000</string>
     <string name="screen_recorder_bitrate_250000" translatable="false">250000</string>
     <string name="screen_recorder_bitrate_500000" translatable="false">500000</string>
