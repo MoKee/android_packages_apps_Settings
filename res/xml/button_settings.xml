@@ -75,7 +75,7 @@
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="home_wake_screen"
             android:title="@string/button_wake_title"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <SwitchPreference
             android:key="home_answer_call"
@@ -108,7 +108,7 @@
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="back_wake_screen"
             android:title="@string/button_wake_title"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
@@ -119,7 +119,7 @@
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="menu_wake_screen"
             android:title="@string/button_wake_title"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <ListPreference
             android:key="hardware_keys_menu_press"
@@ -143,6 +143,11 @@
         android:key="assist_key"
         android:title="@string/hardware_keys_assist_key_title" >
 
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="assist_wake_screen"
+            android:title="@string/button_wake_title"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="hardware_keys_assist_press"
             android:dialogTitle="@string/hardware_keys_short_press_title"
@@ -164,6 +169,11 @@
     <PreferenceCategory
         android:key="app_switch_key"
         android:title="@string/hardware_keys_appswitch_key_title" >
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="app_switch_wake_screen"
+            android:title="@string/button_wake_title"
+            android:defaultValue="false" />
 
         <ListPreference
             android:key="hardware_keys_app_switch_press"
@@ -190,7 +200,7 @@
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="volume_wake_screen"
             android:title="@string/button_wake_title"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="volbtn_music_controls"
