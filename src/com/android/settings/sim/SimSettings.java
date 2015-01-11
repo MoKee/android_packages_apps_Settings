@@ -386,7 +386,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         for (int i = 0; i < subAvailableSize; ++i) {
             final SubInfoRecord sir = mAvailableSubInfos.get(i);
             if(sir != null){
-                simPref.addItem(sir.displayName, sir);
+                simPref.addItem(sir.displayName + " - " + Integer.toString(i+1), sir);
             }
         }
 
@@ -482,7 +482,9 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
             numberView.setText(mSubInfoRecord.number);
 
             TextView carrierView = (TextView)dialogLayout.findViewById(R.id.carrier);
-            carrierView.setText(mSubInfoRecord.displayName);
+            TelephonyManager tm = (TelephonyManager)
+                    getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+            carrierView.setText(tm.getNetworkOperatorName());
 
             builder.setTitle(R.string.sim_editor_title);
 

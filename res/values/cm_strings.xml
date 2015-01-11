@@ -65,6 +65,9 @@
     <string name="profile_unknown_nfc_tag">Unknown profile</string>
     <string name="profile_add_nfc_text">This NFC tag refers to an unknown profile. Attaching this NFC tag to an existing profile will allow for selecting the profile in the future.</string>
     <string name="profile_select">Select profile</string>
+    <string name="profile_remove_dialog_message">Remove profile %1$s?</string>
+    <string name="profile_populate_profile_from_state">Configure profile using current device settings?</string>
+    <string name="profile_menu_fill_from_state">Import current device settings</string>
 
     <!-- Add Profile -->
     <string name="add_profile_dialog_title">Create new profile</string>
@@ -602,14 +605,18 @@
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
 
+    <string name="profile_triggers_header">Triggers which will activate this profile</string>
+
     <string name="profile_setup_setup_triggers_title">Step 1: Add triggers</string>
     <string name="profile_setup_setup_triggers_title_config">Modify triggers: <xliff:g id="profile_name">%1$s</xliff:g></string>
 
     <string name="profile_setup_actions_title">Step 2: Setup actions</string>
     <string name="profile_setup_actions_title_config">Reconfigure actions</string>
 
-    <string name="no_bluetooth_triggers">No Bluetooth triggers available</string>
-    <string name="no_wifi_triggers">No Wi-Fi triggers available</string>
+    <string name="no_bluetooth_triggers">No Bluetooth devices paired.\nTap to pair Bluetooth device before configuring triggers.</string>
+    <string name="no_wifi_triggers">No Wi-Fi access points configured.\nTap to connect Wi-Fi before configuring triggers.</string>
+    <string name="no_triggers_configured">No triggers configured. Tap to add more.</string>
+    <string name="no_triggers_configured_nfc">Tap to setup a new NFC trigger.</string>
 
     <string name="profile_setup_setup_triggers_description">Please select triggers which will activate this profile</string>
     <string name="profile_setup_actions_description">Now configure what happens when the profile is activated</string>
@@ -748,6 +755,10 @@
     <string name="uicc_mount" product="default">Mount UICC storage</string>
     <string name="uicc_mount_summary" product="default"></string>
     <string name="uicc_insert_summary" product="default">Insert an UICC storage for mounting</string>
+    <!-- Title of dialog asking user to confirm before enabling UMS. [CHAR LIMIT=48] -->
+    <string name="usb_settings_enable_ums_title">Enable USB storage?</string>
+    <!-- Message of dialog asking user to confirm before enabling UMS. [CHAR LIMIT=NONE] -->
+    <string name="usb_settings_enable_ums_message">System components and apps rely on primary storage always being available. This feature breaks that functionality. It is strongly recommended to use MTP instead. Are you sure you want to enable USB storage?</string>
 
     <string name="dlg_confirm_usb_unmount_title" product="default">Unmount USB storage?</string>
     <string name="dlg_confirm_uicc_unmount_title" product="default">Unmount UICC storage?</string>
@@ -906,6 +917,9 @@
     <string name="edge_gesture_service_title">Block gesture touch events</string>
     <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
 
+    <!-- Screen security -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 </resources>
