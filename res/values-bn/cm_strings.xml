@@ -220,15 +220,11 @@
   <string name="lockscreen_enable_camera_title">ক্যামেরা উইজেট</string>
   <string name="safe_headset_volume_title">নিরাপদ হেডসেট ভলিউম</string>
   <string name="safe_headset_volume_restore_title">সংযোগের পর হেডসেট ভলিউম হ্রাস করুন</string>
-  <string name="cyanogenmod_waiver_title">স্বত্বত্যাগ</string>
-  <string name="cyanogenmod_waiver_body">এই রুপান্তর নির্ধারণ পরিবর্তন করা আপনার রাষ্ট্র বা সরকারের আইন বিরুদ্ধে হতে পারে।\n\n\'ওকে\' নির্বাচন ফলে, আপনি এই সতর্কবার্তা এবং স্বত্ব-ত্যাগ স্বীকার করেন, একই সাথে সায়ানোজেনমড এবং তার সহযোগীদের সব আইনি দায় থেকে অব্যহতির সম্মতি প্রদান করেন।</string>
   <string name="quick_settings_panel_title">দ্রুত রুপান্তর নির্ধারণ প্যানেল</string>
   <string name="title_static_tiles">স্ট্যাটিক টাইলস</string>
   <string name="tile_picker_title">টাইলস এবং বিন্যাস</string>
   <string name="tile_picker_summary">প্রদর্শিত টাইলসের বিন্যাস দেখুন, নির্বাচন অথবা পরিবর্তন করুন</string>
   <string name="tile_choose_title">একটি টাইল পছন্দ করুন</string>
-  <string name="title_qs_small_icons">ছোট টাইলস প্রদর্শন</string>
-  <string name="summary_qs_small_icons">কলাম সংখ্যা বৃদ্ধি করতে ছোট টাইলস ব্যবহার করুন</string>
   <string name="category_heads_up">হেডস আপ</string>
   <string name="summary_heads_up_enabled">পপ-আপ নোটিফিকেশন সক্রিয়</string>
   <string name="summary_heads_up_disabled">পপ-আপ নোটিফিকেশন নিস্ক্রিয়</string>
@@ -368,8 +364,6 @@
   <string name="root_access_apps">শুধু মাত্র অ্যাপস</string>
   <string name="root_access_adb">শুধু মাত্র এডিবি</string>
   <string name="root_access_all">অ্যাপস এবং এডিবি</string>
-  <string name="update_recovery_title">সিএম পুনরুদ্ধার হালনাগাদ</string>
-  <string name="update_recovery_summary">পুনরুদ্ধার হালনাগাদ করুন যখন সিস্টেম আধুনিকীকরণ ইন্সটল হবে</string>
   <string name="ok">ওকে</string>
   <string name="quiet_hours_title">বিশ্রামরত ঘন্টা</string>
   <string name="quiet_hours_summary">সময় কনফিগার করুন যখন ডিভাইস নীরব থাকবে</string>
@@ -392,27 +386,10 @@
   <string name="quiet_hours_ringer_mute_all">সব কলারের জন্য রিঙ্গার নীরব করুন</string>
   <string name="start_time_title">শুরু</string>
   <string name="end_time_title">শেষ</string>
-  <string name="mod_version">সায়ানোজেনমড সংস্করণ</string>
-  <string name="mod_version_default">অজানা</string>
   <string name="build_date">তৈরী তারিখ</string>
   <string name="cpu_info">সিপিইউ</string>
   <string name="mem_info">ধারণাক্ষমতা</string>
   <string name="phone_service_state">কণ্ঠঃ <xliff:g id="voice_state">%1$s</xliff:g>, ডাটাঃ <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">সায়ানোজেনমড পরিসংখ্যান</string>
-  <string name="anonymous_statistics_summary">বেনামী পরিসংখ্যান প্রতিবেদনে যোগদান করে সায়ানোজেনমড কে আরো উন্নত হতে সহায়তা করুন</string>
-  <string name="anonymous_statistics_warning_title">সম্বন্ধে</string>
-  <string name="anonymous_statistics_warning">সায়ানোজেনমড পরিসংখ্যানে যোগদানের জন্যে ব্যক্তিগত নয় এমন তথ্য জমা দিতে হবে
-        সায়ানোজেনমড ডেভেলপারদের ডিভাইস জুড়ে অনন্য ইনস্টলেশন ট্র্যাক। জমাকৃত তথ্য একটি অনন্য শনাক্তকারী অন্তর্ভুক্ত,
-        যা আপনার গোপনীয়তা বা ব্যক্তিগত তথ্য আপোষ করবেনা। তথ্য গুলি প্রতিবার বুট করার সময় জমা হবে।\n\nউদাহরণস্বরূপ যে তথ্য গুলি দাখিল করা হবে, ডাটার পূর্বরূপ দেখতে টোকা দিন।</string>
-  <string name="enable_reporting_title">প্রতিবেদন সক্রিয় করুন</string>
-  <string name="preview_data_title">ডাটা পূর্বরূপ</string>
-  <string name="view_stats_title">পরিসংখ্যান প্রদর্শন</string>
-  <string name="anonymous_learn_more">আরও জানুন</string>
-  <string name="preview_id_title">স্বতন্ত্র আইডি</string>
-  <string name="preview_device_title">ডিভাইস</string>
-  <string name="preview_version_title">সংস্করণ</string>
-  <string name="preview_country_title">দেশ</string>
-  <string name="preview_carrier_title">অপারেটর</string>
   <string name="header_category_interface">নিজস্বকরণ</string>
   <string name="themes_settings_title">থিমস</string>
   <string name="themepacks_settings_title">থিম প্যাকস</string>
@@ -450,10 +427,8 @@
   <string name="changelog_title">পরিবর্তনসূচী</string>
   <string name="changelog_error">পরিবর্তন লোড করতে অক্ষম</string>
   <string name="contributor_cloud_title">অবদানকারী</string>
-  <string name="cmupdate_settings_title">সায়ানোজেনমড আধুনিকীকরণ</string>
   <string name="development_tools_title">সরঞ্জামসমূহ প্রবর্তন করুন</string>
   <string name="allow_mock_sms">এসএমএস মক অনুমতি দিন</string>
-  <string name="privacy_settings_cyanogenmod_title">গোপনীয়তা</string>
   <string name="privacy_guard_switch_label">গোপনীয়তা গার্ড সক্রিয় করুন</string>
   <string name="privacy_guard_dlg_title">গোপনীয়তা গার্ড সক্রিয় করুন?</string>
   <string name="privacy_guard_dlg_text">যখন গোপনীয়তা রক্ষাকারী সক্রিয় থাকবে, তখন অ্যাপ ব্যক্তিগত যোগাযোগ, বার্তা বা কল লগ এর তথ্যে প্রবেশাধিকার থাকবে না।</string>
@@ -721,19 +696,10 @@
   <string name="usb_mass_storage_summary">এটি ফ্ল্যাশ ডিভাইস হিসাবে মাউন্ট হয়ে আপনার কম্পিউটার এবং এসডি কার্ড মধ্যে ফাইল স্থানান্তর করতে সক্ষম</string>
   <string name="storage_rescan_media">স্টোরেজ ভলিউম এর জন্যে মিডিয়া পুনঃস্ক্যান করুন</string>
   <string name="storage_rescan_media_complete">স্ক্যান সম্পূর্ণ</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">নিরাপদ এসএমএস সেটিংস নিয়ন্ত্রণ করুন</string>
-  <string name="logger_title">বেনামী ক্র্যাশ লগিং</string>
-  <string name="logger_summary">ক্র্যাশ লগিং সেটিংস নিয়ন্ত্রণ করুন</string>
-  <string name="custom_runtime_warning_title">সতর্কতা</string>
-  <string name="custom_runtime_warning_message">ART আনুষ্ঠানিকভাবে সায়ানোজেনমড দ্বারা সমর্থিত নয় কারন এটা অত্যন্ত পরীক্ষামূলক এবং অস্থির, বিপর্যস্ত, তথ্য হারিয়ে বা আপনার ডিভাইস এর সঠিক বুট প্রতিরোধ করার সম্ভাবনা রয়েছে। আরও তথ্যের জন্য এবং ART সম্পর্কে জানতে &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; পরিদর্শন করুন।&lt;br/&gt;&lt;br/&gt;আমরা আপনাকে অনুরোধ করছি রানটাইম হিসাবে ART সক্রিয় অবস্থায় আপনি বাগ রিপোর্ট দায়ের করবেন না।&lt;br/&gt;&lt;br/&gt;আপনি কি নিশ্চিত রান-টাইম পরিবর্তন করতে পুনরায় বুট করতে চান <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> থেকে <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">জিপিএস সহায়ক ডাটা ডাউনলোড করুন শুধুমাত্র ওয়াইফাই\u2011 নেটওয়ার্কের মাধ্যমে</string>
   <string name="battery_info_status_charging_dock_ac">(ডকএসি)</string>
   <string name="battery_info_status_charging_dock_usb">(ডকইউএসবি)</string>
   <string name="menu_stats_reset">পুনরায় ধার্য করুন</string>
-  <string name="cmlicense_title">সায়ানোজেনমড বৈধতা</string>
-  <string name="settings_cmlicense_activity_title">সায়ানোজেনমড বৈধতা</string>
-  <string name="settings_cmlicense_activity_unreachable">ডাটা কানেকশন নেই। এখন এই তথ্য দেখতে, ইন্টারনেটের সাথে সংযুক্ত যে কোনো কম্পিউটার থেকে %s যান।</string>
   <string name="stylus_icon_enabled_title">লেখনী ব্যবহার করলে প্রতীক প্রদর্শন করুন</string>
   <string name="stylus_icon_enabled_summary">পয়েন্টার প্রতীক প্রদর্শন করুন যখন হবরিং বা লেখনী দিয়ে আঁকার সময়</string>
   <string name="gestures_settings_title">স্টাইলস ভঙ্গি</string>
