@@ -406,14 +406,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
         // Volume button answers calls.
-        if (mVolumeAnswerCall != null) {
-            final int answervolumebehavior = Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR,
-                    Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR_DEFAULT);
-            final boolean volumeButtonAnswersCall =
-                (answervolumebehavior == Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR_HANGUP);
-            mVolumeAnswerCall.setChecked(volumeButtonAnswersCall);
-        }
+        mVolumeAnswerCall = (CheckBoxPreference) prefSet.findPreference(KEY_VOLUME_ANSWER_CALL);
+        mVolumeAnswerCall.setChecked((Settings.System.getInt(resolver,
+                  Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+        mVolumeAnswerCall.setOnPreferenceChangeListener(this);
 
     }
 
@@ -474,7 +470,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
-        }
+        } else if (preference == mVolumeAnswerCall) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                   Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, value ? 1 : 0);
+            return true;
+         }
         return false;
     }
 
@@ -595,9 +596,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHomeAnswerCall) {
             handleToggleHomeButtonAnswersCallPreferenceClick();
             return true;
-        } else if (preference == mVolumeAnswerCall) {
-            handleToggleVolumeButtonAnswersCallPreferenceClick();
-            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -624,12 +622,5 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
                         ? Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
                         : Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
-    }
-
-    private void handleToggleVolumeButtonAnswersCallPreferenceClick() {
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR, (mVolumeAnswerCall.isChecked()
-                        ? Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR_HANGUP
-                        : Settings.Secure.ANSWER_VOLUME_BUTTON_BEHAVIOR_SCREEN_OFF));
     }
 }
