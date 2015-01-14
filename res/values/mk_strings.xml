@@ -91,11 +91,11 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
     <!-- quick reboot menu and screenshot -->
-    <string name="hardware_keys_action_screenshot">screenshot</string>
-    <string name="hardware_keys_action_reboot_menu">reboot menu</string>
+    <string name="hardware_keys_action_screenshot">Screenshot</string>
+    <string name="hardware_keys_action_reboot_menu">Reboot menu</string>
 
     <!-- The volume key answer -->
-    <string name="volume_answer_call_title">Volume key Answer</string>
-    <string name="volume_answer_call_summary">Volume up key Answer</string>
+    <string name="volume_answer_call_title">Volume key answer</string>
+    <string name="volume_answer_call_summary">Volume up key answer</string>
 
 </resources>
