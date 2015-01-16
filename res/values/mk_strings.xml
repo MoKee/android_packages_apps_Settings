@@ -98,4 +98,7 @@
     <string name="volume_answer_call_title">Volume key answer</string>
     <string name="volume_answer_call_summary">Volume up key answer</string>
 
+    <!-- Privacy Settings Header item -->
+    <string name="privacy_settings_mokee_title">Privacy</string>
+    <string name="privacy_settings_mokee_category" translatable="false">MoKee OpenSource</string>
 </resources>

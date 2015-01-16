@@ -246,7 +246,7 @@ public class SettingsActivity extends Activity
             R.id.nfc_payment_settings,
             R.id.home_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_mokee
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
