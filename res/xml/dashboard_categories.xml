@@ -108,7 +108,7 @@
             android:icon="@drawable/ic_settings_themes">
             <intent
                 android:action="android.intent.action.MAIN" >
-                <categories android:name="cyanogenmod.intent.category.APP_THEMES" />
+                <categories android:name="mokee.intent.category.APP_THEMES" />
             </intent>
         </dashboard-tile>
 
