@@ -82,6 +82,7 @@
     <string name="rename_dialog_message">Enter a new name</string>
     <string name="duplicate_profile_name">Duplicate profile name!</string>
     <string name="duplicate_appgroup_name">Duplicate app group name!</string>
+    <string name="rename_dialog_hint">Enter profile name</string>
 
     <!-- Reset Profiles -->
     <string name="profile_reset_title">Reset</string>
@@ -313,8 +314,10 @@
     <string name="block_notifications_summary">Manage ignored notifications and filters</string>
     <string name="no_filters_title">No filters set</string>
 
-    <!-- About phone screen, build date -->
+    <!-- About phone screen -->
     <string name="model_name">Model name</string>
+
+    <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
@@ -408,6 +411,19 @@
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_hidden">Hidden</string>
+
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery status style</string>

@@ -72,9 +72,6 @@
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
 
-    <!-- AP/PM Indicator -->
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-
     <!-- Show network speed -->
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>

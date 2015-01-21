@@ -1223,6 +1223,10 @@ public class SettingsActivity extends Activity
                     if (!(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
                         removeTile = true;
                     }
+                } else if (id == R.id.mokee_center) {
+                    if (UserHandle.myUserId() != UserHandle.USER_OWNER) {
+                        removeTile = true;
+                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0

@@ -48,7 +48,6 @@
   <string name="navigation_bar_height_48">48dp (výchozí)</string>
   <string name="navigation_bar_height_0">skrýt</string>
   <string name="navigation_bar_category">Navigační lišta</string>
-  <string name="status_bar_am_pm_title">AM/PM styl</string>
   <string name="show_network_speed_title">Rychlost sítě</string>
   <string name="show_network_speed_summary">Zobrazit rychlost sítě ve stavové liště</string>
   <string name="status_bar_network_traffic_style_disable">Nezobrazovat</string>

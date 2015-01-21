@@ -405,6 +405,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+
         // Volume button answers calls.
         mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
                   Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
