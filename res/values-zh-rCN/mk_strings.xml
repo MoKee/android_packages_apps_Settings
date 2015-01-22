@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">所有号码</string>
   <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
   <string name="smartcontrol_settings_title">智能控制</string>
+  <string name="direct_control_title">体感控制</string>
+  <string name="direct_call_for_dialer_title">拨号界面体感拨号</string>
+  <string name="direct_call_for_dialer_summary">手机放在耳边时将自动拨打当前短信联系者的电话号码</string>
+  <string name="direct_call_for_mms_title">短信界面体感拨号</string>
+  <string name="direct_call_for_mms_summary">手机放在耳边时将自动拨打当前拨号器输入的电话号码</string>
   <string name="navigation_bar_height">导航栏高度</string>
   <string name="navigation_bar_height_48">48dp (默认)</string>
   <string name="navigation_bar_height_0">隐藏</string>

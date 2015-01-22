@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014-2015 The MoKee OpenSource Project
+<!--
+     Copyright (C) 2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,8 +15,24 @@
      limitations under the License.
 -->
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/smartcontrol_settings_title" >
+
+    <PreferenceCategory
+        android:key="direct_control"
+        android:title="@string/direct_control_title" >
+
+        <SwitchPreference
+            android:key="direct_call_for_dialer"
+            android:summary="@string/direct_call_for_dialer_summary"
+            android:title="@string/direct_call_for_dialer_title" />
+
+        <SwitchPreference
+            android:key="direct_call_for_mms"
+            android:summary="@string/direct_call_for_mms_summary"
+            android:title="@string/direct_call_for_mms_title" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>
