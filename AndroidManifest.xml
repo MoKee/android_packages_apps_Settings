@@ -90,6 +90,7 @@
     <!-- MOKEE HELPER PERMISSION START -->
     <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECOVERY"/>
     <!-- MOKEE HELPER PERMISSION END -->
 
     <application android:label="@string/settings_label"
