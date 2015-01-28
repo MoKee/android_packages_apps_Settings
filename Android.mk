@@ -1,19 +1,5 @@
 LOCAL_PATH:= $(call my-dir)
 
-ifneq ($(TARGET_RECOVERY_FSTAB),)
-  recovery_fstab := $(strip $(wildcard $(TARGET_RECOVERY_FSTAB)))
-else
-  recovery_fstab := $(strip $(wildcard $(TARGET_DEVICE_DIR)/recovery.fstab))
-endif
-
-ALTERNATE_IS_INTERNAL := false
-ifneq ($(recovery_fstab),)
-  recovery_fstab := $(ANDROID_BUILD_TOP)/$(recovery_fstab)
-  ifneq ($(shell grep "/emmc" $(recovery_fstab)),)
-  ALTERNATE_IS_INTERNAL := true
-  endif
-endif
-
 include $(CLEAR_VARS)
 
 LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common
@@ -65,10 +51,6 @@ LOCAL_AAPT_FLAGS := \
         --extra-packages android.support.v7.cardview
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
 LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-pay
-
-ifeq ($(ALTERNATE_IS_INTERNAL), true)
-  LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-compat $(LOCAL_RESOURCE_DIR)
-endif
 
 LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
