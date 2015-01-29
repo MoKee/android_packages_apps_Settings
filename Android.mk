@@ -13,8 +13,6 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	libDashClockAPI \
 	volley \
 	Alipay \
-	PayecoPlugin \
-	TenpayService \
 	UPPayAssistEx \
 	UPPayPluginEx \
 	WanpuPay \

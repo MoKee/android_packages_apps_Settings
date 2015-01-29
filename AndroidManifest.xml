@@ -2409,29 +2409,6 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.payeco.android.plugin.PayecoPluginLoadingActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity
-            android:name="com.payeco.android.plugin.PayecoOrderDetailActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity
-            android:name="com.payeco.android.plugin.PayecoPayResultActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity
-            android:name="com.payeco.android.plugin.PayecoWebViewActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity
-            android:name="com.payeco.android.plugin.PayecoRiskControlActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <activity
             android:name="com.unionpay.uppay.PayActivityEx"
             android:configChanges="orientation|keyboardHidden"
             android:excludeFromRecents="true"
@@ -2444,7 +2421,6 @@
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.UPPay" />
-
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
