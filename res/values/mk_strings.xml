@@ -74,9 +74,6 @@
     <string name="navigation_bar_height_20" translatable="false">20dp</string>
     <string name="navigation_bar_height_0">hide</string>
 
-    <!-- Navigation Bar -->
-    <string name="navigation_bar_category">Navigation bar</string>
-
     <!-- Show network speed -->
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>

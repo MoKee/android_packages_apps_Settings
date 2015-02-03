@@ -24,19 +24,6 @@
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
 
-    <PreferenceCategory
-            android:key="navigation_bar"
-            android:title="@string/navigation_bar_category" >
-
-    <ListPreference
-            android:key="navigation_bar_height"
-            android:dialogTitle="@string/navigation_bar_height"
-            android:title="@string/navigation_bar_height"
-            android:entries="@array/navigation_bar_height_entries"
-            android:entryValues="@array/navigation_bar_height_values"
-            android:defaultValue="48"
-            android:persistent="false" />
-
     </PreferenceCategory>
 
     <SwitchPreference
@@ -64,6 +51,15 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
+        <ListPreference
+                android:key="navigation_bar_height"
+                android:dialogTitle="@string/navigation_bar_height"
+                android:title="@string/navigation_bar_height"
+                android:entries="@array/navigation_bar_height_entries"
+                android:entryValues="@array/navigation_bar_height_values"
+                android:defaultValue="48"
+                android:persistent="false" />
+
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="navigation_bar_left"
             android:title="@string/navigation_bar_left_title"
@@ -80,6 +76,11 @@
             android:key="navigation_bar"
             android:fragment="com.android.settings.cyanogenmod.NavBar"
             android:title="@string/navigation_bar_title" />
+
+        <PreferenceScreen
+            android:key="navigation_bar_ring"
+            android:fragment="com.android.settings.cyanogenmod.NavRing"
+            android:title="@string/navigation_ring_title" />
 
     </PreferenceCategory>
 
