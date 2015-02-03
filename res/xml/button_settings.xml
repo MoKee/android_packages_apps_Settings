@@ -24,8 +24,6 @@
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
 
-    </PreferenceCategory>
-
     <SwitchPreference
         android:key="disable_nav_keys"
         android:title="@string/disable_navkeys_title"
