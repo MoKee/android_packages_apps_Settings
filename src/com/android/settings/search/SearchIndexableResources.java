@@ -283,7 +283,7 @@ public final class SearchIndexableResources {
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(
                                 com.android.settings.cyanogenmod.PrivacySettings.class.getName()),
-                        R.xml.privacy_settings_cyanogenmod,
+                        R.xml.privacy_settings_mokee,
                         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
                         R.drawable.ic_settings_privacy));
     }
