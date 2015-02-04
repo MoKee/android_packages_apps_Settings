@@ -64,6 +64,8 @@
 
     <!-- Custom navigation bar height -->
     <string name="navigation_bar_height">Button height</string>
+    <string name="navigation_bar_height_56" translatable="false">56dp</string>
+    <string name="navigation_bar_height_52" translatable="false">52dp</string>
     <string name="navigation_bar_height_48">48dp (default)</string>
     <string name="navigation_bar_height_44" translatable="false">44dp</string>
     <string name="navigation_bar_height_40" translatable="false">40dp</string>

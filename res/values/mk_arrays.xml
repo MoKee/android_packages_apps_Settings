@@ -72,6 +72,8 @@
 
     <!-- Custom navigation bar height -->
     <string-array name="navigation_bar_height_entries" translatable="false">
+        <item>@string/navigation_bar_height_56</item>
+        <item>@string/navigation_bar_height_52</item>
         <item>@string/navigation_bar_height_48</item>
         <item>@string/navigation_bar_height_44</item>
         <item>@string/navigation_bar_height_40</item>
