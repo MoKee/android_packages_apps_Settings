@@ -86,6 +86,8 @@
     </string-array>
 
     <string-array name="navigation_bar_height_values" translatable="false">
+        <item>56</item>
+        <item>52</item>
         <item>48</item>
         <item>44</item>
         <item>40</item>
