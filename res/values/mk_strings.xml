@@ -56,11 +56,11 @@
 
     <!-- Smart Control -->
     <string name="smartcontrol_settings_title">Smart Control</string>
-    <string name="direct_control_title">Direct Control</string>
-    <string name="direct_call_for_dialer_title">Direct Call in Dailer</string>
+    <string name="direct_control_title">Direct control</string>
+    <string name="direct_call_for_dialer_title">Direct call in dailer</string>
     <string name="direct_call_for_dialer_summary">Lift phone to ear after entering number in dialer to call directly</string>
-    <string name="direct_call_for_mms_title">Direct Call in Mms</string>
-    <string name="direct_call_for_mms_summary">Lift phone to ear will automatically call current contact</string>
+    <string name="direct_call_for_mms_title">Direct call in MMS</string>
+    <string name="direct_call_for_mms_summary">Lifting phone to ear will automatically call current contact</string>
 
     <!-- Custom navigation bar height -->
     <string name="navigation_bar_height">Button height</string>
