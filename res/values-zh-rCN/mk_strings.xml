@@ -52,7 +52,6 @@
   <string name="navigation_bar_height">导航栏高度</string>
   <string name="navigation_bar_height_48">48dp (默认)</string>
   <string name="navigation_bar_height_0">隐藏</string>
-  <string name="navigation_bar_category">导航栏</string>
   <string name="show_network_speed_title">状态栏网速</string>
   <string name="show_network_speed_summary">在状态栏显示当前网速</string>
   <string name="status_bar_network_traffic_style_disable">禁用</string>
