@@ -176,16 +176,12 @@
   <string name="sms_security_check_limit_summary">Aplicațiile pot trimite %d mesaje în 30 de minute înainte de fi necesară confirmarea</string>
   <string name="block_notifications_title">Filtru notificări</string>
   <string name="block_notifications_summary">Gestionaţi notificările ignorate şi filtrele</string>
-  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
-  <string name="mod_version">versiune CyanogenMod</string>
-  <string name="mod_version_default">Necunoscut</string>
   <string name="model_name">Nume model</string>
   <string name="build_date">Dată compilare</string>
   <string name="contributor_cloud_title">Contribuitori</string>
   <string name="double_tap_to_wake_title">Dublă-apăsare pentru trezire</string>
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
   <string name="proximity_wake_summary">Verificaţi senzorul de proximitate înainte de trezirea ecranului</string>
-  <string name="privacy_settings_cyanogenmod_title">Intimitate</string>
   <string name="privacy_guard_default_title">Activat în mod implicit</string>
   <string name="privacy_guard_default_summary">Activat în mod implicit pentru aplicațiile nou-instalate</string>
   <string name="privacy_guard_manager_title">Gardian Intimitate</string>
@@ -474,9 +470,6 @@
   <string name="graphics_title">Grafică și randare</string>
   <string name="edge_gesture_service_title">Blochează evenimentele la gesturile de atingere</string>
   <string name="edge_gesture_service_summary">Nu timite la aplicații gesturile de atingere la navigare și gesturile barei de stare</string>
-  <string name="cmlicense_title">Juridic CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridic CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nu aveți conexiune de date. Pentru a vizualiza acum această informație, mergeți la %s pe orice calculator conectat la internet.</string>
   <string name="unlock_quick_unlock_control_title">Deblocare rapidă</string>
   <string name="unlock_quick_unlock_control_summary">Deblochează automat când se introduce codul PIN/parola corectă</string>
   <string name="unlock_scramble_pin_layout_title">Amestecă așezarea în pagină</string>
@@ -492,6 +485,4 @@
   <string name="maximum_head_level">Cap: %1$s W/kg</string>
   <string name="maximum_body_level">Corp: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Desktop extins</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestionare setări SMS sigur</string>
 </resources>

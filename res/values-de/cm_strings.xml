@@ -205,16 +205,12 @@
   <string name="block_notifications_title">Benachrichtigungen filtern</string>
   <string name="block_notifications_summary">Ignorierte Benachrichtigungen und Filter verwalten</string>
   <string name="no_filters_title">Keine Filter aktiv</string>
-  <string name="cmupdate_settings_title">CyanogenMod-Updates</string>
-  <string name="mod_version">CyanogenMod-Version</string>
-  <string name="mod_version_default">Unbekannt</string>
   <string name="model_name">Modellname</string>
   <string name="build_date">Build-Datum</string>
   <string name="contributor_cloud_title">Mitwirkende</string>
   <string name="double_tap_to_wake_title">Aufwecken durch doppeltes Tippen</string>
   <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
   <string name="proximity_wake_summary">Vor dem Aufwecken des Gerätes Näherungssensor überprüfen</string>
-  <string name="privacy_settings_cyanogenmod_title">Datenschutz</string>
   <string name="privacy_guard_default_title">Standardmäßig aktivieren</string>
   <string name="privacy_guard_default_summary">Für neu installierte Apps standardmäßig den Datenschutz aktivieren</string>
   <string name="privacy_guard_manager_title">Datenschutz</string>
@@ -593,9 +589,6 @@
   <string name="graphics_title">Grafikoptionen</string>
   <string name="edge_gesture_service_title">Berührungsgesten unterdrücken</string>
   <string name="edge_gesture_service_summary">Berührungsgesten für die Status- und Navigationsleiste nicht an Apps senden</string>
-  <string name="cmlicense_title">Rechtliche Hinweise zu CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Rechtliche Hinweise zu CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Es besteht keine Datenverbindung. Besuchen Sie %s mit einem beliebigen Computer mit Internetverbindung, um die Informationen jetzt anzusehen.</string>
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
   <string name="unlock_quick_unlock_control_summary">Entsperren durch korrekte PIN- oder Passworteingabe</string>
   <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
@@ -652,6 +645,4 @@
   <string name="lockscreen_targets_message">Sperrbildschirm-Verknüpfungen</string>
   <string name="lockscreen_default_target">Standard</string>
   <string name="lockscreen_choose_action_title">Aktion auswählen</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Einstellungen für sichere SMS</string>
 </resources>

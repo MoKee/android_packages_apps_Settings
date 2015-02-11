@@ -149,14 +149,10 @@
   <string name="sms_security_check_limit_summary">在使用者確認之前，應用程式在 30 分鐘內只能發送 %d 條訊息</string>
   <string name="block_notifications_title">過濾器通知</string>
   <string name="block_notifications_summary">管理被忽略的通知和過濾器</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
-  <string name="mod_version">CyanogenMod 版本</string>
-  <string name="mod_version_default">不明</string>
   <string name="build_date">版本日期</string>
   <string name="contributor_cloud_title">貢獻者</string>
   <string name="double_tap_to_wake_title">輕按兩下來喚醒</string>
   <string name="proximity_wake_summary">喚醒畫面前檢查傳感器</string>
-  <string name="privacy_settings_cyanogenmod_title">私隱</string>
   <string name="privacy_guard_default_title">已預設啟用</string>
   <string name="privacy_guard_default_summary">對新安裝的應用程式已預設啟用</string>
   <string name="privacy_guard_manager_title">私隱守衛</string>
@@ -367,7 +363,6 @@
   <string name="graphics_title">圖像和繪製</string>
   <string name="edge_gesture_service_title">攔截手勢輕觸情況</string>
   <string name="edge_gesture_service_summary">不向應用程式傳送導覽列與狀態列手勢的觸控事件</string>
-  <string name="settings_cmlicense_activity_unreachable">你沒有數據連綫，如要立即查看這項資訊，請使用任何已連上網際網絡的電腦前往 %s。</string>
   <string name="unlock_quick_unlock_control_title">快速解鎖</string>
   <string name="unlock_quick_unlock_control_summary">當正確的 PIN 碼 / 密碼被輸入時自動解鎖</string>
   <string name="notification_drawer_title">抽屜的通知</string>
@@ -378,6 +373,4 @@
   <string name="wifi_channel">頻道</string>
   <string name="wifi_mhz">MHz</string>
   <string name="power_menu_expanded_desktop">擴展桌面</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">管理安全短訊設定</string>
 </resources>

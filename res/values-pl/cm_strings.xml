@@ -171,15 +171,11 @@
   <string name="sms_security_check_limit_summary">Aplikacje mogą wysłać %d wiadomości przez 30 minut, nim konieczne będzie potwierdzenie</string>
   <string name="block_notifications_title">Filtrowanie powiadomień</string>
   <string name="block_notifications_summary">Zarządzaj ignorowanymi powiadomieniami i filtrami</string>
-  <string name="cmupdate_settings_title">Aktualizacje CyanogenMod</string>
-  <string name="mod_version">Wersja CyanogenMod</string>
-  <string name="mod_version_default">Nieznana</string>
   <string name="build_date">Data kompilacji</string>
   <string name="contributor_cloud_title">Twórcy</string>
   <string name="double_tap_to_wake_title">Wybudzanie podwójnym dotknięciem</string>
   <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
   <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
-  <string name="privacy_settings_cyanogenmod_title">Prywatność</string>
   <string name="privacy_guard_default_title">Aktywuj domyślnie</string>
   <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
   <string name="privacy_guard_manager_title">Ochrona prywatności</string>
@@ -438,9 +434,6 @@
   <string name="graphics_title">Grafika i renderowanie</string>
   <string name="edge_gesture_service_title">Blokuj zdarzenia gestów dotykowych</string>
   <string name="edge_gesture_service_summary">Nie przesyłaj zdarzeń dotykowych dla gestów pasków nawigacji i statusu do aplikacji</string>
-  <string name="cmlicense_title">Informacje prawne CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Informacje prawne CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nie masz połączenia z internetem. Aby zobaczyć te informacje przejdź do %s z dowolnego komputera podłączonego do internetu</string>
   <string name="unlock_quick_unlock_control_title">Szybkie odblokowywanie</string>
   <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
   <string name="unlock_scramble_pin_layout_title">Pomieszany układ</string>
@@ -455,6 +448,4 @@
   <string name="maximum_head_level">Głowa: %1$s W/kg</string>
   <string name="maximum_body_level">Ciało: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Rozszerzony pulpit</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Zarządzaj ustawieniami bezpiecznych SMS-ów</string>
 </resources>

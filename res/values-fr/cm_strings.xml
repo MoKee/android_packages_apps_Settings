@@ -203,16 +203,12 @@
   <string name="block_notifications_title">Filtre des notifications</string>
   <string name="block_notifications_summary">Gérer les notifications ignorées et les filtres</string>
   <string name="no_filters_title">Aucun filtre défini</string>
-  <string name="cmupdate_settings_title">Mises à jour CyanogenMod</string>
-  <string name="mod_version">Version CyanogenMod</string>
-  <string name="mod_version_default">Inconnue</string>
   <string name="model_name">Nom du modèle</string>
   <string name="build_date">Date de compilation</string>
   <string name="contributor_cloud_title">Contributeurs</string>
   <string name="double_tap_to_wake_title">Appui double pour réveiller</string>
   <string name="proximity_wake_title">Empêcher un réveil accidentel</string>
   <string name="proximity_wake_summary">Utiliser le capteur de proximité pour prévenir les réveils accidentels de l\'écran</string>
-  <string name="privacy_settings_cyanogenmod_title">Confidentialité</string>
   <string name="privacy_guard_default_title">Protection des données</string>
   <string name="privacy_guard_default_summary">Activer par défaut la protection des données pour les applications nouvellement installées</string>
   <string name="privacy_guard_manager_title">Protection des données</string>
@@ -593,9 +589,6 @@
   <string name="graphics_title">Graphismes et rendu</string>
   <string name="edge_gesture_service_title">Bloquer les événements gestuels</string>
   <string name="edge_gesture_service_summary">Ne pas envoyer aux applications les événements gestuels des barres d\'état et de navigation</string>
-  <string name="cmlicense_title">Infos légales CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Infos légales CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Vous n\'avez pas de connexion de données active. Pour voir ces informations maintenant, allez sur %s via un ordinateur connecté à Internet.</string>
   <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
   <string name="unlock_quick_unlock_control_summary">Déverrouillage automatique lorsque le mot de passe ou le code PIN est correct</string>
   <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
@@ -655,7 +648,5 @@
   <string name="lockscreen_default_target">Défaut</string>
   <string name="lockscreen_message">Appuyez sur une icône à gauche ou à droite pour attribuer un raccourci sur l\'écran de verrouillage.</string>
   <string name="lockscreen_choose_action_title">Choisir une action</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gère les paramètres de sécurité des SMS</string>
   <string name="navigation_ring_title">Raccourcis de l\'anneau de navigation</string>
 </resources>

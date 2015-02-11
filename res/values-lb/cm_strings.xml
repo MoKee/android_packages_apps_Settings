@@ -205,16 +205,12 @@
   <string name="block_notifications_title">Notifikatiounsfilter</string>
   <string name="block_notifications_summary">Ignoréiert Notifikatiounen a Filteren geréieren</string>
   <string name="no_filters_title">Keng Filtere gesat</string>
-  <string name="cmupdate_settings_title">CyanogenMod-Aktualiséierungen</string>
-  <string name="mod_version">CyanogenMod-Versioun</string>
-  <string name="mod_version_default">Onbekannt</string>
   <string name="model_name">Modellnumm</string>
   <string name="build_date">Build-Datum</string>
   <string name="contributor_cloud_title">Mataarbechter</string>
   <string name="double_tap_to_wake_title">Zweemol drécke fir waakreg ze maachen</string>
   <string name="proximity_wake_title">Onbeofsiichtegt waakreg maache verhënneren</string>
   <string name="proximity_wake_summary">Virum waakreg maachen de Proximitéitssensor iwwerpréiwen</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatsphär</string>
   <string name="privacy_guard_default_title">Standardméisseg aktivéiert</string>
   <string name="privacy_guard_default_summary">Standardméisseg fir nei-installéiert Appen aktivéiert</string>
   <string name="privacy_guard_manager_title">Privatsphärschutz</string>
@@ -590,8 +586,6 @@
   <string name="menu_hidden_apps_reset_lock">Spärmuster zrécksetzen</string>
   <string name="protected_apps">Geschützt Appen</string>
   <string name="saving_protected_components">Komponentestatus gëtt gespäichert\u2026</string>
-  <string name="stats_collection_title">Statistiksammlung</string>
-  <string name="stats_collection_summary">Erlaabt d\'Sammele vu Metriken, wann aktivéiert</string>
   <string name="power_notifications_category_title">Téin beim Oplueden</string>
   <string name="power_notifications_enable_title">Aktivéieren</string>
   <string name="power_notifications_enable_summary">En Toun ofspille wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
@@ -626,9 +620,6 @@
   <string name="graphics_title">Grafikoptiounen</string>
   <string name="edge_gesture_service_title">Gesten-Evenementer blockéieren</string>
   <string name="edge_gesture_service_summary">Keng Beréierungsgesten déi op der Navigatiouns- oder Statusläischt ausgefouert ginn un Appe schécken</string>
-  <string name="cmlicense_title">Rechtlesch Hiwäiser iwwer CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Rechtlesch Hiwäiser iwwer CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Du hues keng Dateconnectioun. Fir dës Informatioun elo ze liesen, besich %s vun egal wéi engem Computer dee mam Internet verbonnen ass.</string>
   <string name="unlock_quick_unlock_control_title">Séiert Entspären</string>
   <string name="unlock_quick_unlock_control_summary">Automatesch Entspäre wann de PIN oder d\'Passwuert korrekt sinn</string>
   <string name="unlock_scramble_pin_layout_title">Zoufälleg Unuerdnung</string>
@@ -691,7 +682,5 @@
   <string name="lockscreen_default_target">Standard</string>
   <string name="lockscreen_message">Dréck e Symbol op der lénkser oder rietser Säit fir d\'Spärschierm-Ofkierzungen nei ze definéieren.</string>
   <string name="lockscreen_choose_action_title">Aktioun auswielen</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Astellunge fir sécher SMSen</string>
   <string name="navigation_ring_title">Ziler vun den Navigatiounsréng</string>
 </resources>

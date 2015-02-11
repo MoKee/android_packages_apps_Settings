@@ -176,15 +176,11 @@
   <string name="sms_security_check_limit_summary">Appar kan skicka %d meddelanden inom 30 minuter innan krav på bekräftelse</string>
   <string name="block_notifications_title">Filtrera meddelanden</string>
   <string name="block_notifications_summary">Hantera ignorerade aviseringar och filter</string>
-  <string name="cmupdate_settings_title">CyanogenMod-uppdateringar</string>
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Okänd</string>
   <string name="build_date">Byggdatum</string>
   <string name="contributor_cloud_title">Bidragsgivare</string>
   <string name="double_tap_to_wake_title">Dubbeltryck för att väcka</string>
   <string name="proximity_wake_title">Förhindra oavsiktlig väckning</string>
   <string name="proximity_wake_summary">Kontrollera närhetssensorn innan väckning av skärmen</string>
-  <string name="privacy_settings_cyanogenmod_title">Integritet</string>
   <string name="privacy_guard_default_title">Aktiverad som standard</string>
   <string name="privacy_guard_default_summary">Aktivera som standard för nyinstallerade appar</string>
   <string name="privacy_guard_manager_title">Integritetsskydd</string>
@@ -440,9 +436,6 @@
   <string name="graphics_title">Grafik och rendering</string>
   <string name="edge_gesture_service_title">Blockera gesthändelser</string>
   <string name="edge_gesture_service_summary">Skicka inte beröringshändelser för navigerings- och statusfältsgester till appar</string>
-  <string name="cmlicense_title">CyanogenMod Juridik</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Juridik</string>
-  <string name="settings_cmlicense_activity_unreachable">Du har ingen dataanslutning. För att se denna information nu, gå till %s från en dator ansluten till Internet.</string>
   <string name="unlock_quick_unlock_control_title">Snabb upplåsning</string>
   <string name="unlock_quick_unlock_control_summary">Lås upp automatiskt när rätt PIN/lösenord har angivits</string>
   <string name="unlock_scramble_pin_layout_title">Kasta om layout</string>
@@ -461,7 +454,5 @@
   <string name="maximum_body_level">Kropp: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Utökat skrivbord</string>
   <string name="lockscreen_default_target">Standard</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Hantera säkra SMS-inställningar</string>
   <string name="gestures_action_menu">Meny</string>
 </resources>

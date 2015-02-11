@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">بەرنامە ئەتوانرێت بنێرێت %d نامە لە 30 خولەک پێشی داواکردنی زانیاری</string>
   <string name="block_notifications_title">فلتەرکردنی ئاگادارییه‌کان</string>
   <string name="block_notifications_summary">به‌ڕێوه‌بردنی ئاگادارییه‌ پشتگوێخراوه‌کان</string>
-  <string name="cmupdate_settings_title">نوێکردنه‌وه‌ی وەشانەکە</string>
-  <string name="mod_version">وەشانی کوردی</string>
-  <string name="mod_version_default">نەناسراو</string>
   <string name="build_date">بنیاتنانی ڕۆژ</string>
   <string name="contributor_cloud_title">به‌شداره‌کان</string>
   <string name="double_tap_to_wake_title">دوجارلێیده‌ بۆ هه‌ڵسان</string>
   <string name="proximity_wake_title">قه‌ده‌غه‌کردنی هه‌ستانی ڕێکه‌وت</string>
   <string name="proximity_wake_summary">هه‌ستیاری نزیکی بپشکنه‌ بۆ هه‌ستانی ڕوونما</string>
-  <string name="privacy_settings_cyanogenmod_title">تایبەتی</string>
   <string name="privacy_guard_default_title">چالاکرا لە بنەڕەت</string>
   <string name="privacy_guard_default_summary">چالاکردنی بنەڕەت بۆ دامەزراندنی بەرنامەی تازە</string>
   <string name="privacy_guard_manager_title">پاسکردنی تایبەتی</string>
@@ -445,9 +441,6 @@
   <string name="graphics_title">هێڵکاریانە و ڕینده‌رینگ</string>
   <string name="edge_gesture_service_title">بلۆکردنی سوینی میوان</string>
   <string name="edge_gesture_service_summary">ڕووداوی لێدانه‌کان مه‌نێره‌ بۆ ڕێدۆزه‌ر یان شریتی دۆخ بۆ به‌رنامه‌</string>
-  <string name="cmlicense_title">یاسای وەشانەکە</string>
-  <string name="settings_cmlicense_activity_title">یاسای وەشانەکە</string>
-  <string name="settings_cmlicense_activity_unreachable">په‌یوه‌ندی داتات نیه‌ .بۆ ده‌رخستنی ئه‌م زانیاریانه‌، بڕۆ بۆ  %s له‌ کۆمپیوته‌ره‌که‌ت که‌ په‌یوه‌ندی بکه‌ به‌ تۆڕه‌وه‌</string>
   <string name="unlock_quick_unlock_control_title">چالاککردنی خێرا</string>
   <string name="unlock_quick_unlock_control_summary">چالاکردنی خۆکارانە کاتێک PIN/وشەی نێنی ڕاست لێدرا</string>
   <string name="unlock_scramble_pin_layout_title">ته‌خته‌ی تێکه‌ڵ</string>
@@ -462,6 +455,4 @@
   <string name="maximum_head_level">سەر: %1$s W/kg</string>
   <string name="maximum_body_level">تەن: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">پانکردنه‌وه‌ی ڕوونما</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">ڕێکخستنی ئاسایشی SMS</string>
 </resources>

@@ -206,20 +206,12 @@
   <string name="block_notifications_title">Filtre bildirimleri</string>
   <string name="block_notifications_summary">Yoksayılan bildirimleri ve filtreleri yönet</string>
   <string name="no_filters_title">Hiçbir filtre ayarlanmadı</string>
-  <string name="cmupdate_settings_title">CyanogenMod güncellemeleri</string>
-  <string name="update_recovery_title">Cyanogen kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
-  <string name="update_recovery_on_warning">DİKKAT: Bu özellik etkinken, yüklü kurtarma modunuz mevcut İS sürümündeki mod ile değiştirilecektir. \n\nKurtarma modunuz sistem güncellemeleri ile birlikte güncellenecektir, böylelikle gelecek sürümler ile uyumluluk sağlanacaktır.\n\nBu özelliği etkinleştirmek ister misiniz?</string>
-  <string name="update_recovery_off_warning">UYARI: Bu özellik devre dışı bırakıldığında, yüklü kurtarma modunuz İS güncellemeleri ile güncellenmeyecektir.\n\nGelecek İS güncellemeleri eskimiş ya da özel kurtarma sürümleri ile yüklenemeyebilir.\n\nBu özelliği gerçekten devre dışı bırakmak istiyor musunuz?</string>
-  <string name="mod_version">CyanogenMod sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <string name="model_name">Model adı</string>
   <string name="build_date">İnşa tarihi</string>
   <string name="contributor_cloud_title">Katkıda bulunanlar</string>
   <string name="double_tap_to_wake_title">Uyanmak için çift dokun</string>
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Ekranı açmadan önce yakınlık sensörünü kontrol et</string>
-  <string name="privacy_settings_cyanogenmod_title">Gizlilik</string>
   <string name="privacy_guard_default_title">Varsayılan olarak etkin</string>
   <string name="privacy_guard_default_summary">Yeni yüklenen uygulamalar için Gizlilik Koruması\'nı varsayılan olarak aktifleştir</string>
   <string name="privacy_guard_manager_title">Gizlilik Koruması</string>
@@ -486,9 +478,6 @@
   <string name="graphics_title">Grafik ve modelleme</string>
   <string name="edge_gesture_service_title">Dokunmatik hareketlerini engelle</string>
   <string name="edge_gesture_service_summary">Telefonda gezinme ve durum çubuğu için uygulamalara dokunmatik iletiler gönderme</string>
-  <string name="cmlicense_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_unreachable">Veri bağlantınız yok. Bu bilgiyi görüntülemek için internete bağlı herhangi bir bilgisayardan %s adresine gidin.</string>
   <string name="unlock_quick_unlock_control_title">Hızlı kilit aç</string>
   <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde otomatik olarak kilidi aç</string>
   <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
@@ -503,6 +492,4 @@
   <string name="maximum_head_level">Baş: %1$s W/kg</string>
   <string name="maximum_body_level">Vücut: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Genişletilmiş Masaüstü</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Güvenli SMS ayarlarını yönet</string>
 </resources>

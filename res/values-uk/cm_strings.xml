@@ -206,16 +206,12 @@
   <string name="block_notifications_title">Фільтр сповіщень</string>
   <string name="block_notifications_summary">Налаштування ігнорованих повідомлень і фільтрів</string>
   <string name="no_filters_title">Немає фільтрів</string>
-  <string name="cmupdate_settings_title">Оновлення CyanogenMod</string>
-  <string name="mod_version">Версія CyanogenMod</string>
-  <string name="mod_version_default">Невідомо</string>
   <string name="model_name">Назва моделі</string>
   <string name="build_date">Дата збірки</string>
   <string name="contributor_cloud_title">Учасники</string>
   <string name="double_tap_to_wake_title">Подв. натискання прокидає</string>
   <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
   <string name="proximity_wake_summary">Перевірити датчик наближення до пробудження екрану</string>
-  <string name="privacy_settings_cyanogenmod_title">Приватність</string>
   <string name="privacy_guard_default_title">Увімкнено типово</string>
   <string name="privacy_guard_default_summary">Увімкнути типово для нових програм</string>
   <string name="privacy_guard_manager_title">Сторож Приватності</string>
@@ -591,8 +587,6 @@
   <string name="menu_hidden_apps_reset_lock">Скинути графічний ключ</string>
   <string name="protected_apps">Заблоковані програми</string>
   <string name="saving_protected_components">Збереження стану програм\u2026</string>
-  <string name="stats_collection_title">Статистика</string>
-  <string name="stats_collection_summary">Коли увімкнено, дозволяє збирати статистику</string>
   <string name="power_notifications_category_title">Звуки зарядження</string>
   <string name="power_notifications_enable_title">Увімкнути</string>
   <string name="power_notifications_enable_summary">Грати звук при підключенні до зарядного пристрою</string>
@@ -627,9 +621,6 @@
   <string name="graphics_title">Графіка та візуалізація</string>
   <string name="edge_gesture_service_title">Блокувати події жестів</string>
   <string name="edge_gesture_service_summary">Не передавати програмам жести показу рядка стану і панелі навігації</string>
-  <string name="cmlicense_title">Політика конфіденційності CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Політика конфіденційності CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Пристрій не підключено до Інтернету. Щоб переглянути цю інформацію, відкрийте сторінку %s на будь-якому комп’ютері з інтернет-доступом.</string>
   <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
   <string name="unlock_quick_unlock_control_summary">Автоматичне розблокування при введенні правильного пароля чи PIN-коду</string>
   <string name="unlock_scramble_pin_layout_title">Перемішана розкладка</string>
@@ -692,7 +683,5 @@
   <string name="lockscreen_default_target">Стандартний</string>
   <string name="lockscreen_message">Натисніть на іконку зліва чи справа для зміни ярлика екрану блокування.</string>
   <string name="lockscreen_choose_action_title">Виберіть дію</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Налаштування шифрування SMS-повідомлень</string>
   <string name="navigation_ring_title">Ярлики навігаційного кільця</string>
 </resources>

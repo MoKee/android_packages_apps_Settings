@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">Les aplicaciones puen unviar hasta %d mensaxes SMS en 30 minutos enantes de riquir confirmación</string>
   <string name="block_notifications_title">Filtriar notificaciones</string>
   <string name="block_notifications_summary">Remanar filtros y notificaciones bloquiaes</string>
-  <string name="cmupdate_settings_title">Anovamientos CyanogenMod</string>
-  <string name="mod_version">Versión CyanogenMod</string>
-  <string name="mod_version_default">Desconocida</string>
   <string name="build_date">Data de compilación</string>
   <string name="contributor_cloud_title">Collaboradores</string>
   <string name="double_tap_to_wake_title">Doble toque pa esconsoñar</string>
   <string name="proximity_wake_title">Prevenir encendíu accidental</string>
   <string name="proximity_wake_summary">Comprobar el sensor de proximidá enantes de prender la pantalla</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidá</string>
   <string name="privacy_guard_default_title">Privacidá</string>
   <string name="privacy_guard_default_summary">Habilitar la privacidá por defeutu pa nueves aplicaciones</string>
   <string name="privacy_guard_manager_title">Privacidá</string>
@@ -446,9 +442,6 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <string name="graphics_title">Gráficos y renderizáu</string>
   <string name="edge_gesture_service_title">Bloquiar eventos táctiles</string>
   <string name="edge_gesture_service_summary">Nun unviar a les aplicaciones eventos táctiles de la barra d\'estáu y de navegación</string>
-  <string name="cmlicense_title">Llicencia CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicencia CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nun hai una conexón de datos disponible. Pa ver esta información agora, introduz la direición %s en cualquier ordenador con accesu a Internet.</string>
   <string name="unlock_quick_unlock_control_title">Desbloquéu rápidu</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquiar automáticamente cuando s\'introduz el PIN/clave correutu</string>
   <string name="unlock_scramble_pin_layout_title">Disposición al debalu</string>
@@ -463,6 +456,4 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <string name="maximum_head_level">Cabeza: %1$s W/kg</string>
   <string name="maximum_body_level">Cuerpu: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Estender escritoriu</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Xestiona la configuración de seguridá de los SMS</string>
 </resources>

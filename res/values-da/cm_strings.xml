@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">Vis en advarselsdialog for at forhindre programmer i at sende SMS-beskeder for ofte. Aktuel grænse: %d beskeder på 30 minutter (kræver genstart)</string>
   <string name="block_notifications_title">Filtrere meddelelser</string>
   <string name="block_notifications_summary">Administrere ignoreret underretninger og filtre</string>
-  <string name="cmupdate_settings_title">CyanogenMod-opdateringer</string>
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Ukendt</string>
   <string name="build_date">Kørselsdato</string>
   <string name="contributor_cloud_title">Bidragydere</string>
   <string name="double_tap_to_wake_title">Dobbelttryk for at vække</string>
   <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
   <string name="proximity_wake_summary">Check nærhedsføleren før skærmen vækkes</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatliv</string>
   <string name="privacy_guard_default_title">Aktiveret som standard</string>
   <string name="privacy_guard_default_summary">Aktiveret som standard for nyinstallerede apps</string>
   <string name="privacy_guard_manager_title">Privatlivsvagt</string>
@@ -445,9 +441,6 @@
   <string name="graphics_title">Grafik og rendering</string>
   <string name="edge_gesture_service_title">Blokér berøringsevents for bevægelser</string>
   <string name="edge_gesture_service_summary">Send ikke berøringsevents for navigations- og statuslinjebevægelser til apps</string>
-  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Du har ingen dataforbindelse. Gå til %s fra en computer tilsluttet Internettet for at vise denne information nu.</string>
   <string name="unlock_quick_unlock_control_title">Hurtig-oplåsning</string>
   <string name="unlock_quick_unlock_control_summary">Lås automatisk op, når det korrekte PIN/kodeord er indtastet</string>
   <string name="unlock_scramble_pin_layout_title">Ændre layout</string>
@@ -462,6 +455,4 @@
   <string name="maximum_head_level">Hoved: %1$s W/kg</string>
   <string name="maximum_body_level">Krop: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Udvidet skrivebord</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Administrér indstillinger for sikker SMS.</string>
 </resources>

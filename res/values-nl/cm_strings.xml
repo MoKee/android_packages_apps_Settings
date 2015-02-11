@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">Apps kunnen %d berichten verzenden in 30 minuten zonder bevestiging</string>
   <string name="block_notifications_title">Meldingen filteren</string>
   <string name="block_notifications_summary">Genegeerde meldingen en filters beheren</string>
-  <string name="cmupdate_settings_title">CyanogenMod-updates</string>
-  <string name="mod_version">CyanogenMod-versie</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Build-datum</string>
   <string name="contributor_cloud_title">Bijdragers</string>
   <string name="double_tap_to_wake_title">Dubbeltikken om te ontwaken</string>
   <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
   <string name="proximity_wake_summary">Nabijheidssensor gebruiken voorafgaand aan ontwaken van scherm</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <string name="privacy_guard_default_title">Standaard ingeschakeld</string>
   <string name="privacy_guard_default_summary">Privacybescherming standaard inschakelen voor nieuw geïnstalleerde apps</string>
   <string name="privacy_guard_manager_title">Privacybescherming</string>
@@ -476,9 +472,6 @@
   <string name="graphics_title">Grafisch en weergave</string>
   <string name="edge_gesture_service_title">Aanraakgebaren blokkeren</string>
   <string name="edge_gesture_service_summary">Aanraakgebaren voor navigatie- en statusbalk niet naar apps sturen</string>
-  <string name="cmlicense_title">Juridische afdeling van CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridische afdeling van CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Geen netwerkverbinding. Ga naar %s om deze informatie te bekijken op een computer met internet.</string>
   <string name="unlock_quick_unlock_control_title">Snel ontgrendelen</string>
   <string name="unlock_quick_unlock_control_summary">Automatisch ontgrendelen als uw pincode/wachtwoord correct is ingevoerd</string>
   <string name="unlock_scramble_pin_layout_title">Lay-out husselen</string>
@@ -493,6 +486,4 @@
   <string name="maximum_head_level">Hoofd: %1$s W/kg</string>
   <string name="maximum_body_level">Lichaam: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Uitgebreid bureaublad</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Instellingen beveiligde sms-berichten</string>
 </resources>

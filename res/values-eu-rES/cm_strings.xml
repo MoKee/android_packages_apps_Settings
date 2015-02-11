@@ -160,13 +160,9 @@
   <string name="sms_security_check_limit_title">SMS mezu muga</string>
   <string name="sms_security_check_limit_summary">Aplikazioek %d SMS mezu bidali ditzakete 30 minututan berrespena eskatu arte</string>
   <string name="block_notifications_title">Jakinarazpenak iragazi</string>
-  <string name="cmupdate_settings_title">CyanogenMod eguneraketak</string>
-  <string name="mod_version">CyanogenMod bertsioa</string>
-  <string name="mod_version_default">Ezezaguna</string>
   <string name="build_date">Konpilatze data</string>
   <string name="contributor_cloud_title">Laguntzaileak</string>
   <string name="double_tap_to_wake_title">Esnatzeko birritan sakatu</string>
-  <string name="privacy_settings_cyanogenmod_title">Pribatutasuna</string>
   <string name="privacy_guard_default_title">Pribatutasuna</string>
   <string name="privacy_guard_default_summary">Aplikazio berrientzako pribatutasun lehenetsia gaitu</string>
   <string name="privacy_guard_manager_title">Pribatutasuna</string>
@@ -382,9 +378,6 @@
   <string name="graphics_title">Grafikoak eta errendatzea</string>
   <string name="edge_gesture_service_title">Ukipen gertakariak blokeatu</string>
   <string name="edge_gesture_service_summary">Aplikazioei nabigazio eta egoera barren ukipen gertakaririk ez bidali</string>
-  <string name="cmlicense_title">CyanogenMod lizentzia</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod lizentzia</string>
-  <string name="settings_cmlicense_activity_unreachable">Ez dago datu konexiorik. informazio hau orain ikusteko, %s helbidea internet-a duen edozein ordenagailuan sartu.</string>
   <string name="unlock_quick_unlock_control_title">Deslokatze azkarra</string>
   <string name="unlock_quick_unlock_control_summary">Automatikoki deslokatu PIN/pasahitz zuzena sartu berri denean</string>
   <string name="notification_drawer_title">Jakinarazpen eremua</string>
@@ -395,6 +388,4 @@
   <string name="wifi_channel">Kanala</string>
   <string name="wifi_mhz">MHz</string>
   <string name="power_menu_expanded_desktop">Mahaigaina hedatu</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">SMS zifraketarako ezarpenak kudeatu</string>
 </resources>

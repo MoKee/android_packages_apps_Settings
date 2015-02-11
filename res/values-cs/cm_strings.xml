@@ -179,15 +179,11 @@
   <string name="sms_security_check_limit_summary">Aplikace může poslat pouze %d zpráv za 30 minut před tím, než bude vyžádáno ověření</string>
   <string name="block_notifications_title">Oznámení filtru</string>
   <string name="block_notifications_summary">Spravovat ignorovaná upozornění a filtry</string>
-  <string name="cmupdate_settings_title">Aktualizace CyanogenMod</string>
-  <string name="mod_version">CyanogenMod verze</string>
-  <string name="mod_version_default">Neznámá</string>
   <string name="build_date">Datum sestavení</string>
   <string name="contributor_cloud_title">Přispěvatelé</string>
   <string name="double_tap_to_wake_title">Probuzení dvojím dotykem</string>
   <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
   <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
-  <string name="privacy_settings_cyanogenmod_title">Soukromí</string>
   <string name="privacy_guard_default_title">Ve výchozím stavu povolen</string>
   <string name="privacy_guard_default_summary">Automaticky aktivovat Ochranu soukromí pro nově nainstalované aplikace</string>
   <string name="privacy_guard_manager_title">Ochrana soukromí</string>
@@ -451,9 +447,6 @@
   <string name="graphics_title">Grafika a vykreslování</string>
   <string name="edge_gesture_service_title">Blokovat události dotyků gest</string>
   <string name="edge_gesture_service_summary">Nepropuštět dotyky pro stavovou nebo navigační lištu do aplikací</string>
-  <string name="cmlicense_title">Právní ujednání CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Právní ujednání CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Zobrazit licenční ujednání není možné, protože není aktivní žádné datové připojení. Pro zobrazení tohoto ujednání navštivte prosím stránku %s z jakéhokoliv počítače, připojeného na internet.</string>
   <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
   <string name="unlock_quick_unlock_control_summary">Automatické odemknutí, pokud je zadán správný PIN/heslo</string>
   <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
@@ -468,6 +461,4 @@
   <string name="maximum_head_level">Hlava: %1$s W/kg</string>
   <string name="maximum_body_level">Tělo: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Rozšířená plocha</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Spravovat nastavení zabezpečených SMS</string>
 </resources>

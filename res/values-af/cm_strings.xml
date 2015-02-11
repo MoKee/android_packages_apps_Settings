@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">Vertoon \'n waarskuwingsdialoog as SMS boodskappe te dikwels deur programme gestuur word. Huidige perk:%d boodskappe in 30 minute</string>
   <string name="block_notifications_title">Filter kennisgewings</string>
   <string name="block_notifications_summary">Bestuur geïgnoreerde kennisgewings en ​​filters</string>
-  <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
-  <string name="mod_version">CyanogenMod weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Bou datum</string>
   <string name="contributor_cloud_title">Bydraers</string>
   <string name="double_tap_to_wake_title">Klop-Klop wakker instelling</string>
   <string name="proximity_wake_title">Voorkom toevallige wakker word</string>
   <string name="proximity_wake_summary">Gaan die nabyheid sensor na voordat die skerm wakker gemaak word</string>
-  <string name="privacy_settings_cyanogenmod_title">Privaatheid</string>
   <string name="privacy_guard_default_title">Standaard instelling</string>
   <string name="privacy_guard_default_summary">Aktiveer as \'n standaard instelling vir nuut-geinstalleerde programme</string>
   <string name="privacy_guard_manager_title">Privaatheidswag</string>
@@ -445,9 +441,6 @@
   <string name="graphics_title">Grafika en vertoning</string>
   <string name="edge_gesture_service_title">Blok gebaar raak gebeure</string>
   <string name="edge_gesture_service_summary">Moenie raak gebeure vir navigasie en status balk gebare stuur na programme</string>
-  <string name="cmlicense_title">CyanogenMod Regs</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Regs</string>
-  <string name="settings_cmlicense_activity_unreachable">Jy het nie \'n data verbinding. Om hierdie inligting nou te sien, gaan na %s van enige rekenaar wat verbind is tot die Internet.</string>
   <string name="unlock_quick_unlock_control_title">Vinnige oopsluit</string>
   <string name="unlock_quick_unlock_control_summary">Ontsluit outomaties wanneer die korrekte PIN/wagwoord ingesleutel is</string>
   <string name="unlock_scramble_pin_layout_title">Skommel uitleg</string>
@@ -462,6 +455,4 @@
   <string name="maximum_head_level">Hoof: %1$s W/kg</string>
   <string name="maximum_body_level">Lyf: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Uitgebreide lessenaar</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Bestuur veilige SMS-instellings.</string>
 </resources>

@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">තහවුරු කිරීම අවශ්‍යවීමට පෙර මිනිත්තු 30 තුල පණිවිඩ %d ක් යැවීමට යෙදුම් වෙත හැකියාව ඇත</string>
   <string name="block_notifications_title">දැනුම්දීම් පෙරන්න</string>
   <string name="block_notifications_summary">නොසලකා හැරූ දැනුම්දීම් සහ පෙරහන් හසුරුවන්න</string>
-  <string name="cmupdate_settings_title">CyanogenMod යාවත්කාලීනයන්</string>
-  <string name="mod_version">CyanogenMod අනුවාදය</string>
-  <string name="mod_version_default">නොදනී</string>
   <string name="build_date">නිමැවූ දිනය</string>
   <string name="contributor_cloud_title">ආධාරකරුවන්</string>
   <string name="double_tap_to_wake_title">ඇහැරවීමට දෙවරක් තට්ටු කරන්න</string>
   <string name="proximity_wake_title">අහඹු අවදි වීම් වළක්වන්න</string>
   <string name="proximity_wake_summary">තිරය අවදි කිරීමට පෙර සන්නිකර්ෂණ සංවේදකය පරීක්ෂා කරන්න</string>
-  <string name="privacy_settings_cyanogenmod_title">පෞද්ගලිකත්වය</string>
   <string name="privacy_guard_default_title">පෙරනිමි ලෙස සබලය</string>
   <string name="privacy_guard_default_summary">අලුතෙන්-ස්ථාපිත යෙදුම් සඳහා පෙරනිමි ලෙස සබලය</string>
   <string name="privacy_guard_manager_title">පෞද්ගලිකත්වයේ මුරකරු</string>
@@ -445,9 +441,6 @@
   <string name="graphics_title">චිත්‍රක සහ විදැහුම</string>
   <string name="edge_gesture_service_title">අභින ස්පර්ශ සිදුවීම් අවහිර කරන්න</string>
   <string name="edge_gesture_service_summary">සංචාලන සහ තත්ව තීරු අභින අතරතුර යෙදුම් වෙත ස්පර්ශ සිදුවීම් නොයවන්න</string>
-  <string name="cmlicense_title">CyanogenMod නීතිමය තොරතුරු</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod නීතිමය තොරතුරු</string>
-  <string name="settings_cmlicense_activity_unreachable">ඔබට දත්ත සම්බන්ධතාවක් නොමැත. මෙම තොරතුර දැන් බැලීමට, අන්තර්ජාලයට සම්බන්ධිත ඕනෑම පරිගණකයකින් %s වෙත පිවිසෙන්න.</string>
   <string name="unlock_quick_unlock_control_title">ඉක්මන් අගුළු ඇරීම</string>
   <string name="unlock_quick_unlock_control_summary">නිවැරදි PIN හෝ මුරපදය ඇතුලත් කලවිට ස්වයංක්‍රීයව අගුළු අරින්න</string>
   <string name="unlock_scramble_pin_layout_title">සැලැස්ම පටලවන්න</string>
@@ -462,6 +455,4 @@
   <string name="maximum_head_level">හිස: %1$s W/kg</string>
   <string name="maximum_body_level">සිරුර: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">විහිදුණු වැඩතලය</string>
-  <string name="whisperpush_title">WhisperPush තාක්ෂණය</string>
-  <string name="whisperpush_summary">සුරක්ෂිත කෙටි පණිවිඩ සැකසීම් පාලනය කරයි</string>
 </resources>

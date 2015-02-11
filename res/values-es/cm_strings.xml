@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">Las aplicaciones pueden enviar hasta %d mensajes SMS en 30 minutos antes de requerir confirmación</string>
   <string name="block_notifications_title">Filtrar notificaciones</string>
   <string name="block_notifications_summary">Gestionar filtros y notificaciones bloqueadas</string>
-  <string name="cmupdate_settings_title">Actualizaciones CyanogenMod</string>
-  <string name="mod_version">Versión CyanogenMod</string>
-  <string name="mod_version_default">Desconocida</string>
   <string name="build_date">Fecha de compilación</string>
   <string name="contributor_cloud_title">Colaboradores</string>
   <string name="double_tap_to_wake_title">Doble toque para despertar</string>
   <string name="proximity_wake_title">Prevenir encendido accidental</string>
   <string name="proximity_wake_summary">Comprobar el sensor de proximidad antes de encender la pantalla</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidad</string>
   <string name="privacy_guard_default_title">Privacidad</string>
   <string name="privacy_guard_default_summary">Habilitar la privacidad por defecto para nuevas aplicaciones</string>
   <string name="privacy_guard_manager_title">Privacidad</string>
@@ -445,9 +441,6 @@
   <string name="graphics_title">Gráficos y representación</string>
   <string name="edge_gesture_service_title">Bloquear eventos táctiles</string>
   <string name="edge_gesture_service_summary">No enviar a las aplicaciones eventos táctiles de la barra de estado y de navegación</string>
-  <string name="cmlicense_title">Licencia de CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Licencia de CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">No hay una conexión de datos disponible. Para ver esta información ahora, introduce la dirección %s en cualquier ordenador con acceso a Internet.</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN/clave correcto</string>
   <string name="unlock_scramble_pin_layout_title">Disposición aleatoria</string>
@@ -462,6 +455,4 @@
   <string name="maximum_head_level">Cabeza: %1$s W/kg</string>
   <string name="maximum_body_level">Cuerpo: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Extender escritorio</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Administrar ajustes para cifrado de SMS</string>
 </resources>
