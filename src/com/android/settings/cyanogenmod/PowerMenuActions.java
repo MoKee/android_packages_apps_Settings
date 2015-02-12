@@ -17,7 +17,6 @@
 package com.android.settings.cyanogenmod;
 
 import android.content.Context;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
@@ -42,17 +41,14 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PowerMenuActions extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class PowerMenuActions extends SettingsPreferenceFragment {
 
     final static String TAG = "PowerMenuActions";
 
-    private static final String KEY_SCREENRECORD = "power_menu_screenrecord";
-
-    private CheckBoxPreference mScreenrecordPref;
     private CheckBoxPreference mPowerPref;
     private CheckBoxPreference mRebootPref;
     private CheckBoxPreference mScreenshotPref;
+    private CheckBoxPreference mScreenRecordPref;
     private CheckBoxPreference mProfilePref;
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
@@ -73,16 +69,9 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.power_menu_settings);
         mContext = getActivity().getApplicationContext();
 
-        final ContentResolver resolver = getContentResolver();
-
         mAvailableActions = getActivity().getResources().getStringArray(
                 R.array.power_menu_actions_array);
         mAllActions = PowerMenuConstants.getAllActions();
-
-        mScreenrecordPref = (CheckBoxPreference) findPreference(KEY_SCREENRECORD);
-        mScreenrecordPref.setChecked(Settings.System.getInt(resolver,
-                Settings.System.POWER_MENU_SCREENRECORD_ENABLED, 0) == 1);
-        mScreenrecordPref.setOnPreferenceChangeListener(this);
 
         for (String action : mAllActions) {
         // Remove preferences not present in the overlay
@@ -97,6 +86,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
                 mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_SCREENRECORD)) {
+                mScreenRecordPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENRECORD);
             } else if (action.equals(GLOBAL_ACTION_KEY_PROFILE)) {
                 mProfilePref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_PROFILE);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
@@ -131,6 +122,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
 
         if (mScreenshotPref != null) {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
+        }
+
+        if (mScreenRecordPref != null) {
+            mScreenRecordPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENRECORD));
         }
 
         if (mProfilePref != null) {
@@ -173,17 +168,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object o) {
-        if (preference == mScreenrecordPref) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.POWER_MENU_SCREENRECORD_ENABLED,
-                    Boolean.TRUE.equals((Boolean)o) ? 1 : 0);
-            return true;
-        }
-        return false;
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
         updatePreferences();
@@ -204,6 +188,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
         } else if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
+
+        } else if (preference == mScreenRecordPref) {
+            value = mScreenRecordPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENRECORD);
 
         } else if (preference == mProfilePref) {
             value = mProfilePref.isChecked();
