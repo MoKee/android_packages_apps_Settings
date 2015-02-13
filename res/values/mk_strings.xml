@@ -96,8 +96,8 @@
     <string name="hardware_keys_action_reboot_menu">Reboot menu</string>
 
     <!-- The volume key answer -->
-    <string name="volume_answer_call_title">Volume key answer</string>
-    <string name="volume_answer_call_summary">Volume up key answer</string>
+    <string name="volume_answer_call_title">Answer call</string>
+    <string name="volume_answer_call_summary">Pressing the volume up button will answer the current incoming call</string>
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_mokee_title">Privacy</string>
