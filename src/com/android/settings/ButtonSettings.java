@@ -446,8 +446,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         // Volume button answers calls.
-        mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
-                  Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+        if (mVolumeAnswerCall != null) {
+            mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
+                    Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+        }
 
     }
 
