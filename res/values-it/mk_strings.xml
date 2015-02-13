@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Tutti i numeri</string>
   <string name="blacklist_all_numbers_summary">Blocca tutte le chiamate</string>
   <string name="smartcontrol_settings_title">Controllo intelligente</string>
+  <string name="direct_control_title">Controllo diretto</string>
+  <string name="direct_call_for_dialer_title">Chiamata diretta nel compositore</string>
+  <string name="direct_call_for_dialer_summary">Portare il telefono all\'orecchio dopo aver inserito il numero nel compositore per far partire la chiamata in automatico</string>
+  <string name="direct_call_for_mms_title">Chiamata diretta in MMS</string>
+  <string name="direct_call_for_mms_summary">Portando il telefono all\'orecchio partirà in automatico una chiamata verso il contatto corrente</string>
   <string name="navigation_bar_height">Altezza pulsante</string>
   <string name="navigation_bar_height_48">48dp (predefinito)</string>
   <string name="navigation_bar_height_0">Nascondi</string>
@@ -58,4 +63,7 @@
   <string name="custom_carrier_label_title">Etichetta personalizzata gestore telefonico</string>
   <string name="custom_carrier_label_explain">Inserisci una nuova etichetta. Lasciare vuoto per mantenere il nome originale.</string>
   <string name="custom_carrier_label_notset">Etichetta personalizzata attualmente non impostata</string>
+  <string name="hardware_keys_action_screenshot">Cattura schermo</string>
+  <string name="hardware_keys_action_reboot_menu">Menu di riavvio</string>
+  <string name="privacy_settings_mokee_title">Privacy</string>
 </resources>

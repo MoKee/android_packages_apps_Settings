@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Alle Zahlen</string>
   <string name="blacklist_all_numbers_summary">Alle Anrufe blockieren</string>
   <string name="smartcontrol_settings_title">Smart Control</string>
+  <string name="direct_control_title">Direkt Kontrolle</string>
+  <string name="direct_call_for_dialer_title">Direkter Aufruf im Telefon</string>
+  <string name="direct_call_for_dialer_summary">Gerät an das Ohr halten, um die eingegebene Nummer direkt anzurufen</string>
+  <string name="direct_call_for_mms_title">Direktruf in MMS</string>
+  <string name="direct_call_for_mms_summary">Gerät an das Ohr halten, um die angezeigten Kontakt direkt anzurufen</string>
   <string name="navigation_bar_height">Höhe der Schaltflächen</string>
   <string name="navigation_bar_height_48">48dp (Standard)</string>
   <string name="navigation_bar_height_0">Verbergen</string>
@@ -58,4 +63,7 @@
   <string name="custom_carrier_label_title">Benutzerdefinierte Provider-Bezeichnung</string>
   <string name="custom_carrier_label_explain">Bitte geben Sie eine neue Bezeichnung ein. Um Ihre Standard Bezeichnung wiederherzustellen, lassen Sie das Feld leer.</string>
   <string name="custom_carrier_label_notset">Benutzerdefinierte Beschriftung ist derzeit nicht festgelegt</string>
+  <string name="hardware_keys_action_screenshot">Bildschimfoto</string>
+  <string name="hardware_keys_action_reboot_menu">Neustart Menü</string>
+  <string name="privacy_settings_mokee_title">Privatsphäre</string>
 </resources>

@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Все номера</string>
   <string name="blacklist_all_numbers_summary">Блокировать все звонки</string>
   <string name="smartcontrol_settings_title">Интеллектуальное управление</string>
+  <string name="direct_control_title">Вызов датчиком приближения</string>
+  <string name="direct_call_for_dialer_title">Прямой вызов в номеронабирателе</string>
+  <string name="direct_call_for_dialer_summary">Поднесение телефона к уху после набора номера вызывает абонента</string>
+  <string name="direct_call_for_mms_title">Прямой вызов в MMS</string>
+  <string name="direct_call_for_mms_summary">Поднесите телефон к уху, чтобы вызвать выбранный номер</string>
   <string name="navigation_bar_height">Высота кнопки</string>
   <string name="navigation_bar_height_48">48dp (по умолчанию)</string>
   <string name="navigation_bar_height_0">скрыть</string>
@@ -58,4 +63,7 @@
   <string name="custom_carrier_label_title">Установить имя оператора</string>
   <string name="custom_carrier_label_explain">Введите новое имя. Для возрата к имени по умолчанию оставьте строку пустой.</string>
   <string name="custom_carrier_label_notset">Пользовательское имя оператора не установлено</string>
+  <string name="hardware_keys_action_screenshot">Screenshot</string>
+  <string name="hardware_keys_action_reboot_menu">Меню перезагрузки</string>
+  <string name="privacy_settings_mokee_title">Конфиденциальность</string>
 </resources>

@@ -20,7 +20,7 @@
   <string name="mokee_support">Podpora komunitou</string>
   <string name="mokee_support_default">Neznámá</string>
   <string name="animation_settings_title">Animace</string>
-  <string name="listview_animation_title">ListView animace</string>
+  <string name="listview_animation_title">Animace seznamů</string>
   <string name="listview_off">Vypnuto</string>
   <string name="listview_wave_left">Vlna (vlevo)</string>
   <string name="listview_wave_right">Vlna (vpravo)</string>
@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Všechna čísla</string>
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>
   <string name="smartcontrol_settings_title">Chytré ovládání</string>
+  <string name="direct_control_title">Přímé ovládání</string>
+  <string name="direct_call_for_dialer_title">Přímé volání ve vytáčení</string>
+  <string name="direct_call_for_dialer_summary">Po zadání čísla přiložte telefon k uchu, aby jste volali přímo</string>
+  <string name="direct_call_for_mms_title">Přímé volání v MMS</string>
+  <string name="direct_call_for_mms_summary">Zvedněte telefon k uchu pro automatické vytočení aktuálního kontaktu</string>
   <string name="navigation_bar_height">Výška tlačítka</string>
   <string name="navigation_bar_height_48">48dp (výchozí)</string>
   <string name="navigation_bar_height_0">skrýt</string>
@@ -58,4 +63,7 @@
   <string name="custom_carrier_label_title">Vlastní název operátora</string>
   <string name="custom_carrier_label_explain">Zadejte, prosím, nový název. Nechte prázdné pro navrácení k původnímu.</string>
   <string name="custom_carrier_label_notset">V současné době není nastaven vlastní název operátora</string>
+  <string name="hardware_keys_action_screenshot">Snímek obrazovky</string>
+  <string name="hardware_keys_action_reboot_menu">Nabídka restartu</string>
+  <string name="privacy_settings_mokee_title">Soukromí</string>
 </resources>

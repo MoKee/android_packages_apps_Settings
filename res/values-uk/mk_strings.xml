@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Усі номери</string>
   <string name="blacklist_all_numbers_summary">Блокувати всі виклики</string>
   <string name="smartcontrol_settings_title">Інтелектуальне керування</string>
+  <string name="direct_control_title">Виклик піднесенням до вуха</string>
+  <string name="direct_call_for_dialer_title">Прямий виклик у номеронабирачі</string>
+  <string name="direct_call_for_dialer_summary">Піднесення телефону до вуха після вводу номеру викликає абонента</string>
+  <string name="direct_call_for_mms_title">Прямий виклик у MMS</string>
+  <string name="direct_call_for_mms_summary">Піднесення телефона до вуха викликає поточний контакт</string>
   <string name="navigation_bar_height">Висота клавіші</string>
   <string name="navigation_bar_height_48">48dp (за замовчуванням)</string>
   <string name="navigation_bar_height_0">приховати</string>
@@ -58,4 +63,7 @@
   <string name="custom_carrier_label_title">Власна мітка оператора</string>
   <string name="custom_carrier_label_explain">Введіть будь ласка нове ім`я. Залиште поле пустим, щоб повернутися до типового імені.</string>
   <string name="custom_carrier_label_notset">Альтернативне ім`я оператора не встановлено</string>
+  <string name="hardware_keys_action_screenshot">Знімок екрана</string>
+  <string name="hardware_keys_action_reboot_menu">Меню перезавантаження</string>
+  <string name="privacy_settings_mokee_title">Конфіденційність</string>
 </resources>
