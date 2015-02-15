@@ -885,7 +885,7 @@ Každý riadok v zozname jasu zodpovedá jednému <i>riadiacemu bodu</i> krivky 
   <string name="usb_sd_insert_summary">Vložte USB úložisko pre pripojenie</string>
   <string name="usb_sd_mount">Pripojiť USB úložisko</string>
   <string name="usb_sd_format">Vymazať USB úložisko</string>
-  <string name="usb_sd_format_summary">Vymazať všetky dáta na USB úložisko, ako napríklad hudbu alebo fotografie</string>
+  <string name="usb_sd_format_summary">Vymazať všetky dáta na USB úložisku, ako napríklad hudbu alebo fotografie</string>
   <string name="usb_dlg_confirm_unmount_title">Odpojiť USB úložisko?</string>
   <string name="usb_dlg_confirm_unmount_text">Ak odpojíte USB úložisko, niektoré používané aplikácie môžu byť zastavené a nebudú k dispozícii, kým USB úložisko znova nepripojíte.</string>
   <string name="usb_dlg_error_unmount_text">USB úložisko sa nepodarilo odpojiť. Skúste to znova neskôr.</string>

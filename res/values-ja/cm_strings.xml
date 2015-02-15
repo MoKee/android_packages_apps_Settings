@@ -840,8 +840,8 @@
   <string name="edge_gesture_service_summary">ナビゲーションバーとステータスバーのジェスチャーのタッチイベントをアプリに送信しない</string>
   <string name="data_usage_cycle_editor_subtitle_cm">各サイクルの日付</string>
   <string name="data_usage_lengths_spinner_subtitle">サイクルの長さ:</string>
-  <string name="disable_navkeys_title">画面上のナビゲーションバーを有効化</string>
-  <string name="disable_navkeys_summary">画面上のナビゲーションバーを有効にしてハードウェアのボタンを無効にする</string>
+  <string name="disable_navkeys_title">スクリーンナビゲーションバーを有効化</string>
+  <string name="disable_navkeys_summary">スクリーンナビゲーションバーを有効にしてハードウェアのボタンを無効にする</string>
   <string name="voice_plus_summary">すべてのアプリでGoogleボイス経由のSMSの送信を有効にする</string>
   <string name="accessibility_sync_in_progress">同期しています。</string>
   <string name="wifi_mode">モード</string>
@@ -857,7 +857,7 @@
   <string name="multi_sim_settings_title">SIMカード</string>
   <string name="multi_sim_settings_group_summary">デフォルトのSIMの選択</string>
   <string name="voice_title">音声通話</string>
-  <string name="data_title">データ接続</string>
+  <string name="data_title">データ通信</string>
   <string name="sms_title">SMSの送信</string>
   <string name="priority_sub_title">サブスクリプションの優先順位</string>
   <string name="bluetooth_accept_all_files">すべてのファイル形式を許可</string>
@@ -946,7 +946,7 @@
   <string name="set_sms_error">SMSサブスクリプションの設定中にエラーが発生しました。サブスクリプションが有効ではありません。</string>
   <string name="set_voice_error">音声サブスクリプションの設定中にエラーが発生しました。サブスクリプションが有効ではありません。</string>
   <string name="set_priority_sub_error">優先サブスクリプションの設定中にエラーが発生しました。サブスクリプションが有効ではありません。</string>
-  <string name="prompt">ダイアログで選択</string>
+  <string name="prompt">ダイアログ</string>
   <string name="maximum_head_level">頭部: %1$s W/kg</string>
   <string name="maximum_body_level">身体: %1$s W/kg</string>
   <string name="tune_away_title">チューンアウェイ</string>

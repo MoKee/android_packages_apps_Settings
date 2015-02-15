@@ -248,7 +248,7 @@
   <string name="title_tile_gps">Locaţie</string>
   <string name="title_tile_torch">Lanternă</string>
   <string name="title_tile_lockscreen">Ecran de blocare</string>
-  <string name="title_tile_lte">LTE</string>
+  <string name="title_tile_lte">4G</string>
   <string name="title_tile_mobiledata">Date Mobile</string>
   <string name="title_tile_profile">Profil</string>
   <string name="title_tile_performance_profile">Profilul de performanță</string>
