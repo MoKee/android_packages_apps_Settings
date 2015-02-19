@@ -207,13 +207,6 @@
   <string name="block_notifications_title">Oznámení filtru</string>
   <string name="block_notifications_summary">Spravovat ignorovaná upozornění a filtry</string>
   <string name="no_filters_title">Nenastaven žádný filtr</string>
-  <string name="cmupdate_settings_title">Aktualizace CyanogenMod</string>
-  <string name="update_recovery_title">Aktualizovat Cyanogen recovery</string>
-  <string name="update_recovery_summary">Aktualizovat recovery pomocí aktualizace systému</string>
-  <string name="update_recovery_on_warning">UPOZORNĚNÍ: Pokud je tato funkce zapnutá, vaše nainstalované recovery bude nahrazeno aktuální verzí z právě nainstalovaného systému.\n\nOddíl recovery bude aktualizován současně s aktualizací systému, čímž bude zajištěna kompatibilita s budoucími verzemi.\n\nChcete povolit tuto funkci?</string>
-  <string name="update_recovery_off_warning">VAROVÁNÍ: Pokud je tato funkce vypnutá, vaše nainstalované recovery nebude aktualizováno s aktualizacemi systému.\n\nBudoucí aktualizace systému se se starou verzí recovery nemusí správně nainstalovat.\n\nOpravdu chcete tuto funkci vypnout?</string>
-  <string name="mod_version">CyanogenMod verze</string>
-  <string name="mod_version_default">Neznámá</string>
   <string name="model_name">Název modelu</string>
   <string name="build_date">Datum sestavení</string>
   <string name="contributor_cloud_title">Přispěvatelé</string>
@@ -221,7 +214,6 @@
   <string name="double_tap_to_wake_title">Probuzení dvojím dotykem</string>
   <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
   <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
-  <string name="privacy_settings_cyanogenmod_title">Soukromí</string>
   <string name="privacy_guard_default_title">Ve výchozím stavu povolen</string>
   <string name="privacy_guard_default_summary">Automaticky aktivovat Ochranu soukromí pro nově nainstalované aplikace</string>
   <string name="privacy_guard_manager_title">Ochrana soukromí</string>
@@ -600,8 +592,6 @@
   <string name="menu_hidden_apps_reset_lock">Obnovit gesto zámku</string>
   <string name="protected_apps">Chráněné aplikace</string>
   <string name="saving_protected_components">Ukládání stavu komponent\u2026</string>
-  <string name="stats_collection_title">Sbírka statistik</string>
-  <string name="stats_collection_summary">Je-li povoleno, umožňuje shromažďovat statistická data</string>
   <string name="power_notifications_category_title">Zvuk nabíječky</string>
   <string name="power_notifications_enable_title">Povolit</string>
   <string name="power_notifications_enable_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
@@ -634,9 +624,6 @@
   <string name="graphics_title">Grafika a vykreslování</string>
   <string name="edge_gesture_service_title">Blokovat události dotyků gest</string>
   <string name="edge_gesture_service_summary">Nepropuštět dotyky pro stavovou nebo navigační lištu do aplikací</string>
-  <string name="cmlicense_title">Právní ujednání CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Právní ujednání CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Zobrazit licenční ujednání není možné, protože není aktivní žádné datové připojení. Pro zobrazení tohoto ujednání navštivte prosím stránku %s z jakéhokoliv počítače, připojeného na internet.</string>
   <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
   <string name="unlock_quick_unlock_control_summary">Automatické odemknutí, pokud je zadán správný PIN/heslo</string>
   <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
@@ -702,8 +689,6 @@
   <string name="lockscreen_none_target">Žádný</string>
   <string name="lockscreen_message">Dotykem nalevo nebo napravo vyberte zástupce na zamykací obrazovce.</string>
   <string name="lockscreen_choose_action_title">Zvolit akci</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Spravovat nastavení zabezpečených SMS</string>
   <string name="navigation_ring_title">Položky navigačního prstence</string>
   <string name="navigation_ring_message">Klepněte na ikonu pro upravení navigačního prstence.\n\nVyberte cíl pro konfiguraci jeho chování.\n\nDotykem na ikonu „\u2713“ uložíte provedené změny, pomocí „Obnovit výchozí“ bude provedeno obnovení nastavení na výchozí hodnoty.</string>
   <string name="stylus_icon_enabled_title">Zobrazit ikonu při používání stylusu</string>

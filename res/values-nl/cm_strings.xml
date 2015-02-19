@@ -206,13 +206,6 @@
   <string name="block_notifications_title">Meldingen filteren</string>
   <string name="block_notifications_summary">Genegeerde meldingen en filters beheren</string>
   <string name="no_filters_title">Geen filters ingesteld</string>
-  <string name="cmupdate_settings_title">CyanogenMod-updates</string>
-  <string name="update_recovery_title">Cyanogen-recovery bijwerken</string>
-  <string name="update_recovery_summary">Recovery bijwerken met systeemupdates</string>
-  <string name="update_recovery_on_warning">Let op: wanneer deze functie is ingeschakeld, wordt uw huidige recovery vervangen door de recovery die met uw huidige besturingssysteem geleverd wordt.\n\nUw recovery wordt met systeemupdates ook bijgewerkt om compatibiliteit met toekomstige versies te garanderen.\n\nWilt u deze functie inschakelen?</string>
-  <string name="update_recovery_off_warning">Let op: als deze functie is uitgeschakeld, wordt uw recovery niet bijgewerkt bij systeemupdates.\n\nToekomstige systeemupdates kunnen wellicht niet geïnstalleerd worden op oude recovery-versies.\n\nWeet u zeker dat u deze functie wilt uitschakelen?</string>
-  <string name="mod_version">CyanogenMod-versie</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="model_name">Modelnaam</string>
   <string name="build_date">Build-datum</string>
   <string name="contributor_cloud_title">Bijdragers</string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_title">Dubbeltikken om te ontwaken</string>
   <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
   <string name="proximity_wake_summary">Nabijheidssensor gebruiken voorafgaand aan ontwaken van scherm</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <string name="privacy_guard_default_title">Standaard ingeschakeld</string>
   <string name="privacy_guard_default_summary">Privacybescherming standaard inschakelen voor nieuw geïnstalleerde apps</string>
   <string name="privacy_guard_manager_title">Privacybescherming</string>
@@ -587,7 +579,6 @@
   <string name="menu_hidden_apps_reset_lock">Patroon opnieuw instellen</string>
   <string name="protected_apps">Beschermde apps</string>
   <string name="saving_protected_components">Opslaan\u2026</string>
-  <string name="stats_collection_title">Verzamelen van statistieken</string>
   <string name="power_notifications_category_title">Opladergeluid</string>
   <string name="power_notifications_enable_title">Opladergeluid</string>
   <string name="power_notifications_enable_summary">Geluid afspelen bij het aansluiten of loskoppelen van een lader</string>
@@ -620,9 +611,6 @@
   <string name="graphics_title">Grafisch en weergave</string>
   <string name="edge_gesture_service_title">Aanraakgebaren blokkeren</string>
   <string name="edge_gesture_service_summary">Aanraakgebaren voor navigatie- en statusbalk niet naar apps sturen</string>
-  <string name="cmlicense_title">Juridische afdeling van CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridische afdeling van CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Geen netwerkverbinding. Ga naar %s om deze informatie te bekijken op een computer met internet.</string>
   <string name="unlock_quick_unlock_control_title">Snel ontgrendelen</string>
   <string name="unlock_quick_unlock_control_summary">Automatisch ontgrendelen als uw pincode/wachtwoord correct is ingevoerd</string>
   <string name="unlock_scramble_pin_layout_title">Lay-out husselen</string>
@@ -688,8 +676,6 @@
   <string name="lockscreen_none_target">Geen</string>
   <string name="lockscreen_message">Tik op een pictogram recht of links om de snelkoppeling opnieuw toe te wijzen.</string>
   <string name="lockscreen_choose_action_title">Actie selecteren</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Instellingen beveiligde sms-berichten</string>
   <string name="navigation_ring_title">Snelkoppelingposities</string>
   <string name="navigation_ring_message">Tik op het bewerkingspictogram om de navigatiering te openen en te bewerken.\n\nSelecteer een snelkoppeling om in te stellen.\n\nTik op het \'\u2713\'-pictogram om uw wijzigingen op te slaan of \'Herstel standaard\' om de standaardinstellingen te herstellen.</string>
   <string name="stylus_icon_enabled_title">Pictogram bij stylusgebruik</string>

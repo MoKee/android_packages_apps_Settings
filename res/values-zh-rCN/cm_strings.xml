@@ -205,13 +205,6 @@
   <string name="block_notifications_title">通知过滤</string>
   <string name="block_notifications_summary">管理已忽略的通知和过滤器</string>
   <string name="no_filters_title">没有设置过滤</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
-  <string name="update_recovery_title">更新 Cyanogen 恢复模式</string>
-  <string name="update_recovery_summary">使用系统更新来更新恢复模式</string>
-  <string name="update_recovery_on_warning">注意：启用此功能后，您已安装的恢复模式会被正在运行的系统所包含的恢复模式所替换。\n\n您的恢复模式会随着系统一起更新，以确保对未来版本的兼容性。\n\n您确定启用此功能？</string>
-  <string name="update_recovery_off_warning">警告：此功能被禁用后，你安装的恢复模式将不会随着系统一起更新。\n\n未来的系统更新可能不支持用过旧的或自制的恢复模式安装。\n\n您确定要禁用此功能？</string>
-  <string name="mod_version">CyanogenMod 版本</string>
-  <string name="mod_version_default">未知</string>
   <string name="model_name">型号名称</string>
   <string name="build_date">编译日期</string>
   <string name="contributor_cloud_title">贡献者</string>
@@ -219,7 +212,6 @@
   <string name="double_tap_to_wake_title">双击唤醒</string>
   <string name="proximity_wake_title">防止意外唤醒</string>
   <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
-  <string name="privacy_settings_cyanogenmod_title">隐私</string>
   <string name="privacy_guard_default_title">默认启用隐私防护</string>
   <string name="privacy_guard_default_summary">默认对新安装的应用启用隐私防护</string>
   <string name="privacy_guard_manager_title">隐私防护</string>
@@ -600,8 +592,6 @@
   <string name="menu_hidden_apps_reset_lock">重置锁定图案</string>
   <string name="protected_apps">受保护的应用</string>
   <string name="saving_protected_components">正在保存组件状态\u2026</string>
-  <string name="stats_collection_title">统计数据收集</string>
-  <string name="stats_collection_summary">启用时，允许数据收集</string>
   <string name="power_notifications_category_title">充电提示音</string>
   <string name="power_notifications_enable_title">启用</string>
   <string name="power_notifications_enable_summary">连接或断开电源时发出声音</string>
@@ -634,9 +624,6 @@
   <string name="graphics_title">图形和渲染</string>
   <string name="edge_gesture_service_title">拦截手势触摸事件</string>
   <string name="edge_gesture_service_summary">不向应用发送导航栏和状态栏的触摸事件</string>
-  <string name="cmlicense_title">CyanogenMod 法律信息</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod 法律信息</string>
-  <string name="settings_cmlicense_activity_unreachable">您没有数据连接。要立即查看此信息，请通过已联网的任意计算机访问 %s。</string>
   <string name="unlock_quick_unlock_control_title">快速解锁</string>
   <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
   <string name="unlock_scramble_pin_layout_title">乱序布局</string>
@@ -702,8 +689,6 @@
   <string name="lockscreen_none_target">无</string>
   <string name="lockscreen_message">轻触左边或右边的图标来重新分配锁屏快捷方式。</string>
   <string name="lockscreen_choose_action_title">选择操作</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">管理安全短信设置</string>
   <string name="navigation_ring_title">导航环目标</string>
   <string name="navigation_ring_message">轻按编辑图标以打开导航环编辑。\n\n选择一个目标以配置其行为。\n\n轻按“\u2713”图标以保存您的变更，或“还原默认值”以重置设置到默认状态。</string>
   <string name="stylus_icon_enabled_title">使用触控笔时显示光标</string>

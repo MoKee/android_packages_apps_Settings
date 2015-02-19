@@ -188,15 +188,11 @@
   <string name="block_notifications_title">סנן הודעות</string>
   <string name="block_notifications_summary">נהל הודעות שהוחבאו ומסננים</string>
   <string name="no_filters_title">לא הוגדרו מסננים</string>
-  <string name="cmupdate_settings_title">עדכוני CyanogenMod</string>
-  <string name="mod_version">גרסת CyanogenMod</string>
-  <string name="mod_version_default">לא ידוע</string>
   <string name="build_date">תאריך בנייה</string>
   <string name="contributor_cloud_title">תורמים</string>
   <string name="double_tap_to_wake_title">הקשה כפולה כדי להעיר</string>
   <string name="proximity_wake_title">מנע התעוררות מקרית</string>
   <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני ערעור המסך</string>
-  <string name="privacy_settings_cyanogenmod_title">פרטיות</string>
   <string name="privacy_guard_default_title">מופעל כברירת מחדל</string>
   <string name="privacy_guard_default_summary">אפשר כברירת מחדל עבור יישומים מותקנים חדשים</string>
   <string name="privacy_guard_manager_title">שומר הפרטיות</string>
@@ -483,9 +479,6 @@
   <string name="graphics_title">גרפיקה ועיבוד</string>
   <string name="edge_gesture_service_title">חסום אירועי מחוות מגע</string>
   <string name="edge_gesture_service_summary">אל תשלח נגיעות בסרגל הניווט ובשורת המצב לאפליקציות</string>
-  <string name="cmlicense_title">CyanogenMod משפטי</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod משפטי</string>
-  <string name="settings_cmlicense_activity_unreachable">‏אין לך חיבור נתונים. כדי להציג מידע זה כעת, עבור אל %s ממחשב כלשהו המחובר לאינטרנט.</string>
   <string name="unlock_quick_unlock_control_title">פתיחה מהירה</string>
   <string name="unlock_quick_unlock_control_summary">פתח אוטומטית כאשר הסיסמה/קוד מוכנס</string>
   <string name="unlock_scramble_pin_layout_title">ערבב פריסה</string>
@@ -501,6 +494,4 @@
   <string name="maximum_head_level">ראש: %1$s  W/kg</string>
   <string name="maximum_body_level">גוף: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">שולחן עבודה מורחב</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">ניהול הגדרות SMS מאובטח</string>
 </resources>
