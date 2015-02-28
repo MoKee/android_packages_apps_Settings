@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Filtrere meddelelser</string>
   <string name="block_notifications_summary">Administrere ignoreret underretninger og filtre</string>
   <string name="no_filters_title">Der er ingen filtre</string>
-  <string name="cmupdate_settings_title">CyanogenMod-opdateringer</string>
-  <string name="update_recovery_title">Opdatér Cyanogen recovery</string>
-  <string name="update_recovery_summary">Opdatér recovery med systemopdateringer</string>
-  <string name="update_recovery_on_warning">BEMÆRK: Når denne funktion er aktiveret, vil din installerede \'recovery\' blive erstattet af en inkluderet i den aktuelle version af styresystemet.\n\nDin \'recovery\' opdateres sammen med opdateringer til styresystemet, hvilket sikrer kompatibilitet med fremtidige versioner.\n\nVil du aktivere denne funktion?</string>
-  <string name="update_recovery_off_warning">ARVARSEL: Med denne funktion slået fra, vil din \'recovery\' ikke blive opdateret sammen med styresystemet.\n\nFremtidige opdateringer til styresystemet kan måske ikke installeres med en forældet \'recovery\'\n\nVil du virkelig slå denne funktion fra?</string>
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Ukendt</string>
   <string name="model_name">Modelnavn</string>
   <string name="build_date">Kørselsdato</string>
   <string name="contributor_cloud_title">Bidragydere</string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_summary">Dobbelttryk på skærmen for at tænde den</string>
   <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
   <string name="proximity_wake_summary">Check nærhedsføleren før skærmen vækkes</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatliv</string>
   <string name="privacy_guard_default_title">Aktiveret som standard</string>
   <string name="privacy_guard_default_summary">Aktiveret som standard for nyinstallerede apps</string>
   <string name="privacy_guard_manager_title">Privatlivsvagt</string>
@@ -603,8 +595,6 @@
   <string name="menu_hidden_apps_reset_lock">Nulstil mønster lås</string>
   <string name="protected_apps">Beskyttede apps</string>
   <string name="saving_protected_components">Gemmer komponenttilstand\u2026</string>
-  <string name="stats_collection_title">Indsamling af statistik</string>
-  <string name="stats_collection_summary">Når aktiveret, tillades indsamling af målinger</string>
   <string name="power_notifications_category_title">Strømlyde</string>
   <string name="power_notifications_enable_title">Slå til</string>
   <string name="power_notifications_enable_summary">Afspiller en lyd, når du tilslutter eller frakobler en strømkilde</string>
@@ -638,9 +628,6 @@
   <string name="graphics_title">Grafik og rendering</string>
   <string name="edge_gesture_service_title">Blokér berøringsevents for bevægelser</string>
   <string name="edge_gesture_service_summary">Send ikke berøringsevents for navigations- og statuslinjebevægelser til apps</string>
-  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridisk information for CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Du har ingen dataforbindelse. Gå til %s fra en computer tilsluttet Internettet for at vise denne information nu.</string>
   <string name="unlock_quick_unlock_control_title">Hurtig-oplåsning</string>
   <string name="unlock_quick_unlock_control_summary">Lås automatisk op, når det korrekte PIN/kodeord er indtastet</string>
   <string name="unlock_scramble_pin_layout_title">Ændre layout</string>
@@ -705,8 +692,6 @@
   <string name="lockscreen_none_target">Ingen</string>
   <string name="lockscreen_message">Tryk på et ikon til venstre eller højre for igen at tildele en genvej til skærmlås.</string>
   <string name="lockscreen_choose_action_title">Vælg handling</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Administrér indstillinger for sikker SMS.</string>
   <string name="navigation_ring_title">Mål for navigationsring</string>
   <string name="navigation_ring_message">Tryk på redigeringsikonet for at åbne navigationsringen for redigering.\n\nVælg et mål for at konfigurere.\n\nTryk på \'\u2713\' ikonet for at gemme dine ændringer eller \'Gendan standard\' for at nulstille indstillingerne.</string>
   <string name="stylus_icon_enabled_title">Vis ikon ved brug af pen</string>
