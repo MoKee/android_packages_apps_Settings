@@ -36,8 +36,7 @@
         android:dialogTitle="@string/blacklist_private_numbers_title"
         android:entries="@array/blacklist_policy_private_entries"
         android:entryValues="@array/blacklist_policy_private_values"
-	android:dependency="phone_blacklist_all_number"
-        android:persistent="false" />
+        android:dependency="phone_blacklist_all_number" />
 
     <MultiSelectListPreference
         android:key="button_blacklist_unknown_numbers"
@@ -45,8 +44,7 @@
         android:dialogTitle="@string/blacklist_unknown_numbers_title"
         android:entries="@array/blacklist_policy_unknown_entries"
         android:entryValues="@array/blacklist_policy_unknown_values"
-	android:dependency="phone_blacklist_all_number"
-        android:persistent="false" />
+	android:dependency="phone_blacklist_all_number" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="phone_blacklist_regex_enabled"
