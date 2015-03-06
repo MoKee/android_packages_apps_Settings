@@ -40,9 +40,9 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import org.cyanogenmod.hardware.AdaptiveBacklight;
-import org.cyanogenmod.hardware.ColorEnhancement;
-import org.cyanogenmod.hardware.SunlightEnhancement;
+import org.mokee.hardware.AdaptiveBacklight;
+import org.mokee.hardware.ColorEnhancement;
+import org.mokee.hardware.SunlightEnhancement;
 
 import java.util.ArrayList;
 import java.util.List;
