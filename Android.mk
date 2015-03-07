@@ -51,8 +51,6 @@ LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/moke
 
 LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
-LOCAL_JAVA_LIBRARIES += org.mokee.hardware
-
 include frameworks/opt/setupwizard/navigationbar/common.mk
 include $(BUILD_PACKAGE)
 
