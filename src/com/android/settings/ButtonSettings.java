@@ -158,7 +158,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Volume button answers calls.
         mVolumeAnswerCall = (SwitchPreference) findPreference(KEY_VOLUME_ANSWER_CALL);
-        mVolumeAnswerCall.setOnPreferenceChangeListener(this);
 
         mHandler = new Handler();
 
@@ -471,8 +470,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Volume button answers calls.
         if (mVolumeAnswerCall != null) {
-            mVolumeAnswerCall.setChecked((Settings.System.getInt(getContentResolver(),
-                    Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, 0) == 1));
+            final int incallVolumeBehavior = Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR,
+                    Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_DEFAULT);
+            final boolean volumeButtonAnswersCall =
+                (incallVolumeBehavior == Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_ANSWER);
+            mVolumeAnswerCall.setChecked(volumeButtonAnswersCall);
         }
 
     }
@@ -599,11 +602,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolumeKeyCursorControl) {
             handleActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
-            return true;
-        } else if (preference == mVolumeAnswerCall) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(),
-                   Settings.System.ANSWER_VOLUME_BUTTON_BEHAVIOR_ANSWER, value ? 1 : 0);
             return true;
         } else if (preference == mNavigationRecentsLongPressAction) {
             // RecentsLongPressAction is handled differently because it intentionally uses
@@ -744,9 +742,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHomeAnswerCall) {
             handleToggleHomeButtonAnswersCallPreferenceClick();
             return true;
+        } else if (preference == mVolumeAnswerCall) {
+            handleToggleVolumeButtonAnswerCallPreferenceClick();
+            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void handleToggleVolumeButtonAnswerCallPreferenceClick() {
+        Settings.Secure.putInt(getContentResolver(),
+                   Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR, (mVolumeAnswerCall.isChecked()
+                        ? Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_ANSWER
+                        : Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 
     private void handleTogglePowerButtonEndsCallPreferenceClick() {
