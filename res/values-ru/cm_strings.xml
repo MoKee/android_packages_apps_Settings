@@ -209,13 +209,6 @@
   <string name="block_notifications_title">Фильтр уведомлений</string>
   <string name="block_notifications_summary">Настройка игнорируемых уведомлений и фильтров</string>
   <string name="no_filters_title">Фильтр не установлен</string>
-  <string name="cmupdate_settings_title">Обновления системы</string>
-  <string name="update_recovery_title">Обновлять режим восстановления</string>
-  <string name="update_recovery_summary">Перезаписывать раздел Recovery при установке обновлений</string>
-  <string name="update_recovery_on_warning">Когда эта функция включена, установленная прошивка режима восстановления будет перезаписана той, которая соответствует текущей версии ОС.\n\nРежим восстановления будет обновляться вместе с обновлениями системы, обеспечивая совместимость с будущими версиями.\n\nВключить использование этой функции?</string>
-  <string name="update_recovery_off_warning">Когда эта функция отключена, прошивка режима восстановления всегда будет оставаться неизменной.\n\nНекоторые обновления ОС могут не устанавливаться при использовании устаревших или пользовательских версий раздела Recovery.\n\nОтключить использование этой функции?</string>
-  <string name="mod_version">Версия CyanogenMod</string>
-  <string name="mod_version_default">Неизвестно</string>
   <string name="model_name">Модель</string>
   <string name="build_date">Дата сборки</string>
   <string name="contributor_cloud_title">Имена разработчиков</string>
@@ -224,7 +217,6 @@
   <string name="double_tap_to_wake_summary">Дважды коснитесь экрана, чтобы вывести устройство из спящего режима</string>
   <string name="proximity_wake_title">Предотвращать случайное включение</string>
   <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
-  <string name="privacy_settings_cyanogenmod_title">Конфиденциальность</string>
   <string name="privacy_guard_default_title">Защищенный режим по умолчанию</string>
   <string name="privacy_guard_default_summary">Включать защищенный режим для всех новых приложений</string>
   <string name="privacy_guard_manager_title">Защищенный режим</string>
@@ -628,8 +620,6 @@
   <string name="menu_hidden_apps_reset_lock">Удалить граф. ключ</string>
   <string name="protected_apps">Заблокир. приложения</string>
   <string name="saving_protected_components">Сохранение состояния приложений\u2026</string>
-  <string name="stats_collection_title">Сбор статистики</string>
-  <string name="stats_collection_summary">Когда включено, разрешает сбор метрики</string>
   <string name="power_notifications_category_title">Зарядное устройство</string>
   <string name="power_notifications_enable_title">Звук при зарядке</string>
   <string name="power_notifications_enable_summary">Воспроизводить звук при подключении или отключении источника питания</string>
@@ -663,9 +653,6 @@
   <string name="graphics_title">Графика и рисование</string>
   <string name="edge_gesture_service_title">Подавлять события жестов</string>
   <string name="edge_gesture_service_summary">Не передавать приложениям жесты показа строки состояния и панели навигации</string>
-  <string name="cmlicense_title">Политика конфиденциальности CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Политика конфиденциальности CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Устройство не подключено к Интернету. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере с интернет-доступом.</string>
   <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
   <string name="unlock_quick_unlock_control_summary">Автоматическая разблокировка при вводе правильного пароля или PIN-кода</string>
   <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
@@ -740,8 +727,6 @@
   <string name="lockscreen_message">Нажмите значок слева или справа для изменения ярлыка экрана блокировки.</string>
   <string name="lockscreen_choose_action_title">Выберите действие</string>
   <string name="lockscreen_visualizer_title">Визуализация спектра музыки</string>
-  <string name="whisperpush_title">Технология WhisperPush</string>
-  <string name="whisperpush_summary">Настройка шифрования SMS-сообщений</string>
   <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
   <string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык для настройки его поведения.\n\nКоснитесь галочки (\u2713) для выхода из режима редактирования и сохранения изменений, а для возврата ярлыков по умолчанию — коснитесь кнопки «Восстановить».</string>
   <string name="stylus_icon_enabled_title">Курсор при использовании стилуса</string>
