@@ -209,6 +209,13 @@
   <string name="block_notifications_title">Filtrovať oznámenia</string>
   <string name="block_notifications_summary">Spravovať ignorované oznámenia a filtre</string>
   <string name="no_filters_title">Nenastavené žiadne filtre</string>
+  <string name="cmupdate_settings_title">Aktualizácie CyanogenMod</string>
+  <string name="update_recovery_title">Aktualizovať Cyanogen recovery</string>
+  <string name="update_recovery_summary">Aktualizovať recovery s aktualizáciami systému</string>
+  <string name="update_recovery_on_warning">UPOZORNENIE: Ak je táto funkcia povolená, vaša nainštalovaná recovery bude nahradená verziou, ktorá je súčasťou aktuálneho operačného systému.\n\nVaša recovery sa bude aktualizovať spolu so systémom, čím sa zaistuje kompatibilita s budúcim verziami.\n\nChcete povoliť túto funkciu?</string>
+  <string name="update_recovery_off_warning">VAROVANIE: Ak je táto funkcia zakázaná, vaša nainštalovaná recovery nebude nahradená s aktualizáciami operačného systému.\n\nBudúce aktualizácie operačného systému sa nemusia nainštalovať kvôli zastaraným alebo vlastným verziám recovery.\n\nChcete zakázať túto funkciu?</string>
+  <string name="mod_version">Verzia CyanogenMod</string>
+  <string name="mod_version_default">Neznáme</string>
   <string name="model_name">Názov modelu</string>
   <string name="build_date">Dátum zostavy</string>
   <string name="contributor_cloud_title">Prispievatelia</string>
@@ -217,6 +224,7 @@
   <string name="double_tap_to_wake_summary">Zapnúť displej dvojitým poklepaním na obrazovku</string>
   <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
   <string name="proximity_wake_summary">Kontrolovať snímač priblíženia pre zabránenie nechcenému prebudeniu</string>
+  <string name="privacy_settings_cyanogenmod_title">Súkromie</string>
   <string name="privacy_guard_default_title">Povolené predvolene</string>
   <string name="privacy_guard_default_summary">Predvolene povoliť pre novonainštalované aplikácie</string>
   <string name="privacy_guard_manager_title">Ochrana súkromia</string>
@@ -620,6 +628,8 @@
   <string name="menu_hidden_apps_reset_lock">Obnoviť uzamknutie vzorom</string>
   <string name="protected_apps">Chránené aplikácie</string>
   <string name="saving_protected_components">Ukladanie stavu komponentu\u2026</string>
+  <string name="stats_collection_title">Zbieranie štatistík</string>
+  <string name="stats_collection_summary">Povoliť metrické zbieranie</string>
   <string name="power_notifications_category_title">Zvuky nabíjania</string>
   <string name="power_notifications_enable_title">Povoliť</string>
   <string name="power_notifications_enable_summary">Prehrať zvuk pri pripojení alebo odpojení zdroja nabíjania</string>
@@ -653,6 +663,9 @@
   <string name="graphics_title">Grafika a vykresľovanie</string>
   <string name="edge_gesture_service_title">Blokovať akcie na dotykové gestá</string>
   <string name="edge_gesture_service_summary">Neprenášať dotyky pre stavový alebo navigačný panel do aplikácií</string>
+  <string name="cmlicense_title">Právne informácie CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Právne informácie CyanogenMod</string>
+  <string name="settings_cmlicense_activity_unreachable">Nemáte dátové pripojenie. Ak chcete tieto informácie zobraziť teraz, prejdite v ľubovoľnom počítači pripojenom na Internet na adresu %s.</string>
   <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
   <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <string name="unlock_scramble_pin_layout_title">Dynamické rozloženie</string>
@@ -726,6 +739,9 @@
   <string name="lockscreen_none_target">Žiadna</string>
   <string name="lockscreen_message">Kliknite na ikonu vľavo alebo vpravo a priraďte zástupcu obrazovky uzamknutia.</string>
   <string name="lockscreen_choose_action_title">Vyberte akciu</string>
+  <string name="lockscreen_visualizer_title">Zobraziť hudobnú vizualizáciu</string>
+  <string name="whisperpush_title">WhisperPush</string>
+  <string name="whisperpush_summary">Spravovať nastavenie zabezpečených SMS</string>
   <string name="navigation_ring_title">Položky navigačného kruhu</string>
   <string name="navigation_ring_message">Dotykom na ikonu Upraviť otvoríte navigačnýpanel na úpravy.\n\nDotykom na ikonu zmeníte jej skratku a dlhým stlačením ikony zmeníte jej poradie.\n\nDotykom na tlačidlo \'\u2713\' uložíte vaše zmeny a dotykom na tlačidlo \'Obnoviť predvolené\' obnovíte rozloženie na predvolené nastavenia.</string>
   <string name="stylus_icon_enabled_title">Zobraziť ikonu pri používaní stylusu</string>
@@ -751,6 +767,7 @@
   <string name="stylus_app_not_installed">Aplikácia %s nie je nainštalovaná</string>
   <string name="advanced">Pokročilé</string>
   <string name="advanced_mode_title">Pokročilý režim</string>
+  <string name="advanced_mode_summary">Zobraziť ďalšie možnosti pre nastavenie vášho zariadenia v rôznych nastaveniach menu</string>
   <string name="category_misc">Rôzne</string>
   <string name="category_vibrate">Vibrácie</string>
   <string name="category_volume">Hlasitosť</string>
@@ -780,4 +797,7 @@
   <string name="live_display_low_power_summary">Nastaviť zobrazenie pre najnižšiu spotrebu energie bez zhoršenia čitateľnosti</string>
   <string name="live_display_enhance_color_title">Vylepšiť farby</string>
   <string name="live_display_enhance_color_summary">Zlepšiť živosť farieb pleťových odtieňov, scenérie a ďalších obrázkov</string>
+  <string name="battery_saver_threshold">Úroveň šetriča batérie</string>
+  <string name="battery_saver_summary">Znižuje výkon a obmedzuje dáta na pozadí</string>
+  <string name="battery_saver_summary_unavailable">Nie je k dispozícii pri nabíjaní</string>
 </resources>
