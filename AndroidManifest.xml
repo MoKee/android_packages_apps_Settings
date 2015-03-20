@@ -2374,23 +2374,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="com.mokee.helper.service.MKDashClockExtension"
-            android:icon="@drawable/ic_tab_installed"
-            android:label="@string/extension_label"
-            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA" >
-            <intent-filter>
-                <action android:name="com.google.android.apps.dashclock.Extension" />
-            </intent-filter>
-
-            <meta-data
-                android:name="protocolVersion"
-                android:value="1" />
-            <meta-data
-                android:name="description"
-                android:value="@string/extension_description" />
-        </service>
-
         <service android:name="com.mokee.helper.service.DownLoadService" />
 
         <service android:name="com.mokee.helper.service.UpdateCheckService" />
@@ -2416,12 +2399,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
                 <action android:name="com.mokee.mkupdater.action.NOTIFICATION_CLICKED" />
-            </intent-filter>
-        </receiver>
-
-        <receiver android:name="com.mokee.helper.receiver.CheckFinishReceiver" >
-            <intent-filter>
-                <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK_FINISHED" />
             </intent-filter>
         </receiver>
         <!-- MOKEE HELPER END -->

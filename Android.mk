@@ -9,7 +9,6 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	jsr305 \
 	libGooglePlayServices \
 	libMoKeePushService \
-	libDashClockAPI \
 	volley \
 	Alipay \
 	UPPayAssistEx \
