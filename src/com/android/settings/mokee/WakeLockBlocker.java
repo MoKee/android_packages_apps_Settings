@@ -82,7 +82,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
             Boolean checked = mWakeLockState.get(check.getText().toString());
             check.setChecked(checked.booleanValue());
 
-            if(checked.booleanValue()){
+            if (checked.booleanValue()) {
                 check.setTextColor(getResources().getColor(android.R.color.holo_red_light));
             }
 
@@ -90,7 +90,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
                     @Override
                     public void onCheckedChanged(CompoundButton v, boolean checked) {
                         mWakeLockState.put(v.getText().toString(), new Boolean(checked));
-                        if(checked){
+                        if (checked) {
                             check.setTextColor(getResources().getColor(android.R.color.holo_red_light));
                         } else {
                             check.setTextColor(getResources().getColor(android.R.color.primary_text_dark));
@@ -99,12 +99,6 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
             });
             return rowView;
         }
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.d("maxwen", "running");
     }
 
     @Override
@@ -141,7 +135,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
                 .setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton v, boolean checked) {
-                        if (checked && isFirstEnable() && !mAlertShown){
+                        if (checked && isFirstEnable() && !mAlertShown) {
                             showAlert();
                             mAlertShown = true;
                         }
@@ -192,9 +186,9 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         String seenWakeLocks =  pm.getSeenWakeLocks();
         mSeenWakeLocks = new ArrayList<String>();
 
-        if (seenWakeLocks!=null && seenWakeLocks.length()!=0){
+        if (seenWakeLocks!=null && seenWakeLocks.length()!=0) {
             String[] parts = seenWakeLocks.split("\\|");
-            for(int i = 0; i < parts.length; i++){
+            for(int i = 0; i < parts.length; i++) {
                 mSeenWakeLocks.add(parts[i]);
                 mWakeLockState.put(parts[i], new Boolean(false));
             }
@@ -207,13 +201,13 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
         mBlockedWakeLocks = new ArrayList<String>();
 
-        if (blockedWakelockList!=null && blockedWakelockList.length()!=0){
+        if (blockedWakelockList!=null && blockedWakelockList.length()!=0) {
             String[] parts = blockedWakelockList.split("\\|");
-            for(int i = 0; i < parts.length; i++){
+            for(int i = 0; i < parts.length; i++) {
                 mBlockedWakeLocks.add(parts[i]);
 
                 // add all blocked but not seen so far
-                if(!mSeenWakeLocks.contains(parts[i])){
+                if (!mSeenWakeLocks.contains(parts[i])) {
                     mSeenWakeLocks.add(parts[i]);
                 }
                 mWakeLockState.put(parts[i], new Boolean(true));
@@ -223,25 +217,24 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         Collections.sort(mSeenWakeLocks);
     }
 
-    private void save(){
+    private void save() {
         StringBuffer buffer = new StringBuffer();
         Iterator<String> nextState = mWakeLockState.keySet().iterator();
-        while(nextState.hasNext()){
+        while(nextState.hasNext()) {
             String name = nextState.next();
             Boolean state=mWakeLockState.get(name);
-            if(state.booleanValue()){
+            if (state.booleanValue()) {
                 buffer.append(name + "|");
             }
         }
-        if(buffer.length()>0){
+        if (buffer.length()>0) {
             buffer.deleteCharAt(buffer.length() - 1);
         }
-        Log.d("maxwen", buffer.toString());
         Settings.System.putString(getActivity().getContentResolver(),
                 Settings.System.WAKELOCK_BLOCKING_LIST, buffer.toString());
     }
 
-    private void reload(){
+    private void reload() {
         mWakeLockState = new HashMap<String, Boolean>();
         updateSeenWakeLocksList();
         updateBlockedWakeLocksList();
@@ -267,12 +260,12 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case MENU_RELOAD:
-                if (mEnabled){
-			reload();
-		}
+                if (mEnabled) {
+                    reload();
+                }
                 return true;
             case MENU_SAVE:
-                if (mEnabled){
+                if (mEnabled) {
                     save();
                 }
                 return true;
