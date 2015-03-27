@@ -2344,7 +2344,7 @@
 
         <!-- MOKEE HELPER START -->
         <activity android:name=".mokee.helper.activities.TipsHelp"
-            android:icon="@drawable/ic_launcher_tips_help"
+            android:icon="@mipmap/ic_launcher_tips_help"
             android:label="@string/tips_help_title"
             android:theme="@style/ActivityTransparent"
             android:excludeFromRecents="true" >
@@ -2355,7 +2355,7 @@
         </activity>
 
         <activity android:name=".mokee.helper.activities.MoKeeForum"
-            android:icon="@drawable/ic_launcher_forum"
+            android:icon="@mipmap/ic_launcher_forum"
             android:label="@string/mokee_forum_title"
             android:theme="@style/ActivityTransparent"
             android:excludeFromRecents="true" >
