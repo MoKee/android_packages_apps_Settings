@@ -29,11 +29,16 @@ import android.content.Intent;
 import android.mokee.utils.MoKeeUtils;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.util.Log;
 import cn.jpush.android.api.JPushInterface;
 
 import com.android.settings.R;
 import com.android.settings.mokee.stats.Utilities;
+
+import com.mokee.helper.misc.Constants;
+import com.mokee.helper.service.DownLoadService;
+import com.mokee.helper.service.UpdateCheckService;
 
 public class PushingMessageReceiver extends BroadcastReceiver {
 
@@ -87,8 +92,10 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                                     mod_version_code = mod_version_code.substring(2, 8);
                                 }
                                 if (new_version_code > Integer.parseInt(mod_version_code)) {
-                                    promptUser(ctx, url, ctx.getString(R.string.mokee_push_newversion_title),
-                                            ctx.getString(R.string.mokee_push_newversion_msg), msg_id, R.drawable.ic_mokee_updater);
+                                    Intent i = new Intent(ctx, UpdateCheckService.class);
+                                    i.setAction(UpdateCheckService.ACTION_CHECK);
+                                    i.putExtra(DownLoadService.DOWNLOAD_FLAG, Constants.INTENT_FLAG_GET_UPDATE);
+                                    ctx.startServiceAsUser(i, UserHandle.CURRENT);
                                 }
                                 break;
                             case 1:
