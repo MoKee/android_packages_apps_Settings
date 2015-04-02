@@ -231,6 +231,7 @@ public class SettingsActivity extends Activity
             R.id.sim_settings,
             R.id.wireless_settings,
             R.id.device_section,
+            R.id.smartcontrol_settings,
             R.id.sound_settings,
             R.id.display_and_lights_settings,
             R.id.lockscreen_settings,
@@ -247,13 +248,14 @@ public class SettingsActivity extends Activity
             R.id.account_settings,
             R.id.system_section,
             R.id.date_time_settings,
+            R.id.mokee_center,
             R.id.about_settings,
             R.id.accessibility_settings,
             R.id.print_settings,
             R.id.home_settings,
             R.id.status_bar_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_mokee
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -1259,6 +1261,10 @@ public class SettingsActivity extends Activity
                             getResources().getBoolean(R.bool.config_hidePerformanceSettings);
                     if (forceHide ||
                             !(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.mokee_center) {
+                    if (UserHandle.myUserId() != UserHandle.USER_OWNER) {
                         removeTile = true;
                     }
                 }

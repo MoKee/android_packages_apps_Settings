@@ -21,7 +21,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.database.ContentObserver;
-import android.hardware.CmHardwareManager;
+import android.hardware.MkHardwareManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -35,10 +35,10 @@ import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
-import static android.hardware.CmHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
-import static android.hardware.CmHardwareManager.FEATURE_COLOR_ENHANCEMENT;
-import static android.hardware.CmHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
-import static android.hardware.CmHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
+import static android.hardware.MkHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
+import static android.hardware.MkHardwareManager.FEATURE_COLOR_ENHANCEMENT;
+import static android.hardware.MkHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
+import static android.hardware.MkHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
 
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
@@ -94,7 +94,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     private int mDefaultDayTemperature;
     private int mDefaultNightTemperature;
 
-    private CmHardwareManager mCmHardwareManager;
+    private MkHardwareManager mMkHardwareManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -108,7 +108,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         mDefaultNightTemperature = res.getInteger(
                 com.android.internal.R.integer.config_nightColorTemperature);
 
-        mCmHardwareManager = (CmHardwareManager) activity.getSystemService(Context.CMHW_SERVICE);
+        mMkHardwareManager = (MkHardwareManager) activity.getSystemService(Context.MKHW_SERVICE);
 
         addPreferencesFromResource(R.xml.livedisplay);
 
@@ -131,7 +131,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
                 com.android.internal.R.array.live_display_summaries);
 
         // Remove outdoor mode from lists if there is no support
-        if (!mCmHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+        if (!mMkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
             int idx = ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_OUTDOOR));
             String[] entriesTemp = new String[mModeEntries.length - 1];
             String[] valuesTemp = new String[mModeValues.length - 1];
@@ -159,27 +159,27 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
         mLowPower = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_LOW_POWER);
         if (liveDisplayPrefs != null && mLowPower != null
-                && !mCmHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
+                && !mMkHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
             liveDisplayPrefs.removePreference(mLowPower);
             mLowPower = null;
         }
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
-                && !mCmHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+                && !mMkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
 
         mColorEnhancement = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
         if (liveDisplayPrefs != null && mColorEnhancement != null
-                && !mCmHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
+                && !mMkHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mColorEnhancement);
             mColorEnhancement = null;
         }
 
         if (calibrationPrefs != null
-                && !mCmHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+                && !mMkHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
             Preference gammaPref = findPreference(KEY_DISPLAY_GAMMA);
             if (gammaPref != null) {
                 calibrationPrefs.removePreference(gammaPref);
@@ -309,17 +309,17 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
         @Override
         public List<String> getNonIndexableKeys(Context context) {
-             CmHardwareManager cmHardwareManager =
-                    (CmHardwareManager) context.getSystemService(Context.CMHW_SERVICE);
+             MkHardwareManager mkHardwareManager =
+                    (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
 
             ArrayList<String> result = new ArrayList<String>();
-            if (!cmHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+            if (!mkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
             }
-            if (!cmHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
+            if (!mkHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
             }
-            if (!cmHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
+            if (!mkHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
                 result.add(KEY_LIVE_DISPLAY_LOW_POWER);
             }
             if (!isPostProcessingSupported(context)) {
@@ -327,7 +327,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
             } else {
                 result.add(KEY_DISPLAY_COLOR);
             }
-            if (!cmHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+            if (!mkHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
                 result.add(KEY_DISPLAY_GAMMA);
             }
             return result;

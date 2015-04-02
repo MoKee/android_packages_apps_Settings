@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2014-2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -22,23 +23,33 @@
         android:title="@string/blacklist_notify"
         android:defaultValue="true" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="phone_blacklist_all_number"
+        android:title="@string/blacklist_all_numbers_title"
+        android:summary="@string/blacklist_all_numbers_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
+
     <MultiSelectListPreference
         android:key="button_blacklist_private_numbers"
         android:title="@string/blacklist_private_numbers_title"
         android:dialogTitle="@string/blacklist_private_numbers_title"
         android:entries="@array/blacklist_policy_private_entries"
-        android:entryValues="@array/blacklist_policy_private_values" />
+        android:entryValues="@array/blacklist_policy_private_values"
+        android:dependency="phone_blacklist_all_number" />
 
     <MultiSelectListPreference
         android:key="button_blacklist_unknown_numbers"
         android:title="@string/blacklist_unknown_numbers_title"
         android:dialogTitle="@string/blacklist_unknown_numbers_title"
         android:entries="@array/blacklist_policy_unknown_entries"
-        android:entryValues="@array/blacklist_policy_unknown_values" />
+        android:entryValues="@array/blacklist_policy_unknown_values"
+	android:dependency="phone_blacklist_all_number" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="phone_blacklist_regex_enabled"
         android:title="@string/blacklist_regex_title"
-        android:summary="@string/blacklist_regex_summary" />
+        android:summary="@string/blacklist_regex_summary"
+        android:dependency="phone_blacklist_all_number" />
 
 </PreferenceScreen>

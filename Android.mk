@@ -6,7 +6,17 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v7-cardview \
 	android-support-v13 \
-	jsr305
+	jsr305 \
+	libGooglePlayServices \
+	libMoKeePushService \
+	volley \
+	Alipay \
+	UPPayAssistEx \
+	UPPayPluginEx \
+	WanpuPay \
+	MobileSec \
+	Utdid4all \
+	PayPal
 
 LOCAL_MODULE_TAGS := optional
 
@@ -30,11 +40,14 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
-LOCAL_AAPT_FLAGS := \
-    --auto-add-overlay \
-    --extra-packages android.support.v7.cardview
-
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+LOCAL_AAPT_FLAGS := \
+        --auto-add-overlay \
+        --extra-packages com.mokee.helper \
+        --extra-packages android.support.v7.cardview
+LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
+LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-pay
+
 LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
 include frameworks/opt/setupwizard/navigationbar/common.mk

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2014-2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -147,6 +148,28 @@
                 settings:keywords="@string/keywords_recents_show_searchbar"
                 android:defaultValue="true"
                 settings:advanced="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="animation_prefs"
+            android:title="@string/animation_settings_title">
+
+        <ListPreference
+                android:key="listview_animation"
+                android:dialogTitle="@string/listview_animation_title"
+                android:title="@string/listview_animation_title"
+                android:entries="@array/listview_animation_entries"
+                android:entryValues="@array/listview_animation_values"
+                android:defaultValue="1" />
+
+        <ListPreference
+                android:key="listview_interpolator"
+                android:dialogTitle="@string/listview_interpolator_title"
+                android:title="@string/listview_interpolator_title"
+                android:entries="@array/listview_interpolator_entries"
+                android:entryValues="@array/listview_interpolator_values"
+                android:defaultValue="0" />
 
     </PreferenceCategory>
 

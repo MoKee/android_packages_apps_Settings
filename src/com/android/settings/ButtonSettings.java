@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2013-2015 The MoKee OpenSource project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +26,7 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.hardware.CmHardwareManager;
+import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.Handler;
@@ -70,6 +71,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    // Custom Navigation Bar Height
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
@@ -129,8 +133,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationRecentsLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
+    private SwitchPreference mVolumeAnswerCall;
 
     private PreferenceCategory mNavigationPreferencesCat;
+
+    // Custom Navigation Bar Height Preference
+    private ListPreference mNavButtonsHeight;
 
     private Handler mHandler;
 
@@ -148,6 +156,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
+        // Volume button answers calls.
+        mVolumeAnswerCall = (SwitchPreference) findPreference(KEY_VOLUME_ANSWER_CALL);
+
         mHandler = new Handler();
 
         // Force Navigation bar related options
@@ -157,6 +168,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        // Custom Navigation Bar Height
+        int statusNavButtonsHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavButtonsHeight = initActionList(KEY_NAVIGATION_BAR_HEIGHT, statusNavButtonsHeight);
 
         // Navigation bar recents long press activity needs custom setup
         mNavigationRecentsLongPressAction =
@@ -238,13 +254,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showAppSwitchWake = (deviceWakeKeys & KEY_MASK_APP_SWITCH) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
 
-        final CmHardwareManager cmHardwareManager =
-                (CmHardwareManager) context.getSystemService(Context.CMHW_SERVICE);
+        final MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
 
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
-        if (cmHardwareManager.isSupported(CmHardwareManager.FEATURE_KEY_DISABLE)) {
+        if (mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE)) {
             try {
                 IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
                 needsNavigationBar = wm.needsNavigationBar();
@@ -413,7 +429,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
 
             if (!hasNavBar && (needsNavigationBar ||
-                    !cmHardwareManager.isSupported(CmHardwareManager.FEATURE_KEY_DISABLE))) {
+                    !mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE))) {
                 result.put(CATEGORY_NAVBAR, null);
             }
         } catch (RemoteException e) {
@@ -450,6 +466,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             final boolean homeButtonAnswersCall =
                 (incallHomeBehavior == Settings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
+        }
+
+        // Volume button answers calls.
+        if (mVolumeAnswerCall != null) {
+            final int incallVolumeBehavior = Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR,
+                    Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_DEFAULT);
+            final boolean volumeButtonAnswersCall =
+                (incallVolumeBehavior == Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_ANSWER);
+            mVolumeAnswerCall.setChecked(volumeButtonAnswersCall);
         }
 
     }
@@ -553,6 +579,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleActionListChange(mMenuLongPressAction, newValue,
                     Settings.System.KEY_MENU_LONG_PRESS_ACTION);
             return true;
+        } else if (preference == mNavButtonsHeight) {
+            handleActionListChange(mNavButtonsHeight, newValue,
+                    Settings.System.NAVIGATION_BAR_HEIGHT);
+            return true;
         } else if (preference == mAssistPressAction) {
             handleActionListChange(mAssistPressAction, newValue,
                     Settings.System.KEY_ASSIST_ACTION);
@@ -598,9 +628,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
-        CmHardwareManager cmHardwareManager =
-                (CmHardwareManager) context.getSystemService(Context.CMHW_SERVICE);
-        cmHardwareManager.set(CmHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+        mkHardwareManager.set(MkHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         Editor editor = prefs.edit();
@@ -674,9 +704,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     public static void restoreKeyDisabler(Context context) {
-        CmHardwareManager cmHardwareManager =
-                (CmHardwareManager) context.getSystemService(Context.CMHW_SERVICE);
-        if (!cmHardwareManager.isSupported(CmHardwareManager.FEATURE_KEY_DISABLE)) {
+        MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE)) {
             return;
         }
 
@@ -712,9 +742,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHomeAnswerCall) {
             handleToggleHomeButtonAnswersCallPreferenceClick();
             return true;
+        } else if (preference == mVolumeAnswerCall) {
+            handleToggleVolumeButtonAnswerCallPreferenceClick();
+            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void handleToggleVolumeButtonAnswerCallPreferenceClick() {
+        Settings.Secure.putInt(getContentResolver(),
+                   Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR, (mVolumeAnswerCall.isChecked()
+                        ? Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_ANSWER
+                        : Settings.Secure.RING_VOLUME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 
     private void handleTogglePowerButtonEndsCallPreferenceClick() {

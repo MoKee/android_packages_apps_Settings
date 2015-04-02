@@ -28,7 +28,7 @@ import android.content.pm.ServiceInfo;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
-import android.hardware.CmHardwareManager;
+import android.hardware.MkHardwareManager;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -155,9 +155,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             volumes.removePreference(volumes.findPreference(KEY_VOLUME_LINK_NOTIFICATION));
         }
 
-        CmHardwareManager cmHardwareManager =
-                (CmHardwareManager) getSystemService(Context.CMHW_SERVICE);
-        if (!cmHardwareManager.isSupported(CmHardwareManager.FEATURE_VIBRATOR)) {
+        MkHardwareManager mkHardwareManager =
+                (MkHardwareManager) getSystemService(Context.MKHW_SERVICE);
+        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
             Preference preference = vibrate.findPreference(KEY_VIBRATION_INTENSITY);
             if (preference != null) {
                 vibrate.removePreference(preference);
@@ -629,9 +629,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             if (vib == null || !vib.hasVibrator()) {
                 rt.add(KEY_VIBRATE);
             }
-            CmHardwareManager cmHardwareManager =
-                    (CmHardwareManager) context.getSystemService(Context.CMHW_SERVICE);
-            if (!cmHardwareManager.isSupported(CmHardwareManager.FEATURE_VIBRATOR)) {
+            MkHardwareManager mkHardwareManager =
+                    (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+            if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
                 rt.add(KEY_VIBRATION_INTENSITY);
             }
 
