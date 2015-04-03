@@ -102,4 +102,16 @@
   <string name="unlock_set_unlock_gesture_title">手势</string>
   <string name="unlock_set_unlock_gesture_summary">低安全性，实验</string>
   <string name="unlock_set_unlock_mode_gesture">手势</string>
+  <string name="recents_panel_settings_title">最近任务设置</string>
+  <string name="clear_all_settings_title">一键清理按钮设置</string>
+  <string name="show_clear_all_recents_button_title">显示一键清理按钮</string>
+  <string name="recents_clear_all_location_title">一键清理按钮位置</string>
+  <string name="recents_clear_all_location_top_right">右上方</string>
+  <string name="recents_clear_all_location_top_left">左上方</string>
+  <string name="recents_clear_all_location_top_center">上方中央</string>
+  <string name="recents_clear_all_location_bottom_right">右下方</string>
+  <string name="recents_clear_all_location_bottom_left">左下方</string>
+  <string name="recents_clear_all_location_bottom_center">下方中央</string>
+  <string name="recents_clear_all_dismiss_all_title">忽略清理前台任务</string>
+  <string name="recents_clear_all_dismiss_all_summary">当多过一个最近任务时，忽略清理所有前台任务</string>
 </resources>

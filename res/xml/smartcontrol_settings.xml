@@ -20,6 +20,17 @@
     android:title="@string/smartcontrol_settings_title" >
 
     <PreferenceCategory
+        android:key="recents_panel_settings"
+        android:title="@string/recents_panel_settings_title" >
+
+        <PreferenceScreen
+            android:key="clear_all_settings"
+            android:title="@string/clear_all_settings_title"
+            android:fragment="com.android.settings.mokee.RecentsSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="direct_control"
         android:title="@string/direct_control_title" >
 
@@ -33,6 +44,6 @@
             android:summary="@string/direct_call_for_mms_summary"
             android:title="@string/direct_call_for_mms_title" />
 
-        </PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>
