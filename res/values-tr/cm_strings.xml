@@ -206,13 +206,6 @@
   <string name="block_notifications_title">Filtre bildirimleri</string>
   <string name="block_notifications_summary">Yoksayılan bildirimleri ve filtreleri yönet</string>
   <string name="no_filters_title">Hiçbir filtre ayarlanmadı</string>
-  <string name="cmupdate_settings_title">CyanogenMod güncellemeleri</string>
-  <string name="update_recovery_title">Cyanogen kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
-  <string name="update_recovery_on_warning">DİKKAT: Bu özellik etkinken, yüklü kurtarma modunuz mevcut İS sürümündeki mod ile değiştirilecektir. \n\nKurtarma modunuz sistem güncellemeleri ile birlikte güncellenecektir, böylelikle gelecek sürümler ile uyumluluk sağlanacaktır.\n\nBu özelliği etkinleştirmek ister misiniz?</string>
-  <string name="update_recovery_off_warning">UYARI: Bu özellik devre dışı bırakıldığında, yüklü kurtarma modunuz İS güncellemeleri ile güncellenmeyecektir.\n\nGelecek İS güncellemeleri eskimiş ya da özel kurtarma sürümleri ile yüklenemeyebilir.\n\nBu özelliği gerçekten devre dışı bırakmak istiyor musunuz?</string>
-  <string name="mod_version">CyanogenMod sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <string name="model_name">Model adı</string>
   <string name="build_date">İnşa tarihi</string>
   <string name="contributor_cloud_title">Katkıda bulunanlar</string>
@@ -221,7 +214,6 @@
   <string name="double_tap_to_wake_summary">Ekranı açmak için ekrana iki defa dokunun</string>
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Ekranı açmadan önce yakınlık sensörünü kontrol et</string>
-  <string name="privacy_settings_cyanogenmod_title">Gizlilik</string>
   <string name="privacy_guard_default_title">Varsayılan olarak etkin</string>
   <string name="privacy_guard_default_summary">Yeni yüklenen uygulamalar için Gizlilik Koruması\'nı varsayılan olarak aktifleştir</string>
   <string name="privacy_guard_manager_title">Gizlilik Koruması</string>
@@ -607,8 +599,6 @@
   <string name="menu_hidden_apps_reset_lock">Desen kilidini sıfırla</string>
   <string name="protected_apps">Korunan uygulamalar</string>
   <string name="saving_protected_components">Bileşen durumu kaydediliyor\u2026</string>
-  <string name="stats_collection_title">İstatistikler</string>
-  <string name="stats_collection_summary">Etkinleştirildiğinde metrik istatistiklere izin verir</string>
   <string name="power_notifications_category_title">Güç sesleri</string>
   <string name="power_notifications_enable_title">Etkinleştir</string>
   <string name="power_notifications_enable_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken bir ses çal</string>
@@ -642,9 +632,6 @@
   <string name="graphics_title">Grafik ve modelleme</string>
   <string name="edge_gesture_service_title">Dokunmatik hareketlerini engelle</string>
   <string name="edge_gesture_service_summary">Telefonda gezinme ve durum çubuğu için uygulamalara dokunmatik iletiler gönderme</string>
-  <string name="cmlicense_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Yasal</string>
-  <string name="settings_cmlicense_activity_unreachable">Veri bağlantınız yok. Bu bilgiyi görüntülemek için internete bağlı herhangi bir bilgisayardan %s adresine gidin.</string>
   <string name="unlock_quick_unlock_control_title">Hızlı kilit aç</string>
   <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde otomatik olarak kilidi aç</string>
   <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
@@ -716,8 +703,6 @@
   <string name="lockscreen_none_target">Yok</string>
   <string name="lockscreen_message">Kilit ekranı kısayollarını ayarlamak için sağ ya da soldaki simgeye dokunun.</string>
   <string name="lockscreen_choose_action_title">İşlev seçin</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Güvenli SMS ayarlarını yönet</string>
   <string name="navigation_ring_title">Dolaşım halkası uygulamaları</string>
   <string name="navigation_ring_message">Dolaşım halkasını düzenlemek için düzenleme simgesine dokunun.\n\nKısayol için bir uygulama seçin.\n\nDeğişikliklerinizi kaydetmek için \'\u2713\' simgesine dokunun ya da ayarları sıfırlamak için \'Varsayılanları geri yükle\'ye dokunun.</string>
   <string name="stylus_icon_enabled_title">Kalem kullanırken simge göster</string>

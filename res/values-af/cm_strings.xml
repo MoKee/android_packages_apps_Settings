@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Filter kennisgewings</string>
   <string name="block_notifications_summary">Bestuur geïgnoreerde kennisgewings en ​​filters</string>
   <string name="no_filters_title">Geen filters opgestel</string>
-  <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
-  <string name="update_recovery_title">Opdateer Cyanogen recovery</string>
-  <string name="update_recovery_summary">Opdateer recovery met stelsel opdaterings</string>
-  <string name="update_recovery_on_warning">KENNISGEWING: Wanneer hierdie funksie geaktiveer is, sal jou geïnstalleerde recovery vervang word deur een ingesluit met die huidige weergawe van die Beheer Stelsel\n\nJou recovery sal opgedateer word saam met die opgraderings aan jou stelsel, dit help om versoenbaarheid te verseker van toekomstige weergawes.\n\nWil jy hierdie funksie aktiveer?</string>
-  <string name="update_recovery_off_warning">WAARSKUWING: Wanneer hierdie funksie afgeskakel is, sal jou geïnstalleerde recovery nie opgedateer word met Beheer Stelsel (BS) opgraderings nie.\n\nToekomstige BS opdaterings kan dalk nie geïnstalleer word met verouderde of persoonlike recovery weergawes nie.\n\nWil jy regtig hierdie funksie af skakel?</string>
-  <string name="mod_version">CyanogenMod weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="model_name">Model naam</string>
   <string name="build_date">Bou datum</string>
   <string name="contributor_cloud_title">Bydraers</string>
@@ -219,7 +212,6 @@
   <string name="double_tap_to_wake_title">Klop-Klop wakker instelling</string>
   <string name="proximity_wake_title">Voorkom toevallige wakker word</string>
   <string name="proximity_wake_summary">Gaan die nabyheid sensor na voordat die skerm wakker gemaak word</string>
-  <string name="privacy_settings_cyanogenmod_title">Privaatheid</string>
   <string name="privacy_guard_default_title">Standaard instelling</string>
   <string name="privacy_guard_default_summary">Aktiveer as \'n standaard instelling vir nuut-geinstalleerde programme</string>
   <string name="privacy_guard_manager_title">Privaatheidswag</string>
@@ -598,8 +590,6 @@
   <string name="menu_hidden_apps_reset_lock">Herstel patroon slot</string>
   <string name="protected_apps">Beskermde programme</string>
   <string name="saving_protected_components">Stoor komponent toestand\u2026</string>
-  <string name="stats_collection_title">Statistieke versameling</string>
-  <string name="stats_collection_summary">As dit aangeskakel is, laat statistieke versameling toe</string>
   <string name="power_notifications_category_title">Laaier-klank</string>
   <string name="power_notifications_enable_title">Aktiveer</string>
   <string name="power_notifications_enable_summary">Speel \'n klank met die koppeling of ontkoppeling van \'n kragbron</string>
@@ -632,9 +622,6 @@
   <string name="graphics_title">Grafika en vertoning</string>
   <string name="edge_gesture_service_title">Blok gebaar raak gebeure</string>
   <string name="edge_gesture_service_summary">Moenie raak gebeure vir navigasie en status balk gebare stuur na programme</string>
-  <string name="cmlicense_title">CyanogenMod Regs</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Regs</string>
-  <string name="settings_cmlicense_activity_unreachable">Jy het nie \'n data verbinding. Om hierdie inligting nou te sien, gaan na %s van enige rekenaar wat verbind is tot die Internet.</string>
   <string name="unlock_quick_unlock_control_title">Vinnige oopsluit</string>
   <string name="unlock_quick_unlock_control_summary">Ontsluit outomaties wanneer die korrekte PIN/wagwoord ingesleutel is</string>
   <string name="unlock_scramble_pin_layout_title">Skommel uitleg</string>
@@ -698,8 +685,6 @@
   <string name="lockscreen_none_target">Geen</string>
   <string name="lockscreen_message">Tik \'n ikoon op die linker of regter kant om \'n slot skerm kortpad toe te wys.</string>
   <string name="lockscreen_choose_action_title">Kies aksie</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Bestuur veilige SMS-instellings.</string>
   <string name="navigation_ring_title">Navigasie ring teikens</string>
   <string name="navigation_ring_message">Tik die wysig ikoon om die navigasie ring vir redigering oop te maak.\n\nKies \'n teiken om sy gedrag op te stel.\n\nTik die \'\u2713\' ikoon om die veranderinge te stoor of \'Herstel standaard\' om die instellings te herstel.</string>
   <string name="stylus_icon_enabled_title">Toon ikoon tydens die gebruik van \'n stilus</string>

@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Értesítések szűrése</string>
   <string name="block_notifications_summary">Figyelmen kívül hagyott értesítések és szűrők kezelése</string>
   <string name="no_filters_title">Nincs szűrő beállítva</string>
-  <string name="cmupdate_settings_title">CyanogenMod frissítések</string>
-  <string name="update_recovery_title">CM recovery frissítése</string>
-  <string name="update_recovery_summary">Rendszerfrissítések telepítése közben frissítse a recovery-t</string>
-  <string name="update_recovery_on_warning">FIGYELEM: Ha ezen funkció aktiválva van, a telepített recovery le lesz cserélve a jelenleg futó operációs rendszerének megfelelően.\n\nA recovery együtt lesz frissítve a rendszerrel, ezáltal biztosítva a kompatibilitást a jövőbeli verziókkal.\n\nBiztosan aktiválja a funkciót?</string>
-  <string name="update_recovery_off_warning">FIGYELEM: Ha ez a funkció ki van kapcsolva, a telepített recovery nem le lesz cserélve a jelenleg futó operációs rendszerének megfelelően.\n\nAz újabb operációs rendszer frissítések lehet, hogy nem támogatják a régi recovery verziókat.\n\nBiztosan inaktiválja a funkciót?</string>
-  <string name="mod_version">CyanogenMod verzió</string>
-  <string name="mod_version_default">Ismeretlen</string>
   <string name="model_name">Modell neve</string>
   <string name="build_date">Build dátuma</string>
   <string name="contributor_cloud_title">Közreműködők</string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_summary">Érintse meg kétszer a képernyőt a kijelző bekapcsolásához</string>
   <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
   <string name="proximity_wake_summary">Közelség érzékelő ellenőrzése a képernyő felébresztése előtt</string>
-  <string name="privacy_settings_cyanogenmod_title">Adatvédelem</string>
   <string name="privacy_guard_default_title">Alapértelmezés szerint engedélyezve</string>
   <string name="privacy_guard_default_summary">Adatvédelmi mód engedélyezése az újonnan telepített alkalmazások számára</string>
   <string name="privacy_guard_manager_title">Adatvédelmi beállítások</string>
@@ -603,8 +595,6 @@
   <string name="menu_hidden_apps_reset_lock">Minta visszaállítása</string>
   <string name="protected_apps">Védett alkalmazások</string>
   <string name="saving_protected_components">Összetevő állapotának mentése\u2026</string>
-  <string name="stats_collection_title">Statisztika gyűjtése</string>
-  <string name="stats_collection_summary">Ha engedélyezve van, lehetővé teszi a mérőszámok gyűjtését</string>
   <string name="power_notifications_category_title">Töltés jelzése</string>
   <string name="power_notifications_enable_title">Engedélyezve</string>
   <string name="power_notifications_enable_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
@@ -638,9 +628,6 @@
   <string name="graphics_title">Grafika és renderelés</string>
   <string name="edge_gesture_service_title">Kézmozdulatok letiltása</string>
   <string name="edge_gesture_service_summary">Az alkalmazások nem veszik figyelembe a navigációs- és állapotsáv érintéseket</string>
-  <string name="cmlicense_title">CyanogenMod jogi nyilatkozat</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod jogi nyilatkozat</string>
-  <string name="settings_cmlicense_activity_unreachable">Nincs internet kapcsolat. Az információ megtekintéséhez, látogasson el a %s címre egy olyan számítógéppel, mely kapcsolódik az internethez.</string>
   <string name="unlock_quick_unlock_control_title">Gyors feloldás</string>
   <string name="unlock_quick_unlock_control_summary">Automatikus feloldás a helyes jelszó/PIN kód beütése után</string>
   <string name="unlock_scramble_pin_layout_title">Szoros elrendezés</string>
@@ -712,8 +699,6 @@
   <string name="lockscreen_none_target">Nincs</string>
   <string name="lockscreen_message">Érintsen meg egy ikont jobb vagy bal oldalt a zárképernyő hivatkozások ismételt hozzárendeléséhez.</string>
   <string name="lockscreen_choose_action_title">Válasszon műveletet</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Biztonságos SMS beállítások kezelése</string>
   <string name="navigation_ring_title">Navigációs gyűrű hivatkozások</string>
   <string name="navigation_ring_message">A navigációs gyűrű módosításához érintse meg a szerkesztés ikont.\n\nVálasszon célt a viselkedés megadásához.\n\nÉrintse meg az \"\u2713\" ikont a mentéshez, vagy \"Az alapértelmezett beállítások visszaállítása\" ikont az újrakezdéshez.</string>
   <string name="stylus_icon_enabled_title">Ikon megjelenítése toll használatakor</string>

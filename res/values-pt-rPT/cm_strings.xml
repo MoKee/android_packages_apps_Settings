@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Filtrar as notificações</string>
   <string name="block_notifications_summary">Gerir notificações ignoradas e filtros</string>
   <string name="no_filters_title">Sem filtros definidos</string>
-  <string name="cmupdate_settings_title">Atualizações</string>
-  <string name="update_recovery_title">Atualizar a recuperação Cyanogen</string>
-  <string name="update_recovery_summary">Atualizar a recuperação com as atualizações do sistema</string>
-  <string name="update_recovery_on_warning">Aviso: Quando este recurso estiver ativado, a sua recuperação instalada será substituída por uma incluída na versão atual do SO.\n\nA sua recuperação será atualizada juntamente com as atualizações do seu sistema, ajudando a garantir a compatibilidade com futuras versões.\n\nQuer ativar este recurso?</string>
-  <string name="update_recovery_off_warning">Aviso: Quando este recurso está desativado, a sua recuperação instalada não será atualizada com o SO.\n\nFuturas atualizações do SO poderão não se instalar com uma versão da recuperação desatualizada ou personalizada.\n\nQuer desativar este recurso?</string>
-  <string name="mod_version">Versão CyanogenMod</string>
-  <string name="mod_version_default">Desconhecido</string>
   <string name="model_name">Modelo</string>
   <string name="build_date">Data de compilação</string>
   <string name="contributor_cloud_title">Colaboradores</string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_summary">Dê um toque duplo no ecrã para ligar o dispositivo</string>
   <string name="proximity_wake_title">Impedir o ecrã de se ligar acidentalmente</string>
   <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidade</string>
   <string name="privacy_guard_default_title">Ativar por defeito</string>
   <string name="privacy_guard_default_summary">Ativar por defeito para aplicações recém-instaladas</string>
   <string name="privacy_guard_manager_title">Proteção da Privacidade</string>
@@ -603,8 +595,6 @@
   <string name="menu_hidden_apps_reset_lock">Limpar o bloqueio padrão</string>
   <string name="protected_apps">Aplicações protegidas</string>
   <string name="saving_protected_components">A guardar o estado dos componentes\u2026</string>
-  <string name="stats_collection_title">Coleção de estatísticas</string>
-  <string name="stats_collection_summary">Quando ativado, permite a recolha de métricas</string>
   <string name="power_notifications_category_title">Sons de carregamento</string>
   <string name="power_notifications_enable_title">Ativar</string>
   <string name="power_notifications_enable_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
@@ -638,9 +628,6 @@
   <string name="graphics_title">Gráficos e renderização</string>
   <string name="edge_gesture_service_title">Bloquear eventos de gestos</string>
   <string name="edge_gesture_service_summary">Não enviar às aplicações eventos de toque para os gestos da barra de navegação e estado</string>
-  <string name="cmlicense_title">Licença CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Licença CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Não tem uma ligação de dados. Para exibir estas informações agora, vá para %s de qualquer computador ligado à Internet.</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/senha correto é inserido</string>
   <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
@@ -712,8 +699,6 @@
   <string name="lockscreen_none_target">Nenhum</string>
   <string name="lockscreen_message">Toque num ícone da esquerda ou da direita para atribuir um atalho no ecrã de bloqueio.</string>
   <string name="lockscreen_choose_action_title">Selecionar ação</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gerir as definições de SMS seguras</string>
   <string name="navigation_ring_title">Atalhos do anel de navegação</string>
   <string name="navigation_ring_message">Toque no ícone de editar para abrir o anel de navegação para edição.\n\nSelecione um alvo para definir o seu comportamento.\n\nToque o ícone \'\u2713\' para gravar as alterações, ou \'Restaurar padrão\' para repor as definições padrão.</string>
   <string name="stylus_icon_enabled_title">Mostrar ícone quando estiver a usar a caneta</string>

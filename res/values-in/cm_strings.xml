@@ -203,16 +203,12 @@
   <string name="block_notifications_title">Notifikasi penyaringan</string>
   <string name="block_notifications_summary">Kelola pemberitahuan yang diabaikan dan filter</string>
   <string name="no_filters_title">Belum ada penyaring</string>
-  <string name="cmupdate_settings_title">Pembaruan CyanogenMod</string>
-  <string name="mod_version">Versi CyanogenMod</string>
-  <string name="mod_version_default">Tidak diketahui</string>
   <string name="model_name">Nama model</string>
   <string name="build_date">Tanggal pembuatan</string>
   <string name="contributor_cloud_title">Kontributor</string>
   <string name="double_tap_to_wake_title">Double-tap untuk bangun</string>
   <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
   <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
-  <string name="privacy_settings_cyanogenmod_title">Privasi</string>
   <string name="privacy_guard_default_title">Diaktifkan secara default</string>
   <string name="privacy_guard_default_summary">Mengaktifkan secara default untuk aplikasi yang baru diinstal</string>
   <string name="privacy_guard_manager_title">Penjaga Privasi</string>
@@ -586,8 +582,6 @@
   <string name="menu_hidden_apps_reset_lock">Reset pola kunci</string>
   <string name="protected_apps">Aplikasi yang di lindungi</string>
   <string name="saving_protected_components">Menyimpan kondisi komponen\u2026</string>
-  <string name="stats_collection_title">Pengumpulan statistik</string>
-  <string name="stats_collection_summary">Ketika diaktifkan, mengizinkan pengumpulan metrik</string>
   <string name="power_notifications_category_title">Suara pengisian</string>
   <string name="power_notifications_enable_title">Aktifkan</string>
   <string name="power_notifications_enable_summary">Putar suara ketika menghubungkan atau melepaskan sumber daya</string>
@@ -620,9 +614,6 @@
   <string name="graphics_title">Grafis dan rendering</string>
   <string name="edge_gesture_service_title">Block gesture touch events</string>
   <string name="edge_gesture_service_summary">Jangan kirim events sentuhan untuk navigasi dan gerakan statusbar untuk aplikasi</string>
-  <string name="cmlicense_title">Hukum CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Hukum CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Anda tidak memiliki koneksi data. Untuk melihat informasi ini sekarang, pergi ke %s dari semua komputer yang terhubung ke Internet.</string>
   <string name="unlock_quick_unlock_control_title">Membuka cepat</string>
   <string name="unlock_quick_unlock_control_summary">Membuka secara otomatis ketika memasuki password/PIN yang benar</string>
   <string name="unlock_scramble_pin_layout_title">Tata letak acak</string>
@@ -682,7 +673,5 @@
   <string name="lockscreen_default_target">Standar</string>
   <string name="lockscreen_message">Tap ikon di sebelah kiri atau kanan untuk menetapkan kembali pintasan layar kunci.</string>
   <string name="lockscreen_choose_action_title">Pilih tindakan</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Kelola pengaturan secure SMS</string>
   <string name="navigation_ring_title">Target cincin navigasi</string>
 </resources>

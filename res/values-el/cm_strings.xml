@@ -208,13 +208,6 @@
   <string name="block_notifications_title">Φιλτράρισμα ειδοποιήσεων</string>
   <string name="block_notifications_summary">Διαχείριση φίλτρων και ειδοποιήσεων που αγνοούνται</string>
   <string name="no_filters_title">Δεν έχουν οριστεί φίλτρα</string>
-  <string name="cmupdate_settings_title">Ενημερώσεις CyanogenMod</string>
-  <string name="update_recovery_title">Ενημέρωση Cyanogen recovery</string>
-  <string name="update_recovery_summary">Ενημέρωση της recovery με τις ενημερώσεις συστήματος</string>
-  <string name="update_recovery_on_warning">ΣΗΜΕΙΩΣΗ: Όταν αυτή η λειτουργία είναι ενεργοποιημένη, η εγκατεστημένη recovery σας θα αντικατασταθεί με αυτήν που περιλαμβάνεται στην τρέχουσα έκδοση του το λειτουργικού συστήματος.\n\nΗ recovery θα ενημερώνεται μαζί με τις αναβαθμίσεις στο σύστημά σας, βοηθώντας να εξασφαλισθεί η συμβατότητα με μελλοντικές εκδόσεις.\n\nΘέλετε να ενεργοποιήσετε αυτήν τη λειτουργία;</string>
-  <string name="update_recovery_off_warning">ΠΡΟΣΟΧΗ: Όταν αυτή η λειτουργία είναι απενεργοποιημένη, η εγκατεστημένη recovery σας δεν θα ενημερώνεται με τις αναβαθμίσεις του λειτουργικού συστήματος.\n\nΕνδέχεται να μην είναι η δυνατή η εγκατάσταση μελλοντικών ενημερώσεων με ξεπερασμένες ή τροποποιημένες εκδόσεις recovery.\n\nΘέλετε πράγματι να απενεργοποιήσετε αυτήν τη λειτουργία;</string>
-  <string name="mod_version">Έκδοση CyanogenMod</string>
-  <string name="mod_version_default">Άγνωστη</string>
   <string name="model_name">Όνομα μοντέλου</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>
   <string name="contributor_cloud_title">Συνεισφέροντες</string>
@@ -223,7 +216,6 @@
   <string name="double_tap_to_wake_summary">Διπλό χτύπημα στην οθόνη για αφύπνιση της συσκευής</string>
   <string name="proximity_wake_title">Πρόληψη ακούσιας αφύπνισης</string>
   <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας πριν την αφύπνιση της οθόνης</string>
-  <string name="privacy_settings_cyanogenmod_title">Απόρρητο</string>
   <string name="privacy_guard_default_title">Ενεργοποιημένη από προεπιλογή</string>
   <string name="privacy_guard_default_summary">Ενεργοποιημένη απο προεπιλογή για νέες εγκατεστημένες εφαρμογές</string>
   <string name="privacy_guard_manager_title">Προστασία Απορρήτου</string>
@@ -627,8 +619,6 @@
   <string name="menu_hidden_apps_reset_lock">Επαναφέρετε το μοτίβο κλειδώματος</string>
   <string name="protected_apps">Προστατευμένες εφαρμογές</string>
   <string name="saving_protected_components">Αποθήκευση κατάστασης εφαρμογών\u2026</string>
-  <string name="stats_collection_title">Συλλογή στατιστικών</string>
-  <string name="stats_collection_summary">Όταν ενεργοποιηθεί, επιτρέπει τη συλλογή στατιστικών μετρήσεων</string>
   <string name="power_notifications_category_title">Ήχοι φόρτισης</string>
   <string name="power_notifications_enable_title">Ενεργοποίηση</string>
   <string name="power_notifications_enable_summary">Αναπαραγωγή ήχου κατά τη σύνδεση ή την αποσύνδεση μιας πηγής ισχύος</string>
@@ -662,9 +652,6 @@
   <string name="graphics_title">Γραφικά και απόδοση</string>
   <string name="edge_gesture_service_title">Μπλοκάρισμα γεγονότων χειρονομιών αφής</string>
   <string name="edge_gesture_service_summary">Να μην αποστέλλονται γεγονότα αφής για χειρονομίες στη γραμμή πλοήγησης και κατάστασης στις εφαρμογές</string>
-  <string name="cmlicense_title">Νομικές πληροφορίες CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Νομικές πληροφορίες CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Δεν είστε συνδεδεμένοι σε υπηρεσία δεδομένων. Για να προβάλετε αυτές τις πληροφορίες τώρα, μεταβείτε στο %s από οποιονδήποτε υπολογιστή με σύνδεση στο Διαδίκτυο.</string>
   <string name="unlock_quick_unlock_control_title">Γρήγορο ξεκλείδωμα</string>
   <string name="unlock_quick_unlock_control_summary">Αυτόματο ξεκλείδωμα όταν δωθεί το σωστό PIN ή ο σωστός κωδικός</string>
   <string name="unlock_scramble_pin_layout_title">Ανακάτεμα διάταξης</string>
@@ -738,8 +725,6 @@
   <string name="lockscreen_none_target">Καμία</string>
   <string name="lockscreen_message">Πιέστε ένα εικονίδιο στα αριστερά ή δεξιά για να αντιστοιχίσετε εκ νέου μια συντόμευση οθόνης κλειδώματος.</string>
   <string name="lockscreen_choose_action_title">Επιλέξτε ενέργεια</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Διαχείριση ρυθμίσεων ασφαλών SMS</string>
   <string name="navigation_ring_title">Συντομεύσεις δαχτυλιδιού πλοήγησης</string>
   <string name="navigation_ring_message">Πιέστε το εικονίδιο επεξεργασίας για να ανοίξετε το δαχτυλίδι πλοήγησης.\n\nΕπιλέξτε μια συντόμευση για να ρυθμίσετε τη συμπεριφορά της.\n\nΠιέστε το εικονίδιο \'\u2713\' για να αποθηκεύσετε τις αλλαγές σας, ή \'Επαναφορά\' για να επαναφέρετε τη διάταξη στις προεπιλεγμένες ρυθμίσεις.</string>
   <string name="stylus_icon_enabled_title">Ένδειξη κατά τη χρήση γραφίδας</string>

@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Filtriar notificaciones</string>
   <string name="block_notifications_summary">Remanar filtros y notificaciones bloquiaes</string>
   <string name="no_filters_title">Nun hai filtros afitaos</string>
-  <string name="cmupdate_settings_title">Anovamientos CyanogenMod</string>
-  <string name="update_recovery_title">Anovar col recovery de Cyanogen</string>
-  <string name="update_recovery_summary">Anovar recovery colos anovamientos del sistema</string>
-  <string name="update_recovery_on_warning">AVISU: Cuando esta función ta activada, el recovery instaláu va sustituyise por ún incluyíu cola versión actual del SO.\n\nEl recovery va anovase xunto con meyores del sistema, ayudando a garantizar la compatibilidá con futures versiones.\n\n¿Quies activar esta función?</string>
-  <string name="update_recovery_off_warning">AVISU: Cuando esta función está desactivada, el recovery instaláu nun s\'anueva con anovamientos del SO.\n\nVersiones futures del SO podríen non instalase con recoverys non anovaos.\n\n¿Daveres quies deshabilitar esta función?</string>
-  <string name="mod_version">Versión CyanogenMod</string>
-  <string name="mod_version_default">Desconocida</string>
   <string name="model_name">Nome del modelu</string>
   <string name="build_date">Data de compilación</string>
   <string name="contributor_cloud_title">Collaboradores</string>
@@ -219,7 +212,6 @@
   <string name="double_tap_to_wake_title">Doble toque pa esconsoñar</string>
   <string name="proximity_wake_title">Prevenir encendíu accidental</string>
   <string name="proximity_wake_summary">Comprobar el sensor de proximidá enantes de prender la pantalla</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacidá</string>
   <string name="privacy_guard_default_title">Privacidá</string>
   <string name="privacy_guard_default_summary">Habilitar la privacidá por defeutu pa nueves aplicaciones</string>
   <string name="privacy_guard_manager_title">Privacidá</string>
@@ -601,8 +593,6 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <string name="menu_hidden_apps_reset_lock">Reanicia\'l patrón de bloquéu</string>
   <string name="protected_apps">Apps protexíes</string>
   <string name="saving_protected_components">Guardando l\'estáu del componente\u2026</string>
-  <string name="stats_collection_title">Colleición de datos</string>
-  <string name="stats_collection_summary">Cuando ta activáu, permite la recoleición de métriques</string>
   <string name="power_notifications_category_title">Cargador</string>
   <string name="power_notifications_enable_title">Soníu</string>
   <string name="power_notifications_enable_summary">Reproducir un soníu al coneutar o desconeutar el cargador</string>
@@ -635,9 +625,6 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <string name="graphics_title">Gráficos y renderizáu</string>
   <string name="edge_gesture_service_title">Bloquiar eventos táctiles</string>
   <string name="edge_gesture_service_summary">Nun unviar a les aplicaciones eventos táctiles de la barra d\'estáu y de navegación</string>
-  <string name="cmlicense_title">Llicencia CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicencia CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nun hai una conexón de datos disponible. Pa ver esta información agora, introduz la direición %s en cualquier ordenador con accesu a Internet.</string>
   <string name="unlock_quick_unlock_control_title">Desbloquéu rápidu</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquiar automáticamente cuando s\'introduz el PIN/clave correutu</string>
   <string name="unlock_scramble_pin_layout_title">Disposición al debalu</string>
@@ -701,8 +688,6 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <string name="lockscreen_none_target">Nengún</string>
   <string name="lockscreen_message">Toca nun iconu de la esquierda o derecha pa reasignar un atayu na pantalla de bloquéu.</string>
   <string name="lockscreen_choose_action_title">Esbillar aición</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Xestiona la configuración de seguridá de los SMS</string>
   <string name="navigation_ring_title">Tonos de navegacion</string>
   <string name="navigation_ring_message">Toca l\'iconu editar p\'abrir l\'editor del aniellu de navegacion.\n\nSeleiciona un oxetivu pa configurar el so comportamientu.\n\nToca l\'iconu de \u00AB\u2713\u00BB pa guardar los cambeos, o \u00ABRestaurar valores predeterminaos\u00BB pa volver a los axustes por defeutu.</string>
   <string name="stylus_icon_enabled_title">Amosar l\'iconu cuando s\'usa un llápiz</string>

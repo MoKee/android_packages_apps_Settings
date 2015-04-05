@@ -206,13 +206,6 @@
   <string name="block_notifications_title">Filtruoti pranešimus</string>
   <string name="block_notifications_summary">Tvarkyti ignoruojamus pranešimus ir filtrus</string>
   <string name="no_filters_title">Nenustatyti jokie filtrai</string>
-  <string name="cmupdate_settings_title">„CyanogenMod“ atnaujinimai</string>
-  <string name="update_recovery_title">Atnaujinti „Cyanogen“ atkūrimo programą</string>
-  <string name="update_recovery_summary">Atnaujinti atkūrimo programą kartu su sistemos atnaujinimais</string>
-  <string name="update_recovery_on_warning">PRANEŠIMAS: Kai ši funkcija yra įgalinta, jūsų įdiegta atkūrimo programa bus pakeista kartu su dabartinės versijos OS.\n\nJūsų atkūrimo programa bus atnaujinta kartu su sistemos atnaujinimais, padedant užtikrinti suderinamumą su būsimomis versijomis.\n\nAr norėtumėte įgalinti šią funkciją?</string>
-  <string name="update_recovery_off_warning">ĮSPĖJIMAS: Kai ši funkcija yra neleidžiama,\n\nJūsų atkūrimo programa nebus atnaujinta kartu su OS atnaujinimais.\n\nAteityje OS atnaujinimai negalės būti įdiegti su pasenusia ar tinkinta atkūrimo programos versija.\n\nAr tikrai norite neleisti šios funkcijos?</string>
-  <string name="mod_version">„CyanogenMod“ versija</string>
-  <string name="mod_version_default">Nežinoma</string>
   <string name="model_name">Modelio pavadinimas</string>
   <string name="build_date">Surinkimo data</string>
   <string name="contributor_cloud_title">Pagalbininkai</string>
@@ -221,7 +214,6 @@
   <string name="double_tap_to_wake_summary">Dukart bakstelėti ekraną, kad jį ijungti</string>
   <string name="proximity_wake_title">Išvengti atsitiktinio pažadinimo</string>
   <string name="proximity_wake_summary">Patikrinti artumo jutiklio prioritetą, kad pažadinti ekraną</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatumas</string>
   <string name="privacy_guard_default_title">Įgalinta pagal nutylėjimą</string>
   <string name="privacy_guard_default_summary">Įgalinti pagal nutylėjimą naujiai įdiegtoms programoms</string>
   <string name="privacy_guard_manager_title">Privatumo sauga</string>
@@ -604,8 +596,6 @@
   <string name="menu_hidden_apps_reset_lock">Nustatyti iš naujo modelio užraktą</string>
   <string name="protected_apps">Apsaugotos programos</string>
   <string name="saving_protected_components">Išsaugoma komponentų būklė\u2026</string>
-  <string name="stats_collection_title">Statistikos kolekcija</string>
-  <string name="stats_collection_summary">Kai įgalinta, leidžia metrinę kolekciją</string>
   <string name="power_notifications_category_title">Įkrovimo garsai</string>
   <string name="power_notifications_enable_title">Įgalinti</string>
   <string name="power_notifications_enable_summary">Paleisti garsą, kai prijungiamas ar atjungiamas maitinimo šaltinis</string>
@@ -639,9 +629,6 @@
   <string name="graphics_title">Grafika ir atvaizdavimas</string>
   <string name="edge_gesture_service_title">Blokuoti gestų lietimo įvykius</string>
   <string name="edge_gesture_service_summary">Nesiųsti lietimo įvykių programoms dėl naršymo ir būsenos juostos gestų</string>
-  <string name="cmlicense_title">Teisinė „CyanogenMod“ informacija</string>
-  <string name="settings_cmlicense_activity_title">Teisinė „CyanogenMod“ informacija</string>
-  <string name="settings_cmlicense_activity_unreachable">Nesate prisijungę prie duomenų paslaugos. Jei norite peržiūrėti šią informaciją dabar, apsilankykite šiuo adresu %s naudodami bet kurį prie interneto prijungtą kompiuterį.</string>
   <string name="unlock_quick_unlock_control_title">Greitas atrakinimas</string>
   <string name="unlock_quick_unlock_control_summary">Atrakinti automatiškai, kai suvedamas teisingas PIN / slaptažodis</string>
   <string name="unlock_scramble_pin_layout_title">Sumaišyti išdėstymą</string>
@@ -713,8 +700,6 @@
   <string name="lockscreen_none_target">Joks</string>
   <string name="lockscreen_message">Bakstelėkite piktogramą kairėje arba dešinėje, kad iš naujo priskirtumėte ekrano užrakto spartujį klavišą.</string>
   <string name="lockscreen_choose_action_title">Pasirinkite veiksmą</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Tvarkyti saugiųjų SMS pranešimų nustatymus</string>
   <string name="navigation_ring_title">Navigacijos žiedo objektai</string>
   <string name="navigation_ring_message">Bakstelėkite redagavimo piktogramą, kad atidarytumėte navigacijos žiedą redagavimui.\n\nPasirinkite objektą, kad konfigūruotumėte jo elgseną.\n\nBakstelėkite „\u2713“ piktogramą, kad išsaugotumėte savo pakeitimus, arba „Atkurti numatytuosius“ , kad nustatytumėte nustatymus į numatytuosius.</string>
   <string name="stylus_icon_enabled_title">Rodyti piktogramą naudojant rašiklį</string>

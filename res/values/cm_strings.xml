@@ -284,17 +284,10 @@
     <string name="no_filters_title">No filters set</string>
 
     <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenMod updates</string>
 
     <!-- Settings switch for updating Cyanogen recovery -->
-    <string name="update_recovery_title">Update Cyanogen recovery</string>
-    <string name="update_recovery_summary">Update recovery with system updates</string>
-    <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-    <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
 
     <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
-    <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, model name -->
     <string name="model_name">Model name</string>
@@ -317,7 +310,6 @@
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
     <!-- Privacy Settings Header item -->
-    <string name="privacy_settings_cyanogenmod_title">Privacy</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_default_title">Enabled by default</string>
@@ -915,8 +907,6 @@
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state\u2026</string>
 
-    <string name="stats_collection_title">Stats collection</string>
-    <string name="stats_collection_summary">When enabled, allows metrics collection</string>
 
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
@@ -992,9 +982,6 @@
     <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
 
     <!-- CM Legal -->
-    <string name="cmlicense_title">CyanogenMod legal</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod legal</string>
-    <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
@@ -1107,11 +1094,6 @@
     <string name="lockscreen_visualizer_title">Display music visualizer</string>
 
     <!-- WhisperPush -->
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_summary">Manage secure SMS settings</string>
-    <string name="whisperpush_registration_title">Register</string>
-    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
-    <string name="whisperpush_identitykey_title">Review identity keys</string>
 
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>

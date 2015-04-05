@@ -173,15 +173,11 @@
   <string name="sms_security_check_limit_summary">แอปสามารถส่ง %d ข้อความ ในเวลา 30 นาที ก่อนที่จะต้องการการยืนยัน</string>
   <string name="block_notifications_title">ตัวกรองการแจ้งเตือน</string>
   <string name="block_notifications_summary">จัดการการละเว้นการแจ้งเตือนและตัวกรอง</string>
-  <string name="cmupdate_settings_title">ปรับปรุงรุ่น CyanogenMod</string>
-  <string name="mod_version">รุ่นของ CyanogenMod</string>
-  <string name="mod_version_default">ไม่ทราบ</string>
   <string name="build_date">วันที่บิวด์</string>
   <string name="contributor_cloud_title">ผู้ร่วมพัฒนา</string>
   <string name="double_tap_to_wake_title">แตะสองครั้งเพื่อเปิดจอ</string>
   <string name="proximity_wake_title">ป้องกันการเปิดหน้าจอโดยอุบัติเหตุ</string>
   <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนที่จะเปิดหน้าจอ</string>
-  <string name="privacy_settings_cyanogenmod_title">ความเป็นส่วนตัว</string>
   <string name="privacy_guard_default_title">เปิดโดยค่าเริ่มต้น</string>
   <string name="privacy_guard_default_summary">เปิดโดยค่าเริ่มต้นสำหรับแอปที่ติดตั้งใหม่</string>
   <string name="privacy_guard_manager_title">ป้องกันความเป็นส่วนตัว</string>
@@ -442,9 +438,6 @@
   <string name="graphics_title">ภาพและกราฟฟิก</string>
   <string name="edge_gesture_service_title">บล็อกการแตะเมื่อปัด</string>
   <string name="edge_gesture_service_summary">อย่าส่งกิจกรรมการแตะไปยังแอป หากใช้ปัดแถบแจ้งเตือนหรือแถบนำทาง</string>
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">คุณไม่มีการเชื่อมต่ออินเตอร์เน็ต, เพื่อดูข้อมูลเดียวนี้,ไปยัง %s จากคอมพิวเตอร์ที่เชื่อมต่ออินเตอร์เน็ต</string>
   <string name="unlock_quick_unlock_control_title">ปลดล็อคแบบเร็ว</string>
   <string name="unlock_quick_unlock_control_summary">ปลดล็อคอัตโนมัติเมื่อ PIN/รหัส ที่ถูกต้องถูกป้อนเข้ามา</string>
   <string name="unlock_scramble_pin_layout_title">สุ่มสลับแป้นพิมพ์</string>
@@ -459,6 +452,4 @@
   <string name="maximum_head_level">หัว: %1$s W/kg</string>
   <string name="maximum_body_level">ตัว: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">เต็มจอ</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">จัดการการตั้งค่าข้อความปลอดภัย</string>
 </resources>

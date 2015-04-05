@@ -206,13 +206,6 @@
   <string name="block_notifications_title">Filtrowanie powiadomień</string>
   <string name="block_notifications_summary">Zarządzaj ignorowanymi powiadomieniami i filtrami</string>
   <string name="no_filters_title">Nie wybrano filtrów</string>
-  <string name="cmupdate_settings_title">Aktualizacje CyanogenMod</string>
-  <string name="update_recovery_title">Aktualizuj recovery Cyanogen</string>
-  <string name="update_recovery_summary">Aktualizuj recovery wraz z aktualizacjami systemu</string>
-  <string name="update_recovery_on_warning">UWAGA: Kiedy ta funkcja jest włączona, twoje recovery zostanie zastąpione przez to dołączone do aktualnie działającej wersji systemu.\n\nTwoje recovery będzie aktualizowane wraz z aktualizacjami systemu, pomagając w zapewnieniu kompatybilność z przyszłymi wersjami.\n\nChciałbyś włączyć tę funkcję?</string>
-  <string name="update_recovery_off_warning">OSTRZEŻENIE: Kiedy ta funkcja jest wyłączona, zainstalowane recovery nie będzie się aktualizowało wraz z aktualizacjami systemu.\n\nPrzyszłe aktualizacje systemu mogą się nie zainstalować przy przestarzałych lub zewnętrznych wersjach recovery.\n\nCzy jesteś pewien, że chcesz wyłączyć tę funkcję?</string>
-  <string name="mod_version">Wersja CyanogenMod</string>
-  <string name="mod_version_default">Nieznana</string>
   <string name="model_name">Nazwa modelu</string>
   <string name="build_date">Data kompilacji</string>
   <string name="contributor_cloud_title">Twórcy</string>
@@ -221,7 +214,6 @@
   <string name="double_tap_to_wake_summary">Dotknij dwukrotnie ekranu, aby włączyć podświetlenie</string>
   <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
   <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
-  <string name="privacy_settings_cyanogenmod_title">Prywatność</string>
   <string name="privacy_guard_default_title">Aktywuj domyślnie</string>
   <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
   <string name="privacy_guard_manager_title">Ochrona prywatności</string>
@@ -604,8 +596,6 @@
   <string name="menu_hidden_apps_reset_lock">Zresetuj wzór blokady</string>
   <string name="protected_apps">Chronione aplikacje</string>
   <string name="saving_protected_components">Zapisywanie obecnego stanu\u2026</string>
-  <string name="stats_collection_title">Statystyki</string>
-  <string name="stats_collection_summary">Kiedy włączone pozwala na zbieranie metryk</string>
   <string name="power_notifications_category_title">Dźwięki ładowania</string>
   <string name="power_notifications_enable_title">Aktywuj dźwięki ładowania</string>
   <string name="power_notifications_enable_summary">Odtwarzaj dźwięk podczas podłączania lub odłączania źródła zasilania</string>
@@ -639,9 +629,6 @@
   <string name="graphics_title">Grafika i renderowanie</string>
   <string name="edge_gesture_service_title">Blokuj zdarzenia gestów dotykowych</string>
   <string name="edge_gesture_service_summary">Nie przesyłaj zdarzeń dotykowych dla gestów pasków nawigacji i statusu do aplikacji</string>
-  <string name="cmlicense_title">Informacje prawne CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Informacje prawne CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">Nie masz połączenia z internetem. Aby zobaczyć te informacje przejdź do %s z dowolnego komputera podłączonego do internetu</string>
   <string name="unlock_quick_unlock_control_title">Szybkie odblokowywanie</string>
   <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
   <string name="unlock_scramble_pin_layout_title">Pomieszany układ</string>
@@ -713,8 +700,6 @@
   <string name="lockscreen_none_target">Brak</string>
   <string name="lockscreen_message">Dotknij ikony na lewo lub w prawo, aby przypisać skrót ekranu blokady.</string>
   <string name="lockscreen_choose_action_title">Wybierz akcję</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Zarządzaj ustawieniami bezpiecznych SMS-ów</string>
   <string name="navigation_ring_title">Akcje kręgu nawigacyjnego</string>
   <string name="navigation_ring_message">Dotknij ikonę edycji, aby otworzyć edycję pierścienia nawigacyjnego.\n\nWybierz cel, aby skonfigurować jego działanie.\n\nDotknij ikonę  \'\u2713\', aby zapisać swoje ustawienia, lub \'Przywróć domyślne\', aby przywrócić domyślne wartości.</string>
   <string name="stylus_icon_enabled_title">Pokaż ikonę podczas używania rysika</string>

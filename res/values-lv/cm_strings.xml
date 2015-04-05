@@ -170,15 +170,11 @@
   <string name="sms_security_check_limit_summary">Lietotnes var nosūtīt %d ziņas 30 minūtēs pirms nepieciešams apstiprinājums</string>
   <string name="block_notifications_title">Filtra paziņojumi</string>
   <string name="block_notifications_summary">Pārvaldīt ignorētos ziņojumus un filtrus</string>
-  <string name="cmupdate_settings_title">CyanogenMod atjaunojumi</string>
-  <string name="mod_version">CyanogenMod versija</string>
-  <string name="mod_version_default">Nezināms</string>
   <string name="build_date">Būvējuma datums</string>
   <string name="contributor_cloud_title">Atbalstītāji</string>
   <string name="double_tap_to_wake_title">Lai pamodinātu, veiciet dubultu piesitienu</string>
   <string name="proximity_wake_title">Novērsiet nejaušu pamodināšanu</string>
   <string name="proximity_wake_summary">Pirms pamodināt ekrānu, pārbaudīt tuvuma sensoru</string>
-  <string name="privacy_settings_cyanogenmod_title">Privātums</string>
   <string name="privacy_guard_default_title">Pēc noklusēšanas ieslēgts</string>
   <string name="privacy_guard_default_summary">Ieslēgts pēc noklusēšanas jaunuzstādītām lietotnēm</string>
   <string name="privacy_guard_manager_title">Privātuma sargs</string>
@@ -434,9 +430,6 @@
   <string name="graphics_title">Grafika un renderēšana</string>
   <string name="edge_gesture_service_title">Atslēgt žestu pieskārienu notikumus</string>
   <string name="edge_gesture_service_summary">Nesūtīt lietotnēm pieskārienu notikumus navigācija un statusa joslas žestus</string>
-  <string name="cmlicense_title">CyanogenMod atbildība</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod atbildība</string>
-  <string name="settings_cmlicense_activity_unreachable">Jums nav datu savienojumu. Lai apskatītu šo informāciju tagad, dodieties uz %s pie jebkura datora, kas ir pievienots internetam.</string>
   <string name="unlock_quick_unlock_control_title">Ātrā atslēgšana</string>
   <string name="unlock_quick_unlock_control_summary">Automātiski atslēgt, kad ir ievadīts pareizs PIN/parole</string>
   <string name="unlock_scramble_pin_layout_title">Samaisīt izkārtojumu</string>
@@ -451,6 +444,4 @@
   <string name="maximum_head_level">Galva: %1$s W/kg</string>
   <string name="maximum_body_level">Ķermenis: %1$s W/kg</string>
   <string name="power_menu_expanded_desktop">Paplašināta darbvirsma</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Pārvaldīt drošo īsziņu iestatījumus</string>
 </resources>

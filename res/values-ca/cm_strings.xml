@@ -205,13 +205,6 @@
   <string name="block_notifications_title">Filtra les notificacions</string>
   <string name="block_notifications_summary">Gestiona les notificacions i filtres ignorats</string>
   <string name="no_filters_title">Sense filtres establerts</string>
-  <string name="cmupdate_settings_title">Actualitzacions CyanogenMod</string>
-  <string name="update_recovery_title">Actualitza la recuperació de Cyanogen</string>
-  <string name="update_recovery_summary">Actualitza la recuperació amb les actualitzacions del sistema</string>
-  <string name="update_recovery_on_warning">AVÍS: Quan aquesta funció estigui activada, la recuperació que tinguis instal·lada serà substituïda per la versió actual inclosa amb el SO instal·lat.\n\nEl teu sistema de recuperació s\'actualitzarà juntament amb les millores del sistema, ajudant a assegurar la compatibilitat amb futures versions.\n\nVols habilitar aquesta característica?</string>
-  <string name="update_recovery_off_warning">ADVERTÈNCIA: Quan aquesta característica està inhabilitada, el teu sistema de recuperació instal·lat no s\'actualitzarà amb les millores del SO.\n\nFutures actualitzacions del SO podrien no instal·lar-se amb sistemes de recuperació obsolets o personalitzats.\n\nRealment vols deshabilitar aquesta característica?</string>
-  <string name="mod_version">CyanogenMod versió</string>
-  <string name="mod_version_default">Desconegut</string>
   <string name="model_name">Nom del model</string>
   <string name="build_date">Data d\'elaboració</string>
   <string name="contributor_cloud_title">Contribuïdors</string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_summary">Pica dues vegades a la pantalla per encendre la pantalla</string>
   <string name="proximity_wake_title">Evita l\'encesa accidental</string>
   <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacitat</string>
   <string name="privacy_guard_default_title">Activa per defecte</string>
   <string name="privacy_guard_default_summary">Activa per defecte en les apps de nova instal·lació</string>
   <string name="privacy_guard_manager_title">Guarda de privacitat</string>
@@ -603,8 +595,6 @@
   <string name="menu_hidden_apps_reset_lock">Reinicia el patró de bloqueig</string>
   <string name="protected_apps">Apps protegides</string>
   <string name="saving_protected_components">Desant l\'estat del component\u2026</string>
-  <string name="stats_collection_title">Recollida d\'estadístiques</string>
-  <string name="stats_collection_summary">Quan està activat, permet la recollida de mètriques</string>
   <string name="power_notifications_category_title">Sons de càrrega</string>
   <string name="power_notifications_enable_title">Habilita</string>
   <string name="power_notifications_enable_summary">Reprodueix un so en connectar o desconnectar d\'una font d\'energia</string>
@@ -638,9 +628,6 @@
   <string name="graphics_title">Gràfics i renderitzat</string>
   <string name="edge_gesture_service_title">Bloqueja els esdeveniments de gestos tàctils</string>
   <string name="edge_gesture_service_summary">No enviïs esdeveniments tàctils per la navegació ni gestos de la barra d\'estat a les apps</string>
-  <string name="cmlicense_title">Llicència CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
-  <string name="settings_cmlicense_activity_unreachable">No tens connexió de dades. Per veure aquesta informació ara, ves a %s des d\'un ordenador connectat a internet.</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueig ràpid</string>
   <string name="unlock_quick_unlock_control_summary">Desbloqueja automàticament quan s\'introdueixi el PIN/contrasenya correcta</string>
   <string name="unlock_scramble_pin_layout_title">Disposició aleatòria</string>
@@ -712,8 +699,6 @@
   <string name="lockscreen_none_target">Cap</string>
   <string name="lockscreen_message">Toca una icona a l\'esquerra o a la dreta per assignar una drecera a la pantalla de bloqueig.</string>
   <string name="lockscreen_choose_action_title">Tria l\'acció</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestiona la configuració d\'SMS segurs</string>
   <string name="navigation_ring_title">Objectius de l\'anell de navegació</string>
   <string name="navigation_ring_message">Pica sobre la icona edita per desbloquejar l\'edició de la barra de navegació.\n\nSelecciona un objectiu per configurar el seu comportament.\n\nPica la icona \'\u2713\' per desar els canvis, o \'Restaura predeterminats\' per restaurar els ajustaments predeterminats.</string>
   <string name="stylus_icon_enabled_title">Mostra una icona quan s\'utilitzi un llapis</string>
