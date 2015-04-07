@@ -632,8 +632,6 @@
   <string name="usb_sdcard_summary">מאפשר לך להעביר קבצים בין המחשב שלך לבין כרטיס SD זה על ידי חיבורו כהתקן USB</string>
   <string name="external_storage_turn_on">אחסון חיצוני הופעל</string>
   <string name="external_storage_turn_off">אחסון חיצוני בוטל</string>
-  <string name="stats_collection_title">אוסף סטטיסטיקות</string>
-  <string name="stats_collection_summary">כאשר מופעל, מאפשר איסוף מדדים</string>
   <string name="power_notifications_category_title">צלילי טעינה</string>
   <string name="power_notifications_enable_title">הפעל</string>
   <string name="power_notifications_enable_summary">השמע צליל בעת חיבור או ניתוק ממקור חשמל</string>
