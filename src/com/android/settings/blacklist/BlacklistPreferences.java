@@ -17,6 +17,7 @@
 package com.android.settings.blacklist;
 
 import android.content.Context;
+import android.mokee.utils.MoKeeUtils;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.MultiSelectListPreference;
@@ -28,6 +29,7 @@ import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
+import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -37,9 +39,15 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
 
     private static final String BUTTON_BLACKLIST_PRIVATE = "button_blacklist_private_numbers";
     private static final String BUTTON_BLACKLIST_UNKNOWN = "button_blacklist_unknown_numbers";
+    private static final String BUTTON_BLACKLIST_ADVERTISEMENT = "phone_blacklist_advertisement_number";
+    private static final String BUTTON_BLACKLIST_FRAUD = "phone_blacklist_fraud_number";
+    private static final String BUTTON_BLACKLIST_HARASS = "phone_blacklist_harass_number";
 
     private MultiSelectListPreference mBlacklistPrivate;
     private MultiSelectListPreference mBlacklistUnknown;
+    private SystemSettingSwitchPreference mBlacklistAdvertisement;
+    private SystemSettingSwitchPreference mBlacklistFraud;
+    private SystemSettingSwitchPreference mBlacklistHarass;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -54,6 +62,11 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         mBlacklistUnknown =
                 (MultiSelectListPreference) prefSet.findPreference(BUTTON_BLACKLIST_UNKNOWN);
         mBlacklistUnknown.setOnPreferenceChangeListener(this);
+        if (!MoKeeUtils.isSupportLanguage(true)) {
+            prefSet.removePreference(mBlacklistAdvertisement);
+            prefSet.removePreference(mBlacklistFraud);
+            prefSet.removePreference(mBlacklistHarass);
+        }
     }
 
     @Override

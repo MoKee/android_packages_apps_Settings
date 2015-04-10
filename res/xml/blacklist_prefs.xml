@@ -30,6 +30,27 @@
         android:defaultValue="false"
         android:disableDependentsState="true" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="phone_blacklist_advertisement_number"
+        android:title="@string/blacklist_advertisement_numbers_title"
+        android:summary="@string/blacklist_advertisement_numbers_summary"
+        android:defaultValue="false"
+        android:dependency="phone_blacklist_all_number" />
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="phone_blacklist_fraud_number"
+        android:title="@string/blacklist_fraud_numbers_title"
+        android:summary="@string/blacklist_fraud_numbers_summary"
+        android:defaultValue="true"
+        android:dependency="phone_blacklist_all_number" />
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="phone_blacklist_harass_number"
+        android:title="@string/blacklist_harass_numbers_title"
+        android:summary="@string/blacklist_harass_numbers_summary"
+        android:defaultValue="true"
+        android:dependency="phone_blacklist_all_number" />
+
     <MultiSelectListPreference
         android:key="button_blacklist_private_numbers"
         android:title="@string/blacklist_private_numbers_title"
