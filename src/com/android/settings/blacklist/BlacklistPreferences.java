@@ -84,6 +84,12 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         updateSelectListSummary(mBlacklistUnknown, mBlacklistUnknown.getValues(),
                 R.string.blacklist_unknown_numbers_summary,
                 R.string.blacklist_unknown_numbers_summary_disabled);
+
+        if (MoKeeUtils.isSupportLanguage(true)) {
+            mBlacklistAdvertisement.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_ADVERTISEMENT_NUMBER_MODE, 1) == 1);
+            mBlacklistFraud.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_FRAUD_NUMBER_MODE, 1) == 1);
+            mBlacklistHarass.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_HARASS_NUMBER_MODE, 1) == 1);
+        }
     }
 
     @Override
