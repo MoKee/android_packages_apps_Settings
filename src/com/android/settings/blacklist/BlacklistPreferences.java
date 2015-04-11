@@ -62,6 +62,9 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         mBlacklistUnknown =
                 (MultiSelectListPreference) prefSet.findPreference(BUTTON_BLACKLIST_UNKNOWN);
         mBlacklistUnknown.setOnPreferenceChangeListener(this);
+        mBlacklistAdvertisement = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_ADVERTISEMENT);
+        mBlacklistFraud = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_FRAUD);
+        mBlacklistHarass = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_HARASS);
         if (!MoKeeUtils.isSupportLanguage(true)) {
             prefSet.removePreference(mBlacklistAdvertisement);
             prefSet.removePreference(mBlacklistFraud);
@@ -86,9 +89,10 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
                 R.string.blacklist_unknown_numbers_summary_disabled);
 
         if (MoKeeUtils.isSupportLanguage(true)) {
-            mBlacklistAdvertisement.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_ADVERTISEMENT_NUMBER_MODE, 1) == 1);
-            mBlacklistFraud.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_FRAUD_NUMBER_MODE, 1) == 1);
-            mBlacklistHarass.setEnabled(Settings.System.getInt(getContentResolver(), Settings.System.PHONE_BLACKLIST_HARASS_NUMBER_MODE, 1) == 1);
+            boolean enabled = Settings.System.getInt(getContentResolver(), Settings.System.ENABLE_CLOUD_LOCATION_LOOKUP, 1) == 1;
+            mBlacklistAdvertisement.setEnabled(enabled);
+            mBlacklistFraud.setEnabled(enabled);
+            mBlacklistHarass.setEnabled(enabled);
         }
     }
 
