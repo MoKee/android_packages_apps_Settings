@@ -58,7 +58,7 @@
     <string name="blacklist_fraud_numbers_title">Fraud numbers</string>
     <string name="blacklist_fraud_numbers_summary">Block fraud calls</string>
     <string name="blacklist_harass_numbers_title">Harass numbers</string>
-    <string name="blacklist_harass_numbers_title">Block harass calls</string>
+    <string name="blacklist_harass_numbers_summary">Block harass calls</string>
 
     <!-- Smart Control -->
     <string name="smartcontrol_settings_title">Smart Control</string>
