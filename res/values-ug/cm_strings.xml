@@ -206,13 +206,6 @@
   <string name="block_notifications_title">ئۇقتۇرۇش سۈزۈش</string>
   <string name="block_notifications_summary">پەرۋا قىلمىغان ئۇقتۇرۇش ۋە سۈزگۈچلەرنى باشقۇرىدۇ</string>
   <string name="no_filters_title">سۈزگۈچ تەڭشىكى يوق</string>
-  <string name="cmupdate_settings_title">CyanogenMod يېڭىلانمىلار</string>
-  <string name="update_recovery_title">Cyanogen ئەسلىگە كەلتۈرۈش ھالىتىنى يېڭىلاش</string>
-  <string name="update_recovery_summary">سىستېما يېڭىلانمىلىرى ئارقىلىق ئەسلىگە كەلتۈرۈشنى يېڭىلاش</string>
-  <string name="update_recovery_on_warning">دىققەت: بۇ ئىقتىدار قوزغىتىلسا، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى ئىجرا قىلىنىۋاتقان سىستېما ئۆز ئىچىگە ئالغان ئەسلىگە كەلتۈرۈش دېتالى تەرىپىدىن ئالماشتۇرۇۋېتىلىدۇ.\n\nسىزنىڭ ئەسلىگە كەلتۈرۈش دېتالىڭىز سىستېمىغا ئەگىشىپ يېڭىلىنىپ، كېيىنكى نەشرى بىلەن بولغان ماسلىشىشچانلىققا كاپالەتلىك قىلىدۇ.\n\nبۇ ئىقتىدارنى قوزغىتىشنى خالامسىز؟</string>
-  <string name="update_recovery_off_warning">دىققەت: بۇ ئىقتىدار چەكلەنسە، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى سىستېمىغا ئەگىشىپ يېڭىلانمايدۇ.\n\nكەلگۈسىدە سىستېما يېڭىلانغاندا كونا نەشرى ياكى ئىختىيارىي ئەسلىگە كەلتۈرۈش دېتالى ھالىتىدە ئورنىتىشنى قوللىماسلىقى مۇمكىن\n\nسىز بۇ ئىقتىدارنى راستلا چەكلەمسىز؟</string>
-  <string name="mod_version">CyanogenMod نەشرى</string>
-  <string name="mod_version_default">يوچۇن</string>
   <string name="model_name">مودېل ئاتى</string>
   <string name="build_date">ھاسىللىغان چېسلا</string>
   <string name="contributor_cloud_title">تۆھپىكارلار</string>
@@ -221,7 +214,6 @@
   <string name="double_tap_to_wake_summary">ئېكران قوش چېكىلسە ئېكراننى قوزغىتىدۇ</string>
   <string name="proximity_wake_title">تاسادىپىي ئويغىتىشنىڭ ئالدىنى ئېلىش</string>
   <string name="proximity_wake_summary">ئېكراننى قوزغىتىشتىن ئىلگىرى ئارىلىق سەزگۈچنى تەكشۈرىدۇ</string>
-  <string name="privacy_settings_cyanogenmod_title">شەخسىيەت</string>
   <string name="privacy_guard_default_title">كۆڭۈلدىكى ئەھۋالدا قوزغىتىلغان</string>
   <string name="privacy_guard_default_summary">كۆڭۈلدىكى ئەھۋالدا يېڭىدىن ئورنىتىلغان ئەپلەر قوزغىتىلىدۇ</string>
   <string name="privacy_guard_manager_title">شەخسىيەت قوغداش</string>
@@ -621,8 +613,6 @@
   <string name="usb_sdcard_summary">ساقلىغۇچ ئۈسكۈنىسى سۈپىتىدە ئېگەرلەپ سىزنىڭ خالىغان ھۆججەتنى كومپيۇتېر بىلەن SD كارتا ئارىسىدا يوللىشىڭىزغا يول قويىدۇ</string>
   <string name="external_storage_turn_on">سىرتقى ساقلىغۇچ ئېچىلدى</string>
   <string name="external_storage_turn_off">سىرتقى ساقلىغۇچ تاقالدى</string>
-  <string name="stats_collection_title">ئىستاتىستىكىلار</string>
-  <string name="stats_collection_summary">قوزغىتىلغاندا، سانلىق مەلۇمات توپلاشقا يول قويىدۇ</string>
   <string name="power_notifications_category_title">توكلىغاندىكى ئاۋاز</string>
   <string name="power_notifications_enable_title">قوزغات</string>
   <string name="power_notifications_enable_summary">توك مەنبەسىگە چېتىلغان ياكى ئۈزۈلگەندە ئاۋاز چىقىرىدۇ</string>
@@ -656,9 +646,6 @@
   <string name="graphics_title">گىرافىك ۋە رەڭلەش</string>
   <string name="edge_gesture_service_title">قول ئىشارەت سېزىش ھادىسىسىنى توسۇش</string>
   <string name="edge_gesture_service_summary">ئەپكە يولباشچى ۋە ھالەت بالداق قول ئىشارىتىنىڭ تېگىش ھادىسىسىنى يوللىمايدۇ</string>
-  <string name="cmlicense_title">CyanogenMod قانۇن ئۇچۇرى</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod قانۇن ئۇچۇرى</string>
-  <string name="settings_cmlicense_activity_unreachable">سانلىق مەلۇمات باغلىنىشىڭىز يوق، ھازىرلا بۇ ئۇچۇرنى كۆرۈشتە، ئىنتېرنېتقا باغلانغان خالىغان كومپيۇتېر ئارقىلىق %s نى زىيارەت قىلىڭ.</string>
   <string name="unlock_quick_unlock_control_title">تېز قۇلۇپ ئاچ</string>
   <string name="unlock_quick_unlock_control_summary">توغرا PIN/ئىم كىرگۈزۈلگەندە قۇلۇپ ئۆزلۈكىدىن ئېچىلىدۇ</string>
   <string name="unlock_scramble_pin_layout_title">قالايمىقان جايلاشتۇرۇش</string>
@@ -732,8 +719,6 @@
   <string name="lockscreen_none_target">يوق</string>
   <string name="lockscreen_message">ئوڭ ياكى سول تەرەپتىكى سىنبەلگىنى چېكىپ قۇلۇپ ئېكران قىسقا يولىنى قايتا تەقسىملەڭ.</string>
   <string name="lockscreen_choose_action_title">مەشغۇلات تاللاڭ</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">بىخەتەر قىسقا ئۇچۇر تەڭشىكىنى باشقۇرۇش</string>
   <string name="navigation_ring_title">يولباشچى ھالقا نىشانى</string>
   <string name="navigation_ring_message">تەھرىر سىنبەلگىسىنى يېنىك چېكىپ يولباشچى ھالقا تەھرىرلەشنى ئېچىڭ.\n\nبىر نىشاننى تاللاپ ئۇنىڭ ھەرىكىتىنى سەپلەڭ.\n\n«\u2713» سىنبەلگىنى چېكىپ ئۆزگەرتىشنى ساقلاڭ ياكى «كۆڭۈلدىكىگە ئەسلىگە كەلتۈر» نى چېكىپ كۆڭۈلدىكى ھالەتكە ئەسلىگە كەلتۈرۈڭ.</string>
   <string name="stylus_icon_enabled_title">چەكمە قەلەمنى ئىشلەتكەندە سىنبەلگە كۆرسەت</string>

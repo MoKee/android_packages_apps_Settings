@@ -204,7 +204,6 @@
   <string name="block_notifications_title">篩選通知</string>
   <string name="block_notifications_summary">管理已忽略的通知與篩選器</string>
   <string name="no_filters_title">沒有過濾設定</string>
-  <string name="mod_version_default">未知</string>
   <string name="model_name">型號名稱</string>
   <string name="build_date">版本日期</string>
   <string name="contributor_cloud_title">貢獻者</string>
@@ -574,7 +573,6 @@
   <string name="sim_enabled">已啟用</string>
   <string name="sim_disabled">已停用</string>
   <string name="sim_missing">遺失或毀損</string>
-  <string name="stats_collection_title">統計資料收集</string>
   <string name="power_notifications_category_title">充電音效</string>
   <string name="power_notifications_enable_title">啟用</string>
   <string name="power_notifications_enable_summary">接上或移除電源時播放音效</string>
@@ -608,9 +606,6 @@
   <string name="graphics_title">圖像和繪製</string>
   <string name="edge_gesture_service_title">攔截手勢觸控事件</string>
   <string name="edge_gesture_service_summary">不向應用程式傳送導覽列與狀態列手勢的觸控事件</string>
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod 法律條款</string>
-  <string name="settings_cmlicense_activity_unreachable">您沒有數據連線，如要立即查看這項資訊，請使用任何已連上網際網路的電腦前往 %s。</string>
   <string name="unlock_quick_unlock_control_title">快速解鎖</string>
   <string name="unlock_quick_unlock_control_summary">當正確的 PIN 碼/密碼被輸入時自動解鎖</string>
   <string name="unlock_scramble_pin_layout_title">亂序布局</string>
