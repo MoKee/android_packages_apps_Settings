@@ -15,26 +15,8 @@
 -keep class com.android.settings.nfc.*
 -keep class com.android.settings.notification.*
 
--dontwarn io.card.**
--keep class io.card.** { *;}
--dontwarn com.paypal.**
--keep class com.paypal.** { *;}
-
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *;}
-
--dontwarn com.wanpu.pay.**
--keep class com.wanpu.pay.** {*;}
--dontwarn com.alipay.**
--keep class com.alipay.** {*;}
--dontwarn com.ta.utdid2.**
--keep class com.ta.utdid2.** {*;}
--dontwarn com.ut.device.**
--keep class com.ut.device.** {*;}
--dontwarn com.unionpay.**
--keep class com.unionpay.** {*;}
--dontwarn com.UCMobile.**
--keep class com.UCMobile.** {*;}
 
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.**

@@ -9,14 +9,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	jsr305 \
 	libGooglePlayServices \
 	libMoKeePushService \
-	volley \
-	Alipay \
-	UPPayAssistEx \
-	UPPayPluginEx \
-	WanpuPay \
-	MobileSec \
-	Utdid4all \
-	PayPal
+	volley
 
 LOCAL_MODULE_TAGS := optional
 
@@ -46,7 +39,7 @@ LOCAL_AAPT_FLAGS := \
         --extra-packages com.mokee.helper \
         --extra-packages android.support.v7.cardview
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
-LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res-pay
+LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
 
 LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
