@@ -2448,6 +2448,13 @@
                 <action android:name="com.mokee.mkupdater.action.NOTIFICATION_CLICKED" />
             </intent-filter>
         </receiver>
+
+        <receiver android:name="com.mokee.helper.receiver.PaymentReceiver" >
+            <intent-filter>
+                <action android:name="com.mokee.pay.action.PAYMENT_SUCCESS" />
+            </intent-filter>
+        </receiver>
+
         <!-- MOKEE HELPER END -->
 
     </application>
