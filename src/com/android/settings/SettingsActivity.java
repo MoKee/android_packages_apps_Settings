@@ -80,6 +80,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -326,7 +327,8 @@ public class SettingsActivity extends Activity
             com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
             NotificationManagerSettings.class.getName(),
             LockScreenSettings.class.getName(),
-            LiveDisplay.class.getName()
+            LiveDisplay.class.getName(),
+            DisplayRotation.class.getName()
     };
 
 
