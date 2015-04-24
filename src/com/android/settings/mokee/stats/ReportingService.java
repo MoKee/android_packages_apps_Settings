@@ -16,12 +16,19 @@
 
 package com.android.settings.mokee.stats;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import android.app.Service;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.os.IBinder;
+import android.util.Log;
+
+import com.android.settings.R;
+
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
+import com.google.analytics.tracking.android.MapBuilder;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -32,18 +39,13 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.Service;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.AsyncTask;
-import android.os.IBinder;
-import android.util.Log;
-
-import com.android.settings.R;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class ReportingService extends Service {
     protected static final String TAG = ReportingService.class.getSimpleName();
@@ -89,10 +91,9 @@ public class ReportingService extends Service {
             Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
 
             // report to google analytics
-            GoogleAnalytics ga = GoogleAnalytics.getInstance(context);
-            Tracker tracker = ga.newTracker(getString(R.string.ga_trackingId));
-            tracker.send(new HitBuilders.EventBuilder().setCategory(deviceName)
-                    .setAction(deviceVersion).setLabel(deviceCountry).build());
+            Tracker tracker = GoogleAnalytics.getInstance(ReportingService.this)
+                    .getTracker(getString(R.string.ga_trackingId));
+            tracker.send(createMap(deviceName, deviceVersion, deviceCountry));
 
             // this really should be set at build time...
             // format of version should be:
@@ -106,8 +107,7 @@ public class ReportingService extends Service {
             }
 
             if (deviceVersionNoDevice != null) {
-                tracker.send(new HitBuilders.EventBuilder().setCategory("checkin")
-                        .setAction(deviceName).setLabel(deviceVersionNoDevice).build());
+                tracker.send(createMap("checkin", deviceName, deviceVersionNoDevice));
             }
 
             // report to the mkstats service
@@ -162,6 +162,14 @@ public class ReportingService extends Service {
             ReportingServiceManager.setAlarm(context, interval);
             stopSelf();
         }
+    }
+
+    private Map<String, String> createMap(String category, String action, String label) {
+        return MapBuilder.createEvent(category,     // Event category (required)
+                action,                     // Event action (required)
+                label,                      // Event label
+                        null)                       // Event value
+                .build();
     }
 
     private JSONObject convertStreamToJSONObject(InputStream is) throws IOException, JSONException {

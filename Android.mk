@@ -7,7 +7,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v7-cardview \
 	android-support-v13 \
 	jsr305 \
-	libGooglePlayServices \
+	libGoogleAnalyticsV3 \
 	libMoKeePushService \
 	volley
 

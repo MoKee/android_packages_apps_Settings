@@ -21,11 +21,6 @@
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.**
 
--dontwarn com.google.android.gms.**
--keep class com.google.android.gms.** { *;}
--dontwarn com.google.ads.**
--keep class com.google.ads.** { *;}
-
 -keep class com.android.settings.cyanogenmod.*Settings
 -keep class com.android.settings.privacyguard.*
 -keep class com.android.settings.voicewakeup.*
