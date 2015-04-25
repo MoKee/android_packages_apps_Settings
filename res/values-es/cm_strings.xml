@@ -753,7 +753,7 @@
   <string name="lockscreen_choose_action_title">Elegir acción</string>
   <string name="lockscreen_visualizer_title">Mostrar visualizador musical</string>
   <string name="navigation_ring_title">Anillo de navegación</string>
-  <string name="navigation_ring_message">Toca el icono editar para abrir el editor del anillo de navegacion.\n\nSelecciona un objetivo para configurar su comportamiento.\n\nToca el icono de \u00AB\u2713\u00BB para guardar los cambios, o \u00ABRestaurar valores predeterminados\u00BB para volver a los ajustes por defecto.</string>
+  <string name="navigation_ring_message">Toca el icono editar para abrir el editor del anillo de navegacion.\n\nSelecciona un objetivo para configurar su comportamiento.\n\nToca el icono \u00AB\u2713\u00BB para guardar los cambios, o \u00ABRestaurar\u00BB para volver a los ajustes por defecto.</string>
   <string name="stylus_icon_enabled_title">Mostrar el icono al usar Stylus</string>
   <string name="stylus_icon_enabled_summary">Mostrar el cursor cuando se arrastra o dibuja con Stylus</string>
   <string name="gestures_settings_title">Gestos de Stylus</string>
