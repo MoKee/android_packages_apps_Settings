@@ -206,13 +206,6 @@
   <string name="block_notifications_title">अधिसूचनाओं को फ़िल्टर करें</string>
   <string name="block_notifications_summary">नज़रंदाज़ की गई अधिसूचनाओं और फ़िल्टरों को प्रबंधित करें</string>
   <string name="no_filters_title">कोई फ़िल्टर सेट नहीं किए गए हैं</string>
-  <string name="cmupdate_settings_title">सियानोजेनमोड अद्यतन</string>
-  <string name="update_recovery_title">सियानोजेनमेड रिवकवरी अद्यतन</string>
-  <string name="update_recovery_summary">रिकवरी को सिस्टम अद्यतनों से अद्यतित करें</string>
-  <string name="update_recovery_on_warning">सूचना: जब इस सुविधा को सक्षम किया जाता है, आपकी स्थापित रिकवरी को चल रहे प्रचालन तंत्र में शामिल वर्तमान संस्करण से प्रतिस्थापित किया जाएगा।\n\nआपकीरिकवरी को आपके सिस्टम के अद्यतनों के साथ अद्यतित किया जाएगा, ताकि भावी संस्करणों की संगतता बनी रहे।\n\nक्या आप इस सुविधा को सक्षम करना चाहते हैं?</string>
-  <string name="update_recovery_off_warning">चेतावनी: यदि इस सुविधा को अक्षम किया जाए, तो आपकी स्थापित रिकवरी को प्रचालन तंत्र के अद्यतनों के साथ अद्यतित नहीं किया जाएगा।\n\nप्रचालन तंत्र के भावी अद्यतन पुरानी पड़ चुकी या मनपसंद रिकवरी संस्करणों के रहते स्थापित नहीं होंगे।\n\nक्या आप सचमुच इस सुविधा को अक्षम करना चाहते हैं?</string>
-  <string name="mod_version">सियानोजेनमोड संस्करण</string>
-  <string name="mod_version_default">अज्ञात</string>
   <string name="build_date">बिल्ड तिथि</string>
   <string name="contributor_cloud_title">योगदानकर्ता</string>
   <string name="phone_service_state">आवाज़: <xliff:g id="voice_state">%1$s</xliff:g>, डेटा: <xliff:g id="data_state">%2$s</xliff:g></string>
@@ -220,7 +213,6 @@
   <string name="double_tap_to_wake_summary">डिस्प्ले को चालू करने के लिए स्क्रीन पर दो बार टैप करें</string>
   <string name="proximity_wake_title">ग़लती से जगाए जाने को रोकें</string>
   <string name="proximity_wake_summary">स्क्रीन को जगाने से पहले निकटता सेंसर को जाँचें</string>
-  <string name="privacy_settings_cyanogenmod_title">गोपनीयता</string>
   <string name="privacy_guard_default_title">डिफ़ॉल्ट रूप से सक्षम</string>
   <string name="privacy_guard_default_summary">नए स्थापित ऐपों के लिए डिफ़ॉल्ट रूप से सक्षम करें</string>
   <string name="privacy_guard_manager_title">गोपनीयता रक्षक</string>
@@ -641,8 +633,6 @@
   <string name="usb_sdcard_summary">एडी कार्ड को फ्लैश उपकरण के रूप में माउंट करके आपको कंप्यूटर और एसडी कार्ड के बीच फ़ाइलों को अंतरित करने देता है</string>
   <string name="external_storage_turn_on">बाहरी भंडारण को चालू कर दिया गया है</string>
   <string name="external_storage_turn_off">बाहरी भंडारण को बंद कर दिया गया है</string>
-  <string name="stats_collection_title">आँकड़ा संग्रहण</string>
-  <string name="stats_collection_summary">इसे सक्षम करने पर आँकड़ा संग्रहण की अनुमति देता है</string>
   <string name="power_notifications_category_title">चार्जिंग ध्वनियाँ</string>
   <string name="power_notifications_enable_title">सक्षम करें</string>
   <string name="power_notifications_enable_summary">पावर स्रोत के साथ कनेक्य या डिसकनेक्ट करते समय ध्वनि करें</string>
@@ -676,9 +666,6 @@
   <string name="graphics_title">ग्राफ़िक्स और प्रतिपादन</string>
   <string name="edge_gesture_service_title">गेश्चर स्पर्श घटनाओं को अवरुद्ध करें</string>
   <string name="edge_gesture_service_summary">नेविगेशन और स्थिति पट्टी गेश्चरों के लिए स्पर्श घटनाएँ ऐपों को नहीं भेजें</string>
-  <string name="cmlicense_title">सियानोजेनमोड क़ानूनी</string>
-  <string name="settings_cmlicense_activity_title">सियानोजेनमोड क़ानूनी</string>
-  <string name="settings_cmlicense_activity_unreachable">आपके पास डेटा कनेक्शन नहीं है। इस जानकारी को अभी देखने के लिए, इंटरनेट से जुड़े किसी कंप्यूटर से %s पर जाएँ।</string>
   <string name="lockpattern_settings_enable_error_path_title">पैटर्न त्रुटि दिखाएँ</string>
   <string name="lockpattern_settings_enable_dots_title">पैटर्न बिंदु दिखाएँ</string>
   <string name="unlock_quick_unlock_control_title">तेज़ अनलॉक</string>
@@ -757,8 +744,6 @@
   <string name="lockscreen_message">लॉक स्क्रीन शॉटकट को फिर से निर्दष्ट करने के लिए बाएँ या दाएँ के आइकन को टैप करें।</string>
   <string name="lockscreen_choose_action_title">कार्य चुनें</string>
   <string name="lockscreen_visualizer_title">संगीत दृश्यांकक को प्रदर्शित करें</string>
-  <string name="whisperpush_title">विस्परपुश</string>
-  <string name="whisperpush_summary">सुरक्षित एसएमएस सेटिंग को प्रबंधित करें</string>
   <string name="navigation_ring_title">नेविगेशन छल्ला लक्ष्य</string>
   <string name="navigation_ring_message">संपादन के लिए नेविगेशन छल्ले को खोलने के लिए संपादन आइकन को टैप करें।\n\nकिसी लक्ष्य के व्यवहार को कॉन्फ़िगर करने के लिए उसे चुनें।\n\nअपने परिवर्तनों को सहेजने के लिए \'\u2713\' आइकन को टैप करें, या सेटिंग को डिफ़ॉल्ट पर रीसेट करने के लिए \'डिफ़ॉल्ट बहाल करें\' को टैप करें।</string>
   <string name="stylus_icon_enabled_title">लेखनी का उपयोग करते समय आइकन दिखाएँ</string>

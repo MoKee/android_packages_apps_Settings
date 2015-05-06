@@ -802,21 +802,4 @@
   <string name="battery_saver_threshold">Όριο εξοικονόμησης μπαταρίας</string>
   <string name="battery_saver_summary">Μείωση της απόδοσης και περιορισμός των δεδομένων παρασκηνίου</string>
   <string name="battery_saver_summary_unavailable">Δεν είναι διαθέσιμο κατά τη φόρτιση</string>
-  <string name="anonymous_statistics_title">Στατιστικά CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Βοηθήστε το CyanogenMod να γίνει καλύτερο ενεργοποιώντας την αποστολή ανώνυμων στατιστικών στοιχείων</string>
-  <string name="anonymous_statistics_warning_title">Σχετικά</string>
-  <string name="anonymous_statistics_warning">Ενεργοποιώντας τα στατιστικά του CyanogenMod επιτρέπετε την αποστολή
-        μη προσωπικών δεδομένων στους προγραμματιστές του CyanogenMod για παρακολούθηση του αριθμού μοναδικών εγκαταστάσεων
-        σε όλες τις συσκευές. Οι πληροφορίες που αποστέλλονται συμπεριλαμβάνουν ένα μοναδικό αναγνωριστικό, το οποίο δεν θέτει
-        σε κίνδυνο την ασφάλεια σας ή τα προσωπικά δεδομένα. Τα δεδομένα αποστέλλονται σε κάθε εκκίνηση.\n\nΓια ένα παράδειγμα
-        των δεδομένων που αποστέλλονται, πατήστε στην Προεπισκόπηση δεδομένων.</string>
-  <string name="enable_reporting_title">Ενεργοποίηση αναφοράς</string>
-  <string name="preview_data_title">Προεπισκόπηση δεδομένων</string>
-  <string name="view_stats_title">Εμφάνιση στατιστικών</string>
-  <string name="anonymous_learn_more">Μάθετε περισσότερα</string>
-  <string name="preview_id_title">Μοναδικό αναγνωριστικό</string>
-  <string name="preview_device_title">Συσκευή</string>
-  <string name="preview_version_title">Έκδοση</string>
-  <string name="preview_country_title">Χώρα</string>
-  <string name="preview_carrier_title">Εταιρία δικτύου</string>
 </resources>

@@ -802,17 +802,4 @@
   <string name="battery_saver_threshold">Virransäästön kynnys</string>
   <string name="battery_saver_summary">Vähennä suorituskykyä ja rajoita taustatiedonsiirtoa</string>
   <string name="battery_saver_summary_unavailable">Ei käytössä latauksen aikana</string>
-  <string name="anonymous_statistics_title">CyanogenMod-tilastot</string>
-  <string name="anonymous_statistics_summary">Auta tekemään CyanogenModista parempi tarjoamalla anonyymejä tilastoraportteja</string>
-  <string name="anonymous_statistics_warning_title">Tietoja</string>
-  <string name="anonymous_statistics_warning">CyanogenMod-tilastojen käyttöönotto mahdollistaa anonyymien tietojen lähettämisen CyanogenModin kehittäjille, jotta laitteiden järjestelmäasennuksia voidaan seurata. Tiedot sisältävät yksilöllisen tunnisteen, joka ei vaaranna henkilökohtaisia tietojasi. Tietoja lähetetään jokaisella uudelleenkäynnistyskerralla.\n\nValitse Esikatsele tietoja nähdäksesi, millaisia tietoja laitteestasi lähetetään.</string>
-  <string name="enable_reporting_title">Ota raportointi käyttöön</string>
-  <string name="preview_data_title">Esikatsele tietoja</string>
-  <string name="view_stats_title">Näytä tilastot</string>
-  <string name="anonymous_learn_more">Lue lisää</string>
-  <string name="preview_id_title">Yksilöllinen tunniste</string>
-  <string name="preview_device_title">Laite</string>
-  <string name="preview_version_title">Versio</string>
-  <string name="preview_country_title">Valtio</string>
-  <string name="preview_carrier_title">Operaattori</string>
 </resources>
