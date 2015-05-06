@@ -802,17 +802,4 @@
   <string name="battery_saver_threshold">Drempelwaarde energiebesparing</string>
   <string name="battery_saver_summary">Prestaties verminderen en achtergrondgegevens beperken</string>
   <string name="battery_saver_summary_unavailable">Niet beschikbaar bij opladen</string>
-  <string name="anonymous_statistics_title">Statistieken</string>
-  <string name="anonymous_statistics_summary">Help CyanogenMod te verbeteren door anonieme statistieken te verzenden</string>
-  <string name="anonymous_statistics_warning_title">Over</string>
-  <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van CyanogenMod verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
-  <string name="enable_reporting_title">Statistieken verzenden</string>
-  <string name="preview_data_title">Voorbeeld van gegevens</string>
-  <string name="view_stats_title">Statistieken tonen</string>
-  <string name="anonymous_learn_more">Lees meer</string>
-  <string name="preview_id_title">Uniek id</string>
-  <string name="preview_device_title">Apparaat</string>
-  <string name="preview_version_title">Versie</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Provider</string>
 </resources>

@@ -803,17 +803,4 @@
   <string name="battery_saver_threshold">Akumuliatoriaus tausojimo riba</string>
   <string name="battery_saver_summary">Sumažinti našumą ir apriboti foninius duomenis</string>
   <string name="battery_saver_summary_unavailable">Negalima, kai įkraunama</string>
-  <string name="anonymous_statistics_title">„CyanogenMod“ statistika</string>
-  <string name="anonymous_statistics_summary">Padėti tobulinti „CyanogenMod“ pasirenkant anoniminę statistikos ataskaitą</string>
-  <string name="anonymous_statistics_warning_title">Apie</string>
-  <string name="anonymous_statistics_warning">Pasirenkant „CyanogenMod“ statistiką leis ne asmeniniams duomenims būti pateiktiems „CyanogenMod“ kūrėjams sekti unikalius diegimus visuose įrenginiuose. Pateikta informacija apima unikalų identifikatorių, kuris nedaro jokios žalos jūsų privatumui ar asmeniniams duomenims. Duomenys bus pateikti kiekvieno paleidimo metu.\n\nNorint peržiūrėti kokia informacija bus pateikta, bakstelėkite Peržiūrėti duomenis.</string>
-  <string name="enable_reporting_title">Įgalinti ataskaitas</string>
-  <string name="preview_data_title">Peržiūrėti duomenis</string>
-  <string name="view_stats_title">Žiūrėti statistiką</string>
-  <string name="anonymous_learn_more">Sužinoti daugiau</string>
-  <string name="preview_id_title">Unikalus ID</string>
-  <string name="preview_device_title">Įrenginys</string>
-  <string name="preview_version_title">Versija</string>
-  <string name="preview_country_title">Šalis</string>
-  <string name="preview_carrier_title">Operatorius</string>
 </resources>

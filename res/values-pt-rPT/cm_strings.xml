@@ -802,17 +802,4 @@
   <string name="battery_saver_threshold">Limite da poupança de energia</string>
   <string name="battery_saver_summary">Reduzir o desempenho e limitar os dados em segundo plano</string>
   <string name="battery_saver_summary_unavailable">Indisponível enquanto estiver a carregar</string>
-  <string name="anonymous_statistics_title">Estatísticas CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajudar a melhorar a CyanogenMod optando por ativar o envio do relatório de estatísticas anónimas</string>
-  <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optar pelo envio de estatísticas CyanogenMod vai permitir que dados não-pessoais sejam transmitidos aos desenvolvedores da CyanogenMod para rastrear instalações através dos dispositivos. As informações submetidas incluem um identificador único, que não compromete a sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um  exemplo dos dados que são enviados, toque em Previsualizar dados.</string>
-  <string name="enable_reporting_title">Ativar relatório</string>
-  <string name="preview_data_title">Previsualizar dados</string>
-  <string name="view_stats_title">Visualizar estatísticas</string>
-  <string name="anonymous_learn_more">Saber mais</string>
-  <string name="preview_id_title">Identificação única</string>
-  <string name="preview_device_title">Dispositivo</string>
-  <string name="preview_version_title">Versão</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Operador</string>
 </resources>

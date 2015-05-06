@@ -803,17 +803,4 @@
   <string name="battery_saver_threshold">Поріг збереження енергії</string>
   <string name="battery_saver_summary">Зниження продуктивності і обмеження передачі даних</string>
   <string name="battery_saver_summary_unavailable">Недоступно під час зарядки</string>
-  <string name="anonymous_statistics_title">Статистика CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Допоможіть зробити CyanogenMod кращим, надсилаючи анонімну статистику</string>
-  <string name="anonymous_statistics_warning_title">Про</string>
-  <string name="anonymous_statistics_warning">Анонімні звіти дозволяють розробникам CyanogenMod відстежувати шнформацію щодо установки на різні пристрої. Ця інформація містить у собі назву пристрою, версію ПЗ і унікальний ідентифікатор, надсилання якого ніяким чином не шкодить Вашій конфіденційності. Звіт надсилається при кожному завантаженні пристрою.\n\nНатисніть, аби переглянути приклад даних, які надсилаються.</string>
-  <string name="enable_reporting_title">Увімкнути надсилання звітів</string>
-  <string name="preview_data_title">Показати дані</string>
-  <string name="view_stats_title">Перегляд статистики</string>
-  <string name="anonymous_learn_more">Докладніше</string>
-  <string name="preview_id_title">Унікальний ідентифікатор</string>
-  <string name="preview_device_title">Пристрій</string>
-  <string name="preview_version_title">Версія</string>
-  <string name="preview_country_title">Країна</string>
-  <string name="preview_carrier_title">Оператор</string>
 </resources>
