@@ -828,10 +828,5 @@
   <string name="heads_up_notifications">Iššokantys pranešimai</string>
   <string name="summary_heads_up_enabled">Iššokantys pranešimai yra įgalinti</string>
   <string name="summary_heads_up_disabled">Iššokantys pranešimai yra neleidžiami</string>
-  <string name="lock_to_cyanogen_title">Įrenginio apsauga</string>
-  <string name="lock_to_cyanogen_summary">Reikalauti „Cyanogen“ OS paskyros slaptažodžio net ir po gamyklinių nustatymų iš naujo</string>
-  <string name="lock_to_cyanogen_create_account_msg">Jūsų įrenginys naudoja „Cyanogen“ OS paskyros slaptažodį, kad apsaugotų įrenginį net ir po gamyklinių nustatymų iš naujo. Jums reikės sukurti „Cyanogen“ OS paskyrą.</string>
-  <string name="lock_to_cyanogen_disable_msg">Neleidžiant šios funkcijos, vartotojai neturintys leidimo galės nustatyti iš naujo telefono gamyklinius nustatymus jei jis pavogiamas. Jūsų asmeniniai duomenys gali būti neapsaugoti. Ar norite neleisti šios funkcijos?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Įrenginio apsauga yra įgalinta. Prašome neleisti, kad galėtumėte tęsti savo įrenginio nustatymą iš naujo.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Prisijungimo klaida; ar „Bluetooth“ susiejimas įgalintas šiame įrenginyje?</string>
 </resources>

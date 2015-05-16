@@ -828,10 +828,5 @@
   <string name="summary_heads_up_disabled">ไม่ใช้งานการแจ้งเตือนแบบป๊อปอัพ</string>
   <string name="master_clear_desc_cm" product="tablet">นี่จะลบข้อมูลทั้งหมดจาก<b>ที่เก็บข้อมูลภายใน</b>ของแท็บเล็ต รวมถึง\n\n<li>บัญชีอุปกรณ์ของคุณ</li>\n<li>ข้อมูลแอปและการตั้งค่า</li>\n<li>แอปที่ดาวน์โหลด</li></string>
   <string name="master_clear_desc_cm" product="default">นี่จะลบข้อมูลทั้งหมดจาก<b>ที่เก็บข้อมูลภายใน</b>ของโทรศัพท์ รวมถึง\n\n<li>บัญชีอุปกรณ์ของคุณ</li>\n<li>ข้อมูลแอปและการตั้งค่า</li>\n<li>แอปที่ดาวน์โหลด</li></string>
-  <string name="lock_to_cyanogen_title">การป้องกันอุปกรณ์</string>
-  <string name="lock_to_cyanogen_summary">คุณต้องใสรหัสผ่านบัญชี Cyanogen OS  แม้หลังจากทำการคืนค่าโรงงานไปแล้วก็ตาม</string>
-  <string name="lock_to_cyanogen_create_account_msg">อุปกรณ์ของคุณใช้รหัสผ่านบัญชี Cyanogen OS  ในการป้องกันอุปกรณ์ แม้อุปกรณ์ของคุณจะโดนคืนค่าโรงงานก็ตาม ดังนั้นคุณจำเป็นต้องสร้างบัญชี Cyanogen OS</string>
-  <string name="lock_to_cyanogen_disable_msg">การปิดใช้งานความสามารถนี้อาจทำให้มีผู้ไม่ประสงค์ดีสามารถล้างอุปกรณ์ของคุณได้ โดยเฉพาะเมื่ออุปกรณ์ของคุณหาย ข้อมูลของคุณจะไม่ได้รับการปกป้องใดๆทั้งสิ้น ต้องการปิดความสามารถนี้อย่างงั้นหรือ?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">การป้องกันอุปกรณ์ ถูกเปิดอยู่ กรุณาปิดก่อนทำการคืนค่าโรงงาน</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">การเชื่อมต่อล้มเหลว การปล่อยสัญญาณผ่านบลูทูธของอุปกรณ์นี้ถูกเปิดอยู่หรือไม่?</string>
 </resources>

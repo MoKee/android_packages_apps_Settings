@@ -827,9 +827,4 @@
   <string name="summary_heads_up_disabled">Le notifiche pop-up sono disattivate</string>
   <string name="master_clear_desc_cm" product="tablet">Questo cancellerà tutti i dati dalla <b>memoria interna</b> del tablet, tra cui:\n\n<li>account</li>\n<li>app e impostazioni del sistema</li>\n<li>app scaricate</li></string>
   <string name="master_clear_desc_cm" product="default">Questo cancellerà tutti i dati dalla <b>memoria interna</b> del telefono, tra cui:\n\n<li>account</li>\n<li>app e impostazioni del sistema</li>\n<li>app scaricate</li></string>
-  <string name="lock_to_cyanogen_title">Protezione dispositivo</string>
-  <string name="lock_to_cyanogen_summary">Richiedi password dall\'account Cyanogen OS anche dopo il ripristino di fabbrica</string>
-  <string name="lock_to_cyanogen_create_account_msg">Il dispositivo utilizza la password dell\'account Cyanogen OS per proteggerlo anche in caso di un reset di fabbrica. Devi creare un account Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Disattivando questa funzione gli utenti non autorizzati potranno ripristinare il telefono alle impostazioni di fabbrica, se viene rubato. I dati personali non possono essere protetti. Desideri disattivare questa funzione?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">La protezione del dispositivo è attiva. Disattivala per ripristinare il tuo dispositivo.</string>
 </resources>

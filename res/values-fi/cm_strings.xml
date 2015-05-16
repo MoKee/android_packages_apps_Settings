@@ -829,10 +829,5 @@
   <string name="summary_heads_up_disabled">Ponnahdusilmoitukset ovat pois käytöstä</string>
   <string name="master_clear_desc_cm" product="tablet">Tämä poistaa kaikki tablet-laitteesi \"<b>"sisäisen tallennustilan"</b>\" tiedot, kuten:\n\n\"<li>"Laitteen tilit"</li>\n<li>"Järjestelmä- ja sovellustiedot ja -asetukset"</li>\n<li>"Ladatut sovellukset"</li></string>
   <string name="master_clear_desc_cm" product="default">Tämä poistaa kaikki puhelimesi \"<b>"sisäisen tallennustilan"</b>\" tiedot, kuten:\n\n\"<li>"Laitteen tilit"</li>\n<li>"Järjestelmä- ja sovellustiedot ja -asetukset"</li>\n<li>"Ladatut sovellukset"</li></string>
-  <string name="lock_to_cyanogen_title">Laitteen suojaus</string>
-  <string name="lock_to_cyanogen_summary">Vaadi Cyanogen OS-tilin salasana jopa tehdasasetusten palautuksen jälkeen</string>
-  <string name="lock_to_cyanogen_create_account_msg">Laitteesi käyttää Cyanogen OS-tilin salasanaa suojatakseen laitetta jopa tehdasasetusten palautuksen jälkeen. Sinun täytyy luoda Cyanogen OS-tili.</string>
-  <string name="lock_to_cyanogen_disable_msg">Tämän ominaisuuden käytöstä poistaminen sallii muiden käyttäjien palauttaa tehdasasetukset jos laite varastetaan. Henkilökohtaisia tietojasi ei välttämättä ole suojattu. Haluatko poistaa tämän ominaisuuden käytöstä?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Laitteen suojaus on käytössä. Poista suojaus käytöstä palauttaaksesi laitteen tehdasasetukset.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Yhteysvirhe: onko Bluetooth-yhteyden jakaminen käytössä laitteella?</string>
 </resources>

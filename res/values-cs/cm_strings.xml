@@ -828,10 +828,5 @@
   <string name="summary_heads_up_disabled">Vyskakovací upozornění je zakázáno</string>
   <string name="master_clear_desc_cm" product="tablet">Tímto budou z tabletu smazána všechny data z <b>interního úložiště</b> včetně:\n\n<li>Účtů</li>\n<li>Systémové i uživatelské data aplikací a nastavení</li>\n<li>Stáhnuté aplikace</li></string>
   <string name="master_clear_desc_cm" product="default">Tímto budou z telefonu smazána všechny data z <b>interního úložiště</b> včetně:\n\n<li>Účtů</li>\n<li>Systémové i uživatelské data aplikací a nastavení</li>\n<li>Stáhnuté aplikace</li></string>
-  <string name="lock_to_cyanogen_title">Ochrana zařízení</string>
-  <string name="lock_to_cyanogen_summary">Požadovat heslo Cyanogen OS účtu i poté, co byl provedeno obnovení do továrního nastavení</string>
-  <string name="lock_to_cyanogen_create_account_msg">Zařízení používá heslo účtu Cyanogen OS k zabezpečení i v případě obnovení do továrního nastavení. Proto je potřeba vytvořit účet Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Zakázáním této funkce umožňuje neoprávněným uživatelům v případě krádeže provést obnovu do továrního nastavení. Soukromá data nemusí být chráněna. Opravdu chcete tuto funkci vypnout?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Ochrana zařízení je povolena. Prosím zakažte ji pro pokračování v obnově vašeho zařízení.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Chyba připojení - není povoleno sdílení připojení pomocí Bluetooth?</string>
 </resources>

@@ -829,10 +829,5 @@
   <string name="summary_heads_up_disabled">As notificações pop-up estão desativadas</string>
   <string name="master_clear_desc_cm" product="tablet">Isto irá apagar todos os dados do <b>armazenamento interno</b> do seu tablet, incluindo:\n\n<li>Suas contas do dispositivo</li>\n<li>Dados e configurações do sistema e de aplicativos</li>\n<li>Aplicativos baixados</li></string>
   <string name="master_clear_desc_cm" product="default">Isto irá apagar todos os dados do <b>armazenamento interno</b> do seu telefone, incluindo:\n\n<li>Suas contas do dispositivo</li>\n<li>Dados e configurações do sistema e de aplicativos</li>\n<li>Aplicativos baixados</li></string>
-  <string name="lock_to_cyanogen_title">Proteção do Dispositivo</string>
-  <string name="lock_to_cyanogen_summary">Exigir a senha da sua conta Cyanogen mesmo depois de restaurar as configurações de fábrica</string>
-  <string name="lock_to_cyanogen_create_account_msg">O seu dispositivo usa uma senha de conta Cyanogen para proteger seu dispositivo mesmo no evento das configurações de fábrica serem restauradas. Você precisará criar uma conta Cyanogen.</string>
-  <string name="lock_to_cyanogen_disable_msg">Desativando esta funcionalidade permitirá que um usuário não autorizado restaure seu dispositivo para as configurações de fábrica se ele for roubado. Seus dados pessoais podem não ser protegidos. Você deseja desativar esta função?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">A Proteção do Dispositivo está ativada. Por favor, desative para continuar a restaurar o seu dispositivo.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Erro de conexão; ancoragem Bluetooth está ativada neste dispositivo?</string>
 </resources>

@@ -829,10 +829,5 @@
   <string name="summary_heads_up_disabled">Lebegő értesítések letiltva</string>
   <string name="master_clear_desc_cm" product="tablet">Ezzel törölni fog minden adatot a táblagépének <b>belső tárhelyéről</b> beleértve:\n\n<li>Eszköz fiókok</li>\n<li>Rendszer és alkalmazás adatok, beállítások</li>\n<li>Letöltött alkalmazások</li></string>
   <string name="master_clear_desc_cm" product="default">Ezzel törölni fog minden adatot a telefonjának <b>belső tárhelyéről</b> beleértve:\n\n<li>Eszköz fiókok</li>\n<li>Rendszer és alkalmazás adatok, beállítások</li>\n<li>Letöltött alkalmazások</li></string>
-  <string name="lock_to_cyanogen_title">Eszközvédelem</string>
-  <string name="lock_to_cyanogen_summary">Cyanogen OS jelszót igényel még gyári visszaállítás után is</string>
-  <string name="lock_to_cyanogen_create_account_msg">A készüléke Cyanogen OS jelszót használ az eszköz védelme érdekében, még gyári visszaállítás után is. Létre kell hoznia egy Cyanogen OS fiókot.</string>
-  <string name="lock_to_cyanogen_disable_msg">A funkció letiltásával jogosulatlan személyek visszaállíthatják a telefont a gyári beállításokra lopás esetén. Személyes adatai nem lesznek biztonságban. Biztosan letiltja ezt a funkciót?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Eszközvédelem engedélyezve van. Tiltsa le a készülék visszaállításának folytatásához.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Csatlakozási hiba; Engedélyezve van a Bluetooth megosztás a készüléken?</string>
 </resources>

@@ -821,9 +821,4 @@
   <string name="summary_heads_up_disabled">弹出通知已禁用</string>
   <string name="master_clear_desc_cm" product="tablet">这将会从您平板的<b>内部存储</b>中擦出所有数据，包括：\n\n<li>您的设备账号</li>\n<li>系统和应用数据设置</li>\n<li>已下载的应用</li></string>
   <string name="master_clear_desc_cm" product="default">这将会从您手机的<b>内部存储</b>中擦出所有数据，包括：\n\n<li>您的设备账号</li>\n<li>系统和应用数据设置</li>\n<li>已下载的应用</li></string>
-  <string name="lock_to_cyanogen_title">设备保护</string>
-  <string name="lock_to_cyanogen_summary">即使设备被恢复出厂设置，也要求输入 Cyanogen OS 帐户密码</string>
-  <string name="lock_to_cyanogen_create_account_msg">即使设备被恢复出厂设置，也可以被 Cyanogen OS 帐户密码所保护。您将需要创建一个 Cyanogen OS 帐户。</string>
-  <string name="lock_to_cyanogen_disable_msg">如果您的手机被盗，禁用此功能将会使得未经授权的用户重置您的手机为出厂默认值。您的个人数据可能无法被保护。您确定要禁用此功能？</string>
-  <string name="lock_to_cyanogen_master_clear_warning">设备保护已启用。请在重设您的设备前先将其禁用。</string>
 </resources>

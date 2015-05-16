@@ -816,9 +816,4 @@
   <string name="heads_up_notifications">Pop-up-Benachrichtigungen</string>
   <string name="summary_heads_up_enabled">Pop-up-Benachrichtigungen sind aktiviert</string>
   <string name="summary_heads_up_disabled">Pop-up-Benachrichtigungen sind deaktiviert</string>
-  <string name="lock_to_cyanogen_title">Geräteschutz</string>
-  <string name="lock_to_cyanogen_summary">Erfordert Ihr Cyanogen OS-Passwort, auch nach einem Rücksetzen auf Werkseinstellungen</string>
-  <string name="lock_to_cyanogen_create_account_msg">Das Passwort Ihres Cyanogen OS-Kontos wird genutzt, um Ihr Gerät auch beim Rücksetzen auf Werkseinstellungen zu schützen. Dazu müssen Sie ein Cyanogen OS-Konto anlegen.</string>
-  <string name="lock_to_cyanogen_disable_msg">Deaktivieren dieser Funktion erlaubt es nicht autorisierten Benutzern Ihr Telefon auf Werkseinstellungen zurückzusetzen, wenn es gestohlen wird. Ihre persönlichen Daten können nicht sicher sein. Wollen Sie diese Funktion deaktivieren?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Geräteschutz ist aktiviert. Bitte deaktivieren, um mit dem Zurücksetzen Ihres Gerätes fortzufahren.</string>
 </resources>
