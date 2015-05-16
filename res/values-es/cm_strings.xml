@@ -159,9 +159,14 @@
   <string name="sunlight_enhancement_summary">Mejorar el brillo y la lectura de la pantalla bajo la luz del sol</string>
   <string name="color_enhancement_title">Realce de color</string>
   <string name="color_enhancement_summary">Realzar dinámicamente los colores de la pantalla</string>
+  <string name="blacklist_title">Lista de contactos bloqueados</string>
+  <string name="blacklist_edit_dialog_title">Editar número de teléfono bloqueado</string>
   <string name="blacklist_prefs">Ajustes</string>
   <string name="blacklist_button_delete">Eliminar</string>
+  <string name="blacklist_empty_text">No hay números en la lista negra. Añadir una entrada tocando el botón (+).</string>
+  <string name="blacklist_disabled_empty_text">Para evitar que los números te llamen o manden mensajes, habilita la lista negra de contactos.</string>
   <string name="blacklist_summary_disabled">Deshabilitada</string>
+  <string name="blacklist_summary">No recibirás llamadas ni mensajes de los números incluidos en la lista negra de llamadas</string>
   <string name="blacklist_notify">Mostrar notificación</string>
   <string name="blacklist_private_numbers_title">Números privados</string>
   <string name="blacklist_private_numbers_summary_disabled">No bloquear llamadas de números privados</string>
@@ -176,7 +181,9 @@
   <string name="blacklist_regex_summary">Usar \u00AB.\u00BB como comodín y \u00AB*\u00BB para repetición. Por ejemplo \u00AB123.*\u00BB bloqueará números que comiencen por 123 y \u00AB.*123.*\u00BB bloqueará números que contengan 123</string>
   <string name="blacklist_policy_block_calls">Bloquear llamadas entrantes</string>
   <string name="blacklist_policy_block_messages">Bloquear mensajes entrantes</string>
+  <string name="blacklist_bad_number_add">Imposible añadir el número erróneo a la lista negra de contactos</string>
   <string name="remove_blacklist_number_title">Quitar número</string>
+  <string name="remove_blacklist_entry">¿Quieres eliminar este número de teléfono bloqueado?</string>
   <string name="select_contact">Seleccionar contacto</string>
   <string name="lockpattern_reset_button">Restablecer patrón</string>
   <string name="lockpattern_settings_reset_summary">Introducir la cuenta de correo principal y su contraseña asociada para restablecer el patrón de bloqueo</string>
@@ -206,6 +213,8 @@
   <string name="block_notifications_title">Filtrar notificaciones</string>
   <string name="block_notifications_summary">Gestionar filtros y notificaciones bloqueadas</string>
   <string name="no_filters_title">No hay filtros establecidos</string>
+  <string name="device_model">Modelo del dispositivo</string>
+  <string name="device_name">Nombre del terminal</string>
   <string name="build_date">Fecha de compilación</string>
   <string name="contributor_cloud_title">Colaboradores</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, datos: <xliff:g id="data_state">%2$s</xliff:g></string>
@@ -287,7 +296,6 @@
   <string name="status_bar_show_unused_sims_title">Mostrar iconos vacíos de SIM</string>
   <string name="status_bar_show_unused_sims_title_summary_off">Ocultar los iconos de ranuras de tarjetas SIM no utilizadas</string>
   <string name="status_bar_show_unused_sims_title_summary_on">Indicar ranuras de tarjeta SIM no utilizadas</string>
-  <string name="sim_name_hint">Introduce el nombre de la SIM</string>
   <string name="edit_light_settings">Editar notificación</string>
   <string name="pulse_speed_title">Duración y velocidad</string>
   <string name="default_time">Normal</string>

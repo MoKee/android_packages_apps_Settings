@@ -289,7 +289,6 @@
   <string name="status_bar_show_unused_sims_title">Прикажи празну SIM икону</string>
   <string name="status_bar_show_unused_sims_title_summary_off">Сакриј икону некоришћеног SIM слота</string>
   <string name="status_bar_show_unused_sims_title_summary_on">Назначи некоришћени SIM слот</string>
-  <string name="sim_name_hint">Унесите име за SIM</string>
   <string name="edit_light_settings">Измени подешавања светла</string>
   <string name="pulse_speed_title">Дужина и брзина пулсирања</string>
   <string name="default_time">Нормално</string>

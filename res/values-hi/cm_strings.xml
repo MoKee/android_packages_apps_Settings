@@ -287,7 +287,6 @@
   <string name="status_bar_show_unused_sims_title">खाली सिम आइकन दिखाएँ</string>
   <string name="status_bar_show_unused_sims_title_summary_off">खाली सिम स्लॉटों के आइकनों को छिपाएँ</string>
   <string name="status_bar_show_unused_sims_title_summary_on">उपयोग नहीं किए गए सिम स्लॉटों को सूचित करें</string>
-  <string name="sim_name_hint">सिम नाम दर्ज करें</string>
   <string name="edit_light_settings">प्रकाश सेटिंग को संपादित करें</string>
   <string name="pulse_speed_title">पल्स लंबाई और तीव्रता</string>
   <string name="default_time">सामान्य</string>
