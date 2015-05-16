@@ -778,16 +778,6 @@
   <string name="live_display_enhance_color_title">Faarwe verstäerken</string>
   <string name="battery_saver_threshold">Schwellewäert vum Akkuschouner</string>
   <string name="battery_saver_summary_unavailable">Beim Oplueden net disponibel</string>
-  <string name="anonymous_statistics_warning_title">Iwwer</string>
-  <string name="enable_reporting_title">Berichter aschalten</string>
-  <string name="preview_data_title">Virschau vun den Donnéeën</string>
-  <string name="view_stats_title">Statistike kucken</string>
-  <string name="anonymous_learn_more">Méi gewuer ginn</string>
-  <string name="preview_id_title">Eendeiteg ID</string>
-  <string name="preview_device_title">Apparat</string>
-  <string name="preview_version_title">Versioun</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Provider</string>
   <string name="heads_up_notifications">Pop-Up-Notifikatiounen</string>
   <string name="summary_heads_up_enabled">Pop-Up-Notifikatioune sinn aktivéiert</string>
   <string name="summary_heads_up_disabled">Pop-Up-Notifikatioune sinn deaktivéiert</string>

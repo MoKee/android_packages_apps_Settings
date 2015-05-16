@@ -800,17 +800,4 @@
   <string name="battery_saver_threshold">Ambang batas penghemat baterai</string>
   <string name="battery_saver_summary">Menurunkan performa dan membatasi data latar belakang</string>
   <string name="battery_saver_summary_unavailable">Tidak tersedia saat pengisian</string>
-  <string name="anonymous_statistics_title">Statistik CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Bantu CyanogenMod untuk menjadi lebih baik dengan berperan serta melaporkan statistik anonim</string>
-  <string name="anonymous_statistics_warning_title">Tentang</string>
-  <string name="anonymous_statistics_warning">Berperan serta dalam Statistik CyanogenMod akan memungkinkan data non-pribadi dikirimkan kepada para pengembang CyanogenMod untuk melacak instalasi unik di perangkat. Informasi yang dikirimkan berisi pengenal unik, yang tidak membahayakan privasi atau data pribadi Anda. Data dikirim setiap kali perangkat dimulai.\n\nUntuk melihat contoh data yang akan dikirim, ketuk Pratinjau Data.</string>
-  <string name="enable_reporting_title">Aktifkan pelaporan</string>
-  <string name="preview_data_title">Pratinjau data</string>
-  <string name="view_stats_title">Lihat statistik</string>
-  <string name="anonymous_learn_more">Pelajadi lebih lanjut</string>
-  <string name="preview_id_title">ID unik</string>
-  <string name="preview_device_title">Perangkat</string>
-  <string name="preview_version_title">Versi</string>
-  <string name="preview_country_title">Negara</string>
-  <string name="preview_carrier_title">Operator</string>
 </resources>
