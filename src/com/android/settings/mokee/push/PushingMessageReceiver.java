@@ -135,7 +135,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                 .setSmallIcon(icon).setAutoCancel(true).setTicker(title)
                 .setContentIntent(pendintIntent).setWhen(0).setContentTitle(title)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
-                .setOngoing(true).setContentText(message)).bigText(message);
+                .setContentText(message)).bigText(message);
 
         nm.notify(id, noti.build());
     }
