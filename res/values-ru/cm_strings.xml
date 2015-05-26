@@ -643,6 +643,7 @@
   <string name="usb_charging_summary">Отключает обмен данными с компьютером и использует USB-порт только для зарядки батареи</string>
   <string name="usb_sdcard_title">USB-накопитель (UMS)</string>
   <string name="usb_sdcard_summary">Позволяет передавать файлы путем использования SD-карты устройства в качестве съемного диска</string>
+  <string name="usb_not_connected">USB-кабель не подключен</string>
   <string name="external_storage_turn_on">Внешний накопитель включен</string>
   <string name="external_storage_turn_off">Внешний накопитель отключен</string>
   <string name="power_notifications_category_title">Зарядное устройство</string>
@@ -828,5 +829,7 @@
   <string name="heads_up_notifications">Всплывающие уведомления</string>
   <string name="summary_heads_up_enabled">Включены</string>
   <string name="summary_heads_up_disabled">Выключены</string>
+  <string name="master_clear_desc_cm" product="tablet">Данное действие удалит все данные из <b>внутренней памяти</b> вашего планшета, включая: \n\n <li>аккаунты</li>\n<li>настройки системы и приложений</li> \n <li>все загруженные приложения</li></string>
+  <string name="master_clear_desc_cm" product="default">Данное действие удалит все данные из <b>внутренней памяти</b> вашего телефона, включая: \n\n <li>аккаунты</li>\n<li>настройки системы и приложений</li> \n <li>все загруженные приложения</li></string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка подключения. Проверьте, включён ли Bluetooth-модем на указанном устройстве.</string>
 </resources>
