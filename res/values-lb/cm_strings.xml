@@ -199,12 +199,17 @@
   <string name="display_rotation_270_title">270 Grad</string>
   <string name="app_security_title">App-Sécherheet</string>
   <string name="sms_security_check_limit_title">SMS-Messagëlimitt</string>
-  <string name="sms_security_check_limit_summary">Appe kënne(n) %d Messagen an 30 Minutte schécken ier eng Bestätegung gefrot gëtt</string>
   <string name="spam_added_title">%1$s dobäigesat</string>
   <string name="spam_last_blocked_title">%1$s fir d\'lescht blockéiert</string>
   <string name="block_notifications_title">Notifikatiounsfilter</string>
   <string name="block_notifications_summary">Ignoréiert Notifikatiounen a Filtere geréieren</string>
   <string name="no_filters_title">Keng Filtere gesat</string>
+  <string name="cmupdate_settings_title">CyanogenMod-Aktualiséierungen</string>
+  <string name="update_recovery_title">Cyanogen-Recovery aktualiséieren</string>
+  <string name="update_recovery_summary">De Recovery-Programm zesumme mam System aktualiséieren</string>
+  <string name="update_recovery_off_warning">WARNUNG: Wann dës Funktioun desaktivéiert ass, gëtt däin installéierte Recovery-Programm net mat dengem System aktualiséiert.\n\nZukünfteg System-Aktualiséierunge loosse sech mat veraalten oder eegene Recovery-Programmer eventuell net installéierne.\n\nWëlls du dës Funktioun sécher desaktivéieren?</string>
+  <string name="mod_version">CyanogenMod-Versioun</string>
+  <string name="mod_version_default">Onbekannt</string>
   <string name="device_model">Apparatmodell</string>
   <string name="device_name">Apparatnumm</string>
   <string name="build_date">Build-Datum</string>
@@ -214,6 +219,7 @@
   <string name="double_tap_to_wake_summary">Zweemol op de Schierm drécke fir en unzeschalten</string>
   <string name="proximity_wake_title">Onbeofsiichtegt waakreg maache verhënneren</string>
   <string name="proximity_wake_summary">Virum waakreg maachen de Proximitéitssensor iwwerpréiwen</string>
+  <string name="privacy_settings_cyanogenmod_title">Privatsphär</string>
   <string name="privacy_guard_default_title">Standardméisseg aktivéiert</string>
   <string name="privacy_guard_default_summary">Standardméisseg fir nei-installéiert Appen aktivéiert</string>
   <string name="privacy_guard_manager_title">Privatsphärschutz</string>
@@ -624,6 +630,8 @@
   <string name="usb_sdcard_summary">Erméiglecht den Datentransfer tëscht dengem Computer an der SD-Kaart, andeem dësen als Massespäicher agebonne gëtt</string>
   <string name="external_storage_turn_on">Externe Späicher gouf ugeschalt</string>
   <string name="external_storage_turn_off">Externe Späicher gouf ausgeschalt</string>
+  <string name="stats_collection_title">Statistiksammlung</string>
+  <string name="stats_collection_summary">Erlaabt d\'Sammele vu Metriken, wann aktivéiert</string>
   <string name="power_notifications_category_title">Téin beim Oplueden</string>
   <string name="power_notifications_enable_title">Aktivéieren</string>
   <string name="power_notifications_enable_summary">En Toun ofspille wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
@@ -657,6 +665,8 @@
   <string name="graphics_title">Grafikoptiounen</string>
   <string name="edge_gesture_service_title">Gesten-Evenementer blockéieren</string>
   <string name="edge_gesture_service_summary">Keng Beréierungsgesten déi op der Navigatiouns- oder Statusläischt ausgefouert ginn un Appe schécken</string>
+  <string name="cmlicense_title">Rechtlesch Hiwäiser iwwer CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Rechtlesch Hiwäiser iwwer CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Musterfeeler uweisen</string>
   <string name="lockpattern_settings_enable_dots_title">Musterpunkten uweisen</string>
   <string name="unlock_quick_unlock_control_title">Séiert Entspären</string>
@@ -667,7 +677,7 @@
   <string name="notification_volume_option_title">Notifikatiounslautstäerkt</string>
   <string name="notification_drawer_title">Notifikatiounsläischt</string>
   <string name="quick_pulldown_title">Séiert Opmaachen</string>
-  <string name="quick_pulldown_summary">D\'Erofzéiere vun der Notifikatiounsleescht um %1$s Rand mécht déi séier Astellungen op</string>
+  <string name="quick_pulldown_summary">D\'Erofzéie vun der Notifikatiounsläischt um %1$se Rand mécht déi séier Astellungen op</string>
   <string name="quick_pulldown_summary_left">Lénks</string>
   <string name="quick_pulldown_summary_right">Riets</string>
   <string name="quick_pulldown_off">Aus</string>
@@ -735,6 +745,8 @@
   <string name="lockscreen_message">Dréck e Symbol op der lénkser oder rietser Säit fir d\'Spärschierm-Ofkierzungen nei ze definéieren.</string>
   <string name="lockscreen_choose_action_title">Aktioun auswielen</string>
   <string name="lockscreen_visualizer_title">Musek-Visualiséierung uweisen</string>
+  <string name="whisperpush_title">WhisperPush</string>
+  <string name="whisperpush_summary">Astellunge fir sécher SMSen</string>
   <string name="navigation_ring_title">Ziler vun den Navigatiounsréng</string>
   <string name="lcd_density">LCD-Opléisung</string>
   <string name="dialog_title_lcd_density">LCD-Opléisung</string>
@@ -786,7 +798,17 @@
   <string name="live_display_enhance_color_title">Faarwe verstäerken</string>
   <string name="battery_saver_threshold">Schwellewäert vum Akkuschouner</string>
   <string name="battery_saver_summary_unavailable">Beim Oplueden net disponibel</string>
+  <string name="anonymous_statistics_warning_title">Iwwer</string>
+  <string name="enable_reporting_title">Berichter aschalten</string>
+  <string name="preview_data_title">Virschau vun den Donnéeën</string>
+  <string name="view_stats_title">Statistike kucken</string>
+  <string name="anonymous_learn_more">Méi gewuer ginn</string>
+  <string name="preview_id_title">Eendeiteg ID</string>
+  <string name="preview_device_title">Apparat</string>
+  <string name="preview_version_title">Versioun</string>
+  <string name="preview_country_title">Land</string>
+  <string name="preview_carrier_title">Provider</string>
   <string name="heads_up_notifications">Pop-Up-Notifikatiounen</string>
   <string name="summary_heads_up_enabled">Pop-Up-Notifikatioune sinn aktivéiert</string>
-  <string name="summary_heads_up_disabled">Pop-Up-Notifikatioune sinn deaktivéiert</string>
+  <string name="summary_heads_up_disabled">Pop-Up-Notifikatioune sinn desaktivéiert</string>
 </resources>

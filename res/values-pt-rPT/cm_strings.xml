@@ -83,6 +83,7 @@
   <string name="profile_choose_app">Escolher aplicação</string>
   <string name="profile_system_settings_title">Definições de sistema</string>
   <string name="profile_lockmode_title">Modo de ecrã de bloqueio</string>
+  <string name="profile_lockmode_policy_disabled_summary">Esta opção de perfil está desativada pela política do administrador do dispositivo</string>
   <string name="profile_lockmode_insecure_summary">Não pedir a palavra-passe nem PIN</string>
   <string name="profile_lockmode_disabled_summary">Desativar o ecrã de bloqueio</string>
   <string name="profile_airplanemode_title">Modo de avião</string>
@@ -209,7 +210,9 @@
   <string name="display_rotation_270_title">270 graus</string>
   <string name="app_security_title">Segurança das aplicações</string>
   <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
-  <string name="sms_security_check_limit_summary">As aplicações podem enviar %d mensagens durante 30 minutos antes de exigir confirmação</string>
+  <string name="sms_security_check_limit_summary">As aplicações podem enviar %d mensagens durante 1 minuto antes de exigir confirmação</string>
+  <string name="sms_security_check_limit_summary_none">As aplicações não têm permissão para enviar quaisquer mensagens sem confirmação</string>
+  <string name="sms_security_check_limit_none">Nenhum</string>
   <string name="spam_added_title">Adicionado %1$s</string>
   <string name="spam_last_blocked_title">Última bloqueada %1$s</string>
   <string name="block_notifications_title">Filtrar as notificações</string>
@@ -296,9 +299,6 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <string name="status_bar_battery_percentage_text_next">Junto ao ícone</string>
-  <string name="status_bar_show_unused_sims_title">Mostrar ícones do SIM vazio</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Ocultar ícones das ranhuras de SIM não utilizadas</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Indicar as ranhuras não utilizadas do SIM</string>
   <string name="edit_light_settings">Editar definições de luz</string>
   <string name="pulse_speed_title">Duração e velocidade da luz ao piscar</string>
   <string name="default_time">Normal</string>
@@ -831,4 +831,9 @@
   <string name="master_clear_desc_cm" product="tablet">Isto apagará todos os dados do <b>armazenamento interno</b> do seu tablet, incluindo:\n\n <li>As contas do dispositivo</li>\n<li>Definições e dados das aplicações e do sistema</li>\n<li>Aplicações transferidas</li></string>
   <string name="master_clear_desc_cm" product="default">Isto apagará todos os dados do <b>armazenamento interno</b> do seu telefone, incluindo:\n\n <li>As contas do dispositivo</li>\n<li>Definições e dados das aplicações e do sistema</li>\n<li>Aplicações transferidas</li></string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Erro de ligação; A partilha de ligação bluetooth está ativada neste dispositivo?</string>
+  <string name="sim_card_status_title">Estado do SIM %d</string>
+  <string name="sim_card_lock_settings_title">Definições de bloqueio do SIM %d</string>
+  <string name="sim_card_summary_empty">SIM não inserido</string>
+  <string name="sim_mobile_network_settings_category_title">Definições de rede móvel</string>
+  <string name="sim_mobile_network_settings_title">Definições do SIM %d</string>
 </resources>

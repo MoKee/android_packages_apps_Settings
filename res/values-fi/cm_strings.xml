@@ -83,6 +83,7 @@
   <string name="profile_choose_app">Valitse sovellus</string>
   <string name="profile_system_settings_title">Järjestelmän asetukset</string>
   <string name="profile_lockmode_title">Lukitusnäytön tyyppi</string>
+  <string name="profile_lockmode_policy_disabled_summary">Laitteen järjestelmänvalvoja on poistanut tämän asetuksen käytöstä</string>
   <string name="profile_lockmode_insecure_summary">Älä pyydä PIN-koodia tai salasanaa</string>
   <string name="profile_lockmode_disabled_summary">Poista lukitusnäyttö käytöstä</string>
   <string name="profile_airplanemode_title">Lentokonetila</string>
@@ -209,7 +210,9 @@
   <string name="display_rotation_270_title">270 astetta</string>
   <string name="app_security_title">Sovellusten turvallisuus</string>
   <string name="sms_security_check_limit_title">Tekstiviestiraja</string>
-  <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %d viestiä 30 minuutissa ennenkuin vahvistus vaaditaan</string>
+  <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %d viestiä 1 minuutissa ennenkuin vahvistus vaaditaan</string>
+  <string name="sms_security_check_limit_summary_none">Sovellukset eivät saa lähettää tekstiviestiä ilman vahvistusta</string>
+  <string name="sms_security_check_limit_none">Ei mitään</string>
   <string name="spam_added_title">Lisätty %1$s</string>
   <string name="spam_last_blocked_title">Viimeksi torjuttu %1$s</string>
   <string name="block_notifications_title">Suodata ilmoitukset</string>
@@ -296,9 +299,6 @@
   <string name="status_bar_battery_percentage_default">Piilotettu</string>
   <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
   <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
-  <string name="status_bar_show_unused_sims_title">Näytä tyhjät SIM-kuvakkeet</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Piilota käyttämättömättömien SIM-korttipaikkojen kuvakkeet</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Osoita käyttämättömät SIM-korttipaikat</string>
   <string name="edit_light_settings">Säädä valon asetuksia</string>
   <string name="pulse_speed_title">Vilkunnan kesto ja nopeus</string>
   <string name="default_time">Normaali</string>
@@ -831,4 +831,9 @@
   <string name="master_clear_desc_cm" product="tablet">Tämä poistaa kaikki tablet-laitteesi \"<b>"sisäisen tallennustilan"</b>\" tiedot, kuten:\n\n\"<li>"Laitteen tilit"</li>\n<li>"Järjestelmä- ja sovellustiedot ja -asetukset"</li>\n<li>"Ladatut sovellukset"</li></string>
   <string name="master_clear_desc_cm" product="default">Tämä poistaa kaikki puhelimesi \"<b>"sisäisen tallennustilan"</b>\" tiedot, kuten:\n\n\"<li>"Laitteen tilit"</li>\n<li>"Järjestelmä- ja sovellustiedot ja -asetukset"</li>\n<li>"Ladatut sovellukset"</li></string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Yhteysvirhe: onko Bluetooth-yhteyden jakaminen käytössä laitteella?</string>
+  <string name="sim_card_status_title">SIM %d tila</string>
+  <string name="sim_card_lock_settings_title">SIM %d lukitusasetukset</string>
+  <string name="sim_card_summary_empty">SIM-korttia ei asetettu</string>
+  <string name="sim_mobile_network_settings_category_title">Mobiiliverkon asetukset</string>
+  <string name="sim_mobile_network_settings_title">SIM %d asetukset</string>
 </resources>

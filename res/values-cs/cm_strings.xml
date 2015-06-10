@@ -84,6 +84,7 @@
   <string name="profile_choose_app">Zvolte aplikaci</string>
   <string name="profile_system_settings_title">Systémové nastavení</string>
   <string name="profile_lockmode_title">Režim zámku obrazovky</string>
+  <string name="profile_lockmode_policy_disabled_summary">Tato volba profilu je zakázána ve Správci zařízení</string>
   <string name="profile_lockmode_insecure_summary">Neptat se na PIN nebo heslo</string>
   <string name="profile_lockmode_disabled_summary">Zakázat zámek obrazovky</string>
   <string name="profile_airplanemode_title">Režim V letadle</string>
@@ -210,7 +211,9 @@
   <string name="display_rotation_270_title">270 stupňů</string>
   <string name="app_security_title">Zabezpečení aplikací</string>
   <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
-  <string name="sms_security_check_limit_summary">Aplikace může poslat pouze %d zpráv za 30 minut před tím, než bude vyžádáno ověření</string>
+  <string name="sms_security_check_limit_summary">Aplikace může poslat pouze %d zpráv za 1 minutu před tím, než bude vyžádáno ověření</string>
+  <string name="sms_security_check_limit_summary_none">Aplikacím není umožněno bez předchozího potvrzení zasílat jakékoliv zprávy</string>
+  <string name="sms_security_check_limit_none">Žádný</string>
   <string name="spam_added_title">Přidáno %1$s</string>
   <string name="spam_last_blocked_title">Poslední blokovaný %1$s</string>
   <string name="block_notifications_title">Oznámení filtru</string>
@@ -297,9 +300,6 @@
   <string name="status_bar_battery_percentage_default">Skrytý</string>
   <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
   <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
-  <string name="status_bar_show_unused_sims_title">Zobrazit ikony prázdných SIM</string>
-  <string name="status_bar_show_unused_sims_title_summary_off">Skrýt ikony nepoužívaných slotů SIM</string>
-  <string name="status_bar_show_unused_sims_title_summary_on">Ukazovat nepoužité sloty SIM</string>
   <string name="edit_light_settings">Upravit nastavení osvětlení</string>
   <string name="pulse_speed_title">Délka impulsu a rychlost</string>
   <string name="default_time">Normální</string>
@@ -832,4 +832,9 @@
   <string name="master_clear_desc_cm" product="tablet">Tímto budou z tabletu smazána všechny data z <b>interního úložiště</b> včetně:\n\n<li>Účtů</li>\n<li>Systémové i uživatelské data aplikací a nastavení</li>\n<li>Stáhnuté aplikace</li></string>
   <string name="master_clear_desc_cm" product="default">Tímto budou z telefonu smazána všechny data z <b>interního úložiště</b> včetně:\n\n<li>Účtů</li>\n<li>Systémové i uživatelské data aplikací a nastavení</li>\n<li>Stáhnuté aplikace</li></string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Chyba připojení - není povoleno sdílení připojení pomocí Bluetooth?</string>
+  <string name="sim_card_status_title">Stav SIM %d</string>
+  <string name="sim_card_lock_settings_title">Nastavení zámku SIM %d</string>
+  <string name="sim_card_summary_empty">Není vložena SIM</string>
+  <string name="sim_mobile_network_settings_category_title">Nastavení mobilní sítě</string>
+  <string name="sim_mobile_network_settings_title">Nastavení SIM %d</string>
 </resources>
