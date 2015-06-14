@@ -147,15 +147,10 @@
   <string name="display_rotation_270_title">۲۷۰ درجه</string>
   <string name="app_security_title">امنیت برنامه</string>
   <string name="sms_security_check_limit_none">هیچ کدام</string>
-  <string name="cmupdate_settings_title">بروزرسانی‌های سایانوژن‌مود</string>
-  <string name="update_recovery_title">بروزرسانی ریکاوری سایانوژن‌مود</string>
-  <string name="mod_version">نسخه سایانوژن‌مود</string>
-  <string name="mod_version_default">ناشناخته</string>
   <string name="device_model">مدل دستگاه</string>
   <string name="device_name">نام دستگاه</string>
   <string name="build_date">تاریخ ساخت</string>
   <string name="contributor_cloud_title">همکاران</string>
-  <string name="privacy_settings_cyanogenmod_title">حریم</string>
   <string name="privacy_guard_manager_title">حریم شخصی</string>
   <string name="privacy_guard_help_title">راهنمایی</string>
   <string name="privacy_guard_reset_title">بازنشانی</string>
@@ -418,12 +413,4 @@
   <string name="live_display_color_temperature_title">دمای رنگ</string>
   <string name="live_display_day">روز</string>
   <string name="live_display_night">شب</string>
-  <string name="anonymous_statistics_warning_title">درباره</string>
-  <string name="anonymous_learn_more">بیشتر بدانید</string>
-  <string name="preview_id_title">شناسه یکتا</string>
-  <string name="preview_device_title">دستگاه</string>
-  <string name="preview_version_title">نسخهٔ</string>
-  <string name="preview_country_title">کشور</string>
-  <string name="preview_carrier_title">حامل</string>
-  <string name="lock_to_cyanogen_title">حفاظت از دستگاه</string>
 </resources>
