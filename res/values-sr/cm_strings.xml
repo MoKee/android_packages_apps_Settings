@@ -726,9 +726,6 @@
   <string name="qs_tile_heads_up">Искачуће поруке</string>
   <string name="qs_tile_ambient_display">Амбијент приказ</string>
   <string name="qs_tile_sync">Синхрон</string>
-  <string name="qs_dynamic_tile_next_alarm">Следећи аларм</string>
-  <string name="qs_dynamic_tile_ime_selector">IME бирач</string>
-  <string name="qs_dynamic_tile_su">Root приступ</string>
   <string name="qs_main_tiles_title">Повећај први ред</string>
   <string name="qs_main_tiles_summary_on">Два главне плочице у првом реду</string>
   <string name="qs_main_tiles_summary_off">Три плочице у сваком реду</string>
