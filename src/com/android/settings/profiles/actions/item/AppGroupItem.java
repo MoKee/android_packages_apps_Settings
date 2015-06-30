@@ -32,17 +32,19 @@ import java.util.UUID;
 public class AppGroupItem implements Item {
     Profile mProfile;
     ProfileGroup mGroup;
+    NotificationGroup mNotifGroup;
 
     public AppGroupItem() {
         // empty app group will act as a "Add/remove app groups" item
     }
 
-    public AppGroupItem(Profile profile, ProfileGroup group) {
+    public AppGroupItem(Profile profile, ProfileGroup group, NotificationGroup nGroup) {
         mProfile = profile;
         if (group == null) {
             throw new UnsupportedOperationException("profile group can't be null");
         }
         mGroup = group;
+        mNotifGroup = nGroup;
     }
 
     @Override
@@ -70,17 +72,12 @@ public class AppGroupItem implements Item {
         } else {
             view = convertView;
         }
-
-        ProfileManager profileManager = (ProfileManager) parent.getContext()
-                .getSystemService(Context.PROFILE_SERVICE);
-
         TextView text = (TextView) view.findViewById(R.id.title);
         TextView desc = (TextView) view.findViewById(R.id.summary);
 
         if (mGroup != null) {
-            NotificationGroup notifGroup = profileManager.getNotificationGroup(mGroup.getUuid());
-            if (notifGroup != null) {
-                text.setText(notifGroup.getName());
+            if (mNotifGroup != null) {
+                text.setText(mNotifGroup.getName());
             } else {
                 text.setText("<unknown>");
             }

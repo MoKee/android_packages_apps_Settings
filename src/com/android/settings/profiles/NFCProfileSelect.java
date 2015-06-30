@@ -19,18 +19,12 @@ package com.android.settings.profiles;
 import java.util.UUID;
 
 import android.app.Activity;
-import android.app.PendingIntent;
 import android.app.Profile;
 import android.app.ProfileManager;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.nfc.NfcAdapter;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;

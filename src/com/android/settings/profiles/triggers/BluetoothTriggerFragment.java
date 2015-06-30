@@ -36,7 +36,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.profiles.ProfilesSettings;
 
 import java.util.ArrayList;
