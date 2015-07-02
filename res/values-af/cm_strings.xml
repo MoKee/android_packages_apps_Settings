@@ -724,9 +724,6 @@
   <string name="qs_tile_heads_up">Loer boodskap</string>
   <string name="qs_tile_ambient_display">Omgewingstemperatuur skerm</string>
   <string name="qs_tile_sync">Sinkroniseer</string>
-  <string name="qs_dynamic_tile_next_alarm">Volgende alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">Kies IME</string>
-  <string name="qs_dynamic_tile_su">\'Root\' toegang</string>
   <string name="qs_main_tiles_title">Vergroot eerste ry</string>
   <string name="qs_main_tiles_summary_on">Twee hoof teëls op die eerste ry</string>
   <string name="qs_main_tiles_summary_off">Drie teëls op elke ry</string>

@@ -724,9 +724,6 @@
   <string name="qs_tile_heads_up">Heads up</string>
   <string name="qs_tile_ambient_display">Tela ambiente</string>
   <string name="qs_tile_sync">Sincronização</string>
-  <string name="qs_dynamic_tile_next_alarm">Próximo alarme</string>
-  <string name="qs_dynamic_tile_ime_selector">Seletor de IME</string>
-  <string name="qs_dynamic_tile_su">Acesso super usuário</string>
   <string name="qs_main_tiles_title">Ampliar a primeira linha</string>
   <string name="qs_main_tiles_summary_on">Dois botões principais na primeira linha</string>
   <string name="qs_main_tiles_summary_off">Três botões em cada fileira</string>

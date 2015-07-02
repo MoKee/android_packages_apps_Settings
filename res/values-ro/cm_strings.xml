@@ -173,15 +173,11 @@
   <string name="block_notifications_title">Filtru notificări</string>
   <string name="block_notifications_summary">Gestionaţi notificările ignorate şi filtrele</string>
   <string name="no_filters_title">Niciun filtru setat</string>
-  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
-  <string name="mod_version">versiune CyanogenMod</string>
-  <string name="mod_version_default">Necunoscut</string>
   <string name="build_date">Dată compilare</string>
   <string name="contributor_cloud_title">Contribuitori</string>
   <string name="double_tap_to_wake_title">Dublă-apăsare pentru trezire</string>
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
   <string name="proximity_wake_summary">Verificaţi senzorul de proximitate înainte de trezirea ecranului</string>
-  <string name="privacy_settings_cyanogenmod_title">Intimitate</string>
   <string name="privacy_guard_default_title">Activat în mod implicit</string>
   <string name="privacy_guard_default_summary">Activat în mod implicit pentru aplicațiile nou-instalate</string>
   <string name="privacy_guard_manager_title">Gardian Intimitate</string>
@@ -476,8 +472,6 @@
   <string name="graphics_title">Grafică și randare</string>
   <string name="edge_gesture_service_title">Blochează evenimentele la gesturile de atingere</string>
   <string name="edge_gesture_service_summary">Nu timite la aplicații gesturile de atingere la navigare și gesturile barei de stare</string>
-  <string name="cmlicense_title">Juridic CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridic CyanogenMod</string>
   <string name="unlock_quick_unlock_control_title">Deblocare rapidă</string>
   <string name="unlock_quick_unlock_control_summary">Deblochează automat când se introduce codul PIN/parola corectă</string>
   <string name="unlock_scramble_pin_layout_title">Amestecă așezarea în pagină</string>
@@ -497,7 +491,6 @@
   <string name="qs_tile_lte">4G</string>
   <string name="qs_tile_usb_tether">Tethering USB</string>
   <string name="qs_tile_sync">Sincronizare</string>
-  <string name="qs_dynamic_tile_su">Acces root</string>
   <string name="sim_no_number_set">Niciun număr atribuit</string>
   <string name="gesture_settings_title">Gesturi</string>
   <string name="themes_settings_title">Teme</string>
@@ -513,8 +506,6 @@
   <string name="power_menu_expanded_desktop">Desktop extins</string>
   <string name="expanded_hide_both">Ascunde ambele</string>
   <string name="title_general">General</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestionare setări SMS sigur</string>
   <string name="lcd_density">Densitate LCD</string>
   <string name="dialog_title_lcd_density">Densitate LCD</string>
   <string name="lcd_density_value_format">%d DPI</string>
@@ -538,17 +529,4 @@
   <string name="category_calibration">Calibrare</string>
   <string name="notification_manager">Notificări</string>
   <string name="category_lights">Lumini</string>
-  <string name="anonymous_statistics_title">Statistici CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajută-ne să facem CyanogenMod mai bun prin trimiterea de rapoarte anonime cu statistici</string>
-  <string name="anonymous_statistics_warning_title">Despre</string>
-  <string name="anonymous_statistics_warning">Optând să trimiteți Statistici CyanogenMod, se permite dezvoltatorilor CyanogenMod să primească date ne-personale pentru a urmări instalările unice la o gama mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
-  <string name="enable_reporting_title">Activare raportare</string>
-  <string name="preview_data_title">Previzualizare date</string>
-  <string name="view_stats_title">Vezi statistici</string>
-  <string name="anonymous_learn_more">Află mai multe</string>
-  <string name="preview_id_title">ID unic</string>
-  <string name="preview_device_title">Dispozitiv</string>
-  <string name="preview_version_title">Versiune</string>
-  <string name="preview_country_title">Țara</string>
-  <string name="preview_carrier_title">Operator</string>
 </resources>

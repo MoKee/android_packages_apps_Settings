@@ -723,9 +723,6 @@
   <string name="qs_tile_heads_up">ヘッドアップ</string>
   <string name="qs_tile_ambient_display">常時オンディスプレイ</string>
   <string name="qs_tile_sync">同期</string>
-  <string name="qs_dynamic_tile_next_alarm">次のアラーム</string>
-  <string name="qs_dynamic_tile_ime_selector">入力方法の選択</string>
-  <string name="qs_dynamic_tile_su">ルートアクセス</string>
   <string name="qs_main_tiles_title">1行目を拡大</string>
   <string name="qs_main_tiles_summary_on">1行目に2個のメインタイル</string>
   <string name="qs_main_tiles_summary_off">行ごとに3個のタイル</string>

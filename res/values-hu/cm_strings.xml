@@ -724,9 +724,6 @@
   <string name="qs_tile_heads_up">Lebegő értesítés</string>
   <string name="qs_tile_ambient_display">Környezeti kijelző</string>
   <string name="qs_tile_sync">Szinkronizálás</string>
-  <string name="qs_dynamic_tile_next_alarm">Következő riasztás</string>
-  <string name="qs_dynamic_tile_ime_selector">IME választó</string>
-  <string name="qs_dynamic_tile_su">Rendszergazda hozzáférés</string>
   <string name="qs_main_tiles_title">Első sor nagyítása</string>
   <string name="qs_main_tiles_summary_on">Az első sorban két fő csempe</string>
   <string name="qs_main_tiles_summary_off">Három csempe minden sorban</string>

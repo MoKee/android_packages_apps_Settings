@@ -725,9 +725,6 @@
   <string name="qs_tile_heads_up">Всплывающие уведомления</string>
   <string name="qs_tile_ambient_display">Индикация событий</string>
   <string name="qs_tile_sync">Синхронизация</string>
-  <string name="qs_dynamic_tile_next_alarm">Следующий будильник</string>
-  <string name="qs_dynamic_tile_ime_selector">Выбор метода ввода</string>
-  <string name="qs_dynamic_tile_su">Суперпользователь</string>
   <string name="qs_main_tiles_title">Увеличить первый ряд</string>
   <string name="qs_main_tiles_summary_on">Две главные плитки на первом ряду</string>
   <string name="qs_main_tiles_summary_off">Три плитки на каждом ряду</string>

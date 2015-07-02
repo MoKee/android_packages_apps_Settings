@@ -723,9 +723,6 @@
   <string name="qs_tile_heads_up">헤드업 알림</string>
   <string name="qs_tile_ambient_display">절전 모드 자동 해제</string>
   <string name="qs_tile_sync">동기화</string>
-  <string name="qs_dynamic_tile_next_alarm">다음 알람</string>
-  <string name="qs_dynamic_tile_ime_selector">입력 방법 선택</string>
-  <string name="qs_dynamic_tile_su">루트 권한</string>
   <string name="qs_main_tiles_title">첫 번째 알림 확대</string>
   <string name="qs_main_tiles_summary_on">첫 줄의 주요 타일 두개</string>
   <string name="qs_main_tiles_summary_off">각 줄의 타일 세개</string>

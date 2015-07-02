@@ -725,9 +725,6 @@
   <string name="qs_tile_heads_up">Wyskakujące powiadomienia</string>
   <string name="qs_tile_ambient_display">Aktywny wyświetlacz</string>
   <string name="qs_tile_sync">Synchronizacja</string>
-  <string name="qs_dynamic_tile_next_alarm">Następny alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">Przełącznik klawiatury</string>
-  <string name="qs_dynamic_tile_su">Dostęp do roota</string>
   <string name="qs_main_tiles_title">Powiększenie pierwszego rzędu</string>
   <string name="qs_main_tiles_summary_on">Dwa główne przełączniki w pierwszym rzędzie</string>
   <string name="qs_main_tiles_summary_off">Trzy przełączniki w każdym rzędzie</string>

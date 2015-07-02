@@ -723,9 +723,6 @@
   <string name="qs_tile_heads_up">浮动通知</string>
   <string name="qs_tile_ambient_display">环境显示</string>
   <string name="qs_tile_sync">同步</string>
-  <string name="qs_dynamic_tile_next_alarm">下一个闹铃</string>
-  <string name="qs_dynamic_tile_ime_selector">输入法选择器</string>
-  <string name="qs_dynamic_tile_su">Root 授权</string>
   <string name="qs_main_tiles_title">扩大第一行</string>
   <string name="qs_main_tiles_summary_on">第一行两个主要瓷块</string>
   <string name="qs_main_tiles_summary_off">每行三个瓷块</string>
