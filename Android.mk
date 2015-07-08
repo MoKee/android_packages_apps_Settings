@@ -8,6 +8,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v13 \
 	jsr305 \
 	libGoogleAnalyticsV3 \
+	libGoogleAdMobAdsSdk \
 	libMoKeePushService \
 	volley
 

@@ -2442,6 +2442,11 @@
         <meta-data android:name="JPUSH_APPKEY" android:value="d1c78fa87f8836f81ed6f329" />
         <!-- MOKEE PUSH SERVICE END -->
 
+        <!-- Google AdMob START -->
+        <activity android:name="com.google.ads.AdActivity" 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <!-- Google AdMob END -->
+
         <!-- MOKEE HELPER START -->
         <activity android:name=".mokee.helper.activities.TipsHelp"
             android:icon="@mipmap/ic_launcher_tips_help"
