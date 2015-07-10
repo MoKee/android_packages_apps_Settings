@@ -44,6 +44,7 @@
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.RESET_BATTERY_STATS"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.MOVE_PACKAGE" />
@@ -1250,6 +1251,9 @@
 
         <activity android:name="ChooseLockPattern" android:exported="false"/>
         <activity android:name="ManageFingerprints" android:exported="false"/>
+        <activity android:name=".EnrollFingerprint" android:exported="false"
+            android:theme="@style/FingerprintEnrollment"
+            android:screenOrientation="portrait"/>
 
         <activity android:name="SetupChooseLockPassword"
             android:exported="false"
