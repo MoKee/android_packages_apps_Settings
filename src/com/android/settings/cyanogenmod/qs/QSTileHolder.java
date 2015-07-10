@@ -18,6 +18,7 @@ package com.android.settings.cyanogenmod.qs;
 import android.content.Context;
 
 import android.text.TextUtils;
+
 import com.android.internal.util.cm.QSConstants;
 import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;

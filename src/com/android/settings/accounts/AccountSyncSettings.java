@@ -64,8 +64,8 @@ import java.util.List;
 public class AccountSyncSettings extends AccountPreferenceBase {
 
     public static final String ACCOUNT_KEY = "account";
-    private static final int MENU_SYNC_NOW_ID       = Menu.FIRST;
-    private static final int MENU_SYNC_CANCEL_ID    = Menu.FIRST + 1;
+    private static final int MENU_SYNC_NOW_ID = Menu.FIRST;
+    private static final int MENU_SYNC_CANCEL_ID = Menu.FIRST + 1;
     private static final int MENU_REMOVE_ACCOUNT_ID = Menu.FIRST + 2;
     private static final int REALLY_REMOVE_DIALOG = 100;
     private static final int FAILED_REMOVAL_DIALOG = 101;
@@ -76,7 +76,7 @@ public class AccountSyncSettings extends AccountPreferenceBase {
     private TextView mErrorInfoView;
     private Account mAccount;
     private ArrayList<SyncStateSwitchPreference> mSwitches =
-                new ArrayList<SyncStateSwitchPreference>();
+            new ArrayList<SyncStateSwitchPreference>();
     private ArrayList<SyncAdapterType> mInvisibleAdapters = Lists.newArrayList();
 
     @Override

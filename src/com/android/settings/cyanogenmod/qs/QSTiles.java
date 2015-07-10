@@ -20,8 +20,6 @@ import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -67,15 +65,17 @@ public class QSTiles extends Fragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
         String order = Settings.Secure.getString(resolver, Settings.Secure.QS_TILES);
-        if (TextUtils.isEmpty(order)) {
-            order = QSUtils.getDefaultTilesAsString(getActivity());;
+        if (order == null) {
+            order = QSUtils.getDefaultTilesAsString(getActivity());
             Settings.Secure.putString(resolver, Settings.Secure.QS_TILES, order);
         }
 
-        for (String tileType: order.split(",")) {
-            View tile = buildQSTile(tileType);
-            if (tile != null) {
-                mDraggableGridView.addView(tile);
+        if (!TextUtils.isEmpty(order)) {
+            for (String tileType: order.split(",")) {
+                View tile = buildQSTile(tileType);
+                if (tile != null) {
+                    mDraggableGridView.addView(tile);
+                }
             }
         }
         // Add a dummy tile for the "Add / Delete" tile
@@ -237,8 +237,11 @@ public class QSTiles extends Fragment implements
     public static int determineTileCount(Context context) {
         String order = Settings.Secure.getString(context.getContentResolver(),
                 Settings.Secure.QS_TILES);
-        if (TextUtils.isEmpty(order)) {
+        if (order == null) {
             order = QSUtils.getDefaultTilesAsString(context);
+        }
+        if (TextUtils.isEmpty(order)) {
+            return 0;
         }
         return order.split(",").length;
     }
