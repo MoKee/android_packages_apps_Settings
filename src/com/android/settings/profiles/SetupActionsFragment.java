@@ -16,17 +16,14 @@
 package com.android.settings.profiles;
 
 import android.app.Activity;
-import android.app.AirplaneModeSettings;
+import mokee.profiles.AirplaneModeSettings;
 import android.app.AlertDialog;
-import android.app.BrightnessSettings;
-import android.app.ConnectionSettings;
+import mokee.profiles.BrightnessSettings;
+import mokee.profiles.ConnectionSettings;
 import android.app.Dialog;
 import android.app.NotificationGroup;
-import android.app.Profile;
-import android.app.ProfileGroup;
-import android.app.ProfileManager;
-import android.app.RingModeSettings;
-import android.app.StreamSettings;
+import mokee.profiles.RingModeSettings;
+import mokee.profiles.StreamSettings;
 import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
@@ -63,6 +60,10 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import mokee.app.Profile;
+import mokee.app.ProfileGroup;
+import mokee.app.ProfileManager;
+
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SubSettings;
@@ -87,15 +88,15 @@ import com.android.settings.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_GPS;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_NFC;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_SYNC;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_WIFI;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
-import static android.app.ConnectionSettings.PROFILE_CONNECTION_WIMAX;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIMAX;
 
 public class SetupActionsFragment extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener {
@@ -166,7 +167,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             mNewProfileMode = getArguments().getBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, false);
         }
 
-        mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
+        mProfileManager = ProfileManager.getInstance(getActivity());
         mAdapter = new ItemListAdapter(getActivity(), mItems);
         rebuildItemList();
 

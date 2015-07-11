@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import android.app.BrightnessSettings;
+import mokee.profiles.BrightnessSettings;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

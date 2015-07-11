@@ -21,7 +21,7 @@ import java.util.UUID;
 import android.annotation.Nullable;
 import android.app.AlertDialog;
 import android.app.NotificationGroup;
-import android.app.ProfileManager;
+import mokee.app.ProfileManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -54,7 +54,7 @@ public class AppGroupList extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.appgroup_list);
-        mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
+        mProfileManager = ProfileManager.getInstance(getActivity());
     }
 
     @Override

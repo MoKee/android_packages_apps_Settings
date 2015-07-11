@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import android.app.StreamSettings;
+import mokee.profiles.StreamSettings;
 import android.content.Context;
 import android.media.AudioManager;
 import android.view.LayoutInflater;

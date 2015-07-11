@@ -17,8 +17,6 @@ package com.android.settings.profiles.triggers;
 
 import android.app.AlertDialog;
 import android.app.ListFragment;
-import android.app.Profile;
-import android.app.ProfileManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -34,6 +32,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.profiles.ProfilesSettings;
@@ -73,7 +74,7 @@ public class WifiTriggerFragment extends ListFragment {
         } else {
             throw new UnsupportedOperationException("no profile!");
         }
-        mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
+        mProfileManager = ProfileManager.getInstance(getActivity());
         mWifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
     }
 

@@ -19,8 +19,6 @@ package com.android.settings.profiles;
 import android.annotation.Nullable;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Profile;
-import android.app.ProfileManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -41,6 +39,9 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
@@ -138,7 +139,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
+        mProfileManager = ProfileManager.getInstance(getActivity());
         // After confirming PreferenceScreen is available, we call super.
         super.onActivityCreated(savedInstanceState);
     }

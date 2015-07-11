@@ -19,8 +19,6 @@ package com.android.settings.profiles;
 import java.util.UUID;
 
 import android.app.Activity;
-import android.app.Profile;
-import android.app.ProfileManager;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -28,6 +26,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 
@@ -52,7 +53,7 @@ public class NFCProfileSelect extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mProfileManager = (ProfileManager) getSystemService(Context.PROFILE_SERVICE);
+        mProfileManager = ProfileManager.getInstance(this);
 
         setContentView(R.layout.nfc_select);
         setTitle(R.string.profile_unknown_nfc_tag);

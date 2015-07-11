@@ -19,7 +19,7 @@ package com.android.settings.profiles;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.NotificationGroup;
-import android.app.ProfileManager;
+import mokee.app.ProfileManager;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;

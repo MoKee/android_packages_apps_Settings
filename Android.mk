@@ -7,6 +7,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v7-cardview \
 	android-support-v13 \
 	jsr305 \
+	org.mokee.platform.sdk \
 	libGoogleAnalyticsV3 \
 	libGoogleAdMobAdsSdk \
 	libMoKeePushService \
