@@ -17,7 +17,6 @@
 package com.android.settings.blacklist;
 
 import android.content.Context;
-import android.mokee.utils.MoKeeUtils;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.MultiSelectListPreference;
@@ -65,11 +64,6 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         mBlacklistAdvertisement = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_ADVERTISEMENT);
         mBlacklistFraud = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_FRAUD);
         mBlacklistHarass = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_HARASS);
-        if (!MoKeeUtils.isSupportLanguage(true)) {
-            prefSet.removePreference(mBlacklistAdvertisement);
-            prefSet.removePreference(mBlacklistFraud);
-            prefSet.removePreference(mBlacklistHarass);
-        }
     }
 
     @Override
@@ -88,12 +82,10 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
                 R.string.blacklist_unknown_numbers_summary,
                 R.string.blacklist_unknown_numbers_summary_disabled);
 
-        if (MoKeeUtils.isSupportLanguage(true)) {
-            boolean enabled = Settings.System.getInt(getContentResolver(), Settings.System.ENABLE_CLOUD_LOCATION_LOOKUP, 1) == 1;
-            mBlacklistAdvertisement.setEnabled(enabled);
-            mBlacklistFraud.setEnabled(enabled);
-            mBlacklistHarass.setEnabled(enabled);
-        }
+        boolean enabled = Settings.System.getInt(getContentResolver(), Settings.System.ENABLE_CLOUD_LOCATION_LOOKUP, 1) == 1;
+        mBlacklistAdvertisement.setEnabled(enabled);
+        mBlacklistFraud.setEnabled(enabled);
+        mBlacklistHarass.setEnabled(enabled);
     }
 
     @Override
