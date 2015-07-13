@@ -705,7 +705,6 @@
   <string name="qs_tile_usb_tether">USB tethering</string>
   <string name="qs_tile_heads_up">Flytende notifikasjoner</string>
   <string name="qs_tile_ambient_display">Ambient skjerm</string>
-  <string name="qs_dynamic_tile_next_alarm">Neste alarm</string>
   <string name="qs_main_tiles_title">Forstørre første rad</string>
   <string name="qs_main_tiles_summary_on">To viktigste brikker på første rad</string>
   <string name="qs_main_tiles_summary_off">Tre fliser på hver rad</string>

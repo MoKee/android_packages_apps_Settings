@@ -716,9 +716,6 @@
   <string name="qs_tile_heads_up">Notificaciones emergentes</string>
   <string name="qs_tile_ambient_display">Pantalla ambiente</string>
   <string name="qs_tile_sync">Sincronizar</string>
-  <string name="qs_dynamic_tile_next_alarm">Próxima alarma</string>
-  <string name="qs_dynamic_tile_ime_selector">Selector IME</string>
-  <string name="qs_dynamic_tile_su">Acceso privilegiado</string>
   <string name="qs_main_tiles_title">Ampliar la primera fila</string>
   <string name="qs_main_tiles_summary_on">Dos controles principales en la primera fila</string>
   <string name="qs_main_tiles_summary_off">Tres controles en cada fila</string>
