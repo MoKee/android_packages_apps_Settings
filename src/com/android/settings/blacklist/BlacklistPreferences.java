@@ -40,13 +40,13 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
     private static final String BUTTON_BLACKLIST_UNKNOWN = "button_blacklist_unknown_numbers";
     private static final String BUTTON_BLACKLIST_ADVERTISEMENT = "phone_blacklist_advertisement_number";
     private static final String BUTTON_BLACKLIST_FRAUD = "phone_blacklist_fraud_number";
-    private static final String BUTTON_BLACKLIST_HARASS = "phone_blacklist_harass_number";
+    private static final String BUTTON_BLACKLIST_HARASSMENT = "phone_blacklist_harassment_number";
 
     private MultiSelectListPreference mBlacklistPrivate;
     private MultiSelectListPreference mBlacklistUnknown;
     private SystemSettingSwitchPreference mBlacklistAdvertisement;
     private SystemSettingSwitchPreference mBlacklistFraud;
-    private SystemSettingSwitchPreference mBlacklistHarass;
+    private SystemSettingSwitchPreference mBlacklistHarassment;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -63,7 +63,7 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         mBlacklistUnknown.setOnPreferenceChangeListener(this);
         mBlacklistAdvertisement = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_ADVERTISEMENT);
         mBlacklistFraud = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_FRAUD);
-        mBlacklistHarass = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_HARASS);
+        mBlacklistHarassment = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_HARASSMENT);
     }
 
     @Override
@@ -85,7 +85,7 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         boolean enabled = Settings.System.getInt(getContentResolver(), Settings.System.ENABLE_CLOUD_LOCATION_LOOKUP, 1) == 1;
         mBlacklistAdvertisement.setEnabled(enabled);
         mBlacklistFraud.setEnabled(enabled);
-        mBlacklistHarass.setEnabled(enabled);
+        mBlacklistHarassment.setEnabled(enabled);
     }
 
     @Override

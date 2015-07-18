@@ -47,8 +47,8 @@
   <string name="blacklist_advertisement_numbers_summary">阻止广告号码的来电</string>
   <string name="blacklist_fraud_numbers_title">诈骗号码</string>
   <string name="blacklist_fraud_numbers_summary">阻止诈骗号码的来电</string>
-  <string name="blacklist_harass_numbers_title">骚扰号码</string>
-  <string name="blacklist_harass_numbers_summary">阻止骚扰号码的来电</string>
+  <string name="blacklist_harassment_numbers_title">骚扰号码</string>
+  <string name="blacklist_harassment_numbers_summary">阻止骚扰号码的来电</string>
   <string name="smartcontrol_settings_title">智能控制</string>
   <string name="direct_control_title">体感控制</string>
   <string name="direct_call_for_dialer_title">拨号界面体感拨号</string>
