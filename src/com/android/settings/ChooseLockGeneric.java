@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
+ * Copyright (C) 2013-2015 The MoKee OpenSource project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +44,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.ListView;
+import com.android.settings.ChooseLockGesture;
 import android.widget.TextView;
 
 import com.android.internal.widget.LockPatternUtils;
@@ -81,6 +83,7 @@ public class ChooseLockGeneric extends SettingsActivity {
         private static final String KEY_UNLOCK_SET_PIN = "unlock_set_pin";
         private static final String KEY_UNLOCK_SET_PASSWORD = "unlock_set_password";
         private static final String KEY_UNLOCK_SET_PATTERN = "unlock_set_pattern";
+        private static final String KEY_UNLOCK_SET_GESTURE = "unlock_set_gesture";
         private static final String KEY_UNLOCK_SET_FINGERPRINT = "unlock_set_fingerprint";
 
         private static final int CONFIRM_EXISTING_REQUEST = 100;
@@ -400,7 +403,8 @@ public class ChooseLockGeneric extends SettingsActivity {
                 switch (preference.getKey()) {
                     case KEY_UNLOCK_SET_PATTERN:
                     case KEY_UNLOCK_SET_PIN:
-                    case KEY_UNLOCK_SET_PASSWORD: {
+                    case KEY_UNLOCK_SET_PASSWORD:
+                    case KEY_UNLOCK_SET_GESTURE: {
                         preference.setSummary(summary);
                     } break;
                 }
@@ -508,7 +512,20 @@ public class ChooseLockGeneric extends SettingsActivity {
             quality = upgradeQuality(quality, null);
 
             final Context context = getActivity();
-            if (quality >= DevicePolicyManager.PASSWORD_QUALITY_NUMERIC) {
+            if (quality == DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK) {
+                Intent intent = new Intent().setClass(getActivity(), ChooseLockGesture.class);
+                intent.putExtra(CONFIRM_CREDENTIALS, false);
+                intent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK,
+                        isFallback);
+                if (isFallback) {
+                    startActivityForResult(intent, FALLBACK_REQUEST);
+                    return;
+                } else {
+                    mFinishPending = true;
+                    intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
+                    startActivity(intent);
+                }
+            } else if (quality >= DevicePolicyManager.PASSWORD_QUALITY_NUMERIC) {
                 int minLength = mDPM.getPasswordMinimumLength(null);
                 if (minLength < MIN_PASSWORD_LENGTH) {
                     minLength = MIN_PASSWORD_LENGTH;
@@ -602,6 +619,9 @@ public class ChooseLockGeneric extends SettingsActivity {
             } else if (KEY_UNLOCK_SET_PASSWORD.equals(unlockMethod)) {
                 maybeEnableEncryption(
                         DevicePolicyManager.PASSWORD_QUALITY_ALPHABETIC, false);
+            } else if (KEY_UNLOCK_SET_GESTURE.equals(unlockMethod)) {
+                updateUnlockMethodAndFinish(
+                        DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK, false);
             } else if (KEY_UNLOCK_SET_FINGERPRINT.equals(unlockMethod)) {
                 maybeEnableEncryption(
                         DevicePolicyManager.PASSWORD_QUALITY_BIOMETRIC_WEAK, false,

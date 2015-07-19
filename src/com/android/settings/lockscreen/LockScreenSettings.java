@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2013-2015 The MoKee OpenSource project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -76,6 +77,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment
     private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
     private static final String KEY_TRUST_AGENT = "trust_agent";
     private static final String KEY_MANAGE_TRUST_AGENTS = "manage_trust_agents";
+    private static final String KEY_VISIBLE_GESTURE = "visiblegesture";
     private static final String KEY_SHOW_VISUALIZER = "lockscreen_visualizer";
     private static final String KEY_MANAGE_FINGERPRINTS = "manage_fingerprints";
 
@@ -100,12 +102,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment
     private SwitchPreference mVisibleErrorPattern;
     private SwitchPreference mVisibleDots;
     private SwitchPreference mPowerButtonInstantlyLocks;
+    private SwitchPreference mVisibleGesture;
 
     private DevicePolicyManager mDPM;
 
     // These switch preferences need special handling since they're not all stored in Settings.
     private static final String SWITCH_PREFERENCE_KEYS[] = { KEY_LOCK_AFTER_TIMEOUT,
-            KEY_LOCK_ENABLED, KEY_VISIBLE_PATTERN, KEY_VISIBLE_ERROR_PATTERN, KEY_VISIBLE_DOTS,
+            KEY_LOCK_ENABLED, KEY_VISIBLE_PATTERN, KEY_VISIBLE_ERROR_PATTERN, KEY_VISIBLE_DOTS, KEY_VISIBLE_GESTURE,
             KEY_BIOMETRIC_WEAK_LIVELINESS, KEY_POWER_INSTANTLY_LOCKS };
 
 
@@ -131,6 +134,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment
         if (mBiometricWeakLiveliness != null) {
             mBiometricWeakLiveliness.setChecked(
                     lockPatternUtils.isBiometricWeakLivelinessEnabled());
+        }
+        if (mVisibleGesture != null) {
+            mVisibleGesture.setChecked(lockPatternUtils.isVisibleGestureEnabled());
         }
         if (mVisiblePattern != null) {
             mVisiblePattern.setChecked(lockPatternUtils.isVisiblePatternEnabled());
@@ -199,6 +205,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment
         // visible pattern
         mVisiblePattern = (SwitchPreference) root.findPreference(KEY_VISIBLE_PATTERN);
 
+        // visible gesture
+        mVisibleGesture = (SwitchPreference) root.findPreference(KEY_VISIBLE_GESTURE);
+        
         // visible error pattern
         mVisibleErrorPattern = (SwitchPreference) root.findPreference(KEY_VISIBLE_ERROR_PATTERN);
 
@@ -224,10 +233,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment
                 mLockPatternUtils.getKeyguardStoredPasswordQuality() !=
                         DevicePolicyManager.PASSWORD_QUALITY_SOMETHING) {
             if (securityCategory != null && mVisiblePattern != null &&
-                   mVisibleErrorPattern != null && mVisibleDots != null) {
+                   mVisibleErrorPattern != null && mVisibleDots != null &&
+                   mVisibleGesture != null) {
                 securityCategory.removePreference(mVisiblePattern);
                 securityCategory.removePreference(mVisibleErrorPattern);
                 securityCategory.removePreference(mVisibleDots);
+                securityCategory.removePreference(mVisibleGesture);
             }
         }
 
@@ -320,6 +331,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment
                 case DevicePolicyManager.PASSWORD_QUALITY_ALPHANUMERIC:
                 case DevicePolicyManager.PASSWORD_QUALITY_COMPLEX:
                     resid = R.xml.security_settings_password;
+                    break;
+                case DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK:
+                    resid = R.xml.security_settings_gesture;
                     break;
             }
         }
@@ -450,6 +464,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment
             lockPatternUtils.setLockPatternEnabled((Boolean) value);
         } else if (KEY_VISIBLE_PATTERN.equals(key)) {
             lockPatternUtils.setVisiblePatternEnabled((Boolean) value);
+        } else if (KEY_VISIBLE_GESTURE.equals(key)) {
+            lockPatternUtils.setVisibleGestureEnabled((Boolean) value);
         } else if (KEY_VISIBLE_ERROR_PATTERN.equals(key)) {
             lockPatternUtils.setShowErrorPath((Boolean) value);
         } else if (KEY_VISIBLE_DOTS.equals(key)) {
