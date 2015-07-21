@@ -82,12 +82,9 @@ public class Utilities {
     }
 
     public static String getDevice() {
-        String device = SystemProperties.get("ro.mk.device");
+        String device = SystemProperties.get("ro.mk.device", Build.PRODUCT);
         if (TextUtils.isEmpty(device)) {
-            device = SystemProperties.get("ro.product.device");
-            if (TextUtils.isEmpty(device)) {
-                device = "Unknown";
-            }
+            device = "Unknown";
         }
         return device;
     }
