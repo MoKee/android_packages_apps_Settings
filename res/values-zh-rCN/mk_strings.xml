@@ -102,4 +102,6 @@
   <string name="unlock_set_unlock_gesture_title">手势</string>
   <string name="unlock_set_unlock_gesture_summary">低安全性，实验</string>
   <string name="unlock_set_unlock_mode_gesture">手势</string>
+  <string name="status_bar_clock_show_second_title">显示秒钟</string>
+  <string name="status_bar_clock_show_second_summary">时间中显示秒钟</string>
 </resources>
