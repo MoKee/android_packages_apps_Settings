@@ -109,7 +109,6 @@
     <string name="privacy_settings_mokee_title">Privacy</string>
     <string name="privacy_settings_mokee_category" translatable="false">MoKee OpenSource</string>
 
-<<<<<<< HEAD
     <!-- Lock Gesture -->
     <!-- Security & location settings screen, setting option name -->
     <string name="lockgesture_change_lock_pattern_label">Change unlock gesture</string>
