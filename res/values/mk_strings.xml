@@ -193,4 +193,8 @@
     <!-- Seconds in clock -->
     <string name="status_bar_clock_show_second_title">Seconds in clock</string>
     <string name="status_bar_clock_show_second_summary">Display seconds in status bar clock</string>
+
+    <!-- Double tap navbar to sleep -->
+    <string name="double_tap_to_sleep_navbar_title">Double-tap navigation bar to sleep</string>
+    <string name="double_tap_to_sleep_navbar_summary">Double-tap on the navigation bar to turn off the display</string>
 </resources>
