@@ -43,8 +43,6 @@ LOCAL_AAPT_FLAGS := \
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
 LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
 
-LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
-
 include frameworks/opt/setupwizard/navigationbar/common.mk
 include $(BUILD_PACKAGE)
 

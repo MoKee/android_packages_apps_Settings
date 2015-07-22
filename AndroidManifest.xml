@@ -1838,7 +1838,6 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
                 android:taskAffinity=""
@@ -1878,8 +1877,6 @@
                 <data android:mimeType="cm/profile" />
             </intent-filter>
         </activity>
-
-        <activity android:name="mokee.ContributorsCloud" />
 
         <activity android:name=".cyanogenmod.SpamList" />
 
