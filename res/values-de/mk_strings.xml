@@ -43,7 +43,7 @@
   <string name="listview_bounce_interpolator">Springen</string>
   <string name="blacklist_all_numbers_title">Alle Zahlen</string>
   <string name="blacklist_all_numbers_summary">Alle Anrufe blockieren</string>
-  <string name="smartcontrol_settings_title">Smart Control</string>
+  <string name="smartcontrol_settings_title">Intelligente Steuerung</string>
   <string name="direct_control_title">Direkt Kontrolle</string>
   <string name="direct_call_for_dialer_title">Direkter Aufruf im Telefon</string>
   <string name="direct_call_for_dialer_summary">Gerät an das Ohr halten, um die eingegebene Nummer direkt anzurufen</string>
@@ -65,5 +65,7 @@
   <string name="custom_carrier_label_notset">Benutzerdefinierte Beschriftung ist derzeit nicht festgelegt</string>
   <string name="hardware_keys_action_screenshot">Bildschimfoto</string>
   <string name="hardware_keys_action_reboot_menu">Neustart Menü</string>
+  <string name="volume_answer_call_title">Anruf beantworten</string>
+  <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautertaste annehmen</string>
   <string name="privacy_settings_mokee_title">Privatsphäre</string>
 </resources>
