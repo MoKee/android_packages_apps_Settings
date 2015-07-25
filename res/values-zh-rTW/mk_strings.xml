@@ -34,8 +34,8 @@
   <string name="listview_translate_right">飛入 (右)</string>
   <string name="listview_rotate">旋轉</string>
   <string name="listview_interpolator_title">列表變化</string>
-  <string name="listview_accelerate_interpolator">加速</string>
-  <string name="listview_decelerate_interpolator">減速</string>
+  <string name="listview_accelerate_interpolator">越來越快</string>
+  <string name="listview_decelerate_interpolator">越來越慢</string>
   <string name="listview_accelerate_decelerate_interpolator">先加速再減速</string>
   <string name="listview_anticipate_interpolator">先後退一小步然後向前加速</string>
   <string name="listview_overshoot_interpolator">快速到達終點超出一小步然後回到終點</string>
@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">所有電話號碼</string>
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
   <string name="smartcontrol_settings_title">智能控制</string>
+  <string name="direct_control_title">感應控制</string>
+  <string name="direct_call_for_dialer_title">直接播打</string>
+  <string name="direct_call_for_dialer_summary">手機放在耳邊時將撥打當前撥號器輸入的電話號碼</string>
+  <string name="direct_call_for_mms_title">直接發送MMS</string>
+  <string name="direct_call_for_mms_summary">手機放在耳邊時將自動撥打上次簡訊聯絡人的電話號碼</string>
   <string name="navigation_bar_height">導航欄高度</string>
   <string name="navigation_bar_height_48">48dp (預設)</string>
   <string name="navigation_bar_height_0">隱藏</string>
@@ -58,4 +63,9 @@
   <string name="custom_carrier_label_title">自定義電信公司名稱</string>
   <string name="custom_carrier_label_explain">請輸入新的電信公司名稱，留空為恢復預設運營商名稱。</string>
   <string name="custom_carrier_label_notset">當前沒有設置電信公司名稱</string>
+  <string name="hardware_keys_action_screenshot">螢幕截圖</string>
+  <string name="hardware_keys_action_reboot_menu">重新啟動選單</string>
+  <string name="volume_answer_call_title">接聽電話</string>
+  <string name="volume_answer_call_summary">按音量上鍵接通當前來電</string>
+  <string name="privacy_settings_mokee_title">隱私</string>
 </resources>

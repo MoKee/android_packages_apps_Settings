@@ -63,7 +63,9 @@
   <string name="custom_carrier_label_title">Personalizar nome da operadora</string>
   <string name="custom_carrier_label_explain">Por favor, insira um novo rótulo. Deixe em branco para reverter para a original.</string>
   <string name="custom_carrier_label_notset">Rótulo personalizado não definido</string>
-  <string name="hardware_keys_action_screenshot">Capturar a tela</string>
+  <string name="hardware_keys_action_screenshot">Captura de tela</string>
   <string name="hardware_keys_action_reboot_menu">Menu de reinicialização</string>
+  <string name="volume_answer_call_title">Atender chamada</string>
+  <string name="volume_answer_call_summary">Pressionar o botão aumentar volume irá responder à chamada atual</string>
   <string name="privacy_settings_mokee_title">Privacidade</string>
 </resources>

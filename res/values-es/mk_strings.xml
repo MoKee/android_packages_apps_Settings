@@ -30,8 +30,8 @@
   <string name="listview_stack_bottom">Pila (inferior)</string>
   <string name="listview_unfold">Abierto</string>
   <string name="listview_fold">Cerrado</string>
-  <string name="listview_translate_left">Traducir (izquierda)</string>
-  <string name="listview_translate_right">Traducir (derecha)</string>
+  <string name="listview_translate_left">Trasladar (izquierda)</string>
+  <string name="listview_translate_right">Trasladar (derecha)</string>
   <string name="listview_rotate">Rotar</string>
   <string name="listview_interpolator_title">Interpolador del listado</string>
   <string name="listview_accelerate_interpolator">Acelerar</string>
@@ -44,6 +44,11 @@
   <string name="blacklist_all_numbers_title">Todos los números</string>
   <string name="blacklist_all_numbers_summary">Bloquear todas las llamadas</string>
   <string name="smartcontrol_settings_title">Control inteligente</string>
+  <string name="direct_control_title">Control directo</string>
+  <string name="direct_call_for_dialer_title">Llamada directa en dailer</string>
+  <string name="direct_call_for_dialer_summary">Levante el teléfono a la oreja después de introducir el número de marcador para llamar directamente</string>
+  <string name="direct_call_for_mms_title">Llamada directa en MMS</string>
+  <string name="direct_call_for_mms_summary">Elevar el teléfono al oído llamará automáticamente al contacto actual</string>
   <string name="navigation_bar_height">Altura del botón</string>
   <string name="navigation_bar_height_48">48dp (por defecto)</string>
   <string name="navigation_bar_height_0">Ocultar</string>
@@ -56,6 +61,11 @@
   <string name="show_status_bar_carrier_title">Operadora de la barra de estado</string>
   <string name="show_status_bar_carrier_summary">Mostrar operadora en la barra de estado</string>
   <string name="custom_carrier_label_title">Etiqueta personalizada de la operadora</string>
-  <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Déjela en blanco para volver a la etiqueta stock.</string>
+  <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Déjela en blanco para volver a la etiqueta por defecto.</string>
   <string name="custom_carrier_label_notset">Actualmente no se ha establecido una etiqueta personalizada</string>
+  <string name="hardware_keys_action_screenshot">Capturar pantalla</string>
+  <string name="hardware_keys_action_reboot_menu">Menú de reinicio</string>
+  <string name="volume_answer_call_title">Responder llamada</string>
+  <string name="volume_answer_call_summary">Pulsando el botón de subir volumen se contestará la llamada entrante</string>
+  <string name="privacy_settings_mokee_title">Privacidad</string>
 </resources>
