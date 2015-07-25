@@ -89,6 +89,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment implements OnPre
             String name = mSeenWakeLocks.get(position);
             checkedTextView.setText(name);
             checkedTextView.setChecked(mWakeLockState.get(name));
+            checkedTextView.setTextColor(mWakeLockState.get(name) ? getResources().getColor(android.R.color.holo_red_light) : getResources().getColor(android.R.color.primary_text_light));
             checkedTextView.setOnClickListener(new OnClickListener(){
 
                 @Override
@@ -96,6 +97,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment implements OnPre
                     boolean isChecked = !checkedTextView.isChecked();
                     mWakeLockState.put(checkedTextView.getText().toString(), isChecked);
                     checkedTextView.setChecked(isChecked);
+                    checkedTextView.setTextColor(isChecked ? getResources().getColor(android.R.color.holo_red_light) : getResources().getColor(android.R.color.primary_text_light));
                 }});
             return rowView;
         }
