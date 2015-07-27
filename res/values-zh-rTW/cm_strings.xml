@@ -197,7 +197,6 @@
   <string name="block_notifications_summary">管理已忽略的通知與篩選器</string>
   <string name="no_filters_title">沒有過濾設定</string>
   <string name="build_date">版本日期</string>
-  <string name="contributor_cloud_title">貢獻者</string>
   <string name="double_tap_to_wake_title">輕按兩下即可喚醒</string>
   <string name="proximity_wake_title">防止意外喚醒</string>
   <string name="proximity_wake_summary">喚醒螢幕前檢查接近感應器</string>

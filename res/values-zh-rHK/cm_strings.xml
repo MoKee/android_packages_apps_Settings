@@ -143,7 +143,6 @@
   <string name="block_notifications_title">過濾器通知</string>
   <string name="block_notifications_summary">管理被忽略的通知和過濾器</string>
   <string name="build_date">版本日期</string>
-  <string name="contributor_cloud_title">貢獻者</string>
   <string name="double_tap_to_wake_title">輕按兩下來喚醒</string>
   <string name="proximity_wake_summary">喚醒畫面前檢查傳感器</string>
   <string name="privacy_guard_default_title">已預設啟用</string>
