@@ -223,13 +223,6 @@
   <string name="block_notifications_title">ಅಧಿಸೂಚನೆಯನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ</string>
   <string name="block_notifications_summary">ಕಡೆಗಣಿಸಿದ ಅಧಿಸೂಚನೆಗಳನ್ನು ಮತ್ತು ಫಿಲ್ಟರ್‍ಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
   <string name="no_filters_title">ಯಾವುದೇ ಫಿಲ್ಟರ್‍ಗಳನ್ನು ಹೊಂದಿಸಿಲ್ಲ</string>
-  <string name="cmupdate_settings_title">CyanogenMod ನವೀಕರಣೆಗಳು</string>
-  <string name="update_recovery_title">Cyanogen ರಿಕವರಿ ನವೀಕರಿಸು</string>
-  <string name="update_recovery_summary">ಸಿಸ್ಟಂ ನವೀಕರಣೆಗಳೊಂದಿಗೆ ರಿಕವರಿಯನ್ನು ನವೀಕರಿಸು</string>
-  <string name="update_recovery_on_warning">ಗಮನಿಸಿ: ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ನಿಮ್ಮ ಸ್ಥಾಪಿತವಾಗಿರುವ ರಿಕವರಿಯನ್ನು ಚಲಿಸುತ್ತಿರುವ OSನ ಪ್ರಸ್ತುತ ಆವೃತ್ತಿಯ ಜೊತೆ ಬಂದಿರುವ ರಿಕವರಿಯೊಂದಿಗೆ ಬದಲಾಯಿಸುತ್ತದೆ.\n\nಮುಂದಿನ ಆವೃತ್ತಿಗಳೊಂದಿಗೆ ಖಚಿತವಾಗಿ ಹೊಂದಿಕೊಳ್ಳುವಂತೆ ಸಹಕರಿಸಲು, ನಿಮ್ಮ ರಿಕವರಿಯು ಸಿಸ್ಟಂ ನವೀಕರಣೆಯ ಜೊತೆ ನವೀಕೃತಗೊಳ್ಳುತ್ತಲೇ ಇರುತ್ತದೆ.\n\nನೀವು ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಸಕ್ಕ್ರಿಯಗೊಳಿಸಲು ಇಷ್ಟಪಡುವಿರಾ?</string>
-  <string name="update_recovery_off_warning">ಎಚ್ಚರಿಕೆ: ಈ ವೈಶಿಷ್ಟ್ಯ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ನಿಮ್ಮ ಸ್ಥಾಪಿತವಾಗಿರುವ ರಿಕವರಿಯು OS ಅಭಿವೃದ್ಧಿಗಳ ಜೊತೆ ನವೀಕರಣೆಗೊಳ್ಳುವುದಿಲ್ಲ.\n\nಮುಂದಿನ OS ನವೀಕರಣೆಗಳು ಹಳತಾದ ಅಥವಾ ಕಸ್ಟಮ್ ರಿಕವರಿಯೊಂದಿಗೆ ಸ್ಥಾಪನೆಯಾಗದಿರಬಹುದು.\n\nನೀವು ನಿಜವಾಗಿಯೂ ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ಬಯಸುವಿರಾ?</string>
-  <string name="mod_version">CyanogenMod ಆವೃತ್ತಿ</string>
-  <string name="mod_version_default">ಅಜ್ಞಾತ</string>
   <string name="device_model">ಸಾಧನ ಮಾದರಿ</string>
   <string name="device_name">ಸಾಧನ ಹೆಸರು</string>
   <string name="build_date">ನಿರ್ಮಾಣ ದಿನಾಂಕ</string>
@@ -238,7 +231,6 @@
   <string name="double_tap_to_wake_summary">ಪ್ರದರ್ಶನವನ್ನು ಆನ್ ಮಾಡಲು ಪರದೆಯ ಮೇಲೆ ದ್ವಿಗುಣ-ಸ್ಪರ್ಶಿಸಿ</string>
   <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆ</string>
   <string name="proximity_wake_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸುವ ಮೊದಲು ಸಾಮೀಪ್ಯ ಸಂವೇದಕವನ್ನು ಪರಿಶೀಲಿಸು</string>
-  <string name="privacy_settings_cyanogenmod_title">ಗೌಪ್ಯತೆ</string>
   <string name="privacy_guard_default_title">ಡೀಫಾಲ್ಟಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
   <string name="privacy_guard_default_summary">ಹೊಸದಾಗಿ-ಸ್ಥಾಪಿಸಲಾದ ಆಪ್‍ಗಳಿಗಾಗಿ ಡೀಫಾಲ್ಟಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
   <string name="privacy_guard_manager_title">ಗೌಪ್ಯತಾ ರಕ್ಷಕ</string>
@@ -656,8 +648,6 @@
   <string name="usb_not_connected">ಯುಎಸ್‍ಬಿ ಸಂಪರ್ಕ ಈಗ ಕಡಿತಗೊಂಡಿದೆ</string>
   <string name="external_storage_turn_on">ಬಾಹ್ಯ ಸಂಗ್ರಹಣೆಯು ಆನ್ ಆಗಿದೆ</string>
   <string name="external_storage_turn_off">ಬಾಹ್ಯ ಸಂಗ್ರಹಣೆಯು ಆಫ್ ಮಾಡಲಾಗಿದೆ</string>
-  <string name="stats_collection_title">ಅಂಕಿಅಂಶಗಳ ಸಂಗ್ರಹಣೆ</string>
-  <string name="stats_collection_summary">ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ಮೆಟ್ರಿಕ್ ಸಂಗ್ರಹಣೆಯನ್ನು ಅನುಮತಿಸುತ್ತದೆ</string>
   <string name="power_notifications_category_title">ಚಾರ್ಜಿಂಗ್ ಶಬ್ಧಗಳು</string>
   <string name="power_notifications_enable_title">ಸಕ್ರಿಯ</string>
   <string name="power_notifications_enable_summary">ವಿದ್ಯುತ್ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸುವಾಗ ಅಥವ ಅಸಂಪರ್ಕಿಸುವಾಗ ಒಂದು ಶಬ್ಧವನ್ನು ಪ್ಲೇ ಮಾಡು</string>
@@ -678,8 +668,6 @@
   <string name="pref_force_highend_gfx_summary">ಪಾರದರ್ಶಕ ಸ್ಟೇಟಸ್/ನಾವಿಗೇಶನ್ ಬಾರ್‍ನಂತಹ ಉತ್ಕೃಷ್ಟ ಮಟ್ಟದ ದೃಶ್ಯ ಪರಿಣಾಮಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ (ರಿಬೂಟ್‍ನ ಅಗತ್ಯವಿರುತ್ತದೆ)</string>
   <string name="edge_gesture_service_title">ಸನ್ನೆ ಸ್ಪರ್ಶ ಘಟನೆಗಳನ್ನು ನಿರ್ಬಂಧಿಸು</string>
   <string name="edge_gesture_service_summary">ನಾವಿಗೇಶನ್ ಮತ್ತು ಸ್ಟೇಟಸ್ ಬಾರ್ ಸೆನ್ನೆಗಳಿಗಾಗಿ ಆಪ್‍ಗಳಿಗೆ ಸ್ಪರ್ಶ ಘಟನೆಗಳನ್ನು ಕಳುಹಿಸಬೇಡ</string>
-  <string name="cmlicense_title">CyanogenMod ಕಾನೂನು</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod ಕಾನೂನು</string>
   <string name="lockpattern_settings_enable_error_path_title">ನಮೂನೆ ದೋಷವನ್ನು ಪ್ರದರ್ಶಿಸು</string>
   <string name="lockpattern_settings_enable_dots_title">ನಮೂನೆ ಚುಕ್ಕಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸು</string>
   <string name="unlock_quick_unlock_control_title">ತ್ವರಿತ ಅನ್‍ಲಾಕ್</string>
@@ -727,9 +715,6 @@
   <string name="qs_tile_heads_up">ಹೆಡ್ಸ್ ಅಪ್</string>
   <string name="qs_tile_ambient_display">ಆವರಿಸಿದ ಪರದೆ</string>
   <string name="qs_tile_sync">ಸಿಂಕ್</string>
-  <string name="qs_dynamic_tile_next_alarm">ಮುಂದಿನ ಅಲಾರ್ಮ್</string>
-  <string name="qs_dynamic_tile_ime_selector">ಐಎಂಇ ಆಯ್ಕೆ</string>
-  <string name="qs_dynamic_tile_su">ರೂಟ್ ಪ್ರವೇಶ</string>
   <string name="qs_main_tiles_title">ಪ್ರಥಮ ಸಾಲನ್ನು ಹಿಗ್ಗಿಸು</string>
   <string name="qs_main_tiles_summary_on">ಮುಖ್ಯವಾದ ಎರಡು ಟೈಲ್‍ಗಳು ಪ್ರಥಮ ಸಾಲಿನಲ್ಲಿ</string>
   <string name="qs_main_tiles_summary_off">ಪ್ರತೀ ಸಾಲಿನಲ್ಲಿ ಮೂರು ಟೈಲ್‍ಗಳು</string>
@@ -766,8 +751,6 @@
   <string name="lockscreen_message">ಲಾಕ್ ಪರದೆ ಕಿರುಮಾರ್ಗವನ್ನು ಮರುಸಂಯೋಜಿಸಲು ಎಡ ಅಥವ ಬಲಭಾಗದಲ್ಲಿರುವ ಒಂದು ಐಕಾನ್ ಸ್ಪರ್ಶಿಸಿ.</string>
   <string name="lockscreen_choose_action_title">ಕ್ರಿಯೆಯನ್ನು ಆರಿಸಿ</string>
   <string name="lockscreen_visualizer_title">ಸಂಗೀತ ದೃಶ್ಯೀಕರಣವನ್ನು ಪ್ರದರ್ಶಿಸು</string>
-  <string name="whisperpush_title">ವ್ಹಿಸ್ಪರ್‍ಪುಶ್</string>
-  <string name="whisperpush_summary">ಸುರಕ್ಷಿತ ಎಸ್‍ಎಂಎಸ್ ಸೆಟ್ಟಿಂಗ್ಸನ್ನು ನಿರ್ವಹಿಸಿ</string>
   <string name="navigation_ring_title">ನಾವಿಗೇಶನ್ ರಿಂಗ್ ಟಾರ್ಗೆಟ್ಸ್</string>
   <string name="navigation_ring_message">ಸಂಪಾದಿಸುವುದಕ್ಕಾಗಿ ನಾವಿಗೇಶನ್ ರಿಂಗ್ ತೆರೆಯಲು ಸಂಪಾದಿಸಿ ಐಕಾನ್ ಸ್ಪರ್ಶಿಸಿ.\n\nಅದರ ವರ್ತನೆಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಲು ಒಂದು ಟಾರ್ಗೆಟ್ ಆಯ್ಕೆಮಾಡಿ.\n\nನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲು \'\u2713\' ಸ್ಪರ್ಶಿಸಿ, ಅಥವ ಸೆಟ್ಟಿಂಗ್ಸನ್ನು ಡೀಫಾಲ್ಟ್ ಗೆ ಪುನಃಸ್ಥಾಪಿಸಲು \'ಡೀಫಾಲ್ಟ್ ಗೆ ಪುನಃಸ್ಥಾಪಿಸು\' ಸ್ಪರ್ಶಿಸಿ.</string>
   <string name="lcd_density">ಎಲ್‍ಸಿಡಿ ಸಾಂದ್ರತೆ</string>
@@ -834,31 +817,11 @@
   <string name="battery_saver_threshold">ಬ್ಯಾಟರಿ ಉಳಿತಾಯ ಹೊಸ್ತಿಲು</string>
   <string name="battery_saver_summary">ಕಾರ್ಯನಿರ್ವಹಣೆ ಕಡಿಮೆಗೊಳಿಸು ಮತ್ತು ಹಿನ್ನೆಲೆ ಡೇಟಾವನ್ನು ಮಿತಿಗೊಳಿಸು</string>
   <string name="battery_saver_summary_unavailable">ಚಾರ್ಜ್ ಮಾಡುವಾಗ ಲಭ್ಯವಿಲ್ಲ</string>
-  <string name="anonymous_statistics_title">CyanogenMod ಅಂಕಿಅಂಶಗಳು</string>
-  <string name="anonymous_statistics_summary">ಅನಾಮಿಕ ಅಂಕಿಅಂಶಗಳ ವರದಿಸಲ್ಲಿಸುವಿಕೆಯನ್ನು ಆಯ್ದುಕೊಳ್ಳುವ ಮೂಲಕ CyanogenModನ್ನು ಉತ್ತಮವಾಗಿಸಲು ಸಹಕರಿಸಿ</string>
-  <string name="anonymous_statistics_warning_title">ಕುರಿತು</string>
-  <string name="anonymous_statistics_warning">CyanogenMod ಅಂಕಿಅಂಶಗಳಿಗೆ ಆಯ್ದುಕೊಳ್ಳುವುದರಿಂದ ವಯಕ್ತಿಕವಲ್ಲದ ಡೇಟಾವನ್ನು ಸಲ್ಲಿಸುವುದರ ಮೂಲಕ
-        CyanogenMod ಡೆವಲಪರ್ಸ್‍ಗೆ ವಿಶಿಷ್ಟ ಸ್ಥಾಪನೆಗಳನ್ನು ಸಾಧನಗಳಾದ್ಯಂತ ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ. ಸಲ್ಲಿಸುವ ಮಾಹಿತಿಯು ಒಂದು ವಿಶಿಷ್ಟ ಗುರುತನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ,
-        ಅದು ನಿಮ್ಮ ಗೌಪ್ಯತೆ ಅಥವಾ ವಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ರಾಜಿ ಮಾಡುವುದಿಲ್ಲ, ಡೇಟಾವನ್ನು ಪ್ರತೀ ಬೂಟ್‍ನ  ವೇಳೆ ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ.\n\nಸಲ್ಲಿಸಲ್ಪಡುವ ಡೇಟಾದ ಒಂದು ಉದಾಹರಣೆಗಾಗಿ, ಡೇಟಾ ಮುನ್ನೋಟ ಸ್ಪರ್ಶಿಸಿ.</string>
-  <string name="enable_reporting_title">ವರದಿ ಸಲ್ಲಿಸುವಿಕೆ ಸಕ್ರಿಯ</string>
-  <string name="preview_data_title">ಡೇಟಾ ಮುನ್ನೋಟ</string>
-  <string name="view_stats_title">ಅಂಕಿಅಂಶಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
-  <string name="anonymous_learn_more">ಮತ್ತಷ್ಟು ತಿಳಿಯಿರಿ</string>
-  <string name="preview_id_title">ವಿಶಿಷ್ಟ ಗುರುತು</string>
-  <string name="preview_device_title">ಸಾಧನ</string>
-  <string name="preview_version_title">ಆವೃತ್ತಿ</string>
-  <string name="preview_country_title">ರಾಷ್ಟ್ರ</string>
-  <string name="preview_carrier_title">ವಾಹಕ</string>
   <string name="heads_up_notifications">ಹೆಡ್ಸ್ ಅಪ್</string>
   <string name="summary_heads_up_enabled">ಪಾಪ್-ಅಪ್ ಅಧಿಸೂಚನೆಗಳು ಸಕ್ರಿಯಗೊಂಡಿದೆ</string>
   <string name="summary_heads_up_disabled">ಪಾಪ್-ಅಪ್ ಅಧಿಸೂಚನೆಗಳು ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ</string>
   <string name="master_clear_desc_cm" product="tablet">ನಿದು ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್‍ನ <b>ಆಂತರಿಕ ಸಂಗ್ರಹಣೆ</b>ಯಲ್ಲಿರುವ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸುತ್ತದೆ, ಇದು:\n\n<li>ನಿಮ್ಮ ಸಾಧನ ಖಾತೆಗಳು</li>\n<li>ಸಿಸ್ಟಂ ಮತ್ತು ಆಪ್ ಡೇಟಾ ಹಾಗು ಸೆಟ್ಟಿಂಗ್ಸ್</li>\n<li>ಡೌನ್‍ಲೋಡ್ ಮಾಡಲಾದ ಆಪ್‍ಗಳನ್ನು ಒಳಗೊಂಡಿದೆ</li></string>
   <string name="master_clear_desc_cm" product="default">ನಿದು ನಿಮ್ಮ ಫೋನ್‍ನ <b>ಆಂತರಿಕ ಸಂಗ್ರಹಣೆ</b>ಯಲ್ಲಿರುವ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸುತ್ತದೆ, ಇದು:\n\n<li>ನಿಮ್ಮ ಸಾಧನ ಖಾತೆಗಳು</li>\n<li>ಸಿಸ್ಟಂ ಮತ್ತು ಆಪ್ ಡೇಟಾ ಹಾಗು ಸೆಟ್ಟಿಂಗ್ಸ್</li>\n<li>ಡೌನ್‍ಲೋಡ್ ಮಾಡಲಾದ ಆಪ್‍ಗಳನ್ನು ಒಳಗೊಂಡಿದೆ</li></string>
-  <string name="lock_to_cyanogen_title">ಸಾಧನ ಸಂರಕ್ಷಣೆ</string>
-  <string name="lock_to_cyanogen_summary">ಫ್ಯಾಕ್ಟರಿ ಮರುಹೊಂದಿಸಿದ ನಂತರವೂ ನಿಮ್ಮ Cyanogen OS ಖಾತೆ ಪ್ರವೇಶಪದದ ಅಗತ್ಯವಿರುತ್ತದೆ</string>
-  <string name="lock_to_cyanogen_create_account_msg">ನಿಮ್ಮ ಸಾಧನವು Cyanogen OS ಖಾತೆ ಪ್ರವೇಶಪದವನ್ನು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಫ್ಯಾಕ್ಟರಿ ಮರುಹೊಂದಿಸುವ ಘಟನೆಯಲ್ಲಿಯೂ ಸಹ ರಕ್ಷಿಸಲು ಉಪಯೋಗಿಸುತ್ತದೆ, ನೀವು ಒಂದು Cyanogen OS ಖಾತೆಯನ್ನು ರಚಿಸಬೇಕಾಗುತ್ತದೆ.</string>
-  <string name="lock_to_cyanogen_disable_msg">ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ ನಿಮ್ಮ ಫೊನ್ ಕಳುವಾದಲ್ಲಿ ಅನಧೀಕೃತ ಬಳಕೆದಾರರಿಗೆ ನಿಮ್ಮ ಫೋನನ್ನು ಮರುಹೊಂದಿಸಲು ಅನುವು ಮಾಡುತ್ತದೆ. ನಿಮ್ಮ ವಯಕ್ತಿಕ ಡೇಟಾ ರಕ್ಷಿತವಾಗಿಲ್ಲದಿರಬಹುದ. ನೀವು ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ಬಯಸುತ್ತೀರಾ?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">ಸಾಧನ ಸಂರಕ್ಷಣೆ ಸಕ್ರಿಯವಾಗಿದೆ, ಸಾಧನ ಮರುಹೊಂದಿಕೆಯನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">ಸಂಪರ್ಕ ದೋಷ; ಈ ಸಾಧನದಲ್ಲಿ ಬ್ಲೂಟೂತ್ ಟೆಥರಿಂಗ್ ಸಕ್ರಿಯಗೊಂಡಿದೆಯೇ?</string>
   <string name="sim_card_status_title">ಸಿಮ್ %d ಸ್ಥಿತಿ</string>
   <string name="sim_card_lock_settings_title">ಸಿಮ್ %d ಲಾಕ್ ಸೆಟ್ಟಿಂಗ್ಸ್</string>

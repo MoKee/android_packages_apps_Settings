@@ -222,13 +222,6 @@
   <string name="block_notifications_title">فیلتر کردن اعلان‌ها</string>
   <string name="block_notifications_summary">مدیریت فیلترها و اعلان‌های نادیده گرفته‌شده</string>
   <string name="no_filters_title">هیچ فیلتری تنظیم نشده است</string>
-  <string name="cmupdate_settings_title">بروزرسانی‌های سایانوژن‌مود</string>
-  <string name="update_recovery_title">بروزرسانی ریکاوری سایانوژن‌مود</string>
-  <string name="update_recovery_summary">به‌روزرسانی ریکاوری با به‌روزرسانی‌های سیستم</string>
-  <string name="update_recovery_on_warning">توجه: وقتی این امکان فعال باشد، ریکاوری نسخه موجود فعلی سیستم‌عامل جایگزین ریکاوری نصب‌شده شما خواهد شد.\n\n ریکاوری شما با به‌روزرسانی‌های سیستم شما به‌روز خواهد شد، تا از سازگاری با نسخه‌های آینده اطمینان حاصل شود.\n\n آیا می‌خواهید این امکان را فعال کنید؟</string>
-  <string name="update_recovery_off_warning">هشدار: وقتی این امکان غیرفعال باشد، ریکاوری نصب‌شده شما با به‌روزرسانی‌های سیستم‌عامل به‌روز نخواهد شد.\n\nبه‌روزرسانی‌های آینده‌ی سیستم‌عامل ممکن است با نسخه‌های تاریخ‌گذشته یا شخصی ریکاوری نصب نشود.\n\nآیا واقعا می‌خواهید این قابلیت را غیرفعال کنید؟</string>
-  <string name="mod_version">نسخه سایانوژن‌مود</string>
-  <string name="mod_version_default">ناشناخته</string>
   <string name="device_model">مدل دستگاه</string>
   <string name="device_name">نام دستگاه</string>
   <string name="build_date">تاریخ ساخت</string>
@@ -237,7 +230,6 @@
   <string name="double_tap_to_wake_summary">دو ضربه بر روی صفحه برای روشن شدن آن</string>
   <string name="proximity_wake_title">جلوگیری از بیدار شدن تصادفی</string>
   <string name="proximity_wake_summary">بررسی حسگر مجاورت قبل از روشن کردن صفحه</string>
-  <string name="privacy_settings_cyanogenmod_title">حریم خصوصی</string>
   <string name="privacy_guard_default_title">فعال‌شده به صورت پیش‌فرض</string>
   <string name="privacy_guard_default_summary">فعال‌شده به صورت پیش‌فرض برای برنامه‌های تازه نصب شده</string>
   <string name="privacy_guard_manager_title">نگهبان حریم خصوصی</string>
@@ -655,8 +647,6 @@
   <string name="usb_not_connected">USB اکنون قطع است</string>
   <string name="external_storage_turn_on">حافظه خارجی روشن شد</string>
   <string name="external_storage_turn_off">حافظه خارجی خاموش شد</string>
-  <string name="stats_collection_title">جمع‌آوری آمار</string>
-  <string name="stats_collection_summary">هنگام فعال‌بودن، اجازه می‌دهد متریک‌ها جمع‌آوری شوند</string>
   <string name="power_notifications_category_title">صداهای شارژ</string>
   <string name="power_notifications_enable_title">فعال کردن</string>
   <string name="power_notifications_enable_summary">پخش صدا هنگام اتصال یا قطع اتصال منبع نیرو</string>
@@ -677,8 +667,6 @@
   <string name="pref_force_highend_gfx_summary">جلوه‌های بصری بالا مانند نوار پیمایش/وضعیت شفاف را فعال می‌سازد (به راه‌اندازی مجدد نیاز دارد)</string>
   <string name="edge_gesture_service_title">مسدودکردن رویدادهای لمس حرکتی</string>
   <string name="edge_gesture_service_summary">موارد لمسی برای پیمایش و حرکات نوار وضعیت برای برنامه‌ها ارسال نشود</string>
-  <string name="cmlicense_title">موارد حقوقی سیانوژن مود</string>
-  <string name="settings_cmlicense_activity_title">موارد حقوقی سیانوژن مود</string>
   <string name="lockpattern_settings_enable_error_path_title">نمایش خطای الگو</string>
   <string name="lockpattern_settings_enable_dots_title">نمایش نقطه‌های الگو</string>
   <string name="unlock_quick_unlock_control_title">بازگشایی سریع</string>
@@ -726,9 +714,6 @@
   <string name="qs_tile_heads_up">اعلان فوری</string>
   <string name="qs_tile_ambient_display">نمایش محیط</string>
   <string name="qs_tile_sync">همگام‌‌سازی</string>
-  <string name="qs_dynamic_tile_next_alarm">هشدار بعدی</string>
-  <string name="qs_dynamic_tile_ime_selector">انتخابگر IME</string>
-  <string name="qs_dynamic_tile_su">دسترسی روت</string>
   <string name="qs_main_tiles_title">بزرگ کردن ردیف اول</string>
   <string name="qs_main_tiles_summary_on">دو کاشی اصلی در ردیف اول</string>
   <string name="qs_main_tiles_summary_off">سه کاشی در هر ردیف</string>
@@ -765,8 +750,6 @@
   <string name="lockscreen_message">برای تخصیص مجدد میانبر قفل صفحه، بر روی آیکون سمت چپ یا راست ضربه بزنید.</string>
   <string name="lockscreen_choose_action_title">یکی را انتخاب کنید</string>
   <string name="lockscreen_visualizer_title">نمایش رقص نور موسیقی</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">مدیریت تنظیمات ایمن پیامک</string>
   <string name="navigation_ring_title">اهداف حلقه پیمایش</string>
   <string name="navigation_ring_message">به منظور بازکردن حلقه پیمایش جهت ویرایش، بر روی آیکون ویرایش ضربه بزنید.\n\nیک هدف انتخاب کنید تا بتوانید رفتار آن را تنظیم کنید.\n\nبرای ذخیره تغییرات اعمال‌شده، بر روی آیکون «\u2713» یا برای بازنشانی تنظیمات به حالت پیش‌فرض بر روی آیکون «بازگشت به تنظیمات پیش‌فرض» ضربه بزنید.</string>
   <string name="lcd_density">تراکم ال‌سی‌دی</string>
@@ -833,31 +816,11 @@
   <string name="battery_saver_threshold">آستانه صرفه‌جویی در باتری</string>
   <string name="battery_saver_summary">کاهش عملکرد و محدودکردن اطلاعات پس‌زمینه</string>
   <string name="battery_saver_summary_unavailable">هنگام شارژ در دسترس نیست</string>
-  <string name="anonymous_statistics_title">آمار سیانوژن مود</string>
-  <string name="anonymous_statistics_summary">کمک به بهبود سیانوژن مود به وسیله پر کردن گزارش آمار به صورت ناشناس</string>
-  <string name="anonymous_statistics_warning_title">درباره</string>
-  <string name="anonymous_statistics_warning">پرکردن آمار سیانوژن مود اجازه می‌دهد اطلاعات غیرشخصی به
-        توسعه‌دهنگان سیانوژن مود ارسال شوند تا به موارد خاص نصب در دستگاه‌ها دست پیدا شود. اطلاعات ارسال‌شده شامل یک شناسه خاص است
-        که حریم خصوصی اطلاعات شخصی شما را تحت شعاع قرار نمی‌دهد. این اطلاعات در طول هر اجرای جدید ارسال می‌شوند.\n\nبرای مشاهده یک نمونه از اطلاعاتی که ارسال می‌شود بر روی پیش‌نمایش داده‌ها ضربه بزنید.</string>
-  <string name="enable_reporting_title">فعال‌کردن گزارش‌دادن</string>
-  <string name="preview_data_title">پیش‌نمایش داده‌ها</string>
-  <string name="view_stats_title">مشاهده آمار</string>
-  <string name="anonymous_learn_more">بیشتر بدانید</string>
-  <string name="preview_id_title">شناسه یکتا</string>
-  <string name="preview_device_title">دستگاه</string>
-  <string name="preview_version_title">نسخهٔ</string>
-  <string name="preview_country_title">کشور</string>
-  <string name="preview_carrier_title">حامل</string>
   <string name="heads_up_notifications">اعلان فوری</string>
   <string name="summary_heads_up_enabled">اعلان‌های بالاپر فعال شدند</string>
   <string name="summary_heads_up_disabled">اعلان‌های بالاپر غیرفعال شدند</string>
   <string name="master_clear_desc_cm" product="tablet">این اطلاعات <b>حافظه داخلی</b> تبلت شما را پاک می‌کند، از جمله:\n\n<li>حساب‌های کاربری دستگاه شما</li>\n<li>سیستم و داده‌های برنامه و تنظیمات</li>\n<li>برنامه‌های دانلود شده</li></string>
   <string name="master_clear_desc_cm" product="default">این اطلاعات <b>حافظه داخلی</b> تلفن همراه شما را پاک می‌کند، از جمله:\n\n<li>حساب‌های کاربری دستگاه شما</li>\n<li>سیستم و داده‌های برنامه و تنظیمات</li>\n<li>برنامه‌های دانلود شده</li></string>
-  <string name="lock_to_cyanogen_title">حفاظت از دستگاه</string>
-  <string name="lock_to_cyanogen_summary">حتی پس از تنظیم مجدد به تنظیمات کارخانه، به رمز عبور حساب کاربری سیستم عامل سیانوژن شما نیاز دارد</string>
-  <string name="lock_to_cyanogen_create_account_msg">دستگاه شما برای محافظت از دستگاه شما حتی هنگام تنظیم مجدد به تنظیمات کارخانه، از رمز عبور حساب کاربری سیستم عامل سیانوژن استفاده می‌کند. شما باید یک حساب کاربری سیستم عامل سیانوژن ایجاد کنید.</string>
-  <string name="lock_to_cyanogen_disable_msg">غیرفعال‌کردن این قابلیت به کاربران غیرمجاز اجازه خواهد داد هنگام سرقت دستگاه، آن را به تنظیمات کارخانه بازنشانی کنند. ممکن است از اطلاعات شخصی شما محافظت نشود. آیا این قابلیت را غیرفعال می‌کنید؟</string>
-  <string name="lock_to_cyanogen_master_clear_warning">محافظت از دستگاه فعال شد. لطفاً برای ادامه تنظیم مجدد دستگاه خود آن را غیرفعال کنید.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">خطا در اتصال، آیا تترینگ بلوتوث در این دستگاه فعال است؟</string>
   <string name="sim_card_status_title">وضعیت سیمکارت %d</string>
   <string name="sim_card_lock_settings_title">تنظیمات قفل سیمکارت %d</string>
