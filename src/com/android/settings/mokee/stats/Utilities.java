@@ -16,34 +16,13 @@
 
 package com.android.settings.mokee.stats;
 
+import com.mokee.os.Build;
+
 import android.content.Context;
-import android.os.Build;
-import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
-import java.math.BigInteger;
-import java.net.NetworkInterface;
-import java.security.MessageDigest;
-
 public class Utilities {
-    public static String getUniqueID(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx
-                .getSystemService(Context.TELEPHONY_SERVICE);
-
-        String device_id = digest(tm.getDeviceId() + Build.SERIAL);
-        if (TextUtils.isEmpty(device_id)) {
-            String wifiInterface = SystemProperties.get("wifi.interface");
-            try {
-                String wifiMac = new String(NetworkInterface.getByName(
-                        wifiInterface).getHardwareAddress());
-                device_id = digest(wifiMac);
-            } catch (Exception e) {
-                device_id = "Unknown";
-            }
-        }
-        return device_id;
-    }
 
     public static String getIMEI(Context ctx) {
         TelephonyManager tm = (TelephonyManager) ctx
@@ -81,54 +60,10 @@ public class Utilities {
         return countryCode;
     }
 
-    public static String getDevice() {
-        String device = SystemProperties.get("ro.mk.device", Build.PRODUCT);
-        if (TextUtils.isEmpty(device)) {
-            device = "Unknown";
-        }
-        return device;
-    }
-
-    public static String getModVersion() {
-        String modVersion = SystemProperties.get("ro.mk.version");
-        if (TextUtils.isEmpty(modVersion)) {
-            modVersion = SystemProperties.get("ro.modversion");
-            if (TextUtils.isEmpty(modVersion)) {
-                modVersion = "Unknown";
-            }
-        }
-        return modVersion;
-    }
-
-    public static String getMoKeeVersion() {
-        String modVersion = getModVersion();
+    public static String getMoKeeMajorVersion() {
+        String modVersion = Build.MOKEE_VERSION;
         int index = modVersion.indexOf("-");
-        if (!modVersion.startsWith("MK")) index = -1;
-        return index == -1 ? "Unknown" : modVersion.substring(0, index);
+        return !modVersion.startsWith("MK") ? "Unknown" : modVersion.substring(0, index);
     }
 
-    public static String getBuildHost() {
-        String hostName = SystemProperties.get("ro.build.host");
-        if (TextUtils.isEmpty(hostName)) {
-            hostName = "Unknown";
-        }
-        return hostName;
-    }
-
-    public static String getBuildUser() {
-        String user = SystemProperties.get("ro.build.user");
-        if (TextUtils.isEmpty(user)) {
-            user = "Unknown";
-        }
-        return user;
-    }
-
-    public static String digest(String input) {
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            return new BigInteger(1, md.digest(input.getBytes())).toString(16).toUpperCase();
-        } catch (Exception e) {
-            return null;
-        }
-    }
 }

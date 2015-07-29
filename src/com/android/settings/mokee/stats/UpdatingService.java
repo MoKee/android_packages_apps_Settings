@@ -26,6 +26,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+import com.mokee.os.Build;
+
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -60,8 +62,8 @@ public class UpdatingService extends Service {
         @Override
         protected Boolean doInBackground(Void... params) {
             final Context context = UpdatingService.this;
-            String deviceId = Utilities.getUniqueID(context);
-            String deviceVersion = Utilities.getModVersion();
+            String deviceId = Build.getUniqueID(context);
+            String deviceVersion = Build.MOKEE_VERSION;
             String deviceFlashTime = String.valueOf(getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0).getLong(ReportingServiceManager.ANONYMOUS_FLASH_TIME, 0));
 
             Log.d(TAG, "SERVICE: Device ID=" + deviceId);
@@ -95,10 +97,10 @@ public class UpdatingService extends Service {
             long interval;
 
             if (result) {
-                String deviceMoKeeVersion = Utilities.getMoKeeVersion();
+                String deviceMoKeeMajorVersion = Utilities.getMoKeeMajorVersion();
                 final SharedPreferences prefs = getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0);
                 prefs.edit().putLong(ReportingServiceManager.ANONYMOUS_LAST_CHECKED,
-                        System.currentTimeMillis()).putString(ReportingServiceManager.DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
+                        System.currentTimeMillis()).putString(ReportingServiceManager.DEVICE_MOKEE_MAJOR_VERSION, deviceMoKeeMajorVersion).apply();
                 // use set interval
                 interval = 0;
             } else {

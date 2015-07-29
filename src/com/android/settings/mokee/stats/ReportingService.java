@@ -29,6 +29,7 @@ import com.android.settings.R;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
 import com.google.analytics.tracking.android.MapBuilder;
+import com.mokee.os.Build;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -76,9 +77,9 @@ public class ReportingService extends Service {
         @Override
         protected Boolean doInBackground(Void... params) {
             final Context context = ReportingService.this;
-            String deviceId = Utilities.getUniqueID(context);
-            String deviceName = Utilities.getDevice();
-            String deviceVersion = Utilities.getModVersion();
+            String deviceId = Build.getUniqueID(context);
+            String deviceName = Build.PRODUCT_NAME;
+            String deviceVersion = Build.MOKEE_VERSION;
             String deviceCountry = Utilities.getCountryCode(context);
             String deviceCarrier = Utilities.getCarrier(context);
             String deviceCarrierId = Utilities.getCarrierId(context);
@@ -141,7 +142,7 @@ public class ReportingService extends Service {
             long interval;
 
             if (result) {
-                String deviceMoKeeVersion = Utilities.getMoKeeVersion();
+                String deviceMoKeeMajorVersion = Utilities.getMoKeeMajorVersion();
                 final SharedPreferences prefs = getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0);
                 long device_flash_time = 0;
                 try {
@@ -151,7 +152,7 @@ public class ReportingService extends Service {
                 }
                 prefs.edit().putLong(ReportingServiceManager.ANONYMOUS_LAST_CHECKED,
                         System.currentTimeMillis()).putLong(ReportingServiceManager.ANONYMOUS_FLASH_TIME,
-                                    device_flash_time).putString(ReportingServiceManager.DEVICE_MOKEE_VERSION, deviceMoKeeVersion).apply();
+                                    device_flash_time).putString(ReportingServiceManager.DEVICE_MOKEE_MAJOR_VERSION, deviceMoKeeMajorVersion).apply();
                 // use set interval
                 interval = 0;
             } else {

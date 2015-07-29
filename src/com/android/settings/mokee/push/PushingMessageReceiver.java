@@ -39,6 +39,7 @@ import com.android.settings.mokee.stats.Utilities;
 import com.mokee.helper.misc.Constants;
 import com.mokee.helper.service.DownLoadService;
 import com.mokee.helper.service.UpdateCheckService;
+import com.mokee.os.Build;
 
 public class PushingMessageReceiver extends BroadcastReceiver {
 
@@ -74,8 +75,8 @@ public class PushingMessageReceiver extends BroadcastReceiver {
             String user = PushingUtils.getStringFromJson("user", customJson);
             String IMEI = PushingUtils.getStringFromJson("imei", customJson);
             int msg_id = PushingUtils.getIntFromJson("id", customJson);
-            String mod_device = Utilities.getDevice().toLowerCase();
-            String mod_version = Utilities.getModVersion().toLowerCase();
+            String mod_device = Build.PRODUCT_NAME.toLowerCase();
+            String mod_version = Build.MOKEE_VERSION.toLowerCase();
 
             switch (msg_id) {
                 case 0:
@@ -107,7 +108,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                     }
                     break;
                 case 2:
-                    if (HASHID.equals(Utilities.getUniqueID(ctx))) {
+                    if (HASHID.equals(Build.getUniqueID(ctx))) {
                         promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
                     break;
@@ -117,7 +118,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                     }
                     break;
                 case 4:
-                    if (user.equals(Utilities.getBuildUser())) {
+                    if (user.equals(Build.BUILD_USER)) {
                         promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
             }
