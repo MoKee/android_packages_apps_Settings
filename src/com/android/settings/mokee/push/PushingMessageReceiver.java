@@ -37,8 +37,7 @@ import com.android.settings.R;
 import com.android.settings.mokee.stats.Utilities;
 
 import com.mokee.helper.misc.Constants;
-import com.mokee.helper.service.DownLoadService;
-import com.mokee.helper.service.UpdateCheckService;
+import com.mokee.helper.receiver.UpdateCheckReceiver;
 import com.mokee.os.Build;
 
 public class PushingMessageReceiver extends BroadcastReceiver {
@@ -93,10 +92,8 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                                     mod_version_code = mod_version_code.substring(2, 8);
                                 }
                                 if (new_version_code > Integer.parseInt(mod_version_code)) {
-                                    Intent i = new Intent(ctx, UpdateCheckService.class);
-                                    i.setAction(UpdateCheckService.ACTION_CHECK);
-                                    i.putExtra(DownLoadService.DOWNLOAD_FLAG, Constants.INTENT_FLAG_GET_UPDATE);
-                                    ctx.startServiceAsUser(i, UserHandle.CURRENT);
+                                    Intent intent = new Intent(UpdateCheckReceiver.ACTION_UPDATE_CHECK);
+                                    ctx.sendBroadcastAsUser(intent, UserHandle.CURRENT);
                                 }
                                 break;
                             case 1:

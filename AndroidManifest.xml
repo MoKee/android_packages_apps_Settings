@@ -2510,13 +2510,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK" />
             </intent-filter>
         </receiver>
 
         <receiver android:name="com.mokee.helper.receiver.DownloadReceiver" >
             <intent-filter>
                 <action android:name="com.mokee.mkupdater.action.DOWNLOAD_COMPLETED" />
-                <action android:name="com.mokee.mkupdater.action.START_DOWNLOAD" />
+                <action android:name="com.mokee.mkupdater.action.DOWNLOAD_START" />
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
             </intent-filter>
         </receiver>
