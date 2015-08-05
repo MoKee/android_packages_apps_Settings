@@ -2431,7 +2431,7 @@
             </intent-filter>
         </service>
 
-        <service 
+        <service
             android:name="cn.jpush.android.service.DaemonService"
             android:enabled="true"
             android:exported="true" >
