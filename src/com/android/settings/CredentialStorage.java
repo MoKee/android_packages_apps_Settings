@@ -195,7 +195,7 @@ public final class CredentialStorage extends Activity {
      */
     private boolean checkKeyGuardQuality() {
         int quality = new LockPatternUtils(this).getActivePasswordQuality();
-        return (quality >= MIN_PASSWORD_QUALITY);
+        return (quality >= MIN_PASSWORD_QUALITY && quality != DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK);
     }
 
     private boolean isHardwareBackedKey(byte[] keyData) {

@@ -17,6 +17,10 @@
 
 package com.android.settings;
 
+import com.android.internal.widget.LockPatternUtils;
+import com.android.internal.widget.LockGestureView;
+import com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
@@ -28,24 +32,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient;
-import com.android.internal.widget.LockGestureView;
-import com.android.internal.widget.LockPatternUtils;
-import com.android.internal.widget.LockPatternView;
-import com.android.internal.widget.LockPatternView.Cell;
 
 import java.util.List;
 
 /**
  * Launch this when you want the user to confirm their lock gesture.
  *
- * Sets an activity result of {@link android.app.Activity#RESULT_OK} when the user
+ * Sets an activity result of {@link Activity#RESULT_OK} when the user
  * successfully confirmed their gesture.
  */
 public class ConfirmLockGesture extends SettingsActivity {
 
+    public static class InternalActivity extends ConfirmLockGesture {
+    }
+
     /**
-     * Names of {@link CharSequence} fields within the originating {@link android.content.Intent}
+     * Names of {@link CharSequence} fields within the originating {@link Intent}
      * that are used to configure the keyguard confirmation view's labeling.
      * The view will use the system-defined resource strings for any labels that
      * the caller does not supply.
@@ -263,6 +265,7 @@ public class ConfirmLockGesture extends SettingsActivity {
                 if (mLockPatternUtils.checkGesture(gesture)) {
 
                     Intent intent = new Intent();
+
                     getActivity().setResult(Activity.RESULT_OK, intent);
                     getActivity().finish();
                 } else {
