@@ -26,6 +26,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.mokee.utils.MoKeeUtils;
 import android.net.Uri;
 import android.os.Bundle;
@@ -43,6 +44,11 @@ import com.mokee.os.Build;
 public class PushingMessageReceiver extends BroadcastReceiver {
 
     protected static final String TAG = PushingMessageReceiver.class.getSimpleName();
+
+    private static final String MKPUSH_PREF = "mokee_push";
+    private static final String PREF_NEWS = "pref_news";
+
+    private SharedPreferences prefs;
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
@@ -64,7 +70,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
             } catch (JSONException e1) {
                 e1.printStackTrace();
             }
-
+            prefs = ctx.getSharedPreferences(MKPUSH_PREF, 0);
             String device = PushingUtils.getStringFromJson("device", customJson);
             String modType = PushingUtils.getStringFromJson("type", customJson);
             String url = PushingUtils.getStringFromJson("url", customJson);
@@ -97,7 +103,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                                 }
                                 break;
                             case 1:
-                                if (MoKeeUtils.isSupportLanguage(true)) {
+                                if (MoKeeUtils.isSupportLanguage(true) && prefs.getBoolean(PREF_NEWS, true)) {
                                     promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                                 }
                                 break;
