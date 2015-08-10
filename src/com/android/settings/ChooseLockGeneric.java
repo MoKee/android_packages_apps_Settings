@@ -378,7 +378,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                                 allowBiometric.value;
                         visible = fingerprintAvailable; // If not available, then don't show it.
                     } else if (KEY_UNLOCK_SET_GESTURE.equals(key)) {
-                        enabled = false;
+                        enabled = quality <= DevicePolicyManager.PASSWORD_QUALITY_UNSPECIFIED;
                     }
                     if (hideDisabled) {
                         visible = visible && enabled;
