@@ -23,8 +23,6 @@ import com.android.internal.util.cm.QSConstants;
 import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;
 
-import java.util.Arrays;
-
 /**
  * This class holds the icon, the name - or the string the user sees,
  * and the value which will be stored
