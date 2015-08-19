@@ -29,7 +29,7 @@ import android.content.pm.ServiceInfo;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
-import android.hardware.MkHardwareManager;
+import android.hardware.MKHardwareManager;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -59,6 +59,8 @@ import com.android.settings.notification.NotificationAccessSettings;
 import com.android.settings.notification.VolumeSeekBarPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -156,9 +158,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             volumes.removePreference(volumes.findPreference(KEY_VOLUME_LINK_NOTIFICATION));
         }
 
-        MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) getSystemService(Context.MKHW_SERVICE);
-        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(mContext);
+        if (!hardware.isSupported(MKHardwareManager.FEATURE_VIBRATOR)) {
             Preference preference = vibrate.findPreference(KEY_VIBRATION_INTENSITY);
             if (preference != null) {
                 vibrate.removePreference(preference);
@@ -632,9 +633,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             if (vib == null || !vib.hasVibrator()) {
                 rt.add(KEY_VIBRATE);
             }
-            MkHardwareManager mkHardwareManager =
-                    (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-            if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
+            MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+            if (!hardware.isSupported(MKHardwareManager.FEATURE_VIBRATOR)) {
                 rt.add(KEY_VIBRATION_INTENSITY);
             }
 

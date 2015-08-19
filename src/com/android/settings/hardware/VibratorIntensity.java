@@ -25,7 +25,6 @@ import android.graphics.Color;
 import android.graphics.LightingColorFilter;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
-import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.DialogPreference;
@@ -36,6 +35,8 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Button;
+
+import mokee.hardware.MKHardwareManager;
 
 import com.android.settings.R;
 
@@ -50,7 +51,7 @@ public class VibratorIntensity extends DialogPreference implements
     private int mMaxValue;
     private int mDefaultValue;
     private int mWarningValue;
-    private MkHardwareManager mMkHardwareManager;
+    private MKHardwareManager mHardware;
 
     private Drawable mProgressDrawable;
     private Drawable mProgressThumb;
@@ -59,9 +60,9 @@ public class VibratorIntensity extends DialogPreference implements
     public VibratorIntensity(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mMkHardwareManager = (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+        mHardware = MKHardwareManager.getInstance(context);
 
-        if (!mMkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
+        if (!mHardware.isSupported(MKHardwareManager.FEATURE_VIBRATOR)) {
             return;
         }
 
@@ -87,11 +88,11 @@ public class VibratorIntensity extends DialogPreference implements
         mWarning = (TextView) view.findViewById(R.id.warning_text);
 
         // Read the current value in case user wants to dismiss his changes
-        mOriginalValue = mMkHardwareManager.getVibratorIntensity();
-        mWarningValue = mMkHardwareManager.getVibratorWarningIntensity();
-        mMinValue = mMkHardwareManager.getVibratorMinIntensity();
-        mMaxValue = mMkHardwareManager.getVibratorMaxIntensity();
-        mDefaultValue = mMkHardwareManager.getVibratorDefaultIntensity();
+        mOriginalValue = mHardware.getVibratorIntensity();
+        mWarningValue = mHardware.getVibratorWarningIntensity();
+        mMinValue = mHardware.getVibratorMinIntensity();
+        mMaxValue = mHardware.getVibratorMaxIntensity();
+        mDefaultValue = mHardware.getVibratorDefaultIntensity();
         if (mWarningValue > 0) {
             String message = getContext().getResources().getString(
                     R.string.vibrator_warning, intensityToPercent(mMinValue, mMaxValue,
@@ -144,25 +145,24 @@ public class VibratorIntensity extends DialogPreference implements
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
             prefs.edit().putInt(PREF_NAME, mSeekBar.getProgress()).commit();
         } else {
-            mMkHardwareManager.setVibratorIntensity(mMkHardwareManager.getVibratorIntensity());
+            mHardware.setVibratorIntensity(mHardware.getVibratorIntensity());
         }
     }
 
     public static void restore(Context context) {
-        MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_VIBRATOR)) {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        if (!hardware.isSupported(MKHardwareManager.FEATURE_VIBRATOR)) {
             return;
         }
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        int vibrator = mkHardwareManager.getVibratorIntensity();
-        int min = mkHardwareManager.getVibratorMinIntensity();
-        int max = mkHardwareManager.getVibratorMaxIntensity();
+        int vibrator = hardware.getVibratorIntensity();
+        int min = hardware.getVibratorMinIntensity();
+        int max = hardware.getVibratorMaxIntensity();
         int defaultValue = intensityToPercent(min, max,
-                mkHardwareManager.getVibratorDefaultIntensity());
+                hardware.getVibratorDefaultIntensity());
         int percent = prefs.getInt(PREF_NAME, defaultValue);
 
-        mkHardwareManager.setVibratorIntensity(percentToIntensity(min, max, percent));
+        hardware.setVibratorIntensity(percentToIntensity(min, max, percent));
     }
 
     @Override
@@ -178,7 +178,7 @@ public class VibratorIntensity extends DialogPreference implements
             mProgressThumb.setColorFilter(shouldWarn ? mRedFilter : null);
         }
 
-        mMkHardwareManager.setVibratorIntensity(percentToIntensity(mMinValue, mMaxValue,
+        mHardware.setVibratorIntensity(percentToIntensity(mMinValue, mMaxValue,
                 progress));
         mValue.setText(String.format("%d%%", progress));
     }

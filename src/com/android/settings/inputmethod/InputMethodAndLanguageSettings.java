@@ -28,7 +28,6 @@ import android.content.SharedPreferences;
 import android.content.pm.ServiceInfo;
 import android.content.res.Configuration;
 import android.database.ContentObserver;
-import android.hardware.MkHardwareManager;
 import android.hardware.input.InputDeviceIdentifier;
 import android.hardware.input.InputManager;
 import android.hardware.input.KeyboardLayout;
@@ -65,6 +64,8 @@ import com.android.settings.VoiceInputOutputSettings;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -131,7 +132,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private Intent mIntentWaitingForResult;
     private InputMethodSettingValuesWrapper mInputMethodSettingValues;
     private DevicePolicyManager mDpm;
-    private MkHardwareManager mMkHardwareManager;
+    private MKHardwareManager mHardware;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -143,7 +144,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         mImm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         mInputMethodSettingValues = InputMethodSettingValuesWrapper.getInstance(activity);
 
-        mMkHardwareManager = (MkHardwareManager) getSystemService(Context.MKHW_SERVICE);
+        mHardware = MKHardwareManager.getInstance(activity);
 
         try {
             mDefaultInputMethodSelectorVisibility = Integer.valueOf(
@@ -207,21 +208,21 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                 pointerSettingsCategory.removePreference(mStylusIconEnabled);
             }
 
-            if (!mMkHardwareManager.isSupported(
-                    MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+            if (!mHardware.isSupported(
+                    MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
                 pointerSettingsCategory.removePreference(mHighTouchSensitivity);
                 mHighTouchSensitivity = null;
             } else {
                 mHighTouchSensitivity.setChecked(
-                        mMkHardwareManager.get(MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY));
+                        mHardware.get(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY));
             }
 
-            if (!mMkHardwareManager.isSupported(MkHardwareManager.FEATURE_TOUCH_HOVERING)) {
+            if (!mHardware.isSupported(MKHardwareManager.FEATURE_TOUCH_HOVERING)) {
                 pointerSettingsCategory.removePreference(mTouchscreenHovering);
                 mTouchscreenHovering = null;
             } else {
                 mTouchscreenHovering.setChecked(
-                        mMkHardwareManager.get(MkHardwareManager.FEATURE_TOUCH_HOVERING));
+                        mHardware.get(MKHardwareManager.FEATURE_TOUCH_HOVERING));
             }
 
             Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
@@ -427,10 +428,10 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
         } else if (preference == mHighTouchSensitivity) {
-            return mMkHardwareManager.set(MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
+            return mHardware.set(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
                     mHighTouchSensitivity.isChecked());
         } else if (preference == mTouchscreenHovering) {
-            return mMkHardwareManager.set(MkHardwareManager.FEATURE_TOUCH_HOVERING,
+            return mHardware.set(MKHardwareManager.FEATURE_TOUCH_HOVERING,
                     mTouchscreenHovering.isChecked());
         } else if (preference instanceof PreferenceScreen) {
             if (preference.getFragment() != null) {
@@ -771,22 +772,21 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
 
     public static void restore(Context context) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        if (mkHardwareManager.isSupported(MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        if (hardware.isSupported(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
             final boolean enabled = prefs.getBoolean(KEY_HIGH_TOUCH_SENSITIVITY,
-                    mkHardwareManager.get(MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY));
-            if (!mkHardwareManager.set(MkHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
+                    hardware.get(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY));
+            if (!hardware.set(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
                     enabled)) {
                 Log.e(TAG, "Failed to restore high touch sensitivity settings.");
             } else {
                 Log.d(TAG, "High touch sensitivity settings restored.");
             }
         }
-        if (mkHardwareManager.isSupported(MkHardwareManager.FEATURE_TOUCH_HOVERING)) {
+        if (hardware.isSupported(MKHardwareManager.FEATURE_TOUCH_HOVERING)) {
             final boolean enabled = prefs.getBoolean(KEY_TOUCHSCREEN_HOVERING,
-                    mkHardwareManager.get(MkHardwareManager.FEATURE_TOUCH_HOVERING));
-            if (!mkHardwareManager.set(MkHardwareManager.FEATURE_TOUCH_HOVERING, enabled)) {
+                    hardware.get(MKHardwareManager.FEATURE_TOUCH_HOVERING));
+            if (!hardware.set(MKHardwareManager.FEATURE_TOUCH_HOVERING, enabled)) {
                 Log.e(TAG, "Failed to restore touch hovering settings.");
             } else {
                 Log.d(TAG, "Touch hovering settings restored.");

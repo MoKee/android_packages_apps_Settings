@@ -25,7 +25,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
-import android.hardware.MkHardwareManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
@@ -62,6 +61,8 @@ import com.android.internal.telephony.SubscriptionController;
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
 import com.android.settings.Utils;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.lang.ref.WeakReference;
 
@@ -716,10 +717,9 @@ public class Status extends PreferenceActivity {
     }
 
     private String getSerialNumber() {
-        MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) getSystemService(Context.MKHW_SERVICE);
-        if (mkHardwareManager.isSupported(MkHardwareManager.FEATURE_SERIAL_NUMBER)) {
-            return mkHardwareManager.getSerialNumber();
+        MKHardwareManager hardware = MKHardwareManager.getInstance(this);
+        if (hardware.isSupported(MKHardwareManager.FEATURE_SERIAL_NUMBER)) {
+            return hardware.getSerialNumber();
         } else {
             return Build.SERIAL;
         }

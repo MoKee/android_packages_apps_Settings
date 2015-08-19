@@ -16,10 +16,11 @@
 
 package com.android.settings.livedisplay;
 
+import static mokee.hardware.MKHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -35,7 +36,7 @@ import android.widget.TextView;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
-import static android.hardware.MkHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+import mokee.hardware.MKHardwareManager;
 
 /**
  * Special preference type that allows configuration of Color settings
@@ -73,13 +74,12 @@ public class DisplayColor extends DialogPreference {
 
         mContext = context;
 
-        final MkHardwareManager mMkHardwareManager =
-                (MkHardwareManager) mContext.getSystemService(Context.MKHW_SERVICE);
-        useMKHW = mMkHardwareManager.isSupported(FEATURE_DISPLAY_COLOR_CALIBRATION);
+        final MKHardwareManager mHardware = MKHardwareManager.getInstance(context);
+        useMKHW = mHardware.isSupported(FEATURE_DISPLAY_COLOR_CALIBRATION);
         if (useMKHW) {
-            minRGB = mMkHardwareManager.getDisplayColorCalibrationMin();
-            maxRGB = mMkHardwareManager.getDisplayColorCalibrationMax();
-            defaultRGB = (float) mMkHardwareManager.getDisplayColorCalibrationDefault() / maxRGB;
+            minRGB = mHardware.getDisplayColorCalibrationMin();
+            maxRGB = mHardware.getDisplayColorCalibrationMax();
+            defaultRGB = (float) mHardware.getDisplayColorCalibrationDefault() / maxRGB;
         } else {
             // Initialize these just to avoid compiler errors.
             minRGB = 20;

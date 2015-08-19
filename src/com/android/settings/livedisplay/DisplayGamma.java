@@ -23,7 +23,6 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.res.Resources;
-import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -39,6 +38,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.util.Arrays;
 
@@ -59,17 +60,17 @@ public class DisplayGamma extends DialogPreference {
     private int[][] mCurrentColors;
     private int[][] mOriginalColors;
     private int mNumberOfControls;
-    private MkHardwareManager mMkHardwareManager;
+    private MKHardwareManager mHardware;
 
     public DisplayGamma(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mMkHardwareManager = (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        if (!mMkHardwareManager.isSupported(MkHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+        mHardware = MKHardwareManager.getInstance(context);
+        if (!mHardware.isSupported(MKHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
             return;
         }
 
-        mNumberOfControls = mMkHardwareManager.getNumGammaControls();
+        mNumberOfControls = mHardware.getNumGammaControls();
         mSeekBars = new GammaSeekBar[mNumberOfControls][BAR_COLORS.length];
 
         mOriginalColors = new int[mNumberOfControls][];
@@ -101,7 +102,7 @@ public class DisplayGamma extends DialogPreference {
         // Create multiple sets of seekbars, depending on the
         // number of controls the device has
         for (int index = 0; index < mNumberOfControls; index++) {
-            mOriginalColors[index] = mMkHardwareManager.getDisplayGammaCalibration(index);
+            mOriginalColors[index] = mHardware.getDisplayGammaCalibration(index);
             mCurrentColors[index] = Arrays.copyOf(mOriginalColors[index],
                     mOriginalColors[index].length);
 
@@ -125,8 +126,8 @@ public class DisplayGamma extends DialogPreference {
                 container.addView(header);
             }
 
-            int min = mMkHardwareManager.getDisplayGammaCalibrationMin();
-            int max = mMkHardwareManager.getDisplayGammaCalibrationMax();
+            int min = mHardware.getDisplayGammaCalibrationMin();
+            int max = mHardware.getDisplayGammaCalibrationMax();
             for (int color = 0; color < BAR_COLORS.length; color++) {
                 ViewGroup item = (ViewGroup) inflater.inflate(
                         R.layout.display_gamma_calibration_item, container, false);
@@ -165,7 +166,7 @@ public class DisplayGamma extends DialogPreference {
                         mSeekBars[index][color].setGamma(val);
                         mCurrentColors[index][color] = val;
                     }
-                    mMkHardwareManager.setDisplayGammaCalibration(index, mCurrentColors[index]);
+                    mHardware.setDisplayGammaCalibration(index, mCurrentColors[index]);
                 }
             }
        });
@@ -179,12 +180,12 @@ public class DisplayGamma extends DialogPreference {
             Editor editor = getEditor();
             for (int i = 0; i < mNumberOfControls; i++) {
                 editor.putString("display_gamma_" + i,
-                        buildPreferenceValue(mMkHardwareManager.getDisplayGammaCalibration(i)));
+                        buildPreferenceValue(mHardware.getDisplayGammaCalibration(i)));
             }
             editor.apply();
         } else if (mOriginalColors != null) {
             for (int i = 0; i < mNumberOfControls; i++) {
-                mMkHardwareManager.setDisplayGammaCalibration(i, mOriginalColors[i]);
+                mHardware.setDisplayGammaCalibration(i, mOriginalColors[i]);
             }
         }
     }
@@ -204,7 +205,7 @@ public class DisplayGamma extends DialogPreference {
 
         // Restore the old state when the activity or dialog is being paused
         for (int i = 0; i < mNumberOfControls; i++) {
-            mMkHardwareManager.setDisplayGammaCalibration(i, mOriginalColors[i]);
+            mHardware.setDisplayGammaCalibration(i, mOriginalColors[i]);
         }
         mOriginalColors = null;
 
@@ -229,7 +230,7 @@ public class DisplayGamma extends DialogPreference {
             for (int color = 0; color < BAR_COLORS.length; color++) {
                 mSeekBars[index][color].setGamma(mCurrentColors[index][color]);
             }
-            mMkHardwareManager.setDisplayGammaCalibration(index, mCurrentColors[index]);
+            mHardware.setDisplayGammaCalibration(index, mCurrentColors[index]);
         }
     }
 
@@ -245,22 +246,21 @@ public class DisplayGamma extends DialogPreference {
     }
 
     public static void restore(Context context) {
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        if (!hardware.isSupported(MKHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
             return;
         }
 
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         int[] rgb = new int[3];
-        for (int i = 0; i < mkHardwareManager.getNumGammaControls(); i++) {
+        for (int i = 0; i < hardware.getNumGammaControls(); i++) {
             final String value = prefs.getString("display_gamma_" + i, null);
             if (value != null) {
                 final String[] values = value.split(" ");
                 rgb[0] = Integer.valueOf(values[0]);
                 rgb[1] = Integer.valueOf(values[1]);
                 rgb[2] = Integer.valueOf(values[2]);
-                mkHardwareManager.setDisplayGammaCalibration(i, rgb);
+                hardware.setDisplayGammaCalibration(i, rgb);
             }
         }
     }
@@ -351,7 +351,7 @@ public class DisplayGamma extends DialogPreference {
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             if (fromUser) {
                 mCurrentColors[mControlIndex][mColorIndex] = progress + mMin;
-                mMkHardwareManager.setDisplayGammaCalibration(mControlIndex,
+                mHardware.setDisplayGammaCalibration(mControlIndex,
                         mCurrentColors[mControlIndex]);
             }
             mValue.setText(String.valueOf(progress + mMin));

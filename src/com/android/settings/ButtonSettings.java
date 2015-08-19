@@ -26,7 +26,6 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.hardware.MkHardwareManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.Handler;
@@ -51,6 +50,8 @@ import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -281,13 +282,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
 
-        final MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(context);
 
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
-        if (mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE)) {
+        if (hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE)) {
             try {
                 IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
                 needsNavigationBar = wm.needsNavigationBar();
@@ -468,7 +468,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
 
             if (!hasNavBar && (needsNavigationBar ||
-                    !mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE))) {
+                    !hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE))) {
                 result.put(CATEGORY_NAVBAR, null);
             }
         } catch (RemoteException e) {
@@ -667,9 +667,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
-        MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        mkHardwareManager.set(MkHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        hardware.set(MKHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
@@ -733,9 +732,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     public static void restoreKeyDisabler(Context context) {
-        MkHardwareManager mkHardwareManager =
-                (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
-        if (!mkHardwareManager.isSupported(MkHardwareManager.FEATURE_KEY_DISABLE)) {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        if (!hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE)) {
             return;
         }
 

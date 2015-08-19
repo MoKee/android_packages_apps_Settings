@@ -30,13 +30,13 @@ import com.android.internal.view.RotationPolicy;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import static android.hardware.MkHardwareManager.FEATURE_TAP_TO_WAKE;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 import static android.provider.Settings.Secure.WAKE_GESTURE_ENABLED;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL;
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static mokee.hardware.MKHardwareManager.FEATURE_TAP_TO_WAKE;
 
 import android.app.Activity;
 import android.app.ActivityManagerNative;
@@ -49,7 +49,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.SharedPreferences;
-import android.hardware.MkHardwareManager;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
@@ -79,6 +78,8 @@ import java.util.List;
 
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.Utils;
+
+import mokee.hardware.MKHardwareManager;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener, Indexable {
@@ -130,7 +131,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
 
-    private MkHardwareManager mMkHardwareManager;
+    private MKHardwareManager mHardware;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -154,7 +155,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         final Activity activity = getActivity();
         final ContentResolver resolver = activity.getContentResolver();
-        mMkHardwareManager = (MkHardwareManager) activity.getSystemService(Context.MKHW_SERVICE);
+        mHardware = MKHardwareManager.getInstance(activity);
 
         addPreferencesFromResource(R.xml.display);
 
@@ -270,7 +271,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
         if (displayPrefs != null && mTapToWake != null
-                && !mMkHardwareManager.isSupported(FEATURE_TAP_TO_WAKE)) {
+                && !mHardware.isSupported(FEATURE_TAP_TO_WAKE)) {
             displayPrefs.removePreference(mTapToWake);
             mTapToWake = null;
         }
@@ -458,7 +459,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateDisplayRotationPreferenceDescription();
 
         if (mTapToWake != null) {
-            mTapToWake.setChecked(mMkHardwareManager.get(FEATURE_TAP_TO_WAKE));
+            mTapToWake.setChecked(mHardware.get(FEATURE_TAP_TO_WAKE));
         }
 
         RotationPolicy.registerRotationPolicyListener(getActivity(),
@@ -627,7 +628,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mTapToWake) {
-            return mMkHardwareManager.set(FEATURE_TAP_TO_WAKE, mTapToWake.isChecked());
+            return mHardware.set(FEATURE_TAP_TO_WAKE, mTapToWake.isChecked());
         } else if (preference == mWakeWhenPluggedOrUnplugged) {
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
@@ -711,8 +712,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
      */
     public static void restore(Context ctx) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
-        MkHardwareManager mkHardwareManager =
-            (MkHardwareManager) ctx.getSystemService(Context.MKHW_SERVICE);
+        MKHardwareManager mkHardwareManager = MKHardwareManager.getInstance(ctx);
         if (mkHardwareManager.isSupported(FEATURE_TAP_TO_WAKE)) {
             final boolean enabled = prefs.getBoolean(KEY_TAP_TO_WAKE,
                 mkHardwareManager.get(FEATURE_TAP_TO_WAKE));
@@ -743,8 +743,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    MkHardwareManager mkHardwareManager =
-                        (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+                    MKHardwareManager mkHardwareManager = MKHardwareManager.getInstance(context);
                     ArrayList<String> result = new ArrayList<String>();
                     if (!context.getResources().getBoolean(
                             com.android.internal.R.bool.config_dreamsSupported)) {

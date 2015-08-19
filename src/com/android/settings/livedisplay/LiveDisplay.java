@@ -16,13 +16,17 @@
  */
 package com.android.settings.livedisplay;
 
+import static mokee.hardware.MKHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
+import static mokee.hardware.MKHardwareManager.FEATURE_COLOR_ENHANCEMENT;
+import static mokee.hardware.MKHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
+import static mokee.hardware.MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
+
 import android.app.Activity;
 import android.database.ContentObserver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.database.ContentObserver;
-import android.hardware.MkHardwareManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,17 +40,14 @@ import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
-import static android.hardware.MkHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
-import static android.hardware.MkHardwareManager.FEATURE_COLOR_ENHANCEMENT;
-import static android.hardware.MkHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
-import static android.hardware.MkHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
-
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+
+import mokee.hardware.MKHardwareManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,7 +96,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     private int mDefaultDayTemperature;
     private int mDefaultNightTemperature;
 
-    private MkHardwareManager mMkHardwareManager;
+    private MKHardwareManager mHardware;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -109,7 +110,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         mDefaultNightTemperature = res.getInteger(
                 com.android.internal.R.integer.config_nightColorTemperature);
 
-        mMkHardwareManager = (MkHardwareManager) activity.getSystemService(Context.MKHW_SERVICE);
+        mHardware = MKHardwareManager.getInstance(activity);
 
         addPreferencesFromResource(R.xml.livedisplay);
 
@@ -132,7 +133,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
                 com.android.internal.R.array.live_display_summaries);
 
         // Remove outdoor mode from lists if there is no support
-        if (!mMkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+        if (!mHardware.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
             int idx = ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_OUTDOOR));
             String[] entriesTemp = new String[mModeEntries.length - 1];
             String[] valuesTemp = new String[mModeValues.length - 1];
@@ -160,27 +161,27 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
         mLowPower = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_LOW_POWER);
         if (liveDisplayPrefs != null && mLowPower != null
-                && !mMkHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
+                && !mHardware.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
             liveDisplayPrefs.removePreference(mLowPower);
             mLowPower = null;
         }
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
-                && !mMkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+                && !mHardware.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
 
         mColorEnhancement = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
         if (liveDisplayPrefs != null && mColorEnhancement != null
-                && !mMkHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
+                && !mHardware.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mColorEnhancement);
             mColorEnhancement = null;
         }
 
         if (calibrationPrefs != null
-                && !mMkHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+                && !mHardware.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
             Preference gammaPref = findPreference(KEY_DISPLAY_GAMMA);
             if (gammaPref != null) {
                 calibrationPrefs.removePreference(gammaPref);
@@ -310,17 +311,16 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
         @Override
         public List<String> getNonIndexableKeys(Context context) {
-             MkHardwareManager mkHardwareManager =
-                    (MkHardwareManager) context.getSystemService(Context.MKHW_SERVICE);
+             MKHardwareManager hardware = MKHardwareManager.getInstance(context);
 
             ArrayList<String> result = new ArrayList<String>();
-            if (!mkHardwareManager.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
+            if (!hardware.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
             }
-            if (!mkHardwareManager.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
+            if (!hardware.isSupported(FEATURE_COLOR_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
             }
-            if (!mkHardwareManager.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
+            if (!hardware.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
                 result.add(KEY_LIVE_DISPLAY_LOW_POWER);
             }
             if (!isPostProcessingSupported(context)) {
@@ -328,7 +328,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
             } else {
                 result.add(KEY_DISPLAY_COLOR);
             }
-            if (!mkHardwareManager.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
+            if (!hardware.isSupported(FEATURE_DISPLAY_GAMMA_CALIBRATION)) {
                 result.add(KEY_DISPLAY_GAMMA);
             }
             return result;
