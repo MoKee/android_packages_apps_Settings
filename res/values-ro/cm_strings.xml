@@ -53,6 +53,8 @@
   <string name="profile_populate_profile_from_state">Configurați profilul utilizând setările curente ale dispozitivului?</string>
   <string name="profile_menu_fill_from_state">Încărcare setări curente ale dispozitivului</string>
   <string name="profile_remove_current_profile">Nu se poate șterge profilul curent!</string>
+  <string name="profile_app_group_category_title">Suprascriere notificări</string>
+  <string name="profile_app_group_item_instructions">Adăugați sau eliminați grupuri</string>
   <string name="profile_entries_on">Pornit</string>
   <string name="profile_entries_off">Oprit</string>
   <string name="profile_entries_no_override">Nu suprascrie</string>
@@ -82,6 +84,7 @@
   <string name="profile_system_settings_title">Setari sistem</string>
   <string name="profile_lockmode_title">Modul blocare ecran</string>
   <string name="profile_lockmode_insecure_summary">Nu cere codul PIN sau parola</string>
+  <string name="profile_lockmode_disabled_summary">Dezactivare blocare ecran</string>
   <string name="profile_airplanemode_title">Modul avion</string>
   <string name="profile_brightness_title">Luminozitate ecran</string>
   <string name="profile_brightness_override_summary">Setat la %1$d%%</string>
@@ -162,6 +165,7 @@
   <string name="blacklist_prefs">Setări</string>
   <string name="blacklist_button_delete">Șterge</string>
   <string name="blacklist_summary_disabled">Dezactivat</string>
+  <string name="blacklist_summary">Nu veți primi apeluri sau mesaje de la numere de telefon pe lista apelanților blocați</string>
   <string name="blacklist_notify">Afișare notificare</string>
   <string name="blacklist_private_numbers_title">Numere private</string>
   <string name="blacklist_private_numbers_summary_disabled">Nu bloca apelurile de la numere private</string>
@@ -202,12 +206,16 @@
   <string name="display_rotation_270_title">270 de grade</string>
   <string name="app_security_title">Securitate aplicație</string>
   <string name="sms_security_check_limit_title">Limită mesaj SMS</string>
+  <string name="sms_security_check_limit_summary">Aplicațiile pot trimite %d mesaje în 1 minut înainte de fi necesară confirmarea</string>
   <string name="sms_security_check_limit_summary_none">Aplicațiile nu pot trimite niciun mesaj decât cu confirmare</string>
   <string name="sms_security_check_limit_none">Fără</string>
   <string name="spam_added_title">Adăugat %1$s</string>
   <string name="block_notifications_title">Filtru notificări</string>
   <string name="block_notifications_summary">Gestionați notificările ignorate și filtrele</string>
   <string name="no_filters_title">Niciun filtru setat</string>
+  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
+  <string name="mod_version">versiune CyanogenMod</string>
+  <string name="mod_version_default">Necunoscut</string>
   <string name="device_model">Modelul dispozitivului</string>
   <string name="device_name">Numele dispozitivului</string>
   <string name="build_date">Dată compilare</string>
@@ -215,6 +223,7 @@
   <string name="double_tap_to_wake_summary">Atingeți de două ori ecranul pentru a activa afișajul</string>
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
   <string name="proximity_wake_summary">Verificați senzorul de proximitate înainte de trezirea ecranului</string>
+  <string name="privacy_settings_cyanogenmod_title">Intimitate</string>
   <string name="privacy_guard_default_title">Activat în mod implicit</string>
   <string name="privacy_guard_default_summary">Activat în mod implicit pentru aplicațiile nou-instalate</string>
   <string name="privacy_guard_manager_title">Gardian Intimitate</string>
@@ -239,6 +248,7 @@
   <string name="device_hostname">Hostname dispozitiv</string>
   <string name="development_shortcut_title">Comandă rapidă dezvoltare</string>
   <string name="double_tap_to_sleep_title">Dublă-apăsare pentru stand-by</string>
+  <string name="double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a dezactiva afișarea</string>
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
   <string name="kill_app_longpress_back">Butonul înapoi închide aplicația</string>
@@ -522,6 +532,7 @@
   <string name="bluetooth_accept_all_files">Acceptă toate tipurile de fișiere</string>
   <string name="sim_pin_disable_failed">Nu se poate dezactiva PIN.</string>
   <string name="sim_pin_enable_failed">Imposibil de activat PIN-ul.</string>
+  <string name="sim_pin_change_failed_enable_sim_lock">Pentru a modifica PIN-ul SIM/RUIM, activează întâi blocarea SIM/RUIM.</string>
   <string name="sim_pin_enabled">PIN1 activat</string>
   <string name="sim_pin_disabled">PIN1 dezactivat</string>
   <string name="storage_usb">Stocare USB</string>
@@ -535,8 +546,10 @@
   <string name="usb_eject" product="default">Demontează mediul de stocare USB</string>
   <string name="usb_format" product="default">Șterge stocarea USB</string>
   <string name="usb_format_summary" product="default">Șterge toate datele de pe dispozitivul de stocare USB, cum ar fi muzică și fotografii</string>
+  <string name="uicc_format" product="default">Șterge stocarea UICC</string>
   <string name="uicc_format_summary" product="default">Șterge toate datele de pe dispozitivul de stocare UICC, cum ar fi muzică și fotografii</string>
   <string name="usb_settings_enable_ums_title">Activați stocarea în masă?</string>
+  <string name="usb_settings_enable_ums_message">Componente de sistem și aplicații se bazează pe stocarea primară ca fiind întotdeauna disponibilă. Această caracteristică întrerupe această funcționalitate. Este recomandat să utilizați MTP în schimb. Sunteți sigur că doriți să activați stocarea în masă?</string>
   <string name="dlg_confirm_sdcard_unmount_title" product="default">Demontează cardul SD?</string>
   <string name="dlg_confirm_usb_unmount_title" product="default">Demontează mediul de stocare USB?</string>
   <string name="dlg_error_sdcard_unmount_text" product="default">Nu s-a putut demonta cardul SD. Încercați din nou mai târziu.</string>
@@ -544,15 +557,19 @@
   <string name="sdcard_unmount_inform_text" product="default">Cardul SD va fi demontat.</string>
   <string name="usb_unmount_inform_text" product="default">Mediul de stocare USB va fi demontat.</string>
   <string name="sdcard_media_format_desc" product="default">Ștergeți cardul SD? Veți pierde <b>toate</b> datele de pe card!</string>
+  <string name="sdcard_media_format_button_text" product="default">Șterge cardul SD</string>
   <string name="usb_media_format_button_text" product="default">Șterge stocarea USB</string>
+  <string name="uicc_media_format_button_text" product="default">Șterge stocarea UICC</string>
   <string name="sdcard_media_format_final_desc" product="default">Ștergeți cardul SD, ștergând toate fișierele stocate acolo? Această acțiune nu este reversibilă!</string>
   <string name="usb_media_format_final_desc" product="default">Ștergeți mediul de stocare USB, ștergând toate fișierele stocate acolo? Această acțiune nu este reversibilă!</string>
   <string name="uicc_media_format_final_desc" product="default">Ștergeți mediul de stocare UICC, ștergând toate fișierele stocate acolo? Această acțiune nu este reversibilă!</string>
+  <string name="sdcard_media_format_gesture_explanation" product="default">Este necesar să desenați modelul dumneavoastră de deblocare pentru a confirma ștergerea cardului SD.</string>
   <string name="usb_media_format_gesture_explanation" product="default">Este necesar să desenați modelul dumneavoastră de deblocare pentru a confirma ștergerea mediului de stocare USB.</string>
   <string name="uicc_media_format_gesture_explanation" product="default">Este necesar să desenați modelul dumneavoastră de deblocare pentru a confirma ștergerea mediului de stocare UICC.</string>
   <string name="internal_sd_format">Șterge mediul de stocare intern</string>
   <string name="master_clear_desc_erase_internal_storage">\n\nPentru a șterge muzică, imagini și alte date de utilizator, <b>mediul intern de stocare</b> trebuie să fie șters.</string>
   <string name="erase_internal_storage">Șterge mediul de stocare intern</string>
+  <string name="storage_rescan_media">Rescanare media pentru volumul de stocare</string>
   <string name="location_category_enhanced_location">Locație îmbunătățită (IZat)</string>
   <string name="app_ops_settings_summary">Vezi sau schimbă permisiunile aplicației</string>
   <string name="enable_adb_summary_charging">Aparatul este în modul de încărcare, depanarea USB este dezactivată</string>
@@ -563,6 +580,7 @@
   <string name="sim_disabled">dezactivat</string>
   <string name="sim_missing">lipsă sau defect</string>
   <string name="sim_enabler_need_disable_sim">Dezactivarea cartelei SIM?</string>
+  <string name="sim_enabler_airplane_on">Nu se poate efectua operațiunea cât timp modul avion este activ.</string>
   <string name="sim_enabler_in_call">Nu se poate efectua operațiunea în timpul unui apel.</string>
   <string name="sim_enabler_both_inactive">Nu se pot dezactiva toate cartelele SIM</string>
   <string name="sim_enabler_sim">SIM</string>
@@ -573,6 +591,8 @@
   <string name="usb_charging_title">Doar încărcare</string>
   <string name="usb_charging_summary">Dezactivează toate transferurile de date cu computerul și încarcă bateria prin portul USB</string>
   <string name="usb_sdcard_title">Spațiul de stocare (UMS)</string>
+  <string name="usb_not_connected">USB este acum deconectat</string>
+  <string name="stats_collection_title">Colectarea de statistici</string>
   <string name="power_notifications_category_title">Sunete de încărcare</string>
   <string name="power_notifications_enable_title">Activare</string>
   <string name="power_notifications_enable_summary">Redă un sunet la conectarea sau deconectarea unei surse de alimentare</string>
@@ -591,6 +611,8 @@
   <string name="pref_force_highend_gfx_summary">Permite efecte vizuale de calitate înaltă, cum ar fi transparența barei de stare/navigare (necesită repornire sistem)</string>
   <string name="edge_gesture_service_title">Blochează evenimentele la gesturile de atingere</string>
   <string name="edge_gesture_service_summary">Nu timite la aplicații gesturile de atingere la navigare și gesturile barei de stare</string>
+  <string name="cmlicense_title">Juridic CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Juridic CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Afișare eroare model</string>
   <string name="lockpattern_settings_enable_dots_title">Afișare puncte model</string>
   <string name="unlock_quick_unlock_control_title">Deblocare rapidă</string>
@@ -630,6 +652,9 @@
   <string name="qs_tile_heads_up">Atenționare</string>
   <string name="qs_tile_ambient_display">Afișare ambientală</string>
   <string name="qs_tile_sync">Sincronizare</string>
+  <string name="qs_dynamic_tile_next_alarm">Următoarea alarmă</string>
+  <string name="qs_dynamic_tile_ime_selector">Selector IME</string>
+  <string name="qs_dynamic_tile_su">Acces root</string>
   <string name="qs_main_tiles_title">Mărire primul rând</string>
   <string name="qs_main_tiles_summary_off">Trei plăcuțe pe fiecare rând</string>
   <string name="qs_advanced_location_title">Setări avansate locație</string>
@@ -657,8 +682,11 @@
   <string name="title_general">General</string>
   <string name="lockscreen_targets_message">Comenzi rapide ale ecranului de blocare</string>
   <string name="lockscreen_default_target">Implicit</string>
+  <string name="lockscreen_none_target">Nimic</string>
   <string name="lockscreen_message">Apăsați o pictogramă de pe stânga sau dreapta pentru a realoca o comandă rapidă pe ecranul de blocare.</string>
   <string name="lockscreen_choose_action_title">Alege acțiunea</string>
+  <string name="whisperpush_title">WhisperPush</string>
+  <string name="whisperpush_summary">Gestionare setări SMS sigur</string>
   <string name="navigation_ring_message">Atingeți pictograma editare pentru a deschide inelul de navigare pentru editare.\n\nSelectați o țintă pentru a configura comportamentul său.\n\nAtingeți pictograma \'\u2713\' pentru a salva modificările, sau \"Restabilire valori implicite\" pentru a reseta la setările implicite.</string>
   <string name="lcd_density">Densitate LCD</string>
   <string name="dialog_title_lcd_density">Densitate LCD</string>
@@ -700,7 +728,7 @@
   <string name="category_lights">Lumini</string>
   <string name="power_usage_history_title">Consumul bateriei</string>
   <string name="recents_show_searchbar">Afișare bară de căutare în meniul de recente</string>
-  <string name="keywords_recents_show_searchbar">recent recente dezactivează activează afişează ascunde bara de căutare baradecăutare</string>
+  <string name="keywords_recents_show_searchbar">recent recente dezactivează activează afișează ascunde bara de căutare baradecăutare</string>
   <string name="sim_ringtone_title">SIM %d ton de apel</string>
   <string name="live_display_mode">Mod de afișare</string>
   <string name="live_display_color_temperature_title">Temperatura culorii</string>
@@ -711,7 +739,24 @@
   <string name="live_display_enhance_color_title">Sporește culorile</string>
   <string name="live_display_enhance_color_summary">Îmbunătățește dinamica culorilor pentru tonuri, peisaje și alte imagini</string>
   <string name="battery_saver_summary_unavailable">Nu este disponibil în timpul încărcării</string>
+  <string name="anonymous_statistics_title">Statistici CyanogenMod</string>
+  <string name="anonymous_statistics_summary">Ajută-ne să facem CyanogenMod mai bun prin trimiterea de rapoarte anonime cu statistici</string>
+  <string name="anonymous_statistics_warning_title">Despre</string>
+  <string name="anonymous_statistics_warning">Optând să trimiteți Statistici CyanogenMod, se permite dezvoltatorilor CyanogenMod să primească date ne-personale pentru a urmări instalările unice la o gama mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
+  <string name="enable_reporting_title">Activare raportare</string>
+  <string name="preview_data_title">Previzualizare date</string>
+  <string name="view_stats_title">Vezi statistici</string>
+  <string name="anonymous_learn_more">Află mai multe</string>
+  <string name="preview_id_title">ID unic</string>
+  <string name="preview_device_title">Dispozitiv</string>
+  <string name="preview_version_title">Versiune</string>
+  <string name="preview_country_title">Țara</string>
+  <string name="preview_carrier_title">Operator</string>
   <string name="heads_up_notifications">Atenționare</string>
+  <string name="lock_to_cyanogen_title">Protecție dispozitiv</string>
+  <string name="lock_to_cyanogen_summary">Solicită parola contului Cyanogen OS, chiar și după o resetare la setările din fabrică</string>
+  <string name="lock_to_cyanogen_disable_msg">Dezactivarea aceastei facilități va permite utilizatorilor neautorizați să reseteze telefonul la setările din fabrică în cazul în care este furat. Datele cu caracter personal nu pot fi protejate. Vreți să dezactivați această caracteristică?</string>
+  <string name="lock_to_cyanogen_master_clear_warning">Protecția dispozitivului este activată. Vă rugăm să o dezactivați pentru a continua resetarea dispozitivului.</string>
   <string name="sim_mobile_network_settings_category_title">Setări rețea mobilă</string>
   <string name="sim_mobile_network_settings_title">Setări cartelă SIM %d</string>
   <string name="factory_reset_instructions_title">Date personale &amp; aplicații</string>
@@ -733,8 +778,11 @@
   <string name="wifi_countrycode_entries_in">India</string>
   <string name="unlock_set_unlock_mode_fingerprint">Amprentă</string>
   <string name="unlock_set_unlock_fingerprint_title">Amprentă</string>
+  <string name="fingerprint_manage_fingerprints">Gestionare amprente digitale</string>
+  <string name="fingerprint_dialog_title_rename">Editare amprentă</string>
   <string name="fingerprint_dialog_name_label">Nume amprentă</string>
   <string name="fingerprint_enrollment_done_label">Efectuat</string>
+  <string name="fingerprint_dialog_title_failed_enrollment">Nu se poate citi amprenta</string>
   <string name="menu_stats_reset">Resetare statistici</string>
   <string name="setup_lock_pattern_size_title">Complexitatea modelului</string>
 </resources>
