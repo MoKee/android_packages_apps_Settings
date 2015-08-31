@@ -650,6 +650,7 @@
   <string name="live_display_outdoor_mode_title">自動戶外模式</string>
   <string name="live_display_enhance_color_title">增強色彩</string>
   <string name="battery_saver_summary_unavailable">無法在充電時啟用</string>
+  <string name="keep_screen_on_never">從不</string>  
   <string name="keep_screen_on_debugging">當進行USB調試時</string>
   <string name="keep_screen_on_charging">當充電時</string>
   <string name="contributors_cloud_fragment_title">貢獻者</string>
