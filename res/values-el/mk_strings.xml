@@ -45,7 +45,7 @@
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>
   <string name="smartcontrol_settings_title">Έξυπνος έλεγχος</string>
   <string name="direct_control_title">Άμεσος έλεγχος</string>
-  <string name="direct_call_for_dialer_title">Άμεση κλήση στον dailer</string>
+  <string name="direct_call_for_dialer_title">Άμεση κλήση στον dialer</string>
   <string name="direct_call_for_dialer_summary">Άρει το τηλέφωνο στο αυτί μετά την είσοδό του αριθμό στην dialer να καλέσετε απευθείας</string>
   <string name="direct_call_for_mms_title">Άμεση κλήση σε MMS</string>
   <string name="direct_call_for_mms_summary">Ακουμπόντας τηλέφωνο στο αυτί θα καλέσει αυτόματα την τρέχουσα επαφή</string>
