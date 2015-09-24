@@ -21,6 +21,8 @@
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.**
 
+-dontwarn mokee.support.widget.snackbar.**
+
 -keep class com.android.settings.cyanogenmod.*Settings
 -keep class com.android.settings.privacyguard.*
 -keep class com.android.settings.voicewakeup.*

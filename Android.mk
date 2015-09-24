@@ -6,6 +6,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v7-cardview \
 	android-support-v13 \
+	mokee-support-widget \
 	jsr305 \
 	org.mokee.platform.sdk \
 	libGoogleAnalyticsV3 \
@@ -20,7 +21,8 @@ LOCAL_SRC_FILES := \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    frameworks/support/v7/cardview/res
+    frameworks/support/v7/cardview/res \
+    frameworks/support/mk/widget/res
 
 LOCAL_SRC_FILES += \
         src/com/android/location/XT/IXTSrv.aidl \
@@ -39,7 +41,8 @@ LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 LOCAL_AAPT_FLAGS := \
         --auto-add-overlay \
         --extra-packages com.mokee.helper \
-        --extra-packages android.support.v7.cardview
+        --extra-packages android.support.v7.cardview \
+        --extra-packages mokee.support.widget
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
 LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
 
