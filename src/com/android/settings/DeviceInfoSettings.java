@@ -57,6 +57,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import mokee.support.widget.snackbar.Snackbar;
+import mokee.support.widget.snackbar.SnackbarManager;
+
 public class DeviceInfoSettings extends SettingsPreferenceFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
@@ -96,7 +99,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
-    Toast mDevHitToast;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -206,7 +208,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         mDevHitCountdown = getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                 Context.MODE_PRIVATE).getBoolean(DevelopmentSettings.PREF_SHOW,
                         android.os.Build.TYPE.equals("eng")) ? -1 : TAPS_TO_BE_A_DEVELOPER;
-        mDevHitToast = null;
     }
 
     @Override
@@ -237,12 +238,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                             Context.MODE_PRIVATE).edit().putBoolean(
                                     DevelopmentSettings.PREF_SHOW, true).apply();
-                    if (mDevHitToast != null) {
-                        mDevHitToast.cancel();
-                    }
-                    mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_on_cm,
-                            Toast.LENGTH_LONG);
-                    mDevHitToast.show();
+                    SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_on_cm)
+                            .duration(Snackbar.SnackbarDuration.LENGTH_LONG).colorResource(R.color.theme_primary));
                     // This is good time to index the Developer Options
                     Index.getInstance(
                             getActivity().getApplicationContext()).updateFromClassNameResource(
@@ -250,21 +247,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
                 } else if (mDevHitCountdown > 0
                         && mDevHitCountdown < (TAPS_TO_BE_A_DEVELOPER-2)) {
-                    if (mDevHitToast != null) {
-                        mDevHitToast.cancel();
-                    }
-                    mDevHitToast = Toast.makeText(getActivity(), getResources().getQuantityString(
-                            R.plurals.show_dev_countdown_cm, mDevHitCountdown, mDevHitCountdown),
-                            Toast.LENGTH_SHORT);
-                    mDevHitToast.show();
+                    SnackbarManager.show(Snackbar.with(getActivity()).text(getResources().getQuantityString(
+                            R.plurals.show_dev_countdown_cm, mDevHitCountdown, mDevHitCountdown)).colorResource(R.color.theme_primary));
                 }
             } else if (mDevHitCountdown < 0) {
-                if (mDevHitToast != null) {
-                    mDevHitToast.cancel();
-                }
-                mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_already_cm,
-                        Toast.LENGTH_LONG);
-                mDevHitToast.show();
+                SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_already_cm)
+                        .duration(Snackbar.SnackbarDuration.LENGTH_LONG).colorResource(R.color.theme_primary));
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
