@@ -715,9 +715,6 @@
   <string name="qs_tile_heads_up">Heads up</string>
   <string name="qs_tile_ambient_display">หน้าจอแวดล้อม</string>
   <string name="qs_tile_sync">ซิงค์</string>
-  <string name="qs_dynamic_tile_next_alarm">การปลุกครั้งต่อไป</string>
-  <string name="qs_dynamic_tile_ime_selector">ตัวเลือก IME</string>
-  <string name="qs_dynamic_tile_su">สิทธิผู้ดูแลระบบ</string>
   <string name="qs_main_tiles_title">ขยายแถวแรก</string>
   <string name="qs_main_tiles_summary_on">สองไทต์หลักบนแถวแรก</string>
   <string name="qs_main_tiles_summary_off">สามไทต์ต่อแถว</string>
