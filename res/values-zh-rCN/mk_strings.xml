@@ -120,6 +120,8 @@
   <string name="status_bar_clock_show_second_summary">时间中显示秒钟</string>
   <string name="show_su_icon_title">显示超级用户图标</string>
   <string name="show_su_icon_summary">当超级用户处于活动状态时在状态栏显示图标</string>
+  <string name="show_headset_icon_title">显示耳机图标</string>
+  <string name="show_headset_icon_summary">当插入耳机时在状态栏显示图标</string>
   <string name="double_tap_to_sleep_navbar_title">双击导航键以睡眠</string>
   <string name="double_tap_to_sleep_navbar_summary">双击导航键以关闭屏幕显示</string>
   <string name="battery_optimizer_title">续航优化</string>
