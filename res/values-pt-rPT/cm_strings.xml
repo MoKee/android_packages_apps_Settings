@@ -674,6 +674,9 @@
   <string name="edge_gesture_service_summary">Não enviar às aplicações eventos de toque para os gestos da barra de navegação e estado</string>
   <string name="lockpattern_settings_enable_error_path_title">Mostrar erro padrão</string>
   <string name="lockpattern_settings_enable_dots_title">Mostrar pontos padrão</string>
+  <string name="lock_directly_show_password">Mostrar diretamente a entrada de palavra-passe</string>
+  <string name="lock_directly_show_pattern">Mostrar diretamente a entrada padrão</string>
+  <string name="lock_directly_show_pin">Mostrar diretamente a entrada do código PIN</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/palavra-passe correto é inserido</string>
   <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
@@ -721,6 +724,7 @@
   <string name="qs_tile_heads_up">Notificações pop-up</string>
   <string name="qs_tile_ambient_display">Visualização de ambiente</string>
   <string name="qs_tile_sync">Sincronização</string>
+  <string name="qs_tile_battery_saver">Economizador de bateria</string>
   <string name="qs_main_tiles_title">Ampliar a primeira linha</string>
   <string name="qs_main_tiles_summary_on">Dois botões na primeira linha</string>
   <string name="qs_main_tiles_summary_off">Três botões em cada linha</string>

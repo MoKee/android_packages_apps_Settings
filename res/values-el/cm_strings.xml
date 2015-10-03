@@ -724,6 +724,7 @@
   <string name="qs_tile_heads_up">Αναδυόμενες ειδοποιήσεις</string>
   <string name="qs_tile_ambient_display">Οθόνη ambient</string>
   <string name="qs_tile_sync">Συγχρονισμός</string>
+  <string name="qs_tile_battery_saver">Εξοικονόμηση μπαταρίας</string>
   <string name="qs_main_tiles_title">Μεγέθυνση της πρώτης γραμμής</string>
   <string name="qs_main_tiles_summary_on">Δύο κύρια πλακίδια στην πρώτη γραμμή</string>
   <string name="qs_main_tiles_summary_off">Τρία πλακίδια σε κάθε γραμμή</string>
