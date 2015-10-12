@@ -121,7 +121,7 @@ public class PushingMessageReceiver extends BroadcastReceiver {
                     }
                     break;
                 case 4:
-                    if (user.equals(Build.BUILD_USER)) {
+                    if (user.equals(android.os.Build.USER)) {
                         promptUser(ctx, url, title, message, msg_id, R.drawable.ic_mokee_msg);
                     }
             }
