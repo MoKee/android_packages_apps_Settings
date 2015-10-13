@@ -223,6 +223,7 @@
   <string name="block_notifications_title">Suodata ilmoitukset</string>
   <string name="block_notifications_summary">Hallitse estettyjä ilmoituksia ja suodattimia</string>
   <string name="no_filters_title">Suodattimia ei asetettu</string>
+  <string name="security_patch">Android suojauskorjauksen taso</string>
   <string name="device_model">Laitteen malli</string>
   <string name="device_name">Laitteen nimi</string>
   <string name="build_date">Luontipäivä</string>
@@ -336,6 +337,7 @@
   <string name="notification_light_missed_call_title">Vastaamaton puhelu</string>
   <string name="notification_light_voicemail_title">Vastaaja</string>
   <string name="notification_light_screen_on">Valot näytön ollessa päällä</string>
+  <string name="notification_light_use_multiple_leds">Useampi LED</string>
   <string name="keywords_lights_brightness_level">dim leds brightness kirkkaus led himmentää himmennys</string>
   <string name="notification_ringtone_title_cm">Ilmoitusääni</string>
   <string name="headset_connect_player_title">Käynnistä musiikkisovellus</string>
@@ -724,6 +726,7 @@
   <string name="qs_tile_heads_up">Heads up</string>
   <string name="qs_tile_ambient_display">Ambient-näyttö</string>
   <string name="qs_tile_sync">Synkronointi</string>
+  <string name="qs_tile_battery_saver">Virransäästö</string>
   <string name="qs_main_tiles_title">Pienennä ensimmäinen rivi</string>
   <string name="qs_main_tiles_summary_on">Kaksi päätiiltä ensimmäisellä rivillä</string>
   <string name="qs_main_tiles_summary_off">Kolme tiiltä rivillä</string>

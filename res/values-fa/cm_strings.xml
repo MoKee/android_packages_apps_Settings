@@ -723,6 +723,7 @@
   <string name="qs_tile_heads_up">اعلان فوری</string>
   <string name="qs_tile_ambient_display">نمایش حساس به محیط</string>
   <string name="qs_tile_sync">همگام‌‌سازی</string>
+  <string name="qs_tile_battery_saver">بهینه‌ساز باتری</string>
   <string name="qs_main_tiles_title">بزرگ کردن ردیف اول</string>
   <string name="qs_main_tiles_summary_on">دو کاشی اصلی در ردیف اول</string>
   <string name="qs_main_tiles_summary_off">سه کاشی در هر ردیف</string>

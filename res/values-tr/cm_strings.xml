@@ -223,6 +223,7 @@
   <string name="block_notifications_title">Bildirimleri filtrele</string>
   <string name="block_notifications_summary">Yoksayılan bildirimleri ve filtreleri yönet</string>
   <string name="no_filters_title">Hiçbir filtre ayarlanmadı</string>
+  <string name="security_patch">Android güvenlik yaması seviyesi</string>
   <string name="device_model">Cihaz modeli</string>
   <string name="device_name">Cihaz ismi</string>
   <string name="build_date">İnşa tarihi</string>
@@ -724,6 +725,7 @@
   <string name="qs_tile_heads_up">Bildirim Pencereleri</string>
   <string name="qs_tile_ambient_display">Bildirim ekranı</string>
   <string name="qs_tile_sync">Eşitleme</string>
+  <string name="qs_tile_battery_saver">Pil tasarrufu</string>
   <string name="qs_main_tiles_title">İlk satırı büyüt</string>
   <string name="qs_main_tiles_summary_on">İlk satırdaki iki ana kare</string>
   <string name="qs_main_tiles_summary_off">Her satırdaki üç kare</string>

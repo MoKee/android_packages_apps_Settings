@@ -223,6 +223,7 @@
   <string name="block_notifications_title">Filtrar notificaciones</string>
   <string name="block_notifications_summary">Gestionar filtros y notificaciones bloqueadas</string>
   <string name="no_filters_title">No hay filtros establecidos</string>
+  <string name="security_patch">Nivel de parche de seguridad de Android</string>
   <string name="device_model">Modelo del dispositivo</string>
   <string name="device_name">Nombre del terminal</string>
   <string name="build_date">Fecha de compilación</string>
@@ -241,6 +242,7 @@
   <string name="privacy_guard_reset_text">¿Restablecer permisos?</string>
   <string name="privacy_guard_help_text">En esta pantalla puedes elegir las aplicaciones para las que se activará Privacidad simplemente tocando sobre ellas. Las aplicaciones seleccionadas no podrán acceder a tu información personal, como contactos, mensajes o registro de llamadas. Realiza una pulsación prolongada para mostrar la pantalla de detalles de la aplicación.\n\nLas aplicaciones del sistema no se muestran por defecto, pero pueden mostrarse seleccionando la opción de menú correspondiente.</string>
   <string name="privacy_guard_manager_show_system_apps">Aplicaciones del sistema</string>
+  <string name="privacy_guard_notification_title">Mostrar notificación</string>
   <string name="app_ops_btn_text">Modificar</string>
   <string name="increasing_ring_volume_option_title">Volumen de timbre ascendente</string>
   <string name="increasing_ring_min_volume_title">Volumen inicial</string>
@@ -673,6 +675,9 @@
   <string name="edge_gesture_service_summary">No enviar a las aplicaciones eventos táctiles de la barra de estado y de navegación</string>
   <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
   <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
+  <string name="lock_directly_show_password">Mostrar directamente la contraseña</string>
+  <string name="lock_directly_show_pattern">Mostrar directamente el patrón</string>
+  <string name="lock_directly_show_pin">Mostrar directamente el PIN</string>
   <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
   <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN/clave correcto</string>
   <string name="unlock_scramble_pin_layout_title">Disposición aleatoria</string>
@@ -720,6 +725,7 @@
   <string name="qs_tile_heads_up">Notificaciones emergentes</string>
   <string name="qs_tile_ambient_display">Pantalla ambiente</string>
   <string name="qs_tile_sync">Sincronizar</string>
+  <string name="qs_tile_battery_saver">Modo de ahorro de batería</string>
   <string name="qs_main_tiles_title">Ampliar la primera fila</string>
   <string name="qs_main_tiles_summary_on">Dos controles principales en la primera fila</string>
   <string name="qs_main_tiles_summary_off">Tres controles en cada fila</string>

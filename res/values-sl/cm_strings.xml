@@ -225,6 +225,7 @@
   <string name="block_notifications_title">Filtriraj obvestila</string>
   <string name="block_notifications_summary">Upravljaj s prezrtimi obvestili in filtri</string>
   <string name="no_filters_title">Ni nastavljenih filtrov</string>
+  <string name="security_patch">Raven varnostnega popravka za Android</string>
   <string name="device_model">Model naprave</string>
   <string name="device_name">Ime naprave</string>
   <string name="build_date">Datum izgradnje</string>
@@ -726,6 +727,7 @@
   <string name="qs_tile_heads_up">Obvestila na zaslonu</string>
   <string name="qs_tile_ambient_display">Okoliški zaslon</string>
   <string name="qs_tile_sync">Sinhroniziraj</string>
+  <string name="qs_tile_battery_saver">Ohranjevalnik baterije</string>
   <string name="qs_main_tiles_title">Povečaj prvo vrstico</string>
   <string name="qs_main_tiles_summary_on">Dve glavni ploščici v prvo vrsto</string>
   <string name="qs_main_tiles_summary_off">Tri ploščice na vsako vrstico</string>

@@ -224,6 +224,7 @@
   <string name="block_notifications_title">Фильтр уведомлений</string>
   <string name="block_notifications_summary">Настройка игнорируемых уведомлений и фильтров</string>
   <string name="no_filters_title">Фильтр не установлен</string>
+  <string name="security_patch">Обновление системы безопасности</string>
   <string name="device_model">Модель устройства</string>
   <string name="device_name">Имя устройства</string>
   <string name="build_date">Дата сборки</string>
@@ -725,6 +726,7 @@
   <string name="qs_tile_heads_up">Всплывающие уведомления</string>
   <string name="qs_tile_ambient_display">Индикация событий</string>
   <string name="qs_tile_sync">Синхронизация</string>
+  <string name="qs_tile_battery_saver">Режим энергосбережения</string>
   <string name="qs_main_tiles_title">Увеличить первый ряд</string>
   <string name="qs_main_tiles_summary_on">Две главные плитки на первом ряду</string>
   <string name="qs_main_tiles_summary_off">Три плитки на каждом ряду</string>

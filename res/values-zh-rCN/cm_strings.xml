@@ -222,6 +222,7 @@
   <string name="block_notifications_title">通知过滤</string>
   <string name="block_notifications_summary">管理已忽略的通知和过滤器</string>
   <string name="no_filters_title">没有设置过滤</string>
+  <string name="security_patch">Android 安全补丁程序级别</string>
   <string name="device_model">设备型号</string>
   <string name="device_name">设备名称</string>
   <string name="build_date">编译日期</string>
@@ -335,6 +336,7 @@
   <string name="notification_light_missed_call_title">未接来电</string>
   <string name="notification_light_voicemail_title">语音信箱</string>
   <string name="notification_light_screen_on">屏幕开启时点亮指示灯</string>
+  <string name="notification_light_use_multiple_leds">多 LED</string>
   <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
   <string name="notification_ringtone_title_cm">通知铃声</string>
   <string name="headset_connect_player_title">启动音乐播放器</string>
@@ -723,6 +725,7 @@
   <string name="qs_tile_heads_up">浮动通知</string>
   <string name="qs_tile_ambient_display">环境显示</string>
   <string name="qs_tile_sync">同步</string>
+  <string name="qs_tile_battery_saver">省电模式</string>
   <string name="qs_main_tiles_title">扩大第一行</string>
   <string name="qs_main_tiles_summary_on">第一行两个主要瓷块</string>
   <string name="qs_main_tiles_summary_off">每行三个瓷块</string>
