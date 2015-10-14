@@ -128,6 +128,8 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import mokee.providers.MKSettings;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -1484,7 +1486,7 @@ public class SettingsActivity extends Activity
         if (forceAdvancedMode) {
             return true;
         }
-        return (android.provider.Settings.Secure.getInt(context.getContentResolver(),
-                android.provider.Settings.Secure.ADVANCED_MODE, 0) == 1);
+        return (MKSettings.Secure.getInt(context.getContentResolver(),
+                MKSettings.Secure.ADVANCED_MODE, 0) == 1);
     }
 }
