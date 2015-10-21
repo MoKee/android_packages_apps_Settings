@@ -17,6 +17,7 @@
 package com.android.settings.mokee.stats;
 
 import com.mokee.os.Build;
+import com.mokee.os.Build$VERSION;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
@@ -25,45 +26,31 @@ import android.text.TextUtils;
 public class Utilities {
 
     public static String getIMEI(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx
-                .getSystemService(Context.TELEPHONY_SERVICE);
-        return !TextUtils.isEmpty(tm.getDeviceId()) ? tm.getDeviceId() : "Unknown";
+        TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
+        String imei = tm.getDeviceId();
+        return TextUtils.isEmpty(imei) ? "Unknown" : imei;
     }
 
     public static String getCarrier(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx
-                .getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
         String carrier = tm.getNetworkOperatorName();
-        if (TextUtils.isEmpty(carrier)) {
-            carrier = "Unknown";
-        }
-        return carrier;
+        return TextUtils.isEmpty(carrier) ? "Unknown" : carrier;
     }
 
     public static String getCarrierId(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx
-                .getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
         String carrierId = tm.getNetworkOperator();
-        if (TextUtils.isEmpty(carrierId)) {
-            carrierId = "0";
-        }
-        return carrierId;
+        return TextUtils.isEmpty(carrierId) ? "0" : carrierId;
     }
 
     public static String getCountryCode(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx
-                .getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
         String countryCode = tm.getNetworkCountryIso();
-        if (TextUtils.isEmpty(countryCode)) {
-            countryCode = "Unknown";
-        }
-        return countryCode;
+        return TextUtils.isEmpty(countryCode) ? "Unknown" : countryCode;
     }
 
-    public static String getMoKeeMajorVersion() {
-        String modVersion = Build.MOKEE_VERSION;
-        int index = modVersion.indexOf("-");
-        return !modVersion.startsWith("MK") ? "Unknown" : modVersion.substring(0, index);
+    public static String getVersionCode() {
+        return Build$VERSION.CODENAME.startsWith("MK") ? Build$VERSION.CODENAME : "Unknown";
     }
 
 }

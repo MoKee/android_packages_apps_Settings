@@ -38,7 +38,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
     protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
-    protected static final String DEVICE_MOKEE_MAJOR_VERSION = "pref_device_mokee_major_version";
+    protected static final String ANONYMOUS_VERSION_CODE = "pref_anonymous_version_code";
 
     private static final long MILLIS_PER_HOUR = 60L * 60L * 1000L;
     private static final long MILLIS_PER_DAY = 24L * MILLIS_PER_HOUR;
@@ -82,15 +82,15 @@ public class ReportingServiceManager extends BroadcastReceiver {
         if (MoKeeUtils.isOnline(ctx)) {
             final SharedPreferences prefs = ctx.getSharedPreferences(ANONYMOUS_PREF, 0);
             long lastSynced = prefs.getLong(ANONYMOUS_LAST_CHECKED, 0);
-            String deviceMoKeeMajorVersion = Utilities.getMoKeeMajorVersion();
-            String prefDeviceMoKeeMajorVersion = prefs.getString(DEVICE_MOKEE_MAJOR_VERSION, deviceMoKeeMajorVersion);
+            String versionCode = Utilities.getVersionCode();
+            String prefVersionCode = prefs.getString(ANONYMOUS_VERSION_CODE, versionCode);
 
             boolean shouldSync = false;
             if (lastSynced == 0) {
                 shouldSync = true;
             } else if (System.currentTimeMillis() - lastSynced >= UPDATE_INTERVAL) {
                 shouldSync = true;
-            } else if (!deviceMoKeeMajorVersion.equals(prefDeviceMoKeeMajorVersion)) {
+            } else if (!versionCode.equals(prefVersionCode)) {
                 shouldSync = true;
             }
             if (shouldSync) {

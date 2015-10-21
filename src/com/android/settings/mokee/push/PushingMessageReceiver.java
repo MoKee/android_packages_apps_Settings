@@ -80,8 +80,8 @@ public class PushingMessageReceiver extends BroadcastReceiver {
             String user = PushingUtils.getStringFromJson("user", customJson);
             String IMEI = PushingUtils.getStringFromJson("imei", customJson);
             int msg_id = PushingUtils.getIntFromJson("id", customJson);
-            String mod_device = Build.PRODUCT_NAME.toLowerCase();
-            String mod_version = Build.MOKEE_VERSION.toLowerCase();
+            String mod_device = Build.PRODUCT.toLowerCase();
+            String mod_version = Build.VERSION.toLowerCase();
 
             switch (msg_id) {
                 case 0:

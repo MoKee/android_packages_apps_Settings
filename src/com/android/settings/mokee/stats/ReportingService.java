@@ -78,8 +78,8 @@ public class ReportingService extends Service {
         protected Boolean doInBackground(Void... params) {
             final Context context = ReportingService.this;
             String deviceId = Build.getUniqueID(context);
-            String deviceName = Build.PRODUCT_NAME;
-            String deviceVersion = Build.MOKEE_VERSION;
+            String deviceName = Build.PRODUCT;
+            String deviceVersion = Build.VERSION;
             String deviceCountry = Utilities.getCountryCode(context);
             String deviceCarrier = Utilities.getCarrier(context);
             String deviceCarrierId = Utilities.getCarrierId(context);
@@ -142,7 +142,7 @@ public class ReportingService extends Service {
             long interval;
 
             if (result) {
-                String deviceMoKeeMajorVersion = Utilities.getMoKeeMajorVersion();
+                String versionCode = Utilities.getVersionCode();
                 final SharedPreferences prefs = getSharedPreferences(ReportingServiceManager.ANONYMOUS_PREF, 0);
                 long device_flash_time = 0;
                 try {
@@ -152,7 +152,7 @@ public class ReportingService extends Service {
                 }
                 prefs.edit().putLong(ReportingServiceManager.ANONYMOUS_LAST_CHECKED,
                         System.currentTimeMillis()).putLong(ReportingServiceManager.ANONYMOUS_FLASH_TIME,
-                                    device_flash_time).putString(ReportingServiceManager.DEVICE_MOKEE_MAJOR_VERSION, deviceMoKeeMajorVersion).apply();
+                                    device_flash_time).putString(ReportingServiceManager.ANONYMOUS_VERSION_CODE, versionCode).apply();
                 // use set interval
                 interval = 0;
             } else {
