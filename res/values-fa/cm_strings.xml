@@ -222,6 +222,7 @@
   <string name="block_notifications_title">فیلتر کردن اعلان‌ها</string>
   <string name="block_notifications_summary">مدیریت فیلترها و اعلان‌های چشم پوشی شده</string>
   <string name="no_filters_title">هیچ فیلتری تنظیم نشده است</string>
+  <string name="security_patch">سطح پچ امنیت اندروید</string>
   <string name="device_model">مدل دستگاه</string>
   <string name="device_name">نام دستگاه</string>
   <string name="build_date">تاریخ ساخت</string>
@@ -883,8 +884,6 @@
   <string name="fingerprint_dialog_title_rename">ویرایش اثر انگشت</string>
   <string name="fingerprint_dialog_name_label">نام اثر انگشت</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">تعداد مجاز اثر انگشت به حداکثر رسیده است</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">شما تنها می‌توانید <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> اثر انگشت ثبت کنید. یکی از اثرهای انگشت موجود را حذف کنید.</string>
-  <string name="fingerprint_title_manage_fingerprints">مدیریت اثرهای انگشت <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
   <string name="manage_fingerprints_description">اثر انگشت به شما اجازه می‌دهد فورا قفل گوشی خود را باز کرده و عکس بگیرید.</string>
   <string name="fingerprint_enrollment_introduction_title">حسگر خود را بیابید</string>
   <string name="fingerprint_enrollment_introduction_instructions">حسگر اثر انگشت در قسمت جلو یا پشت گوشی شما قرار دارد.</string>
