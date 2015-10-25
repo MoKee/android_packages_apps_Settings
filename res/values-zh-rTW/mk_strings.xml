@@ -45,7 +45,6 @@
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
   <string name="smartcontrol_settings_title">智能控制</string>
   <string name="direct_control_title">感應控制</string>
-  <string name="direct_call_for_dialer_title">直接播打</string>
   <string name="direct_call_for_dialer_summary">手機放在耳邊時將撥打當前撥號器輸入的電話號碼</string>
   <string name="direct_call_for_mms_title">直接發送MMS</string>
   <string name="direct_call_for_mms_summary">手機放在耳邊時將自動撥打上次簡訊聯絡人的電話號碼</string>

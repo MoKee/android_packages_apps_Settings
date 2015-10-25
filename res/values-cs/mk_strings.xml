@@ -45,7 +45,6 @@
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>
   <string name="smartcontrol_settings_title">Chytré ovládání</string>
   <string name="direct_control_title">Přímé ovládání</string>
-  <string name="direct_call_for_dialer_title">Přímé volání ve vytáčení</string>
   <string name="direct_call_for_dialer_summary">Po zadání čísla přiložte telefon k uchu, aby jste volali přímo</string>
   <string name="direct_call_for_mms_title">Přímé volání v MMS</string>
   <string name="direct_call_for_mms_summary">Zvedněte telefon k uchu pro automatické vytočení aktuálního kontaktu</string>

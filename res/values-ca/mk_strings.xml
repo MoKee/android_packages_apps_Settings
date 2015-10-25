@@ -45,7 +45,6 @@
   <string name="blacklist_all_numbers_summary">Bloquejar totes les trucades</string>
   <string name="smartcontrol_settings_title">Control intel·ligent</string>
   <string name="direct_control_title">Control directe</string>
-  <string name="direct_call_for_dialer_title">Trucada directa</string>
   <string name="direct_call_for_dialer_summary">Apropar el telèfon a l\'orella després de marcar el nombre per fer la trucada directament</string>
   <string name="direct_call_for_mms_title">Trucada directa en MMS</string>
   <string name="direct_call_for_mms_summary">Apropar el telèfon a l\'orella trucarà automàticament al contacte actual</string>
