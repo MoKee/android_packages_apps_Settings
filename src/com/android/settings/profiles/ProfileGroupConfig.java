@@ -24,10 +24,10 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
-import cyanogenmod.app.ProfileGroup.Mode;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileGroup;
+import mokee.app.ProfileGroup.Mode;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

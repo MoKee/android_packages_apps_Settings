@@ -20,7 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
+import mokee.app.Profile;
 
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;

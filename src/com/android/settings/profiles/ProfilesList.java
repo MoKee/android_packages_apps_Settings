@@ -19,8 +19,8 @@ package com.android.settings.profiles;
 import java.util.UUID;
 
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.preference.Preference;

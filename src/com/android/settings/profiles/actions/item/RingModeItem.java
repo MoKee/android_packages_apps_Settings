@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import cyanogenmod.profiles.RingModeSettings;
+import mokee.profiles.RingModeSettings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

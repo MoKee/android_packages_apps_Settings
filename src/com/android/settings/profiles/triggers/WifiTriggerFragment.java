@@ -31,8 +31,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.profiles.ProfilesSettings;

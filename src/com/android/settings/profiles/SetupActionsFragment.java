@@ -17,15 +17,15 @@ package com.android.settings.profiles;
 
 import android.app.Activity;
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.profiles.AirplaneModeSettings;
+import mokee.profiles.AirplaneModeSettings;
 import android.app.AlertDialog;
-import cyanogenmod.profiles.BrightnessSettings;
-import cyanogenmod.profiles.ConnectionSettings;
+import mokee.profiles.BrightnessSettings;
+import mokee.profiles.ConnectionSettings;
 import android.app.Dialog;
 import android.app.NotificationGroup;
-import cyanogenmod.profiles.LockSettings;
-import cyanogenmod.profiles.RingModeSettings;
-import cyanogenmod.profiles.StreamSettings;
+import mokee.profiles.LockSettings;
+import mokee.profiles.RingModeSettings;
+import mokee.profiles.StreamSettings;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -61,9 +61,9 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileGroup;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
@@ -88,15 +88,15 @@ import com.android.settings.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIMAX;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
+import static mokee.profiles.ConnectionSettings.PROFILE_CONNECTION_WIMAX;
 
 public class SetupActionsFragment extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener {

@@ -27,8 +27,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 

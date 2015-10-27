@@ -22,9 +22,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileGroup;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;

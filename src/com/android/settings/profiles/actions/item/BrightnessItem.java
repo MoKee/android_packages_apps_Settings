@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import cyanogenmod.profiles.BrightnessSettings;
+import mokee.profiles.BrightnessSettings;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

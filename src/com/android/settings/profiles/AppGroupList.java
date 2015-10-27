@@ -22,7 +22,7 @@ import android.annotation.Nullable;
 import android.app.AlertDialog;
 import android.app.NotificationGroup;
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.ProfileManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;

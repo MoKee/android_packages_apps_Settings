@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.triggers;
 
-import cyanogenmod.app.Profile;
+import mokee.app.Profile;
 
 
 public class AbstractTriggerItem {

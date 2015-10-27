@@ -44,15 +44,15 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
 import com.android.settings.Utils;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.UUID;
 
@@ -228,8 +228,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
     private void updateProfilesEnabledState() {
         Activity activity = getActivity();
 
-        mEnabled = CMSettings.System.getInt(activity.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mEnabled = MKSettings.System.getInt(activity.getContentResolver(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         activity.invalidateOptionsMenu();
 
         mAddProfileFab.setVisibility(mEnabled ? View.VISIBLE : View.GONE);

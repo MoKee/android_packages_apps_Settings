@@ -28,7 +28,7 @@ import android.nfc.tech.NdefFormatable;
 import android.os.Vibrator;
 import android.util.Log;
 
-import cyanogenmod.app.Profile;
+import mokee.app.Profile;
 
 public class NFCProfileUtils {
 

@@ -16,7 +16,7 @@
 
 package com.android.settings.profiles;
 
-import cyanogenmod.app.ProfileManager;
+import mokee.app.ProfileManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -38,7 +38,7 @@ import com.android.settings.search.Index;
 import com.android.settings.widget.SwitchBar;
 import com.android.settings.wifi.WifiSettings;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -100,8 +100,8 @@ public class ProfileEnabler implements SwitchBar.OnSwitchChangeListener  {
     }
 
     private void setSwitchState() {
-        boolean enabled = CMSettings.System.getInt(mContext.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        boolean enabled = MKSettings.System.getInt(mContext.getContentResolver(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         mStateMachineEvent = true;
         setSwitchBarChecked(enabled);
         mStateMachineEvent = false;
@@ -115,8 +115,8 @@ public class ProfileEnabler implements SwitchBar.OnSwitchChangeListener  {
         }
 
         // Handle a switch change
-        CMSettings.System.putInt(mContext.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0);
+        MKSettings.System.putInt(mContext.getContentResolver(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0);
 
         // Send a broadcast intent to the world
         // TODO Enabling or disabling profiles should be at ProfileManager, not here
@@ -136,8 +136,8 @@ public class ProfileEnabler implements SwitchBar.OnSwitchChangeListener  {
 
         void observe() {
             ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(CMSettings.System.getUriFor(
-                    CMSettings.System.SYSTEM_PROFILES_ENABLED), false, this);
+            resolver.registerContentObserver(MKSettings.System.getUriFor(
+                    MKSettings.System.SYSTEM_PROFILES_ENABLED), false, this);
             update();
         }
 

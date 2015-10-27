@@ -15,7 +15,7 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import cyanogenmod.profiles.ConnectionSettings;
+import mokee.profiles.ConnectionSettings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
