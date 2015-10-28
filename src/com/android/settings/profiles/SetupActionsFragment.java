@@ -26,6 +26,7 @@ import android.app.NotificationGroup;
 import mokee.profiles.LockSettings;
 import mokee.profiles.RingModeSettings;
 import mokee.profiles.StreamSettings;
+import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -75,6 +76,7 @@ import com.android.settings.profiles.actions.item.AirplaneModeItem;
 import com.android.settings.profiles.actions.item.BrightnessItem;
 import com.android.settings.profiles.actions.item.AppGroupItem;
 import com.android.settings.profiles.actions.item.ConnectionOverrideItem;
+import com.android.settings.profiles.actions.item.DisabledItem;
 import com.android.settings.profiles.actions.item.DozeModeItem;
 import com.android.settings.profiles.actions.item.Header;
 import com.android.settings.profiles.actions.item.Item;
@@ -238,7 +240,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new Header(getString(R.string.profile_system_settings_title)));
         mItems.add(new RingModeItem(mProfile.getRingMode()));
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
-        mItems.add(new LockModeItem(mProfile));
+        DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
+                Context.DEVICE_POLICY_SERVICE);
+        if (!dpm.requireSecureKeyguard()) {
+            mItems.add(new LockModeItem(mProfile));
+        } else {
+            mItems.add(new DisabledItem(R.string.profile_lockmode_title,
+                    R.string.profile_lockmode_policy_disabled_summary));
+        }
         mItems.add(new BrightnessItem(mProfile.getBrightness()));
 
         final Activity activity = getActivity();
@@ -886,12 +895,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                brightnessSettings.setOverride(isChecked);
                 seekBar.setEnabled(isChecked);
-
-                mProfile.setBrightness(brightnessSettings);
-                mAdapter.notifyDataSetChanged();
-                updateProfile();
             }
         });
         seekBar.setEnabled(brightnessSettings.isOverride());
@@ -903,6 +907,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             public void onClick(DialogInterface dialog, int which) {
                 int value = seekBar.getProgress();
                 brightnessSettings.setValue(value);
+                brightnessSettings.setOverride(override.isChecked());
                 mProfile.setBrightness(brightnessSettings);
                 mAdapter.notifyDataSetChanged();
                 updateProfile();
@@ -1037,7 +1042,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         final Item itemAtPosition = (Item) parent.getItemAtPosition(position);
         mSelectedItem = itemAtPosition;
-        mLastSelectedPosition = position;
+        mLastSelectedPosition = mAdapter.getPosition(itemAtPosition);
 
         if (itemAtPosition instanceof AirplaneModeItem) {
             showDialog(DIALOG_AIRPLANE_MODE);

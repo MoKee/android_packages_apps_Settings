@@ -30,9 +30,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.view.ViewPager;
 import android.support.v13.app.FragmentStatePagerAdapter;
-import android.util.Log;
-import android.view.Gravity;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -143,11 +140,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
 
         // check if we are enabled
         updateProfilesEnabledState();
-
-        // If running on a phone, remove padding around tabs
-        if (!Utils.isTablet(getActivity())) {
-            mContainer.setPadding(0, 0, 0, 0);
-        }
     }
 
     @Override
@@ -204,7 +196,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
         args.putBoolean(EXTRA_NEW_PROFILE, true);
         args.putParcelable(EXTRA_PROFILE, new Profile(getString(R.string.new_profile_name)));
 
-        SubSettings pa = (SubSettings) getActivity();
+        SettingsActivity pa = (SettingsActivity) getActivity();
         pa.startPreferencePanel(SetupTriggersFragment.class.getCanonicalName(), args,
                 0, null, this, 0);
     }
@@ -218,7 +210,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         mProfileManager.resetAll();
-                        mAdapter.refreshProfiles();
+                        mProfileManager.setActiveProfile(
+                                mProfileManager.getActiveProfile().getUuid());
                     }
                 })
                 .setNegativeButton(R.string.cancel, null)
