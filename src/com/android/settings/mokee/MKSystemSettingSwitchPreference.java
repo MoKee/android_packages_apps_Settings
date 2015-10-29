@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod project
+ * Copyright (C) 2015 The MoKee Open Source project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.mokee;
 
 import android.content.Context;
 import android.preference.SwitchPreference;
 import android.util.AttributeSet;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
-public class CMSystemSettingSwitchPreference extends SwitchPreference {
-    public CMSystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
+public class MKSystemSettingSwitchPreference extends SwitchPreference {
+    public MKSystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
-    public CMSystemSettingSwitchPreference(Context context, AttributeSet attrs) {
+    public MKSystemSettingSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CMSystemSettingSwitchPreference(Context context) {
+    public MKSystemSettingSwitchPreference(Context context) {
         super(context, null);
     }
 
@@ -41,7 +41,7 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
                 // It's already there, so the same as persisting
                 return true;
             }
-            CMSettings.System.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
+            MKSettings.System.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
             return true;
         }
         return false;
@@ -52,7 +52,7 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
         if (!shouldPersist()) {
             return defaultReturnValue;
         }
-        return CMSettings.System.getInt(getContext().getContentResolver(),
+        return MKSettings.System.getInt(getContext().getContentResolver(),
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
 
@@ -60,6 +60,6 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
     protected boolean isPersisted() {
         // Using getString instead of getInt so we can simply check for null
         // instead of catching an exception. (All values are stored as strings.)
-        return CMSettings.System.getString(getContext().getContentResolver(), getKey()) != null;
+        return MKSettings.System.getString(getContext().getContentResolver(), getKey()) != null;
     }
 }
