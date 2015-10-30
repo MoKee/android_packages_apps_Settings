@@ -92,6 +92,7 @@ import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageDetail;
 import com.android.settings.fuelgauge.PowerUsageSummary;
+import com.android.settings.livedisplay.LiveDisplay;
 import com.android.settings.notification.OtherSoundSettings;
 import com.android.settings.profiles.NFCProfileTagCallback;
 import com.android.settings.search.DynamicIndexableContentMonitor;
@@ -361,6 +362,7 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
+            LiveDisplay.class.getName()
     };
 
 
@@ -1245,7 +1247,8 @@ public class SettingsActivity extends Activity
                 DashboardTile tile = category.getTile(n);
                 boolean removeTile = false;
                 id = (int) tile.id;
-                if (id == R.id.operator_settings || id == R.id.manufacturer_settings) {
+                if (id == R.id.operator_settings || id == R.id.manufacturer_settings
+                        || id == R.id.device_specific_gesture_settings) {
                     if (!Utils.updateTileToSpecificActivityFromMetaDataOrRemove(this, tile)) {
                         removeTile = true;
                     }

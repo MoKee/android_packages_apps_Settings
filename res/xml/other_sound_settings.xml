@@ -43,6 +43,14 @@
             android:title="@string/docking_sounds_title"
             android:persistent="false" />
 
+    <!-- Volume adjust sounds -->
+    <SwitchPreference
+            android:key="volume_adjust_sounds"
+            android:title="@string/volume_adjust_sounds_title"
+            android:switchTextOff=""
+            android:switchTextOn=""
+            android:persistent="false" />
+
     <!-- Touch sounds -->
     <SwitchPreference
             android:key="touch_sounds"
@@ -55,6 +63,13 @@
             android:title="@string/vibrate_on_touch_title"
             android:persistent="false" />
 
+    <!-- CMHW vibration intensity -->
+    <com.android.settings.hardware.VibratorIntensity
+            android:key="vibration_intensity"
+            android:title="@string/vibrator_intensity_title"
+            android:dialogTitle="@string/vibrator_intensity_title"
+            android:persistent="false" />
+
     <!-- Dock speaker plays -->
     <com.android.settings.DropDownPreference
             android:key="dock_audio_media"
@@ -65,6 +80,29 @@
     <com.android.settings.DropDownPreference
             android:key="emergency_tone"
             android:title="@string/emergency_tone_title"
+            android:persistent="false" />
+
+    <PreferenceCategory
+            android:title="@string/power_notifications_category_title"/>
+
+    <SwitchPreference
+            android:key="power_notifications"
+            android:title="@string/power_notifications_enable_title"
+            android:summary="@string/power_notifications_enable_summary"
+            android:defaultValue="false"
+            android:persistent="false" />
+
+    <SwitchPreference
+            android:key="power_notifications_vibrate"
+            android:title="@string/power_notifications_vibrate_title"
+            android:defaultValue="false"
+            android:dependency="power_notifications"
+            android:persistent="false" />
+
+    <Preference
+            android:key="power_notifications_ringtone"
+            android:title="@string/power_notifications_ringtone_title"
+            android:dependency="power_notifications"
             android:persistent="false" />
 
 </PreferenceScreen>

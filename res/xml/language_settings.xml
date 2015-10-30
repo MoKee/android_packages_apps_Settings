@@ -57,7 +57,41 @@
             android:persistent="false">
         <!-- Additional preference screens are inserted here programmatically
              with low order values to set the key map of each attached keyboard. -->
+
+        <SwitchPreference
+                android:key="auto_replace"
+                android:title="@string/auto_replace"
+                android:summaryOn="@string/auto_replace_summary"
+                android:summaryOff="@string/auto_replace_summary"
+                android:order="1000"
+                android:persistent="false"
+                />
+
+        <SwitchPreference
+                android:key="auto_caps"
+                android:title="@string/auto_caps"
+                android:summaryOn="@string/auto_caps_summary"
+                android:summaryOff="@string/auto_caps_summary"
+                android:order="1001"
+                android:persistent="false"
+                />
+
+        <SwitchPreference
+                android:key="auto_punctuate"
+                android:title="@string/auto_punctuate"
+                android:summaryOn="@string/auto_punctuate_summary"
+                android:summaryOff="@string/auto_punctuate_summary"
+                android:order="1002"
+                android:persistent="false"
+                />
+
     </PreferenceCategory>
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_ime_switcher"
+            android:title="@string/ime_switcher_notify"
+            android:summary="@string/ime_switcher_notify_summary"
+            android:defaultValue="true" />
 
     <PreferenceCategory
             android:key="voice_category"
@@ -81,6 +115,37 @@
                 android:dialogTitle="@string/pointer_speed"
                 />
 
+        <PreferenceScreen
+                android:fragment="com.android.settings.inputmethod.StylusGestures"
+                android:key="stylus_gestures"
+                android:title="@string/gestures_settings_title" />
+
+        <SwitchPreference android:key="stylus_icon_enabled"
+                android:title="@string/stylus_icon_enabled_title"
+                android:summary="@string/stylus_icon_enabled_summary"
+                android:defaultValue="false"
+                android:persistent="false" />
+
+        <SwitchPreference
+                android:key="high_touch_sensitivity"
+                android:title="@string/high_touch_sensitivity_title"
+                android:summary="@string/high_touch_sensitivity_summary"
+                android:defaultValue="false" />
+
+        <SwitchPreference
+                android:key="touchscreen_hovering"
+                android:title="@string/touchscreen_hovering_title"
+                android:summary="@string/touchscreen_hovering_summary"
+                android:defaultValue="false" />
+
+        <!-- Gesture pad settings -->
+        <Preference
+            android:key="gesture_pad_settings">
+            <intent
+                android:action="com.cyanogenmod.action.LAUNCH_GESTURE_PAD_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.GesturePadSettings" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory

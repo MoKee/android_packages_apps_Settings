@@ -16,6 +16,9 @@ LOCAL_SRC_FILES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
+LOCAL_SRC_FILES += \
+        src/com/android/display/IPPService.aidl
+
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
@@ -31,6 +34,7 @@ include frameworks/opt/setupwizard/navigationbar/common.mk
 include frameworks/opt/setupwizard/library/common.mk
 include frameworks/base/packages/SettingsLib/common.mk
 
+LOCAL_JAVA_LIBRARIES += org.mokee.hardware
 include $(BUILD_PACKAGE)
 
 # Use the following include to make our test apk.

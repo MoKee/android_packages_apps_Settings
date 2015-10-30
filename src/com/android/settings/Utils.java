@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.annotation.Nullable;
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
@@ -31,6 +32,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.IPackageManager;
 import android.content.pm.IntentFilterVerificationInfo;
@@ -40,6 +42,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.content.pm.Signature;
 import android.content.pm.UserInfo;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
 import android.content.res.TypedArray;
@@ -81,6 +84,8 @@ import android.util.ArraySet;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
+import android.view.DisplayInfo;
+import android.view.Surface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -213,6 +218,98 @@ public final class Utils {
                     }
 
                     return true;
+                }
+            }
+        }
+
+        // Did not find a matching activity, so remove the preference
+        parentPreferenceGroup.removePreference(preference);
+
+        return false;
+    }
+
+    /**
+     * Finds a matching activity for a preference's intent. If a matching
+     * activity is not found, it will remove the preference. The icon, title and
+     * summary of the preference will also be updated with the values retrieved
+     * from the activity's meta-data elements. If no meta-data elements are
+     * specified then the preference title will be set to match the label of the
+     * activity, an icon and summary text will not be displayed.
+     *
+     * @param context The context.
+     * @param parentPreferenceGroup The preference group that contains the
+     *            preference whose intent is being resolved.
+     * @param preferenceKey The key of the preference whose intent is being
+     *            resolved.
+     *
+     * @return Whether an activity was found. If false, the preference was
+     *         removed.
+     *
+     * @see {@link #META_DATA_PREFERENCE_ICON}
+     *      {@link #META_DATA_PREFERENCE_TITLE}
+     *      {@link #META_DATA_PREFERENCE_SUMMARY}
+     */
+    public static boolean updatePreferenceToSpecificActivityFromMetaDataOrRemove(Context context,
+            PreferenceGroup parentPreferenceGroup, String preferenceKey) {
+
+        Preference preference = parentPreferenceGroup.findPreference(preferenceKey);
+        if (preference == null) {
+            return false;
+        }
+
+        Intent intent = preference.getIntent();
+        if (intent != null) {
+            // Find the activity that is in the system image
+            PackageManager pm = context.getPackageManager();
+            List<ResolveInfo> list = pm.queryIntentActivities(intent, PackageManager.GET_META_DATA);
+            int listSize = list.size();
+            for (int i = 0; i < listSize; i++) {
+                ResolveInfo resolveInfo = list.get(i);
+                if ((resolveInfo.activityInfo.applicationInfo.flags
+                        & ApplicationInfo.FLAG_SYSTEM) != 0) {
+                    Drawable icon = null;
+                    String title = null;
+                    String summary = null;
+
+                    // Get the activity's meta-data
+                    try {
+                        Resources res = pm
+                                .getResourcesForApplication(resolveInfo.activityInfo.packageName);
+                        Bundle metaData = resolveInfo.activityInfo.metaData;
+
+                        if (res != null && metaData != null) {
+                            if (preference instanceof IconPreferenceScreen) {
+                                icon = res.getDrawable(metaData.getInt(META_DATA_PREFERENCE_ICON));
+                            }
+                            title = res.getString(metaData.getInt(META_DATA_PREFERENCE_TITLE));
+                            summary = res.getString(metaData.getInt(META_DATA_PREFERENCE_SUMMARY));
+                        }
+                    } catch (NameNotFoundException e) {
+                        // Ignore
+                    } catch (NotFoundException e) {
+                        // Ignore
+                    }
+
+                    // Set the preference title to the activity's label if no
+                    // meta-data is found
+                    if (TextUtils.isEmpty(title)) {
+                        title = resolveInfo.loadLabel(pm).toString();
+                    }
+
+                    // Set icon, title and summary for the preference
+                    preference.setTitle(title);
+                    preference.setSummary(summary);
+                    if (preference instanceof IconPreferenceScreen) {
+                        IconPreferenceScreen iconPreference = (IconPreferenceScreen) preference;
+                        iconPreference.setIcon(icon);
+                    }
+
+                    // Replace the intent with this specific activity
+                    preference.setIntent(new Intent().setClassName(
+                            resolveInfo.activityInfo.packageName,
+                            resolveInfo.activityInfo.name));
+
+                   return true;
                 }
             }
         }
@@ -654,6 +751,32 @@ public final class Utils {
 
     public static boolean isTablet(Context context) {
         return getScreenType(context) == DEVICE_TABLET;
+    }
+
+    /* returns whether the device has volume rocker or not. */
+    public static boolean hasVolumeRocker(Context context) {
+        final int deviceKeys = context.getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        return (deviceKeys & ButtonSettings.KEY_MASK_VOLUME) != 0;
+    }
+
+    public static boolean isPackageInstalled(Context context, String pkg, boolean ignoreState) {
+        if (pkg != null) {
+            try {
+                PackageInfo pi = context.getPackageManager().getPackageInfo(pkg, 0);
+                if (!pi.applicationInfo.enabled && !ignoreState) {
+                    return false;
+                }
+            } catch (NameNotFoundException e) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static boolean isPackageInstalled(Context context, String pkg) {
+        return isPackageInstalled(context, pkg, true);
     }
 
     /**
@@ -1323,4 +1446,36 @@ public final class Utils {
         }
     }
 
+    /**
+     * Locks the activity orientation to the current device orientation
+     * @param activity
+     */
+    public static void lockCurrentOrientation(Activity activity) {
+        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
+        int orientation = activity.getResources().getConfiguration().orientation;
+        int frozenRotation = 0;
+        switch (currentRotation) {
+            case Surface.ROTATION_0:
+                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
+                        ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                        : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+                break;
+            case Surface.ROTATION_90:
+                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
+                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
+                        : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+                break;
+            case Surface.ROTATION_180:
+                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
+                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
+                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
+                break;
+            case Surface.ROTATION_270:
+                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
+                        ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
+                break;
+        }
+        activity.setRequestedOrientation(frozenRotation);
+    }
 }

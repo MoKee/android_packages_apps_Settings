@@ -136,6 +136,19 @@
         <item>2</item>
     </string-array>
 
+    <!-- Volume key cursor control -->
+    <string-array name="volbtn_cursor_control_entries" translatable="false">
+        <item>@string/volbtn_cursor_control_off</item>
+        <item>@string/volbtn_cursor_control_on</item>
+        <item>@string/volbtn_cursor_control_on_reverse</item>
+    </string-array>
+
+    <string-array name="volbtn_cursor_control_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <string-array name="profile_action_generic_connection_entries">
         <item>@string/profile_action_none</item>
         <item>@string/profile_action_disable</item>
@@ -207,5 +220,132 @@
         <item>1000</item>
         <item>2500</item>
         <item>5000</item>
+    </string-array>
+
+    <!-- Hardware key rebinding -->
+    <string-array name="hardware_keys_action_entries" translatable="false">
+        <item>@string/hardware_keys_action_nothing</item>
+        <item>@string/hardware_keys_action_menu</item>
+        <item>@string/hardware_keys_action_app_switch</item>
+        <item>@string/hardware_keys_action_search</item>
+        <item>@string/hardware_keys_action_voice_search</item>
+        <item>@string/hardware_keys_action_in_app_search</item>
+        <item>@string/hardware_keys_action_launch_camera</item>
+        <item>@string/hardware_keys_action_sleep</item>
+        <item>@string/hardware_keys_action_last_app</item>
+    </string-array>
+
+    <string-array name="hardware_keys_action_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="power_menu_actions_array" translatable="false">
+        <item>power</item>
+        <item>reboot</item>
+        <item>screenshot</item>
+        <item>profile</item>
+        <item>airplane</item>
+        <item>users</item>
+        <item>bugreport</item>
+    </string-array>
+
+    <!-- Gamma calibration descriptors, deliberately empty as string values populated via
+         per-device overlay. Required to build on non-hardware tunable devices -->
+    <string-array name="gamma_descriptors" translatable="false">
+    </string-array>
+
+    <!-- Values for screen color  -->
+    <string-array name="screen_color_setting">
+        <item>Standard</item>
+        <item>Vivid</item>
+        <item>Custom</item>
+    </string-array>
+
+    <!-- Stylus Gestures -->
+    <string-array name="gestures_entries" translatable="false">
+        <item>@string/gestures_action_empty</item>
+        <item>@string/gestures_action_home</item>
+        <item>@string/gestures_action_back</item>
+        <item>@string/gestures_action_menu</item>
+        <item>@string/gestures_action_search</item>
+        <item>@string/gestures_action_recent</item>
+    </string-array>
+
+    <string-array name="gestures_values" translatable="false">
+        <item>1000</item>
+        <item>1001</item>
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_style_entries" translatable="false">
+        <item>@string/status_bar_clock_style_right</item>
+        <item>@string/status_bar_clock_style_center</item>
+        <item>@string/status_bar_clock_style_left</item>
+        <item>@string/status_bar_clock_style_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_style_entries_rtl" translatable="false">
+        <item>@string/status_bar_clock_style_left</item>
+        <item>@string/status_bar_clock_style_center</item>
+        <item>@string/status_bar_clock_style_right</item>
+        <item>@string/status_bar_clock_style_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_style_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="status_bar_am_pm_entries" translatable="false">
+        <item>@string/status_bar_am_pm_normal</item>
+        <item>@string/status_bar_am_pm_small</item>
+        <item>@string/status_bar_am_pm_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_am_pm_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_entries" translatable="false">
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
+        <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_text</item>
+        <item>@string/status_bar_battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_values" translatable="false">
+        <item>0</item>
+        <item>5</item>
+        <item>2</item>
+        <item>6</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 </resources>
