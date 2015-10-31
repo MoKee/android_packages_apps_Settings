@@ -66,6 +66,7 @@ import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
 import mokee.hardware.MKHardwareManager;
+import mokee.providers.MKSettings;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -414,10 +415,14 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         }
         if (preference == mStylusIconEnabled) {
             Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
+                    Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
         } else if (preference == mHighTouchSensitivity) {
+            boolean mHighTouchSensitivityEnable = mHighTouchSensitivity.isChecked();
+            MKSettings.System.putInt(getActivity().getContentResolver(),
+                    MKSettings.System.HIGH_TOUCH_SENSITIVITY_ENABLE,
+                    mHighTouchSensitivityEnable ? 1 : 0);
             return mHardware.set(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
-                    mHighTouchSensitivity.isChecked());
+                    mHighTouchSensitivityEnable);
         } else if (preference == mTouchscreenHovering) {
             return mHardware.set(MKHardwareManager.FEATURE_TOUCH_HOVERING,
                     mTouchscreenHovering.isChecked());
