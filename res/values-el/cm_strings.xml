@@ -224,7 +224,6 @@
   <string name="block_notifications_title">Φιλτράρισμα ειδοποιήσεων</string>
   <string name="block_notifications_summary">Διαχείριση φίλτρων και ειδοποιήσεων που αγνοούνται</string>
   <string name="no_filters_title">Δεν έχουν οριστεί φίλτρα</string>
-  <string name="security_patch">Επίπεδο ενημέρωσης κώδικα ασφαλείας Android</string>
   <string name="device_model">Μοντέλο συσκευής</string>
   <string name="device_name">Όνομα συσκευής</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>

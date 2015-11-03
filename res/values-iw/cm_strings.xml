@@ -224,7 +224,6 @@
   <string name="block_notifications_title">סנן התראות</string>
   <string name="block_notifications_summary">נהל התראות מהן התעלמת ומסננים</string>
   <string name="no_filters_title">לא הוגדרו מסננים</string>
-  <string name="security_patch">רמת טלאי אבטחת אנדרואיד</string>
   <string name="device_model">דגם המכשיר</string>
   <string name="device_name">שם המכשיר</string>
   <string name="build_date">תאריך בנייה</string>

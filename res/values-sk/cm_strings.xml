@@ -222,7 +222,6 @@
   <string name="block_notifications_title">Filtrovať oznámenia</string>
   <string name="block_notifications_summary">Spravovať ignorované oznámenia a filtre</string>
   <string name="no_filters_title">Nenastavené žiadne filtre</string>
-  <string name="security_patch">Úroveň bezpečnostných záplat Android</string>
   <string name="device_model">Model zariadenia</string>
   <string name="device_name">Názov zariadenia</string>
   <string name="build_date">Dátum zostavy</string>

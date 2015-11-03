@@ -224,7 +224,6 @@
   <string name="block_notifications_title">Iragazi jakinarazpenak</string>
   <string name="block_notifications_summary">Kudeatu ezikusitako jakinarazpen eta iragazkiak</string>
   <string name="no_filters_title">Ez da iragazkirik ezarri</string>
-  <string name="security_patch">Android segurtasun adabaki maila</string>
   <string name="device_model">Gailuaren modeloa</string>
   <string name="device_name">Gailuaren izena</string>
   <string name="build_date">Konpilatze data</string>

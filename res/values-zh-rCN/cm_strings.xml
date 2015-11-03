@@ -223,7 +223,6 @@
   <string name="block_notifications_title">通知过滤</string>
   <string name="block_notifications_summary">管理已忽略的通知和过滤器</string>
   <string name="no_filters_title">没有设置过滤</string>
-  <string name="security_patch">Android 安全补丁程序级别</string>
   <string name="device_model">设备型号</string>
   <string name="device_name">设备名称</string>
   <string name="build_date">编译日期</string>

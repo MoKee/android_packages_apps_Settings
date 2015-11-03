@@ -224,7 +224,6 @@
   <string name="block_notifications_title">Filtra notifiche</string>
   <string name="block_notifications_summary">Gestisci le notifiche ignorate e i filtri</string>
   <string name="no_filters_title">Nessun filtro impostato</string>
-  <string name="security_patch">Livello patch di sicurezza Android</string>
   <string name="device_model">Modello dispositivo</string>
   <string name="device_name">Nome dispositivo</string>
   <string name="build_date">Data build</string>

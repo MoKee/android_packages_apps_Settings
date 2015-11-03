@@ -225,7 +225,6 @@
   <string name="block_notifications_title">Филтер обавештења</string>
   <string name="block_notifications_summary">Уреди игнорисана обавештења и филтере</string>
   <string name="no_filters_title">Нема постављених филтера</string>
-  <string name="security_patch">Ниво закрпа сигурности андроида</string>
   <string name="device_model">Модел уређаја</string>
   <string name="device_name">Име уређаја</string>
   <string name="build_date">Датум израде</string>

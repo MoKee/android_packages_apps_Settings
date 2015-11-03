@@ -225,7 +225,6 @@
   <string name="block_notifications_title">Oznámení filtru</string>
   <string name="block_notifications_summary">Spravovat ignorovaná upozornění a filtry</string>
   <string name="no_filters_title">Nenastaven žádný filtr</string>
-  <string name="security_patch">Verze zabezpečení systému Android</string>
   <string name="device_model">Model</string>
   <string name="device_name">Název zařízení</string>
   <string name="build_date">Datum sestavení</string>

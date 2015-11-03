@@ -221,7 +221,6 @@
   <string name="block_notifications_title">Filter kennisgewings</string>
   <string name="block_notifications_summary">Bestuur geïgnoreerde kennisgewings en ​​filters</string>
   <string name="no_filters_title">Geen filters opgestel</string>
-  <string name="security_patch">Android sekuriteit herstel vlak</string>
   <string name="device_model">Toestel tipe</string>
   <string name="device_name">Toestel naam</string>
   <string name="build_date">Bou datum</string>
