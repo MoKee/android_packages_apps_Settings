@@ -89,7 +89,6 @@ import com.android.settings.deviceinfo.PrivateVolumeForget;
 import com.android.settings.deviceinfo.PrivateVolumeSettings;
 import com.android.settings.deviceinfo.PublicVolumeSettings;
 import com.android.settings.deviceinfo.StorageSettings;
-import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageDetail;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.livedisplay.LiveDisplay;
@@ -120,6 +119,7 @@ import com.android.settings.print.PrintJobSettingsFragment;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.search.DynamicIndexableContentMonitor;
 import com.android.settings.search.Index;
+import com.android.settings.privacyguard.PrivacyGuardPrefs;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
@@ -286,7 +286,8 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
-            R.id.dashboard
+            R.id.dashboard,
+            R.id.privacy_settings_cyanogenmod
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -347,7 +348,6 @@ public class SettingsActivity extends Activity
             ChooseLockPassword.ChooseLockPasswordFragment.class.getName(),
             ChooseLockPattern.ChooseLockPatternFragment.class.getName(),
             InstalledAppDetails.class.getName(),
-            BatterySaverSettings.class.getName(),
             AppNotificationSettings.class.getName(),
             OtherSoundSettings.class.getName(),
             ApnSettings.class.getName(),
@@ -362,7 +362,8 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
-            LiveDisplay.class.getName()
+            LiveDisplay.class.getName(),
+            com.android.settings.cyanogenmod.PrivacySettings.class.getName()
     };
 
 

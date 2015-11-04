@@ -57,7 +57,7 @@ public class AppOpsState {
         mAppOps = (AppOpsManager)context.getSystemService(Context.APP_OPS_SERVICE);
         mPm = context.getPackageManager();
         mOpSummaries = context.getResources().getTextArray(R.array.app_ops_summaries);
-        mOpLabels = context.getResources().getTextArray(R.array.app_ops_labels);
+        mOpLabels = context.getResources().getTextArray(com.android.internal.R.array.app_ops_labels);
     }
 
     public static class OpsTemplate implements Parcelable {
@@ -180,6 +180,7 @@ public class AppOpsState {
                     false,
                     false,
                     false,
+                    false,
                     false }
             );
 
@@ -206,9 +207,19 @@ public class AppOpsState {
                     false }
             );
 
+    public static final OpsTemplate BOOTUP_TEMPLATE = new OpsTemplate(
+            new int[] { AppOpsManager.OP_BOOT_COMPLETED },
+            new boolean[] { true, }
+            );
+
+    public static final OpsTemplate SU_TEMPLATE = new OpsTemplate(
+            new int[] { AppOpsManager.OP_SU },
+            new boolean[] { false }
+            );
+
     public static final OpsTemplate[] ALL_TEMPLATES = new OpsTemplate[] {
             LOCATION_TEMPLATE, PERSONAL_TEMPLATE, MESSAGING_TEMPLATE,
-            MEDIA_TEMPLATE, DEVICE_TEMPLATE
+            MEDIA_TEMPLATE, DEVICE_TEMPLATE, BOOTUP_TEMPLATE, SU_TEMPLATE
     };
 
     /**

@@ -6,7 +6,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v13 \
 	jsr305 \
-	org.mokee.platform.sdk
+	org.mokee.platform.internal
 
 LOCAL_MODULE_TAGS := optional
 
