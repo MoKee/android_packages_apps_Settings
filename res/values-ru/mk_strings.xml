@@ -51,6 +51,7 @@
   <string name="blacklist_harassment_numbers_summary">Блокировать звонки с номеров вымогателей</string>
   <string name="smartcontrol_settings_title">Smart-контроль</string>
   <string name="direct_control_title">Вызов датчиком приближения</string>
+  <string name="direct_call_for_dialer_title">Прямой вызов в номеронабирателе</string>
   <string name="direct_call_for_dialer_summary">Поднесите телефон к уху, чтобы вызвать выбранный номер</string>
   <string name="direct_call_for_mms_title">Прямой вызов в MMS</string>
   <string name="direct_call_for_mms_summary">Поднесите телефон к уху, чтобы вызвать выбранный номер</string>
@@ -113,10 +114,14 @@
   <string name="recents_clear_all_location_bottom_right">Снизу справа</string>
   <string name="recents_clear_all_location_bottom_left">Снизу слева</string>
   <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
+  <string name="recents_clear_all_ignored_foreground_title">Не закрывать активное приложение</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Не закрывать приложение, в котором находится пользователь при нажатии кнопки Закрыть все</string>
   <string name="status_bar_clock_show_second_title">Часы с секундами</string>
   <string name="status_bar_clock_show_second_summary">Отображать секунды в часах строки состояния</string>
   <string name="show_su_icon_title">Индикатор суперпользователя</string>
   <string name="show_su_icon_summary">Показывать индикатор суперпользователя (#) в строке состояния, когда он используется </string>
+  <string name="show_headset_icon_title">Показывать значок гарнитуры</string>
+  <string name="show_headset_icon_summary">Отобразить значок в строке состояния, когда гарнитура подключена</string>
   <string name="double_tap_to_sleep_navbar_title">Двойное нажатие по панели навигации для перехода в спящий режим</string>
   <string name="double_tap_to_sleep_navbar_summary">Двойное нажатие по панели навигации для выключения экрана</string>
   <string name="battery_optimizer_title">Оптимизатор батареи</string>
