@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.android.settings.mokee;
+package com.android.settings.cyanogenmod;
 
 import android.content.Context;
 import android.preference.SwitchPreference;
 import android.util.AttributeSet;
 import mokee.providers.MKSettings;
 
-public class MKSystemSettingSwitchPreference extends SwitchPreference {
-    public MKSystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
+public class CMSystemSettingSwitchPreference extends SwitchPreference {
+    public CMSystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
-    public MKSystemSettingSwitchPreference(Context context, AttributeSet attrs) {
+    public CMSystemSettingSwitchPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MKSystemSettingSwitchPreference(Context context) {
+    public CMSystemSettingSwitchPreference(Context context) {
         super(context, null);
     }
 
