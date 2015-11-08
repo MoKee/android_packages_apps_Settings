@@ -85,7 +85,26 @@
     <uses-permission android:name="mokee.permission.FINISH_SETUP" />
     <uses-permission android:name="mokee.permission.MODIFY_PROFILES" />
 
+    <!-- MOKEE PUSH PERMISSION START -->
+    <permission android:name="com.android.settings.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.android.settings.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- MOKEE PUSH PERMISSION END -->
+
+    <!-- MOKEE HELPER PERMISSION START -->
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.RECOVERY"/>
+    <!-- MOKEE HELPER PERMISSION END -->
+
     <application android:label="@string/settings_label"
+            android:name=".mokee.MoKeeApplication"
             android:icon="@mipmap/ic_launcher_settings"
             android:taskAffinity=""
             android:theme="@style/Theme.Settings"
@@ -2692,6 +2711,172 @@
             android:exported="false"
             android:name=".cyanogenmod.LtoService">
         </service>
+
+        <!-- MOKEE ANONYMOUS STATISTICS START -->
+        <receiver android:name=".mokee.stats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mokee.stats.ReportingService">
+        </service>
+
+        <service android:label="UpdatingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".mokee.stats.UpdatingService">
+        </service>
+        <!-- MOKEE ANONYMOUS STATISTICS END -->
+
+        <!-- MOKEE PUSH SERVICE START -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter >
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.android.settings"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="true" >
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.android.settings" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <receiver android:name=".mokee.push.PushingServiceManager"
+            android:label="PushingServiceManager" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".mokee.push.PushingMessageReceiver"
+            android:label="PushingMessageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.android.settings" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="JPUSH_CHANNEL" android:value="default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="d1c78fa87f8836f81ed6f329" />
+        <!-- MOKEE PUSH SERVICE END -->
+
+        <!-- Google AdMob START -->
+        <activity android:name="com.google.ads.AdActivity" 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <!-- Google AdMob END -->
+
+        <!-- MOKEE HELPER START -->
+        <activity android:name=".mokee.helper.activities.TipsHelp"
+            android:icon="@mipmap/ic_launcher_tips_help"
+            android:label="@string/tips_help_title"
+            android:theme="@style/ActivityTransparent"
+            android:excludeFromRecents="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mokee.helper.activities.MoKeeCenter"
+            android:label="@string/mokee_center_title"
+            android:parentActivityName="Settings" >
+            <intent-filter>
+                <action android:name="com.mokee.mkupdater.action.MOKEE_CENTER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.mokee.helper.service.DownLoadService" />
+
+        <service android:name="com.mokee.helper.service.UpdateCheckService" />
+
+        <service android:name="com.mokee.helper.service.DownloadCompleteIntentService" />
+
+        <receiver android:name="com.mokee.helper.receiver.UpdateCheckReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mokee.mkupdater.action.UPDATE_CHECK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.mokee.helper.receiver.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="com.mokee.mkupdater.action.DOWNLOAD_COMPLETED" />
+                <action android:name="com.mokee.mkupdater.action.DOWNLOAD_START" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.mokee.helper.receiver.NotificationClickReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="com.mokee.mkupdater.action.NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <!-- MOKEE HELPER END -->
 
     </application>
 </manifest>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2014 The Android Open Source Project
+     Copyright (C) 2014-2016 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -227,7 +228,7 @@
                 android:icon="@drawable/ic_settings_security"
                 />
 
-        <!-- CyanogenMod Privacy Settings -->
+        <!-- MoKee OpenSource Privacy Settings -->
         <!-- This is the 'real' Privacy items and includes Privacy Guard, Blacklist & WhisperPush -->
         <dashboard-tile
                 android:id="@+id/privacy_settings_cyanogenmod"
@@ -302,6 +303,16 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
                 />
+
+        <!-- MoKee Center -->
+        <dashboard-tile
+                android:id="@+id/mokee_center"
+                android:icon="@drawable/ic_mokee_center"
+                android:title="@string/mokee_center_title">
+                <intent android:action="android.intent.action.MAIN"
+                        android:targetPackage="com.android.settings"
+                        android:targetClass="com.android.settings.mokee.helper.activities.MoKeeCenter" />
+                </dashboard-tile>
 
         <!-- About Device -->
         <dashboard-tile

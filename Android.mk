@@ -5,8 +5,14 @@ LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
 LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v13 \
+	mokee-support-widget \
 	jsr305 \
-	org.mokee.platform.internal
+	org.apache.http.legacy \
+	org.mokee.platform.internal \
+	libGoogleAnalyticsV3 \
+	libGoogleAdMobAdsSdk \
+	libMoKeePushService \
+	volley
 
 LOCAL_MODULE_TAGS := optional
 
@@ -14,7 +20,8 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         src/com/android/settings/EventLogTags.logtags
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+        frameworks/support/mk/widget/res
 
 LOCAL_SRC_FILES += \
         src/com/android/display/IPPService.aidl
@@ -25,10 +32,19 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+LOCAL_AAPT_FLAGS := \
+        --auto-add-overlay \
+        --extra-packages com.mokee.helper \
+        --extra-packages mokee.support.widget
+LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
+LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
+
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental
 endif
+LOCAL_JACK_ENABLED := disabled
 
 include frameworks/opt/setupwizard/navigationbar/common.mk
 include frameworks/opt/setupwizard/library/common.mk

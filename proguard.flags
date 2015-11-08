@@ -18,6 +18,23 @@
 -keep class com.android.settings.notification.*
 -keep class com.android.settings.cyanogenmod.*
 
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *;}
+-dontwarn com.google.gson.jpush.**
+-keep class com.google.gson.jpush.** { *;}
+-dontwarn com.google.protobuf.jpush.**
+-keep class com.google.protobuf.jpush.** { *;}
+
+-dontwarn org.apache.http.**
+-keep class org.apache.http.** { *;}
+-dontwarn android.net.**
+-keep class android.net.** { *;}
+
+-keep class com.mokee.helper.**
+-keep class com.android.settings.mokee.**
+
+-dontwarn mokee.**
+
 -keep class com.android.settings.cyanogenmod.*Settings
 -keep class com.android.settings.privacyguard.*
 
