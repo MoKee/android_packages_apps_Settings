@@ -48,6 +48,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import mokee.hardware.MKHardwareManager;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,9 +106,9 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         final Resources res = getResources();
 
         mDefaultDayTemperature = res.getInteger(
-                com.android.internal.R.integer.config_dayColorTemperature);
+                org.mokee.platform.internal.R.integer.config_dayColorTemperature);
         mDefaultNightTemperature = res.getInteger(
-                com.android.internal.R.integer.config_nightColorTemperature);
+                org.mokee.platform.internal.R.integer.config_nightColorTemperature);
 
         mHardware = MKHardwareManager.getInstance(activity);
 
@@ -118,18 +119,18 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         PreferenceCategory calibrationPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_CALIBRATION);
 
-        int displayMode = Settings.System.getIntForUser(resolver,
-                Settings.System.DISPLAY_TEMPERATURE_MODE,
+        int displayMode = MKSettings.System.getIntForUser(resolver,
+                MKSettings.System.DISPLAY_TEMPERATURE_MODE,
                 0, UserHandle.USER_CURRENT);
         mLiveDisplay = (ListPreference) findPreference(KEY_LIVE_DISPLAY);
         mLiveDisplay.setValue(String.valueOf(displayMode));
 
         mModeEntries = res.getStringArray(
-                com.android.internal.R.array.live_display_entries);
+                org.mokee.platform.internal.R.array.live_display_entries);
         mModeValues = res.getStringArray(
-                com.android.internal.R.array.live_display_values);
+                org.mokee.platform.internal.R.array.live_display_values);
         mModeSummaries = res.getStringArray(
-                com.android.internal.R.array.live_display_summaries);
+                org.mokee.platform.internal.R.array.live_display_summaries);
 
         // Remove outdoor mode from lists if there is no support
         if (!mHardware.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {
@@ -221,8 +222,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     }
 
     private void updateModeSummary() {
-        int mode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.DISPLAY_TEMPERATURE_MODE,
+        int mode = MKSettings.System.getIntForUser(getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_MODE,
                 MODE_DAY, UserHandle.USER_CURRENT);
 
         int index = ArrayUtils.indexOf(mModeValues, String.valueOf(mode));
@@ -230,12 +231,12 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     }
 
     private void updateTemperatureSummary() {
-        int day = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.DISPLAY_TEMPERATURE_DAY,
+        int day = MKSettings.System.getIntForUser(getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_DAY,
                 mDefaultDayTemperature,
                 UserHandle.USER_CURRENT);
-        int night = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.DISPLAY_TEMPERATURE_NIGHT,
+        int night = MKSettings.System.getIntForUser(getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_NIGHT,
                 mDefaultNightTemperature,
                 UserHandle.USER_CURRENT);
 
@@ -246,8 +247,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mLiveDisplay) {
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.DISPLAY_TEMPERATURE_MODE,
+            MKSettings.System.putIntForUser(getContentResolver(),
+                    MKSettings.System.DISPLAY_TEMPERATURE_MODE,
                     Integer.valueOf((String)objValue), UserHandle.USER_CURRENT);
         }
         return true;
@@ -259,11 +260,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
     private final class SettingsObserver extends ContentObserver {
         private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-                Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_DAY);
+                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_DAY);
         private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-                Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_NIGHT);
+                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_NIGHT);
         private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-                Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_MODE);
+                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_MODE);
 
         public SettingsObserver() {
             super(mHandler);
