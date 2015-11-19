@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2009 The Android Open Source Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +61,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.Utils;
 
 import mokee.power.PerformanceManager;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -193,8 +194,8 @@ public class PowerUsageSummary extends PowerUsageBase
         if (mPerfProfilePref != null) {
             updatePerformanceValue();
             ContentResolver resolver = getActivity().getContentResolver();
-            resolver.registerContentObserver(MKSettings.Secure.getUriFor(
-                    MKSettings.Secure.PERFORMANCE_PROFILE), false, mPerformanceProfileObserver);
+            resolver.registerContentObserver(CMSettings.Secure.getUriFor(
+                    CMSettings.Secure.PERFORMANCE_PROFILE), false, mPerformanceProfileObserver);
         }
     }
 

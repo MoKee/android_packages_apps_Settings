@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 Slimroms
+ * Copyright (C) 2013-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +31,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -56,7 +57,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         mPrivacyGuardDefault.setOnPreferenceChangeListener(this);
 
         mPrivacyGuardDefault.setChecked(Settings.Secure.getInt(getContentResolver(),
-                MKSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
+                CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
     @Override
@@ -76,7 +77,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         if (preference == mPrivacyGuardDefault) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(getContentResolver(),
-                    MKSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
+                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
             return true;
         }
         return false;

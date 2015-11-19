@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The MoKee Open Source project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +31,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 public class NavRing extends Fragment implements View.OnClickListener {
     private LinearLayout mRestore, mSave, mEdit;
@@ -67,8 +68,8 @@ public class NavRing extends Fragment implements View.OnClickListener {
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             for (int i = 0; i < 3; i++) {
-                                MKSettings.Secure.putString(getActivity().getContentResolver(),
-                                        MKSettings.Secure.NAVIGATION_RING_TARGETS[i], null);
+                                CMSettings.Secure.putString(getActivity().getContentResolver(),
+                                        CMSettings.Secure.NAVIGATION_RING_TARGETS[i], null);
                             }
                         }
                     })

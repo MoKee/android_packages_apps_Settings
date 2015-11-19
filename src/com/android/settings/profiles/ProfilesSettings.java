@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,7 +52,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
 import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.BaseSystemSettingSwitchBar;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.UUID;
 
@@ -225,8 +226,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private void updateProfilesEnabledState() {
         Activity activity = getActivity();
 
-        mEnabled = MKSettings.System.getInt(activity.getContentResolver(),
-                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mEnabled = CMSettings.System.getInt(activity.getContentResolver(),
+                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         activity.invalidateOptionsMenu();
 
         mAddProfileFab.setVisibility(mEnabled ? View.VISIBLE : View.GONE);

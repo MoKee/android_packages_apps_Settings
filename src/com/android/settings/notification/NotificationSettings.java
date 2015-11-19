@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The Android Open Source Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -59,7 +60,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -393,7 +394,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
     private void initIncreasingRing(PreferenceCategory root) {
         mIncreasingRing = (TwoStatePreference)
-                root.findPreference(MKSettings.System.INCREASING_RING);
+                root.findPreference(CMSettings.System.INCREASING_RING);
         mIncreasingRingVolume = (IncreasingRingVolumePreference)
                 root.findPreference(KEY_INCREASING_RING_VOLUME);
 

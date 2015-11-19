@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
  * Copyright (C) 2013-2014 The CyanogenMod Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -81,7 +82,7 @@ import com.android.settings.fuelgauge.InactiveApps;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -711,19 +712,19 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void resetDevelopmentShortcutOptions() {
-        MKSettings.Secure.putInt(getActivity().getContentResolver(),
-                MKSettings.Secure.DEVELOPMENT_SHORTCUT, 0);
+        CMSettings.Secure.putInt(getActivity().getContentResolver(),
+                CMSettings.Secure.DEVELOPMENT_SHORTCUT, 0);
     }
 
     private void writeDevelopmentShortcutOptions() {
-        MKSettings.Secure.putInt(getActivity().getContentResolver(),
-                MKSettings.Secure.DEVELOPMENT_SHORTCUT,
+        CMSettings.Secure.putInt(getActivity().getContentResolver(),
+                CMSettings.Secure.DEVELOPMENT_SHORTCUT,
                 mDevelopmentShortcut.isChecked() ? 1 : 0);
     }
 
     private void updateDevelopmentShortcutOptions() {
-        mAdvancedReboot.setChecked(MKSettings.Secure.getInt(getActivity().getContentResolver(),
-                MKSettings.Secure.DEVELOPMENT_SHORTCUT, 0) != 0);
+        mAdvancedReboot.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
+                CMSettings.Secure.DEVELOPMENT_SHORTCUT, 0) != 0);
     }
 
     private void updateAdbOverNetwork() {

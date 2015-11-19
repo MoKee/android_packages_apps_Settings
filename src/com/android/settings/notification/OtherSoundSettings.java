@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The Android Open Source Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,7 +48,7 @@ import com.android.settings.Utils;
 import com.android.settings.hardware.VibratorIntensity;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -115,7 +116,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     };
 
     private static final SettingPref PREF_VOLUME_ADJUST_SOUNDS = new SettingPref(
-            TYPE_SYSTEM, KEY_VOLUME_ADJUST_SOUNDS, MKSettings.System.VOLUME_ADJUST_SOUNDS_ENABLED,
+            TYPE_SYSTEM, KEY_VOLUME_ADJUST_SOUNDS, CMSettings.System.VOLUME_ADJUST_SOUNDS_ENABLED,
             DEFAULT_ON) {
         @Override
         public boolean isApplicable(Context context) {

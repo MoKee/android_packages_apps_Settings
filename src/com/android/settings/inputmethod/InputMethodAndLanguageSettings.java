@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -66,7 +67,7 @@ import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
 import mokee.hardware.MKHardwareManager;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -429,8 +430,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                     Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
         } else if (preference == mHighTouchSensitivity) {
             boolean mHighTouchSensitivityEnable = mHighTouchSensitivity.isChecked();
-            MKSettings.System.putInt(getActivity().getContentResolver(),
-                    MKSettings.System.HIGH_TOUCH_SENSITIVITY_ENABLE,
+            CMSettings.System.putInt(getActivity().getContentResolver(),
+                    CMSettings.System.HIGH_TOUCH_SENSITIVITY_ENABLE,
                     mHighTouchSensitivityEnable ? 1 : 0);
             return mHardware.set(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
                     mHighTouchSensitivityEnable);

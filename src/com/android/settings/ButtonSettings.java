@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2014-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,7 +49,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 import org.mokee.hardware.KeyDisabler;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -423,8 +424,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         mVolumeControlRingStream = (SwitchPreference)
                 findPreference(KEY_VOLUME_CONTROL_RING_STREAM);
-        int volumeControlRingtone = MKSettings.System.getInt(getContentResolver(),
-                MKSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, 1);
+        int volumeControlRingtone = CMSettings.System.getInt(getContentResolver(),
+                CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, 1);
         if (mVolumeControlRingStream != null) {
             mVolumeControlRingStream.setChecked(volumeControlRingtone > 0);
         }
@@ -453,11 +454,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Home button answers calls.
         if (mHomeAnswerCall != null) {
-            final int incallHomeBehavior = MKSettings.Secure.getInt(getContentResolver(),
-                    MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR,
-                    MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DEFAULT);
+            final int incallHomeBehavior = CMSettings.Secure.getInt(getContentResolver(),
+                    CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR,
+                    CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DEFAULT);
             final boolean homeButtonAnswersCall =
-                (incallHomeBehavior == MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
+                (incallHomeBehavior == CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
 
@@ -476,8 +477,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         list.setOnPreferenceChangeListener(this);
 
         // Read the componentName from Settings.Secure, this is the user's prefered setting
-        String componentString = MKSettings.Secure.getString(getContentResolver(),
-                MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY);
+        String componentString = CMSettings.Secure.getString(getContentResolver(),
+                CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY);
         ComponentName targetComponent = null;
         if (componentString == null) {
             list.setSummary(getString(R.string.hardware_keys_action_last_app));
@@ -494,8 +495,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (recentsActivities.size() == 0) {
             // No entries available, disable
             list.setSummary(getString(R.string.hardware_keys_action_last_app));
-            MKSettings.Secure.putString(getContentResolver(),
-                    MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, null);
+            CMSettings.Secure.putString(getContentResolver(),
+                    CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, null);
             list.setEnabled(false);
             return list;
         }
@@ -604,8 +605,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (putString.length() == 0) {
                 putString = null;
             }
-            MKSettings.Secure.putString(getContentResolver(),
-                    MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
+            CMSettings.Secure.putString(getContentResolver(),
+                    CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
         }
         return false;
@@ -702,8 +703,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     CMSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
         } else if (preference == mVolumeControlRingStream) {
             int value = mVolumeControlRingStream.isChecked() ? 1 : 0;
-            MKSettings.System.putInt(getActivity().getContentResolver(),
-                    MKSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, value);
+            CMSettings.System.putInt(getActivity().getContentResolver(),
+                    CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, value);
         } else if (preference == mDisableNavigationKeys) {
             mDisableNavigationKeys.setEnabled(false);
             mNavigationPreferencesCat.setEnabled(false);
@@ -737,9 +738,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private void handleToggleHomeButtonAnswersCallPreferenceClick() {
-        MKSettings.Secure.putInt(getContentResolver(),
-                MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
-                        ? MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
-                        : MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
+        CMSettings.Secure.putInt(getContentResolver(),
+                CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
+                        ? CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
+                        : CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 }

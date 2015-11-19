@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,7 +49,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import mokee.hardware.MKHardwareManager;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -119,8 +120,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         PreferenceCategory calibrationPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_CALIBRATION);
 
-        int displayMode = MKSettings.System.getIntForUser(resolver,
-                MKSettings.System.DISPLAY_TEMPERATURE_MODE,
+        int displayMode = CMSettings.System.getIntForUser(resolver,
+                CMSettings.System.DISPLAY_TEMPERATURE_MODE,
                 0, UserHandle.USER_CURRENT);
         mLiveDisplay = (ListPreference) findPreference(KEY_LIVE_DISPLAY);
         mLiveDisplay.setValue(String.valueOf(displayMode));
@@ -222,8 +223,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     }
 
     private void updateModeSummary() {
-        int mode = MKSettings.System.getIntForUser(getContentResolver(),
-                MKSettings.System.DISPLAY_TEMPERATURE_MODE,
+        int mode = CMSettings.System.getIntForUser(getContentResolver(),
+                CMSettings.System.DISPLAY_TEMPERATURE_MODE,
                 MODE_DAY, UserHandle.USER_CURRENT);
 
         int index = ArrayUtils.indexOf(mModeValues, String.valueOf(mode));
@@ -231,12 +232,12 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     }
 
     private void updateTemperatureSummary() {
-        int day = MKSettings.System.getIntForUser(getContentResolver(),
-                MKSettings.System.DISPLAY_TEMPERATURE_DAY,
+        int day = CMSettings.System.getIntForUser(getContentResolver(),
+                CMSettings.System.DISPLAY_TEMPERATURE_DAY,
                 mDefaultDayTemperature,
                 UserHandle.USER_CURRENT);
-        int night = MKSettings.System.getIntForUser(getContentResolver(),
-                MKSettings.System.DISPLAY_TEMPERATURE_NIGHT,
+        int night = CMSettings.System.getIntForUser(getContentResolver(),
+                CMSettings.System.DISPLAY_TEMPERATURE_NIGHT,
                 mDefaultNightTemperature,
                 UserHandle.USER_CURRENT);
 
@@ -247,8 +248,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mLiveDisplay) {
-            MKSettings.System.putIntForUser(getContentResolver(),
-                    MKSettings.System.DISPLAY_TEMPERATURE_MODE,
+            CMSettings.System.putIntForUser(getContentResolver(),
+                    CMSettings.System.DISPLAY_TEMPERATURE_MODE,
                     Integer.valueOf((String)objValue), UserHandle.USER_CURRENT);
         }
         return true;
@@ -260,11 +261,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
     private final class SettingsObserver extends ContentObserver {
         private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_DAY);
+                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_DAY);
         private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_NIGHT);
+                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
         private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-                MKSettings.System.getUriFor(MKSettings.System.DISPLAY_TEMPERATURE_MODE);
+                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_MODE);
 
         public SettingsObserver() {
             super(mHandler);

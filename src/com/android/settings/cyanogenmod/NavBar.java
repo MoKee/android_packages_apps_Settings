@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The MoKee Open Source project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +31,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.android.settings.R;
 import com.android.settings.Utils;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 public class NavBar extends Fragment implements View.OnClickListener {
 
@@ -91,8 +92,8 @@ public class NavBar extends Fragment implements View.OnClickListener {
                             if (mEditMode) {
                                 toggleEditMode(false, false);
                             }
-                            MKSettings.System.putString(getActivity().getContentResolver(),
-                                    MKSettings.System.NAV_BUTTONS, null);
+                            CMSettings.System.putString(getActivity().getContentResolver(),
+                                    CMSettings.System.NAV_BUTTONS, null);
                             toggleEditMode(true, false);
                             toggleEditMode(false, false);
                             mEditMode = false;

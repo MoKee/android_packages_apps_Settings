@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014-2015 The CyanogenMod Project
+ * Copyright (C) 2014-2016 The MoKee Open Source project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +36,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.cm.PowerMenuConstants;
-import mokee.providers.MKSettings;
+import mokee.providers.CMSettings;
 
 import static com.android.internal.util.cm.PowerMenuConstants.*;
 
@@ -259,10 +260,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void updatePreferences() {
-        boolean bugreport = MKSettings.Secure.getInt(getContentResolver(),
-                MKSettings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
-        boolean profiles = MKSettings.System.getInt(getContentResolver(),
-                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
+        boolean bugreport = CMSettings.Secure.getInt(getContentResolver(),
+                CMSettings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
+        boolean profiles = CMSettings.System.getInt(getContentResolver(),
+                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
 
         if (mProfilePref != null) {
             mProfilePref.setEnabled(profiles);
