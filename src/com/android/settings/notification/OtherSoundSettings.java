@@ -48,7 +48,7 @@ import com.android.settings.Utils;
 import com.android.settings.hardware.VibratorIntensity;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -116,7 +116,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     };
 
     private static final SettingPref PREF_VOLUME_ADJUST_SOUNDS = new SettingPref(
-            TYPE_SYSTEM, KEY_VOLUME_ADJUST_SOUNDS, CMSettings.System.VOLUME_ADJUST_SOUNDS_ENABLED,
+            TYPE_SYSTEM, KEY_VOLUME_ADJUST_SOUNDS, MKSettings.System.VOLUME_ADJUST_SOUNDS_ENABLED,
             DEFAULT_ON) {
         @Override
         public boolean isApplicable(Context context) {
@@ -150,7 +150,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
             TYPE_SYSTEM, KEY_VIBRATION_INTENSITY, System.HAPTIC_FEEDBACK_ENABLED, DEFAULT_ON) {
         @Override
         public boolean isApplicable(Context context) {
-            return false; //VibratorIntensity.isSupported();
+            return VibratorIntensity.isSupported(context);
         }
     };
 
@@ -237,25 +237,25 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
 
         // power state change notification sounds
         mPowerSounds = (SwitchPreference) findPreference(KEY_POWER_NOTIFICATIONS);
-        mPowerSounds.setChecked(CMSettings.Global.getInt(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_ENABLED, 0) != 0);
+        mPowerSounds.setChecked(MKSettings.Global.getInt(getContentResolver(),
+                MKSettings.Global.POWER_NOTIFICATIONS_ENABLED, 0) != 0);
         mPowerSoundsVibrate = (SwitchPreference) findPreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
-        mPowerSoundsVibrate.setChecked(CMSettings.Global.getInt(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_VIBRATE, 0) != 0);
+        mPowerSoundsVibrate.setChecked(MKSettings.Global.getInt(getContentResolver(),
+                MKSettings.Global.POWER_NOTIFICATIONS_VIBRATE, 0) != 0);
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         if (vibrator == null || !vibrator.hasVibrator()) {
             removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
         }
 
         mPowerSoundsRingtone = findPreference(KEY_POWER_NOTIFICATIONS_RINGTONE);
-        String currentPowerRingtonePath = CMSettings.Global.getString(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
+        String currentPowerRingtonePath = MKSettings.Global.getString(getContentResolver(),
+                MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
 
         // set to default notification if we don't yet have one
         if (currentPowerRingtonePath == null) {
                 currentPowerRingtonePath = System.DEFAULT_NOTIFICATION_URI.toString();
-            CMSettings.Global.putString(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE, currentPowerRingtonePath);
+            MKSettings.Global.putString(getContentResolver(),
+                    MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE, currentPowerRingtonePath);
         }
         // is it silent ?
         if (currentPowerRingtonePath.equals(POWER_NOTIFICATIONS_SILENT_URI)) {
@@ -289,19 +289,19 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mPowerSounds) {
-            CMSettings.Global.putInt(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_ENABLED,
+            MKSettings.Global.putInt(getContentResolver(),
+                    MKSettings.Global.POWER_NOTIFICATIONS_ENABLED,
                     mPowerSounds.isChecked() ? 1 : 0);
 
         } else if (preference == mPowerSoundsVibrate) {
-            CMSettings.Global.putInt(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_VIBRATE,
+            MKSettings.Global.putInt(getContentResolver(),
+                    MKSettings.Global.POWER_NOTIFICATIONS_VIBRATE,
                     mPowerSoundsVibrate.isChecked() ? 1 : 0);
 
         } else if (preference == mPowerSoundsRingtone) {
             launchNotificationSoundPicker(REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE,
-                    CMSettings.Global.getString(getContentResolver(),
-                            CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
+                    MKSettings.Global.getString(getContentResolver(),
+                            MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -408,8 +408,8 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         }
 
         mPowerSoundsRingtone.setSummary(toneName);
-        CMSettings.Global.putString(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriPath);
+        MKSettings.Global.putString(getContentResolver(),
+                MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriPath);
     }
 
     @Override

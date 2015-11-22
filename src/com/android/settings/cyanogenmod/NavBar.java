@@ -31,7 +31,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.android.settings.R;
 import com.android.settings.Utils;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class NavBar extends Fragment implements View.OnClickListener {
 
@@ -92,8 +92,8 @@ public class NavBar extends Fragment implements View.OnClickListener {
                             if (mEditMode) {
                                 toggleEditMode(false, false);
                             }
-                            CMSettings.System.putString(getActivity().getContentResolver(),
-                                    CMSettings.System.NAV_BUTTONS, null);
+                            MKSettings.System.putString(getActivity().getContentResolver(),
+                                    MKSettings.System.NAV_BUTTONS, null);
                             toggleEditMode(true, false);
                             toggleEditMode(false, false);
                             mEditMode = false;

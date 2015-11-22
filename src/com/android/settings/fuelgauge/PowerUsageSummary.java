@@ -61,7 +61,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.Utils;
 
 import mokee.power.PerformanceManager;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -194,8 +194,8 @@ public class PowerUsageSummary extends PowerUsageBase
         if (mPerfProfilePref != null) {
             updatePerformanceValue();
             ContentResolver resolver = getActivity().getContentResolver();
-            resolver.registerContentObserver(CMSettings.Secure.getUriFor(
-                    CMSettings.Secure.PERFORMANCE_PROFILE), false, mPerformanceProfileObserver);
+            resolver.registerContentObserver(MKSettings.Secure.getUriFor(
+                    MKSettings.Secure.PERFORMANCE_PROFILE), false, mPerformanceProfileObserver);
         }
     }
 

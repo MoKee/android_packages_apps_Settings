@@ -20,7 +20,7 @@ package com.android.settings.cyanogenmod;
 import android.content.Context;
 import android.preference.SwitchPreference;
 import android.util.AttributeSet;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class CMSystemSettingSwitchPreference extends SwitchPreference {
     public CMSystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
@@ -42,7 +42,7 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
                 // It's already there, so the same as persisting
                 return true;
             }
-            CMSettings.System.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
+            MKSettings.System.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
             return true;
         }
         return false;
@@ -53,7 +53,7 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
         if (!shouldPersist()) {
             return defaultReturnValue;
         }
-        return CMSettings.System.getInt(getContext().getContentResolver(),
+        return MKSettings.System.getInt(getContext().getContentResolver(),
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
 
@@ -61,6 +61,6 @@ public class CMSystemSettingSwitchPreference extends SwitchPreference {
     protected boolean isPersisted() {
         // Using getString instead of getInt so we can simply check for null
         // instead of catching an exception. (All values are stored as strings.)
-        return CMSettings.System.getString(getContext().getContentResolver(), getKey()) != null;
+        return MKSettings.System.getString(getContext().getContentResolver(), getKey()) != null;
     }
 }

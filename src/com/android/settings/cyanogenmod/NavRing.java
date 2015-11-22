@@ -31,7 +31,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class NavRing extends Fragment implements View.OnClickListener {
     private LinearLayout mRestore, mSave, mEdit;
@@ -68,8 +68,8 @@ public class NavRing extends Fragment implements View.OnClickListener {
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             for (int i = 0; i < 3; i++) {
-                                CMSettings.Secure.putString(getActivity().getContentResolver(),
-                                        CMSettings.Secure.NAVIGATION_RING_TARGETS[i], null);
+                                MKSettings.Secure.putString(getActivity().getContentResolver(),
+                                        MKSettings.Secure.NAVIGATION_RING_TARGETS[i], null);
                             }
                         }
                     })

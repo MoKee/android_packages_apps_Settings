@@ -31,7 +31,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -57,7 +57,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         mPrivacyGuardDefault.setOnPreferenceChangeListener(this);
 
         mPrivacyGuardDefault.setChecked(Settings.Secure.getInt(getContentResolver(),
-                CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
+                MKSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         if (preference == mPrivacyGuardDefault) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(getContentResolver(),
-                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
+                    MKSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
             return true;
         }
         return false;

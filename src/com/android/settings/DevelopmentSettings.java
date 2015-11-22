@@ -82,7 +82,7 @@ import com.android.settings.fuelgauge.InactiveApps;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -637,8 +637,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateSwitchPreference(mEnableAdb, Settings.Global.getInt(cr,
                 Settings.Global.ADB_ENABLED, 0) != 0);
 
-        mAdbNotify.setChecked(CMSettings.Secure.getInt(cr,
-                CMSettings.Secure.ADB_NOTIFY, 1) != 0);
+        mAdbNotify.setChecked(MKSettings.Secure.getInt(cr,
+                MKSettings.Secure.ADB_NOTIFY, 1) != 0);
         updateAdbOverNetwork();
 
         if (mEnableTerminal != null) {
@@ -701,35 +701,35 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void writeAdvancedRebootOptions() {
-        CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADVANCED_REBOOT,
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADVANCED_REBOOT,
                 mAdvancedReboot.isChecked() ? 1 : 0);
     }
 
     private void updateAdvancedRebootOptions() {
-        mAdvancedReboot.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADVANCED_REBOOT, 0) != 0);
+        mAdvancedReboot.setChecked(MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADVANCED_REBOOT, 0) != 0);
     }
 
     private void resetDevelopmentShortcutOptions() {
-        CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                CMSettings.Secure.DEVELOPMENT_SHORTCUT, 0);
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.DEVELOPMENT_SHORTCUT, 0);
     }
 
     private void writeDevelopmentShortcutOptions() {
-        CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                CMSettings.Secure.DEVELOPMENT_SHORTCUT,
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.DEVELOPMENT_SHORTCUT,
                 mDevelopmentShortcut.isChecked() ? 1 : 0);
     }
 
     private void updateDevelopmentShortcutOptions() {
-        mAdvancedReboot.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
-                CMSettings.Secure.DEVELOPMENT_SHORTCUT, 0) != 0);
+        mAdvancedReboot.setChecked(MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.DEVELOPMENT_SHORTCUT, 0) != 0);
     }
 
     private void updateAdbOverNetwork() {
-        int port = CMSettings.Secure.getInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADB_PORT, 0);
+        int port = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
         updateSwitchPreference(mAdbOverNetwork, enabled);
@@ -861,14 +861,14 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void writeKillAppLongpressBackOptions() {
-        CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                CMSettings.Secure.KILL_APP_LONGPRESS_BACK,
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.KILL_APP_LONGPRESS_BACK,
                 mKillAppLongpressBack.isChecked() ? 1 : 0);
     }
 
     private void updateKillAppLongpressBackOptions() {
-        mKillAppLongpressBack.setChecked(CMSettings.Secure.getInt(
-            getActivity().getContentResolver(), CMSettings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+        mKillAppLongpressBack.setChecked(MKSettings.Secure.getInt(
+            getActivity().getContentResolver(), MKSettings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
     }
 
     private void updatePasswordSummary() {
@@ -1824,8 +1824,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 updateBugreportOptions();
             }
         } else if (preference == mAdbNotify) {
-            CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                    CMSettings.Secure.ADB_NOTIFY,
+            MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                    MKSettings.Secure.ADB_NOTIFY,
                     mAdbNotify.isChecked() ? 1 : 0);
         } else if (preference == mAdbOverNetwork) {
             if (mAdbOverNetwork.isChecked()) {
@@ -1840,8 +1840,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                         .show();
                 mAdbTcpDialog.setOnDismissListener(this);
             } else {
-                CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                        CMSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, -1);
                 updateAdbOverNetwork();
             }
         } else if (preference == mClearAdbKeys) {
@@ -2064,8 +2064,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             }
         } else if (dialog == mAdbTcpDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
-                CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                        CMSettings.Secure.ADB_PORT, 5555);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, 5555);
             }
         } else if (dialog == mAdbKeysDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {

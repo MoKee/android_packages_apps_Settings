@@ -67,7 +67,7 @@ import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
 import mokee.hardware.MKHardwareManager;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -242,7 +242,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         boolean showCmImeSwitcher = getResources().getBoolean(
                 com.android.internal.R.bool.config_show_cmIMESwitcher);
         if (!showCmImeSwitcher) {
-            Preference pref = findPreference(CMSettings.System.STATUS_BAR_IME_SWITCHER);
+            Preference pref = findPreference(MKSettings.System.STATUS_BAR_IME_SWITCHER);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
             }
@@ -430,8 +430,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                     Settings.System.STYLUS_ICON_ENABLED, mStylusIconEnabled.isChecked() ? 1 : 0);
         } else if (preference == mHighTouchSensitivity) {
             boolean mHighTouchSensitivityEnable = mHighTouchSensitivity.isChecked();
-            CMSettings.System.putInt(getActivity().getContentResolver(),
-                    CMSettings.System.HIGH_TOUCH_SENSITIVITY_ENABLE,
+            MKSettings.System.putInt(getActivity().getContentResolver(),
+                    MKSettings.System.HIGH_TOUCH_SENSITIVITY_ENABLE,
                     mHighTouchSensitivityEnable ? 1 : 0);
             return mHardware.set(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY,
                     mHighTouchSensitivityEnable);

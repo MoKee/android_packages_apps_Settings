@@ -30,7 +30,7 @@ import android.view.MenuItem;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -88,19 +88,19 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
         if (mLowColorPref != null) {
-            int lowColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR,
+            int lowColor = MKSettings.System.getInt(resolver, MKSettings.System.BATTERY_LIGHT_LOW_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
             mLowColorPref.setAllValues(lowColor, 0, 0, false);
         }
 
         if (mMediumColorPref != null) {
-            int mediumColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
+            int mediumColor = MKSettings.System.getInt(resolver, MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
             mMediumColorPref.setAllValues(mediumColor, 0, 0, false);
         }
 
         if (mFullColorPref != null) {
-            int fullColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR,
+            int fullColor = MKSettings.System.getInt(resolver, MKSettings.System.BATTERY_LIGHT_FULL_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
             mFullColorPref.setAllValues(fullColor, 0, 0, false);
         }
@@ -116,11 +116,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getContentResolver();
 
         if (key.equals(LOW_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
+            MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
         } else if (key.equals(MEDIUM_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
+            MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
         } else if (key.equals(FULL_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
+            MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
         }
     }
 
@@ -147,11 +147,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
         // Reset to the framework default colors
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR,
+        MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_LOW_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
+        MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR,
+        MKSettings.System.putInt(resolver, MKSettings.System.BATTERY_LIGHT_FULL_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
         refreshDefault();
     }

@@ -38,7 +38,7 @@ import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
 import mokee.hardware.MKHardwareManager;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 /**
  * Special preference type that allows configuration of Color settings
@@ -106,9 +106,9 @@ public class DisplayColor extends DialogPreference {
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-        String colorAdjustmentTemp = CMSettings.System.getStringForUser(
+        String colorAdjustmentTemp = MKSettings.System.getStringForUser(
                 mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_COLOR_ADJUSTMENT,
+                MKSettings.System.DISPLAY_COLOR_ADJUSTMENT,
                 UserHandle.USER_CURRENT);
         String[] colorAdjustment = colorAdjustmentTemp == null ?
                 null : colorAdjustmentTemp.split(" ");
@@ -242,8 +242,8 @@ public class DisplayColor extends DialogPreference {
     }
 
     private void updateColors(float[] colors) {
-        CMSettings.System.putStringForUser(mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_COLOR_ADJUSTMENT,
+        MKSettings.System.putStringForUser(mContext.getContentResolver(),
+                MKSettings.System.DISPLAY_COLOR_ADJUSTMENT,
                 new StringBuilder().append(colors[0]).append(" ")
                                    .append(colors[1]).append(" ")
                                    .append(colors[2]).toString(),

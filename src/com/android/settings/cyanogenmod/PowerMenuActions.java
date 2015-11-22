@@ -36,7 +36,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.cm.PowerMenuConstants;
-import mokee.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import static com.android.internal.util.cm.PowerMenuConstants.*;
 
@@ -260,10 +260,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void updatePreferences() {
-        boolean bugreport = CMSettings.Secure.getInt(getContentResolver(),
-                CMSettings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
-        boolean profiles = CMSettings.System.getInt(getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
+        boolean bugreport = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
+        boolean profiles = MKSettings.System.getInt(getContentResolver(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
 
         if (mProfilePref != null) {
             mProfilePref.setEnabled(profiles);
@@ -287,8 +287,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private void getUserConfig() {
         mLocalUserConfig.clear();
         String[] defaultActions;
-        String savedActions = CMSettings.Secure.getStringForUser(mContext.getContentResolver(),
-                CMSettings.Secure.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
+        String savedActions = MKSettings.Secure.getStringForUser(mContext.getContentResolver(),
+                MKSettings.Secure.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
 
         if (savedActions == null) {
             defaultActions = mContext.getResources().getStringArray(
@@ -323,8 +323,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
 
-        CMSettings.Secure.putStringForUser(getContentResolver(),
-                CMSettings.Secure.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
+        MKSettings.Secure.putStringForUser(getContentResolver(),
+                MKSettings.Secure.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
         updatePowerMenuDialog();
     }
 

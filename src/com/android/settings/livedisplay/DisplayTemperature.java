@@ -32,7 +32,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 /**
  * Preference for selection of color temperature range for LiveDisplay
@@ -56,9 +56,9 @@ public class DisplayTemperature extends DialogPreference {
         mContext = context;
 
         mDefaultDayTemperature = mContext.getResources().getInteger(
-                org.cyanogenmod.platform.internal.R.integer.config_dayColorTemperature);
+                org.mokee.platform.internal.R.integer.config_dayColorTemperature);
         mDefaultNightTemperature = mContext.getResources().getInteger(
-                org.cyanogenmod.platform.internal.R.integer.config_nightColorTemperature);
+                org.mokee.platform.internal.R.integer.config_nightColorTemperature);
 
         setDialogLayoutResource(R.layout.display_temperature);
     }
@@ -77,12 +77,12 @@ public class DisplayTemperature extends DialogPreference {
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-        mOriginalDayTemperature = CMSettings.System.getIntForUser(mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_TEMPERATURE_DAY,
+        mOriginalDayTemperature = MKSettings.System.getIntForUser(mContext.getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_DAY,
                 mDefaultDayTemperature,
                 UserHandle.USER_CURRENT);
-        mOriginalNightTemperature = CMSettings.System.getIntForUser(mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_TEMPERATURE_NIGHT,
+        mOriginalNightTemperature = MKSettings.System.getIntForUser(mContext.getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_NIGHT,
                 mDefaultNightTemperature,
                 UserHandle.USER_CURRENT);
 
@@ -206,12 +206,12 @@ public class DisplayTemperature extends DialogPreference {
         int night = accept ? mNightTemperature.getProgress() : mOriginalNightTemperature;
         callChangeListener(new Integer[] { day, night });
 
-        CMSettings.System.putIntForUser(mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_TEMPERATURE_DAY, day,
+        MKSettings.System.putIntForUser(mContext.getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_DAY, day,
                 UserHandle.USER_CURRENT);
 
-        CMSettings.System.putIntForUser(mContext.getContentResolver(),
-                CMSettings.System.DISPLAY_TEMPERATURE_NIGHT, night,
+        MKSettings.System.putIntForUser(mContext.getContentResolver(),
+                MKSettings.System.DISPLAY_TEMPERATURE_NIGHT, night,
                 UserHandle.USER_CURRENT);
     }
 

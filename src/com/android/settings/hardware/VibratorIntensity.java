@@ -70,6 +70,11 @@ public class VibratorIntensity extends DialogPreference implements
         setDialogLayoutResource(R.layout.vibrator_intensity);
     }
 
+    public static boolean isSupported(Context context) {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        return hardware.isSupported(MKHardwareManager.FEATURE_VIBRATOR);
+    }
+
     @Override
     protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
         builder.setNeutralButton(R.string.settings_reset_button,

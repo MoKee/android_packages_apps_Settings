@@ -51,13 +51,13 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
 import com.android.settings.Utils;
-import com.android.settings.cyanogenmod.BaseSystemSettingSwitchBar;
-import mokee.providers.CMSettings;
+import com.android.settings.cyanogenmod.CMBaseSystemSettingSwitchBar;
+import mokee.providers.MKSettings;
 
 import java.util.UUID;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements BaseSystemSettingSwitchBar.SwitchBarChangeCallback {
+        implements CMBaseSystemSettingSwitchBar.SwitchBarChangeCallback {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -70,7 +70,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private final BroadcastReceiver mReceiver;
 
     private ProfileManager mProfileManager;
-    private BaseSystemSettingSwitchBar mProfileEnabler;
+    private CMBaseSystemSettingSwitchBar mProfileEnabler;
 
     private ViewPager mViewPager;
     private TextView mEmptyText;
@@ -159,8 +159,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onStart() {
         super.onStart();
         final SettingsActivity activity = (SettingsActivity) getActivity();
-        mProfileEnabler = new BaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
+        mProfileEnabler = new CMBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
     }
 
     @Override
@@ -226,8 +226,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private void updateProfilesEnabledState() {
         Activity activity = getActivity();
 
-        mEnabled = CMSettings.System.getInt(activity.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mEnabled = MKSettings.System.getInt(activity.getContentResolver(),
+                MKSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         activity.invalidateOptionsMenu();
 
         mAddProfileFab.setVisibility(mEnabled ? View.VISIBLE : View.GONE);
