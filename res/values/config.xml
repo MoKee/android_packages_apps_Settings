@@ -79,4 +79,5 @@
 
     <!-- This is used to define screen color's contrast progress bar maximum value-->
     <integer name="maximum_contrast_value" translatable="false">360</integer>
+
 </resources>
