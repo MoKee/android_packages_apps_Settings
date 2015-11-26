@@ -275,7 +275,7 @@ public class ButtonBacklightBrightness extends DialogPreference implements
     }
 
     private void applyTimeout(int timeout) {
-        MKSettings.System.putInt(mResolver,
+        MKSettings.Secure.putInt(mResolver,
                 MKSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT, timeout * 1000);
     }
 
