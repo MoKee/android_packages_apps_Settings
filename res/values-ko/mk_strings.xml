@@ -119,7 +119,7 @@
   <string name="status_bar_clock_show_second_title">초시계</string>
   <string name="status_bar_clock_show_second_summary">상태바 시계에 초표시</string>
   <string name="show_su_icon_title">Su 아이콘 표시</string>
-  <string name="show_su_icon_summary">상태 수는 활성화 표시줄에 아이콘을 표시</string>
+  <string name="show_su_icon_summary">상태표시줄에 su아이콘 띄우기</string>
   <string name="show_headset_icon_title">헤드셋 아이콘 표시</string>
   <string name="show_headset_icon_summary">헤드셋이 연결되면 상태 표시 줄에 아이콘 표시</string>
   <string name="double_tap_to_sleep_navbar_title">네비게이션 바를 두번 두드릴시 화면끄기</string>
