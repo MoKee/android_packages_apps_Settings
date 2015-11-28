@@ -17,7 +17,7 @@
 package com.android.settings.mokee.stats;
 
 import com.mokee.os.Build;
-import com.mokee.os.Build$VERSION;
+import com.mokee.os.Build.VERSION;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
@@ -50,7 +50,7 @@ public class Utilities {
     }
 
     public static String getVersionCode() {
-        return Build$VERSION.CODENAME.startsWith("MK") ? Build$VERSION.CODENAME : "Unknown";
+        return VERSION.CODENAME.startsWith("MK") ? VERSION.CODENAME : "Unknown";
     }
 
 }
