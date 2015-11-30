@@ -50,7 +50,6 @@ import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
 import mokee.providers.MKSettings;
-import org.mokee.hardware.KeyDisabler;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
