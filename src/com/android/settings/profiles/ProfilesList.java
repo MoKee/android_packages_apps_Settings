@@ -36,7 +36,8 @@ import android.widget.ListView;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+
+import org.mokee.internal.util.ScreenType;
 
 public class ProfilesList extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -61,6 +62,11 @@ public class ProfilesList extends SettingsPreferenceFragment implements
     public void onResume() {
         super.onResume();
         refreshList();
+
+        // On tablet devices remove the padding
+        if (ScreenType.isTablet(getActivity())) {
+            getListView().setPadding(0, 0, 0, 0);
+        }
     }
 
     @Override

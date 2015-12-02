@@ -43,16 +43,18 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
-import mokee.app.Profile;
-import mokee.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
-import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.CMBaseSystemSettingSwitchBar;
+
+import mokee.app.Profile;
+import mokee.app.ProfileManager;
 import mokee.providers.MKSettings;
+
+import org.mokee.internal.util.ScreenType;
 
 import java.util.UUID;
 
@@ -144,6 +146,11 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
         // check if we are enabled
         updateProfilesEnabledState();
+
+        // If running on a phone, remove padding around tabs
+        if (!ScreenType.isTablet(getActivity())) {
+            mContainer.setPadding(0, 0, 0, 0);
+        }
     }
 
     @Override
