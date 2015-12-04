@@ -51,6 +51,7 @@
   <string name="blacklist_harassment_numbers_summary">Bloquear llamadas de acoso</string>
   <string name="smartcontrol_settings_title">Control inteligente</string>
   <string name="direct_control_title">Control directo</string>
+  <string name="direct_call_for_dialer_title">Llamada directa en el marcador</string>
   <string name="direct_call_for_dialer_summary">Levante el teléfono a la oreja después de introducir el número de marcador para llamar directamente</string>
   <string name="direct_call_for_mms_title">Llamada directa en MMS</string>
   <string name="direct_call_for_mms_summary">Elevar el teléfono al oído llamará automáticamente al contacto actual</string>
@@ -113,10 +114,14 @@
   <string name="recents_clear_all_location_bottom_right">Esquina inferior derecha</string>
   <string name="recents_clear_all_location_bottom_left">Esquina inferior izquierda</string>
   <string name="recents_clear_all_location_bottom_center">Parte inferior central</string>
+  <string name="recents_clear_all_ignored_foreground_title">Ignorar tareas en segundo plano</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Evitar el cierre de tareas en segundo plano cuando haya más de una aplicación reciente.</string>
   <string name="status_bar_clock_show_second_title">Segundos en el reloj</string>
   <string name="status_bar_clock_show_second_summary">Mostrar segundos en el reloj de la barra de estado</string>
   <string name="show_su_icon_title">Muestra el icono de su</string>
   <string name="show_su_icon_summary">Mostrar un icono en el estado de la barra cuando está activo su</string>
+  <string name="show_headset_icon_title">Mostrar icono de auriculares</string>
+  <string name="show_headset_icon_summary">Muestra un icono en la barra de estado cuando hay unos auriculares conectados.</string>
   <string name="double_tap_to_sleep_navbar_title">Doble toque en la barra de navegación para apagar la pantalla</string>
   <string name="double_tap_to_sleep_navbar_summary">Doble toque en la barra de navegación para apagar la pantalla</string>
   <string name="battery_optimizer_title">Optimizador de batería</string>
