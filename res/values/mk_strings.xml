@@ -30,4 +30,8 @@
     <string name="status_bar_network_traffic_style_down">Incoming</string>
     <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
 
+    <!-- Show/hide headset icon -->
+    <string name="show_headset_icon_title">Show headset icon</string>
+    <string name="show_headset_icon_summary">Display an icon in status bar when headset is plugged in</string>
+
 </resources>
