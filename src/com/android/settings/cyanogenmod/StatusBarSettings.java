@@ -50,6 +50,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
+    private static final String STATUS_BAR_NETWORK_TRAFFIC_STYLE = "status_bar_network_traffic_style";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
@@ -58,6 +59,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
+    private ListPreference mStatusBarNetworkTraffic;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
 
@@ -70,6 +72,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
+
+        mStatusBarNetworkTraffic = (ListPreference) findPreference(STATUS_BAR_NETWORK_TRAFFIC_STYLE);
+
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBatteryShowPercent =
                 (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
@@ -90,6 +95,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
+
+        int networkTrafficStyle = MKSettings.System.getInt(resolver,
+                MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, 3);
+        mStatusBarNetworkTraffic.setValue(String.valueOf(networkTrafficStyle));
+        mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntry());
+        mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
 
         int batteryStyle = MKSettings.System.getInt(resolver,
                 MKSettings.System.STATUS_BAR_BATTERY_STYLE, 0);
@@ -155,6 +166,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     resolver, MKSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarNetworkTraffic) {
+            int networkTrafficStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarNetworkTraffic.findIndexOfValue((String) newValue);
+            MKSettings.System.putInt(
+                    resolver, MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, networkTrafficStyle);
+            mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntries()[index]);
             return true;
         }
         return false;
