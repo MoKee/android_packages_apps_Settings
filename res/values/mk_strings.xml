@@ -30,6 +30,10 @@
     <string name="status_bar_network_traffic_style_down">Incoming</string>
     <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
 
+    <!-- Seconds in clock -->
+    <string name="status_bar_clock_show_second_title">Seconds in clock</string>
+    <string name="status_bar_clock_show_second_summary">Display seconds in status bar clock</string>
+
     <!-- Show/hide su icon -->
     <string name="show_su_icon_title">Show su icon</string>
     <string name="show_su_icon_summary">Display an icon in status bar when su is active</string>

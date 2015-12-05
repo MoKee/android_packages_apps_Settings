@@ -26,6 +26,12 @@
         android:entries="@array/status_bar_clock_style_entries"
         android:entryValues="@array/status_bar_clock_style_values" />
 
+    <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
+        android:key="status_bar_clock_show_second"
+        android:title="@string/status_bar_clock_show_second_title"
+        android:summary="@string/status_bar_clock_show_second_summary"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="status_bar_am_pm"
         android:title="@string/status_bar_am_pm_title"
