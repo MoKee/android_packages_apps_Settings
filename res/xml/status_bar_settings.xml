@@ -74,6 +74,12 @@
         android:defaultValue="false" />
 
     <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
+        android:key="show_su_icon"
+        android:title="@string/show_su_icon_title"
+        android:summary="@string/show_su_icon_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
         android:key="show_headset_icon"
         android:title="@string/show_headset_icon_title"
         android:summary="@string/show_headset_icon_summary"
