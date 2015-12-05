@@ -133,7 +133,7 @@ public class ProtectedAppsActivity extends Activity {
     }
 
     private void updateProtectedComponentsList() {
-        String protectedComponents = MKSettings.System.getString(getContentResolver(),
+        String protectedComponents = MKSettings.Secure.getString(getContentResolver(),
                 MKSettings.Secure.PROTECTED_COMPONENTS);
         protectedComponents = protectedComponents == null ? "" : protectedComponents;
         String [] flattened = protectedComponents.split("\\|");
@@ -198,7 +198,7 @@ public class ProtectedAppsActivity extends Activity {
         // the ListView. This can happen if there are components which have been protected
         // but do not respond to the queryIntentActivities for Launcher Category
         ContentResolver resolver = getContentResolver();
-        String hiddenComponents = MKSettings.System.getString(resolver,
+        String hiddenComponents = MKSettings.Secure.getString(resolver,
                 MKSettings.Secure.PROTECTED_COMPONENTS);
 
         if (hiddenComponents != null && !hiddenComponents.equals("")) {

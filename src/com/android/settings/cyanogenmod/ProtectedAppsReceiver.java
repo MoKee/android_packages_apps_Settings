@@ -77,7 +77,7 @@ public class ProtectedAppsReceiver extends BroadcastReceiver {
     public static void updateSettingsSecure(Context context,
             ArrayList<ComponentName> components, boolean state) {
         ContentResolver resolver = context.getContentResolver();
-        String hiddenComponents = MKSettings.System.getString(resolver,
+        String hiddenComponents = MKSettings.Secure.getString(resolver,
                 MKSettings.Secure.PROTECTED_COMPONENTS);
         HashSet<ComponentName> newComponentList = new HashSet<ComponentName>();
 
@@ -102,7 +102,7 @@ public class ProtectedAppsReceiver extends BroadcastReceiver {
                 }
                 flattenedList.append(cmp.flattenToString());
             }
-            MKSettings.System.putString(resolver, MKSettings.Secure.PROTECTED_COMPONENTS,
+            MKSettings.Secure.putString(resolver, MKSettings.Secure.PROTECTED_COMPONENTS,
                     flattenedList.toString());
         }
     }
