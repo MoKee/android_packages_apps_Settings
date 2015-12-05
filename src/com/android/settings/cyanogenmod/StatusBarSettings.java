@@ -85,7 +85,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         } else {
             int statusBarAmPm = MKSettings.System.getInt(resolver,
-                    MKSettings.System.STATUS_BAR_AM_PM, 2);
+                    MKSettings.System.STATUS_BAR_AM_PM, 0);
             mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
@@ -98,7 +98,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery.setOnPreferenceChangeListener(this);
 
         int batteryShowPercent = MKSettings.System.getInt(resolver,
-                MKSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+                MKSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 1);
         mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         enableStatusBarBatteryDependents(batteryStyle);
