@@ -83,6 +83,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
 
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -140,6 +142,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mHomeAnswerCall;
 
     private PreferenceCategory mNavigationPreferencesCat;
+
+    private ListPreference mNavButtonsHeight;
 
     private Handler mHandler;
 
@@ -208,6 +212,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        // Height of navigation bar buttons
+        int statusNavButtonsHeight = MKSettings.System.getInt(getContentResolver(),
+                MKSettings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavButtonsHeight = initActionList(KEY_NAVIGATION_BAR_HEIGHT, statusNavButtonsHeight);
 
         // Navigation bar recents long press activity needs custom setup
         mNavigationRecentsLongPressAction =
@@ -610,6 +619,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
             MKSettings.Secure.putString(getContentResolver(),
                     MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
+            return true;
+        } else if (preference == mNavButtonsHeight) {
+            handleActionListChange(mNavButtonsHeight, newValue,
+                    MKSettings.System.NAVIGATION_BAR_HEIGHT);
             return true;
         }
         return false;
