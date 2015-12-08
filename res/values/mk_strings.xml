@@ -22,6 +22,16 @@
     <string name="mk_support">Community support</string>
     <string name="mk_support_default">Unknown</string>
 
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">All numbers</string>
+    <string name="blacklist_all_numbers_summary">Block all calls</string>
+    <string name="blacklist_advertisement_numbers_title">Advertisement numbers</string>
+    <string name="blacklist_advertisement_numbers_summary">Block advertisement calls</string>
+    <string name="blacklist_fraud_numbers_title">Fraud numbers</string>
+    <string name="blacklist_fraud_numbers_summary">Block fraud calls</string>
+    <string name="blacklist_harassment_numbers_title">Harassment numbers</string>
+    <string name="blacklist_harassment_numbers_summary">Block harassment calls</string>
+
     <!-- Height of navigation bar buttons -->
     <string name="navigation_bar_height">Button height</string>
     <string name="navigation_bar_height_56" translatable="false">56dp</string>

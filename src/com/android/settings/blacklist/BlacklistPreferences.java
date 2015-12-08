@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +30,7 @@ import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
+import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -38,9 +40,15 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
 
     private static final String BUTTON_BLACKLIST_PRIVATE = "button_blacklist_private_numbers";
     private static final String BUTTON_BLACKLIST_UNKNOWN = "button_blacklist_unknown_numbers";
+    private static final String BUTTON_BLACKLIST_ADVERTISEMENT = "phone_blacklist_advertisement_number";
+    private static final String BUTTON_BLACKLIST_FRAUD = "phone_blacklist_fraud_number";
+    private static final String BUTTON_BLACKLIST_HARASSMENT = "phone_blacklist_harassment_number";
 
     private MultiSelectListPreference mBlacklistPrivate;
     private MultiSelectListPreference mBlacklistUnknown;
+    private SystemSettingSwitchPreference mBlacklistAdvertisement;
+    private SystemSettingSwitchPreference mBlacklistFraud;
+    private SystemSettingSwitchPreference mBlacklistHarassment;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -55,6 +63,9 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         mBlacklistUnknown =
                 (MultiSelectListPreference) prefSet.findPreference(BUTTON_BLACKLIST_UNKNOWN);
         mBlacklistUnknown.setOnPreferenceChangeListener(this);
+        mBlacklistAdvertisement = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_ADVERTISEMENT);
+        mBlacklistFraud = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_FRAUD);
+        mBlacklistHarassment = (SystemSettingSwitchPreference) prefSet.findPreference(BUTTON_BLACKLIST_HARASSMENT);
     }
 
     @Override
@@ -72,6 +83,11 @@ public class BlacklistPreferences extends SettingsPreferenceFragment implements
         updateSelectListSummary(mBlacklistUnknown, mBlacklistUnknown.getValues(),
                 R.string.blacklist_unknown_numbers_summary,
                 R.string.blacklist_unknown_numbers_summary_disabled);
+
+        boolean enabled = Settings.System.getInt(getContentResolver(), Settings.System.ENABLE_CLOUD_LOCATION_LOOKUP, 1) == 1;
+        mBlacklistAdvertisement.setEnabled(enabled);
+        mBlacklistFraud.setEnabled(enabled);
+        mBlacklistHarassment.setEnabled(enabled);
     }
 
     @Override

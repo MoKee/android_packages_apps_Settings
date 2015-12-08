@@ -19,6 +19,17 @@
   <string name="mk_version_default">未知</string>
   <string name="mk_support">社区支持</string>
   <string name="mk_support_default">未知</string>
+  <string name="blacklist_all_numbers_title">所有号码</string>
+  <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
+  <string name="blacklist_advertisement_numbers_title">广告号码</string>
+  <string name="blacklist_advertisement_numbers_summary">阻止广告号码的来电</string>
+  <string name="blacklist_fraud_numbers_title">诈骗号码</string>
+  <string name="blacklist_fraud_numbers_summary">阻止诈骗号码的来电</string>
+  <string name="blacklist_harassment_numbers_title">骚扰号码</string>
+  <string name="blacklist_harassment_numbers_summary">阻止骚扰号码的来电</string>
+  <string name="navigation_bar_height">导航栏高度</string>
+  <string name="navigation_bar_height_48">48dp (默认)</string>
+  <string name="navigation_bar_height_0">隐藏</string>
   <string name="show_network_speed_title">状态栏网速</string>
   <string name="show_network_speed_summary">在状态栏显示当前网速</string>
   <string name="status_bar_network_traffic_style_disable">禁用</string>
