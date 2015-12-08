@@ -239,7 +239,7 @@
                 />
 
         <!-- MoKee OpenSource Privacy Settings -->
-        <!-- This is the 'real' Privacy items and includes Privacy Guard, Blacklist & WhisperPush -->
+        <!-- This is the 'real' Privacy items and includes Privacy Guard, Blacklist -->
         <dashboard-tile
                 android:id="@+id/privacy_settings_cyanogenmod"
                 android:title="@string/privacy_settings_cyanogenmod_title"
