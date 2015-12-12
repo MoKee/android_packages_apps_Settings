@@ -129,6 +129,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mLiftToWakePreference;
     private SwitchPreference mDozePreference;
     private SwitchPreference mTapToWakePreference;
+    private SwitchPreference mProximityCheckOnWakePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
 
@@ -299,13 +300,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
-        boolean proximityCheckOnWait = getResources().getBoolean(
+        mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
+        boolean proximityCheckOnWake = getResources().getBoolean(
                 org.mokee.platform.internal.R.bool.config_proximityCheckOnWake);
-        if (!proximityCheckOnWait) {
-            SwitchPreference mProximityWakePreference =
-                    (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
-            if (displayPrefs != null && mProximityWakePreference != null) {
-                displayPrefs.removePreference(mProximityWakePreference);
+        if (!proximityCheckOnWake) {
+            if (displayPrefs != null && mProximityCheckOnWakePreference != null) {
+                displayPrefs.removePreference(mProximityCheckOnWakePreference);
             }
             MKSettings.System.putInt(getContentResolver(), MKSettings.System.PROXIMITY_ON_WAKE, 1);
         }
