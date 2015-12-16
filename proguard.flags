@@ -25,11 +25,6 @@
 -dontwarn com.google.protobuf.jpush.**
 -keep class com.google.protobuf.jpush.** { *;}
 
--dontwarn org.apache.http.**
--keep class org.apache.http.** { *;}
--dontwarn android.net.**
--keep class android.net.** { *;}
-
 -keep class com.mokee.helper.**
 -keep class com.android.settings.mokee.**
 

@@ -1,13 +1,12 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
+LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common org.apache.http.legacy
 LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v13 \
 	mokee-support-widget \
 	jsr305 \
-	org.apache.http.legacy \
 	org.mokee.platform.internal \
 	libGoogleAnalyticsV3 \
 	libGoogleAdMobAdsSdk \
