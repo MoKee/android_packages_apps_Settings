@@ -86,10 +86,6 @@
   <string name="spam_added_title">إضافة %1$s</string>
   <string name="spam_last_blocked_title">آخر حظر %1$s</string>
   <string name="no_filters_title">لم يتم تعيين عوامل التصفية</string>
-  <string name="update_recovery_title">تحديث استعادة Cyanogen (Cyanogen recovery)</string>
-  <string name="update_recovery_summary">تحديث الاستعادة بتحديثات النظام</string>
-  <string name="update_recovery_on_warning">ملحوظة: عندما يتم تمكين هذه الميزة، سيتم استبدال النسخة المستعادة المثبتة بأخرى مضمنة مع الإصدار الحالي من برنامج التشغيل العامل.\n\nوسيتم تحديث نسختك المستعادة مع ترقيات النظام، مما يساعد على ضمان التوافق مع الإصدارات المستقبلية. \n\nهل ترغب في تمكين هذه الميزة؟</string>
-  <string name="update_recovery_off_warning">تحذير: عندما يتم تعطيل هذه الميزة، لن يتم تحديث نسختك المستعادة المثبتة بترقيات النظام.\n\n كما أن ترقيات نظام التشغيل الجديدة قد لا يمكن تثبيتها مع النسخ المستعادة القديمة أو المخصصة. \n\nهل ترغب في تعطيل هذه الميزة؟</string>
   <string name="device_model">طراز الجهاز</string>
   <string name="device_name">اسم الجهاز</string>
   <string name="phone_service_state">صوت: <xliff:g id="voice_state">%1$s</xliff:g>, بيانات: <xliff:g id="data_state">%2$s</xliff:g></string>
@@ -328,8 +324,6 @@
   <string name="usb_not_connected">الآن تم قطع اتصال USB</string>
   <string name="external_storage_turn_on">تم إيقاف وحدة التخزين الخارجية</string>
   <string name="external_storage_turn_off">تم إيقاف وحدة التخزين الخارجية</string>
-  <string name="stats_collection_title">جمع الإحصائيات</string>
-  <string name="stats_collection_summary">عند التمكين، يسمح بجمع المقاييس</string>
   <string name="autoperf_summary">اختيار وضع بطارية مناسب تلقائياً للتطبيقات المختلفة</string>
   <string name="perf_profile_title">وضع البطارية</string>
   <string name="lockpattern_settings_enable_error_path_title">إظهار خطأ النمط</string>
@@ -375,9 +369,6 @@
   <string name="qs_tile_heads_up">الإشعارات العائمة</string>
   <string name="qs_tile_ambient_display">التكيّف مع الضوء المحيط</string>
   <string name="qs_tile_sync">المزامنة</string>
-  <string name="qs_dynamic_tile_next_alarm">التنبيه المقبل</string>
-  <string name="qs_dynamic_tile_ime_selector">محدد IME</string>
-  <string name="qs_dynamic_tile_su">الوصول إلى الجذر</string>
   <string name="qs_main_tiles_title">توسيع الصف الأول</string>
   <string name="qs_main_tiles_summary_on">مربعان أساسيان في الصف الأول</string>
   <string name="qs_main_tiles_summary_off">ثلاثة مربعات في كل صف</string>
@@ -472,30 +463,11 @@
   <string name="battery_saver_threshold">عتبة توفير البطارية</string>
   <string name="battery_saver_summary">خفض الأداء والحد من البيانات الخلفية</string>
   <string name="battery_saver_summary_unavailable">غير متوفر أثناء الشحن</string>
-  <string name="anonymous_statistics_title">إحصائيات CyanogenMod</string>
-  <string name="anonymous_statistics_summary">ساهم في جعل CyanogenMod أفضل بموافقتك على إرسال تقارير بالإحصائيات مجهولة للمصدر</string>
-  <string name="anonymous_statistics_warning_title">حول</string>
-  <string name="anonymous_statistics_warning">الموافقة على المشاركة في إحصائيات CyanogenMod سيسمح بإرسال البيانات غير الشخصية إلى مطوري CyanogenMod لتعقب الإصدارات المثبتة على مختلف الأجهزة كل على حدة. وتشمل المعلومات المقدمة معرفاً فريداً من نوعه، وبالتالي لا تتعرض خصوصيتك أو بياناتك الشخصية للخطر. تُرسل البيانات عند التشغيل في كل مرة. \n\n للاطلاع على مثال للبيانات التي يتم إرسالها، اضغط على معاينة البيانات.
-</string>
-  <string name="enable_reporting_title">تمكين إعداد التقارير</string>
-  <string name="preview_data_title">معاينة البيانات</string>
-  <string name="view_stats_title">عرض الإحصائيات</string>
-  <string name="anonymous_learn_more">لمعرفة المزيد</string>
-  <string name="preview_id_title">معرف فريد</string>
-  <string name="preview_device_title">الجهاز</string>
-  <string name="preview_version_title">الإصدار</string>
-  <string name="preview_country_title">الدولة</string>
-  <string name="preview_carrier_title">شركة المحمول</string>
   <string name="heads_up_notifications">الإشعارات العائمة</string>
   <string name="summary_heads_up_enabled">الإشعارات العائمة مُفعّلة</string>
   <string name="summary_heads_up_disabled">الإشعارات العائمة مُعطَّلة</string>
   <string name="master_clear_desc_cm" product="tablet">سيؤدي هذا إلى مسح كافة البيانات من <b>التخزين الداخلي</b> في جهازك اللوحيّ، بما في ذلك: \n\n <li>حسابات جهازك</li>\n<li>بيانات وإعدادات النظام والتطبيقات</li>\n<li>التطبيقات التي تم تنزيلها</li></string>
   <string name="master_clear_desc_cm" product="default">سيؤدي هذا إلى مسح كافة البيانات من <b>التخزين الداخلي</b> في هاتفك، بما في ذلك: \n\n <li>حسابات جهازك</li>\n<li>بيانات وإعدادات النظام والتطبيقات</li>\n<li>التطبيقات التي تم تنزيلها</li></string>
-  <string name="lock_to_cyanogen_title">حماية الجهاز</string>
-  <string name="lock_to_cyanogen_summary">يتطلب كلمة مرور حساب Cyanogen OS حتى بعد إعادة تعيين المصنع.</string>
-  <string name="lock_to_cyanogen_create_account_msg">يستخدم جهازك كلمة مرور حساب Cyanogen OS لحماية جهازك حتى في حالة إعادة تعيين المصنع. سوف تحتاج إلى إنشاء حساب Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">تعطيل هذه الميزة سيسمح للمستخدمين غير المصرح لهم بإعادة تعيين هاتفك إلى إعدادات المصنع الافتراضية إذا سرق. لا يمكن حماية بياناتك الشخصية. هل تريد تعطيل هذه الميزة؟</string>
-  <string name="lock_to_cyanogen_master_clear_warning">تم تمكين حماية الجهاز. يرجى تعطيل هذه الخاصية الاستمرار لإعادة تعيين جهازك.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">وقع خطأ في الاتصال؛ هل فُعّل الربط بالبلوتوث على هذا الجهاز؟</string>
   <string name="sim_card_status_title">حالة شريحة SIM</string>
   <string name="sim_card_lock_settings_title">إعدادات قفل شريحة SIM/RUIM</string>

@@ -23,9 +23,6 @@
   <string name="camera_launch_summary">การกดค้างและปล่อยจะเป็นการเปิดใช้กล้อง</string>
   <string name="profile_action_system">ค่าเริ่มต้นระบบ</string>
   <string name="autoperf_summary">เลือกโหมดแบตเตอร์รี่ที่เหมาะสมสำหรับแอพต่าง ๆ โดยอัตโนมัติ</string>
-  <string name="qs_dynamic_tile_next_alarm">การปลุกครั้งต่อไป</string>
-  <string name="qs_dynamic_tile_ime_selector">ตัวเลือก IME</string>
-  <string name="qs_dynamic_tile_su">สิทธิผู้ดูแลระบบ</string>
   <string name="wifi_auto_config_priorities">ระดับความสำคัญแบบอัตโนมัติ</string>
   <string name="wifi_setting_countrycode_title">รหัสภูมิภาค Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_summary">ระบุรหัสภูมิภาคสำหรับ Wi\u2011Fi</string>

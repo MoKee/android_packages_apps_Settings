@@ -224,13 +224,6 @@
   <string name="block_notifications_title">Filter kennisgewings</string>
   <string name="block_notifications_summary">Bestuur geïgnoreerde kennisgewings en ​​filters</string>
   <string name="no_filters_title">Geen filters opgestel</string>
-  <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
-  <string name="update_recovery_title">Opdateer Cyanogen recovery</string>
-  <string name="update_recovery_summary">Opdateer recovery met stelsel opdaterings</string>
-  <string name="update_recovery_on_warning">KENNISGEWING: Wanneer hierdie funksie geaktiveer is, sal jou geïnstalleerde recovery vervang word deur een ingesluit met die huidige weergawe van die Beheer Stelsel\n\nJou recovery sal opgedateer word saam met die opgraderings aan jou stelsel, dit help om versoenbaarheid te verseker van toekomstige weergawes.\n\nWil jy hierdie funksie aktiveer?</string>
-  <string name="update_recovery_off_warning">WAARSKUWING: Wanneer hierdie funksie afgeskakel is, sal jou geïnstalleerde recovery nie opgedateer word met Beheer Stelsel (BS) opgraderings nie.\n\nToekomstige BS opdaterings kan dalk nie geïnstalleer word met verouderde of persoonlike recovery weergawes nie.\n\nWil jy regtig hierdie funksie af skakel?</string>
-  <string name="mod_version">CyanogenMod weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <string name="device_model">Toestel tipe</string>
   <string name="device_name">Toestel naam</string>
   <string name="build_date">Bou datum</string>
@@ -239,7 +232,6 @@
   <string name="double_tap_to_wake_summary">Dubbel klop op die skerm om dit aan te skakel</string>
   <string name="proximity_wake_title">Voorkom toevallige wakker word</string>
   <string name="proximity_wake_summary">Gaan die nabyheid sensor na voordat die skerm wakker gemaak word</string>
-  <string name="privacy_settings_cyanogenmod_title">Privaatheid</string>
   <string name="privacy_guard_default_title">Standaard instelling</string>
   <string name="privacy_guard_default_summary">Aktiveer as \'n standaard instelling vir nuut-geinstalleerde programme</string>
   <string name="privacy_guard_manager_title">Privaatheidswag</string>
@@ -662,8 +654,6 @@
   <string name="usb_not_connected">USB is nou ontkoppel</string>
   <string name="external_storage_turn_on">Eksterne stoor is aangeskakel</string>
   <string name="external_storage_turn_off">Eksterne stoor is afgeskakel</string>
-  <string name="stats_collection_title">Statistieke versameling</string>
-  <string name="stats_collection_summary">As dit aangeskakel is, laat statistieke versameling toe</string>
   <string name="power_notifications_category_title">Laaier-klank</string>
   <string name="power_notifications_enable_title">Aktiveer</string>
   <string name="power_notifications_enable_summary">Speel \'n klank met die koppeling of ontkoppeling van \'n kragbron</string>
@@ -684,8 +674,6 @@
   <string name="pref_force_highend_gfx_summary">Aktiveer hoë-einde visuele effekte soos deursigtige status / navigasie balk (vereis herlaai)</string>
   <string name="edge_gesture_service_title">Blok gebaar raak gebeure</string>
   <string name="edge_gesture_service_summary">Moenie raak gebeure vir navigasie en status balk gebare stuur na programme</string>
-  <string name="cmlicense_title">CyanogenMod Regs</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Regs</string>
   <string name="lockpattern_settings_enable_error_path_title">Wys patroon fout</string>
   <string name="lockpattern_settings_enable_dots_title">Wys patroon kolle</string>
   <string name="lock_directly_show_password">Wys direk wagwoord inskrywing</string>
@@ -739,9 +727,6 @@
   <string name="qs_tile_ambient_display">Omgewingstemperatuur skerm</string>
   <string name="qs_tile_sync">Sinkroniseer</string>
   <string name="qs_tile_battery_saver">Battery verlenging</string>
-  <string name="qs_dynamic_tile_next_alarm">Volgende alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">Kies IME</string>
-  <string name="qs_dynamic_tile_su">\'Root\' toegang</string>
   <string name="qs_main_tiles_title">Vergroot eerste ry</string>
   <string name="qs_main_tiles_summary_on">Twee hoof teëls op die eerste ry</string>
   <string name="qs_main_tiles_summary_off">Drie teëls op elke ry</string>
@@ -779,8 +764,6 @@
   <string name="lockscreen_choose_action_title">Kies aksie</string>
   <string name="lockscreen_visualizer_title">Vertoon musiek visualiseerder</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Bestuur veilige SMS-instellings.</string>
   <string name="navigation_ring_title">Navigasie ring teikens</string>
   <string name="navigation_ring_message">Tik die wysig ikoon om die navigasie ring vir redigering oop te maak.\n\nKies \'n teiken om sy gedrag op te stel.\n\nTik die \'\u2713\' ikoon om die veranderinge te stoor of \'Herstel standaard\' om die instellings te herstel.</string>
   <string name="lcd_density">LCD digtheid</string>
@@ -859,29 +842,11 @@
   <string name="battery_saver_threshold">Battery spaarder grens</string>
   <string name="battery_saver_summary">Verminder werkverrigting en beperk agtergrond data</string>
   <string name="battery_saver_summary_unavailable">Nie beskikbaar tydens laai</string>
-  <string name="anonymous_statistics_title">CyanogenMod statistieke</string>
-  <string name="anonymous_statistics_summary">Help CyanogenMod verbeter deur anonieme statistiek verslagdoening te kies</string>
-  <string name="anonymous_statistics_warning_title">Aangaande</string>
-  <string name="anonymous_statistics_warning">Deur CyanogenMod statistieke toe te laat sal nie-persoonlike data ingestuur word na die ontwikkelaars van CyanogenMod installasies. Die inligting sluit in \'n unieke identifikasienommer in wat nie privaatheid of persoonlike data in gevaar stel nie. Die data word ingestuur tydens elke \'boot\'.\n\nVir \'n voorbeeld van die data wat ingestuur word, raak Voorskou.</string>
-  <string name="enable_reporting_title">Aktiveer verslaggewing</string>
-  <string name="preview_data_title">Voorskou</string>
-  <string name="view_stats_title">Kyk na statistieke</string>
-  <string name="anonymous_learn_more">Leer meer</string>
-  <string name="preview_id_title">Unieke ID</string>
-  <string name="preview_device_title">Toestel</string>
-  <string name="preview_version_title">Weergawe</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Draer</string>
   <string name="heads_up_notifications">Loer boodskap</string>
   <string name="summary_heads_up_enabled">Loer boodskap kennisgewings aangeskakel</string>
   <string name="summary_heads_up_disabled">Loar boodskap kennisgewings is afgeskakel</string>
   <string name="master_clear_desc_cm" product="tablet">Hierdie sal alle data verwyder van jou tablet se <b>interne spasie</b>, insluitende:\n\n<li>Jou tablet rekeninge</li>\n<li> Stelsel data, program data en instellings</li>\n<li>Afgelaaide programme</li></string>
   <string name="master_clear_desc_cm" product="default">Hierdie sal alle data verwyder van jou foon se <b>interne spasie</b>, insluitende:\n\n<li>Jou foon rekeninge</li>\n<li> Stelsel data, program data en instellings</li>\n<li>Afgelaaide programme</li></string>
-  <string name="lock_to_cyanogen_title">Toestel beskerming</string>
-  <string name="lock_to_cyanogen_summary">Benodig u Cyanogen OS wagwoord selfs nadat \'n fabriekterugstelling gebeur het</string>
-  <string name="lock_to_cyanogen_create_account_msg">U toestel gebruik die Cyanogen OS wagwoord om jou toestel te beskerm, selfs in die geval van \'n fabriekterugstelling. Jy sal nodig hê om \'n Cyanogen OS rekening te skep.</string>
-  <string name="lock_to_cyanogen_disable_msg">Afskakeling van hierdie funksie sal toelaat dat ongemagtigde gebruikers jou selfoon te sal herstel na die fabriek instellings as dit gesteel word. Jou persoonlike data kan nie beskerm word nie. Wil jy hierdie funksie afskakel?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Toestel beskerming is aangeskakel. Skakel asb af om jou stelsel te herstel na fabriek instellings.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Koppel fout; is Bluetooth deling aangeskakel op hierdie toestel?</string>
   <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM %d gesluit instellings</string>
