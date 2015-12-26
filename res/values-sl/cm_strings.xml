@@ -226,13 +226,6 @@
   <string name="block_notifications_title">Filtriraj obvestila</string>
   <string name="block_notifications_summary">Upravljaj s prezrtimi obvestili in filtri</string>
   <string name="no_filters_title">Ni nastavljenih filtrov</string>
-  <string name="cmupdate_settings_title">Posodobitve CyanogenMod</string>
-  <string name="update_recovery_title">Posodobi obnovitev Cyanogen</string>
-  <string name="update_recovery_summary">Posodobi obnovitev s sistemskimi posodobitvami</string>
-  <string name="update_recovery_on_warning">OBVESTILO: Ko je ta značilnost omogočena, bo nameščeno obnovitev zamenjala obnovitev vključena v trenutno različico izvajajočega se OS-a.\n\nObnovitev bo posodobljena skupaj z nadgradnjo vašega sistema, kar pomaga zagotoviti združljivost s prihodnjimi različicami.\n\nAli želite omogočiti to značilnost?</string>
-  <string name="update_recovery_off_warning">OPOZORILO: Ko je ta značilnost onemogočena, nameščena obnovitev ne bo posodobljena z nadgradnjami OS-a.\n\nPrihodnje posodobitve OS-a se morda ne bodo namestile z zastarelimi ali prilagojenimi različicami obnovitve.\n\nAli želite onemogočiti to značilnost?</string>
-  <string name="mod_version">Različica CyanogenMod</string>
-  <string name="mod_version_default">Neznano</string>
   <string name="device_model">Model naprave</string>
   <string name="device_name">Ime naprave</string>
   <string name="build_date">Datum izgradnje</string>
@@ -241,7 +234,6 @@
   <string name="double_tap_to_wake_summary">Dvakrat tapnite na zaslon, da ga vklopite</string>
   <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
   <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
-  <string name="privacy_settings_cyanogenmod_title">Zasebnost</string>
   <string name="privacy_guard_default_title">Privzeto omogočeno</string>
   <string name="privacy_guard_default_summary">Privzeto omogoči za na novo nameščene programe</string>
   <string name="privacy_guard_manager_title">Privacy Guard</string>
@@ -664,8 +656,6 @@
   <string name="usb_not_connected">USB je sedaj prekinjen</string>
   <string name="external_storage_turn_on">Zunanja pomnilniška naprava je vklopljena</string>
   <string name="external_storage_turn_off">Zunanja pomnilniška naprava je izklopljena</string>
-  <string name="stats_collection_title">Zbiranje statistike</string>
-  <string name="stats_collection_summary">Ko je omogočeno, dovoli zbiranje metrik</string>
   <string name="power_notifications_category_title">Zvoki ob polnjenju</string>
   <string name="power_notifications_enable_title">Omogoči</string>
   <string name="power_notifications_enable_summary">Predvajaj zvok ob priključitvi ali odklopu vira napajanja</string>
@@ -686,8 +676,6 @@
   <string name="pref_force_highend_gfx_summary">Omogoča visokokakovostne vidne učinke, kot je prosojna vrstica stanja/obvestil (zahteva ponovni zagon)</string>
   <string name="edge_gesture_service_title">Blokiraj dogodke potez z dotiki</string>
   <string name="edge_gesture_service_summary">Ne pošlji dogodkov dotikov za krmarjenje in poteze vrstice stanja programom</string>
-  <string name="cmlicense_title">Pravna obvestila CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Pravna obvestila CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Prikaži napako vzorca</string>
   <string name="lockpattern_settings_enable_dots_title">Prikaži pike vzorca</string>
   <string name="lock_directly_show_password">Neposredno prikaži vnos gesla</string>
@@ -741,9 +729,6 @@
   <string name="qs_tile_ambient_display">Okoliški zaslon</string>
   <string name="qs_tile_sync">Sinhroniziraj</string>
   <string name="qs_tile_battery_saver">Ohranjevalnik baterije</string>
-  <string name="qs_dynamic_tile_next_alarm">Naslednja budilka</string>
-  <string name="qs_dynamic_tile_ime_selector">Izbirnik IME</string>
-  <string name="qs_dynamic_tile_su">Skrbniški dostop</string>
   <string name="qs_main_tiles_title">Povečaj prvo vrstico</string>
   <string name="qs_main_tiles_summary_on">Dve glavni ploščici v prvo vrsto</string>
   <string name="qs_main_tiles_summary_off">Tri ploščice na vsako vrstico</string>
@@ -781,8 +766,6 @@
   <string name="lockscreen_choose_action_title">Izberite dejanje</string>
   <string name="lockscreen_visualizer_title">Prikaži predočilnik glasbe</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Upravljajte z varnimi nastavitvami SMS</string>
   <string name="navigation_ring_title">Cilji kroga za krmarjenje</string>
   <string name="navigation_ring_message">Tapnite ikono za urejanje, da odprete krog za krmarjenje za urejanje.\n\nIzberite cilj za nastavitev njegovega vedenja.\n\nTapnite ikono \'\u2713\', da shranite svoje spremembe ali \'Obnovi privzete\', da nastavitve ponastavite na privzete.</string>
   <string name="lcd_density">Gostota LCD</string>
@@ -861,31 +844,11 @@
   <string name="battery_saver_threshold">Prag ohranjevalnika baterije</string>
   <string name="battery_saver_summary">Zmanjšaj zmogljivost in omeji podatke v ozadju</string>
   <string name="battery_saver_summary_unavailable">Ni na voljo med polnjenjem</string>
-  <string name="anonymous_statistics_title">Statistika CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomagajte izboljšati CyanogenMod tako, da izberete pošiljanje anonimne statistike</string>
-  <string name="anonymous_statistics_warning_title">O programu</string>
-  <string name="anonymous_statistics_warning">Izbira statistike CyanogenMod bo dovolila pošiljanje neosebnih podatkov
-        razvijalcem CyanogenModa, da lahko sledijo edinstvenim namestitvam v napravah. Poslani podatki vključujejo edinstven določevalec,
-        ki ne ogroža vaše zasebnosti in osebnih podatkov. Podatki so poslani ob vsakem zagonu.\n\nZa primer poslanih podatkov tapnite Predogled podatkov.</string>
-  <string name="enable_reporting_title">Omogoči poročanje</string>
-  <string name="preview_data_title">Predogled podatkov</string>
-  <string name="view_stats_title">Pokaži statistiko</string>
-  <string name="anonymous_learn_more">Več o tem</string>
-  <string name="preview_id_title">Edinstven ID</string>
-  <string name="preview_device_title">Naprava</string>
-  <string name="preview_version_title">Različica</string>
-  <string name="preview_country_title">Država</string>
-  <string name="preview_carrier_title">Ponudnik</string>
   <string name="heads_up_notifications">Obvestila na zaslonu</string>
   <string name="summary_heads_up_enabled">Pojavna obvestila so omogočena</string>
   <string name="summary_heads_up_disabled">Pojavna obvestila so onemogočena</string>
   <string name="master_clear_desc_cm" product="tablet">To bo izbrisalo vse podatke iz <b>notranjega pomnilnika</b> vaše tablice, vključno s/z: \n\n <li>računi naprave</li>\n <li>nastavitvami, in podatki sistema in programov</li> \n<li>prenesenimi programi</li></string>
   <string name="master_clear_desc_cm" product="default">To bo izbrisalo vse podatke iz <b>notranjega pomnilnika</b> vašega telefona, vključno s/z: \n\n <li>računi naprave</li>\n <li>nastavitvami, in podatki sistema in programov</li> \n<li>prenesenimi programi</li></string>
-  <string name="lock_to_cyanogen_title">Zaščita naprave</string>
-  <string name="lock_to_cyanogen_summary">Zahtevajte svoje geslo za račun Cyanogen OS tudi po ponastavitvi na tovarniške vrednosti</string>
-  <string name="lock_to_cyanogen_create_account_msg">Vaša naprava uporablja geslo za račun Cyanogen OS, da zaščititi vašo napravo tudi po ponastavitvi na tovarniške vrednosti. Ustvariti boste morali račun Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Onemogočanje te značilnosti bo omogočilo nepooblaščenim uporabnikom, da ponastavijo vaš telefon na tovarniške privzete vrednosti, če je ukraden. Vaši osebni podatki morda ne bodo zaščiteni. Ali želite onemogočiti to značilnost?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Zaščita naprave je omogočena. Onemogočite, da nadaljujete s ponastavitvijo vaše naprave.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Napaka pri povezavi; ali je deljenje mobilnega interneta Bluetooth na tej napravi omogočeno?</string>
   <string name="sim_card_status_title">Stanje kartice SIM %d</string>
   <string name="sim_card_lock_settings_title">Nastavitve za zaklepanje kartice SIM %d</string>

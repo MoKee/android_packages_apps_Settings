@@ -77,7 +77,6 @@
   <string name="backlight_summary_enabled">Activado</string>
   <string name="adaptive_backlight_summary">Ajusta inteligentemente el brillo de la pantalla, ayudando así a la duración de la batería</string>
   <string name="blacklist_bad_number_add">No se puede añadir el número erróneo a la lista negra de contactos</string>
-  <string name="cmupdate_settings_title">Actualizaciones de CyanogenMod</string>
   <string name="double_tap_to_wake_summary">Toca dos veces la pantalla para encenderla</string>
   <string name="enable_adb_summary_cm">Activar la interfaz de Android Debug Bridge (adb)</string>
   <string name="disable_navkeys_title">Activar la barra de navegación</string>
@@ -111,7 +110,6 @@
   <string name="usb_settings_enable_ums_message">Las aplicaciones y componentes del sistema dependen de que el almacenamiento primario siempre esté disponible. Esta característica rompe esa funcionalidad. En vez de ello, se recomienda ampliamente usar MTP. ¿Estás seguro de que deseas activar el almacenamiento masivo?</string>
   <string name="enable_quickboot_title">Activar el modo QuickBoot</string>
   <string name="sim_enabled">activada</string>
-  <string name="stats_collection_summary">Obtener información sobre las operaciones realizadas por las aplicaciones</string>
   <string name="voice_wakeup_activity_title">Actividad para iniciar</string>
   <string name="voice_wakeup_default_activity">Google Now</string>
   <string name="autoperf_summary">Elige automáticamente un modo de batería adecuado para diversas aplicaciones</string>
@@ -121,7 +119,6 @@
   <string name="qs_tile_performance">Modo de batería</string>
   <string name="qs_tile_ambient_display">Pantalla ambiente</string>
   <string name="qs_tile_battery_saver">Modo de ahorro de batería</string>
-  <string name="qs_dynamic_tile_su">Acceso administrativo</string>
   <string name="gesture_settings_title">Gestos</string>
   <string name="expanded_enabled_for_all">Activado para todos</string>
   <string name="gestures_settings_title">Gestos de Stylus</string>
@@ -133,7 +130,6 @@
   <string name="power_usage_history_title">Uso de batería</string>
   <string name="live_display_summary">Optimizar la pantalla según la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
   <string name="battery_saver_threshold">Ahorro de batería</string>
-  <string name="preview_carrier_title">Operadora móvil</string>
   <string name="summary_heads_up_enabled">Las notificaciones emergentes están activadas</string>
   <string name="factory_reset_erase_stored_content_summary_forced">Borrar música, fotos, vídeos y otros datos de usuario almacenados en este dispositivo. \n\n <b>El contenido no puede ser guardado debido a que el dispositivo esta cifrado.</b></string>
   <string name="unlock_set_unlock_launch_picker_title_with_fingerprint">Pantalla de desbloqueo y huella digital</string>
