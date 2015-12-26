@@ -24,16 +24,8 @@
   <string name="root_access_apps">僅限應用程式</string>
   <string name="root_access_adb">僅限 ADB</string>
   <string name="root_access_all">應用程式和 ADB</string>
-  <string name="mod_version">CyanogenMod 版本</string>
-  <string name="mod_version_default">不明</string>
   <string name="device_name">裝置名稱</string>
-  <string name="mod_api_level_default">不明</string>
   <string name="build_date">版本日期</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
-  <string name="update_recovery_title">升級 Cyanogen 修復模式</string>
-  <string name="update_recovery_summary">系統更新的同時更新修復模式</string>
-  <string name="update_recovery_on_warning">注意：啟用此功能後，您已安裝的修復模式將會被包含運行系統當前版本的修復模式取代。\n\n您的修復模式將會隨著系統一同更新以確保與未來版本的相容性。\n\n您確定要啟用這個功能？</string>
-  <string name="update_recovery_off_warning">警告：停用此功能後，您安裝的修復模式將不與運行系統一同更新。\n\n未來的系统更新可能不支援舊版或自訂修復模式版本。\n\n您確定要停用此功能？</string>
   <string name="themes_settings_title">主題</string>
   <string name="ring_mode_title">鈴響模式</string>
   <string name="ring_mode_normal">適中</string>
@@ -492,20 +484,6 @@
   <string name="block_notifications_summary">管理被忽略的通知和過濾器</string>
   <string name="no_filters_title">沒有設定篩選器</string>
   <string name="app_ops_ignored_count">拒絕 <xliff:g id="count" example="2 times">%s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">開啟匿名統計報告以便協助改進 CyanogenMod</string>
-  <string name="anonymous_statistics_warning_title">關於</string>
-  <string name="enable_reporting_title">啟用報告</string>
-  <string name="preview_data_title">預覽數據</string>
-  <string name="view_stats_title">檢視統計</string>
-  <string name="anonymous_learn_more">瞭解更多</string>
-  <string name="preview_id_title">唯一 ID</string>
-  <string name="preview_device_title">裝置</string>
-  <string name="preview_version_title">版本</string>
-  <string name="preview_country_title">國家</string>
-  <string name="preview_carrier_title">電訊業者</string>
-  <string name="stats_collection_title">統計資料收集</string>
-  <string name="stats_collection_summary">啟用時，允許收集數據</string>
   <string name="lockpattern_reset_button">重設圖樣</string>
   <string name="lockpattern_settings_reset_summary">輸入主電子郵件帳戶和關聯的密碼以重設圖樣鎖</string>
   <string name="menu_hidden_apps_delete">重設</string>

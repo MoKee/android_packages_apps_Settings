@@ -17,9 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="device_name">Tên thiết bị</string>
-  <string name="update_recovery_summary">Cập nhập bản recovery cùng với cập nhật hệ thống</string>
-  <string name="update_recovery_on_warning">THÔNG BÁO: Khi tính năng này được bật, bản recovery đã được cài đặt của bạn sẽ được thay thế bằng bản đi kèm với phiên bản hệ điều hành hiện tại.\n\nBản recovery của bạn sẽ được cập nhật cùng với các bản nâng cấp cho hệ thống của bạn, giúp đảm bảo tính tương thích với những phiên bản sau này.\n\nBạn có muốn bật tính năng này?</string>
-  <string name="update_recovery_off_warning">Cảnh báo: Khi tắt tính năng này, recovery đã cài đặt của bạn sẽ không được cập nhật cùng với các bản nâng cấp của hệ điều hành.\n\nCác bản cập nhật hệ điều hành trong tương lai có thể không cài đặt với phiên bản recovery lỗi thời hoặc tuỳ chỉnh.\n\nBạn thực sự muốn tắt tính năng này?</string>
   <string name="duplicate_appgroup_name">Trùng lặp tên nhóm ứng dụng!</string>
   <string name="ringer_mode">Chế độ chuông</string>
   <string name="choose_soundtone">Chọn âm thông báo</string>

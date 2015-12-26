@@ -32,15 +32,7 @@
   <string name="root_access_apps">Apps only</string>
   <string name="root_access_adb">ADB only</string>
   <string name="root_access_all">Apps and ADB</string>
-  <string name="mod_version">CyanogenMod version</string>
-  <string name="mod_version_default">Unknown</string>
-  <string name="mod_api_level_default">Unknown</string>
   <string name="build_date">Build date</string>
-  <string name="cmupdate_settings_title">CyanogenMod updates</string>
-  <string name="update_recovery_title">Update Cyanogen recovery</string>
-  <string name="update_recovery_summary">Update recovery with system updates</string>
-  <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-  <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
   <string name="themes_settings_title">Themes</string>
   <string name="ring_mode_title">Ring mode</string>
   <string name="ring_mode_normal">Normal</string>
@@ -481,8 +473,6 @@
   <string name="block_notifications_summary">Manage ignored notifications and filters</string>
   <string name="no_filters_title">No filters set</string>
   <string name="app_ops_ignored_count">Denied <xliff:g id="count" example="2 times">%s</xliff:g></string>
-  <string name="stats_collection_title">Stats collection</string>
-  <string name="stats_collection_summary">When enabled, allows metrics collection</string>
   <string name="lockpattern_reset_button">Reset pattern</string>
   <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
   <string name="menu_hidden_apps_delete">Reset</string>

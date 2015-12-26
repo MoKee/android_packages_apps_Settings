@@ -30,8 +30,6 @@
   <string name="root_access_apps">Solo aplicaciones</string>
   <string name="root_access_adb">Solo ADB</string>
   <string name="root_access_all">Aplicaciones y ADB</string>
-  <string name="mod_api_level">Nivel de la API de CyanogenMod</string>
-  <string name="cmupdate_settings_title">Actualizaciones de CyanogenMod</string>
   <string name="ring_mode_normal">Normal</string>
   <string name="ring_mode_vibrate">Vibración</string>
   <string name="ring_mode_mute">Silencio</string>
@@ -117,6 +115,4 @@
   <string name="voice_wakeup_activity_title">Actividad para iniciar</string>
   <string name="voice_wakeup_default_activity">Google Now</string>
   <string name="blacklist_bad_number_add">No se puede añadir el número erróneo a la lista negra de contactos</string>
-  <string name="preview_carrier_title">Operadora móvil</string>
-  <string name="stats_collection_summary">Obtener información sobre las operaciones realizadas por las aplicaciones</string>
 </resources>

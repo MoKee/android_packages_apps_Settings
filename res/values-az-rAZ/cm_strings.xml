@@ -31,17 +31,9 @@
   <string name="root_access_apps">Yalnız tətbiqetmələr</string>
   <string name="root_access_adb">Yalnız ADB</string>
   <string name="root_access_all">Tətbiqetmələr və ADB</string>
-  <string name="mod_version">CyanogenMod versiyası</string>
-  <string name="mod_version_default">Bilinməyən</string>
   <string name="device_model">Cihaz modeli</string>
   <string name="device_name">Cihaz adı</string>
-  <string name="mod_api_level_default">Bilinməyən</string>
   <string name="build_date">Quruluş tarixi</string>
-  <string name="cmupdate_settings_title">CyanogenMod yeniləmələri</string>
-  <string name="update_recovery_title">Cyanogen bərpa rejimini yenilə</string>
-  <string name="update_recovery_summary">Sistem yeniləməsi ilə bərpa rejimini yenilə</string>
-  <string name="update_recovery_on_warning">DİQQƏT: Bu özəllik fəal olduğu halda, quraşdırılmış bərpa rejiminiz hazırki ƏS versiyasındakı rejim ilə əvəz olunacaq.\n\nBərpa rejiminiz sistem yeniləmələri ilə birgə yeniləcək, beləliklə gələcək versiyalar ilə uyğunluq təmin ediləcək.\n\nBu özəlliyi fəallaşdırmaq istəyirsiniz?</string>
-  <string name="update_recovery_off_warning">XƏBƏRDARLIQ: Bu özəllik ləğv edilərsə, quraşdırılmış bərpa rejiminiz ƏS yeniləmələri ilə yenilənməyəcək.\n\nGələcək ƏS yeniləmələri köhnəlmiş və ya xüsusi bərpa versiyaları ilə yüklənməyə bilər.\n\nBu özəlliyi həqiqətən də ləğv etmək istəyirsiniz?</string>
   <string name="themes_settings_title">Temalar</string>
   <string name="ring_mode_title">Zəng rejimi</string>
   <string name="ring_mode_normal">Normal</string>

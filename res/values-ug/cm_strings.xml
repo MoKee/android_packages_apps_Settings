@@ -31,15 +31,7 @@
   <string name="root_access_apps">ئەپلەرلا</string>
   <string name="root_access_adb">ADB لا</string>
   <string name="root_access_all">Apps ۋە ADB</string>
-  <string name="mod_version">CyanogenMod نەشرى</string>
-  <string name="mod_version_default">يوچۇن</string>
-  <string name="mod_api_level_default">يوچۇن</string>
   <string name="build_date">ھاسىللىغان چېسلا</string>
-  <string name="cmupdate_settings_title">CyanogenMod يېڭىلانمىلار</string>
-  <string name="update_recovery_title">Cyanogen ئەسلىگە كەلتۈرۈش ھالىتىنى يېڭىلاش</string>
-  <string name="update_recovery_summary">سىستېما يېڭىلانمىلىرى ئارقىلىق ئەسلىگە كەلتۈرۈشنى يېڭىلاش</string>
-  <string name="update_recovery_on_warning">دىققەت: بۇ ئىقتىدار قوزغىتىلسا، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى ئىجرا قىلىنىۋاتقان سىستېما ئۆز ئىچىگە ئالغان ئەسلىگە كەلتۈرۈش دېتالى تەرىپىدىن ئالماشتۇرۇۋېتىلىدۇ.\n\nسىزنىڭ ئەسلىگە كەلتۈرۈش دېتالىڭىز سىستېمىغا ئەگىشىپ يېڭىلىنىپ، كېيىنكى نەشرى بىلەن بولغان ماسلىشىشچانلىققا كاپالەتلىك قىلىدۇ.\n\nبۇ ئىقتىدارنى قوزغىتىشنى خالامسىز؟</string>
-  <string name="update_recovery_off_warning">دىققەت: بۇ ئىقتىدار چەكلەنسە، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى سىستېمىغا ئەگىشىپ يېڭىلانمايدۇ.\n\nكەلگۈسىدە سىستېما يېڭىلانغاندا كونا نەشرى ياكى ئىختىيارىي ئەسلىگە كەلتۈرۈش دېتالى ھالىتىدە ئورنىتىشنى قوللىماسلىقى مۇمكىن\n\nسىز بۇ ئىقتىدارنى راستلا چەكلەمسىز؟</string>
   <string name="themes_settings_title">ئۆرنەكلەر</string>
   <string name="ring_mode_title">قوڭغۇراق ھالىتى</string>
   <string name="ring_mode_normal">ئادەتتىكى</string>
@@ -473,8 +465,6 @@
   <string name="block_notifications_summary">پەرۋا قىلمىغان ئۇقتۇرۇش ۋە سۈزگۈچلەرنى باشقۇرىدۇ</string>
   <string name="no_filters_title">سۈزگۈچ تەڭشىكى يوق</string>
   <string name="app_ops_ignored_count"><xliff:g id="count" example="2 times">%s</xliff:g> رەت قىلدى</string>
-  <string name="stats_collection_title">ئىستاتىستىكىلار</string>
-  <string name="stats_collection_summary">قوزغىتىلغاندا، سانلىق مەلۇمات توپلاشقا يول قويىدۇ</string>
   <string name="lockpattern_reset_button">ئەندىزىنى ئەسلىگە قايتۇر</string>
   <string name="lockpattern_settings_reset_summary">ئاساسىي تورخەت ھېساباتى ۋە مۇناسىپ ئىمنى كىرگۈزۈپ ئەندىزە قۇلۇپنى ئەسلىگە قايتۇرۇڭ</string>
   <string name="menu_hidden_apps_delete">ئەسلىگە قايتۇر</string>

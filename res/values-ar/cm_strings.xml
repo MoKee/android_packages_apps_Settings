@@ -30,10 +30,6 @@
   <string name="development_shortcut_summary">تمكين اختصارات إدارة التطبيقات في قائمة التطبيقات الأخيرة</string>
   <string name="device_model">طراز الجهاز</string>
   <string name="device_name">اسم الجهاز</string>
-  <string name="update_recovery_title">تحديث استعادة Cyanogen (Cyanogen recovery)</string>
-  <string name="update_recovery_summary">تحديث الاستعادة بتحديثات النظام</string>
-  <string name="update_recovery_on_warning">ملحوظة: عندما يتم تمكين هذه الميزة، سيتم استبدال النسخة المستعادة المثبتة بأخرى مضمنة مع الإصدار الحالي من برنامج التشغيل العامل.\n\nوسيتم تحديث نسختك المستعادة مع ترقيات النظام، مما يساعد على ضمان التوافق مع الإصدارات المستقبلية. \n\nهل ترغب في تمكين هذه الميزة؟</string>
-  <string name="update_recovery_off_warning">تحذير: عندما يتم تعطيل هذه الميزة، لن يتم تحديث نسختك المستعادة المثبتة بترقيات النظام.\n\n كما أن ترقيات نظام التشغيل الجديدة قد لا يمكن تثبيتها مع النسخ المستعادة القديمة أو المخصصة. \n\nهل ترغب في تعطيل هذه الميزة؟</string>
   <string name="ring_mode_normal">عادي</string>
   <string name="settings_reset_button">إعادة تعيين</string>
   <string name="profiles_settings_title">أوضاع الجهاز</string>
@@ -272,22 +268,6 @@
   <string name="spam_added_title">إضافة %1$s</string>
   <string name="spam_last_blocked_title">آخر حظر %1$s</string>
   <string name="no_filters_title">لم يتم تعيين عوامل التصفية</string>
-  <string name="anonymous_statistics_title">إحصائيات CyanogenMod</string>
-  <string name="anonymous_statistics_summary">ساهم في جعل CyanogenMod أفضل بموافقتك على إرسال تقارير بالإحصائيات مجهولة للمصدر</string>
-  <string name="anonymous_statistics_warning_title">حول</string>
-  <string name="anonymous_statistics_warning">الموافقة على المشاركة في إحصائيات CyanogenMod سيسمح بإرسال البيانات غير الشخصية إلى مطوري CyanogenMod لتعقب الإصدارات المثبتة على مختلف الأجهزة كل على حدة. وتشمل المعلومات المقدمة معرفاً فريداً من نوعه، وبالتالي لا تتعرض خصوصيتك أو بياناتك الشخصية للخطر. تُرسل البيانات عند التشغيل في كل مرة. \n\n للاطلاع على مثال للبيانات التي يتم إرسالها، اضغط على معاينة البيانات.
-</string>
-  <string name="enable_reporting_title">تمكين إعداد التقارير</string>
-  <string name="preview_data_title">معاينة البيانات</string>
-  <string name="view_stats_title">عرض الإحصائيات</string>
-  <string name="anonymous_learn_more">لمعرفة المزيد</string>
-  <string name="preview_id_title">معرف فريد</string>
-  <string name="preview_device_title">الجهاز</string>
-  <string name="preview_version_title">الإصدار</string>
-  <string name="preview_country_title">الدولة</string>
-  <string name="preview_carrier_title">شركة المحمول</string>
-  <string name="stats_collection_title">جمع الإحصائيات</string>
-  <string name="stats_collection_summary">عند التمكين، يسمح بجمع المقاييس</string>
   <string name="category_sounds">أصوات</string>
   <string name="notification_manager">الإشعارات</string>
   <string name="lockscreen_settings">شاشة التأمين</string>

@@ -32,17 +32,9 @@
   <string name="root_access_apps">Endast appar</string>
   <string name="root_access_adb">Endast ADB</string>
   <string name="root_access_all">Appar och ADB</string>
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Okänd</string>
   <string name="device_model">Enhetsmodell</string>
   <string name="device_name">Enhetsnamn</string>
-  <string name="mod_api_level_default">Okänd</string>
   <string name="build_date">Byggdatum</string>
-  <string name="cmupdate_settings_title">CyanogenMod-uppdateringar</string>
-  <string name="update_recovery_title">Uppdatera Cyanogen Recovery</string>
-  <string name="update_recovery_summary">Uppdatera Recovery med systemuppdateringar</string>
-  <string name="update_recovery_on_warning">OBSERVERA: När denna funktion är aktiverad, kommer din installerade Recovery att ersättas av en som ingår i den aktuella versionen av ditt nuvarande OS.\n\nRecovery kommer att uppdateras med uppgraderingar till ditt system, detta bidrar till att säkerställa kompatibilitet med framtida versioner.\n\nVill du aktivera den här funktionen?</string>
-  <string name="update_recovery_off_warning">VARNING: När denna funktion är inaktiverad, kommer din installerade Recovery inte att uppdateras med OS-uppgraderingar.\n\nFramtida OS-uppdateringar kan komma att inte kunna installeras med inaktuella eller anpassade Recovery-versioner.\n\nVill du verkligen inaktivera denna funktion?</string>
   <string name="themes_settings_title">Teman</string>
   <string name="ring_mode_title">Ringningsläge</string>
   <string name="ring_mode_normal">Normal</string>
@@ -517,24 +509,6 @@
   <string name="block_notifications_summary">Hantera ignorerade aviseringar och filter</string>
   <string name="no_filters_title">Inga filter valda</string>
   <string name="app_ops_ignored_count">Nekad <xliff:g id="count" example="2 times">%s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod-statistik</string>
-  <string name="anonymous_statistics_summary">Hjälp till att göra CyanogenMod bättre genom att skicka anonyma statistikrapporter</string>
-  <string name="anonymous_statistics_warning_title">Om</string>
-  <string name="anonymous_statistics_warning">Att delta i CyanogenMod Statistics kommer tillåta att icke-personlig data kommer att skickas till
-        utvecklarna av CyanogenMod för att spåra unika installationer mellan enheter. Den delgivna informationen
-inkluderar en unik identifikation,
-        som inte riskerar din integritet eller personliga data. Data skickas vid varje uppstart av enheten.\n\nFör ett exempel på den data som skickas, tryck på Förhandsgranska data.</string>
-  <string name="enable_reporting_title">Aktivera rapportering</string>
-  <string name="preview_data_title">Förhandsgranska data</string>
-  <string name="view_stats_title">Visa statistik</string>
-  <string name="anonymous_learn_more">Läs mer</string>
-  <string name="preview_id_title">Unikt ID</string>
-  <string name="preview_device_title">Enhet</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Operatör</string>
-  <string name="stats_collection_title">Statistikinsamling</string>
-  <string name="stats_collection_summary">När aktiverad, tillåts insamling av mättal</string>
   <string name="lockpattern_reset_button">Återställ mönster</string>
   <string name="lockpattern_settings_reset_summary">Ange primärt e-postkonto och tillhörande lösenord för att återställa mönsterlåset</string>
   <string name="menu_hidden_apps_delete">Återställ</string>
