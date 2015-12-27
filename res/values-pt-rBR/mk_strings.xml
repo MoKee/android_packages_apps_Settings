@@ -51,6 +51,7 @@
   <string name="blacklist_harassment_numbers_summary">Bloquear números de assédio</string>
   <string name="smartcontrol_settings_title">Controle inteligente</string>
   <string name="direct_control_title">Controle direto</string>
+  <string name="direct_call_for_dialer_title">Chamada direta no discador</string>
   <string name="direct_call_for_dialer_summary">Levar o telefone ao ouvido após digitar o número no discador para chamar diretamente</string>
   <string name="direct_call_for_mms_title">Chamada direta em MMS</string>
   <string name="direct_call_for_mms_summary">Levar o telefone ao ouvido chamará automaticamente o contato atual</string>
@@ -113,10 +114,14 @@
   <string name="recents_clear_all_location_bottom_right">Inferior direito</string>
   <string name="recents_clear_all_location_bottom_left">Inferior esquerdo</string>
   <string name="recents_clear_all_location_bottom_center">Inferior central</string>
+  <string name="recents_clear_all_ignored_foreground_title">Ignorar tarefas em primeiro plano</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Quando haver mais de um app recente, evitar de fechar tarefas em primeiro plano</string>
   <string name="status_bar_clock_show_second_title">Segundos no relógio</string>
   <string name="status_bar_clock_show_second_summary">Mostra segundos no relógio da barra de status</string>
   <string name="show_su_icon_title">Mostrar ícone de su</string>
   <string name="show_su_icon_summary">Mostra um ícone na barra de status quando su está ativo</string>
+  <string name="show_headset_icon_title">Mostrar ícone do fone de ouvido</string>
+  <string name="show_headset_icon_summary">Exibir um ícone na status bar quando o fone de ouvido estiver conectado</string>
   <string name="double_tap_to_sleep_navbar_title">Duplo toque na barra de navegação para apagar tela</string>
   <string name="double_tap_to_sleep_navbar_summary">Duplo toque na barra de navegação desliga a tela</string>
   <string name="battery_optimizer_title">Otimizador de bateria</string>
