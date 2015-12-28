@@ -18,7 +18,6 @@ package com.android.settings.profiles.triggers;
 
 import mokee.app.Profile;
 
-
 public class AbstractTriggerItem {
     private int mIcon;
     private String mSummary;

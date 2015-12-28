@@ -40,7 +40,6 @@ import com.android.settings.profiles.NFCProfileTagCallback;
 import com.android.settings.profiles.NFCProfileUtils;
 import com.android.settings.profiles.ProfilesSettings;
 
-
 public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallback {
     Profile mProfile;
 
@@ -124,6 +123,4 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.nfc_writer, container, false);
     }
-
-
 }

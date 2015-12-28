@@ -16,11 +16,12 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import mokee.profiles.ConnectionSettings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import mokee.profiles.ConnectionSettings;
 
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;

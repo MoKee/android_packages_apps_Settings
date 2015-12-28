@@ -17,8 +17,6 @@
 
 package com.android.settings.profiles;
 
-import java.util.UUID;
-
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -34,6 +32,8 @@ import mokee.app.Profile;
 import mokee.app.ProfileManager;
 
 import com.android.settings.R;
+
+import java.util.UUID;
 
 /**
  * Activity to support writing a profile to an NFC tag.

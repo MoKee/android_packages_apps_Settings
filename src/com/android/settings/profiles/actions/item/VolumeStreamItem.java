@@ -16,13 +16,14 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import mokee.profiles.StreamSettings;
 import android.content.Context;
 import android.media.AudioManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import mokee.profiles.StreamSettings;
 
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;
@@ -69,7 +70,7 @@ public class VolumeStreamItem implements Item {
             desc.setText(context.getResources().getString(R.string.volume_override_summary,
                     denominator, numerator));
         } else {
-            desc.setText(context.getString(R.string.volume_override_summary_no_override));
+            desc.setText(context.getString(R.string.profile_action_none));
         }
 
         return view;

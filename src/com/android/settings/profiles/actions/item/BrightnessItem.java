@@ -16,12 +16,14 @@
  */
 package com.android.settings.profiles.actions.item;
 
-import mokee.profiles.BrightnessSettings;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import mokee.profiles.BrightnessSettings;
+
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;
 
@@ -74,5 +76,4 @@ public class BrightnessItem implements Item {
     public BrightnessSettings getSettings() {
         return mSettings;
     }
-
 }
