@@ -17,6 +17,8 @@
 -keep class com.android.settings.nfc.*
 -keep class com.android.settings.notification.*
 -keep class com.android.settings.cyanogenmod.*
+-keep class com.android.settings.print.*
+-keep class com.android.settings.profiles.*
 
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *;}
@@ -25,8 +27,7 @@
 -dontwarn com.google.protobuf.jpush.**
 -keep class com.google.protobuf.jpush.** { *;}
 
--keep class com.mokee.helper.**
--keep class com.android.settings.mokee.**
+-keep class com.android.settings.mokee.*
 
 -dontwarn mokee.**
 
