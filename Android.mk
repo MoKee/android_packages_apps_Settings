@@ -31,6 +31,8 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAGS := -ignorewarnings -include build/core/proguard_basic_keeps.flags
 
+LOCAL_PROGUARD_ENABLED := nosystem
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
