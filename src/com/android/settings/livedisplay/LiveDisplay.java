@@ -321,6 +321,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         }
 
         mLiveDisplay.setSummary(mModeSummaries[index]);
+        mLiveDisplay.setValue(String.valueOf(mode));
 
         if (mDisplayTemperature != null) {
             mDisplayTemperature.setEnabled(mode != MODE_OFF);
