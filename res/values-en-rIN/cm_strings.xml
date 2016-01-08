@@ -224,13 +224,6 @@
   <string name="block_notifications_title">Filter notifications</string>
   <string name="block_notifications_summary">Manage ignored notifications and filters</string>
   <string name="no_filters_title">No filters set</string>
-  <string name="cmupdate_settings_title">CyanogenMod updates</string>
-  <string name="update_recovery_title">Update Cyanogen recovery</string>
-  <string name="update_recovery_summary">Update recovery with system updates</string>
-  <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-  <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
-  <string name="mod_version">CyanogenMod version</string>
-  <string name="mod_version_default">Unknown</string>
   <string name="device_model">Device model</string>
   <string name="device_name">Device name</string>
   <string name="build_date">Build date</string>
@@ -239,7 +232,6 @@
   <string name="double_tap_to_wake_summary">Double-tap on the screen to turn on the display</string>
   <string name="proximity_wake_title">Prevent accidental wake-up</string>
   <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <string name="privacy_guard_default_title">Enabled by default</string>
   <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
   <string name="privacy_guard_manager_title">Privacy Guard</string>
@@ -662,8 +654,6 @@
   <string name="usb_not_connected">USB is now disconnected</string>
   <string name="external_storage_turn_on">External storage has been turned on</string>
   <string name="external_storage_turn_off">External storage has been turned off</string>
-  <string name="stats_collection_title">Stats collection</string>
-  <string name="stats_collection_summary">When enabled, allows metrics collection</string>
   <string name="power_notifications_category_title">Charging sounds</string>
   <string name="power_notifications_enable_title">Enable</string>
   <string name="power_notifications_enable_summary">Play a sound when connecting or disconnecting a power source</string>
@@ -684,8 +674,6 @@
   <string name="pref_force_highend_gfx_summary">Enables high-end visual effects such as transparent status/navigation bar (requires reboot)</string>
   <string name="edge_gesture_service_title">Block gesture touch events</string>
   <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
-  <string name="cmlicense_title">CyanogenMod legal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod legal</string>
   <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
   <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
   <string name="lock_directly_show_password">Directly show password entry</string>
@@ -739,9 +727,6 @@
   <string name="qs_tile_ambient_display">Ambient display</string>
   <string name="qs_tile_sync">Sync</string>
   <string name="qs_tile_battery_saver">Battery saver</string>
-  <string name="qs_dynamic_tile_next_alarm">Next alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">IME selector</string>
-  <string name="qs_dynamic_tile_su">Root access</string>
   <string name="qs_main_tiles_title">Enlarge first row</string>
   <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
   <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
@@ -779,8 +764,6 @@
   <string name="lockscreen_choose_action_title">Choose action</string>
   <string name="lockscreen_visualizer_title">Display music visualizer</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Manage secure SMS settings</string>
   <string name="navigation_ring_title">Navigation ring targets</string>
   <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
   <string name="lcd_density">LCD density</string>
@@ -861,31 +844,11 @@
   <string name="battery_saver_threshold">Battery saver threshold</string>
   <string name="battery_saver_summary">Reduce performance and limit background data</string>
   <string name="battery_saver_summary_unavailable">Not available while charging</string>
-  <string name="anonymous_statistics_title">CyanogenMod statistics</string>
-  <string name="anonymous_statistics_summary">Help make CyanogenMod better by opting into anonymous statistics reporting</string>
-  <string name="anonymous_statistics_warning_title">About</string>
-  <string name="anonymous_statistics_warning">Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the
-        developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
-  <string name="enable_reporting_title">Enable reporting</string>
-  <string name="preview_data_title">Preview data</string>
-  <string name="view_stats_title">View stats</string>
-  <string name="anonymous_learn_more">Learn more</string>
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">Device</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Country</string>
-  <string name="preview_carrier_title">Carrier</string>
   <string name="heads_up_notifications">Heads up</string>
   <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
   <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
   <string name="master_clear_desc_cm" product="tablet">This will erase all data from your tablet\'s <b>internal storage</b>, including:\n\n<li>Your device accounts</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
   <string name="master_clear_desc_cm" product="default">This will erase all data from your phone\'s <b>internal storage</b>, including:\n\n<li>Your device accounts</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
-  <string name="lock_to_cyanogen_title">Device Protection</string>
-  <string name="lock_to_cyanogen_summary">Require your Cyanogen OS account password even after a factory reset</string>
-  <string name="lock_to_cyanogen_create_account_msg">Your device uses the Cyanogen OS account password to protect your device even in the event of a factory reset. You will need to create a Cyanogen OS account.</string>
-  <string name="lock_to_cyanogen_disable_msg">Disabling this feature will allow unauthorized users to reset your phone to factory defaults if it is stolen. Your personal data may not be protected. Do you want to disable this feature?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Device Protection is enabled. Please disable to continue resetting your device.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Connection error; is Bluetooth tethering enabled on this device?</string>
   <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
