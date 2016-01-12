@@ -32,17 +32,9 @@
   <string name="root_access_apps">Ainult rakendused</string>
   <string name="root_access_adb">Ainult ADB</string>
   <string name="root_access_all">Rakendused ja ADB</string>
-  <string name="mod_version">CyanogenMod versioon</string>
-  <string name="mod_version_default">Teadmata</string>
   <string name="device_model">Seadme mudel</string>
   <string name="device_name">Seadme nimi</string>
-  <string name="mod_api_level_default">Teadmata</string>
   <string name="build_date">Kooste kuupäev</string>
-  <string name="cmupdate_settings_title">CyanogenMod uuendused</string>
-  <string name="update_recovery_title">Uuenda Cyanogeni taasterežiimi</string>
-  <string name="update_recovery_summary">Uuenda recovery süsteemi uuendusega</string>
-  <string name="update_recovery_on_warning">TEADE: Kui see funktsioon on lubatud, siis teie installitud Recovery asendatakse praeguses OS versioonis kaasas olevaga.\n\nSinu Recovery uuendatakse koos süsteemi uuendustega, et tagada ühilduvus tulevaste versioonidega.\n\nKas soovite funktsiooni aktiveerida?</string>
-  <string name="update_recovery_off_warning">HOIATUS: Kui see funktsioon on keelatud, siis teie installitud Recovery ei ajakohastata OS uuendamisel.\n\nTulevased OS ajakohastamised ei pruugi paigalduda vananenud või kohandatud Recovery kasutamisel.\n\nKas soovite funktsiooni keelata?</string>
   <string name="themes_settings_title">Teemad</string>
   <string name="ring_mode_title">Helisemise režiim</string>
   <string name="ring_mode_normal">Tavaline</string>
@@ -627,23 +619,6 @@
   <string name="block_notifications_title">Filtreeri teavitusi</string>
   <string name="block_notifications_summary">Halda ignoreeritud teavitusi ja filtreid</string>
   <string name="no_filters_title">Filtreid pole seatud</string>
-  <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-  <string name="anonymous_statistics_summary">Aita muuta CyanogenMod paremaks, osaledes anonüümse statistika kogumises</string>
-  <string name="anonymous_statistics_warning_title">Üldist</string>
-  <string name="anonymous_statistics_warning">Osaledes CyanogenMod statiatika kogumises, võimaldad isikustamata teabe saatmist
-arendajatele jälgimaks unikaalseid installatsioone üle seadmete. Infole lisatakae unikaalne tunnus,
-mis ei ohusta sinu privaatsust ega isiklikku infot. Teave saadetakse peale igat süateemi üleslaadimiat.\n\nEdastatava info näidise nägemiseks koputa Info eelvaatel.</string>
-  <string name="enable_reporting_title">Luba raporteerimine</string>
-  <string name="preview_data_title">Andmete eelvaade</string>
-  <string name="view_stats_title">Vaata statistikat</string>
-  <string name="anonymous_learn_more">Saa rohkem teada</string>
-  <string name="preview_id_title">Kordumatu ID</string>
-  <string name="preview_device_title">Seade</string>
-  <string name="preview_version_title">Versioon</string>
-  <string name="preview_country_title">Riik</string>
-  <string name="preview_carrier_title">Operaator</string>
-  <string name="stats_collection_title">Andmete kogumine</string>
-  <string name="stats_collection_summary">Kui sisselülitatud, lubab andmete kogumist</string>
   <string name="lockpattern_reset_button">Lähtesta muster</string>
   <string name="lockpattern_settings_reset_summary">Sisesta primaarne e-posti konto koos seotud salasõnaga mustriluku tühistamiseks</string>
   <string name="menu_hidden_apps_delete">Lähtesta</string>

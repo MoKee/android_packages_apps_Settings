@@ -35,18 +35,9 @@
   <string name="root_access_adb">Samo ADB</string>
   <string name="root_access_all">Programi in ADB</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="mod_version">Različica CyanogenMod</string>
-  <string name="mod_version_default">Neznano</string>
   <string name="device_model">Model naprave</string>
   <string name="device_name">Ime naprave</string>
-  <string name="mod_api_level">Raven API-ja CyanogenMod</string>
-  <string name="mod_api_level_default">Neznano</string>
   <string name="build_date">Datum izgradnje</string>
-  <string name="cmupdate_settings_title">Posodobitve CyanogenMod</string>
-  <string name="update_recovery_title">Posodobi obnovitev Cyanogen</string>
-  <string name="update_recovery_summary">Posodobi obnovitev s sistemskimi posodobitvami</string>
-  <string name="update_recovery_on_warning">OBVESTILO: Ko je ta značilnost omogočena, bo nameščeno obnovitev zamenjala obnovitev vključena v trenutno različico izvajajočega se OS-a.\n\nObnovitev bo posodobljena skupaj z nadgradnjo vašega sistema, kar pomaga zagotoviti združljivost s prihodnjimi različicami.\n\nAli želite omogočiti to značilnost?</string>
-  <string name="update_recovery_off_warning">OPOZORILO: Ko je ta značilnost onemogočena, nameščena obnovitev ne bo posodobljena z nadgradnjami OS-a.\n\nPrihodnje posodobitve OS-a se morda ne bodo namestile z zastarelimi ali prilagojenimi različicami obnovitve.\n\nAli želite onemogočiti to značilnost?</string>
   <string name="themes_settings_title">Teme</string>
   <string name="ring_mode_title">Način zvonjenja</string>
   <string name="ring_mode_normal">Običajni</string>
@@ -645,23 +636,6 @@
   <string name="block_notifications_title">Filtriraj obvestila</string>
   <string name="block_notifications_summary">Upravljaj s prezrtimi obvestili in filtri</string>
   <string name="no_filters_title">Ni nastavljenih filtrov</string>
-  <string name="anonymous_statistics_title">Statistika CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomagajte izboljšati CyanogenMod tako, da izberete pošiljanje anonimne statistike</string>
-  <string name="anonymous_statistics_warning_title">O programu</string>
-  <string name="anonymous_statistics_warning">Izbira statistike CyanogenMod bo dovolila pošiljanje neosebnih podatkov
-        razvijalcem CyanogenModa, da lahko sledijo edinstvenim namestitvam v napravah. Poslani podatki vključujejo edinstven določevalec,
-        ki ne ogroža vaše zasebnosti in osebnih podatkov. Podatki so poslani ob vsakem zagonu.\n\nZa primer poslanih podatkov tapnite Predogled podatkov.</string>
-  <string name="enable_reporting_title">Omogoči poročanje</string>
-  <string name="preview_data_title">Predogled podatkov</string>
-  <string name="view_stats_title">Pokaži statistiko</string>
-  <string name="anonymous_learn_more">Več o tem</string>
-  <string name="preview_id_title">Edinstven ID</string>
-  <string name="preview_device_title">Naprava</string>
-  <string name="preview_version_title">Različica</string>
-  <string name="preview_country_title">Država</string>
-  <string name="preview_carrier_title">Ponudnik</string>
-  <string name="stats_collection_title">Zbiranje statistike</string>
-  <string name="stats_collection_summary">Ko je omogočeno, dovoli zbiranje metrik</string>
   <string name="lockpattern_reset_button">Ponastavi vzorec</string>
   <string name="lockpattern_settings_reset_summary">Vnesite glavni e-poštni račun in povezano geslo, da ponastavite vzorec za zaklepanje</string>
   <string name="menu_hidden_apps_delete">Ponastavi</string>

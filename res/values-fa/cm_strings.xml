@@ -32,17 +32,9 @@
   <string name="root_access_adb">فقط ای‌دی‌بی</string>
   <string name="root_access_all">برنامه‌ها و ای‌دی‌بی</string>
   <string name="nfc_title_category">ان‌اف‌سی</string>
-  <string name="mod_version">نسخه سایانوژن‌مود</string>
-  <string name="mod_version_default">ناشناخته</string>
   <string name="device_model">مدل دستگاه</string>
   <string name="device_name">نام دستگاه</string>
-  <string name="mod_api_level_default">ناشناخته</string>
   <string name="build_date">تاریخ ساخت</string>
-  <string name="cmupdate_settings_title">بروزرسانی‌های سایانوژن‌مود</string>
-  <string name="update_recovery_title">بروزرسانی ریکاوری سایانوژن‌مود</string>
-  <string name="update_recovery_summary">بروزرسانی ریکاوری با بروزرسانی‌های سیستم</string>
-  <string name="update_recovery_on_warning">توجه: وقتی این امکان فعال باشد، ریکاوری نصب‌شده شما با نسخه موجود فعلی سیستم‌عامل جایگزین خواهد شد.\n\n ریکاوری با بروزرسانی‌های سیستم شما بروز خواهد شد تا از سازگاری با نسخه‌های آینده اطمینان حاصل شود.\n\n آیا می‌خواهید این امکان را فعال کنید؟</string>
-  <string name="update_recovery_off_warning">هشدار: وقتی این امکان غیرفعال باشد، ریکاوری نصب شده شما با بروزرسانی‌های سیستم‌عامل بروز نخواهد شد.\n\nبروزرسانی‌های آینده‌ی سیستم‌عامل ممکن است با نسخه‌های تاریخ گذشته یا شخصی ریکاوری نصب نشود.\n\nآیا واقعا می‌خواهید این قابلیت را غیرفعال کنید؟</string>
   <string name="themes_settings_title">تم‌ها</string>
   <string name="ring_mode_title">حالت زنگ خوردن</string>
   <string name="ring_mode_normal">عادی</string>
@@ -632,23 +624,6 @@
   <string name="block_notifications_title">فیلتر کردن اعلان‌ها</string>
   <string name="block_notifications_summary">مدیریت فیلترها و اعلان‌های چشم پوشی شده</string>
   <string name="no_filters_title">هیچ فیلتری تنظیم نشده است</string>
-  <string name="anonymous_statistics_title">آمار استفاده از سایانوژن‌مود</string>
-  <string name="anonymous_statistics_summary">کمک به بهبود سایانوژن‌مود با مشارکت در ارسال گزارش آمار به صورت ناشناس</string>
-  <string name="anonymous_statistics_warning_title">درباره</string>
-  <string name="anonymous_statistics_warning">مشارکت در آمار سایانوژن‌مود اجازه می‌دهد اطلاعات غیرشخصی به
-        توسعه‌دهنگان سایانوژن‌مود ارسال شده تا به موارد خاص نصب در دستگاه‌های مختلف دسترسی پیدا شود. اطلاعات ارسال‌ شده شامل یک شناسه یکتا است
-        که حریم خصوصی یا اطلاعات شخصی شما را در خطر افشا شدن قرار نمی‌دهد. این اطلاعات در هر بار راه‌اندازی دستگاه ارسال می‌شوند.\n\nبرای مشاهده یک نمونه از اطلاعاتی که ارسال می‌شود بر روی پیش‌نمایش داده‌ها ضربه بزنید.</string>
-  <string name="enable_reporting_title">فعال کردن گزارش</string>
-  <string name="preview_data_title">پیش‌نمایش داده‌ها</string>
-  <string name="view_stats_title">مشاهده آمار</string>
-  <string name="anonymous_learn_more">بیشتر بدانید</string>
-  <string name="preview_id_title">شناسه یکتا</string>
-  <string name="preview_device_title">دستگاه</string>
-  <string name="preview_version_title">نسخه</string>
-  <string name="preview_country_title">کشور</string>
-  <string name="preview_carrier_title">اپراتور</string>
-  <string name="stats_collection_title">جمع‌آوری آمار</string>
-  <string name="stats_collection_summary">هنگام فعال بودن اجازه می‌دهد متریک‌ها جمع‌آوری شوند</string>
   <string name="lockpattern_reset_button">تنظیم مجدد الگو</string>
   <string name="lockpattern_settings_reset_summary">برای تنظیم مجدد الگو، ایمیل اصلی و گذرواژه آن را وارد کنید</string>
   <string name="menu_hidden_apps_delete">تنظیم مجدد</string>

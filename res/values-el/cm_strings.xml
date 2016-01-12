@@ -29,18 +29,9 @@
   <string name="root_access_adb">Μόνο ADB</string>
   <string name="root_access_all">Εφαρμογές και ADB</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="mod_version">Έκδοση CyanogenMod</string>
-  <string name="mod_version_default">Άγνωστη</string>
   <string name="device_model">Μοντέλο συσκευής</string>
   <string name="device_name">Όνομα συσκευής</string>
-  <string name="mod_api_level">Επίπεδο CyanogenMod API</string>
-  <string name="mod_api_level_default">Άγνωστη</string>
   <string name="build_date">Ημερομηνία έκδοσης</string>
-  <string name="cmupdate_settings_title">Ενημερώσεις CyanogenMod</string>
-  <string name="update_recovery_title">Ενημέρωση Cyanogen recovery</string>
-  <string name="update_recovery_summary">Ενημέρωση της recovery με τις ενημερώσεις συστήματος</string>
-  <string name="update_recovery_on_warning">ΣΗΜΕΙΩΣΗ: Όταν αυτή η λειτουργία είναι ενεργοποιημένη, η εγκατεστημένη recovery σας θα αντικατασταθεί με αυτήν που περιλαμβάνεται στην τρέχουσα έκδοση του το λειτουργικού συστήματος.\n\nΗ recovery θα ενημερώνεται μαζί με τις αναβαθμίσεις στο σύστημά σας, βοηθώντας να εξασφαλισθεί η συμβατότητα με μελλοντικές εκδόσεις.\n\nΘέλετε να ενεργοποιήσετε αυτήν τη λειτουργία;</string>
-  <string name="update_recovery_off_warning">ΠΡΟΣΟΧΗ: Όταν αυτή η λειτουργία είναι απενεργοποιημένη, η εγκατεστημένη recovery σας δεν θα ενημερώνεται με τις αναβαθμίσεις του λειτουργικού συστήματος.\n\nΕνδέχεται να μην είναι η δυνατή η εγκατάσταση μελλοντικών ενημερώσεων με ξεπερασμένες ή τροποποιημένες εκδόσεις recovery.\n\nΘέλετε πράγματι να απενεργοποιήσετε αυτήν τη λειτουργία;</string>
   <string name="themes_settings_title">Θέματα</string>
   <string name="ring_mode_title">Λειτουργία κλήσης</string>
   <string name="ring_mode_normal">Κανονική</string>
@@ -694,25 +685,6 @@
   <string name="block_notifications_title">Φιλτράρισμα ειδοποιήσεων</string>
   <string name="block_notifications_summary">Διαχείριση φίλτρων και ειδοποιήσεων που αγνοούνται</string>
   <string name="no_filters_title">Δεν έχουν οριστεί φίλτρα</string>
-  <string name="anonymous_statistics_title">Στατιστικά CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Βοηθήστε το CyanogenMod να γίνει καλύτερο ενεργοποιώντας την αποστολή ανώνυμων στατιστικών στοιχείων</string>
-  <string name="anonymous_statistics_warning_title">Σχετικά</string>
-  <string name="anonymous_statistics_warning">Ενεργοποιώντας τα στατιστικά του CyanogenMod επιτρέπετε την αποστολή
-        μη προσωπικών δεδομένων στους προγραμματιστές του CyanogenMod για παρακολούθηση του αριθμού μοναδικών εγκαταστάσεων
-        σε όλες τις συσκευές. Οι πληροφορίες που αποστέλλονται συμπεριλαμβάνουν ένα μοναδικό αναγνωριστικό, το οποίο δεν θέτει
-        σε κίνδυνο την ασφάλεια σας ή τα προσωπικά δεδομένα. Τα δεδομένα αποστέλλονται σε κάθε εκκίνηση.\n\nΓια ένα παράδειγμα
-        των δεδομένων που αποστέλλονται, πατήστε στην Προεπισκόπηση δεδομένων.</string>
-  <string name="enable_reporting_title">Ενεργοποίηση αναφοράς</string>
-  <string name="preview_data_title">Προεπισκόπηση δεδομένων</string>
-  <string name="view_stats_title">Εμφάνιση στατιστικών</string>
-  <string name="anonymous_learn_more">Μάθετε περισσότερα</string>
-  <string name="preview_id_title">Μοναδικό αναγνωριστικό</string>
-  <string name="preview_device_title">Συσκευή</string>
-  <string name="preview_version_title">Έκδοση</string>
-  <string name="preview_country_title">Χώρα</string>
-  <string name="preview_carrier_title">Εταιρία δικτύου</string>
-  <string name="stats_collection_title">Συλλογή στατιστικών</string>
-  <string name="stats_collection_summary">Όταν ενεργοποιηθεί, επιτρέπει τη συλλογή στατιστικών μετρήσεων</string>
   <string name="lockpattern_reset_button">Επαναφορά μοτίβου</string>
   <string name="lockpattern_settings_reset_summary">Εισάγετε την κύρια διεύθυνση ηλεκτρονικού ταχυδρομείου και τον κωδικό πρόσβασης για να επαναφέρετε το μοτίβο κλειδώματος</string>
   <string name="menu_hidden_apps_delete">Επαναφορά</string>

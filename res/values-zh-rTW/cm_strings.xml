@@ -31,17 +31,9 @@
   <string name="root_access_apps">僅限應用程式</string>
   <string name="root_access_adb">僅限 ADB</string>
   <string name="root_access_all">應用程式與 ADB</string>
-  <string name="mod_version">CyanogenMod 版本</string>
-  <string name="mod_version_default">未知</string>
   <string name="device_model">裝置型號</string>
   <string name="device_name">裝置名稱</string>
-  <string name="mod_api_level_default">未知</string>
   <string name="build_date">版本日期</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
-  <string name="update_recovery_title">更新 Cyanogen Recovery</string>
-  <string name="update_recovery_summary">以系統更新來更新 Recovery</string>
-  <string name="update_recovery_on_warning">注意: 啟用此功能後，您已安裝的 Recovery 將會被現在所運行之系統所包含的取代。\n\n您的 Recovery 將會隨著系統一起更新以確保與未來版本的相容性。\n\n您確定要啟用這個功能?</string>
-  <string name="update_recovery_off_warning">警告:停用此功能後，您的 Recovery 將不會隨著系統一起更新。\n\n未來的系統更新可能無法使用過舊的或客製 Recovery 安裝。\n\n您確定要停用此功能?</string>
   <string name="themes_settings_title">主題</string>
   <string name="ring_mode_title">鈴響模式</string>
   <string name="ring_mode_normal">正常</string>
@@ -607,23 +599,6 @@
   <string name="block_notifications_title">篩選通知</string>
   <string name="block_notifications_summary">管理已忽略的通知與篩選器</string>
   <string name="no_filters_title">沒有過濾設定</string>
-  <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">加入匿名統計報告以協助改進 CyanogenMod</string>
-  <string name="anonymous_statistics_warning_title">關於</string>
-  <string name="anonymous_statistics_warning">加入 CyanogenMod 統計將允許非個人資料被提交到 CyanogenMod 的開發者，
-        以追蹤每個裝置上的獨特安裝。提交的資訊包含一個唯一識別碼，此識別碼並不會泄露您的隱私或個人資料。
-        該資料在每次開機時被提交。\n\n輕按預覽資料以預覽被提交資料的例子。</string>
-  <string name="enable_reporting_title">啟用報告</string>
-  <string name="preview_data_title">預覽資料</string>
-  <string name="view_stats_title">檢視統計</string>
-  <string name="anonymous_learn_more">了解更多</string>
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">裝置</string>
-  <string name="preview_version_title">版本</string>
-  <string name="preview_country_title">國家</string>
-  <string name="preview_carrier_title">電信業者</string>
-  <string name="stats_collection_title">統計資料收集</string>
-  <string name="stats_collection_summary">啟用時，允許收集數據</string>
   <string name="lockpattern_reset_button">重設圖形</string>
   <string name="lockpattern_settings_reset_summary">輸入主電子郵件帳戶和相關的密碼重設圖形鎖</string>
   <string name="menu_hidden_apps_delete">重設</string>
