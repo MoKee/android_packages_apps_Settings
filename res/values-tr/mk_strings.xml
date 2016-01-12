@@ -35,4 +35,23 @@
   <string name="listview_rotate">Döndür</string>
   <string name="status_bar_network_traffic_style_disable">Devre Dışı</string>
   <string name="status_bar_network_traffic_style_up">Giden</string>
+  <string name="recents_clear_all_location_top_right">Üst Sağ</string>
+  <string name="recents_clear_all_location_top_left">Üst sol</string>
+  <string name="recents_clear_all_location_top_center">Üst orta</string>
+  <string name="recents_clear_all_location_bottom_right">Alt sağ</string>
+  <string name="recents_clear_all_location_bottom_left">Alt sol</string>
+  <string name="recents_clear_all_location_bottom_center">Alt orta</string>
+  <string name="status_bar_clock_show_second_title">Saniye gösterme</string>
+  <string name="status_bar_clock_show_second_summary">Durum çubuğu saat içinde saniye görüntüler</string>
+  <string name="show_su_icon_title">Su simgesini göster</string>
+  <string name="show_su_icon_summary">Su etkin olduğunda durum çubuğunda bir simge görüntüler</string>
+  <string name="show_headset_icon_title">Kulaklık simgesini göster</string>
+  <string name="battery_optimizer_title">Batarya iyileştirici</string>
+  <string name="wakelock_blocker_title">Uyandırma kilidi Engelleyici</string>
+  <string name="wakelock_blocker_summary">Sistem uyardırma kilitlerini engelle</string>
+  <string name="wakelock_blocker_save">Kaydet</string>
+  <string name="wakelock_list_header">Mevcut uyandırma kilitleri</string>
+  <string name="wakelock_blocker_reload">Yeniden yükle</string>
+  <string name="wakelock_blocker_warning_title">Dikkat ile devam</string>
+  <string name="wakelock_blocker_warning">Uyandırma kilitlerini engellemek istikrarsızlık, çökme veya veri kaybına neden olabilir</string>
 </resources>
