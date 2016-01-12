@@ -30,9 +30,9 @@ import mokee.app.ProfileGroup;
 import mokee.app.ProfileGroup.Mode;
 import mokee.app.ProfileManager;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import org.mokee.internal.logging.MKMetricsLogger;
 
 public class ProfileGroupConfig extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -92,7 +92,7 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.PROFILE_GROUP_CONFIG;
     }
 
     private void updateState() {

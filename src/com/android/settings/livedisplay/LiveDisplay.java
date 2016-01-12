@@ -43,7 +43,6 @@ import android.provider.Settings;
 import android.util.Log;
 
 import com.android.internal.util.ArrayUtils;
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -53,6 +52,7 @@ import com.android.settings.search.Indexable;
 import mokee.hardware.MKHardwareManager;
 import mokee.hardware.DisplayMode;
 import mokee.providers.MKSettings;
+import org.mokee.internal.logging.MKMetricsLogger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -220,7 +220,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.LIVE_DISPLAY;
     }
 
     @Override

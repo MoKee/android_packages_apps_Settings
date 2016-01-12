@@ -43,8 +43,6 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
-import com.android.internal.logging.MetricsLogger;
-
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -55,6 +53,7 @@ import com.android.settings.Utils;
 import mokee.hardware.MKHardwareManager;
 import mokee.providers.MKSettings;
 
+import org.mokee.internal.logging.MKMetricsLogger;
 import org.mokee.internal.util.ScreenType;
 
 import java.util.List;
@@ -574,7 +573,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.BUTTON_SETTINGS;
     }
 
     @Override

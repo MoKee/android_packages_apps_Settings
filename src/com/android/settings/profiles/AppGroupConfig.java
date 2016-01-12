@@ -45,11 +45,12 @@ import android.widget.Toast;
 
 import mokee.app.ProfileManager;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.cyanogenmod.PackageListAdapter;
 import com.android.settings.cyanogenmod.PackageListAdapter.PackageItem;
+
+import org.mokee.internal.logging.MKMetricsLogger;
 
 public class AppGroupConfig extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -201,7 +202,7 @@ public class AppGroupConfig extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.APP_GROUP_CONFIG;
     }
 
     @Override

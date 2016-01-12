@@ -37,10 +37,10 @@ import android.widget.Toast;
 
 import mokee.app.ProfileManager;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import org.mokee.internal.logging.MKMetricsLogger;
 import org.mokee.internal.util.ScreenType;
 
 public class AppGroupList extends SettingsPreferenceFragment {
@@ -64,7 +64,7 @@ public class AppGroupList extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.APP_GROUP_LIST;
     }
 
     @Override

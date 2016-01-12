@@ -30,7 +30,7 @@ import com.android.internal.view.RotationPolicy;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.internal.logging.MetricsLogger;
+import org.mokee.internal.logging.MKMetricsLogger;
 
 public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
@@ -110,7 +110,7 @@ public class DisplayRotation extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DONT_TRACK_ME_BRO;
+        return MKMetricsLogger.DISPLAY_ROTATION;
     }
 
     @Override
