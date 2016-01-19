@@ -220,13 +220,6 @@
   <string name="block_notifications_title">Filtriraj obavijesti</string>
   <string name="block_notifications_summary">Upravljaj zanemarenim obavijestima i filterima</string>
   <string name="no_filters_title">Nema postavljenih filtera</string>
-  <string name="cmupdate_settings_title">CyanogenMod ažuriranja</string>
-  <string name="update_recovery_title">Ažuriraj Cyanogen recovery</string>
-  <string name="update_recovery_summary">Ažuriraj recovery sa sistemom</string>
-  <string name="update_recovery_on_warning">Napomena: Kada je ova značajka omogućena, instalirani oporavak će biti zamijenjen onim koji se nalazi u trenutnoj verziji OS-a.\n\nVaš oporavak će se obnoviti uz nadogradnju sustava, čime se osigurava kompatibilnost s budućim verzijama.\n\nŽelite li omogućiti ovu značajku?</string>
-  <string name="update_recovery_off_warning">Upozorenje: Kada je ova mogućnost onemogućena, instalirani se oporavak neće ažurirati sa OS nadogradnjama.\n\nBuduća OS ažuriranja možda se neće instalirati s zastarjelim ili prilagođenim verzijama oporavka.\n\nŽelite li isključiti ovu mogućnost?</string>
-  <string name="mod_version">CyanogenMod verzija</string>
-  <string name="mod_version_default">Nepoznato</string>
   <string name="device_model">Model uređaja</string>
   <string name="device_name">Naziv uređaja</string>
   <string name="build_date">Datum izdavanja</string>
@@ -235,7 +228,6 @@
   <string name="double_tap_to_wake_summary">Dvaput dodirnite zaslon da biste uključili uređaj</string>
   <string name="proximity_wake_title">Sprečavanje slučajnog buđenja</string>
   <string name="proximity_wake_summary">Provjerite Senzor blizine prije buđenja zaslona</string>
-  <string name="privacy_settings_cyanogenmod_title">Privatnost</string>
   <string name="privacy_guard_default_title">Omogućeno po defaultu</string>
   <string name="privacy_guard_default_summary">Omogućiti prema zadanim postavkama za nedavno Instalirane aplikacije</string>
   <string name="privacy_guard_manager_title">Nadzor privatnosti</string>
@@ -612,8 +604,6 @@ To clear music, pictures, and other user data, the \"<b>internal media storage</
   <string name="usb_not_connected">USB je sada isključen</string>
   <string name="external_storage_turn_on">Vanjska pohrana je uključena</string>
   <string name="external_storage_turn_off">Vanjska pohrana je isključena</string>
-  <string name="stats_collection_title">Prikupljene statistike</string>
-  <string name="stats_collection_summary">When enabled, allows metrics collection.</string>
   <string name="power_notifications_category_title">Zvukovi punjenja</string>
   <string name="power_notifications_enable_title">Omogući</string>
   <string name="power_notifications_enable_summary">Reproduciraj zvuk prilikom spajanja ili odspajanja izvora napajanja</string>
@@ -671,8 +661,6 @@ To clear music, pictures, and other user data, the \"<b>internal media storage</
   <string name="qs_tile_usb_tether">USB dijeljenje veze</string>
   <string name="qs_tile_ambient_display">Ambijentni zaslon</string>
   <string name="qs_tile_sync">Sinkronizacija</string>
-  <string name="qs_dynamic_tile_next_alarm">Sljedeći alarm</string>
-  <string name="qs_dynamic_tile_su">Root pristup</string>
   <string name="qs_main_tiles_title">Povećaj prvi red</string>
   <string name="qs_main_tiles_summary_on">Dvije glavne pločice u prvom redu</string>
   <string name="qs_main_tiles_summary_off">Tri pločice u svakom redu</string>
@@ -707,8 +695,6 @@ To clear music, pictures, and other user data, the \"<b>internal media storage</
   <string name="lockscreen_message">Dodirnite na lijevo ili desno za postavljanje prečaca zaključanog zaslona.</string>
   <string name="lockscreen_choose_action_title">Odaberite radnju</string>
   <string name="lockscreen_visualizer_title">Prikaži vizualizer glazbe</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Upravljanje sigurnim SMS postavkama</string>
   <string name="navigation_ring_message">\"Tap the edit icon to open the navigation ring for editing.
 
 Select a target to configure its behavior.
@@ -763,26 +749,10 @@ Tap the \'✓\' icon to save your changes, or \'Restore defaults\' to reset the 
   <string name="battery_saver_threshold">Prag štednje baterije</string>
   <string name="battery_saver_summary">Smanji performanse i ograniči pozadinske podatke</string>
   <string name="battery_saver_summary_unavailable">Nije dostupno tijekom punjenja</string>
-  <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-  <string name="anonymous_statistics_summary">Pomozite nam poboljšati CyanogenMod slanjem anonimnih statističkih izvješća</string>
-  <string name="anonymous_statistics_warning_title">O</string>
-  <string name="anonymous_statistics_warning">\"Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier, which does not compromise your privacy or personal data. The data is submitted during each boot.
-
-For an example of the data that is submitted, tap on Preview Data.\"</string>
-  <string name="enable_reporting_title">Omogući izvješća</string>
-  <string name="preview_data_title">Pretpregled podataka</string>
-  <string name="view_stats_title">Prikaz statistika</string>
-  <string name="anonymous_learn_more">Saznajte više</string>
-  <string name="preview_id_title">Jedinstveni ID</string>
-  <string name="preview_device_title">Uređaj</string>
-  <string name="preview_version_title">Verzija</string>
-  <string name="preview_country_title">Zemlja</string>
-  <string name="preview_carrier_title">Operater</string>
   <string name="heads_up_notifications">Heads up</string>
   <string name="summary_heads_up_enabled">Omogućene su skočne obavijesti</string>
   <string name="summary_heads_up_disabled">Skočne obavijest su isključene</string>
   <string name="master_clear_desc_cm" product="default">Ovo će izbrisati sve podatke s telefona <b>interne pohrane</b>, uključujući: \n\n <li>račune</li> \n <li>sustav i podatke aplikacija i postavki</li> \n <li>preuzete aplikacije</li></string>
-  <string name="lock_to_cyanogen_title">Zaštita uređaja</string>
   <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM %d postavke zaključavanja</string>
   <string name="sim_card_summary_empty">SIM kartica nije umetnuta</string>

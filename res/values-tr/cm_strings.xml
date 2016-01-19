@@ -224,13 +224,6 @@
   <string name="block_notifications_title">Bildirimleri filtrele</string>
   <string name="block_notifications_summary">Yoksayılan bildirimleri ve filtreleri yönet</string>
   <string name="no_filters_title">Hiçbir filtre ayarlanmadı</string>
-  <string name="cmupdate_settings_title">CyanogenMod güncellemeleri</string>
-  <string name="update_recovery_title">Cyanogen kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
-  <string name="update_recovery_on_warning">DİKKAT: Bu özellik etkinken, yüklü kurtarma modunuz mevcut OS sürümündeki mod ile değiştirilecektir. \n\nKurtarma modunuz sistem güncellemeleri ile birlikte güncellenecektir, böylelikle gelecek sürümler ile uyumluluk sağlanacaktır.\n\nBu özelliği etkinleştirmek ister misiniz?</string>
-  <string name="update_recovery_off_warning">UYARI: Bu özellik devre dışı bırakıldığında, yüklü kurtarma modunuz OS güncellemeleri ile güncellenmeyecektir.\n\nGelecek OS güncellemeleri eskimiş ya da özel kurtarma sürümleri ile yüklenemeyebilir.\n\nBu özelliği gerçekten devre dışı bırakmak istiyor musunuz?</string>
-  <string name="mod_version">CyanogenMod sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <string name="device_model">Cihaz modeli</string>
   <string name="device_name">Cihaz ismi</string>
   <string name="build_date">İnşa tarihi</string>
@@ -239,7 +232,6 @@
   <string name="double_tap_to_wake_summary">Ekranı açmak için ekrana iki defa dokunun</string>
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Ekranı açmadan önce yakınlık sensörünü kontrol et</string>
-  <string name="privacy_settings_cyanogenmod_title">Gizlilik</string>
   <string name="privacy_guard_default_title">Varsayılan olarak etkin</string>
   <string name="privacy_guard_default_summary">Yeni yüklenen uygulamalar için Gizlilik Koruması\'nı varsayılan olarak aktifleştir</string>
   <string name="privacy_guard_manager_title">Gizlilik Koruması</string>
@@ -662,8 +654,6 @@
   <string name="usb_not_connected">USB bağlantısı şimdi kesildi</string>
   <string name="external_storage_turn_on">Harici depolama açıldı</string>
   <string name="external_storage_turn_off">Harici depolama kapatıldı</string>
-  <string name="stats_collection_title">İstatistikler</string>
-  <string name="stats_collection_summary">Etkinleştirildiğinde metrik istatistiklere izin verir</string>
   <string name="power_notifications_category_title">Güç sesleri</string>
   <string name="power_notifications_enable_title">Etkinleştir</string>
   <string name="power_notifications_enable_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken bir ses çal</string>
@@ -684,8 +674,6 @@
   <string name="pref_force_highend_gfx_summary">Saydam durum/navigasyon çubuğu gibi gelişmiş görsel efektleri etkinleştirir (yeniden başlatma gerektirir)</string>
   <string name="edge_gesture_service_title">Dokunmatik hareketlerini engelle</string>
   <string name="edge_gesture_service_summary">Telefonda gezinme ve durum çubuğu için uygulamalara dokunmatik iletiler gönderme</string>
-  <string name="cmlicense_title">CyanogenMod yasal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod yasal</string>
   <string name="lockpattern_settings_enable_error_path_title">Desen hatasını göster</string>
   <string name="lockpattern_settings_enable_dots_title">Desen noktalarını göster</string>
   <string name="lock_directly_show_password">Doğrudan şifre girişini göster</string>
@@ -739,9 +727,6 @@
   <string name="qs_tile_ambient_display">Bildirim ekranı</string>
   <string name="qs_tile_sync">Eşitleme</string>
   <string name="qs_tile_battery_saver">Pil tasarrufu</string>
-  <string name="qs_dynamic_tile_next_alarm">Sonraki alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">IME seçici</string>
-  <string name="qs_dynamic_tile_su">Root erişimi</string>
   <string name="qs_main_tiles_title">İlk satırı büyüt</string>
   <string name="qs_main_tiles_summary_on">İlk satırdaki iki ana kare</string>
   <string name="qs_main_tiles_summary_off">Her satırdaki üç kare</string>
@@ -779,8 +764,6 @@
   <string name="lockscreen_choose_action_title">Eylem seçin</string>
   <string name="lockscreen_visualizer_title">Müzik görselleştiriciyi görüntüle</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Şifreli SMS ayarlarını yönet</string>
   <string name="navigation_ring_title">Dolaşım halkası uygulamaları</string>
   <string name="navigation_ring_message">Dolaşım halkasını düzenlemek için düzenleme simgesine dokunun.\n\nKısayol için bir uygulama seçin.\n\nDeğişikliklerinizi kaydetmek için \'\u2713\' simgesine dokunun ya da ayarları sıfırlamak için \'Varsayılanları geri yükle\'ye dokunun.</string>
   <string name="lcd_density">LCD yoğunluğu</string>
@@ -861,29 +844,11 @@
   <string name="battery_saver_threshold">Pil tasarruf eşiği</string>
   <string name="battery_saver_summary">Performansı düşürür ve arka plan verilerini sınırlar</string>
   <string name="battery_saver_summary_unavailable">Şarj sırasında kullanılabilir değil</string>
-  <string name="anonymous_statistics_title">CyanogenMod istatistikleri</string>
-  <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CyanogenMod\'un daha iyi olmasına yardım edin</string>
-  <string name="anonymous_statistics_warning_title">Hakkında</string>
-  <string name="anonymous_statistics_warning">CyanogenMod İstatistiklerine dahil olmak kişisel olmayan verilerin CyanogenMod geliştiricilerine cihazlar arasındaki benzersiz yüklemeleri takip etmeleri için gönderilmesine izin verir. Bu bilgi, kişisel bilgi içermeyen ve gizliliğinizi tehdit etmeyen bir benzersiz numara da içerir. Veri her başlangıçta gönderilir.\n\nGönderilecek verinin örneğini görmek için Veriyi Önizle butonunu kullanın.</string>
-  <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
-  <string name="preview_data_title">Veriyi önizle</string>
-  <string name="view_stats_title">İstatistikleri görüntüle</string>
-  <string name="anonymous_learn_more">Fazlasını öğren</string>
-  <string name="preview_id_title">Benzersiz ID</string>
-  <string name="preview_device_title">Cihaz</string>
-  <string name="preview_version_title">Sürüm</string>
-  <string name="preview_country_title">Ülke</string>
-  <string name="preview_carrier_title">Operatör</string>
   <string name="heads_up_notifications">Bildirim Pencereleri</string>
   <string name="summary_heads_up_enabled">Açılır bildirimler etkinleştirildi</string>
   <string name="summary_heads_up_disabled">Açılır bildirimler devre dışı bırakıldı</string>
   <string name="master_clear_desc_cm" product="tablet">Bu işlem tabletinizin <b>dahili belleğinde</b> bulunan tüm verileri silecek, \n\n<li>Cihazdaki hesaplar</li>\n<li>Sistem ve uygulama veri ve ayarları</li>\n<li>İndirilen uygulamalar</li> dahil.</string>
   <string name="master_clear_desc_cm" product="default">Bu işlem telefonunuzun<b>dahili belleğinde</b> bulunan tüm verileri silecek, \n\n<li>Cihazdaki hesaplar</li>\n<li>Sistem ve uygulama veri ve ayarları</li>\n<li>İndirilen uygulamalar</li> dahil.</string>
-  <string name="lock_to_cyanogen_title">Cihaz Koruması</string>
-  <string name="lock_to_cyanogen_summary">Fabrika sıfırlamasından sonra bile Cyanogen OS hesap şifresini gerektirir</string>
-  <string name="lock_to_cyanogen_create_account_msg">Cihazınız bir fabrika sıfırlamasından sonra bile cihazı korumak için Cyanogen OS hesap şifresini kullanır. Bir Cyanogen OS hesabı oluşturmanız gerekecek.</string>
-  <string name="lock_to_cyanogen_disable_msg">Bu özelliği kapatmak telefonunuz çalındığında yetkilendirilmemiş kullanıcıların telefonunuzu fabrika ayarlarına sıfırlamasına izin verecektir. Kişisel verileriniz korunamayabilir. Bu özelliği kapatmak istiyor musunuz?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Cihaz Koruması etkin. Cihazınızı sıfırlamaya devam etmek için lütfen korumayı kapatın.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Bağlantı hatası; bu cihazda Bluetooth İnt. Payl. etkin mi?</string>
   <string name="sim_card_status_title">SIM %d durumu</string>
   <string name="sim_card_lock_settings_title">SIM %d kilit ayarları</string>
