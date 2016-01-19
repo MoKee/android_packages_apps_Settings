@@ -224,6 +224,13 @@
   <string name="block_notifications_title">Filtrar as notificações</string>
   <string name="block_notifications_summary">Gerir notificações ignoradas e filtros</string>
   <string name="no_filters_title">Sem filtros definidos</string>
+  <string name="cmupdate_settings_title">Atualizações</string>
+  <string name="update_recovery_title">Atualizar a recuperação Cyanogen</string>
+  <string name="update_recovery_summary">Atualizar a recuperação com as atualizações do sistema</string>
+  <string name="update_recovery_on_warning">Aviso: Quando este recurso estiver ativado, a sua recuperação instalada será substituída por uma incluída na versão atual do SO.\n\nA sua recuperação será atualizada juntamente com as atualizações do seu sistema, ajudando a garantir a compatibilidade com futuras versões.\n\nQuer ativar este recurso?</string>
+  <string name="update_recovery_off_warning">Aviso: Quando este recurso está desativado, a sua recuperação instalada não será atualizada com o SO.\n\nFuturas atualizações do SO poderão não se instalar com uma versão da recuperação desatualizada ou personalizada.\n\nQuer desativar este recurso?</string>
+  <string name="mod_version">Versão CyanogenMod</string>
+  <string name="mod_version_default">Desconhecida</string>
   <string name="device_model">Modelo do dispositivo</string>
   <string name="device_name">Nome do dispositivo</string>
   <string name="build_date">Data de compilação</string>
@@ -232,6 +239,7 @@
   <string name="double_tap_to_wake_summary">Dê um toque duplo no ecrã para ligar o dispositivo</string>
   <string name="proximity_wake_title">Impedir o ecrã de se ligar acidentalmente</string>
   <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
+  <string name="privacy_settings_cyanogenmod_title">Privacidade</string>
   <string name="privacy_guard_default_title">Ativar por defeito</string>
   <string name="privacy_guard_default_summary">Ativar por defeito para aplicações recém-instaladas</string>
   <string name="privacy_guard_manager_title">Proteção da Privacidade</string>
@@ -391,7 +399,7 @@
   <string name="app_ops_summaries_media_volume">volume de multimédia</string>
   <string name="app_ops_summaries_alarm_volume">volume do alarme</string>
   <string name="app_ops_summaries_notification_volume">volume de notificações</string>
-  <string name="app_ops_summaries_bluetooth_volume">volume de Bluetooth</string>
+  <string name="app_ops_summaries_bluetooth_volume">Volume do bluetooth</string>
   <string name="app_ops_summaries_keep_awake">manter o ecrã ligado</string>
   <string name="app_ops_summaries_monitor_location">vigiar a localização</string>
   <string name="app_ops_summaries_monitor_high_power_location">vigiar a localização de potência alta</string>
@@ -445,7 +453,7 @@
   <string name="app_ops_labels_media_volume">Volume multimédia</string>
   <string name="app_ops_labels_alarm_volume">Volume do alarme</string>
   <string name="app_ops_labels_notification_volume">Volume das notificações</string>
-  <string name="app_ops_labels_bluetooth_volume">Volume de Bluetooth</string>
+  <string name="app_ops_labels_bluetooth_volume">Volume do bluetooth</string>
   <string name="app_ops_labels_keep_awake">Manter o ecrã ligado</string>
   <string name="app_ops_labels_get_usage_stats">Obter estatísticas de utilização</string>
   <string name="app_ops_labels_mute_unmute_microphone">Silenciar/ativar microfone</string>
@@ -453,7 +461,7 @@
   <string name="app_ops_labels_project_media">Projetar multimédia</string>
   <string name="app_ops_labels_activate_vpn">Ativar VPN</string>
   <string name="app_ops_labels_wifi_change">Mudar Wi\u2011Fi</string>
-  <string name="app_ops_labels_bluetooth_change">Mudar Bluetooth</string>
+  <string name="app_ops_labels_bluetooth_change">Mudar bluetooth</string>
   <string name="app_ops_labels_send_mms">Enviar MMS</string>
   <string name="app_ops_labels_read_mms">Ler MMS</string>
   <string name="app_ops_labels_write_mms">Escrever MMS</string>
@@ -508,7 +516,7 @@
   <string name="choose_soundtone">Selecione o som de notificação</string>
   <string name="choose_ringtone">Selecione o toque do telefone</string>
   <string name="soundtone_title">Toque de notificação</string>
-  <string name="no_bluetooth_triggers">Não há dispositivos bluetooth emparelhados. \nToque para emparelhar um dispositivo bluetooth antes de configurar os atuadores.</string>
+  <string name="no_bluetooth_triggers">Não há dispositivos bluetooth emparelhados.\nToque para emparelhar um dispositivo bluetooth antes de configurar os atuadores.</string>
   <string name="no_wifi_triggers">Não há pontos de acesso Wi\u2011Fi configurados.\nToque para conectar o Wi\u2011Fi antes de configurar os atuadores.</string>
   <string name="no_triggers_configured">Não há atuadores configurados. Toque para adicionar.</string>
   <string name="no_triggers_configured_nfc">Toque para establecer um novo atuador NFC.</string>
@@ -555,15 +563,15 @@
   <string name="screen_color_setting_vivid">Brilhante</string>
   <string name="screen_color_setting_custom">Personalizada</string>
   <string name="settings_reset_button">Restaurar</string>
-  <string name="bluetooth_enter_pin_msg_hs">Para emparelhar com:<xliff:g id="bold">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="device_name">%1$s</xliff:g><xliff:g id="end_bold">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Introduza o código PIN (16 dígitos ou mais):</string>
+  <string name="bluetooth_enter_pin_msg_hs">Para emparelhar com: <xliff:g id="bold">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="device_name">%1$s</xliff:g><xliff:g id="end_bold">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Introduza o código PIN (16 dígitos ou mais):</string>
   <string name="bluetooth_profile_dun">Ligação de acesso à rede</string>
-  <string name="bluetooth_profile_sap">Acesso ao SIM</string>
+  <string name="bluetooth_profile_sap">Acesso ao cartão SIM</string>
   <string name="bluetooth_dun_profile_summary_connected">Conectado ao servidor DUN</string>
   <string name="bluetooth_pbap_profile_summary_connected">Conectado ao servidor pbap</string>
   <string name="bluetooth_sap_profile_summary_connected">Conectado ao servidor de acesso ao SIM</string>
   <string name="bluetooth_dun_profile_summary_use_for">Utilizar para ligação de acesso à rede</string>
   <string name="bluetooth_pbap_profile_summary_use_for">Usar para a partilha de contactos</string>
-  <string name="bluetooth_sap_profile_summary_use_for">Utilizar para acesso ao SIM</string>
+  <string name="bluetooth_sap_profile_summary_use_for">Utilizar para acesso ao cartão SIM</string>
   <string name="bluetooth_accept_all_files">Aceitar todo o tipo de ficheiros</string>
   <string name="sim_lock_settings_cm">Definições de bloqueio do cartão SIM/RUIM</string>
   <string name="sim_lock_settings_category_cm">Definir o bloqueio do cartão SIM/RUIM</string>
@@ -654,6 +662,8 @@
   <string name="usb_not_connected">O USB está agora desligado</string>
   <string name="external_storage_turn_on">O armazenamento externo foi ligado</string>
   <string name="external_storage_turn_off">O armazenamento externo foi desligado</string>
+  <string name="stats_collection_title">Coleção de estatísticas</string>
+  <string name="stats_collection_summary">Quando ativado, permite a recolha de métricas</string>
   <string name="power_notifications_category_title">Sons de carregamento</string>
   <string name="power_notifications_enable_title">Ativar</string>
   <string name="power_notifications_enable_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
@@ -674,6 +684,8 @@
   <string name="pref_force_highend_gfx_summary">Ativa os efeitos visuais de alta qualidade como as barras de estado/navegação transparentes (requer reinicialização)</string>
   <string name="edge_gesture_service_title">Bloquear eventos de gestos</string>
   <string name="edge_gesture_service_summary">Não enviar às aplicações eventos de toque para os gestos na barra de navegação e estado</string>
+  <string name="cmlicense_title">Licença CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Licença CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Mostrar erro no padrão</string>
   <string name="lockpattern_settings_enable_dots_title">Mostrar os pontos do padrão</string>
   <string name="lock_directly_show_password">Ir diretamente para a introdução da palavra-passe</string>
@@ -722,11 +734,14 @@
   <string name="qs_tile_lte">LTE</string>
   <string name="qs_tile_volume_panel">Painel de volume</string>
   <string name="qs_tile_screen_timeout">Suspensão de ecrã</string>
-  <string name="qs_tile_usb_tether">Associação USB</string>
+  <string name="qs_tile_usb_tether">Partilha de internet por USB</string>
   <string name="qs_tile_heads_up">Notificações pop-up</string>
   <string name="qs_tile_ambient_display">Visualização de ambiente</string>
   <string name="qs_tile_sync">Sincronização</string>
   <string name="qs_tile_battery_saver">Economizador de bateria</string>
+  <string name="qs_dynamic_tile_next_alarm">Próximo alarme</string>
+  <string name="qs_dynamic_tile_ime_selector">Seletor de IME</string>
+  <string name="qs_dynamic_tile_su">Acesso root</string>
   <string name="qs_main_tiles_title">Ampliar a primeira linha</string>
   <string name="qs_main_tiles_summary_on">Dois mosaicos na primeira linha</string>
   <string name="qs_main_tiles_summary_off">Três mosaicos em cada linha</string>
@@ -764,6 +779,8 @@
   <string name="lockscreen_choose_action_title">Selecionar ação</string>
   <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
   <string name="nfc_title_category">NFC</string>
+  <string name="whisperpush_title">WhisperPush</string>
+  <string name="whisperpush_summary">Gerir as definições de SMS seguras</string>
   <string name="navigation_ring_title">Atalhos do anel de navegação</string>
   <string name="navigation_ring_message">Toque no ícone de editar para abrir o anel de navegação para edição.\n\nSelecione um alvo para definir o seu comportamento.\n\nToque o ícone \'\u2713\' para gravar as alterações, ou \'Restaurar padrão\' para repor as definições padrão.</string>
   <string name="lcd_density">Densidade do LCD</string>
@@ -844,12 +861,30 @@
   <string name="battery_saver_threshold">Limite da poupança de energia</string>
   <string name="battery_saver_summary">Reduzir o desempenho e limitar os dados em segundo plano</string>
   <string name="battery_saver_summary_unavailable">Indisponível enquanto estiver a carregar</string>
+  <string name="anonymous_statistics_title">Estatísticas CyanogenMod</string>
+  <string name="anonymous_statistics_summary">Ajude a melhorar a CyanogenMod optando por ativar o envio do relatório de estatísticas anónimas</string>
+  <string name="anonymous_statistics_warning_title">Sobre</string>
+  <string name="anonymous_statistics_warning">Optar pelo envio de estatísticas CyanogenMod vai permitir que dados não pessoais sejam transmitidos aos desenvolvedores da CyanogenMod para rastrear instalações nos dispositivos. As informações submetidas incluem um identificador único, que não compromete a sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um exemplo dos dados que são enviados, toque em \'Pré-visualizar dados\'.</string>
+  <string name="enable_reporting_title">Ativar relatório</string>
+  <string name="preview_data_title">Pré-visualizar dados</string>
+  <string name="view_stats_title">Ver estatísticas</string>
+  <string name="anonymous_learn_more">Saber mais</string>
+  <string name="preview_id_title">Identificação única</string>
+  <string name="preview_device_title">Dispositivo</string>
+  <string name="preview_version_title">Versão</string>
+  <string name="preview_country_title">País</string>
+  <string name="preview_carrier_title">Operadora</string>
   <string name="heads_up_notifications">Notificações pop-up</string>
   <string name="summary_heads_up_enabled">As notificações pop-up estão ativadas</string>
   <string name="summary_heads_up_disabled">As notificações pop-up estão desativadas</string>
   <string name="master_clear_desc_cm" product="tablet">Isto apagará todos os dados do <b>armazenamento interno</b> do seu tablet, incluindo:\n\n <li>As contas do dispositivo</li>\n<li>Definições e dados das aplicações e do sistema</li>\n<li>Aplicações transferidas</li></string>
   <string name="master_clear_desc_cm" product="default">Isto apagará todos os dados do <b>armazenamento interno</b> do seu telefone, incluindo:\n\n <li>As contas do dispositivo</li>\n<li>Definições e dados das aplicações e do sistema</li>\n<li>Aplicações transferidas</li></string>
-  <string name="bluetooth_pan_profile_summary_use_for_error">Erro de ligação; A partilha de ligação bluetooth está ativada neste dispositivo?</string>
+  <string name="lock_to_cyanogen_title">Proteção do dispositivo</string>
+  <string name="lock_to_cyanogen_summary">Exigir a palavra-passe da conta Cyanogen OS mesmo depois de uma reposição dos dados de fábrica</string>
+  <string name="lock_to_cyanogen_create_account_msg">O dispositivo usa a palavra-passe da conta Cyanogen OS para proteger o seu dispositivo no caso de uma reposição dos dados de fábrica. Precisará de criar uma conta Cyanogen OS.</string>
+  <string name="lock_to_cyanogen_disable_msg">Desativar este recurso permitirá que utilizadores não autorizados restaurem o telefone para os padrões de fábrica se ele for roubado. Os seus dados pessoais não podem ser protegidos. Quer desativar este recurso?</string>
+  <string name="lock_to_cyanogen_master_clear_warning">A proteção do dispositivo está ativada. Por favor, desative-a para continuar a repor o seu dispositivo.</string>
+  <string name="bluetooth_pan_profile_summary_use_for_error">Erro de ligação; a partilha de internet por bluetooth está ativada neste dispositivo?</string>
   <string name="sim_card_status_title">Estado do SIM %d</string>
   <string name="sim_card_lock_settings_title">Definições de bloqueio do SIM %d</string>
   <string name="sim_card_summary_empty">Cartão SIM não inserido</string>
