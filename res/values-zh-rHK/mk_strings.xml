@@ -51,6 +51,7 @@
   <string name="blacklist_harassment_numbers_summary">阻止騷擾來電</string>
   <string name="smartcontrol_settings_title">智能控制</string>
   <string name="direct_control_title">體感控制</string>
+  <string name="direct_call_for_dialer_title">撥號介面直接撥號</string>
   <string name="direct_call_for_dialer_summary">手機放在耳邊時將撥打當前撥號器輸入的電話號碼</string>
   <string name="direct_call_for_mms_title">短訊介面體感撥號</string>
   <string name="direct_call_for_mms_summary">手機放在耳邊時將自動撥打目前簡訊聯絡人的電話號碼</string>
@@ -113,10 +114,14 @@
   <string name="recents_clear_all_location_bottom_right">右下方</string>
   <string name="recents_clear_all_location_bottom_left">左下方</string>
   <string name="recents_clear_all_location_bottom_center">下方中央</string>
+  <string name="recents_clear_all_ignored_foreground_title">忽略前景任務</string>
+  <string name="recents_clear_all_ignored_foreground_summary">最近應用程式超過一個時，避免一鍵清理前景任務</string>
   <string name="status_bar_clock_show_second_title">顯示到秒</string>
   <string name="status_bar_clock_show_second_summary">狀態列時鐘顯示到秒</string>
   <string name="show_su_icon_title">顯示超級使用者圖示</string>
   <string name="show_su_icon_summary">當超級使用者執行時在狀態列顯示圖示</string>
+  <string name="show_headset_icon_title">顯示耳機圖示</string>
+  <string name="show_headset_icon_summary">插入耳機時在狀態列顯示圖示</string>
   <string name="double_tap_to_sleep_navbar_title">輕按兩下導覽列休眠</string>
   <string name="double_tap_to_sleep_navbar_summary">輕按兩下導覽列關閉畫面顯示</string>
   <string name="battery_optimizer_title">電池優化程式</string>

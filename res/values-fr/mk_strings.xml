@@ -105,6 +105,7 @@
   <string name="unlock_set_unlock_gesture_summary">Sécurité minimum, à titre expérimental</string>
   <string name="unlock_set_unlock_mode_gesture">Schéma</string>
   <string name="recents_panel_settings_title">Paramètres du panneau d\'applis récentes</string>
+  <string name="clear_all_settings_title">Masquer tous les boutons de réglages</string>
   <string name="recents_clear_all_location_title">Rejeter tous les emplacement de bouton</string>
   <string name="recents_clear_all_location_top_right">En haut à droite</string>
   <string name="recents_clear_all_location_top_left">En haut à gauche</string>
@@ -119,6 +120,7 @@
   <string name="show_su_icon_summary">Afficher une icône dans la barre d\'état quand su est activé</string>
   <string name="show_headset_icon_title">Afficher l\'icône de casque</string>
   <string name="show_headset_icon_summary">Afficher une icône dans la barre d\'état quand le casque est brancher</string>
+  <string name="double_tap_to_sleep_navbar_title">Double-tap dans la barre de navigation pour mettre en veille</string>
   <string name="double_tap_to_sleep_navbar_summary">Double taper sur la barre de navigation pour éteindre l\'écran</string>
   <string name="battery_optimizer_title">Optimiseur de batterie</string>
   <string name="wakelock_blocker_title">Bloquer les Wakelock</string>
