@@ -61,7 +61,7 @@ import com.android.settingslib.bluetooth.BluetoothDeviceFilter;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -275,7 +275,7 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
             R.string.bluetooth_search_for_devices;
 
         boolean isAcceptAllFilesEnabled = Settings.System.getInt(getContentResolver(),
-                CMSettings.System.BLUETOOTH_ACCEPT_ALL_FILES, 0) == 1;
+                MKSettings.System.BLUETOOTH_ACCEPT_ALL_FILES, 0) == 1;
 
         menu.add(Menu.NONE, MENU_ID_SCAN, 0, textId)
                 .setEnabled(bluetoothIsEnabled && !isDiscovering)
@@ -317,7 +317,7 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
             case MENU_ID_ACCEPT_ALL_FILES:
                 item.setChecked(!item.isChecked());
                 Settings.System.putInt(getContentResolver(),
-                        CMSettings.System.BLUETOOTH_ACCEPT_ALL_FILES,
+                        MKSettings.System.BLUETOOTH_ACCEPT_ALL_FILES,
                         item.isChecked() ? 1 : 0);
                 return true;
         }

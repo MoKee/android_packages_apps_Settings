@@ -52,9 +52,9 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.widget.SwitchBar;
-import cyanogenmod.externalviews.KeyguardExternalViewProviderService;
-import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
+import mokee.externalviews.KeyguardExternalViewProviderService;
+import mokee.providers.MKSettings;
+import org.mokee.internal.util.MkLockPatternUtils;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -64,7 +64,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static cyanogenmod.providers.CMSettings.Secure.LIVE_LOCK_SCREEN_ENABLED;
+import static mokee.providers.MKSettings.Secure.LIVE_LOCK_SCREEN_ENABLED;
 
 public class LiveLockScreenSettings extends SettingsPreferenceFragment implements
         SwitchBar.OnSwitchChangeListener {
@@ -316,12 +316,12 @@ public class LiveLockScreenSettings extends SettingsPreferenceFragment implement
 
         private final Context mContext;
         private final LiveLockScreenInfoComparator mComparator;
-        private CmLockPatternUtils mLockPatternUtils;
+        private MkLockPatternUtils mLockPatternUtils;
 
         public LiveLockScreenBackend(Context context) {
             mContext = context;
             mComparator = new LiveLockScreenInfoComparator(null);
-            mLockPatternUtils = new CmLockPatternUtils(context);
+            mLockPatternUtils = new MkLockPatternUtils(context);
         }
 
         public List<LiveLockScreenInfo> getLiveLockScreenInfos() {
@@ -377,11 +377,11 @@ public class LiveLockScreenSettings extends SettingsPreferenceFragment implement
         }
 
         private boolean getBoolean(String key, boolean def) {
-            return CMSettings.Secure.getInt(mContext.getContentResolver(), key, def ? 1 : 0) == 1;
+            return MKSettings.Secure.getInt(mContext.getContentResolver(), key, def ? 1 : 0) == 1;
         }
 
         private void setBoolean(String key, boolean value) {
-            CMSettings.Secure.putInt(mContext.getContentResolver(), key, value ? 1 : 0);
+            MKSettings.Secure.putInt(mContext.getContentResolver(), key, value ? 1 : 0);
         }
 
         public void setActiveLiveLockScreen(ComponentName liveLockScreen) {
