@@ -222,13 +222,6 @@
   <string name="block_notifications_title">Filtrera meddelanden</string>
   <string name="block_notifications_summary">Hantera ignorerade aviseringar och filter</string>
   <string name="no_filters_title">Inga filter valda</string>
-  <string name="cmupdate_settings_title">CyanogenMod-uppdateringar</string>
-  <string name="update_recovery_title">Uppdatera Cyanogen Recovery</string>
-  <string name="update_recovery_summary">Uppdatera Recovery med systemuppdateringar</string>
-  <string name="update_recovery_on_warning">OBSERVERA: När denna funktion är aktiverad, kommer din installerade Recovery att ersättas av en som ingår i den aktuella versionen av ditt nuvarande OS.\n\nRecovery kommer att uppdateras med uppgraderingar till ditt system, detta bidrar till att säkerställa kompatibilitet med framtida versioner.\n\nVill du aktivera den här funktionen?</string>
-  <string name="update_recovery_off_warning">VARNING: När denna funktion är inaktiverad, kommer din installerade Recovery inte att uppdateras med OS-uppgraderingar.\n\nFramtida OS-uppdateringar kan komma att inte kunna installeras med inaktuella eller anpassade Recovery-versioner.\n\nVill du verkligen inaktivera denna funktion?</string>
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Okänd</string>
   <string name="device_model">Enhetsmodell</string>
   <string name="device_name">Enhetsnamn</string>
   <string name="build_date">Byggdatum</string>
@@ -237,7 +230,6 @@
   <string name="double_tap_to_wake_summary">Dubbeltryck på skärmen för att slå på displayen</string>
   <string name="proximity_wake_title">Förhindra oavsiktlig väckning</string>
   <string name="proximity_wake_summary">Kontrollera närhetssensorn innan väckning av skärmen</string>
-  <string name="privacy_settings_cyanogenmod_title">Integritet</string>
   <string name="privacy_guard_default_title">Aktiverad som standard</string>
   <string name="privacy_guard_default_summary">Aktivera som standard för nyinstallerade appar</string>
   <string name="privacy_guard_manager_title">Integritetsskydd</string>
@@ -660,8 +652,6 @@
   <string name="usb_not_connected">USB är nu bortkopplad</string>
   <string name="external_storage_turn_on">Externlagring har slagits på</string>
   <string name="external_storage_turn_off">Externlagring har slagits av</string>
-  <string name="stats_collection_title">Statistikinsamling</string>
-  <string name="stats_collection_summary">När aktiverad, tillåts insamling av mättal</string>
   <string name="power_notifications_category_title">Laddningsljud</string>
   <string name="power_notifications_enable_title">Aktivera</string>
   <string name="power_notifications_enable_summary">Spela ett ljud vid anslutning eller frånkoppling av strömkälla</string>
@@ -682,8 +672,6 @@
   <string name="pref_force_highend_gfx_summary">Aktiverar visuella effekter av hög klass som exempelvis transparent status- och navigeringsfält (kräver omstart)</string>
   <string name="edge_gesture_service_title">Blockera gesthändelser</string>
   <string name="edge_gesture_service_summary">Skicka inte beröringshändelser för navigerings- och statusfältsgester till appar</string>
-  <string name="cmlicense_title">CyanogenMod Juridik</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod Juridik</string>
   <string name="lockpattern_settings_enable_error_path_title">Visa mönster vid fel</string>
   <string name="lockpattern_settings_enable_dots_title">Visa mönsterpunkter</string>
   <string name="lock_directly_show_pin">Visa PIN-inmatningen direkt</string>
@@ -734,9 +722,6 @@
   <string name="qs_tile_ambient_display">Ambient display</string>
   <string name="qs_tile_sync">Synk</string>
   <string name="qs_tile_battery_saver">Strömsparläge</string>
-  <string name="qs_dynamic_tile_next_alarm">Nästa alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">IME-väljare</string>
-  <string name="qs_dynamic_tile_su">Root-åtkomst</string>
   <string name="qs_main_tiles_title">Förstora första raden</string>
   <string name="qs_main_tiles_summary_on">Två huvudbrickor i första raden</string>
   <string name="qs_main_tiles_summary_off">Tre brickor på varje rad</string>
@@ -774,8 +759,6 @@
   <string name="lockscreen_choose_action_title">Välj åtgärd</string>
   <string name="lockscreen_visualizer_title">Visa musikvisualisering</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Hantera säkra SMS-inställningar</string>
   <string name="navigation_ring_title">Mål för navigeringsring</string>
   <string name="navigation_ring_message">Tryck på ikonen \'Ändra\' för att öppna navigeringsringen för redigering.\n\nVälj ett mål för att konfigurera dess beteende.\n\nTryck på \'\u2713\'-ikonen för att spara dina ändringar, eller \'Återställ standard\' för att återställa inställningarna till standard.</string>
   <string name="lcd_density">LCD-densitet</string>
@@ -851,32 +834,11 @@
   <string name="battery_saver_threshold">Batterisparningströskel</string>
   <string name="battery_saver_summary">Minska prestanda och begränsa bakgrundsdata</string>
   <string name="battery_saver_summary_unavailable">Inte tillgängligt under laddning</string>
-  <string name="anonymous_statistics_title">CyanogenMod-statistik</string>
-  <string name="anonymous_statistics_summary">Hjälp till att göra CyanogenMod bättre genom att skicka anonyma statistikrapporter</string>
-  <string name="anonymous_statistics_warning_title">Om</string>
-  <string name="anonymous_statistics_warning">Att delta i CyanogenMod Statistics kommer tillåta att icke-personlig data kommer att skickas till
-        utvecklarna av CyanogenMod för att spåra unika installationer mellan enheter. Den delgivna informationen
-inkluderar en unik identifikation,
-        som inte riskerar din integritet eller personliga data. Data skickas vid varje uppstart av enheten.\n\nFör ett exempel på den data som skickas, tryck på Förhandsgranska data.</string>
-  <string name="enable_reporting_title">Aktivera rapportering</string>
-  <string name="preview_data_title">Förhandsgranska data</string>
-  <string name="view_stats_title">Visa statistik</string>
-  <string name="anonymous_learn_more">Läs mer</string>
-  <string name="preview_id_title">Unikt ID</string>
-  <string name="preview_device_title">Enhet</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Operatör</string>
   <string name="heads_up_notifications">Heads up</string>
   <string name="summary_heads_up_enabled">Pop-up-aviseringar är aktiverade</string>
   <string name="summary_heads_up_disabled">Pop-up-aviseringar är inaktiverade</string>
   <string name="master_clear_desc_cm" product="tablet">Detta kommer ta bort all information från din surfplattas <b>interna lagring</b>, inklusive:\n\n<li>Dina enhetskonton</li>\n<li>System- och appinformation och inställningar</li>\n<li>Nerladdade appar</li></string>
   <string name="master_clear_desc_cm" product="default">Detta kommer ta bort all information från din telefons<b>interna lagring</b>, inklusive:\n\n<li>Dina enhetskonton</li>\n<li>System- och appinformation och inställningar</li>\n<li>Nerladdade appar</li></string>
-  <string name="lock_to_cyanogen_title">Enhetsskydd</string>
-  <string name="lock_to_cyanogen_summary">Kräv ditt kontolösenord för Cyanogen OS även efter fabriksinställning</string>
-  <string name="lock_to_cyanogen_create_account_msg">Din enhet använder lösenordet för Cyanogen OS för att skydda enheten även vid en fabriksåterställning. Du kommer att behöva skapa en Cyanogen OS-konto.</string>
-  <string name="lock_to_cyanogen_disable_msg">Att inaktivera denna funktion kommer tillåta obehöriga användare att återställa din telefon till fabriksinställningar om den stjäls. Din personliga data kanske inte skyddas. Vill du inaktivera denna funktion?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Enhetsskydd är aktiverad. Inaktivera det för att fortsätta med enhetsåterställningen.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Anslutningsfel; är Bluetooth-delning aktiverad på denna enhet?</string>
   <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM-%d låsinställningar</string>

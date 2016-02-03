@@ -225,13 +225,6 @@
   <string name="block_notifications_title">Фільтр паведамленняў</string>
   <string name="block_notifications_summary">Налада ігнараваных паведамленняў і фільтраў</string>
   <string name="no_filters_title">Фільтр не ўсталяваны</string>
-  <string name="cmupdate_settings_title">Абнаўленні сістэмы</string>
-  <string name="update_recovery_title">Абнаўляць рэжым аднаўлення</string>
-  <string name="update_recovery_summary">Перазапісваць падзел Recovery пры ўсталёўцы абнаўленняў</string>
-  <string name="update_recovery_on_warning">Калі гэта функцыя ўключана, усталяваная прашыўка рэжыму аднаўлення будзе перазапісана той, якая адпавядае бягучай версіі АС.\n\n Рэжым аднаўлення будзе абнаўляцца разам з абнаўленнямі сістэмы, забяспечваючы сумяшчальнасць з будучымі версіямі.\n\nУключыць выкарыстанне гэтай функцыі?</string>
-  <string name="update_recovery_off_warning">Калі гэта функцыя адключана, прашыўка рэжыму аднаўлення заўсёды будзе заставацца нязменнай.\n\nНекаторыя абнаўленні АС могуць не ўсталёўвацца пры выкарыстанні састарэлых ці карыстальніцкіх версій падзелу Recovery.\n\nАдключыць выкарыстанне гэтай функцыі?</string>
-  <string name="mod_version">Версія CyanogenMod</string>
-  <string name="mod_version_default">Невядома</string>
   <string name="device_model">Мадэль прылады</string>
   <string name="device_name">Імя прылады</string>
   <string name="build_date">Дата зборкі</string>
@@ -240,7 +233,6 @@
   <string name="double_tap_to_wake_summary">Двойчы дакраніцеся экрана, каб вывесці прыладу са спячага рэжыму</string>
   <string name="proximity_wake_title">Прадухіляць выпадковае ўлучэнне</string>
   <string name="proximity_wake_summary">Правяраць датчык набліжэння пры выйсці з рэжыму сну</string>
-  <string name="privacy_settings_cyanogenmod_title">Прыватнасць</string>
   <string name="privacy_guard_default_title">Рэжым абароны па змаўчанні</string>
   <string name="privacy_guard_default_summary">Улучаць рэжым абароны для ўсіх новых дадаткаў</string>
   <string name="privacy_guard_manager_title">Рэжым абароны</string>
@@ -664,8 +656,6 @@
   <string name="usb_not_connected">USB-кабель адключаны</string>
   <string name="external_storage_turn_on">Вонкавы назапашвальнік улучаны</string>
   <string name="external_storage_turn_off">Вонкавы назапашвальнік адключаны</string>
-  <string name="stats_collection_title">Збор статыстыкі</string>
-  <string name="stats_collection_summary">Калі ўключана, дазваляе збор метрыкі</string>
   <string name="power_notifications_category_title">Зарадная прылада</string>
   <string name="power_notifications_enable_title">Гук пры зарадцы</string>
   <string name="power_notifications_enable_summary">Прайграваць гук пры далучэнні альбо адключэнні крыніцы сілкавання</string>
@@ -686,8 +676,6 @@
   <string name="pref_force_highend_gfx_summary">ыкарыстоўваць эфекты, адключаныя для прылад з нізкай прадукцыйнасцю, напрыклад, празрыстасць радка стану і панэлі навігацыі (патрабуецца перазагрузка)</string>
   <string name="edge_gesture_service_title">Блакіяваць падзеі жэстаў</string>
   <string name="edge_gesture_service_summary">Не перадаваць дадаткам жэсты паказу радка стану і панэлі навігацыі</string>
-  <string name="cmlicense_title">Палітыка прыватнасці CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Палітыка прыватнасці CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Паказваць няправільны ўвод</string>
   <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі</string>
   <string name="lock_directly_show_password">Адразу прапанаваць увод пароля</string>
@@ -741,9 +729,6 @@
   <string name="qs_tile_ambient_display">Індыкацыя падзей</string>
   <string name="qs_tile_sync">Сінхранізацыя</string>
   <string name="qs_tile_battery_saver">Энергазахавання</string>
-  <string name="qs_dynamic_tile_next_alarm">Наступны будзільнік</string>
-  <string name="qs_dynamic_tile_ime_selector">Выбар метаду ўводу</string>
-  <string name="qs_dynamic_tile_su">Суперкарыстальнік</string>
   <string name="qs_main_tiles_title">Павялічыць першы рад</string>
   <string name="qs_main_tiles_summary_on">Дзве галоўныя пліткі на першым радку</string>
   <string name="qs_main_tiles_summary_off">Тры пліткі на кожным радку</string>
@@ -781,8 +766,6 @@
   <string name="lockscreen_choose_action_title">Абярыце дзеянне</string>
   <string name="lockscreen_visualizer_title">Візуалізацыя спектра музыкі</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">Тэхналогія WhisperPush</string>
-  <string name="whisperpush_summary">Налада шыфравання SMS-паведамленняў</string>
   <string name="navigation_ring_title">Цэтлікі навігацыйнага кола</string>
   <string name="navigation_ring_message">Дакраніцеся значка праўкі для змянення навігацыйнага кола.\n\nАбярыце цэтлік для налады яго паводзін.\n\nДакраніцеся галачкі \'\u2713\' для выйсця з рэжыму рэдагаванні і захаванні змен, а для звароту цэтлікаў па змаўчанні — дакраніцеся кнопкі \"Узнавіць\".</string>
   <string name="lcd_density">Шчыльнасць экрана</string>
@@ -863,29 +846,11 @@
   <string name="battery_saver_threshold">Аўтаматычнае энэргазахавання</string>
   <string name="battery_saver_summary">Зменшыць прадукцыйнасць і абмежаваць фонавую перадачу дадзеных</string>
   <string name="battery_saver_summary_unavailable">Недаступна падчас зарадкі</string>
-  <string name="anonymous_statistics_title">Адпраўка статыстыкі</string>
-  <string name="anonymous_statistics_summary">Дапамажыце зрабіць CyanogenMod лепш, дазволіўшы збор ананімнай статыстыкі</string>
-  <string name="anonymous_statistics_warning_title">Звесткі</string>
-  <string name="anonymous_statistics_warning">Ананімныя справаздачы дазваляюць распрацоўнікам CyanogenMod адсочваць усталёўкі на розныя прылады. Адсыланая інфармацыю складаецца з назву прылады, версію прашыўкі і ўнікальны ідэнтыфікатар, адпраўка якога ніякай чынам не шкодзіць Вашай прыватнасці. Справаздача адсылаецца пры кожнай загрузцы прылады.</string>
-  <string name="enable_reporting_title">Дазволіць збор статыстыкі</string>
-  <string name="preview_data_title">Прагляд дадзеных якія адпраўляюцца</string>
-  <string name="view_stats_title">Прагляд статыстыкі ўсталёвак</string>
-  <string name="anonymous_learn_more">Падрабязней</string>
-  <string name="preview_id_title">Ідэнтыфікатар</string>
-  <string name="preview_device_title">Прылада</string>
-  <string name="preview_version_title">Версія</string>
-  <string name="preview_country_title">Краіна</string>
-  <string name="preview_carrier_title">Аператар</string>
   <string name="heads_up_notifications">Усплывальныя паведамленні</string>
   <string name="summary_heads_up_enabled">Улучаны</string>
   <string name="summary_heads_up_disabled">Вымкнуты</string>
   <string name="master_clear_desc_cm" product="tablet">Дадзенае дзеянне выдаліць усе дадзеныя з <b>унутранай памяці</b>, вашага планшэта, улучаючы:\n\n<li>акаўнты</li>\n<li>налады сістэмы і дадаткаў</li>\n<li>усе загружаныя дадаткі</li></string>
   <string name="master_clear_desc_cm" product="default">Дадзенае дзеянне выдаліць усе дадзеныя з <b>унутранай памяці</b>, вашага тэлефона, улучаючы:\n\n<li>акаўнты</li>\n<li>налады сістэмы і дадаткаў</li>\n<li>усе загружаныя дадаткі</li></string>
-  <string name="lock_to_cyanogen_title">Абарона прылады</string>
-  <string name="lock_to_cyanogen_summary">Патрабаваць пароль акаўнта АС Cyanogen нават пасля выдалення ўсіх дадзеных</string>
-  <string name="lock_to_cyanogen_create_account_msg">Прылада выкарыстоўвае пароль акаўнта АС Cyanogen для абароны прылады ад скіду налад. Патрабуецца стварыць новы акаўнт АС Cyanogen.</string>
-  <string name="lock_to_cyanogen_disable_msg">Адключэнне гэтай функцыі дазволіць іншым людзям выканаць выдаленне ўсіх дадзеных на прыладзе ў выпадку яго крадзяжу. Вашы асабістыя дадзеныя могуць стаць недастаткова абароненымі. Вы сапраўды хочаце адключыць гэту функцыю?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Абарона прылады ўключана. Трэба адключыць яе, каб выканаць скід налад на прыладзе.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Памылка падлучэння: праверце, ці уключаны Bluetooth-мадэм на паказанай прыладзе?</string>
   <string name="sim_card_status_title">Статус SIM %d</string>
   <string name="sim_card_lock_settings_title">Параметры блакавання SIM %d</string>
