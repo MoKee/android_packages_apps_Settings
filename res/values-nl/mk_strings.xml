@@ -92,7 +92,7 @@
   <string name="lockgesture_settings_enable_title">Vereist patroon</string>
   <string name="lockgesture_settings_enable_summary">Moet patroon tekenen om scherm te ontgrendelen</string>
   <string name="lockgesture_settings_enable_visible_pattern_title">Patroon zichtbaar maken</string>
-  <string name="lockgesture_settings_enable_power_button_instantly_locks">Aan- /Uit knop vergrendeld direct</string>
+  <string name="lockgesture_settings_enable_power_button_instantly_locks">Aan- /Uit knop vergrendeldt direct</string>
   <string name="lockgesture_settings_choose_lock_pattern">Stel ontgrendelpatroon in</string>
   <string name="lockgesture_settings_change_lock_pattern">Verander ontgrendelpatroon</string>
   <string name="lockgesture_settings_help_how_to_record">Hoe een ondgrendel gebaar tekenen</string>
@@ -131,5 +131,5 @@
   <string name="wakelock_list_header">Beschikbare Wakelocks</string>
   <string name="wakelock_blocker_reload">Herladen</string>
   <string name="wakelock_blocker_warning_title">Ga voorzichtig te werk</string>
-  <string name="wakelock_blocker_warning">Het blokkeren van wakelocks kan potentieel leiden tot instabiliteit, crashes of data verlies</string>
+  <string name="wakelock_blocker_warning">Het blokkeren van wakelocks kan leiden tot instabiliteit, crashes of data verlies</string>
 </resources>
