@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_version">MoKee version</string>
   <string name="mokee_version_default">Okänd</string>
+  <string name="mokee_support_default">Okänd</string>
   <string name="animation_settings_title">Animationer</string>
   <string name="listview_off">Av</string>
   <string name="listview_fold">Vik</string>

@@ -106,6 +106,7 @@
   <string name="unlock_set_unlock_mode_gesture">Schéma</string>
   <string name="recents_panel_settings_title">Paramètres du panneau d\'applis récentes</string>
   <string name="clear_all_settings_title">Masquer tous les boutons de réglages</string>
+  <string name="show_clear_all_recents_button_title">Afficher rejeter tout bouton</string>
   <string name="recents_clear_all_location_title">Rejeter tous les emplacement de bouton</string>
   <string name="recents_clear_all_location_top_right">En haut à droite</string>
   <string name="recents_clear_all_location_top_left">En haut à gauche</string>
@@ -114,6 +115,7 @@
   <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
   <string name="recents_clear_all_location_bottom_center">En bas au centre</string>
   <string name="recents_clear_all_ignored_foreground_title">Ignorer les tâches de premier plan</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Lorsque plus de 1 applications récentes, éviter rejetant tâches de premier plan</string>
   <string name="status_bar_clock_show_second_title">Secondes en horloge</string>
   <string name="status_bar_clock_show_second_summary">Afficher les secondes avec l\'horloge dans la barre d\'état</string>
   <string name="show_su_icon_title">Montrer l\'icône su</string>

@@ -35,6 +35,7 @@
   <string name="listview_rotate">Döndür</string>
   <string name="status_bar_network_traffic_style_disable">Devre Dışı</string>
   <string name="status_bar_network_traffic_style_up">Giden</string>
+  <string name="lockpassword_choose_your_gesture_header">Deseninizi Çizin</string>
   <string name="recents_clear_all_location_top_right">Üst Sağ</string>
   <string name="recents_clear_all_location_top_left">Üst sol</string>
   <string name="recents_clear_all_location_top_center">Üst orta</string>

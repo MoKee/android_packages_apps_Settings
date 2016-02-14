@@ -67,4 +67,5 @@
   <string name="volume_answer_call_title">Respondre trucada</string>
   <string name="volume_answer_call_summary">Prement el botó de pujar volum respondrà a la trucada entrant</string>
   <string name="privacy_settings_mokee_title">Privacitat</string>
+  <string name="lockpassword_choose_your_gesture_header">Dibuixa el teu gest</string>
 </resources>
