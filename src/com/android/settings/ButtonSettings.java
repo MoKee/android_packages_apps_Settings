@@ -78,6 +78,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
     private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
+    private static final String KEY_SWAP_BUTTONS = "swap_buttons";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
@@ -139,6 +140,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mDisableNavigationKeys;
     private SwitchPreference mNavigationBarLeftPref;
     private ListPreference mNavigationRecentsLongPressAction;
+    private SwitchPreference mSwapButtons;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mCameraDoubleTapPowerGesture;
@@ -228,6 +230,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationRecentsLongPressAction =
                 initRecentsLongPressAction(KEY_NAVIGATION_RECENTS_LONG_PRESS);
 
+        // Swap buttons
+        mSwapButtons = (SwitchPreference) findPreference(KEY_SWAP_BUTTONS);
         final MKHardwareManager hardware = MKHardwareManager.getInstance(getActivity());
 
         // Only visible on devices that does not have a navigation bar already,
@@ -250,6 +254,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
+        }
+
+        if (hardware.isSupported(MKHardwareManager.FEATURE_SWAP_BUTTONS)) {
+            updateSwapButtonsOption();
+        } else {
+            prefScreen.removePreference(mSwapButtons);
         }
 
         if (hasPowerKey) {
@@ -663,6 +673,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
     }
 
+    private static void writeSwapButtonsOption(Context context, boolean enabled) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+        MKSettings.Secure.putInt(context.getContentResolver(),
+                MKSettings.Secure.SWAP_BUTTONS, enabled ? 1 : 0);
+        MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+        hardware.set(MKHardwareManager.FEATURE_SWAP_BUTTONS, enabled);
+    }
+
     private void updateDisableNavkeysOption() {
         boolean enabled = MKSettings.Secure.getInt(getActivity().getContentResolver(),
                 MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
@@ -710,10 +729,26 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navbarEnabled);
         }
+        if (mSwapButtons != null) {
+            mSwapButtons.setEnabled(!navbarEnabled);
+        }
     }
 
-    public static void restoreKeyDisabler(Context context) {
+    private void updateSwapButtonsOption() {
+        boolean enabled = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.SWAP_BUTTONS, 0) != 0;
+
+        mSwapButtons.setChecked(enabled);
+    }
+
+    public static void restore(Context context) {
         MKHardwareManager hardware = MKHardwareManager.getInstance(context);
+
+        if (hardware.isSupported(MKHardwareManager.FEATURE_SWAP_BUTTONS)) {
+            writeSwapButtonsOption(context, MKSettings.Secure.getInt(context.getContentResolver(),
+                    MKSettings.Secure.SWAP_BUTTONS, 0) != 0);
+        }
+
         if (!hardware.isSupported(MKHardwareManager.FEATURE_KEY_DISABLE)) {
             return;
         }
@@ -744,6 +779,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
                 }
             }, 1000);
+        } else if (preference == mSwapButtons) {
+            writeSwapButtonsOption(getActivity(), mSwapButtons.isChecked());
+            return true;
         } else if (preference == mPowerEndCall) {
             handleTogglePowerButtonEndsCallPreferenceClick();
             return true;
