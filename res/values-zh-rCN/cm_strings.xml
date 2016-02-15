@@ -794,4 +794,7 @@
   <string name="live_lock_screen_summary">启用与配置活动锁屏</string>
   <string name="live_lock_screen_settings_button">设置</string>
   <string name="live_lock_screen_settings_disabled_prompt">若要查看可用的活动锁屏，请先启用活动锁屏。</string>
+  <!-- Swap buttons -->
+  <string name="swap_buttons_title">按键切换</string>
+  <string name="swap_buttons_summary">切换多任务和返回键按键位置</string>
 </resources>
