@@ -18,8 +18,8 @@ package com.android.settings.cyanogenmod;
 
 import android.content.Context;
 import android.preference.SwitchPreference;
-import android.provider.Settings;
 import android.util.AttributeSet;
+
 import mokee.providers.MKSettings;
 
 public class CMSecureSettingSwitchPreference extends SwitchPreference {
