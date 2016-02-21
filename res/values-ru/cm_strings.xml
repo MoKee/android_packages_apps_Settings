@@ -225,13 +225,6 @@
   <string name="block_notifications_title">Фильтр уведомлений</string>
   <string name="block_notifications_summary">Настройка игнорируемых уведомлений и фильтров</string>
   <string name="no_filters_title">Фильтр не установлен</string>
-  <string name="cmupdate_settings_title">Обновления системы</string>
-  <string name="update_recovery_title">Обновлять режим восстановления</string>
-  <string name="update_recovery_summary">Перезаписывать прошивку режима восстановления при обновлении системы</string>
-  <string name="update_recovery_on_warning">ПРИМЕЧАНИЕ. При включении этой функции установленная прошивка режима восстановления перезапишется в соответствии с текущей версией ОС.\n\nРежим восстановления будет обновляться вместе с обновлениями системы, обеспечивая совместимость с будущими версиями.\n\nВключить использование этой функции?</string>
-  <string name="update_recovery_off_warning">ВНИМАНИЕ! При отключении этой функции прошивка режима восстановления будет оставаться неизменной.\n\nНекоторые обновления ОС могут не устанавливаться при использовании устаревших или пользовательских версий прошивки.\n\nОтключить использование этой функции?</string>
-  <string name="mod_version">Версия CyanogenMod</string>
-  <string name="mod_version_default">Неизвестно</string>
   <string name="device_model">Модель устройства</string>
   <string name="device_name">Имя устройства</string>
   <string name="build_date">Дата сборки</string>
@@ -240,7 +233,6 @@
   <string name="double_tap_to_wake_summary">Дважды коснитесь экрана, чтобы вывести устройство из спящего режима</string>
   <string name="proximity_wake_title">Предотвращать случайное включение</string>
   <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
-  <string name="privacy_settings_cyanogenmod_title">Конфиденциальность</string>
   <string name="privacy_guard_default_title">Использовать по умолчанию</string>
   <string name="privacy_guard_default_summary">Включать защищённый режим для новых приложений</string>
   <string name="privacy_guard_manager_title">Защищённый режим</string>
@@ -663,8 +655,6 @@
   <string name="usb_not_connected">USB-кабель отключён</string>
   <string name="external_storage_turn_on">Внешний накопитель включен</string>
   <string name="external_storage_turn_off">Внешний накопитель отключен</string>
-  <string name="stats_collection_title">Сбор статистики</string>
-  <string name="stats_collection_summary">Когда включено, разрешается сбор показателей</string>
   <string name="power_notifications_category_title">Зарядное устройство</string>
   <string name="power_notifications_enable_title">Звук при зарядке</string>
   <string name="power_notifications_enable_summary">Воспроизводить звук при подключении или отключении источника питания</string>
@@ -685,8 +675,6 @@
   <string name="pref_force_highend_gfx_summary">Использовать визуальные эффекты, отключенные для устройств с низкой производительностью, например, прозрачность строки состояния и панели навигации (требуется перезагрузка)</string>
   <string name="edge_gesture_service_title">Подавлять события жестов</string>
   <string name="edge_gesture_service_summary">Не передавать приложениям жесты показа строки состояния и панели навигации</string>
-  <string name="cmlicense_title">Политика конфиденциальности CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Политика конфиденциальности CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Показывать неверный ввод</string>
   <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
   <string name="lock_directly_show_password">Сразу предлагать ввод пароля</string>
@@ -740,9 +728,6 @@
   <string name="qs_tile_ambient_display">Индикация событий</string>
   <string name="qs_tile_sync">Синхронизация</string>
   <string name="qs_tile_battery_saver">Режим энергосбережения</string>
-  <string name="qs_dynamic_tile_next_alarm">Следующий будильник</string>
-  <string name="qs_dynamic_tile_ime_selector">Выбор метода ввода</string>
-  <string name="qs_dynamic_tile_su">Суперпользователь</string>
   <string name="qs_main_tiles_title">Увеличить первый ряд</string>
   <string name="qs_main_tiles_summary_on">Две главные плитки в первом ряду</string>
   <string name="qs_main_tiles_summary_off">Три плитки в каждом ряду</string>
@@ -780,8 +765,6 @@
   <string name="lockscreen_choose_action_title">Выберите действие</string>
   <string name="lockscreen_visualizer_title">Визуализация спектра музыки</string>
   <string name="nfc_title_category">Бесконтактная связь (NFC)</string>
-  <string name="whisperpush_title">Технология WhisperPush</string>
-  <string name="whisperpush_summary">Настройка шифрования SMS-сообщений</string>
   <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
   <string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык, чтобы настроить его поведение.\n\nКоснитесь галочки (\u2713) для выхода из режима редактирования и сохранения изменений, а для возврата ярлыков по умолчанию коснитесь кнопки «Восстановить».</string>
   <string name="lcd_density">Плотность экрана</string>
@@ -862,29 +845,11 @@
   <string name="battery_saver_threshold">Автом. энергосбережение</string>
   <string name="battery_saver_summary">Снизить производительность и ограничить фоновую передачу данных</string>
   <string name="battery_saver_summary_unavailable">Недоступно во время зарядки</string>
-  <string name="anonymous_statistics_title">Отправка статистики</string>
-  <string name="anonymous_statistics_summary">Помогите сделать CyanogenMod лучше, разрешив сбор анонимной статистики</string>
-  <string name="anonymous_statistics_warning_title">Сведения</string>
-  <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CyanogenMod отслеживать работу ОС на различных устройствах. Отправляемая информация включает название устройства, версию прошивки и уникальный идентификатор, что никаким образом не затрагивает Вашу конфиденциальность. Данные отправляются при каждой загрузке устройства.\n\nЧтобы просмотреть пример, нажмите «Просмотр данных».</string>
-  <string name="enable_reporting_title">Разрешить сбор статистики</string>
-  <string name="preview_data_title">Просмотр данных</string>
-  <string name="view_stats_title">Просмотр статистики</string>
-  <string name="anonymous_learn_more">Подробнее</string>
-  <string name="preview_id_title">Идентификатор</string>
-  <string name="preview_device_title">Устройство</string>
-  <string name="preview_version_title">Версия</string>
-  <string name="preview_country_title">Страна</string>
-  <string name="preview_carrier_title">Оператор</string>
   <string name="heads_up_notifications">Всплывающие уведомления</string>
   <string name="summary_heads_up_enabled">Включены</string>
   <string name="summary_heads_up_disabled">Выключены</string>
   <string name="master_clear_desc_cm" product="tablet">При этом будут удалены все данные из <b>внутренней памяти</b> планшета, включая следующие: \n\n <li>аккаунты</li>;\n<li>настройки системы и приложений</li>;\n<li>все загруженные приложения</li></string>
   <string name="master_clear_desc_cm" product="default">При этом будут удалены все данные из <b>внутренней памяти</b> телефона, включая следующие: \n\n <li>аккаунты</li>;\n<li>настройки системы и приложений</li>;\n<li>все загруженные приложения</li></string>
-  <string name="lock_to_cyanogen_title">Защита устройства</string>
-  <string name="lock_to_cyanogen_summary">Требовать пароль аккаунта ОС Cyanogen даже после удаления всех данных</string>
-  <string name="lock_to_cyanogen_create_account_msg">Устройство использует пароль аккаунта ОС Cyanogen для защиты от сброса настроек. Потребуется создать новый аккаунт ОС Cyanogen.</string>
-  <string name="lock_to_cyanogen_disable_msg">Отключение этой функции позволит другим пользователям выполнить на устройстве сброс до заводских настроек в случае его кражи. Ваши личные данные могут оказаться под угрозой. Действительно отключить эту функцию?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Защита устройства включена. Необходимо отключить её, чтобы выполнить сброс настроек на устройстве.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка подключения. Проверьте, включён ли Bluetooth-модем на указанном устройстве.</string>
   <string name="sim_card_status_title">Статус SIM %d</string>
   <string name="sim_card_lock_settings_title">Параметры блокировки SIM %d</string>

@@ -224,13 +224,6 @@
   <string name="block_notifications_title">Филтриране на известия</string>
   <string name="block_notifications_summary">Управление на филтри и игнорирани известия</string>
   <string name="no_filters_title">Няма зададени филтри</string>
-  <string name="cmupdate_settings_title">Системни актуализации</string>
-  <string name="update_recovery_title">Актуализирай режима за възстановяване на Cyanogen</string>
-  <string name="update_recovery_summary">Актуализирай recovery със системните актуализации</string>
-  <string name="update_recovery_on_warning">Забележка: Когато тази функция е активна, вашето инсталирано recovery ще бъде заменено с включеното в текущата версия на операционната система.\n\nВашето recovery ще се актуализира заедно с ъпгрейдите на вашата система, за да се гарантира съвместимост с бъдещите версии.\n\nИскате ли да активирате тази функция?</string>
-  <string name="update_recovery_off_warning">Предупреждение: Когато тази функция е забранена, вашето recovery няма да бъде актуализирана с актуализациите на операционната система.\n\nБъдещи актуализации на операционната система не могат да се инсталират с остарели или потребителски recovery версии.\n\nНаистина ли искате да забраните тази функция?</string>
-  <string name="mod_version">CyanogenMod версия</string>
-  <string name="mod_version_default">Неизвестна</string>
   <string name="device_model">Модел на устройството</string>
   <string name="device_name">Име на устройството</string>
   <string name="build_date">Дата на изграждане</string>
@@ -239,7 +232,6 @@
   <string name="double_tap_to_wake_summary">Двукратно почукване върху екрана го включва</string>
   <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
   <string name="proximity_wake_summary">Проверява сензора за близост преди включване на екрана</string>
-  <string name="privacy_settings_cyanogenmod_title">Поверителност</string>
   <string name="privacy_guard_default_title">Активирайте по подразбиране</string>
   <string name="privacy_guard_default_summary">Активира защитен режим за нови приложения</string>
   <string name="privacy_guard_manager_title">Защитен режим</string>
@@ -662,8 +654,6 @@
   <string name="usb_not_connected">USB е изключен</string>
   <string name="external_storage_turn_on">Външната памет е включена</string>
   <string name="external_storage_turn_off">Външната памет е изключена</string>
-  <string name="stats_collection_title">Събиране на статистики</string>
-  <string name="stats_collection_summary">Когато е активирана, позволява събиране на показатели</string>
   <string name="power_notifications_category_title">Звуци при зареждане</string>
   <string name="power_notifications_enable_title">Звук при зареждане</string>
   <string name="power_notifications_enable_summary">Възпроизвежда звук, когато включвате или изключвате източник на захранване</string>
@@ -684,8 +674,6 @@
   <string name="pref_force_highend_gfx_summary">Позволява висококачествени визуални ефекти като прозрачни статус/навигационна лента (изисква рестартиране)</string>
   <string name="edge_gesture_service_title">Блокирай жестове с допиране</string>
   <string name="edge_gesture_service_summary">Не изпращай жестове на приложенията за навигация и статус бара</string>
-  <string name="cmlicense_title">CyanogenMod правни</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod правни</string>
   <string name="lockpattern_settings_enable_error_path_title">Покажи модела на грешката</string>
   <string name="lockpattern_settings_enable_dots_title">Покажи точките на модела</string>
   <string name="lock_directly_show_password">Веднага покажи въвеждане на парола</string>
@@ -739,9 +727,6 @@
   <string name="qs_tile_ambient_display">Атмосферен екран</string>
   <string name="qs_tile_sync">Синхронизация</string>
   <string name="qs_tile_battery_saver">Пестене на батерия</string>
-  <string name="qs_dynamic_tile_next_alarm">Следваща аларма</string>
-  <string name="qs_dynamic_tile_ime_selector">IME селектор</string>
-  <string name="qs_dynamic_tile_su">Root достъп</string>
   <string name="qs_main_tiles_title">Уголемяване на първия ред</string>
   <string name="qs_main_tiles_summary_on">Две основни плочки на първия ред</string>
   <string name="qs_main_tiles_summary_off">Три плочки на всеки ред</string>
@@ -779,8 +764,6 @@
   <string name="lockscreen_choose_action_title">Изберете действие</string>
   <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
   <string name="nfc_title_category">NFC</string>
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Управление на настройките на защитен SMS</string>
   <string name="navigation_ring_title">Пръстен за навигация</string>
   <string name="navigation_ring_message">Докоснете иконата за редактиране, за да отворите навигационния пръстен за редакция.\n\nИзберете цел да конфигурирате поведението му.\n\nДокоснете \"\u2713\" иконата, за да запишете вашите промени, или \"Възстанови настройките по подразбиране\" за да възстановите настройките по подразбиране.</string>
   <string name="lcd_density">Плътност на екрана</string>
@@ -861,29 +844,11 @@
   <string name="battery_saver_threshold">Праг на съхранението на батерията</string>
   <string name="battery_saver_summary">Намаляване на ефективността и ограничаване на данните във фонов режим</string>
   <string name="battery_saver_summary_unavailable">Не са налични при зареждане</string>
-  <string name="anonymous_statistics_title">CyanogenMod статистики</string>
-  <string name="anonymous_statistics_summary">Помогнете да направим CyanogenMod по-добър, като разрешите да събира анонимни статистически данни</string>
-  <string name="anonymous_statistics_warning_title">Информация</string>
-  <string name="anonymous_statistics_warning">Ще позволи в CyanogenMod отчети с не лична информация да се подават на разработчиците на CyanogenMod, за проследяване на инсталациите в устройството. Предоставената информация включва уникален идентификатор, който не застрашава вашата поверителност или лични данни. Данните се подават по време на всяко зареждане.\n\nПример за данните, които са подадени.</string>
-  <string name="enable_reporting_title">Разреши отчитане</string>
-  <string name="preview_data_title">Визуализиране на данните</string>
-  <string name="view_stats_title">Преглед на статистиките</string>
-  <string name="anonymous_learn_more">Научете повече</string>
-  <string name="preview_id_title">Уникален ID</string>
-  <string name="preview_device_title">Устройство</string>
-  <string name="preview_version_title">Версия</string>
-  <string name="preview_country_title">Държава</string>
-  <string name="preview_carrier_title">Оператор</string>
   <string name="heads_up_notifications">Изскачащи известия</string>
   <string name="summary_heads_up_enabled">Изскачащите известия са разрешени</string>
   <string name="summary_heads_up_disabled">Изскачащите известия са забранени</string>
   <string name="master_clear_desc_cm" product="tablet">Това ще изтрие всички данни на таблета ви<b>вътрешна памет</b>, включително: \n\n <li>Профила на устройство</li> \n <li>Системата приложенията, както снимки данни и настройки</li> \n <li>Изтеглени приложения</li></string>
   <string name="master_clear_desc_cm" product="default">Това ще изтрие всички данни от телефона ви<b>вътрешна памет</b>, включително: \n\n <li>Профила на устройство</li> \n <li>Системата, приложенията, както снимки данни и настройки</li> \n <li>Изтеглени приложения</li></string>
-  <string name="lock_to_cyanogen_title">Защита на устройството</string>
-  <string name="lock_to_cyanogen_summary">Паролата на Cyanogen OS акаунта се изисква дори и след фабрично нулиране</string>
-  <string name="lock_to_cyanogen_create_account_msg">Устройството използва паролата за Cyanogen OS акаунта за защита на устройството от фабрично нулиране. Трябва да създадете нов профил Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Деактивирането на тази функция ще позволи неупълномощени потребители да върнат телефона към фабричните настройки, ако е откраднат. Личните ви данни не могат да бъдат защитени. Искате ли да забраните тази функция?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Защитата на устройството е разрешена. Моля, спрете възстановяването на вашето устройство.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Връзка грешка. Проверихте ли дали е активиран Bluetooth модема на устройството?</string>
   <string name="sim_card_status_title">СИМ карта %d статус</string>
   <string name="sim_card_lock_settings_title">Заключване на СИМ карта %d</string>
