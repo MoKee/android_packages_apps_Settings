@@ -800,5 +800,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Tarkastellaksesi Live-lukitusnäyttöjä, ota Live-lukitusnäytöt käyttöön.</string>
   <string name="interruptions_ignore_while_media_title">Estä äänen vaimennus</string>
   <string name="interruptions_ignore_while_media_summary">Älä hiljennä median toiston äänenvoimakkuutta ilmoituksen saapuessa</string>
-  <string name="cmlicense_title">CyanogenModin lakiasiat</string>
 </resources>

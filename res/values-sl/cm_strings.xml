@@ -802,5 +802,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Za ogled razpoložljivih živih zaslonov za zaklepanje omogočite žive zaslone za zaklepanje.</string>
   <string name="interruptions_ignore_while_media_title">Prepreči zvočno izognitev</string>
   <string name="interruptions_ignore_while_media_summary">Ne zmanjšaj glasnosti predvajanja predstavnosti, ko prispe obvestilo</string>
-  <string name="cmlicense_title">Pravna obvestila CyanogenMod</string>
 </resources>

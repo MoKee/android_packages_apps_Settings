@@ -780,5 +780,4 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="live_lock_screen_settings_button">Paramètres</string>
   <string name="interruptions_ignore_while_media_title">Empêcher l\'atténuation audio</string>
   <string name="interruptions_ignore_while_media_summary">Ne pas réduire le volume de lecture de médias lors d\'une notification</string>
-  <string name="cmlicense_title">Infos légales CyanogenMod</string>
 </resources>

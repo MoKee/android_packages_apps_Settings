@@ -799,5 +799,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">利用可能なライブロック画面を表示するには、ライブロック画面をONにしてください。</string>
   <string name="interruptions_ignore_while_media_title">オーディオダッキングを無効化</string>
   <string name="interruptions_ignore_while_media_summary">通知が来たときにメディアの再生音量を下げないようにする</string>
-  <string name="cmlicense_title">CyanogenMod利用規約</string>
 </resources>

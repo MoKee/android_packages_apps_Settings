@@ -644,5 +644,4 @@
   <string name="live_lock_screen_settings_button">Agordoj</string>
   <string name="interruptions_ignore_while_media_title">Malpermesi mallaŭtigadon</string>
   <string name="interruptions_ignore_while_media_summary">Ne mallaŭtigi aŭdvidan sonon, kiam atentigo alvenas</string>
-  <string name="cmlicense_title">Laŭleĝa informo pri CyanogenMod</string>
 </resources>

@@ -785,5 +785,4 @@
   <string name="live_lock_screen_settings_button">Налады</string>
   <string name="interruptions_ignore_while_media_title">Не прыглушаць гук</string>
   <string name="interruptions_ignore_while_media_summary">Не змяншаць гучнасць прайгравання мультымедыя пры атрыманні паведамленняў</string>
-  <string name="cmlicense_title">Палітыка прыватнасці CyanogenMod</string>
 </resources>

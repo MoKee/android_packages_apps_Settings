@@ -687,5 +687,4 @@
   <string name="live_lock_screen_settings_button">Indstillinger</string>
   <string name="interruptions_ignore_while_media_title">Undgå lyddæmpning</string>
   <string name="interruptions_ignore_while_media_summary">Reducér ikke lydstyrken, når en meddelelse modtages</string>
-  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
 </resources>

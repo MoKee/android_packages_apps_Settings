@@ -799,5 +799,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Um die verfügbaren Sperrbildschirme mit Animationen anzuzeigen, aktivieren Sie \"Animierte Sperrbildschirme\".</string>
   <string name="interruptions_ignore_while_media_title">Audio-Dämpfung verhindern</string>
   <string name="interruptions_ignore_while_media_summary">Medienlautstärke beim Eintreffen einer Benachrichtigung nicht reduzieren</string>
-  <string name="cmlicense_title">Rechtliche Hinweise zu CyanogenMod</string>
 </resources>

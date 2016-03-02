@@ -801,5 +801,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Da bi vidjeli dostupne Aktivne zaključane zaslone, uključite ih.</string>
   <string name="interruptions_ignore_while_media_title">Onemogući stišavanje audia</string>
   <string name="interruptions_ignore_while_media_summary">Nemoj utišati glasnoću reprodukcije medija kada pristigne obavijest</string>
-  <string name="cmlicense_title">CyanogenMod licenca</string>
 </resources>

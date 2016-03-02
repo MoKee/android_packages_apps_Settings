@@ -782,5 +782,4 @@
   <string name="live_lock_screen_settings_button">Instellingen</string>
   <string name="interruptions_ignore_while_media_title">Stabiel mediavolume</string>
   <string name="interruptions_ignore_while_media_summary">Mediavolume niet verminderen bij meldingen</string>
-  <string name="cmlicense_title">Juridische afdeling van CyanogenMod</string>
 </resources>

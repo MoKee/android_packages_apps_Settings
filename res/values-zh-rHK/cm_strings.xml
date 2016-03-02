@@ -629,5 +629,4 @@
   <string name="hotstpot_inactivity_timeout_never">永不</string>
   <string name="live_lock_screen_settings_button">設定</string>
   <string name="interruptions_ignore_while_media_title">阻止音訊閃避</string>
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
 </resources>

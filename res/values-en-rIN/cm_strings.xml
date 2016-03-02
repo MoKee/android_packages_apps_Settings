@@ -702,5 +702,4 @@
   <string name="live_lock_screen_settings_button">Settings</string>
   <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
   <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
-  <string name="cmlicense_title">CyanogenMod legal</string>
 </resources>

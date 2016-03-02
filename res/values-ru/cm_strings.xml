@@ -801,5 +801,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Для просмотра доступных Живых экранов блокировки включите поддержку этой функции.</string>
   <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
   <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
-  <string name="cmlicense_title">Политика конфиденциальности CyanogenMod</string>
 </resources>

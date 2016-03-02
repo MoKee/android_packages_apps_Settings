@@ -799,5 +799,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">För att visa tillgängliga Levande låsskärmar, aktivera Levande låsskärmar.</string>
   <string name="interruptions_ignore_while_media_title">Undvik ljuddämpning</string>
   <string name="interruptions_ignore_while_media_summary">Minska inte ljudstyrkan för media när en avisering tas emot</string>
-  <string name="cmlicense_title">CyanogenMod Juridik</string>
 </resources>

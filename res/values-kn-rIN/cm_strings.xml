@@ -687,5 +687,4 @@
   <string name="live_lock_screen_settings_button">ಸೆಟ್ಟಿಂಗ್ಸ್</string>
   <string name="interruptions_ignore_while_media_title">ಆಡಿಯೋ ಮುಳುಗುವಿಕೆ ತಡೆಗಟ್ಟು</string>
   <string name="interruptions_ignore_while_media_summary">ಅಧಿಸೂಚನೆ ಆಗಮಿಸಿದಾಗ ಮಾಧ್ಯಮ ಪ್ಲೇ ಬ್ಯಾಕ್ ವಾಲ್ಯೂಂನ್ನು ಕಡಿಮೆ ಮಾಡಬೇಡ</string>
-  <string name="cmlicense_title">CyanogenMod ಕಾನೂನು</string>
 </resources>

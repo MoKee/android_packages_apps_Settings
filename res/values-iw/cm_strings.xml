@@ -799,5 +799,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">להצגת מסכי נעילה חיים זמינים, יש להפעיל את התכונה תחילה.</string>
   <string name="interruptions_ignore_while_media_title">מנע שינוי עוצמת שמע</string>
   <string name="interruptions_ignore_while_media_summary">אל תנמיך את עוצמת המוזיקה כאשר התראה מגיעה</string>
-  <string name="cmlicense_title">CyanogenMod משפטי</string>
 </resources>

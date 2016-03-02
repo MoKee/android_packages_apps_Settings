@@ -735,5 +735,4 @@
   <string name="live_lock_screen_settings_button">Налаштування</string>
   <string name="interruptions_ignore_while_media_title">Не приглушувати звуки</string>
   <string name="interruptions_ignore_while_media_summary">Не приглушувати відтворення медіа при надходженні сповіщення</string>
-  <string name="cmlicense_title">Політика конфіденційності CyanogenMod</string>
 </resources>

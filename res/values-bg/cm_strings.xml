@@ -800,5 +800,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Активирай за да прегледаш наличните анимирани екрани.</string>
   <string name="interruptions_ignore_while_media_title">Предотвратяване на намаляване на звука</string>
   <string name="interruptions_ignore_while_media_summary">Не намалявай възпроизвеждането на звука, когато пристига нотификация</string>
-  <string name="cmlicense_title">CyanogenMod правни</string>
 </resources>

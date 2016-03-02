@@ -800,5 +800,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Rendelkezésre álló Élő zárképernyők megtekintéséhez kapcsolja be az Élő zárképernyőt.</string>
   <string name="interruptions_ignore_while_media_title">Lehalkítás megelőzése</string>
   <string name="interruptions_ignore_while_media_summary">Ne csökkentse a lejátszott média hangerejét értesítés érkezésekor</string>
-  <string name="cmlicense_title">CyanogenMod jogi nyilatkozat</string>
 </resources>

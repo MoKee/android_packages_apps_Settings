@@ -698,5 +698,4 @@
   <string name="live_lock_screen_settings_button">การตั้งค่า</string>
   <string name="interruptions_ignore_while_media_title">ป้องกันการลดเสียง</string>
   <string name="interruptions_ignore_while_media_summary">ไม่ลดเสียงเพลงเมื่อมีการแจ้งเตือนเข้า</string>
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
 </resources>

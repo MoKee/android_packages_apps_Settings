@@ -799,5 +799,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Per visualizzare le schermate di blocco animate disponibili, attiva schermate di blocco animate.</string>
   <string name="interruptions_ignore_while_media_title">Previeni abbassamento audio</string>
   <string name="interruptions_ignore_while_media_summary">Non ridurre il volume di riproduzione multimediale quando arriva una notifica</string>
-  <string name="cmlicense_title">Note legali CyanogenMod</string>
 </resources>

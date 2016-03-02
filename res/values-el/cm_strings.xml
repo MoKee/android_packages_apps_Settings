@@ -796,5 +796,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Για να προβάλετε τις διαθέσιμες ζωντανές ταπετσαρίες οθόνης κλειδώματος, ενεργοποιήστε τις ζωντανές ταπετσαρίες.</string>
   <string name="interruptions_ignore_while_media_title">Πρόληψη μείωσης έντασης πολυμέσων</string>
   <string name="interruptions_ignore_while_media_summary">Να μη μειώνεται η ένταση της αναπαραγωγής πολυμέσων όταν φτάνει μια ειδοποίηση</string>
-  <string name="cmlicense_title">Νομικές πληροφορίες CyanogenMod</string>
 </resources>

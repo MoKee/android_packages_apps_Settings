@@ -800,5 +800,4 @@
   <string name="live_lock_screen_settings_disabled_prompt">Per veure les pantalles de bloqueig animades disponibles, activa les pantalles de bloqueig animades.</string>
   <string name="interruptions_ignore_while_media_title">Evita la baixada del so</string>
   <string name="interruptions_ignore_while_media_summary">No redueixis el volum de reproducció multimèdia quan arribi una notificació</string>
-  <string name="cmlicense_title">Llicència CyanogenMod</string>
 </resources>

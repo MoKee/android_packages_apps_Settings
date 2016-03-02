@@ -667,5 +667,4 @@
   <string name="live_lock_screen_settings_button">設定</string>
   <string name="interruptions_ignore_while_media_title">防止聲音回避</string>
   <string name="interruptions_ignore_while_media_summary">有通知時，不減少媒體播放的音量</string>
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
 </resources>

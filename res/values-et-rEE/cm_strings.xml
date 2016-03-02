@@ -678,5 +678,4 @@
   <string name="live_lock_screen_settings_button">Seaded</string>
   <string name="interruptions_ignore_while_media_title">Enneta heli sumbumist</string>
   <string name="interruptions_ignore_while_media_summary">Ära alanda meedia helitugevust teavituse saabumisel</string>
-  <string name="cmlicense_title">CyanogenMod juriidiline info</string>
 </resources>
