@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versione CyanogenMod</string>
-  <string name="mod_version_default">Sconosciuto</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modello dispositivo</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome dispositivo</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Livello API CyanogenMod</string>
-  <string name="mod_api_level_default">Sconosciuto</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data build</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aggiornamento CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Aggiorna recovery Cyanogenmod</string>
-  <string name="update_recovery_summary">Aggiorna la recovery con gli aggiornamenti del sistema</string>
-  <string name="update_recovery_on_warning">AVVISO: Quando questa funzionalità è attiva, la recovery installata sarà sostituita da una inclusa con la versione corrente del sistema.\n\nLa vostra recovery attuale verrà aggiornata con gli aggiornamenti di sistema, contribuendo a garantire la compatibilità con le future versioni.\n\nAttivare questa funzione?</string>
-  <string name="update_recovery_off_warning">Attenzione: Quando questa funzionalità è disattivata, la recovery installata non verrà aggiornata con il sistema.\n\nFuturi aggiornamenti potrebbero non installarsi con recovery personalizzate o vecchie.\n\nDisattivare questa funzione?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Temi</string>
@@ -838,24 +829,7 @@
   <string name="no_filters_title">Nessun filtro impostato</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistiche CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Aiuta a migliorare Cyanogenmod consentendo l\'invio di statistiche anonime</string>
-  <string name="anonymous_statistics_warning_title">Info</string>
-  <string name="anonymous_statistics_warning">Attivando le Statistiche CyanogenMod consentirai l\'invio di dati non personali
-        agli sviluppatori per contare il numero di installazioni sui dispositivi. Le informazioni inviate includono
-        un\'identificatore unico che non compromette in alcun modo la tua privacy o dati personali.\n\nPer vedere un esempio di dati inviati, tocca Anteprima Dati.</string>
-  <string name="enable_reporting_title">Attiva report</string>
-  <string name="preview_data_title">Anteprima dati</string>
-  <string name="view_stats_title">Vedi statistiche</string>
-  <string name="anonymous_learn_more">Ulteriori informazioni</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID Univoco</string>
-  <string name="preview_device_title">Dispositivo</string>
-  <string name="preview_version_title">Versione</string>
-  <string name="preview_country_title">Paese</string>
-  <string name="preview_carrier_title">Operatore</string>
-  <string name="stats_collection_title">Raccolta statistiche</string>
-  <string name="stats_collection_summary">Quando attivato, consente la raccolta di metriche</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Reimposta la sequenza</string>
   <string name="lockpattern_settings_reset_summary">Inserisci l\'email principale e la relativa password per reimpostare la sequenza di sblocco</string>
@@ -984,5 +958,4 @@
   <string name="interruptions_ignore_while_media_title">Previeni abbassamento audio</string>
   <string name="interruptions_ignore_while_media_summary">Non ridurre il volume di riproduzione multimediale quando arriva una notifica</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Note legali CyanogenMod</string>
 </resources>

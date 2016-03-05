@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versió</string>
-  <string name="mod_version_default">Desconegut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model del dispositiu</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nom del dispositiu</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Nivell de l\'API de CyanogenMod</string>
-  <string name="mod_api_level_default">Desconegut</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data d\'elaboració</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualitzacions CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Actualitza la recuperació de Cyanogen</string>
-  <string name="update_recovery_summary">Actualitza la recuperació amb les actualitzacions del sistema</string>
-  <string name="update_recovery_on_warning">AVÍS: Quan aquesta funció estigui activada, la recuperació que tinguis instal·lada serà substituïda per la versió actual inclosa amb el SO instal·lat.\n\nEl teu sistema de recuperació s\'actualitzarà juntament amb les millores del sistema, ajudant a assegurar la compatibilitat amb futures versions.\n\nVols habilitar aquesta característica?</string>
-  <string name="update_recovery_off_warning">ADVERTÈNCIA: Quan aquesta característica està inhabilitada, el teu sistema de recuperació instal·lat no s\'actualitzarà amb les millores del SO.\n\nFutures actualitzacions del SO podrien no instal·lar-se amb sistemes de recuperació obsolets o personalitzats.\n\nRealment vols deshabilitar aquesta característica?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Temes</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">Sense filtres establerts</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Estadístiques de CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajuda a fer millor CyanogenMod optant a transmetre estadístiques anònimes</string>
-  <string name="anonymous_statistics_warning_title">Quant a</string>
-  <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetràs que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
-  <string name="enable_reporting_title">Activa els informes</string>
-  <string name="preview_data_title">Vista prèvia de Dades</string>
-  <string name="view_stats_title">Mostra estadístiques</string>
-  <string name="anonymous_learn_more">Aprèn més</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID únic</string>
-  <string name="preview_device_title">Dispositiu</string>
-  <string name="preview_version_title">Versió</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Portadora</string>
-  <string name="stats_collection_title">Recollida d\'estadístiques</string>
-  <string name="stats_collection_summary">Quan està activat, permet la recollida de mètriques</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Restaura el patró</string>
   <string name="lockpattern_settings_reset_summary">Introdueix el compte de correu electrònic principal i la contrasenya associada per restaurar el patró de bloqueig</string>
@@ -982,5 +958,4 @@
   <string name="interruptions_ignore_while_media_title">Evita la baixada del so</string>
   <string name="interruptions_ignore_while_media_summary">No redueixis el volum de reproducció multimèdia quan arribi una notificació</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Llicència CyanogenMod</string>
 </resources>

@@ -40,23 +40,15 @@
   <string name="root_access_all">Aplikaĵoj kaj ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versio de CyanogenMod</string>
-  <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo de la aparato</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nomo de la aparato</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">Nekonata</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dato de la eldono</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Ĝisdatigoj de CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Ĝistadigi riparadon de Cyanogen</string>
-  <string name="update_recovery_summary">Ĝistadigi riparadon de Cyanogen kun sistemaj ĝistadigadoj</string>
-  <string name="update_recovery_on_warning">ATENTU: Kiam tiu funkcio estas ŝaltita, via instalata riparado estos anstataŭigita per unu el la aktuala sistemo.\n\nVia riparado estos ĝistatigita samtempe kiel la sistemaj ĝisdatigadoj, kaj tio helpos al kongrueco de la estontaj versioj.\n\nĈu vi volas ŝalti tiun  funkcion?</string>
-  <string name="update_recovery_off_warning">ATENTU: Kiam tiu funkcio estas malŝaltita, via instalata riparado ne estos ĝistatigitaj samtempe kiel la sistemaj ĝisdatigadoj.\n\nEstontaj sistemaj ĝistadigoj eble ne instaliĝos kun malmodernaj aŭ propraj versioj de riparadoj\n\nĈu vi volas malŝalti tiun  funkcion?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Etosoj</string>
@@ -730,23 +722,7 @@
   <string name="no_filters_title">Neniu filtrilo ŝaltita</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistikoj pri CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ebligas plibonigi CyanogenMod, sendante anonimajn statisktikojn pri cimraportoj
-,</string>
-  <string name="anonymous_statistics_warning_title">Pri</string>
-  <string name="anonymous_statistics_warning">Ŝalti la sendadon de statistikoj ebligos la programistojn de CyanogenMod kolekti anonimajn informojn por kalkuli nombron de unikaj instaltadoj per aparato. La senditaj datumoj enhavas unikan identigilon, kiu ne malhelpas al la privateco de viaj datumoj. Datumoj estas pritraktitaj dum ĉiu lanĉado.\n\nPor vidi ekzemplon, elektu \"Antaŭvidi datumojn\".</string>
-  <string name="enable_reporting_title">Ŝalti raportojn</string>
-  <string name="preview_data_title">Antaŭvidi datumojn</string>
-  <string name="view_stats_title">Vidi statistikojn</string>
-  <string name="anonymous_learn_more">Scii pli</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unika identigilo</string>
-  <string name="preview_device_title">Aparato</string>
-  <string name="preview_version_title">Versio</string>
-  <string name="preview_country_title">Lando</string>
-  <string name="preview_carrier_title">Provizanto</string>
-  <string name="stats_collection_title">Rikolto de statistikoj</string>
-  <string name="stats_collection_summary">Kiam ŝaltita, ebligas kolekti statistikojn</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Restarigi ŝablonon</string>
   <string name="lockpattern_settings_reset_summary">Tajpu retadreson de la ĉefa konto kaj ties pasvorton por restarigi la ŝlosilan ŝablonon</string>
@@ -826,5 +802,4 @@
   <string name="interruptions_ignore_while_media_title">Malpermesi mallaŭtigadon</string>
   <string name="interruptions_ignore_while_media_summary">Ne mallaŭtigi aŭdvidan sonon, kiam atentigo alvenas</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Laŭleĝa informo pri CyanogenMod</string>
 </resources>

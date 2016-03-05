@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod версия</string>
-  <string name="mod_version_default">Неизвестна</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модел на устройството</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Име на устройството</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod приложно-програмен интерфейс ниво</string>
-  <string name="mod_api_level_default">Неизвестна</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Дата на изграждане</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Системни актуализации</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Актуализирай режима за възстановяване на Cyanogen</string>
-  <string name="update_recovery_summary">Актуализирай recovery със системните актуализации</string>
-  <string name="update_recovery_on_warning">Забележка: Когато тази функция е активна, вашето инсталирано recovery ще бъде заменено с включеното в текущата версия на операционната система.\n\nВашето recovery ще се актуализира заедно с ъпгрейдите на вашата система, за да се гарантира съвместимост с бъдещите версии.\n\nИскате ли да активирате тази функция?</string>
-  <string name="update_recovery_off_warning">Предупреждение: Когато тази функция е забранена, вашето recovery няма да бъде актуализирана с актуализациите на операционната система.\n\nБъдещи актуализации на операционната система не могат да се инсталират с остарели или потребителски recovery версии.\n\nНаистина ли искате да забраните тази функция?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Теми</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">Няма зададени филтри</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod статистики</string>
-  <string name="anonymous_statistics_summary">Помогнете да направим CyanogenMod по-добър, като разрешите да събира анонимни статистически данни</string>
-  <string name="anonymous_statistics_warning_title">Информация</string>
-  <string name="anonymous_statistics_warning">Ще позволи в CyanogenMod отчети с не лична информация да се подават на разработчиците на CyanogenMod, за проследяване на инсталациите в устройството. Предоставената информация включва уникален идентификатор, който не застрашава вашата поверителност или лични данни. Данните се подават по време на всяко зареждане.\n\nПример за данните, които са подадени.</string>
-  <string name="enable_reporting_title">Разреши отчитане</string>
-  <string name="preview_data_title">Визуализиране на данните</string>
-  <string name="view_stats_title">Преглед на статистиките</string>
-  <string name="anonymous_learn_more">Научете повече</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Уникален ID</string>
-  <string name="preview_device_title">Устройство</string>
-  <string name="preview_version_title">Версия</string>
-  <string name="preview_country_title">Държава</string>
-  <string name="preview_carrier_title">Оператор</string>
-  <string name="stats_collection_title">Събиране на статистики</string>
-  <string name="stats_collection_summary">Когато е активирана, позволява събиране на показатели</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Възстановяване на шаблона</string>
   <string name="lockpattern_settings_reset_summary">Въведете основния имейл акаунт и свързаната с него парола за нулиране заключването на шаблона</string>
@@ -982,5 +958,4 @@
   <string name="interruptions_ignore_while_media_title">Не намалявай силата на звука</string>
   <string name="interruptions_ignore_while_media_summary">Не намалявай силата на звука, когато пристига известие</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod правни</string>
 </resources>

@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versjon</string>
-  <string name="mod_version_default">Ukjent</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhetsnavn</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API nivå</string>
-  <string name="mod_api_level_default">Ukjent</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Byggdato</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod oppdateringer</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Oppdater Cyanogen recovery</string>
-  <string name="update_recovery_summary">Oppdater recovery med systemoppdateringer</string>
-  <string name="update_recovery_on_warning">Merknad: Når denne funksjonen er oppdatert, vil din installerte recovery bli overskrivd av en som er inkludert i siste versjon av det kjørende OS.\n\nDin recvovery vil bli oppdatert sammen med systemoppdateringer, for å hjelpe deg med å beholde kompabiliteten med fremtidige versjoner.\n\nVil du aktivere denne funksjonen?</string>
-  <string name="update_recovery_off_warning">Advarsel: Når denne funksjonen er deaktivert, vil ikke din nåværende recovery bli oppdatert med systemoppdateringer.\n\nFremtidige systemoppdateringer vil kanskje ikke installeres på en gammel eller egendefinert recovery.\n\nVil du deaktivere denne funksjonen?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Temaer</string>
@@ -800,22 +791,7 @@
   <string name="no_filters_title">Ingen filtre valgt</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod statistikk</string>
-  <string name="anonymous_statistics_summary">Hjelp oss å gjøre CyanogenMod bedre ved å velge å sende inn anonym statistikkrapportering</string>
-  <string name="anonymous_statistics_warning_title">Om</string>
-  <string name="anonymous_statistics_warning">Ved å bli med i CyanogenMod statistikk vil ikke-personlige data bli sendt til utvilkerne av CyanogenMod for å spore antall unike installasjoner spredt over typer enheter. Informasjonen som sendes inkluderer en unik identitetskode, som ikke kompromitterer ditt personvern eller dine personlige data. Data blir sendt ved hver oppstart.\n\nFor ett eksempel over data som blir sendt, trykk på Forhåndsvis Data.</string>
-  <string name="enable_reporting_title">Aktiver rapportering</string>
-  <string name="preview_data_title">Forhåndsvis data</string>
-  <string name="view_stats_title">Vis statistikk</string>
-  <string name="anonymous_learn_more">Lær mer</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unik ID</string>
-  <string name="preview_device_title">Enhet</string>
-  <string name="preview_version_title">Versjon</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Operatør</string>
-  <string name="stats_collection_title">Statistikkinnsamling</string>
-  <string name="stats_collection_summary">Når aktivert, tillater innsamling av statistikk</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Tilbakestille mønster</string>
   <string name="lockpattern_settings_reset_summary">Angi primær epostkonto og tilhørende passord for å tilbakestille mønsterlås</string>
@@ -923,5 +899,4 @@
   <string name="interruptions_ignore_while_media_title">Hindre lyd ducking</string>
   <string name="interruptions_ignore_while_media_summary">Ikke Reduser media avspillingsvolumet når en melding ankommer</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod juridisk</string>
 </resources>

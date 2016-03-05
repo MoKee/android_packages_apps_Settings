@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Toestel tipe</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Toestel naam</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API vlak</string>
-  <string name="mod_api_level_default">Onbekend</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Bou datum</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Opdateer Cyanogen recovery</string>
-  <string name="update_recovery_summary">Opdateer recovery met stelsel opdaterings</string>
-  <string name="update_recovery_on_warning">KENNISGEWING: Wanneer hierdie funksie geaktiveer is, sal jou geïnstalleerde recovery vervang word deur een ingesluit met die huidige weergawe van die Beheer Stelsel\n\nJou recovery sal opgedateer word saam met die opgraderings aan jou stelsel, dit help om versoenbaarheid te verseker van toekomstige weergawes.\n\nWil jy hierdie funksie aktiveer?</string>
-  <string name="update_recovery_off_warning">WAARSKUWING: Wanneer hierdie funksie afgeskakel is, sal jou geïnstalleerde recovery nie opgedateer word met Beheer Stelsel (BS) opgraderings nie.\n\nToekomstige BS opdaterings kan dalk nie geïnstalleer word met verouderde of persoonlike recovery weergawes nie.\n\nWil jy regtig hierdie funksie af skakel?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Temas</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">Geen filters opgestel</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod statistieke</string>
-  <string name="anonymous_statistics_summary">Help CyanogenMod verbeter deur anonieme statistiek verslagdoening te kies</string>
-  <string name="anonymous_statistics_warning_title">Aangaande</string>
-  <string name="anonymous_statistics_warning">Deur CyanogenMod statistieke toe te laat sal nie-persoonlike data ingestuur word na die ontwikkelaars van CyanogenMod installasies. Die inligting sluit in \'n unieke identifikasienommer in wat nie privaatheid of persoonlike data in gevaar stel nie. Die data word ingestuur tydens elke \'boot\'.\n\nVir \'n voorbeeld van die data wat ingestuur word, raak Voorskou.</string>
-  <string name="enable_reporting_title">Aktiveer verslaggewing</string>
-  <string name="preview_data_title">Voorskou</string>
-  <string name="view_stats_title">Kyk na statistieke</string>
-  <string name="anonymous_learn_more">Leer meer</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unieke ID</string>
-  <string name="preview_device_title">Toestel</string>
-  <string name="preview_version_title">Weergawe</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Draer</string>
-  <string name="stats_collection_title">Statistieke versameling</string>
-  <string name="stats_collection_summary">As dit aangeskakel is, laat statistieke versameling toe</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Herstel patroon</string>
   <string name="lockpattern_settings_reset_summary">Tik primêre e-pos rekening en gepaardgaande wagwoord om patroon slot te herstel</string>
@@ -982,5 +958,4 @@
   <string name="interruptions_ignore_while_media_title">Verhoed oudio \'ducking\'</string>
   <string name="interruptions_ignore_while_media_summary">Moet nie media terugspeel volume verminder wanneer \'n kennisgewing arriveer</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod Regs</string>
 </resources>

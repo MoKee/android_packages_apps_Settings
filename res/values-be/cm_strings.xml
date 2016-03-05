@@ -42,24 +42,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Версія CyanogenMod</string>
-  <string name="mod_version_default">Невядома</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Мадэль прылады</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Імя прылады</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Узровень CyanogenMod API</string>
-  <string name="mod_api_level_default">Невядома</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Дата зборкі</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Абнаўленні сістэмы</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Абнаўляць рэжым аднаўлення</string>
-  <string name="update_recovery_summary">Перазапісваць падзел Recovery пры ўсталёўцы абнаўленняў</string>
-  <string name="update_recovery_on_warning">Калі гэта функцыя ўключана, усталяваная прашыўка рэжыму аднаўлення будзе перазапісана той, якая адпавядае бягучай версіі АС.\n\n Рэжым аднаўлення будзе абнаўляцца разам з абнаўленнямі сістэмы, забяспечваючы сумяшчальнасць з будучымі версіямі.\n\nУключыць выкарыстанне гэтай функцыі?</string>
-  <string name="update_recovery_off_warning">Калі гэта функцыя адключана, прашыўка рэжыму аднаўлення заўсёды будзе заставацца нязменнай.\n\nНекаторыя абнаўленні АС могуць не ўсталёўвацца пры выкарыстанні састарэлых ці карыстальніцкіх версій падзелу Recovery.\n\nАдключыць выкарыстанне гэтай функцыі?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Тэмы</string>
@@ -835,22 +826,7 @@
   <string name="no_filters_title">Фільтр не ўсталяваны</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Адпраўка статыстыкі</string>
-  <string name="anonymous_statistics_summary">Дапамажыце зрабіць CyanogenMod лепш, дазволіўшы збор ананімнай статыстыкі</string>
-  <string name="anonymous_statistics_warning_title">Звесткі</string>
-  <string name="anonymous_statistics_warning">Ананімныя справаздачы дазваляюць распрацоўнікам CyanogenMod адсочваць усталёўкі на розныя прылады. Адсыланая інфармацыю складаецца з назву прылады, версію прашыўкі і ўнікальны ідэнтыфікатар, адпраўка якога ніякай чынам не шкодзіць Вашай прыватнасці. Справаздача адсылаецца пры кожнай загрузцы прылады.</string>
-  <string name="enable_reporting_title">Дазволіць збор статыстыкі</string>
-  <string name="preview_data_title">Прагляд дадзеных якія адпраўляюцца</string>
-  <string name="view_stats_title">Прагляд статыстыкі ўсталёвак</string>
-  <string name="anonymous_learn_more">Падрабязней</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Ідэнтыфікатар</string>
-  <string name="preview_device_title">Прылада</string>
-  <string name="preview_version_title">Версія</string>
-  <string name="preview_country_title">Краіна</string>
-  <string name="preview_carrier_title">Аператар</string>
-  <string name="stats_collection_title">Збор статыстыкі</string>
-  <string name="stats_collection_summary">Калі ўключана, дазваляе збор метрыкі</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Скінуць графічны ключ</string>
   <string name="lockpattern_settings_reset_summary">Увядзіце адрас электроннай пошты асноўнага акаўнта і адпаведны пароль для скіду графічнага ключа</string>
@@ -967,5 +943,4 @@
   <string name="interruptions_ignore_while_media_title">Не прыглушаць гук</string>
   <string name="interruptions_ignore_while_media_summary">Не змяншаць гучнасць прайгравання мультымедыя пры атрыманні паведамленняў</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Палітыка прыватнасці CyanogenMod</string>
 </resources>

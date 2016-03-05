@@ -42,24 +42,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod verzija</string>
-  <string name="mod_version_default">Nepoznato</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model uređaja</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Naziv uređaja</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API razina</string>
-  <string name="mod_api_level_default">Nepoznato</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Datum izdavanja</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod ažuriranja</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Ažuriraj Cyanogen recovery</string>
-  <string name="update_recovery_summary">Ažuriraj recovery sa sistemom</string>
-  <string name="update_recovery_on_warning">Napomena: Kada je ova značajka omogućena, instalirani oporavak će biti zamijenjen onim koji se nalazi u trenutnoj verziji OS-a.\n\nVaš oporavak će se obnoviti uz nadogradnju sustava, čime se osigurava kompatibilnost s budućim verzijama.\n\nŽelite li omogućiti ovu značajku?</string>
-  <string name="update_recovery_off_warning">Upozorenje: Kada je ova mogućnost onemogućena, instalirani se oporavak neće ažurirati sa OS nadogradnjama.\n\nBuduća OS ažuriranja možda se neće instalirati s zastarjelim ili prilagođenim verzijama oporavka.\n\nŽelite li isključiti ovu mogućnost?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Teme</string>
@@ -839,22 +830,7 @@
   <string name="no_filters_title">Nema postavljenih filtera</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-  <string name="anonymous_statistics_summary">Pomozite nam poboljšati CyanogenMod slanjem anonimnih statističkih izvješća</string>
-  <string name="anonymous_statistics_warning_title">O</string>
-  <string name="anonymous_statistics_warning">Omogućavanjem slanja CyanogenMod statistike dozvolit će se da se neosobni podaci dostave razvojnom timu CyanogenMod-a kako bi se pratio broj pojedinačnih instalacija na različite uređaje. Informacije koje se šalju sadrže jedinstvenu identifikaciju koja ne kompromitira privatnost ili osobne podatke. Podaci se šalju pri svakom pokretanju uređaja.\n\nZa primjer podataka koji se šalju, dodirnite pregled podataka.</string>
-  <string name="enable_reporting_title">Omogući izvješća</string>
-  <string name="preview_data_title">Pretpregled podataka</string>
-  <string name="view_stats_title">Prikaz statistika</string>
-  <string name="anonymous_learn_more">Saznajte više</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Jedinstveni ID</string>
-  <string name="preview_device_title">Uređaj</string>
-  <string name="preview_version_title">Verzija</string>
-  <string name="preview_country_title">Zemlja</string>
-  <string name="preview_carrier_title">Operater</string>
-  <string name="stats_collection_title">Prikupljene statistike</string>
-  <string name="stats_collection_summary">Kada je omogućeno dozvoljava metričku kolekciju</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Ponovno postavi uzorak</string>
   <string name="lockpattern_settings_reset_summary">Unesite primarni e-mail račun i pridruženu lozinku da biste vratili uzorak</string>
@@ -983,5 +959,4 @@
   <string name="interruptions_ignore_while_media_title">Onemogući stišavanje audia</string>
   <string name="interruptions_ignore_while_media_summary">Nemoj utišati glasnoću reprodukcije medija kada pristigne obavijest</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod licenca</string>
 </resources>

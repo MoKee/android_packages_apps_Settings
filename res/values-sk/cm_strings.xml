@@ -42,23 +42,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Verzia CyanogenMod</string>
-  <string name="mod_version_default">Neznáme</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model zariadenia</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Názov zariadenia</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">Neznáme</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dátum zostavy</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizácie CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Aktualizovať Cyanogen recovery</string>
-  <string name="update_recovery_summary">Aktualizovať recovery s aktualizáciami systému</string>
-  <string name="update_recovery_on_warning">UPOZORNENIE: Ak je táto funkcia povolená, vaša nainštalovaná recovery bude nahradená verziou, ktorá je súčasťou aktuálneho operačného systému.\n\nVaša recovery sa bude aktualizovať spolu so systémom, čím sa zaisťuje kompatibilita s budúcim verziami.\n\nChcete povoliť túto funkciu?</string>
-  <string name="update_recovery_off_warning">VAROVANIE: Ak je táto funkcia zakázaná, vaša nainštalovaná recovery nebude nahradená s aktualizáciami operačného systému.\n\nBudúce aktualizácie operačného systému sa nemusia nainštalovať kvôli zastaraným alebo vlastným verziám recovery.\n\nChcete zakázať túto funkciu?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Témy</string>
@@ -764,22 +756,7 @@
   <string name="no_filters_title">Nenastavené žiadne filtre</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Štatistiky CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomôžte zlepšiť CyanogenMod povolením anonymných štatistických hlásení</string>
-  <string name="anonymous_statistics_warning_title">O aplikácii</string>
-  <string name="anonymous_statistics_warning">Povolením štatistík CyanogenMod súhlasíte s odosielaním neosobných údajov vývojárom CyanogenModu, na účel zaznamenávania inštalácií naprieč zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
-  <string name="enable_reporting_title">Povoliť hlásenia</string>
-  <string name="preview_data_title">Prehľad údajov</string>
-  <string name="view_stats_title">Zobraziť štatistiky</string>
-  <string name="anonymous_learn_more">Zistiť viac</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unikátne ID</string>
-  <string name="preview_device_title">Zariadenie</string>
-  <string name="preview_version_title">Verzia</string>
-  <string name="preview_country_title">Krajina</string>
-  <string name="preview_carrier_title">Operátor</string>
-  <string name="stats_collection_title">Zbieranie štatistík</string>
-  <string name="stats_collection_summary">Povoliť metrické zbieranie</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Obnoviť vzor</string>
   <string name="lockpattern_settings_reset_summary">Zadajte primárny e-mailový účet a k nemu priradené heslo pre obnovenie vzoru uzamknutia</string>
@@ -869,5 +846,4 @@
   <string name="interruptions_ignore_while_media_title">Zabrániť znižovaniu zvuku</string>
   <string name="interruptions_ignore_while_media_summary">Neznižovať hlasitosť pri prehrávaní médií po doručení upozornenia</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Právne informácie CyanogenMod</string>
 </resources>

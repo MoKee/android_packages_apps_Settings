@@ -32,16 +32,12 @@
   <string name="root_access_all">Lietotnēm un ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versija</string>
-  <string name="mod_version_default">Nezināms</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">Nezināms</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Būvējuma datums</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod atjaunojumi</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
@@ -544,5 +540,4 @@
   <string name="live_lock_screen_settings_button">Iestatījumi</string>
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod atbildība</string>
 </resources>

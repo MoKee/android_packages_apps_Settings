@@ -32,16 +32,12 @@
   <string name="root_access_all">অ্যাপস এবং এডিবি</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">সায়ানোজেনমড সংস্করণ</string>
-  <string name="mod_version_default">অজানা</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">অজানা</string>
   <!-- About phone screen, build date -->
   <string name="build_date">তৈরী তারিখ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">সায়ানোজেনমড আধুনিকীকরণ</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
@@ -552,5 +548,4 @@
   <string name="live_lock_screen_settings_button">রুপান্তর নির্ধারণ</string>
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">সায়ানোজেনমড বৈধতা</string>
 </resources>

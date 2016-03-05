@@ -40,23 +40,15 @@
   <string name="root_access_all">ऐप और एडीबी</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">सियानोजेनमोड संस्करण</string>
-  <string name="mod_version_default">अज्ञात</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">डिवाइस मॉडेल</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">डिवाइस का नाम</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">अज्ञात</string>
   <!-- About phone screen, build date -->
   <string name="build_date">बिल्ड तिथि</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">सियानोजेनमोड अद्यतन</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">सियानोजेनमेड रिवकवरी अद्यतन</string>
-  <string name="update_recovery_summary">रिकवरी को सिस्टम अद्यतनों से अद्यतित करें</string>
-  <string name="update_recovery_on_warning">सूचना: जब इस सुविधा को सक्षम किया जाता है, आपकी स्थापित रिकवरी को चल रहे प्रचालन तंत्र में शामिल वर्तमान संस्करण से प्रतिस्थापित किया जाएगा।\n\nआपकीरिकवरी को आपके सिस्टम के अद्यतनों के साथ अद्यतित किया जाएगा, ताकि भावी संस्करणों की संगतता बनी रहे।\n\nक्या आप इस सुविधा को सक्षम करना चाहते हैं?</string>
-  <string name="update_recovery_off_warning">चेतावनी: यदि इस सुविधा को अक्षम किया जाए, तो आपकी स्थापित रिकवरी को प्रचालन तंत्र के अद्यतनों के साथ अद्यतित नहीं किया जाएगा।\n\nप्रचालन तंत्र के भावी अद्यतन पुरानी पड़ चुकी या मनपसंद रिकवरी संस्करणों के रहते स्थापित नहीं होंगे।\n\nक्या आप सचमुच इस सुविधा को अक्षम करना चाहते हैं?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">थीम</string>
@@ -739,22 +731,7 @@
   <string name="no_filters_title">कोई फ़िल्टर सेट नहीं किए गए हैं</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">सियानोजेनमोड आँकड़े</string>
-  <string name="anonymous_statistics_summary">अनाम आँकड़ा रिपोर्टिंग के लिए सहमत होकर सियानोजेनमोड को बेहतर बनाने में मदद करें</string>
-  <string name="anonymous_statistics_warning_title">संक्षिप्त परिचय</string>
-  <string name="anonymous_statistics_warning">सियानोजेनमोड आँकड़े के लिए सहमत होने से सियानोजेनमोड के डेवलपरों को ग़ैर-निजी डेटा भेजना संभव हो सकेगा ताकि वे विभिन्न डिवाइसों में किए गए अद्वितीय स्थापनों को ट्रैक कर सकें। भेजी गई जानकारी में अद्वितीय अभिनिर्धारक शामिल है, जो आपकी गोपनीयता या निजी डेटा के साथ कोई समझौता नहीं करता है। यह डेटा प्रत्येक बार बूट करने पर भेजा जाता है।\n\nभेजे जाने वाले डेटा के एक उदाहरण के लिए, डेटा पूर्वावलोकन को टैप करें।</string>
-  <string name="enable_reporting_title">रिपोर्टिंग को सक्षम करें</string>
-  <string name="preview_data_title">डेटा पूर्वावलोकन</string>
-  <string name="view_stats_title">आँकड़े देखें</string>
-  <string name="anonymous_learn_more">अधिक जानें</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">अद्वितीय आईडी</string>
-  <string name="preview_device_title">उपकरण</string>
-  <string name="preview_version_title">संस्करण</string>
-  <string name="preview_country_title">देश</string>
-  <string name="preview_carrier_title">वाहक</string>
-  <string name="stats_collection_title">आँकड़ा संग्रहण</string>
-  <string name="stats_collection_summary">इसे सक्षम करने पर आँकड़ा संग्रहण की अनुमति देता है</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">पैटर्न रीसेट करें</string>
   <string name="lockpattern_settings_reset_summary">पैटर्न लॉक को रीसेट करने के लिए मुख्य ईमेल पता और उससे संबंधित पासवर्ड दर्ज करें</string>
@@ -834,5 +811,4 @@
   <string name="interruptions_ignore_while_media_title">ऑडियो डकिंग को रोकें</string>
   <string name="interruptions_ignore_while_media_summary">जब कोई अधिसूचना आए, तो माध्यम प्लेबैक वोल्यूम को कम नहीं करें</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">सियानोजेनमोड क़ानूनी</string>
 </resources>

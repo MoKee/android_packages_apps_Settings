@@ -36,23 +36,15 @@
   <string name="root_access_all">بەرنامەکان و ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">وەشانی کوردی</string>
-  <string name="mod_version_default">نەناسراو</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">مۆدێلی ئامێر</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ناوی ئامێر</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">نەناسراو</string>
   <!-- About phone screen, build date -->
   <string name="build_date">بنیاتنانی ڕۆژ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">نوێکردنه‌وه‌ی وەشانەکە</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">بەڕۆژکردنی ڕیکاڤێری سایانۆجێن</string>
-  <string name="update_recovery_summary">نوێکردنەوەی ڕیکەڤەری لەگەڵ نوێکردنەوەی سیستەمدا</string>
-  <string name="update_recovery_on_warning">تێبینی: کاتێک ئەم خزمەتە چاڵاک کرا ریکەڤەریەکەی تۆ جێگەی دەگیرێت بە ئەو وەشانەی ئێستای سیستەمەکەت \n\n ریکەڤەریەکەت نوێ دەکرێتەوە لەگەڵ بەرزکردنەوەی سیستەمەکەت بۆ یارمەتیدان لە گونجاندنی وەشانەکە \n\n ئایە ئەتەوێت ئەم خزمەتە چاڵاک بکەیت؟?</string>
-  <string name="update_recovery_off_warning">ئاگاداری : کاتێک ئەم خزمەتە ناچاڵاک دەکەیت ریکەڤەریەکەت نوێ ناکرێتەوە لەگەڵ بەرزکردنەوی سیستەمەکەت .\n\n  خزمەتی نوێ لەوانەیە دانەمەزرێ لەگەڵ بەرزکردنەوەی وەشانەکە \n\n. دڵنیای لە ناچاڵاک کردنی ئەم خزمەتە؟?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">ڕووکارەکان</string>
@@ -686,21 +678,7 @@
   <string name="no_filters_title">فلته‌ری نه‌بێت</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">ئاماری ساینۆجنمۆد</string>
-  <string name="anonymous_statistics_summary">یارمەتی ساینۆجنمۆد بدە بۆ باشکردنی سیستەمەکە بە ڕاپۆرتکردن بۆ دیلان کەلاری</string>
-  <string name="anonymous_statistics_warning_title">دەربارە</string>
-  <string name="enable_reporting_title">چالاکردنی ڕاپۆرتکردن</string>
-  <string name="preview_data_title">پیشاندانی داتا</string>
-  <string name="view_stats_title">پیشاندانی ئامار</string>
-  <string name="anonymous_learn_more">زیاتر بزانە</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">دانسقە ID</string>
-  <string name="preview_device_title">ئامێر</string>
-  <string name="preview_version_title">وه‌شان</string>
-  <string name="preview_country_title">وڵات</string>
-  <string name="preview_carrier_title">هەڵگر-کۆمپانیای سیمکارتەکە</string>
-  <string name="stats_collection_title">هەڵبژاردەی ئامار</string>
-  <string name="stats_collection_summary">کاتێک چالاککرا، ڕێگەدان بە هەڵبژاردە لار</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">ڕێکخستنه‌وه‌ی ڕاکێشان</string>
   <string name="lockpattern_settings_reset_summary">دانانی هه‌ژماری پۆستی ئیلکترۆنی سه‌ره‌تای به‌ تێپه‌ڕه‌ وشه‌وه‌ بۆ ڕێکخستنه‌وه‌ی قوفڵی ڕاکێشان</string>
@@ -760,5 +738,4 @@
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <string name="interruptions_ignore_while_media_summary">دەنگی میدیا دەنگ کەم مەکەرەوە کاتێک تێبینیەک دەگات</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">یاسای وەشانەکە</string>
 </resources>

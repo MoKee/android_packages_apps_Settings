@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Cihaz modeli</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Cihaz ismi</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API düzeyi</string>
-  <string name="mod_api_level_default">Bilinmeyen</string>
   <!-- About phone screen, build date -->
   <string name="build_date">İnşa tarihi</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod güncellemeleri</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
-  <string name="update_recovery_on_warning">DİKKAT: Bu özellik etkinken, yüklü kurtarma modunuz mevcut OS sürümündeki mod ile değiştirilecektir. \n\nKurtarma modunuz sistem güncellemeleri ile birlikte güncellenecektir, böylelikle gelecek sürümler ile uyumluluk sağlanacaktır.\n\nBu özelliği etkinleştirmek ister misiniz?</string>
-  <string name="update_recovery_off_warning">UYARI: Bu özellik devre dışı bırakıldığında, yüklü kurtarma modunuz OS güncellemeleri ile güncellenmeyecektir.\n\nGelecek OS güncellemeleri eskimiş ya da özel kurtarma sürümleri ile yüklenemeyebilir.\n\nBu özelliği gerçekten devre dışı bırakmak istiyor musunuz?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Temalar</string>
@@ -772,22 +763,7 @@
   <string name="no_filters_title">Hiçbir filtre ayarlanmadı</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod istatistikleri</string>
-  <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CyanogenMod\'un daha iyi olmasına yardım edin</string>
-  <string name="anonymous_statistics_warning_title">Hakkında</string>
-  <string name="anonymous_statistics_warning">CyanogenMod İstatistiklerine dahil olmak kişisel olmayan verilerin CyanogenMod geliştiricilerine cihazlar arasındaki benzersiz yüklemeleri takip etmeleri için gönderilmesine izin verir. Bu bilgi, kişisel bilgi içermeyen ve gizliliğinizi tehdit etmeyen bir benzersiz numara da içerir. Veri her başlangıçta gönderilir.\n\nGönderilecek verinin örneğini görmek için Veriyi Önizle butonunu kullanın.</string>
-  <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
-  <string name="preview_data_title">Veriyi önizle</string>
-  <string name="view_stats_title">İstatistikleri görüntüle</string>
-  <string name="anonymous_learn_more">Fazlasını öğren</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Benzersiz ID</string>
-  <string name="preview_device_title">Cihaz</string>
-  <string name="preview_version_title">Sürüm</string>
-  <string name="preview_country_title">Ülke</string>
-  <string name="preview_carrier_title">Operatör</string>
-  <string name="stats_collection_title">İstatistikler</string>
-  <string name="stats_collection_summary">Etkinleştirildiğinde metrik istatistiklere izin verir</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Deseni sıfırla</string>
   <string name="lockpattern_settings_reset_summary">Desen kilidini yeniden ayarlamak için birincil e-posta hesabınızı ve ilişkili şifreyi girin</string>
@@ -881,5 +857,4 @@
   <string name="interruptions_ignore_while_media_title">Ses yankılanmasını önle</string>
   <string name="interruptions_ignore_while_media_summary">Bir bildirim geldiğinde, medya oynatma ses seviyesini azaltma</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod yasal</string>
 </resources>

@@ -42,24 +42,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Версия CyanogenMod</string>
-  <string name="mod_version_default">Неизвестно</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модель устройства</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Имя устройства</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Версия API CyanogenMod</string>
-  <string name="mod_api_level_default">Неизвестно</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Дата сборки</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Обновления системы</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Обновлять режим восстановления</string>
-  <string name="update_recovery_summary">Перезаписывать прошивку режима восстановления при обновлении системы</string>
-  <string name="update_recovery_on_warning">ПРИМЕЧАНИЕ. При включении этой функции установленная прошивка режима восстановления перезапишется в соответствии с текущей версией ОС.\n\nРежим восстановления будет обновляться вместе с обновлениями системы, обеспечивая совместимость с будущими версиями.\n\nВключить использование этой функции?</string>
-  <string name="update_recovery_off_warning">ВНИМАНИЕ! При отключении этой функции прошивка режима восстановления будет оставаться неизменной.\n\nНекоторые обновления ОС могут не устанавливаться при использовании устаревших или пользовательских версий прошивки.\n\nОтключить использование этой функции?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Темы</string>
@@ -839,22 +830,7 @@
   <string name="no_filters_title">Фильтр не установлен</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Отправка статистики</string>
-  <string name="anonymous_statistics_summary">Помогите сделать CyanogenMod лучше, разрешив сбор анонимной статистики</string>
-  <string name="anonymous_statistics_warning_title">Сведения</string>
-  <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CyanogenMod отслеживать работу ОС на различных устройствах. Отправляемая информация включает название устройства, версию прошивки и уникальный идентификатор, что никаким образом не затрагивает Вашу конфиденциальность. Данные отправляются при каждой загрузке устройства.\n\nЧтобы просмотреть пример, нажмите «Просмотр данных».</string>
-  <string name="enable_reporting_title">Разрешить сбор статистики</string>
-  <string name="preview_data_title">Просмотр данных</string>
-  <string name="view_stats_title">Просмотр статистики</string>
-  <string name="anonymous_learn_more">Подробнее</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Идентификатор</string>
-  <string name="preview_device_title">Устройство</string>
-  <string name="preview_version_title">Версия</string>
-  <string name="preview_country_title">Страна</string>
-  <string name="preview_carrier_title">Оператор</string>
-  <string name="stats_collection_title">Сбор статистики</string>
-  <string name="stats_collection_summary">Когда включено, разрешается сбор показателей</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Сбросить граф. ключ</string>
   <string name="lockpattern_settings_reset_summary">Введите адрес эл. почты основного аккаунта и соответствующий пароль для сброса граф. ключа</string>
@@ -983,5 +959,4 @@
   <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
   <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Политика конфиденциальности CyanogenMod</string>
 </resources>
