@@ -370,7 +370,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mSearchAdapter.clear();
         mSearchAdapter.addAll(contributors);
         mSearchAdapter.notifyDataSetChanged();
-        return true;
+        return true;sdfsaf
     }
 
     private void showMenuItems(boolean visible) {
