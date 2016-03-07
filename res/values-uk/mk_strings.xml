@@ -15,24 +15,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">Версія MoKee</string>
   <string name="mokee_version_default">Невідомо</string>
   <string name="mokee_support">Підтримка спільноти</string>
   <string name="mokee_support_default">Невідомо</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">Анімації</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">Анімація списків</string>
-  <string name="listview_off">Вимк</string>
+  <string name="listview_off">Вимкнути</string>
   <string name="listview_wave_left">Хвиля (ліворуч)</string>
   <string name="listview_wave_right">Хвиля (праворуч)</string>
   <string name="listview_alpha">Проявлення</string>
   <string name="listview_scale">Збільшення</string>
   <string name="listview_stack_top">Зсув (згори)</string>
-  <string name="listview_stack_bottom">Зсув (здолу)</string>
+  <string name="listview_stack_bottom">Зсув (знизу)</string>
   <string name="listview_unfold">Розгортання</string>
   <string name="listview_fold">Згортання</string>
   <string name="listview_translate_left">Зміщення (ліворуч)</string>
   <string name="listview_translate_right">Зміщення (праворуч)</string>
   <string name="listview_rotate">Обертання</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">Ефект анімації списків</string>
   <string name="listview_accelerate_interpolator">Прискорення</string>
   <string name="listview_decelerate_interpolator">Уповільнення</string>
@@ -41,29 +45,141 @@
   <string name="listview_overshoot_interpolator">Зальот</string>
   <string name="listview_anticipate_overshoot_interpolator">Випередження/Зальот</string>
   <string name="listview_bounce_interpolator">Відскок</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Усі номери</string>
   <string name="blacklist_all_numbers_summary">Блокувати всі виклики</string>
+  <string name="blacklist_advertisement_numbers_title">Номера з яких надходить реклама</string>
+  <string name="blacklist_advertisement_numbers_summary">Блокування дзвінків з рекламних номерів</string>
+  <string name="blacklist_fraud_numbers_title">Номера шахраїв</string>
+  <string name="blacklist_fraud_numbers_summary">Блокування дзвінків з номерів шахраїв</string>
+  <string name="blacklist_harassment_numbers_title">Номера вимагачів</string>
+  <string name="blacklist_harassment_numbers_summary">Блокування дзвінків з номерів вимагачів</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Інтелектуальне керування</string>
   <string name="direct_control_title">Виклик піднесенням до вуха</string>
+  <string name="direct_call_for_dialer_title">Прямий виклик у номеронабирачі</string>
   <string name="direct_call_for_dialer_summary">Піднесення телефону до вуха після вводу номеру викликає абонента</string>
   <string name="direct_call_for_mms_title">Прямий виклик у MMS</string>
   <string name="direct_call_for_mms_summary">Піднесення телефона до вуха викликає поточний контакт</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">Висота клавіші</string>
   <string name="navigation_bar_height_48">48dp (за замовчуванням)</string>
   <string name="navigation_bar_height_0">приховати</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Швидкість мережі</string>
   <string name="show_network_speed_summary">Показувати швидкість з\'єднання у рядку стану</string>
   <string name="status_bar_network_traffic_style_disable">Вимкнено</string>
   <string name="status_bar_network_traffic_style_up">Вихідний</string>
   <string name="status_bar_network_traffic_style_down">Вхідний</string>
   <string name="status_bar_network_traffic_style_all">Вихідний та вхідний</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">Оператор в рядку стану</string>
   <string name="show_status_bar_carrier_summary">Показати оператора в рядку стану</string>
   <string name="custom_carrier_label_title">Власна мітка оператора</string>
   <string name="custom_carrier_label_explain">Введіть будь ласка нове ім`я. Залиште поле пустим, щоб повернутися до типового імені.</string>
   <string name="custom_carrier_label_notset">Альтернативне ім`я оператора не встановлено</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">Знімок екрана</string>
   <string name="hardware_keys_action_reboot_menu">Меню перезавантаження</string>
+  <!-- The volume key answer -->
+  <string name="volume_answer_call_title">Відповісти</string>
+  <string name="volume_answer_call_summary">Відповідати на дзвінок натисканням кнопки «Гучність догори»</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">Конфіденційність</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
+  <string name="lockgesture_change_lock_pattern_label">Змінити графічний ключ</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_change_lock_pin_label">Змінити PIN-код</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_need_to_unlock">Підтвердити збережений графічний ключ</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+  <string name="lockgesture_need_to_unlock_wrong">Повторіть спробу:</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+  <string name="lockgesture_recording_intro_header">Намалюйте графічний ключ розблокування:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+  <string name="lockgesture_recording_intro_footer">Для довідки натисніть \"Меню\".</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+  <string name="lockgesture_recording_inprogress">По завершенні відпустіть палець.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+  <string name="lockgesture_pattern_entered_header">Графічний ключ записаний.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+  <string name="lockgesture_need_to_confirm">Намалюйте графічний ключ знову для підтвердження:</string>
+  <string name="lockgesture_pattern_confirmed_header">Ваш новий графічний ключ розблокування:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+  <string name="lockgesture_confirm_button_text">Підтвердити</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+  <string name="lockgesture_restart_button_text">Перемалюйте</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+  <string name="lockgesture_retry_button_text">Повторіть спробу</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+  <string name="lockgesture_continue_button_text">Продовжити</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
+  <string name="lockgesture_settings_title">Графічний ключ</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+  <string name="lockgesture_settings_enable_title">Вимагати графічний ключ</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+  <string name="lockgesture_settings_enable_summary">Необхідно намалювати графічний ключ для розблокування екрану</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+  <string name="lockgesture_settings_enable_visible_pattern_title">Зробити графічний ключ видимим</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+  <string name="lockgesture_settings_enable_power_button_instantly_locks">Швидке блокування кнопкою живлення</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+  <string name="lockgesture_settings_choose_lock_pattern">Встановити графічний ключ</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <string name="lockgesture_settings_change_lock_pattern">Змінити графічний ключ</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
+  <string name="lockgesture_settings_help_how_to_record">Як намалювати графічний ключ</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+  <string name="lockgesture_too_many_failed_confirmation_attempts_header">Завелика кількість невірних спроб!</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+  <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Спробуйте знову через <xliff:g id="number"> %d </xliff:g> секунд.</string>
+  <!-- Toast shown if setting gesture was successful -->
+  <string name="lockpassword_gesture_set_toast">Графічний ключ встановленний</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+  <string name="lockpassword_confirm_your_gesture_header">Підтвердіть Ваш жест</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Намалюйте Ваш жест</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+  <string name="unlock_set_unlock_gesture_title">Жест</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_gesture_summary">Низький рівень захисту (експериментально)</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_mode_gesture">Жест</string>
+  <!-- Recents panel settings -->
+  <string name="recents_panel_settings_title">Налаштування панелі останніх програм</string>
+  <string name="clear_all_settings_title">Налаштування кнопки \"Закрити все\"</string>
+  <string name="show_clear_all_recents_button_title">Відображати кнопку \"Закрити все\"</string>
+  <string name="recents_clear_all_location_title">Положення кнопки \"Закрити все\"</string>
+  <string name="recents_clear_all_location_top_right">Зверху праворуч</string>
+  <string name="recents_clear_all_location_top_left">Зверху ліворуч</string>
+  <string name="recents_clear_all_location_top_center">Зверху у центрі</string>
+  <string name="recents_clear_all_location_bottom_right">Внизу праворуч</string>
+  <string name="recents_clear_all_location_bottom_left">Внизу ліворуч</string>
+  <string name="recents_clear_all_location_bottom_center">Внизу у центрі</string>
+  <string name="recents_clear_all_ignored_foreground_title">Ігнорування пріоритетних завдань</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Не закривати додаток в якому знаходиться користувач, при натиснені кнопки \"Закрити все\"</string>
+  <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Годинник з секундами</string>
+  <string name="status_bar_clock_show_second_summary">Відображати годинник з секундами в рядку стану</string>
+  <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Відображати індикатор SU</string>
+  <string name="show_su_icon_summary">Відображати індикатор SU (#) в рядку стану, коли він використовується</string>
+  <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Відображати індикатор гарнітури</string>
+  <string name="show_headset_icon_summary">Відображати індикатор в рядку стану коли гарнітура підключена</string>
+  <!-- Double tap navbar to sleep -->
+  <string name="double_tap_to_sleep_navbar_title">Подвійний дотик по панелі навігації для переходу в режим сна</string>
+  <string name="double_tap_to_sleep_navbar_summary">Двічі натисніть на навігаційну панель, щоб вимкнути дисплей</string>
+  <!-- Wakelock blocker -->
+  <string name="battery_optimizer_title">Оптимізація батареї</string>
+  <string name="wakelock_blocker_title">Блокування Wakelock</string>
+  <string name="wakelock_blocker_summary">Блокувати системні wakelock</string>
+  <string name="wakelock_blocker_save">Зберегти</string>
+  <string name="wakelock_list_header">Доступні wakelock\'и</string>
+  <string name="wakelock_blocker_reload">Оновити</string>
+  <string name="wakelock_blocker_warning_title">Використовуйте на свій страх і ризик</string>
+  <string name="wakelock_blocker_warning">Блокування wakelock-ів може викликати нестабільність, збої чи втрату даних</string>
 </resources>

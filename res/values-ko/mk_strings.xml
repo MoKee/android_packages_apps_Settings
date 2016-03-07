@@ -15,11 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">MoKee 버전</string>
   <string name="mokee_version_default">미지</string>
   <string name="mokee_support">커뮤니티 지원</string>
   <string name="mokee_support_default">미지</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">애니메이션</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">리스트뷰 애니메이션</string>
   <string name="listview_off">오프</string>
   <string name="listview_wave_left">웨이브 (왼쪽)</string>
@@ -33,6 +36,7 @@
   <string name="listview_translate_left">날아들다(왼쪽)</string>
   <string name="listview_translate_right">날아들다(오른쪽)</string>
   <string name="listview_rotate">회전</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">리스트뷰 인터폴레이터</string>
   <string name="listview_accelerate_interpolator">가속</string>
   <string name="listview_decelerate_interpolator">감속</string>
@@ -41,6 +45,7 @@
   <string name="listview_overshoot_interpolator">오버 슈트</string>
   <string name="listview_anticipate_overshoot_interpolator">오버 슛을 예상</string>
   <string name="listview_bounce_interpolator">튕기기</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">모든 번호</string>
   <string name="blacklist_all_numbers_summary">모든 통화를 차단</string>
   <string name="blacklist_advertisement_numbers_title">광고 번호</string>
@@ -49,61 +54,101 @@
   <string name="blacklist_fraud_numbers_summary">블록 사기 전화</string>
   <string name="blacklist_harassment_numbers_title">성희롱 숫자</string>
   <string name="blacklist_harassment_numbers_summary">블록 괴롭힘 호출</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">스마트 제어</string>
   <string name="direct_control_title">직접 제어</string>
   <string name="direct_call_for_dialer_title">직접 전화 걸기</string>
   <string name="direct_call_for_dialer_summary">전화 에서 번호를 누른 후 귀에 핸드폰을 대세요</string>
   <string name="direct_call_for_mms_title">MMS에 직접 호출</string>
   <string name="direct_call_for_mms_summary">귀에 핸드폰을 대면 자동으로 연락처를 호출합니다</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">버튼 높이</string>
   <string name="navigation_bar_height_48">48dp (디폴트)</string>
   <string name="navigation_bar_height_0">숨기기</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">네트워크 속도</string>
   <string name="show_network_speed_summary">상단바에 네트워크 속도 표시</string>
   <string name="status_bar_network_traffic_style_disable">사용안함</string>
   <string name="status_bar_network_traffic_style_up">발신</string>
   <string name="status_bar_network_traffic_style_down">수신</string>
   <string name="status_bar_network_traffic_style_all">발신 및 수신</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">캐리어 이름</string>
   <string name="show_status_bar_carrier_summary">상태 표시줄에 캐리어 이름 표시</string>
   <string name="custom_carrier_label_title">사용자 정의 캐리어 라벨</string>
   <string name="custom_carrier_label_explain">새 라벨을 입력 하십시오. 기존 라벨으로 되돌리려면 비워 두십시오.</string>
   <string name="custom_carrier_label_notset">사용자 지정 라벨을 현재 설정 하지않습니다</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">화면저장</string>
   <string name="hardware_keys_action_reboot_menu">재시작 메뉴</string>
+  <!-- The volume key answer -->
   <string name="volume_answer_call_title">전화 수신</string>
   <string name="volume_answer_call_summary">볼륨 업 버튼을 눌러 걸려온 전화에 응답</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">개인 정보</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
   <string name="lockgesture_change_lock_pattern_label">잠금해제 제스쳐 변경</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_change_lock_pin_label">잠금해제 PIN 변경</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_need_to_unlock">저장된 제스처를 확인</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
   <string name="lockgesture_need_to_unlock_wrong">다시 시도하세요</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
   <string name="lockgesture_recording_intro_header">잠금 해제 제스처 그리기:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
   <string name="lockgesture_recording_intro_footer">도움말을 보려면 메뉴를 누르세요.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
   <string name="lockgesture_recording_inprogress">완료되면 손가락을 뗍니다.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
   <string name="lockgesture_pattern_entered_header">제스쳐가 기록되었다.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
   <string name="lockgesture_need_to_confirm">확인을 위해 제스쳐 그리기:</string>
   <string name="lockgesture_pattern_confirmed_header">새로운 잠금 해제 제스처:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
   <string name="lockgesture_confirm_button_text">확인:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
   <string name="lockgesture_restart_button_text">다시 그리기</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
   <string name="lockgesture_retry_button_text">재시도 하기</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
   <string name="lockgesture_continue_button_text">계속</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
   <string name="lockgesture_settings_title">제스쳐 잠금해제</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
   <string name="lockgesture_settings_enable_title">제스처가 필요</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
   <string name="lockgesture_settings_enable_summary">화면 잠금을 해제하는 제스쳐를 그려야된다</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
   <string name="lockgesture_settings_enable_visible_pattern_title">제스처를 볼 수 있도록</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
   <string name="lockgesture_settings_enable_power_button_instantly_locks">전원 버튼 즉시 잠금</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
   <string name="lockgesture_settings_choose_lock_pattern">잠금해제 제스처 설정</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
   <string name="lockgesture_settings_change_lock_pattern">잠금해제 제스쳐 변경</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
   <string name="lockgesture_settings_help_how_to_record">잠금 해제 제스처를 그리는 방법</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_header">잘못된 시도 횟수가 너무 많습니다.</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_footer">다시시도하세요 <xliff:g id="number">%d</xliff:g> 초 후에</string>
+  <!-- Toast shown if setting gesture was successful -->
   <string name="lockpassword_gesture_set_toast">제스처 설정</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
   <string name="lockpassword_confirm_your_gesture_header">당신의 제스처를 확인</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">당신의 제스처 그리기</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
   <string name="unlock_set_unlock_gesture_title">제스처</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_gesture_summary">낮은 보안(베타)</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_mode_gesture">제스처</string>
+  <!-- Recents panel settings -->
   <string name="recents_panel_settings_title">알림서랍 설정</string>
   <string name="clear_all_settings_title">모든 버튼 설정 해제</string>
   <string name="show_clear_all_recents_button_title">모든 버튼을 표시</string>
@@ -116,14 +161,19 @@
   <string name="recents_clear_all_location_bottom_center">하단 중앙</string>
   <string name="recents_clear_all_ignored_foreground_title">포그라운드 작업을 무시</string>
   <string name="recents_clear_all_ignored_foreground_summary">1 최근 애플 리 케이 션, 전경 작업을 기 각 하지 마십시오</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">초시계</string>
   <string name="status_bar_clock_show_second_summary">상태바 시계에 초표시</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Su 아이콘 표시</string>
   <string name="show_su_icon_summary">상태표시줄에 su아이콘 띄우기</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">헤드셋 아이콘 표시</string>
   <string name="show_headset_icon_summary">헤드셋이 연결되면 상태 표시 줄에 아이콘 표시</string>
+  <!-- Double tap navbar to sleep -->
   <string name="double_tap_to_sleep_navbar_title">네비게이션 바를 두번 두드릴시 화면끄기</string>
   <string name="double_tap_to_sleep_navbar_summary">내비게이션 바를 두번 두드리면 화면이 꺼집니다.</string>
+  <!-- Wakelock blocker -->
   <string name="battery_optimizer_title">배터리 최적화</string>
   <string name="wakelock_blocker_title">Wakelock 차단</string>
   <string name="wakelock_blocker_summary">블록 시스템 wakelocks</string>

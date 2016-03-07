@@ -15,11 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">Έκδοση MoKee</string>
   <string name="mokee_version_default">Άγνωστο</string>
   <string name="mokee_support">Κοινοτική στήριξη</string>
   <string name="mokee_support_default">Άγνωστο</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">Εφέ Κίνησης</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">Κίνηση εικόνας \"Προβολή Λίστας\"</string>
   <string name="listview_off">ανενεργό</string>
   <string name="listview_wave_left">Κύμα (αριστερά)</string>
@@ -33,6 +36,7 @@
   <string name="listview_translate_left">Μετάφραση (αριστερά)</string>
   <string name="listview_translate_right">Μετάφραση (δεξιά)</string>
   <string name="listview_rotate">Περιστροφή</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">ListView interpolator</string>
   <string name="listview_accelerate_interpolator">Επιτάχυνση</string>
   <string name="listview_decelerate_interpolator">Επιβράδυνση</string>
@@ -41,30 +45,77 @@
   <string name="listview_overshoot_interpolator">Υπέρβαση</string>
   <string name="listview_anticipate_overshoot_interpolator">Πρόβλεψη υπέρβασης</string>
   <string name="listview_bounce_interpolator">Αναπήδηση</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Όλοι οι αριθμοί</string>
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Έξυπνος έλεγχος</string>
   <string name="direct_control_title">Άμεσος έλεγχος</string>
   <string name="direct_call_for_dialer_summary">Άρει το τηλέφωνο στο αυτί μετά την είσοδό του αριθμό στην dialer να καλέσετε απευθείας</string>
   <string name="direct_call_for_mms_title">Άμεση κλήση σε MMS</string>
   <string name="direct_call_for_mms_summary">Ακουμπόντας τηλέφωνο στο αυτί θα καλέσει αυτόματα την τρέχουσα επαφή</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">Κουμπί ύψος</string>
   <string name="navigation_bar_height_48">48dp (προεπιλογή)</string>
   <string name="navigation_bar_height_0">Απόκρυψη</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Ταχύτητα δικτύου</string>
   <string name="show_network_speed_summary">Εμφάνιση ταχύτητας δικτύου στη γραμμή κατάστασης</string>
   <string name="status_bar_network_traffic_style_disable">Απενεργοποιημένο</string>
   <string name="status_bar_network_traffic_style_up">Εξερχομενα</string>
   <string name="status_bar_network_traffic_style_down">Εισερχόμενα</string>
   <string name="status_bar_network_traffic_style_all">Εξερχόμενων και εισερχόμενων</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">Κατάσταση μπαρ μεταφορέα</string>
   <string name="show_status_bar_carrier_summary">Εμφάνιση παρόχου στη γραμμή κατάστασης</string>
   <string name="custom_carrier_label_title">Ετικέτα προσαρμοσμένου παρόχου</string>
   <string name="custom_carrier_label_explain">Πληκτρολογήστε μια νέα ετικέτα. Αφήστε κενό για να επανέλθει στην ετικέτα αποθεμάτων.</string>
   <string name="custom_carrier_label_notset">Προσαρμοσμένη ετικέτα επί του παρόντος δεν έχει οριστεί</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">Στιγμιότυπο οθόνης</string>
   <string name="hardware_keys_action_reboot_menu">Μενού επανεκκίνησης</string>
+  <!-- The volume key answer -->
   <string name="volume_answer_call_title">Απάντηση κλήσης</string>
   <string name="volume_answer_call_summary">Πατώντας το κουμπί έντασης θα απαντηθεί η τρέχουσα εισερχόμενη κλήση</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">Ιδιωτικότητα</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+  <!-- Security & location settings screen, unlock screen activity title -->
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+  <!-- Toast shown if setting gesture was successful -->
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+  <string name="lockpassword_choose_your_gesture_header">Σχεδιάστε την χειρονομία σας</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+  <!-- Recents panel settings -->
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
+  <!-- Double tap navbar to sleep -->
+  <!-- Wakelock blocker -->
 </resources>

@@ -15,5 +15,171 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
+  <string name="mokee_version">Version MoKee</string>
+  <string name="mokee_version_default">Inconnu</string>
+  <string name="mokee_support">Soutien communautaire</string>
+  <string name="mokee_support_default">Inconnu</string>
+  <!-- Animation Settings -->
+  <string name="animation_settings_title">Animations</string>
+  <!-- ListView animation -->
+  <string name="listview_animation_title">Animation de listes</string>
+  <string name="listview_off">Désactivé</string>
+  <string name="listview_wave_left">Vague (à gauche)</string>
+  <string name="listview_wave_right">Vague (à droite)</string>
+  <string name="listview_alpha">Transparence</string>
+  <string name="listview_scale">Échelle</string>
+  <string name="listview_stack_top">Empilement (haut)</string>
+  <string name="listview_stack_bottom">Empilement (bas)</string>
+  <string name="listview_unfold">Déplier</string>
+  <string name="listview_fold">Plier</string>
+  <string name="listview_translate_left">Glisser (à droite)</string>
+  <string name="listview_translate_right">Glisser (à gauche)</string>
+  <string name="listview_rotate">Tourner</string>
+  <!-- ListView interpolator -->
+  <string name="listview_interpolator_title">Interpolateur de liste</string>
+  <string name="listview_accelerate_interpolator">Accélérer</string>
+  <string name="listview_decelerate_interpolator">Ralentir</string>
+  <string name="listview_accelerate_decelerate_interpolator">Accélérer + Ralentir</string>
+  <string name="listview_anticipate_interpolator">Anticiper</string>
+  <string name="listview_overshoot_interpolator">Excès</string>
+  <string name="listview_anticipate_overshoot_interpolator">Anticiper l\'excès</string>
+  <string name="listview_bounce_interpolator">Rebondir</string>
+  <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Tous les numéros</string>
+  <string name="blacklist_all_numbers_summary">Bloquer tous les appels</string>
+  <string name="blacklist_advertisement_numbers_title">Numéro de l\'annonce</string>
+  <string name="blacklist_advertisement_numbers_summary">Bloquer les appels publicitaires</string>
+  <string name="blacklist_fraud_numbers_title">Numéros de fraude</string>
+  <string name="blacklist_fraud_numbers_summary">Bloquer les appels de fraude</string>
+  <string name="blacklist_harassment_numbers_title">Numéros de harcèlement</string>
+  <string name="blacklist_harassment_numbers_summary">Bloquer les appels de harcèlement</string>
+  <!-- Smart Control -->
+  <string name="smartcontrol_settings_title">Contrôle intelligent</string>
+  <string name="direct_control_title">Contrôle direct</string>
+  <string name="direct_call_for_dialer_title">Appel direct dans le composeur téléphonique</string>
+  <string name="direct_call_for_dialer_summary">Porter le téléphone a l\'oreille après avoir composé le numéro afin d\'appeler directement</string>
+  <string name="direct_call_for_mms_title">Appel direct dans les MMS</string>
+  <string name="direct_call_for_mms_summary">Porter le téléphone à l\'oreille appellera automatiquement le contact actuel</string>
+  <!-- Custom navigation bar height -->
+  <string name="navigation_bar_height">Hauteur du bouton</string>
+  <string name="navigation_bar_height_48">48DP (par défaut)</string>
+  <string name="navigation_bar_height_0">cacher</string>
+  <!-- Show network speed -->
+  <string name="show_network_speed_title">Vitesse du réseau</string>
+  <string name="show_network_speed_summary">Montrer la vitesse du réseau dans la barre d\'état</string>
+  <string name="status_bar_network_traffic_style_disable">Désactiver</string>
+  <string name="status_bar_network_traffic_style_up">Sortant</string>
+  <string name="status_bar_network_traffic_style_down">Entrant</string>
+  <string name="status_bar_network_traffic_style_all">Sortant et entrant</string>
+  <!-- Show carrier label and custom -->
+  <string name="show_status_bar_carrier_title">Opérateur dans la barre d\'état</string>
+  <string name="show_status_bar_carrier_summary">Afficher l\'opérateur dans la barre d\'état</string>
+  <string name="custom_carrier_label_title">Personnaliser le nom de l\'opérateur</string>
+  <string name="custom_carrier_label_explain">Veuillez saisir un nouveau label. Laissez vide pour revenir à l\'étiquette de base.</string>
+  <string name="custom_carrier_label_notset">Nom personnalisé non défini</string>
+  <!-- quick reboot menu and screenshot -->
+  <string name="hardware_keys_action_screenshot">Capture d\'écran</string>
+  <string name="hardware_keys_action_reboot_menu">Menu de redémarrage</string>
+  <!-- The volume key answer -->
+  <string name="volume_answer_call_title">Répondre à l\'appel</string>
+  <string name="volume_answer_call_summary">Appuyer sur le bouton Accueil décrochera l\'appel entrant en cours</string>
+  <!-- Privacy Settings Header item -->
+  <string name="privacy_settings_mokee_title">Confidentialité</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
+  <string name="lockgesture_change_lock_pattern_label">Changer le geste de déverrouillage</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_change_lock_pin_label">Changer le code PIN de déverrouillage</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_need_to_unlock">Veuillez confirmer le geste enregistré</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+  <string name="lockgesture_need_to_unlock_wrong">Désolé. Veuillez réessayer :</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+  <string name="lockgesture_recording_intro_header">Dessinez un geste de déverrouillage:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+  <string name="lockgesture_recording_intro_footer">Appuyez sur Menu pour obtenir de l\'aide.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+  <string name="lockgesture_recording_inprogress">Relâcher le doigt quand vous avez terminé.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+  <string name="lockgesture_pattern_entered_header">Schéma enregistré.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+  <string name="lockgesture_need_to_confirm">Redessinez le schéma pour confirmer:</string>
+  <string name="lockgesture_pattern_confirmed_header">Votre nouveau schéma de déverrouillage:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+  <string name="lockgesture_confirm_button_text">Confirmer</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+  <string name="lockgesture_restart_button_text">Retracez</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+  <string name="lockgesture_retry_button_text">Rééssayer</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+  <string name="lockgesture_continue_button_text">Continuer</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
+  <string name="lockgesture_settings_title">Schéma de déverrouillage</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+  <string name="lockgesture_settings_enable_title">Schéma requis</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+  <string name="lockgesture_settings_enable_summary">Pour déverrouiller l\'écran, le schéma doit être tracé</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+  <string name="lockgesture_settings_enable_visible_pattern_title">Rendre le schéma visible</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+  <string name="lockgesture_settings_enable_power_button_instantly_locks">Le bouton [Power] verrouille instantanément</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+  <string name="lockgesture_settings_choose_lock_pattern">Définir un schéma de déverrouillage</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <string name="lockgesture_settings_change_lock_pattern">Changer le geste de déverrouillage</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
+  <string name="lockgesture_settings_help_how_to_record">Comment dessiner un schéma de déverrouillage</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+  <string name="lockgesture_too_many_failed_confirmation_attempts_header">Trop de tentatives incorrectes!</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+  <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Réessayez dans <xliff:g id="NUMBER">%d</xliff:g> secondes.</string>
+  <!-- Toast shown if setting gesture was successful -->
+  <string name="lockpassword_gesture_set_toast">Le schéma a été défini</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+  <string name="lockpassword_confirm_your_gesture_header">Confirmez votre schéma</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Dessinez votre geste</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+  <string name="unlock_set_unlock_gesture_title">Schéma</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_gesture_summary">Sécurité minimum, à titre expérimental</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_mode_gesture">Schéma</string>
+  <!-- Recents panel settings -->
+  <string name="recents_panel_settings_title">Paramètres du panneau d\'applis récentes</string>
+  <string name="clear_all_settings_title">Masquer tous les boutons de réglages</string>
+  <string name="show_clear_all_recents_button_title">Afficher rejeter tout bouton</string>
+  <string name="recents_clear_all_location_title">Rejeter tous les emplacement de bouton</string>
+  <string name="recents_clear_all_location_top_right">En haut à droite</string>
+  <string name="recents_clear_all_location_top_left">En haut à gauche</string>
+  <string name="recents_clear_all_location_top_center">En haut au centre</string>
+  <string name="recents_clear_all_location_bottom_right">En bas à droite</string>
+  <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
+  <string name="recents_clear_all_location_bottom_center">En bas au centre</string>
+  <string name="recents_clear_all_ignored_foreground_title">Ignorer les tâches de premier plan</string>
+  <string name="recents_clear_all_ignored_foreground_summary">Lorsque plus de 1 applications récentes, éviter rejetant tâches de premier plan</string>
+  <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Secondes en horloge</string>
+  <string name="status_bar_clock_show_second_summary">Afficher les secondes avec l\'horloge dans la barre d\'état</string>
+  <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Montrer l\'icône su</string>
+  <string name="show_su_icon_summary">Afficher une icône dans la barre d\'état quand su est activé</string>
+  <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Afficher l\'icône de casque</string>
+  <string name="show_headset_icon_summary">Afficher une icône dans la barre d\'état quand le casque est brancher</string>
+  <!-- Double tap navbar to sleep -->
+  <string name="double_tap_to_sleep_navbar_title">Double-tap dans la barre de navigation pour mettre en veille</string>
+  <string name="double_tap_to_sleep_navbar_summary">Double taper sur la barre de navigation pour éteindre l\'écran</string>
+  <!-- Wakelock blocker -->
+  <string name="battery_optimizer_title">Optimiseur de batterie</string>
+  <string name="wakelock_blocker_title">Bloquer les Wakelock</string>
+  <string name="wakelock_blocker_summary">Activer le blocage pour les wakelocks système</string>
+  <string name="wakelock_blocker_save">Enregistrer</string>
+  <string name="wakelock_list_header">Wakelocks disponibles</string>
+  <string name="wakelock_blocker_reload">Recharger</string>
+  <string name="wakelock_blocker_warning_title">Procédez avec précaution</string>
+  <string name="wakelock_blocker_warning">Le blocage des Wakelocks peut entraîner des instabilités, incidents ou perte de données</string>
 </resources>

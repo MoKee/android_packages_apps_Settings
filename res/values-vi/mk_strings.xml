@@ -15,11 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">Phiên bản MoKee</string>
   <string name="mokee_version_default">Không rõ</string>
   <string name="mokee_support">Hỗ trợ cộng đồng</string>
   <string name="mokee_support_default">Không rõ</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">Hoạt ảnh</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">Hoạt ảnh ListView</string>
   <string name="listview_off">Tắt</string>
   <string name="listview_wave_left">Vẫy (trái)</string>
@@ -33,6 +36,7 @@
   <string name="listview_translate_left">Dịch (trái)</string>
   <string name="listview_translate_right">Dịch (phải)</string>
   <string name="listview_rotate">Xoay</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">Bộ nội suy danh sách lưới</string>
   <string name="listview_accelerate_interpolator">Tăng tốc</string>
   <string name="listview_decelerate_interpolator">Giảm tốc</string>
@@ -41,6 +45,7 @@
   <string name="listview_overshoot_interpolator">Vượt quá</string>
   <string name="listview_anticipate_overshoot_interpolator">Dự đoán vượt quá</string>
   <string name="listview_bounce_interpolator">Nảy lên</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Tất cả các số</string>
   <string name="blacklist_all_numbers_summary">Chặn tất cả các cuộc gọi</string>
   <string name="blacklist_advertisement_numbers_title">Số điện thoại quảng cáo</string>
@@ -49,61 +54,101 @@
   <string name="blacklist_fraud_numbers_summary">Chặn gian lận cuộc gọi</string>
   <string name="blacklist_harassment_numbers_title">Số điện thoại quấy rối</string>
   <string name="blacklist_harassment_numbers_summary">Khóa cuộc gọi quấy rối</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Kiểm soát thông minh</string>
   <string name="direct_control_title">Kiểm soát trực tiếp</string>
   <string name="direct_call_for_dialer_title">Các cuộc gọi trực tiếp trong trình quay số</string>
   <string name="direct_call_for_dialer_summary">Đưa điện thoại gần tai sau khi quay số để bắt đầu gọi</string>
   <string name="direct_call_for_mms_title">Các cuộc gọi trực tiếp trong MMS</string>
   <string name="direct_call_for_mms_summary">Nâng điện thoại gần tai sẽ tự động gọi số liên lạc hiện tại</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">Chiều cao nút</string>
   <string name="navigation_bar_height_48">48dp (mặc định)</string>
   <string name="navigation_bar_height_0">ẩn</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Tốc độ mạng</string>
   <string name="show_network_speed_summary">Hiển thị tốc độ mạng trên thanh trạng thái</string>
   <string name="status_bar_network_traffic_style_disable">Đã tắt</string>
   <string name="status_bar_network_traffic_style_up">Cuộc gọi đi</string>
   <string name="status_bar_network_traffic_style_down">Cuộc gọi đến</string>
   <string name="status_bar_network_traffic_style_all">Đi và đến</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">Nhà mạng trên thanh trạng thái</string>
   <string name="show_status_bar_carrier_summary">Hiển thị nhà mạng trên thanh trạng thái</string>
   <string name="custom_carrier_label_title">Tùy chỉnh tên nhà mạng</string>
   <string name="custom_carrier_label_explain">Vui lòng nhập một nhãn mới. Để trống để trở lại nhãn gốc.</string>
   <string name="custom_carrier_label_notset">Tuỳ chỉnh nhãn hiện không đặt</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">Ảnh chụp màn hình</string>
   <string name="hardware_keys_action_reboot_menu">Menu khởi động lại</string>
+  <!-- The volume key answer -->
   <string name="volume_answer_call_title">Trả lời cuộc gọi</string>
   <string name="volume_answer_call_summary">Bấm nút âm lượng lên sẽ trả lời các cuộc gọi đến hiện tại</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">Tính riêng tư</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
   <string name="lockgesture_change_lock_pattern_label">Thay đổi cử chỉ mở khoá</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_change_lock_pin_label">Thay đổi mã PIN mở khóa</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_need_to_unlock">Xác nhận cử chỉ đã lưu</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
   <string name="lockgesture_need_to_unlock_wrong">Thử lại:</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
   <string name="lockgesture_recording_intro_header">Vẽ cử chỉ để mở khoá:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
   <string name="lockgesture_recording_intro_footer">Chạm vào Menu để được giúp đỡ.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
   <string name="lockgesture_recording_inprogress">Thả tay ra khi xong.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
   <string name="lockgesture_pattern_entered_header">Đã lưu cử chỉ.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
   <string name="lockgesture_need_to_confirm">Vẽ lại cử chỉ để xác nhận:</string>
   <string name="lockgesture_pattern_confirmed_header">Cử chỉ mở khoá mới của bạn:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
   <string name="lockgesture_confirm_button_text">Xác nhận</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
   <string name="lockgesture_restart_button_text">Vẽ lại</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
   <string name="lockgesture_retry_button_text">Thử lại</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
   <string name="lockgesture_continue_button_text">Tiếp tục</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
   <string name="lockgesture_settings_title">Cử chỉ mở khoá</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
   <string name="lockgesture_settings_enable_title">Yêu cầu cử chỉ</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
   <string name="lockgesture_settings_enable_summary">Phải vẽ cử chỉ để mở khoá màn hình</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
   <string name="lockgesture_settings_enable_visible_pattern_title">Hiện cử chỉ</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
   <string name="lockgesture_settings_enable_power_button_instantly_locks">Nút Nguồn khóa ngay lập tức</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
   <string name="lockgesture_settings_choose_lock_pattern">Đặt cử chỉ mở khoá</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
   <string name="lockgesture_settings_change_lock_pattern">Thay đổi cử chỉ mở khoá</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
   <string name="lockgesture_settings_help_how_to_record">Cách vẽ cử chỉ mở khoá</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_header">Quá nhiều lần không chính xác!</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Hãy thử lại sau <xliff:g id="number">%d</xliff:g> giây.</string>
+  <!-- Toast shown if setting gesture was successful -->
   <string name="lockpassword_gesture_set_toast">Cử chỉ đã được đặt</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
   <string name="lockpassword_confirm_your_gesture_header">Xác nhận cử chỉ của bạn</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Vẽ cử chỉ của bạn</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
   <string name="unlock_set_unlock_gesture_title">Cử chỉ</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_gesture_summary">Mức độ bảo mật thấp, thử nghiệm</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_mode_gesture">Cử chỉ</string>
+  <!-- Recents panel settings -->
   <string name="recents_panel_settings_title">Cài đặt bảng gần đây</string>
   <string name="clear_all_settings_title">Thiết đặt nút Bỏ qua tất cả</string>
   <string name="show_clear_all_recents_button_title">Hiển thị nút Bỏ qua tất cả</string>
@@ -116,14 +161,19 @@
   <string name="recents_clear_all_location_bottom_center">Phía dưới trung tâm</string>
   <string name="recents_clear_all_ignored_foreground_title">Bỏ qua các tác vụ nền trước</string>
   <string name="recents_clear_all_ignored_foreground_summary">Khi có nhiều hơn 1 ứng dụng gần đây, tránh kết thúc tác vụ chạy trước (foreground)</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Giây trong đồng hồ</string>
   <string name="status_bar_clock_show_second_summary">Hiển thị giây trong đồng hồ trên thanh trạng thái</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Hiển thị biểu tượng su</string>
   <string name="show_su_icon_summary">Hiển thị một biểu tượng trong thanh trạng thái khi su hoạt động</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Hiển thị biểu tượng tai nghe</string>
   <string name="show_headset_icon_summary">Hiển thị một biểu tượng trong thanh trạng thái khi tai nghe được cắm</string>
+  <!-- Double tap navbar to sleep -->
   <string name="double_tap_to_sleep_navbar_title">Nhấp đúp vào thanh điều hướng để ngủ</string>
   <string name="double_tap_to_sleep_navbar_summary">Nhấp đúp vào trên thanh điều hướng để tắt màn hình</string>
+  <!-- Wakelock blocker -->
   <string name="battery_optimizer_title">Tối ưu hóa pin</string>
   <string name="wakelock_blocker_title">Trình chặn wakelock</string>
   <string name="wakelock_blocker_summary">Chặn hệ thống wakelocks</string>

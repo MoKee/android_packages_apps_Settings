@@ -15,6 +15,119 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
+  <string name="mokee_version">Versi MoKee</string>
   <string name="mokee_version_default">Tidak diketahui</string>
+  <string name="mokee_support">Dukungan komunitas</string>
   <string name="mokee_support_default">Tidak diketahui</string>
+  <!-- Animation Settings -->
+  <string name="animation_settings_title">Animasi</string>
+  <!-- ListView animation -->
+  <string name="listview_animation_title">Animasi ListView</string>
+  <string name="listview_off">Mati</string>
+  <string name="listview_wave_left">Gelombang (kiri)</string>
+  <string name="listview_wave_right">Gelombang (kanan)</string>
+  <string name="listview_alpha">Alfa</string>
+  <string name="listview_scale">Skala</string>
+  <string name="listview_stack_top">Tumpukan (atas)</string>
+  <string name="listview_stack_bottom">Tumpukan (bawah)</string>
+  <string name="listview_unfold">Buka lipatan</string>
+  <string name="listview_fold">Lipat</string>
+  <string name="listview_translate_left">Translate (kiri)</string>
+  <string name="listview_translate_right">Translate (kanan)</string>
+  <string name="listview_rotate">Putar</string>
+  <!-- ListView interpolator -->
+  <string name="listview_interpolator_title">ListView interpolator</string>
+  <string name="listview_accelerate_interpolator">Mempercepat</string>
+  <string name="listview_decelerate_interpolator">Memperlambat</string>
+  <string name="listview_accelerate_decelerate_interpolator">Mempercepat memperlambat</string>
+  <string name="listview_anticipate_interpolator">Mengantisipasi</string>
+  <string name="listview_overshoot_interpolator">Overshoot</string>
+  <string name="listview_anticipate_overshoot_interpolator">Mengantisipasi overshoot</string>
+  <string name="listview_bounce_interpolator">Bouncing</string>
+  <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Semua nomor</string>
+  <string name="blacklist_all_numbers_summary">Memblokir semua panggilan</string>
+  <string name="blacklist_advertisement_numbers_title">Nomor iklan</string>
+  <string name="blacklist_advertisement_numbers_summary">Blok iklan panggilan</string>
+  <string name="blacklist_fraud_numbers_title">Nomor penipuan</string>
+  <string name="blacklist_fraud_numbers_summary">Blok penipuan panggilan</string>
+  <string name="blacklist_harassment_numbers_title">Pelecehan nomor</string>
+  <string name="blacklist_harassment_numbers_summary">Blok pelecehan panggilan</string>
+  <!-- Smart Control -->
+  <string name="smartcontrol_settings_title">Kontrol Cerdas</string>
+  <string name="direct_control_title">Kontrol langsung</string>
+  <string name="direct_call_for_dialer_title">Panggilan langsung di dialer</string>
+  <string name="direct_call_for_dialer_summary">Mengangkat telepon ke telinga setelah memasukkan nomor di dialer untuk memanggil langsung</string>
+  <string name="direct_call_for_mms_title">Panggilan langsung MMS</string>
+  <string name="direct_call_for_mms_summary">Angkat telepon ke telinga secara otomatis akan memanggil kontak saat ini</string>
+  <!-- Custom navigation bar height -->
+  <string name="navigation_bar_height">Tinggi tombol</string>
+  <string name="navigation_bar_height_48">48dp (standar)</string>
+  <string name="navigation_bar_height_0">sembunyikan</string>
+  <!-- Show network speed -->
+  <string name="show_network_speed_title">Kecepatan jaringan</string>
+  <string name="show_network_speed_summary">Tampilkan kecepatan jaringan di status bar</string>
+  <string name="status_bar_network_traffic_style_disable">Dinonaktifkan</string>
+  <string name="status_bar_network_traffic_style_up">Keluar</string>
+  <string name="status_bar_network_traffic_style_down">Masuk</string>
+  <string name="status_bar_network_traffic_style_all">Keluar dan masuk</string>
+  <!-- Show carrier label and custom -->
+  <string name="show_status_bar_carrier_title">Status bar karir</string>
+  <string name="show_status_bar_carrier_summary">Tampilkan nama karir di status bar</string>
+  <string name="custom_carrier_label_title">Kostum nama karir</string>
+  <string name="custom_carrier_label_explain">Masukkan label baru. Biarkan kosong untuk menggunakan label bawaan.</string>
+  <string name="custom_carrier_label_notset">Saat ini tidak ada kostum label</string>
+  <!-- quick reboot menu and screenshot -->
+  <string name="hardware_keys_action_screenshot">Tangkap Layar</string>
+  <string name="hardware_keys_action_reboot_menu">Menu mulai ulang</string>
+  <!-- The volume key answer -->
+  <string name="volume_answer_call_title">Menjawab panggilan</string>
+  <string name="volume_answer_call_summary">Menekan tombol vol atas akan menjawab panggilan masuk saat ini</string>
+  <!-- Privacy Settings Header item -->
+  <string name="privacy_settings_mokee_title">Privasi</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
+  <string name="lockgesture_change_lock_pattern_label">Gant gerakan buka kunci</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_change_lock_pin_label">Ganti PIN buka kunci</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_need_to_unlock">Konfirmasi gerakan</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+  <string name="lockgesture_need_to_unlock_wrong">Coba lagi:</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+  <!-- Security & location settings screen, unlock screen activity title -->
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <string name="lockgesture_settings_change_lock_pattern">Gant gerakan buka kunci</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+  <!-- Toast shown if setting gesture was successful -->
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+  <string name="lockpassword_choose_your_gesture_header">Gambar gerakan anda</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+  <!-- Recents panel settings -->
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
+  <!-- Double tap navbar to sleep -->
+  <!-- Wakelock blocker -->
 </resources>

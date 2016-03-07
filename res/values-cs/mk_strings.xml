@@ -15,11 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">Verze MoKee</string>
   <string name="mokee_version_default">Neznámá</string>
   <string name="mokee_support">Podpora komunitou</string>
   <string name="mokee_support_default">Neznámá</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">Animace</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">Animace seznamů</string>
   <string name="listview_off">Vypnuto</string>
   <string name="listview_wave_left">Vlna (vlevo)</string>
@@ -33,6 +36,7 @@
   <string name="listview_translate_left">Přeložit (vlevo)</string>
   <string name="listview_translate_right">Přeložit (vpravo)</string>
   <string name="listview_rotate">Rotovat</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">ListView interpolátor</string>
   <string name="listview_accelerate_interpolator">Zrychlit</string>
   <string name="listview_decelerate_interpolator">Zpomalit</string>
@@ -41,6 +45,7 @@
   <string name="listview_overshoot_interpolator">Předletět</string>
   <string name="listview_anticipate_overshoot_interpolator">Předběhnout a předletět</string>
   <string name="listview_bounce_interpolator">Odskočit</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Všechna čísla</string>
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>
   <string name="blacklist_advertisement_numbers_title">Reklamní čísla</string>
@@ -49,61 +54,101 @@
   <string name="blacklist_fraud_numbers_summary">Blokovat podvodná volání</string>
   <string name="blacklist_harassment_numbers_title">Obtěžující čísla</string>
   <string name="blacklist_harassment_numbers_summary">Blokovat obtěžující volání</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Chytré ovládání</string>
   <string name="direct_control_title">Přímé ovládání</string>
   <string name="direct_call_for_dialer_title">Přímé volání z číselníku</string>
   <string name="direct_call_for_dialer_summary">Po zadání čísla přiložte telefon k uchu, aby jste volali přímo</string>
   <string name="direct_call_for_mms_title">Přímé volání v MMS</string>
   <string name="direct_call_for_mms_summary">Zvedněte telefon k uchu pro automatické vytočení aktuálního kontaktu</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">Výška tlačítka</string>
   <string name="navigation_bar_height_48">48dp (výchozí)</string>
   <string name="navigation_bar_height_0">skrýt</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Rychlost sítě</string>
   <string name="show_network_speed_summary">Zobrazit rychlost sítě ve stavové liště</string>
   <string name="status_bar_network_traffic_style_disable">Nezobrazovat</string>
   <string name="status_bar_network_traffic_style_up">Odchozí</string>
   <string name="status_bar_network_traffic_style_down">Příchozí</string>
   <string name="status_bar_network_traffic_style_all">Odchozí a příchozí</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">Operátor ve stavové liště</string>
   <string name="show_status_bar_carrier_summary">Zobrazit operátora ve stavové liště</string>
   <string name="custom_carrier_label_title">Vlastní název operátora</string>
   <string name="custom_carrier_label_explain">Zadejte, prosím, nový název. Nechte prázdné pro navrácení k původnímu.</string>
   <string name="custom_carrier_label_notset">V současné době není nastaven vlastní název operátora</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">Snímek obrazovky</string>
   <string name="hardware_keys_action_reboot_menu">Nabídka restartu</string>
+  <!-- The volume key answer -->
   <string name="volume_answer_call_title">Přijmout hovor</string>
   <string name="volume_answer_call_summary">Stiskem tlačítka zvýšení hlasitosti bude hovor přijat</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">Soukromí</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
   <string name="lockgesture_change_lock_pattern_label">Změnit gesto pro odemknutí</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_change_lock_pin_label">Změnit odemykací PIN</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_need_to_unlock">Potvrdit uložené gesto</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
   <string name="lockgesture_need_to_unlock_wrong">Zkuste to znovu:</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
   <string name="lockgesture_recording_intro_header">Nakreslete odemykací gesto:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
   <string name="lockgesture_recording_intro_footer">Stiskněte Menu pro pomoc.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
   <string name="lockgesture_recording_inprogress">Po dokončení zvedněte prst.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
   <string name="lockgesture_pattern_entered_header">Gesto uloženo.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
   <string name="lockgesture_need_to_confirm">Nakreslete gesto znovu pro potvrzení:</string>
   <string name="lockgesture_pattern_confirmed_header">Vaše nové gesto pro odemknutí:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
   <string name="lockgesture_confirm_button_text">Potvrdit</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
   <string name="lockgesture_restart_button_text">Nakreslit znovu</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
   <string name="lockgesture_retry_button_text">Opakovat</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
   <string name="lockgesture_continue_button_text">Pokračovat</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
   <string name="lockgesture_settings_title">Odemykací gesto</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
   <string name="lockgesture_settings_enable_title">Vyžadovat gesto</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
   <string name="lockgesture_settings_enable_summary">Pro odemknutí obrazovky je nutné nakreslit gesto</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
   <string name="lockgesture_settings_enable_visible_pattern_title">Zviditelnit gesto</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
   <string name="lockgesture_settings_enable_power_button_instantly_locks">Zapínací tlačítko zamyká okamžitě</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
   <string name="lockgesture_settings_choose_lock_pattern">Nastavit gesto pro odemknutí</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
   <string name="lockgesture_settings_change_lock_pattern">Změnit gesto pro odemknutí</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
   <string name="lockgesture_settings_help_how_to_record">Jak nakreslit gesto pro odemknutí</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_header">Příliš mnoho nesprávných pokusů!</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Zkuste znovu za <xliff:g id="number"> %d </xliff:g> sekund.</string>
+  <!-- Toast shown if setting gesture was successful -->
   <string name="lockpassword_gesture_set_toast">Gesto bylo nastaveno</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
   <string name="lockpassword_confirm_your_gesture_header">Potvrdit gesto</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Nakreslit gesto</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
   <string name="unlock_set_unlock_gesture_title">Gesto</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_gesture_summary">Nízké zabezpečení, experimentální</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_mode_gesture">Gesto</string>
+  <!-- Recents panel settings -->
   <string name="recents_panel_settings_title">Nastavení panelu posledních aplikací</string>
   <string name="clear_all_settings_title">Nastavení tlačítka zavřít vše</string>
   <string name="show_clear_all_recents_button_title">Zobrazit tlačítko zavřít vše</string>
@@ -116,14 +161,19 @@
   <string name="recents_clear_all_location_bottom_center">Dole uprostřed</string>
   <string name="recents_clear_all_ignored_foreground_title">Ignorovat úlohy na popředí</string>
   <string name="recents_clear_all_ignored_foreground_summary">Pokud je otevřena více než 1 aplikace, zabrání zavření úlohy na popředí</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekundy u hodin</string>
   <string name="status_bar_clock_show_second_summary">Zobrazit sekundy u hodin ve stavové liště</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Zobrazit ikonu su</string>
   <string name="show_su_icon_summary">Zobrazit ikonu ve stavové liště, když je SU aktivní</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Zobrazit ikonu sluchátek</string>
   <string name="show_headset_icon_summary">Zobrazit ikonu ve stavové liště, když jsou zapojeny sluchátka</string>
+  <!-- Double tap navbar to sleep -->
   <string name="double_tap_to_sleep_navbar_title">Dvakrát poklepat na navigační panel k uspání</string>
   <string name="double_tap_to_sleep_navbar_summary">Dvakrát klepnout na stavovou lištu pro vypntí displeje</string>
+  <!-- Wakelock blocker -->
   <string name="battery_optimizer_title">Optimalizace baterie</string>
   <string name="wakelock_blocker_title">Blokování wakelocků</string>
   <string name="wakelock_blocker_summary">Blokovat systémové wakelocky</string>

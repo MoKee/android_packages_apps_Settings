@@ -15,11 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mokee_version">Versión MoKee</string>
   <string name="mokee_version_default">Desconocido</string>
   <string name="mokee_support">Soporte de la comunidad</string>
   <string name="mokee_support_default">Desconocido</string>
+  <!-- Animation Settings -->
   <string name="animation_settings_title">Animaciones</string>
+  <!-- ListView animation -->
   <string name="listview_animation_title">Animación del listado</string>
   <string name="listview_off">Desactivado</string>
   <string name="listview_wave_left">Ola (izquierda)</string>
@@ -30,17 +33,19 @@
   <string name="listview_stack_bottom">Pila (inferior)</string>
   <string name="listview_unfold">Desplegar</string>
   <string name="listview_fold">Plegar</string>
-  <string name="listview_translate_left">Traducir (izquierda)</string>
+  <string name="listview_translate_left">Trasladar (izquierda)</string>
   <string name="listview_translate_right">Trasladar (derecha)</string>
   <string name="listview_rotate">Rotar</string>
+  <!-- ListView interpolator -->
   <string name="listview_interpolator_title">Interpolador de listado</string>
   <string name="listview_accelerate_interpolator">Acelerar</string>
   <string name="listview_decelerate_interpolator">Ralentizar</string>
   <string name="listview_accelerate_decelerate_interpolator">Acelerar ralentizar</string>
   <string name="listview_anticipate_interpolator">Anticipar</string>
   <string name="listview_overshoot_interpolator">Exceder</string>
-  <string name="listview_anticipate_overshoot_interpolator">Anticipar exceder</string>
+  <string name="listview_anticipate_overshoot_interpolator">Anticipar/Sobregiro</string>
   <string name="listview_bounce_interpolator">Balanceo</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Todos los números</string>
   <string name="blacklist_all_numbers_summary">Bloquear todas las llamadas</string>
   <string name="blacklist_advertisement_numbers_title">Números de anuncio</string>
@@ -49,61 +54,101 @@
   <string name="blacklist_fraud_numbers_summary">Bloquear números fraudulentos</string>
   <string name="blacklist_harassment_numbers_title">Números de acoso</string>
   <string name="blacklist_harassment_numbers_summary">Bloquear llamadas de acoso</string>
+  <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Control Inteligente</string>
   <string name="direct_control_title">Control directo</string>
   <string name="direct_call_for_dialer_title">Llamada directa en el marcador</string>
   <string name="direct_call_for_dialer_summary">Colóquese el teléfono en el oído después de introducir el número de marcador para llamar directamente</string>
   <string name="direct_call_for_mms_title">Llamada directa en MMS</string>
   <string name="direct_call_for_mms_summary">Colocar el teléfono en el oído llamará automáticamente al contacto actual</string>
+  <!-- Custom navigation bar height -->
   <string name="navigation_bar_height">Altura del botón</string>
   <string name="navigation_bar_height_48">48dp (por defecto)</string>
   <string name="navigation_bar_height_0">ocultar</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Velocidad de red</string>
   <string name="show_network_speed_summary">Mostrar velocidad de red en la barra de estado</string>
   <string name="status_bar_network_traffic_style_disable">Deshabilitado</string>
   <string name="status_bar_network_traffic_style_up">Datos salientes</string>
   <string name="status_bar_network_traffic_style_down">Datos entrantes</string>
   <string name="status_bar_network_traffic_style_all">Salentes y entrantes</string>
+  <!-- Show carrier label and custom -->
   <string name="show_status_bar_carrier_title">Operadora de la barra de estado</string>
   <string name="show_status_bar_carrier_summary">Mostrar operadora en la barra de estado</string>
   <string name="custom_carrier_label_title">Etiqueta personalizada de la operadora</string>
   <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Déjela en blanco para volver a la etiqueta por defecto.</string>
   <string name="custom_carrier_label_notset">Actualmente no se ha establecido una etiqueta personalizada</string>
+  <!-- quick reboot menu and screenshot -->
   <string name="hardware_keys_action_screenshot">Capturar pantalla</string>
   <string name="hardware_keys_action_reboot_menu">Menú de reinicio</string>
+  <!-- The volume key answer -->
   <string name="volume_answer_call_title">Responder llamada</string>
   <string name="volume_answer_call_summary">Pulsando el botón de subir volumen se contestará la llamada entrante</string>
+  <!-- Privacy Settings Header item -->
   <string name="privacy_settings_mokee_title">Privacidad</string>
+  <!-- Lock Gesture -->
+  <!-- Security & location settings screen, setting option name -->
   <string name="lockgesture_change_lock_pattern_label">Cambiar de gesto de desbloqueo</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_change_lock_pin_label">Cambio del PIN de desbloqueo</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
   <string name="lockgesture_need_to_unlock">Confirmar gesto guardado</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
   <string name="lockgesture_need_to_unlock_wrong">Vuelva a intentarlo:</string>
+  <!-- Do not translate. -->
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
   <string name="lockgesture_recording_intro_header">Dibuje un gesto de desbloqueo:</string>
+  <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
   <string name="lockgesture_recording_intro_footer">Presione Menú para obtener ayuda.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
   <string name="lockgesture_recording_inprogress">Suelte el dedo cuando haya terminado.</string>
+  <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
   <string name="lockgesture_pattern_entered_header">Gesto registrado.</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
   <string name="lockgesture_need_to_confirm">Dibuje el gesto otra vez para confirmar:</string>
   <string name="lockgesture_pattern_confirmed_header">Su nuevo gesto de desbloqueo:</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
   <string name="lockgesture_confirm_button_text">Confirmar</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
   <string name="lockgesture_restart_button_text">Redibujar</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
   <string name="lockgesture_retry_button_text">Reintentar</string>
+  <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
   <string name="lockgesture_continue_button_text">Continuar</string>
+  <!-- Security & location settings screen, unlock screen activity title -->
   <string name="lockgesture_settings_title">Gesto de desbloqueo</string>
+  <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
   <string name="lockgesture_settings_enable_title">Requerir gesto</string>
+  <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
   <string name="lockgesture_settings_enable_summary">Debe dibujar un gesto para desbloquear la pantalla</string>
+  <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
   <string name="lockgesture_settings_enable_visible_pattern_title">Hacer visible el gesto</string>
+  <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
   <string name="lockgesture_settings_enable_power_button_instantly_locks">Botón de encendido bloquea instantáneamente</string>
+  <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
   <string name="lockgesture_settings_choose_lock_pattern">Establecer gesto de desbloqueo</string>
+  <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
   <string name="lockgesture_settings_change_lock_pattern">Cambiar gesto de desbloqueo</string>
+  <!-- Security & location settings screen, the help instructions (an animation) caption -->
   <string name="lockgesture_settings_help_how_to_record">Cómo dibujar un gesto de desbloqueo</string>
+  <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_header">¡Demasiados intentos incorrectos!</string>
+  <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
   <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Inténtelo de nuevo en <xliff:g id="number"> %d </xliff:g> segundos.</string>
+  <!-- Toast shown if setting gesture was successful -->
   <string name="lockpassword_gesture_set_toast">El gesto ha sido establecido</string>
+  <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
   <string name="lockpassword_confirm_your_gesture_header">Confirme su gesto</string>
+  <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Dibuje su gesto</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
   <string name="unlock_set_unlock_gesture_title">Gesto</string>
+  <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_gesture_summary">Baja seguridad, experimental</string>
+  <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
   <string name="unlock_set_unlock_mode_gesture">Gesto</string>
+  <!-- Recents panel settings -->
   <string name="recents_panel_settings_title">Configuración del panel de recientes</string>
   <string name="clear_all_settings_title">Configuración del botón de cerrar todo</string>
   <string name="show_clear_all_recents_button_title">Mostrar el botón de cerrar todo</string>
@@ -116,14 +161,19 @@
   <string name="recents_clear_all_location_bottom_center">Parte inferior central</string>
   <string name="recents_clear_all_ignored_foreground_title">Ignorar tareas en segundo plano</string>
   <string name="recents_clear_all_ignored_foreground_summary">Evitar el cierre de tareas en segundo plano cuando haya más de una aplicación reciente.</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Segundos en el reloj</string>
   <string name="status_bar_clock_show_second_summary">Mostrar segundos en el reloj de la barra de estado</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Muestra el icono de Root</string>
-  <string name="show_su_icon_summary">Mostrar un icono en el estado de la barra cuando el Root esta activo</string>
+  <string name="show_su_icon_summary">Mostrar un icono en la barra de estado cuando el acceso Root esta activo</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Mostrar icono de auriculares</string>
   <string name="show_headset_icon_summary">Muestra un icono en la barra de estado cuando hay unos auriculares conectados.</string>
+  <!-- Double tap navbar to sleep -->
   <string name="double_tap_to_sleep_navbar_title">Doble toque en la barra de navegación para apagar la pantalla</string>
   <string name="double_tap_to_sleep_navbar_summary">Doble toque en la barra de navegación para apagar la pantalla</string>
+  <!-- Wakelock blocker -->
   <string name="battery_optimizer_title">Optimizador de batería</string>
   <string name="wakelock_blocker_title">Bloqueador de wakelock</string>
   <string name="wakelock_blocker_summary">Bloquear wakelocks de sistema</string>
