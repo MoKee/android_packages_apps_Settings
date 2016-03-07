@@ -15,21 +15,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee verzió</string>
   <string name="mk_version_default">Ismeretlen</string>
   <string name="mk_support">Közösségi támogatás</string>
   <string name="mk_support_default">Ismeretlen</string>
+  <!-- BlackList Ext -->
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height_48">48dp (alapértelmezett)</string>
   <string name="navigation_bar_height_0">elrejt</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Hálózat sebessége</string>
   <string name="show_network_speed_summary">Hálózati sebesség kijelzése az állapotsávon</string>
   <string name="status_bar_network_traffic_style_up">Kimenő</string>
   <string name="status_bar_network_traffic_style_down">Bejövő</string>
   <string name="status_bar_network_traffic_style_all">Kimenő és bejövő</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Másodpercek megjelenítése az órában</string>
   <string name="status_bar_clock_show_second_summary">Másodpercek megjelenítése az Értesítő sávban</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Su ikon megjelenítése</string>
   <string name="show_su_icon_summary">Ikon megjelenítése, amennyiben a su aktív</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Fejhallgató ikon megjelenítése</string>
   <string name="show_headset_icon_summary">Ikon az állapotsorban, ha fejhallgató csatlakoztatva van</string>
 </resources>

@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee верзија</string>
   <string name="mk_version_default">Непознато</string>
   <string name="mk_support">Подршка заједнице</string>
   <string name="mk_support_default">Непознато</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Све бројеве</string>
   <string name="blacklist_all_numbers_summary">Блокирање свих позива</string>
   <string name="blacklist_advertisement_numbers_title">Бројеви огласа</string>
@@ -27,17 +29,22 @@
   <string name="blacklist_fraud_numbers_summary">Блокирање бројева превара</string>
   <string name="blacklist_harassment_numbers_title">Узнемирујући бројеви</string>
   <string name="blacklist_harassment_numbers_summary">Блокирање узнемирујућих бројева</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Висина дугмета</string>
   <string name="navigation_bar_height_48">48dp (подразумевано)</string>
   <string name="navigation_bar_height_0">Скривено</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Приказ протока података</string>
   <string name="show_network_speed_summary">Приказ брзине протока података у статусној траци</string>
   <string name="status_bar_network_traffic_style_disable">Онемогућено</string>
   <string name="status_bar_network_traffic_style_up">Одлазни</string>
   <string name="status_bar_network_traffic_style_down">Долазни</string>
   <string name="status_bar_network_traffic_style_all">Одлазни и долазни</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Секунде на сату</string>
   <string name="status_bar_clock_show_second_summary">Приказ секунди на статусном сату</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Приказ СУ иконе</string>
   <string name="show_su_icon_summary">Приказ иконе у статусној траци при активном СУ</string>
+  <!-- Show/hide headset icon -->
 </resources>

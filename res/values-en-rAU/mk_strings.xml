@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee Version</string>
   <string name="mk_version_default">Unknown</string>
   <string name="mk_support">Community support</string>
   <string name="mk_support_default">Unknown</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">All numbers</string>
   <string name="blacklist_all_numbers_summary">Block all calls</string>
   <string name="blacklist_advertisement_numbers_title">Advertisement numbers</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">Block fraud calls</string>
   <string name="blacklist_harassment_numbers_title">Harassment numbers</string>
   <string name="blacklist_harassment_numbers_summary">Block harassment calls</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Button height</string>
   <string name="navigation_bar_height_48">48dp (default)</string>
   <string name="navigation_bar_height_0">hide</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Network speed</string>
   <string name="show_network_speed_summary">Show network speed in status bar</string>
   <string name="status_bar_network_traffic_style_disable">Disabled</string>
   <string name="status_bar_network_traffic_style_up">Outgoing</string>
   <string name="status_bar_network_traffic_style_down">Incoming</string>
   <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Seconds in clock</string>
   <string name="status_bar_clock_show_second_summary">Display seconds in status bar clock</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Show su icon</string>
   <string name="show_su_icon_summary">Display an icon in status bar when su is active</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Show headset icon</string>
   <string name="show_headset_icon_summary">Display an icon in status bar when headset is plugged in</string>
 </resources>

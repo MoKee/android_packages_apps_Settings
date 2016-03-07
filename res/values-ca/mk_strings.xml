@@ -15,19 +15,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">Versió MoKee</string>
   <string name="mk_version_default">Desconeguda</string>
   <string name="mk_support">Suport de la comunitat</string>
   <string name="mk_support_default">Desconeguda</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Tots els números</string>
   <string name="blacklist_all_numbers_summary">Bloquejar totes les trucades</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Alçada de botó</string>
   <string name="navigation_bar_height_48">48dp (per defecte)</string>
   <string name="navigation_bar_height_0">Amagar</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Velocitat de la xarxa</string>
   <string name="show_network_speed_summary">Mostra la velocitat de la xarxa a la barra d\'estat</string>
   <string name="status_bar_network_traffic_style_disable">Desactivat</string>
   <string name="status_bar_network_traffic_style_up">Enviats</string>
   <string name="status_bar_network_traffic_style_down">Rebuts</string>
   <string name="status_bar_network_traffic_style_all">Enviats i rebuts</string>
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

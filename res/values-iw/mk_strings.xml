@@ -15,10 +15,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">גירסת MoKee</string>
   <string name="mk_version_default">לא ידוע</string>
   <string name="mk_support">תמיכה ע\"י הקהילה</string>
   <string name="mk_support_default">לא ידוע</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">כל המספרים</string>
   <string name="blacklist_all_numbers_summary">חסום את כל השיחות</string>
+  <!-- Height of navigation bar buttons -->
+  <!-- Show network speed -->
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

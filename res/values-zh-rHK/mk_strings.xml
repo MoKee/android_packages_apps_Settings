@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee 版本</string>
   <string name="mk_version_default">不明</string>
   <string name="mk_support">社區支援</string>
   <string name="mk_support_default">不明</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">所有電話號碼</string>
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
   <string name="blacklist_advertisement_numbers_title">廣告號碼</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">阻止欺詐來電</string>
   <string name="blacklist_harassment_numbers_title">騷擾號碼</string>
   <string name="blacklist_harassment_numbers_summary">阻止騷擾來電</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">導覽列高度</string>
   <string name="navigation_bar_height_48">48dp（預設）</string>
   <string name="navigation_bar_height_0">隱藏</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">狀態列網速</string>
   <string name="show_network_speed_summary">在狀態列顯示即時網速</string>
   <string name="status_bar_network_traffic_style_disable">已停用</string>
   <string name="status_bar_network_traffic_style_up">上載</string>
   <string name="status_bar_network_traffic_style_down">下載</string>
   <string name="status_bar_network_traffic_style_all">上載及下載</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">顯示到秒</string>
   <string name="status_bar_clock_show_second_summary">狀態列時鐘顯示到秒</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">顯示超級使用者圖示</string>
   <string name="show_su_icon_summary">當超級使用者執行時在狀態列顯示圖示</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">顯示耳機圖示</string>
   <string name="show_headset_icon_summary">插入耳機時在狀態列顯示圖示</string>
 </resources>

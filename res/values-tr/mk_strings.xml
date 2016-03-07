@@ -15,15 +15,22 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee Versiyonu</string>
   <string name="mk_version_default">Bilinmeyen</string>
   <string name="mk_support">Topluluk desteği</string>
   <string name="mk_support_default">Bilinmeyen</string>
+  <!-- BlackList Ext -->
+  <!-- Height of navigation bar buttons -->
+  <!-- Show network speed -->
   <string name="status_bar_network_traffic_style_disable">Devre Dışı</string>
   <string name="status_bar_network_traffic_style_up">Giden</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Saniye gösterme</string>
   <string name="status_bar_clock_show_second_summary">Durum çubuğu saat içinde saniye görüntüler</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Su simgesini göster</string>
   <string name="show_su_icon_summary">Su etkin olduğunda durum çubuğunda bir simge görüntüler</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Kulaklık simgesini göster</string>
 </resources>

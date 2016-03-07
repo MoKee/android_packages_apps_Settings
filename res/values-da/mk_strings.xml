@@ -15,5 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee-version</string>
+  <!-- BlackList Ext -->
+  <!-- Height of navigation bar buttons -->
+  <!-- Show network speed -->
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>
