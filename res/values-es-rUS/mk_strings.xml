@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">Versión de MoKee</string>
   <string name="mk_version_default">Desconocido</string>
   <string name="mk_support">Soporte de la comunidad</string>
   <string name="mk_support_default">Desconocido</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Todos los números</string>
   <string name="blacklist_all_numbers_summary">Bloquear todas las llamadas</string>
   <string name="blacklist_advertisement_numbers_title">Números publicitarios</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">Bloquear números fraudulentos</string>
   <string name="blacklist_harassment_numbers_title">Números de acoso</string>
   <string name="blacklist_harassment_numbers_summary">Bloquear llamadas de acoso</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Altura del botón</string>
   <string name="navigation_bar_height_48">48dp (por defecto)</string>
   <string name="navigation_bar_height_0">ocultar</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Velocidad de red</string>
   <string name="show_network_speed_summary">Mostrar velocidad de red en la barra de estado</string>
   <string name="status_bar_network_traffic_style_disable">Deshabilitado</string>
   <string name="status_bar_network_traffic_style_up">Saliente</string>
   <string name="status_bar_network_traffic_style_down">Entrante</string>
   <string name="status_bar_network_traffic_style_all">Salentes y entrantes</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Segundos en el reloj</string>
   <string name="status_bar_clock_show_second_summary">Mostrar segundos en el reloj de la barra de estado</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Muestra el icono de Root (#)</string>
   <string name="show_su_icon_summary">Mostrar un icono en el estado de la barra cuando el Root esta activo</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Mostrar icono de auriculares</string>
   <string name="show_headset_icon_summary">Muestra un icono en la barra de estado cuando hay unos auriculares conectados</string>
 </resources>

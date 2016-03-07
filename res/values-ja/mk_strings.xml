@@ -15,12 +15,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee バージョン</string>
   <string name="mk_support">コミュニティ サポート</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">すべての番号</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">ボタンの高さ</string>
   <string name="navigation_bar_height_48">48dp (デフォルト)</string>
   <string name="navigation_bar_height_0">非表示</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">ネットワーク速度</string>
   <string name="show_network_speed_summary">ステータスバーにネットワーク速度を表示する</string>
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

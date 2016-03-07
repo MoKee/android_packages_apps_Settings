@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">إصدار موكي</string>
   <string name="mk_version_default">غير معروف</string>
   <string name="mk_support">دعم المجتمع</string>
   <string name="mk_support_default">غير معروف</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">كافة الأرقام</string>
   <string name="blacklist_all_numbers_summary">حظر جميع المكالمات</string>
   <string name="blacklist_advertisement_numbers_title">أرقام الإعلانات</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">حظر أرقام الإحتيال</string>
   <string name="blacklist_harassment_numbers_title">أرقام التحرش</string>
   <string name="blacklist_harassment_numbers_summary">حظر أرقام التحرش</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">ارتفاع الزر</string>
   <string name="navigation_bar_height_48">48dp (الافتراضي)</string>
   <string name="navigation_bar_height_0">إخفاء</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">سرعة الشبكة</string>
   <string name="show_network_speed_summary">عرض سرعة الشبكة في شريط الحالة</string>
   <string name="status_bar_network_traffic_style_disable">معطل</string>
   <string name="status_bar_network_traffic_style_up">صادرة</string>
   <string name="status_bar_network_traffic_style_down">الوارده</string>
   <string name="status_bar_network_traffic_style_all">الصادرة والواردة</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">الثواني في الساعة</string>
   <string name="status_bar_clock_show_second_summary">عرض الثانية في الساعة في شريط الحالة</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">إظهار رمز سوبر يوزر</string>
   <string name="show_su_icon_summary">عرض رمز السوبر يوزر في شريط الحاله عندما يكون نشط</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">إظهار رمز السماعة</string>
   <string name="show_headset_icon_summary">عرض رمز في شريط الحاله عندما يتم توصيل سماعات الرأس</string>
 </resources>
