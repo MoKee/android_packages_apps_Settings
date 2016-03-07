@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee Version</string>
   <string name="mk_version_default">Unbekannt</string>
   <string name="mk_support">Community Unterstützung</string>
   <string name="mk_support_default">Unbekannt</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Alle Nummern</string>
   <string name="blacklist_all_numbers_summary">Alle Anrufe blockieren</string>
   <string name="blacklist_advertisement_numbers_title">Werbe-Nummern</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">Blockiere Betrugsanrufe</string>
   <string name="blacklist_harassment_numbers_title">Belästigungs-Nummern</string>
   <string name="blacklist_harassment_numbers_summary">Blockiere Belästigungsanrufe</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Höhe der Schaltflächen</string>
   <string name="navigation_bar_height_48">48dp (Standard)</string>
   <string name="navigation_bar_height_0">Verbergen</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Netzwerkgeschwindigkeit</string>
   <string name="show_network_speed_summary">Netzwerkgeschwindigkeit in Statusleiste anzeigen</string>
   <string name="status_bar_network_traffic_style_disable">Deaktiviert</string>
   <string name="status_bar_network_traffic_style_up">Ausgehend</string>
   <string name="status_bar_network_traffic_style_down">Eingehend</string>
   <string name="status_bar_network_traffic_style_all">Ausgehend und Eingehend</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekunden anzeigen</string>
   <string name="status_bar_clock_show_second_summary">Sekunden in der Statusleiste anzeigen</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Su-Symbol anzeigen</string>
   <string name="show_su_icon_summary">Zeige ein Symbol in der Statusleiste, wenn Su aktiv ist</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Kopfhörer-Symbol anzeigen</string>
   <string name="show_headset_icon_summary">Kopfhörer-Symbol in der Statusleiste anzeigen, wenn der Kopfhörer angeschlossen wird</string>
 </resources>

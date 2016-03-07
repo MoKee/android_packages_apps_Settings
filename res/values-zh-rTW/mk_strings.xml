@@ -15,19 +15,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee 版本</string>
   <string name="mk_version_default">未知</string>
   <string name="mk_support">社區幫助</string>
   <string name="mk_support_default">未知</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">所有電話號碼</string>
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">導航欄高度</string>
   <string name="navigation_bar_height_48">48dp (預設)</string>
   <string name="navigation_bar_height_0">隱藏</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">狀態欄網速</string>
   <string name="show_network_speed_summary">在狀態欄顯示當前網速</string>
   <string name="status_bar_network_traffic_style_disable">停用</string>
   <string name="status_bar_network_traffic_style_up">顯示上傳速度</string>
   <string name="status_bar_network_traffic_style_down">顯示下載速度</string>
   <string name="status_bar_network_traffic_style_all">顯示上傳和下載速度</string>
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">Версiя MoKee</string>
   <string name="mk_version_default">Невядома</string>
   <string name="mk_support">Падтрымка супольнасці</string>
   <string name="mk_support_default">Невядома</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Усе нумары</string>
   <string name="blacklist_all_numbers_summary">Блакаваць усе званкі</string>
   <string name="blacklist_advertisement_numbers_title">Рэкламныя нумары</string>
@@ -27,13 +29,18 @@
   <string name="blacklist_fraud_numbers_summary">Блакаваць званкі з нумароў махляроў</string>
   <string name="blacklist_harassment_numbers_title">Нумары вымагальнікаў</string>
   <string name="blacklist_harassment_numbers_summary">Блакаваць званкі з нумароў вымагальнікаў</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Вышыня кнопкі</string>
   <string name="navigation_bar_height_48">48dp (па змаўчанні)</string>
   <string name="navigation_bar_height_0">схаваць</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Хуткасць сеткі</string>
   <string name="show_network_speed_summary">Паказваць хуткасць сеткі ў радку стану</string>
   <string name="status_bar_network_traffic_style_disable">Выключана</string>
   <string name="status_bar_network_traffic_style_up">Выходныя</string>
   <string name="status_bar_network_traffic_style_down">Уваходныя</string>
   <string name="status_bar_network_traffic_style_all">Выходныя i ўваходныя</string>
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

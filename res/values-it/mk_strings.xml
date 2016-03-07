@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">Versione di MoKee</string>
   <string name="mk_version_default">Sconosciuto</string>
   <string name="mk_support">Supporto community</string>
   <string name="mk_support_default">Sconosciuto</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Tutti i numeri</string>
   <string name="blacklist_all_numbers_summary">Blocca tutte le chiamate</string>
   <string name="blacklist_advertisement_numbers_title">Numeri pubblicitari</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">Blocca le chiamate contenenti frodi</string>
   <string name="blacklist_harassment_numbers_title">Numeri contenenti molestie</string>
   <string name="blacklist_harassment_numbers_summary">Blocca le chiamate contenenti molestie</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Altezza pulsante</string>
   <string name="navigation_bar_height_48">48dp (predefinito)</string>
   <string name="navigation_bar_height_0">Nascondi</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Velocità di rete</string>
   <string name="show_network_speed_summary">Mostra la velocità di rete nella barra di stato</string>
   <string name="status_bar_network_traffic_style_disable">Disabilitata</string>
   <string name="status_bar_network_traffic_style_up">In uscita</string>
   <string name="status_bar_network_traffic_style_down">In entrata</string>
   <string name="status_bar_network_traffic_style_all">In uscita e in entrata</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Secondi nell\'orologio</string>
   <string name="status_bar_clock_show_second_summary">Visualizzare i secondi nell\'orologio della barra di stato</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Visualizza su icona</string>
   <string name="show_su_icon_summary">Visualizzare un\'icona nella barra di stato quando Su è attivo</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Mostra icona auricolare</string>
   <string name="show_headset_icon_summary">Mostrare un incona nella barra di stato quando l\'auricolare è collegato</string>
 </resources>

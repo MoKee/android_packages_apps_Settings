@@ -15,20 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">MoKee version</string>
   <string name="mk_version_default">Okänd</string>
   <string name="mk_support_default">Okänd</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Alla nummer</string>
   <string name="blacklist_advertisement_numbers_summary">Blockera reklam samtal</string>
   <string name="blacklist_fraud_numbers_title">Bedrägeri nummer</string>
   <string name="blacklist_fraud_numbers_summary">Blocket bedrägeri samtal</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Knapp höjd</string>
   <string name="navigation_bar_height_48">48dp (standard)</string>
   <string name="navigation_bar_height_0">dölj</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Nätverkshastighet</string>
   <string name="show_network_speed_summary">Visa nätverkshastighet i statusfältet</string>
   <string name="status_bar_network_traffic_style_disable">Inaktiverad</string>
   <string name="status_bar_network_traffic_style_up">Utgående</string>
   <string name="status_bar_network_traffic_style_down">Inkommande</string>
   <string name="status_bar_network_traffic_style_all">Utgående och inkommande</string>
+  <!-- Seconds in clock -->
+  <!-- Show/hide su icon -->
+  <!-- Show/hide headset icon -->
 </resources>

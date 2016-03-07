@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- About version and support -->
   <string name="mk_version">Verze MoKee</string>
   <string name="mk_version_default">Neznámá</string>
   <string name="mk_support">Podpora komunitou</string>
   <string name="mk_support_default">Neznámá</string>
+  <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Všechna čísla</string>
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>
   <string name="blacklist_advertisement_numbers_title">Reklamní čísla</string>
@@ -27,19 +29,24 @@
   <string name="blacklist_fraud_numbers_summary">Blokovat podvodná volání</string>
   <string name="blacklist_harassment_numbers_title">Obtěžující čísla</string>
   <string name="blacklist_harassment_numbers_summary">Blokovat obtěžující volání</string>
+  <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Výška tlačítka</string>
   <string name="navigation_bar_height_48">48dp (výchozí)</string>
   <string name="navigation_bar_height_0">skrýt</string>
+  <!-- Show network speed -->
   <string name="show_network_speed_title">Rychlost sítě</string>
   <string name="show_network_speed_summary">Zobrazit rychlost sítě ve stavové liště</string>
   <string name="status_bar_network_traffic_style_disable">Nezobrazovat</string>
   <string name="status_bar_network_traffic_style_up">Odchozí</string>
   <string name="status_bar_network_traffic_style_down">Příchozí</string>
   <string name="status_bar_network_traffic_style_all">Odchozí a příchozí</string>
+  <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekundy u hodin</string>
   <string name="status_bar_clock_show_second_summary">Zobrazit sekundy u hodin ve stavové liště</string>
+  <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Zobrazit ikonu su</string>
   <string name="show_su_icon_summary">Zobrazit ikonu ve stavové liště, když je SU aktivní</string>
+  <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Zobrazit ikonu sluchátek</string>
   <string name="show_headset_icon_summary">Zobrazit ikonu ve stavové liště, když jsou zapojeny sluchátka</string>
 </resources>
