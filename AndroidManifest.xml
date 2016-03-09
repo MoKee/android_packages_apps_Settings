@@ -84,6 +84,7 @@
     <uses-permission android:name="mokee.permission.FINISH_SETUP" />
     <uses-permission android:name="mokee.permission.MODIFY_PROFILES" />
     <uses-permission android:name="mokee.permission.PROTECTED_APP" />
+    <uses-permission android:name="mokee.permission.PERFORMANCE_ACCESS" />
 
     <!-- MOKEE PUSH PERMISSION START -->
     <permission android:name="com.android.settings.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
