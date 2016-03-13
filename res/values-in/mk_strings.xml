@@ -41,6 +41,12 @@
   <string name="status_bar_network_traffic_style_down">Masuk</string>
   <string name="status_bar_network_traffic_style_all">Keluar dan masuk</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Detik pada jam</string>
+  <string name="status_bar_clock_show_second_summary">Tampilkan detik di jam statusbar</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Tampilkan ikon SU</string>
+  <string name="show_su_icon_summary">Tampilkan ikon su di statusbar saat su aktif</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Lihat ikon headset</string>
+  <string name="show_headset_icon_summary">Tampilkan ikon di statusbar ketika headset tertancap</string>
 </resources>
