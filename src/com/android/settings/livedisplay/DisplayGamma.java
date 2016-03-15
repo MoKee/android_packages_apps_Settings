@@ -40,7 +40,9 @@ import android.widget.TextView;
 import com.android.settings.R;
 
 import mokee.hardware.MKHardwareManager;
+import mokee.providers.MKSettings;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -166,7 +168,7 @@ public class DisplayGamma extends DialogPreference {
                         mSeekBars[index][color].setGamma(val);
                         mCurrentColors[index][color] = val;
                     }
-                    mHardware.setDisplayGammaCalibration(index, mCurrentColors[index]);
+                    writeDisplayGamma(getContext(), index, mCurrentColors[index]);
                 }
             }
        });
@@ -185,7 +187,7 @@ public class DisplayGamma extends DialogPreference {
             editor.apply();
         } else if (mOriginalColors != null) {
             for (int i = 0; i < mNumberOfControls; i++) {
-                mHardware.setDisplayGammaCalibration(i, mOriginalColors[i]);
+                writeDisplayGamma(getContext(), i, mOriginalColors[i]);
             }
         }
     }
@@ -205,7 +207,7 @@ public class DisplayGamma extends DialogPreference {
 
         // Restore the old state when the activity or dialog is being paused
         for (int i = 0; i < mNumberOfControls; i++) {
-            mHardware.setDisplayGammaCalibration(i, mOriginalColors[i]);
+            writeDisplayGamma(getContext(), i, mOriginalColors[i]);
         }
         mOriginalColors = null;
 
@@ -230,7 +232,7 @@ public class DisplayGamma extends DialogPreference {
             for (int color = 0; color < BAR_COLORS.length; color++) {
                 mSeekBars[index][color].setGamma(mCurrentColors[index][color]);
             }
-            mHardware.setDisplayGammaCalibration(index, mCurrentColors[index]);
+            writeDisplayGamma(getContext(), index, mCurrentColors[index]);
         }
     }
 
@@ -260,7 +262,7 @@ public class DisplayGamma extends DialogPreference {
                 rgb[0] = Integer.valueOf(values[0]);
                 rgb[1] = Integer.valueOf(values[1]);
                 rgb[2] = Integer.valueOf(values[2]);
-                hardware.setDisplayGammaCalibration(i, rgb);
+                writeDisplayGamma(context, i, rgb);
             }
         }
     }
@@ -312,6 +314,19 @@ public class DisplayGamma extends DialogPreference {
         };
     }
 
+    private static void writeDisplayGamma(Context context, int index, int[] entries) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < entries.length; i++) {
+            builder.append(i);
+            if (i != entries.length - 1) {
+                builder.append("|");
+            }
+        }
+        MKSettings.Secure.putString(context.getContentResolver(),
+                MKSettings.Secure.DISPLAY_GAMMA_CALIBRATION_PREFIX + index,
+                builder.toString());
+    }
+
     private class GammaSeekBar implements SeekBar.OnSeekBarChangeListener {
         private int mControlIndex;
         private int mColorIndex;
@@ -351,8 +366,7 @@ public class DisplayGamma extends DialogPreference {
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             if (fromUser) {
                 mCurrentColors[mControlIndex][mColorIndex] = progress + mMin;
-                mHardware.setDisplayGammaCalibration(mControlIndex,
-                        mCurrentColors[mControlIndex]);
+                writeDisplayGamma(getContext(), mControlIndex, mCurrentColors[mControlIndex]);
             }
             mValue.setText(String.valueOf(progress + mMin));
         }
