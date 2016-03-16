@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
-  <string name="mk_version">MoKee Version</string>
+  <string name="mk_version">MoKee version</string>
   <string name="mk_version_default">Unknown</string>
   <string name="mk_support">Community support</string>
   <string name="mk_support_default">Unknown</string>
