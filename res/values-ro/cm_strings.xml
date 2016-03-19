@@ -41,15 +41,20 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
+  <string name="mod_version">versiune CyanogenMod</string>
+  <string name="mod_version_default">Necunoscut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelul dispozitivului</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Numele dispozitivului</string>
   <!-- About phone screen, CyanogenMod Api Level -->
+  <string name="mod_api_level_default">Necunoscut</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dată compilare</string>
   <!-- CM Updater -->
+  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
+  <string name="update_recovery_title">Actualizează Cyanogen recovery</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Teme</string>
@@ -308,10 +313,12 @@
   <string name="app_ops_summaries_activate_vpn">activează VPN</string>
   <string name="app_ops_summaries_write_wallpaper">scrie tapet</string>
   <string name="app_ops_summaries_read_phone_state">citește starea telefonului</string>
+  <string name="app_ops_summaries_use_sip">utilizează SIP</string>
   <string name="app_ops_summaries_make_call">apelează</string>
   <string name="app_ops_summaries_use_fingerprint">utilizează amprentă digitală</string>
   <string name="app_ops_summaries_use_body_sensors">utilizează senzorii corporali</string>
   <string name="app_ops_summaries_read_cell_broadcasts">citește trasmisiunile din rețea</string>
+  <string name="app_ops_summaries_mock_location">locație simulată (falsă)</string>
   <string name="app_ops_summaries_read_external_storage">citește stocare externă</string>
   <string name="app_ops_summaries_write_external_storage">scrie stocare externă</string>
   <string name="app_ops_summaries_turn_screen_on">pornește ecranul</string>
@@ -334,6 +341,7 @@
   <string name="app_ops_labels_modify_calendar">Modifică calendarul</string>
   <string name="app_ops_labels_wifi_scan">Scanare Wi-Fi</string>
   <string name="app_ops_labels_notification">Notificare/Toast</string>
+  <string name="app_ops_labels_cell_scan">Scanare celulă</string>
   <string name="app_ops_labels_call_phone">Apelare</string>
   <string name="app_ops_labels_read_sms">Citește SMS</string>
   <string name="app_ops_labels_write_sms">Scrie SMS</string>
@@ -775,7 +783,21 @@
   <string name="no_filters_title">Niciun filtru setat</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">Statistici CyanogenMod</string>
+  <string name="anonymous_statistics_summary">Ajută-ne să facem CyanogenMod mai bun prin trimiterea de rapoarte anonime cu statistici</string>
+  <string name="anonymous_statistics_warning_title">Despre</string>
+  <string name="anonymous_statistics_warning">Optând să trimiteți Statistici CyanogenMod, se permite dezvoltatorilor CyanogenMod să primească date ne-personale pentru a urmări instalările unice la o gama mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
+  <string name="enable_reporting_title">Activare raportare</string>
+  <string name="preview_data_title">Previzualizare date</string>
+  <string name="view_stats_title">Vezi statistici</string>
+  <string name="anonymous_learn_more">Află mai multe</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">ID unic</string>
+  <string name="preview_device_title">Dispozitiv</string>
+  <string name="preview_version_title">Versiune</string>
+  <string name="preview_country_title">Țara</string>
+  <string name="preview_carrier_title">Operator</string>
+  <string name="stats_collection_title">Colectarea de statistici</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Model de resetare</string>
   <string name="lockpattern_settings_reset_summary">Introduceți contul de email primar și parola asociată pentru a reseta modelul de blocare</string>
@@ -815,6 +837,7 @@
   <!-- APNs screen message indicating new APN user is adding is a duplicate -->
   <string name="duplicate_apn_error_title">APN dublat</string>
   <string name="duplicate_apn_error_message">Acest APN există deja. Renunțați sau modificați parametrii.</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> este <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">dezactivat</string>
   <string name="sim_missing">lipsă sau defect</string>
   <string name="sim_enabler_need_disable_sim">Cartela SIM va fi dezactivată. Doriți să continuați?</string>
@@ -855,6 +878,7 @@
   <string name="ic_code_full">IC: %1$s</string>
   <string name="sim_ringtone_title">SIM %d ton de apel</string>
   <!-- label for application name -->
+  <string name="app_name_label_cm">Aplicație:</string>
   <!-- label for last time used -->
   <!-- label for usage time -->
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
@@ -879,4 +903,14 @@
   <string name="live_lock_screen_settings_button">Setări</string>
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <!-- CM Legal -->
+  <string name="cmlicense_title">Juridic CyanogenMod</string>
+  <!-- Menu label for reset the battery stats -->
+  <string name="menu_stats_reset">Resetare statistici</string>
+  <!-- Reset stats confirmation dialog's message -->
+  <string name="reset_stats_msg">Istoricul bateriei va fi resetat</string>
+  <!-- Dock battery not present message -->
+  <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging on Dock AC. -->
+  <string name="battery_info_status_charging_dock_ac">Încărcare în stativ AC</string>
+  <!-- [CHAR_LIMIT=20] Battery use screen. Battery status shown in chart label when charging over Dock USB. -->
+  <string name="battery_info_status_charging_dock_usb">Încărcare prin stativ USB</string>
 </resources>
