@@ -40,24 +40,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod نەشرى</string>
-  <string name="mod_version_default">يوچۇن</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ئۈسكىنە تىپى</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ئۈسكۈنە ئاتى</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod نىڭ API دەرىجىسى</string>
-  <string name="mod_api_level_default">يوچۇن</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ھاسىللىغان چېسلا</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod يېڭىلانمىلار</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen ئەسلىگە كەلتۈرۈش ھالىتىنى يېڭىلاش</string>
-  <string name="update_recovery_summary">سىستېما يېڭىلانمىلىرى ئارقىلىق ئەسلىگە كەلتۈرۈشنى يېڭىلاش</string>
-  <string name="update_recovery_on_warning">دىققەت: بۇ ئىقتىدار قوزغىتىلسا، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى ئىجرا قىلىنىۋاتقان سىستېما ئۆز ئىچىگە ئالغان ئەسلىگە كەلتۈرۈش دېتالى تەرىپىدىن ئالماشتۇرۇۋېتىلىدۇ.\n\nسىزنىڭ ئەسلىگە كەلتۈرۈش دېتالىڭىز سىستېمىغا ئەگىشىپ يېڭىلىنىپ، كېيىنكى نەشرى بىلەن بولغان ماسلىشىشچانلىققا كاپالەتلىك قىلىدۇ.\n\nبۇ ئىقتىدارنى قوزغىتىشنى خالامسىز؟</string>
-  <string name="update_recovery_off_warning">دىققەت: بۇ ئىقتىدار چەكلەنسە، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى سىستېمىغا ئەگىشىپ يېڭىلانمايدۇ.\n\nكەلگۈسىدە سىستېما يېڭىلانغاندا كونا نەشرى ياكى ئىختىيارىي ئەسلىگە كەلتۈرۈش دېتالى ھالىتىدە ئورنىتىشنى قوللىماسلىقى مۇمكىن\n\nسىز بۇ ئىقتىدارنى راستلا چەكلەمسىز؟</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">ئۆرنەكلەر</string>
@@ -837,22 +828,7 @@
   <string name="no_filters_title">سۈزگۈچ تەڭشىكى يوق</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod سىتاتىستىكىسى</string>
-  <string name="anonymous_statistics_summary">ئاتسىز ئىشلىتىش سىتاتىستىكىڭىزنى يوللاپ CyanogenMod نىڭ تېخىمۇ ياخشىلىنىشىغا ياردەم قىلىڭ</string>
-  <string name="anonymous_statistics_warning_title">ھەققىدە</string>
-  <string name="anonymous_statistics_warning">بۇ CyanogenMod سىتاتىستىكىنى قوزغىتىپ شەخسىي ئۇچۇرلار بولمىغان سانلىق مەلۇماتنى CyanogenMod ئىجادكارلىرىغا يوللاپ، ھەر خىل ئۈسكۈنىلەردىكى ئورنىتىشلارنى خاتىرىلەشكە قولايلىق يارىتىدۇ. يوللانغان ئۇچۇردا ئالاھىدە بىر بەلگە بولۇپ شەخسىيەت ۋە شەخسىي سانلىق مەلۇماتلارغا چېتىلمايدۇ. بۇ سانلىق مەلۇماتلار ھەر قېتىم قوزغالغاندا يوللىنىدۇ.\n\nيوللانغان سانلىق مەلۇماتنىڭ ئۈلگىسى سۈپىتىدە سانلىق مەلۇماتنى ئالدىن كۆزەتنى چېكىڭ.</string>
-  <string name="enable_reporting_title">دوكلاتنى قوزغىتىش</string>
-  <string name="preview_data_title">سانلىق مەلۇماتنى ئالدىن كۆزىتىش</string>
-  <string name="view_stats_title">سىتاتىستىكىنى كۆرسىتىش</string>
-  <string name="anonymous_learn_more">تەپسىلات بىلدۈرگۈسى</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">بىردىنبىر كىملىك</string>
-  <string name="preview_device_title">ئۈسكۈنە</string>
-  <string name="preview_version_title">نەشرى</string>
-  <string name="preview_country_title">دۆلەت</string>
-  <string name="preview_carrier_title">مۇلازىمەت سودىگىرى</string>
-  <string name="stats_collection_title">ئىستاتىستىكىلار</string>
-  <string name="stats_collection_summary">قوزغىتىلغاندا، سانلىق مەلۇمات توپلاشقا يول قويىدۇ</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">ئەندىزىنى ئەسلىگە قايتۇر</string>
   <string name="lockpattern_settings_reset_summary">ئاساسىي تورخەت ھېساباتى ۋە مۇناسىپ ئىمنى كىرگۈزۈپ ئەندىزە قۇلۇپنى ئەسلىگە قايتۇرۇڭ</string>
@@ -981,7 +957,6 @@
   <string name="interruptions_ignore_while_media_title">ئاۋاز چەتنەشنى  توس</string>
   <string name="interruptions_ignore_while_media_summary">ئۇقتۇرۇش كەلگەندە، ۋاسىتە ئاۋازىنى تۆۋەنلەتمەيدۇ</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod قانۇن ئۇچۇرى</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">ستاتىستىكىلىق سانلىق مەلۇماتنى قايتا بېكىتىش</string>
   <!-- Reset stats confirmation dialog's message -->

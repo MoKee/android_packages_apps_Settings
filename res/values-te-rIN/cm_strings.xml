@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">సయనోజెన్ మోడ్ సంస్కరణ</string>
-  <string name="mod_version_default">తెలియదు</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">పరికరం మోడల్</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">పరికరం పేరు</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">సయనోజెన్ మోడ్ API స్థాయి</string>
-  <string name="mod_api_level_default">తెలియదు</string>
   <!-- About phone screen, build date -->
   <string name="build_date">నిర్మించబడిన తేదీ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">సయనోజెన్ మోడ్ అప్డేట్లు</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">సయనోజెన్ పునరుద్ధరణను నవీకరించుము</string>
-  <string name="update_recovery_summary">సిస్టమ్ అప్డేట్లతో పునరుద్ధరణను అప్డేట్ చేయుము</string>
-  <string name="update_recovery_on_warning">గమనిక: ఈ విశేషాంశాన్ని అమలు చేసినప్పుడు, అప్పుడు నడుస్తున్న OS యొక్క ప్రస్తుత సంస్కరణతో పాటుగా చేర్చబడిన దానితో మీ యొక్క ఇన్స్టాల్డ్ మెమరీ భర్తీ చేయబడుతుంది. \n\nభవిష్యత్ సంస్కరణలతో సరితూగేలా ఉండేందుకై మీ పునరుద్ధరణ మీ యొక్క సిస్టమ్ ఆధునీకరణలతో అప్ గ్రేడ్  చేయబడుతుంది.  \n\nమీరు ఈ విశేషాంశం అమలు చేయాలనుకుంటున్నారా?</string>
-  <string name="update_recovery_off_warning">హెచ్చ్జరిక: ఈ లక్షణం నిలిపివేయబడినప్పుడు, మీ యొక్క వ్యవస్థాపించబడిన పునరుద్ధరణ OS ఉన్నతీకరణలతో నవీకరించబడదు.\n\nభవిష్యత్ OS నవీకరణలు కాలంచెల్లిన లేదా అనుకూల పునరుద్దరణ సంస్కరణలతో వ్యవస్థాపించకబడపోవచ్చు.\n\nమీరి నిజంగా ఈ లక్షణాన్ని నిలిపివేయాలని అనుకుంటున్నారా?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">థీములు</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">ఎటువంటి ఫిల్టర్లు సెట్ చేయబడలేదు</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">సయనోజెన్ మోడ్ గణాంకాలు</string>
-  <string name="anonymous_statistics_summary">అజ్ఞాతంగా గణాంకాల నివేదిక పంపడాన్ని ఎంచుకోవడం ద్వారా సయనోజెన్ మోడ్ ను మెరుగుపరిచేందుకు సహాయపడండి</string>
-  <string name="anonymous_statistics_warning_title">గురించి</string>
-  <string name="anonymous_statistics_warning">సయనోజెన్ మోడ్ గణాంకాలను ఎంచుకోవడం ద్వారా సయనోజెన్ మోడ్ డెవలపర్‌లు పరికరాలలో అసాధారణ వ్యవస్థాపనలను ట్రాక్ చేసేందుకు వారికి వ్యక్తిగతం కాని డేటాను సమర్పించే అవకాశాన్ని కల్పిస్తుంది. సమర్పించబడిన సమాచారం ఒక ఏకైక నిర్ధారిణిను కలిగి ఉంటుంది, ఇది మీ యొక్క గోప్యత లేదా వ్యక్తిగత డేటాలను కలిగి ఉండదు ప్రతి ఒక్క బూట్ సందర్భంలో డేటా సమర్పించబడుతుంది. \n\nసమర్పించబడిన డేటాకు ఉదాహరణ కొరకు, పూర్వవీక్షణ డేటా పైన ట్యాప్ చేయండి.</string>
-  <string name="enable_reporting_title">నివేదిక పంపడాన్ని ప్రారంభించుము</string>
-  <string name="preview_data_title">పూర్వవీక్షణ డేటా</string>
-  <string name="view_stats_title">వీక్షణ గణాంకాలు</string>
-  <string name="anonymous_learn_more">మరింత తెలుసుకోండి</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ఏకైక ID</string>
-  <string name="preview_device_title">పరికరం</string>
-  <string name="preview_version_title">సంస్కరణ</string>
-  <string name="preview_country_title">దేశం</string>
-  <string name="preview_carrier_title">క్యారియర్</string>
-  <string name="stats_collection_title">గణాంకాల సేకరణ</string>
-  <string name="stats_collection_summary">ప్రారంభించబడినప్పుడు, కొలతల సేకరణను అనుమతిస్తుంది</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">ఆకృతిని రీసెట్ చేయండి</string>
   <string name="lockpattern_settings_reset_summary">ఆకృతి యొక్క లాకును మరలా సెట్ చేసేందుకు ప్రాధమిక ఈమెయిల్ అకౌంట్ మరియు దానికి సంబంధించిన పాస్వర్డ్ లను ఎంటర్ చేయుము</string>
@@ -982,7 +958,6 @@
   <string name="interruptions_ignore_while_media_title">ఆడియోను దాచడాన్ని నివారించుము</string>
   <string name="interruptions_ignore_while_media_summary">నోటిఫికేషన్ వచ్చినప్పుడు మీడియా ప్లేబ్యాక్ వాల్యూమును తగ్గించవద్దు</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">సయనోజెన్ మోడ్ లీగల్</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">రీసెట్ గణాంకాలు</string>
   <!-- Reset stats confirmation dialog's message -->

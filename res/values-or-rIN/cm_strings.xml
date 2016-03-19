@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ସଂସ୍କରଣ</string>
-  <string name="mod_version_default">ଅଜ୍ଞାତ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ଡିଭାଇସ୍‍ ମଡେଲ୍‍</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ଡିଭାଇସ୍ ନାମ</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ API ସ୍ତର</string>
-  <string name="mod_api_level_default">ଅଜ୍ଞାତ</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ତାରିଖ ତିଆରି କରନ୍ତୁ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଅଦ୍ୟତନ</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">ସିଆନୋଜେନ୍‍ ରିକଭରି ଅଦ୍ୟତନ କରନ୍ତୁ</string>
-  <string name="update_recovery_summary">ସିଷ୍ଟମ୍‍ ଅଦ୍ୟତନ ସହିତ ରିକଭରି ଅଦ୍ୟତନ କରନ୍ତୁ</string>
-  <string name="update_recovery_on_warning">ସୁଚନା ଏହି ବୈଶିଷ୍ଟ୍ୟ ଯେତେବେଳେ ସଷମ କରାଯାଏ, ଆପଣ ସଂ‍ସ୍ଥାପନ କରିଥିବା ରିକଭରି ଚାଳିତ Osର ସମ୍ପ୍ରତି ସଂସ୍କରଣ ସହିତ ଅନ୍ତଭୁକ୍ତ ଥିବା ଅନ୍ୟ ଏକ ଦ୍ୱାରା ପ୍ରତି୍‍ସ୍ଥାପିତ ହେବ।\n\nଆପଣଙ୍କ ସିଷ୍ଟମ୍‍ ପାଇଁ କରାଯାଇଥିବା ଅପ୍‍ଗ୍ର।\n\nେଡ୍‍ ସହିତ ଆପଣଙ୍କ ରିକଭରି ଅଦ୍ୟତନ ହୋଇଯିବ, ଆଗାମି ସଂସ୍କରଣ ସହିତ କମ୍ପାଟିବିଲିଟି ପାଇଁ ସାହାଯ୍ୟ କରିବ।\n\nଆପଣ ଏହି ବୈଶିଷ୍ଟ୍ୟ ସଷମ କରିବାକୁ ଚାହାନ୍ତି କି?</string>
-  <string name="update_recovery_off_warning">ସତର୍କତା: ଯେତେବେଳେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରାଯାଏ, ଆପଣଙ୍କର ସଂ‍ସ୍ଥାପିତ ହୋଇଥିବା ରିକଭରି OS ଅପ୍‍ଗ୍ରେଡ୍‍ ସହିତ ଅଦ୍ୟତନ ହେବ ନାହିଁ।\n\n ଆଗାମି OS ଅଦ୍ୟତ୍ନ ଆଉଟ୍‍ଡେଟେଡ୍‍ ବା କଶଃଟମ୍‍ ରିକଭରି ସଂସ୍କରଣ ସହିତ ସଂ‍ସ୍ଥାପନ ହୋଇନପାରେ।\n\nଆପଣ ପ୍ରକୃତରେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରିବାକୁ ଚାହାଁନ୍ତି କି?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">ଥିମ୍‍ଗୁଡିକ</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">କୌଣସି ଫିଲ୍‍ଟର୍‍ ସେଟ୍‍ ହୋଇନାହିଁ</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">ସିଆନୋଜେନ୍ମୋଡ‍ ପରିସଂଖ୍ୟାନ</string>
-  <string name="anonymous_statistics_summary">ଅଜ୍ଞାତ ପ୍ରିସଂଖ୍ୟାନ ରିପୋର୍ଟିଂ ପାଇଁ ବିକଳ୍ପ ଦେଇ ସିଆନୋଜେନ୍ମୋଡ‍ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ</string>
-  <string name="anonymous_statistics_warning_title">ବିଷୟରେ</string>
-  <string name="anonymous_statistics_warning">ଡିଭାଇସ୍‍ ମଧ୍ୟରେ ନିର୍ଦିଷ୍ଟ ସଂ‍ସ୍ଥାପନ ଟ୍ରାକ୍‍ କରିବା ନିମନ୍ତେ ସିଆନୋଜେନ୍ମୋଡ‍ ପରିସଂଖ୍ୟାନ ପାଇଁ ବିକଳ୍ପ ଦେଇ ସିଆନୋଜେନ୍ମୋଡର ଡେଭେଲୋପରମାନଙ୍କୁ ଅଣ-ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ସବ୍‍ମିଟ୍‍ କରିବା ପାଇଁ ଅନୁମତି ଦେବ ସବ୍‍ମିଟ୍‍ ହୋଇଥିବା ସୂଚନା ଅଜ୍ଞାତ ପରିଚାୟକଙ୍କୁ ଅନ୍ତଭୁକ୍ତ କରିବ, ଯାହା ଆପଣଙ୍କ ଗୋପନୀୟ ବା ବ୍ୟକ୍ତିଗତ ତଥ୍ୟରେ ବାଧା ସୃଷ୍ଟି କରିବ ନାହିଁ। ଡାଟା୍ରତି ରିବୁଟ୍‍ ସମୟରେ ସବ୍‍ମିଟ୍‍ ହୁଏ।\n\nଯେଉଁ ଡାଟା ସବ୍‍ମିଟ୍‍ ହୁଏ  ତାହାର ଉଦାହରଣ ସ୍ୱରୂପ, ପ୍ରିଭ୍ୟୁ ଡାଟା ଉପରେ ଟ୍ୟାପ୍‍ କରନ୍ତୁ।</string>
-  <string name="enable_reporting_title">ରିପୋର୍ଟିଂ ସ‍କ୍ଷମ କରନ୍ତୁ</string>
-  <string name="preview_data_title">ଡାଟା ପ୍ରିଭ୍ୟୁ କରନ୍ତୁ</string>
-  <string name="view_stats_title">ପରିସଂଖ୍ୟାନ ଦେଖନ୍ତୁ</string>
-  <string name="anonymous_learn_more">ଅଧିକ ଜାଣନ୍ତୁ</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ନିର୍ଦ୍ଦିଷ୍ଟ ID</string>
-  <string name="preview_device_title">ଡିଭାଇସ୍</string>
-  <string name="preview_version_title">ସଂସ୍କରଣ</string>
-  <string name="preview_country_title">ଦେଶ</string>
-  <string name="preview_carrier_title">ବାହାକ</string>
-  <string name="stats_collection_title">ପରିସଂଖ୍ୟାନ ସଂଗ୍ରହ</string>
-  <string name="stats_collection_summary">ଯେତେବେଳେ ସ‍କ୍ଷମ କରାଯାଏ, ମେଟ୍ରିକ୍ସ ସଂଗ୍ରହ ପାଇଁ ଅନୁମତି ଦିଏ</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">ପାଟର୍ଣ୍ଣ ପୁନଃସେଟ୍ କରନ୍ତୁ</string>
   <string name="lockpattern_settings_reset_summary">ପାଟର୍ଣ୍ଣ ଲକ୍‍ ରି୍ସେଟ୍‍ କରିବା ପାଇଁ ପ୍ରାଥମିକ ଇମେଲ୍‍ ଆକାଉଣ୍ଟ ଓ ସଂଯୋଜିତ ପାସ୍‍ୱାର୍ଡ ପ୍ରବେଶ କରନ୍ତୁ</string>
@@ -982,7 +958,6 @@
   <string name="interruptions_ignore_while_media_title">ଅଡିଓ ଡକିଂ ଅବରୋଧ କରନ୍ତୁ</string>
   <string name="interruptions_ignore_while_media_summary">ଏକ ବିଜ୍ଞପ୍ତି ଆସିବା ସମୟରେ ମିଡିଆ ପ୍ଲେବ୍ୟାକ୍‍ ଭୋଲ୍ୟୁମ୍‍ ହ୍ରାସ କରନ୍ତୁ ନାହିଁ</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଲିଗାଲ୍‍</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">ପରିସଂଖ୍ୟାନ ରିସେଟ୍‍ କରନ୍ତୁ</string>
   <!-- Reset stats confirmation dialog's message -->

@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod आवृत्ती</string>
-  <string name="mod_version_default">अज्ञात</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">डिव्हाइस मॉडेल</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">डिव्हाइस नाव</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API लेव्हल</string>
-  <string name="mod_api_level_default">अज्ञात</string>
   <!-- About phone screen, build date -->
   <string name="build_date">बांधणी तारीख</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod अद्यतने</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen पुनर्प्राप्ती अद्ययावत करा</string>
-  <string name="update_recovery_summary">सिस्टिम अद्यतनांसह अद्यतने पुनर्प्राप्ती</string>
-  <string name="update_recovery_on_warning">सूचना जेव्हा हे वैशिष्ट्य सक्षम केलेले असते तेव्हा, तुमच्या स्थापित पुनर्प्राप्तीची जागा OS चालविण्याचा समावेश असलेल्या चालू आवृत्तीने घेतली जाईल.\n\nतुमच्या सिस्टिमच्या उन्नतीकरणांसह तुमची पुनर्प्राप्ती अद्यतन केली जाईल, ज्यामुळे भविष्यातील सुसंगतीची खात्री होण्यास मदत मिळेल.\n\nतुम्हाला हे वैशिष्ट्य सक्षम करायचे आहे का?</string>
-  <string name="update_recovery_off_warning">चेतावनी जेव्हा हे वैशिष्ट्य अक्षम केलेले असते तेव्हा, तुमची स्थापित पुनर्प्राप्ती OS उन्नतीकरणांसह अद्यतन केली जाणार नाही.\n\n कालबाह्य किंवा सानुकूल पुनर्प्राप्ती आवृत्तींसह भविष्यातील OS अद्यतने कदाचित स्थापित होणार नाहीत.\n\nतुम्हाला हे वैशिष्ट्य खरोखरच अक्षम करायचे आहे का?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">थीम्स</string>
@@ -838,22 +829,7 @@
   <string name="no_filters_title">कोणतेही फिल्टर्स सेट नाहीत</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod आकडेवारी</string>
-  <string name="anonymous_statistics_summary">अनामिक आकडेवारी अहवाल देणे निवडून CyanogenMod अधिक चांगले करण्यास मदत करा</string>
-  <string name="anonymous_statistics_warning_title">विषयी</string>
-  <string name="anonymous_statistics_warning">CyanogenMod आकडेवारी निवडल्यामुळे डिव्हाइसेवरील वैशिष्ट्यपूर्ण स्थापनेचा मागोवा घेण्यासाठी CyanogenMod च्या विकसकांकडे अ-वैयक्तिक डेटा सबमिट करण्यास परवानगी दिली जाईल. सबमिट केलेल्या माहितीमध्ये वैशिष्ट्यपूर्ण ओळखकर्त्याचा समावेश होतो, जो तुमच्या गुप्तता किंवा वैयक्तिक डेटाशी तडजोड करत नाही. डेटा प्रत्येक बूट दरम्यान सबमिट केला जातो.\n\nसबमिट केल्या जाणाऱ्या डेटाच्या उदाहरणासाठी, डेटा पूर्वावलोकन वर टॅप करा.</string>
-  <string name="enable_reporting_title">अहवाल देणे सक्षम करा</string>
-  <string name="preview_data_title">डेटा पूर्वावलोकन</string>
-  <string name="view_stats_title">आकडेवारी पाहा</string>
-  <string name="anonymous_learn_more">अधिक जाणून घ्या</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">वैशिष्ट्यपूर्ण ID</string>
-  <string name="preview_device_title">डिव्हाइस</string>
-  <string name="preview_version_title">आवृत्ती</string>
-  <string name="preview_country_title">देश</string>
-  <string name="preview_carrier_title">वाहक</string>
-  <string name="stats_collection_title">आकडेवारी संकलन</string>
-  <string name="stats_collection_summary">सक्षम केलेले असताना, मेट्रिक्स संकलनास अनुमती देते</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">पॅटर्न रीसेट करा</string>
   <string name="lockpattern_settings_reset_summary">पॅटर्न लॉक रीसेट करण्यासाठी प्राथमिक ईमेल खाते आणि संबंधित पासवर्ड प्रविष्ठ करा</string>
@@ -982,7 +958,6 @@
   <string name="interruptions_ignore_while_media_title">ऑडिओ डकिंगला प्रतिबंध करा</string>
   <string name="interruptions_ignore_while_media_summary">सूचना आल्यावर मिडिया प्लेबॅक ध्वनी कमी करू नका</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod लिगल</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">आकडेवारी रीसेट करा</string>
   <!-- Reset stats confirmation dialog's message -->
