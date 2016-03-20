@@ -23,6 +23,8 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Όλοι οι αριθμοί</string>
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>
+  <string name="blacklist_advertisement_numbers_title">Αριθμού διαφημιστών</string>
+  <string name="blacklist_advertisement_numbers_summary">Απαγόρευση κλήσεων διαφημιστών</string>
   <string name="blacklist_fraud_numbers_summary">Αποκλεισμός κλήσεων απάτης</string>
   <string name="blacklist_harassment_numbers_title">Αριθμοί παρενόχλησης</string>
   <!-- Height of navigation bar buttons -->
