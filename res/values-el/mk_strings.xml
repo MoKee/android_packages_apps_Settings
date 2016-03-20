@@ -48,9 +48,12 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Όλοι οι αριθμοί</string>
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>
+  <string name="blacklist_advertisement_numbers_title">Αριθμού διαφημιστών</string>
+  <string name="blacklist_advertisement_numbers_summary">Απαγόρευση κλήσεων διαφημιστών</string>
   <!-- Smart Control -->
   <string name="smartcontrol_settings_title">Έξυπνος έλεγχος</string>
   <string name="direct_control_title">Άμεσος έλεγχος</string>
+  <string name="direct_call_for_dialer_title">Ταχεία κλήση</string>
   <string name="direct_call_for_dialer_summary">Άρει το τηλέφωνο στο αυτί μετά την είσοδό του αριθμό στην dialer να καλέσετε απευθείας</string>
   <string name="direct_call_for_mms_title">Άμεση κλήση σε MMS</string>
   <string name="direct_call_for_mms_summary">Ακουμπόντας τηλέφωνο στο αυτί θα καλέσει αυτόματα την τρέχουσα επαφή</string>
@@ -81,8 +84,11 @@
   <string name="privacy_settings_mokee_title">Ιδιωτικότητα</string>
   <!-- Lock Gesture -->
   <!-- Security & location settings screen, setting option name -->
+  <string name="lockgesture_change_lock_pattern_label">Αλλαγή μοτίβου ξεκλειδώματος</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_change_lock_pin_label">Αλλαγή PIN ξεκλειδώματος</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_need_to_unlock">Εισάγετε το προηγούμενο μοτίβο</string>
   <!-- Do not translate. -->
   <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
   <!-- Do not translate. -->
@@ -102,6 +108,7 @@
   <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
   <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
   <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <string name="lockgesture_settings_change_lock_pattern">Αλλαγή μοτίβου ξεκλειδώματος</string>
   <!-- Security & location settings screen, the help instructions (an animation) caption -->
   <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
   <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
