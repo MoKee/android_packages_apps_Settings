@@ -21,6 +21,10 @@
   <string name="mk_support">Topluluk desteği</string>
   <string name="mk_support_default">Bilinmeyen</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Tüm numaralar</string>
+  <string name="blacklist_all_numbers_summary">Tüm çağrıları engelle</string>
+  <string name="blacklist_advertisement_numbers_title">Reklam numaraları</string>
+  <string name="blacklist_advertisement_numbers_summary">Reklam çağrılarını engelle</string>
   <!-- Height of navigation bar buttons -->
   <!-- Show network speed -->
   <string name="status_bar_network_traffic_style_disable">Devre Dışı</string>

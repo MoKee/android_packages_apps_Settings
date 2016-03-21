@@ -21,6 +21,7 @@
   <string name="mk_support">Közösségi támogatás</string>
   <string name="mk_support_default">Ismeretlen</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Összes szám</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height_48">48dp (alapértelmezett)</string>
   <string name="navigation_bar_height_0">elrejt</string>
