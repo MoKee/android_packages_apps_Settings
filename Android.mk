@@ -3,15 +3,17 @@ include $(CLEAR_VARS)
 
 LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common org.apache.http.legacy
 LOCAL_STATIC_JAVA_LIBRARIES := \
-	android-support-v4 \
-	android-support-v13 \
-	mokee-support-widget \
-	jsr305 \
-	org.mokee.platform.internal \
-	libGoogleAnalyticsV3 \
-	libGoogleAdMobAdsSdk \
-	libMoKeePushService \
-	volley
+    android-support-design \
+    android-support-v4 \
+    android-support-v7-appcompat \
+    android-support-v13 \
+    mokee-support-widget \
+    jsr305 \
+    org.mokee.platform.internal \
+    libGoogleAnalyticsV3 \
+    libGoogleAdMobAdsSdk \
+    libMoKeePushService \
+    volley
 
 LOCAL_MODULE_TAGS := optional
 
@@ -20,7 +22,9 @@ LOCAL_SRC_FILES := \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-        frameworks/support/mk/widget/res
+        frameworks/support/design/res \
+        frameworks/support/mk/widget/res \
+        frameworks/support/v7/appcompat/res
 
 LOCAL_SRC_FILES += \
         src/com/android/display/IPPService.aidl
@@ -38,6 +42,8 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 LOCAL_AAPT_FLAGS := \
         --auto-add-overlay \
+        --extra-packages android.support.design \
+        --extra-packages android.support.v7.appcompat \
         --extra-packages com.mokee.helper \
         --extra-packages mokee.support.widget
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)

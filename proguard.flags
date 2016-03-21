@@ -1,6 +1,9 @@
 # Keep all class files in this package.
 -keep class com.android.settings.** { *;}
 
+-dontwarn android.support.**
+-keep class android.support.** { *;}
+
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *;}
 -dontwarn com.google.gson.jpush.**

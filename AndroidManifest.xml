@@ -3011,6 +3011,7 @@
 
         <activity android:name=".mokee.helper.activities.MoKeeCenter"
             android:label="@string/mokee_center_title"
+            android:theme="@style/MoKeeCenterTheme"
             android:parentActivityName="Settings" >
             <intent-filter>
                 <action android:name="com.mokee.mkupdater.action.MOKEE_CENTER" />
