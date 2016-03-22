@@ -295,7 +295,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             if (displayPrefs != null && mProximityCheckOnWakePreference != null) {
                 displayPrefs.removePreference(mProximityCheckOnWakePreference);
             }
-            MKSettings.System.putInt(getContentResolver(), MKSettings.System.PROXIMITY_ON_WAKE, 1);
+            MKSettings.System.putInt(getContentResolver(), MKSettings.System.PROXIMITY_ON_WAKE, 0);
+        } else {
+            boolean proximityCheckOnWakeDefault = getResources().getBoolean(
+                    org.mokee.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
+            mProximityCheckOnWakePreference.setChecked(MKSettings.System.getInt(getContentResolver(),
+                    MKSettings.System.PROXIMITY_ON_WAKE,
+                    (proximityCheckOnWakeDefault ? 1 : 0)) == 1);
         }
 
         mWakeWhenPluggedOrUnplugged =
