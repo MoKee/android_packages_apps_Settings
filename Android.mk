@@ -10,7 +10,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	org.mokee.platform.internal \
 	libGoogleAnalyticsV3 \
 	libGoogleAdMobAdsSdk \
-	libMoKeePushService \
+	jpush \
 	volley
 
 LOCAL_MODULE_TAGS := optional
