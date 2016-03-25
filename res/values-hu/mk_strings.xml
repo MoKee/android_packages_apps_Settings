@@ -16,10 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mokee_version">MoKee verzió</string>
   <string name="mokee_version_default">Ismeretlen</string>
+  <string name="mokee_support">Közösségi támogatás</string>
   <string name="mokee_support_default">Ismeretlen</string>
   <!-- Animation Settings -->
+  <string name="animation_settings_title">Animációk</string>
   <!-- ListView animation -->
+  <string name="listview_animation_title">ListaNézet animáció</string>
   <!-- ListView interpolator -->
   <!-- BlackList Ext -->
   <!-- Smart Control -->

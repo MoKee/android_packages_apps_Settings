@@ -16,11 +16,33 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mokee_version">Versiune MoKee</string>
   <string name="mokee_version_default">Necunoscut</string>
+  <string name="mokee_support">Sprijinul comunității</string>
   <string name="mokee_support_default">Necunoscut</string>
   <!-- Animation Settings -->
+  <string name="animation_settings_title">Animații</string>
   <!-- ListView animation -->
+  <string name="listview_animation_title">Animație ListView</string>
+  <string name="listview_off">Oprit</string>
+  <string name="listview_wave_left">Val (la stânga)</string>
+  <string name="listview_wave_right">Val (la dreapta)</string>
+  <string name="listview_alpha">Alfa</string>
+  <string name="listview_scale">Scalare</string>
+  <string name="listview_stack_top">Stivă (Sus)</string>
+  <string name="listview_stack_bottom">Stivă (Jos)</string>
+  <string name="listview_unfold">Desfășoară</string>
+  <string name="listview_fold">Pliază</string>
+  <string name="listview_translate_left">Traduce (la stănga)</string>
+  <string name="listview_translate_right">Traduce (la dreapta)</string>
+  <string name="listview_rotate">Rotire</string>
   <!-- ListView interpolator -->
+  <string name="listview_interpolator_title">Interpolator ListView</string>
+  <string name="listview_accelerate_interpolator">Accelerare</string>
+  <string name="listview_decelerate_interpolator">Decelerare</string>
+  <string name="listview_accelerate_decelerate_interpolator">Accelera decelera</string>
+  <string name="listview_anticipate_interpolator">Anticipa</string>
+  <string name="listview_overshoot_interpolator">Depăşire</string>
   <!-- BlackList Ext -->
   <!-- Smart Control -->
   <!-- Custom navigation bar height -->
