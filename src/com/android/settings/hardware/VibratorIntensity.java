@@ -167,8 +167,7 @@ public class VibratorIntensity extends DialogPreference implements
         int percent = prefs.getInt(PREF_NAME, defaultValue);
 
         MKSettings.Secure.putInt(context.getContentResolver(),
-                MKSettings.Secure.VIBRATOR_INTENSITY, percentToIntensity(min, max,
-                        percentToIntensity(min, max, percent)));
+                MKSettings.Secure.VIBRATOR_INTENSITY, percentToIntensity(min, max, percent));
     }
 
     @Override
