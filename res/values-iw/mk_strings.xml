@@ -23,9 +23,30 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">כל המספרים</string>
   <string name="blacklist_all_numbers_summary">חסום את כל השיחות</string>
+  <string name="blacklist_advertisement_numbers_title">מספרי מפרסמים</string>
+  <string name="blacklist_advertisement_numbers_summary">חסום שיחות פרסומת</string>
+  <string name="blacklist_fraud_numbers_title">שיחות הונאה</string>
+  <string name="blacklist_fraud_numbers_summary">חסום שיחות הונאה</string>
+  <string name="blacklist_harassment_numbers_title">שיחות הטרדה</string>
+  <string name="blacklist_harassment_numbers_summary">חסום שיחות ממטרידים</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">גובה לחצן</string>
+  <string name="navigation_bar_height_48">48dp (ברירת מחדל)</string>
+  <string name="navigation_bar_height_0">הסתר</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">מהירות רשת</string>
+  <string name="show_network_speed_summary">הצג את מהירויות הרשת בשורת המצב</string>
+  <string name="status_bar_network_traffic_style_disable">מנוטרל</string>
+  <string name="status_bar_network_traffic_style_up">יוצאות</string>
+  <string name="status_bar_network_traffic_style_down">נכנסות</string>
+  <string name="status_bar_network_traffic_style_all">יוצאות ונכנסות</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">שניות בשעון</string>
+  <string name="status_bar_clock_show_second_summary">הצג שניות בשעון בשורת מצב</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">הצג סמל su</string>
+  <string name="show_su_icon_summary">הצג סמל בסטטוס בר כאשר su (הרשאות רוט) פעיל</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">הצג סמל אוזניות</string>
+  <string name="show_headset_icon_summary">הצג סמל בסטטוס בר כאשר האוזניות מחוברות</string>
 </resources>
