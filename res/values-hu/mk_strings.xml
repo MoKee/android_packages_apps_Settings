@@ -22,12 +22,21 @@
   <string name="mk_support_default">Ismeretlen</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Összes szám</string>
+  <string name="blacklist_all_numbers_summary">Minden hívás elutasítása</string>
+  <string name="blacklist_advertisement_numbers_title">Reklám-számok</string>
+  <string name="blacklist_advertisement_numbers_summary">Reklám hívások blokkolása</string>
+  <string name="blacklist_fraud_numbers_title">Csaló számok</string>
+  <string name="blacklist_fraud_numbers_summary">Csaló számok blokkolása</string>
+  <string name="blacklist_harassment_numbers_title">Zaklató számok</string>
+  <string name="blacklist_harassment_numbers_summary">Zaklató számok blokkolása</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Gomb magasság</string>
   <string name="navigation_bar_height_48">48dp (alapértelmezett)</string>
   <string name="navigation_bar_height_0">elrejt</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">Hálózat sebessége</string>
   <string name="show_network_speed_summary">Hálózati sebesség kijelzése az állapotsávon</string>
+  <string name="status_bar_network_traffic_style_disable">Kikapcsolva</string>
   <string name="status_bar_network_traffic_style_up">Kimenő</string>
   <string name="status_bar_network_traffic_style_down">Bejövő</string>
   <string name="status_bar_network_traffic_style_all">Kimenő és bejövő</string>
