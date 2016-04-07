@@ -41,24 +41,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">גרסת CyanogenMod</string>
-  <string name="mod_version_default">לא ידוע</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">דגם המכשיר</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">שם המכשיר</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">רמת ה-API של CyanogenMod</string>
-  <string name="mod_api_level_default">לא ידוע</string>
   <!-- About phone screen, build date -->
   <string name="build_date">תאריך בנייה</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">עדכוני CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">עדכן את השחזור של Cyanogen</string>
-  <string name="update_recovery_summary">עדכן את השחזור יחד עם עדכוני מערכת</string>
-  <string name="update_recovery_on_warning">שים לב: כשתכונה זו מופעלת, השחזור הנוכחי שלך יוחלף בשחזור הכלול בגרסה הנוכחית של מערכת ההפעלה שלך.\n\nהשחזור הנוכחי שלך יתעדכן יחד עם עדכונים למערכת שלך, כדי להבטיח תאימות עם גרסאות עתידיות.\n\nהאם להפעיל את תכונה זו?</string>
-  <string name="update_recovery_off_warning">אזהרה: כשתכונה זו מושבתת, השחזור הנוכחי לא יתעדכן עם עדכוני מערכת.\n\nעדכוני מערכת עתידיים לא יותקנו עם גרסה לא עדכנית של השחזור.\n\nהאם להשבית תכונה זו?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">ערכות עיצוב</string>
@@ -840,22 +831,7 @@
   <string name="no_filters_title">לא הוגדרו מסננים</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">סטטיסטיקות CyanogenMod</string>
-  <string name="anonymous_statistics_summary">עזור לשפר את CyanogenMod על ידי דיווח סטטיסטיקות אנונימי</string>
-  <string name="anonymous_statistics_warning_title">אודות</string>
-  <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקת CyanogenMod תאפשר שליחת מידע לא אישי למפתחי CyanogenMod על מנת לאתר התקנות שונות בין מכשירים. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיותך או במידע שלך. המידע נשלח עם כל אתחול.\n\nכדי לצפות בדוגמה של המידע, הקש על תצוגה מקדימה של נתונים.</string>
-  <string name="enable_reporting_title">הפעל דיווח</string>
-  <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
-  <string name="view_stats_title">הצג סטטיסטיקות</string>
-  <string name="anonymous_learn_more">למידע נוסף</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">מזהה ייחודי</string>
-  <string name="preview_device_title">מכשיר</string>
-  <string name="preview_version_title">גרסה</string>
-  <string name="preview_country_title">מדינה</string>
-  <string name="preview_carrier_title">ספק תקשורת</string>
-  <string name="stats_collection_title">אוסף סטטיסטיקות</string>
-  <string name="stats_collection_summary">כאשר מופעל, מאפשר איסוף מדדים</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">איפוס דפוס</string>
   <string name="lockpattern_settings_reset_summary">הזן חשבון דוא\"ל ראשי וסיסמה משויכת כדי לאפס את דפוס הנעילה</string>
@@ -984,7 +960,6 @@
   <string name="interruptions_ignore_while_media_title">מנע שינוי עוצמת קול</string>
   <string name="interruptions_ignore_while_media_summary">אל תנמיך את עוצמת המוזיקה כאשר התראה מגיעה</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod משפטי</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">איפוס סטטיסטיקות</string>
   <!-- Reset stats confirmation dialog's message -->

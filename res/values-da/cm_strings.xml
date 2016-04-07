@@ -46,7 +46,6 @@
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhedens navn</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API niveau</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Kørselsdato</string>
   <!-- CM Updater -->
