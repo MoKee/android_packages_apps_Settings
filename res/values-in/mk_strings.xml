@@ -47,6 +47,6 @@
   <string name="show_su_icon_title">Tampilkan ikon SU</string>
   <string name="show_su_icon_summary">Tampilkan ikon su di statusbar saat su aktif</string>
   <!-- Show/hide headset icon -->
-  <string name="show_headset_icon_title">Lihat ikon headset</string>
-  <string name="show_headset_icon_summary">Tampilkan ikon di statusbar ketika headset tertancap</string>
+  <string name="show_headset_icon_title">Tampilkan ikon headshet</string>
+  <string name="show_headset_icon_summary">Tampilkan ikon headshet di statusbar ketika tertancap</string>
 </resources>
