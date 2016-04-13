@@ -86,6 +86,7 @@
     <uses-permission android:name="mokee.permission.MODIFY_PROFILES" />
     <uses-permission android:name="mokee.permission.PROTECTED_APP" />
     <uses-permission android:name="mokee.permission.PERFORMANCE_ACCESS" />
+    <uses-permission android:name="mokee.permission.MANAGE_LIVEDISPLAY" />
 
     <!-- MOKEE PUSH PERMISSION START -->
     <permission android:name="com.android.settings.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
@@ -2242,8 +2243,7 @@
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.LIVEDISPLAY_SETTINGS" />
-                <action android:name="com.android.settings.LIVEDISPLAY_SETTINGS" />
+                <action android:name="mokee.settings.LIVEDISPLAY_SETTINGS" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.SHORTCUT" />
