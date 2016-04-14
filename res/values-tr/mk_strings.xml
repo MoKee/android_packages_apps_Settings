@@ -38,50 +38,115 @@
   <string name="listview_rotate">Döndür</string>
   <!-- ListView interpolator -->
   <string name="listview_accelerate_interpolator">Hızlandır</string>
+  <string name="listview_decelerate_interpolator">Yavaşlat</string>
+  <string name="listview_accelerate_decelerate_interpolator">Hızlandır yavaşlat</string>
+  <string name="listview_bounce_interpolator">Sıçrama</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Tüm numaralar</string>
+  <string name="blacklist_all_numbers_summary">Tüm aramaları engelle</string>
+  <string name="blacklist_advertisement_numbers_title">Reklam numaraları</string>
+  <string name="blacklist_advertisement_numbers_summary">Reklam çağrılarını engelle</string>
+  <string name="blacklist_fraud_numbers_title">Dolandırıcılık numaraları</string>
+  <string name="blacklist_fraud_numbers_summary">Dolabdırıcılık numaralarını engelle</string>
+  <string name="blacklist_harassment_numbers_title">Taciz numaraları</string>
+  <string name="blacklist_harassment_numbers_summary">Taciz numaralarını engelle</string>
   <!-- Smart Control -->
+  <string name="smartcontrol_settings_title">Akıllı Kontrol</string>
+  <string name="direct_control_title">Doğrudan kontrol</string>
+  <string name="direct_call_for_dialer_summary">Doğrudan aramak için çeviriciye numarayı girdikten sonra telefonu kulağa götür</string>
+  <string name="direct_call_for_mms_title">MMS\'te doğrudan arama</string>
+  <string name="direct_call_for_mms_summary">Telefonu kulağa götürmek geçerli kişiyi otomatik olarak arar</string>
   <!-- Custom navigation bar height -->
+  <string name="navigation_bar_height">Düğme yüksekliği</string>
+  <string name="navigation_bar_height_48">48dp (varsayılan)</string>
+  <string name="navigation_bar_height_0">gizle</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">Ağ hızı</string>
+  <string name="show_network_speed_summary">Ağ hızını durum çubuğunda göster</string>
   <string name="status_bar_network_traffic_style_disable">Devre Dışı</string>
   <string name="status_bar_network_traffic_style_up">Giden</string>
+  <string name="status_bar_network_traffic_style_down">Gelen</string>
+  <string name="status_bar_network_traffic_style_all">Giden ve gelen</string>
   <!-- Show carrier label and custom -->
+  <string name="show_status_bar_carrier_title">Durum çubuğu operatör etiketi</string>
+  <string name="show_status_bar_carrier_summary">Durum çubuğunda operatörü göster</string>
+  <string name="custom_carrier_label_title">Özel operatör etiketi</string>
+  <string name="custom_carrier_label_explain">Lütfen yeni bir etiket girin. Varsayılan etikete dönmek için boş bırakın.</string>
+  <string name="custom_carrier_label_notset">Özel etiket tanımlı değil</string>
   <!-- quick reboot menu and screenshot -->
+  <string name="hardware_keys_action_screenshot">Ekran Görüntüsü</string>
+  <string name="hardware_keys_action_reboot_menu">Yeniden başlatma menüsü</string>
   <!-- The volume key answer -->
+  <string name="volume_answer_call_title">Çağrıyı cevapla</string>
+  <string name="volume_answer_call_summary">Ses yükseltme düğmesine basmak gelen aramayı yanıtlar</string>
   <!-- Privacy Settings Header item -->
+  <string name="privacy_settings_mokee_title">Gizlilik</string>
   <!-- Lock Gesture -->
   <!-- Security & location settings screen, setting option name -->
+  <string name="lockgesture_change_lock_pattern_label">Kilit açma jestini değiştir</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_change_lock_pin_label">Kilit açma PIN\'ini değiştir</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+  <string name="lockgesture_need_to_unlock">Kaydedilmiş jesti onayla</string>
   <!-- Do not translate. -->
   <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+  <string name="lockgesture_need_to_unlock_wrong">Yeniden deneyin:</string>
   <!-- Do not translate. -->
   <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+  <string name="lockgesture_recording_intro_header">Bir kilit açma jesti çizin:</string>
   <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+  <string name="lockgesture_recording_intro_footer">Yardım için Menü tuşuna basın.</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+  <string name="lockgesture_recording_inprogress">Tamamlanınca parmağınızı çekin.</string>
   <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+  <string name="lockgesture_pattern_entered_header">Jest kaydedildi.</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+  <string name="lockgesture_need_to_confirm">Jesti onaylamak için tekrar çizin:</string>
+  <string name="lockgesture_pattern_confirmed_header">Yeni kilit açma jestiniz:</string>
   <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+  <string name="lockgesture_confirm_button_text">Onaylayın</string>
   <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+  <string name="lockgesture_restart_button_text">Yeniden çizin</string>
   <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+  <string name="lockgesture_retry_button_text">Yeniden deneyin</string>
   <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+  <string name="lockgesture_continue_button_text">Devam</string>
   <!-- Security & location settings screen, unlock screen activity title -->
+  <string name="lockgesture_settings_title">Jest ile kilidi aç</string>
   <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+  <string name="lockgesture_settings_enable_title">Jest gerektirir</string>
   <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+  <string name="lockgesture_settings_enable_summary">Kilit açma ekranında jest çizilmeli</string>
   <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+  <string name="lockgesture_settings_enable_visible_pattern_title">Jest çizmini görünür yap</string>
   <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+  <string name="lockgesture_settings_enable_power_button_instantly_locks">Güç düğmesi anında kilitlesin</string>
   <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+  <string name="lockgesture_settings_choose_lock_pattern">Kilit açma jestini seç</string>
   <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+  <string name="lockgesture_settings_change_lock_pattern">Kilit açma jestini değiştir</string>
   <!-- Security & location settings screen, the help instructions (an animation) caption -->
+  <string name="lockgesture_settings_help_how_to_record">Kilit açma jesti nasıl çizilir</string>
   <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+  <string name="lockgesture_too_many_failed_confirmation_attempts_header">Çok fazla yanlış giriş!</string>
   <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
   <!-- Toast shown if setting gesture was successful -->
+  <string name="lockpassword_gesture_set_toast">Jest çizimi ayarlandı</string>
   <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+  <string name="lockpassword_confirm_your_gesture_header">Jesti onayla</string>
   <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
   <string name="lockpassword_choose_your_gesture_header">Deseninizi Çizin</string>
   <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+  <string name="unlock_set_unlock_gesture_title">Jest</string>
   <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_gesture_summary">Düşük güvenlikte, deneysel</string>
   <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+  <string name="unlock_set_unlock_mode_gesture">Jest</string>
   <!-- Recents panel settings -->
+  <string name="recents_panel_settings_title">Son uygulamalar paneli ayarları</string>
+  <string name="clear_all_settings_title">Tümünü kaldır butonu ayarları</string>
+  <string name="show_clear_all_recents_button_title">Tümünü kaldır butonunu göster</string>
+  <string name="recents_clear_all_location_title">Tümünü kaldır butonunun konumu</string>
   <string name="recents_clear_all_location_top_right">Üst Sağ</string>
   <string name="recents_clear_all_location_top_left">Üst sol</string>
   <string name="recents_clear_all_location_top_center">Üst orta</string>
