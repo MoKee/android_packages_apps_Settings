@@ -23,6 +23,12 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">所有電話號碼</string>
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
+  <string name="blacklist_advertisement_numbers_title">廣告號碼</string>
+  <string name="blacklist_advertisement_numbers_summary">阻止廣告來電</string>
+  <string name="blacklist_fraud_numbers_title">欺詐號碼</string>
+  <string name="blacklist_fraud_numbers_summary">阻止欺詐來電</string>
+  <string name="blacklist_harassment_numbers_title">騷擾號碼</string>
+  <string name="blacklist_harassment_numbers_summary">阻止騷擾來電</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">導航欄高度</string>
   <string name="navigation_bar_height_48">48dp (預設)</string>
@@ -35,6 +41,12 @@
   <string name="status_bar_network_traffic_style_down">顯示下載速度</string>
   <string name="status_bar_network_traffic_style_all">顯示上傳和下載速度</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">顯示秒數</string>
+  <string name="status_bar_clock_show_second_summary">狀態列時鐘顯示秒數</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">顯示超級使用者圖示</string>
+  <string name="show_su_icon_summary">當超級使用者執行時在狀態列顯示圖示</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">顯示耳機圖示</string>
+  <string name="show_headset_icon_summary">插入耳機時在狀態列顯示圖示</string>
 </resources>
