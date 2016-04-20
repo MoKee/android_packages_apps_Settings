@@ -49,4 +49,7 @@
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Show headset icon</string>
   <string name="show_headset_icon_summary">Display an icon in status bar when headset is plugged in</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
 </resources>

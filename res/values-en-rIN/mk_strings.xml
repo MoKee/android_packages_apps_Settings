@@ -25,4 +25,7 @@
   <string name="status_bar_clock_show_second_summary">Display seconds in status bar clock</string>
   <!-- Show/hide su icon -->
   <!-- Show/hide headset icon -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
 </resources>

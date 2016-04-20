@@ -48,4 +48,7 @@
   <string name="show_su_icon_summary">Su etkin olduğunda durum çubuğunda bir simge görüntüler</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Kulaklık simgesini göster</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
 </resources>

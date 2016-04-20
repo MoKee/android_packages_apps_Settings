@@ -49,4 +49,7 @@
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Zobrazit ikonu sluchátek</string>
   <string name="show_headset_icon_summary">Zobrazit ikonu ve stavové liště, když jsou zapojeny sluchátka</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
 </resources>
