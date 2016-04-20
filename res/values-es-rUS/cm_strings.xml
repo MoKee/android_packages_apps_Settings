@@ -22,9 +22,7 @@
     <item quantity="other">Estás a <xliff:g id="step_count">%1$d</xliff:g> pasos de activar las configuraciones de desarrollo.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">¡Has habilitado las configuraciones de desarrollo!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">No es necesario. Las configuraciones de desarrollo ya están habilitadas.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Herramientas de desarrollo</string>
   <!-- Development shortcut -->

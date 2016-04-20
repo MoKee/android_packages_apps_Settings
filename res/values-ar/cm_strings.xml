@@ -26,9 +26,7 @@
     <item quantity="other">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">مكّنتَ خيارات المطور!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">لا داعي، فخيارات المطور مفعّلة.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">أدوات التطوير</string>
   <!-- Development shortcut -->

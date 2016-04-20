@@ -23,9 +23,7 @@
     <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia možnosti pre vývojárov.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Povolili ste možnosti pre vývojárov!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Netreba, už ste povolili možnosti pre vývojárov.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojárske nástroje</string>
   <!-- Development shortcut -->

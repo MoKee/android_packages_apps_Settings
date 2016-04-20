@@ -22,9 +22,7 @@
     <item quantity="other">ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കുന്നതിന് നിങ്ങള്‍ <xliff:g id="step_count">%1$d</xliff:g> ഘട്ടങ്ങൾ അകലെയാണ്.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">നിങ്ങൾ ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">ആവശ്യമില്ല, നിങ്ങൾ ഇതിനകം ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">വികസന ഉപകരണങ്ങൾ</string>
   <!-- Development shortcut -->

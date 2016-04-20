@@ -22,9 +22,7 @@
     <item quantity="other">Vi estas nun <xliff:g id="step_count">%1$d</xliff:g> paŝojn antaŭ la aktivado de programadaj argordoj.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Vi ŝaltis la programadajn agordojn!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ne utilas, vi jam ŝaltis la programadajn agordojn.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Programadaj iloj</string>
   <!-- Development shortcut -->

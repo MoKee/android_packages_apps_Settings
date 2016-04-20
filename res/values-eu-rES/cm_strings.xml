@@ -22,9 +22,7 @@
     <item quantity="other">Garapen ezarpenak gaitzeko <xliff:g id="step_count">%1$d</xliff:g> urratsetara zaude.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Garapen ezarpenak gaitu dituzu!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ez da behar, aurretik gaitu dituzu garapen ezarpenak.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Garapen tresnak</string>
   <!-- Development shortcut -->

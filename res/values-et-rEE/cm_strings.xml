@@ -22,9 +22,7 @@
     <item quantity="other">Olete <xliff:g id="step_count">%1$d</xliff:g> sammu kaugusel arendussätete lubamisest.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Arendussätted aktiveeritud!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ei ole vaja, arendussätted juba aktiveeritud.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Arendussätted</string>
   <!-- Development shortcut -->

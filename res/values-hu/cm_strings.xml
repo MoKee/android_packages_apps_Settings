@@ -22,9 +22,7 @@
     <item quantity="other">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Sikeresen engedélyezte a fejlesztői beállításokat!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Már korábban engedélyezte a fejlesztői beállításokat.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Fejlesztőeszközök</string>
   <!-- Development shortcut -->

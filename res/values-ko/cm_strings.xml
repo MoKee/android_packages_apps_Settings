@@ -21,9 +21,7 @@
     <item quantity="other">개발자 설정을 활성화하려면 <xliff:g id="step_count">%1$d</xliff:g>회 더 누르십시오.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">개발자 설정이 활성화되었습니다.</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">이미 개발자 설정이 활성화되어 있습니다.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">개발 도구</string>
   <!-- Development shortcut -->
