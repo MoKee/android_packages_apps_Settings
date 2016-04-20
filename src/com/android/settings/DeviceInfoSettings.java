@@ -268,7 +268,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                             Context.MODE_PRIVATE).edit().putBoolean(
                                     DevelopmentSettings.PREF_SHOW, true).apply();
-                    SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_on_cm)
+                    SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_on_mk)
                             .duration(Snackbar.SnackbarDuration.LENGTH_LONG).colorResource(R.color.theme_primary));
                     // This is good time to index the Developer Options
                     Index.getInstance(
@@ -278,10 +278,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 } else if (mDevHitCountdown > 0
                         && mDevHitCountdown < (TAPS_TO_BE_A_DEVELOPER-2)) {
                     SnackbarManager.show(Snackbar.with(getActivity()).text(getResources().getQuantityString(
-                            R.plurals.show_dev_countdown_cm, mDevHitCountdown, mDevHitCountdown)).colorResource(R.color.theme_primary));
+                            R.plurals.show_dev_countdown_mk, mDevHitCountdown, mDevHitCountdown)).colorResource(R.color.theme_primary));
                 }
             } else if (mDevHitCountdown < 0) {
-                SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_already_cm)
+                SnackbarManager.show(Snackbar.with(getActivity()).text(R.string.show_dev_already_mk)
                         .duration(Snackbar.SnackbarDuration.LENGTH_LONG).colorResource(R.color.theme_primary));
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
