@@ -51,5 +51,7 @@
   <string name="show_headset_icon_summary">Відображати індикатор в рядку стану коли гарнітура підключена</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Ви увімкнули налаштування розробника!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Немає необхідності, ви вже ввімкнули налаштування для розробників.</string>
 </resources>
