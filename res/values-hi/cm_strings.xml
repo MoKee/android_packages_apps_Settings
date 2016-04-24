@@ -253,15 +253,8 @@
   <string name="block_notifications_summary">नज़रंदाज़ की गई अधिसूचनाओं और फ़िल्टरों को प्रबंधित करें</string>
   <string name="no_filters_title">कोई फ़िल्टर सेट नहीं किए गए हैं</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">सियानोजेनमोड अद्यतन</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">सियानोजेनमेड रिवकवरी अद्यतन</string>
-  <string name="update_recovery_summary">रिकवरी को सिस्टम अद्यतनों से अद्यतित करें</string>
-  <string name="update_recovery_on_warning">सूचना: जब इस सुविधा को सक्षम किया जाता है, आपकी स्थापित रिकवरी को चल रहे प्रचालन तंत्र में शामिल वर्तमान संस्करण से प्रतिस्थापित किया जाएगा।\n\nआपकीरिकवरी को आपके सिस्टम के अद्यतनों के साथ अद्यतित किया जाएगा, ताकि भावी संस्करणों की संगतता बनी रहे।\n\nक्या आप इस सुविधा को सक्षम करना चाहते हैं?</string>
-  <string name="update_recovery_off_warning">चेतावनी: यदि इस सुविधा को अक्षम किया जाए, तो आपकी स्थापित रिकवरी को प्रचालन तंत्र के अद्यतनों के साथ अद्यतित नहीं किया जाएगा।\n\nप्रचालन तंत्र के भावी अद्यतन पुरानी पड़ चुकी या मनपसंद रिकवरी संस्करणों के रहते स्थापित नहीं होंगे।\n\nक्या आप सचमुच इस सुविधा को अक्षम करना चाहते हैं?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">सियानोजेनमोड संस्करण</string>
-  <string name="mod_version_default">अज्ञात</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">डिवाइस मॉडेल</string>
   <!-- About phone screen, Device name -->
@@ -277,7 +270,6 @@
   <string name="proximity_wake_title">ग़लती से जगाए जाने को रोकें</string>
   <string name="proximity_wake_summary">स्क्रीन को जगाने से पहले निकटता सेंसर को जाँचें</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">गोपनीयता</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">डिफ़ॉल्ट रूप से सक्षम</string>
   <string name="privacy_guard_default_summary">नए स्थापित ऐपों के लिए डिफ़ॉल्ट रूप से सक्षम करें</string>
@@ -774,8 +766,6 @@
   <string name="usb_not_connected">यूएसबी अब डिसकनेक्ट हो गया है</string>
   <string name="external_storage_turn_on">बाहरी भंडारण को चालू कर दिया गया है</string>
   <string name="external_storage_turn_off">बाहरी भंडारण को बंद कर दिया गया है</string>
-  <string name="stats_collection_title">आँकड़ा संग्रहण</string>
-  <string name="stats_collection_summary">इसे सक्षम करने पर आँकड़ा संग्रहण की अनुमति देता है</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">चार्जिंग ध्वनियाँ</string>
@@ -807,8 +797,6 @@
   <string name="edge_gesture_service_title">गेश्चर स्पर्श घटनाओं को अवरुद्ध करें</string>
   <string name="edge_gesture_service_summary">नेविगेशन और स्थिति पट्टी गेश्चरों के लिए स्पर्श घटनाएँ ऐपों को नहीं भेजें</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">सियानोजेनमोड क़ानूनी</string>
-  <string name="settings_cmlicense_activity_title">सियानोजेनमोड क़ानूनी</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">पैटर्न त्रुटि दिखाएँ</string>
@@ -865,9 +853,6 @@
   <string name="qs_tile_heads_up">हेड्स अप</string>
   <string name="qs_tile_ambient_display">परिवेशी प्रदर्शन</string>
   <string name="qs_tile_sync">संकालन</string>
-  <string name="qs_dynamic_tile_next_alarm">अलगा अलार्म</string>
-  <string name="qs_dynamic_tile_ime_selector">आईएमई चयनक</string>
-  <string name="qs_dynamic_tile_su">मूल पहुँच</string>
   <string name="qs_main_tiles_title">पहली पंक्ति को बड़ा करें</string>
   <string name="qs_main_tiles_summary_on">पहली पंक्ति में दो मुख्य टाइलें</string>
   <string name="qs_main_tiles_summary_off">हर पंक्ति में तीन-ती टाइलें</string>
@@ -914,8 +899,6 @@
   <string name="lockscreen_choose_action_title">कार्य चुनें</string>
   <string name="lockscreen_visualizer_title">संगीत दृश्यांकक को प्रदर्शित करें</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">विस्परपुश</string>
-  <string name="whisperpush_summary">सुरक्षित एसएमएस सेटिंग को प्रबंधित करें</string>
   <string name="navigation_ring_title">नेविगेशन छल्ला लक्ष्य</string>
   <string name="navigation_ring_message">संपादन के लिए नेविगेशन छल्ले को खोलने के लिए संपादन आइकन को टैप करें।\n\nकिसी लक्ष्य के व्यवहार को कॉन्फ़िगर करने के लिए उसे चुनें।\n\nअपने परिवर्तनों को सहेजने के लिए \'\u2713\' आइकन को टैप करें, या सेटिंग को डिफ़ॉल्ट पर रीसेट करने के लिए \'डिफ़ॉल्ट बहाल करें\' को टैप करें।</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -990,20 +973,7 @@
   <string name="battery_saver_summary_unavailable">चार्जिंग के समय अनुपलब्ध</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">सियानोजेनमोड आँकड़े</string>
-  <string name="anonymous_statistics_summary">अनाम आँकड़ा रिपोर्टिंग के लिए सहमत होकर सियानोजेनमोड को बेहतर बनाने में मदद करें</string>
-  <string name="anonymous_statistics_warning_title">संक्षिप्त परिचय</string>
-  <string name="anonymous_statistics_warning">सियानोजेनमोड आँकड़े के लिए सहमत होने से सियानोजेनमोड के डेवलपरों को ग़ैर-निजी डेटा भेजना संभव हो सकेगा ताकि वे विभिन्न डिवाइसों में किए गए अद्वितीय स्थापनों को ट्रैक कर सकें। भेजी गई जानकारी में अद्वितीय अभिनिर्धारक शामिल है, जो आपकी गोपनीयता या निजी डेटा के साथ कोई समझौता नहीं करता है। यह डेटा प्रत्येक बार बूट करने पर भेजा जाता है।\n\nभेजे जाने वाले डेटा के एक उदाहरण के लिए, डेटा पूर्वावलोकन को टैप करें।</string>
-  <string name="enable_reporting_title">रिपोर्टिंग को सक्षम करें</string>
-  <string name="preview_data_title">डेटा पूर्वावलोकन</string>
-  <string name="view_stats_title">आँकड़े देखें</string>
-  <string name="anonymous_learn_more">अधिक जानें</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">अद्वितीय आईडी</string>
-  <string name="preview_device_title">उपकरण</string>
-  <string name="preview_version_title">संस्करण</string>
-  <string name="preview_country_title">देश</string>
-  <string name="preview_carrier_title">वाहक</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">हेड्स अप</string>
   <string name="summary_heads_up_enabled">पॉप-अप सूचनाएँ सक्षम हैं</string>
@@ -1013,11 +983,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">यह आपके फ़ोन के <b>आंतरिक भंडारण</b> से सभी डेटा को मिटा देगा, जिसमें ये सब शामिल हैं:\n\n<li>आपके उपकरण के खाते</li>\n<li>सिस्टम और ऐप डेटा और सेटिंग</li>\n<li>डाउनलोड किए गए ऐप</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">डिवाइस रक्षण</string>
-  <string name="lock_to_cyanogen_summary">फ़ैक्टरी रीसेट के बाद भी आपके सियानोजेन ओएस खाता पासवर्ड को आवश्यक बनाएँ</string>
-  <string name="lock_to_cyanogen_create_account_msg">आपका उपकरण फ़ैक्टरी रीसेट की स्थिति में भी आपके उपकरण को रक्षित करने के लिए सियानोजेन ओएस खाता पासवर्ड का उपयोग करता है। आपको एक सियानोजेन ओएस खाता निर्मित करना होगा।</string>
-  <string name="lock_to_cyanogen_disable_msg">इस सुविधा को अक्षम करने पर यह हो सकता है कि यदि आपका फ़ोन चोरी चला जाए, तो अनधिकृत व्यक्ति आपके फ़ोन का फ़ैक्टरी रीसेट कर सकेंगे। आपके निजी डेटा की रक्षा नहीं हो सकेगी। क्या आप इस सुविधा को अक्षम करना चाहते हैं?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">डिवाइस रक्षण सक्षम है। अपने डिवाइस के रीसेटिंग को जारी रखने के लिए कृपया इसे अक्षम करें।</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">कनेक्शन त्रुटि; क्या इस डिवाइस के लिए ब्लूटूथ टेदरिंग को सक्षम किया गया है?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">सिम %d स्थिति</string>

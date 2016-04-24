@@ -257,15 +257,8 @@
   <string name="block_notifications_summary">Spravovať ignorované oznámenia a filtre</string>
   <string name="no_filters_title">Nenastavené žiadne filtre</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizácie CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Aktualizovať Cyanogen recovery</string>
-  <string name="update_recovery_summary">Aktualizovať recovery s aktualizáciami systému</string>
-  <string name="update_recovery_on_warning">UPOZORNENIE: Ak je táto funkcia povolená, vaša nainštalovaná recovery bude nahradená verziou, ktorá je súčasťou aktuálneho operačného systému.\n\nVaša recovery sa bude aktualizovať spolu so systémom, čím sa zaisťuje kompatibilita s budúcim verziami.\n\nChcete povoliť túto funkciu?</string>
-  <string name="update_recovery_off_warning">VAROVANIE: Ak je táto funkcia zakázaná, vaša nainštalovaná recovery nebude nahradená s aktualizáciami operačného systému.\n\nBudúce aktualizácie operačného systému sa nemusia nainštalovať kvôli zastaraným alebo vlastným verziám recovery.\n\nChcete zakázať túto funkciu?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Verzia CyanogenMod</string>
-  <string name="mod_version_default">Neznáme</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model zariadenia</string>
   <!-- About phone screen, Device name -->
@@ -281,7 +274,6 @@
   <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
   <string name="proximity_wake_summary">Kontrolovať snímač priblíženia pre zabránenie nechcenému prebudeniu</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Súkromie</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Povolené predvolene</string>
   <string name="privacy_guard_default_summary">Predvolene povoliť pre novonainštalované aplikácie</string>
@@ -782,8 +774,6 @@
   <string name="usb_not_connected">USB je teraz odpojené</string>
   <string name="external_storage_turn_on">Externé úložisko bolo zapnuté</string>
   <string name="external_storage_turn_off">Externé úložisko bolo vypnuté</string>
-  <string name="stats_collection_title">Zbieranie štatistík</string>
-  <string name="stats_collection_summary">Povoliť metrické zbieranie</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Zvuky nabíjania</string>
@@ -815,8 +805,6 @@
   <string name="edge_gesture_service_title">Blokovať akcie na dotykové gestá</string>
   <string name="edge_gesture_service_summary">Neprenášať dotyky pre stavový alebo navigačný panel do aplikácií</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Právne informácie CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Právne informácie CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Zobraziť chybu vzoru</string>
@@ -879,9 +867,6 @@
   <string name="qs_tile_ambient_display">Ambientné zobrazenie</string>
   <string name="qs_tile_sync">Synchronizácia</string>
   <string name="qs_tile_battery_saver">Šetrič batérie</string>
-  <string name="qs_dynamic_tile_next_alarm">Ďalší budík</string>
-  <string name="qs_dynamic_tile_ime_selector">Výber IME</string>
-  <string name="qs_dynamic_tile_su">Root prístup</string>
   <string name="qs_main_tiles_title">Zväčšiť prvý riadok</string>
   <string name="qs_main_tiles_summary_on">Dve hlavné dlaždice na prvom riadku</string>
   <string name="qs_main_tiles_summary_off">Tri dlaždice na každom riadku</string>
@@ -929,8 +914,6 @@
   <string name="lockscreen_visualizer_title">Zobraziť hudobnú vizualizáciu</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Spravovať nastavenie zabezpečených SMS</string>
   <string name="navigation_ring_title">Položky navigačného kruhu</string>
   <string name="navigation_ring_message">Dotykom na ikonu Upraviť otvoríte navigačnýpanel na úpravy.\n\nDotykom na ikonu zmeníte jej skratku a dlhým stlačením ikony zmeníte jej poradie.\n\nDotykom na tlačidlo \'\u2713\' uložíte vaše zmeny a dotykom na tlačidlo \'Obnoviť predvolené\' obnovíte rozloženie na predvolené nastavenia.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1018,20 +1001,7 @@
   <string name="battery_saver_summary_unavailable">Nie je k dispozícii pri nabíjaní</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Štatistiky CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomôžte zlepšiť CyanogenMod povolením anonymných štatistických hlásení</string>
-  <string name="anonymous_statistics_warning_title">O aplikácii</string>
-  <string name="anonymous_statistics_warning">Povolením štatistík CyanogenMod súhlasíte s odosielaním neosobných údajov vývojárom CyanogenModu, na účel zaznamenávania inštalácií naprieč zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
-  <string name="enable_reporting_title">Povoliť hlásenia</string>
-  <string name="preview_data_title">Prehľad údajov</string>
-  <string name="view_stats_title">Zobraziť štatistiky</string>
-  <string name="anonymous_learn_more">Zistiť viac</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unikátne ID</string>
-  <string name="preview_device_title">Zariadenie</string>
-  <string name="preview_version_title">Verzia</string>
-  <string name="preview_country_title">Krajina</string>
-  <string name="preview_carrier_title">Operátor</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Plávajúce oznámenia</string>
   <string name="summary_heads_up_enabled">Plávajúce oznámenia sú povolené</string>
@@ -1041,11 +1011,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">Vymažú sa všetky údaje z <b>interného úložiska</b> vášho telefónu a tiež:\n\n<li>Vaše účty v zariadení</li>\n<li>Údaje a nastavenia systémových a používateľských aplikácií</li>\n<li>Stiahnuté aplikácií</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Ochrana zariadenia</string>
-  <string name="lock_to_cyanogen_summary">Vyžadovať heslo účtu Cyanogen OS aj po obnove továrenských nastavení</string>
-  <string name="lock_to_cyanogen_create_account_msg">Vaše zariadenie používa heslo účtu Cyanogen OS na ochranu vášho zariadenia dokonca aj v prípade obnovy továrenských nastavení. Musíte si vytvoriť účet Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Zakázanie tejto funkcie umožňuje neoprávneným používateľom obnoviť váš telefón do továrenských nastavení v prípade jeho krádeže. Vaše osobné údaje nemusia byť chránené. Chcete zakázať túto funkciu?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Ochrana zariadenia je povolená. Prosím, zakážte ju pred pokračovaním v obnove vášho zariadenia.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Chyba pripojenia; je zdieľanie pripojenia cez Bluetooth povolené na tomto zariadení?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Stav SIM %d</string>

@@ -257,15 +257,8 @@
   <string name="block_notifications_summary">Zarządzaj ignorowanymi powiadomieniami i filtrami</string>
   <string name="no_filters_title">Nie wybrano filtrów</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizacje CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Aktualizuj recovery Cyanogen</string>
-  <string name="update_recovery_summary">Aktualizuj recovery wraz z aktualizacjami systemu</string>
-  <string name="update_recovery_on_warning">UWAGA: Kiedy ta funkcja jest włączona, twoje recovery zostanie zastąpione przez to dołączone do aktualnie działającej wersji systemu.\n\nTwoje recovery będzie aktualizowane wraz z aktualizacjami systemu, pomagając w zapewnieniu kompatybilność z przyszłymi wersjami.\n\nChciałbyś włączyć tę funkcję?</string>
-  <string name="update_recovery_off_warning">OSTRZEŻENIE: Kiedy ta funkcja jest wyłączona, zainstalowane recovery nie będzie się aktualizowało wraz z aktualizacjami systemu.\n\nPrzyszłe aktualizacje systemu mogą się nie zainstalować przy przestarzałych lub zewnętrznych wersjach recovery.\n\nCzy jesteś pewien, że chcesz wyłączyć tę funkcję?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Wersja CyanogenMod</string>
-  <string name="mod_version_default">Nieznana</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model urządzenia</string>
   <!-- About phone screen, Device name -->
@@ -281,7 +274,6 @@
   <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
   <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Prywatność</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Aktywuj domyślnie</string>
   <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
@@ -782,8 +774,6 @@
   <string name="usb_not_connected">USB jest teraz odłączone</string>
   <string name="external_storage_turn_on">Zewnętrzna pamięć została wyłączona</string>
   <string name="external_storage_turn_off">Zewnętrzna pamięć została włączona</string>
-  <string name="stats_collection_title">Statystyki</string>
-  <string name="stats_collection_summary">Kiedy włączone pozwala na zbieranie metryk</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Dźwięki ładowania</string>
@@ -815,8 +805,6 @@
   <string name="edge_gesture_service_title">Blokuj zdarzenia gestów dotykowych</string>
   <string name="edge_gesture_service_summary">Nie przesyłaj zdarzeń dotykowych dla gestów pasków nawigacji i statusu do aplikacji</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Informacje prawne CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Informacje prawne CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
@@ -879,9 +867,6 @@
   <string name="qs_tile_ambient_display">Aktywny wyświetlacz</string>
   <string name="qs_tile_sync">Synchronizacja</string>
   <string name="qs_tile_battery_saver">Oszczędzanie baterii</string>
-  <string name="qs_dynamic_tile_next_alarm">Następny alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">Przełącznik klawiatury</string>
-  <string name="qs_dynamic_tile_su">Dostęp do roota</string>
   <string name="qs_main_tiles_title">Powiększenie pierwszego rzędu</string>
   <string name="qs_main_tiles_summary_on">Dwa główne przełączniki w pierwszym rzędzie</string>
   <string name="qs_main_tiles_summary_off">Trzy przełączniki w każdym rzędzie</string>
@@ -929,8 +914,6 @@
   <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Zarządzaj ustawieniami bezpiecznych SMS-ów</string>
   <string name="navigation_ring_title">Akcje kręgu nawigacyjnego</string>
   <string name="navigation_ring_message">Dotknij ikonę edycji, aby otworzyć edycję pierścienia nawigacyjnego.\n\nWybierz cel, aby skonfigurować jego działanie.\n\nDotknij ikonę  \'\u2713\', aby zapisać swoje ustawienia, lub \'Przywróć domyślne\', aby przywrócić domyślne wartości.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1020,22 +1003,7 @@
   <string name="battery_saver_summary_unavailable">Nie dostępny podczas ładowania</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statystyki CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomóż ulepszyć CyanogenMod, pozwalając na wysyłanie anonimowych statystyk</string>
-  <string name="anonymous_statistics_warning_title">O...</string>
-  <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w Statystykach CyanogenMod zezwoli na przesył anonimowych danych do
-        developerów CyanogenMod, aby śledzić ilość unikalnych instalacji na urządzeniach . Informacje zawierają unikalny identyfikator,
-       który nie narusza twojej prywatności lub prywatnych danych. Dane są wysyłane przy każdym uruchomieniu.\n\nAby zobaczyć przykład przesyłanych danych naciśnij Podgląd Danych.</string>
-  <string name="enable_reporting_title">Włącz raportowanie</string>
-  <string name="preview_data_title">Podgląd danych</string>
-  <string name="view_stats_title">Zobacz statystyki</string>
-  <string name="anonymous_learn_more">Dowiedz się więcej</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unikatowy ID</string>
-  <string name="preview_device_title">Urządzenie</string>
-  <string name="preview_version_title">Wersja</string>
-  <string name="preview_country_title">Kraj</string>
-  <string name="preview_carrier_title">Operator</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Wyskakujące powiadomienia</string>
   <string name="summary_heads_up_enabled">Wyskakujące powiadomienia są włączone</string>
@@ -1045,11 +1013,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">To spowoduje usunięcie wszystkich danych z <b>pamięci wewnętrznej</b> twojego telefonu, w tym:\n\n<li>Konta urządzenia</li>\n<li>Dane systemu i aplikacji oraz ich ustawienia</li>\n<li>Pobrane aplikacje</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Ochrona urządzenia</string>
-  <string name="lock_to_cyanogen_summary">Wymaga hasła twojego konta Cyanogen OS nawet po przywróceniu ustawień fabrycznych</string>
-  <string name="lock_to_cyanogen_create_account_msg">Twoje urządzenie korzysta z hasła twojego konta Cyanogen OS, aby chronić twoje urządzenie nawet w przypadku przywrócenia ustawień fabrycznych. Musisz utworzyć konto Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Wyłączenie tej funkcji umożliwi nieautoryzowanym użytkownikom na przywrócenie ustawień fabrycznych jeśli twoje urządzenie zostanie zgubione. Twoje prywatne dane mogą nie być chronione. Czy chcesz wyłączyć tę funkcję?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Ochrona urządzenia jest włączona. Proszę ją wyłączyć, aby kontynuować resetowanie urządzenia.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Błąd połączenia: Czy udostępnianie Bluetooth zostało włączone na tym urządzeniu?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Stan %d karty SIM</string>

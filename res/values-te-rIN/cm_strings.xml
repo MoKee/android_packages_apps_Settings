@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">విస్మరించబడిన నోటిఫికేషన్లు మరియు ఫిల్టర్లను నిర్వహించుము</string>
   <string name="no_filters_title">ఎటువంటి ఫిల్టర్లు సెట్ చేయబడలేదు</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">సయనోజెన్ మోడ్ అప్డేట్లు</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">సయనోజెన్ పునరుద్ధరణను నవీకరించుము</string>
-  <string name="update_recovery_summary">సిస్టమ్ అప్డేట్లతో పునరుద్ధరణను అప్డేట్ చేయుము</string>
-  <string name="update_recovery_on_warning">గమనిక: ఈ విశేషాంశాన్ని అమలు చేసినప్పుడు, అప్పుడు నడుస్తున్న OS యొక్క ప్రస్తుత సంస్కరణతో పాటుగా చేర్చబడిన దానితో మీ యొక్క ఇన్స్టాల్డ్ మెమరీ భర్తీ చేయబడుతుంది. \n\nభవిష్యత్ సంస్కరణలతో సరితూగేలా ఉండేందుకై మీ పునరుద్ధరణ మీ యొక్క సిస్టమ్ ఆధునీకరణలతో అప్ గ్రేడ్  చేయబడుతుంది.  \n\nమీరు ఈ విశేషాంశం అమలు చేయాలనుకుంటున్నారా?</string>
-  <string name="update_recovery_off_warning">హెచ్చ్జరిక: ఈ లక్షణం నిలిపివేయబడినప్పుడు, మీ యొక్క వ్యవస్థాపించబడిన పునరుద్ధరణ OS ఉన్నతీకరణలతో నవీకరించబడదు.\n\nభవిష్యత్ OS నవీకరణలు కాలంచెల్లిన లేదా అనుకూల పునరుద్దరణ సంస్కరణలతో వ్యవస్థాపించకబడపోవచ్చు.\n\nమీరి నిజంగా ఈ లక్షణాన్ని నిలిపివేయాలని అనుకుంటున్నారా?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">సయనోజెన్ మోడ్ సంస్కరణ</string>
-  <string name="mod_version_default">తెలియదు</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">పరికరం మోడల్</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">అప్రయత్నంగా మేల్కొల్పబడటాన్ని నివారించండి</string>
   <string name="proximity_wake_summary">స్క్రీనును ఉపయోగించే ముందు సమీప సెన్సారును పరిశీలించండి</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">గోప్యత</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">అప్రయత్నంగా గానే ప్రారంభించబడుతుంది</string>
   <string name="privacy_guard_default_summary">క్రొత్తగా-ఇన్స్టాల్ చేయబడిన అనువర్తనాలకు అప్రయత్నంగానే చేతనపరచబడుతుంది</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">ఇప్పుడు USB అనుసంధానం తొలిగించబడింది</string>
   <string name="external_storage_turn_on">బాహ్య నిల్వ ఆన్ చేయబడింది</string>
   <string name="external_storage_turn_off">బాహ్య నిల్వ ఆఫ్ చేయబడింది</string>
-  <string name="stats_collection_title">గణాంకాల సేకరణ</string>
-  <string name="stats_collection_summary">ప్రారంభించబడినప్పుడు, కొలతల సేకరణను అనుమతిస్తుంది</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">ఛార్జింగ్ ధ్వనులు</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">స్పర్శ సంజ్ఞలను నిరోధించుము</string>
   <string name="edge_gesture_service_summary">నావిగేషన్ మరియు స్టేటస్ బార్ సంజ్ఞల కొరకు అనువర్తనాలకు స్పర్శను పంపకండి</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">సయనోజెన్ మోడ్ లీగల్</string>
-  <string name="settings_cmlicense_activity_title">సయనోజెన్ మోడ్ లీగల్</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">నమూనా దోషాన్ని చూపుము</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">యాంబియెంట్ డిస్‌ప్లే</string>
   <string name="qs_tile_sync">సమకాలీకరణ</string>
   <string name="qs_tile_battery_saver">బ్యాటరీ సేవర్</string>
-  <string name="qs_dynamic_tile_next_alarm">తరువాతి అలారం</string>
-  <string name="qs_dynamic_tile_ime_selector">IME సెలక్టర్</string>
-  <string name="qs_dynamic_tile_su">మూల ప్రాప్తి</string>
   <string name="qs_main_tiles_title">మొదటి వరుసను పెద్దది చేయుము</string>
   <string name="qs_main_tiles_summary_on">మొదటి వరుసలో రెండు ప్రధాన టైల్స్</string>
   <string name="qs_main_tiles_summary_off">ఒక్కొక్క వరుసలో మూడు టైల్స్</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">సంగీత వీక్షకాన్ని ప్రదర్శించుము</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">విస్పర్ పుష్</string>
-  <string name="whisperpush_summary">సురక్షితమైన SMS సెట్టింగులను నిర్వహించుము</string>
   <string name="navigation_ring_title">నావిగేషన్ రింగ్ లక్ష్యాలు</string>
   <string name="navigation_ring_message">సంకలనం కొరకు నావిగేషన్ రింగును తెరిచేందుకు ఎడిట్ చిహ్నం పైన ట్యాప్ చేయండి.\n\nదాని యొక్క ప్రవర్తనను నిర్మితీకరించేందుకు ఒక లక్ష్యాన్ని ఎంచుకోండి. \n\nమీ మార్పులను భద్రపరుచుటకు \'\u2713\' చిహ్నం పైన ట్యాప్ చేయండి, లేదా సెట్టింగులను స్వయంసిద్ధాలకు రీసెట్ చేసేందుకు \'స్వయం సిద్ధాలను పునరుద్ధరించుము\' పైన ట్యాప్ చేయండి.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">చార్జింగ్ సమయంలో అందుబాటులో ఉండదు</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">సయనోజెన్ మోడ్ గణాంకాలు</string>
-  <string name="anonymous_statistics_summary">అజ్ఞాతంగా గణాంకాల నివేదిక పంపడాన్ని ఎంచుకోవడం ద్వారా సయనోజెన్ మోడ్ ను మెరుగుపరిచేందుకు సహాయపడండి</string>
-  <string name="anonymous_statistics_warning_title">గురించి</string>
-  <string name="anonymous_statistics_warning">సయనోజెన్ మోడ్ గణాంకాలను ఎంచుకోవడం ద్వారా సయనోజెన్ మోడ్ డెవలపర్‌లు పరికరాలలో అసాధారణ వ్యవస్థాపనలను ట్రాక్ చేసేందుకు వారికి వ్యక్తిగతం కాని డేటాను సమర్పించే అవకాశాన్ని కల్పిస్తుంది. సమర్పించబడిన సమాచారం ఒక ఏకైక నిర్ధారిణిను కలిగి ఉంటుంది, ఇది మీ యొక్క గోప్యత లేదా వ్యక్తిగత డేటాలను కలిగి ఉండదు ప్రతి ఒక్క బూట్ సందర్భంలో డేటా సమర్పించబడుతుంది. \n\nసమర్పించబడిన డేటాకు ఉదాహరణ కొరకు, పూర్వవీక్షణ డేటా పైన ట్యాప్ చేయండి.</string>
-  <string name="enable_reporting_title">నివేదిక పంపడాన్ని ప్రారంభించుము</string>
-  <string name="preview_data_title">పూర్వవీక్షణ డేటా</string>
-  <string name="view_stats_title">వీక్షణ గణాంకాలు</string>
-  <string name="anonymous_learn_more">మరింత తెలుసుకోండి</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ఏకైక ID</string>
-  <string name="preview_device_title">పరికరం</string>
-  <string name="preview_version_title">సంస్కరణ</string>
-  <string name="preview_country_title">దేశం</string>
-  <string name="preview_carrier_title">క్యారియర్</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">హెచ్చరిక</string>
   <string name="summary_heads_up_enabled">పాప్-అప్ నోటిఫికేషన్లు ప్రారంభించబడ్డాయి</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">ఇది మీ ఫోన్ యొక్క అంతర్గత నిల్వ నుండి మొత్తం డేటాను <b>చెరిపి వేస్తుంది: \n\nతో</b> సహా<li>మీ పరికరం యొక్క అకౌంట్లు</li>\n<li>సిస్టమ్ మరియు అనువర్తన డేటా మరియు సెట్టింగ్‌లు</li>\n<li>డౌన్లోడ్ చేయబడిన అనువర్తనాలు</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">పరికర రక్షణ</string>
-  <string name="lock_to_cyanogen_summary">ఫ్యాక్టరీ రీసెట్ తరువాత కూడా మీ యొక్క సయనోజెన్ OS ఖాతా పాస్వర్డ్ అవసరమవుతుంది</string>
-  <string name="lock_to_cyanogen_create_account_msg">ఫ్యాక్టరీ రీసెట్ సందర్భంలో కూడా మీ పరికరాన్ని రక్షించడానికి మీ పరికరం సయనోజెన్ OS ఖాతా పాస్వర్డ్ ను ఉపయోగిస్తుంది. మీరు ఒక సయనోజెన్ OS ఖాతాను సృష్టించవలసిన అవసరం ఉంటుంది.</string>
-  <string name="lock_to_cyanogen_disable_msg">ఒకవేళ మీ ఫోను దొంగిలించబడితే ఈ విశేషాంశాన్ని నిలిపివేయడం అనధికారక వినియోగదారులు దానిని ఫ్యాక్టరీ డీఫాల్టులకు రీసెట్ చేయడానికి అనుమతినిస్తుంది. మీ యొక్క వ్యక్తిగత సమాచారానికి రక్షణ లేకపోవచ్చు. మీరు ఈ విశేషాంశాన్ని నిలిపివేయాలని అనుకుంటున్నారా?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">పరికరం యొక్క రక్షణ ప్రారంభించబడింది. మీ పరికరాన్ని రీసెట్ చేయడాన్ని కొనసాగించడానికి దయచేసి నిలిపివేయండి.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">అనుసంధాన దోషం; ఈ పరికరం పైన బ్లూటూత్ టెథరింగ్‌ అనుకూలీకరించబడి ఉందా?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d స్థితి</string>

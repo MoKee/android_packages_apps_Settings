@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">ଏଡାଇଦିଆଯାଥିବା ନିର୍ଦ୍ଦେଶାବଳି ଓ ଫିଲ୍‍ଟର୍‍କୁ ପରିଚାଳନା କରନ୍ତୁ</string>
   <string name="no_filters_title">କୌଣସି ଫିଲ୍‍ଟର୍‍ ସେଟ୍‍ ହୋଇନାହିଁ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଅଦ୍ୟତନ</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">ସିଆନୋଜେନ୍‍ ରିକଭରି ଅଦ୍ୟତନ କରନ୍ତୁ</string>
-  <string name="update_recovery_summary">ସିଷ୍ଟମ୍‍ ଅଦ୍ୟତନ ସହିତ ରିକଭରି ଅଦ୍ୟତନ କରନ୍ତୁ</string>
-  <string name="update_recovery_on_warning">ସୁଚନା ଏହି ବୈଶିଷ୍ଟ୍ୟ ଯେତେବେଳେ ସଷମ କରାଯାଏ, ଆପଣ ସଂ‍ସ୍ଥାପନ କରିଥିବା ରିକଭରି ଚାଳିତ Osର ସମ୍ପ୍ରତି ସଂସ୍କରଣ ସହିତ ଅନ୍ତଭୁକ୍ତ ଥିବା ଅନ୍ୟ ଏକ ଦ୍ୱାରା ପ୍ରତି୍‍ସ୍ଥାପିତ ହେବ।\n\nଆପଣଙ୍କ ସିଷ୍ଟମ୍‍ ପାଇଁ କରାଯାଇଥିବା ଅପ୍‍ଗ୍ର।\n\nେଡ୍‍ ସହିତ ଆପଣଙ୍କ ରିକଭରି ଅଦ୍ୟତନ ହୋଇଯିବ, ଆଗାମି ସଂସ୍କରଣ ସହିତ କମ୍ପାଟିବିଲିଟି ପାଇଁ ସାହାଯ୍ୟ କରିବ।\n\nଆପଣ ଏହି ବୈଶିଷ୍ଟ୍ୟ ସଷମ କରିବାକୁ ଚାହାନ୍ତି କି?</string>
-  <string name="update_recovery_off_warning">ସତର୍କତା: ଯେତେବେଳେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରାଯାଏ, ଆପଣଙ୍କର ସଂ‍ସ୍ଥାପିତ ହୋଇଥିବା ରିକଭରି OS ଅପ୍‍ଗ୍ରେଡ୍‍ ସହିତ ଅଦ୍ୟତନ ହେବ ନାହିଁ।\n\n ଆଗାମି OS ଅଦ୍ୟତ୍ନ ଆଉଟ୍‍ଡେଟେଡ୍‍ ବା କଶଃଟମ୍‍ ରିକଭରି ସଂସ୍କରଣ ସହିତ ସଂ‍ସ୍ଥାପନ ହୋଇନପାରେ।\n\nଆପଣ ପ୍ରକୃତରେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରିବାକୁ ଚାହାଁନ୍ତି କି?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ସଂସ୍କରଣ</string>
-  <string name="mod_version_default">ଅଜ୍ଞାତ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ଡିଭାଇସ୍‍ ମଡେଲ୍‍</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">ର୍ଆକ୍ସିଡେଂଟାଲ୍‍ ୱେକ୍‍-ଅପ୍‍ ପ୍ରତିରୋଧ କରନ୍ତୁ</string>
   <string name="proximity_wake_summary">ସ୍କ୍ରିନ୍‍କୁ ଜଗାଇବା ପୂର୍ବରୁ ନିକଟ ସେନସର୍ ପରୀକ୍ଷିତ କରନ୍ତୁ</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">ଗୋପନୀୟତା</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">ଡିଫଲ୍ଟ ଅନୁଯାୟୀ ସ‍କ୍ଷମ କରାଯାଇଛି</string>
   <string name="privacy_guard_default_summary">ନୂଆ-ସଂ‍ସ୍ଥାପନ କରାଯାଇଥିବା ଆପ୍ଲିକେସନ୍‍ଗୁଡିକ ପାଇଁ ଡିଫଲ୍ଟ ଅନୁଯାୟୀ ସାମର୍ଥ୍ୟ କରନ୍ତୁ</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">USB ବର୍ତ୍ତମାନ ସଂଯୋଗ ହୋଇଛି</string>
   <string name="external_storage_turn_on">ବାହ୍ୟ ଷ୍ଟୋରେଜ୍‍ ଅନ୍‍ କରାଯାଇଛି</string>
   <string name="external_storage_turn_off">ବାହ୍ୟ ଷ୍ଟୋରେଜ୍‍ ଅଫ୍‍ କରାଯାଇଛି</string>
-  <string name="stats_collection_title">ପରିସଂଖ୍ୟାନ ସଂଗ୍ରହ</string>
-  <string name="stats_collection_summary">ଯେତେବେଳେ ସ‍କ୍ଷମ କରାଯାଏ, ମେଟ୍ରିକ୍ସ ସଂଗ୍ରହ ପାଇଁ ଅନୁମତି ଦିଏ</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">ସାଉନ୍ଡ ଚାର୍ଜ କରାଯାଉଛି</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">ଅଙ୍ଗଭଙ୍ଗୀ୍‍ ସ୍ପର୍ଶ ସଂଚାଳନକ୍ରମ ଅବରୋଧ କରନ୍ତୁ</string>
   <string name="edge_gesture_service_summary">ଆପ୍ଲିକେସନ୍‍ର ନେଭିଗେସନ୍‍ ଓ ଷ୍ଟାଟସ୍‍ ବାର୍‍ ଅଙ୍ଗଭଙ୍ଗୀ ପାଇଁ ସ୍ପର୍ଶ ସଂଚାଳନକ୍ରମ ପଠାନ୍ତୁ ନା୍ହିଁ</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଲିଗାଲ୍‍</string>
-  <string name="settings_cmlicense_activity_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଲିଗାଲ୍‍</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">ପ୍ୟାଟର୍ଣ୍ଣ ତ୍ରୁଟି ଦେଖାନ୍ତୁ</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">ଏମ୍ବିଏଣ୍ଟ ପ୍ରଦର୍ଶନ</string>
   <string name="qs_tile_sync">ସିଙ୍କ୍</string>
   <string name="qs_tile_battery_saver">ବ୍ୟାଟେରୀ ସଭର୍‌</string>
-  <string name="qs_dynamic_tile_next_alarm">ପରବର୍ତ୍ତୀ ଆଲରାମ୍:</string>
-  <string name="qs_dynamic_tile_ime_selector">IME ସିଲେକ୍ଟର</string>
-  <string name="qs_dynamic_tile_su">ରୁଟ୍‍ ଆକ୍‍ସେସ୍‍</string>
   <string name="qs_main_tiles_title">ପ୍ରଥମ ଧାଡି ବଡ କରନ୍ତୁ</string>
   <string name="qs_main_tiles_summary_on">ପ୍ରଥମ ଧାଡିରେ ଦୁଇଟି ମୁଖ୍ୟ ଟାଇଲ୍‍ଗୁଡିକ</string>
   <string name="qs_main_tiles_summary_off">ପ୍ରତି ଧାଡୁଇରେ ଦୁଇଟି ଟାଇଲ୍</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">ମ୍ୟୁଜିକ୍‍ ଭିଜୁଆଲାଇଜର୍‍ ପ୍ରଦର୍ଶନ କରନ୍ତୁ</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">ହ୍ୱିସ୍‍ପର୍‍ପୁସ୍‍</string>
-  <string name="whisperpush_summary">ସୁର‍କ୍ଷିତ SMS ସେଟିଂସ୍‍ ପରିଚାଳନା କରନ୍ତି</string>
   <string name="navigation_ring_title">ରିଙ୍ଗ୍‍ ଲ‍କ୍ଷ୍ୟଗୁଡିକ ନେଭିଗେଟ୍‍ କରାଯାଉଛି</string>
   <string name="navigation_ring_message">ନେଭିଗେସନ୍‍ ରିଙ୍ଗ୍‍ ସମ୍ପା୍ଦନା ପାଇଁ ଖୋଲିବାକୁ ସମ୍ପାଦନା ଆଇକନ୍‍ରେ ଟ୍ୟାପ୍‍ କରନ୍ତୁ।\n\nଏହାର ଗୁଣାବଳି ିନ୍ୟାସ କରିବା ପାଇଁ ଏକ ଲଷ୍ୟ ଚୟନ କରନ୍ତୁ।\n\nଆପଣଙ୍କ ପରିବର୍ତ୍ତନ ସଂରକ୍ଷଣ କରିବା ପାଇଁ \'\u2713\'ରେ, ବା ସେଟିଂସ୍‍କୁ ଡିଫଲ୍ଟ୍କୁ ରିସେତ୍‍ କରିବା ପାଇଁ \’ଡିଫଲ୍ଟ ରି୍ଷ୍ଟୋର୍‍ କରନ୍ତୁ\’ରେ ଟ୍ୟାପ୍‍ କରନ୍ତୁ।</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">ଚାର୍ଜିଂ ସମୟରେ ଉପଲବ୍ଧ ହୁଏ ନାହିଁ</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">ସିଆନୋଜେନ୍ମୋଡ‍ ପରିସଂଖ୍ୟାନ</string>
-  <string name="anonymous_statistics_summary">ଅଜ୍ଞାତ ପ୍ରିସଂଖ୍ୟାନ ରିପୋର୍ଟିଂ ପାଇଁ ବିକଳ୍ପ ଦେଇ ସିଆନୋଜେନ୍ମୋଡ‍ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ</string>
-  <string name="anonymous_statistics_warning_title">ବିଷୟରେ</string>
-  <string name="anonymous_statistics_warning">ଡିଭାଇସ୍‍ ମଧ୍ୟରେ ନିର୍ଦିଷ୍ଟ ସଂ‍ସ୍ଥାପନ ଟ୍ରାକ୍‍ କରିବା ନିମନ୍ତେ ସିଆନୋଜେନ୍ମୋଡ‍ ପରିସଂଖ୍ୟାନ ପାଇଁ ବିକଳ୍ପ ଦେଇ ସିଆନୋଜେନ୍ମୋଡର ଡେଭେଲୋପରମାନଙ୍କୁ ଅଣ-ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ସବ୍‍ମିଟ୍‍ କରିବା ପାଇଁ ଅନୁମତି ଦେବ ସବ୍‍ମିଟ୍‍ ହୋଇଥିବା ସୂଚନା ଅଜ୍ଞାତ ପରିଚାୟକଙ୍କୁ ଅନ୍ତଭୁକ୍ତ କରିବ, ଯାହା ଆପଣଙ୍କ ଗୋପନୀୟ ବା ବ୍ୟକ୍ତିଗତ ତଥ୍ୟରେ ବାଧା ସୃଷ୍ଟି କରିବ ନାହିଁ। ଡାଟା୍ରତି ରିବୁଟ୍‍ ସମୟରେ ସବ୍‍ମିଟ୍‍ ହୁଏ।\n\nଯେଉଁ ଡାଟା ସବ୍‍ମିଟ୍‍ ହୁଏ  ତାହାର ଉଦାହରଣ ସ୍ୱରୂପ, ପ୍ରିଭ୍ୟୁ ଡାଟା ଉପରେ ଟ୍ୟାପ୍‍ କରନ୍ତୁ।</string>
-  <string name="enable_reporting_title">ରିପୋର୍ଟିଂ ସ‍କ୍ଷମ କରନ୍ତୁ</string>
-  <string name="preview_data_title">ଡାଟା ପ୍ରିଭ୍ୟୁ କରନ୍ତୁ</string>
-  <string name="view_stats_title">ପରିସଂଖ୍ୟାନ ଦେଖନ୍ତୁ</string>
-  <string name="anonymous_learn_more">ଅଧିକ ଜାଣନ୍ତୁ</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ନିର୍ଦ୍ଦିଷ୍ଟ ID</string>
-  <string name="preview_device_title">ଡିଭାଇସ୍</string>
-  <string name="preview_version_title">ସଂସ୍କରଣ</string>
-  <string name="preview_country_title">ଦେଶ</string>
-  <string name="preview_carrier_title">ବାହାକ</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">ହେଡ୍ସ୍‍ ଅପ୍‍</string>
   <string name="summary_heads_up_enabled">ପପ୍‍-ଅପ୍‍ ନୋଟିଫିକେସନ୍‍ ସ‍କ୍ଷମ କରାଯାଇଛି</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">ଏହା ଆପଣଙ୍କ ଫୋନ୍‍ରେ ଥିବା ସମସ୍ତ ଡାଟା <b>ଆଭ୍ୟନ୍ତରୀଣ ଷ୍ଟୋରେଜ୍‍</b>, ଅନ୍ତଭୁକ୍ତ କରି:\n\n ଲିଭାଇଦେବ<li>ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ଆକାଉଣ୍ଟ୍ଗୁଡିକ</li>\n<li>ସିଷ୍ଟମ୍ ଏବଂ ଆପ୍ଲିକେସନ୍‌ ଡାଟା ଏବଂ ସେଟିଂସ୍</li>\n<li>ଡାଉନଲୋଡ୍ ହୋଇଥିବା ଆପ୍ଲିକେସନଗୁଡିକ</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">ଡିଭାଇସ୍‍ ସୁର‍କ୍ଷା</string>
-  <string name="lock_to_cyanogen_summary">ଏକ ଫ୍ୟାକ୍ଟରୀ ରିସେଟ୍‍ ପରେ ମଧ୍ୟ ଆପଣଙ୍କ ସିଆନୋଜେନ୍‍ OS ଆକାଉଣ୍ଟ ପାସ୍‍ୱାର୍ଡ ଆବଶ୍ୟକ ହେବ</string>
-  <string name="lock_to_cyanogen_create_account_msg">ଏକ ଫ୍ୟାକ୍ଟରୀ ରିସେଟ୍‍ ସଂଚାଳନ ପରେ ମଧ୍ୟ ଆପଣଙ୍କ ଡିଭାଇସ୍କୁ ସୁ୍ର‍କ୍ଷା ଦେବା ପାଇଁ ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ଆପଣଙ୍କ ସିଆନୋଜେନ୍‍ OS ଆକାଉଣ୍ଟ ପାସ୍‍ୱାର୍ଡ ବ୍ୟବହାର କରିବ। ଆପଣଙ୍କର ଏକ ସିଆନୋଜେନ୍‍ OS ଆକାଉଣ୍ଟ ସୃଷ୍ଟି କରିବା ଆବଶ୍ୟକ ହେବ।</string>
-  <string name="lock_to_cyanogen_disable_msg">ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅ‍କ୍ଷମ କରିବା ଦ୍ୱାରା ଯଦି ଆପଣଙ୍କ ଫୋନ୍‍ ଚୋରି ହୋଇଯାଏ, ଅଧିକାର ପ୍ରାପ୍ତ ହୋଇନଥିବା ଉପଭୋକ୍ତାମାନେ ଏହାକୁ ଫ୍ୟାକ୍ଟରୀ ଡିଫଲ୍ଟ୍କୁ ରିସେଟ୍‍ କରିପାରିବେ। ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ ଡାଟା ସୁର‍କ୍ଷିତ ହୋଇପାରିବ ନାହିଁ। ଆପଣ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅ‍କ୍ଷମ କରିବାକୁ ଚାହାଁନ୍ତି କି?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">ଡିଭାଇସ୍‍ ସୁରଷା ସ‍କ୍ଷମ କରାଯାଇଛି। ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ରିସେଟ୍‍ କରିବା ଜାରି ରଖିବା ପାଇଁ ଦୟାକରି ଅ‍କ୍ଷମ କରନ୍ତୁ।</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">ସଂଯୋଗ ତ୍ରୁଟି; ଏହି ଡିଭାଇସ୍‍ରେ ବ୍ଲୁଥ୍‍ ଟେଥରିଂ ସ‍କ୍ଷମ କରାଯାଇଛି କି?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d ‍ସ୍ଥିତି</string>

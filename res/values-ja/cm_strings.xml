@@ -255,15 +255,8 @@
   <string name="block_notifications_summary">無視する通知やフィルターを管理する</string>
   <string name="no_filters_title">フィルターが設定されていません</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenModアップデート</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogenリカバリーをアップデート</string>
-  <string name="update_recovery_summary">システムアップデートと同時にリカバリーをアップデートする</string>
-  <string name="update_recovery_on_warning">注意: この機能を有効にすると、インストールされているリカバリーは実行しているOSの現在のバージョンに含まれるリカバリーに変更されます。\n\nシステムのアップグレードと同時にリカバリーがアップデートされるので、今後のバージョンとの互換性の確保に繋がります。\n\nこの機能を有効にしますか？</string>
-  <string name="update_recovery_off_warning">警告: この機能を無効にすると、インストールされているリカバリーはOSのアップグレードと同時にはアップデートされなくなります。\n\nカスタムリカバリーバージョンが古いと、今後のOSアップデートがインストールできなくなる恐れがあります。\n\nこの機能を本当に無効にしますか？</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenModバージョン</string>
-  <string name="mod_version_default">不明</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">端末モデル</string>
   <!-- About phone screen, Device name -->
@@ -279,7 +272,6 @@
   <string name="proximity_wake_title">誤作動を防止</string>
   <string name="proximity_wake_summary">画面をスリープ解除する前に接近センサーを確認する</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">プライバシー</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">デフォルトで有効化</string>
   <string name="privacy_guard_default_summary">新しくインストールされたアプリは自動的に有効にする</string>
@@ -780,8 +772,6 @@
   <string name="usb_not_connected">現在USBは切断されています</string>
   <string name="external_storage_turn_on">外部ストレージがONになりました</string>
   <string name="external_storage_turn_off">外部ストレージがOFFになりました</string>
-  <string name="stats_collection_title">統計の収集</string>
-  <string name="stats_collection_summary">メトリクスの収集を許可する</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">充電の音</string>
@@ -813,8 +803,6 @@
   <string name="edge_gesture_service_title">ジェスチャータッチイベントをブロック</string>
   <string name="edge_gesture_service_summary">ナビゲーションバーとステータスバーのジェスチャーのタッチイベントをアプリに送信しない</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod利用規約</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod利用規約</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">間違えたパターンを表示</string>
@@ -877,9 +865,6 @@
   <string name="qs_tile_ambient_display">アンビエント表示</string>
   <string name="qs_tile_sync">同期</string>
   <string name="qs_tile_battery_saver">バッテリーセーバー</string>
-  <string name="qs_dynamic_tile_next_alarm">次のアラーム</string>
-  <string name="qs_dynamic_tile_ime_selector">入力方法の選択</string>
-  <string name="qs_dynamic_tile_su">ルートアクセス</string>
   <string name="qs_main_tiles_title">1行目を拡大</string>
   <string name="qs_main_tiles_summary_on">1行目に2個のメインタイル</string>
   <string name="qs_main_tiles_summary_off">行ごとに3個のタイル</string>
@@ -927,8 +912,6 @@
   <string name="lockscreen_visualizer_title">音楽ビジュアライザを表示</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">セキュアSMSの設定を管理する</string>
   <string name="navigation_ring_title">ナビゲーションリングのターゲット</string>
   <string name="navigation_ring_message">編集アイコンをタップしてナビゲーションバーのロックを解除してください。\n\nターゲットを選択して動作を設定してください。\n\n[\u2713]アイコンをタップして変更を保存するか、[デフォルトに戻す]をタップしてレイアウトをデフォルトの設定に戻してください。</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1018,20 +1001,7 @@
   <string name="battery_saver_summary_unavailable">充電中は利用できません</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenModの統計</string>
-  <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してCyanogenModの改善を支援する</string>
-  <string name="anonymous_statistics_warning_title">情報</string>
-  <string name="anonymous_statistics_warning">CyanogenModの統計に同意すると、端末間のユニークインストール回数を調べるためにCyanogenModの開発者への非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データはブート時に送信されます。\n\n送信されるデータの見本は[データをプレビュー]をタップして確認することができます。</string>
-  <string name="enable_reporting_title">レポートを有効化</string>
-  <string name="preview_data_title">データをプレビュー</string>
-  <string name="view_stats_title">統計を表示</string>
-  <string name="anonymous_learn_more">もっと詳しく</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ユニークID</string>
-  <string name="preview_device_title">端末</string>
-  <string name="preview_version_title">バージョン</string>
-  <string name="preview_country_title">国</string>
-  <string name="preview_carrier_title">キャリア</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">ヘッドアップ</string>
   <string name="summary_heads_up_enabled">ポップアップ通知は有効です</string>
@@ -1041,11 +1011,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">お使いの携帯電話の<b>内部ストレージ</b>から以下を含めたすべてのデータを消去します:\n\n<li>端末のアカウント</li>\n<li>システムとアプリのデータや設定</li>\n<li>ダウンロードしたアプリ</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">端末の保護</string>
-  <string name="lock_to_cyanogen_summary">工場出荷時の状態にリセットした後でもCyanogen OSアカウントのパスワードを要求する</string>
-  <string name="lock_to_cyanogen_create_account_msg">この端末は工場出荷時の状態にリセットされた場合でも端末を保護するためにCyanogen OSアカウントのパスワードを使用します。Cyanogen OSアカウントの作成が必要になります。</string>
-  <string name="lock_to_cyanogen_disable_msg">この機能を無効にすると、盗難時にお使いの携帯電話を工場出荷時の状態にリセットすることを不正なユーザーに許可することになります。あなたの個人データが保護されない可能性があります。この機能を無効にしますか？</string>
-  <string name="lock_to_cyanogen_master_clear_warning">端末の保護が有効になっています。端末のリセットを続けるには無効にしてください。</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">接続エラー: Bluetoothテザリングが有効になっていますか？</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %dの状態</string>

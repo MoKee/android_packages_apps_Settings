@@ -255,15 +255,8 @@
   <string name="block_notifications_summary">مدیریت فیلترها و اعلان‌های چشم پوشی شده</string>
   <string name="no_filters_title">هیچ فیلتری تنظیم نشده است</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">بروزرسانی‌های سایانوژن‌مود</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">بروزرسانی ریکاوری سایانوژن‌مود</string>
-  <string name="update_recovery_summary">بروزرسانی ریکاوری با بروزرسانی‌های سیستم</string>
-  <string name="update_recovery_on_warning">توجه: وقتی این امکان فعال باشد، ریکاوری نصب‌شده شما با نسخه موجود فعلی سیستم‌عامل جایگزین خواهد شد.\n\n ریکاوری با بروزرسانی‌های سیستم شما بروز خواهد شد تا از سازگاری با نسخه‌های آینده اطمینان حاصل شود.\n\n آیا می‌خواهید این امکان را فعال کنید؟</string>
-  <string name="update_recovery_off_warning">هشدار: وقتی این امکان غیرفعال باشد، ریکاوری نصب شده شما با بروزرسانی‌های سیستم‌عامل بروز نخواهد شد.\n\nبروزرسانی‌های آینده‌ی سیستم‌عامل ممکن است با نسخه‌های تاریخ گذشته یا شخصی ریکاوری نصب نشود.\n\nآیا واقعا می‌خواهید این قابلیت را غیرفعال کنید؟</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">نسخه سایانوژن‌مود</string>
-  <string name="mod_version_default">ناشناخته</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">مدل دستگاه</string>
   <!-- About phone screen, Device name -->
@@ -279,7 +272,6 @@
   <string name="proximity_wake_title">جلوگیری از بیدار شدن تصادفی</string>
   <string name="proximity_wake_summary">بررسی حسگر مجاورت قبل از روشن کردن صفحه</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">حریم خصوصی</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">فعال به صورت پیش‌فرض</string>
   <string name="privacy_guard_default_summary">فعال بودن به صورت پیش‌فرض برای برنامه‌های جدید</string>
@@ -780,8 +772,6 @@
   <string name="usb_not_connected">یواس‌بی اکنون وصل نیست</string>
   <string name="external_storage_turn_on">حافظه خارجی روشن شد</string>
   <string name="external_storage_turn_off">حافظه خارجی خاموش شد</string>
-  <string name="stats_collection_title">جمع‌آوری آمار</string>
-  <string name="stats_collection_summary">هنگام فعال بودن اجازه می‌دهد متریک‌ها جمع‌آوری شوند</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">صداهای شارژ</string>
@@ -813,8 +803,6 @@
   <string name="edge_gesture_service_title">مسدود کردن رویدادهای لمس حرکتی</string>
   <string name="edge_gesture_service_summary">موارد لمسی برای پیمایش و حرکات نوار وضعیت برای برنامه‌ها ارسال نشود</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">موارد حقوقی سایانوژن‌مود</string>
-  <string name="settings_cmlicense_activity_title">موارد حقوقی سایانوژن‌مود</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">نمایش الگوی نادرست</string>
@@ -877,9 +865,6 @@
   <string name="qs_tile_ambient_display">نمایش حساس به محیط</string>
   <string name="qs_tile_sync">همگام‌‌سازی</string>
   <string name="qs_tile_battery_saver">بهینه‌ساز باتری</string>
-  <string name="qs_dynamic_tile_next_alarm">هشدار بعدی</string>
-  <string name="qs_dynamic_tile_ime_selector">انتخابگر تغییر روش ورودی</string>
-  <string name="qs_dynamic_tile_su">دسترسی روت</string>
   <string name="qs_main_tiles_title">بزرگ کردن ردیف اول</string>
   <string name="qs_main_tiles_summary_on">دو کاشی اصلی در ردیف اول</string>
   <string name="qs_main_tiles_summary_off">سه کاشی در هر ردیف</string>
@@ -927,8 +912,6 @@
   <string name="lockscreen_visualizer_title">نمایش رقص نور موسیقی</string>
   <string name="nfc_title_category">ان‌اف‌سی</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">مدیریت تنظیمات پیامک ایمن</string>
   <string name="navigation_ring_title">اهداف حلقه پیمایش</string>
   <string name="navigation_ring_message">برای باز کردن حلقه پیمایش جهت ویرایش، بر روی آیکون ویرایش ضربه بزنید.\n\nیک هدف انتخاب کنید تا بتوانید رفتار آن را تنظیم کنید.\n\nبرای ذخیره تغییرات اعمال‌شده، بر روی آیکون «\u2713» یا برای بازنشانی تنظیمات به حالت پیش‌فرض بر روی آیکون «بازگشت به تنظیمات پیش‌فرض» ضربه بزنید.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1016,22 +999,7 @@
   <string name="battery_saver_summary_unavailable">هنگام شارژ در دسترس نیست</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">آمار استفاده از سایانوژن‌مود</string>
-  <string name="anonymous_statistics_summary">کمک به بهبود سایانوژن‌مود با مشارکت در ارسال گزارش آمار به صورت ناشناس</string>
-  <string name="anonymous_statistics_warning_title">درباره</string>
-  <string name="anonymous_statistics_warning">مشارکت در آمار سایانوژن‌مود اجازه می‌دهد اطلاعات غیرشخصی به
-        توسعه‌دهنگان سایانوژن‌مود ارسال شده تا به موارد خاص نصب در دستگاه‌های مختلف دسترسی پیدا شود. اطلاعات ارسال‌ شده شامل یک شناسه یکتا است
-        که حریم خصوصی یا اطلاعات شخصی شما را در خطر افشا شدن قرار نمی‌دهد. این اطلاعات در هر بار راه‌اندازی دستگاه ارسال می‌شوند.\n\nبرای مشاهده یک نمونه از اطلاعاتی که ارسال می‌شود بر روی پیش‌نمایش داده‌ها ضربه بزنید.</string>
-  <string name="enable_reporting_title">فعال کردن گزارش</string>
-  <string name="preview_data_title">پیش‌نمایش داده‌ها</string>
-  <string name="view_stats_title">مشاهده آمار</string>
-  <string name="anonymous_learn_more">بیشتر بدانید</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">شناسه یکتا</string>
-  <string name="preview_device_title">دستگاه</string>
-  <string name="preview_version_title">نسخه</string>
-  <string name="preview_country_title">کشور</string>
-  <string name="preview_carrier_title">اپراتور</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">اعلان فوری</string>
   <string name="summary_heads_up_enabled">اعلان‌های بالاپر فعال هستند</string>
@@ -1041,11 +1009,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">این کار تمام اطلاعات <b>حافظه داخلی</b> گوشی شما را پاک می‌کند، از جمله:\n\n<li>حساب‌های دستگاه شما</li>\n<li>تنظیمات و داده‌های برنامه‌ها و سیستم</li>\n<li>برنامه‌های دانلود شده</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">حفاظت از دستگاه</string>
-  <string name="lock_to_cyanogen_summary">حتی پس از تنظیم مجدد به تنظیمات کارخانه، به گذرواژه حساب سایانوژن شما نیاز است</string>
-  <string name="lock_to_cyanogen_create_account_msg">دستگاه شما برای محافظت از خود حتی هنگام تنظیم مجدد به تنظیمات کارخانه، از گذرواژه حساب سایانوژن شما استفاده می‌کند. شما باید یک حساب سایانوژن ایجاد کنید.</string>
-  <string name="lock_to_cyanogen_disable_msg">غیرفعال کردن این قابلیت به کاربران غیرمجاز اجازه خواهد داد هنگام سرقت دستگاه، آن را مجددا به تنظیمات کارخانه برگردانند. ممکن است از اطلاعات شخصی شما محافظت نشود. آیا این قابلیت را غیرفعال می‌کنید؟</string>
-  <string name="lock_to_cyanogen_master_clear_warning">محافظت از دستگاه فعال است. لطفا برای ادامه تنظیم مجدد دستگاه، آن را غیرفعال کنید.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">خطا در اتصال، آیا تترینگ بلوتوث در این دستگاه فعال است؟</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">وضعیت سیم کارت %d</string>

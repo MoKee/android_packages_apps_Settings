@@ -253,15 +253,8 @@
   <string name="block_notifications_summary">Halda ignoreeritud teavitusi ja filtreid</string>
   <string name="no_filters_title">Filtreid pole seatud</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod uuendused</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Uuenda Cyanogeni taasterežiimi</string>
-  <string name="update_recovery_summary">Uuenda recovery süsteemi uuendusega</string>
-  <string name="update_recovery_on_warning">TEADE: Kui see funktsioon on lubatud, siis teie installitud Recovery asendatakse praeguses OS versioonis kaasas olevaga.\n\nSinu Recovery uuendatakse koos süsteemi uuendustega, et tagada ühilduvus tulevaste versioonidega.\n\nKas soovite funktsiooni aktiveerida?</string>
-  <string name="update_recovery_off_warning">HOIATUS: Kui see funktsioon on keelatud, siis teie installitud Recovery ei ajakohastata OS uuendamisel.\n\nTulevased OS ajakohastamised ei pruugi paigalduda vananenud või kohandatud Recovery kasutamisel.\n\nKas soovite funktsiooni keelata?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versioon</string>
-  <string name="mod_version_default">Teadmata</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Seadme mudel</string>
   <!-- About phone screen, Device name -->
@@ -277,7 +270,6 @@
   <string name="proximity_wake_title">Väldi juhuslikku ärkamist</string>
   <string name="proximity_wake_summary">Kontrolli lähedusandurit enne ekraani sisselülitamist</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Privaatsus</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Vaikimisi lubatud</string>
   <string name="privacy_guard_default_summary">Luba vaikimisi uutele paigaldatavatele rakendustele</string>
@@ -776,8 +768,6 @@
   <string name="usb_not_connected">USB-ühendus on nüüd katkestatud</string>
   <string name="external_storage_turn_on">Väline mälu on sisse lülitatud</string>
   <string name="external_storage_turn_off">Väline mälu on välja lülitatud</string>
-  <string name="stats_collection_title">Andmete kogumine</string>
-  <string name="stats_collection_summary">Kui sisselülitatud, lubab andmete kogumist</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Laadimise helid</string>
@@ -809,8 +799,6 @@
   <string name="edge_gesture_service_title">Blokeeri žesti puudutuse sündmused</string>
   <string name="edge_gesture_service_summary">Ära saada navigatsiooni ja olekuriba puudutuste sündmusi rakendustele</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod juriidiline info</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod juriidiline info</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Näita mustrit tõrget</string>
@@ -869,9 +857,6 @@
   <string name="qs_tile_heads_up">Etteteavitus</string>
   <string name="qs_tile_ambient_display">Ambient kuva</string>
   <string name="qs_tile_sync">Sünk</string>
-  <string name="qs_dynamic_tile_next_alarm">Järgmine alarm</string>
-  <string name="qs_dynamic_tile_ime_selector">IME valija</string>
-  <string name="qs_dynamic_tile_su">Root ligipääs</string>
   <string name="qs_main_tiles_title">Suurenda esimene rida</string>
   <string name="qs_main_tiles_summary_on">Kaks põhi-plaati esimeses reas</string>
   <string name="qs_main_tiles_summary_off">Kolm plaati igas reas</string>
@@ -918,8 +903,6 @@
   <string name="lockscreen_choose_action_title">Valige toiming</string>
   <string name="lockscreen_visualizer_title">Näita muusika visualiseerijat</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Halda turvalise SMS seadeid</string>
   <string name="navigation_ring_title">Navigeerimisring sihtmärgid</string>
   <string name="navigation_ring_message">Koputa muuda nuppu, et avada navigeerimisringi muutmine.\n\nVali sihtmärk, mille käitumist soovid muuta.\n\nKoputa \'\u2713‘ nuppu, et salvestada muudatused või \'Taasta vaikesätted\' et lähtestada tehtud seadistused.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1005,22 +988,7 @@
   <string name="battery_saver_summary_unavailable">Ei ole kättesaadav laadimise ajal</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod statistika</string>
-  <string name="anonymous_statistics_summary">Aita muuta CyanogenMod paremaks, osaledes anonüümse statistika kogumises</string>
-  <string name="anonymous_statistics_warning_title">Üldist</string>
-  <string name="anonymous_statistics_warning">Osaledes CyanogenMod statiatika kogumises, võimaldad isikustamata teabe saatmist
-arendajatele jälgimaks unikaalseid installatsioone üle seadmete. Infole lisatakae unikaalne tunnus,
-mis ei ohusta sinu privaatsust ega isiklikku infot. Teave saadetakse peale igat süateemi üleslaadimiat.\n\nEdastatava info näidise nägemiseks koputa Info eelvaatel.</string>
-  <string name="enable_reporting_title">Luba raporteerimine</string>
-  <string name="preview_data_title">Andmete eelvaade</string>
-  <string name="view_stats_title">Vaata statistikat</string>
-  <string name="anonymous_learn_more">Saa rohkem teada</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Kordumatu ID</string>
-  <string name="preview_device_title">Seade</string>
-  <string name="preview_version_title">Versioon</string>
-  <string name="preview_country_title">Riik</string>
-  <string name="preview_carrier_title">Operaator</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Etteteavitus</string>
   <string name="summary_heads_up_enabled">Hüpikteavitused lubatud</string>
@@ -1030,11 +998,6 @@ mis ei ohusta sinu privaatsust ega isiklikku infot. Teave saadetakse peale igat 
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">See kustutab kõik andmed sinu telefoni <b>sisemisest mälust</b>, sealhulgas:\n\n<li>Sinu seadme kontod</li>\n<li>Süsteemi ja rakenduste info ning seadistused</li>\n<li>Allalaaditud rakendused</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Seadme kaitse</string>
-  <string name="lock_to_cyanogen_summary">Nõua Cyanogen OS konto parooli, isegi peale tehase taastamist</string>
-  <string name="lock_to_cyanogen_create_account_msg">Sinu seade kasutab Cyanogen Os konto parooli, et kaitsta sinu seadet isegi tehase seadete taastamisel. Selleks on vaja luua Cyanogen OS konto.</string>
-  <string name="lock_to_cyanogen_disable_msg">Selle funktsiooni keelamine võimaldab volitamata kasutajatel tehaseseadete taastamist kui seade varastatakse. Sinu isiklik info võib olla ohus. Kas sa soovid sellw funktaiooni välja lülitada?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Seadme kaitse on sisselülitatud. Seadme lähtestamisega jätkamiseks palun keelake.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Ühenduse tõrge; kas selles seadmes on  Bluetooth lõastamine lubatud?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d olek</string>

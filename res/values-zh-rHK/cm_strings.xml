@@ -239,15 +239,8 @@
   <string name="block_notifications_summary">管理被忽略的通知和過濾器</string>
   <string name="no_filters_title">沒有設定篩選器</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">升級 Cyanogen 修復模式</string>
-  <string name="update_recovery_summary">系統更新的同時更新修復模式</string>
-  <string name="update_recovery_on_warning">注意：啟用此功能後，您已安裝的修復模式將會被包含運行系統當前版本的修復模式取代。\n\n您的修復模式將會隨著系統一同更新以確保與未來版本的相容性。\n\n您確定要啟用這個功能？</string>
-  <string name="update_recovery_off_warning">警告：停用此功能後，您安裝的修復模式將不與運行系統一同更新。\n\n未來的系统更新可能不支援舊版或自訂修復模式版本。\n\n您確定要停用此功能？</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod 版本</string>
-  <string name="mod_version_default">不明</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <string name="device_name">裝置名稱</string>
@@ -262,7 +255,6 @@
   <string name="proximity_wake_title">防止意外喚醒</string>
   <string name="proximity_wake_summary">喚醒畫面前檢查傳感器</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">私隱</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">已預設啟用</string>
   <string name="privacy_guard_default_summary">對新安裝的應用程式已預設啟用</string>
@@ -720,8 +712,6 @@
   <string name="usb_not_connected">USB現已斷開連線</string>
   <string name="external_storage_turn_on">外部儲存空間已開啟</string>
   <string name="external_storage_turn_off">外部儲存空間已關閉</string>
-  <string name="stats_collection_title">統計資料收集</string>
-  <string name="stats_collection_summary">啟用時，允許收集數據</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">充電音效</string>
@@ -753,8 +743,6 @@
   <string name="edge_gesture_service_title">攔截手勢輕觸情況</string>
   <string name="edge_gesture_service_summary">不向應用程式傳送導覽列與狀態列手勢的觸控事件</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod 法律條款</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">顯示圖樣錯誤</string>
@@ -808,8 +796,6 @@
   <string name="qs_tile_heads_up">浮動通知</string>
   <string name="qs_tile_ambient_display">環境顯示</string>
   <string name="qs_tile_sync">同步</string>
-  <string name="qs_dynamic_tile_next_alarm">下一個鬧鐘</string>
-  <string name="qs_dynamic_tile_su">Root 權限</string>
   <string name="qs_main_tiles_title">放大首行</string>
   <string name="qs_main_tiles_summary_on">首列具有兩個主要設定方塊</string>
   <string name="qs_main_tiles_summary_off">每一列顯示三個設定方塊</string>
@@ -856,8 +842,6 @@
   <string name="lockscreen_choose_action_title">選擇操作</string>
   <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">管理安全短訊設定</string>
   <string name="navigation_ring_title">導覽列對象</string>
   <string name="navigation_ring_message">按下編輯圖示以打開導覽列編輯。 \n\n選擇一個對象以配置其行為。 \n\n按下「\u2713」圖示以保存您的變更，或「還原預設值」以重設為預設值。</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -935,19 +919,7 @@
   <string name="battery_saver_summary_unavailable">在充電時不可用</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">開啟匿名統計報告以便協助改進 CyanogenMod</string>
-  <string name="anonymous_statistics_warning_title">關於</string>
-  <string name="enable_reporting_title">啟用報告</string>
-  <string name="preview_data_title">預覽數據</string>
-  <string name="view_stats_title">檢視統計</string>
-  <string name="anonymous_learn_more">瞭解更多</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">唯一 ID</string>
-  <string name="preview_device_title">裝置</string>
-  <string name="preview_version_title">版本</string>
-  <string name="preview_country_title">國家</string>
-  <string name="preview_carrier_title">電訊業者</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">浮動通知</string>
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
@@ -955,11 +927,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">該操作將從您的手機<b>內部存儲裝置</b>清除所有資料，其中包括：\n\n <li>您的裝置帳戶</li>\n<li>系統和應用程式的資料及設定</li> \n <li>已下載的應用程式</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">裝置保護</string>
-  <string name="lock_to_cyanogen_summary">即使裝置重設至原廠設定，仍需要您的 Cyanogen OS 帳戶密碼</string>
-  <string name="lock_to_cyanogen_create_account_msg">即使裝置重設至原廠設定，仍然使用 Cyanogen OS 帳戶密碼來保護裝置。為此，您將需要建立一個 Cyanogen OS 帳戶。</string>
-  <string name="lock_to_cyanogen_disable_msg">停用此功能後，若裝置被盜，未經授權的使用者將可能把您的電話重設至原廠設定。您的個人資料可能無法受到保護。是否要停用此功能？</string>
-  <string name="lock_to_cyanogen_master_clear_warning">裝置保護已啟用。請先停用以繼續重設裝置。</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">連線錯誤；是否在本裝置上啟用了藍牙共享？</string>
   <!-- MSIM SIM status -->
   <!-- Factory reset strings -->

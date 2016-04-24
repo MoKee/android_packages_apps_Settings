@@ -255,15 +255,8 @@
   <string name="block_notifications_summary">Kelola pemberitahuan yang diabaikan dan filter</string>
   <string name="no_filters_title">Belum ada penyaring</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Pembaruan CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Perbarui pemulihan Cyanogen</string>
-  <string name="update_recovery_summary">Perbarui pemulihan dengan pembaruan sistem</string>
-  <string name="update_recovery_on_warning">PERHATIAN: Jika fitur ini diaktifkan, pemulihan yang terinstal akan digantikan oleh salah satu yang disertakan dengan versi terbaru dari OS yang berjalan.\n\nPemulihan akan diperbarui bersama dengan peningkatan sistem agar pemulihan tetap kompatibel dengan versi mendatang.\n\nApakah Anda ingin mengaktifkan fitur ini?</string>
-  <string name="update_recovery_off_warning">PERINGATAN: Jika fitur ini dinonaktifkan, pemulihan yang terinstal tidak akan diperbarui dengan peningkatan OS.\n\nPembaruan OS mendatang mungkin tidak dapat diinstal dengan versi pemulihan khusus atau versi pemulihan yang sudah usang.\n\nApakah Anda benar-benar ingin menonaktifkan fitur ini?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versi CyanogenMod</string>
-  <string name="mod_version_default">Tidak diketahui</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modusl perangkat</string>
   <!-- About phone screen, Device name -->
@@ -279,7 +272,6 @@
   <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
   <string name="proximity_wake_summary">Periksa sensor kedekatan sebelum membangunkan layar</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Privasi</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Diaktifkan secara baku</string>
   <string name="privacy_guard_default_summary">Mengaktifkan secara baku untuk aplikasi yang baru diinstal</string>
@@ -780,8 +772,6 @@
   <string name="usb_not_connected">USB sekarang tidak tersambung</string>
   <string name="external_storage_turn_on">Penyimpanan eksternal telah diaktifkan</string>
   <string name="external_storage_turn_off">Penyimpanan eksternal telah dimatikan</string>
-  <string name="stats_collection_title">Kumpulan statistik</string>
-  <string name="stats_collection_summary">Ketika diaktifkan, izinkan pengumpulan metrik</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Suara pengisian daya</string>
@@ -813,8 +803,6 @@
   <string name="edge_gesture_service_title">Blokir isyarat sentuhan peristiwa</string>
   <string name="edge_gesture_service_summary">Jangan kirim acara sentuhan untuk navigasi dan gerakan bar status untuk aplikasi</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Hukum CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Hukum CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Tunjukkan galat pola</string>
@@ -877,9 +865,6 @@
   <string name="qs_tile_ambient_display">Tampilan kala takaktif</string>
   <string name="qs_tile_sync">Sinkronisasi</string>
   <string name="qs_tile_battery_saver">Penghemat baterai</string>
-  <string name="qs_dynamic_tile_next_alarm">Alarm selanjutnya</string>
-  <string name="qs_dynamic_tile_ime_selector">Pemilih IME</string>
-  <string name="qs_dynamic_tile_su">Akses punca (root)</string>
   <string name="qs_main_tiles_title">Perbesar baris pertama</string>
   <string name="qs_main_tiles_summary_on">Dua ubin utama pada baris pertama</string>
   <string name="qs_main_tiles_summary_off">Tiga ubin pada setiap baris</string>
@@ -927,8 +912,6 @@
   <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
   <string name="nfc_title_category">Komunikasi jarak dekat</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Kelola pengaturan secure SMS</string>
   <string name="navigation_ring_title">Target cincin navigasi</string>
   <string name="navigation_ring_message">Tekan ikon edit untuk membuka ring navigasi untuk diubah.\n\nPilih target untuk mengkonfigurasi perilaku.\n\nTekan ikon \'\u2713\' untuk menyimpan perubahan, atau \'Pulihkan semula\' untuk mengembalikan ke pengaturan baku.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1018,20 +1001,7 @@
   <string name="battery_saver_summary_unavailable">Tidak tersedia saat pengisian</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistik CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Bantu CyanogenMod untuk menjadi lebih baik dengan memilih ikut dalam pelaporan statistik anonim</string>
-  <string name="anonymous_statistics_warning_title">Mengenai</string>
-  <string name="anonymous_statistics_warning">Memilih ikut dalam Statistik CyanogenMod akan memungkinkan data nonpribadi dikirimkan kepada para pengembang CyanogenMod untuk melacak instalasi unik pada berbagai macam perangkat. Informasi yang dikirimkan berisi pengenal unik, dan tidak membahayakan privasi atau data pribadi Anda. Data dikirim setiap kali perangkat dibut.\n\nUntuk melihat contoh data yang akan dikirim, ketuk Pratinjau Data.</string>
-  <string name="enable_reporting_title">Aktifkan pelaporan</string>
-  <string name="preview_data_title">Pratinjau data</string>
-  <string name="view_stats_title">Lihat statistik</string>
-  <string name="anonymous_learn_more">Pelajari lebih lanjut</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID unik</string>
-  <string name="preview_device_title">Perangkat</string>
-  <string name="preview_version_title">Versi</string>
-  <string name="preview_country_title">Negara</string>
-  <string name="preview_carrier_title">Operator</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Notifikasi mengambang</string>
   <string name="summary_heads_up_enabled">Pemberitahuan munculan diaktifkan</string>
@@ -1041,11 +1011,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">Ini akan menghapus semua data dari <b>penyimpanan internal</b> ponsel Anda, termasuk: \n\n<li>Akun perangkat</li>\n<li>Sistem, data aplikasi dan pengaturan</li>\n<li>Aplikasi unduhan</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Pengamanan Perangkat</string>
-  <string name="lock_to_cyanogen_summary">Memerlukan kata sandi akun Cyanogen OS bahkan setelah kembali ke pengaturan pabrik</string>
-  <string name="lock_to_cyanogen_create_account_msg">Perangkat Anda menggunakan kata sandi akun Cyanogen OS untuk melindungi perangkat Anda bahkan saat kembali ke pengaturan pabrik. Anda perlu membuat akun Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Menonaktifkan tampilan ini akan memungkinkan pengguna yang tidak berhak untuk mengatur kembali telepon ke pengaturan pabrik jika dicuri. Data pribadi Anda mungkin tidak akan terlindungi. Apakah Anda ingin menonaktifkan tampilan ini?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Proteksi Perangkat diaktifkan. Harap nonaktifkan untuk lanjut mengatur kembali perangkat Anda.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Galat koneksi; apakah peranggitan Bluetooth diaktifkan pada perangkat ini?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Status %d SIM</string>

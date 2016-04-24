@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">Gestiona les notificacions i filtres ignorats</string>
   <string name="no_filters_title">Sense filtres establerts</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualitzacions CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Actualitza la recuperació de Cyanogen</string>
-  <string name="update_recovery_summary">Actualitza la recuperació amb les actualitzacions del sistema</string>
-  <string name="update_recovery_on_warning">AVÍS: Quan aquesta funció estigui activada, la recuperació que tinguis instal·lada serà substituïda per la versió actual inclosa amb el SO instal·lat.\n\nEl teu sistema de recuperació s\'actualitzarà juntament amb les millores del sistema, ajudant a assegurar la compatibilitat amb futures versions.\n\nVols habilitar aquesta característica?</string>
-  <string name="update_recovery_off_warning">ADVERTÈNCIA: Quan aquesta característica està inhabilitada, el teu sistema de recuperació instal·lat no s\'actualitzarà amb les millores del SO.\n\nFutures actualitzacions del SO podrien no instal·lar-se amb sistemes de recuperació obsolets o personalitzats.\n\nRealment vols deshabilitar aquesta característica?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod versió</string>
-  <string name="mod_version_default">Desconegut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model del dispositiu</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">Evita l\'encesa accidental</string>
   <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Privacitat</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Activa per defecte</string>
   <string name="privacy_guard_default_summary">Activa per defecte en les aplicacions de nova instal·lació</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">L\'USB ara està desconnectat</string>
   <string name="external_storage_turn_on">S\'ha activat l\'emmagatzematge extern</string>
   <string name="external_storage_turn_off">S\'ha apagat l\'emmagatzematge extern</string>
-  <string name="stats_collection_title">Recollida d\'estadístiques</string>
-  <string name="stats_collection_summary">Quan està activat, permet la recollida de mètriques</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Sons de càrrega</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">Bloqueja els esdeveniments de gestos tàctils</string>
   <string name="edge_gesture_service_summary">No enviïs esdeveniments tàctils per la navegació ni gestos de la barra d\'estat a les aplicacions</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Llicència CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Mostra el patró erroni</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">Pantalla ambient</string>
   <string name="qs_tile_sync">Sinc</string>
   <string name="qs_tile_battery_saver">Estalvi de bateria</string>
-  <string name="qs_dynamic_tile_next_alarm">Propera alarma</string>
-  <string name="qs_dynamic_tile_ime_selector">Selector de l\'IME</string>
-  <string name="qs_dynamic_tile_su">Accés Superusuari</string>
   <string name="qs_main_tiles_title">Engrandeix la primera fila</string>
   <string name="qs_main_tiles_summary_on">Dues cel·les principals en la primera fila</string>
   <string name="qs_main_tiles_summary_off">Tres cel·les en cada fila</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">Mostra la visualització de la música</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestiona la configuració d\'SMS segurs</string>
   <string name="navigation_ring_title">Objectius de l\'anell de navegació</string>
   <string name="navigation_ring_message">Pica sobre la icona edita per desbloquejar l\'edició de la barra de navegació.\n\nSelecciona un objectiu per configurar el seu comportament.\n\nPica la icona \'\u2713\' per desar els canvis, o \'Restaura predeterminats\' per restaurar els ajustaments predeterminats.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">No disponible durant la càrrega</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Estadístiques de CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajuda a fer millor CyanogenMod optant a transmetre estadístiques anònimes</string>
-  <string name="anonymous_statistics_warning_title">Quant a</string>
-  <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetràs que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
-  <string name="enable_reporting_title">Activa els informes</string>
-  <string name="preview_data_title">Vista prèvia de Dades</string>
-  <string name="view_stats_title">Mostra estadístiques</string>
-  <string name="anonymous_learn_more">Aprèn més</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID únic</string>
-  <string name="preview_device_title">Dispositiu</string>
-  <string name="preview_version_title">Versió</string>
-  <string name="preview_country_title">País</string>
-  <string name="preview_carrier_title">Portadora</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Notificacions emergents</string>
   <string name="summary_heads_up_enabled">Les notificacions emergents estan activades</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">Això esborrarà totes les dades de <b>l\'emmagatzematge intern</b> del teu telèfon, incloent-hi:\n\n<li>Els teus comptes al dispositiu</li>\n<li>el sistema i les dades i els ajustaments de les aplicacions</li>\n<li>Les aplicacions descarregades</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Protecció del dispositiu</string>
-  <string name="lock_to_cyanogen_summary">Demana la contrasenya del teu compte de Cyanogen OS fins i tot després de que es restableixin els ajustaments de fàbrica</string>
-  <string name="lock_to_cyanogen_create_account_msg">El teu dispositiu utilitza la contrasenya del compte Cyanogen OS per protegir el dispositiu fins i tot en cas d\'un restabliment als ajustaments de fàbrica. Necessitaràs crear un compte de Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Deshabilitant aquest característica permetràs que usuaris no autoritzats restableixin el teu telèfon als ajustaments de fàbrica en cas de robatori. Les teves dades personals podrien no estar protegides. Vols deshabilitar aquesta funció?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">La protecció del dispositiu està habilitada. Si us plau deshabilita-la per continuar amb la restauració del teu dispositiu.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Error de connexió; està habilitat l\'ancoratge Bluetooth en aquest dispositiu?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Estat de la SIM %d</string>

@@ -246,12 +246,8 @@
   <string name="block_notifications_summary">Gestionați notificările ignorate și filtrele</string>
   <string name="no_filters_title">Niciun filtru setat</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Actualizează Cyanogen recovery</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">versiune CyanogenMod</string>
-  <string name="mod_version_default">Necunoscut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelul dispozitivului</string>
   <!-- About phone screen, Device name -->
@@ -266,7 +262,6 @@
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
   <string name="proximity_wake_summary">Verificați senzorul de proximitate înainte de trezirea ecranului</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Intimitate</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Activat în mod implicit</string>
   <string name="privacy_guard_default_summary">Activat în mod implicit pentru aplicațiile nou-instalate</string>
@@ -731,7 +726,6 @@
   <string name="usb_sdcard_title">Spațiul de stocare (UMS)</string>
   <string name="usb_sdcard_summary">Vă permite să transferați orice fișier între calculatorul dvs și cardul SD prin montarea ca un dispozitiv flash</string>
   <string name="usb_not_connected">USB este acum deconectat</string>
-  <string name="stats_collection_title">Colectarea de statistici</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Sunete de încărcare</string>
@@ -762,8 +756,6 @@
   <string name="edge_gesture_service_title">Blochează evenimentele la gesturile de atingere</string>
   <string name="edge_gesture_service_summary">Nu timite la aplicații gesturile de atingere la navigare și gesturile barei de stare</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Juridic CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Juridic CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Afișare eroare model</string>
@@ -822,9 +814,6 @@
   <string name="qs_tile_ambient_display">Afișare ambientală</string>
   <string name="qs_tile_sync">Sincronizare</string>
   <string name="qs_tile_battery_saver">Economizor baterie</string>
-  <string name="qs_dynamic_tile_next_alarm">Următoarea alarmă</string>
-  <string name="qs_dynamic_tile_ime_selector">Selector IME</string>
-  <string name="qs_dynamic_tile_su">Acces root</string>
   <string name="qs_main_tiles_title">Mărire primul rând</string>
   <string name="qs_main_tiles_summary_on">Două chenare principale pe primul rând</string>
   <string name="qs_main_tiles_summary_off">Trei chenare pe fiecare rând</string>
@@ -869,8 +858,6 @@
   <string name="lockscreen_choose_action_title">Alege acțiunea</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Gestionare setări SMS sigur</string>
   <string name="navigation_ring_message">Atingeți pictograma editare pentru a deschide inelul de navigare pentru editare.\n\nSelectați o țintă pentru a configura comportamentul său.\n\nAtingeți pictograma \'\u2713\' pentru a salva modificările, sau \"Restabilire valori implicite\" pentru a reseta la setările implicite.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
   <string name="lcd_density">Densitate LCD</string>
@@ -943,20 +930,7 @@
   <string name="battery_saver_summary_unavailable">Nu este disponibil în timpul încărcării</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistici CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajută-ne să facem CyanogenMod mai bun prin trimiterea de rapoarte anonime cu statistici</string>
-  <string name="anonymous_statistics_warning_title">Despre</string>
-  <string name="anonymous_statistics_warning">Optând să trimiteți Statistici CyanogenMod, se permite dezvoltatorilor CyanogenMod să primească date ne-personale pentru a urmări instalările unice la o gama mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
-  <string name="enable_reporting_title">Activare raportare</string>
-  <string name="preview_data_title">Previzualizare date</string>
-  <string name="view_stats_title">Vezi statistici</string>
-  <string name="anonymous_learn_more">Află mai multe</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID unic</string>
-  <string name="preview_device_title">Dispozitiv</string>
-  <string name="preview_version_title">Versiune</string>
-  <string name="preview_country_title">Țara</string>
-  <string name="preview_carrier_title">Operator</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Atenționare</string>
   <string name="summary_heads_up_enabled">Notificările Pop-up sunt activate</string>
@@ -964,11 +938,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Protecție dispozitiv</string>
-  <string name="lock_to_cyanogen_summary">Solicită parola contului Cyanogen OS, chiar și după o resetare la setările din fabrică</string>
-  <string name="lock_to_cyanogen_create_account_msg">Aparatul dvs. utilizează parola de cont Cyanogen OS pentru a proteja aparatul chiar și în cazul unei resetări la setările din fabrică. Va trebui să creați un cont Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Dezactivarea aceastei facilități va permite utilizatorilor neautorizați să reseteze telefonul la setările din fabrică în cazul în care este furat. Datele cu caracter personal nu pot fi protejate. Vreți să dezactivați această caracteristică?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Protecția dispozitivului este activată. Vă rugăm să o dezactivați pentru a continua resetarea dispozitivului.</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Stare SIM %d</string>
   <string name="sim_card_lock_settings_title">Setări blocare SIM %d</string>

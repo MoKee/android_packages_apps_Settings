@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">נהל התראות ומסננים שמהם התעלמת</string>
   <string name="no_filters_title">לא הוגדרו מסננים</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">עדכוני CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">עדכן את השחזור של Cyanogen</string>
-  <string name="update_recovery_summary">עדכן את השחזור יחד עם עדכוני מערכת</string>
-  <string name="update_recovery_on_warning">שים לב: כשתכונה זו מופעלת, השחזור הנוכחי שלך יוחלף בשחזור הכלול בגרסה הנוכחית של מערכת ההפעלה שלך.\n\nהשחזור הנוכחי שלך יתעדכן יחד עם עדכונים למערכת שלך, כדי להבטיח תאימות עם גרסאות עתידיות.\n\nהאם להפעיל את תכונה זו?</string>
-  <string name="update_recovery_off_warning">אזהרה: כשתכונה זו מושבתת, השחזור הנוכחי לא יתעדכן עם עדכוני מערכת.\n\nעדכוני מערכת עתידיים לא יותקנו עם גרסה לא עדכנית של השחזור.\n\nהאם להשבית תכונה זו?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">גרסת CyanogenMod</string>
-  <string name="mod_version_default">לא ידוע</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">דגם המכשיר</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">מנע התעוררות מקרית</string>
   <string name="proximity_wake_summary">בדוק את חיישן הקרבה לפני הפעלת המסך</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">פרטיות</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">מופעל כברירת מחדל</string>
   <string name="privacy_guard_default_summary">הפעל כברירת מחדל עבור יישומים שהותקנו לאחרונה</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">USB מנותק כעת</string>
   <string name="external_storage_turn_on">אחסון חיצוני הופעל</string>
   <string name="external_storage_turn_off">אחסון חיצוני כובה</string>
-  <string name="stats_collection_title">אוסף סטטיסטיקות</string>
-  <string name="stats_collection_summary">כאשר מופעל, מאפשר איסוף מדדים</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">צלילי טעינה</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">חסום אירועי מחוות מגע</string>
   <string name="edge_gesture_service_summary">אל תשלח אירועי נגיעות בסרגל הניווט ובשורת המצב ליישומים</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod משפטי</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod משפטי</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">הצג שגיאות דפוס</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">התראות ברקע</string>
   <string name="qs_tile_sync">סנכרון</string>
   <string name="qs_tile_battery_saver">שומר סוללה</string>
-  <string name="qs_dynamic_tile_next_alarm">השעון המעורר הבא</string>
-  <string name="qs_dynamic_tile_ime_selector">בורר שיטות קלט</string>
-  <string name="qs_dynamic_tile_su">גישת שורש (Root)</string>
   <string name="qs_main_tiles_title">הגדל את השורה הראשונה</string>
   <string name="qs_main_tiles_summary_on">שני אריחים ראשיים בשורה הראשונה</string>
   <string name="qs_main_tiles_summary_off">שלושה אריחים בכל שורה</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">הצג אפקטים בעת השמעת מוזיקה</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">ניהול הגדרות SMS מאובטח</string>
   <string name="navigation_ring_title">קיצורי דרך בטבעת הניווט</string>
   <string name="navigation_ring_message">הקש על סמל העריכה כדי לפתוח את טבעת הניווט לעריכה.\n\nבחר מטרה כדי להגדיר את ההתנהגות שלה.\n\nהקש על הסמל \'\u2713\' כדי לשמור את השינויים, או על \"שחזר ברירת מחדל\" כדי לאפס את ההגדרות.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">לא זמין בזמן טעינה</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">סטטיסטיקות CyanogenMod</string>
-  <string name="anonymous_statistics_summary">עזור לשפר את CyanogenMod על ידי דיווח סטטיסטיקות אנונימי</string>
-  <string name="anonymous_statistics_warning_title">אודות</string>
-  <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקת CyanogenMod תאפשר שליחת מידע לא אישי למפתחי CyanogenMod על מנת לאתר התקנות שונות בין מכשירים. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיותך או במידע שלך. המידע נשלח עם כל אתחול.\n\nכדי לצפות בדוגמה של המידע, הקש על תצוגה מקדימה של נתונים.</string>
-  <string name="enable_reporting_title">הפעל דיווח</string>
-  <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
-  <string name="view_stats_title">הצג סטטיסטיקות</string>
-  <string name="anonymous_learn_more">למידע נוסף</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">מזהה ייחודי</string>
-  <string name="preview_device_title">מכשיר</string>
-  <string name="preview_version_title">גרסה</string>
-  <string name="preview_country_title">מדינה</string>
-  <string name="preview_carrier_title">ספק תקשורת</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">התראות קופצות</string>
   <string name="summary_heads_up_enabled">התראות קופצות פעילות</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">פעולה זו תביא למחיקת כל התוכן מ<b>האחסון הפנימי</b> של הטלפון שלך, כולל:\n\n<li>החשבונות המוגדרים במכשירך</li>\n<li>נתונים והגדרות של המערכת והיישומים הקיימים</li>\n<li>יישומים שהורדו</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">הגנת מכשיר</string>
-  <string name="lock_to_cyanogen_summary">דורש את סיסמת חשבון ה-Cyanogen OS שלך גם לאחר איפוס להגדרות היצרן</string>
-  <string name="lock_to_cyanogen_create_account_msg">מכשירך משתמש בסיסמת חשבון Cyanogen OS שלך על מנת להגן על מכשירך אפילו במקרה של איפוס הגדרות יצרן. יהיה עליך ליצור חשבון Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">השבתת תכונה זו תאפשר למשתמשים לא מורשים לאפס את מכשירך להגדרות היצרן במקרה של גנבה. הנתונים האישיים שלך עלולים להיות לא מוגנים. האם ברצונך להשבית תכונה זו?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">הגנת מכשיר פעילה. עליך להשבית אותה כדי להמשיך באיפוס מכשירך.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">שגיאת חיבור; האם קשירת Bluetooth מופעלת במכשיר זה?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">מצב SIM %d</string>

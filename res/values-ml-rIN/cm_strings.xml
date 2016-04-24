@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">അവഗണിച്ച അറിയിപ്പുകളും ഫിൽട്ടറുകളും കൈകാര്യം ചെയ്യുക</string>
   <string name="no_filters_title">ഫിൽറ്ററുകള്‍ സജ്ജീകരിച്ചിട്ടില്ല</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod അപ്ഡേറ്റുകൾ</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen റിക്കവറി അപ്ഡേറ്റ് ചെയ്യുക</string>
-  <string name="update_recovery_summary">സിസ്റ്റം അപ്ഡേറ്റുകളിലൂടെ റിക്കവറി അപ്ഡേറ്റ് ചെയ്യുക</string>
-  <string name="update_recovery_on_warning">അറിയിപ്പ്: ഈ സവിശേഷത പ്രാപ്തമാക്കുമ്പോൾ, ഇന്‍സ്റ്റാള്‍ ചെയ്തിട്ടുള്ള നിങ്ങളുടെ റിക്കവറി ഇപ്പോള്‍ പ്രവര്‍ത്തിക്കുന്ന OS ന്‍റെ നിലവിലെ പതിപ്പ് ഉള്‍പ്പെടുന്ന മറ്റൊന്ന് ഉപയോഗിച്ച് മാറ്റിസ്ഥാപിക്കുന്നതാണ്.\n\nഭാവിയിലെ പതിപ്പുകളുമായി അനുയോജ്യത ഉറപ്പുവരുത്താൻ സഹായിക്കുന്നതിന്, നവീകരണങ്ങള്‍ക്കൊപ്പം നിങ്ങളുടെ റിക്കവറി അപ്ഡേറ്റ് ചെയ്യുന്നതാണ്.\n\nഈ സവിശേഷത നിങ്ങള്‍ക്ക് പ്രാപ്തമാക്കണോ?</string>
-  <string name="update_recovery_off_warning">മുന്നറിയിപ്പ്: ഈ സവിശേഷത അപ്രാപ്തമാക്കിയിരിക്കുമ്പോള്‍, ഇന്‍സ്റ്റാള്‍ ചെയ്തിട്ടുള്ള നിങ്ങളുടെ റിക്കവറി OS നവീകരണങ്ങള്‍ക്കൊപ്പം അപ്ഡേറ്റ് ചെയ്യുന്നതല്ല.\n\nകാലഹരണപ്പെട്ട അല്ലെങ്കില്‍ ഇഷ്ടാനുസൃത റിക്കവറി പതിപ്പുകളില്‍ ഭാവിയിലെ OS അപ്ഡേറ്റുകള്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യുകയില്ല.\n\nഈ സവിശേഷത നിങ്ങള്‍ക്ക് ശരിക്കും അപ്രാപ്തമാക്കണോ?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod പതിപ്പ്</string>
-  <string name="mod_version_default">അജ്ഞാതം</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ഉപകരണ മോഡൽ</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">യാദൃച്ഛികമായി സജീവമാകുന്നത് തടയുക</string>
   <string name="proximity_wake_summary">സ്ക്രീൻ സജീവമാകുന്നതിന് മുമ്പ് പ്രോക്സിമിറ്റി സെൻസർ പരിശോധിക്കുക</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">സ്വകാര്യത</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">ഡിഫോള്‍ട്ട് അയി പ്രാപ്തമാണ്</string>
   <string name="privacy_guard_default_summary">പുതുതായി ഇൻസ്റ്റാൾ ചെയ്ത അപ്ലിക്കേഷനുകൾക്കായി ഡിഫോള്‍ട്ട് അയി പ്രാപ്തമാണ്</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">USB ഇപ്പോൾ വിച്ഛേദിക്കപ്പെട്ടു</string>
   <string name="external_storage_turn_on">ബാഹ്യ സംഭരണം ഓണ്‍ ചെയ്തിരിക്കുന്നു</string>
   <string name="external_storage_turn_off">ബാഹ്യ സംഭരണം ഓഫ് ചെയ്തിരിക്കുന്നു</string>
-  <string name="stats_collection_title">സ്ഥിതിവിവരക്കണക്ക് ശേഖരം</string>
-  <string name="stats_collection_summary">പ്രാപ്തമാക്കിയിരിക്കുമ്പോൾ, മെട്രിക്സ് ശേഖരം അനുവദിക്കുന്നു</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">ചാർജ്ജിംഗ് ശബ്‌ദം</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">ഗെസ്ച്വര്‍ സ്പര്‍ശന ഇവന്റുകൾ തടയുക</string>
   <string name="edge_gesture_service_summary">നാവിഗേഷൻ, സ്റ്റാറ്റസ് ബാർ ആംഗ്യങ്ങൾക്കായുള്ള ടച്ച് ഇവന്റുകൾ ആപ്ലിക്കേഷനുകളിലേക്ക് അയയ്ക്കരുത്</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod ലീഗല്‍</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod ലീഗല്‍</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">പാറ്റേൺ പിശക് ദൃശ്യമാക്കുക</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">ആമ്പിയന്റ് ഡിസ്‌പ്ലേ</string>
   <string name="qs_tile_sync">സമന്വയിപ്പിക്കുക</string>
   <string name="qs_tile_battery_saver">ബാറ്ററി സേവർ</string>
-  <string name="qs_dynamic_tile_next_alarm">അടുത്ത അലാറം</string>
-  <string name="qs_dynamic_tile_ime_selector">IME സെലക്ടർ</string>
-  <string name="qs_dynamic_tile_su">റൂട്ട് പ്രവേശനം</string>
   <string name="qs_main_tiles_title">ആദ്യ വരി വലുതാക്കുക</string>
   <string name="qs_main_tiles_summary_on">ആദ്യ വരിയിൽ രണ്ട് പ്രധാന ടൈലുകൾ</string>
   <string name="qs_main_tiles_summary_off">ഓരോ വരിയിലും മൂന്ന് ടൈലുകൾ</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">സംഗീതം വിഷ്വലൈസർ പ്രദര്‍ശനം ചെയ്യുക</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">വിസ്പര്‍പുഷ്</string>
-  <string name="whisperpush_summary">സുരക്ഷിത SMS ക്രമീകരണങ്ങൾ കൈകാര്യം ചെയ്യുക</string>
   <string name="navigation_ring_title">നാവിഗേഷൻ റിംഗ് ടാർഗറ്റുകൾ</string>
   <string name="navigation_ring_message">എഡിറ്റ്‌ ചെയ്യുന്നതിനായി നാവിഗേഷന്‍ റിംഗ് തുറക്കുന്നതിന് എഡിറ്റ്‌ ഐക്കണ്‍ അമര്‍ത്തുക.\n\nഅതിന്റെ സ്വഭാവം കോണ്‍ഫിഗര്‍ ചെയ്യുന്നതിന് ഒരു ലക്‌ഷ്യം തിരഞ്ഞെടുക്കുക.\n\nനിങ്ങള്‍ വരുത്തിയ മാറ്റങ്ങള്‍ സേവ് ചെയ്യുന്നതിന് അല്ലെങ്കില്‍ ഡിഫോള്‍ട്ടിലേക്ക് ക്രമീകരണങ്ങള്‍ പുനക്രമീകരിക്കുന്നതിന് \'ഡിഫോള്‍ട്ടിലേക്ക് പുനസ്ഥാപിക്കുക\' എന്ന \'\u2713\' ഐക്കണ്‍ അമര്‍ത്തുക</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">ചാർജ്ജ് ചെയ്യുമ്പോൾ ലഭ്യമല്ല</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod സ്ഥിതിവിവരക്കണക്കുകൾ</string>
-  <string name="anonymous_statistics_summary">അജ്ഞാത സ്ഥിതിവിവരക്കണക്കുകൾ റിപ്പോർട്ട് ചെയ്യുന്നത് തിരഞ്ഞെടുത്ത് CyanogenMod മികച്ചതാക്കാൻ സഹായിക്കുക</string>
-  <string name="anonymous_statistics_warning_title">ആമുഖം</string>
-  <string name="anonymous_statistics_warning">CyanogenMod സ്റ്റാറ്റിസ്റ്റിക്സ് തിരഞ്ഞെടുക്കുന്നതിലൂടെ ഉപകരണങ്ങളില്‍ വിശിഷ്ടമായ ഇൻസ്റ്റലേഷനുകൾ ട്രാക്കുചെയ്യുന്നതിന് സ്വകാര്യമല്ലാത്ത ഡാറ്റ CyanogenMod ഡെവലപ്പര്‍മാര്‍ക്ക് സമര്‍പ്പിക്കുന്നതാണ്. സമര്‍പ്പിക്കപ്പെടുന്ന വിവരങ്ങളില്‍ നിങ്ങളുടെ സ്വകാര്യതയെ അല്ലെങ്കിൽ സ്വകാര്യ ഡാറ്റയെ വിട്ടുവീഴ്ച ചെയ്യാത്ത ഒരു വിശിഷ്ട ഐഡന്റിഫയർ ഉൾപ്പെടുന്നു. ഓരോ ബൂട്ട് സമയത്തും ഡാറ്റ സമര്‍പ്പിക്കുന്നു.\n\nസമര്‍പ്പിച്ച ഡാറ്റയ്ക്ക് ഉദാഹരണത്തിനായി, പ്രിവ്യൂ ഡാറ്റ അമര്‍ത്തുക.</string>
-  <string name="enable_reporting_title">റിപ്പോർട്ടിംഗ് പ്രാപ്തമാക്കുക</string>
-  <string name="preview_data_title">പ്രിവ്യൂ ഡാറ്റ</string>
-  <string name="view_stats_title">സ്ഥിതിവിവരക്കണക്കുകൾ കാണുക</string>
-  <string name="anonymous_learn_more">കൂടുതലറിയുക</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">വിശിഷ്ട ഐഡി</string>
-  <string name="preview_device_title">ഉപകരണം</string>
-  <string name="preview_version_title">പതിപ്പ്</string>
-  <string name="preview_country_title">രാജ്യം:</string>
-  <string name="preview_carrier_title">കാരിയര്‍</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">മുന്നറിയിപ്പ്</string>
   <string name="summary_heads_up_enabled">പോപ്പ്-അപ്പ് അറിയിപ്പുകൾ പ്രാപ്തമാണ്</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">ഇത് നിങ്ങളുടെ ഫോണിന്റെ <b>ആന്തരിക സംഭരണത്തില്‍</b> നിന്നുള്ള എല്ലാ ഡാറ്റയും മായ്ക്കുന്നതാണ്, അതില്‍ ഉള്‍പ്പെടുന്നവയാണ്:\n\n<li>നിങ്ങളുടെ ഉപകരണ അക്കൗണ്ടുകൾ</li>\n<li>സിസ്റ്റം, ആപ്ലിക്കേഷൻ ഡാറ്റയും ക്രമീകരണങ്ങളും</li>\n<li>ഡൗൺലോഡ് ചെയ്ത അപ്ലിക്കേഷനുകൾ</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">ഉപകരണ സംരക്ഷണം</string>
-  <string name="lock_to_cyanogen_summary">ഒരു ഫാക്ടറി റീസെറ്റ് ചെയ്തതിന് ശേഷവും നിങ്ങളുടെ Cyanogen OS അക്കൗണ്ട് പാസ്‌വേഡ് ആവശ്യമാണ്</string>
-  <string name="lock_to_cyanogen_create_account_msg">ഫാക്ടറി റീസെറ്റ് സംഭവിക്കുമ്പോള്‍ പോലും നിങ്ങളുടെ ഉപകരണത്തെ പരിരക്ഷിക്കുന്നതിന് നിങ്ങളുടെ ഉപകരണം Cyanogen OS അക്കൌണ്ട് പാസ്‌വേഡ് ഉപയോഗിക്കുന്നു. നിങ്ങൾക്ക് ഒരു Cyanogen OS അക്കൗണ്ട് സൃഷ്ടിക്കേണ്ടതുണ്ട്.</string>
-  <string name="lock_to_cyanogen_disable_msg">ഈ സവിശേഷത അപ്രാപ്തമാക്കുമ്പോള്‍, ഈ ഫോണ്‍ മോഷ്ടിക്കപ്പെടുകയാണെങ്കില്‍ ഫാക്ടറി ഡിഫോള്‍ട്ടിലേക്ക് നിങ്ങളുടെ ഫോണിനെ പുനക്രമീകരിക്കാന്‍ അനധികൃത ഉപയോക്താക്കളെ അനുവദിക്കുന്നതാണ്. നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റ സംരക്ഷിക്കപ്പെട്ടില്ലെന്ന് വന്നേക്കാം. ഈ സവിശേഷത നിങ്ങള്‍ക്ക് അപ്രാപ്തമാക്കണോ?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">ഉപകരണ സംരക്ഷണം പ്രാപ്തമാണ്. നിങ്ങളുടെ ഉപകരണം പുനക്രമീകരിക്കുന്നത് തുടരാന്‍ അപ്രാപ്തമാക്കുക</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">കണക്ഷൻ പിശക്; ബ്ലൂടൂത്ത് ടിതെറിംഗ് ഈ ഉപകരണത്തിൽ പ്രാപ്തമാണോ?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d സ്റ്റാറ്റസ്</string>

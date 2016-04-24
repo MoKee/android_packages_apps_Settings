@@ -248,15 +248,8 @@
   <string name="block_notifications_summary">Mastrumi ignoritajn atentigojn kaj filtrilojn</string>
   <string name="no_filters_title">Neniu filtrilo ŝaltita</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Ĝisdatigoj de CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Ĝistadigi riparadon de Cyanogen</string>
-  <string name="update_recovery_summary">Ĝistadigi riparadon de Cyanogen kun sistemaj ĝistadigadoj</string>
-  <string name="update_recovery_on_warning">ATENTU: Kiam tiu funkcio estas ŝaltita, via instalata riparado estos anstataŭigita per unu el la aktuala sistemo.\n\nVia riparado estos ĝistatigita samtempe kiel la sistemaj ĝisdatigadoj, kaj tio helpos al kongrueco de la estontaj versioj.\n\nĈu vi volas ŝalti tiun  funkcion?</string>
-  <string name="update_recovery_off_warning">ATENTU: Kiam tiu funkcio estas malŝaltita, via instalata riparado ne estos ĝistatigitaj samtempe kiel la sistemaj ĝisdatigadoj.\n\nEstontaj sistemaj ĝistadigoj eble ne instaliĝos kun malmodernaj aŭ propraj versioj de riparadoj\n\nĈu vi volas malŝalti tiun  funkcion?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versio de CyanogenMod</string>
-  <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo de la aparato</string>
   <!-- About phone screen, Device name -->
@@ -272,7 +265,6 @@
   <string name="proximity_wake_title">Malpermesi neatenditan vekiĝon</string>
   <string name="proximity_wake_summary">Kontroli la proksimecan sensoron por malpermesi neatenditajn vekiĝon de la ekranon</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Privateco</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Defaŭlte ŝaltita</string>
   <string name="privacy_guard_default_summary">Defaŭlte ŝaltita por laste instalitaj aplikaĵoj</string>
@@ -768,8 +760,6 @@
   <string name="usb_not_connected">USB estas nun malkonektita</string>
   <string name="external_storage_turn_on">Ekstera memorilo estas aktiva</string>
   <string name="external_storage_turn_off">Ekstera memorilo estas malaktiva</string>
-  <string name="stats_collection_title">Rikolto de statistikoj</string>
-  <string name="stats_collection_summary">Kiam ŝaltita, ebligas kolekti statistikojn</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Ŝarĝado de sonoj</string>
@@ -801,8 +791,6 @@
   <string name="edge_gesture_service_title">Bloki gestajn eventojn</string>
   <string name="edge_gesture_service_summary">Ne sendi tuŝajn eventojn por navigilo kaj stata breto al aplikaĵoj</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Laŭleĝa informo pri CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Laŭleĝa informo pri CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Montri ŝablonan eraron</string>
@@ -859,9 +847,6 @@
   <string name="qs_tile_heads_up">Flugantaj atentigoj</string>
   <string name="qs_tile_ambient_display">Ĉirkaŭaĵa afiŝado</string>
   <string name="qs_tile_sync">Sinkronigo</string>
-  <string name="qs_dynamic_tile_next_alarm">Venonta alarmo</string>
-  <string name="qs_dynamic_tile_ime_selector">Klavara elektilo</string>
-  <string name="qs_dynamic_tile_su">Radikuzanta reĝimo</string>
   <string name="qs_main_tiles_title">Pligrandigi la unuan vicon</string>
   <string name="qs_main_tiles_summary_on">Du ĉefaj kaheloj en la unua vico</string>
   <string name="qs_main_tiles_summary_off">Tri ĉefaj kaheloj en ĉiu vico</string>
@@ -908,8 +893,6 @@
   <string name="lockscreen_choose_action_title">Elekti agon</string>
   <string name="lockscreen_visualizer_title">Montri muzika vidilon</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Mastrumi sekurecan agordon por SMS</string>
   <string name="navigation_ring_title">Celoj de ringa navigilo</string>
   <string name="navigation_ring_message">Tuŝetu la piktogramon \"Redakti\" por malfermi la ringan navigilon por redakti.\n\nElektu celon por agordi ties konduton.\n\nTuŝetu la piktogramon \'\u2713\'  por konservi viajn ŝanĝojn, aŭ \"Restaŭri defaŭltojn\" por restaŭri la defaŭltajn agordojn.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -984,21 +967,7 @@
   <string name="battery_saver_summary_unavailable">Ne disponeblas dum ŝarĝado</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistikoj pri CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ebligas plibonigi CyanogenMod, sendante anonimajn statisktikojn pri cimraportoj
-,</string>
-  <string name="anonymous_statistics_warning_title">Pri</string>
-  <string name="anonymous_statistics_warning">Ŝalti la sendadon de statistikoj ebligos la programistojn de CyanogenMod kolekti anonimajn informojn por kalkuli nombron de unikaj instaltadoj per aparato. La senditaj datumoj enhavas unikan identigilon, kiu ne malhelpas al la privateco de viaj datumoj. Datumoj estas pritraktitaj dum ĉiu lanĉado.\n\nPor vidi ekzemplon, elektu \"Antaŭvidi datumojn\".</string>
-  <string name="enable_reporting_title">Ŝalti raportojn</string>
-  <string name="preview_data_title">Antaŭvidi datumojn</string>
-  <string name="view_stats_title">Vidi statistikojn</string>
-  <string name="anonymous_learn_more">Scii pli</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unika identigilo</string>
-  <string name="preview_device_title">Aparato</string>
-  <string name="preview_version_title">Versio</string>
-  <string name="preview_country_title">Lando</string>
-  <string name="preview_carrier_title">Provizanto</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Flugantaj atentigoj</string>
   <string name="summary_heads_up_enabled">Ŝpruc-atentigiloj estas ŝaltitaj</string>
@@ -1008,11 +977,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">Tio forigos ĉiujn datumojn de la <b>interna memorilo</b> de via telefono, inkluzive:\n\n<li>Viaj aparataj kontoj</li>\n<li>Sistema kaj aplikaĵaj datumoj kaj agordoj</li>\n<li>elŝutitaj aplikaĵoj</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Protektado de la aparato</string>
-  <string name="lock_to_cyanogen_summary">Postuli la pasvorton de via Cyanogen-konton, eĉ post kompleta restaŭrado</string>
-  <string name="lock_to_cyanogen_create_account_msg">Via aparato uzas la Cyanogen-kontan pasvorton por protekti vian aparaton, eĉ dum kompleta restorado. Vi devos krei Cyanogen-konton.</string>
-  <string name="lock_to_cyanogen_disable_msg">Malŝalti tiun funkcion permesos al nerajtigitaj uzantoj komplete restartigi vian telefonon se ĝi estas ŝtelita. Viaj personaj datumoj eble ne estas protektitaj. Ĉu vi volas malŝalti tiun funkcion?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Aparata protektado ŝaltita. Bonvolu malŝalti por daŭrigi la restartigon de via aparato.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Konektada eraro, ĉu Bludenta modemo estas ŝaltita sur tiu aparato?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Statuso de SIM %d</string>

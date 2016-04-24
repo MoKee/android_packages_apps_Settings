@@ -255,15 +255,8 @@
   <string name="block_notifications_summary">Quản lý thông báo bị bỏ qua và lọc</string>
   <string name="no_filters_title">Chưa thiết lập bộ lọc</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Các cập nhật CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Khôi phục Cyanogen Recovery</string>
-  <string name="update_recovery_summary">Cập nhập bản recovery cùng với cập nhật hệ thống</string>
-  <string name="update_recovery_on_warning">THÔNG BÁO: Khi tính năng này được bật, bản recovery đã được cài đặt của bạn sẽ được thay thế bằng bản đi kèm với phiên bản hệ điều hành hiện tại.\n\nBản recovery của bạn sẽ được cập nhật cùng với các bản nâng cấp cho hệ thống của bạn, giúp đảm bảo tính tương thích với những phiên bản sau này.\n\nBạn có muốn bật tính năng này?</string>
-  <string name="update_recovery_off_warning">Cảnh báo: Khi tắt tính năng này, recovery đã cài đặt của bạn sẽ không được cập nhật cùng với các bản nâng cấp của hệ điều hành.\n\nCác bản cập nhật hệ điều hành trong tương lai có thể không cài đặt với phiên bản recovery lỗi thời hoặc tuỳ chỉnh.\n\nBạn thực sự muốn tắt tính năng này?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Phiên bản CyanogenMod</string>
-  <string name="mod_version_default">Không rõ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Mẫu thiết bị</string>
   <!-- About phone screen, Device name -->
@@ -279,7 +272,6 @@
   <string name="proximity_wake_title">Ngăn ngừa tình cờ mở màn hình</string>
   <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi bật màn hình</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Quyền riêng tư</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Kích hoạt theo mặc định</string>
   <string name="privacy_guard_default_summary">Kích hoạt theo mặc định cho các ứng dụng mới được cài đặt</string>
@@ -780,8 +772,6 @@
   <string name="usb_not_connected">USB hiện đã ngắt kết nối</string>
   <string name="external_storage_turn_on">Bộ lưu trữ bên ngoài đã được bật</string>
   <string name="external_storage_turn_off">Bộ lưu trữ bên ngoài đã được tắt</string>
-  <string name="stats_collection_title">Thu thập số liệu thống kê</string>
-  <string name="stats_collection_summary">Khi bật, cho phép thu thập số liệu</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Âm báo đang sạc</string>
@@ -813,8 +803,6 @@
   <string name="edge_gesture_service_title">Chặn tín hiệu cử chỉ</string>
   <string name="edge_gesture_service_summary">Không gửi những tín hiệu cử chỉ từ thanh điều hướng và thanh thông báo đến ứng dụng</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Bộ phận pháp chế của CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Bộ phận pháp chế của CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Hiện lỗi mẫu hình</string>
@@ -877,9 +865,6 @@
   <string name="qs_tile_ambient_display">Hiển thị môi trường xung quanh</string>
   <string name="qs_tile_sync">Đồng bộ</string>
   <string name="qs_tile_battery_saver">Trình tiết kiệm pin</string>
-  <string name="qs_dynamic_tile_next_alarm">Báo thức tiếp theo</string>
-  <string name="qs_dynamic_tile_ime_selector">Trình chọn IME</string>
-  <string name="qs_dynamic_tile_su">Truy cập root</string>
   <string name="qs_main_tiles_title">Phóng lớn hàng đầu tiên</string>
   <string name="qs_main_tiles_summary_on">Hai ô chính trên hàng đầu tiên</string>
   <string name="qs_main_tiles_summary_off">Ba ô trên mỗi hàng</string>
@@ -927,8 +912,6 @@
   <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Quản lý thiết lập an toàn SMS</string>
   <string name="navigation_ring_title">Vòng điều hướng mục tiêu</string>
   <string name="navigation_ring_message">Chạm vào biểu tượng chỉnh sửa để mở vòng điều hướng cho chỉnh sửa.\n\nChọn một mục tiêu để thiết lập cấu hình cho hành vi của nó.\n\nChạm vào biểu tượng \'\u2713\' để lưu thay đổi của bạn, hoặc \'Khôi phục mặc định\' để thiết lập lại cài đặt về mặc định.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1018,20 +1001,7 @@
   <string name="battery_saver_summary_unavailable">Không hoạt động khi đang sạc</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Thống kê CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Giúp làm cho CyanogenMod tốt hơn bằng cách chọn vào báo cáo thống kê ẩn danh</string>
-  <string name="anonymous_statistics_warning_title">Thông tin</string>
-  <string name="anonymous_statistics_warning">Chọn tham gia Thống kê CyanogenMod sẽ cho phép gửi dữ liệu không liên quan đến cá nhân đến những nhà phát triển của CyanogenMod để theo dõi số lượt cài đặt độc đáo trên các thiết bị. Thông tin đã gửi sẽ bao gồm một ký hiệu nhận dạng duy nhất, nó sẽ không ảnh hưởng đến sự riêng tư hoặc dữ liệu cá nhân của bạn. Dữ liệu được gửi vào mỗi lần khởi động.\n\nĐể xem mẫu dữ liệu được gửi, chạm vào Xem trước dữ liệu.</string>
-  <string name="enable_reporting_title">Cho phép báo cáo</string>
-  <string name="preview_data_title">Xem trước dữ liệu</string>
-  <string name="view_stats_title">Xem thống kê</string>
-  <string name="anonymous_learn_more">Tìm hiểu thêm</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ID duy nhất </string>
-  <string name="preview_device_title">Thiết bị</string>
-  <string name="preview_version_title">Phiên bản</string>
-  <string name="preview_country_title">Quốc gia</string>
-  <string name="preview_carrier_title">Nhà mạng</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Heads up</string>
   <string name="summary_heads_up_enabled">Đã bật cửa sổ thông báo bật lên</string>
@@ -1041,11 +1011,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">Thao tác này sẽ xóa tất cả dữ liệu từ <b>bộ lưu trữ bên trong</b> của điện thoại của bạn, bao gồm:\n\n<li>Tài khoản thiết bị của bạn</li>\n<li>Dữ liệu của hệ thống và ứng dụng và cài đặt</li>\n<li>Các ứng dụng đã tải xuống</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">Bảo vệ thiết bị</string>
-  <string name="lock_to_cyanogen_summary">Yêu cầu phải có mật khẩu tài khoản Cyanogen OS của bạn ngay cả sau khi thiết lập lại về cài đặt lúc xuất xưởng</string>
-  <string name="lock_to_cyanogen_create_account_msg">Thiết bị của bạn sử dụng mật khẩu tài khoản Cyanogen OS để bảo vệ thiết bị của bạn thậm chí trong trường hợp thiết lập lại về cài đặt lúc xuất xưởng. Bạn sẽ cần phải tạo lập tài khoản Cyanogen OS.</string>
-  <string name="lock_to_cyanogen_disable_msg">Tắt tính năng này sẽ cho phép người dùng trái phép thiết lập lại điện thoại của bạn về mặc định lúc xuất xưởng nếu điện thoại bị đánh cắp. Dữ liệu cá nhân của bạn có thể không được bảo vệ. Bạn có muốn tắt tính năng này không?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">Bảo vệ thiết bị đã được bật. Vui lòng vô hiệu hóa để tiếp tục thiết lập lại thiết bị của bạn.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">Lỗi kết nối; chia sẻ kết nối qua Bluetooth có được kích hoạt trên thiết bị này không?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Trạng thái %d của SIM</string>

@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">উপেক্ষা কৰা অধিসূচনাবোৰ আৰু ফিল্টাৰবোৰ প্ৰবন্ধন কৰক</string>
   <string name="no_filters_title">কোনো ফিল্টাৰ ছেট কৰা নাই</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod আপডেটসমূহ</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen পুনৰুদ্ধাৰ আপডেট কৰক</string>
-  <string name="update_recovery_summary">আপডেট পুনৰুদ্ধাৰ তথা ছিষ্টেম আপডেট</string>
-  <string name="update_recovery_on_warning">জাননী: এই বৈশিষ্ট্যটো সক্ষম কৰিলে, আপোনাৰ ইনষ্টল থকা পুনৰুদ্ধাৰ এই চলি থকা OS-ৰ সাম্প্ৰতিক সংস্কৰণত অন্তৰ্ভুক্ত এটাৰ দ্বাৰা পৰিবৰ্তিত হ\'ব।\n\nআপোনাৰ পুনৰুদ্ধাৰ আপোনাৰ ছিষ্টেমৰ সৈতে আপগ্ৰেডৰ সৈতে আপডেট কৰা হ\'ব, যাতে ভৱিষ্যৎ সংস্কৰণসমূহৰ সৈতে সুসমতা নিশ্চিত কৰাত সহায় হয়।\n\nআপুনি এই বৈশিষ্ট্যটো সক্ষম কৰিব বিচাৰে নে?</string>
-  <string name="update_recovery_off_warning">সকীয়নি: যেতিয়া বৈশিষ্ট্যটো অক্ষম কৰা হয়, আপোনাৰ ইনষ্টল কৰা পুনৰুদ্ধাৰ OS আপগ্ৰেডৰ সৈতে আপডেট কৰা নহ\'ব।\n\nভৱিষ্যৎ OS আপডেটবোৰ পুৰণি বা কাষ্টম পুনৰুদ্ধাৰ সংস্কৰণৰ সৈতে ইনষ্টল নহ\'ব পাৰে।\n\nআপুনি সঁচাই এই বৈশিষ্ট্যটো অক্ষম কৰিব বিচাৰে নে?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod সংস্কৰণ</string>
-  <string name="mod_version_default">অজ্ঞাত</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ডিভাইচৰ মডেল</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">দুৰ্ঘটনাক্ৰমে ৱেক-আপ হোৱাটো প্ৰতিৰোধ কৰক</string>
   <string name="proximity_wake_summary">স্ক্ৰীণ ৱেক আপ কৰাৰ আগতে প্ৰ\'ক্সিমিটী চেনচৰ পৰীক্ষা কৰক</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">গোপনীয়তা</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">ডিফ\'ল্ট হিচাপে সক্ষম কৰক</string>
   <string name="privacy_guard_default_summary">নতুনকৈ ইনষ্টল কৰা এপ্প্‌ৰ বাবে ডিফ\'ল্ট হিচাপে সক্ষম কৰক</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">USB এতিয়া সংযোগহীন হৈছে</string>
   <string name="external_storage_turn_on">বাহ্যিক ষ্ট\'ৰেজ অন কৰা হৈছে</string>
   <string name="external_storage_turn_off">বাহ্যিক ষ্ট\'ৰেজ অফ কৰা হৈছে</string>
-  <string name="stats_collection_title">পৰিসংখ্যা সংগ্ৰহ</string>
-  <string name="stats_collection_summary">যেতিয়া সক্ষম কৰা হয়, মেট্ৰিক্স সংগ্ৰহৰ অনুমতি দিয়ে</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">চাৰ্জিং শব্দ</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">ভঙ্গিমা স্পৰ্শ ইভেণ্ট অৱৰুদ্ধ কৰক</string>
   <string name="edge_gesture_service_summary">নেভিগেশ্যনৰ বাবে স্পৰ্শ ইভেণ্টবোৰ আৰু ষ্টেটাচ বাৰৰ ভঙ্গিমাবোৰ এ‌প্প্‌লৈ নপঠাব</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod আইনী</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod আইনী</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">পেটাৰ্ণৰ ত্ৰুটি প্ৰদৰ্শন কৰক</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">পৰিপাৰ্শ্বিক ডিচপ্লে</string>
   <string name="qs_tile_sync">সংযোজন</string>
   <string name="qs_tile_battery_saver">বেটাৰী চেভাৰ</string>
-  <string name="qs_dynamic_tile_next_alarm">পৰৱৰ্তী এলাৰ্ম</string>
-  <string name="qs_dynamic_tile_ime_selector">IME চয়নকাৰী</string>
-  <string name="qs_dynamic_tile_su">ৰুট প্ৰৱেশ কৰক</string>
   <string name="qs_main_tiles_title">প্ৰথম শাৰী পৰিবৰ্ধন কৰক</string>
   <string name="qs_main_tiles_summary_on">প্ৰথম শাৰীত দুটা প্ৰধান টাইল</string>
   <string name="qs_main_tiles_summary_off">প্ৰতিটো শাৰীত তিনিটা টাইল</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">সংগীত ভিজুৱেলাইজাৰ প্ৰদৰ্শন কৰক</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">সুৰক্ষিত SMS ছেটিংচ প্ৰবন্ধন কৰক</string>
   <string name="navigation_ring_title">নেভিগেচন ৰিং লক্ষ্যবোৰ</string>
   <string name="navigation_ring_message">সম্পাদনা কৰিবলৈ নেভিগেচন ৰিং খোলাৰ বাবে সম্পাদনা আইকন টেপ কৰক।\n\nআচৰণ কনফিগাৰ কৰিবলৈ লক্ষ্য চয়ন কৰক।\n\nআপোনাৰ পৰিবৰ্তনবোৰ সংৰক্ষণ কৰিবলৈ \'\u2713\' আইকনটো টেপ কৰক, বা ছেটিংচবোৰ ডিফ\'ল্টলৈ ৰিছেট কৰিবলৈ \'Restore defaults\' টেপ কৰক।</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">চাৰ্জিং কৰি থাকোতে উপলব্ধ নহয়</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod পৰিসংখ্যা</string>
-  <string name="anonymous_statistics_summary">বেনামী পৰিসংখ্যা ৰিপোৰ্টিং চয়ন কৰাৰ দ্বাৰা CyanogenMod উন্নত কৰাত সহায় কৰক</string>
-  <string name="anonymous_statistics_warning_title">বিষয়ে</string>
-  <string name="anonymous_statistics_warning">CyanogenMod পৰিসংখ্যা চয়ন কৰিলে ডিভাইচবোৰৰ মাজত অনন্য স্থাপনকৰণ ট্ৰেক কৰিবলৈ অ-ব্যক্তিগত ডাটা CyanogenMod ডেভেলপাৰসকললৈ দাখিল কৰিবলৈ অনুমতি দিব। দাখিল কৰা তথ্যবোৰত এটা অনন্য চিনাক্তকাৰী অন্তৰ্ভুক্ত থাকে, যিটোৱে আপোনাৰ গোপনীয়তা বা ব্যক্তিগত ডাটাৰ সৈতে আপোচ নকৰে। প্ৰতিবাৰ বুট হোৱা সময়ত ডাটা দাখিল কৰা হয়।\n\nদাখিল কৰা ডাটাৰ উদাহৰণ হিচাপে, প্ৰিভিউ ডাটাত ডেপ কৰক।</string>
-  <string name="enable_reporting_title">ৰিপোৰ্টিং সক্ষম কৰক</string>
-  <string name="preview_data_title">ডাটা প্ৰিভিউ কৰক</string>
-  <string name="view_stats_title">পৰিসংখ্যা চাওক</string>
-  <string name="anonymous_learn_more">বেছিকৈ পঢ়া</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">অনন্য ID</string>
-  <string name="preview_device_title">ডিভাইচ</string>
-  <string name="preview_version_title">সংস্কৰণ</string>
-  <string name="preview_country_title">ৰাষ্ট্ৰ</string>
-  <string name="preview_carrier_title">বাহক</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">হেডচ আপ</string>
   <string name="summary_heads_up_enabled">পপ-আপ অধিসূচনাবোৰ সক্ষম কৰা হৈছে</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">এইটোৱে আপোনাৰ টেবলেটৰ <b>ইণ্টাৰ্ণেল ষ্টোৰেজ</b>, অন্তৰ্ভুক্ত কৰি  সকলো ডাটা মচি পেলাব:\n\n<li>আপোনাৰ ডিভাইচ একাউণ্ট</li>\n<li>ছিষ্টেম আৰু এপ্প্‌ ডাটা আৰু ছেটিংছ</li>\n<li>ডাউনলোড কৰা এপ্পসমূহ</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">ডিভাইচ সুৰক্ষা</string>
-  <string name="lock_to_cyanogen_summary">আপোনাৰ Cyanogen OS একাউণ্টৰ পাছৱৰ্ডৰ প্ৰয়োজন, আনকি ফেক্টৰী ৰিছেটৰ পাছতো</string>
-  <string name="lock_to_cyanogen_create_account_msg">আনকি ফেক্টৰী ৰিছেটৰ ক্ষেত্ৰতো আপোনাৰ ডিভাইচ প্রতিৰোধ ৰাখিবলৈ আপোনাৰ ডিভাইচে Cyanogen OS একাউণ্টৰ পাছৱৰ্ড ব্যৱহাৰ কৰে। আপুনি Cyanogen OS একাউণ্ট খোলাৰ প্ৰয়োজন হ\'ব।</string>
-  <string name="lock_to_cyanogen_disable_msg">এই বৈশিষ্ট্যটো অক্ষম কৰিলে অকৰ্তৃত্বশীল ব্যৱহাৰকৰ্তাক আপোনাৰ ফোনটো চুৰি হ\'লে ফেক্টৰী ৰিছেট কৰিবলৈ অনুমতি দিব। আপোনাৰ ব্যক্তিগত ডাটা প্ৰতিৰোধী নহ\'ব পাৰে। আপুনি এই বৈশিষ্ট্যটো অক্ষম কৰিব বিচাৰে নে?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">ডিভাইচ সুৰক্ষা সক্ষম কৰা হৈছে। আপোনাৰ ডিভাইচটোৰ ৰিছেটিং অব্যাহত ৰাখিবলৈ অনুগ্ৰহ কৰি অক্ষম কৰক।</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">সংযোগ ত্ৰুটি, এই ডিভাইচটোত Bluetooth টিডাৰিং সক্ষম কৰা হৈছে নে?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d স্থিতি</string>

@@ -231,15 +231,8 @@
   <string name="block_notifications_summary">Manage ignored notifications and filters</string>
   <string name="no_filters_title">No filters set</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod updates</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Update Cyanogen recovery</string>
-  <string name="update_recovery_summary">Update recovery with system updates</string>
-  <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-  <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod version</string>
-  <string name="mod_version_default">Unknown</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, build date -->
@@ -253,7 +246,6 @@
   <string name="proximity_wake_title">Prevent accidental wake-up</string>
   <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">Privacy</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">Enabled by default</string>
   <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
@@ -727,8 +719,6 @@
   <string name="usb_sdcard_summary">Lets you transfer files between your computer and SD card by mounting it as a flash device</string>
   <string name="external_storage_turn_on">External storage has been turned on</string>
   <string name="external_storage_turn_off">External storage has been turned off</string>
-  <string name="stats_collection_title">Stats collection</string>
-  <string name="stats_collection_summary">When enabled, allows metrics collection</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Charging sounds</string>
@@ -759,8 +749,6 @@
   <string name="edge_gesture_service_title">Block gesture touch events</string>
   <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod legal</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod legal</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -854,8 +842,6 @@
   <string name="lockscreen_choose_action_title">Choose action</string>
   <string name="lockscreen_visualizer_title">Display music visualizer</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">Manage secure SMS settings</string>
   <string name="navigation_ring_title">Navigation ring targets</string>
   <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
   <!-- Display & Lights screen, setting options for LCD density -->

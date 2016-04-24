@@ -256,15 +256,8 @@
   <string name="block_notifications_summary">दुर्लक्ष केलेल्या सूचना आणि फिल्टर्स व्यवस्थापित करा</string>
   <string name="no_filters_title">कोणतेही फिल्टर्स सेट नाहीत</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod अद्यतने</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Cyanogen पुनर्प्राप्ती अद्ययावत करा</string>
-  <string name="update_recovery_summary">सिस्टिम अद्यतनांसह अद्यतने पुनर्प्राप्ती</string>
-  <string name="update_recovery_on_warning">सूचना जेव्हा हे वैशिष्ट्य सक्षम केलेले असते तेव्हा, तुमच्या स्थापित पुनर्प्राप्तीची जागा OS चालविण्याचा समावेश असलेल्या चालू आवृत्तीने घेतली जाईल.\n\nतुमच्या सिस्टिमच्या उन्नतीकरणांसह तुमची पुनर्प्राप्ती अद्यतन केली जाईल, ज्यामुळे भविष्यातील सुसंगतीची खात्री होण्यास मदत मिळेल.\n\nतुम्हाला हे वैशिष्ट्य सक्षम करायचे आहे का?</string>
-  <string name="update_recovery_off_warning">चेतावनी जेव्हा हे वैशिष्ट्य अक्षम केलेले असते तेव्हा, तुमची स्थापित पुनर्प्राप्ती OS उन्नतीकरणांसह अद्यतन केली जाणार नाही.\n\n कालबाह्य किंवा सानुकूल पुनर्प्राप्ती आवृत्तींसह भविष्यातील OS अद्यतने कदाचित स्थापित होणार नाहीत.\n\nतुम्हाला हे वैशिष्ट्य खरोखरच अक्षम करायचे आहे का?</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod आवृत्ती</string>
-  <string name="mod_version_default">अज्ञात</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">डिव्हाइस मॉडेल</string>
   <!-- About phone screen, Device name -->
@@ -280,7 +273,6 @@
   <string name="proximity_wake_title">अपघाताने जागे करण्यास प्रतिबंध करा</string>
   <string name="proximity_wake_summary">स्क्रीनला जागे करण्यापूर्वी प्रॉक्सिमिटी सेन्सर तपासा</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">गोपनीयता</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">डिफॉल्टद्वारे सक्षम</string>
   <string name="privacy_guard_default_summary">नव्याने-स्थापित अनुप्रयोगांसाठी डिफॉल्टद्वारे सक्षम केलेले</string>
@@ -781,8 +773,6 @@
   <string name="usb_not_connected">USB आता डिस्कनेक्ट केले आहे</string>
   <string name="external_storage_turn_on">बाह्य संग्रह चालू केले आहे</string>
   <string name="external_storage_turn_off">बाह्य संग्रह बंद केले आहे</string>
-  <string name="stats_collection_title">आकडेवारी संकलन</string>
-  <string name="stats_collection_summary">सक्षम केलेले असताना, मेट्रिक्स संकलनास अनुमती देते</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">चार्जिंग ध्वनी</string>
@@ -814,8 +804,6 @@
   <string name="edge_gesture_service_title">जेश्चर टच इव्हेंट्स अवरोधित करा</string>
   <string name="edge_gesture_service_summary">नेव्हिगेशनसाठी टच इव्हेंट्स आणि अनुप्रयोगांसाठी स्थिती बार जेश्चर्स पाठवू नका</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod लिगल</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod लिगल</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">पॅटर्न त्रुटी दर्शवा</string>
@@ -878,9 +866,6 @@
   <string name="qs_tile_ambient_display">अँबियन्ट प्रदर्शन</string>
   <string name="qs_tile_sync">संकालन करा</string>
   <string name="qs_tile_battery_saver">बॅटरी सेव्हर</string>
-  <string name="qs_dynamic_tile_next_alarm">पुढील अलार्म</string>
-  <string name="qs_dynamic_tile_ime_selector">IME निवडक</string>
-  <string name="qs_dynamic_tile_su">रूट ऍक्सेस</string>
   <string name="qs_main_tiles_title">पहिली ओळ मोठी करा</string>
   <string name="qs_main_tiles_summary_on">पहिल्या ओळीवर दोन मुख्य टाईल्स</string>
   <string name="qs_main_tiles_summary_off">प्रत्येक ओळीवर तीन टाईल्स</string>
@@ -928,8 +913,6 @@
   <string name="lockscreen_visualizer_title">संगीत व्हिज्युअलायझर प्रदर्शित करा</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">व्हिस्परपुश</string>
-  <string name="whisperpush_summary">सुरक्षित SMS सेटिंग्ज व्यवस्थापित करा</string>
   <string name="navigation_ring_title">नेव्हिगेशन रिंग टार्गेट्स</string>
   <string name="navigation_ring_message">संपादनासाठी नेव्हिगेशन रिंग उघडण्याकरिता संपादन प्रतीक टॅप करा.\n\nवर्तन कॉन्फिगर करण्यासाठी लक्ष्य निवडा.\n\n तुमचे बदल जतन करण्यासाठी \'\u2713\' प्रतीक किंवा सेटिंग्ज डिफॉल्ट्सना रीसेट करण्यासाठी \'डिफॉल्ट्स पुनर्स्थापित करा\' टॅप करा.</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1019,20 +1002,7 @@
   <string name="battery_saver_summary_unavailable">चार्ज करत असताना उपलब्ध नाही</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CyanogenMod आकडेवारी</string>
-  <string name="anonymous_statistics_summary">अनामिक आकडेवारी अहवाल देणे निवडून CyanogenMod अधिक चांगले करण्यास मदत करा</string>
-  <string name="anonymous_statistics_warning_title">विषयी</string>
-  <string name="anonymous_statistics_warning">CyanogenMod आकडेवारी निवडल्यामुळे डिव्हाइसेवरील वैशिष्ट्यपूर्ण स्थापनेचा मागोवा घेण्यासाठी CyanogenMod च्या विकसकांकडे अ-वैयक्तिक डेटा सबमिट करण्यास परवानगी दिली जाईल. सबमिट केलेल्या माहितीमध्ये वैशिष्ट्यपूर्ण ओळखकर्त्याचा समावेश होतो, जो तुमच्या गुप्तता किंवा वैयक्तिक डेटाशी तडजोड करत नाही. डेटा प्रत्येक बूट दरम्यान सबमिट केला जातो.\n\nसबमिट केल्या जाणाऱ्या डेटाच्या उदाहरणासाठी, डेटा पूर्वावलोकन वर टॅप करा.</string>
-  <string name="enable_reporting_title">अहवाल देणे सक्षम करा</string>
-  <string name="preview_data_title">डेटा पूर्वावलोकन</string>
-  <string name="view_stats_title">आकडेवारी पाहा</string>
-  <string name="anonymous_learn_more">अधिक जाणून घ्या</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">वैशिष्ट्यपूर्ण ID</string>
-  <string name="preview_device_title">डिव्हाइस</string>
-  <string name="preview_version_title">आवृत्ती</string>
-  <string name="preview_country_title">देश</string>
-  <string name="preview_carrier_title">वाहक</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">हेड्स अप</string>
   <string name="summary_heads_up_enabled">पॉप-अप सूचना सक्षम केल्या गेल्या</string>
@@ -1042,11 +1012,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">यामुळे तुमच्या फोनच्या <b>अंतर्गत संचयनामधून</b> सर्व डेटा खोडला जाईल, पुढील गोष्टींच्या समावेशासह:\n\n<li>तुमची डिव्हाइस खाती</li>\n<li>सिस्टिम आणि अनुप्रयोग डेटा आणि सेटिंग्ज</li>\n<li>डाउनलोड केलेले अॅप्स</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">डिव्हाइस संरक्षण</string>
-  <string name="lock_to_cyanogen_summary">फॅक्टरी रीसेट नंतरही तुमचा Cyanogen OS खाते पासवर्ड आवश्यक आहे</string>
-  <string name="lock_to_cyanogen_create_account_msg">फॅक्टरी रीसेटच्या इव्हेंटमध्ये तुमचे डिव्हाइस Cyanogen OS खाते पासवर्ड तुमच्या डिव्हाइसचे संरक्षण करण्यासाठी वापरते. तुम्हाला एक Cyanogen OS खाते तयार करावे लागेल.</string>
-  <string name="lock_to_cyanogen_disable_msg">हे वैशिष्ट्य अक्षम केल्यामुळे, तुमचा फोन चोरीला गेल्यास, अनधिकृत वापरकर्त्यांना तुमचा फोन फॅक्टरी डिफॉल्ट्सना रीसेट करता येतो. तुमचा वैयक्तिक डेटा कदाचित संरक्षित केला जाणार नाही. तुम्हाला हे वैशिष्ट्य अक्षम करायचे आहे का?</string>
-  <string name="lock_to_cyanogen_master_clear_warning">डिव्हाइस संरक्षण सक्षम केलेले आहे. तुमचे डिव्हाइस रीसेट करणे चालू ठेवण्यासाठी कृपया अक्षम करा.</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">कनेक्शन त्रुटी; या डिव्हाइसवर Bluetooth टेदरिंग सक्षम केलेले आहे का?</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">सिम %d स्थिती</string>

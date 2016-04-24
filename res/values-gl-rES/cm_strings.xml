@@ -206,12 +206,7 @@
   <string name="block_notifications_summary">Xestionar filtros e notificacións ignoradas</string>
   <string name="no_filters_title">Non se estabeleceron filtros</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizacións de CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Recuperación da actualización de Cyanogen</string>
-  <string name="update_recovery_summary">Actualizar a recuperación coas actualizacións do sistema</string>
-  <string name="update_recovery_on_warning">AVISO: Se ten esta funcionalidade activada, a recuperación instalada substituirase por unha incluída na versión actual que se está a utilizar no sistema.\n\nA recuperación actualizarase xunta as actualizacións do sistema, para asegurar a compatibilidade coas versións futuras.\n\nQuere activar esta funcionalidade?</string>
-  <string name="update_recovery_off_warning">AVISO: Con esta funcionalidade desactivada, a recuperación instalada non se actualizará coas actualizacións do sistema.\n\nAs futuras actualizacións do sistema poderían non instalarse con versións de recuperación non actualizadas ou personalizadas.\n\nConfirma a desactivación desta funcionalidade?</string>
   <!-- About phone screen, CyanogenMod version -->
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->

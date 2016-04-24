@@ -255,15 +255,8 @@
   <string name="block_notifications_summary">จัดการการแจ้งเตือนและตัวกรองที่ละเว้น</string>
   <string name="no_filters_title">ไม่มีการตั้งค่าตัวกรอง</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">การอัปเดตรุ่น CyanogenMod</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">อัปเดตรุ่น Cyanogen recovery</string>
-  <string name="update_recovery_summary">อัปเดตรุ่น recovery ด้วยการอัปเดตระบบ</string>
-  <string name="update_recovery_on_warning">คำเตือน: เมื่อเปิดใช้งานคุณสมบัตินี้ recovery ที่ติดตั้งจะถูกแทนที่ด้วย recovery รุ่นปัจจุบันของระบบที่ใช้งาน\n\n recovery ของคุณจะได้รับการอัปเดตไปพร้อมกับการอัพเกรดระบบ ซึ่งช่วยให้แน่ใจได้ว่าจะสามารถเข้าได้กับรุ่นต่าง ๆ ในอนาคต\n\nต้องการใช้คุณสมบัตินี้หรือไม่</string>
-  <string name="update_recovery_off_warning">คำเตือน: เมื่อปิดการใช้งานคุณสมบัตินี้ recovery ที่ติดตั้งจะไม่ได้รับการอัปเดตไปกับการอัพเกรดระบบ\n\nการอัปเดตระบบในอนาคตอาจไม่ติดตั้งรุ่น recovery ที่ล้าสมัยหรือที่กำหนดเอง\n\nต้องการปิดใช้คุณสมบัตินี้แน่นอนหรือไม่</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">รุ่นของ CyanogenMod</string>
-  <string name="mod_version_default">ไม่รู้จัก</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">รุ่นอุปกรณ์</string>
   <!-- About phone screen, Device name -->
@@ -279,7 +272,6 @@
   <string name="proximity_wake_title">ป้องกันการเปิดหน้าจอโดยไม่เจตนา</string>
   <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนเปิดหน้าจอ</string>
   <!-- Privacy Settings Header item -->
-  <string name="privacy_settings_cyanogenmod_title">ความเป็นส่วนตัว</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_default_title">เปิดโดยค่าเริ่มต้น</string>
   <string name="privacy_guard_default_summary">เปิดโดยค่าเริ่มต้นสำหรับแอปที่ติดตั้งใหม่</string>
@@ -780,8 +772,6 @@
   <string name="usb_not_connected">ถอด USB แล้ว</string>
   <string name="external_storage_turn_on">พื้นที่จัดเก็บข้อมูลภายนอกถูกเปิดใช้งานแล้ว</string>
   <string name="external_storage_turn_off">พื้นที่จัดเก็บข้อมูลภายนอกถูกปิดใช้งานแล้ว</string>
-  <string name="stats_collection_title">การเก็บสถิติ</string>
-  <string name="stats_collection_summary">เมื่อเปิดใช้งานจะอนุญาตให้เก็บสถิติ</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">เสียงการชาร์จ</string>
@@ -813,8 +803,6 @@
   <string name="edge_gesture_service_title">บล็อคการแตะเมื่อปัด</string>
   <string name="edge_gesture_service_summary">อย่าส่งกิจกรรมการแตะไปยังแอปสำหรับท่าทางการแตะแถบสถานะหรือแถบนำทาง</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">แสดงลายเส้นที่ผิดพลาด</string>
@@ -877,9 +865,6 @@
   <string name="qs_tile_ambient_display">หน้าจอแวดล้อม</string>
   <string name="qs_tile_sync">ซิงค์</string>
   <string name="qs_tile_battery_saver">ประหยัดแบตเตอรี่</string>
-  <string name="qs_dynamic_tile_next_alarm">การปลุกครั้งต่อไป</string>
-  <string name="qs_dynamic_tile_ime_selector">ตัวเลือก IME</string>
-  <string name="qs_dynamic_tile_su">สิทธิผู้ดูแลระบบ</string>
   <string name="qs_main_tiles_title">ขยายแถวแรก</string>
   <string name="qs_main_tiles_summary_on">สองไทล์หลักบนแถวแรก</string>
   <string name="qs_main_tiles_summary_off">สามไทล์ต่อแถว</string>
@@ -927,8 +912,6 @@
   <string name="lockscreen_visualizer_title">แสดงเส้นจังหวะเพลง</string>
   <string name="nfc_title_category">NFC</string>
   <!-- WhisperPush -->
-  <string name="whisperpush_title">WhisperPush</string>
-  <string name="whisperpush_summary">จัดการการตั้งค่าข้อความปลอดภัย</string>
   <string name="navigation_ring_title">ตำแหน่งแหวนแถบนำทาง</string>
   <string name="navigation_ring_message">แตะที่ไอคอนแก้ไขเพื่อแก้ไขแหวนแถบนำทาง\n\nเลือกเป้าหมายเพื่อตั้งการกระทำที่ต้องการ\n\nแตะไอคอน\'\u2713\'เพื่อบันทึกหรือแตะคืนค่าเริ่มต้นเพื่อเปลี่ยนกลับเป็นแบบเดิม</string>
   <!-- Display & Lights screen, setting options for LCD density -->
@@ -1018,20 +1001,7 @@
   <string name="battery_saver_summary_unavailable">ไม่สามารถใช้งานได้ขณะชาร์จ</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">สถิติของ CyanogenMod</string>
-  <string name="anonymous_statistics_summary">ช่วยทำให้ CyanogenMod ดีขึ้นโดยการส่งรายงานสถิติแบบไม่ระบุตัวตน</string>
-  <string name="anonymous_statistics_warning_title">เกี่ยวกับ</string>
-  <string name="anonymous_statistics_warning">การส่งสถิติแบบไม่ระบุตัวตนไปยัง CyanogenMod จะอนุญาตให้ส่งข้อมูลที่ไม่ใช่ข้อมูลส่วนตัวไปยังนักพัฒนาของ CyanogenMod เพื่อติดตามการติดตั้งบนอุปกรณ์ทั้งหมด ข้อมูลที่ถูกส่งรวมไปถึงตัวระบุลักษณะเฉพาะ\n\nซึ่งไม่ส่งผลกระทบต่อความเป็นส่วนตัวและข้อมูลส่วนบุคคลของคุณ โดยจะส่งข้อมูลทุกครั้งที่เริ่มระบบ\n\n แตะ \"แสดงตัวอย่างข้อมูล\" เพื่อดูตัวอย่างข้อมูลที่ถูกส่ง</string>
-  <string name="enable_reporting_title">เปิดการรายงาน</string>
-  <string name="preview_data_title">แสดงตัวอย่างข้อมูล</string>
-  <string name="view_stats_title">ดูสถิติ</string>
-  <string name="anonymous_learn_more">เรียนรู้เพิ่มเติม</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">ตัวระบุที่ไม่ซ้ำกัน</string>
-  <string name="preview_device_title">อุปกรณ์</string>
-  <string name="preview_version_title">รุ่น</string>
-  <string name="preview_country_title">ประเทศ</string>
-  <string name="preview_carrier_title">ผู้ให้บริการ</string>
   <!-- Heads up -->
   <string name="heads_up_notifications">Heads up</string>
   <string name="summary_heads_up_enabled">เปิดใช้งานการแจ้งเตือนแบบป๊อปอัพ</string>
@@ -1041,11 +1011,6 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_cm" product="default">สิ่งนี้จะลบข้อมูลทั้งหมดจาก<b>ที่เก็บข้อมูลภายใน</b>ของโทรศัพท์ รวมถึง\n\n<li>บัญชีอุปกรณ์ของคุณ</li>\n<li>ข้อมูลระบบและข้อมูลแอปและการตั้งค่า</li>\n<li>แอปที่ดาวน์โหลด</li></string>
   <!-- Killswitch -->
-  <string name="lock_to_cyanogen_title">การป้องกันอุปกรณ์</string>
-  <string name="lock_to_cyanogen_summary">คุณต้องใส่รหัสผ่านบัญชี Cyanogen OS แม้หลังจากทำการคืนค่าโรงงานไปแล้วก็ตาม</string>
-  <string name="lock_to_cyanogen_create_account_msg">อุปกรณ์ของคุณใช้รหัสผ่านบัญชี Cyanogen OS ในการป้องกันอุปกรณ์ แม้อุปกรณ์ของคุณจะโดนคืนค่าโรงงานก็ตาม ดังนั้นคุณจำเป็นต้องสร้างบัญชี Cyanogen OS</string>
-  <string name="lock_to_cyanogen_disable_msg">การปิดใช้งานคุณสมบัตินี้อาจทำให้มีผู้ไม่ประสงค์ดีสามารถล้างอุปกรณ์ให้เป็นค่าเริ่มต้นจากโรงงานหากอุปกรณ์ของคุณหาย ข้อมูลส่วนบุคคลของคุณจะไม่ได้รับการปกป้อง ต้องการปิดคุณสมบัตินี้หรือไม่</string>
-  <string name="lock_to_cyanogen_master_clear_warning">การป้องกันอุปกรณ์ถูกเปิดใช้อยู่ กรุณาปิดเพื่อทำการคืนค่าโรงงาน</string>
   <string name="bluetooth_pan_profile_summary_use_for_error">การเชื่อมต่อล้มเหลว การปล่อยสัญญาณผ่านบลูทูธของอุปกรณ์นี้เปิดใช้งานอยู่หรือไม่</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">สถานะซิม %d</string>
