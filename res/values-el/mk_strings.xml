@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">Έκδοση MoKee</string>
   <string name="mk_version_default">Άγνωστο</string>
-  <string name="mk_support">Κοινοτική στήριξη</string>
-  <string name="mk_support_default">Άγνωστο</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Όλοι οι αριθμοί</string>
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>

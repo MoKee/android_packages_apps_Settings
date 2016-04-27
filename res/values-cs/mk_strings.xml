@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">Verze MoKee</string>
   <string name="mk_version_default">Neznámá</string>
-  <string name="mk_support">Podpora komunitou</string>
-  <string name="mk_support_default">Neznámá</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Všechna čísla</string>
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>

@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">إصدار موكي</string>
   <string name="mk_version_default">غير معروف</string>
-  <string name="mk_support">دعم المجتمع</string>
-  <string name="mk_support_default">غير معروف</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">كافة الأرقام</string>
   <string name="blacklist_all_numbers_summary">حظر جميع المكالمات</string>

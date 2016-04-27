@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">MoKee verzió</string>
   <string name="mk_version_default">Ismeretlen</string>
-  <string name="mk_support">Közösségi támogatás</string>
-  <string name="mk_support_default">Ismeretlen</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Összes szám</string>
   <string name="blacklist_all_numbers_summary">Minden hívás elutasítása</string>

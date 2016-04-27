@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">Versi MoKee</string>
   <string name="mk_version_default">Tidak diketahui</string>
-  <string name="mk_support">Dukungan komunitas</string>
-  <string name="mk_support_default">Tidak diketahui</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Semua nomor</string>
   <string name="blacklist_all_numbers_summary">Memblokir semua panggilan</string>

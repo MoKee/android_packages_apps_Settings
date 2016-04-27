@@ -64,12 +64,6 @@
             <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
         </PreferenceScreen>
 
-        <!-- Mod Support -->
-        <Preference android:key="mod_support"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mk_support"
-                android:summary="@string/mk_support_default" />
-
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">

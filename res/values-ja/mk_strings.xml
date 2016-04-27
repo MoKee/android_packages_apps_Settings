@@ -17,7 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">MoKee バージョン</string>
-  <string name="mk_support">コミュニティ サポート</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">すべての番号</string>
   <!-- Height of navigation bar buttons -->

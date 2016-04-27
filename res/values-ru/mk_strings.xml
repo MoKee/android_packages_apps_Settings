@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">Версия MoKee</string>
   <string name="mk_version_default">Неизвестно</string>
-  <string name="mk_support">Поддержка сообщества</string>
-  <string name="mk_support_default">Неизвестно</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Все числа</string>
   <string name="blacklist_all_numbers_summary">Блокировать все звонки</string>

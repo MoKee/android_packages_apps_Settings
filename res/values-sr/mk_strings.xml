@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">MoKee верзија</string>
   <string name="mk_version_default">Непознато</string>
-  <string name="mk_support">Подршка заједнице</string>
-  <string name="mk_support_default">Непознато</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Све бројеве</string>
   <string name="blacklist_all_numbers_summary">Блокирање свих позива</string>

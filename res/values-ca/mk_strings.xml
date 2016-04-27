@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">Versió MoKee</string>
   <string name="mk_version_default">Desconeguda</string>
-  <string name="mk_support">Suport de la comunitat</string>
-  <string name="mk_support_default">Desconeguda</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Tots els números</string>
   <string name="blacklist_all_numbers_summary">Bloquejar totes les trucades</string>

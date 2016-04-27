@@ -17,7 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version_default">அறியாத</string>
-  <string name="mk_support_default">அறியாத</string>
   <!-- BlackList Ext -->
   <!-- Height of navigation bar buttons -->
   <!-- Show network speed -->

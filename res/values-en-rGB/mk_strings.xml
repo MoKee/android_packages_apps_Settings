@@ -18,8 +18,6 @@
   <!-- About version and support -->
   <string name="mk_version">MoKee version</string>
   <string name="mk_version_default">Unknown</string>
-  <string name="mk_support">Community support</string>
-  <string name="mk_support_default">Unknown</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">All numbers</string>
   <string name="blacklist_all_numbers_summary">Block all calls</string>
