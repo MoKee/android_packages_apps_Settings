@@ -87,17 +87,17 @@
                 android:title="@string/device_model"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/firmware_version"
-                android:summary="@string/device_info_default"/>
-
         <!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mk_version"
                 android:summary="@string/mk_version_default" />
+
+        <!-- Device firmware version -->
+        <Preference android:key="firmware_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/firmware_version"
+                android:summary="@string/device_info_default"/>
 
         <!-- Security patch level -->
         <Preference android:key="security_patch"
