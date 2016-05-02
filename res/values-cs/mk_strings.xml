@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">Verze MoKee</string>
-  <string name="mk_version_default">Neznámá</string>
+  <string name="mk_version_default">Neznámé</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Všechna čísla</string>
   <string name="blacklist_all_numbers_summary">Blokovat všechny hovory</string>
@@ -48,6 +48,13 @@
   <string name="show_headset_icon_title">Zobrazit ikonu sluchátek</string>
   <string name="show_headset_icon_summary">Zobrazit ikonu ve stavové liště, když jsou zapojeny sluchátka</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
+    <item quantity="few">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
+    <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> krok od povolení nastavení pro vývojáře.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Vývojářské nastavení je povoleno!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Není potřeba, vývojářské nastavení je již povoleno.</string>
 </resources>

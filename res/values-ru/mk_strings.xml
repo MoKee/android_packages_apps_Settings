@@ -48,6 +48,13 @@
   <string name="show_headset_icon_title">Показывать значок гарнитуры</string>
   <string name="show_headset_icon_summary">Отобразить значок в строке состояния, когда гарнитура подключена</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Вы в <xliff:g id="step_count">%1$d</xliff:g> шаге от включения настроек для разработчиков.</item>
+    <item quantity="few">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+    <item quantity="other">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Настройки для разработчиков включены!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Не нужно, настройки для разработчиков уже включены.</string>
 </resources>
