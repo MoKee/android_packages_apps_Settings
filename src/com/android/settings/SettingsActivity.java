@@ -1339,8 +1339,11 @@ public class SettingsActivity extends Activity
                         removeTile = true;
                     }
                 } else if (id == R.id.weather_settings) {
+                    final boolean showWeatherMenu = getResources()
+                            .getBoolean(R.bool.config_showWeatherMenu);
+
                     if (!getPackageManager().hasSystemFeature(
-                            MKContextConstants.Features.WEATHER_SERVICES)) {
+                            MKContextConstants.Features.WEATHER_SERVICES) || !showWeatherMenu) {
                         removeTile = true;
                     }
                 }
