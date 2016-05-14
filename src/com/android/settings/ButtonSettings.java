@@ -417,8 +417,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         try {
             // Only show the navigation bar category on devices that have a navigation bar
             // unless we are forcing it via development settings
-            boolean forceNavbar = MKSettings.Secure.getInt(getContentResolver(),
-                    MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
+            boolean forceNavbar = MKSettings.Global.getInt(getContentResolver(),
+                    MKSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
                     || forceNavbar;
 
@@ -642,13 +642,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
-        MKSettings.Secure.putInt(context.getContentResolver(),
-                MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        MKSettings.Global.putInt(context.getContentResolver(),
+                MKSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
     }
 
     private void updateDisableNavkeysOption() {
-        boolean enabled = MKSettings.Secure.getInt(getActivity().getContentResolver(),
-                MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+        boolean enabled = MKSettings.Global.getInt(getActivity().getContentResolver(),
+                MKSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
 
         mDisableNavigationKeys.setChecked(enabled);
     }
@@ -701,8 +701,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return;
         }
 
-        writeDisableNavkeysOption(context, MKSettings.Secure.getInt(context.getContentResolver(),
-                MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
+        writeDisableNavkeysOption(context, MKSettings.Global.getInt(context.getContentResolver(),
+                MKSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
     }
 
 
