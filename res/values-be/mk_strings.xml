@@ -39,9 +39,22 @@
   <string name="status_bar_network_traffic_style_down">Уваходныя</string>
   <string name="status_bar_network_traffic_style_all">Выходныя i ўваходныя</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Гадзіннік з секундамі</string>
+  <string name="status_bar_clock_show_second_summary">Адлюстроўваць секунды ў гадзінах радка стану</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Індыкатар суперпользователя</string>
+  <string name="show_su_icon_summary">Паказваць індыкатар суперпользователя (#) у радку стану, калі ён выкарыстоўваецца</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Паказваць значок гарнітуры</string>
+  <string name="show_headset_icon_summary">Паказваць значок у радку стану, калі гарнітура падключана</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўнікаў.</item>
+    <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўнікаў.</item>
+    <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўнікаў.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Настройкі для распрацоўшчыкаў ўключаны!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Ня трэба, налады для распрацоўнікаў ужо ўключаны.</string>
 </resources>
