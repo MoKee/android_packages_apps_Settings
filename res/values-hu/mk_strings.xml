@@ -20,7 +20,7 @@
   <string name="mk_version_default">Ismeretlen</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Összes szám</string>
-  <string name="blacklist_all_numbers_summary">Minden hívás elutasítása</string>
+  <string name="blacklist_all_numbers_summary">Minden hívás blokkolása</string>
   <string name="blacklist_advertisement_numbers_title">Reklám-számok</string>
   <string name="blacklist_advertisement_numbers_summary">Reklám hívások blokkolása</string>
   <string name="blacklist_fraud_numbers_title">Csaló számok</string>
@@ -43,11 +43,17 @@
   <string name="status_bar_clock_show_second_summary">Másodpercek megjelenítése az Értesítő sávban</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Su ikon megjelenítése</string>
-  <string name="show_su_icon_summary">Ikon megjelenítése, amennyiben a su aktív</string>
+  <string name="show_su_icon_summary">Ikon megjelenítése az állapotsávon, amennyiben az su aktív</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Fejhallgató ikon megjelenítése</string>
   <string name="show_headset_icon_summary">Ikon az állapotsorban, ha fejhallgató csatlakoztatva van</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Már csak <xliff:g id="step_count">%1$d</xliff:g> lépésre vagy a fejlesztői beállítások alkalmazásától.</item>
+    <item quantity="other">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Sikeresen engedélyezted a fejlesztői beállításokat!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Nincs rá szükség, már korábban engedélyezted a fejlesztői beállításokat.</string>
 </resources>

@@ -16,8 +16,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee version</string>
+  <string name="mk_version_default">Unknown</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">All numbers</string>
+  <string name="blacklist_all_numbers_summary">Block all calls</string>
+  <string name="blacklist_advertisement_numbers_title">Updater</string>
+  <string name="blacklist_advertisement_numbers_summary">Block advertisement calls</string>
+  <string name="blacklist_fraud_numbers_title">Fraud numbers</string>
+  <string name="blacklist_fraud_numbers_summary">Block fraud calls</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height_48">48dp (default)</string>
   <!-- Show network speed -->
   <!-- Seconds in clock -->
   <!-- Show/hide su icon -->

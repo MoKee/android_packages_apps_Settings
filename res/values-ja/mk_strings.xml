@@ -27,8 +27,14 @@
   <string name="show_network_speed_title">ネットワーク速度</string>
   <string name="show_network_speed_summary">ステータスバーにネットワーク速度を表示する</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">秒数を表示する</string>
+  <string name="status_bar_clock_show_second_summary">ステータスバーの時計に秒数を表示します</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">SuperUserアイコンを表示する</string>
+  <string name="show_su_icon_summary">ステータスバーにSuperUserのアイコンを表示します（アクティブ時のみ）</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">ヘッドセットアイコンを表示する</string>
+  <string name="show_headset_icon_summary">ヘッドセット接続時にステータスバーにアイコンを表示します</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
