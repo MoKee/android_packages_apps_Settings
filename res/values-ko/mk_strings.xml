@@ -48,6 +48,11 @@
   <string name="show_headset_icon_title">헤드셋 아이콘 표시</string>
   <string name="show_headset_icon_summary">헤드셋이 연결되면 상태 표시 줄에 아이콘 표시</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="other">개발자가 되려면<xliff:g id="step_count">%1$d</xliff:g> 단계가 남았습니다.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">개발자가 되셨습니다!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">이미 개발자입니다.</string>
 </resources>

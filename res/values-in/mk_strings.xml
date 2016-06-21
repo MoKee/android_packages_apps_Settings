@@ -22,11 +22,11 @@
   <string name="blacklist_all_numbers_title">Semua nomor</string>
   <string name="blacklist_all_numbers_summary">Memblokir semua panggilan</string>
   <string name="blacklist_advertisement_numbers_title">Nomor iklan</string>
-  <string name="blacklist_advertisement_numbers_summary">Blok iklan panggilan</string>
+  <string name="blacklist_advertisement_numbers_summary">Blokir panggilan iklan</string>
   <string name="blacklist_fraud_numbers_title">Nomor penipuan</string>
-  <string name="blacklist_fraud_numbers_summary">Blok penipuan panggilan</string>
-  <string name="blacklist_harassment_numbers_title">Pelecehan nomor</string>
-  <string name="blacklist_harassment_numbers_summary">Blok pelecehan panggilan</string>
+  <string name="blacklist_fraud_numbers_summary">Blokir panggilan penipuan</string>
+  <string name="blacklist_harassment_numbers_title">Nomor Pelecehan</string>
+  <string name="blacklist_harassment_numbers_summary">Blokir panggilan pelecehan</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Tinggi tombol</string>
   <string name="navigation_bar_height_48">48dp (standar)</string>
@@ -40,16 +40,16 @@
   <string name="status_bar_network_traffic_style_all">Keluar dan masuk</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Detik pada jam</string>
-  <string name="status_bar_clock_show_second_summary">Tampilkan detik di jam statusbar</string>
+  <string name="status_bar_clock_show_second_summary">Tampilkan detik di jam status bar</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Tampilkan ikon SU</string>
-  <string name="show_su_icon_summary">Tampilkan ikon su di statusbar saat su aktif</string>
+  <string name="show_su_icon_summary">Tampilkan ikon di status bar saat su aktif</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Tampilkan ikon headshet</string>
   <string name="show_headset_icon_summary">Tampilkan ikon headshet di statusbar ketika tertancap</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="other"><xliff:g id="step_count">%1$d</xliff:g> langkah mengaktifkan opsi pengembang.</item>
+    <item quantity="other">Anda sekarang <xliff:g id="step_count">%1$d</xliff:g> langkah dari pengaktifan pengaturan pengembang.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Anda telah mengaktifkan opsi pengembang!</string>

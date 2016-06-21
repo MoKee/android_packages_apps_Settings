@@ -48,6 +48,12 @@
   <string name="show_headset_icon_title">Mostrar ícone do fone de ouvido</string>
   <string name="show_headset_icon_summary">Exibir um ícone na status bar quando o fone de ouvido estiver conectado</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
+    <item quantity="other">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Você ativou as configurações de desenvolvimento!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Não é necessário, você já ativou as configurações de desenvolvimento.</string>
 </resources>
