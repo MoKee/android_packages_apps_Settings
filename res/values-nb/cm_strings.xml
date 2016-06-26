@@ -996,6 +996,7 @@
   <string name="live_display_color_profile_astronomy_title">Astronomi</string>
   <string name="live_display_color_profile_astronomy_summary">Dyp rød for å bevare nattsynet</string>
   <string name="live_display_color_profile_basic_title">Grunnleggende</string>
+  <string name="live_display_color_profile_basic_summary">Bruk skjermen ukalibrert</string>
   <string name="battery_saver_threshold">Batterisparingsterskel</string>
   <string name="battery_saver_summary">Reduser ytelsen og begrens bakgrunnsdata</string>
   <string name="battery_saver_summary_unavailable">Ikke tilgjengelig under lading</string>
@@ -1177,4 +1178,5 @@
                  <b>Total begår:</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Siste oppdatering:</b><xliff:g id="date">%3$s</xliff:g>]]></string>
   <string name="quick_settings_reset_message">Tilbakestille innstillinger for fliser?</string>
+  <string name="hardware_version_title">Maskinvare versjon</string>
 </resources>
