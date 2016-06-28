@@ -8,6 +8,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	mokee-support-widget \
 	jsr305 \
 	org.mokee.platform.internal \
+	libphonenumber \
 	libGoogleAnalyticsV3 \
 	libGoogleAdMobAdsSdk \
 	jpush \
