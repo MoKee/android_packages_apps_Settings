@@ -26,16 +26,26 @@
   <!-- Show network speed -->
   <string name="show_network_speed_title">ネットワーク速度</string>
   <string name="show_network_speed_summary">ステータスバーにネットワーク速度を表示する</string>
+  <string name="status_bar_network_traffic_style_disable">無効
+</string>
+  <string name="status_bar_network_traffic_style_up">送信</string>
+  <string name="status_bar_network_traffic_style_down">受信</string>
+  <string name="status_bar_network_traffic_style_all">送信と受信</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">秒数を表示する</string>
-  <string name="status_bar_clock_show_second_summary">ステータスバーの時計に秒数を表示します</string>
+  <string name="status_bar_clock_show_second_summary">ステータスバーの時計に秒数を表示する</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">SuperUserアイコンを表示する</string>
-  <string name="show_su_icon_summary">ステータスバーにSuperUserのアイコンを表示します（アクティブ時のみ）</string>
+  <string name="show_su_icon_summary">ステータスバーにSuperUserのアイコンを表示する（アクティブ時のみ）</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">ヘッドセットアイコンを表示する</string>
-  <string name="show_headset_icon_summary">ヘッドセット接続時にステータスバーにアイコンを表示します</string>
+  <string name="show_headset_icon_summary">ヘッドセット接続時にステータスバーにアイコンを表示する</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">開発者向けオプションが有効になりました。</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">必要ありません、既に開発者向けオプションを有効にしています。</string>
 </resources>
