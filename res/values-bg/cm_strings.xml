@@ -46,8 +46,6 @@
   <!-- About phone screen, CyanogenMod Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Дата на изграждане</string>
-  <!-- CM Updater -->
-  <!-- Settings switch for updating Cyanogen recovery -->
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Теми</string>
