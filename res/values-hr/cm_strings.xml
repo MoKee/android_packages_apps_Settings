@@ -25,7 +25,7 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
-  <string name="development_tools_title">Razvojni alati</string>
+  <string name="development_tools_title">Alati za razvojne programere</string>
   <!-- Development shortcut -->
   <string name="development_shortcut_title">Prečac razvojnih postavki</string>
   <string name="development_shortcut_summary">Omogući prečac upravljanja aplikacijama u popisu nedavno korištenih aplikacija</string>
@@ -539,7 +539,6 @@
   <string name="volume_adjust_sounds_title">Zvuk podešavanja glasnoće</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Intenzitet vibracije</string>
-  <string name="vibrator_warning">Vrijednosti veće od %1$d se ne preporučuju</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Kalibracija boja</string>
   <string name="color_calibration_summary">Kalibriraj boje zaslona</string>
