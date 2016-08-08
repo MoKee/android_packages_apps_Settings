@@ -119,16 +119,6 @@
 
         <uses-library android:name="org.apache.http.legacy" />
 
-        <!-- Screen color Settings Controls -->
-        <activity android:name=".ScreenColorSettings" android:label="@string/screencolor"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="nosensor">
-        </activity>
-        <activity android:name=".CustomScreenColor" android:label="@string/custom_screencolor"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="nosensor">
-        </activity>
-
         <activity android:name="Settings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/settings_label_launcher"
