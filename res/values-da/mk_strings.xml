@@ -17,9 +17,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">MoKee-version</string>
+  <string name="mk_version_default">Ukendt</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Alle numre</string>
+  <string name="blacklist_all_numbers_summary">Blokér alle opkald</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height_0">skjul</string>
   <!-- Show network speed -->
+  <string name="status_bar_network_traffic_style_down">Indgående</string>
   <!-- Seconds in clock -->
   <!-- Show/hide su icon -->
   <!-- Show/hide headset icon -->

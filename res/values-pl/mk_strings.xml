@@ -49,5 +49,7 @@
   <string name="show_headset_icon_summary">Wyświetla ikonę w pasku statusu gdy podłączony jest zestaw słuchawkowy</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Włączono opcje programistyczne!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Wystarczy, jesteś już programistą.</string>
 </resources>
