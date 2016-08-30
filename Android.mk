@@ -11,6 +11,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	libphonenumber \
 	libGoogleAnalyticsV3 \
 	libGoogleAdMobAdsSdk \
+	appoffer \
 	jpush \
 	volley
 

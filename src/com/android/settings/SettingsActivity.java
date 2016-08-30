@@ -37,6 +37,7 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
+import android.mokee.utils.MoKeeUtils;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -65,6 +66,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SearchView;
+
+import cn.waps.AppConnect;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.util.ArrayUtils;
@@ -732,6 +735,11 @@ public class SettingsActivity extends Activity
         }
 
         mHomeActivitiesCount = getHomeActivitiesCount();
+
+        AppConnect.getInstance("179a03b58d0dc099e7770f1f5e1f8887", "default", this);
+        if (!com.mokee.helper.utils.Utils.checkLicensed(this) && MoKeeUtils.isSupportLanguage(false)) {
+            AppConnect.getInstance(this).initPopAd(this);
+        }
     }
 
     private int getHomeActivitiesCount() {
@@ -881,6 +889,8 @@ public class SettingsActivity extends Activity
         mDevelopmentPreferences.unregisterOnSharedPreferenceChangeListener(
                 mDevelopmentPreferencesListener);
         mDevelopmentPreferencesListener = null;
+
+        AppConnect.getInstance(this).close();
     }
 
     protected boolean isValidFragment(String fragmentName) {

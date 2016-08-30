@@ -10,3 +10,7 @@
 
 -dontwarn mokee.**
 -keep class mokee.** { *;}
+
+-dontwarn cn.waps.**
+-keep public class cn.waps.** { *;}
+-keep public interface cn.waps.** { *;}
