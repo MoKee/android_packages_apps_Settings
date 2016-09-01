@@ -21,7 +21,10 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Alle numre</string>
   <string name="blacklist_all_numbers_summary">Blokér alle opkald</string>
+  <string name="blacklist_fraud_numbers_summary">Blokér uønskede opkald</string>
+  <string name="blacklist_harassment_numbers_title">Chikane numre</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Knappehøjde</string>
   <string name="navigation_bar_height_0">skjul</string>
   <!-- Show network speed -->
   <string name="status_bar_network_traffic_style_down">Indgående</string>

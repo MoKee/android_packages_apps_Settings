@@ -49,7 +49,7 @@
   <string name="show_headset_icon_summary">Tampilkan ikon headshet di statusbar ketika tertancap</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="other">Anda sekarang <xliff:g id="step_count">%1$d</xliff:g> langkah dari pengaktifan pengaturan pengembang.</item>
+    <item quantity="other"><xliff:g id="step_count">%1$d</xliff:g> langkah mengaktifkan opsi pengembang.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Anda telah mengaktifkan opsi pengembang!</string>
