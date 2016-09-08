@@ -16,10 +16,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee versjon</string>
   <string name="mk_version_default">Ukjent</string>
   <!-- BlackList Ext -->
   <!-- Height of navigation bar buttons -->
   <!-- Show network speed -->
+  <string name="status_bar_network_traffic_style_disable">Deaktivert</string>
+  <string name="status_bar_network_traffic_style_up">Utgående</string>
+  <string name="status_bar_network_traffic_style_down">Innkommende</string>
+  <string name="status_bar_network_traffic_style_all">Utgående og innkommende</string>
   <!-- Seconds in clock -->
   <!-- Show/hide su icon -->
   <!-- Show/hide headset icon -->
