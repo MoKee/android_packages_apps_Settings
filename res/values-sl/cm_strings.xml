@@ -17,12 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korak pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="two">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> koraka pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="few">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korake pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="other">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korakov pred omogočanjem nastavitev za razvijalce.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
