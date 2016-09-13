@@ -10,7 +10,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	org.mokee.platform.internal \
 	libphonenumber \
 	libGoogleAnalyticsV3 \
-	libGoogleAdMobAdsSdk \
+	play \
 	appoffer \
 	jpush \
 	volley
@@ -22,7 +22,8 @@ LOCAL_SRC_FILES := \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-        frameworks/support/mk/widget/res
+        frameworks/support/mk/widget/res \
+        external/google/google_play_services/libproject/google-play-services_lib/res
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
@@ -38,7 +39,8 @@ LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 LOCAL_AAPT_FLAGS := \
         --auto-add-overlay \
         --extra-packages com.mokee.helper \
-        --extra-packages mokee.support.widget
+        --extra-packages mokee.support.widget \
+        --extra-packages com.google.android.gms
 LOCAL_SRC_FILES += $(call all-java-files-under,../../../external/mokee/MoKeeHelper/MoKeeHelper/src)
 LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/../../../external/mokee/MoKeeHelper/MoKeeHelper/res
 
