@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">MoKee versija</string>
+  <string name="mk_version_default">Nežinoma</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Visi numeriai</string>
   <string name="blacklist_all_numbers_summary">Blokuoti visus skambučius</string>

@@ -17,12 +17,36 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">MoKee версия</string>
+  <string name="mk_version_default">Неизвестно</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Всички номера</string>
+  <string name="blacklist_all_numbers_summary">Блокиране на всички повиквания</string>
+  <string name="blacklist_advertisement_numbers_title">Рекламни номера</string>
+  <string name="blacklist_advertisement_numbers_summary">Блокирай рекламни повиквания</string>
+  <string name="blacklist_fraud_numbers_title">Фалшиви номера</string>
+  <string name="blacklist_fraud_numbers_summary">Блокирай фалшиви обаждания</string>
+  <string name="blacklist_harassment_numbers_title">Досадни номера</string>
+  <string name="blacklist_harassment_numbers_summary">Блокирай досадни номера</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Височина на бутона</string>
+  <string name="navigation_bar_height_48">48dp (по подразбиране)</string>
+  <string name="navigation_bar_height_0">скриване</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">Мрежова скорост</string>
+  <string name="show_network_speed_summary">Показва скорост на мрежа в лентата на състоянието</string>
+  <string name="status_bar_network_traffic_style_disable">Забранено</string>
+  <string name="status_bar_network_traffic_style_up">Изходящ</string>
+  <string name="status_bar_network_traffic_style_down">Входящи</string>
+  <string name="status_bar_network_traffic_style_all">Изходящи и входящи</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Секунди в часовника</string>
+  <string name="status_bar_clock_show_second_summary">Показва секунди в часа в статус лентата</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Показвай иконата на Su</string>
+  <string name="show_su_icon_summary">Покажи икона в лентата на състоянието, когато Su е активен</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Покажи иконата на слушалките</string>
+  <string name="show_headset_icon_summary">Покажи икона на слушалки, когато са включени</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
