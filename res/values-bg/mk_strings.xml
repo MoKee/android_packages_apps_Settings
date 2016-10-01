@@ -48,6 +48,12 @@
   <string name="show_headset_icon_title">Покажи иконата на слушалките</string>
   <string name="show_headset_icon_summary">Покажи икона на слушалки, когато са включени</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпка от вкл на опции за програмист.</item>
+    <item quantity="other">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпки от вкл на опции за програмист.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Вие включихте опциите за програмисти!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Не е необходимо. Вече има включени опции на програмист.</string>
 </resources>
