@@ -359,7 +359,7 @@ public class AppOpsCategory extends ListFragment implements
 
         SettingsActivity sa = (SettingsActivity) getActivity();
         sa.startPreferencePanel(AppOpsDetails.class.getName(), args,
-                org.cyanogenmod.platform.internal.R.string.privacy_guard_manager_title,
+                org.mokee.platform.internal.R.string.privacy_guard_manager_title,
                 null, this, RESULT_APP_DETAILS);
     }
     

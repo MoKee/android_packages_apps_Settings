@@ -33,7 +33,7 @@
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+    <mokee.preference.MKSecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary" />

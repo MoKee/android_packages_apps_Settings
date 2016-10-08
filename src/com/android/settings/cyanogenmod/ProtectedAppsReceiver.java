@@ -25,12 +25,12 @@ import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.util.Log;
 
-import static cyanogenmod.content.Intent.ACTION_PROTECTED;
-import static cyanogenmod.content.Intent.ACTION_PROTECTED_CHANGED;
-import static cyanogenmod.content.Intent.EXTRA_PROTECTED_COMPONENTS;
-import static cyanogenmod.content.Intent.EXTRA_PROTECTED_STATE;
+import static mokee.content.Intent.ACTION_PROTECTED;
+import static mokee.content.Intent.ACTION_PROTECTED_CHANGED;
+import static mokee.content.Intent.EXTRA_PROTECTED_COMPONENTS;
+import static mokee.content.Intent.EXTRA_PROTECTED_STATE;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -38,7 +38,7 @@ import java.util.HashSet;
 public class ProtectedAppsReceiver extends BroadcastReceiver {
     private static final String TAG = "ProtectedAppsReceiver";
 
-    private static final String PROTECTED_APP_PERMISSION = cyanogenmod.platform.Manifest
+    private static final String PROTECTED_APP_PERMISSION = mokee.platform.Manifest
             .permission.PROTECTED_APP;
 
     @Override
@@ -77,8 +77,8 @@ public class ProtectedAppsReceiver extends BroadcastReceiver {
     public static void updateSettingsSecure(Context context,
             ArrayList<ComponentName> components, boolean state) {
         ContentResolver resolver = context.getContentResolver();
-        String hiddenComponents = CMSettings.Secure.getString(resolver,
-                CMSettings.Secure.PROTECTED_COMPONENTS);
+        String hiddenComponents = MKSettings.Secure.getString(resolver,
+                MKSettings.Secure.PROTECTED_COMPONENTS);
         HashSet<ComponentName> newComponentList = new HashSet<ComponentName>();
 
         if (hiddenComponents != null) {
@@ -102,7 +102,7 @@ public class ProtectedAppsReceiver extends BroadcastReceiver {
                 }
                 flattenedList.append(cmp.flattenToString());
             }
-            CMSettings.Secure.putString(resolver, CMSettings.Secure.PROTECTED_COMPONENTS,
+            MKSettings.Secure.putString(resolver, MKSettings.Secure.PROTECTED_COMPONENTS,
                     flattenedList.toString());
         }
     }
