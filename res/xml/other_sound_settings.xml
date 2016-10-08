@@ -51,7 +51,7 @@
             android:title="@string/touch_sounds_title" />
 
     <!-- Volume adjust sound -->
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <mokee.preference.MKSystemSettingSwitchPreference
             android:key="volume_adjust_sounds_enabled"
             android:title="@string/volume_adjust_sounds_title"
             android:defaultValue="true" />

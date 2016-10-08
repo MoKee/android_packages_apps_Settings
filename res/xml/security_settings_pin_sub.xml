@@ -41,7 +41,7 @@
                 android:title="@string/owner_info_settings_title"
                 android:summary="@string/owner_info_settings_summary"/>
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <mokee.preference.MKSystemSettingSwitchPreference
             android:key="lockscreen_scramble_pin_layout"
             android:title="@string/unlock_scramble_pin_layout_title"
             android:summary="@string/unlock_scramble_pin_layout_summary" />
@@ -53,7 +53,7 @@
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
 
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="lockscreen_visualizer"
             android:title="@string/lockscreen_visualizer_title"
             android:defaultValue="true"/>

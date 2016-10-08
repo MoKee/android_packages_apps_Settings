@@ -84,7 +84,7 @@
     <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
 
-    <uses-permission android:name="cyanogenmod.permission.PROTECTED_APP" />
+    <uses-permission android:name="mokee.permission.PROTECTED_APP" />
     <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS" />
     <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
 
@@ -1291,7 +1291,7 @@
         </activity>
 
         <activity android:name="Settings$AppOpsSummaryActivity"
-                android:label="@*cyanogenmod.platform:string/privacy_guard_manager_title"
+                android:label="@*mokee.platform:string/privacy_guard_manager_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -1321,7 +1321,7 @@
              trick is so the code that is now a fragment can still be called
              AppOpsDetails. -->
         <activity android:name=".applications.AppOpsDetailsTop"
-                  android:label="@*cyanogenmod.platform:string/privacy_guard_manager_title"
+                  android:label="@*mokee.platform:string/privacy_guard_manager_title"
                   android:exported="true"
                   android:taskAffinity=""
                   android:excludeFromRecents="true"
@@ -1330,7 +1330,7 @@
 
         <!-- Keep compatibility with old shortcuts. -->
         <activity-alias android:name=".applications.AppOpsDetails"
-                android:label="@*cyanogenmod.platform:string/privacy_guard_manager_title"
+                android:label="@*mokee.platform:string/privacy_guard_manager_title"
                 android:exported="true"
                 android:excludeFromRecents="true"
                 android:targetActivity=".applications.AppOpsDetailsTop">
@@ -3183,9 +3183,9 @@
         <!-- This is the longest AndroidManifest.xml ever. -->
         <receiver
             android:name=".cyanogenmod.ProtectedAppsReceiver"
-            android:permission="cyanogenmod.permission.PROTECTED_APP">
+            android:permission="mokee.permission.PROTECTED_APP">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.PACKAGE_PROTECTED" />
+                <action android:name="mokee.intent.action.PACKAGE_PROTECTED" />
             </intent-filter>
         </receiver>
 

@@ -22,7 +22,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v14-preference \
     jsr305 \
     settings-logtags \
-    org.cyanogenmod.platform.internal
+    org.mokee.platform.internal
 
 LOCAL_MODULE_TAGS := optional
 

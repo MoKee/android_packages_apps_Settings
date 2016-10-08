@@ -30,7 +30,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.utils.SettingsDividerItemDecoration;
 import com.android.setupwizardlib.GlifPreferenceLayout;
 
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import org.mokee.internal.logging.MKMetricsLogger;
 
 public class ChooseLockPatternSize extends PreferenceActivity {
 
@@ -132,7 +132,7 @@ public class ChooseLockPatternSize extends PreferenceActivity {
 
         @Override
         protected int getMetricsCategory() {
-            return CMMetricsLogger.CHOOSE_LOCK_PATTERN_SIZE;
+            return MKMetricsLogger.CHOOSE_LOCK_PATTERN_SIZE;
         }
     }
 }

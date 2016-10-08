@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
+                  xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
         android:title="@string/display_settings"
         settings:keywords="@string/keywords_display">
 
@@ -38,14 +38,14 @@
                 android:summary="@string/auto_brightness_summary" />
 
         <!-- LiveDisplay -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="livedisplay"
-            cm:requiresFeature="org.cyanogenmod.livedisplay" />
+            mk:requiresFeature="org.mokee.livedisplay" />
 
         <!-- Rotation -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="rotation"
-            cm:requiresFeature="android.hardware.sensor.accelerometer" />
+            mk:requiresFeature="android.hardware.sensor.accelerometer" />
 
         <com.android.settings.display.NightDisplayPreference
                 android:key="night_display"
@@ -139,7 +139,7 @@
                 android:title="@string/screen_zoom_title"
                 settings:keywords="@string/screen_zoom_keywords" />
 
-        <!-- Disable on CM
+        <!-- Disable on MK
         <DropDownPreference
                 android:key="auto_rotate"
                 android:summary="%s"
