@@ -148,7 +148,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if(mMbnVersion == null){
             getPreferenceScreen().removePreference(findPreference(KEY_MBN_VERSION));
         }
-        setValueSummary(KEY_MOD_VERSION, com.mokee.os.Build.VERSION);
+        setValueSummary(KEY_MOD_VERSION, "ro.mk.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
