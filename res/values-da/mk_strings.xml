@@ -21,6 +21,9 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Alle numre</string>
   <string name="blacklist_all_numbers_summary">Blokér alle opkald</string>
+  <string name="blacklist_advertisement_numbers_title">Reklamenumre</string>
+  <string name="blacklist_advertisement_numbers_summary">Blokér reklameopkald</string>
+  <string name="blacklist_fraud_numbers_title">Svignumre</string>
   <string name="blacklist_fraud_numbers_summary">Blokér uønskede opkald</string>
   <string name="blacklist_harassment_numbers_title">Chikane numre</string>
   <string name="blacklist_harassment_numbers_summary">Blokér chikanerende opkald</string>
@@ -30,11 +33,17 @@
   <string name="navigation_bar_height_0">skjul</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">Netværkshastighed</string>
+  <string name="show_network_speed_summary">Vis netværkshastighed på statusbjælken</string>
   <string name="status_bar_network_traffic_style_disable">Deaktiveret</string>
+  <string name="status_bar_network_traffic_style_up">Udgående</string>
   <string name="status_bar_network_traffic_style_down">Indgående</string>
   <string name="status_bar_network_traffic_style_all">Udgående og indgående</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Sekunder i ur</string>
+  <string name="status_bar_clock_show_second_summary">Vis sekunder i statusbjælkeur</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Vis SU-ikon</string>
+  <string name="show_su_icon_summary">Vis et ikon i statusbjælken, når SU er aktiv</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Vis headset ikon</string>
   <string name="show_headset_icon_summary">Vis et ikon i statuslinjen, når headsettet er tilsluttet</string>
