@@ -67,6 +67,10 @@
             android:title="@string/sms_application_title"
             settings:keywords="@string/keywords_more_default_sms_app" />
 
+        <!-- Weather providers -->
+        <org.mokee.internal.mkparts.MKPartsPreference
+                android:key="weather_settings" />
+
     </PreferenceCategory>
 
     <com.android.settings.WorkOnlyCategory
