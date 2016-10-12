@@ -28,4 +28,7 @@
   <string name="show_dev_already_mk">您已处于开发者模式，无需进行此操作。</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">禁用或移除魔趣中心将影响系统关键功能，请还原后再开启程序。</string>
+  <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">网关</string>
+  <string name="wifi_advanced_network_netmask">子网掩码</string>
 </resources>

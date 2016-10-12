@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.DhcpInfo;
 import android.content.res.Resources;
+import android.net.DhcpInfo;
 import android.net.NetworkScoreManager;
 import android.net.NetworkScorerAppManager;
 import android.net.wifi.WifiConfiguration;

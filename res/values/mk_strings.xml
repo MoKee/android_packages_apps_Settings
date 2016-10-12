@@ -32,4 +32,8 @@
 
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Freezing or removing MoKee Center will affect system services, please restore and try again.</string>
+
+    <!-- CMCC wifi extension -->
+    <string name="wifi_advanced_gateway">Gateway</string>
+    <string name="wifi_advanced_network_netmask">Netmask</string>
 </resources>
