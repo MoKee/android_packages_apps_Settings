@@ -70,6 +70,8 @@ import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import mokee.hardware.MKHardwareManager;
+
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "DisplaySettings";
@@ -582,6 +584,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!isVrDisplayModeAvailable(context)) {
                         result.add(KEY_VR_DISPLAY_PREF);
+                    }
+                    if (!context.getResources().getBoolean(
+                            org.mokee.platform.internal.R.bool.config_proximityCheckOnWake)) {
+                        result.add("proximity_on_wake");
+                    }
+                    if (!MKHardwareManager.getInstance(context).
+                            isSupported(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+                        result.add("high_touch_sensitivity_enable");
                     }
                     return result;
                 }

@@ -67,6 +67,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
+import mokee.hardware.MKHardwareManager;
+
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -845,6 +847,17 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             indexable.title = context.getString(R.string.pointer_speed);
             indexable.screenTitle = screenTitle;
             indexables.add(indexable);
+
+            if (MKHardwareManager.getInstance(context).
+                    isSupported(MKHardwareManager.FEATURE_TOUCH_HOVERING)) {
+                indexable = new SearchIndexableRaw(context);
+                indexable.key = "touch_hovering";
+                indexable.title = context.getString(R.string.touchscreen_hovering_title);
+                indexable.summaryOn = context.getString(R.string.touchscreen_hovering_summary);
+                indexable.summaryOff = context.getString(R.string.touchscreen_hovering_summary);
+                indexable.screenTitle = screenTitle;
+                indexables.add(indexable);
+            }
 
             // Game controllers.
             if (haveInputDeviceWithVibrator()) {

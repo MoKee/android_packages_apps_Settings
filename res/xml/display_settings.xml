@@ -94,6 +94,20 @@
                 android:title="@string/tap_to_wake"
                 android:summary="@string/tap_to_wake_summary" />
 
+        <!-- Prevent accidental wake-up -->
+        <mokee.preference.MKSystemSettingSwitchPreference
+                android:key="proximity_on_wake"
+                android:title="@string/proximity_wake_title"
+                android:summary="@string/proximity_wake_summary"
+                mk:requiresConfig="@*mokee.platform:bool/config_proximityCheckOnWake" />
+
+        <mokee.preference.MKSystemSettingSwitchPreference
+                android:key="high_touch_sensitivity_enable"
+                android:title="@string/high_touch_sensitivity_title"
+                android:summary="@string/high_touch_sensitivity_summary"
+                android:defaultValue="false"
+                mk:requiresFeature="mkhardware:FEATURE_HIGH_TOUCH_SENSITIVITY" />
+
         <PreferenceScreen
                 android:key="font_size"
                 android:title="@string/title_font_size"
