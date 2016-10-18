@@ -89,6 +89,14 @@
                 android:title="@string/doze_title"
                 android:summary="@string/doze_summary" />
 
+        <mokee.preference.RemotePreference
+                android:key="doze_device_settings"
+                android:title="@string/doze_title"
+                android:summary="@string/doze_summary"
+                cm:replacesKey="doze">
+            <intent android:action="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
+        </mokee.preference.RemotePreference>
+
         <SwitchPreference
                 android:key="tap_to_wake"
                 android:title="@string/tap_to_wake"
@@ -107,6 +115,10 @@
                 android:summary="@string/high_touch_sensitivity_summary"
                 android:defaultValue="false"
                 mk:requiresFeature="mkhardware:FEATURE_HIGH_TOUCH_SENSITIVITY" />
+
+        <!-- Expanded desktop -->
+        <org.mokee.internal.mkparts.MKPartsPreference
+                android:key="expanded_desktop_settings" />
 
         <PreferenceScreen
                 android:key="font_size"
@@ -128,7 +140,7 @@
 
         <PreferenceScreen
                 android:key="wifi_display"
-                android:title="@string/wifi_display_settings_title"
+                android:title="@string/wifi_cisplay_settings_title"
                 settings:keywords="@string/keywords_display_cast_screen"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
