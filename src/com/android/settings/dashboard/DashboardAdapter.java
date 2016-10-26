@@ -15,17 +15,16 @@
  */
 package com.android.settings.dashboard;
 
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.ResolveInfo;
-import android.text.TextUtils;
+import android.util.Log;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
+import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
@@ -36,6 +35,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.ArrayUtils;
@@ -54,6 +54,10 @@ import java.util.List;
 public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.DashboardItemHolder>
         implements View.OnClickListener {
     public static final String TAG = "DashboardAdapter";
+    private static final String STATE_SUGGESTION_LIST = "suggestion_list";
+    private static final String STATE_CATEGORY_LIST = "category_list";
+    private static final String STATE_IS_SHOWING_ALL = "is_showing_all";
+    private static final String STATE_SUGGESTION_MODE = "suggestion_mode";
     private static final int NS_SPACER = 0;
     private static final int NS_SUGGESTION = 1000;
     private static final int NS_ITEMS = 2000;
@@ -66,7 +70,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     private static final int DEFAULT_SUGGESTION_COUNT = 2;
 
     private static final String LTE_4G_ACTIVITY = "Lte4GEnableActivity";
-    private static final String SYSTEM_UPDATE_INTENT = "android.settings.SYSTEM_UPDATE_SETTINGS";
     private final List<Object> mItems = new ArrayList<>();
     private final List<Integer> mTypes = new ArrayList<>();
     private final List<Integer> mIds = new ArrayList<>();
@@ -90,21 +93,33 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     private Condition mExpandedCondition = null;
     private SuggestionParser mSuggestionParser;
 
-    public DashboardAdapter(Context context, SuggestionParser parser) {
+    public DashboardAdapter(Context context, SuggestionParser parser, Bundle savedInstanceState,
+                List<Condition> conditions) {
         mContext = context;
         mCache = new IconCache(context);
         mLte4GEnabler = new Lte4GEnabler(mContext, new Switch(mContext));
         mSuggestionParser = parser;
+        mConditions = conditions;
 
         setHasStableIds(true);
-        setShowingAll(true);
+
+        boolean showAll = true;
+        if (savedInstanceState != null) {
+            mSuggestions = savedInstanceState.getParcelableArrayList(STATE_SUGGESTION_LIST);
+            mCategories = savedInstanceState.getParcelableArrayList(STATE_CATEGORY_LIST);
+            showAll = savedInstanceState.getBoolean(STATE_IS_SHOWING_ALL, true);
+            mSuggestionMode = savedInstanceState.getInt(
+                    STATE_SUGGESTION_MODE, SUGGESTION_MODE_DEFAULT);
+        }
+        setShowingAll(showAll);
     }
 
     public List<Tile> getSuggestions() {
         return mSuggestions;
     }
 
-    public void setSuggestions(List<Tile> suggestions) {
+    public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
+            List<Tile> suggestions) {
         mSuggestions = suggestions;
         recountItems();
     }
@@ -124,6 +139,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     public Lte4GEnabler getLte4GEnabler(){
         return mLte4GEnabler;
     }
+
     public void updateLte4GEnabler(){
         if(mLte4GEnablerHolder == null) {
             return;
@@ -213,16 +229,12 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         countItem(null, R.layout.suggestion_header, hasSuggestions, NS_SPACER);
         resetCount();
         if (mSuggestions != null) {
-            int maxSuggestions = mSuggestionMode == SUGGESTION_MODE_DEFAULT
-                    ? Math.min(DEFAULT_SUGGESTION_COUNT, mSuggestions.size())
-                    : mSuggestionMode == SUGGESTION_MODE_EXPANDED ? mSuggestions.size()
-                    : 0;
+            int maxSuggestions = getDisplayableSuggestionCount();
             for (int i = 0; i < mSuggestions.size(); i++) {
                 countItem(mSuggestions.get(i), R.layout.suggestion_tile, i < maxSuggestions,
                         NS_SUGGESTION);
             }
         }
-        countItem(null, R.layout.dashboard_spacer, true, NS_SPACER);
         resetCount();
         for (int i = 0; mCategories != null && i < mCategories.size(); i++) {
             DashboardCategory category = mCategories.get(i);
@@ -262,6 +274,14 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             mIds.add(mId + nameSpace);
         }
         mId++;
+    }
+
+    private int getDisplayableSuggestionCount() {
+        final int suggestionSize = mSuggestions.size();
+        return mSuggestionMode == SUGGESTION_MODE_DEFAULT
+                ? Math.min(DEFAULT_SUGGESTION_COUNT, suggestionSize)
+                : mSuggestionMode == SUGGESTION_MODE_EXPANDED
+                        ? suggestionSize : 0;
     }
 
     @Override
@@ -371,6 +391,14 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         holder.icon.setImageResource(hasMoreSuggestions() ? R.drawable.ic_expand_more
                 : R.drawable.ic_expand_less);
         holder.title.setText(mContext.getString(R.string.suggestions_title, mSuggestions.size()));
+        final int undisplayedSuggestionCount =
+                mSuggestions.size() - getDisplayableSuggestionCount();
+        if (undisplayedSuggestionCount == 0) {
+            holder.summary.setText(null);
+        } else {
+            holder.summary.setText(
+                    mContext.getString(R.string.suggestions_summary, undisplayedSuggestionCount));
+        }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -437,18 +465,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             return;
         }
         if (v.getId() == R.id.dashboard_tile) {
-            if (mContext.getResources().getBoolean(R.bool.config_settings_rjil_layout)
-            &&((Tile) v.getTag()).title.equals(mContext.getResources()
-                    .getString(R.string.system_update_settings_list_item_title))){
-                Intent newIntent = new Intent(SYSTEM_UPDATE_INTENT);
-                PackageManager pm = mContext.getPackageManager();
-                List<ResolveInfo> list = pm.queryIntentActivities(
-                        newIntent, 0);
-                int listSize =list.size();
-                if (listSize < 1) {
-                    return;
-                }
-            }
             ((SettingsActivity) mContext).openTile((Tile) v.getTag());
             return;
         }
@@ -494,6 +510,19 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             packageName = suggestion.intent.getComponent().getClassName();
         }
         return packageName;
+    }
+
+    void onSaveInstanceState(Bundle outState) {
+        if (mSuggestions != null) {
+            outState.putParcelableArrayList(STATE_SUGGESTION_LIST,
+                    new ArrayList<Tile>(mSuggestions));
+        }
+        if (mCategories != null) {
+            outState.putParcelableArrayList(STATE_CATEGORY_LIST,
+                    new ArrayList<DashboardCategory>(mCategories));
+        }
+        outState.putBoolean(STATE_IS_SHOWING_ALL, mIsShowingAll);
+        outState.putInt(STATE_SUGGESTION_MODE, mSuggestionMode);
     }
 
     private static class IconCache {
