@@ -53,7 +53,7 @@
                 android:fragment="com.android.settings.display.NightDisplaySettings"
                 android:widgetLayout="@null"
                 settings:keywords="@string/keywords_display_night_display"
-                cm:requiresFeature="!org.cyanogenmod.livedisplay" />
+                mk:requiresFeature="!org.mokee.livedisplay" />
 
         <com.android.settingslib.RestrictedPreference
                 android:key="wallpaper"

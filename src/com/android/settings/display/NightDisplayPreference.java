@@ -24,7 +24,7 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import cyanogenmod.preference.SelfRemovingSwitchPreference;
+import mokee.preference.SelfRemovingSwitchPreference;
 
 public class NightDisplayPreference extends SelfRemovingSwitchPreference
         implements NightDisplayController.Callback {

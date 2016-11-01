@@ -39,7 +39,7 @@
                 android:title="@string/ring_volume_option_title" />
 
         <!-- Increasing ring -->
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <mokee.preference.MKSystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:title="@string/increasing_ring_volume_option_title" />
 
