@@ -16,10 +16,25 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee različica</string>
+  <string name="mk_version_default">Neznano</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Vse številke</string>
+  <string name="blacklist_all_numbers_summary">Blokiraj vse klice</string>
+  <string name="blacklist_advertisement_numbers_title">Številke oglasov</string>
+  <string name="blacklist_advertisement_numbers_summary">Blokiraj oglasne klice</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height_48">48dp (privzeto)</string>
+  <string name="navigation_bar_height_0">skrij</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">Hitrost omrežja</string>
+  <string name="show_network_speed_summary">Prikaži omrežno hitrost v vrstici stanja</string>
+  <string name="status_bar_network_traffic_style_disable">Onemogočen</string>
+  <string name="status_bar_network_traffic_style_up">Odhodni</string>
+  <string name="status_bar_network_traffic_style_down">Dohodni</string>
+  <string name="status_bar_network_traffic_style_all">Odhodni in prejeti</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Sekunde v uri</string>
   <!-- Show/hide su icon -->
   <!-- Show/hide headset icon -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
