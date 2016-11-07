@@ -19,14 +19,14 @@
   <string name="mk_version">Версия MoKee</string>
   <string name="mk_version_default">Неизвестно</string>
   <!-- BlackList Ext -->
-  <string name="blacklist_all_numbers_title">Все числа</string>
+  <string name="blacklist_all_numbers_title">Все номера</string>
   <string name="blacklist_all_numbers_summary">Блокировать все звонки</string>
   <string name="blacklist_advertisement_numbers_title">Номера с рекламными предложениями</string>
-  <string name="blacklist_advertisement_numbers_summary">Блокировать звонки с рекламных номеров</string>
+  <string name="blacklist_advertisement_numbers_summary">Блокировать рекламные звонки</string>
   <string name="blacklist_fraud_numbers_title">Номера мошенников</string>
-  <string name="blacklist_fraud_numbers_summary">Блокировать звонки с номеров мошенников</string>
+  <string name="blacklist_fraud_numbers_summary">Блокировать звонки мошенников</string>
   <string name="blacklist_harassment_numbers_title">Номера вымогателей</string>
-  <string name="blacklist_harassment_numbers_summary">Блокировать звонки с номеров вымогателей</string>
+  <string name="blacklist_harassment_numbers_summary">Блокировать звонки вымогателей</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Высота кнопки</string>
   <string name="navigation_bar_height_48">48dp (по умолчанию)</string>

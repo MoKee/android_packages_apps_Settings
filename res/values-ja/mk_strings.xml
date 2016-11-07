@@ -20,6 +20,13 @@
   <string name="mk_version_default">不明</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">すべての番号</string>
+  <string name="blacklist_all_numbers_summary">全ての着信をブロック</string>
+  <string name="blacklist_advertisement_numbers_title">広告電話</string>
+  <string name="blacklist_advertisement_numbers_summary">広告電話をブロック</string>
+  <string name="blacklist_fraud_numbers_title">詐欺電話</string>
+  <string name="blacklist_fraud_numbers_summary">詐欺電話をブロック</string>
+  <string name="blacklist_harassment_numbers_title">迷惑電話</string>
+  <string name="blacklist_harassment_numbers_summary">迷惑電話をブロック</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">ボタンの高さ</string>
   <string name="navigation_bar_height_48">48dp (デフォルト)</string>
