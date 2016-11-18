@@ -49,6 +49,8 @@ import com.android.settings.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import mokee.hardware.MKHardwareManager;
+
 import java.lang.ref.WeakReference;
 
 /**
@@ -200,7 +202,7 @@ public class Status extends SettingsPreferenceFragment {
 
         updateConnectivity();
 
-        String serial = Build.SERIAL;
+        String serial = getSerialNumber();
         if (serial != null && !serial.equals("")) {
             setSummaryText(KEY_SERIAL_NUMBER, serial);
         } else {
@@ -379,5 +381,14 @@ public class Status extends SettingsPreferenceFragment {
         int h = (int)((t / 3600));
 
         return h + ":" + pad(m) + ":" + pad(s);
+    }
+
+    private String getSerialNumber() {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(getActivity());
+        if (hardware.isSupported(MKHardwareManager.FEATURE_SERIAL_NUMBER)) {
+            return hardware.getSerialNumber();
+        } else {
+            return Build.SERIAL;
+        }
     }
 }
