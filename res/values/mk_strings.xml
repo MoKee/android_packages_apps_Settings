@@ -30,4 +30,6 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_mk">No need, you have already enabled development settings.</string>
 
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Freezing or removing MoKee Center will affect system services, please restore and try again.</string>
 </resources>
