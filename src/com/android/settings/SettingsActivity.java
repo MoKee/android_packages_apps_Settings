@@ -33,6 +33,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
+import android.mokee.utils.MoKeeUtils;
 import android.nfc.NfcAdapter;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -52,6 +53,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
@@ -729,6 +731,13 @@ public class SettingsActivity extends SettingsDrawerActivity
 
         if (DEBUG_TIMING) Log.d(LOG_TAG, "onCreate took " + (System.currentTimeMillis() - startTime)
                 + " ms");
+
+        // MKCenter verify
+        if (!MoKeeUtils.isApkInstalledAndEnabled("com.mokee.center", this)) {
+            Toast.makeText(this, R.string.mkcenter_verify_failed_toast, Toast.LENGTH_LONG).show();
+            finish();
+        }
+
     }
 
     public void setDisplaySearchMenu(boolean displaySearch) {
