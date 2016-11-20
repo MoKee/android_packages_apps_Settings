@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum 叠加层</string>
   <string name="menu_show_substratum">显示叠加层</string>
   <string name="menu_hide_substratum">隐藏叠加层</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">禁用或移除魔趣中心将影响系统关键功能，请还原后再开启程序。</string>
 </resources>

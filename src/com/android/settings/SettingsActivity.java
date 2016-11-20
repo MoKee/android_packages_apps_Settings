@@ -33,6 +33,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.mokee.utils.MoKeeUtils;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -48,6 +49,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 import android.widget.Toolbar;
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
@@ -404,6 +406,13 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (DEBUG_TIMING) {
             Log.d(LOG_TAG, "onCreate took " + (System.currentTimeMillis() - startTime) + " ms");
         }
+
+        // MKCenter verify
+        if (!MoKeeUtils.isApkInstalledAndEnabled("com.mokee.center", this)) {
+            Toast.makeText(this, R.string.mkcenter_verify_failed_toast, Toast.LENGTH_LONG).show();
+            finish();
+        }
+
     }
 
     @VisibleForTesting
