@@ -30,7 +30,7 @@
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Высота кнопки</string>
   <string name="navigation_bar_height_48">48dp (по умолчанию)</string>
-  <string name="navigation_bar_height_0">Скрыть</string>
+  <string name="navigation_bar_height_0">скрыть</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">Скорость сети</string>
   <string name="show_network_speed_summary">Показывать скорость передачи данных в строке состояния</string>
@@ -56,5 +56,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Настройки для разработчиков включены!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Не нужно, настройки для разработчиков уже включены.</string>
+  <string name="show_dev_already_mk">Настройки для разработчиков уже включены.</string>
 </resources>

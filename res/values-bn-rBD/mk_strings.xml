@@ -25,12 +25,21 @@
   <string name="blacklist_advertisement_numbers_summary">Block advertisement calls</string>
   <string name="blacklist_fraud_numbers_title">Fraud numbers</string>
   <string name="blacklist_fraud_numbers_summary">Block fraud calls</string>
+  <string name="blacklist_harassment_numbers_title">হয়রানি নাম্বারগুলো</string>
+  <string name="blacklist_harassment_numbers_summary">হয়রানি কল ব্লক</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">বাটনের উচ্চতা</string>
   <string name="navigation_bar_height_48">48dp (default)</string>
   <!-- Show network speed -->
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">ঘড়িতে সেকেন্ড থাকবে</string>
+  <string name="status_bar_clock_show_second_summary">স্ট্যাটাস বারের ঘড়িতে সেকেন্ড দেখাবে</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Su আইকন দেখাবে</string>
+  <string name="show_su_icon_summary">যখন Su সক্রিয় থাকবে তখন স্ট্যাটাস বারে একটি আইকন দেখাবে</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">হেডসেট আইকন দেখাবে</string>
+  <string name="show_headset_icon_summary">যখন হেডসেট সংযুক্ত সক্রিয় থাকবে তখন স্ট্যাটাস বারে একটি আইকন দেখাবে</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->

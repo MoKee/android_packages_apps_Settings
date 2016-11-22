@@ -36,6 +36,7 @@
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekunde v uri</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Pokaži su ikono</string>
   <!-- Show/hide headset icon -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
