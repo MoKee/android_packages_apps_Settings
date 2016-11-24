@@ -16,16 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
-  <string name="mk_version">魔趣版本</string>
-  <string name="mk_version_default">未知</string>
+  <string name="mk_version">MoKee верзија</string>
+  <string name="mk_version_default">Непознато</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="other">现在只需再执行 <xliff:g id="step_count">%1$d</xliff:g> 步操作即可进入开发者模式。</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">您现在处于开发者模式！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">您已处于开发者模式，无需进行此操作。</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">禁用或移除魔趣中心将影响系统关键功能，请还原后再开启程序。</string>
 </resources>
