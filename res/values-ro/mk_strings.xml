@@ -19,8 +19,6 @@
   <string name="mk_version">Versiune MoKee</string>
   <string name="mk_version_default">Necunoscut</string>
   <!-- BlackList Ext -->
-  <string name="blacklist_all_numbers_title">Toate numerele</string>
-  <string name="blacklist_all_numbers_summary">Blochează toate apelurile</string>
   <!-- Height of navigation bar buttons -->
   <!-- Show network speed -->
   <!-- Seconds in clock -->
