@@ -153,20 +153,4 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-            android:key="lights"
-            android:title="@string/lights_label">
-
-        <!-- Battery light -->
-        <org.mokee.internal.mkparts.MKPartsPreference
-                android:key="battery_lights"
-                mk:requiresConfig="@*android:bool/config_intrusiveBatteryLed" />
-
-        <!-- Notification lights -->
-        <org.mokee.internal.mkparts.MKPartsPreference
-                android:key="notification_lights"
-                mk:requiresConfig="@*android:bool/config_intrusiveNotificationLed" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>
