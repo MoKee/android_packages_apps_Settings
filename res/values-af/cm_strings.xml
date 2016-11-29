@@ -17,16 +17,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
-  <plurals name="show_device_id_countdown_cm">
-    <item quantity="one">Jy is nou <xliff:g id="step_count">%1$d </xliff:g> stap weg om navrae te doen na toestel ID.</item>
-    <item quantity="other">Jy is nou <xliff:g id="step_count">%1$d </xliff:g> stappe weg om navrae te doen na toestel ID.</item>
-  </plurals>
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
-  <string name="show_device_id_copied_cm">Toestel-ID: [<xliff:g id="device_id">%1$s </xliff:g>] gekopieer na knipbord</string>
   <!--  Device Info screen. Confirmation that Device ID is not available -->
-  <string name="show_device_id_failed_cm">Toestel-ID is nie beskikbaar op hierdie weergawe nie</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
-  <string name="show_device_id_clipboard_label">Toestel-ID</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->

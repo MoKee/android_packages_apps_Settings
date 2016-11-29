@@ -17,17 +17,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
-  <plurals name="show_device_id_countdown_cm">
-    <item quantity="one">Сада си <xliff:g id="step_count">%1$d</xliff:g> корак далеко од добијања ИД уређаја.</item>
-    <item quantity="few">Сада си <xliff:g id="step_count">%1$d</xliff:g> корака далеко од добијања ИД уређаја.</item>
-    <item quantity="other">Сада си <xliff:g id="step_count">%1$d</xliff:g> корака далеко од добијања ИД уређаја.</item>
-  </plurals>
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
-  <string name="show_device_id_copied_cm">ИД уређаја:[<xliff:g id="device_id">%1$s</xliff:g>] копиран у оставу</string>
   <!--  Device Info screen. Confirmation that Device ID is not available -->
-  <string name="show_device_id_failed_cm">Идентификација уређаја није доступна на овој верзији</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
-  <string name="show_device_id_clipboard_label">Идентификација уређаја</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->

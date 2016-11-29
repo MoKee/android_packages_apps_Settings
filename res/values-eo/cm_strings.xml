@@ -29,11 +29,9 @@
   <!-- Preference link for root appops -->
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">Nekonata</string>
   <!-- About phone screen, build date -->
   <!-- CM Updater -->
   <!-- Settings switch for updating Cyanogen recovery -->
@@ -178,9 +176,7 @@
   <!-- Notification spamfilter -->
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_warning_title">Pri</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_device_title">Aparato</string>
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
   <string name="pa_login_password_hint">Pasvorto</string>
