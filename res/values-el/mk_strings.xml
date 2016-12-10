@@ -23,8 +23,10 @@
   <string name="blacklist_all_numbers_summary">Μπλοκάρει όλες τις κλήσεις</string>
   <string name="blacklist_advertisement_numbers_title">Αριθμού διαφημιστών</string>
   <string name="blacklist_advertisement_numbers_summary">Απαγόρευση κλήσεων διαφημιστών</string>
+  <string name="blacklist_fraud_numbers_title">Αριθμοί απάτης</string>
   <string name="blacklist_fraud_numbers_summary">Αποκλεισμός κλήσεων απάτης</string>
   <string name="blacklist_harassment_numbers_title">Αριθμοί παρενόχλησης</string>
+  <string name="blacklist_harassment_numbers_summary">Αποκλεισμός κλήσεων παρενόχλησης</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Κουμπί ύψος</string>
   <string name="navigation_bar_height_48">48dp (προεπιλογή)</string>
@@ -41,9 +43,17 @@
   <string name="status_bar_clock_show_second_summary">Εμφάνιση δευτερόλεπτων στο ρολόι της γραμμής κατάστασης</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Εμφάνιση εικονιδίου su</string>
+  <string name="show_su_icon_summary">Εμφάνιση ενός εικονιδίου όταν ο su είναι ενεργός</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Εμφάνιση εικονιδίου ακουστικών</string>
+  <string name="show_headset_icon_summary">Εμφάνιση ενός εικονιδίου όταν τα ακουστικά είναι συνδεδεμένα</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήμα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
+    <item quantity="other">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήματα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Ενεργοποιήσατε την λειτουργία για προγραμματιστές!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Δεν χρειάζεται, έχετε ήδη ενεργοποιήσει τη λειτουργία για προγραμματιστές.</string>
 </resources>

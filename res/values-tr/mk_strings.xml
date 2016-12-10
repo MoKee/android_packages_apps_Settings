@@ -46,7 +46,14 @@
   <string name="show_su_icon_summary">Su etkin olduğunda durum çubuğunda bir simge görüntüler</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Kulaklık simgesini göster</string>
+  <string name="show_headset_icon_summary">Kulaklık takıldığında durum çubuğunda bir simge göster</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+    <item quantity="other">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Artık bir geliştiricisiniz!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Gerek yok, zaten geliştirici ayarlarını etkinleştirdiniz.</string>
 </resources>

@@ -23,6 +23,7 @@
   <string name="blacklist_all_numbers_summary">Blokiraj vse klice</string>
   <string name="blacklist_advertisement_numbers_title">Številke oglasov</string>
   <string name="blacklist_advertisement_numbers_summary">Blokiraj oglasne klice</string>
+  <string name="blacklist_harassment_numbers_title">Nadležne številke</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height_48">48dp (privzeto)</string>
   <string name="navigation_bar_height_0">skrij</string>
