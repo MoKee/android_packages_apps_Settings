@@ -19,7 +19,14 @@
   <string name="mk_version">MoKee Versiyonu</string>
   <string name="mk_version_default">Bilinmeyen</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+    <item quantity="other">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Artık bir geliştiricisiniz!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Gerek yok, zaten geliştirici ayarlarını etkinleştirdiniz.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Donma veya MoKee Center\'ı kaldırma sistem servislerini etkiler, lütfen geri yükleyin ve tekrar deneyin.</string>
 </resources>

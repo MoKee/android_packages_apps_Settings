@@ -28,4 +28,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Inutile, vous avez déjà autoriser les réglages du mode développeur.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Geler ou supprimer le Centre MoKee va affecter les services système, veuillez s’il vous plaît restaurer et réessayez.</string>
 </resources>
