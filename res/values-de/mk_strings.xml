@@ -28,4 +28,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Unnötig, Sie sind bereits Entwickler.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Das Einfrieren oder Entfernen von MoKee Center beeinträchtigt die Systemdienste. Bitte wiederherstellen und erneut versuchen.</string>
 </resources>
