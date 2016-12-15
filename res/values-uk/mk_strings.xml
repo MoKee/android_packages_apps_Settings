@@ -24,4 +24,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Немає необхідності, ви вже ввімкнули налаштування для розробників.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Заморожування або видалення Центру MoKee буде мати вплив на системні служби, будь ласка відновіть і повторіть спробу.</string>
 </resources>
