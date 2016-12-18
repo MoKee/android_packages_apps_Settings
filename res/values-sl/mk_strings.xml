@@ -25,6 +25,7 @@
   <string name="blacklist_advertisement_numbers_summary">Blokiraj oglasne klice</string>
   <string name="blacklist_harassment_numbers_title">Nadležne številke</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Višina gumba</string>
   <string name="navigation_bar_height_48">48dp (privzeto)</string>
   <string name="navigation_bar_height_0">skrij</string>
   <!-- Show network speed -->
@@ -36,10 +37,22 @@
   <string name="status_bar_network_traffic_style_all">Odhodni in prejeti</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekunde v uri</string>
+  <string name="status_bar_clock_show_second_summary">Prikaz sekund v vrstici stanja</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Pokaži su ikono</string>
+  <string name="show_su_icon_summary">Prikaži ikono v vrstici stanja, kadar je aktiven su</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Pokaži ikono za slušalke</string>
+  <string name="show_headset_icon_summary">Prikaže ikono v vrstici stanja, ko so slušalke priključene</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> korak vstran, da omogočite možnosti za razvijalce.</item>
+    <item quantity="two">Ste <xliff:g id="step_count">%1$d</xliff:g> koraka vstran, do omogočenja možnosti za razvijalce.</item>
+    <item quantity="few">Ste <xliff:g id="step_count">%1$d</xliff:g> korake vstran, do omogočenja možnosti za razvijalce.</item>
+    <item quantity="other">Ste <xliff:g id="step_count">%1$d</xliff:g> korakov vstran, do omogočenja možnosti za razvijalce.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Omogočili ste možnosti za razvijalce!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Ni potrebno, ste že omogočili možnosti za razvijalce.</string>
 </resources>
