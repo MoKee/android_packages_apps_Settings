@@ -19,6 +19,12 @@
   <string name="mk_version">MoKee različica</string>
   <string name="mk_version_default">Neznano</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> korak vstran, da omogočite možnosti za razvijalce.</item>
+    <item quantity="two">Ste <xliff:g id="step_count">%1$d</xliff:g> koraka vstran, do omogočenja možnosti za razvijalce.</item>
+    <item quantity="few">Ste <xliff:g id="step_count">%1$d</xliff:g> korake vstran, do omogočenja možnosti za razvijalce.</item>
+    <item quantity="other">Ste <xliff:g id="step_count">%1$d</xliff:g> korakov vstran, do omogočenja možnosti za razvijalce.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Omogočili ste možnosti za razvijalce!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
