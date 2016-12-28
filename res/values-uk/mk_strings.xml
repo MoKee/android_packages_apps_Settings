@@ -19,10 +19,15 @@
   <string name="mk_version">Версія MoKee</string>
   <string name="mk_version_default">Невідомо</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+    <item quantity="few">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+    <item quantity="other">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Ви увімкнули налаштування розробника!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Немає необхідності, ви вже ввімкнули налаштування для розробників.</string>
+  <string name="show_dev_already_mk">Немає необхідності, ви вже увімкнули налаштування для розробників.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Заморожування або видалення Центру MoKee буде мати вплив на системні служби, будь ласка відновіть і повторіть спробу.</string>
 </resources>
