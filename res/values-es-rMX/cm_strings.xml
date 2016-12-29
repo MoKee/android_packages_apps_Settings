@@ -26,7 +26,6 @@
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Nivel de API de CyanogenMod</string>
   <!-- About phone screen, build date -->
   <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->

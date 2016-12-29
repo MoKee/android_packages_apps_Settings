@@ -17,14 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Jy is nou <xliff:g id="step_count">%1$d</xliff:g> stap weg van bemagtigende ontwikkelaar opsies.</item>
-    <item quantity="other">Jy is nou <xliff:g id="step_count">%1$d</xliff:g> stappe weg van bemagtigende ontwikkelaar opsies.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Jy het die ontwikkeling opsies geaktiveer!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nie nodig, het jy reeds die ontwikkeling opsies geaktiveer.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ontwikkeling gereedskap</string>
   <!-- Setting checkbox title for root access -->
@@ -39,19 +33,14 @@
   <string name="root_appops_title">Bestuur root toegang</string>
   <string name="root_appops_summary">Kyk na en beheer die root reëls</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Toestel tipe</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Toestel naam</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API vlak</string>
-  <string name="mod_api_level_default">Onbekend</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Bou datum</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod opgradering</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Ligging</string>
   <string name="app_ops_categories_personal">Persoonlik</string>
@@ -302,7 +291,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod Regs</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vind die vingerafdruk sensor op die <xliff:g id="sensor_location">%1$s </xliff:g> van jou foon.</string>
   <!-- Fingerprint sensor locations -->

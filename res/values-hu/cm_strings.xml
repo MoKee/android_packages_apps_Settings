@@ -17,14 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
-    <item quantity="other">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Sikeresen engedélyezte a fejlesztői beállításokat!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Már korábban engedélyezte a fejlesztői beállításokat.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Fejlesztőeszközök</string>
   <!-- Setting checkbox title for root access -->
@@ -39,19 +33,14 @@
   <string name="root_appops_title">Root hozzáférések kezelése</string>
   <string name="root_appops_summary">Root szabályok megtekintése és kezelése</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod verzió</string>
-  <string name="mod_version_default">Ismeretlen</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Eszköz modellje</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Eszköz neve</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API szint</string>
-  <string name="mod_api_level_default">Ismeretlen</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build dátuma</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod frissítések</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Helymeghatározás</string>
   <string name="app_ops_categories_personal">Személyes</string>
@@ -315,7 +304,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod jogi nyilatkozat</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Keresse meg az ujjlenyomat érzékelőt a telefon <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
   <!-- Fingerprint sensor locations -->

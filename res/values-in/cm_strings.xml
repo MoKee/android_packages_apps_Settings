@@ -17,13 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other"><xliff:g id="step_count">%1$d</xliff:g> langkah lagi untuk mengaktifkan opsi pengembang.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Anda adalah seorang pengembang!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Tidak perlu, Anda telah mengaktifkan opsi pengembang.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Alat pengembangan</string>
   <!-- Setting checkbox title for root access -->
@@ -38,19 +33,14 @@
   <string name="root_appops_title">Kelola akses root</string>
   <string name="root_appops_summary">Lihat dan kontrol aturan akses root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versi CyanogenMod</string>
-  <string name="mod_version_default">Tidak diketahui</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model perangkat</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nama perangkat</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Tingkat API CyanogenMod</string>
-  <string name="mod_api_level_default">Tidak diketahui</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Tanggal pembuatan</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Pembaruan CyanogenMod</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokasi</string>
   <string name="app_ops_categories_personal">Pribadi</string>
@@ -337,7 +327,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Kekuatan kontrol notifikasi</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Hukum CyanogenMod</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Tempatkan sensor sidik jari pada <xliff:g id="sensor_location">%1$s</xliff:g> telepon anda.</string>
   <!-- Fingerprint sensor locations -->

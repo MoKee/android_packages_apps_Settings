@@ -30,16 +30,12 @@
   <string name="root_access_all">অ্যাপস এবং এডিবি</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">সায়ানোজেনমড সংস্করণ</string>
-  <string name="mod_version_default">অজানা</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">অজানা</string>
   <!-- About phone screen, build date -->
   <string name="build_date">তৈরী তারিখ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">সায়ানোজেনমড আধুনিকীকরণ</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">অবস্থান</string>
   <string name="app_ops_categories_personal">ব্যক্তিগত</string>
@@ -193,7 +189,6 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">সায়ানোজেনমড বৈধতা</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

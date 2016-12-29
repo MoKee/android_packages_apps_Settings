@@ -17,14 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Du bass <xliff:g id="step_count">%1$d</xliff:g> Schrëtt dovun ewech, d\'Entwéckleroptiounen z\'aktivéieren.</item>
-    <item quantity="other">Du bass <xliff:g id="step_count">%1$d</xliff:g> Schrëtter dovun ewech, d\'Entwéckleroptiounen z\'aktivéieren.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Du hues d\'Entwéckleroptiounen aktivéiert!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Net néideg, du hues d\'Entwécklungsoptioune schonn aktivéiert.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Entwécklungsgeschir</string>
   <!-- Setting checkbox title for root access -->
@@ -37,18 +31,14 @@
   <string name="root_access_all">Appen an ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-Versioun</string>
-  <string name="mod_version_default">Onbekannt</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Apparatmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Apparatnumm</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level_default">Onbekannt</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build-Datum</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod-Aktualiséierungen</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Standuert</string>
   <string name="app_ops_categories_personal">Perséinlech</string>
@@ -282,7 +272,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">Rechtlech Hiweiser iwwer CyanogenMod</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

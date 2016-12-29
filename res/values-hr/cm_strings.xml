@@ -17,15 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Sada ste <xliff:g id="step_count">%1$d</xliff:g> korak od omogućavanja razvojnih postavki.</item>
-    <item quantity="few">Sada ste <xliff:g id="step_count">%1$d</xliff:g> koraka od omogućavanja razvojnih postavki.</item>
-    <item quantity="other">Sada ste <xliff:g id="step_count">%1$d</xliff:g> koraka od omogućavanja razvojnih postavki.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Omogućili ste razvojne postavke!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nema potrebe, već ste omogućili postavke za razvoj.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Alati za razvojne programere</string>
   <!-- Setting checkbox title for root access -->
@@ -40,19 +33,14 @@
   <string name="root_appops_title">Upravljaj root pristupima</string>
   <string name="root_appops_summary">Prikaz i kontrola root pravila</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod verzija</string>
-  <string name="mod_version_default">Nepoznato</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model uređaja</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Naziv uređaja</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API razina</string>
-  <string name="mod_api_level_default">Nepoznato</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Datum izdavanja</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod ažuriranja</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokacija</string>
   <string name="app_ops_categories_personal">Osobno</string>
@@ -339,7 +327,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Kontrole obavijesti energije</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenMod licenca</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Pronađite senzor otiska prsta na <xliff:g id="sensor_location">%1$s</xliff:g> vašeg telefona.</string>
   <!-- Fingerprint sensor locations -->

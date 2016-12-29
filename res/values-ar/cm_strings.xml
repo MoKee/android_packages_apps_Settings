@@ -17,18 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="zero">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
-    <item quantity="one">أنت الآن على بُعد خطوة واحدة من تمكين خيارات المطور.</item>
-    <item quantity="two">أنت الآن على بُعد خطوتين من تمكين خيارات المطور.</item>
-    <item quantity="few">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تمكين خيارات المطور.</item>
-    <item quantity="many">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
-    <item quantity="other">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">مكّنتَ خيارات المطور!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">لا داعي، فخيارات المطور مفعّلة.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">أدوات التطوير</string>
   <!-- Setting checkbox title for root access -->
@@ -41,19 +31,14 @@
   <string name="root_access_all">التطبيقات وADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">إصدار CyanogenMod</string>
-  <string name="mod_version_default">مجهول</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">طراز الجهاز</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">اسم الجهاز</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">مستوى CyanogenMod API</string>
-  <string name="mod_api_level_default">مجهول</string>
   <!-- About phone screen, build date -->
   <string name="build_date">تاريخ إنشاء</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">تحديثات CyanogenMod</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">الموقع</string>
   <string name="app_ops_categories_personal">شخصي</string>
@@ -304,7 +289,6 @@
   <string name="nfc_title_category">الاتصال بالحقل القريب</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">قانون CyanogenMod</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

@@ -17,14 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
-    <item quantity="other">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Du har aktiveret Instillinger for udviklere!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Du behøves ikke gøre dette. Du har allerede aktiveret Indstillinger for udviklere.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Udviklingsværktøjer</string>
   <!-- Setting checkbox title for root access -->
@@ -38,19 +32,14 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Administrer root adgang</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-version</string>
-  <string name="mod_version_default">Ukendt</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhedsmodel</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhedens navn</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API niveau</string>
-  <string name="mod_api_level_default">Ukendt</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Kørselsdato</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod-opdateringer</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Placering</string>
   <string name="app_ops_categories_personal">Personlig</string>
@@ -325,7 +314,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Kontroller til strømunderretninger</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">tilbage</string>

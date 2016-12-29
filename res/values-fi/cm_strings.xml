@@ -17,14 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
-    <item quantity="other">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Kehittäjäasetukset ovat nyt käytössä!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Olet jo ottanut kehittäjäasetukset käyttöön.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Kehittäjätyökalut</string>
   <!-- Setting checkbox title for root access -->
@@ -39,19 +33,14 @@
   <string name="root_appops_title">Hallitse root-oikeuksia</string>
   <string name="root_appops_summary">Tarkastele ja hallinnoi root-sääntöjä</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod-versio</string>
-  <string name="mod_version_default">Tuntematon</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Laitteen malli</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Laitteen nimi</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">CyanogenMod API-taso</string>
-  <string name="mod_api_level_default">Tuntematon</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Luontipäivä</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">CyanogenMod-päivitykset</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Sijainti</string>
   <string name="app_ops_categories_personal">Henkilökohtainen</string>
@@ -338,7 +327,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Edistyneiden ilmoitusten asetukset</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">CyanogenModin lakiasiat</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Etsi sormenjälkitunnistin puhelimen <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
   <!-- Fingerprint sensor locations -->

@@ -17,15 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krok od povolenia možnosti pre vývojárov.</item>
-    <item quantity="few">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolenia možnosti pre vývojárov.</item>
-    <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia možnosti pre vývojárov.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Povolili ste možnosti pre vývojárov!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Netreba, už ste povolili možnosti pre vývojárov.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojárske nástroje</string>
   <!-- Setting checkbox title for root access -->
@@ -40,20 +33,15 @@
   <string name="root_appops_title">Spravovať prístupy root</string>
   <string name="root_appops_summary">Zobraziť a spravovať pravidlá prístupu root</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Verzia CyanogenMod</string>
-  <string name="mod_version_default">Neznáme</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model zariadenia</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Názov zariadenia</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Verzia CyanogenMod API</string>
-  <string name="mod_api_level_default">Neznáme</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dátum zostavy</string>
   <string name="build_date_default">2015-01-01-0000</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizácie CyanogenMod</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Poloha</string>
   <string name="app_ops_categories_personal">Osobné</string>
@@ -340,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Ovládacie prvky rozšíreného oznámenia</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Právne informácie CyanogenMod</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
   <!-- Fingerprint sensor locations -->
