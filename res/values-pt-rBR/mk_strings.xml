@@ -30,5 +30,6 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Congelar ou remover o MoKee Center afetará os serviços do sistema, restaure e tente novamente.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Porta de entrada</string>
   <string name="wifi_advanced_network_netmask">Máscara de rede</string>
 </resources>
