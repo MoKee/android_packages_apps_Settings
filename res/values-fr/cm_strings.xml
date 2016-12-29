@@ -18,15 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étape de l\'activation des paramètres de développement.
-Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'activation des paramètres de développement.</item>
-    <item quantity="other">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'activation des paramètres de développement.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Vous avez activé les paramètres de développement !</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Inutile, vous avez déjà activé les paramètres de développement.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Outils de développement</string>
   <!-- Setting checkbox title for root access -->
@@ -41,20 +34,15 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="root_appops_title">Gérer les accès root</string>
   <string name="root_appops_summary">Visualiser et contrôler les règles root</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Version LineageOS</string>
-  <string name="mod_version_default">Inconnue</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modèle de l\'appareil</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nom de l\'appareil</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Niveau de l\'API LineageOS</string>
-  <string name="mod_api_level_default">Inconnue</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Date de compilation</string>
   <string name="build_date_default">2015-01-01-0000</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Mises à jour LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Position</string>
   <string name="app_ops_categories_personal">Personnel</string>
@@ -318,7 +306,6 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">Infos légales LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
   <!-- Fingerprint sensor locations -->

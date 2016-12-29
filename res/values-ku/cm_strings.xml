@@ -19,9 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">تۆ ڕێکخستنی گەشەپێدەریت چالاککرد!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">پێویست ناکا، تۆ پێشتر چالاکت کردوە.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ئامرازەکانی گه‌شه‌پێدان</string>
   <!-- Setting checkbox title for root access -->
@@ -34,18 +32,14 @@
   <string name="root_access_all">بەرنامەکان و ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">وەشانی کوردی</string>
-  <string name="mod_version_default">نەناسراو</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">مۆدێلی ئامێر</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ناوی ئامێر</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">نەناسراو</string>
   <!-- About phone screen, build date -->
   <string name="build_date">بنیاتنانی ڕۆژ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">نوێکردنه‌وه‌ی وەشانەکە</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ناوچه‌</string>
   <string name="app_ops_categories_personal">که‌سێتی</string>
@@ -225,7 +219,6 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">یاسای وەشانەکە</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

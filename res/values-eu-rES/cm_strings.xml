@@ -18,14 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Garapen ezarpenak gaitzeko urrats <xliff:g id="step_count">%1$d</xliff:g>era zaude.</item>
-    <item quantity="other">Garapen ezarpenak gaitzeko <xliff:g id="step_count">%1$d</xliff:g> urratsetara zaude.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Garapen ezarpenak gaitu dituzu!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ez da behar, aurretik gaitu dituzu garapen ezarpenak.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Garapen tresnak</string>
   <!-- Setting checkbox title for root access -->
@@ -40,19 +34,14 @@
   <string name="root_appops_title">Kudeatu root sarbideak</string>
   <string name="root_appops_summary">Ikusi eta kontrolatu root arauak</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS bertsioa</string>
-  <string name="mod_version_default">Ezezaguna</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Gailuaren modeloa</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Gailuaren izena</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API maila</string>
-  <string name="mod_api_level_default">Ezezaguna</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Konpilatze data</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS eguneraketak</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Kokalekua</string>
   <string name="app_ops_categories_personal">Pertsonala</string>
@@ -339,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Jakinarazpen ahaltsuen kontrolak</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS lizentzia</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Kokatu hatz-marken sentsorea zure telefonoaren <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
   <!-- Fingerprint sensor locations -->

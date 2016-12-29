@@ -18,16 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korak pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="two">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> koraka pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="few">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korake pred omogočanjem nastavitev za razvijalce.</item>
-    <item quantity="other">Zdaj ste <xliff:g id="step_count">%1$d</xliff:g> korakov pred omogočanjem nastavitev za razvijalce.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Omogočili ste nastavitve za razvijalce!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ni potrebe, ste že omogočili nastavitve za razvijalce.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Razvojna orodja</string>
   <!-- Setting checkbox title for root access -->
@@ -42,19 +34,14 @@
   <string name="root_appops_title">Upravljaj s skrbniškimi dostopi</string>
   <string name="root_appops_summary">Ogled in nadzor skrbniških pravil</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Različica LineageOS</string>
-  <string name="mod_version_default">Neznano</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model naprave</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Ime naprave</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Raven API-ja LineageOS</string>
-  <string name="mod_api_level_default">Neznano</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Datum izgradnje</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Posodobitve LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokacija</string>
   <string name="app_ops_categories_personal">Osebni</string>
@@ -341,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Nadzorne tipke za obvestila</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Pravna obvestila LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Poiščite tipalo za prstne odtise na <xliff:g id="sensor_location">%1$s</xliff:g> vašega telefona.</string>
   <!-- Fingerprint sensor locations -->
