@@ -28,4 +28,7 @@
   <string name="show_dev_already_mk">不需要，您已經啟用開發人員選項。</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">停用或移除魔趣中心可能會影響系統服務，請恢復並重試。</string>
+  <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">閘道</string>
+  <string name="wifi_advanced_network_netmask">網路遮罩</string>
 </resources>

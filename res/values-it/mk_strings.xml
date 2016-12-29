@@ -29,4 +29,5 @@
   <string name="show_dev_already_mk">Non è necessario, hai già attivato le impostazioni di sviluppo.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Terminare Mokee Center potrebbe danneggiare alcuni servizi di sistema, ripristinare e riprovare.</string>
+  <!-- CMCC wifi extension -->
 </resources>

@@ -29,4 +29,5 @@
   <string name="show_dev_already_mk">Δεν χρειάζεται, έχετε ήδη ενεργοποιήσει τη λειτουργία για προγραμματιστές.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
+  <!-- CMCC wifi extension -->
 </resources>
