@@ -28,4 +28,5 @@
   <string name="show_dev_already_mk">Tidak perlu, anda sudah mengaktifkan opsi pengembang.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Menonaktifkan atau menghapus MoKee Center akan mempengaruhi layanan sistem, silakan memulihkan dan coba lagi.</string>
+  <!-- CMCC wifi extension -->
 </resources>

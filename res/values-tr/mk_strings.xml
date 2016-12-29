@@ -29,4 +29,5 @@
   <string name="show_dev_already_mk">Gerek yok, zaten geliştirici ayarlarını etkinleştirdiniz.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Donma veya MoKee Center\'ı kaldırma sistem servislerini etkiler, lütfen geri yükleyin ve tekrar deneyin.</string>
+  <!-- CMCC wifi extension -->
 </resources>

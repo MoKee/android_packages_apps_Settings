@@ -29,4 +29,7 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Není potřeba, vývojářské nastavení je již povoleno.</string>
   <!-- MKCenter verify -->
+  <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Brána</string>
+  <string name="wifi_advanced_network_netmask">Maska sítě</string>
 </resources>

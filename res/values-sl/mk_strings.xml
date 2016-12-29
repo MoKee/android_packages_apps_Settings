@@ -31,4 +31,5 @@
   <string name="show_dev_already_mk">Ni potrebno, ste že omogočili možnosti za razvijalce.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Zamrznitev ali odstranjevanje MoKee Centra, bo vplivalo na sistemske storitve, prosim obnovite in poskusite znova.</string>
+  <!-- CMCC wifi extension -->
 </resources>
