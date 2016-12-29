@@ -18,13 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other">คุณเหลืออีก <xliff:g id="step_count">%1$d</xliff:g> ขั้นก่อนจะสามารถเปิดใช้งานการตั้งค่าการพัฒนา</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">คุณเปิดใช้งานการตั้งค่าการพัฒนาแล้ว!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">ไม่จำเป็น คุณได้เปิดใช้งานการตั้งค่าการพัฒนาแล้ว</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">เครื่องมือการพัฒนา</string>
   <!-- Setting checkbox title for root access -->
@@ -37,19 +32,14 @@
   <string name="root_access_all">แอปและ ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">รุ่นของ LineageOS</string>
-  <string name="mod_version_default">ไม่รู้จัก</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">รุ่นอุปกรณ์</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ชื่ออุปกรณ์</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">ระดับ API ของ LineageOS</string>
-  <string name="mod_api_level_default">ไม่รู้จัก</string>
   <!-- About phone screen, build date -->
   <string name="build_date">วันที่สร้าง</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">การอัปเดตรุ่น LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ตำแหน่งที่ตั้ง</string>
   <string name="app_ops_categories_personal">ส่วนบุคคล</string>
@@ -300,7 +290,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

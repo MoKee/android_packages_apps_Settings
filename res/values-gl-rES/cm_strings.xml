@@ -18,14 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Está a <xliff:g id="step_count">%1$d</xliff:g> paso de activar a configuración de desenvolvemento.</item>
-    <item quantity="other">Está a <xliff:g id="step_count">%1$d</xliff:g> pasos de activar a configuración de desenvolvemento.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Activou a configuración de desenvolvemento!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Non fai falla, a configuración de desenvolvemento xa están activa.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ferramentas de desenvolvemento</string>
   <!-- Setting checkbox title for root access -->
@@ -40,19 +34,14 @@
   <string name="root_appops_title">Xestionar accesos root</string>
   <string name="root_appops_summary">Ver e xestionar as regras de root</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versión de LineageOS</string>
-  <string name="mod_version_default">Descoñecido</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo do dispositivo</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome do dispositivo</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nivel API LineageOS</string>
-  <string name="mod_api_level_default">Descoñecido</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data de compilación</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizacións de LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lugar</string>
   <string name="app_ops_categories_personal">Persoal</string>
@@ -339,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controlos de notificación</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Licenza de LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiza o sensor de pegadas dixitais na <xliff:g id="sensor_location">%1$s</xliff:g> do teu móbil.</string>
   <!-- Fingerprint sensor locations -->

@@ -18,15 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Už jste jen <xliff:g id="step_count">%1$d</xliff:g> krok od povolení vývojářských nastavení.</item>
-    <item quantity="few">Už jste jen <xliff:g id="step_count">%1$d</xliff:g> kroky od povolení vývojářských nastavení.</item>
-    <item quantity="other">Už jste jen <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení vývojářských nastavení.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Vývojářské nastavení je povoleno!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Vývojářské nastavení je již povoleno.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojářské nástroje</string>
   <!-- Setting checkbox title for root access -->
@@ -41,19 +34,14 @@
   <string name="root_appops_title">Spravovat přístupy root</string>
   <string name="root_appops_summary">Zobrazit a zpravovat pravidla přístupů root</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS verze</string>
-  <string name="mod_version_default">Neznámá</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Název zařízení</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Verze LineageOS API</string>
-  <string name="mod_api_level_default">Neznámá</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Datum sestavení</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizace LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Poloha</string>
   <string name="app_ops_categories_personal">Osobní</string>
@@ -340,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Ovládací prvky rozšířeného oznámení</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Právní ujednání LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vyhledejte snímač otisku prstů <xliff:g id="sensor_location">%1$s</xliff:g> na telefonu.</string>
   <!-- Fingerprint sensor locations -->

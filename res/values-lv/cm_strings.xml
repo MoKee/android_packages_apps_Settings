@@ -31,16 +31,12 @@
   <string name="root_access_all">Lietotnēm un ADB</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versija</string>
-  <string name="mod_version_default">Nezināms</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Nezināms</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Būvējuma datums</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS atjaunojumi</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Atrašanās vieta</string>
   <string name="app_ops_categories_personal">Personīgi</string>
@@ -194,7 +190,6 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS atbildība</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

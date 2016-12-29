@@ -18,14 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸ್ ಸಕ್ರಿಯಗೊಳಿಸಲು <xliff:g id="step_count">%1$d</xliff:g> ಹಂತದಷ್ತು ದೂರವಿದ್ದೀರಿ.</item>
-    <item quantity="other">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸ್ ಸಕ್ರಿಯಗೊಳಿಸಲು <xliff:g id="step_count">%1$d</xliff:g> ಹಂತಗಳಷ್ಟು ದೂರವಿದ್ದೀರಿ.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಘಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">ಅಗತ್ಯವಿಲ್ಲ, ನೀವು ಈಗಾಗಲೇ ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ಡೆವಲಪ್‍ಮೆಂಟ್ ಟೂಲ್ಸ್</string>
   <!-- Setting checkbox title for root access -->
@@ -38,19 +32,14 @@
   <string name="root_access_all">ಆಪ್ಸ್ ಮತ್ತು ಎಡಿಬಿ</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS ಆವೃತ್ತಿ</string>
-  <string name="mod_version_default">ಅಜ್ಞಾತ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ಸಾಧನ ಮಾದರಿ</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ಸಾಧನ ಹೆಸರು</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">ಸೈನೋಜನ್ ಮೋಡ್ API ಮಟ್ಟ</string>
-  <string name="mod_api_level_default">ಅಜ್ಞಾತ</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ನಿರ್ಮಾಣ ದಿನಾಂಕ</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS ನವೀಕರಣೆಗಳು</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ಸ್ಥಳ</string>
   <string name="app_ops_categories_personal">ವಯಕ್ತಿಕ</string>
@@ -300,7 +289,6 @@
   <string name="nfc_title_category">ಎನ್ಎಫ್‍ಸಿ</string>
   <!-- Notification importance -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS ಕಾನೂನು</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->

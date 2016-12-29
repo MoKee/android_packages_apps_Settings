@@ -24,11 +24,9 @@
   <!-- Setting checkbox title for root access -->
   <!-- Preference link for root appops -->
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Nekonata</string>
   <!-- About phone screen, build date -->
   <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->

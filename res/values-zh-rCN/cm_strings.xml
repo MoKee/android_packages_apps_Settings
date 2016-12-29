@@ -18,13 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other">还需 <xliff:g id="step_count">%1$d</xliff:g> 步就可以启用开发者选项。</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">您已经启用了开发者选项！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">不用了，您已启用开发者选项。</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">开发工具</string>
   <!-- Setting checkbox title for root access -->
@@ -39,19 +34,14 @@
   <string name="root_appops_title">管理 Root 访问</string>
   <string name="root_appops_summary">查看和控制 Root 规则</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS 版本</string>
-  <string name="mod_version_default">未知</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">设备型号</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">设备名称</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API 级别</string>
-  <string name="mod_api_level_default">未知</string>
   <!-- About phone screen, build date -->
   <string name="build_date">编译日期</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS 更新</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">位置</string>
   <string name="app_ops_categories_personal">个人</string>
@@ -338,7 +328,6 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">强力通知控制</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS 法律信息</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">在您手机的 <xliff:g id="sensor_location">%1$s</xliff:g> 找到指纹传感器。</string>
   <!-- Fingerprint sensor locations -->
