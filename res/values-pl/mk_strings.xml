@@ -24,4 +24,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Wystarczy, jesteś już programistą.</string>
   <!-- MKCenter verify -->
+  <!-- CMCC wifi extension -->
 </resources>

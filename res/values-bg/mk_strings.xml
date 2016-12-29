@@ -28,4 +28,5 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Не е необходимо. Вече има включени опции на програмист.</string>
   <!-- MKCenter verify -->
+  <!-- CMCC wifi extension -->
 </resources>

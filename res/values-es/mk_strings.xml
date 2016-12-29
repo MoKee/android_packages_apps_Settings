@@ -29,4 +29,5 @@
   <string name="show_dev_already_mk">No es necesario, ya ha habilitado los ajustes de desarrollo.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Congelar o remover \"Centro de MoKee\" afectara los servicios del sistema, por favor restaurela y vuelva a intentarlo.</string>
+  <!-- CMCC wifi extension -->
 </resources>
