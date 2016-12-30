@@ -20,7 +20,7 @@
   <string name="mk_version_default">Unbekannt</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Sie sind noch <xliff:g id="step_count">%1$d</xliff:g> Schritte davon entfernt die Entwickleroptionen freizuschalten.</item>
+    <item quantity="one">Sie sind noch <xliff:g id="step_count">%1$d</xliff:g> Schritt davon entfernt die Entwickleroptionen freizuschalten.</item>
     <item quantity="other">Sie sind noch <xliff:g id="step_count">%1$d</xliff:g> Schritte davon entfernt die Entwickleroptionen freizuschalten.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
