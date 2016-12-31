@@ -29,7 +29,7 @@
   <string name="blacklist_harassment_numbers_summary">Bloquear números de assédio</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Altura do botão</string>
-  <string name="navigation_bar_height_48">48dp (default)</string>
+  <string name="navigation_bar_height_48">48dp (padrão)</string>
   <string name="navigation_bar_height_0">ocultar</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">Velocidade de rede</string>
@@ -40,7 +40,7 @@
   <string name="status_bar_network_traffic_style_all">Enviando e recebendo</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Segundos no relógio</string>
-  <string name="status_bar_clock_show_second_summary">Mostra segundos no relógio da barra de status</string>
+  <string name="status_bar_clock_show_second_summary">Mostrar segundos no relógio da barra de status</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Mostrar ícone de su</string>
   <string name="show_su_icon_summary">Mostra um ícone na barra de status quando su está ativo</string>

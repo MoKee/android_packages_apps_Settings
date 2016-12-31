@@ -21,11 +21,11 @@
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Усі номери</string>
   <string name="blacklist_all_numbers_summary">Блокувати всі виклики</string>
-  <string name="blacklist_advertisement_numbers_title">Номера з яких надходить реклама</string>
+  <string name="blacklist_advertisement_numbers_title">Номери з яких надходить реклама</string>
   <string name="blacklist_advertisement_numbers_summary">Блокування дзвінків з рекламних номерів</string>
-  <string name="blacklist_fraud_numbers_title">Номера шахраїв</string>
+  <string name="blacklist_fraud_numbers_title">Номери шахраїв</string>
   <string name="blacklist_fraud_numbers_summary">Блокування дзвінків з номерів шахраїв</string>
-  <string name="blacklist_harassment_numbers_title">Номера вимагачів</string>
+  <string name="blacklist_harassment_numbers_title">Номери вимагачів</string>
   <string name="blacklist_harassment_numbers_summary">Блокування дзвінків з номерів вимагачів</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Висота клавіші</string>
@@ -39,8 +39,8 @@
   <string name="status_bar_network_traffic_style_down">Вхідний</string>
   <string name="status_bar_network_traffic_style_all">Вихідний та вхідний</string>
   <!-- Seconds in clock -->
-  <string name="status_bar_clock_show_second_title">Годинник з секундами</string>
-  <string name="status_bar_clock_show_second_summary">Відображати годинник з секундами в рядку стану</string>
+  <string name="status_bar_clock_show_second_title">Годинник із секундами</string>
+  <string name="status_bar_clock_show_second_summary">Відображати годинник із секундами в рядку стану</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Відображати індикатор SU</string>
   <string name="show_su_icon_summary">Відображати індикатор SU (#) в рядку стану, коли він використовується</string>
@@ -48,8 +48,13 @@
   <string name="show_headset_icon_title">Відображати індикатор гарнітури</string>
   <string name="show_headset_icon_summary">Відображати індикатор в рядку стану коли гарнітура підключена</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+    <item quantity="few">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+    <item quantity="other">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроках від увімкнення налаштувань розробника.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Ви увімкнули налаштування розробника!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Немає необхідності, ви вже ввімкнули налаштування для розробників.</string>
+  <string name="show_dev_already_mk">Немає необхідності, ви вже увімкнули налаштування розробника.</string>
 </resources>
