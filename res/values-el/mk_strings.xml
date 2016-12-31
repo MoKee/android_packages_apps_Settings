@@ -30,4 +30,6 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Πύλη</string>
+  <string name="wifi_advanced_network_netmask">Μάσκα δικτύου</string>
 </resources>
