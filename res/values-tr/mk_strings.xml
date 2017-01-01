@@ -30,4 +30,6 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Donma veya MoKee Center\'ı kaldırma sistem servislerini etkiler, lütfen geri yükleyin ve tekrar deneyin.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Ağ Geçidi</string>
+  <string name="wifi_advanced_network_netmask">Ağ maskesi</string>
 </resources>
