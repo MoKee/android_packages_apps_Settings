@@ -29,4 +29,6 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Menonaktifkan atau menghapus MoKee Center akan mempengaruhi layanan sistem, silakan memulihkan dan coba lagi.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Gateway</string>
+  <string name="wifi_advanced_network_netmask">Netmask</string>
 </resources>

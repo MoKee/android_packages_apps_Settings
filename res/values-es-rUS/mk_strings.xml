@@ -20,14 +20,16 @@
   <string name="mk_version_default">Desconocido</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toque para habilitar las opciones de desarrollo.</item>
-    <item quantity="other">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toque para habilitar las opciones de desarrollo.</item>
+    <item quantity="one">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toque para habilitar las opciones de desarrollador.</item>
+    <item quantity="other">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toques para habilitar las opciones de desarrollador.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">¡Ha activado las opciones de desarrollo!</string>
+  <string name="show_dev_on_mk">¡Has activado las opciones de desarrollador!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">No es necesario, ya ha activado las opciones de desarrollo.</string>
+  <string name="show_dev_already_mk">No es necesario, ya has activado las opciones de desarrollador.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Congelar o remover \"Centro de MoKee\" afectara los servicios del sistema, por favor restaurela y vuelva a intentarlo.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Puerta de enlace</string>
+  <string name="wifi_advanced_network_netmask">Máscara de red</string>
 </resources>
