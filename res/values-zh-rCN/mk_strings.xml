@@ -29,7 +29,7 @@
   <string name="blacklist_harassment_numbers_summary">阻止骚扰号码的来电</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">导航栏高度</string>
-  <string name="navigation_bar_height_48">48dp (默认)</string>
+  <string name="navigation_bar_height_48">48dp（默认）</string>
   <string name="navigation_bar_height_0">隐藏</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">状态栏网速</string>
