@@ -28,6 +28,8 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Non è necessario, hai già attivato le impostazioni di sviluppo.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Terminare Mokee Center potrebbe danneggiare alcuni servizi di sistema, ripristinare e riprovare.</string>
+  <string name="mkcenter_verify_failed_toast">Terminare o rimuovere Mokee Center influirà su alcuni servizi di sistema, ripristina e riprova.</string>
   <!-- CMCC wifi extension -->
+  <string name="wifi_advanced_gateway">Gateway</string>
+  <string name="wifi_advanced_network_netmask">Netmask</string>
 </resources>
