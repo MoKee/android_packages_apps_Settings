@@ -21,12 +21,12 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
     <item quantity="one">Sei ora ad <xliff:g id="step_count">%1$d</xliff:g> passo dall\'attivare le opzioni sviluppatore.</item>
-    <item quantity="other">Sei ora a <xliff:g id="step_count">%1$d</xliff:g> passo/i dall\'attivare le opzioni sviluppatore.</item>
+    <item quantity="other">Sei ora a <xliff:g id="step_count">%1$d</xliff:g> passi dall\'attivare le opzioni sviluppatore.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Hai attivato le impostazioni di sviluppo!</string>
+  <string name="show_dev_on_mk">Hai attivato le opzioni sviluppatore!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Non è necessario, hai già attivato le impostazioni di sviluppo.</string>
+  <string name="show_dev_already_mk">Non è necessario, hai già attivato le opzioni sviluppatore.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Terminare o rimuovere Mokee Center influirà su alcuni servizi di sistema, ripristina e riprova.</string>
   <!-- CMCC wifi extension -->
