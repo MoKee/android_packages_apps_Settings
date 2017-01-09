@@ -16,13 +16,22 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee ဗားရှင်း</string>
+  <string name="mk_version_default">မသိ</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">နံပါတ်အားလုံး</string>
+  <string name="blacklist_all_numbers_summary">ဖုန်းအားလုံးကို ဘလော့မည်</string>
   <!-- Height of navigation bar buttons -->
   <!-- Show network speed -->
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">နာရီတွင် စက္ကန့်</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">su icon ပြမည်</string>
+  <string name="show_su_icon_summary">su အလုပ်လုပ်သောအခါ status bar တွင် icon ပြမည်</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">နားကြပ် icon ပြမည်</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">မလိုတော့ပါ၊ development setting ကို ဖွင့်ပြီးပါပြီ</string>
 </resources>
