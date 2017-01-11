@@ -22,11 +22,11 @@
   <string name="blacklist_all_numbers_title">所有号码</string>
   <string name="blacklist_all_numbers_summary">屏蔽所有来电</string>
   <string name="blacklist_advertisement_numbers_title">广告号码</string>
-  <string name="blacklist_advertisement_numbers_summary">阻止广告号码的来电</string>
+  <string name="blacklist_advertisement_numbers_summary">阻止广告电话</string>
   <string name="blacklist_fraud_numbers_title">诈骗号码</string>
-  <string name="blacklist_fraud_numbers_summary">阻止诈骗号码的来电</string>
+  <string name="blacklist_fraud_numbers_summary">阻止诈骗电话</string>
   <string name="blacklist_harassment_numbers_title">骚扰号码</string>
-  <string name="blacklist_harassment_numbers_summary">阻止骚扰号码的来电</string>
+  <string name="blacklist_harassment_numbers_summary">阻止骚扰电话</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">导航栏高度</string>
   <string name="navigation_bar_height_48">48dp（默认）</string>
@@ -40,7 +40,7 @@
   <string name="status_bar_network_traffic_style_all">显示上传和下载速度</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">显示秒钟</string>
-  <string name="status_bar_clock_show_second_summary">时间中显示秒钟</string>
+  <string name="status_bar_clock_show_second_summary">在时间中显示秒钟</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">显示超级用户图标</string>
   <string name="show_su_icon_summary">当超级用户处于活动状态时在状态栏显示图标</string>

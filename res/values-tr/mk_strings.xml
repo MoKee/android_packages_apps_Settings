@@ -24,7 +24,7 @@
   <string name="blacklist_advertisement_numbers_title">Reklam numaraları</string>
   <string name="blacklist_advertisement_numbers_summary">Reklam çağrılarını engelle</string>
   <string name="blacklist_fraud_numbers_title">Dolandırıcılık numaraları</string>
-  <string name="blacklist_fraud_numbers_summary">Dolabdırıcılık numaralarını engelle</string>
+  <string name="blacklist_fraud_numbers_summary">Dolandırıcılık numaralarını engelle</string>
   <string name="blacklist_harassment_numbers_title">Taciz numaraları</string>
   <string name="blacklist_harassment_numbers_summary">Taciz numaralarını engelle</string>
   <!-- Height of navigation bar buttons -->

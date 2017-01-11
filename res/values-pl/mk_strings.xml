@@ -29,25 +29,30 @@
   <string name="blacklist_harassment_numbers_summary">Blokuj natrętne połączenia</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">Wysokość przycisków</string>
-  <string name="navigation_bar_height_48">48dp (domyślnie)</string>
+  <string name="navigation_bar_height_48">48dp (domyślne)</string>
   <string name="navigation_bar_height_0">ukryj</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">Prędkość transmisji danych</string>
   <string name="show_network_speed_summary">Pokaż prędkość transmisji danych na pasku stanu</string>
   <string name="status_bar_network_traffic_style_disable">Wyłączone</string>
-  <string name="status_bar_network_traffic_style_up">Wysłania</string>
-  <string name="status_bar_network_traffic_style_down">Pobierania</string>
-  <string name="status_bar_network_traffic_style_all">Wysyłania i pobierania</string>
+  <string name="status_bar_network_traffic_style_up">Wysyłanie</string>
+  <string name="status_bar_network_traffic_style_down">Pobieranie</string>
+  <string name="status_bar_network_traffic_style_all">Wysyłanie i pobieranie</string>
   <!-- Seconds in clock -->
   <string name="status_bar_clock_show_second_title">Sekundy w zegarze</string>
   <string name="status_bar_clock_show_second_summary">Pokaż sekundy w zegarze na pasku stanu</string>
   <!-- Show/hide su icon -->
-  <string name="show_su_icon_title">Pokaż ikonę su</string>
-  <string name="show_su_icon_summary">Wyświetl ikonę na pasku statusu gdy su jest aktywny</string>
+  <string name="show_su_icon_title">Pokaż ikonę SU</string>
+  <string name="show_su_icon_summary">Wyświetl ikonę na pasku statusu, gdy SU jest aktywny</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Pokaż ikonę słuchawek</string>
-  <string name="show_headset_icon_summary">Wyświetla ikonę w pasku statusu gdy podłączony jest zestaw słuchawkowy</string>
+  <string name="show_headset_icon_summary">Wyświetla ikonę w pasku statusu, gdy podłączony jest zestaw słuchawkowy</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> krok od włączenia opcji programistycznych.</item>
+    <item quantity="few">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> kroki od włączenia opcji programistycznych.</item>
+    <item quantity="other">Jesteś o <xliff:g id="step_count">%1$d</xliff:g> kroków od włączenia opcji programistycznych.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Włączono opcje programistyczne!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
