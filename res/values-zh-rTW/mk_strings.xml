@@ -22,18 +22,18 @@
   <string name="blacklist_all_numbers_title">所有電話號碼</string>
   <string name="blacklist_all_numbers_summary">拒絕所有來電</string>
   <string name="blacklist_advertisement_numbers_title">廣告號碼</string>
-  <string name="blacklist_advertisement_numbers_summary">阻止廣告來電</string>
-  <string name="blacklist_fraud_numbers_title">欺詐號碼</string>
-  <string name="blacklist_fraud_numbers_summary">阻止欺詐來電</string>
+  <string name="blacklist_advertisement_numbers_summary">封鎖廣告來電</string>
+  <string name="blacklist_fraud_numbers_title">詐騙號碼</string>
+  <string name="blacklist_fraud_numbers_summary">封鎖詐騙來電</string>
   <string name="blacklist_harassment_numbers_title">騷擾號碼</string>
-  <string name="blacklist_harassment_numbers_summary">阻止騷擾來電</string>
+  <string name="blacklist_harassment_numbers_summary">封鎖騷擾來電</string>
   <!-- Height of navigation bar buttons -->
   <string name="navigation_bar_height">導航欄高度</string>
   <string name="navigation_bar_height_48">48dp (預設)</string>
   <string name="navigation_bar_height_0">隱藏</string>
   <!-- Show network speed -->
   <string name="show_network_speed_title">狀態欄網速</string>
-  <string name="show_network_speed_summary">在狀態欄顯示當前網速</string>
+  <string name="show_network_speed_summary">在狀態列顯示目前網路速度</string>
   <string name="status_bar_network_traffic_style_disable">停用</string>
   <string name="status_bar_network_traffic_style_up">顯示上傳速度</string>
   <string name="status_bar_network_traffic_style_down">顯示下載速度</string>
@@ -49,7 +49,7 @@
   <string name="show_headset_icon_summary">插入耳機時在狀態列顯示圖示</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發者選項</item>
+    <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發人員選項</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">您已經啟用開發人員選項</string>
