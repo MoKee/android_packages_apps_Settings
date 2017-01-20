@@ -23,7 +23,7 @@
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Root 授权</string>
   <string name="root_access_warning_title">允许 Root 授权请求？</string>
-  <string name="root_access_warning_message">允许应用得到 Root 权限是有风险的，可能会影响您的系统安全！</string>
+  <string name="root_access_warning_message">允许应用获得 Root 权限是有风险的，这可能会影响您的系统安全！</string>
   <string name="root_access_none">已禁用</string>
   <string name="root_access_apps">仅限于应用</string>
   <string name="root_access_adb">仅限于 ADB</string>
@@ -107,7 +107,7 @@
   <string name="app_ops_summaries_read_cell_broadcasts">读取小区广播</string>
   <string name="app_ops_summaries_mock_location">模拟位置</string>
   <string name="app_ops_summaries_read_external_storage">读取外部存储</string>
-  <string name="app_ops_summaries_write_external_storage">写入外部存储器</string>
+  <string name="app_ops_summaries_write_external_storage">写入外部存储</string>
   <string name="app_ops_summaries_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_summaries_get_accounts">获得帐户</string>
   <string name="app_ops_summaries_run_in_background">在后台运行</string>
@@ -129,7 +129,7 @@
   <string name="app_ops_labels_read_calendar">读取日历</string>
   <string name="app_ops_labels_modify_calendar">修改日历</string>
   <string name="app_ops_labels_wifi_scan">Wi-Fi 扫描</string>
-  <string name="app_ops_labels_notification">通知/Toast</string>
+  <string name="app_ops_labels_notification">通知/提示</string>
   <string name="app_ops_labels_cell_scan">基站扫描</string>
   <string name="app_ops_labels_call_phone">拨打电话</string>
   <string name="app_ops_labels_read_sms">读取短信</string>
@@ -162,7 +162,7 @@
   <string name="app_ops_labels_monitor_location">监控位置</string>
   <string name="app_ops_labels_monitor_high_power_location">监控高电耗位置</string>
   <string name="app_ops_labels_get_usage_stats">获得使用统计</string>
-  <string name="app_ops_labels_mute_unmute_microphone">麦克风静音 / 取消静音</string>
+  <string name="app_ops_labels_mute_unmute_microphone">麦克风静音/取消静音</string>
   <string name="app_ops_labels_toast_window">显示提示信息</string>
   <string name="app_ops_labels_project_media">放映媒体</string>
   <string name="app_ops_labels_activate_vpn">启用 VPN</string>
@@ -178,7 +178,7 @@
   <string name="app_ops_labels_read_cell_broadcasts">读取小区广播</string>
   <string name="app_ops_labels_mock_location">模拟位置</string>
   <string name="app_ops_labels_read_external_storage">读取外部存储</string>
-  <string name="app_ops_labels_write_external_storage">写入外部存储器</string>
+  <string name="app_ops_labels_write_external_storage">写入外部存储</string>
   <string name="app_ops_labels_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_labels_get_accounts">获得帐户</string>
   <string name="app_ops_labels_run_in_background">在后台运行</string>
@@ -193,7 +193,7 @@
   <string name="app_ops_permissions_ignored">已忽略</string>
   <string name="app_ops_permissions_always_ask">总是询问</string>
   <!-- App ops detail -->
-  <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (已使用 <xliff:g id="count">%2$s</xliff:g>)</string>
+  <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> （已使用 <xliff:g id="count">%2$s</xliff:g>）</string>
   <string name="app_ops_allowed_count">允许 <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">拒绝 <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">允许 <xliff:g id="count">%1$s</xliff:g>，拒绝 <xliff:g id="count">%2$s</xliff:g></string>
@@ -202,7 +202,7 @@
   <string name="app_ops_show_system_apps">显示内置应用</string>
   <string name="app_ops_reset_counters">重置允许/拒绝计数器</string>
   <string name="app_ops_reset_confirm_title">确认重置计数器</string>
-  <string name="app_ops_reset_confirm_mesg">您确定要重置计数器？</string>
+  <string name="app_ops_reset_confirm_mesg">您确定要重置计数器吗？</string>
   <string name="ok">确定</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">音量调节提示音</string>
@@ -224,7 +224,7 @@
   <string name="lock_directly_show_pin">直接显示 PIN 输入框</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">振动</string>
-  <string name="lockscreen_vibrate_enabled_head">解锁时震动</string>
+  <string name="lockscreen_vibrate_enabled_head">解锁时振动</string>
   <!-- Lights settings -->
   <string name="lights_label">指示灯</string>
   <!-- Memory -->
@@ -247,7 +247,7 @@
   <string name="protected_apps_summary">管理安全锁隐藏的应用</string>
   <string name="saving_protected_components">正在保存组件状态\u2026</string>
   <string name="launch_app">启动应用</string>
-  <string name="pa_login_username_hint">用户名(电子邮件)</string>
+  <string name="pa_login_username_hint">用户名（电子邮件）</string>
   <string name="pa_login_password_hint">密码</string>
   <string name="pa_login_submit_button">登录</string>
   <string name="pa_login_checking_password">正在检查帐户\u2026</string>
@@ -285,8 +285,8 @@
   <string name="adb_notify_summary">已开启 USB 或网络调试通知</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">网络 ADB 调试</string>
-  <string name="adb_over_network_summary">通过网络接口 (Wi\u2011Fi，USB 网络) 启用 TCP/IP 调试。该设置重启后失效</string>
-  <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请只在您信任的网络中启用此功能。\n\n您真的要开启这个功能吗？</string>
+  <string name="adb_over_network_summary">通过网络接口（WiFi或USB 网络）启用 TCP/IP 调试。该设置会在重启后失效</string>
+  <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请确保在您信任的网络中启用此功能。\n\n您确定启用此功能吗？</string>
   <!-- Hostname setting -->
   <string name="device_hostname">设备网络名</string>
   <!-- Increasing ring tone volume -->
@@ -297,7 +297,7 @@
   <string name="zen_mode_vibration">振动</string>
   <string name="zen_mode_vibration_never">不要振动</string>
   <string name="zen_mode_vibration_calls_only">仅在来电时振动</string>
-  <string name="zen_mode_vibration_calls_and_notifications">来电及通知时震动</string>
+  <string name="zen_mode_vibration_calls_and_notifications">来电及通知时振动</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
   <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
@@ -328,13 +328,13 @@
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">其他</string>
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi 热点超时</string>
+  <string name="hotstpot_inactivity_timeout_text">WiFi 热点超时</string>
   <string name="hotstpot_inactivity_timeout_never">永不</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 分钟</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 分钟</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 分钟</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">移动 Wi\u2011Fi 热点永不超时</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">移动 Wi\u2011Fi 热点将会于 <xliff:g id="timeout">%1$s</xliff:g> 后超时</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">移动 WiFi 热点永不超时</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">移动 WiFi 热点将于 <xliff:g id="timeout">%1$s</xliff:g> 后超时</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
@@ -349,15 +349,15 @@
   <string name="crypt_keeper_replace_password_summary">删除独立加密密码</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">移动数据访问</string>
-  <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi 数据访问</string>
+  <string name="data_usage_app_restrict_wifi_category_title">WiFi 数据访问</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <string name="data_usage_app_restrict_all_data_title">禁用所有移动数据访问</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_data_summary">防止任何使用移动网络的数据访问</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-  <string name="data_usage_app_restrict_all_wifi_title">禁用所有 Wi\u2011Fi 数据访问</string>
+  <string name="data_usage_app_restrict_all_wifi_title">禁用所有 WiFi 数据访问</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <string name="data_usage_app_restrict_all_wifi_summary">防止任何使用 Wi\u2011Fi 的数据访问</string>
+  <string name="data_usage_app_restrict_all_wifi_summary">防止任何使用 WiFi 的数据访问</string>
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">关联铃声和通知的音量</string>
   <!-- Launch music player when headset is connected -->
