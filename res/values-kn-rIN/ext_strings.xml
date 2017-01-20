@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ಡೆವಲಪ್‍ಮೆಂಟ್ ಟೂಲ್ಸ್</string>
   <!-- Setting checkbox title for root access -->
@@ -31,15 +29,12 @@
   <string name="root_access_adb">ಎಡಿಬಿ ಮಾತ್ರ</string>
   <string name="root_access_all">ಆಪ್ಸ್ ಮತ್ತು ಎಡಿಬಿ</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">ಸಾಧನ ಮಾದರಿ</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ಸಾಧನ ಹೆಸರು</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">ನಿರ್ಮಾಣ ದಿನಾಂಕ</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ಸ್ಥಳ</string>
   <string name="app_ops_categories_personal">ವಯಕ್ತಿಕ</string>
@@ -47,6 +42,7 @@
   <string name="app_ops_categories_media">ಮಾಧ್ಯಮ</string>
   <string name="app_ops_categories_device">ಸಾಧನ</string>
   <string name="app_ops_categories_bootup">ಬೂಟಪ್</string>
+  <string name="app_ops_categories_su">ರೂಟ್ ಪ್ರವೇಶ</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ಕಳಪೆ ಸ್ಥಳ</string>
   <string name="app_ops_summaries_fine_location">ಉತ್ತಮ ಸ್ಥಳ</string>
@@ -288,18 +284,23 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">ಎನ್ಎಫ್‍ಸಿ</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">ಇತರೆ</string>
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot timeout</string>
   <string name="hotstpot_inactivity_timeout_never">ಎಂದಿಗೂ ಬೇಡ</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 ನಿಮಿಷ</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 ನಿಮಿಷಗಳು</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">ಪ್ಲಗ್‍ಮಾಡಿದಾಗ ಎಚ್ಚರವಾಗು</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>
