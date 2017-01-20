@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Εργαλεία ανάπτυξης</string>
   <!-- Setting checkbox title for root access -->
@@ -33,15 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Διαχείριση προσβάσεων root</string>
   <string name="root_appops_summary">Προβολή και έλεγχος των κανόνων root</string>
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Μοντέλο συσκευής</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Όνομα συσκευής</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Ημερομηνία έκδοσης</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Τοποθεσία</string>
   <string name="app_ops_categories_personal">Προσωπικά</string>
@@ -49,10 +44,10 @@
   <string name="app_ops_categories_media">Μέσα</string>
   <string name="app_ops_categories_device">Συσκευή</string>
   <string name="app_ops_categories_bootup">Εκκίνηση</string>
+  <string name="app_ops_categories_su">Πρόσβαση root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">τοποθεσία κατά προσέγγιση</string>
   <string name="app_ops_summaries_fine_location">ακριβής τοποθεσία</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">δόνηση</string>
   <string name="app_ops_summaries_read_contacts">ανάγνωση επαφών</string>
   <string name="app_ops_summaries_modify_contacts">τροποποίηση επαφών</string>
@@ -121,7 +116,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Τοποθεσία κατά προσέγγιση</string>
   <string name="app_ops_labels_fine_location">Ακριβής τοποθεσία</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Δόνηση</string>
   <string name="app_ops_labels_read_contacts">Ανάγνωση επαφών</string>
   <string name="app_ops_labels_modify_contacts">Τροποποίηση επαφών</string>
@@ -282,6 +276,10 @@
   <string name="increasing_ring_ramp_up_time_title">Χρονικό διάστημα αύξησης</string>
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 δευτερόλεπτα</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 λεπτό</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 λεπτά</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 λεπτά</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Κατάσταση SIM %d</string>
   <string name="sim_card_lock_settings_title">Ρυθμίσεις κλειδώματος SIM %d</string>
@@ -289,9 +287,7 @@
   <string name="sim_mobile_network_settings_category_title">Ρυθμίσεις δικτύων κινητής τηλεφωνίας</string>
   <string name="sim_mobile_network_settings_title">Ρυθμίσεις SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Εντοπίστε τον αισθητήρα μοναδικού χαρακτηριστικού <xliff:g id="sensor_location">%1$s</xliff:g> του τηλεφώνου σας.</string>
   <!-- Fingerprint sensor locations -->
@@ -310,4 +306,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

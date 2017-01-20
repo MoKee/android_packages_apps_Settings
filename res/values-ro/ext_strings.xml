@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Unelte de dezvoltare</string>
   <!-- Setting checkbox title for root access -->
@@ -31,26 +29,20 @@
   <string name="root_access_adb">Doar ADB</string>
   <string name="root_access_all">Aplicații și ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelul dispozitivului</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Numele dispozitivului</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Dată compilare</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Locație</string>
-  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Mesagerie</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Dispozitiv</string>
-  <string name="app_ops_categories_bootup">Bootup</string>
+  <string name="app_ops_categories_su">Acces root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">locație aspră</string>
   <string name="app_ops_summaries_fine_location">locație fină</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrare</string>
   <string name="app_ops_summaries_read_contacts">citește contactele</string>
   <string name="app_ops_summaries_modify_contacts">modifică contactele</string>
@@ -73,7 +65,6 @@
   <string name="app_ops_summaries_modify_settings">modifică setările</string>
   <string name="app_ops_summaries_draw_on_top">trage deasupra</string>
   <string name="app_ops_summaries_access_notifications">accesare notificări</string>
-  <string name="app_ops_summaries_camera">camera</string>
   <string name="app_ops_summaries_record_audio">înregistrare audio</string>
   <string name="app_ops_summaries_play_audio">redare audio</string>
   <string name="app_ops_summaries_read_clipboard">citește clipboard</string>
@@ -113,7 +104,6 @@
   <string name="app_ops_summaries_superuser">acces root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_fine_location">Locație fină</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrează</string>
   <string name="app_ops_labels_read_contacts">Citește contactele</string>
   <string name="app_ops_labels_modify_contacts">modifică contactele</string>
@@ -137,7 +127,7 @@
   <string name="app_ops_labels_modify_settings">Modifică setările</string>
   <string name="app_ops_labels_draw_on_top">Trage de sus</string>
   <string name="app_ops_labels_access_notifications">Acces notificări</string>
-  <string name="app_ops_labels_camera">Camera</string>
+  <string name="app_ops_labels_camera">Cameră foto</string>
   <string name="app_ops_labels_record_audio">Înregistrează audio</string>
   <string name="app_ops_labels_play_audio">Redare audio</string>
   <string name="app_ops_labels_read_clipboard">Citește clipboard</string>
@@ -263,6 +253,10 @@
   <string name="increasing_ring_min_volume_title">Volum inițial</string>
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 secunde</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minute</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minute</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Stare SIM %d</string>
   <string name="sim_card_lock_settings_title">Setări blocare SIM %d</string>
@@ -270,9 +264,7 @@
   <string name="sim_mobile_network_settings_category_title">Setări rețea mobilă</string>
   <string name="sim_mobile_network_settings_title">Setări cartelă SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
@@ -286,4 +278,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

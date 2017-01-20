@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Utvecklingsverktyg</string>
   <!-- Setting checkbox title for root access -->
@@ -32,26 +30,22 @@
   <string name="root_access_all">Appar och ADB</string>
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Hantera root-åtkomster</string>
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhetsnamn</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Byggdatum</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Plats</string>
   <string name="app_ops_categories_personal">Personligt</string>
   <string name="app_ops_categories_messaging">Meddelanden</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Enhet</string>
   <string name="app_ops_categories_bootup">Uppstart</string>
+  <string name="app_ops_categories_su">Rootåtkomst</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">grov lokalisering</string>
   <string name="app_ops_summaries_fine_location">fin lokalisering</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrera</string>
   <string name="app_ops_summaries_read_contacts">läsa kontakter</string>
   <string name="app_ops_summaries_modify_contacts">modifiera kontakter</string>
@@ -120,7 +114,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Grov lokalisering</string>
   <string name="app_ops_labels_fine_location">Fin lokalisering</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrera</string>
   <string name="app_ops_labels_read_contacts">Läsa kontakter</string>
   <string name="app_ops_labels_modify_contacts">Modifiera kontakter</string>
@@ -281,16 +274,17 @@
   <string name="increasing_ring_ramp_up_time_title">Upprampningstid</string>
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minuter</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minuter</string>
   <!-- MSIM SIM status -->
-  <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM-%d låsinställningar</string>
   <string name="sim_card_summary_empty">SIM inte isatt</string>
   <string name="sim_mobile_network_settings_category_title">Inställningar för mobilt nätverk</string>
   <string name="sim_mobile_network_settings_title">SIM %d inställningar</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
@@ -304,4 +298,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

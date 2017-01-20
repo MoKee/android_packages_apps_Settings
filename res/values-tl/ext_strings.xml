@@ -27,13 +27,12 @@
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_camera">კამერა</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
-  <string name="vibrator_intensity_dialog_reset">საწყის პრამეტრებზე დაბრუნება</string>
+  <string name="vibrator_intensity_dialog_reset">I-reset</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -48,7 +47,7 @@
   <!-- lock screen visualizer -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
-  <string name="menu_hidden_apps_delete">საწყის პრამეტრებზე დაბრუნება</string>
+  <string name="menu_hidden_apps_delete">I-reset</string>
   <!-- title for lock screen weather preference -->
   <!-- title for lock screen blur preference -->
   <!-- Proximity wake -->
@@ -65,10 +64,10 @@
   <!-- Increasing ring tone volume -->
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
-  <string name="app_notification_sound_timeout_value_10_seconds">10 წამი</string>
-  <string name="app_notification_sound_timeout_value_1_minute">1 წუთი</string>
-  <string name="app_notification_sound_timeout_value_5_minutes">5 წუთი</string>
-  <string name="app_notification_sound_timeout_value_15_minutes">10 წუთი</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minuto</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minuto</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
@@ -76,9 +75,9 @@
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_1_minute">1 წუთი</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 წუთი</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 წუთი</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuto</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuto</string>
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Encryption password -->

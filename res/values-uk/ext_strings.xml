@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Інструм. розробника</string>
   <!-- Setting checkbox title for root access -->
@@ -31,26 +29,24 @@
   <string name="root_access_adb">Тільки ADB</string>
   <string name="root_access_all">Програми та ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Модель пристрою</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Назва пристрою</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Дата збірки</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Місцезнаходження</string>
   <string name="app_ops_categories_personal">Особисті дані</string>
   <string name="app_ops_categories_messaging">Повідомлення</string>
   <string name="app_ops_categories_media">Мультимедіа</string>
   <string name="app_ops_categories_device">Пристрій</string>
+  <string name="app_ops_categories_background">Фон</string>
   <string name="app_ops_categories_bootup">Завантаження</string>
+  <string name="app_ops_categories_su">Root доступ</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">приблизне місце розташування</string>
   <string name="app_ops_summaries_fine_location">точне місце розташування</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">вібросигнал</string>
   <string name="app_ops_summaries_read_contacts">читання даних контактів</string>
   <string name="app_ops_summaries_modify_contacts">зміна даних контактів</string>
@@ -94,7 +90,6 @@
   <string name="app_ops_summaries_get_usage_stats">отримувати статистику використання</string>
   <string name="app_ops_summaries_mute_unmute_microphone">увімк./вимк. мікрофон</string>
   <string name="app_ops_summaries_toast_window">показувати спливаючі сповіщення</string>
-  <string name="app_ops_summaries_project_media">project media</string>
   <string name="app_ops_summaries_activate_vpn">активувати VPN</string>
   <string name="app_ops_summaries_write_wallpaper">записувати шпалери</string>
   <string name="app_ops_summaries_assist_structure">допоміжні структури</string>
@@ -117,7 +112,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Приблизне розташування</string>
   <string name="app_ops_labels_fine_location">Точне розташування</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Вібросигнал</string>
   <string name="app_ops_labels_read_contacts">Читання даних контактів</string>
   <string name="app_ops_labels_modify_contacts">Зміна даних контактів</string>
@@ -161,7 +155,6 @@
   <string name="app_ops_labels_get_usage_stats">Отримувати статистику використання</string>
   <string name="app_ops_labels_mute_unmute_microphone">Увімк./вимк. мікрофон</string>
   <string name="app_ops_labels_toast_window">Показувати спливаючі сповіщення</string>
-  <string name="app_ops_labels_project_media">Project media</string>
   <string name="app_ops_labels_activate_vpn">Активувати VPN</string>
   <string name="app_ops_labels_write_wallpaper">Записувати шпалери</string>
   <string name="app_ops_labels_assist_structure">Допоміжні структури</string>
@@ -189,7 +182,7 @@
   <string name="app_ops_reset_counters">Скинути лічильники дозволу/заборони</string>
   <string name="app_ops_reset_confirm_title">Підтвердити скидання лічильників</string>
   <string name="app_ops_reset_confirm_mesg">Ви впевнені що хочете скинути лічильники?</string>
-  <string name="ok">OK</string>
+  <string name="ok">ОК</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звуки регулювання гучності</string>
   <!-- Vibrator intensity -->
@@ -266,6 +259,10 @@
   <string name="increasing_ring_ramp_up_time_title">Час збільшення</string>
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 хвилина</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 хвилин</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 хвилин</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Статус SIM %d</string>
   <string name="sim_card_lock_settings_title">Налаштування блокування SIM %d</string>
@@ -273,15 +270,25 @@
   <string name="sim_mobile_network_settings_category_title">Налаштування мобільної мережі</string>
   <string name="sim_mobile_network_settings_title">Налаштування SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Інший</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Ніколи</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 хвилина</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 хвилин</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 хвилин</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Екран прокидається при підключені</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

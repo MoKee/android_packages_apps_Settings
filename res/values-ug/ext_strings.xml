@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ئىجادكارلار قورالى</string>
   <!-- Setting checkbox title for root access -->
@@ -31,15 +29,12 @@
   <string name="root_access_adb">ADB لا</string>
   <string name="root_access_all">Apps ۋە ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">ئۈسكىنە تىپى</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ئۈسكۈنە ئاتى</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">ھاسىللىغان چېسلا</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ئورنى</string>
   <string name="app_ops_categories_personal">شەخسىي</string>
@@ -47,10 +42,10 @@
   <string name="app_ops_categories_media">ۋاستە</string>
   <string name="app_ops_categories_device">ئۈسكۈنە</string>
   <string name="app_ops_categories_bootup">قوزغالغاندا</string>
+  <string name="app_ops_categories_su">Root ھوقۇقى</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">تەخمىنىي ئورنى</string>
   <string name="app_ops_summaries_fine_location">دەل ئورنى</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">تىترەت</string>
   <string name="app_ops_summaries_read_contacts">ئالاقەداشلارنى ئوقۇيدۇ</string>
   <string name="app_ops_summaries_modify_contacts">ئالاقەداشلارنى تەھرىرلەيدۇ</string>
@@ -119,7 +114,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">تەخمىنىي ئورنى</string>
   <string name="app_ops_labels_fine_location">دەل ئورنى</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">تىترەت</string>
   <string name="app_ops_labels_read_contacts">ئالاقەداشلارنى ئوقۇيدۇ</string>
   <string name="app_ops_labels_modify_contacts">ئالاقەداشلارنى تەھرىرلەيدۇ</string>
@@ -287,9 +281,7 @@
   <string name="sim_mobile_network_settings_category_title">كۆچمە تور تەڭشىكى</string>
   <string name="sim_mobile_network_settings_title">SIM %d تەڭشىكى</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
@@ -303,4 +295,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">چېتىلغاندا ئويغات</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

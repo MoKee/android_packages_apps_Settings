@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Outils de développement</string>
   <!-- Setting checkbox title for root access -->
@@ -33,27 +31,24 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Gérer les accès root</string>
   <string name="root_appops_summary">Visualiser et contrôler les règles root</string>
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Modèle de l\'appareil</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nom de l\'appareil</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Date de compilation</string>
-  <string name="build_date_default">2015-01-01-0000</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Position</string>
   <string name="app_ops_categories_personal">Personnel</string>
   <string name="app_ops_categories_messaging">Messagerie</string>
   <string name="app_ops_categories_media">Média</string>
   <string name="app_ops_categories_device">Appareil</string>
+  <string name="app_ops_categories_background">Arrière plan</string>
   <string name="app_ops_categories_bootup">Démarrage</string>
+  <string name="app_ops_categories_su">Accès root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">localisation approximative</string>
   <string name="app_ops_summaries_fine_location">localisation précise</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibreur</string>
   <string name="app_ops_summaries_read_contacts">voir les contacts</string>
   <string name="app_ops_summaries_modify_contacts">modifier les contacts</string>
@@ -62,7 +57,6 @@
   <string name="app_ops_summaries_read_calendar">lire l\'agenda</string>
   <string name="app_ops_summaries_modify_calendar">modifier l\'agenda</string>
   <string name="app_ops_summaries_wifi_scan">Recherche du Wi-Fi</string>
-  <string name="app_ops_summaries_notification">notification/toast</string>
   <string name="app_ops_summaries_cell_scan">scanner le réseau cellulaire</string>
   <string name="app_ops_summaries_call_phone">appel téléphonique</string>
   <string name="app_ops_summaries_read_sms">lire les SMS</string>
@@ -122,7 +116,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Position approximative</string>
   <string name="app_ops_labels_fine_location">Position précise</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibreur</string>
   <string name="app_ops_labels_read_contacts">Voir les contacts</string>
   <string name="app_ops_labels_modify_contacts">Modifier les contacts</string>
@@ -131,7 +124,6 @@
   <string name="app_ops_labels_read_calendar">Lire l\'agenda</string>
   <string name="app_ops_labels_modify_calendar">Modifier l\'agenda</string>
   <string name="app_ops_labels_wifi_scan">Recherche du Wi-Fi</string>
-  <string name="app_ops_labels_notification">Notification/Toast</string>
   <string name="app_ops_labels_cell_scan">Recherche mobile</string>
   <string name="app_ops_labels_call_phone">Appel téléphonique</string>
   <string name="app_ops_labels_read_sms">Lire SMS</string>
@@ -295,7 +287,6 @@
   <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
   <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
-  <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">État de la SIM %d</string>
   <string name="sim_card_lock_settings_title">Paramètres de verrouillage de la carte SIM %d</string>
@@ -303,9 +294,7 @@
   <string name="sim_mobile_network_settings_category_title">Paramètres de réseau mobile</string>
   <string name="sim_mobile_network_settings_title">Paramètres de la SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
   <!-- Fingerprint sensor locations -->
@@ -325,4 +314,12 @@
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque l\'appareil est branché ou débranché d\'une source d\'alimentation</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

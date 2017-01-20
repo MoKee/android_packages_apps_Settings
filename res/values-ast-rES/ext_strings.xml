@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ferramientes de desendolcu</string>
   <!-- Setting checkbox title for root access -->
@@ -31,26 +29,22 @@
   <string name="root_access_adb">Namái ADB</string>
   <string name="root_access_all">Aplicaciones y ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelu de preséu</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome del preséu</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Data de compilación</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Llocalización</string>
-  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Mensaxería</string>
   <string name="app_ops_categories_media">Multimedia</string>
   <string name="app_ops_categories_device">Preséu</string>
   <string name="app_ops_categories_bootup">Arranque</string>
+  <string name="app_ops_categories_su">Accesu alministrativu</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">allugamientu pocu precisu</string>
   <string name="app_ops_summaries_fine_location">allugamientu precisu</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibración</string>
   <string name="app_ops_summaries_read_contacts">lleer contautos</string>
   <string name="app_ops_summaries_modify_contacts">modificar contautos</string>
@@ -119,7 +113,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Llocalización aproximada</string>
   <string name="app_ops_labels_fine_location">Llocalización fina</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrar</string>
   <string name="app_ops_labels_read_contacts">Lleer contautos</string>
   <string name="app_ops_labels_modify_contacts">Modificar contautos</string>
@@ -190,7 +183,6 @@
   <string name="app_ops_permissions_ignored">inoráu</string>
   <string name="app_ops_permissions_always_ask">Entrugar siempre</string>
   <!-- App ops detail -->
-  <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
   <string name="app_ops_allowed_count">Permitíu <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Refugáu <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Permitíu <xliff:g id="count">%1$s</xliff:g>, refugáu <xliff:g id="count">%2$s</xliff:g></string>
@@ -283,7 +275,6 @@
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
@@ -297,4 +288,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Prender con cargador</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>

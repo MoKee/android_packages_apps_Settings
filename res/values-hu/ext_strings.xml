@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Fejlesztőeszközök</string>
   <!-- Setting checkbox title for root access -->
@@ -33,15 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Root hozzáférések kezelése</string>
   <string name="root_appops_summary">Root szabályok megtekintése és kezelése</string>
-  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <string name="device_model">Eszköz modellje</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Eszköz neve</string>
-  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
   <string name="build_date">Build dátuma</string>
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Helymeghatározás</string>
   <string name="app_ops_categories_personal">Személyes</string>
@@ -49,10 +44,10 @@
   <string name="app_ops_categories_media">Média</string>
   <string name="app_ops_categories_device">Eszköz</string>
   <string name="app_ops_categories_bootup">Indításkor</string>
+  <string name="app_ops_categories_su">Rendszergazda hozzáférés</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">pontatlan hely</string>
   <string name="app_ops_summaries_fine_location">pontos hely</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">rezgés</string>
   <string name="app_ops_summaries_read_contacts">névjegyek olvasása</string>
   <string name="app_ops_summaries_modify_contacts">névjegyek módosítása</string>
@@ -121,7 +116,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Pontatlan hely</string>
   <string name="app_ops_labels_fine_location">Pontos hely</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Rezgés</string>
   <string name="app_ops_labels_read_contacts">Névjegyek olvasása</string>
   <string name="app_ops_labels_modify_contacts">Névjegyek módosítása</string>
@@ -202,7 +196,7 @@
   <string name="app_ops_reset_counters">Számlálók nullázása</string>
   <string name="app_ops_reset_confirm_title">Számlálók törlésének megerősítése</string>
   <string name="app_ops_reset_confirm_mesg">Biztosan szeretné alaphelyzetbe állítani a számlálókat?</string>
-  <string name="ok">OK</string>
+  <string name="ok">Rendben</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Hangerő állítási hangok</string>
   <!-- Vibrator intensity -->
@@ -302,9 +296,7 @@
   <string name="sim_mobile_network_settings_category_title">Mobilhálózati beállítások</string>
   <string name="sim_mobile_network_settings_title">SIM %d beállítások</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Keresse meg az ujjlenyomat érzékelőt a telefon <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
   <!-- Fingerprint sensor locations -->
@@ -323,4 +315,12 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>
   <!-- Heads-up -->
+  <!-- Encryption password -->
+  <!-- Per-app data restrictions -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <!-- Volume link notification -->
+  <!-- Launch music player when headset is connected -->
 </resources>
