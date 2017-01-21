@@ -29,6 +29,8 @@
   <string name="root_access_adb">Solo ADB</string>
   <string name="root_access_all">Aplicaciones y ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Administrar el acceso root</string>
+  <string name="root_appops_summary">Ver y controlar las reglas de root para aplicaciones</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo de dispositivo</string>
   <!-- About phone screen, Device name -->
@@ -37,6 +39,7 @@
   <string name="build_date">Fecha de compilación</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Ubicación</string>
+  <string name="app_ops_categories_personal">Datos personales</string>
   <string name="app_ops_categories_messaging">Mensajes</string>
   <string name="app_ops_categories_media">Multimedia</string>
   <string name="app_ops_categories_device">Dispositivo</string>

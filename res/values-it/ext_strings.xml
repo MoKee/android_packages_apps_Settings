@@ -41,6 +41,7 @@
   <string name="app_ops_categories_location">Posizione</string>
   <string name="app_ops_categories_personal">Personale</string>
   <string name="app_ops_categories_messaging">Messaggistica</string>
+  <string name="app_ops_categories_media">Multimedia</string>
   <string name="app_ops_categories_device">Dispositivo</string>
   <string name="app_ops_categories_background">Sfondo</string>
   <string name="app_ops_categories_bootup">Avvio</string>
@@ -48,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">posizione approssimativa</string>
   <string name="app_ops_summaries_fine_location">posizione precisa</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrazione</string>
   <string name="app_ops_summaries_read_contacts">lettura contatti</string>
   <string name="app_ops_summaries_modify_contacts">modifica dei contatti</string>
@@ -118,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Posizione approssimativa</string>
   <string name="app_ops_labels_fine_location">Posizione precisa</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrazione</string>
   <string name="app_ops_labels_read_contacts">Leggi contatti</string>
   <string name="app_ops_labels_modify_contacts">Modifica contatti</string>
@@ -245,6 +248,7 @@
   <string name="saving_protected_components">Salvataggio stato componente\u2026</string>
   <string name="launch_app">Avvia app</string>
   <string name="pa_login_username_hint">Utente (e-mail)</string>
+  <string name="pa_login_password_hint">Password</string>
   <string name="pa_login_submit_button">Accedi</string>
   <string name="pa_login_checking_password">Controllo account\u2026</string>
   <string name="pa_login_incorrect_login">Credenziali errate</string>
@@ -311,6 +315,7 @@
   <string name="sim_mobile_network_settings_category_title">Impostazioni rete cellulare</string>
   <string name="sim_mobile_network_settings_title">Impostazioni SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controlli avanzati notifiche</string>
   <!-- Format string for fingerprint location message -->
@@ -334,13 +339,28 @@
   <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
   <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando l\'alimentatore viene collegato o scollegato</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Heads-up</string>
   <string name="heads_up_notifications_enabled_summary">Visualizza le notifiche prioritarie in una piccola finestra fluttuante</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Cambia password di crittografia</string>
+  <string name="crypt_keeper_change_password_summary">Cambia la password utilizzata per la crittografia del dispositivo</string>
+  <string name="crypt_keeper_choose_your_password_header">Imposta password crittografia</string>
+  <string name="crypt_keeper_replace_password_title">Sostituisci la password di crittografia</string>
+  <string name="crypt_keeper_replace_password_summary">Rimuovi la password di crittografia separata</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Accesso dati cellulare</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Accesso dati Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Disabilita tutti gli accessi ai dati cellulare</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Impedisci qualsiasi utilizzo dell\'accesso ai dati tramite reti cellulari</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Disabilita tutti gli accessi ai dati Wi\u2011Fi</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Impedisci qualsiasi utilizzo dell\'accesso ai dati tramite reti di Wi\u2011Fi</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Collega volume suoneria &amp; notifiche</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Avvia il lettore musicale</string>
+  <string name="headset_connect_player_summary">Avvia il lettore musicale predefinito quando vengono connesse le cuffie</string>
 </resources>
