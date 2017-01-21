@@ -219,6 +219,7 @@
   <!-- Memory -->
   <string name="memory_startup_apps_title">Applications lancées au démarrage</string>
   <!-- Advanced restart options -->
+  <string name="advanced_reboot_title">Redémarrage avancé</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
   <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement les touches lors du déverrouillage</string>
@@ -314,6 +315,7 @@
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque l\'appareil est branché ou débranché d\'une source d\'alimentation</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
   <!-- Encryption password -->
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
