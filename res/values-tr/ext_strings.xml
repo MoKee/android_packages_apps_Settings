@@ -208,6 +208,7 @@
   <string name="volume_adjust_sounds_title">Ses arttırma tonları</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Titreşim yoğunluğu</string>
+  <string name="vibrator_intensity_dialog_warning">%1$d%% den büyük değerler tavsiye edilmez</string>
   <string name="vibrator_intensity_dialog_reset">Sıfırla</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Bir desen boyutu seçin</string>
