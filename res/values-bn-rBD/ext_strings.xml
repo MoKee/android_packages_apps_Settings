@@ -190,6 +190,7 @@
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">অন্যান্য</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Never</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবস্থায় জেগে উঠা</string>
   <!-- Heads-up -->

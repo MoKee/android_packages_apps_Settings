@@ -231,6 +231,7 @@
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Kita</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Niekada</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 min.</string>

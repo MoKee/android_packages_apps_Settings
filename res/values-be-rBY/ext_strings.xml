@@ -29,6 +29,8 @@
   <string name="root_access_adb">Толькі для ADB</string>
   <string name="root_access_all">Для дадаткаў і ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Правы суперкарыстальніка</string>
+  <string name="root_appops_summary">Прагляд і кіраванне дазволамі для правоў суперкарыстальніка</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Мадэль прылады</string>
   <!-- About phone screen, Device name -->
@@ -113,6 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">пераключыць bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">запуск падчас загрузкі</string>
   <string name="app_ops_summaries_toggle_nfc">пераключыць NFC</string>
+  <string name="app_ops_summaries_toggle_mobile_data">пераключыць стан мабільных дадзеных</string>
   <string name="app_ops_summaries_superuser">суперкарыстальнік</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Прыблізнае месцазнаходжанне</string>
@@ -221,6 +224,7 @@
   <string name="lock_directly_show_pin">Адразу прапанаваць увод PIN-кода</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Вібрацыя</string>
+  <string name="lockscreen_vibrate_enabled_head">Вібраваць пры разблакіроўкі</string>
   <!-- Lights settings -->
   <string name="lights_label">Індыкацыя</string>
   <!-- Memory -->
@@ -240,7 +244,9 @@
   <string name="menu_hidden_apps_delete">Скід</string>
   <string name="menu_hidden_apps_reset_lock">Выдаліць графічны ключ</string>
   <string name="protected_apps">Заблакаваць дадаткі</string>
+  <string name="protected_apps_summary">Кіраванне праграмамі, для запуску якіх патрабуецца ўвод пароля</string>
   <string name="saving_protected_components">Захаванне стану дадаткаў\u2026</string>
+  <string name="launch_app">Запусціць праграму</string>
   <string name="pa_login_username_hint">Імя карыстальніка (электронная пошта)</string>
   <string name="pa_login_password_hint">Пароль</string>
   <string name="pa_login_submit_button">Увайсцi</string>
@@ -250,8 +256,10 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Звесткі пра надвор\'е</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Эфект размыцця для экр. блакір.</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Прадухіляць выпадковае ўлучэнне</string>
+  <string name="proximity_wake_summary">Правяраць датчык набліжэння пры выхадзе з рэжыму сну з выкарыстаннем жэстаў</string>
   <!-- High touch sensitivity -->
   <string name="high_touch_sensitivity_title">Рэжым пальчаткаў</string>
   <string name="high_touch_sensitivity_summary">Павялічваць адчувальнасць экрана для магчымасці працы ў пальчатках</string>
@@ -259,7 +267,10 @@
   <string name="touchscreen_hovering_title">Навядзенне пальца</string>
   <string name="touchscreen_hovering_summary">Распазнаваць набліжэнне пальца да экрана для падзей навядзення курсора ў браўзары ці іншых дадатках</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Перамыкач спосабу ўводу</string>
+  <string name="ime_switcher_notify_summary">Паказваць перамыкач спосабу ўводу ў панэлі апавяшчэнняў</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Не паказваць паведамлення. Не выкарыстоўваць гук і вібрацыю. Змяшчаць паведамленні ў канец спісу. Не паказваць на экране блакавання.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Курсор пры выкарыстанні сцілуса</string>
   <string name="stylus_icon_enabled_summary">Паказваць значок паказальніка пры працы са сцілусам</string>
@@ -268,6 +279,7 @@
   <string name="kill_app_longpress_back_summary">Завяршаць працу бягучага дадатку ўтрымліваннем кнопкі \"Назад\"</string>
   <!-- Android debugging -->
   <string name="enable_adb_cm">Рэжым адладкі</string>
+  <string name="enable_adb_summary_cm">Уключыць адладкавы інтэрфейс Android Debug Bridge (ADB)</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">Паведамленьні наладжваньня</string>
   <string name="adb_notify_summary">Паказваць паведамленьне аб тым, што задзейнічана наладка па USB ці сетцы</string>
@@ -282,11 +294,20 @@
   <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
   <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
   <!-- Allow vibration in zen mode -->
+  <string name="zen_mode_vibration">Вібрацыя</string>
+  <string name="zen_mode_vibration_never">Не вібраваць</string>
+  <string name="zen_mode_vibration_calls_only">Вібраваць толькі пры выкліках</string>
+  <string name="zen_mode_vibration_calls_and_notifications">Вібраваць пры выкліках і апавяшчэннях</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Частата гукавых апавяшчэнняў</string>
+  <string name="app_notification_sound_timeout_summary_template">Дазволіць гукі ці вібрацыю не больш чым адзін раз у <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Без абмежаванняў</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
   <string name="app_notification_sound_timeout_value_1_minute">1 хвіліна</string>
   <string name="app_notification_sound_timeout_value_5_minutes">5 хвілін</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 хвілін</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 хвілін</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Статус SIM %d</string>
   <string name="sim_card_lock_settings_title">Параметры блакавання SIM %d</string>
@@ -294,21 +315,40 @@
   <string name="sim_mobile_network_settings_category_title">Налады мабільнай сеткі</string>
   <string name="sim_mobile_network_settings_title">Параметры SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
+  <string name="tuner_full_importance_settings">Пашыранае кіраванне апавяшчэннямі</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Іншы</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Выключаць невыкарыс. кропку доступу Wi\u2011Fi праз:</string>
   <string name="hotstpot_inactivity_timeout_never">Ніколі</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 хвіліна</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 хвілін</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 хвілін</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Не адключаць</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Адключаць праз <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Уключаць экран пры падключэнні або адключэнні крыніцы сілкавання</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Усплывальныя апавяшчэння</string>
+  <string name="heads_up_notifications_enabled_summary">Паказваць прыярытэтныя апавяшчэння невялікімі ўсплывальнымі вокнамі</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Змена пароля шыфравання</string>
+  <string name="crypt_keeper_change_password_summary">Змяніць пароль, які выкарыстоўваецца для шыфравання прылады</string>
+  <string name="crypt_keeper_choose_your_password_header">Усталяваць пароль шыфравання</string>
+  <string name="crypt_keeper_replace_password_title">Змяніць пароль шыфравання</string>
+  <string name="crypt_keeper_replace_password_summary">Выдаліце ​​асобны пароль шыфравання</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Доступ да мабільных дадзеных</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->

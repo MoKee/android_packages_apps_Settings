@@ -267,6 +267,7 @@
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Aner</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Ni</string>
   <!-- Wake on plug -->
