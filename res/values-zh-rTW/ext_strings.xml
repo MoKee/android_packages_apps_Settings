@@ -270,7 +270,7 @@
   <string name="ime_switcher_notify">選擇器通知</string>
   <string name="ime_switcher_notify_summary">顯示輸入法選擇器通知</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
-  <string name="notification_importance_very_low">無全螢幕中斷、窺視、聲音或震動。 顯示在通知清單的下方。 從鎖定螢幕中隱藏。</string>
+  <string name="notification_importance_very_low">無全螢幕中斷、窺視、聲音或震動。 顯示在通知清單的下方。 從鎖定畫面中隱藏。</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">使用觸控筆時顯示圖示</string>
   <string name="stylus_icon_enabled_summary">使用觸控筆漂浮或繪圖時顯示指標圖示</string>

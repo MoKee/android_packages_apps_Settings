@@ -57,7 +57,7 @@
   <string name="app_ops_summaries_modify_call_log">修改通话记录</string>
   <string name="app_ops_summaries_read_calendar">读取日历</string>
   <string name="app_ops_summaries_modify_calendar">修改日历</string>
-  <string name="app_ops_summaries_wifi_scan">Wi-Fi 扫描</string>
+  <string name="app_ops_summaries_wifi_scan">WLAN 扫描</string>
   <string name="app_ops_summaries_notification">通知/提示</string>
   <string name="app_ops_summaries_cell_scan">蜂窝网络扫描</string>
   <string name="app_ops_summaries_call_phone">拨打电话</string>
@@ -111,7 +111,7 @@
   <string name="app_ops_summaries_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_summaries_get_accounts">获得帐户</string>
   <string name="app_ops_summaries_run_in_background">在后台运行</string>
-  <string name="app_ops_summaries_toggle_wifi">切换 Wi-Fi</string>
+  <string name="app_ops_summaries_toggle_wifi">切换 WLAN</string>
   <string name="app_ops_summaries_toggle_bluetooth">切换蓝牙</string>
   <string name="app_ops_summaries_start_at_boot">在开机时启动</string>
   <string name="app_ops_summaries_toggle_nfc">切换 NFC</string>
@@ -128,7 +128,7 @@
   <string name="app_ops_labels_modify_call_log">修改通话记录</string>
   <string name="app_ops_labels_read_calendar">读取日历</string>
   <string name="app_ops_labels_modify_calendar">修改日历</string>
-  <string name="app_ops_labels_wifi_scan">Wi-Fi 扫描</string>
+  <string name="app_ops_labels_wifi_scan">WLAN 扫描</string>
   <string name="app_ops_labels_notification">通知/提示</string>
   <string name="app_ops_labels_cell_scan">基站扫描</string>
   <string name="app_ops_labels_call_phone">拨打电话</string>
@@ -182,7 +182,7 @@
   <string name="app_ops_labels_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_labels_get_accounts">获得帐户</string>
   <string name="app_ops_labels_run_in_background">在后台运行</string>
-  <string name="app_ops_labels_toggle_wifi">切换 Wi-Fi</string>
+  <string name="app_ops_labels_toggle_wifi">切换 WLAN</string>
   <string name="app_ops_labels_toggle_bluetooth">切换蓝牙</string>
   <string name="app_ops_labels_start_at_boot">在开机时启动</string>
   <string name="app_ops_labels_toggle_nfc">切换 NFC</string>
@@ -285,7 +285,7 @@
   <string name="adb_notify_summary">已开启 USB 或网络调试通知</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">网络 ADB 调试</string>
-  <string name="adb_over_network_summary">通过网络接口（WiFi或USB 网络）启用 TCP/IP 调试。该设置会在重启后失效</string>
+  <string name="adb_over_network_summary">通过网络接口（WLAN或USB 网络）启用 TCP/IP 调试。该设置会在重启后失效</string>
   <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请确保在您信任的网络中启用此功能。\n\n您确定启用此功能吗？</string>
   <!-- Hostname setting -->
   <string name="device_hostname">设备网络名</string>
@@ -328,13 +328,13 @@
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">其他</string>
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">WiFi 热点超时</string>
+  <string name="hotstpot_inactivity_timeout_text">WLAN 热点超时</string>
   <string name="hotstpot_inactivity_timeout_never">永不</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 分钟</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 分钟</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 分钟</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">移动 WiFi 热点永不超时</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">移动 WiFi 热点将于 <xliff:g id="timeout">%1$s</xliff:g> 后超时</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">移动 WLAN 热点永不超时</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">移动 WLAN 热点将于 <xliff:g id="timeout">%1$s</xliff:g> 后超时</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
@@ -349,15 +349,15 @@
   <string name="crypt_keeper_replace_password_summary">删除独立加密密码</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">移动数据访问</string>
-  <string name="data_usage_app_restrict_wifi_category_title">WiFi 数据访问</string>
+  <string name="data_usage_app_restrict_wifi_category_title">WLAN 数据访问</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <string name="data_usage_app_restrict_all_data_title">禁用所有移动数据访问</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <string name="data_usage_app_restrict_all_data_summary">防止任何使用移动网络的数据访问</string>
+  <string name="data_usage_app_restrict_all_data_summary">禁止任何使用移动网络的数据访问</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-  <string name="data_usage_app_restrict_all_wifi_title">禁用所有 WiFi 数据访问</string>
+  <string name="data_usage_app_restrict_all_wifi_title">禁用所有 WLAN 数据访问</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <string name="data_usage_app_restrict_all_wifi_summary">防止任何使用 WiFi 的数据访问</string>
+  <string name="data_usage_app_restrict_all_wifi_summary">禁止任何使用 WLAN 的数据访问</string>
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">关联铃声和通知的音量</string>
   <!-- Launch music player when headset is connected -->
