@@ -207,6 +207,7 @@
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Digər</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_1_minute">1 dəqiqə</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 dəqiqə</string>
