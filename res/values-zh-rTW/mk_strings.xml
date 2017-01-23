@@ -28,7 +28,7 @@
   <string name="blacklist_harassment_numbers_title">騷擾號碼</string>
   <string name="blacklist_harassment_numbers_summary">封鎖騷擾來電</string>
   <!-- Height of navigation bar buttons -->
-  <string name="navigation_bar_height">導航欄高度</string>
+  <string name="navigation_bar_height">按鈕高度</string>
   <string name="navigation_bar_height_48">48dp (預設)</string>
   <string name="navigation_bar_height_0">隱藏</string>
   <!-- Show network speed -->
