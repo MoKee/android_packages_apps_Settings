@@ -66,7 +66,6 @@
         <mokee.preference.MKSecureSettingSwitchPreference
             android:key="lock_screen_blur_enabled"
             android:title="@string/lockscreen_blur_enabled_title"
-            android:defaultValue="true"
             mk:requiresConfig="@*android:bool/config_uiBlurEnabled" />
 
 </PreferenceScreen>
