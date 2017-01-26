@@ -315,6 +315,7 @@
   <string name="sim_mobile_network_settings_category_title">Настройки мобильной сети</string>
   <string name="sim_mobile_network_settings_title">Параметры SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Расшир. настройка уведомлений</string>
   <!-- Format string for fingerprint location message -->
@@ -341,7 +342,13 @@
   <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
   <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими всплывающими окнами</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Изменить пароль шифрования</string>
+  <string name="crypt_keeper_change_password_summary">Изменение пароля, используемого для шифрования устройства</string>
+  <string name="crypt_keeper_choose_your_password_header">Установить пароль шифрования</string>
+  <string name="crypt_keeper_replace_password_title">Заменить пароль шифрования</string>
+  <string name="crypt_keeper_replace_password_summary">Удалить отдельный пароль шифрования</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Передача мобильных данных</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
