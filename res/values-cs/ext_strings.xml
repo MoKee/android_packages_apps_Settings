@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">přibližná poloha</string>
   <string name="app_ops_summaries_fine_location">přesná poloha</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrace</string>
   <string name="app_ops_summaries_read_contacts">čtení kontaktů</string>
   <string name="app_ops_summaries_modify_contacts">změna kontaktů</string>
@@ -92,6 +93,7 @@
   <string name="app_ops_summaries_get_usage_stats">získání statistiky použití</string>
   <string name="app_ops_summaries_mute_unmute_microphone">vypnout/zapnout mikrofon</string>
   <string name="app_ops_summaries_toast_window">zobrazit náhledy</string>
+  <string name="app_ops_summaries_project_media">projekce médií</string>
   <string name="app_ops_summaries_activate_vpn">aktivovat VPN</string>
   <string name="app_ops_summaries_write_wallpaper">uložení tapety</string>
   <string name="app_ops_summaries_assist_structure">struktura assist</string>
@@ -118,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Získat přibližnou polohu</string>
   <string name="app_ops_labels_fine_location">Získat přesnou polohu</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrace</string>
   <string name="app_ops_labels_read_contacts">Čtení kontaktů</string>
   <string name="app_ops_labels_modify_contacts">Změna kontaktů</string>
@@ -161,6 +164,7 @@
   <string name="app_ops_labels_get_usage_stats">Získat statistiky použití</string>
   <string name="app_ops_labels_mute_unmute_microphone">vypnout/zapnout mikrofon</string>
   <string name="app_ops_labels_toast_window">Zobrazit náhledy</string>
+  <string name="app_ops_labels_project_media">Projekce médií</string>
   <string name="app_ops_labels_activate_vpn">Aktivovat VPN</string>
   <string name="app_ops_labels_write_wallpaper">Uložit tapetu</string>
   <string name="app_ops_labels_assist_structure">Struktura Assist</string>

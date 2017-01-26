@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">localisation approximative</string>
   <string name="app_ops_summaries_fine_location">localisation précise</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibreur</string>
   <string name="app_ops_summaries_read_contacts">voir les contacts</string>
   <string name="app_ops_summaries_modify_contacts">modifier les contacts</string>
@@ -108,6 +109,7 @@
   <string name="app_ops_summaries_write_external_storage">écrire sur le stockage externe</string>
   <string name="app_ops_summaries_turn_screen_on">allumer l\'écran</string>
   <string name="app_ops_summaries_get_accounts">obtenir les comptes</string>
+  <string name="app_ops_summaries_run_in_background">exécuter en arrière-plan</string>
   <string name="app_ops_summaries_toggle_wifi">activer/désactiver le Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">activer/désactiver le Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">démarrer au lancement</string>
@@ -116,6 +118,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Position approximative</string>
   <string name="app_ops_labels_fine_location">Position précise</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibreur</string>
   <string name="app_ops_labels_read_contacts">Voir les contacts</string>
   <string name="app_ops_labels_modify_contacts">Modifier les contacts</string>
@@ -214,6 +217,7 @@
   <string name="lock_directly_show_pin">Montrer directement le champ d\'entrée PIN</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Vibreur</string>
+  <string name="lockscreen_vibrate_enabled_head">Vibrer au déverrouillage</string>
   <!-- Lights settings -->
   <string name="lights_label">Voyants</string>
   <!-- Memory -->
@@ -288,6 +292,7 @@
   <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
   <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">État de la SIM %d</string>
   <string name="sim_card_lock_settings_title">Paramètres de verrouillage de la carte SIM %d</string>
@@ -295,6 +300,7 @@
   <string name="sim_mobile_network_settings_category_title">Paramètres de réseau mobile</string>
   <string name="sim_mobile_network_settings_title">Paramètres de la SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">CCP</string>
   <!-- Notification importance -->
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
