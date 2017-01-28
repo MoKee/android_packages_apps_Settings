@@ -862,9 +862,9 @@
 <b>Přezdívka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
 <b>Potvrzení:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
   <string name="contributions_info_menu">Informace o přispěvatelích</string>
-  <string name="contributions_info_msg"><![CDATA[<b>Celkem přispěvatelů:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+  <string name="contributions_info_msg"><b>Celkem přispěvatelů:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
 <b>Celkem příspěvků:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-<b>Poslední aktualizace:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+<b>Poslední aktualizace:</b> <xliff:g id="date">%3$s</xliff:g></string>
   <string name="category_sounds">Zvuky</string>
   <string name="notification_manager">Upozornění</string>
   <string name="lockscreen_settings">Zámek obrazovky</string>
