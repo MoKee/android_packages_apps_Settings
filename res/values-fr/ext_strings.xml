@@ -247,6 +247,7 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Afficher la météo</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Arrière-plan flou</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Empêcher un réveil accidentel</string>
   <!-- High touch sensitivity -->

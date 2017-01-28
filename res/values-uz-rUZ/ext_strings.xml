@@ -71,6 +71,7 @@
   <!-- Fingerprint sensor locations -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Hech qachon</string>
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Encryption password -->
