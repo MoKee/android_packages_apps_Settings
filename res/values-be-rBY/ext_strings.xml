@@ -349,13 +349,17 @@
   <string name="crypt_keeper_replace_password_summary">Выдаліце ​​асобны пароль шыфравання</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Доступ да мабільных дадзеных</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Перадача праз Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Поўнае адкл. маб. Інтэрнета</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_data_summary">Прадухіліць выкарыстанне доступу да дадзеных праз сотавыя сеткі</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Забараніць доступ праз Wi\u2011Fi</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_wifi_summary">Прадухіліць выкарыстанне доступу да дадзеных праз\u2011Wi Fi сеткі</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Звязаць гучнасць рынгтона і апавяшчэнняў</string>
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Запуск музычнага прайгравальніка</string>
   <string name="headset_connect_player_summary">Запуск музычнага прайгравальніка па змаўчанні пры падключэнні гарнітуры</string>
