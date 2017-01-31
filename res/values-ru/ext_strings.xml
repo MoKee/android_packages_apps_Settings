@@ -349,10 +349,18 @@
   <string name="crypt_keeper_replace_password_summary">Удалить отдельный пароль шифрования</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Передача мобильных данных</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Передача через Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Полное откл. моб. интернета</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Запретить доступ через сотовые сети</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Запретить доступ через Wi\u2011Fi</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Запретить доступ к данным через Wi\u2011Fi сети</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Запустить музыкальный плеер</string>
+  <string name="headset_connect_player_summary">Запустить плеер по умолчанию при подключении гарнитуры</string>
 </resources>
