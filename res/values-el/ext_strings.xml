@@ -43,11 +43,13 @@
   <string name="app_ops_categories_messaging">Ανταλλαγή μηνυμάτων</string>
   <string name="app_ops_categories_media">Μέσα</string>
   <string name="app_ops_categories_device">Συσκευή</string>
+  <string name="app_ops_categories_background">Παρασκήνιο</string>
   <string name="app_ops_categories_bootup">Εκκίνηση</string>
   <string name="app_ops_categories_su">Πρόσβαση root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">τοποθεσία κατά προσέγγιση</string>
   <string name="app_ops_summaries_fine_location">ακριβής τοποθεσία</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">δόνηση</string>
   <string name="app_ops_summaries_read_contacts">ανάγνωση επαφών</string>
   <string name="app_ops_summaries_modify_contacts">τροποποίηση επαφών</string>
@@ -108,14 +110,17 @@
   <string name="app_ops_summaries_write_external_storage">εγγραφή εξωτερικού αποθ. χώρου</string>
   <string name="app_ops_summaries_turn_screen_on">ενεργοποίηση οθόνης</string>
   <string name="app_ops_summaries_get_accounts">ανάγνωση λογαριασμών</string>
+  <string name="app_ops_summaries_run_in_background">Εκτέλεση στο παρασκήνιο</string>
   <string name="app_ops_summaries_toggle_wifi">εναλλαγή Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">εναλλαγή bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">έναρξη κατά την εκκίνηση</string>
   <string name="app_ops_summaries_toggle_nfc">εναλλαγή NFC</string>
+  <string name="app_ops_summaries_toggle_mobile_data">εναλλαγή δεδομένων κινητής τηλεφωνίας</string>
   <string name="app_ops_summaries_superuser">πρόσβαση root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Τοποθεσία κατά προσέγγιση</string>
   <string name="app_ops_labels_fine_location">Ακριβής τοποθεσία</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Δόνηση</string>
   <string name="app_ops_labels_read_contacts">Ανάγνωση επαφών</string>
   <string name="app_ops_labels_modify_contacts">Τροποποίηση επαφών</string>
@@ -176,10 +181,12 @@
   <string name="app_ops_labels_write_external_storage">Εγγραφή εξωτερικού αποθ. χώρου</string>
   <string name="app_ops_labels_turn_screen_on">Ενεργοποίηση οθόνης</string>
   <string name="app_ops_labels_get_accounts">Ανάγνωση λογαριασμών</string>
+  <string name="app_ops_labels_run_in_background">Εκτέλεση στο παρασκήνιο</string>
   <string name="app_ops_labels_toggle_wifi">Εναλλαγή Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Εναλλαγή bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Έναρξη κατά την εκκίνηση</string>
   <string name="app_ops_labels_toggle_nfc">Εναλλαγή NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Εναλλαγή δεδομένων κινητής τηλεφωνίας</string>
   <string name="app_ops_labels_superuser">Πρόσβαση root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Επιτρέπεται</string>
@@ -201,8 +208,10 @@
   <string name="volume_adjust_sounds_title">Ήχοι πλήκτρων έντασης</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Ένταση δόνησης</string>
+  <string name="vibrator_intensity_dialog_warning">Δεν συνιστώνται τιμές μεγαλύτερες από %1$d%%</string>
   <string name="vibrator_intensity_dialog_reset">Επαναφορά</string>
   <!-- Sizes for pattern lockscreen -->
+  <string name="lock_settings_picker_pattern_size_message">Επιλέξτε ένα μέγεθος μοτίβου</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Εμφάνιση λάθος μοτίβου</string>
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -215,11 +224,13 @@
   <string name="lock_directly_show_pin">Άμεση εμφάνιση εισόδου PIN</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Δόνηση</string>
+  <string name="lockscreen_vibrate_enabled_head">Δόνηση κατά το ξεκλείδωμα</string>
   <!-- Lights settings -->
   <string name="lights_label">Φωτισμός</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Εφαρμογές που ξεκινούν κατά την εκκίνηση</string>
   <!-- Advanced restart options -->
+  <string name="advanced_reboot_title">Επανεκκίνηση για προχωρημένους</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Ανακάτεμα διάταξης</string>
   <string name="unlock_scramble_pin_layout_summary">Ανακάτεμα της διάταξης PIN κατά το ξεκλείδωμα της συσκευής</string>
