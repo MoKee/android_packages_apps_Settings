@@ -363,4 +363,5 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Avvia il lettore musicale</string>
   <string name="headset_connect_player_summary">Avvia il lettore musicale predefinito quando vengono connesse le cuffie</string>
+  <!-- Status bar - double tap to sleep -->
 </resources>

@@ -328,4 +328,5 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Запуск музичного плеєра</string>
   <string name="headset_connect_player_summary">Запуск музичного програвача за замовчуванням, коли підключена гарнітура</string>
+  <!-- Status bar - double tap to sleep -->
 </resources>
