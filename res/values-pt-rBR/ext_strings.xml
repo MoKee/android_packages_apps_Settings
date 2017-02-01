@@ -363,4 +363,5 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Iniciar o aplicativo de música</string>
   <string name="headset_connect_player_summary">Abrir o aplicativo de música padrão quando os fones de ouvido forem conectados</string>
+  <!-- Status bar - double tap to sleep -->
 </resources>

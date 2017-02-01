@@ -363,4 +363,5 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">啟動音樂應用程式</string>
   <string name="headset_connect_player_summary">插入耳機時啟動預設音樂應用程式</string>
+  <!-- Status bar - double tap to sleep -->
 </resources>

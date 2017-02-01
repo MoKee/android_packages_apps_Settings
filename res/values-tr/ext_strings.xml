@@ -363,4 +363,5 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Müzik uygulamasını başlat</string>
   <string name="headset_connect_player_summary">Kulaklık takıldığında varsayılan müzik uygulamasını başlat</string>
+  <!-- Status bar - double tap to sleep -->
 </resources>
