@@ -16,8 +16,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
     android:title="@string/gesture_preference_title"
     settings:keywords="@string/keywords_gesture">
+
+    <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="touchscreen_gesture_settings"
+        mk:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
     <com.android.settings.gestures.GesturePreference
         android:key="gesture_swipe_down_fingerprint"
@@ -53,5 +58,12 @@
         android:summary="@string/ambient_display_pickup_summary"
         settings:animation="@raw/gesture_ambient_lift"
         settings:preview="@drawable/gesture_ambient_lift"/>
+
+    <!-- Double tap to sleep -->
+    <mokee.preference.MKSystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/status_bar_double_tap_to_sleep_title"
+        android:summary="@string/status_bar_double_tap_to_sleep_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>
