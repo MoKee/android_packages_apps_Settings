@@ -231,6 +231,7 @@
   <string name="memory_startup_apps_title">Додатки із автозапуском</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Розширене перезавантаження</string>
+  <string name="advanced_reboot_summary">Включити варіанти перезавантаження (Відновлення, Режим завантаження ПЗ або м\'яке перезавантаження) в меню кнопки живлення</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Перемішана розкладка</string>
   <string name="unlock_scramble_pin_layout_summary">Перемішувати розкладку PIN-коду підчас розблокування пристрою</string>
@@ -243,17 +244,22 @@
   <string name="menu_hidden_apps_delete">Скинути</string>
   <string name="menu_hidden_apps_reset_lock">Скинути графічний ключ</string>
   <string name="protected_apps">Заблоковані програми</string>
+  <string name="protected_apps_summary">Керування додатками, для запуску яких потрібно ввести пароль</string>
   <string name="saving_protected_components">Збереження стану програм\u2026</string>
+  <string name="launch_app">Запуск додатка</string>
   <string name="pa_login_username_hint">Ім\'я користувача (email)</string>
   <string name="pa_login_password_hint">Пароль</string>
   <string name="pa_login_submit_button">Увійти</string>
   <string name="pa_login_checking_password">Перевірка акаунту\u2026</string>
   <string name="pa_login_incorrect_login">Невірний логін</string>
+  <string name="pa_pattern_or_fingerprint_header">Слід використати графічний ключ або відбиток пальця дял розблокування</string>
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Показати погоду</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Розмиття тла для екр. блокув.</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
+  <string name="proximity_wake_summary">Перевірте датчик приближення, виходячи з ружиму сну з використанням жестів</string>
   <!-- High touch sensitivity -->
   <string name="high_touch_sensitivity_title">Висока чутливість дотику</string>
   <string name="high_touch_sensitivity_summary">Підвищити чутливість сенсорного екрану для користуванням пристроєм у рукавичках</string>
@@ -261,7 +267,10 @@
   <string name="touchscreen_hovering_title">Зависання над сенсорним екраном</string>
   <string name="touchscreen_hovering_summary">Дозволяє виділяти елементи інтерфейсу при зависанні над ними без дотику</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Кнопка вибору методу введення</string>
+  <string name="ime_switcher_notify_summary">Показувати кнопку вибору методу введення</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Не виводити на весь екран, вимкнути короткі сповіщення, звук і вібросигнал. Показувати сповіщення внизу списку. Не показувати на заблокованому екрані.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Відображувати значок під час використання стилусу</string>
   <string name="stylus_icon_enabled_summary">Відображувати значок під час наведення або малювання стилусом</string>
@@ -270,6 +279,7 @@
   <string name="kill_app_longpress_back_summary">Довгий натиск на кнопку «Назад» закриє запущену програму</string>
   <!-- Android debugging -->
   <string name="enable_adb_cm">Налагодження Android</string>
+  <string name="enable_adb_summary_cm">Увімкнути інтерфейс Android Debug Bridge (ADB)</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">Сповіщення налагодження</string>
   <string name="adb_notify_summary">Відображати сповіщення, коли налагодження USB або по мережі увімкнено</string>
@@ -284,7 +294,13 @@
   <string name="increasing_ring_min_volume_title">Початкова гучність</string>
   <string name="increasing_ring_ramp_up_time_title">Час збільшення</string>
   <!-- Allow vibration in zen mode -->
+  <string name="zen_mode_vibration">Вібрація</string>
+  <string name="zen_mode_vibration_never">Не вібрувати</string>
+  <string name="zen_mode_vibration_calls_only">Вібрувати лише для дзвінків</string>
+  <string name="zen_mode_vibration_calls_and_notifications">Вібрація для дзвінкиів та повідомлень</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Мінімальний час між звуками повідомлень</string>
+  <string name="app_notification_sound_timeout_summary_template">Дозволити звуки або вібрації не більше ніж один раз кожні <xliff:g id="duration">%1$s </xliff:g></string>
   <string name="app_notification_sound_timeout_value_none">Ніяких обмежень</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
@@ -303,24 +319,43 @@
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Розширене налаштування сповіщень</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Знайдіть сенсор відбитків пальців на <xliff:g id="sensor_location">%1$s </xliff:g> вашого телефону.</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">назад</string>
   <string name="security_settings_fingerprint_sensor_location_front">передня панель</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ліва сторона</string>
+  <string name="security_settings_fingerprint_sensor_location_right">права сторона</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Інший</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Тайм-аут Wi\u2011Fi точки</string>
   <string name="hotstpot_inactivity_timeout_never">Ніколи</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 хвилина</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 хвилин</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 хвилин</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Портативний Wi\u2011Fi точка ніколи не буде вимикатися</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Портативна Wi\u2011Fi точка тайм-аут після <xliff:g id="timeout">%1$s </xliff:g></string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Екран прокидається при підключені</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Вмикати екрани при підключенні і відключенні зарядного пристрою</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Спливаючі сповіщення</string>
+  <string name="heads_up_notifications_enabled_summary">Відображати пріоритетні сповіщення у невеликому плаваючому вікні</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Зміна пароля шифрування</string>
+  <string name="crypt_keeper_change_password_summary">Змінити пароль, що використовується для шифрування пристрою</string>
+  <string name="crypt_keeper_choose_your_password_header">Встановити пароль шифрування</string>
+  <string name="crypt_keeper_replace_password_title">Замінити пароль шифрування</string>
+  <string name="crypt_keeper_replace_password_summary">Видалення окремого шифрування пароля</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Доступ до стільникового даних</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi доступ до даних</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Вимкнути передачу стільникових даних</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Запобігти будь-яке використання доступу до даних за допомогою стільникових мереж</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Скасувати весь Wi\u2011Fi доступ до даних</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_wifi_summary">Запобігти будь-яке використання доступу до даних за допомогою Wi\u2011Fi мереж</string>
   <!-- Volume link notification -->
@@ -329,4 +364,6 @@
   <string name="headset_connect_player_title">Запуск музичного плеєра</string>
   <string name="headset_connect_player_summary">Запуск музичного програвача за замовчуванням, коли підключена гарнітура</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Подвійний тап для режиму сну</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Подвійний тап для вимкнення дісплея</string>
 </resources>

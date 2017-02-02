@@ -364,4 +364,6 @@
   <string name="headset_connect_player_title">Запуск музычнага прайгравальніка</string>
   <string name="headset_connect_player_summary">Запуск музычнага прайгравальніка па змаўчанні пры падключэнні гарнітуры</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Выключаць экран пры падвойным націску</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Двойчы краніце радка стану, каб перавесці прыладу ў спячы рэжым</string>
 </resources>
