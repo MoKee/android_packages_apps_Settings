@@ -364,4 +364,6 @@
   <string name="headset_connect_player_title">启动音乐播放器</string>
   <string name="headset_connect_player_summary">插入耳机时启动默认音乐播放器</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">双击睡眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏以关闭屏幕</string>
 </resources>
