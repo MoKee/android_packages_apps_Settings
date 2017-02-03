@@ -33,4 +33,6 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">Шлюз</string>
   <string name="wifi_advanced_network_netmask">Маска підмережі</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

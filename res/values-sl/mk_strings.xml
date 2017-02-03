@@ -32,4 +32,6 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Zamrznitev ali odstranjevanje MoKee Centra, bo vplivalo na sistemske storitve, prosim obnovite in poskusite znova.</string>
   <!-- CMCC wifi extension -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

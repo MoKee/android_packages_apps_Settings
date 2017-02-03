@@ -31,4 +31,6 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">Gateway</string>
   <string name="wifi_advanced_network_netmask">Netmask</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

@@ -32,4 +32,6 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">Puerta de enlace</string>
   <string name="wifi_advanced_network_netmask">Máscara de red</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

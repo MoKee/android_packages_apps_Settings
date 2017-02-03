@@ -28,4 +28,6 @@
   <string name="show_dev_already_mk">必要ありません、既に開発者向けオプションを有効にしています。</string>
   <!-- MKCenter verify -->
   <!-- CMCC wifi extension -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>
