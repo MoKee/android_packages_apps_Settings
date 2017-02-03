@@ -23,4 +23,6 @@
   <string name="show_dev_already_mk">မလိုတော့ပါ၊ development setting ကို ဖွင့်ပြီးပါပြီ</string>
   <!-- MKCenter verify -->
   <!-- CMCC wifi extension -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

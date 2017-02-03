@@ -29,4 +29,6 @@
   <string name="show_dev_already_mk">Не е необходимо. Вече има включени опции на програмист.</string>
   <!-- MKCenter verify -->
   <!-- CMCC wifi extension -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

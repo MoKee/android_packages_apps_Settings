@@ -32,4 +32,6 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">Πύλη</string>
   <string name="wifi_advanced_network_netmask">Μάσκα δικτύου</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

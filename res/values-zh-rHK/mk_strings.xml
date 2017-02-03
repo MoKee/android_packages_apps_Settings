@@ -31,4 +31,6 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">閘道</string>
   <string name="wifi_advanced_network_netmask">網路遮罩</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
 </resources>

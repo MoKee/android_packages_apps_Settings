@@ -31,4 +31,12 @@
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">网关</string>
   <string name="wifi_advanced_network_netmask">子网掩码</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum 叠加层</string>
+  <string name="menu_show_substratum">显示叠加层</string>
+  <string name="menu_hide_substratum">隐藏叠加层</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum 图标叠加层</string>
+  <string name="menu_show_substratum_icons">显示图标叠加层</string>
+  <string name="menu_hide_substratum_icons">隐藏图标叠加层</string>
 </resources>
