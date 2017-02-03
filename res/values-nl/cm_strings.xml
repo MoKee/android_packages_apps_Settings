@@ -59,7 +59,7 @@
   <string name="ring_mode_title">Belmodus</string>
   <string name="ring_mode_normal">Normaal</string>
   <string name="ring_mode_vibrate">Trillen</string>
-  <string name="ring_mode_mute">Dempen</string>
+  <string name="ring_mode_mute">Stil</string>
   <string name="settings_reset_button">Opnieuw instellen</string>
   <!-- Profiles settings  -->
   <string name="profiles_settings_title">Systeemprofielen</string>

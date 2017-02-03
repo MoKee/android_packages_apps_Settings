@@ -152,7 +152,7 @@
   <string name="profile_brightness_override_checkbox_label">明るさを変更</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <string name="toggleWifi">Wi\u2011Fi</string>
-  <string name="toggleWifiAp">Wi\u2011Fiテザリング</string>
+  <string name="toggleWifiAp">Wi-Fi テザリング</string>
   <string name="toggleBluetooth">Bluetooth</string>
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">データ接続</string>
