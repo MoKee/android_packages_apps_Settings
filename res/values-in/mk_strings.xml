@@ -32,5 +32,11 @@
   <string name="wifi_advanced_gateway">Gateway</string>
   <string name="wifi_advanced_network_netmask">Netmask</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Lapisan substratum</string>
+  <string name="menu_show_substratum">Tampilkan lapisan</string>
+  <string name="menu_hide_substratum">Menyembunyikan lapisan</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Lapisan ikon substratum</string>
+  <string name="menu_show_substratum_icons">Tampilkan lapisan ikon</string>
+  <string name="menu_hide_substratum_icons">Menyembunyikan lapisan ikon</string>
 </resources>
