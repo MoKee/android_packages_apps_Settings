@@ -34,5 +34,11 @@
   <string name="wifi_advanced_gateway">Brána</string>
   <string name="wifi_advanced_network_netmask">Maska sítě</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum překrytí</string>
+  <string name="menu_show_substratum">Zobrazit překrytí</string>
+  <string name="menu_hide_substratum">Skrýt překrytí</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
+  <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
+  <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
 </resources>

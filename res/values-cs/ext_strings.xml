@@ -315,6 +315,7 @@
   <string name="sim_mobile_network_settings_category_title">Nastavení mobilní sítě</string>
   <string name="sim_mobile_network_settings_title">Nastavení SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Ovládací prvky rozšířeného oznámení</string>
   <!-- Format string for fingerprint location message -->
@@ -347,6 +348,11 @@
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Spojit hlasitost vyzvánění a oznámení</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Spustit aplikaci pro přehrávání hudby</string>
+  <string name="headset_connect_player_summary">Pokud jsou připojena sluchátka, spustit výchozí aplikaci pro přehrávání hudby</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Dvojím klepnutím uspat</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dvakrát klepnout na stavovou lištu pro vypntí displeje</string>
 </resources>

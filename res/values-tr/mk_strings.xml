@@ -33,5 +33,11 @@
   <string name="wifi_advanced_gateway">Ağ Geçidi</string>
   <string name="wifi_advanced_network_netmask">Ağ maskesi</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum bindirmeleri</string>
+  <string name="menu_show_substratum">Bindirmeleri göster</string>
+  <string name="menu_hide_substratum">Bindirmeleri gizle</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum simge bindirmeleri</string>
+  <string name="menu_show_substratum_icons">Simge bindirmelerini göster</string>
+  <string name="menu_hide_substratum_icons">Simge bindirmelerini gizle</string>
 </resources>
