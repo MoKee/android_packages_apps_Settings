@@ -32,11 +32,11 @@
   <string name="wifi_advanced_gateway">閘道</string>
   <string name="wifi_advanced_network_netmask">網路遮罩</string>
   <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">底層覆蓋</string>
-  <string name="menu_show_substratum">顯示覆蓋</string>
-  <string name="menu_hide_substratum">隱藏覆蓋</string>
+  <string name="filter_substratum_apps">底層重疊</string>
+  <string name="menu_show_substratum">顯示重疊</string>
+  <string name="menu_hide_substratum">隱藏重疊</string>
   <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">底層圖示覆蓋</string>
-  <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
-  <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
+  <string name="filter_substratum_icons">底層圖示重疊</string>
+  <string name="menu_show_substratum_icons">顯示圖示重疊</string>
+  <string name="menu_hide_substratum_icons">隱藏圖示重疊</string>
 </resources>
