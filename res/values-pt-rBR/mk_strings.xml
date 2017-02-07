@@ -33,5 +33,11 @@
   <string name="wifi_advanced_gateway">Porta de entrada</string>
   <string name="wifi_advanced_network_netmask">Máscara de rede</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Sobreposições do substratum</string>
+  <string name="menu_show_substratum">Mostrar sobreposições</string>
+  <string name="menu_hide_substratum">Esconder as sobreposições</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Sobreposições de ícone do substratum</string>
+  <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
+  <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
 </resources>
