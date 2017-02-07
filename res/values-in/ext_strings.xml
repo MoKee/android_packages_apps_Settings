@@ -364,4 +364,6 @@
   <string name="headset_connect_player_title">luncurkan pemutar musik</string>
   <string name="headset_connect_player_summary">luncurkan pemutar musik bawaan saat headset tersambung</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan layar</string>
 </resources>
