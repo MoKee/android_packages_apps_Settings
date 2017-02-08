@@ -332,6 +332,9 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutos</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Sen tempo de espera para o punto de acceso Wi\u2011Fi</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Tempo de espera para o punto de acceso Wi\u2011Fi despois de <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Acender ao enchufar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Acende a pantalla ao contectarse ou desconectarse dunha fonte de enerxía</string>

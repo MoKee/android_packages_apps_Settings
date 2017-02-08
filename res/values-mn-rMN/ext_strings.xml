@@ -79,6 +79,9 @@
   <string name="hotstpot_inactivity_timeout_1_minute">1 минут</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 минут</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 минут</string>
+  <!-- Wi-Fi region code -->
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Encryption password -->
