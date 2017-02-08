@@ -681,12 +681,12 @@
   <string name="status_bar_notif_count_title">Aantal meldingen tonen</string>
   <string name="status_bar_notif_count_summary">Aantal nieuwe meldingen tonen</string>
   <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
-  <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent paneel</string>
+  <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent Snelle Instellingen</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">Linkerkant</string>
   <string name="status_bar_quick_qs_pulldown_summary_right">Rechterkant</string>
   <string name="status_bar_quick_qs_pulldown_off">Uit</string>
-  <string name="status_bar_quick_qs_pulldown_left">Links</string>
-  <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
+  <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
+  <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_style_title">Indeling klok</string>
   <string name="status_bar_clock_style_right">Rechts</string>
@@ -875,7 +875,7 @@
   <string name="category_misc">Overig</string>
   <string name="title_general">Algemeen</string>
   <string name="advanced">Geavanceerd</string>
-  <string name="link_volume_option_title">Volumen koppelen</string>
+  <string name="link_volume_option_title">Volume beltoon en meldingen koppelen</string>
   <string name="lcd_density_prompt_message">Sommige apps werken mogelijk niet goed met een aangepaste DPI.\n\nUw apparaat zal herstarten.</string>
   <!-- Edit access point labels: PPP number -->
   <string name="apn_ppp_number">APN PPP telefoonnummer</string>
