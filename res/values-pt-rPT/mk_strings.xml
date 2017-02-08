@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
   <string name="mk_version">Versão de MoKee</string>
+  <string name="mk_version_default">Desconhecido</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_summary">Bloquear todas as chamadas</string>
   <string name="blacklist_advertisement_numbers_title">Números de publicidade</string>
