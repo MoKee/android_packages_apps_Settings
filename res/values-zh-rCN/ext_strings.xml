@@ -335,6 +335,12 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 分钟</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">移动 WLAN 热点永不超时</string>
   <string name="hotstpot_inactivity_timeout_summary_text">移动 WLAN 热点将于 <xliff:g id="timeout">%1$s</xliff:g> 后超时</string>
+  <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">WLAN 区域代码</string>
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">为 WLAN 指定区域代码</string>
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">设置区域代码时出现问题。</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>

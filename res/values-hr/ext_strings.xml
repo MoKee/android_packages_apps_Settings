@@ -331,6 +331,9 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minuta</string>
   <string name="hotstpot_inactivity_timeout_never_summary_text">Prijenosni Wi-Fi hotspot bez ograničenja vremena</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Prijenosni Wi-Fi hotspot s vremenskim ograničenjem od <xliff:g id="timeout">%1$s</xliff:g></string>
+  <!-- Wi-Fi region code -->
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Buđenje pri priključivanju</string>
   <string name="wake_when_plugged_or_unplugged_summary">Probudi zaslon prilikom spajanja ili odspajanja izvora napajanja</string>

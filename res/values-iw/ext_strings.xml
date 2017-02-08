@@ -312,6 +312,9 @@
   <string name="hotstpot_inactivity_timeout_1_minute">דקה אחת</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 דקות</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 דקות</string>
+  <!-- Wi-Fi region code -->
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
   <!-- Heads-up -->
