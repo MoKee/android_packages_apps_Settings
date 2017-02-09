@@ -40,7 +40,7 @@
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Τοποθεσία</string>
   <string name="app_ops_categories_personal">Προσωπικά</string>
-  <string name="app_ops_categories_messaging">Ανταλλαγή μηνυμάτων</string>
+  <string name="app_ops_categories_messaging">Μηνύματα</string>
   <string name="app_ops_categories_media">Μέσα</string>
   <string name="app_ops_categories_device">Συσκευή</string>
   <string name="app_ops_categories_background">Παρασκήνιο</string>
@@ -73,7 +73,7 @@
   <string name="app_ops_summaries_modify_settings">τροποποίηση ρυθμίσεων</string>
   <string name="app_ops_summaries_draw_on_top">μεταφορά στην κορυφή</string>
   <string name="app_ops_summaries_access_notifications">πρόσβαση στις ειδοποιήσεις</string>
-  <string name="app_ops_summaries_camera">φωτογρ. μηχανή</string>
+  <string name="app_ops_summaries_camera">κάμερα</string>
   <string name="app_ops_summaries_record_audio">εγγραφή ήχου</string>
   <string name="app_ops_summaries_play_audio">αναπαραγωγή ήχου</string>
   <string name="app_ops_summaries_read_clipboard">ανάγνωση περιεχόμενων προχείρου</string>
@@ -144,7 +144,7 @@
   <string name="app_ops_labels_modify_settings">Τροποποίηση ρυθμίσεων</string>
   <string name="app_ops_labels_draw_on_top">Μεταφορά στην κορυφή</string>
   <string name="app_ops_labels_access_notifications">Πρόσβαση στις ειδοποιήσεις</string>
-  <string name="app_ops_labels_camera">Φωτογρ. μηχανή</string>
+  <string name="app_ops_labels_camera">Κάμερα</string>
   <string name="app_ops_labels_record_audio">Ηχογράφηση</string>
   <string name="app_ops_labels_play_audio">Αναπαραγωγή ήχου</string>
   <string name="app_ops_labels_read_clipboard">Ανάγνωση περιεχομένων προχείρου</string>
