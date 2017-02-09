@@ -345,11 +345,18 @@
   <string name="heads_up_notifications_enabled_title">Plovoucí upozornění</string>
   <string name="heads_up_notifications_enabled_summary">Zobrazit prioritní oznámení v malém plovoucím okně</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_replace_password_summary">Odstranit samostatné šifrovací heslo</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Mobilní datové připojení</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi datové připojení</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Zakázat mobilní datové připojení</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Zakázat datové připojení přes mobilní sítě</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Zakázat Wi\u2011Fi datové připojení</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Zakázat jakékoliv datové připojení přes Wi\u2011Fi sítě</string>
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Spojit hlasitost vyzvánění a oznámení</string>
   <!-- Launch music player when headset is connected -->
