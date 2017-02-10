@@ -33,5 +33,10 @@
   <string name="wifi_advanced_gateway">Passerelle</string>
   <string name="wifi_advanced_network_netmask">Masque réseau</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="menu_show_substratum">Afficher les superpositions</string>
+  <string name="menu_hide_substratum">Masquer les superpositions</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Superpositions d\'icônes de substratum</string>
+  <string name="menu_show_substratum_icons">Afficher les superpositions d\'icônes</string>
+  <string name="menu_hide_substratum_icons">Masquer les superpositions d\'icônes</string>
 </resources>

@@ -58,6 +58,7 @@
   <string name="app_ops_summaries_read_calendar">lire l\'agenda</string>
   <string name="app_ops_summaries_modify_calendar">modifier l\'agenda</string>
   <string name="app_ops_summaries_wifi_scan">Recherche du Wi-Fi</string>
+  <string name="app_ops_summaries_notification">notification/pop-up</string>
   <string name="app_ops_summaries_cell_scan">scanner le réseau cellulaire</string>
   <string name="app_ops_summaries_call_phone">appel téléphonique</string>
   <string name="app_ops_summaries_read_sms">lire les SMS</string>
@@ -114,6 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">activer/désactiver le Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">démarrer au lancement</string>
   <string name="app_ops_summaries_toggle_nfc">activer/désactiver le NFC</string>
+  <string name="app_ops_summaries_toggle_mobile_data">contrôler la connectivité mobile des applications</string>
   <string name="app_ops_summaries_superuser">accès root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Position approximative</string>
@@ -263,7 +265,10 @@
   <string name="touchscreen_hovering_title">Survol de l\'écran tactile</string>
   <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Notification de la sélection</string>
+  <string name="ime_switcher_notify_summary">Afficher la notification de choix du mode de saisie</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Pas d\'interruption en plein écran, d\'aperçu, de sons ou de vibrations. Afficher à la fin la liste des notifications. Cacher sur l\'écran de verrouillage.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Afficher l\'icône lors de l\'utilisation du stylet</string>
   <string name="stylus_icon_enabled_summary">Afficher l\'icône du pointeur lors du survol de l\'écran ou de l\'utilisation du stylet</string>
@@ -272,6 +277,7 @@
   <string name="kill_app_longpress_back_summary">Tuer l\'application en premier plan par un appui long sur le bouton Retour</string>
   <!-- Android debugging -->
   <string name="enable_adb_cm">Débogage Android</string>
+  <string name="enable_adb_summary_cm">Activer l\'interface Android Debug Bridge (ADB)</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">Notification du débogage</string>
   <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB ou réseau est activé</string>
@@ -309,6 +315,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">CCP</string>
   <!-- Notification importance -->
+  <string name="tuner_full_importance_settings">Paramètres de notification avancée</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
   <!-- Fingerprint sensor locations -->
@@ -324,21 +331,43 @@
   <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Le point d\'accès Wi\u2011Fi n\'expirera jamais</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Le point d\'accès Wi\u2011Fi expirera après <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Code région du Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Définir le code de région du Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Une erreur est survenue lors du réglage du code de région.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque l\'appareil est branché ou débranché d\'une source d\'alimentation</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Notifications flottantes</string>
   <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Modifier le mot de passe de chiffrement</string>
+  <string name="crypt_keeper_change_password_summary">Modifier le mot de passe utilisé pour le chiffrement de l\'appareil</string>
+  <string name="crypt_keeper_choose_your_password_header">Définir le mot de passe de chiffrement</string>
+  <string name="crypt_keeper_replace_password_title">Remplacer le mot de passe de chiffrement</string>
+  <string name="crypt_keeper_replace_password_summary">Supprimer le mot de passe de chiffrement distinct</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Accès aux données mobiles</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Accès aux données Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Désactiver tous les accès aux données mobiles</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Empêcher toute utilisation de données via les réseaux mobiles</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Désactiver tous les accès aux données Wi\u2011Fi</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Empêcher toute utilisation de données via les réseaux Wi\u2011Fi</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Lier le volume de la sonnerie &amp; et des notifications</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Lancer le lecteur de musique</string>
+  <string name="headset_connect_player_summary">Lancer le lecteur de musique par défaut quand des écouteurs sont connectés</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Double appui pour mettre en veille</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Appui double sur la barre d\'état pour éteindre l\'écran</string>
 </resources>
