@@ -76,8 +76,8 @@
   <string name="app_ops_summaries_camera">kamera</string>
   <string name="app_ops_summaries_record_audio">merekam audio</string>
   <string name="app_ops_summaries_play_audio">memutar audio</string>
-  <string name="app_ops_summaries_read_clipboard">baca clipboard</string>
-  <string name="app_ops_summaries_modify_clipboard">ubah clipboard</string>
+  <string name="app_ops_summaries_read_clipboard">membaca clipboard</string>
+  <string name="app_ops_summaries_modify_clipboard">merubah clipboard</string>
   <string name="app_ops_summaries_media_buttons">tombol media</string>
   <string name="app_ops_summaries_audio_focus">fokus audio</string>
   <string name="app_ops_summaries_master_volume">volume master</string>
@@ -91,7 +91,7 @@
   <string name="app_ops_summaries_monitor_location">memantau lokasi</string>
   <string name="app_ops_summaries_monitor_high_power_location">memantau lokasi daya tinggi</string>
   <string name="app_ops_summaries_get_usage_stats">dapatkan statistik penggunaan</string>
-  <string name="app_ops_summaries_mute_unmute_microphone">bungkam/bunyikan mikrofon</string>
+  <string name="app_ops_summaries_mute_unmute_microphone">diam/mengaktifkan suara mikrofon</string>
   <string name="app_ops_summaries_toast_window">tampilkan toast</string>
   <string name="app_ops_summaries_project_media">proyek media</string>
   <string name="app_ops_summaries_activate_vpn">aktifkan VPN</string>
@@ -172,7 +172,7 @@
   <string name="app_ops_labels_read_phone_state">Membaca kondisi ponsel</string>
   <string name="app_ops_labels_add_voicemail">Tambah pesan suara</string>
   <string name="app_ops_labels_use_sip">Menggunakan SIP</string>
-  <string name="app_ops_labels_make_call">Buat panggilan</string>
+  <string name="app_ops_labels_make_call">Membuat panggilan</string>
   <string name="app_ops_labels_use_fingerprint">Gunakan sidik jari</string>
   <string name="app_ops_labels_use_body_sensors">Gunakan sensor tubuh</string>
   <string name="app_ops_labels_read_cell_broadcasts">Baca siaran seluler</string>
@@ -336,8 +336,11 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">Portabel Wi\u2011Fi hotspot tidak pernah berakhir</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Portabel Wi\u2011Fi hotspot akan berkahir setelah <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Kode wilayah Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Tentukan wilayah kode untuk Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Ada masalah pada setelan kode wilayah.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan pengisi daya</string>
