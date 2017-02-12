@@ -336,8 +336,11 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">Не отключать</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Отключать через <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Код региона Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Укажите код региона Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Ошибка изменения кода региона.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
@@ -367,4 +370,6 @@
   <string name="headset_connect_player_title">Запустить музыкальный плеер</string>
   <string name="headset_connect_player_summary">Запустить плеер по умолчанию при подключении гарнитуры</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Двойное касание для сна</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Дважды нажмите на строке состояния для выключения дисплея</string>
 </resources>
