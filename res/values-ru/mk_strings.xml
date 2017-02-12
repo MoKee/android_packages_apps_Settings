@@ -35,4 +35,5 @@
   <string name="wifi_advanced_network_netmask">Маска сети</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="menu_hide_substratum_icons">Убрать иконки слоёв</string>
 </resources>

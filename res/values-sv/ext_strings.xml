@@ -30,6 +30,7 @@
   <string name="root_access_all">Appar och ADB</string>
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Hantera root-åtkomster</string>
+  <string name="root_appops_summary">Visa och kontrollera root-reglerna</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>
   <!-- About phone screen, Device name -->
@@ -114,6 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">växla Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">starta vid uppstart</string>
   <string name="app_ops_summaries_toggle_nfc">växla NFC</string>
+  <string name="app_ops_summaries_toggle_mobile_data">växla mobildata</string>
   <string name="app_ops_summaries_superuser">root-åtkomst</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Grov lokalisering</string>
@@ -184,6 +186,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Växla Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Starta vid uppstart</string>
   <string name="app_ops_labels_toggle_nfc">Växla NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Växla mobildata</string>
   <string name="app_ops_labels_superuser">Rootåtkomst</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Tillåten</string>
@@ -205,6 +208,7 @@
   <string name="volume_adjust_sounds_title">Ljud vid volymjustering</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Vibratorintensitet</string>
+  <string name="vibrator_intensity_dialog_warning">Värden större än %1$d%% rekommenderas inte</string>
   <string name="vibrator_intensity_dialog_reset">Återställ</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Välj en mönsterstorlek</string>
@@ -220,6 +224,7 @@
   <string name="lock_directly_show_pin">Visa PIN-inmatningen direkt</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Vibrera</string>
+  <string name="lockscreen_vibrate_enabled_head">Vibrera vid upplåsning</string>
   <!-- Lights settings -->
   <string name="lights_label">Ljus</string>
   <!-- Memory -->
@@ -240,6 +245,7 @@
   <string name="protected_apps">Skyddade appar</string>
   <string name="protected_apps_summary">Hantera vilka appar som döljs bakom ett säkert lås</string>
   <string name="saving_protected_components">Sparar komponenttillstånd\u2026</string>
+  <string name="launch_app">Starta app</string>
   <string name="pa_login_username_hint">Användarnamn (email)</string>
   <string name="pa_login_password_hint">Lösenord</string>
   <string name="pa_login_submit_button">Logga in</string>
@@ -282,7 +288,9 @@
   <string name="increasing_ring_ramp_up_time_title">Upprampningstid</string>
   <!-- Allow vibration in zen mode -->
   <string name="zen_mode_vibration_never">Vibrera inte</string>
+  <string name="zen_mode_vibration_calls_only">Vibrera endast för samtal</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
   <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
@@ -290,6 +298,7 @@
   <string name="app_notification_sound_timeout_value_15_minutes">10 minuter</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minuter</string>
   <!-- MSIM SIM status -->
+  <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM-%d låsinställningar</string>
   <string name="sim_card_summary_empty">SIM inte isatt</string>
   <string name="sim_mobile_network_settings_category_title">Inställningar för mobilt nätverk</string>
@@ -312,17 +321,26 @@
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minuter</string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Ange regionkoden för Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Ett problem uppstod vid inställning av regionskod.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
   <!-- Heads-up -->
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_summary">Ändra lösenordet som används för enhetskryptering</string>
+  <string name="crypt_keeper_choose_your_password_header">Ange krypteringslösenord</string>
+  <string name="crypt_keeper_replace_password_title">Ersätt krypteringslösenord</string>
+  <string name="crypt_keeper_replace_password_summary">Ta bort det separata krypteringslösenordet</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Mobildata-åtkomst</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Inaktivera all mobildata-tillgång</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Starta musikspelare</string>
   <!-- Status bar - double tap to sleep -->
 </resources>

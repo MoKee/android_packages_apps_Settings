@@ -129,6 +129,7 @@
   <string name="app_ops_labels_read_calendar">Lire l\'agenda</string>
   <string name="app_ops_labels_modify_calendar">Modifier l\'agenda</string>
   <string name="app_ops_labels_wifi_scan">Recherche du Wi-Fi</string>
+  <string name="app_ops_labels_notification">Notification/pop-up</string>
   <string name="app_ops_labels_cell_scan">Recherche mobile</string>
   <string name="app_ops_labels_call_phone">Appel téléphonique</string>
   <string name="app_ops_labels_read_sms">Lire SMS</string>
