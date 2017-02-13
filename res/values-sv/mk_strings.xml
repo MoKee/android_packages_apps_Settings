@@ -20,6 +20,7 @@
   <string name="mk_version_default">Okänd</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Alla nummer</string>
+  <string name="blacklist_all_numbers_summary">Blockera alla samtal</string>
   <string name="blacklist_advertisement_numbers_summary">Blockera reklam samtal</string>
   <string name="blacklist_fraud_numbers_title">Bedrägeri nummer</string>
   <string name="blacklist_fraud_numbers_summary">Blocket bedrägeri samtal</string>
@@ -35,9 +36,14 @@
   <string name="status_bar_network_traffic_style_down">Inkommande</string>
   <string name="status_bar_network_traffic_style_all">Utgående och inkommande</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Sekunder i klocka</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Visa su-ikon</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Visa headset-ikon</string>
+  <string name="show_headset_icon_summary">Visa en ikon i statusfältet när headset är inkopplat</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Du har aktiverat utvecklarinställningar!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
 </resources>

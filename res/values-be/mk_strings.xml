@@ -34,7 +34,7 @@
   <!-- Show network speed -->
   <string name="show_network_speed_title">Хуткасць сеткі</string>
   <string name="show_network_speed_summary">Паказваць хуткасць сеткі ў радку стану</string>
-  <string name="status_bar_network_traffic_style_disable">Выключана</string>
+  <string name="status_bar_network_traffic_style_disable">Адключаны</string>
   <string name="status_bar_network_traffic_style_up">Выходныя</string>
   <string name="status_bar_network_traffic_style_down">Уваходныя</string>
   <string name="status_bar_network_traffic_style_all">Выходныя i ўваходныя</string>
@@ -42,8 +42,8 @@
   <string name="status_bar_clock_show_second_title">Гадзіннік з секундамі</string>
   <string name="status_bar_clock_show_second_summary">Адлюстроўваць секунды ў гадзінах радка стану</string>
   <!-- Show/hide su icon -->
-  <string name="show_su_icon_title">Індыкатар суперпользователя</string>
-  <string name="show_su_icon_summary">Паказваць індыкатар суперпользователя (#) у радку стану, калі ён выкарыстоўваецца</string>
+  <string name="show_su_icon_title">Індыкатар суперкарыстальніка</string>
+  <string name="show_su_icon_summary">Паказваць індыкатар суперкарыстальніка (#) у радку стану, калі ён выкарыстоўваецца</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Паказваць значок гарнітуры</string>
   <string name="show_headset_icon_summary">Паказваць значок у радку стану, калі гарнітура падключана</string>
@@ -54,7 +54,7 @@
     <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўнікаў.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Настройкі для распрацоўшчыкаў ўключаны!</string>
+  <string name="show_dev_on_mk">Налады для распрацоўшчыкаў ўключаны!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Ня трэба, налады для распрацоўнікаў ужо ўключаны.</string>
+  <string name="show_dev_already_mk">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
 </resources>
