@@ -25,14 +25,20 @@
     <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўнікаў.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Настройкі для распрацоўшчыкаў ўключаны!</string>
+  <string name="show_dev_on_mk">Налады для распрацоўшчыкаў ўключаны!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Ня трэба, налады для распрацоўнікаў ужо ўключаны.</string>
+  <string name="show_dev_already_mk">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка адновіце і паспрабуйце ізноў.</string>
+  <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка аднавіце і паспрабуйце ізноў.</string>
   <!-- CMCC wifi extension -->
   <string name="wifi_advanced_gateway">Шлюз</string>
   <string name="wifi_advanced_network_netmask">Сеткавая маска</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Пласты Substratum</string>
+  <string name="menu_show_substratum">Паказваць пласты</string>
+  <string name="menu_hide_substratum">Схаваць пласты</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Значок Substratum пластоў</string>
+  <string name="menu_show_substratum_icons">Паказаць значок пластоў</string>
+  <string name="menu_hide_substratum_icons">Схаваць значок пластоў</string>
 </resources>
