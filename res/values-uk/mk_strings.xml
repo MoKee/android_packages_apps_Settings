@@ -34,5 +34,11 @@
   <string name="wifi_advanced_gateway">Шлюз</string>
   <string name="wifi_advanced_network_netmask">Маска підмережі</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Шари Substratum</string>
+  <string name="menu_show_substratum">Показувати шари</string>
+  <string name="menu_hide_substratum">Приховати шари</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Іконка Substratum шарів</string>
+  <string name="menu_show_substratum_icons">Показувати іконку шарів</string>
+  <string name="menu_hide_substratum_icons">Приховати іконку шарів</string>
 </resources>

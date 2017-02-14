@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Ungefährer Standort</string>
   <string name="app_ops_summaries_fine_location">Genauer Standort</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrieren</string>
   <string name="app_ops_summaries_read_contacts">Kontakte lesen</string>
   <string name="app_ops_summaries_modify_contacts">Kontakte ändern</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Ungefährer Standort</string>
   <string name="app_ops_labels_fine_location">Genauer Standort</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrieren</string>
   <string name="app_ops_labels_read_contacts">Kontakte lesen</string>
   <string name="app_ops_labels_modify_contacts">Kontakte ändern</string>
@@ -292,6 +294,7 @@
   <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
   <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
   <!-- Allow vibration in zen mode -->
+  <string name="zen_mode_vibration">Vibration</string>
   <string name="zen_mode_vibration_never">Nicht vibrieren</string>
   <string name="zen_mode_vibration_calls_only">Nur bei Anrufen vibrieren</string>
   <string name="zen_mode_vibration_calls_and_notifications">Bei Anrufen und Benachrichtigungen vibrieren</string>
@@ -312,6 +315,7 @@
   <string name="sim_mobile_network_settings_category_title">Mobilfunknetz-Einstellungen</string>
   <string name="sim_mobile_network_settings_title">SIM %d-Einstellungen</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Erweiterte Benachrichtigungseinstellungen</string>
   <!-- Format string for fingerprint location message -->
@@ -332,8 +336,11 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">WLAN-Hotspot nie automatisch abschalten</string>
   <string name="hotstpot_inactivity_timeout_summary_text">WLAN-Hotspot automatisch abschalten nach <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi Regionalcode</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Regionalcode für Wi\u2011Fi festlegen</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Beim Festlegen des Regionalcodes ist ein Problem aufgetreten.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
   <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle den Bildschirm einschalten</string>
@@ -341,12 +348,28 @@
   <string name="heads_up_notifications_enabled_title">Pop-up</string>
   <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Verschlüsselungskennwort ändern</string>
+  <string name="crypt_keeper_change_password_summary">Ändern Sie das Kennwort für die Geräteverschlüsselung</string>
+  <string name="crypt_keeper_choose_your_password_header">Verschlüsselungskennwort festlegen</string>
+  <string name="crypt_keeper_replace_password_title">Verschlüsselungskennwort ersetzen</string>
+  <string name="crypt_keeper_replace_password_summary">Separates Verschlüsselungskennwort entfernen</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Mobile Datennutzung</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi Datenzugriff</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Alle Mobilfunkdatenzugriffe deaktivieren</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Jegliche Mobilfunkdatenzugriffe verhindern</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Alle WLAN-Datenzugriffe deaktivieren</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Jegliche Wi\u2011Fi-Datenzugriffe verhindern</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Gleiche Lautstärke für Klingelton &amp; Benachrichtigungen</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Musik-Anwendung starten</string>
+  <string name="headset_connect_player_summary">Beim Anschließen eines Kopfhörers die Standard-Musik-Anwendung starten</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Ruhezustand durch doppeltes Tippen</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auzuschalten</string>
 </resources>

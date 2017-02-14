@@ -33,5 +33,11 @@
   <string name="wifi_advanced_gateway">Gateway</string>
   <string name="wifi_advanced_network_netmask">Netzmaske</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum Overlays</string>
+  <string name="menu_show_substratum">Overlays anzeigen</string>
+  <string name="menu_hide_substratum">Overlays ausblenden</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum Icon-Overlays</string>
+  <string name="menu_show_substratum_icons">Overlay-Icons zeigen</string>
+  <string name="menu_hide_substratum_icons">Overlay-Icons ausblenden</string>
 </resources>
