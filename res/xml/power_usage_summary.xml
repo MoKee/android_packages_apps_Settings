@@ -20,7 +20,7 @@
         settings:keywords="@string/keywords_battery">
 
         <!-- Performance profiles -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="perf_profile_settings" />
 
         <com.android.settings.fuelgauge.BatteryHistoryPreference

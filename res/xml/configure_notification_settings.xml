@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
+                  xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
         android:title="@string/configure_notification_settings"
         android:key="configure_notification_settings" >
 
@@ -34,7 +34,7 @@
     </PreferenceScreen>
 
     <!-- Heads up -->
-    <cyanogenmod.preference.GlobalSettingSwitchPreference
+    <mokee.preference.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
         android:title="@string/heads_up_notifications_enabled_title"
         android:summary="@string/heads_up_notifications_enabled_summary" />
@@ -50,14 +50,14 @@
             android:title="@string/notification_pulse_title" />
 
         <!-- Battery light -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="battery_lights"
-            cm:requiresConfig="@*android:bool/config_intrusiveBatteryLed" />
+            mk:requiresConfig="@*android:bool/config_intrusiveBatteryLed" />
 
         <!-- Notification lights -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="notification_lights"
-            cm:requiresConfig="@*android:bool/config_intrusiveNotificationLed" />
+            mk:requiresConfig="@*android:bool/config_intrusiveNotificationLed" />
 
     </PreferenceCategory>
 </PreferenceScreen>

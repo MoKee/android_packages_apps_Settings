@@ -95,9 +95,9 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.settingslib.RestrictedSwitchPreference;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import org.mokee.internal.util.FileUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -800,8 +800,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private void updateAdbOverNetwork() {
-        int port = CMSettings.Secure.getInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADB_PORT, 0);
+        int port = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
         updateSwitchPreference(mAdbOverNetwork, enabled);
@@ -941,8 +941,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private void resetAdbNotifyOptions() {
-        CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                CMSettings.Secure.ADB_NOTIFY, 1);
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_NOTIFY, 1);
     }
 
     private void resetRootAccessOptions() {
@@ -2123,8 +2123,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                         .show();
                 mAdbTcpDialog.setOnDismissListener(this);
             } else {
-                CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                        CMSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, -1);
                 updateAdbOverNetwork();
             }
         } else if (preference == mClearAdbKeys) {
@@ -2421,8 +2421,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             }
         } else if (dialog == mAdbTcpDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
-                CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                        CMSettings.Secure.ADB_PORT, 5555);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, 5555);
             }
         }
     }

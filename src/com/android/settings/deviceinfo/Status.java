@@ -49,7 +49,7 @@ import com.android.settings.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import cyanogenmod.hardware.CMHardwareManager;
+import mokee.hardware.MKHardwareManager;
 
 import java.lang.ref.WeakReference;
 
@@ -384,8 +384,8 @@ public class Status extends SettingsPreferenceFragment {
     }
 
     private String getSerialNumber() {
-        CMHardwareManager hardware = CMHardwareManager.getInstance(getActivity());
-        if (hardware.isSupported(CMHardwareManager.FEATURE_SERIAL_NUMBER)) {
+        MKHardwareManager hardware = MKHardwareManager.getInstance(getActivity());
+        if (hardware.isSupported(MKHardwareManager.FEATURE_SERIAL_NUMBER)) {
             return hardware.getSerialNumber();
         } else {
             return Build.SERIAL;

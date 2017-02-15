@@ -62,7 +62,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -448,7 +448,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
     private void initIncreasingRing() {
         PreferenceScreen root = getPreferenceScreen();
         mIncreasingRing = (TwoStatePreference)
-                root.findPreference(CMSettings.System.INCREASING_RING);
+                root.findPreference(MKSettings.System.INCREASING_RING);
         mIncreasingRingVolume = (IncreasingRingVolumePreference)
                 root.findPreference(KEY_INCREASING_RING_VOLUME);
 

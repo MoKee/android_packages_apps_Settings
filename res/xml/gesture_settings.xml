@@ -16,13 +16,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform"
+    xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
     android:title="@string/gesture_preference_title"
     settings:keywords="@string/keywords_gesture">
 
-    <org.cyanogenmod.internal.cmparts.CMPartsPreference
+    <org.mokee.internal.mkparts.MKPartsPreference
         android:key="touchscreen_gesture_settings"
-        lineage:requiresFeature="cmhardware:FEATURE_TOUCHSCREEN_GESTURES" />
+        mk:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
     <com.android.settings.gestures.GesturePreference
         android:key="gesture_swipe_down_fingerprint"
@@ -60,7 +60,7 @@
         settings:preview="@drawable/gesture_ambient_lift"/>
 
     <!-- Double tap to sleep -->
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <mokee.preference.MKSystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"

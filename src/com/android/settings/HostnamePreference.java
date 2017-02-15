@@ -23,7 +23,7 @@ import android.support.v7.preference.EditTextPreference;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class HostnamePreference extends EditTextPreference {
 
@@ -73,7 +73,7 @@ public class HostnamePreference extends EditTextPreference {
     }
 
     public void persistHostname(String hostname) {
-        CMSettings.Secure.putString(getContext().getContentResolver(),
-                CMSettings.Secure.DEVICE_HOSTNAME, hostname);
+        MKSettings.Secure.putString(getContext().getContentResolver(),
+                MKSettings.Secure.DEVICE_HOSTNAME, hostname);
     }
 }

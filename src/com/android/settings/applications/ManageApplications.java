@@ -929,7 +929,7 @@ public class ManageApplications extends InstrumentedFragment
             }
             if (!mManageApplications.mShowSystem) {
                 filterObj = new CompoundFilter(filterObj,
-                                               ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
+                        ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
             }
             if (!mManageApplications.mShowSubstratum) {
                 filterObj = new CompoundFilter(filterObj,

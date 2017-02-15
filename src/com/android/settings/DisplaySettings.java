@@ -70,7 +70,7 @@ import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
-import cyanogenmod.hardware.CMHardwareManager;
+import mokee.hardware.MKHardwareManager;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
@@ -569,11 +569,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         result.add(KEY_VR_DISPLAY_PREF);
                     }
                     if (!context.getResources().getBoolean(
-                            org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWake)) {
+                            org.mokee.platform.internal.R.bool.config_proximityCheckOnWake)) {
                         result.add("proximity_on_wake");
                     }
-                    if (!CMHardwareManager.getInstance(context).
-                            isSupported(CMHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+                    if (!MKHardwareManager.getInstance(context).
+                            isSupported(MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
                         result.add("high_touch_sensitivity_enable");
                     }
                     return result;

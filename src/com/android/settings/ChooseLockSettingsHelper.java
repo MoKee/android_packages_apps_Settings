@@ -27,7 +27,7 @@ import android.os.UserManager;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.widget.LockPatternUtils;
 
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
+import org.mokee.internal.util.MkLockPatternUtils;
 
 public final class ChooseLockSettingsHelper {
 
@@ -42,14 +42,14 @@ public final class ChooseLockSettingsHelper {
 
 
     @VisibleForTesting LockPatternUtils mLockPatternUtils;
-    private CmLockPatternUtils mCmLockPatternUtils;
+    private MkLockPatternUtils mMkLockPatternUtils;
     private Activity mActivity;
     private Fragment mFragment;
 
     public ChooseLockSettingsHelper(Activity activity) {
         mActivity = activity;
         mLockPatternUtils = new LockPatternUtils(activity);
-        mCmLockPatternUtils = new CmLockPatternUtils(activity);
+        mMkLockPatternUtils = new MkLockPatternUtils(activity);
     }
 
     public ChooseLockSettingsHelper(Activity activity, Fragment fragment) {
@@ -61,8 +61,8 @@ public final class ChooseLockSettingsHelper {
         return mLockPatternUtils;
     }
 
-    public CmLockPatternUtils cmUtils() {
-        return mCmLockPatternUtils;
+    public MkLockPatternUtils mkUtils() {
+        return mMkLockPatternUtils;
     }
 
     /**

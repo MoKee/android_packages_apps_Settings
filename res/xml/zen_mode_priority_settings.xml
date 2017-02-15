@@ -53,7 +53,7 @@
         android:key="repeat_callers"
         android:title="@string/zen_mode_repeat_callers"/>
 
-    <cyanogenmod.preference.CMSystemSettingDropDownPreference
+    <mokee.preference.MKSystemSettingDropDownPreference
         android:key="zen_priority_vibration_mode"
         android:title="@string/zen_mode_vibration"
         android:summary="%s"

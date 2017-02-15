@@ -39,8 +39,8 @@ import android.widget.Button;
 import com.android.settings.CustomDialogPreference;
 import com.android.settings.R;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import mokee.hardware.MKHardwareManager;
+import mokee.providers.MKSettings;
 
 public class VibratorIntensity extends CustomDialogPreference
         implements SeekBar.OnSeekBarChangeListener {
@@ -80,7 +80,7 @@ public class VibratorIntensity extends CustomDialogPreference
         mWarningText = (TextView) view.findViewById(R.id.warning_text);
 
         // Read the current value in case user wants to dismiss his changes
-        final CMHardwareManager hardware = CMHardwareManager.getInstance(getContext());
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(getContext());
         mOriginalValue = hardware.getVibratorIntensity();
         mWarningValue = hardware.getVibratorWarningIntensity();
         mMinValue = hardware.getVibratorMinIntensity();
@@ -132,13 +132,13 @@ public class VibratorIntensity extends CustomDialogPreference
                     .getDefaultSharedPreferences(getContext());
             final int intensity = mSeekBar.getProgress() + mMinValue;
             final int percent = intensityToPercent(mMinValue, mMaxValue, intensity);
-            prefs.edit().putInt(CMSettings.Secure.VIBRATOR_INTENSITY, percent).commit();
-            CMSettings.Secure.putInt(getContext().getContentResolver(),
-                    CMSettings.Secure.VIBRATOR_INTENSITY, intensity);
+            prefs.edit().putInt(MKSettings.Secure.VIBRATOR_INTENSITY, percent).commit();
+            MKSettings.Secure.putInt(getContext().getContentResolver(),
+                    MKSettings.Secure.VIBRATOR_INTENSITY, intensity);
         } else {
             setVibratorIntensity(mOriginalValue);
-            CMSettings.Secure.putInt(getContext().getContentResolver(),
-                    CMSettings.Secure.VIBRATOR_INTENSITY, mOriginalValue);
+            MKSettings.Secure.putInt(getContext().getContentResolver(),
+                    MKSettings.Secure.VIBRATOR_INTENSITY, mOriginalValue);
         }
     }
 
@@ -171,7 +171,7 @@ public class VibratorIntensity extends CustomDialogPreference
     }
 
     private void setVibratorIntensity(final int intensity) {
-        final CMHardwareManager hardware = CMHardwareManager.getInstance(getContext());
+        final MKHardwareManager hardware = MKHardwareManager.getInstance(getContext());
         hardware.setVibratorIntensity(intensity);
     }
 

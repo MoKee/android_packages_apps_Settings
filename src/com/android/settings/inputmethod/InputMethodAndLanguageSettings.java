@@ -67,7 +67,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
-import cyanogenmod.hardware.CMHardwareManager;
+import mokee.hardware.MKHardwareManager;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -852,8 +852,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             indexable.screenTitle = screenTitle;
             indexables.add(indexable);
 
-            if (CMHardwareManager.getInstance(context).
-                    isSupported(CMHardwareManager.FEATURE_TOUCH_HOVERING)) {
+            if (MKHardwareManager.getInstance(context).
+                    isSupported(MKHardwareManager.FEATURE_TOUCH_HOVERING)) {
                 indexable = new SearchIndexableRaw(context);
                 indexable.key = "touch_hovering";
                 indexable.title = context.getString(R.string.touchscreen_hovering_title);

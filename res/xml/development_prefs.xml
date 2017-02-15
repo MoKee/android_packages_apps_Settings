@@ -134,7 +134,7 @@
             android:title="@string/enable_adb_cm"
             android:summary="@string/enable_adb_summary_cm" />
 
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="adb_notify"
             android:title="@string/adb_notify"
             android:summary="@string/adb_notify_summary"
@@ -429,7 +429,7 @@
             android:key="reset_shortcut_manager_throttling"
             android:title="@string/reset_shortcut_manager_throttling" />
 
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="kill_app_longpress_back"
             android:title="@string/kill_app_longpress_back"
             android:summary="@string/kill_app_longpress_back_summary"/>

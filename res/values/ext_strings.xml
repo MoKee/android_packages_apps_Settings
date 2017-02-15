@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -31,6 +32,11 @@
     <!-- Preference link for root appops -->
     <string name="root_appops_title">Manage root accesses</string>
     <string name="root_appops_summary">View and control the root rules</string>
+
+    <!-- About phone screen, Device model -->
+    <string name="device_model">Device model</string>
+    <!-- About phone screen, Device name -->
+    <string name="device_name">Device name</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>

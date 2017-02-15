@@ -8,13 +8,13 @@ import android.os.Bundle;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settingslib.drawer.Tile;
 
-import cyanogenmod.preference.RemotePreferenceManager;
+import mokee.preference.RemotePreferenceManager;
 
-import static cyanogenmod.preference.RemotePreference.ACTION_UPDATE_PREFERENCE;
-import static cyanogenmod.preference.RemotePreference.EXTRA_KEY;
-import static cyanogenmod.preference.RemotePreference.EXTRA_SUMMARY;
-import static cyanogenmod.preference.RemotePreference.META_REMOTE_KEY;
-import static cyanogenmod.preference.RemotePreference.META_REMOTE_RECEIVER;
+import static mokee.preference.RemotePreference.ACTION_UPDATE_PREFERENCE;
+import static mokee.preference.RemotePreference.EXTRA_KEY;
+import static mokee.preference.RemotePreference.EXTRA_SUMMARY;
+import static mokee.preference.RemotePreference.META_REMOTE_KEY;
+import static mokee.preference.RemotePreference.META_REMOTE_RECEIVER;
 
 public class RemoteSummaryProvider implements SummaryLoader.SummaryProvider,
         RemotePreferenceManager.OnRemoteUpdateListener {

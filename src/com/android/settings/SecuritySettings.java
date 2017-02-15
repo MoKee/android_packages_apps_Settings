@@ -64,9 +64,9 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.RestrictedSwitchPreference;
 
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
+import org.mokee.internal.util.MkLockPatternUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1083,9 +1083,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 mPowerButtonInstantlyLocks.setChecked(mLockPatternUtils.getPowerButtonInstantlyLocks(
                         MY_USER_ID));
             }
-            final CmLockPatternUtils cmLockPatternUtils = mChooseLockSettingsHelper.cmUtils();
+            final MkLockPatternUtils mkLockPatternUtils = mChooseLockSettingsHelper.mkUtils();
             if (mDirectlyShowLock != null) {
-                mDirectlyShowLock.setChecked(cmLockPatternUtils.shouldPassToSecurityView(
+                mDirectlyShowLock.setChecked(mkLockPatternUtils.shouldPassToSecurityView(
                         MY_USER_ID));
             }
 
@@ -1260,8 +1260,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
             if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
                 mLockPatternUtils.setPowerButtonInstantlyLocks((Boolean) value, MY_USER_ID);
             } else if (KEY_DIRECTLY_SHOW_LOCK.equals(key)) {
-                final CmLockPatternUtils cmLockPatternUtils = mChooseLockSettingsHelper.cmUtils();
-                cmLockPatternUtils.setPassToSecurityView((Boolean) value, MY_USER_ID);
+                final MkLockPatternUtils mkLockPatternUtils = mChooseLockSettingsHelper.mkUtils();
+                mkLockPatternUtils.setPassToSecurityView((Boolean) value, MY_USER_ID);
             } else if (KEY_LOCK_AFTER_TIMEOUT.equals(key)) {
                 int timeout = Integer.parseInt((String) value);
                 try {
