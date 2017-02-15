@@ -30,9 +30,6 @@
   <string name="show_dev_already_mk">Настройки для разработчиков уже включены.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Замораживание или удаление MoKee центра будет влиять на системные службы, пожалуйста восстановите и повторите попытку.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Шлюз</string>
-  <string name="wifi_advanced_network_netmask">Маска сети</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Слои Substratum</string>
   <string name="menu_show_substratum">Показывать слои</string>

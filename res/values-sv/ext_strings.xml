@@ -311,14 +311,6 @@
   <string name="security_settings_fingerprint_sensor_location_back">tillbaka</string>
   <string name="security_settings_fingerprint_sensor_location_left">vänster sida</string>
   <string name="security_settings_fingerprint_sensor_location_right">höger sida</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Annan</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot tidsgräns</string>
-  <string name="hotstpot_inactivity_timeout_never">Aldrig</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minut</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuter</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuter</string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_countrycode_summary">Ange regionkoden för Wi\u2011Fi</string>
@@ -332,6 +324,14 @@
   <string name="crypt_keeper_choose_your_password_header">Ange krypteringslösenord</string>
   <string name="crypt_keeper_replace_password_title">Ersätt krypteringslösenord</string>
   <string name="crypt_keeper_replace_password_summary">Ta bort det separata krypteringslösenordet</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Annan</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot tidsgräns</string>
+  <string name="hotstpot_inactivity_timeout_never">Aldrig</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minut</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuter</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuter</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Mobildata-åtkomst</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->

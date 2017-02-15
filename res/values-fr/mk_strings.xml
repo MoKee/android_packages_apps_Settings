@@ -26,12 +26,9 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Vous avez autoriser les réglages du mode développeur !</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Inutile, vous avez déjà autoriser les réglages du mode développeur.</string>
+  <string name="show_dev_already_mk">Ceci n\'est pas nécessaire, le mode développeur a déjà été activé.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Geler ou supprimer le Centre MoKee va affecter les services système, veuillez s’il vous plaît restaurer et réessayez.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Passerelle</string>
-  <string name="wifi_advanced_network_netmask">Masque réseau</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="menu_show_substratum">Afficher les superpositions</string>
   <string name="menu_hide_substratum">Masquer les superpositions</string>

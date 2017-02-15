@@ -30,9 +30,6 @@
   <string name="show_dev_already_mk">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка аднавіце і паспрабуйце ізноў.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Шлюз</string>
-  <string name="wifi_advanced_network_netmask">Сеткавая маска</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Пласты Substratum</string>
   <string name="menu_show_substratum">Паказваць пласты</string>

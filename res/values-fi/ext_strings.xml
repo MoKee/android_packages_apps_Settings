@@ -320,16 +320,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">edestä</string>
   <string name="security_settings_fingerprint_sensor_location_left">vasemmasta reunasta</string>
   <string name="security_settings_fingerprint_sensor_location_right">oikeasta reunasta</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Muut</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspotin aikakatkaisu</string>
-  <string name="hotstpot_inactivity_timeout_never">Ei koskaan</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minuutti</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuuttia</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuuttia</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Ei aikakatkaisua kannettavassa Wi\u2011Fi hotspotissa</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Kannettavan Wi\u2011Fi hotspot aikakatkaisu: <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -340,6 +330,16 @@
   <string name="heads_up_notifications_enabled_title">Leijuvat ilmoitukset</string>
   <string name="heads_up_notifications_enabled_summary">Näytä tärkeät ilmoitukset pienessä kelluvassa ikkunassa</string>
   <!-- Encryption password -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Muut</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspotin aikakatkaisu</string>
+  <string name="hotstpot_inactivity_timeout_never">Ei koskaan</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuutti</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuuttia</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuuttia</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Ei aikakatkaisua kannettavassa Wi\u2011Fi hotspotissa</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Kannettavan Wi\u2011Fi hotspot aikakatkaisu: <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

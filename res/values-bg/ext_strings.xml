@@ -322,16 +322,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">Отпред</string>
   <string name="security_settings_fingerprint_sensor_location_left">Лява страна</string>
   <string name="security_settings_fingerprint_sensor_location_right">Дясна страна</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Други</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Времетраене на точката за достъп</string>
-  <string name="hotstpot_inactivity_timeout_never">Никога</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 минута</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 минути</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 минути</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Няма ограничение на времето за преносима точка за достъп Wi\u2011Fi</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Времето на преносима точка за достъп Wi\u2011Fi изтича след <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -342,6 +332,16 @@
   <string name="heads_up_notifications_enabled_title">Изскачащи известия</string>
   <string name="heads_up_notifications_enabled_summary">Покажи приоритетни известия в малък плаващ прозорец</string>
   <!-- Encryption password -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Други</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Времетраене на точката за достъп</string>
+  <string name="hotstpot_inactivity_timeout_never">Никога</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 минута</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 минути</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 минути</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Няма ограничение на времето за преносима точка за достъп Wi\u2011Fi</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Времето на преносима точка за достъп Wi\u2011Fi изтича след <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

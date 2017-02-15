@@ -322,16 +322,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">sprednji strani</string>
   <string name="security_settings_fingerprint_sensor_location_left">levi strani</string>
   <string name="security_settings_fingerprint_sensor_location_right">desni strani</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Drugo</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Časovna omejitev dostopne točke Wi\u2011Fi</string>
-  <string name="hotstpot_inactivity_timeout_never">Nikoli</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minuta</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minut</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minut</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Prenosna dostopna točka Wi\u2011Fi nima časovne omejitve</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Časovna omejitev prenosne dostopne točke Wi\u2011Fi čez <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -342,6 +332,16 @@
   <string name="heads_up_notifications_enabled_title">Obvestila na zaslonu</string>
   <string name="heads_up_notifications_enabled_summary">Prikaži prednostna obvestila v majhnem lebdečem oknu</string>
   <!-- Encryption password -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Drugo</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Časovna omejitev dostopne točke Wi\u2011Fi</string>
+  <string name="hotstpot_inactivity_timeout_never">Nikoli</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuta</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minut</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minut</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Prenosna dostopna točka Wi\u2011Fi nima časovne omejitve</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Časovna omejitev prenosne dostopne točke Wi\u2011Fi čez <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

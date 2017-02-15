@@ -325,16 +325,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">przód</string>
   <string name="security_settings_fingerprint_sensor_location_left">lewa strona</string>
   <string name="security_settings_fingerprint_sensor_location_right">prawa strona</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Inny</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Bezczynność hotspota Wi-Fi</string>
-  <string name="hotstpot_inactivity_timeout_never">Nigdy</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 min</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 min</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 min</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Przenośny hotspot Wi-Fi bez limitu czasu</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Przenośny hotspot Wi-Fi wyłączy się po <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -350,6 +340,16 @@
   <string name="crypt_keeper_choose_your_password_header">Ustaw hasło szyfrowania</string>
   <string name="crypt_keeper_replace_password_title">Zastąp hasło szyfrowania</string>
   <string name="crypt_keeper_replace_password_summary">Usuń oddzielne hasło szyfrowania</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Inny</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Bezczynność hotspota Wi-Fi</string>
+  <string name="hotstpot_inactivity_timeout_never">Nigdy</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 min</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 min</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 min</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Przenośny hotspot Wi-Fi bez limitu czasu</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Przenośny hotspot Wi-Fi wyłączy się po <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Dostęp do transmisji danych</string>
   <string name="data_usage_app_restrict_wifi_category_title">Dostęp do Wi-Fi</string>

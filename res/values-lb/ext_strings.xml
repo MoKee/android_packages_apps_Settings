@@ -266,10 +266,6 @@
   <!-- Notification importance -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Aner</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_never">Ni</string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -277,6 +273,10 @@
   <string name="wake_when_plugged_or_unplugged_title">Beim Astieche waakreg maachen</string>
   <!-- Heads-up -->
   <!-- Encryption password -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Aner</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Ni</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

@@ -306,6 +306,13 @@
   <string name="security_settings_fingerprint_sensor_location_front">στο μπροστινό μέρος</string>
   <string name="security_settings_fingerprint_sensor_location_left">στην αριστερή πλευρά</string>
   <string name="security_settings_fingerprint_sensor_location_right">στη δεξιά πλευρά</string>
+  <!-- Wi-Fi region code -->
+  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
+  <!-- Heads-up -->
+  <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Άλλες</string>
   <!-- Wi-Fi tethering inactivity timeout -->
@@ -314,13 +321,6 @@
   <string name="hotstpot_inactivity_timeout_1_minute">1 λεπτό</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 λεπτά</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 λεπτά</string>
-  <!-- Wi-Fi region code -->
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <!-- Wake on plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
-  <!-- Heads-up -->
-  <!-- Encryption password -->
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

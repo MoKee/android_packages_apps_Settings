@@ -325,16 +325,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">передня панель</string>
   <string name="security_settings_fingerprint_sensor_location_left">ліва сторона</string>
   <string name="security_settings_fingerprint_sensor_location_right">права сторона</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Інший</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Тайм-аут Wi\u2011Fi точки</string>
-  <string name="hotstpot_inactivity_timeout_never">Ніколи</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 хвилина</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 хвилин</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 хвилин</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Портативний Wi\u2011Fi точка ніколи не буде вимикатися</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Портативна Wi\u2011Fi точка тайм-аут після <xliff:g id="timeout">%1$s </xliff:g></string>
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">Код регіону Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
@@ -353,6 +343,16 @@
   <string name="crypt_keeper_choose_your_password_header">Встановити пароль шифрування</string>
   <string name="crypt_keeper_replace_password_title">Замінити пароль шифрування</string>
   <string name="crypt_keeper_replace_password_summary">Видалення окремого шифрування пароля</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Інший</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Тайм-аут Wi\u2011Fi точки</string>
+  <string name="hotstpot_inactivity_timeout_never">Ніколи</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 хвилина</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 хвилин</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 хвилин</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Портативний Wi\u2011Fi точка ніколи не буде вимикатися</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Портативна Wi\u2011Fi точка тайм-аут після <xliff:g id="timeout">%1$s </xliff:g></string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Доступ до стільникового даних</string>
   <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi доступ до даних</string>

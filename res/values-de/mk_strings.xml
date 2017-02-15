@@ -29,9 +29,6 @@
   <string name="show_dev_already_mk">Unnötig, Sie sind bereits Entwickler.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Das Einfrieren oder Entfernen von MoKee Center beeinträchtigt die Systemdienste. Bitte wiederherstellen und erneut versuchen.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Gateway</string>
-  <string name="wifi_advanced_network_netmask">Netzmaske</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum Overlays</string>
   <string name="menu_show_substratum">Overlays anzeigen</string>

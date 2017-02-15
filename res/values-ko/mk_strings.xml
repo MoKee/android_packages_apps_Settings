@@ -27,7 +27,6 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">이미 개발자입니다.</string>
   <!-- MKCenter verify -->
-  <!-- CMCC wifi extension -->
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
 </resources>

@@ -322,16 +322,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">parte frontal</string>
   <string name="security_settings_fingerprint_sensor_location_left">cara esquerda</string>
   <string name="security_settings_fingerprint_sensor_location_right">cara dereita</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Outros</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Tempo de espera para o punto de acceso Wi\u2011Fi</string>
-  <string name="hotstpot_inactivity_timeout_never">Nunca</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutos</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutos</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Sen tempo de espera para o punto de acceso Wi\u2011Fi</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Tempo de espera para o punto de acceso Wi\u2011Fi despois de <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -342,6 +332,16 @@
   <string name="heads_up_notifications_enabled_title">Notificacións emerxentes</string>
   <string name="heads_up_notifications_enabled_summary">Amosar notificacions de prioridad nunha pequena xanela flotante</string>
   <!-- Encryption password -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Outros</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Tempo de espera para o punto de acceso Wi\u2011Fi</string>
+  <string name="hotstpot_inactivity_timeout_never">Nunca</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutos</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutos</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Sen tempo de espera para o punto de acceso Wi\u2011Fi</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Tempo de espera para o punto de acceso Wi\u2011Fi despois de <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

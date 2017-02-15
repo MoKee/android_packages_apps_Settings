@@ -29,9 +29,6 @@
   <string name="show_dev_already_mk">Δεν χρειάζεται, έχετε ήδη ενεργοποιήσει τη λειτουργία για προγραμματιστές.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Πύλη</string>
-  <string name="wifi_advanced_network_netmask">Μάσκα δικτύου</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum overlays</string>
   <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>

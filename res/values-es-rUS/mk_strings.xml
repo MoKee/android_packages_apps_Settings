@@ -29,9 +29,6 @@
   <string name="show_dev_already_mk">No es necesario, ya has activado las opciones de desarrollador.</string>
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Congelar o remover \"Centro de MoKee\" afectara los servicios del sistema, por favor restaurela y vuelva a intentarlo.</string>
-  <!-- CMCC wifi extension -->
-  <string name="wifi_advanced_gateway">Puerta de enlace</string>
-  <string name="wifi_advanced_network_netmask">Máscara de red</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
 </resources>

@@ -325,16 +325,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">Rückseite</string>
   <string name="security_settings_fingerprint_sensor_location_left">linken Seite</string>
   <string name="security_settings_fingerprint_sensor_location_right">rechten Seite</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Andere</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">WLAN-Hotspot-Zeitabschaltung</string>
-  <string name="hotstpot_inactivity_timeout_never">Nie</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 Minute</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 Minuten</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 Minuten</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">WLAN-Hotspot nie automatisch abschalten</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">WLAN-Hotspot automatisch abschalten nach <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">Wi\u2011Fi Regionalcode</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
@@ -353,6 +343,16 @@
   <string name="crypt_keeper_choose_your_password_header">Verschlüsselungskennwort festlegen</string>
   <string name="crypt_keeper_replace_password_title">Verschlüsselungskennwort ersetzen</string>
   <string name="crypt_keeper_replace_password_summary">Separates Verschlüsselungskennwort entfernen</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Andere</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">WLAN-Hotspot-Zeitabschaltung</string>
+  <string name="hotstpot_inactivity_timeout_never">Nie</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 Minute</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 Minuten</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 Minuten</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">WLAN-Hotspot nie automatisch abschalten</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">WLAN-Hotspot automatisch abschalten nach <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Mobile Datennutzung</string>
   <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi Datenzugriff</string>

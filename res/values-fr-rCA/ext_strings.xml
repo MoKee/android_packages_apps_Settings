@@ -324,16 +324,6 @@
   <string name="security_settings_fingerprint_sensor_location_front">la façade</string>
   <string name="security_settings_fingerprint_sensor_location_left">le côté gauche</string>
   <string name="security_settings_fingerprint_sensor_location_right">le côté droit</string>
-  <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Autres</string>
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Délai de réponse du point d\'accès Wi\u2011Fi dépassé</string>
-  <string name="hotstpot_inactivity_timeout_never">Jamais</string>
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Le point d\'accès Wi\u2011Fi n\'expirera jamais</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Le point d\'accès Wi\u2011Fi expirera après <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">Code région du Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
@@ -352,6 +342,16 @@
   <string name="crypt_keeper_choose_your_password_header">Définir le mot de passe de chiffrement</string>
   <string name="crypt_keeper_replace_password_title">Remplacer le mot de passe de chiffrement</string>
   <string name="crypt_keeper_replace_password_summary">Supprimer le mot de passe de chiffrement distinct</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Autres</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Délai de réponse du point d\'accès Wi\u2011Fi dépassé</string>
+  <string name="hotstpot_inactivity_timeout_never">Jamais</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Le point d\'accès Wi\u2011Fi n\'expirera jamais</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Le point d\'accès Wi\u2011Fi expirera après <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Accès aux données mobiles</string>
   <string name="data_usage_app_restrict_wifi_category_title">Accès aux données Wi\u2011Fi</string>
