@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
-    <item quantity="other">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Geliştirici ayarlarını etkinleştirdiniz!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Gerek yok, zaten geliştirme ayarlarını etkinleştirdiniz.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Geliştirme araçları</string>
   <!-- Setting checkbox title for root access -->
@@ -39,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Root erişimini yönet</string>
   <string name="root_appops_summary">Root kurallarını görüntüle ve kontrol et</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS sürümü</string>
-  <string name="mod_version_default">Bilinmeyen</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Cihaz modeli</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Cihaz ismi</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API düzeyi</string>
-  <string name="mod_api_level_default">Bilinmeyen</string>
   <!-- About phone screen, build date -->
   <string name="build_date">İnşa tarihi</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS güncellemeleri</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Konum</string>
   <string name="app_ops_categories_personal">Kişisel</string>
@@ -106,7 +90,7 @@
   <string name="app_ops_summaries_keep_awake">uyanık tut</string>
   <string name="app_ops_summaries_monitor_location">konumu izle</string>
   <string name="app_ops_summaries_monitor_high_power_location">yüksek güç konumu izle</string>
-  <string name="app_ops_summaries_get_usage_stats">uyg. kullanım istatistiklerini al</string>
+  <string name="app_ops_summaries_get_usage_stats">kullanım istatistiklerini al</string>
   <string name="app_ops_summaries_mute_unmute_microphone">mikrofonu aç/kapa</string>
   <string name="app_ops_summaries_toast_window">bildirim göster</string>
   <string name="app_ops_summaries_project_media">ortamı yansıt</string>
@@ -131,7 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">Bluetooth\'u açıp kapat</string>
   <string name="app_ops_summaries_start_at_boot">açılışta başlat</string>
   <string name="app_ops_summaries_toggle_nfc">NFC\'yi aç/kapa</string>
-  <string name="app_ops_summaries_toggle_mobile_data">hücresel veriye geçiş</string>
+  <string name="app_ops_summaries_toggle_mobile_data">hücresel veriyi değiştir</string>
   <string name="app_ops_summaries_superuser">root erişimi</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Yaklaşık konum</string>
@@ -202,7 +186,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth\'u aç/kapa</string>
   <string name="app_ops_labels_start_at_boot">Açılışta başlat</string>
   <string name="app_ops_labels_toggle_nfc">NFC\'yi aç/kapa</string>
-  <string name="app_ops_labels_toggle_mobile_data">Hücresel veriye geçiş</string>
+  <string name="app_ops_labels_toggle_mobile_data">Hücresel veriyi değiştir</string>
   <string name="app_ops_labels_superuser">Root erişimi</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">İzin verildi</string>
@@ -224,7 +208,7 @@
   <string name="volume_adjust_sounds_title">Ses arttırma tonları</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Titreşim yoğunluğu</string>
-  <string name="vibrator_intensity_dialog_warning">%%1$d% değerinden büyük tavsiye edilmez</string>
+  <string name="vibrator_intensity_dialog_warning">%1$d%% den büyük değerler tavsiye edilmez</string>
   <string name="vibrator_intensity_dialog_reset">Sıfırla</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Bir desen boyutu seçin</string>
@@ -272,7 +256,7 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Hava durumunu göster</string>
   <!-- title for lock screen blur preference -->
-  <string name="lockscreen_blur_enabled_title">Bulanık arkaplan</string>
+  <string name="lockscreen_blur_enabled_title">Bulanık Arkaplan</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Jestler tarafından tetiklenen uyanmadan önce yakınlık sensörünü kontrol edin</string>
@@ -286,7 +270,7 @@
   <string name="ime_switcher_notify">Seçici simgesi</string>
   <string name="ime_switcher_notify_summary">Giriş yöntemi seçici simgesini görüntüle</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
-  <string name="notification_importance_very_low">Tam ekran kesinti, ses ve titreşim yok. Bildirim listesinin en altında göster. Kilit ekranından sakla.</string>
+  <string name="notification_importance_very_low">Tam ekran kesintisi, ekranda kısaca belirme, ses veya titreşim yok. Bildirim listesinin en altında gösterilsin. Kilit ekranından ve durum çubuğundan gizlensin.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Kalem kullanırken simge göster</string>
   <string name="stylus_icon_enabled_summary">Çizerken ya da üzerinde dururken işaretçi simgesi göster</string>
@@ -334,12 +318,10 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Güç bildirim kontrolleri</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS yasal</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Telefonunuzdaki <xliff:g id="sensor_location">%1$s</xliff:g> üzerinde parmak izi sensörünü bulun.</string>
   <!-- Fingerprint sensor locations -->
-  <string name="security_settings_fingerprint_sensor_location_back">geri</string>
+  <string name="security_settings_fingerprint_sensor_location_back">arka</string>
   <string name="security_settings_fingerprint_sensor_location_front">ön</string>
   <string name="security_settings_fingerprint_sensor_location_left">sol taraf</string>
   <string name="security_settings_fingerprint_sensor_location_right">sağ taraf</string>
@@ -359,7 +341,7 @@
   <string name="crypt_keeper_change_password_title">Şifreleme parolasını değiştir</string>
   <string name="crypt_keeper_change_password_summary">Cihaz şifrelemesi için kullanılan şifreyi değiştir</string>
   <string name="crypt_keeper_choose_your_password_header">Şifreleme parolasını ayarlayın</string>
-  <string name="crypt_keeper_replace_password_title">Şifreleme parolası değiştir</string>
+  <string name="crypt_keeper_replace_password_title">Şifreleme parolasını değiştirin</string>
   <string name="crypt_keeper_replace_password_summary">Ayrı şifreleme parolasını kaldırın</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Diğer</string>
@@ -369,8 +351,8 @@
   <string name="hotstpot_inactivity_timeout_1_minute">1 dakika</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 dakika</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 dakika</string>
-  <string name="hotstpot_inactivity_timeout_never_summary_text">Taşınabilir Wi\u2011Fi bağlantı noktası zaman aşımı yok</string>
-  <string name="hotstpot_inactivity_timeout_summary_text">Taşınabilir kablosuz hotspot bağlantı noktası zaman aşımı <xliff:g id="timeout">%1$s </xliff:g> sn sonra</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Taşınabilir Wi\u2011Fi bağlantı noktasında zaman aşımı olmayacak</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Taşınabilir Wi\u2011Fi bağlantı noktasında <xliff:g id="timeout">%1$s</xliff:g>\'den sonra zaman aşımı olacak</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">Hücresel veri kullanımı</string>
   <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi veri kullanımı</string>
@@ -383,16 +365,11 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_wifi_summary">Herhangi bir Wi\u2011Fi veri erişiminden kaçın</string>
   <!-- Volume link notification -->
-  <string name="volume_link_notification_title">Zil sesi ile bildirim sesi düzeyini bağla</string>
+  <string name="volume_link_notification_title">Zilsesi &amp; bildirim ses düzeyini bağla</string>
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Müzik uygulamasını başlat</string>
   <string name="headset_connect_player_summary">Kulaklık takıldığında varsayılan müzik uygulamasını başlat</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Kurtarma modunu güncelle</string>
-  <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
-  <string name="update_recovery_on_warning">DİKKAT: Bu özellik etkinken, yüklü kurtarma modunuz mevcut OS sürümündeki mod ile değiştirilecektir. \n\nKurtarma modunuz sistem güncellemeleri ile birlikte güncellenecektir, böylelikle gelecek sürümler ile uyumluluk sağlanacaktır.\n\nBu özelliği etkinleştirmek ister misiniz?</string>
-  <string name="update_recovery_off_warning">UYARI: Bu özellik devre dışı bırakıldığında, yüklü kurtarma modunuz OS güncellemeleri ile güncellenmeyecektir.\n\nGelecek OS güncellemeleri eskimiş ya da özel kurtarma sürümleri ile yüklenemeyebilir.\n\nBu özelliği gerçekten devre dışı bırakmak istiyor musunuz?</string>
   <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Uykuya geçmek için iki kez dokun</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna iki defa dokunun</string>
+  <string name="status_bar_double_tap_to_sleep_title">Uyku için çift dokunun</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna çift dokun</string>
 </resources>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">ଉନ୍ନତି ସେଟିଂସମୂହ‍ ସଷମ କରାଯିବା ଠାରୁ ଆପଣ ବର୍ତ୍ତମାନ <xliff:g id="step_count">%1$d</xliff:g> ପର୍ଯ୍ୟାୟ ଦୂରରେ ଅଛନ୍ତି।</item>
-    <item quantity="other">ଉନ୍ନତି ସେଟିଂସମୂହ ସଷମ କରାଯିବା ଠାରୁ ଆପଣ ବର୍ତ୍ତମାନ <xliff:g id="step_count">%1$d</xliff:g> ପର୍ଯ୍ୟାୟ ଦୂରରେ ଅଛନ୍ତି।</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">ଆପଣ ଉନ୍ନତି ସେଟିଂସ୍‍ ସଷମ କରିଛନ୍ତି!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">ଆବଶ୍ୟକ ନାହିଁ, ଆପଣ ଆଗରୁ ଉନ୍ନତି ସେଟିଂସମୂହ ସଷମ କରିସାରିଛନ୍ତି।</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ବିକାଶକରଣ ଟୁଲସ୍</string>
   <!-- Setting checkbox title for root access -->
@@ -37,20 +29,12 @@
   <string name="root_access_adb">କେବଳ ADB</string>
   <string name="root_access_all">ଆପ୍ଲିକେସନ୍‍ଗୁଡିକ ଓ ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ସଂସ୍କରଣ</string>
-  <string name="mod_version_default">ଅଜ୍ଞାତ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ଡିଭାଇସ୍‍ ମଡେଲ୍‍</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ଡିଭାଇସ୍ ନାମ</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ API ସ୍ତର</string>
-  <string name="mod_api_level_default">ଅଜ୍ଞାତ</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ତାରିଖ ତିଆରି କରନ୍ତୁ</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଅଦ୍ୟତନ</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ଅବସ୍ଥାନ</string>
   <string name="app_ops_categories_personal">ବ୍ୟକ୍ତିଗତ</string>
@@ -62,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ଅସମତଳ ଅବସ୍ଥାନ</string>
   <string name="app_ops_summaries_fine_location">ସ୍ଵଚ୍ଛ ଅବସ୍ଥାନ</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">ଭାଇବ୍ରେଟ୍‍</string>
   <string name="app_ops_summaries_read_contacts">ସମ୍ପର୍କଗୁଡିକ ପଢନ୍ତୁ</string>
   <string name="app_ops_summaries_modify_contacts">ସମ୍ପର୍କଗୁଡିକ ସମ୍ପାଦନା କରନ୍ତୁ</string>
@@ -131,7 +114,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">ଅସମତଳ ଅବସ୍ଥାନ</string>
   <string name="app_ops_labels_fine_location">ସ୍ଵଚ୍ଛ ଅବସ୍ଥାନ</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">କମ୍ପନ</string>
   <string name="app_ops_labels_read_contacts">ସମ୍ପର୍କଗୁଡିକ ପଢନ୍ତୁ</string>
   <string name="app_ops_labels_modify_contacts">ରୂପାନ୍ତରଣ ସମ୍ପର୍କଗୁଡିକ</string>
@@ -301,10 +283,7 @@
   <string name="sim_mobile_network_settings_category_title">ମୋବାଇଲ୍‍ ନେଟ୍‍ୱାର୍କ୍‍ ସେଟିଂସମୂହ</string>
   <string name="sim_mobile_network_settings_title">SIM %d ସେଟିଂସମୂହ</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">ସିଆନୋଜେନ୍‍ମୋଡ୍‍ ଲିଗାଲ୍‍</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -336,9 +315,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">ରିଙ୍ଗ୍‍ଟୋନ୍‍ ଓ ନୋଟିଫିକେସନ୍‍ଽ ଭୋଲ୍ୟୁମ୍‍ଗୁଡିକୁ ଲିଙ୍କ୍‍ କରନ୍ତୁ</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">ସୁଚନା ଏହି ବୈଶିଷ୍ଟ୍ୟ ଯେତେବେଳେ ସଷମ କରାଯାଏ, ଆପଣ ସଂ‍ସ୍ଥାପନ କରିଥିବା ରିକଭରି ଚାଳିତ Osର ସମ୍ପ୍ରତି ସଂସ୍କରଣ ସହିତ ଅନ୍ତଭୁକ୍ତ ଥିବା ଅନ୍ୟ ଏକ ଦ୍ୱାରା ପ୍ରତି୍‍ସ୍ଥାପିତ ହେବ।\n\nଆପଣଙ୍କ ସିଷ୍ଟମ୍‍ ପାଇଁ କରାଯାଇଥିବା ଅପ୍‍ଗ୍ର।\n\nେଡ୍‍ ସହିତ ଆପଣଙ୍କ ରିକଭରି ଅଦ୍ୟତନ ହୋଇଯିବ, ଆଗାମି ସଂସ୍କରଣ ସହିତ କମ୍ପାଟିବିଲିଟି ପାଇଁ ସାହାଯ୍ୟ କରିବ।\n\nଆପଣ ଏହି ବୈଶିଷ୍ଟ୍ୟ ସଷମ କରିବାକୁ ଚାହାନ୍ତି କି?</string>
-  <string name="update_recovery_off_warning">ସତର୍କତା: ଯେତେବେଳେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରାଯାଏ, ଆପଣଙ୍କର ସଂ‍ସ୍ଥାପିତ ହୋଇଥିବା ରିକଭରି OS ଅପ୍‍ଗ୍ରେଡ୍‍ ସହିତ ଅଦ୍ୟତନ ହେବ ନାହିଁ।\n\n ଆଗାମି OS ଅଦ୍ୟତ୍ନ ଆଉଟ୍‍ଡେଟେଡ୍‍ ବା କଶଃଟମ୍‍ ରିକଭରି ସଂସ୍କରଣ ସହିତ ସଂ‍ସ୍ଥାପନ ହୋଇନପାରେ।\n\nଆପଣ ପ୍ରକୃତରେ ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଷମ କରିବାକୁ ଚାହାଁନ୍ତି କି?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">ଶୋ‍ଇବା ପାଇଁ ଦୁଇଥର ଟ୍ୟାପ୍‍ କରନ୍ତୁ</string>
   <string name="status_bar_double_tap_to_sleep_summary">ଡିସ୍‍ପ୍ଲେ ଅଫ୍‍ କରିବା ପାଇଁ ଷ୍ଟାଟସ୍‍ ବାର୍‍ରେ ଦୁଇଥର ଟ୍ୟାପ୍‍ କରନ୍ତୁ</string>

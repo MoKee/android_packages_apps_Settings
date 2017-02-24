@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,14 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other">Hiện tại bạn còn <xliff:g id="step_count">%1$d</xliff:g> bước nữa để bật cài đặt nhà phát triển.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Bạn đã bật cài đặt nhà phát triển!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Không cần thiết, bạn đã bật cài đặt nhà phát triển.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Công cụ phát triển</string>
   <!-- Setting checkbox title for root access -->
@@ -38,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Quản lý truy cập root</string>
   <string name="root_appops_summary">Xem và kiểm soát các truy cập root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Phiên bản LineageOS</string>
-  <string name="mod_version_default">Không rõ</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Mẫu thiết bị</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Tên thiết bị</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Cấp độ API LineageOS</string>
-  <string name="mod_api_level_default">Không rõ</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Ngày dựng</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Các cập nhật LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Vị trí</string>
   <string name="app_ops_categories_personal">Cá nhân</string>
@@ -64,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">vị trí gần đúng</string>
   <string name="app_ops_summaries_fine_location">vị trí chính xác</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">rung</string>
   <string name="app_ops_summaries_read_contacts">đọc số liên hệ</string>
   <string name="app_ops_summaries_modify_contacts">sửa đổi số liên hệ</string>
@@ -135,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Vị trí tương đối</string>
   <string name="app_ops_labels_fine_location">Vị trí chính xác</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Rung</string>
   <string name="app_ops_labels_read_contacts">Đọc số liên lạc</string>
   <string name="app_ops_labels_modify_contacts">Sửa đổi số liên lạc</string>
@@ -330,11 +313,8 @@
   <string name="sim_mobile_network_settings_category_title">Cài đặt mạng di động</string>
   <string name="sim_mobile_network_settings_title">Cài đặt %d SIM</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Các điều khiển thông báo nguồn</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Bộ phận pháp chế của LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Xác định vị trí cảm biến vân tay trên <xliff:g id="sensor_location">%1$s</xliff:g> điện thoại của bạn.</string>
   <!-- Fingerprint sensor locations -->
@@ -386,11 +366,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Mở trình phát nhạc</string>
   <string name="headset_connect_player_summary">Mở trình phát nhạc mặc định khi tai nghe được kết nối</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Cập nhật recovery</string>
-  <string name="update_recovery_summary">Cập nhật được recovery tích hợp sẵn với các cập nhật hệ thống</string>
-  <string name="update_recovery_on_warning">THÔNG BÁO: Khi tính năng này được bật, bản recovery đã được cài đặt của bạn sẽ được thay thế bằng bản đi kèm với phiên bản hệ điều hành hiện tại.\n\nBản recovery của bạn sẽ được cập nhật cùng với các bản nâng cấp cho hệ thống của bạn, giúp đảm bảo tính tương thích với những phiên bản sau này.\n\nBạn có muốn bật tính năng này?</string>
-  <string name="update_recovery_off_warning">Cảnh báo: Khi tắt tính năng này, recovery đã cài đặt của bạn sẽ không được cập nhật cùng với các bản nâng cấp của hệ điều hành.\n\nCác bản cập nhật hệ điều hành trong tương lai có thể không cài đặt với phiên bản recovery lỗi thời hoặc tuỳ chỉnh.\n\nBạn thực sự muốn tắt tính năng này?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Chạm hai lần để tắt màn hình</string>
   <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình hiển thị</string>

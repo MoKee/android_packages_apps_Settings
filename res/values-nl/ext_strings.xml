@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stap verwijderd van de opties voor ontwikkelaars.</item>
-    <item quantity="other">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Niet nodig, u hebt de opties voor ontwikkelaars al ingeschakeld.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Opties voor ontwikkelaars</string>
   <!-- Setting checkbox title for root access -->
@@ -39,25 +31,16 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Root-toegang beheren</string>
   <string name="root_appops_summary">Root-instellingen bekijken en beheren</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS-versie</string>
-  <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Apparaatnaam</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Niveau van LineageOS-API</string>
-  <string name="mod_api_level_default">Onbekend</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build-datum</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS-updates</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Locatie</string>
   <string name="app_ops_categories_personal">Persoonlijk</string>
   <string name="app_ops_categories_messaging">Berichten</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Apparaat</string>
   <string name="app_ops_categories_background">Achtergrond</string>
   <string name="app_ops_categories_bootup">Opstarten</string>
@@ -65,10 +48,11 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">geschatte locatie</string>
   <string name="app_ops_summaries_fine_location">nauwkeurige locatie</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">trillen</string>
   <string name="app_ops_summaries_read_contacts">contacten lezen</string>
   <string name="app_ops_summaries_modify_contacts">contacten aanpassen</string>
+  <string name="app_ops_summaries_read_call_log">gespreksstatistieken lezen</string>
+  <string name="app_ops_summaries_modify_call_log">gespreksstatistieken aanpassen</string>
   <string name="app_ops_summaries_read_calendar">agenda lezen</string>
   <string name="app_ops_summaries_modify_calendar">agenda aanpassen</string>
   <string name="app_ops_summaries_wifi_scan">wifi-scan</string>
@@ -87,7 +71,6 @@
   <string name="app_ops_summaries_modify_settings">instellingen aanpassen</string>
   <string name="app_ops_summaries_draw_on_top">bovenop tekenen</string>
   <string name="app_ops_summaries_access_notifications">toegang tot meldingen</string>
-  <string name="app_ops_summaries_camera">camera</string>
   <string name="app_ops_summaries_record_audio">audio opnemen</string>
   <string name="app_ops_summaries_play_audio">audio afspelen</string>
   <string name="app_ops_summaries_read_clipboard">klembord lezen</string>
@@ -134,10 +117,11 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Geschatte locatie</string>
   <string name="app_ops_labels_fine_location">Nauwkeurige locatie</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Trillen</string>
   <string name="app_ops_labels_read_contacts">Contacten lezen</string>
   <string name="app_ops_labels_modify_contacts">Contacten aanpassen</string>
+  <string name="app_ops_labels_read_call_log">Gespreksstatistieken lezen</string>
+  <string name="app_ops_labels_modify_call_log">Gespreksstatistieken aanpassen</string>
   <string name="app_ops_labels_read_calendar">Agenda lezen</string>
   <string name="app_ops_labels_modify_calendar">Agenda aanpassen</string>
   <string name="app_ops_labels_wifi_scan">Wifi-scan</string>
@@ -156,7 +140,6 @@
   <string name="app_ops_labels_modify_settings">Instellingen aanpassen</string>
   <string name="app_ops_labels_draw_on_top">Bovenop tekenen</string>
   <string name="app_ops_labels_access_notifications">Toegang tot meldingen</string>
-  <string name="app_ops_labels_camera">Camera</string>
   <string name="app_ops_labels_record_audio">Audio opnemen</string>
   <string name="app_ops_labels_play_audio">Audio afspelen</string>
   <string name="app_ops_labels_read_clipboard">Klembord lezen</string>
@@ -215,7 +198,7 @@
   <string name="app_ops_reset_counters">Tellers opnieuw instellen</string>
   <string name="app_ops_reset_confirm_title">Tellers opnieuw instellen?</string>
   <string name="app_ops_reset_confirm_mesg">Weet u zeker dat u de tellers opnieuw wilt instellen?</string>
-  <string name="ok">OK</string>
+  <string name="ok">Oké</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Aanpassingsgeluid volume</string>
   <!-- Vibrator intensity -->
@@ -327,11 +310,8 @@
   <string name="sim_mobile_network_settings_category_title">Instellingen mobiel netwerk</string>
   <string name="sim_mobile_network_settings_title">Instellingen SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Geavanceerde meldingsinstellingen</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Juridische informatie van LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vind de vingerafdruksensor op de <xliff:g id="sensor_location">%1$s</xliff:g> van uw telefoon.</string>
   <!-- Fingerprint sensor locations -->
@@ -349,7 +329,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
   <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
   <!-- Heads-up -->
-  <string name="heads_up_notifications_enabled_title">Heads-up</string>
   <string name="heads_up_notifications_enabled_summary">Prioriteitsmeldingen weergeven in klein zwevend venster</string>
   <!-- Encryption password -->
   <string name="crypt_keeper_change_password_title">Wachtwoord voor versleutelen wijzigen</string>
@@ -383,11 +362,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Muziek-app openen</string>
   <string name="headset_connect_player_summary">Standaardmuziek-app openen bij aansluiten headset</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Recovery bijwerken</string>
-  <string name="update_recovery_summary">Ingebouwde recovery bijwerken met systeemupdates</string>
-  <string name="update_recovery_on_warning">Let op: als deze functie ingeschakeld is, wordt uw recovery vervangen door de recovery die met uw huidige besturingssysteem geleverd wordt.\n\nUw recovery wordt met systeemupdates ook bijgewerkt om compatibiliteit met toekomstige versies te garanderen.\n\nWilt u deze functie inschakelen?</string>
-  <string name="update_recovery_off_warning">Let op: als deze functie is uitgeschakeld, wordt uw recovery niet bijgewerkt bij systeemupdates.\n\nToekomstige systeemupdates kunnen wellicht niet geïnstalleerd worden op oude recovery-versies.\n\nWeet u zeker dat u deze functie wilt uitschakelen?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dubbeltikken voor slaapstand</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk voor slaapstand</string>

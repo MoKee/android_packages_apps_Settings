@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,20 +18,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <!-- Setting checkbox title for root access -->
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Nekonata</string>
   <!-- About phone screen, build date -->
-  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Loko</string>
   <string name="app_ops_categories_device">Aparato</string>
@@ -75,7 +68,6 @@
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -97,6 +89,5 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
   <!-- Status bar - double tap to sleep -->
 </resources>

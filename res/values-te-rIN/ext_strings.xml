@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">డెవలప్మెంట్ సెట్టింగులను ప్రారంభించడానికి ఇప్పుడు మీరు <xliff:g id="step_count">%1$d</xliff:g> అడుగు దూరంలో ఉన్నారు.</item>
-    <item quantity="other">డెవలప్మెంట్ సెట్టింగులను ప్రారంభించడానికి ఇప్పుడు మీరు <xliff:g id="step_count">%1$d</xliff:g> అడుగుల దూరంలో ఉన్నారు.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">మీరు ఇప్పుడు డెవలప్మెంట్ సెట్టింగులను ప్రారంభించారు!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">అవసరం లేదు, మీరు ఇప్పటికే డెవలప్మెంట్ సెట్టింగులను ప్రారంభించేశారు.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">అభివృద్ధి సాధనాలు</string>
   <!-- Setting checkbox title for root access -->
@@ -37,20 +29,12 @@
   <string name="root_access_adb">ADB మాత్రమే</string>
   <string name="root_access_all">అనువర్తనాలు మరియు ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">సయనోజెన్ మోడ్ సంస్కరణ</string>
-  <string name="mod_version_default">తెలియదు</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">పరికరం మోడల్</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">పరికరం పేరు</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">సయనోజెన్ మోడ్ API స్థాయి</string>
-  <string name="mod_api_level_default">తెలియదు</string>
   <!-- About phone screen, build date -->
   <string name="build_date">నిర్మించబడిన తేదీ</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">సయనోజెన్ మోడ్ అప్డేట్లు</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">స్థానం</string>
   <string name="app_ops_categories_personal">వ్యక్తిగతం</string>
@@ -62,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">సరైనది కాని స్థానం</string>
   <string name="app_ops_summaries_fine_location">ఖచ్చితమైన స్థానం</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">వైబ్రేట్</string>
   <string name="app_ops_summaries_read_contacts">కాంటాక్టులను చదువుము</string>
   <string name="app_ops_summaries_modify_contacts">కాంటాక్టులను సవరించుము</string>
@@ -103,6 +86,7 @@
   <string name="app_ops_summaries_keep_awake">సక్రియంగా ఉంచండి</string>
   <string name="app_ops_summaries_monitor_location">మానిటర్ స్థానం</string>
   <string name="app_ops_summaries_monitor_high_power_location">మానిటర్ యొక్క అధిక శక్తివంతమైన స్థానం</string>
+  <string name="app_ops_summaries_get_usage_stats">వినియోగ గణాంకాలను పొందుము</string>
   <string name="app_ops_summaries_mute_unmute_microphone">మైక్రోఫోన్ మ్యూట్/అన్‌మ్యూట్ చేయుము</string>
   <string name="app_ops_summaries_toast_window">టోస్ట్ నోటిఫికేషనును డిస్ప్లే చేయుము</string>
   <string name="app_ops_summaries_project_media">మీడియాను ప్రదర్శించుము</string>
@@ -131,7 +115,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">ముతక స్థానం</string>
   <string name="app_ops_labels_fine_location">ఉత్తమ స్థానం</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">వైబ్రేట్</string>
   <string name="app_ops_labels_read_contacts">పరిచయాలను చదువుము</string>
   <string name="app_ops_labels_modify_contacts">పరిచయాలను సవరించుము</string>
@@ -301,10 +284,7 @@
   <string name="sim_mobile_network_settings_category_title">మొబైల్ నెట్వర్క్ సెట్టింగులు</string>
   <string name="sim_mobile_network_settings_title">SIM %d సెట్టింగులు</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">సయనోజెన్ మోడ్ లీగల్</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -321,7 +301,6 @@
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">ఇతర</string>
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot timeout</string>
   <string name="hotstpot_inactivity_timeout_never">ఎప్పటికీ వద్దు</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 నిమిషం</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 నిమిషాలు</string>
@@ -336,9 +315,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">రింగ్ టోన్ మరియు నోటిఫికేషన్ వాల్యూములను అనుసంధానించుము</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">గమనిక: ఈ విశేషాంశాన్ని అమలు చేసినప్పుడు, అప్పుడు నడుస్తున్న OS యొక్క ప్రస్తుత సంస్కరణతో పాటుగా చేర్చబడిన దానితో మీ యొక్క ఇన్స్టాల్డ్ మెమరీ భర్తీ చేయబడుతుంది. \n\nభవిష్యత్ సంస్కరణలతో సరితూగేలా ఉండేందుకై మీ పునరుద్ధరణ మీ యొక్క సిస్టమ్ ఆధునీకరణలతో అప్ గ్రేడ్  చేయబడుతుంది.  \n\nమీరు ఈ విశేషాంశం అమలు చేయాలనుకుంటున్నారా?</string>
-  <string name="update_recovery_off_warning">హెచ్చ్జరిక: ఈ లక్షణం నిలిపివేయబడినప్పుడు, మీ యొక్క వ్యవస్థాపించబడిన పునరుద్ధరణ OS ఉన్నతీకరణలతో నవీకరించబడదు.\n\nభవిష్యత్ OS నవీకరణలు కాలంచెల్లిన లేదా అనుకూల పునరుద్దరణ సంస్కరణలతో వ్యవస్థాపించకబడపోవచ్చు.\n\nమీరి నిజంగా ఈ లక్షణాన్ని నిలిపివేయాలని అనుకుంటున్నారా?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">నిర్వీర్యం చేయడానికి రెండుసార్లు ట్యాప్ చేయండి</string>
   <string name="status_bar_double_tap_to_sleep_summary">డిస్ప్లేను ఆపివేయడానికి స్టేటస్ బార్ పైన రెండుసార్లు ట్యాప్ చేయండి</string>

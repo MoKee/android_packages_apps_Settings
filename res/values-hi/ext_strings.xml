@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">विकास सेटिंग को सक्षम करने के लिए अब सिर्फ़ <xliff:g id="step_count">%1$d</xliff:g> चरण बाकी है।</item>
-    <item quantity="other">विकास सेटिंग को सक्षम करने के लिए अब सिर्फ़ <xliff:g id="step_count">%1$d</xliff:g> चरण बाकी हैं।</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">आपने विकास सेटिंग को सक्षम किया है!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">इसकी ज़रूरत नहीं है, आपने पहले ही विकास सेटिंग को सक्षम कर दिया है।</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">विकास उपकरण</string>
   <!-- Setting checkbox title for root access -->
@@ -37,19 +29,12 @@
   <string name="root_access_adb">केवल एडीबी</string>
   <string name="root_access_all">ऐप और एडीबी</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">सियानोजेनमोड संस्करण</string>
-  <string name="mod_version_default">अज्ञात</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">डिवाइस मॉडेल</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">डिवाइस का नाम</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">अज्ञात</string>
   <!-- About phone screen, build date -->
   <string name="build_date">बिल्ड तिथि</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">सियानोजेनमोड अद्यतन</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">स्थान</string>
   <string name="app_ops_categories_personal">व्यक्तिगत</string>
@@ -232,6 +217,10 @@
   <string name="increasing_ring_ramp_up_time_title">समय को बढ़ाएँ</string>
   <!-- Allow vibration in zen mode -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 सेकंड</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 मिनट</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 मिनट</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 मिनट</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">सिम %d स्थिति</string>
   <string name="sim_card_lock_settings_title">सिम %d लॉक सेटिंग</string>
@@ -240,8 +229,6 @@
   <string name="sim_mobile_network_settings_title">सिम %d सेटिंग</string>
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">सियानोजेनमोड क़ानूनी</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -257,6 +244,9 @@
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_1_minute">1 मिनट</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 मिनट</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 मिनट</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -265,9 +255,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">रिंगटोन और अधिसूचना वोल्यूमों को जोड़ें</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">सूचना: जब इस सुविधा को सक्षम किया जाता है, आपकी स्थापित रिकवरी को चल रहे प्रचालन तंत्र में शामिल वर्तमान संस्करण से प्रतिस्थापित किया जाएगा।\n\nआपकीरिकवरी को आपके सिस्टम के अद्यतनों के साथ अद्यतित किया जाएगा, ताकि भावी संस्करणों की संगतता बनी रहे।\n\nक्या आप इस सुविधा को सक्षम करना चाहते हैं?</string>
-  <string name="update_recovery_off_warning">चेतावनी: यदि इस सुविधा को अक्षम किया जाए, तो आपकी स्थापित रिकवरी को प्रचालन तंत्र के अद्यतनों के साथ अद्यतित नहीं किया जाएगा।\n\nप्रचालन तंत्र के भावी अद्यतन पुरानी पड़ चुकी या मनपसंद रिकवरी संस्करणों के रहते स्थापित नहीं होंगे।\n\nक्या आप सचमुच इस सुविधा को अक्षम करना चाहते हैं?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">निद्रा के लिए दो बार टैप करें</string>
   <string name="status_bar_double_tap_to_sleep_summary">डिस्प्ले को बंद करने के लिए स्थिति पट्टी पर दो बार टैप करें</string>

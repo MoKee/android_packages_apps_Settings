@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Du er nå <xliff:g id="step_count"> %1$d</xliff:g> skritt fra aktivering av utviklerinnstillinger.</item>
-    <item quantity="other">Du er nå <xliff:g id="step_count"> %1$d</xliff:g> skritt fra aktivering av utviklerinnstillinger.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Du har aktivert innstillinger for utviklere!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ikke nødvendig, du allerede har aktivert utviklingsinnstillinger.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Utviklingsverktøy</string>
   <!-- Setting checkbox title for root access -->
@@ -39,25 +31,16 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Administrer root tilganger</string>
   <string name="root_appops_summary">Se over og endre root reglene</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versjon</string>
-  <string name="mod_version_default">Ukjent</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhetsnavn</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API nivå</string>
-  <string name="mod_api_level_default">Ukjent</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build-dato</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS oppdateringer</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Posisjon</string>
   <string name="app_ops_categories_personal">Personlig</string>
   <string name="app_ops_categories_messaging">Meldinger</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Enhet</string>
   <string name="app_ops_categories_background">Bakgrunn</string>
   <string name="app_ops_categories_bootup">Oppstart</string>
@@ -65,7 +48,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">grov plassering</string>
   <string name="app_ops_summaries_fine_location">fin plassering</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrer</string>
   <string name="app_ops_summaries_read_contacts">les kontakter</string>
   <string name="app_ops_summaries_modify_contacts">endre kontakter</string>
@@ -83,7 +65,6 @@
   <string name="app_ops_summaries_receive_emergency_sms">Motta nød SMS</string>
   <string name="app_ops_summaries_receive_mms">motta MMS</string>
   <string name="app_ops_summaries_receive_wap_push">motta WAP push</string>
-  <string name="app_ops_summaries_send_sms">send SMS</string>
   <string name="app_ops_summaries_read_icc_sms">les ICC SMS</string>
   <string name="app_ops_summaries_write_icc_sms">skriv ICC SMS</string>
   <string name="app_ops_summaries_modify_settings">endre innstillinger</string>
@@ -136,7 +117,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Grov plassering</string>
   <string name="app_ops_labels_fine_location">Fin plassering</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrer</string>
   <string name="app_ops_labels_read_contacts">les kontakter</string>
   <string name="app_ops_labels_modify_contacts">Endre kontakter</string>
@@ -331,11 +311,8 @@
   <string name="sim_mobile_network_settings_category_title">Innstillinger for mobilnettverk</string>
   <string name="sim_mobile_network_settings_title">SIM %d-innstillinger</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Nivåorganiserte varsler</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS juridisk</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Finn fingerskanneren på <xliff:g id="sensor_location">%1$s</xliff:g> av telefonen din.</string>
   <!-- Fingerprint sensor locations -->
@@ -387,11 +364,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Start musikkspilleren</string>
   <string name="headset_connect_player_summary">Starte standard-appen for musikk avspilling når hodetelefoner er koblet til</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Oppdater gjenoppretting</string>
-  <string name="update_recovery_summary">Oppdater den innebygde gjenopprettingen med systemoppdateringer</string>
-  <string name="update_recovery_on_warning">Merknad: Når denne funksjonen er oppdatert, vil din installerte recovery bli overskrivd av en som er inkludert i siste versjon av det kjørende OS.\n\nDin recvovery vil bli oppdatert sammen med systemoppdateringer, for å hjelpe deg med å beholde kompabiliteten med fremtidige versjoner.\n\nVil du aktivere denne funksjonen?</string>
-  <string name="update_recovery_off_warning">Advarsel: Når denne funksjonen er deaktivert, vil ikke din nåværende recovery bli oppdatert med systemoppdateringer.\n\nFremtidige systemoppdateringer vil kanskje ikke installeres på en gammel eller egendefinert recovery.\n\nVil du deaktivere denne funksjonen?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dobbeltapp for å sove</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dobbelttapp på statuslinjen for å slå av skjermen</string>

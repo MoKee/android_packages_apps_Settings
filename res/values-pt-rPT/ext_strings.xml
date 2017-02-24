@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Está agora a <xliff:g id="step_count">%1$d</xliff:g> passo de ativar as opções de programador.</item>
-    <item quantity="other">Está agora a <xliff:g id="step_count">%1$d</xliff:g> passos de ativar as opções de programador.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Ativou as opções de programador!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Não é necessário, já ativou as opções de programador.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ferramentas de desenvolvimento</string>
   <!-- Setting checkbox title for root access -->
@@ -39,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Gerir os acessos root</string>
   <string name="root_appops_summary">Ver e controlar as regras de root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versão LineageOS</string>
-  <string name="mod_version_default">Desconhecida</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo do dispositivo</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome do dispositivo</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nível de API LineageOS</string>
-  <string name="mod_api_level_default">Desconhecida</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data de compilação</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Atualizações</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Localização</string>
   <string name="app_ops_categories_personal">Pessoal</string>
@@ -65,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Localização imprecisa</string>
   <string name="app_ops_summaries_fine_location">Localização precisa</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrar</string>
   <string name="app_ops_summaries_read_contacts">ler contactos</string>
   <string name="app_ops_summaries_modify_contacts">modificar contactos</string>
@@ -136,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Localização imprecisa</string>
   <string name="app_ops_labels_fine_location">Localização precisa</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrar</string>
   <string name="app_ops_labels_read_contacts">Ler contactos</string>
   <string name="app_ops_labels_modify_contacts">Modificar contactos</string>
@@ -219,7 +201,6 @@
   <string name="app_ops_reset_counters">Restaurar os contadores de permitir/negar</string>
   <string name="app_ops_reset_confirm_title">Confirmar restauração dos contadores</string>
   <string name="app_ops_reset_confirm_mesg">Tem a certeza que quer reiniciar os contadores?</string>
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Sons de ajuste do volume</string>
   <!-- Vibrator intensity -->
@@ -331,11 +312,8 @@
   <string name="sim_mobile_network_settings_category_title">Definições de rede móvel</string>
   <string name="sim_mobile_network_settings_title">Definições do cartão SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controlos avançados de notificações</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Licença LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localize o sensor de impressões digitais na <xliff:g id="sensor_location">%1$s</xliff:g> do seu telefone.</string>
   <!-- Fingerprint sensor locations -->
@@ -387,11 +365,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Iniciar a aplicação de música</string>
   <string name="headset_connect_player_summary">Iniciar a aplicação de música predefinida quando ligar os auscultadores</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Atualizar a recuperação</string>
-  <string name="update_recovery_summary">Atualizar a recuperação juntamente com as atualizações do sistema</string>
-  <string name="update_recovery_on_warning">Aviso: Quando este recurso estiver ativado, a sua recuperação instalada será substituída por uma incluída na versão atual do SO.\n\nA sua recuperação será atualizada juntamente com as atualizações do seu sistema, ajudando a garantir a compatibilidade com futuras versões.\n\nQuer ativar este recurso?</string>
-  <string name="update_recovery_off_warning">Aviso: Quando este recurso está desativado, a sua recuperação instalada não será atualizada com o SO.\n\nFuturas atualizações do SO poderão não se instalar com uma versão da recuperação desatualizada ou personalizada.\n\nQuer desativar este recurso?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar o ecrã</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado para desligar o dispositivo</string>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Du bass <xliff:g id="step_count">%1$d</xliff:g> Schrëtt dovun ewech, d\'Entwéckleroptiounen z\'aktivéieren.</item>
-    <item quantity="other">Du bass <xliff:g id="step_count">%1$d</xliff:g> Schrëtter dovun ewech, d\'Entwéckleroptiounen z\'aktivéieren.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Du hues d\'Entwéckleroptiounen aktivéiert!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Net néideg, du hues d\'Entwécklungsoptioune schonn aktivéiert.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Entwécklungsgeschir</string>
   <!-- Setting checkbox title for root access -->
@@ -37,19 +29,12 @@
   <string name="root_access_adb">Just ADB</string>
   <string name="root_access_all">Appen an ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS-Versioun</string>
-  <string name="mod_version_default">Onbekannt</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Apparatmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Apparatnumm</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Onbekannt</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build-Datum</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS-Aktualiséierungen</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Standuert</string>
   <string name="app_ops_categories_personal">Perséinlech</string>
@@ -61,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Ongeféiere Standuert</string>
   <string name="app_ops_summaries_fine_location">Geneeë Standuert</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">Vibréieren</string>
   <string name="app_ops_summaries_read_contacts">Kontakter liesen</string>
   <string name="app_ops_summaries_modify_contacts">Kontakter änneren</string>
@@ -101,6 +85,7 @@
   <string name="app_ops_summaries_keep_awake">Aktiv loossen</string>
   <string name="app_ops_summaries_monitor_location">Standuert iwwerwaachen</string>
   <string name="app_ops_summaries_monitor_high_power_location">Standuerter mat héijem Stroumverbrauch iwwerwaachen</string>
+  <string name="app_ops_summaries_get_usage_stats">Benotzungsstatistiken ausliesen</string>
   <string name="app_ops_summaries_mute_unmute_microphone">Mikro un-/ausschalten</string>
   <string name="app_ops_summaries_toast_window">Kuerzzäit-Notifikatiounen uweisen</string>
   <string name="app_ops_summaries_project_media">Projektioun vu Medieninhalter</string>
@@ -120,7 +105,6 @@
   <string name="app_ops_summaries_toggle_nfc">NFC un-/ausschalten</string>
   <string name="app_ops_summaries_superuser">Root-Zougrëff</string>
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibréieren</string>
   <string name="app_ops_labels_read_contacts">Kontakter liesen</string>
   <string name="app_ops_labels_modify_contacts">Kontakter änneren</string>
@@ -196,7 +180,6 @@
   <string name="app_ops_reset_counters">Erlaabt/Verweigert-Zieleren zrécksetzen</string>
   <string name="app_ops_reset_confirm_title">Bestäteg d\'Zrécksetze vun den Zieleren</string>
   <string name="app_ops_reset_confirm_mesg">Wëlls du d\'Compteure sécher zrécksetzen?</string>
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Lautstäerktännerungstoun</string>
   <!-- Vibrator intensity -->
@@ -282,10 +265,7 @@
   <string name="sim_mobile_network_settings_category_title">Datennetzwierk-Astellungen</string>
   <string name="sim_mobile_network_settings_title">SIM %d-Einstellungen</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Rechtlech Hiweiser iwwer LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -300,6 +280,7 @@
   <!-- Heads-up -->
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Aner</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Ni</string>
   <!-- Per-app data restrictions -->
@@ -310,9 +291,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Lautstäerkt vu Schelltoun an Notifikatioune koppelen</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">HIWÄIS: Wann dës Funktioun aktivéiert ass, gëtt däin installéierte Recuperatiounssystem duerch dat an der aktueller Versioun vum Betribssystem ersat.\n\nDäi Recuperatiounssystem gëtt zesumme mat de Systemaktualiséierungen aktualiséiert, sou kann d\'Kompatibilitéit mat zukünftege Versiounen garantéiert ginn.\n\nWëlls du dës Funktioun aktivéieren?</string>
-  <string name="update_recovery_off_warning">WARNUNG: Wann dës Funktioun desaktivéiert ass, gëtt däin installéierte Recovery-Programm net mat dengem System aktualiséiert.\n\nZukünfteg System-Aktualiséierunge loosse sech mat veraalten oder eegene Recovery-Programmer eventuell net installéierne.\n\nWëlls du dës Funktioun sécher desaktivéieren?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Zweemol drécke fir auszemaachen</string>
   <string name="status_bar_double_tap_to_sleep_summary">Zweemol drécken op der Statusläischt mécht de Schierm aus</string>

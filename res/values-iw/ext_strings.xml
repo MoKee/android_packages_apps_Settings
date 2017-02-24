@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,17 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">רק עוד צעד <xliff:g id="step_count">%1$d</xliff:g> מהפעלת אפשרויות מפתח.</item>
-    <item quantity="two">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
-    <item quantity="many">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
-    <item quantity="other">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">אפשרויות מפתח פעילות!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">אין צורך. כבר הפעלת את אפשרויות המפתח.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">כלי פיתוח</string>
   <!-- Setting checkbox title for root access -->
@@ -41,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">ניהול גישות שורש</string>
   <string name="root_appops_summary">הצג ושלוט בחוקי גישת השורש</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">גרסת LineageOS</string>
-  <string name="mod_version_default">לא ידוע</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">דגם המכשיר</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">שם המכשיר</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">רמת ה-API של LineageOS</string>
-  <string name="mod_api_level_default">לא ידוע</string>
   <!-- About phone screen, build date -->
   <string name="build_date">תאריך בנייה</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">עדכוני LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">מיקום</string>
   <string name="app_ops_categories_personal">אישי</string>
@@ -67,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">מיקום משוער</string>
   <string name="app_ops_summaries_fine_location">מיקום מדויק</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">רטט</string>
   <string name="app_ops_summaries_read_contacts">קרא אנשי קשר</string>
   <string name="app_ops_summaries_modify_contacts">שנה אנשי קשר</string>
@@ -138,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">מיקום משוער</string>
   <string name="app_ops_labels_fine_location">מיקום מדויק</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">רטט</string>
   <string name="app_ops_labels_read_contacts">קרא אנשי קשר</string>
   <string name="app_ops_labels_modify_contacts">שנה אנשי קשר</string>
@@ -333,11 +313,8 @@
   <string name="sim_mobile_network_settings_category_title">הגדרות רשת סלולרית</string>
   <string name="sim_mobile_network_settings_title">הגדרות SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">מנהל התראות מתקדם</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS משפטי</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">אתר את חיישן טביעות האצבע הנמצא ב<xliff:g id="sensor_location">%1$s</xliff:g> המכשיר שלך.</string>
   <!-- Fingerprint sensor locations -->
@@ -389,11 +366,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">הפעל נגן מוזיקה</string>
   <string name="headset_connect_player_summary">הפעל את נגן המוזיקה המוגדר כברירת המחדל בעת חיבור אוזניות</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">עדכון ה־Recovery</string>
-  <string name="update_recovery_summary">עדכן את ה־Recovery יחד עם עדכוני המערכת</string>
-  <string name="update_recovery_on_warning">שים לב: כשתכונה זו מופעלת, השחזור הנוכחי שלך יוחלף בשחזור הכלול בגרסה הנוכחית של מערכת ההפעלה שלך.\n\nהשחזור הנוכחי שלך יתעדכן יחד עם עדכונים למערכת שלך, כדי להבטיח תאימות עם גרסאות עתידיות.\n\nהאם להפעיל את תכונה זו?</string>
-  <string name="update_recovery_off_warning">אזהרה: כשתכונה זו מושבתת, השחזור הנוכחי לא יתעדכן עם עדכוני מערכת.\n\nעדכוני מערכת עתידיים לא יותקנו עם גרסה לא עדכנית של השחזור.\n\nהאם להשבית תכונה זו?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">הקשה כפולה לכיבוי מסך</string>
   <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים בשורת המצב כדי לכבות את המסך</string>

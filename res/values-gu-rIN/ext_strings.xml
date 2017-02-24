@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">હવે તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરવાથી <xliff:g id="step_count">%1$d</xliff:g> પગલા દૂર છો.</item>
-    <item quantity="other">હવે તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરવાથી <xliff:g id="step_count">%1$d</xliff:g> પગલાં દૂર છો.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કર્યું!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">જરૂર નથી, તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરી ચુક્યા છો.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">વિકાસ સાધનો</string>
   <!-- Setting checkbox title for root access -->
@@ -37,20 +29,12 @@
   <string name="root_access_adb">ફક્ત ADB</string>
   <string name="root_access_all">એપ્લિકેશન્સ અને ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS સંસ્કરણ</string>
-  <string name="mod_version_default">અજાણ્યો</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ડિવાઇસ મૉડેલ</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ઉપકરણનું નામ</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API સ્તર</string>
-  <string name="mod_api_level_default">અજાણ્યો</string>
   <!-- About phone screen, build date -->
   <string name="build_date">બિલ્ડ તારીખ</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS અપડેટો</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">સ્થાન</string>
   <string name="app_ops_categories_personal">વ્યક્તિગત</string>
@@ -62,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">અવ્યવસ્થિત સ્થાન</string>
   <string name="app_ops_summaries_fine_location">સુંદર સ્થળ</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">વાઇબ્રેટ</string>
   <string name="app_ops_summaries_read_contacts">સંપર્કો વાંચો</string>
   <string name="app_ops_summaries_modify_contacts">સંપર્કો બદલો</string>
@@ -103,6 +86,7 @@
   <string name="app_ops_summaries_keep_awake">જાગતા રહો</string>
   <string name="app_ops_summaries_monitor_location">સ્થાન દેખરેખ કરો</string>
   <string name="app_ops_summaries_monitor_high_power_location">ઉચ્ચ શક્તિ સ્થાન દેખરેખ કરો</string>
+  <string name="app_ops_summaries_get_usage_stats">વપરાશ આંકડા મેળવો</string>
   <string name="app_ops_summaries_mute_unmute_microphone">માઇક્રોફોન મ્યુટ/અનમ્યુટ કરો</string>
   <string name="app_ops_summaries_toast_window">ટોસ્ટ્સ દર્શાવો</string>
   <string name="app_ops_summaries_project_media">પ્રોજેક્ટ મીડિયા</string>
@@ -131,7 +115,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">કોર્સ લોકેશન</string>
   <string name="app_ops_labels_fine_location">ફાઇન લોકેશન</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">વાઇબ્રેટ</string>
   <string name="app_ops_labels_read_contacts">સંપર્કો વાંચો</string>
   <string name="app_ops_labels_modify_contacts">સંપર્કો ફેરફાર કરો</string>
@@ -301,10 +284,7 @@
   <string name="sim_mobile_network_settings_category_title">મોબાઇલ નેટવર્ક સેટિંગ્સ</string>
   <string name="sim_mobile_network_settings_title">SIM %d સેટિંગ્સ</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS lકાયદાકીય</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -336,9 +316,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">રિંગટોન અને સૂચના વોલ્યુમ સાંકળો</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">સૂચના: જ્યારે આ લક્ષણ સક્ષમ કરવામાં આવે ત્યારે તમારી ઇન્સ્ટૉલ કરેલી રિકવરીની અવેજીમાં તે મૂકાશે જેમાં રનિંગ OS.\n\n ના વર્તમાન સંસ્કરણનો સમાવેશ હશે તમારી સિસ્ટમના અપગ્રેડની સાથે તમારી રિકવરી અપડેટ કરાશે જેથી ભાવિ સંસ્કરણો સાથેની સુસંગતતાની ખાતરી રહે.\n\nશું તમારે આ લક્ષણ સક્ષમ કરવું છે?</string>
-  <string name="update_recovery_off_warning">ચેતવણી: જ્યારે આ લક્ષણ અક્ષમ કરવામાં આવે ત્યારે તમારી ઇન્સ્ટૉલ કરેલ રિકવરી OS અપગ્રેડથી અપડેટ કરાશે નહીં.\n\nભાવિ OS અપડેટ વખતે આઉટડેટ થયેલ અથવા કસ્ટમ રિકવરી સંસ્કરણોથી ઇન્સ્ટૉલ થશે નહીં.\n\nશું તમારે ખરેખર આ લક્ષણ અક્ષમ કરવું છે?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">સ્લીપ માટે ડબલ-ટૅપ કરો</string>
   <string name="status_bar_double_tap_to_sleep_summary">પ્રદર્શન બંધ કરવા સ્ટેટસ બાર પર ડબલ-ટૅપ કરો</string>
