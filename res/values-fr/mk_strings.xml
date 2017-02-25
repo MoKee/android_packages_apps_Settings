@@ -16,14 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
-  <string name="mk_version">Version MoKee</string>
+  <string name="mk_version">Version de MoKee</string>
   <string name="mk_version_default">Inconnu</string>
   <!-- BlackList Ext -->
   <string name="blacklist_all_numbers_title">Tous les numéros</string>
   <string name="blacklist_all_numbers_summary">Bloquer tous les appels</string>
-  <string name="blacklist_advertisement_numbers_title">Numéro de l\'annonce</string>
+  <string name="blacklist_advertisement_numbers_title">Numéros d\'annonce publicitaire</string>
   <string name="blacklist_advertisement_numbers_summary">Bloquer les appels publicitaires</string>
-  <string name="blacklist_fraud_numbers_title">Numéros de fraude</string>
+  <string name="blacklist_fraud_numbers_title">Numéros de fraude par téléphone</string>
   <string name="blacklist_fraud_numbers_summary">Bloquer les appels de fraude</string>
   <string name="blacklist_harassment_numbers_title">Numéros de harcèlement</string>
   <string name="blacklist_harassment_numbers_summary">Bloquer les appels de harcèlement</string>
@@ -39,21 +39,21 @@
   <string name="status_bar_network_traffic_style_down">Entrant</string>
   <string name="status_bar_network_traffic_style_all">Sortant et entrant</string>
   <!-- Seconds in clock -->
-  <string name="status_bar_clock_show_second_title">Secondes en horloge</string>
+  <string name="status_bar_clock_show_second_title">Secondes dans l\'horloge</string>
   <string name="status_bar_clock_show_second_summary">Afficher les secondes avec l\'horloge dans la barre d\'état</string>
   <!-- Show/hide su icon -->
   <string name="show_su_icon_title">Montrer l\'icône su</string>
   <string name="show_su_icon_summary">Afficher une icône dans la barre d\'état quand su est activé</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Afficher l\'icône de casque</string>
-  <string name="show_headset_icon_summary">Afficher une icône dans la barre d\'état quand le casque est brancher</string>
+  <string name="show_headset_icon_summary">Afficher une icône dans la barre d\'état quand le casque est branché</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
     <item quantity="one">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> essai pour autoriser les réglages du mode développeur.</item>
     <item quantity="other">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> essais pour autoriser les réglages du mode développeur.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Vous avez autoriser les réglages du mode développeur !</string>
+  <string name="show_dev_on_mk">Vous avez activé les options développeurs!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Inutile, vous avez déjà autoriser les réglages du mode développeur.</string>
+  <string name="show_dev_already_mk">Inutile, vous avez déjà activé les options développeurs.</string>
 </resources>
