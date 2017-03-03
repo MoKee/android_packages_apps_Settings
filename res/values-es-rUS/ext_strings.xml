@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ubicación aproximada</string>
   <string name="app_ops_summaries_fine_location">ubicación precisa</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibración</string>
   <string name="app_ops_summaries_read_contacts">consultar tus contactos</string>
   <string name="app_ops_summaries_modify_contacts">modificar tus contactos</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Ubicación aproximada</string>
   <string name="app_ops_labels_fine_location">Ubicación precisa</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrar</string>
   <string name="app_ops_labels_read_contacts">Consultar contactos</string>
   <string name="app_ops_labels_modify_contacts">Modificar contactos</string>
