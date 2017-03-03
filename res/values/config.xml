@@ -101,4 +101,7 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
+
+    <!-- Enable/disable wifi region code preferences -->
+    <bool name="config_hideWifiRegionCode">false</bool>
 </resources>
