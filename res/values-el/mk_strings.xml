@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Επικαλύψεις εικονιδίου Substratum</string>
   <string name="menu_show_substratum_icons">Εμφάνιση επικαλύψεων εικονιδίου</string>
   <string name="menu_hide_substratum_icons">Απόκρυψη επικαλύψεων εικονιδίου</string>
+  <!-- Force authorize substratum packages -->
 </resources>

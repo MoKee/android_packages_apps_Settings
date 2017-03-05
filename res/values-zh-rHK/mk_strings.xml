@@ -36,4 +36,5 @@
   <string name="filter_substratum_icons">底層圖示覆蓋</string>
   <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
   <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
+  <!-- Force authorize substratum packages -->
 </resources>

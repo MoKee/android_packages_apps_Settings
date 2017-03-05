@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Overlays icone di Substratum</string>
   <string name="menu_show_substratum_icons">Mostra overlays delle icone</string>
   <string name="menu_hide_substratum_icons">Nasondi overlays icone</string>
+  <!-- Force authorize substratum packages -->
 </resources>

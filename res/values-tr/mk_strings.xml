@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Substratum simge bindirmeleri</string>
   <string name="menu_show_substratum_icons">Simge bindirmelerini göster</string>
   <string name="menu_hide_substratum_icons">Simge bindirmelerini gizle</string>
+  <!-- Force authorize substratum packages -->
 </resources>

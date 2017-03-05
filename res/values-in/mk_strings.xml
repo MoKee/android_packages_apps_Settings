@@ -36,4 +36,5 @@
   <string name="filter_substratum_icons">Ikon overlay substratum</string>
   <string name="menu_show_substratum_icons">Tampilkan ikon overlay</string>
   <string name="menu_hide_substratum_icons">Sembunyikan ikon overlay</string>
+  <!-- Force authorize substratum packages -->
 </resources>

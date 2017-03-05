@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Surcouches d\'icônes de substratum</string>
   <string name="menu_show_substratum_icons">Afficher les surcouches d\'icônes</string>
   <string name="menu_hide_substratum_icons">Masquer les surcouches d\'icônes</string>
+  <!-- Force authorize substratum packages -->
 </resources>

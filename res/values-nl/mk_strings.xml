@@ -31,4 +31,5 @@
   <string name="mkcenter_verify_failed_toast">Bevriezing of verwijderen van MoKee Center zal invloed hebben op systeemservices, gelieve te herstellen en probeer het opnieuw.</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
+  <!-- Force authorize substratum packages -->
 </resources>

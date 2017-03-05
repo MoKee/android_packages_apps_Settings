@@ -30,4 +30,5 @@
   <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Trung tâm MoKee sẽ ảnh hưởng đến dịch vụ hệ thống, hãy phục hồi và thử lại.</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
+  <!-- Force authorize substratum packages -->
 </resources>

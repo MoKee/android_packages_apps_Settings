@@ -36,4 +36,7 @@
   <string name="filter_substratum_icons">Substratum 图标叠加层</string>
   <string name="menu_show_substratum_icons">显示图标叠加层</string>
   <string name="menu_hide_substratum_icons">隐藏图标叠加层</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">强制授权所有主题</string>
+  <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的应用</string>
 </resources>

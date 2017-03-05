@@ -38,4 +38,7 @@
   <string name="filter_substratum_icons">Значок Substratum пластоў</string>
   <string name="menu_show_substratum_icons">Паказаць значок пластоў</string>
   <string name="menu_hide_substratum_icons">Схаваць значок пластоў</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
+  <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
 </resources>

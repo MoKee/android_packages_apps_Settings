@@ -38,4 +38,5 @@
   <string name="filter_substratum_icons">Іконка Substratum шарів</string>
   <string name="menu_show_substratum_icons">Показувати іконку шарів</string>
   <string name="menu_hide_substratum_icons">Приховати іконку шарів</string>
+  <!-- Force authorize substratum packages -->
 </resources>

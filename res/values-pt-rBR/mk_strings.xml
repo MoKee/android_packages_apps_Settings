@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Sobreposições de ícone do substratum</string>
   <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
   <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
+  <!-- Force authorize substratum packages -->
 </resources>

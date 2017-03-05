@@ -38,4 +38,5 @@
   <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
   <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
   <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
+  <!-- Force authorize substratum packages -->
 </resources>

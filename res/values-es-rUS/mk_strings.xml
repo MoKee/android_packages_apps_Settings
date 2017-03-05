@@ -37,4 +37,5 @@
   <string name="filter_substratum_icons">Capa de iconos de Substratum</string>
   <string name="menu_show_substratum_icons">Mostrar capa de iconos</string>
   <string name="menu_hide_substratum_icons">Ocultar capa de iconos</string>
+  <!-- Force authorize substratum packages -->
 </resources>
