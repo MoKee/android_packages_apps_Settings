@@ -37,4 +37,6 @@
   <string name="menu_show_substratum_icons">Tampilkan ikon overlay</string>
   <string name="menu_hide_substratum_icons">Sembunyikan ikon overlay</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Paksa otorisasi setiap aplikasi tema</string>
+  <string name="force_authorize_substratum_packages_summary">Memungkinkan aplikasi tema dari sumber tak dikenal</string>
 </resources>
