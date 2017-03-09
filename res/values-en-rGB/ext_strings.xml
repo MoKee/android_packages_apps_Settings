@@ -3,7 +3,6 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
-               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,14 +17,44 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_cm">
+    <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
+    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+  </plurals>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_cm">You have enabled development settings!</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
   <!-- Launch Dev Tools -->
+  <string name="development_tools_title">Development tools</string>
   <!-- Setting checkbox title for root access -->
+  <string name="root_access">Root access</string>
+  <string name="root_access_warning_title">Allow root access?</string>
+  <string name="root_access_warning_message">Allowing apps to request root access is very dangerous and could compromise the security of your system!</string>
   <string name="root_access_none">Disabled</string>
+  <string name="root_access_apps">Apps only</string>
+  <string name="root_access_adb">ADB only</string>
+  <string name="root_access_all">Apps and ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Manage root accesses</string>
+  <string name="root_appops_summary">View and control the root rules</string>
+  <!-- About phone screen, LineageOS version -->
+  <string name="mod_version">LineageOS version</string>
+  <string name="mod_version_default">Unknown</string>
   <!-- About phone screen, Device model -->
+  <string name="device_model">Device model</string>
   <!-- About phone screen, Device name -->
+  <string name="device_name">Device name</string>
+  <!-- About phone screen, LineageOS Api Level -->
+  <string name="mod_api_level">LineageOS API level</string>
+  <string name="mod_api_level_default">Unknown</string>
   <!-- About phone screen, build date -->
+  <string name="build_date">Build date</string>
+  <!-- CM Updater -->
+  <string name="cmupdate_settings_title">LineageOS updates</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_background">Background</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_toggle_mobile_data">toggle mobile data</string>
   <!-- User display names for app ops codes - extension of AOSP -->
@@ -33,10 +62,10 @@
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
   <!-- Sizes for pattern lockscreen -->
+  <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
   <!-- Whether the keyguard will directly show the password entry -->
@@ -69,7 +98,9 @@
   <!-- Notification sound timeout -->
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
+  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -79,9 +110,7 @@
   <!-- Heads-up -->
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
-  <string name="tethering_other_category_text">Other</string>
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_never">Never</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -89,5 +118,7 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
+  <!-- Update recovery -->
+  <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
   <!-- Status bar - double tap to sleep -->
 </resources>
