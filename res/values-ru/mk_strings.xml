@@ -39,5 +39,6 @@
   <string name="menu_show_substratum_icons">Показать значок слоёв</string>
   <string name="menu_hide_substratum_icons">Скрыть значок слоёв</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
   <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>
 </resources>
