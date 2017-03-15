@@ -372,4 +372,13 @@
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan tampilan</string>
+  <string name="sim_enabled">dihidupkan</string>
+  <string name="sim_disabled">dimatikan</string>
+  <string name="sim_enabler_will_disable_sim_title">Perhatian</string>
+  <string name="sim_enabler_enabling">Mengaktifkan\u2026</string>
+  <string name="sim_enabler_disabling">Menonaktifkan\u2026</string>
+  <string name="sub_activate_success">SIM diaktifkan.</string>
+  <string name="sub_activate_failed">Aktivasi gagal.</string>
+  <string name="sub_deactivate_success">SIM dinonaktifkan.</string>
+  <string name="sub_deactivate_failed">Penonaktifan gagal.</string>
 </resources>

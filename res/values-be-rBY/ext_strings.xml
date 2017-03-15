@@ -372,4 +372,9 @@
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Выключаць экран пры падвойным націску</string>
   <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану, каб перавесці прыладу ў спячы рэжым</string>
+  <string name="sim_enabled">уключана</string>
+  <string name="sim_disabled">адключана</string>
+  <string name="sim_missing">адсутнічае або няспраўна</string>
+  <string name="sim_enabler_need_disable_sim">SIM-карта будзе адключаная. Вы хочаце працягнуць?</string>
+  <string name="sim_enabler_will_disable_sim_title">Увага</string>
 </resources>
