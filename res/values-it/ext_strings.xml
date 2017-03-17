@@ -372,4 +372,10 @@
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Sospensione con doppio tocco</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere il display</string>
+  <string name="sim_enabled">abilitata</string>
+  <string name="sim_disabled">disabilitata</string>
+  <string name="sim_missing">mancante o difettosa</string>
+  <string name="sim_enabler_need_disable_sim">La scheda SIM sarà disattivata. Continuare?</string>
+  <string name="sim_enabler_will_disable_sim_title">Attenzione</string>
+  <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre la modalità aereo è attiva.</string>
 </resources>

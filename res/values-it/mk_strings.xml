@@ -38,4 +38,6 @@
   <string name="menu_show_substratum_icons">Mostra overlays delle icone</string>
   <string name="menu_hide_substratum_icons">Nasondi overlays icone</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forza autorizzazione ad ogni tema</string>
+  <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di temi da fonti sconosciute</string>
 </resources>
