@@ -291,6 +291,14 @@
   <!-- Allow vibration in zen mode -->
   <string name="zen_mode_vibration_never">Vibrera inte</string>
   <string name="zen_mode_vibration_calls_only">Vibrera endast för samtal</string>
+  <!-- Zen mode allowed event setting summary items -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
+  <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
