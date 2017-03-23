@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Está a <xliff:g id="step_count">%1$d</xliff:g> paso de activar a configuración de desenvolvemento.</item>
-    <item quantity="other">Está a <xliff:g id="step_count">%1$d</xliff:g> pasos de activar a configuración de desenvolvemento.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Activou a configuración de desenvolvemento!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Non fai falla, a configuración de desenvolvemento xa están activa.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ferramentas de desenvolvemento</string>
   <!-- Setting checkbox title for root access -->
@@ -39,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Xestionar accesos root</string>
   <string name="root_appops_summary">Ver e xestionar as regras de root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versión de LineageOS</string>
-  <string name="mod_version_default">Descoñecido</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo do dispositivo</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome do dispositivo</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nivel API LineageOS</string>
-  <string name="mod_api_level_default">Descoñecido</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data de compilación</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizacións de LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lugar</string>
   <string name="app_ops_categories_personal">Persoal</string>
@@ -65,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ubicación aproximada</string>
   <string name="app_ops_summaries_fine_location">ubicación exacta</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrar</string>
   <string name="app_ops_summaries_read_contacts">ler os contactos</string>
   <string name="app_ops_summaries_modify_contacts">modificar os contactos</string>
@@ -136,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Localización imprecisa</string>
   <string name="app_ops_labels_fine_location">Localización precisa</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrar</string>
   <string name="app_ops_labels_read_contacts">Ler os contactos</string>
   <string name="app_ops_labels_modify_contacts">Modificar os contactos</string>
@@ -343,11 +325,8 @@
   <string name="sim_mobile_network_settings_category_title">Configuración das redes móbiles</string>
   <string name="sim_mobile_network_settings_title">Configuración da SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controlos de notificación</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Licenza de LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiza o sensor de pegadas dixitais na <xliff:g id="sensor_location">%1$s</xliff:g> do teu móbil.</string>
   <!-- Fingerprint sensor locations -->
@@ -399,11 +378,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Iniciar aplicación de música</string>
   <string name="headset_connect_player_summary">Iniciar a aplicación de música por defecto ao conectar auriculares</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Actualizar recovery</string>
-  <string name="update_recovery_summary">Actualizar o recovery coas actualizacións do sistema</string>
-  <string name="update_recovery_on_warning">AVISO: Se ten esta funcionalidade activada, a recuperación instalada substituirase por unha incluída na versión actual que se está a utilizar no sistema.\n\nA recuperación actualizarase xunta as actualizacións do sistema, para asegurar a compatibilidade coas versións futuras.\n\nQuere activar esta funcionalidade?</string>
-  <string name="update_recovery_off_warning">AVISO: Con esta funcionalidade desactivada, a recuperación instalada non se actualizará coas actualizacións do sistema.\n\nAs futuras actualizacións do sistema poderían non instalarse con versións de recuperación non actualizadas ou personalizadas.\n\nConfirma a desactivación desta funcionalidade?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar a pantalla</string>
   <string name="status_bar_double_tap_to_sleep_summary">Toque dúas veces na barra de estado para apagar a visualización</string>

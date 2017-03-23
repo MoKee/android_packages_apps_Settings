@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> pas d\'habilitar les configuracions de desenvolupament.</item>
-    <item quantity="other">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> passos d\'habilitar les configuracions de desenvolupament.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Has habilitat les configuracions de desenvolupament!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">No fa falta, ja has habilitat les configuracions de desenvolupament.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Eines de desenvolupament</string>
   <!-- Setting checkbox title for root access -->
@@ -39,23 +31,14 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Administra els accessos de superusuari</string>
   <string name="root_appops_summary">Mostra i controla les regles de superusuari</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versió</string>
-  <string name="mod_version_default">Desconegut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model del dispositiu</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nom del dispositiu</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nivell de l\'API de LineageOS</string>
-  <string name="mod_api_level_default">Desconegut</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data d\'elaboració</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualitzacions LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Ubicació</string>
-  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Missatgeria</string>
   <string name="app_ops_categories_media">Multimèdia</string>
   <string name="app_ops_categories_device">Dispositiu</string>
@@ -65,7 +48,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ubicació poc precisa</string>
   <string name="app_ops_summaries_fine_location">ubicació precisa</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibració</string>
   <string name="app_ops_summaries_read_contacts">llegir contactes</string>
   <string name="app_ops_summaries_modify_contacts">modificar contactes</string>
@@ -136,7 +118,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Ubicació poc precisa</string>
   <string name="app_ops_labels_fine_location">Ubicació precisa</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibració</string>
   <string name="app_ops_labels_read_contacts">Llegir contactes</string>
   <string name="app_ops_labels_modify_contacts">Modificar contactes</string>
@@ -343,11 +324,8 @@
   <string name="sim_mobile_network_settings_category_title">Configuració de xarxes mòbils</string>
   <string name="sim_mobile_network_settings_title">Configuració de la SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controls de les notificacions d\'energia</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Llicència LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localitza el sensor d\'empremtes digitals al <xliff:g id="sensor_location">%1$s</xliff:g> del teu telèfon.</string>
   <!-- Fingerprint sensor locations -->
@@ -399,11 +377,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Llança el reproductor de música</string>
   <string name="headset_connect_player_summary">Inicia el reproductor de música predeterminat quan es connectin els auriculars</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Actualitza el Recovery</string>
-  <string name="update_recovery_summary">Actualitza el Recovery integrat amb les actualitzacions del sistema</string>
-  <string name="update_recovery_on_warning">AVÍS: Quan aquesta funció estigui activada, la recuperació que tinguis instal·lada serà substituïda per la versió actual inclosa amb el SO instal·lat.\n\nEl teu sistema de recuperació s\'actualitzarà juntament amb les millores del sistema, ajudant a assegurar la compatibilitat amb futures versions.\n\nVols habilitar aquesta característica?</string>
-  <string name="update_recovery_off_warning">ADVERTÈNCIA: Quan aquesta característica està inhabilitada, el teu sistema de recuperació instal·lat no s\'actualitzarà amb les millores del SO.\n\nFutures actualitzacions del SO podrien no instal·lar-se amb sistemes de recuperació obsolets o personalitzats.\n\nRealment vols deshabilitar aquesta característica?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
   <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
-    <item quantity="other">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Du har aktiveret Instillinger for udviklere!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Du behøves ikke gøre dette. Du har allerede aktiveret Indstillinger for udviklere.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Udviklingsværktøjer</string>
   <!-- Setting checkbox title for root access -->
@@ -38,20 +30,12 @@
   <string name="root_access_all">Apps og ADB</string>
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Administrer root adgang</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS-version</string>
-  <string name="mod_version_default">Ukendt</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhedsmodel</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhedens navn</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API niveau</string>
-  <string name="mod_api_level_default">Ukendt</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Kørselsdato</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS-opdateringer</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Placering</string>
   <string name="app_ops_categories_personal">Personlig</string>
@@ -64,7 +48,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">grov placering</string>
   <string name="app_ops_summaries_fine_location">fin placering</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrér</string>
   <string name="app_ops_summaries_read_contacts">læs kontaktpersoner</string>
   <string name="app_ops_summaries_modify_contacts">ændre kontaktpersoner</string>
@@ -82,7 +65,6 @@
   <string name="app_ops_summaries_receive_emergency_sms">modtag nød-SMS</string>
   <string name="app_ops_summaries_receive_mms">modtag MMS</string>
   <string name="app_ops_summaries_receive_wap_push">modtag WAP push</string>
-  <string name="app_ops_summaries_send_sms">send SMS</string>
   <string name="app_ops_summaries_read_icc_sms">læs ICC SMS</string>
   <string name="app_ops_summaries_write_icc_sms">skriv ICC SMS</string>
   <string name="app_ops_summaries_modify_settings">ændre indstillinger</string>
@@ -105,6 +87,7 @@
   <string name="app_ops_summaries_keep_awake">hold vågen</string>
   <string name="app_ops_summaries_monitor_location">overvåg placering</string>
   <string name="app_ops_summaries_monitor_high_power_location">overvåg placering højt strømforbrug</string>
+  <string name="app_ops_summaries_get_usage_stats">få brugsstatistik</string>
   <string name="app_ops_summaries_mute_unmute_microphone">Mikrofon til/fra</string>
   <string name="app_ops_summaries_toast_window">Vis toastbeskeder</string>
   <string name="app_ops_summaries_project_media">projekt medie</string>
@@ -133,7 +116,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Grov placering</string>
   <string name="app_ops_labels_fine_location">Fin placering</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrér</string>
   <string name="app_ops_labels_read_contacts">Læs kontaktpersoner</string>
   <string name="app_ops_labels_modify_contacts">Ændre kontaktpersoner</string>
@@ -322,21 +304,16 @@
   <string name="app_notification_sound_timeout_value_15_minutes">10 minutter</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minutter</string>
   <!-- MSIM SIM status -->
-  <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM %d låseindstillinger</string>
   <string name="sim_card_summary_empty">SIM ikke indsat</string>
   <string name="sim_mobile_network_settings_category_title">Indstillinger for mobilt netværk</string>
   <string name="sim_mobile_network_settings_title">SIM %d indstillinger</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Kontroller til strømunderretninger</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Juridisk information for LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">tilbage</string>
-  <string name="security_settings_fingerprint_sensor_location_front">front</string>
   <string name="security_settings_fingerprint_sensor_location_left">venstre side</string>
   <string name="security_settings_fingerprint_sensor_location_right">højre side</string>
   <!-- Wi-Fi region code -->
@@ -370,9 +347,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Forbind ringe- og meddelelseslydstyrke</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">BEMÆRK: Når denne funktion er aktiveret, vil din installerede \'recovery\' blive erstattet af en inkluderet i den aktuelle version af styresystemet.\n\nDin \'recovery\' opdateres sammen med opdateringer til styresystemet, hvilket sikrer kompatibilitet med fremtidige versioner.\n\nVil du aktivere denne funktion?</string>
-  <string name="update_recovery_off_warning">ARVARSEL: Med denne funktion slået fra, vil din \'recovery\' ikke blive opdateret sammen med styresystemet.\n\nFremtidige opdateringer til styresystemet kan måske ikke installeres med en forældet \'recovery\'\n\nVil du virkelig slå denne funktion fra?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dobbelttryk for dvale</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dobbelttryk på statuslinjen for at slukke skærmen</string>

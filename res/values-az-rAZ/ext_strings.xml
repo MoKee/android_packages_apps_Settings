@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Tərtibatçı tənzimləmələrinin fəallaşdırılmasına <xliff:g id="step_count">%1$d</xliff:g> addım qaldı.</item>
-    <item quantity="other">Tərtibatçı tənzimləmələrinin fəallaşdırılmasına <xliff:g id="step_count">%1$d</xliff:g> addım qaldı.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Tərtibatçı tənzimləmələrini fəallaşdırdınız!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Artıq tərtibatçı tənzimləmələrini fəallaşdırmısınız.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Tərtibatçı alətləri</string>
   <!-- Setting checkbox title for root access -->
@@ -37,31 +29,22 @@
   <string name="root_access_adb">Yalnız ADB</string>
   <string name="root_access_all">Tətbiqetmələr və ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versiyası</string>
-  <string name="mod_version_default">Bilinməyən</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Cihaz modeli</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Cihaz adı</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Bilinməyən</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Quruluş tarixi</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS yeniləmələri</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Yer</string>
   <string name="app_ops_categories_personal">Şəxsi</string>
   <string name="app_ops_categories_messaging">Mesajlaşma</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Cihaz</string>
   <string name="app_ops_categories_bootup">Açılış</string>
   <string name="app_ops_categories_su">Root müraciəti</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">təxmini yer</string>
   <string name="app_ops_summaries_fine_location">dəqiq yer</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">titrəmə</string>
   <string name="app_ops_summaries_read_contacts">şəxsləri oxu</string>
   <string name="app_ops_summaries_modify_contacts">şəxslərə düzəliş et</string>
@@ -105,7 +88,6 @@
   <string name="app_ops_summaries_activate_vpn">VPN\'ni aktivetmə</string>
   <string name="app_ops_summaries_superuser">root müraciəti</string>
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Titrəmə</string>
   <string name="app_ops_labels_read_contacts">Şəxsləri oxu</string>
   <string name="app_ops_labels_modify_contacts">Şəxslərə düzəliş et</string>
@@ -225,10 +207,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 saniyə</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 dəqiqə</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 dəqiqə</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 dəqiqə</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
-  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -240,7 +225,11 @@
   <!-- Heads-up -->
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Digər</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_1_minute">1 dəqiqə</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 dəqiqə</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 dəqiqə</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -249,9 +238,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Zəng səsi ilə bildiriş səsini bağla</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">DİQQƏT: Bu özəllik fəal olduğu halda, quraşdırılmış bərpa rejiminiz hazırki ƏS versiyasındakı rejim ilə əvəz olunacaq.\n\nBərpa rejiminiz sistem yeniləmələri ilə birgə yeniləcək, beləliklə gələcək versiyalar ilə uyğunluq təmin ediləcək.\n\nBu özəlliyi fəallaşdırmaq istəyirsiniz?</string>
-  <string name="update_recovery_off_warning">XƏBƏRDARLIQ: Bu özəllik ləğv edilərsə, quraşdırılmış bərpa rejiminiz ƏS yeniləmələri ilə yenilənməyəcək.\n\nGələcək ƏS yeniləmələri köhnəlmiş və ya xüsusi bərpa versiyaları ilə yüklənməyə bilər.\n\nBu özəlliyi həqiqətən də ləğv etmək istəyirsiniz?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Yuxuya keçmək üçün iki dəfə toxun</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ekranı bağlamaq üçün durum sətrinə iki dəfə toxunun</string>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,16 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Нажмите ещё <xliff:g id="step_count">%1$d</xliff:g> раз, чтобы включить настройки для разработчиков.</item>
-    <item quantity="few">Нажмите ещё <xliff:g id="step_count">%1$d</xliff:g> раза, чтобы включить настройки для разработчиков.</item>
-    <item quantity="other">Нажмите ещё <xliff:g id="step_count">%1$d</xliff:g> раз, чтобы включить настройки для разработчиков.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Настройки для разработчиков включены!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Не нужно, настройки для разработчиков уже включены.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Инструменты разработки</string>
   <!-- Setting checkbox title for root access -->
@@ -40,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Права суперпользователя</string>
   <string name="root_appops_summary">Просмотр и управление разрешениями для прав суперпользователя</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Версия LineageOS</string>
-  <string name="mod_version_default">Неизвестно</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модель устройства</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Имя устройства</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Версия API LineageOS</string>
-  <string name="mod_api_level_default">Неизвестно</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Дата сборки</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Обновления системы</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Местоположение</string>
   <string name="app_ops_categories_personal">Личные данные</string>
@@ -137,7 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Приблизительное местоположение</string>
   <string name="app_ops_labels_fine_location">Точное местоположение</string>
-  <string name="app_ops_labels_gps">GPS</string>
+  <string name="app_ops_labels_gps">GPS-модуль</string>
   <string name="app_ops_labels_vibrate">Вибросигнал</string>
   <string name="app_ops_labels_read_contacts">Чтение данных контактов</string>
   <string name="app_ops_labels_modify_contacts">Изменение контактов</string>
@@ -220,7 +203,7 @@
   <string name="app_ops_reset_counters">Сбросить счетчики</string>
   <string name="app_ops_reset_confirm_title">Подтверждение сброса</string>
   <string name="app_ops_reset_confirm_mesg">Данные счетчиков «операций в приложениях» будут удалены.</string>
-  <string name="ok">OK</string>
+  <string name="ok">Да</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
   <!-- Vibrator intensity -->
@@ -347,8 +330,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Расшир. настройка уведомлений</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Политика конфиденциальности LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
   <!-- Fingerprint sensor locations -->
@@ -400,11 +381,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Автозапуск плеера</string>
   <string name="headset_connect_player_summary">Запускать плеер при подключении наушников</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Обновлять режим восстановления</string>
-  <string name="update_recovery_summary">Перезаписывать прошивку режима восстановления при обновлении системы</string>
-  <string name="update_recovery_on_warning">ПРИМЕЧАНИЕ. При включении этой функции установленная прошивка режима восстановления перезапишется в соответствии с текущей версией ОС.\n\nРежим восстановления будет обновляться вместе с обновлениями системы, обеспечивая совместимость с будущими версиями.\n\nВключить использование этой функции?</string>
-  <string name="update_recovery_off_warning">ВНИМАНИЕ! При отключении этой функции прошивка режима восстановления будет оставаться неизменной.\n\nНекоторые обновления ОС могут не устанавливаться при использовании устаревших или пользовательских версий прошивки.\n\nОтключить использование этой функции?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
   <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>

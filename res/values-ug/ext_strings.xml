@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,14 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other">ھازىر ئىجاتكارلار تاللانمىسىنى قوزغىتىشىڭىز ئۈچۈن <xliff:g id="step_count">%1$d</xliff:g> قەدەم قالدى.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">ئىجادكارلار تەڭشەكلىرىنى قوزغاتتىڭىز!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">ھاجەتسىز، سىز ئاللىبۇرۇن ئىجادكارلار تەڭشەكلىرىنى قوزغاتقان.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">ئىجادكارلار قورالى</string>
   <!-- Setting checkbox title for root access -->
@@ -36,20 +29,12 @@
   <string name="root_access_adb">ADB لا</string>
   <string name="root_access_all">Apps ۋە ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS نەشرى</string>
-  <string name="mod_version_default">يوچۇن</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">ئۈسكىنە تىپى</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">ئۈسكۈنە ئاتى</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS نىڭ API دەرىجىسى</string>
-  <string name="mod_api_level_default">يوچۇن</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ھاسىللىغان چېسلا</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS يېڭىلانمىلار</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">ئورنى</string>
   <string name="app_ops_categories_personal">شەخسىي</string>
@@ -61,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">تەخمىنىي ئورنى</string>
   <string name="app_ops_summaries_fine_location">دەل ئورنى</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">تىترەت</string>
   <string name="app_ops_summaries_read_contacts">ئالاقەداشلارنى ئوقۇيدۇ</string>
   <string name="app_ops_summaries_modify_contacts">ئالاقەداشلارنى تەھرىرلەيدۇ</string>
@@ -102,6 +86,7 @@
   <string name="app_ops_summaries_keep_awake">ئويغاق ھالەتنى ساقلا</string>
   <string name="app_ops_summaries_monitor_location">ئورۇننى كۆزەت</string>
   <string name="app_ops_summaries_monitor_high_power_location">يۇقىرى توك سەرپىياتى ئورنىنى كۆزەت</string>
+  <string name="app_ops_summaries_get_usage_stats">ئىشلىتىش ستاتىستىكىسىغا ئېرىشىش</string>
   <string name="app_ops_summaries_mute_unmute_microphone">مىكروفون ئۈنلۈك/ئۈنسىز</string>
   <string name="app_ops_summaries_toast_window">ئەسكەرتىش ئۇچۇرىنى كۆرسىتىدۇ</string>
   <string name="app_ops_summaries_project_media">ۋاسىتىنى قويىدۇ</string>
@@ -130,7 +115,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">تەخمىنىي ئورنى</string>
   <string name="app_ops_labels_fine_location">دەل ئورنى</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">تىترەت</string>
   <string name="app_ops_labels_read_contacts">ئالاقەداشلارنى ئوقۇيدۇ</string>
   <string name="app_ops_labels_modify_contacts">ئالاقەداشلارنى تەھرىرلەيدۇ</string>
@@ -313,10 +297,7 @@
   <string name="sim_mobile_network_settings_category_title">كۆچمە تور تەڭشىكى</string>
   <string name="sim_mobile_network_settings_title">SIM %d تەڭشىكى</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS قانۇن ئۇچۇرى</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -348,9 +329,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">قوڭغۇراق ئاۋازى بىلەن ئۇقتۇرۇش ئاۋازىنى باغلايدۇ</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">دىققەت: بۇ ئىقتىدار قوزغىتىلسا، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى ئىجرا قىلىنىۋاتقان سىستېما ئۆز ئىچىگە ئالغان ئەسلىگە كەلتۈرۈش دېتالى تەرىپىدىن ئالماشتۇرۇۋېتىلىدۇ.\n\nسىزنىڭ ئەسلىگە كەلتۈرۈش دېتالىڭىز سىستېمىغا ئەگىشىپ يېڭىلىنىپ، كېيىنكى نەشرى بىلەن بولغان ماسلىشىشچانلىققا كاپالەتلىك قىلىدۇ.\n\nبۇ ئىقتىدارنى قوزغىتىشنى خالامسىز؟</string>
-  <string name="update_recovery_off_warning">دىققەت: بۇ ئىقتىدار چەكلەنسە، سىز ئورناتقان ئەسلىگە كەلتۈرۈش دېتالى سىستېمىغا ئەگىشىپ يېڭىلانمايدۇ.\n\nكەلگۈسىدە سىستېما يېڭىلانغاندا كونا نەشرى ياكى ئىختىيارىي ئەسلىگە كەلتۈرۈش دېتالى ھالىتىدە ئورنىتىشنى قوللىماسلىقى مۇمكىن\n\nسىز بۇ ئىقتىدارنى راستلا چەكلەمسىز؟</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">قوش چېكىلسە ئۇخلىتىدۇ</string>
   <string name="status_bar_double_tap_to_sleep_summary">ئېكراننى تاقاش ئۈچۈن ھالەت بالداقنى قوش چېكىڭ</string>

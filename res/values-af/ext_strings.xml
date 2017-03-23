@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Jy is nou <xliff:g id="step_count">%1$d</xliff:g> stap weg van bemagtigende ontwikkelaar opsies.</item>
-    <item quantity="other">Jy is nou <xliff:g id="step_count">%1$d</xliff:g> stappe weg van bemagtigende ontwikkelaar opsies.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Jy het die ontwikkeling opsies geaktiveer!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nie nodig, het jy reeds die ontwikkeling opsies geaktiveer.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ontwikkeling gereedskap</string>
   <!-- Setting checkbox title for root access -->
@@ -39,25 +31,16 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Bestuur root toegang</string>
   <string name="root_appops_summary">Kyk na en beheer die root reëls</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS weergawe</string>
-  <string name="mod_version_default">Onbekend</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Toestel tipe</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Toestel naam</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API vlak</string>
-  <string name="mod_api_level_default">Onbekend</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Bou datum</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS opgradering</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Ligging</string>
   <string name="app_ops_categories_personal">Persoonlik</string>
   <string name="app_ops_categories_messaging">Boodskappe</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Toestel</string>
   <string name="app_ops_categories_background">Agtergrond</string>
   <string name="app_ops_categories_bootup">Selflaaiproses</string>
@@ -65,7 +48,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">growwe ligging</string>
   <string name="app_ops_summaries_fine_location">akurrate ligging</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibreer</string>
   <string name="app_ops_summaries_read_contacts">lees kontakte</string>
   <string name="app_ops_summaries_modify_contacts">verander kontakte</string>
@@ -99,10 +81,7 @@
   <string name="app_ops_summaries_master_volume">meester volume</string>
   <string name="app_ops_summaries_voice_volume">stem volume</string>
   <string name="app_ops_summaries_ring_volume">lui volume</string>
-  <string name="app_ops_summaries_media_volume">media volume</string>
-  <string name="app_ops_summaries_alarm_volume">alarm volume</string>
   <string name="app_ops_summaries_notification_volume">kennisgewing volume</string>
-  <string name="app_ops_summaries_bluetooth_volume">bluetooth volume</string>
   <string name="app_ops_summaries_keep_awake">how wakker</string>
   <string name="app_ops_summaries_monitor_location">monitor ligging</string>
   <string name="app_ops_summaries_monitor_high_power_location">monitor hoë krag ligging</string>
@@ -136,7 +115,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Growwe ligging</string>
   <string name="app_ops_labels_fine_location">Akurrate ligging</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibreer</string>
   <string name="app_ops_labels_read_contacts">Lees kontakte</string>
   <string name="app_ops_labels_modify_contacts">Verander kontakte</string>
@@ -170,7 +148,6 @@
   <string name="app_ops_labels_master_volume">Meester volume</string>
   <string name="app_ops_labels_voice_volume">Stem volume</string>
   <string name="app_ops_labels_ring_volume">Lui volume</string>
-  <string name="app_ops_labels_media_volume">Media volume</string>
   <string name="app_ops_labels_alarm_volume">Oudio fokus</string>
   <string name="app_ops_labels_notification_volume">Meester volume</string>
   <string name="app_ops_labels_bluetooth_volume">Stem volume</string>
@@ -219,7 +196,6 @@
   <string name="app_ops_reset_counters">Herstel toelaat/weier tellers</string>
   <string name="app_ops_reset_confirm_title">Bevestig tellers terugstel</string>
   <string name="app_ops_reset_confirm_mesg">Is jy seker jy wil tellers herstel?</string>
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Volume verander klanke</string>
   <!-- Vibrator intensity -->
@@ -337,17 +313,13 @@
   <string name="app_notification_sound_timeout_value_15_minutes">10 minute</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minute</string>
   <!-- MSIM SIM status -->
-  <string name="sim_card_status_title">SIM %d status</string>
   <string name="sim_card_lock_settings_title">SIM %d gesluit instellings</string>
   <string name="sim_card_summary_empty">SIM nie ingesit</string>
   <string name="sim_mobile_network_settings_category_title">Mobiele netwerk instellings</string>
   <string name="sim_mobile_network_settings_title">SIM %d instellings</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Krag kennisgewing kontroles</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS Regs</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vind die vingerafdruk sensor op die <xliff:g id="sensor_location">%1$s </xliff:g> van jou foon.</string>
   <!-- Fingerprint sensor locations -->
@@ -399,15 +371,9 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Begin musiekspeler</string>
   <string name="headset_connect_player_summary">Begin die verstek musiek speler wanneer \'n kopstuk gekoppel is</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Werk herstel by</string>
-  <string name="update_recovery_summary">Werk die ingeboude recovery by tydens stelsel bywerkings</string>
-  <string name="update_recovery_on_warning">KENNISGEWING: Wanneer hierdie funksie geaktiveer is, sal jou geïnstalleerde recovery vervang word deur een ingesluit met die huidige weergawe van die Beheer Stelsel\n\nJou recovery sal opgedateer word saam met die opgraderings aan jou stelsel, dit help om versoenbaarheid te verseker van toekomstige weergawes.\n\nWil jy hierdie funksie aktiveer?</string>
-  <string name="update_recovery_off_warning">WAARSKUWING: Wanneer hierdie funksie afgeskakel is, sal jou geïnstalleerde recovery nie opgedateer word met Beheer Stelsel (BS) opgraderings nie.\n\nToekomstige BS opdaterings kan dalk nie geïnstalleer word met verouderde of persoonlike recovery weergawes nie.\n\nWil jy regtig hierdie funksie af skakel?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Klop-Klop om te slaap</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dubbel klop op die statusbalk om skerm af te skakel</string>
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_enabled">geaktiveer</string>
   <string name="sim_disabled">gedeaktiveer</string>
   <string name="sim_missing">verlore of foutief</string>

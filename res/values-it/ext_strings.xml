@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Ora sei ad <xliff:g id="step_count">%1$d</xliff:g> passo dall\'attivare le impostazioni di sviluppo.</item>
-    <item quantity="other">Ora sei a <xliff:g id="step_count">%1$d</xliff:g> passi dall\'attivare le impostazioni di sviluppo.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Hai attivato le impostazioni di sviluppo!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Non è necessario, hai già attivato le impostazioni di sviluppo.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Strumenti di sviluppo</string>
   <!-- Setting checkbox title for root access -->
@@ -39,25 +31,17 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Gestione accesso root</string>
   <string name="root_appops_summary">Visualizza e controlla l\'utilizzo dei permessi root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versione LineageOS</string>
-  <string name="mod_version_default">Sconosciuto</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modello dispositivo</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome dispositivo</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Livello API LineageOS</string>
-  <string name="mod_api_level_default">Sconosciuto</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data build</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aggiornamento LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Posizione</string>
   <string name="app_ops_categories_personal">Personale</string>
   <string name="app_ops_categories_messaging">Messaggistica</string>
-  <string name="app_ops_categories_media">Media</string>
+  <string name="app_ops_categories_media">Multimedia</string>
   <string name="app_ops_categories_device">Dispositivo</string>
   <string name="app_ops_categories_background">Sfondo</string>
   <string name="app_ops_categories_bootup">Avvio</string>
@@ -346,8 +330,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controlli avanzati notifiche</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Note legali LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Individua il sensore d\'impronte nella parte <xliff:g id="sensor_location">%1$s</xliff:g> del tuo telefono.</string>
   <!-- Fingerprint sensor locations -->
@@ -399,11 +381,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Avvia il lettore musicale</string>
   <string name="headset_connect_player_summary">Avvia il lettore musicale predefinito quando vengono connesse le cuffie</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Aggiorna recovery</string>
-  <string name="update_recovery_summary">Aggiorna la recovery integrata con gli aggiornamenti del sistema</string>
-  <string name="update_recovery_on_warning">AVVISO: Quando questa funzionalità è attiva, la recovery installata sarà sostituita da una inclusa con la versione corrente del sistema.\n\nLa vostra recovery attuale verrà aggiornata con gli aggiornamenti di sistema, contribuendo a garantire la compatibilità con le future versioni.\n\nAttivare questa funzione?</string>
-  <string name="update_recovery_off_warning">Attenzione: Quando questa funzionalità è disattivata, la recovery installata non verrà aggiornata con il sistema.\n\nFuturi aggiornamenti potrebbero non installarsi con recovery personalizzate o vecchie.\n\nDisattivare questa funzione?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Sospensione con doppio tocco</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere il display</string>

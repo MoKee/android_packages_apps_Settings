@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,14 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">開発者向けオプションが有効になりました。</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">必要ありません、開発者向けオプションは既に有効になっています。</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">開発ツール</string>
   <!-- Setting checkbox title for root access -->
@@ -38,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">ルートアクセスを管理</string>
   <string name="root_appops_summary">ルートの規則を表示またはコントロールする</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOSバージョン</string>
-  <string name="mod_version_default">不明</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">端末モデル</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">端末名</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS APIレベル</string>
-  <string name="mod_api_level_default">不明</string>
   <!-- About phone screen, build date -->
   <string name="build_date">ビルド日時</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS アップデート</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">位置情報</string>
   <string name="app_ops_categories_personal">個人情報</string>
@@ -64,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">おおよその位置情報</string>
   <string name="app_ops_summaries_fine_location">精細な位置情報</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">バイブレーション</string>
   <string name="app_ops_summaries_read_contacts">連絡先の読み取り</string>
   <string name="app_ops_summaries_modify_contacts">連絡先の変更</string>
@@ -135,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">おおよその位置情報</string>
   <string name="app_ops_labels_fine_location">精細な位置情報</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">バイブレーション</string>
   <string name="app_ops_labels_read_contacts">連絡先の読み取り</string>
   <string name="app_ops_labels_modify_contacts">連絡先の変更</string>
@@ -218,7 +201,7 @@
   <string name="app_ops_reset_counters">許可/拒否のカウンターをリセット</string>
   <string name="app_ops_reset_confirm_title">カウンターのリセットの確認</string>
   <string name="app_ops_reset_confirm_mesg">カウンターをリセットしてもよろしいですか？</string>
-  <string name="ok">OK</string>
+  <string name="ok">はい</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">音量調整の音</string>
   <!-- Vibrator intensity -->
@@ -342,11 +325,8 @@
   <string name="sim_mobile_network_settings_category_title">モバイルネットワークの設定</string>
   <string name="sim_mobile_network_settings_title">SIM %dの設定</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">通知の詳細なコントロール</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS 利用規約</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋認証センサーを探します。</string>
   <!-- Fingerprint sensor locations -->
@@ -398,11 +378,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">音楽プレイヤーの起動</string>
   <string name="headset_connect_player_summary">ヘッドセット接続時にデフォルトの音楽アプリを起動する</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">リカバリーを更新</string>
-  <string name="update_recovery_summary">システム更新の際、ビルトインリカバリーを更新します</string>
-  <string name="update_recovery_on_warning">注意: この機能を有効にすると、インストールされているリカバリーは実行しているOSの現在のバージョンに含まれるリカバリーに変更されます。\n\nシステムのアップグレードと同時にリカバリーがアップデートされるので、今後のバージョンとの互換性の確保に繋がります。\n\nこの機能を有効にしますか？</string>
-  <string name="update_recovery_off_warning">警告: この機能を無効にすると、インストールされているリカバリーはOSのアップグレードと同時にはアップデートされなくなります。\n\nカスタムリカバリーバージョンが古いと、今後のOSアップデートがインストールできなくなる恐れがあります。\n\nこの機能を本当に無効にしますか？</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
   <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>

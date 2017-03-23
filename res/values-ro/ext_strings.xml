@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,16 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Ești la <xliff:g id="step_count">%1$d</xliff:g> pas distanță de a activa opțiunile de dezvoltator.</item>
-    <item quantity="few">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași distanță de a activa opțiunile de dezvoltator.</item>
-    <item quantity="other">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași distanță de a activa opțiunile de dezvoltator.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Ați deblocat setările de dezvoltator!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nu este nevoie, deja ai deblocat setările de dezvoltator.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Unelte de dezvoltare</string>
   <!-- Setting checkbox title for root access -->
@@ -40,33 +31,21 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Gestionați accesul root</string>
   <string name="root_appops_summary">Vizualizați și controlați regulile root-ului</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">versiune LineageOS</string>
-  <string name="mod_version_default">Necunoscut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelul dispozitivului</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Numele dispozitivului</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nivel API LineageOS</string>
-  <string name="mod_api_level_default">Necunoscut</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dată compilare</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizări LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Locație</string>
-  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Mesagerie</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Dispozitiv</string>
   <string name="app_ops_categories_background">Fundal</string>
-  <string name="app_ops_categories_bootup">Bootup</string>
   <string name="app_ops_categories_su">Acces root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">locație aspră</string>
   <string name="app_ops_summaries_fine_location">locație fină</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrare</string>
   <string name="app_ops_summaries_read_contacts">citește contactele</string>
   <string name="app_ops_summaries_modify_contacts">modifică contactele</string>
@@ -90,7 +69,6 @@
   <string name="app_ops_summaries_modify_settings">modifică setările</string>
   <string name="app_ops_summaries_draw_on_top">trage deasupra</string>
   <string name="app_ops_summaries_access_notifications">accesare notificări</string>
-  <string name="app_ops_summaries_camera">camera</string>
   <string name="app_ops_summaries_record_audio">înregistrare audio</string>
   <string name="app_ops_summaries_play_audio">redare audio</string>
   <string name="app_ops_summaries_read_clipboard">citește clipboard</string>
@@ -137,7 +115,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Locație aspră</string>
   <string name="app_ops_labels_fine_location">Locație fină</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrează</string>
   <string name="app_ops_labels_read_contacts">Citește contactele</string>
   <string name="app_ops_labels_modify_contacts">modifică contactele</string>
@@ -161,7 +138,7 @@
   <string name="app_ops_labels_modify_settings">Modifică setările</string>
   <string name="app_ops_labels_draw_on_top">Trage de sus</string>
   <string name="app_ops_labels_access_notifications">Acces notificări</string>
-  <string name="app_ops_labels_camera">Camera</string>
+  <string name="app_ops_labels_camera">Cameră foto</string>
   <string name="app_ops_labels_record_audio">Înregistrează audio</string>
   <string name="app_ops_labels_play_audio">Redare audio</string>
   <string name="app_ops_labels_read_clipboard">Citește clipboard</string>
@@ -344,11 +321,8 @@
   <string name="sim_mobile_network_settings_category_title">Setări rețea mobilă</string>
   <string name="sim_mobile_network_settings_title">Setări cartelă SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controale de putere a notificărilor</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Juridic LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localizați senzorul de amprentă pe <xliff:g id="sensor_location">%1$s</xliff:g> telefonului dvs.</string>
   <!-- Fingerprint sensor locations -->
@@ -366,7 +340,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
   <!-- Heads-up -->
-  <string name="heads_up_notifications_enabled_title">Heads-up</string>
   <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
   <!-- Encryption password -->
   <string name="crypt_keeper_change_password_title">Schimbați parola de criptare</string>
@@ -400,11 +373,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Lansează aplicația muzică</string>
   <string name="headset_connect_player_summary">Lansează aplicația implicită de muzică când se conectează casca audio</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Actualizați meniul de recuperare</string>
-  <string name="update_recovery_summary">Actualizați meniul de recuperare inclus odată cu actualizările de sistem</string>
-  <string name="update_recovery_on_warning">ANUNŢ: Atunci când această caracteristică este activată, meniul de recuperare instalat va fi înlocuit cu unul inclus în versiunea curentă a Sistemului de Operare.\n\nMeniul dvs. de recuperare va fi actualizat împreună cu upgrade-urile sistemului dvs., ajutând la asigurarea compatibilității cu viitoarele versiuni.\n\nAți vrea să activați această caracteristică?</string>
-  <string name="update_recovery_off_warning">ATENŢIE: Atunci când această caracteristică este dezactivată, meniul de recuperare instalat nu va fi actualizat odată cu upgrade-urile Sistemului de Operare.\n\nActualizările viitoare ale Sistemului de Operare s-ar putea să nu se instaleze cu versiuni expirate sau personalizate ale meniului de recuperare.\n\nDoriţi într-adevăr să dezactivaţi această caracteristică?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dublă-apăsare pentru stand-by</string>
   <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a dezactiva afișarea</string>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,16 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krok od povolenia možnosti pre vývojárov.</item>
-    <item quantity="few">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolenia možnosti pre vývojárov.</item>
-    <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia možnosti pre vývojárov.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Povolili ste možnosti pre vývojárov!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Netreba, už ste povolili možnosti pre vývojárov.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojárske nástroje</string>
   <!-- Setting checkbox title for root access -->
@@ -40,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Spravovať prístupy root</string>
   <string name="root_appops_summary">Zobraziť a spravovať pravidlá prístupu root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Verzia LineageOS</string>
-  <string name="mod_version_default">Neznáme</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model zariadenia</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Názov zariadenia</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Verzia LineageOS API</string>
-  <string name="mod_api_level_default">Neznáme</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Dátum zostavy</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizácie LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Poloha</string>
   <string name="app_ops_categories_personal">Osobné</string>
@@ -66,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">približná poloha</string>
   <string name="app_ops_summaries_fine_location">presná poloha</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrovať</string>
   <string name="app_ops_summaries_read_contacts">čítať údaje z kontaktov</string>
   <string name="app_ops_summaries_modify_contacts">upraviť kontakty</string>
@@ -137,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Získať približnú polohu</string>
   <string name="app_ops_labels_fine_location">Získať presnú polohu</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrovať</string>
   <string name="app_ops_labels_read_contacts">Čítať údaje z kontaktov</string>
   <string name="app_ops_labels_modify_contacts">Upraviť kontakty</string>
@@ -344,11 +325,8 @@
   <string name="sim_mobile_network_settings_category_title">Nastavenia mobilnej siete</string>
   <string name="sim_mobile_network_settings_title">Nastavenia SIM %d</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Ovládacie prvky rozšíreného oznámenia</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Právne informácie LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
   <!-- Fingerprint sensor locations -->
@@ -400,11 +378,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Spustiť aplikáciu na prehrávanie hudby</string>
   <string name="headset_connect_player_summary">Spustiť predvolenú aplikáciu na prehrávanie hudby po pripojení slúchadiel</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Aktualizovať recovery</string>
-  <string name="update_recovery_summary">Aktualizovať recovery so systémovými aktualizáciami</string>
-  <string name="update_recovery_on_warning">UPOZORNENIE: Ak je táto funkcia povolená, vaša nainštalovaná recovery bude nahradená verziou, ktorá je súčasťou aktuálneho operačného systému.\n\nVaša recovery sa bude aktualizovať spolu so systémom, čím sa zaisťuje kompatibilita s budúcim verziami.\n\nChcete povoliť túto funkciu?</string>
-  <string name="update_recovery_off_warning">VAROVANIE: Ak je táto funkcia zakázaná, vaša nainštalovaná recovery nebude nahradená s aktualizáciami operačného systému.\n\nBudúce aktualizácie operačného systému sa nemusia nainštalovať kvôli zastaraným alebo vlastným verziám recovery.\n\nChcete zakázať túto funkciu?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
   <string name="status_bar_double_tap_to_sleep_summary">Vypnúť displej dvojitým poklepaním na stavový riadok</string>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,48 +18,32 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Застаўся <xliff:g id="step_count">%1$d</xliff:g> крок для ўлучэння налад для распрацоўнікаў.</item>
-    <item quantity="few">Засталося <xliff:g id="step_count">%1$d</xliff:g> кроку для ўлучэння налад для распрацоўнікаў.</item>
-    <item quantity="other">Засталося <xliff:g id="step_count">%1$d</xliff:g> крокаў для ўлучэння налад для распрацоўнікаў.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Налады для распрацоўнікаў улучаны!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Не патрэбна, налады для распрацоўнікаў ужо ўлучаны.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Прылады распрацоўкі</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Рэжым суперкарыстальніка</string>
-  <string name="root_access_warning_title">Дазволіць выкарыстанне Суперкарыстальніка?</string>
+  <string name="root_access_warning_title">Дазволіць рэжым Суперкарыстальніка?</string>
   <string name="root_access_warning_message">Выкарыстанне дадаткамі праў суперкарыстальніка можа быць вельмі небяспечным і ставіць пад пагрозу бяспеку вашай прылады!</string>
   <string name="root_access_none">Выключана</string>
   <string name="root_access_apps">Толькі для дадаткаў</string>
   <string name="root_access_adb">Толькі для ADB</string>
   <string name="root_access_all">Для дадаткаў і ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Версія LineageOS</string>
-  <string name="mod_version_default">Невядома</string>
+  <string name="root_appops_title">Правы суперкарыстальніка</string>
+  <string name="root_appops_summary">Прагляд і кіраванне дазволамі для правоў суперкарыстальніка</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Мадэль прылады</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Імя прылады</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Узровень LineageOS API</string>
-  <string name="mod_api_level_default">Невядома</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Дата зборкі</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Абнаўленні сістэмы</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Месцазнаходжанне</string>
   <string name="app_ops_categories_personal">Асабістыя дадзеныя</string>
-  <string name="app_ops_categories_messaging">Паведамленьні</string>
+  <string name="app_ops_categories_messaging">Паведамленні</string>
   <string name="app_ops_categories_media">Мультымедыя</string>
   <string name="app_ops_categories_device">Прылада</string>
-  <string name="app_ops_categories_background">Тло</string>
+  <string name="app_ops_categories_background">Фонавы рэжым</string>
   <string name="app_ops_categories_bootup">Загрузка</string>
   <string name="app_ops_categories_su">Суперкарыстальнік</string>
   <!-- User display names for app ops codes - extension of AOSP -->
@@ -94,17 +79,18 @@
   <string name="app_ops_summaries_read_clipboard">чытанне буфера абмену</string>
   <string name="app_ops_summaries_modify_clipboard">змена буфера абмену</string>
   <string name="app_ops_summaries_media_buttons">кнопкі мультымедыя</string>
-  <string name="app_ops_summaries_audio_focus">аўдыя фокус</string>
+  <string name="app_ops_summaries_audio_focus">аўдыё фокус</string>
   <string name="app_ops_summaries_master_volume">агульная гучнасць</string>
-  <string name="app_ops_summaries_voice_volume">гучнасць пры размове</string>
-  <string name="app_ops_summaries_ring_volume">гучнасць званку</string>
+  <string name="app_ops_summaries_voice_volume">гучнасць падчас размовы</string>
+  <string name="app_ops_summaries_ring_volume">гучнасць выкліку</string>
   <string name="app_ops_summaries_media_volume">гучнасць мультымедыя</string>
   <string name="app_ops_summaries_alarm_volume">гучнасць будзільніка</string>
   <string name="app_ops_summaries_notification_volume">гучнасць паведамленняў</string>
   <string name="app_ops_summaries_bluetooth_volume">гучнасць Bluetooth</string>
   <string name="app_ops_summaries_keep_awake">актыўны рэжым</string>
-  <string name="app_ops_summaries_monitor_location">асочванне месцазнаходжання</string>
-  <string name="app_ops_summaries_monitor_high_power_location">асочванне высокадакладнага месцазнаходжання</string>
+  <string name="app_ops_summaries_monitor_location">адсочванне месцазнаходжання</string>
+  <string name="app_ops_summaries_monitor_high_power_location">адсочванне высокадакладнага месцазнаходжання</string>
+  <string name="app_ops_summaries_get_usage_stats">атрымаць статыстыку выкарыстання</string>
   <string name="app_ops_summaries_mute_unmute_microphone">вымыкаць/далучаць мікрафон</string>
   <string name="app_ops_summaries_toast_window">адлюстроўваць усплывальныя паведамленні</string>
   <string name="app_ops_summaries_project_media">трансляцыя кантэнту</string>
@@ -122,7 +108,7 @@
   <string name="app_ops_summaries_mock_location">фіктыўнае месцазнаходжанне</string>
   <string name="app_ops_summaries_read_external_storage">чытанне дадзеных</string>
   <string name="app_ops_summaries_write_external_storage">запіс на знешні назапашнівальнік</string>
-  <string name="app_ops_summaries_turn_screen_on">улучыць экран</string>
+  <string name="app_ops_summaries_turn_screen_on">уключыць экран</string>
   <string name="app_ops_summaries_get_accounts">атрымаць запісы</string>
   <string name="app_ops_summaries_run_in_background">працуе ў фоне</string>
   <string name="app_ops_summaries_toggle_wifi">пераключыць Wi-Fi</string>
@@ -134,7 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Прыблізнае месцазнаходжанне</string>
   <string name="app_ops_labels_fine_location">Дакладнае месцазнаходжанне</string>
-  <string name="app_ops_labels_gps">GPS</string>
+  <string name="app_ops_labels_gps">GPS-модуль</string>
   <string name="app_ops_labels_vibrate">Вібрацыя</string>
   <string name="app_ops_labels_read_contacts">Чытанне дадзеных кантактаў</string>
   <string name="app_ops_labels_modify_contacts">Змена кантактаў</string>
@@ -173,11 +159,11 @@
   <string name="app_ops_labels_notification_volume">Агульная гучнасць</string>
   <string name="app_ops_labels_bluetooth_volume">Гучнасць Bluetooth-прылад</string>
   <string name="app_ops_labels_keep_awake">Актыўны рэжым</string>
-  <string name="app_ops_labels_monitor_location">Асочванне месцазнаходжання</string>
-  <string name="app_ops_labels_monitor_high_power_location">Асочванне высокадакладнага месцазнаходжання</string>
+  <string name="app_ops_labels_monitor_location">Адсочванне месцазнаходжання</string>
+  <string name="app_ops_labels_monitor_high_power_location">Адсочванне высокадакладнага месцазнаходжання</string>
   <string name="app_ops_labels_get_usage_stats">Атрымаць статыстыку выкарыстання</string>
   <string name="app_ops_labels_mute_unmute_microphone">Вымыкаць/падлучаць мікрафон</string>
-  <string name="app_ops_labels_toast_window">Адлюстроўваць усплывальныя паведамленні</string>
+  <string name="app_ops_labels_toast_window">Адлюстроўваць усплывальныя апавяшчэнні</string>
   <string name="app_ops_labels_project_media">Трансляцыя кантэнту</string>
   <string name="app_ops_labels_activate_vpn">Актывацыя VPN</string>
   <string name="app_ops_labels_write_wallpaper">Захаваць шпалеры</string>
@@ -193,7 +179,7 @@
   <string name="app_ops_labels_mock_location">Фіктыўнае месцазнаходжанне</string>
   <string name="app_ops_labels_read_external_storage">Чытанне дадзеных</string>
   <string name="app_ops_labels_write_external_storage">Запіс на знешні назапашнівальнік</string>
-  <string name="app_ops_labels_turn_screen_on">Улучыць экран</string>
+  <string name="app_ops_labels_turn_screen_on">Уключыць экран</string>
   <string name="app_ops_labels_get_accounts">Атрымаць запісы</string>
   <string name="app_ops_labels_run_in_background">Працаваць ў схаваным варыянце</string>
   <string name="app_ops_labels_toggle_wifi">Пераключыць Wi-Fi</string>
@@ -222,7 +208,7 @@
   <string name="volume_adjust_sounds_title">Гук пры рэгулёўцы гучнасці</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Магутнасць вібрасігналу</string>
-  <string name="vibrator_intensity_dialog_warning">Не раю выкарыстоўваць звыш %1$d%%</string>
+  <string name="vibrator_intensity_dialog_warning">Не рэкамендуецца ўсталёўваць значэння звыш %1$d%%</string>
   <string name="vibrator_intensity_dialog_reset">Скід</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Абяры памер графічнага ключа</string>
@@ -238,10 +224,11 @@
   <string name="lock_directly_show_pin">Адразу прапанаваць увод PIN-кода</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Вібрацыя</string>
+  <string name="lockscreen_vibrate_enabled_head">Вібраваць пры разблакіроўкі</string>
   <!-- Lights settings -->
   <string name="lights_label">Індыкацыя</string>
   <!-- Memory -->
-  <string name="memory_startup_apps_title">Улучана падчас запуску прылады</string>
+  <string name="memory_startup_apps_title">Запушчана пры ўключэнні прылады</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
   <string name="advanced_reboot_summary">Паказваць дадатковыя варянты перазапусканьня прылады ў рэжым \"аднаўленьня\", \"загрузніка\" ці \"мяккага перазапусканьня\"</string>
@@ -257,7 +244,9 @@
   <string name="menu_hidden_apps_delete">Скід</string>
   <string name="menu_hidden_apps_reset_lock">Выдаліць графічны ключ</string>
   <string name="protected_apps">Заблакаваць дадаткі</string>
+  <string name="protected_apps_summary">Кіраванне праграмамі, для запуску якіх патрабуецца ўвод пароля</string>
   <string name="saving_protected_components">Захаванне стану дадаткаў\u2026</string>
+  <string name="launch_app">Запусціць праграму</string>
   <string name="pa_login_username_hint">Імя карыстальніка (электронная пошта)</string>
   <string name="pa_login_password_hint">Пароль</string>
   <string name="pa_login_submit_button">Увайсцi</string>
@@ -267,8 +256,10 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Звесткі пра надвор\'е</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Эфект размыцця для экр. блакір.</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Прадухіляць выпадковае ўлучэнне</string>
+  <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне</string>
+  <string name="proximity_wake_summary">Правяраць датчык набліжэння пры выхадзе з рэжыму сну з выкарыстаннем жэстаў</string>
   <!-- High touch sensitivity -->
   <string name="high_touch_sensitivity_title">Рэжым пальчаткаў</string>
   <string name="high_touch_sensitivity_summary">Павялічваць адчувальнасць экрана для магчымасці працы ў пальчатках</string>
@@ -279,6 +270,7 @@
   <string name="ime_switcher_notify">Значок выбару метаду ўводу</string>
   <string name="ime_switcher_notify_summary">Адлюстроўваць пераключальнік метаду ўводу пры адкрыцці тэкставых палёў</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Не паказваць паведамлення. Не выкарыстоўваць гук і вібрацыю. Змяшчаць паведамленні ў канец спісу. Не паказваць на экране блакавання.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Курсор пры выкарыстанні сцілуса</string>
   <string name="stylus_icon_enabled_summary">Паказваць значок паказальніка пры працы са сцілусам</string>
@@ -287,6 +279,7 @@
   <string name="kill_app_longpress_back_summary">Завяршаць працу бягучага дадатку ўтрымліваннем кнопкі \"Назад\"</string>
   <!-- Android debugging -->
   <string name="enable_adb_cm">Рэжым адладкі</string>
+  <string name="enable_adb_summary_cm">Уключыць адладкавы інтэрфейс Android Debug Bridge (ADB)</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">Паведамленьні наладжваньня</string>
   <string name="adb_notify_summary">Паказваць паведамленьне аб тым, што задзейнічана наладка па USB ці сетцы</string>
@@ -301,6 +294,10 @@
   <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
   <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
   <!-- Allow vibration in zen mode -->
+  <string name="zen_mode_vibration">Вібрацыя</string>
+  <string name="zen_mode_vibration_never">Не вібраваць</string>
+  <string name="zen_mode_vibration_calls_only">Вібраваць толькі пры выкліках</string>
+  <string name="zen_mode_vibration_calls_and_notifications">Вібраваць пры выкліках і апавяшчэннях</string>
   <!-- Zen mode allowed event setting summary items -->
   <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
   <string name="zen_mode_summary_reminders">нагадванні</string>
@@ -314,6 +311,15 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">абраныя паведамленні</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Частата гукавых апавяшчэнняў</string>
+  <string name="app_notification_sound_timeout_summary_template">Дазволіць гукі ці вібрацыю не больш чым адзін раз у <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Без абмежаванняў</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 хвіліна</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 хвілін</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 хвілін</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 хвілін</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">Статус SIM %d</string>
   <string name="sim_card_lock_settings_title">Параметры блакавання SIM %d</string>
@@ -323,24 +329,36 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Палітыка прыватнасці LineageOS</string>
+  <string name="tuner_full_importance_settings">Пашыранае кіраванне апавяшчэннямі</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">Код рэгіёну Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_countrycode_summary">Пакажыце код рэгіёну Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_countrycode_error">Пры наладзе кода рэгіёна Wi-Fi паўстала памылка.</string>
+  <string name="wifi_setting_countrycode_error">Памылка змены кода рэгіёну.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Улучаць экран пры падлучэнні ці адключэнні крыніцы сілкавання</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Уключаць экран пры падключэнні або адключэнні крыніцы сілкавання</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Усплывальныя апавяшчэння</string>
+  <string name="heads_up_notifications_enabled_summary">Паказваць прыярытэтныя апавяшчэння невялікімі ўсплывальнымі вокнамі</string>
   <!-- Encryption password -->
+  <string name="crypt_keeper_change_password_title">Змена пароля шыфравання</string>
+  <string name="crypt_keeper_change_password_summary">Змяніць пароль, які выкарыстоўваецца для шыфравання прылады</string>
+  <string name="crypt_keeper_choose_your_password_header">Усталяваць пароль шыфравання</string>
+  <string name="crypt_keeper_replace_password_title">Змяніць пароль шыфравання</string>
+  <string name="crypt_keeper_replace_password_summary">Выдаліце ​​асобны пароль шыфравання</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Іншы</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Выключаць невыкарыс. кропку доступу Wi\u2011Fi праз:</string>
   <string name="hotstpot_inactivity_timeout_never">Ніколі</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 хвіліна</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 хвілін</string>
@@ -348,20 +366,26 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">Не адключаць ніколі Wi\u2011Fi</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Адключыць праз <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Доступ да мабільных дадзеных</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Перадача праз Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Поўнае адкл. маб. Інтэрнета</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Прадухіліць выкарыстанне доступу да дадзеных праз сотавыя сеткі</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Забараніць доступ праз Wi\u2011Fi</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Прадухіліць выкарыстанне доступу да дадзеных праз\u2011Wi Fi сеткі</string>
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Звязаць гучнасць рынгтону &amp; паведамленняў</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">Калі гэта функцыя ўключана, усталяваная прашыўка рэжыму аднаўлення будзе перазапісана той, якая адпавядае бягучай версіі АС.\n\n Рэжым аднаўлення будзе абнаўляцца разам з абнаўленнямі сістэмы, забяспечваючы сумяшчальнасць з будучымі версіямі.\n\nУключыць выкарыстанне гэтай функцыі?</string>
-  <string name="update_recovery_off_warning">Калі гэта функцыя адключана, прашыўка рэжыму аднаўлення заўсёды будзе заставацца нязменнай.\n\nНекаторыя абнаўленні АС могуць не ўсталёўвацца пры выкарыстанні састарэлых ці карыстальніцкіх версій падзелу Recovery.\n\nАдключыць выкарыстанне гэтай функцыі?</string>
+  <string name="headset_connect_player_title">Запуск музычнага прайгравальніка</string>
+  <string name="headset_connect_player_summary">Запуск музычнага прайгравальніка па змаўчанні пры падключэнні гарнітуры</string>
   <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Вымыкаць экран пры падвойным націсканні</string>
+  <string name="status_bar_double_tap_to_sleep_title">Выключаць экран пры падвойным націску</string>
   <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану, каб перавесці прыладу ў спячы рэжым</string>
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> — <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">уключана</string>
   <string name="sim_disabled">адключана</string>
   <string name="sim_missing">адсутнічае альбо няспраўная</string>
   <string name="sim_enabler_need_disable_sim">SIM-картка будзе адключана. Жадаеш працягнуць?</string>

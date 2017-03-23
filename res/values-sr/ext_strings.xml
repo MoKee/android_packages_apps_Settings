@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,16 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Сада си <xliff:g id="step_count">%1$d</xliff:g> корак далеко од омогућавања развојних опција.</item>
-    <item quantity="few">Сада си <xliff:g id="step_count">%1$d</xliff:g> корака далеко од омогућавања развојних опција.</item>
-    <item quantity="other">Сада си <xliff:g id="step_count">%1$d</xliff:g> корака далеко од омогућавања развојних опција.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Омогућио си развојна подешавања!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Нема потребе, развојна подешавања су већ омогућена.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Развојни алати</string>
   <!-- Setting checkbox title for root access -->
@@ -40,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Управљај приступом руту</string>
   <string name="root_appops_summary">Види и контролиши правила рута</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS верзија</string>
-  <string name="mod_version_default">Непознато</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модел уређаја</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Име уређаја</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Ниво LineageOS API-а</string>
-  <string name="mod_api_level_default">Непознато</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Датум израде</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Системска ажурирања</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Локација</string>
   <string name="app_ops_categories_personal">Лично</string>
@@ -66,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">груба локација</string>
   <string name="app_ops_summaries_fine_location">фина локација</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">вибрација</string>
   <string name="app_ops_summaries_read_contacts">прочитај контакте</string>
   <string name="app_ops_summaries_modify_contacts">модификуј контакте</string>
@@ -137,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Груба локација</string>
   <string name="app_ops_labels_fine_location">Фина локација</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Вибрација</string>
   <string name="app_ops_labels_read_contacts">Прочитај контакте</string>
   <string name="app_ops_labels_modify_contacts">Модификуј контакте</string>
@@ -220,7 +201,7 @@
   <string name="app_ops_reset_counters">Ресетуј дозволи/одбиј бројаче</string>
   <string name="app_ops_reset_confirm_title">Потврди ресет бројача</string>
   <string name="app_ops_reset_confirm_mesg">Да ли си сигуран да желиш да поништиш бројаче?</string>
-  <string name="ok">OK</string>
+  <string name="ok">ОК</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Регулисање јачине звука</string>
   <!-- Vibrator intensity -->
@@ -344,11 +325,8 @@
   <string name="sim_mobile_network_settings_category_title">Поставке мобилне мреже</string>
   <string name="sim_mobile_network_settings_title">SIM %d поставке</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Напредне контроле за обавештења</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS лиценца</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Нађи сензор отиска прста <xliff:g id="sensor_location">%1$s</xliff:g> твог телефона.</string>
   <!-- Fingerprint sensor locations -->
@@ -396,9 +374,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Покрени музичку апликацију</string>
   <string name="headset_connect_player_summary">Покрени подразумевану музичку апликацију када су слушалице повезане</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">НАПОМЕНА: Када је ова функција омогућена, твој инсталирани опоравак ће бити замењен са једним укљученим у тренутну верзију покренутог OS-а.\n\nТвој опоравак ће бити ажуриран заједно са надоградњом вашег система, помажући да се осигура компатибилност са будућим верзијама.\n\nДа ли желите да омогућите ову функцију?</string>
-  <string name="update_recovery_off_warning">УПОЗОРЕЊЕ: Када је ова опција онемогућена, твој инсталиран опоравак неће бити ажуриран са надоградњом OS-а.\n\nБудуће ОС исправке се можда не могу инсталирати са застарелим или прерађеном верзијом опоравка.\n\nДа ли заиста желите да искључите ову функцију?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Дупли-додир за спавање</string>
   <string name="status_bar_double_tap_to_sleep_summary">Двапут додирни статусну траку да искључиш дисплеј</string>

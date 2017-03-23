@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Root pieeja</string>
@@ -30,17 +28,10 @@
   <string name="root_access_adb">Tikai ADB</string>
   <string name="root_access_all">Lietotnēm un ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versija</string>
-  <string name="mod_version_default">Nezināms</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Nezināms</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Būvējuma datums</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS atjaunojumi</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Atrašanās vieta</string>
   <string name="app_ops_categories_personal">Personīgi</string>
@@ -48,10 +39,10 @@
   <string name="app_ops_categories_media">Multivide</string>
   <string name="app_ops_categories_device">Iekārta</string>
   <string name="app_ops_categories_bootup">Sāknēšana</string>
+  <string name="app_ops_categories_su">Root pieeja</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">rupja atrašanās vieta</string>
   <string name="app_ops_summaries_fine_location">precīza atrašanās vieta</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrēt</string>
   <string name="app_ops_summaries_read_contacts">lasīt kontaktus</string>
   <string name="app_ops_summaries_modify_contacts">mainīt kontaktus</string>
@@ -90,7 +81,6 @@
   <string name="app_ops_summaries_monitor_location">pārraudzīt atrašanās vietu</string>
   <string name="app_ops_summaries_monitor_high_power_location">pārraudzīt lieljaudas atrašanās vietu</string>
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrēt</string>
   <string name="app_ops_labels_read_contacts">Lasīt kontaktus</string>
   <string name="app_ops_labels_modify_contacts">Mainīt kontaktus</string>
@@ -137,6 +127,7 @@
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Vibrāciju stiprums</string>
+  <string name="vibrator_intensity_dialog_reset">Atstatīt</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -197,11 +188,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekundes</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minūte</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minūtes</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minūtes</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS atbildība</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -214,6 +207,9 @@
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minūte</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minūtes</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minūtes</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -221,7 +217,6 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Lai iemidzinātu, veiciet dubultu piesitienu</string>
 </resources>

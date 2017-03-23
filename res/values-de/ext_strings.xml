@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Sie sind <xliff:g id="step_count">%1$d</xliff:g> Schritt vom Aktivieren der Entwicklereinstellungen entfernt.</item>
-    <item quantity="other">Sie sind <xliff:g id="step_count">%1$d</xliff:g> Schritte vom Aktivieren der Entwicklereinstellungen entfernt.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Sie haben die Entwicklereinstellungen aktiviert!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nicht nötig, Sie haben die Entwicklereinstellungen bereits aktiviert.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Entwicklerwerkzeuge</string>
   <!-- Setting checkbox title for root access -->
@@ -39,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Root-Zugriffe verwalten</string>
   <string name="root_appops_summary">Anzeigen und Kontrollieren der Root-Regeln</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS-Version</string>
-  <string name="mod_version_default">Unbekannt</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Gerätemodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Gerätename</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API-Level</string>
-  <string name="mod_api_level_default">Unbekannt</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build-Datum</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS-Updates</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Standort</string>
   <string name="app_ops_categories_personal">Persönlich</string>
@@ -219,7 +203,7 @@
   <string name="app_ops_reset_counters">Erlaubt/Verweigert-Zähler zurücksetzen</string>
   <string name="app_ops_reset_confirm_title">Zurücksetzen der Zähler bestätigen</string>
   <string name="app_ops_reset_confirm_mesg">Wollen Sie die Zähler wirklich zurücksetzen?</string>
-  <string name="ok">OK</string>
+  <string name="ok">Ok</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Ton bei Lautstärkeänderung</string>
   <!-- Vibrator intensity -->
@@ -346,8 +330,6 @@
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Erweiterte Benachrichtigungseinstellungen</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Rechtliche Hinweise zu LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> des Geräts.</string>
   <!-- Fingerprint sensor locations -->
@@ -368,7 +350,7 @@
   <string name="heads_up_notifications_enabled_title">Pop-up</string>
   <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
   <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Verschlüsselungspasswort ändern</string>
+  <string name="crypt_keeper_change_password_title">Verschlüsselungskennwort ändern</string>
   <string name="crypt_keeper_change_password_summary">Ändern Sie das Passwort zur Geräteverschlüsselung</string>
   <string name="crypt_keeper_choose_your_password_header">Verschlüsselungspasswort festlegen</string>
   <string name="crypt_keeper_replace_password_title">Verschlüsselungspasswort ersetzen</string>
@@ -399,11 +381,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Musik-App starten</string>
   <string name="headset_connect_player_summary">Beim Anschließen eines Kopfhörers die Standard-Musik-App starten</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Recovery aktualisieren</string>
-  <string name="update_recovery_summary">Recovery bei Systemupdates aktualisieren</string>
-  <string name="update_recovery_on_warning">HINWEIS: Wenn diese Funktion aktiviert ist, wird Ihr installiertes Recovery-System durch das in der aktuellen Version des Betriebssystems ersetzt.\n\nIhr Recovery-System wird fortan bei Updates des Systems ebenfalls aktualisiert, damit die Kompatibilität mit zukünftigen Versionen gewährleistet ist.\n\nWollen Sie diese Funktion aktivieren?</string>
-  <string name="update_recovery_off_warning">ACHTUNG: Wenn diese Funktion deaktiviert ist, wird das installierte Recovery-System nicht zusammen mit dem Betriebssystem aktualisiert.\n\nZukünftige OS-Updates können unter Umständen nicht installiert werden, wenn veraltete oder benutzerdefinierte Recovery-Versionen vorliegen.\n\nMöchten Sie diese Funktion wirklich deaktivieren?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Standby durch doppeltes Tippen</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auszuschalten</string>

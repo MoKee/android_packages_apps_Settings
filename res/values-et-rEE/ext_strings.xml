@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Olete <xliff:g id="step_count">%1$d</xliff:g> sammu kaugusel arendussätete lubamisest.</item>
-    <item quantity="other">Olete <xliff:g id="step_count">%1$d</xliff:g> sammu kaugusel arendussätete lubamisest.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Arendussätted aktiveeritud!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Ei ole vaja, arendussätted juba aktiveeritud.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Arendussätted</string>
   <!-- Setting checkbox title for root access -->
@@ -37,19 +29,12 @@
   <string name="root_access_adb">Ainult ADB</string>
   <string name="root_access_all">Rakendused ja ADB</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS versioon</string>
-  <string name="mod_version_default">Teadmata</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Seadme mudel</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Seadme nimi</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level_default">Teadmata</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Kooste kuupäev</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS uuendused</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Asukoht</string>
   <string name="app_ops_categories_personal">Isiklik</string>
@@ -61,7 +46,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Umbmäärane asukoht</string>
   <string name="app_ops_summaries_fine_location">Hea asukoht</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibreeri</string>
   <string name="app_ops_summaries_read_contacts">Loe kontakte</string>
   <string name="app_ops_summaries_modify_contacts">muuda kontakte</string>
@@ -105,7 +89,6 @@
   <string name="app_ops_summaries_activate_vpn">Aktiveeri VPN</string>
   <string name="app_ops_summaries_superuser">Root ligipääs</string>
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibreeri</string>
   <string name="app_ops_labels_read_contacts">Loe kontakte</string>
   <string name="app_ops_labels_modify_contacts">Muuda kontakte</string>
@@ -156,7 +139,6 @@
   <string name="app_ops_reset_counters">Lähtesta luba/keela loendurid</string>
   <string name="app_ops_reset_confirm_title">Kinnita loendurite lähetstamine</string>
   <string name="app_ops_reset_confirm_mesg">Kas sa oled kindel, et soovid loendurid lähtestada?</string>
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Helitugevuse muutmise helid</string>
   <!-- Vibrator intensity -->
@@ -243,6 +225,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekundit</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minutit</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minutit</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d olek</string>
   <string name="sim_card_lock_settings_title">SIM %d luku seaded</string>
@@ -250,10 +236,7 @@
   <string name="sim_mobile_network_settings_category_title">Mobiilsidevõrgu seaded</string>
   <string name="sim_mobile_network_settings_title">SIM-kaardi %d seaded</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS juriidiline info</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -268,8 +251,12 @@
   <!-- Heads-up -->
   <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Muud</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Mitte kunagi</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minut</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutit</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutit</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -278,9 +265,6 @@
   <!-- Volume link notification -->
   <string name="volume_link_notification_title">Ühenda helina toon &amp; teavituse toonid</string>
   <!-- Launch music player when headset is connected -->
-  <!-- Update recovery -->
-  <string name="update_recovery_on_warning">TEADE: Kui see funktsioon on lubatud, siis teie installitud Recovery asendatakse praeguses OS versioonis kaasas olevaga.\n\nSinu Recovery uuendatakse koos süsteemi uuendustega, et tagada ühilduvus tulevaste versioonidega.\n\nKas soovite funktsiooni aktiveerida?</string>
-  <string name="update_recovery_off_warning">HOIATUS: Kui see funktsioon on keelatud, siis teie installitud Recovery ei ajakohastata OS uuendamisel.\n\nTulevased OS ajakohastamised ei pruugi paigalduda vananenud või kohandatud Recovery kasutamisel.\n\nKas soovite funktsiooni keelata?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Topelt koputus ekraani väljalülitamiseks</string>
   <string name="status_bar_double_tap_to_sleep_summary">Topeltpuudutage olekuriba ekraani väljalülitamiseks</string>

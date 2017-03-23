@@ -39,4 +39,5 @@
   <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Força autorizar cada app tema</string>
+  <string name="force_authorize_substratum_packages_summary">Permitir aplicativos de tema de fontes desconhecidas</string>
 </resources>

@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <!-- Setting checkbox title for root access -->
   <string name="root_access">রুট এক্সেস</string>
@@ -30,18 +28,10 @@
   <string name="root_access_adb">শুধু মাত্র এডিবি</string>
   <string name="root_access_all">অ্যাপস এবং এডিবি</string>
   <!-- Preference link for root appops -->
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">সায়ানোজেনমড সংস্করণ</string>
-  <string name="mod_version_default">অজানা</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS এপিআই লেভেল</string>
-  <string name="mod_api_level_default">অজানা</string>
   <!-- About phone screen, build date -->
   <string name="build_date">তৈরী তারিখ</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">সায়ানোজেনমড আধুনিকীকরণ</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">অবস্থান</string>
   <string name="app_ops_categories_personal">ব্যক্তিগত</string>
@@ -50,6 +40,7 @@
   <string name="app_ops_categories_device">ডিভাইস</string>
   <string name="app_ops_categories_background">ব্যাকগ্রাউন্ড</string>
   <string name="app_ops_categories_bootup">বুটআপ</string>
+  <string name="app_ops_categories_su">রুট এক্সেস</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">কর্কশ অবস্থান</string>
   <string name="app_ops_summaries_fine_location">সূক্ষ অবস্থান</string>
@@ -143,6 +134,7 @@
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">কম্পক তীব্রতা</string>
   <string name="vibrator_intensity_dialog_warning">মূল্য %1$d%% শতাংশ এর চেয়ে বেশি সুপারিশকৃত নয়</string>
+  <string name="vibrator_intensity_dialog_reset">পুনরায় ধার্য করুন</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">প্যাটার্নের আকার নির্ধারন করুন</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -215,8 +207,6 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">প্রজ্ঞাপন নিয়ন্ত্রণ ক্ষমতা</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">সায়ানোজেনমড বৈধতা</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -226,7 +216,6 @@
   <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবস্থায় জেগে উঠা</string>
   <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
   <!-- Heads-up -->
-  <string name="heads_up_notifications_enabled_title">Heads-up</string>
   <string name="heads_up_notifications_enabled_summary">ছোট ভাসমান উইন্ডোতে অগ্রাধিকার প্রজ্ঞাপন প্রদর্শন করুন</string>
   <!-- Encryption password -->
   <string name="crypt_keeper_change_password_title">এনক্রিপশন পাসওয়ার্ড পরিবর্তন করুন</string>
@@ -235,7 +224,9 @@
   <string name="crypt_keeper_replace_password_title">পাসওয়ার্ড এনক্রিপশন প্রতিস্থাপন করুন</string>
   <string name="crypt_keeper_replace_password_summary">আলাদা এনক্রিপশন গুপ্ত-সংকেতটি অপসারণ করুন</string>
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">অন্যান্য</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Never</string>
   <!-- Per-app data restrictions -->
   <string name="data_usage_app_restrict_data_category_title">সেলুলার ডেটা অ্যাক্সেস</string>
   <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi ডাটা এক্সেস</string>
@@ -251,9 +242,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">মিউজিক প্লেয়ার চালু করুন</string>
   <string name="headset_connect_player_summary">হেডফোন যুক্ত করার সাথে সাথে মিউজিক প্লেয়ার চালু করুন</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">রিকভারি আপডেট</string>
-  <string name="update_recovery_summary">বিল্ট ইন রিকভারি সিস্টেম আপডেটের সাথে আপডেট করুন</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">দুই টোকা দিয়ে নিদ্রা</string>
 </resources>
