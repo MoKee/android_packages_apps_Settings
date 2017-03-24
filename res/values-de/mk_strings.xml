@@ -38,4 +38,6 @@
   <string name="menu_show_substratum_icons">Overlay-Icons zeigen</string>
   <string name="menu_hide_substratum_icons">Overlay-Icons ausblenden</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Erzwinge Autorisierung jeder Themen App</string>
+  <string name="force_authorize_substratum_packages_summary">Erlaube Theme Apps von unbekannten Quellen</string>
 </resources>

@@ -304,10 +304,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">падзеі</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">усё абаненты</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">абраныя абанэнты</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">паўторныя выклікі</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">усе паведамленні</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">абраныя паведамленні</string>
   <!-- Notification sound timeout -->
@@ -396,8 +399,8 @@
   <string name="sim_enabler_both_inactive">Немагчыма адключыць усе SIM-карты</string>
   <string name="sim_enabler_enabling">Улучэнне\u2026</string>
   <string name="sim_enabler_disabling">Адлучэнне\u2026</string>
-  <string name="sub_activate_success">SIM актывована.</string>
+  <string name="sub_activate_success">SIM актывавана.</string>
   <string name="sub_activate_failed">Памылка падчас актывацыі.</string>
-  <string name="sub_deactivate_success">SIM дэактывована.</string>
+  <string name="sub_deactivate_success">SIM дэактывавана.</string>
   <string name="sub_deactivate_failed">Памылка падчас дэактывацыі.</string>
 </resources>
