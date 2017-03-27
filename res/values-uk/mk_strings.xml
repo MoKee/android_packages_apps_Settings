@@ -39,4 +39,6 @@
   <string name="menu_show_substratum_icons">Показувати іконку шарів</string>
   <string name="menu_hide_substratum_icons">Приховати іконку шарів</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Примусово авторизувати кожну тему</string>
+  <string name="force_authorize_substratum_packages_summary">Дозволити теми із невідомих джерел</string>
 </resources>

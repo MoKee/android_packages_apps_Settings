@@ -20,15 +20,24 @@
   <string name="mk_version_default">Неизвестно</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпка от вкл на опции за програмист.</item>
-    <item quantity="other">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпки от вкл на опции за програмист.</item>
+    <item quantity="one">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпка от включване на опции за програмист.</item>
+    <item quantity="other">Вие сте на <xliff:g id="step_count">%1$d</xliff:g> стъпки от включване на опции за програмист.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Вие включихте опциите за програмисти!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Не е необходимо. Вече има включени опции на програмист.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Замразяване или премахване на MoKee център ще засегне системни услуги, моля възстановете и опитайте отново.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum слоеве</string>
+  <string name="menu_show_substratum">Покажи слоеве</string>
+  <string name="menu_hide_substratum">Скрий слоеве</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum слоеве за икони</string>
+  <string name="menu_show_substratum_icons">Покажи слоеве за икони</string>
+  <string name="menu_hide_substratum_icons">Скрий слоеве за икони</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Накарай всяко приложение да се оторизира</string>
+  <string name="force_authorize_substratum_packages_summary">Позволи приложения за теми от непознати източници</string>
 </resources>
