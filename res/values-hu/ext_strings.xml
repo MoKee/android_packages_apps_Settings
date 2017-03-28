@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Lebegő értesítés</string>
   <string name="heads_up_notifications_enabled_summary">Kiemelt értesítések megjelenítése egy kis lebegő ablakban</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Titkosítási jelszó módosítása</string>
-  <string name="crypt_keeper_change_password_summary">Eszköz titkosításhoz használt jelszó módosítása</string>
-  <string name="crypt_keeper_choose_your_password_header">Titkosítási jelszó beállítása</string>
-  <string name="crypt_keeper_replace_password_title">Titkosítási jelszó módosítása</string>
-  <string name="crypt_keeper_replace_password_summary">A különálló titkosítási jelszó eltávolítása</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Egyéb</string>
   <!-- Wi-Fi tethering inactivity timeout -->

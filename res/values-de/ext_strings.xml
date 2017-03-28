@@ -352,12 +352,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Pop-up</string>
   <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Verschlüsselungskennwort ändern</string>
-  <string name="crypt_keeper_change_password_summary">Ändern Sie das Passwort zur Geräteverschlüsselung</string>
-  <string name="crypt_keeper_choose_your_password_header">Verschlüsselungspasswort festlegen</string>
-  <string name="crypt_keeper_replace_password_title">Verschlüsselungspasswort ersetzen</string>
-  <string name="crypt_keeper_replace_password_summary">Entfernt das separate Verschlüsselungspasswort</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Andere</string>
   <!-- Wi-Fi tethering inactivity timeout -->

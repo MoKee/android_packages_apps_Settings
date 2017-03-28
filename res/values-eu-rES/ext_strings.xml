@@ -345,12 +345,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Jakinarazpen flotatzaileak</string>
   <string name="heads_up_notifications_enabled_summary">Bistaratu lehentasunezko jakinarazpenak leiho flotatzaile txiki batean</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Aldatu zifratzearen pasahitza</string>
-  <string name="crypt_keeper_change_password_summary">Aldatu gailua zifratzeko erabilitako pasahitza</string>
-  <string name="crypt_keeper_choose_your_password_header">Ezarri zifratzearen pasahitza</string>
-  <string name="crypt_keeper_replace_password_title">Ordezkatu zifratzearen pasahitza</string>
-  <string name="crypt_keeper_replace_password_summary">Kendu aparteko zifratzearen pasahitza</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Beste bat</string>
   <!-- Wi-Fi tethering inactivity timeout -->

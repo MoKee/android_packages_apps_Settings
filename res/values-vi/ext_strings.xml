@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Thông báo nổi</string>
   <string name="heads_up_notifications_enabled_summary">Hiển thị các thông báo ưu tiên trong một cửa sổ nổi nhỏ</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Thay đổi mật khẩu mã hoá</string>
-  <string name="crypt_keeper_change_password_summary">Thay đổi mật khẩu đã sử dụng để mã hóa thiết bị</string>
-  <string name="crypt_keeper_choose_your_password_header">Đặt mật khẩu mã hoá</string>
-  <string name="crypt_keeper_replace_password_title">Thay thế mật khẩu mã hóa</string>
-  <string name="crypt_keeper_replace_password_summary">Xóa mật khẩu mã hóa riêng biệt</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Khác</string>
   <!-- Wi-Fi tethering inactivity timeout -->

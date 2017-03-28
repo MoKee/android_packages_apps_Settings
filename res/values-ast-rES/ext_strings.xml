@@ -319,12 +319,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Avisos emerxentes</string>
   <string name="heads_up_notifications_enabled_summary">Amuesa los avisos prioritarios nuna ventana pequeña flotante</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Camudar contraseña de cifráu</string>
-  <string name="crypt_keeper_change_password_summary">Camuda la contraseña usada pal cifráu del preséu</string>
-  <string name="crypt_keeper_choose_your_password_header">Afitar contraseña de cifráu</string>
-  <string name="crypt_keeper_replace_password_title">Trocar contraseña de cifráu</string>
-  <string name="crypt_keeper_replace_password_summary">Desanicia la contraseña de cifráu separtada</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Otros</string>
   <!-- Wi-Fi tethering inactivity timeout -->

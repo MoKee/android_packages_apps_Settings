@@ -217,12 +217,6 @@
   <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_summary">ছোট ভাসমান উইন্ডোতে অগ্রাধিকার প্রজ্ঞাপন প্রদর্শন করুন</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">এনক্রিপশন পাসওয়ার্ড পরিবর্তন করুন</string>
-  <string name="crypt_keeper_change_password_summary">ডিভাইসে এনক্রিপশন ব্যবহারের জন্যে পাসওয়ার্ড পরিবর্তন করুন</string>
-  <string name="crypt_keeper_choose_your_password_header">এনক্রিপশন পাসওয়ার্ড নির্ধারণ করুন</string>
-  <string name="crypt_keeper_replace_password_title">পাসওয়ার্ড এনক্রিপশন প্রতিস্থাপন করুন</string>
-  <string name="crypt_keeper_replace_password_summary">আলাদা এনক্রিপশন গুপ্ত-সংকেতটি অপসারণ করুন</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">অন্যান্য</string>
   <!-- Wi-Fi tethering inactivity timeout -->

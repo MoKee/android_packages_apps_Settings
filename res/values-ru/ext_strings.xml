@@ -352,12 +352,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
   <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими всплывающими окнами</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Изменить пароль шифрования</string>
-  <string name="crypt_keeper_change_password_summary">Изменение пароля, используемого для шифрования устройства</string>
-  <string name="crypt_keeper_choose_your_password_header">Установить пароль шифрования</string>
-  <string name="crypt_keeper_replace_password_title">Заменить пароль шифрования</string>
-  <string name="crypt_keeper_replace_password_summary">Удалить отдельный пароль шифрования</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Другое</string>
   <!-- Wi-Fi tethering inactivity timeout -->

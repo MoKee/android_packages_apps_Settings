@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Plávajúce upozornenia</string>
   <string name="heads_up_notifications_enabled_summary">Zobraziť prioritné oznámenia v malom plávajúcom okne</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Zmeniť heslo šifrovania</string>
-  <string name="crypt_keeper_change_password_summary">Zmeniť heslo používané na zašifrovanie zariadenia</string>
-  <string name="crypt_keeper_choose_your_password_header">Nastaviť heslo šifrovania</string>
-  <string name="crypt_keeper_replace_password_title">Prepísať heslo šifrovania</string>
-  <string name="crypt_keeper_replace_password_summary">Odstráneniť samostatné šifrovanie heslo</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Iné</string>
   <!-- Wi-Fi tethering inactivity timeout -->

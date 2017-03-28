@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Obvestila na zaslonu</string>
   <string name="heads_up_notifications_enabled_summary">Prikaži prednostna obvestila v majhnem lebdečem oknu</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Spremeni geslo za šifriranje</string>
-  <string name="crypt_keeper_change_password_summary">Spremeni geslo za šifriranje naprave</string>
-  <string name="crypt_keeper_choose_your_password_header">Nastavi geslo za šifriranje</string>
-  <string name="crypt_keeper_replace_password_title">Zamenjaj geslo za šifriranje</string>
-  <string name="crypt_keeper_replace_password_summary">Odstrani ločeno šifriranje gesla</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Drugo</string>
   <!-- Wi-Fi tethering inactivity timeout -->

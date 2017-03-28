@@ -223,7 +223,6 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_summary">Güc mənbəsinə bağlananda və ya bağlantını kəsəndə ekranı aç</string>
   <!-- Heads-up -->
-  <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Digər</string>
   <!-- Wi-Fi tethering inactivity timeout -->

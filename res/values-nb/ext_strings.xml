@@ -344,12 +344,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Varselvindu</string>
   <string name="heads_up_notifications_enabled_summary">Vis prioriterte varsler i et lite flytende vindu</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Endre krypteringspassord</string>
-  <string name="crypt_keeper_change_password_summary">Endre passordet brukt til kryptering av enheten</string>
-  <string name="crypt_keeper_choose_your_password_header">Angi krypteringspassord</string>
-  <string name="crypt_keeper_replace_password_title">Erstatt krypteringspassord</string>
-  <string name="crypt_keeper_replace_password_summary">Fjerne det separate krypteringspassordet</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Annet</string>
   <!-- Wi-Fi tethering inactivity timeout -->

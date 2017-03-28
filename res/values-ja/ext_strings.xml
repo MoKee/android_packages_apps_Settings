@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">ヘッドアップ</string>
   <string name="heads_up_notifications_enabled_summary">小さなフローティングウインドウに重要な通知を表示する</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">暗号化パスワードの変更</string>
-  <string name="crypt_keeper_change_password_summary">端末の暗号化に使用される暗号化パスワードを変更します</string>
-  <string name="crypt_keeper_choose_your_password_header">暗号化パスワードを設定する</string>
-  <string name="crypt_keeper_replace_password_title">暗号化パスワードを変更する</string>
-  <string name="crypt_keeper_replace_password_summary">分割された暗号化パスワードを削除します</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">その他</string>
   <!-- Wi-Fi tethering inactivity timeout -->

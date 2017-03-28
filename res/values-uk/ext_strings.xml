@@ -352,12 +352,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Спливаючі сповіщення</string>
   <string name="heads_up_notifications_enabled_summary">Відображати пріоритетні сповіщення у невеликому плаваючому вікні</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Зміна пароля шифрування</string>
-  <string name="crypt_keeper_change_password_summary">Змінити пароль, що використовується для шифрування пристрою</string>
-  <string name="crypt_keeper_choose_your_password_header">Встановити пароль шифрування</string>
-  <string name="crypt_keeper_replace_password_title">Замінити пароль шифрування</string>
-  <string name="crypt_keeper_replace_password_summary">Видалення окремого шифрування пароля</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Інший</string>
   <!-- Wi-Fi tethering inactivity timeout -->

@@ -339,12 +339,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Swewende kennisgewings</string>
   <string name="heads_up_notifications_enabled_summary">Wys prioriteit kennisgewings in \'n klein swewende venster</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Verander enkripsie wagwoord</string>
-  <string name="crypt_keeper_change_password_summary">Verander die wagwoord wat gebruik word vir enkripsie</string>
-  <string name="crypt_keeper_choose_your_password_header">Stel enkripsie wagwoord</string>
-  <string name="crypt_keeper_replace_password_title">Vervang versleutelingswagwoord</string>
-  <string name="crypt_keeper_replace_password_summary">Verwyder die afsonderlike enkripsie wagwoord</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Ander</string>
   <!-- Wi-Fi tethering inactivity timeout -->

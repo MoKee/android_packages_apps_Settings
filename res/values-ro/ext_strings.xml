@@ -341,12 +341,6 @@
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Schimbați parola de criptare</string>
-  <string name="crypt_keeper_change_password_summary">Schimbați parola utilizată pentru criptarea dispozitivului</string>
-  <string name="crypt_keeper_choose_your_password_header">Setați parola de criptare</string>
-  <string name="crypt_keeper_replace_password_title">Schimbați parola de criptare</string>
-  <string name="crypt_keeper_replace_password_summary">Eliminați parola de criptare separată</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Altele</string>
   <!-- Wi-Fi tethering inactivity timeout -->

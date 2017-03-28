@@ -249,7 +249,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
   <string name="wake_when_plugged_or_unplugged_summary">Lülita ekraan sisse kui ühendatakse või eemaldatakse toite allikas</string>
   <!-- Heads-up -->
-  <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Muud</string>
   <!-- Wi-Fi tethering inactivity timeout -->

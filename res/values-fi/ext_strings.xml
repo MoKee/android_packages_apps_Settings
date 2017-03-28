@@ -344,12 +344,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Leijuvat ilmoitukset</string>
   <string name="heads_up_notifications_enabled_summary">Näytä tärkeät ilmoitukset pienessä kelluvassa ikkunassa</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Vaihda salauksen salasana</string>
-  <string name="crypt_keeper_change_password_summary">Vaihda laitteen salauksessa käytettävä salasana</string>
-  <string name="crypt_keeper_choose_your_password_header">Aseta salauksen salasana</string>
-  <string name="crypt_keeper_replace_password_title">Korvaa salauksen salasana</string>
-  <string name="crypt_keeper_replace_password_summary">Poista erillinen salauksen salasana</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Muut</string>
   <!-- Wi-Fi tethering inactivity timeout -->

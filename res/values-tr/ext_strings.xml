@@ -349,12 +349,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Üst bildirim</string>
   <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Şifreleme parolasını değiştir</string>
-  <string name="crypt_keeper_change_password_summary">Cihaz şifrelemesi için kullanılan şifreyi değiştir</string>
-  <string name="crypt_keeper_choose_your_password_header">Şifreleme parolasını ayarlayın</string>
-  <string name="crypt_keeper_replace_password_title">Şifreleme parolasını değiştirin</string>
-  <string name="crypt_keeper_replace_password_summary">Ayrı şifreleme parolasını kaldırın</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Diğer</string>
   <!-- Wi-Fi tethering inactivity timeout -->

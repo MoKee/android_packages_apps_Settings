@@ -349,12 +349,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">התראות קופצות</string>
   <string name="heads_up_notifications_enabled_summary">הראה התראות חשובות בחלון צף קטן</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">שנה סיסמת הצפנה</string>
-  <string name="crypt_keeper_change_password_summary">שנה את הסיסמה המשומשת להצפנת המכשיר</string>
-  <string name="crypt_keeper_choose_your_password_header">הגדר סיסמת הצפנה</string>
-  <string name="crypt_keeper_replace_password_title">החלף סיסמת הצפנה</string>
-  <string name="crypt_keeper_replace_password_summary">הסר את סיסמת ההצפנה הנפרדת</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">אחר</string>
   <!-- Wi-Fi tethering inactivity timeout -->

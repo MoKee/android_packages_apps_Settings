@@ -346,12 +346,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">헤드업 알림</string>
   <string name="heads_up_notifications_enabled_summary">작은 플로팅 창에 중요 알림 표시</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">암호화 비밀번호 변경</string>
-  <string name="crypt_keeper_change_password_summary">기기 암호화에 사용하고 있던 비밀번호를 변경</string>
-  <string name="crypt_keeper_choose_your_password_header">암호화 비밀번호 설정</string>
-  <string name="crypt_keeper_replace_password_title">암호화 비밀번호 교체</string>
-  <string name="crypt_keeper_replace_password_summary">다른 암호화 비밀번호 제거</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">기타</string>
   <!-- Wi-Fi tethering inactivity timeout -->

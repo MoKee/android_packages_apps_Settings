@@ -335,11 +335,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
   <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning till eller frånkoppling från strömkälla</string>
   <!-- Heads-up -->
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_summary">Ändra lösenordet som används för enhetskryptering</string>
-  <string name="crypt_keeper_choose_your_password_header">Ange krypteringslösenord</string>
-  <string name="crypt_keeper_replace_password_title">Ersätt krypteringslösenord</string>
-  <string name="crypt_keeper_replace_password_summary">Ta bort det separata krypteringslösenordet</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Annan</string>
   <!-- Wi-Fi tethering inactivity timeout -->
