@@ -38,7 +38,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Date de compilation</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
-  <string name="app_ops_categories_location">Emplacement</string>
+  <string name="app_ops_categories_location">Localisation</string>
   <string name="app_ops_categories_personal">Personnel</string>
   <string name="app_ops_categories_messaging">Messagerie</string>
   <string name="app_ops_categories_media">Média</string>
