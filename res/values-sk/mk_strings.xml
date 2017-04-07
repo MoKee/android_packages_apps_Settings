@@ -16,12 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">Verzia MoKee</string>
   <string name="mk_version_default">Neznáme</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> krok od zapnutia vývojárskych nastavení.</item>
+    <item quantity="few">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolenia nastavení pre vývojárov.</item>
+    <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia nastavení pre vývojárov.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Povolili ste nastavenia pre vývojárov!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Nie je potreba, už ste povolili nastavenia pre vývojárov.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Zmrazenie alebo odstránenie MoKee Centra môže ovplyvniť systémové služby, prosím obnovte a skúste znovu.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum prekrytia</string>
+  <string name="menu_show_substratum">Zobraziť prekrytia</string>
+  <string name="menu_hide_substratum">Skryť prekrytia</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum prekrytia ikon</string>
+  <string name="menu_show_substratum_icons">Zobraziť prekrytia ikon</string>
+  <string name="menu_hide_substratum_icons">Skryť prekrytia ikon</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Vyžadovať povolenie pre každú tému</string>
+  <string name="force_authorize_substratum_packages_summary">Povoliť inštaláciu tém z neznámych zdrojov</string>
 </resources>
