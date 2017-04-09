@@ -38,4 +38,6 @@
   <string name="menu_show_substratum_icons">Simge bindirmelerini göster</string>
   <string name="menu_hide_substratum_icons">Simge bindirmelerini gizle</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Her tema uygulamanın yetkisini zorla</string>
+  <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
 </resources>
