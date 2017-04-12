@@ -16,14 +16,45 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">Verzia MoKee</string>
   <string name="mk_version_default">Neznáme</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Všetky čísla</string>
+  <string name="blacklist_all_numbers_summary">Blokovať všetky hovory</string>
+  <string name="blacklist_advertisement_numbers_title">Reklamné čísla</string>
+  <string name="blacklist_advertisement_numbers_summary">Blokovať reklamné hovory</string>
+  <string name="blacklist_fraud_numbers_title">Podvodné čísla</string>
+  <string name="blacklist_fraud_numbers_summary">Blokovať podvodné hovory</string>
+  <string name="blacklist_harassment_numbers_title">Obťažujúce čísla</string>
+  <string name="blacklist_harassment_numbers_summary">Blokovať obťažujúce hovory</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Výška tlačidla</string>
+  <string name="navigation_bar_height_48">48dp (predvolené)</string>
+  <string name="navigation_bar_height_0">skryť</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">Rýchlosť siete</string>
+  <string name="show_network_speed_summary">Zobrazovať rýchlosť siete v stavovom riadku</string>
+  <string name="status_bar_network_traffic_style_disable">Nezobrazovať</string>
+  <string name="status_bar_network_traffic_style_up">Odchádzajúce</string>
+  <string name="status_bar_network_traffic_style_down">Prichádzajuce</string>
+  <string name="status_bar_network_traffic_style_all">Odchádzajúce a prichádzajúce</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Sekundy u hodín</string>
+  <string name="status_bar_clock_show_second_summary">Zobrazovať sekundy u hodín v stavom riadku</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Zobrazovať ikonu SU</string>
+  <string name="show_su_icon_summary">Zobrazovať ikonu v stavovom riadku keď je SU aktívny</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Zobrazovať Ikonu slúchadiel</string>
+  <string name="show_headset_icon_summary">Zobrazovať ikonu v stavovom riadku keď sú zapojené slúchadlá</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> krok od zapnutia vývojárskych nastavení.</item>
+    <item quantity="few">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolenia nastavení pre vývojárov.</item>
+    <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia nastavení pre vývojárov.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Povolili ste nastavenia pre vývojárov!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Nie je potreba, už ste povolili nastavenia pre vývojárov.</string>
 </resources>
