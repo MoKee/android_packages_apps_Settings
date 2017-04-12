@@ -38,4 +38,6 @@
   <string name="menu_show_substratum_icons">Mostrar capa de iconos</string>
   <string name="menu_hide_substratum_icons">Ocultar capa de iconos</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Fuerza autorizar cada tema de aplicación</string>
+  <string name="force_authorize_substratum_packages_summary">Permite temas de aplicaciones de fuentes desconocidas</string>
 </resources>
