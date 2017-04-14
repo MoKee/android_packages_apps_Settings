@@ -41,6 +41,7 @@
   <string name="app_ops_categories_location">Sijainti</string>
   <string name="app_ops_categories_personal">Henkilökohtainen</string>
   <string name="app_ops_categories_messaging">Viestit</string>
+  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Laite</string>
   <string name="app_ops_categories_background">Tausta</string>
   <string name="app_ops_categories_bootup">Käynnistys</string>
@@ -48,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">karkea sijainti</string>
   <string name="app_ops_summaries_fine_location">tarkka sijainti</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">värinä</string>
   <string name="app_ops_summaries_read_contacts">lue yhteystietoja</string>
   <string name="app_ops_summaries_modify_contacts">muokkaa yhteystietoja</string>
@@ -118,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Karkea sijainti</string>
   <string name="app_ops_labels_fine_location">Tarkka sijainti</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Värinä</string>
   <string name="app_ops_labels_read_contacts">Lue yhteystietoja</string>
   <string name="app_ops_labels_modify_contacts">Muokkaa yhteystietoja</string>
@@ -200,6 +203,7 @@
   <string name="app_ops_reset_counters">Nollaa sallittujen/estettyjen laskurit</string>
   <string name="app_ops_reset_confirm_title">Vahvista laskurien nollaus</string>
   <string name="app_ops_reset_confirm_mesg">Haluatko varmasti nollata laskurit?</string>
+  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Äänenvoimakkuuden säädön merkkiääni</string>
   <!-- Vibrator intensity -->
@@ -323,6 +327,7 @@
   <string name="sim_mobile_network_settings_category_title">Mobiiliverkon asetukset</string>
   <string name="sim_mobile_network_settings_title">SIM %d asetukset</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Edistyneiden ilmoitusten asetukset</string>
   <!-- Format string for fingerprint location message -->

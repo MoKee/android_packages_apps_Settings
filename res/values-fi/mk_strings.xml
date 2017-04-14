@@ -16,11 +16,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee versio</string>
+  <string name="mk_version_default">Tuntematon</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+    <item quantity="other">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Kehittäjäasetukset on nyt käytössä!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Olet jo ottanut kehittäjäasetukset käyttöön.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Poistamalla MoKee Centerin, vaikutat järjestelmään joten palauta se käyttöön ja yritä uudelleen.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum ulkoasut</string>
+  <string name="menu_show_substratum">Näytä ulkoasut</string>
+  <string name="menu_hide_substratum">Piilota ulkoasut</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum kuvake ulkoasut</string>
+  <string name="menu_show_substratum_icons">Näytä kuvakkeen ulkoasut</string>
+  <string name="menu_hide_substratum_icons">Piilota kuvakkeen ulkoasut</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Pakota autentikointi teema-sovellukselle</string>
+  <string name="force_authorize_substratum_packages_summary">Salli teemat tuntemattomista lähteistä</string>
 </resources>
