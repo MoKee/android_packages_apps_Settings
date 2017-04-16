@@ -39,4 +39,6 @@
   <string name="menu_show_substratum_icons">Pokaż nakładki ikon</string>
   <string name="menu_hide_substratum_icons">Ukryj nakładki ikon</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Wymuś autoryzację każdego motywu</string>
+  <string name="force_authorize_substratum_packages_summary">Zezwalaj na instalowanie motywów z nieznanych źródeł</string>
 </resources>
