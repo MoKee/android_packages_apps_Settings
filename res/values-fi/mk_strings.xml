@@ -16,13 +16,44 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee versio</string>
+  <string name="mk_version_default">Tuntematon</string>
   <!-- BlackList Ext -->
+  <string name="blacklist_all_numbers_title">Kaikki numerot</string>
+  <string name="blacklist_all_numbers_summary">Estä kaikki puhelut</string>
+  <string name="blacklist_advertisement_numbers_title">Mainosasetukset</string>
+  <string name="blacklist_advertisement_numbers_summary">Estä mainospuhelut</string>
+  <string name="blacklist_fraud_numbers_title">Häiriönumerot</string>
+  <string name="blacklist_fraud_numbers_summary">Estä häirikköpuhelut</string>
+  <string name="blacklist_harassment_numbers_title">Häirintä numerot</string>
+  <string name="blacklist_harassment_numbers_summary">Estä mainospuhelut</string>
   <!-- Height of navigation bar buttons -->
+  <string name="navigation_bar_height">Painikkeen korkeus</string>
+  <string name="navigation_bar_height_48">48dp (oletus)</string>
+  <string name="navigation_bar_height_0">piilota</string>
   <!-- Show network speed -->
+  <string name="show_network_speed_title">Verkon nopeus</string>
+  <string name="show_network_speed_summary">Näytä verkon nopeus tilarivillä</string>
+  <string name="status_bar_network_traffic_style_disable">Poistettu käytöstä</string>
+  <string name="status_bar_network_traffic_style_up">Menevä</string>
+  <string name="status_bar_network_traffic_style_down">Tuleva</string>
+  <string name="status_bar_network_traffic_style_all">Menevä ja saapuva</string>
   <!-- Seconds in clock -->
+  <string name="status_bar_clock_show_second_title">Sekuntit kellossa</string>
+  <string name="status_bar_clock_show_second_summary">Näytä sekuntit tilapalkissa</string>
   <!-- Show/hide su icon -->
+  <string name="show_su_icon_title">Näytä kuvake</string>
+  <string name="show_su_icon_summary">Näytä kuvake tilarivillä, kun Su on aktiivinen</string>
   <!-- Show/hide headset icon -->
+  <string name="show_headset_icon_title">Näytä kuulokemikrofonin kuvake</string>
+  <string name="show_headset_icon_summary">Näytä kuvake tilarivillä, kun kuulokkeet on kytketty</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+    <item quantity="other">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Kehittäjäasetukset on nyt käytössä!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Olet jo ottanut kehittäjäasetukset käyttöön.</string>
 </resources>
