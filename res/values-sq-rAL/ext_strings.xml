@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,15 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Ju jeni edhe <xliff:g id="step_count">%1$d</xliff:g> hap larg aktivizimit të parametrave të zhvillimit.</item>
-    <item quantity="other">Ju jeni edhe <xliff:g id="step_count">%1$d</xliff:g> hapa larg aktivizimit të parametrave të zhvillimit.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Ju keni aktivizuar parametrat e zhvillimit!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nuk ka më nevojë të shtypni! Parametrat e zhvillimit janë të aktivizuara.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Veglat e zhvillimit</string>
   <!-- Setting checkbox title for root access -->
@@ -37,29 +29,19 @@
   <string name="root_access_all">Aplikacionet dhe ADB</string>
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Menaxho akseset Root</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versioni i LineageOS</string>
-  <string name="mod_version_default">I panjohur</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modeli i pajisjes</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Emri i pajisjes</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Niveli API i LineageOS</string>
-  <string name="mod_api_level_default">I panjohur</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data e ndërtimit</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Përditësimet e LineageOS</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_messaging">Mesazhet</string>
-  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Pajisja</string>
   <string name="app_ops_categories_background">Sfondi</string>
   <string name="app_ops_categories_su">Aksesi Root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_fine_location">vendndodhje e përpiktë</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">dridhu</string>
   <string name="app_ops_summaries_read_contacts">lexo kontaktet</string>
   <string name="app_ops_summaries_modify_contacts">modifiko kontaktet</string>
@@ -167,11 +149,11 @@
   <string name="app_ops_both_count">Lejuar <xliff:g id="count">%1$s</xliff:g>, refuzuar <xliff:g id="count">%2$s</xliff:g></string>
   <!-- App ops menu options -->
   <string name="app_ops_reset_confirm_mesg">A jeni të sigurt që doni të rifilloni numeratorët?</string>
-  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Tingujt e rregullimit të volumit</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_dialog_warning">Nuk rekomandohen vlera më të mëdha se %1$d%%</string>
+  <string name="vibrator_intensity_dialog_reset">Rivendos</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Zgjidh madhësinë e modelit</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -196,6 +178,7 @@
   <string name="lockscreen_visualizer_title">Trego vizualizuesin e muzikës</string>
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
+  <string name="menu_hidden_apps_delete">Rivendos</string>
   <string name="launch_app">Nis aplikacionin</string>
   <string name="pa_login_username_hint">Emri i përdoruesit (email)</string>
   <string name="pa_login_password_hint">Fjalëkalimi</string>
@@ -258,11 +241,8 @@
   <!-- MSIM SIM status -->
   <string name="sim_mobile_network_settings_category_title">Parametrat e rrjetit celular</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Kontrolli i rëndësisë së njoftimeve</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Liçensa e LineageOS</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Lokalizo sensorin e shenjave të gishtave në <xliff:g id="sensor_location">%1$s</xliff:g> të telefonit tuaj.</string>
   <!-- Fingerprint sensor locations -->
@@ -278,7 +258,6 @@
   <string name="wifi_setting_countrycode_error">Caktimi i kodit të rajonit ka hasur një problem.</string>
   <!-- Wake on plug -->
   <!-- Heads-up -->
-  <string name="heads_up_notifications_enabled_title">Heads-up</string>
   <string name="heads_up_notifications_enabled_summary">Shfaq njoftimet kryesore në një dritare të vogël lundruese</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Tjetër</string>
@@ -305,9 +284,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Hap lexuesin e muzikës</string>
   <string name="headset_connect_player_summary">Hap lexuesin e paracaktuar të muzikës kur lidh kufjet</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Përditëso rikuperimin</string>
-  <string name="update_recovery_summary">Përditëso rikuperimin e integruar me përditësimet e sistemit</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Shtyp dy herë për ta fikur</string>
   <string name="status_bar_double_tap_to_sleep_summary">Shtyp dy herë shiritin e ekranit për të fikur ekranin</string>
