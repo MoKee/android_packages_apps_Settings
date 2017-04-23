@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">groba lokacija</string>
   <string name="app_ops_summaries_fine_location">fina lokacija</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibriraj</string>
   <string name="app_ops_summaries_read_contacts">branje stikov</string>
   <string name="app_ops_summaries_modify_contacts">spreminjanje stikov</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Groba lokacija</string>
   <string name="app_ops_labels_fine_location">Natančna lokacija</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibriranje</string>
   <string name="app_ops_labels_read_contacts">Branje stikov</string>
   <string name="app_ops_labels_modify_contacts">Spreminjanje stikov</string>
@@ -302,10 +304,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">dogodki</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">vsi klicatelji</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">izbrani klicatelji</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">ponovi klicatelje</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">vsa sporočila</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">izbrana sporočila</string>
   <!-- Notification sound timeout -->
@@ -325,6 +330,7 @@
   <string name="sim_mobile_network_settings_category_title">Nastavitve mobilnega omrežja</string>
   <string name="sim_mobile_network_settings_title">Nastavitve kartice SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Nadzorne tipke za obvestila</string>
   <!-- Format string for fingerprint location message -->
