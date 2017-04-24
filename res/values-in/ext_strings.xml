@@ -177,19 +177,19 @@
   <string name="app_ops_labels_use_body_sensors">Gunakan sensor tubuh</string>
   <string name="app_ops_labels_read_cell_broadcasts">Baca siaran seluler</string>
   <string name="app_ops_labels_mock_location">Palsukan lokasi</string>
-  <string name="app_ops_labels_read_external_storage">Baca penyimpanan eksternal</string>
+  <string name="app_ops_labels_read_external_storage">Membaca penyimpanan eksternal</string>
   <string name="app_ops_labels_write_external_storage">Menulis penyimpanan luar</string>
-  <string name="app_ops_labels_turn_screen_on">Menghidupkan layar</string>
+  <string name="app_ops_labels_turn_screen_on">Hidupkan layar</string>
   <string name="app_ops_labels_get_accounts">Mendapatkan akun</string>
   <string name="app_ops_labels_run_in_background">Berjalan di latar belakang</string>
-  <string name="app_ops_labels_toggle_wifi">Hidup/matikan Wi-Fi</string>
-  <string name="app_ops_labels_toggle_bluetooth">Hidup/matikan bluetooth</string>
-  <string name="app_ops_labels_start_at_boot">Mulai saat boot</string>
-  <string name="app_ops_labels_toggle_nfc">Hidup/matikan NFC</string>
-  <string name="app_ops_labels_toggle_mobile_data">Hidup/matikan data seluler</string>
+  <string name="app_ops_labels_toggle_wifi">Toggle Wi-Fi</string>
+  <string name="app_ops_labels_toggle_bluetooth">Toggle bluetooth</string>
+  <string name="app_ops_labels_start_at_boot">Memulai saat boot</string>
+  <string name="app_ops_labels_toggle_nfc">Toggle NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Toggle data seluler</string>
   <string name="app_ops_labels_superuser">Akses root</string>
   <!-- App ops permissions -->
-  <string name="app_ops_permissions_allowed">Diperbolehkan</string>
+  <string name="app_ops_permissions_allowed">Di izinkan</string>
   <string name="app_ops_permissions_ignored">Diabaikan</string>
   <string name="app_ops_permissions_always_ask">Selalu tanya</string>
   <!-- App ops detail -->
@@ -201,7 +201,7 @@
   <string name="app_ops_show_user_apps">Tampilkan aplikasi pengguna</string>
   <string name="app_ops_show_system_apps">Tampilkan aplikasi bawaan</string>
   <string name="app_ops_reset_counters">Atur ulang gerai izinkan/tolak</string>
-  <string name="app_ops_reset_confirm_title">Pastikan untuk mengatur kembali gerai</string>
+  <string name="app_ops_reset_confirm_title">Konfirmasi ulang counter</string>
   <string name="app_ops_reset_confirm_mesg">Apakah Anda yakin ingin mengatur ulang penghitung?</string>
   <string name="ok">Oke</string>
   <!-- Volume settings - Volume adjustment sound -->
