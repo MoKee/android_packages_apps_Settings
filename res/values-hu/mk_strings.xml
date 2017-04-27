@@ -28,7 +28,13 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Nincs rá szükség, már korábban engedélyezted a fejlesztői beállításokat.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Sérült MoKee központ, állítsa vissza és próbálja újra.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="menu_show_substratum">Fedvények megjelenítése</string>
+  <string name="menu_hide_substratum">Fedvények elrejtése</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
+  <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
 </resources>
