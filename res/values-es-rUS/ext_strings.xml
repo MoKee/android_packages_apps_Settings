@@ -45,7 +45,7 @@
   <string name="app_ops_categories_device">Dispositivo</string>
   <string name="app_ops_categories_background">Fondo de pantalla</string>
   <string name="app_ops_categories_bootup">Arranque</string>
-  <string name="app_ops_categories_su">Acceso supersusuario</string>
+  <string name="app_ops_categories_su">Acceso de Supersusuario</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">ubicación aproximada</string>
   <string name="app_ops_summaries_fine_location">ubicación precisa</string>
@@ -116,7 +116,7 @@
   <string name="app_ops_summaries_start_at_boot">iniciar en el arranque</string>
   <string name="app_ops_summaries_toggle_nfc">alternar NFC</string>
   <string name="app_ops_summaries_toggle_mobile_data">alternar datos móviles</string>
-  <string name="app_ops_summaries_superuser">acceso administrativo</string>
+  <string name="app_ops_summaries_superuser">acceso de Superusuario</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Ubicación aproximada</string>
   <string name="app_ops_labels_fine_location">Ubicación precisa</string>
@@ -187,7 +187,7 @@
   <string name="app_ops_labels_start_at_boot">Iniciar en el arranque</string>
   <string name="app_ops_labels_toggle_nfc">Alternar NFC</string>
   <string name="app_ops_labels_toggle_mobile_data">Alternar datos móviles</string>
-  <string name="app_ops_labels_superuser">Acceso administrativo</string>
+  <string name="app_ops_labels_superuser">Acceso de Superusuario</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permitir</string>
   <string name="app_ops_permissions_ignored">Ignorado</string>
