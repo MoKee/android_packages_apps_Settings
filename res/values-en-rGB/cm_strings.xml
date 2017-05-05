@@ -18,25 +18,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
-  <plurals name="show_device_id_countdown_cm">
-    <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from querying Device ID.</item>
-    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from querying Device ID.</item>
-  </plurals>
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
-  <string name="show_device_id_copied_cm">Device ID:[<xliff:g id="device_id">%1$s</xliff:g>] copied to clipboard</string>
   <!--  Device Info screen. Confirmation that Device ID is not available -->
-  <string name="show_device_id_failed_cm">Device ID is not available on this build</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
-  <string name="show_device_id_clipboard_label">Device ID</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
-    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">You have enabled development settings!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Development tools</string>
   <!-- Development shortcut -->
@@ -56,24 +43,15 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS version</string>
-  <string name="mod_version_default">Unknown</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Device model</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Device name</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">LineageOS API level</string>
-  <string name="mod_api_level_default">Unknown</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Build date</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">LineageOS updates</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Update Cyanogen recovery</string>
-  <string name="update_recovery_summary">Update recovery with system updates</string>
-  <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-  <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Themes</string>
@@ -858,24 +836,7 @@
   <string name="no_filters_title">No filters set</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">LineageOS statistics</string>
-  <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
-  <string name="anonymous_statistics_warning_title">About</string>
-  <string name="anonymous_statistics_warning">Opting into LineageOS Statistics will allow non-personal data to be submitted to the
-        developers of LineageOS to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
-  <string name="enable_reporting_title">Enable reporting</string>
-  <string name="preview_data_title">Preview data</string>
-  <string name="view_stats_title">View stats</string>
-  <string name="anonymous_learn_more">Learn more</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Unique ID</string>
-  <string name="preview_device_title">Device</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Country</string>
-  <string name="preview_carrier_title">Carrier</string>
-  <string name="stats_collection_title">Stats collection</string>
-  <string name="stats_collection_summary">When enabled, allows metrics collection</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Reset pattern</string>
   <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
@@ -1009,7 +970,6 @@
   <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
   <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">LineageOS legal</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Reset stats</string>
   <!-- Reset stats confirmation dialog's message -->

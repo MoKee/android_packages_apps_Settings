@@ -18,25 +18,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
-  <plurals name="show_device_id_countdown_cm">
-    <item quantity="one">Agora tas a <xliff:g id="step_count">%1$d</xliff:g> pasu de solicitar la ID del preséu.</item>
-    <item quantity="other">Agora tas a <xliff:g id="step_count">%1$d</xliff:g> pasos de solicitar la ID del preséu.</item>
-  </plurals>
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
-  <string name="show_device_id_copied_cm">Copióse la ID <xliff:g id="device_id">%1$s</xliff:g> del preséu</string>
   <!--  Device Info screen. Confirmation that Device ID is not available -->
-  <string name="show_device_id_failed_cm">La ID de preséu nun ta disponible nesta construcción</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
-  <string name="show_device_id_clipboard_label">ID del preséu</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Tas a <xliff:g id="step_count">%1$d</xliff:g> pasu d\'habilitar los axustes de desendolcu.</item>
-    <item quantity="other">Tas a <xliff:g id="step_count">%1$d</xliff:g> pasos d\'habilitar los axustes de desendolcu.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">¡Agora tán activaes les opciones de desendolcu!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Nun fai falta, yá tán activaes los axustes de desendolcu.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Ferramientes de desendolcu</string>
   <!-- Development shortcut -->
@@ -56,16 +43,13 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Versión de LineageOS</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelu del preséu</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nome del preséu</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Nivel d\'API LineageOS</string>
   <!-- About phone screen, build date -->
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Anovamientos LineageOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
@@ -416,9 +400,6 @@
   <string name="block_notifications_summary">Xestiona los avisos y peñeres inoraos</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_warning">Dar laude a les estadístiques de LineageOS permitirá l\'unviu de datos non personales a
-        los desendolcadores pa facer un siguimientu d\'instalaciones úniques nos preseos. La información unviada inclúi un identificador únicu,
-        que nun compromete la to privacidá o datos personales. Los datos únviense en cada arranque.\n\nPa un exemplu de los datos que s\'unvien, calca en Previsualizar datos.</string>
   <!-- Anonymous Statistics - Preview -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->

@@ -19,21 +19,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
-  <string name="show_device_id_copied_cm">ID de périphérique : [<xliff:g id="device_id">%1$s</xliff:g>] copiée dans le presse-papiers</string>
   <!--  Device Info screen. Confirmation that Device ID is not available -->
-  <string name="show_device_id_failed_cm">L\'ID de périphérique n’est pas disponible dans cette version</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
-  <string name="show_device_id_clipboard_label">ID de l\'appareil</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étape de l\'activation des paramètres de développement.
-Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'activation des paramètres de développement.</item>
-    <item quantity="other">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'activation des paramètres de développement.</item>
-  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Vous avez activé les paramètres de développement !</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Inutile, vous avez déjà activé les paramètres de développement.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Outils de développement</string>
   <!-- Development shortcut -->
@@ -53,24 +43,15 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Version LineageOS</string>
-  <string name="mod_version_default">Inconnue</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modèle de l\'appareil</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nom de l\'appareil</string>
   <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Niveau de l\'API LineageOS</string>
-  <string name="mod_api_level_default">Inconnue</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Date de compilation</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Mises à jour LineageOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
-  <string name="update_recovery_title">Mettre à jour la récupération Cyanogen</string>
-  <string name="update_recovery_summary">Mettre à jour la récupération avec les mises à jour système</string>
-  <string name="update_recovery_on_warning">REMARQUE : Lorsque cette fonction est activée, la récupération installée sera remplacée par celle du système d\'exploitation.\n\nVotre récupération sera mise à jour lors des mises à niveau du système d\'exploitation, assurant ainsi la compatibilité avec les futures versions.\n\nVoulez-vous activer cette fonction ?</string>
-  <string name="update_recovery_off_warning">AVERTISSEMENT : Lorsque cette fonction est désactivée, votre récupération ne sera pas mise à jour lors des mises à niveau du système d\'exploitation.\n\nLes futures mises à jour du système d\'exploitation peuvent ne pas être installées en cas de versions obsolètes ou personnalisées de la récupération.\n\nVoulez-vous vraiment désactiver cette fonction ?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Thèmes</string>
@@ -855,22 +836,7 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="no_filters_title">Aucun filtre défini</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistiques LineageOS</string>
-  <string name="anonymous_statistics_summary">Contribuez à rendre LineageOS meilleure en envoyant des rapports de statistiques anonymes</string>
-  <string name="anonymous_statistics_warning_title">À propos</string>
-  <string name="anonymous_statistics_warning">Adhérer aux statistiques LineageOS autorisera l\'envoi de données non-personnelles aux développeurs de LineageOS, dans le but de tracer les installations sur chaque appareil. Les informations transmises contiennent un identifiant unique de l\'appareil, qui ne compromet en aucune manière votre vie privée ou vos données personnelles. Les données sont envoyées à chaque démarrage du système.\n\nPour visualiser un exemple de données pouvant être envoyées, appuyez sur Prévisualiser les données.</string>
-  <string name="enable_reporting_title">Activer l\'envoi</string>
-  <string name="preview_data_title">Prévisualiser les données</string>
-  <string name="view_stats_title">Afficher les statistiques</string>
-  <string name="anonymous_learn_more">En savoir plus</string>
   <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Identifiant unique</string>
-  <string name="preview_device_title">Appareil</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Pays</string>
-  <string name="preview_carrier_title">Opérateur</string>
-  <string name="stats_collection_title">Collecte de statistiques</string>
-  <string name="stats_collection_summary">Une fois activé, autorise la collecte de paramètres</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Réinitialiser le schéma</string>
   <string name="lockpattern_settings_reset_summary">Entrez l\'adresse e-mail du compte principal et son mot de passe pour réinitialiser le schéma de déverrouillage</string>
@@ -1004,7 +970,6 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="interruptions_ignore_while_media_title">Empêcher l\'atténuation audio</string>
   <string name="interruptions_ignore_while_media_summary">Ne pas réduire le volume de lecture de médias lors d\'une notification</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Infos légales LineageOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Réinitialiser les statistiques</string>
   <!-- Reset stats confirmation dialog's message -->
