@@ -27,7 +27,7 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">不需要，您已經啟用開發人員選項。</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">停用或移除魔趣中心可能會影響系統服務，請恢復並重試。</string>
+  <string name="mkcenter_verify_failed_toast">停用或移除 Mokee 中心可能會影響系統服務，請恢復並重試。</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">底層覆蓋</string>
   <string name="menu_show_substratum">顯示覆蓋</string>
