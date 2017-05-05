@@ -42,7 +42,7 @@
   <string name="status_bar_clock_show_second_title">Segundos en el reloj</string>
   <string name="status_bar_clock_show_second_summary">Mostrar segundos en el reloj de la barra de estado</string>
   <!-- Show/hide su icon -->
-  <string name="show_su_icon_title">Muestra el icono de Root (#)</string>
+  <string name="show_su_icon_title">Mostrar el icono de Superusuario</string>
   <string name="show_su_icon_summary">Mostrar un icono en el estado de la barra cuando el Root esta activo</string>
   <!-- Show/hide headset icon -->
   <string name="show_headset_icon_title">Mostrar icono de auriculares</string>
