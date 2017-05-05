@@ -21,9 +21,16 @@
   <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
   <!--  Device Info screen. Confirmation that Device ID is not available -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
+  <string name="show_device_id_clipboard_label">Enhets-ID</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_cm">
+    <item quantity="one">Du är nu <xliff:g id="step_count">%1$d</xliff:g> steg från att aktivera utvecklingsinställningar.</item>
+    <item quantity="other">Du är nu <xliff:g id="step_count">%1$d</xliff:g> steg från att aktivera utvecklingsinställningar.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_cm">Du har aktiverat utvecklingsinställningar!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_cm">Det behövs inte, du har redan aktiverat utvecklingsinställningar.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Utvecklingsverktyg</string>
   <!-- Development shortcut -->
@@ -42,15 +49,24 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, LineageOS version -->
+  <string name="mod_version">LineageOS-version</string>
+  <string name="mod_version_default">Okänd</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Enhetsmodell</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Enhetsnamn</string>
   <!-- About phone screen, LineageOS Api Level -->
+  <string name="mod_api_level">LineageOS API nivå</string>
+  <string name="mod_api_level_default">Okänd</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Byggdatum</string>
   <!-- CM Updater -->
+  <string name="cmupdate_settings_title">LineageOS-uppdateringar</string>
   <!-- Settings switch for updating Cyanogen recovery -->
+  <string name="update_recovery_title">Uppdatera Cyanogen Recovery</string>
+  <string name="update_recovery_summary">Uppdatera Recovery med systemuppdateringar</string>
+  <string name="update_recovery_on_warning">OBSERVERA: När denna funktion är aktiverad, kommer din installerade Recovery att ersättas av en som ingår i den aktuella versionen av ditt nuvarande OS.\n\nRecovery kommer att uppdateras med uppgraderingar till ditt system, detta bidrar till att säkerställa kompatibilitet med framtida versioner.\n\nVill du aktivera den här funktionen?</string>
+  <string name="update_recovery_off_warning">VARNING: När denna funktion är inaktiverad, kommer din installerade Recovery inte att uppdateras med OS-uppgraderingar.\n\nFramtida OS-uppdateringar kan komma att inte kunna installeras med inaktuella eller anpassade Recovery-versioner.\n\nVill du verkligen inaktivera denna funktion?</string>
   <!-- Themes Settings -->
   <!-- Settings main menu entry -->
   <string name="themes_settings_title">Teman</string>
@@ -592,6 +608,7 @@
   <!-- LiveDisplay : Picture Adjustment -->
   <string name="adj_hue_title">Nyans</string>
   <string name="adj_saturation_title">Mättnad</string>
+  <string name="adj_intensity_title">Intensitet</string>
   <string name="adj_contrast_title">Kontrast</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Väljarikonen</string>
@@ -826,7 +843,20 @@
   <string name="no_filters_title">Inga filter valda</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">LineageOS statistik</string>
+  <string name="anonymous_statistics_warning_title">Om</string>
+  <string name="enable_reporting_title">Aktivera rapportering</string>
+  <string name="preview_data_title">Förhandsgranska data</string>
+  <string name="view_stats_title">Visa statistik</string>
+  <string name="anonymous_learn_more">Läs mer</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Unikt ID</string>
+  <string name="preview_device_title">Enhet</string>
+  <string name="preview_version_title">Version</string>
+  <string name="preview_country_title">Land</string>
+  <string name="preview_carrier_title">Operatör</string>
+  <string name="stats_collection_title">Statistikinsamling</string>
+  <string name="stats_collection_summary">När aktiverad, tillåts insamling av mättal</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Återställ mönster</string>
   <string name="lockpattern_settings_reset_summary">Ange primärt e-postkonto och tillhörande lösenord för att återställa mönsterlåset</string>
@@ -956,6 +986,7 @@
   <string name="interruptions_ignore_while_media_title">Undvik ljuddämpning</string>
   <string name="interruptions_ignore_while_media_summary">Minska inte ljudstyrkan för media när en avisering tas emot</string>
   <!-- CM Legal -->
+  <string name="cmlicense_title">LineageOS Juridik</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Återställ statistik</string>
   <!-- Reset stats confirmation dialog's message -->
@@ -995,8 +1026,15 @@
   <!-- Notification sound timeout -->
   <!-- CmRadioInfo -->
   <!-- Radio Control (IMS/MBN etc.) -->
+  <string name="cm_radio_info_wfc_avail_ovr_on_label">Stäng av WFC debug</string>
+  <string name="cm_radio_info_wfc_avail_ovr_off_label">Slå på WFC debug</string>
+  <string name="cm_radio_info_adb_log_on_label">Stäng av ADB radio log</string>
+  <string name="cm_radio_info_adb_log_off_label">Slå på ADB radio log</string>
   <!-- Lock screen wallpaper -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_left">vänster sida</string>
+  <string name="security_settings_fingerprint_sensor_location_right">höger sida</string>
   <!-- SIM status format string -->
+  <string name="sim_status_format_string">Röst: <xliff:g id="voice_status">%1$s</xliff:g> / Data: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>
