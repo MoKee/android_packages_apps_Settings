@@ -115,7 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">切換至藍牙</string>
   <string name="app_ops_summaries_start_at_boot">在開機時啟動</string>
   <string name="app_ops_summaries_toggle_nfc">切換至 NFC</string>
-  <string name="app_ops_summaries_toggle_mobile_data">切換至行動數據</string>
+  <string name="app_ops_summaries_toggle_mobile_data">切換至流動數據</string>
   <string name="app_ops_summaries_superuser">root 權限</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">粗略位置</string>
@@ -186,7 +186,7 @@
   <string name="app_ops_labels_toggle_bluetooth">切換至藍牙</string>
   <string name="app_ops_labels_start_at_boot">在開機時啟動</string>
   <string name="app_ops_labels_toggle_nfc">切換至 NFC</string>
-  <string name="app_ops_labels_toggle_mobile_data">切換至行動數據</string>
+  <string name="app_ops_labels_toggle_mobile_data">切換至流動數據</string>
   <string name="app_ops_labels_superuser">超級使用者存取</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">已允許</string>
@@ -327,7 +327,7 @@
   <string name="sim_card_status_title">SIM 咭 %d 狀態</string>
   <string name="sim_card_lock_settings_title">SIM 咭 %d 鎖定設定</string>
   <string name="sim_card_summary_empty">SIM 咭沒有插入</string>
-  <string name="sim_mobile_network_settings_category_title">行動網路設定</string>
+  <string name="sim_mobile_network_settings_category_title">流動網絡設定</string>
   <string name="sim_mobile_network_settings_title">SIM 咭 %d 設定</string>
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
@@ -363,12 +363,12 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">可擕式 Wi\u2011Fi 熱點永不逾時</string>
   <string name="hotstpot_inactivity_timeout_summary_text">可攜式 Wi\u2011Fi 熱點於 <xliff:g id="timeout">%1$s</xliff:g> 後逾時</string>
   <!-- Per-app data restrictions -->
-  <string name="data_usage_app_restrict_data_category_title">行動數據存取</string>
+  <string name="data_usage_app_restrict_data_category_title">流動數據存取</string>
   <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi 數據存取</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-  <string name="data_usage_app_restrict_all_data_title">停用所有行動數據存取</string>
+  <string name="data_usage_app_restrict_all_data_title">停止所有流動數據存取</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <string name="data_usage_app_restrict_all_data_summary">防止任何透過行動網路使用數據存取</string>
+  <string name="data_usage_app_restrict_all_data_summary">禁止任何數據透過流動網絡進行存取</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <string name="data_usage_app_restrict_all_wifi_title">停用所有 Wi\u2011Fi 數據存取</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
