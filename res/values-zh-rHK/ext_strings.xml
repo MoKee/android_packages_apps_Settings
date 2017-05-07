@@ -259,7 +259,7 @@
   <string name="lockscreen_blur_enabled_title">模糊鎖定螢幕</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">防止意外喚醒</string>
-  <string name="proximity_wake_summary">手勢觸發喚醒前檢查接近感應器</string>
+  <string name="proximity_wake_summary">手勢觸發喚醒前檢查距離感應器</string>
   <!-- High touch sensitivity -->
   <string name="high_touch_sensitivity_title">高觸碰靈敏度</string>
   <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，戴著手套也可以使用手機</string>
@@ -347,8 +347,8 @@
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">設定區域代碼時遇到了問題。</string>
   <!-- Wake on plug -->
-  <string name="wake_when_plugged_or_unplugged_title">當接上喚醒</string>
-  <string name="wake_when_plugged_or_unplugged_summary">當連接或拔除電源時開啓螢幕</string>
+  <string name="wake_when_plugged_or_unplugged_title">接上或移除電源時喚醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">接上或拔除電源時喚醒螢幕</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">浮動通知</string>
   <string name="heads_up_notifications_enabled_summary">在一個小的浮動視窗中顯示優先通知</string>
