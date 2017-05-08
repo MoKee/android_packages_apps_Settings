@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2017 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,6 +57,8 @@ public class AdvancedWifiSettings extends RestrictedSettingsFragment
     private static final int WIFI_HS2_DISABLED = 0;
 
     private static final String KEY_PRIORITY_SETTINGS = "wifi_priority_settings";
+
+    private static final String KEY_FREQUENCY_BAND = "frequency_band";
 
     private static final String KEY_COUNTRY_CODE = "wifi_countrycode";
 
@@ -197,6 +200,22 @@ public class AdvancedWifiSettings extends RestrictedSettingsFragment
             Log.d(TAG, "Fail to get priority pref...");
         }
 
+        ListPreference fbandPref = (ListPreference) findPreference(KEY_FREQUENCY_BAND);
+        if (mWifiManager.isDualBandSupported()) {
+            fbandPref.setOnPreferenceChangeListener(this);
+            int value = mWifiManager.getFrequencyBand();
+            if (value != -1) {
+                fbandPref.setValue(String.valueOf(value));
+                updateFrequencyBandSummary(fbandPref, value);
+            } else {
+                Log.e(TAG, "Failed to fetch frequency band");
+            }
+        } else {
+            if (fbandPref != null) {
+                getPreferenceScreen().removePreference(fbandPref);
+            }
+        }
+
         ListPreference ccodePref = (ListPreference) findPreference(KEY_COUNTRY_CODE);
         if (ccodePref != null) {
             boolean hideWifiRegion = getResources()
@@ -297,6 +316,18 @@ public class AdvancedWifiSettings extends RestrictedSettingsFragment
         final Context context = getActivity();
         String key = preference.getKey();
 
+        if (KEY_FREQUENCY_BAND.equals(key)) {
+            try {
+                int value = Integer.parseInt((String) newValue);
+                mWifiManager.setFrequencyBand(value, true);
+                updateFrequencyBandSummary(preference, value);
+            } catch (NumberFormatException e) {
+                Toast.makeText(getActivity(), R.string.wifi_setting_frequency_band_error,
+                        Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        }
+
         if (KEY_COUNTRY_CODE.equals(key)) {
             try {
                 mWifiManager.setCountryCode((String) newValue, true);
@@ -390,6 +421,11 @@ public class AdvancedWifiSettings extends RestrictedSettingsFragment
             return Settings.Global.getInt(getContentResolver(), CELLULAR_TO_WLAN_CONNECT_TYPE,
                     CELLULAR_TO_WLAN_CONNECT_TYPE_AUTO);
         }
+    }
+
+    private void updateFrequencyBandSummary(Preference preference, int index) {
+        String[] summaries = getResources().getStringArray(R.array.wifi_setting_frequency_band_entries);
+        preference.setSummary(summaries[index]);
     }
 
     private void updateCellToWlanSummary(Preference preference, int index) {
