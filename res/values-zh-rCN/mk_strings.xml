@@ -41,11 +41,11 @@
   <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的应用</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">WLAN频带</string>
+  <string name="wifi_setting_frequency_band_title">WLAN 频段</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">指定操作的频率范围</string>
+  <string name="wifi_setting_frequency_band_summary">设置 WLAN 频率范围</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">设置频带时出现问题。</string>
+  <string name="wifi_setting_frequency_band_error">设置频段时出现问题</string>
   <string name="wifi_setting_frequency_band_auto">自动</string>
   <string name="wifi_setting_frequency_band_5G">仅 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">仅 2.4 GHz</string>

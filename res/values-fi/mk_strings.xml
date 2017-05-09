@@ -42,7 +42,12 @@
   <string name="force_authorize_substratum_packages_summary">Salli teemat tuntemattomista lähteistä</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi-taajuusalue</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Määritä taajuusalue</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Ongelma taajuusalueen asettamisessa.</string>
   <string name="wifi_setting_frequency_band_auto">Autom.</string>
+  <string name="wifi_setting_frequency_band_5G">Vain 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">Vain 2.4 GHz</string>
 </resources>

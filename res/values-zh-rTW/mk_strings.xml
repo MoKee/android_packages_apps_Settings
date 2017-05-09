@@ -41,7 +41,12 @@
   <string name="force_authorize_substratum_packages_summary">允許來源不明的主題應用程式</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi 頻帶</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">指定作業的頻率範圍</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">設定頻帶時發生問題。</string>
   <string name="wifi_setting_frequency_band_auto">自動</string>
+  <string name="wifi_setting_frequency_band_5G">僅 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">僅 2.4 GHz</string>
 </resources>
