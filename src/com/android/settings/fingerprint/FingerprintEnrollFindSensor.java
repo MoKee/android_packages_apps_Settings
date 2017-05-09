@@ -149,7 +149,7 @@ public class FingerprintEnrollFindSensor extends FingerprintEnrollBase {
     }
 
     private void proceedToEnrolling() {
-        getFragmentManager().beginTransaction().remove(mSidecar).commit();
+        getFragmentManager().beginTransaction().remove(mSidecar).commitAllowingStateLoss();
         mSidecar = null;
         startActivityForResult(getEnrollingIntent(), ENROLLING);
     }
