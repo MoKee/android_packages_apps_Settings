@@ -43,7 +43,12 @@
   <string name="force_authorize_substratum_packages_summary">Povoliť inštaláciu tém z neznámych zdrojov</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Frekvenčné pásmo Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Uveďte prevádzkový frekvenčný rozsah</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Pri nastavení frekvenčného pásma sa vyskytol problém.</string>
   <string name="wifi_setting_frequency_band_auto">Auto</string>
+  <string name="wifi_setting_frequency_band_5G">Iba 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">Iba 2,4 GHz</string>
 </resources>
