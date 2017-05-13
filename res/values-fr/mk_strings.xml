@@ -42,7 +42,10 @@
   <string name="force_authorize_substratum_packages_summary">Autorise les applications de thème à partir de sources inconnues</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Plage de fréquences Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_auto">Automatique</string>
+  <string name="wifi_setting_frequency_band_5G">5 GHz uniquement</string>
+  <string name="wifi_setting_frequency_band_2G">2,4 GHz uniquement</string>
 </resources>
