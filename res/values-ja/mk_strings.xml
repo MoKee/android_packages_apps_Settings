@@ -29,10 +29,17 @@
   <!-- MKCenter verify -->
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="menu_show_substratum_icons">オーバーレイアイコンを表示します。</string>
+  <string name="menu_hide_substratum_icons">オーバーレイアイコンを非表示</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_summary">提供元不明のアプリのインストールを許可する</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi周波数帯域</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">使用する周波数帯域を指定する</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_auto">オート</string>
+  <string name="wifi_setting_frequency_band_5G">5GHz帯のみ</string>
+  <string name="wifi_setting_frequency_band_2G">2.4GHz帯のみ</string>
 </resources>
