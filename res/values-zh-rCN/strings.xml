@@ -3026,10 +3026,10 @@
     <string name="screen_zoom_make_larger_desc" msgid="2236171043607896594">"放大"</string>
     <string name="screen_zoom_conversation_icon_alex" msgid="8443032489384985820">"A"</string>
     <string name="screen_zoom_conversation_icon_pete" msgid="998709701837681129">"P"</string>
-    <string name="screen_zoom_conversation_message_1" msgid="6546951024984852686">"嗨，皮皮！"</string>
-    <string name="screen_zoom_conversation_message_2" msgid="6935424214137738647">"嗨，今天一起去喝杯咖啡聚聚，怎么样？"</string>
-    <string name="screen_zoom_conversation_message_3" msgid="5218221201861387402">"好啊！我知道这附近有一家不错的咖啡馆。"</string>
-    <string name="screen_zoom_conversation_message_4" msgid="5564676794767555447">"太棒了！"</string>
+    <string name="screen_zoom_conversation_message_1" msgid="6546951024984852686">"嗨，皮皮虾，你知道哪个ROM好用吗？"</string>
+    <string name="screen_zoom_conversation_message_2" msgid="6935424214137738647">"你有没有听说过魔趣大法好？"</string>
+    <string name="screen_zoom_conversation_message_3" msgid="5218221201861387402">"唔，有所耳闻，我这就去下载试试看，再见！"</string>
+    <string name="screen_zoom_conversation_message_4" msgid="5564676794767555447">"拜拜，祝你成功！我也去更新系统了，魔趣的增量更新实在是太方便了！"</string>
     <string name="screen_zoom_conversation_timestamp_1" msgid="7453710416319650556">"周二下午 6:00"</string>
     <string name="screen_zoom_conversation_timestamp_2" msgid="7107225702890747588">"周二下午 6:01"</string>
     <string name="screen_zoom_conversation_timestamp_3" msgid="3785674344762707688">"周二下午 6:02"</string>
