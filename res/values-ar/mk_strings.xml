@@ -20,13 +20,20 @@
   <string name="mk_version_default">غير معروف</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">لقد قمت بتمكين إعدادات المطور!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">لا تحتاج لفعل هذا, لقد فعلت اعدادات المطور مسبقا.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">تجميد أو إزالة مركز موكي سوف يؤثر على خدمات النظام، الرجاء الاستعادة و المحاولة مرة أخرى.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">طبقات Substratum</string>
   <!-- Manage applications: show substratum icon overlays -->
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
+  <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">نطاق التردد اللاسلكي WiFi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_auto">تلقائية</string>
