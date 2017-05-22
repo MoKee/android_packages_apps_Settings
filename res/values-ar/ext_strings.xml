@@ -29,6 +29,8 @@
   <string name="root_access_adb">لـADB فقط</string>
   <string name="root_access_all">التطبيقات وADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">إدارة صلاحيات الجذر</string>
+  <string name="root_appops_summary">عرض قواعد الجذر والتحكم فيها</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">طراز الجهاز</string>
   <!-- About phone screen, Device name -->

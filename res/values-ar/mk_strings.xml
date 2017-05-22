@@ -27,7 +27,12 @@
   <string name="mkcenter_verify_failed_toast">تجميد أو إزالة مركز موكي سوف يؤثر على خدمات النظام، الرجاء الاستعادة و المحاولة مرة أخرى.</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">طبقات Substratum</string>
+  <string name="menu_show_substratum">أظهر الطبقات</string>
+  <string name="menu_hide_substratum">إخفاء الطبقات</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">طبقات ايقونة Substratum</string>
+  <string name="menu_show_substratum_icons">إظهار ايقونة الطبقات</string>
+  <string name="menu_hide_substratum_icons">إخفاء أيقونة الطبقات</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
   <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
@@ -35,6 +40,7 @@
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_title">نطاق التردد اللاسلكي WiFi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">حدد نطاق التردد للعملية</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_auto">تلقائية</string>
 </resources>
