@@ -43,6 +43,7 @@
   <string name="app_ops_categories_messaging">المراسلة</string>
   <string name="app_ops_categories_media">وسائط</string>
   <string name="app_ops_categories_device">الجهاز</string>
+  <string name="app_ops_categories_background">الخلفية</string>
   <string name="app_ops_categories_bootup">إعادة تحميل</string>
   <string name="app_ops_categories_su">الوصول إلى الجذر</string>
   <!-- User display names for app ops codes - extension of AOSP -->

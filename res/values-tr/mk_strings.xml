@@ -42,7 +42,12 @@
   <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi frekans bandı</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Çalışma frekans aralığı belirtin</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Frekans bandını ayarlarken hata oluştu.</string>
   <string name="wifi_setting_frequency_band_auto">Otomatik</string>
+  <string name="wifi_setting_frequency_band_5G">Sadece 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">Sadece 2.4 Ghz</string>
 </resources>
