@@ -139,7 +139,7 @@ public class FingerprintEnrollEnrolling extends FingerprintEnrollBase
         mSidecar = (FingerprintEnrollSidecar) getFragmentManager().findFragmentByTag(TAG_SIDECAR);
         if (mSidecar == null) {
             mSidecar = new FingerprintEnrollSidecar();
-            getFragmentManager().beginTransaction().add(mSidecar, TAG_SIDECAR).commitAllowingStateLoss();
+            getFragmentManager().beginTransaction().add(mSidecar, TAG_SIDECAR).commit();
         }
         mSidecar.setListener(this);
         updateProgress(false /* animate */);
