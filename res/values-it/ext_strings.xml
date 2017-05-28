@@ -394,4 +394,7 @@
   <string name="sub_activate_failed">Attivazione fallita.</string>
   <string name="sub_deactivate_success">SIM disattivata.</string>
   <string name="sub_deactivate_failed">Disattivazione fallita.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

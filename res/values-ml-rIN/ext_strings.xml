@@ -343,4 +343,7 @@
   <string name="sub_activate_failed">സജീവമാക്കൽ പരാജയപ്പെട്ടു.</string>
   <string name="sub_deactivate_success">SIM നിർജീവമാക്കി.</string>
   <string name="sub_deactivate_failed">നിർജീവമാക്കല്‍ പരാജയപ്പെട്ടു.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

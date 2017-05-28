@@ -397,4 +397,7 @@
   <string name="sub_activate_failed">Etkinleştirme başarısız.</string>
   <string name="sub_deactivate_success">SIM devre dışı bırakıldı.</string>
   <string name="sub_deactivate_failed">Devre dışı bırakma başarısız.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

@@ -306,4 +306,7 @@
   <string name="sim_enabler_airplane_on">Dës Operatioun kann am Fligermodus net duerchgefouert ginn.</string>
   <string name="sim_enabler_in_call">Dës Operatioun ka während engem Uruff net duerchgefouert ginn.</string>
   <string name="sim_enabler_both_inactive">Kann net all d\'SIM-Kaarten desaktivéieren</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

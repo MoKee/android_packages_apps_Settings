@@ -350,4 +350,7 @@
   <string name="sub_activate_failed">เปิดใช้งานล้มเหลว</string>
   <string name="sub_deactivate_success">ซิมปิดการใช้งานแล้ว</string>
   <string name="sub_deactivate_failed">การปิดใช้งานล้มเหลว</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

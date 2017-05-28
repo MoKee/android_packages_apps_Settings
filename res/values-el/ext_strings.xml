@@ -392,4 +392,7 @@
   <string name="sub_activate_failed">Ανεπιτυχής ενεργοποίηση.</string>
   <string name="sub_deactivate_success">Η SIM απενεργοποιήθηκε.</string>
   <string name="sub_deactivate_failed">Ανεπιτυχής απενεργοποίηση.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

@@ -391,4 +391,7 @@
   <string name="sub_activate_failed">Активирането е неуспешно.</string>
   <string name="sub_deactivate_success">СИМ картата е деактивирана.</string>
   <string name="sub_deactivate_failed">Неуспешно дезактивиране.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

@@ -374,4 +374,7 @@
   <string name="sub_activate_failed">Aktivering misslyckades.</string>
   <string name="sub_deactivate_success">SIM inaktiveras.</string>
   <string name="sub_deactivate_failed">Inaktivering misslyckades.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>

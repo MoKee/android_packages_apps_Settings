@@ -344,4 +344,7 @@
   <string name="sub_activate_failed">ଆକ୍ଟିଭେସନ୍‍ ବିଫଳ ହୋଇଛି।</string>
   <string name="sub_deactivate_success">SIM ଡିଆକ୍ଟିଭେଟ୍‍ ହୋଇଛି।</string>
   <string name="sub_deactivate_failed">ଡିଆକ୍ଟିଭେସନ୍‍ ବିଫଳ ହୋଇଛି।</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <!-- IC Codes -->
 </resources>
