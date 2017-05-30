@@ -403,4 +403,6 @@
   <string name="maximum_head_level">頭：%1$s W/kg</string>
   <string name="maximum_body_level">身體：%1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">型號：%1$s</string>
+  <string name="ic_code_full">IC︰%1$s</string>
 </resources>
