@@ -235,6 +235,8 @@
   <string name="unlock_scramble_pin_layout_summary">Cambiar a disposición dos números do PIN para desbloquear o dispositivo</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Amosar visualizador de música</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Restaurar padrón</string>
   <string name="lockpattern_settings_reset_summary">Introduza a conta de correo principal e o contrasinal asociado para restaurar o padrón de bloqueo</string>

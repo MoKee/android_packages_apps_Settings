@@ -50,6 +50,8 @@
   <!-- PIN scramble -->
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Display music visualiser</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
   <!-- title for lock screen weather preference -->

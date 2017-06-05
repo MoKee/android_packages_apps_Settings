@@ -237,6 +237,8 @@
   <string name="unlock_scramble_pin_layout_summary">Premešaj razporeditev PIN ob odklepanju naprave</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Prikaži predočilnik glasbe</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Ponastavi vzorec</string>
   <string name="lockpattern_settings_reset_summary">Vnesite glavni e-poštni račun in povezano geslo, da ponastavite vzorec za zaklepanje</string>

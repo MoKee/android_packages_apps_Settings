@@ -45,6 +45,8 @@
   <!-- Advanced restart options -->
   <!-- PIN scramble -->
   <!-- lock screen visualizer -->
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">Endurstilla</string>

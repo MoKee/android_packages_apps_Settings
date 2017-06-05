@@ -237,6 +237,10 @@
   <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用無序 PIN 佈局</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">輕觸兩下即可隨時休眠</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">重設圖樣</string>
   <string name="lockpattern_settings_reset_summary">輸入主電子郵件帳戶和關聯的密碼以重設圖樣鎖</string>
@@ -398,7 +402,6 @@
   <string name="sub_deactivate_success">SIM 咭已停用。</string>
   <string name="sub_deactivate_failed">停用失敗。</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
-  <string name="regulatory_information_dialog_title">@string/regulatory_labels</string>
   <!-- SAR information -->
   <string name="maximum_head_level">頭：%1$s W/kg</string>
   <string name="maximum_body_level">身體：%1$s W/kg</string>

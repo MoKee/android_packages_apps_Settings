@@ -234,6 +234,8 @@
   <string name="unlock_scramble_pin_layout_summary">PIN zenbakiaren antolaketa nahastu gailua desblokeatzean</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Bistaratu musika irudikatzea</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Leheneratu eredua</string>
   <string name="lockpattern_settings_reset_summary">Idatzi e-posta kontu nagusia eta bere pasahitza eredu blokeoa kentzeko</string>

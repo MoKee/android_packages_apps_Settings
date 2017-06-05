@@ -237,6 +237,8 @@
   <string name="unlock_scramble_pin_layout_summary">Cambiar la disposición de los números del PIN para desbloquear el dispositivo</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Mostrar visualizador musical</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Restablecer patrón</string>
   <string name="lockpattern_settings_reset_summary">Introducir la cuenta de correo principal y su contraseña asociada para restablecer el patrón de bloqueo</string>
@@ -398,7 +400,6 @@
   <string name="sub_deactivate_success">SIM desactivada.</string>
   <string name="sub_deactivate_failed">Error de desactivación.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
-  <string name="regulatory_information_dialog_title">@string/regulatory_labels</string>
   <!-- SAR information -->
   <string name="maximum_head_level">Cabezera: %1$s W/kg</string>
   <string name="maximum_body_level">Cuerpo: %1$s W/kg</string>

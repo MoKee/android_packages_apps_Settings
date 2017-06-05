@@ -237,6 +237,8 @@
   <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Zresetuj wzór</string>
   <string name="lockpattern_settings_reset_summary">Wpisz główny adres e-mail konta i powiązane z nim hasło, aby zresetować wzór blokady</string>

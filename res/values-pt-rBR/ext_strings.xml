@@ -237,6 +237,8 @@
   <string name="unlock_scramble_pin_layout_summary">Embaralhar PIN ao desbloquear o dispositivo</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Redefinir padrão</string>
   <string name="lockpattern_settings_reset_summary">Digite a conta de e-mail principal e a senha associada para redefinir o bloqueio padrão</string>

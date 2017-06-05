@@ -237,6 +237,8 @@
   <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">显示音乐可视化</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">重设图案</string>
   <string name="lockpattern_settings_reset_summary">输入主要的电子邮件帐户和对应的密码来重设图案锁</string>
@@ -398,7 +400,6 @@
   <string name="sub_deactivate_success">SIM 卡已禁用。</string>
   <string name="sub_deactivate_failed">禁用失败。</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
-  <string name="regulatory_information_dialog_title">@string/regulatory_labels</string>
   <!-- SAR information -->
   <string name="maximum_head_level">头部：%1$s 瓦特/千克</string>
   <string name="maximum_body_level">身体：%1$s 瓦特/千克</string>
