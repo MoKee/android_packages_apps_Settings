@@ -240,7 +240,7 @@
   <!-- Lock screen cover art -->
   <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
   <!-- Double tap to sleep on keyguard -->
-  <string name="double_tap_sleep_anywhere_title">輕觸兩下即可隨時休眠</string>
+  <string name="double_tap_sleep_anywhere_title">輕觸兩下隨時休眠</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">重設圖樣</string>
   <string name="lockpattern_settings_reset_summary">輸入主電子郵件帳戶和關聯的密碼以重設圖樣鎖</string>

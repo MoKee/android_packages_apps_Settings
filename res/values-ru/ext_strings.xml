@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Визуализация спектра музыки</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Отображать музыкальные обложки</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Двойное нажатие для перевода в спящий режим</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Сбросить граф. ключ</string>
   <string name="lockpattern_settings_reset_summary">Введите адрес эл. почты основного аккаунта и соответствующий пароль для сброса граф. ключа</string>
@@ -402,4 +404,5 @@
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
   <!-- IC Codes -->
+  <string name="ic_code_model">Модель: %1$s</string>
 </resources>
