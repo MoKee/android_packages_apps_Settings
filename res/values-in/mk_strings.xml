@@ -41,7 +41,12 @@
   <string name="force_authorize_substratum_packages_summary">Memungkinkan aplikasi tema dari sumber tak dikenal</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi frekuensi band</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Tentukan rentang frekuensi operasi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Ada masalah saat mengatur pita frekuensi.</string>
   <string name="wifi_setting_frequency_band_auto">Otomatis</string>
+  <string name="wifi_setting_frequency_band_5G">5 GHz saja</string>
+  <string name="wifi_setting_frequency_band_2G">2.4 GHz saja</string>
 </resources>

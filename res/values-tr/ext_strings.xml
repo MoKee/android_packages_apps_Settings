@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Müzik görselleştiriciyi görüntüle</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Kilit ekranında göster</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Uyutmak için herhangi bir yere iki defa dokunun</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Deseni sıfırla</string>
   <string name="lockpattern_settings_reset_summary">Desen kilidini yeniden ayarlamak için birincil e-posta hesabınızı ve ilişkili şifreyi girin</string>
@@ -312,7 +314,7 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_repeat_callers">Tekrar arayanlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_all_messages">all messages</string>
+  <string name="zen_mode_summary_all_messages">tüm mesajlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">seçili mesajlar</string>
   <!-- Notification sound timeout -->
@@ -385,8 +387,8 @@
   <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna çift dokun</string>
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_enabled">etkin</string>
-  <string name="sim_disabled">devre dışı bırakıldı</string>
-  <string name="sim_missing">yok ya da sorunlu</string>
+  <string name="sim_disabled">devre dışı</string>
+  <string name="sim_missing">eksik veya hatalı</string>
   <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacak. Devam etmek istiyor musunuz?</string>
   <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
   <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve SIM <xliff:g id="slotid">%1$s</xliff:g> veri hizmetleri için kullanılacak. Devam etmek istediğinizden emin misiniz?</string>
@@ -401,5 +403,9 @@
   <string name="sub_deactivate_failed">Devre dışı bırakma başarısız.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Baş: %1$s W/kg</string>
+  <string name="maximum_body_level">Vücut: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">Simge: %1$s</string>
 </resources>

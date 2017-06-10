@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Mostrar visualizador musical</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Mostrar portada del álbum</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Doble toque desde cualquier sitio para suspender</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Restablecer patrón</string>
   <string name="lockpattern_settings_reset_summary">Introducir la cuenta de correo principal y su contraseña asociada para restablecer el patrón de bloqueo</string>
@@ -306,10 +308,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">eventos</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">todas las llamadas</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">personas que llaman</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">llamadas repetidas</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">todos los mensajes</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">mensajes seleccionados</string>
   <!-- Notification sound timeout -->
@@ -329,6 +334,7 @@
   <string name="sim_mobile_network_settings_category_title">Ajustes de red móvil</string>
   <string name="sim_mobile_network_settings_title">Ajustes de la tarjeta SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controles de la importancia de las notificaciones</string>
   <!-- Format string for fingerprint location message -->
@@ -380,6 +386,7 @@
   <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar automáticamente</string>
   <string name="status_bar_double_tap_to_sleep_summary">Apagar la pantalla realizando un doble toque sobre la barra de estado</string>
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> es <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
+  <string name="sim_enabled">activado</string>
   <string name="sim_disabled">desactivada</string>
   <string name="sim_missing">ausente o defectuosa</string>
   <string name="sim_enabler_need_disable_sim">La tarjeta SIM se desactivará. ¿Quieres continuar?</string>
@@ -396,5 +403,9 @@
   <string name="sub_deactivate_failed">Error de desactivación.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Cabeza: %1$s W/kg</string>
+  <string name="maximum_body_level">Cuerpo: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Modelo: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>
