@@ -238,7 +238,7 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
   <!-- Lock screen cover art -->
-  <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
+  <string name="lockscreen_media_art_title">鎖屏界面顯示專輯封面</string>
   <!-- Double tap to sleep on keyguard -->
   <string name="double_tap_sleep_anywhere_title">輕觸兩下隨時休眠</string>
   <!-- Protected apps lockpattern reset button -->
