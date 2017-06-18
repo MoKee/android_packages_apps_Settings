@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Exibir capa do álbum</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Toque duplo em qualquer lugar para suspender</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Redefinir padrão</string>
   <string name="lockpattern_settings_reset_summary">Digite a conta de e-mail principal e a senha associada para redefinir o bloqueio padrão</string>
@@ -401,5 +403,9 @@
   <string name="sub_deactivate_failed">Falha na desativação.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Cabeça: %1$s W/kg</string>
+  <string name="maximum_body_level">Corpo: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Modelo: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>
