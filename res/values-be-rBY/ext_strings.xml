@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Візуалізацыя спектра музыкі</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Адлюстроўваць вокладку мультымедыя</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Падвойнае націск каб перайсці ў спячы рэжым</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Скінуць графічны ключ</string>
   <string name="lockpattern_settings_reset_summary">Увядзіце адрас электроннай пошты асноўнага акаўнта і адпаведны пароль для скіду графічнага ключа</string>
@@ -401,5 +403,9 @@
   <string name="sub_deactivate_failed">Памылка падчас дэактывацыі.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Галава: %1$s Вт/кг</string>
+  <string name="maximum_body_level">Цела: %1$s Вт/кг</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Мадэль: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>
