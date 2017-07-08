@@ -32,8 +32,16 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Zamrznitev ali odstranjevanje MoKee Centra, bo vplivalo na sistemske storitve, prosim obnovite in poskusite znova.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum prosojnice</string>
+  <string name="menu_show_substratum">Prikaži prosojnice</string>
+  <string name="menu_hide_substratum">Skrij prosojnice</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum prosojnice ikon</string>
+  <string name="menu_show_substratum_icons">Prikaži prosojnice ikon</string>
+  <string name="menu_hide_substratum_icons">Skrij prosojnice ikon</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Prisilno odobri vsako aplikacijo za teme</string>
+  <string name="force_authorize_substratum_packages_summary">Dovoli aplikacije za teme iz neznanega vira</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_title">Frekvenčni pas Wi-Fi</string>
