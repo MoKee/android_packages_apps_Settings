@@ -66,4 +66,10 @@
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
 
+    <!-- Three finger screenshot -->
+    <mokee.preference.MKSecureSettingSwitchPreference
+        android:key="three_finger_screenshot_enabled"
+        android:title="@string/three_finger_screenshot_title"
+        android:summary="@string/three_finger_screenshot_summary" />
+
 </PreferenceScreen>
