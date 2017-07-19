@@ -27,12 +27,26 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">이미 개발자입니다.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">MoKee Center를 삭제하거나 사용안함할 경우, 시스템에 영향응 줄 수 있습니다. 복원한 후 다시 진행해주세요</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum 오버레이</string>
+  <string name="menu_show_substratum">오버레이 보이기</string>
+  <string name="menu_hide_substratum">오버레이 숨기기</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum 아이콘 오버레이</string>
+  <string name="menu_show_substratum_icons">아이콘 오버레이 보이기</string>
+  <string name="menu_hide_substratum_icons">아이콘 오버레이 숨기기</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">테마가 적용된 모든 앱에 강제로 권한을 부여합니다</string>
+  <string name="force_authorize_substratum_packages_summary">알 수 없는 출처의 테마 앱 허용</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi 주파수 대역</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">동작 주파수 범위 지정</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">주파수 대역(밴드)을 설정하는 동안 문제가 발생했습니다.</string>
   <string name="wifi_setting_frequency_band_auto">자동</string>
+  <string name="wifi_setting_frequency_band_5G">5 GHz만</string>
+  <string name="wifi_setting_frequency_band_2G">2.4 GHz 만</string>
 </resources>
