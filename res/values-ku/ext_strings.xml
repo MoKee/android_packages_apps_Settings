@@ -221,6 +221,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">١٠ چرکە</string>
+  <string name="app_notification_sound_timeout_value_1_minute">١ خوله‌ک</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">٥ خوله‌ک</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">١٠ خولەک</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
@@ -235,6 +239,9 @@
   <!-- Heads-up -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_1_minute">١ خوله‌ک</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">٥ خوله‌ک</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">١٠ خولەک</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

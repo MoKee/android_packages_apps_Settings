@@ -36,6 +36,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Data e ndërtimit</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_location">Vendndodhja</string>
   <string name="app_ops_categories_messaging">Mesazhet</string>
   <string name="app_ops_categories_device">Pajisja</string>
   <string name="app_ops_categories_background">Sfondi</string>

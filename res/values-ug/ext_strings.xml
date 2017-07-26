@@ -292,6 +292,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">تاللانغان ئۇچۇر</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 سېكۇنت</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 مىنۇت</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 مىنۇت</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 مىنۇت</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d ھالىتى</string>
   <string name="sim_card_lock_settings_title">SIM %d قۇلۇپ تەڭشىكى</string>

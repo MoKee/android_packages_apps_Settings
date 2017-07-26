@@ -25,6 +25,7 @@
   <!-- About phone screen, Device name -->
   <!-- About phone screen, build date -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_location">Lokaasje</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- App ops permissions -->

@@ -268,6 +268,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 Sekonnen</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 Minutt</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 Minutten</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 Minutten</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">SIM %d-Status</string>
   <string name="sim_card_lock_settings_title">SIM %d-Spärastellungen</string>
@@ -292,6 +296,9 @@
   <string name="tethering_other_category_text">Aner</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Ni</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 Minutt</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 Minutten</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 Minutten</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
