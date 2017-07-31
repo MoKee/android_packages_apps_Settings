@@ -43,6 +43,7 @@
   <string name="app_ops_categories_messaging">Mensajes</string>
   <string name="app_ops_categories_media">Medios</string>
   <string name="app_ops_categories_device">Dispositivo</string>
+  <string name="app_ops_categories_background">Fondo de pantalla</string>
   <string name="app_ops_categories_bootup">Ejecución</string>
   <string name="app_ops_categories_su">Acceso administrativo</string>
   <!-- User display names for app ops codes - extension of AOSP -->
