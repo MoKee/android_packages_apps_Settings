@@ -50,4 +50,5 @@
   <string name="wifi_setting_frequency_band_auto">Otomatik</string>
   <string name="wifi_setting_frequency_band_5G">Sadece 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Sadece 2.4 Ghz</string>
+  <!-- Three finger screenshot -->
 </resources>

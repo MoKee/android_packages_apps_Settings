@@ -51,4 +51,5 @@
   <string name="wifi_setting_frequency_band_auto">Аўта</string>
   <string name="wifi_setting_frequency_band_5G">Толькі 5 ГГц</string>
   <string name="wifi_setting_frequency_band_2G">Толькі 2,4 ГГц</string>
+  <!-- Three finger screenshot -->
 </resources>

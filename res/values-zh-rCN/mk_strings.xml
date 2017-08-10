@@ -49,4 +49,7 @@
   <string name="wifi_setting_frequency_band_auto">自动</string>
   <string name="wifi_setting_frequency_band_5G">仅 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">仅 2.4 GHz</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">三指截屏</string>
+  <string name="three_finger_screenshot_summary">三指同时下滑以截取屏幕</string>
 </resources>

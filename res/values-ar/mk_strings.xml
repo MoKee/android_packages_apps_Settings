@@ -46,4 +46,5 @@
   <string name="wifi_setting_frequency_band_auto">تلقائية</string>
   <string name="wifi_setting_frequency_band_5G">5 غيغاهرتز فقط</string>
   <string name="wifi_setting_frequency_band_2G">2.4 جيغاهرتز فقط</string>
+  <!-- Three finger screenshot -->
 </resources>

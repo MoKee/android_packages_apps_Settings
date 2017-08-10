@@ -49,4 +49,5 @@
   <string name="wifi_setting_frequency_band_auto">自動</string>
   <string name="wifi_setting_frequency_band_5G">僅 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">僅 2.4 GHz</string>
+  <!-- Three finger screenshot -->
 </resources>

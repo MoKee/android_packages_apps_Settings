@@ -52,4 +52,5 @@
   <string name="wifi_setting_frequency_band_auto">Samodejno</string>
   <string name="wifi_setting_frequency_band_5G">Le 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Le 2,4 GHz</string>
+  <!-- Three finger screenshot -->
 </resources>

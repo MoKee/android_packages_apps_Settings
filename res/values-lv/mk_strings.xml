@@ -28,4 +28,5 @@
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_auto">Automātiski</string>
+  <!-- Three finger screenshot -->
 </resources>

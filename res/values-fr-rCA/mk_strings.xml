@@ -50,4 +50,5 @@
   <string name="wifi_setting_frequency_band_auto">Automatique</string>
   <string name="wifi_setting_frequency_band_5G">5 GHz uniquement</string>
   <string name="wifi_setting_frequency_band_2G">2,4 GHz uniquement</string>
+  <!-- Three finger screenshot -->
 </resources>
