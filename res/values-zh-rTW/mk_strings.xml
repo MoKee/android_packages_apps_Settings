@@ -50,4 +50,6 @@
   <string name="wifi_setting_frequency_band_5G">僅 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">僅 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">三指螢幕擷取畫面</string>
+  <string name="three_finger_screenshot_summary">用三根手指向下滑動即可螢幕擷取畫面</string>
 </resources>
