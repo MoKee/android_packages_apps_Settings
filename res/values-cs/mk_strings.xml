@@ -52,4 +52,6 @@
   <string name="wifi_setting_frequency_band_5G">Pouze 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Pouze 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Snímek obrazovky třemi prsty</string>
+  <string name="three_finger_screenshot_summary">Snímek obrazovky přejetím dolů třemi prsty</string>
 </resources>

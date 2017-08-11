@@ -52,4 +52,6 @@
   <string name="wifi_setting_frequency_band_5G">Iba 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Iba 2,4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Snímka obrazovky tromi prstami</string>
+  <string name="three_finger_screenshot_summary">Snímka obrazovky prejdením dolu tromi prstami</string>
 </resources>
