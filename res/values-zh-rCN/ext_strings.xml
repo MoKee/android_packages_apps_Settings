@@ -408,4 +408,5 @@
   <!-- IC Codes -->
   <string name="ic_code_model">型号：%1</string>
   <string name="ic_code_full">集成电路：%1$s</string>
+  <!-- Label for settings shortcut: carrier selection -->
 </resources>
