@@ -3,6 +3,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
+               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,16 +18,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_cm">
-    <item quantity="one">Додирните још <xliff:g id="step_count">%1$d</xliff:g> пут да бисте омогућили опције за програмера.</item>
-    <item quantity="few">Додирните још <xliff:g id="step_count">%1$d</xliff:g> пута да бисте омогућили опције за програмера.</item>
-    <item quantity="other">Додирните још <xliff:g id="step_count">%1$d</xliff:g> пута да бисте омогућили опције за програмера.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">Омогућили сте опције за програмера.</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">Нема потебе, опције за програмера су већ омогућене.</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Алатке за програмера</string>
   <!-- Setting checkbox title for root access -->
@@ -40,20 +31,12 @@
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Управљање правима суперкорисника</string>
   <string name="root_appops_summary">Прегледајте и управљајте дозволама за права суперкорисника.</string>
-  <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">Верзија LineageOS-а</string>
-  <string name="mod_version_default">Непознато</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Модел уређаја</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Име уређаја</string>
-  <!-- About phone screen, LineageOS Api Level -->
-  <string name="mod_api_level">Ниво API-ја LineageOS-а</string>
-  <string name="mod_api_level_default">Непознато</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Датум израде</string>
-  <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Ажурирања система</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Локација</string>
   <string name="app_ops_categories_personal">Лични подаци</string>
@@ -66,7 +49,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">оквирна локација</string>
   <string name="app_ops_summaries_fine_location">прецизна локација</string>
-  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">вибрација</string>
   <string name="app_ops_summaries_read_contacts">читање контаката</string>
   <string name="app_ops_summaries_modify_contacts">мењање контаката</string>
@@ -137,7 +119,6 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Оквирна локација</string>
   <string name="app_ops_labels_fine_location">Прецизна локација</string>
-  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Вибрација</string>
   <string name="app_ops_labels_read_contacts">Читање контаката</string>
   <string name="app_ops_labels_modify_contacts">Мењање контаката</string>
@@ -351,11 +332,8 @@
   <string name="sim_mobile_network_settings_category_title">Подешавања мобилне мреже</string>
   <string name="sim_mobile_network_settings_title">Подешавања SIM %d картице</string>
   <!-- NFC PreferenceCategory title -->
-  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Напредна подешавања обавештења</string>
-  <!-- CM Legal -->
-  <string name="cmlicense_title">Политика приватности LineageOS-а</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сензор за отисак прста се налази <xliff:g id="sensor_location">%1$s</xliff:g> телефона.</string>
   <!-- Fingerprint sensor locations -->
@@ -401,11 +379,6 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Покретање плејера</string>
   <string name="headset_connect_player_summary">Покрените подразумевани плејер при прикључивању слушалица.</string>
-  <!-- Update recovery -->
-  <string name="update_recovery_title">Ажурирај режим опоравка</string>
-  <string name="update_recovery_summary">Ажурирајте режим опоравка при ажурирању система.</string>
-  <string name="update_recovery_on_warning">НАПОМЕНА: када је омогућена ова функција, инсталирани режим опоравка ће бити замењен оним који се налази у тренутној верзији ОС.\n\nРежим опоравка ће бити ажуриран заједно са системом, тиме обезбеђујући компатибилност са будућим верзијама.\n\nЖелите ли да омогућите ову функцију?</string>
-  <string name="update_recovery_off_warning">УПОЗОРЕЊЕ: Када је ова опција онемогућена, твој инсталиран опоравак неће бити ажуриран са надоградњом OS-а.\n\nБудуће ОС исправке се можда не могу инсталирати са застарелим или прерађеном верзијом опоравка.\n\nДа ли заиста желите да искључите ову функцију?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Искључи екран при двоструком додиру</string>
   <string name="status_bar_double_tap_to_sleep_summary">Додирните двапут на статусну траку да бисте искључили екран.</string>
@@ -431,7 +404,6 @@
   <string name="maximum_body_level">Тело: %1$s W/kg</string>
   <!-- IC Codes -->
   <string name="ic_code_model">Модел: %1$s</string>
-  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Оператор мреже</string>
 </resources>
