@@ -3,7 +3,6 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
-               (C) 2017 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,22 +17,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Launch Dev Tools -->
   <!-- Setting checkbox title for root access -->
   <!-- Preference link for root appops -->
+  <!-- About phone screen, LineageOS version -->
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
+  <!-- About phone screen, LineageOS Api Level -->
   <!-- About phone screen, build date -->
+  <!-- CM Updater -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
-  <string name="app_ops_labels_camera">Kamera</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
-  <string name="vibrator_intensity_dialog_reset">Tetapkan semula</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -50,7 +53,6 @@
   <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
-  <string name="menu_hidden_apps_delete">Tetapkan semula</string>
   <!-- title for lock screen weather preference -->
   <!-- title for lock screen blur preference -->
   <!-- Proximity wake -->
@@ -75,13 +77,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
-  <string name="app_notification_sound_timeout_value_10_seconds">10 saat</string>
-  <string name="app_notification_sound_timeout_value_1_minute">1 minit</string>
-  <string name="app_notification_sound_timeout_value_5_minutes">5 minit</string>
-  <string name="app_notification_sound_timeout_value_15_minutes">10 minit</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
+  <!-- CM Legal -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
   <!-- Wi-Fi region code -->
@@ -91,9 +90,6 @@
   <!-- Heads-up -->
   <!-- Tethering & portable hotspot other category -->
   <!-- Wi-Fi tethering inactivity timeout -->
-  <string name="hotstpot_inactivity_timeout_1_minute">1 minit</string>
-  <string name="hotstpot_inactivity_timeout_5_minutes">5 minit</string>
-  <string name="hotstpot_inactivity_timeout_10_minutes">10 minit</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -101,6 +97,7 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
+  <!-- Update recovery -->
   <!-- Status bar - double tap to sleep -->
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
