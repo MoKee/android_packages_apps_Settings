@@ -52,4 +52,6 @@
   <string name="wifi_setting_frequency_band_5G">Только 5 ГГц</string>
   <string name="wifi_setting_frequency_band_2G">Только 2,4 ГГц</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Скриншот тремя пальцами</string>
+  <string name="three_finger_screenshot_summary">Снятие скриншота свайпом вниз тремя пальцами</string>
 </resources>
