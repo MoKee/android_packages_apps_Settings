@@ -51,4 +51,6 @@
   <string name="wifi_setting_frequency_band_5G">Apenas 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Apenas 2,4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Captura de tela com 3 dedos</string>
+  <string name="three_finger_screenshot_summary">Tirar uma captura de tela ao deslizar três dedos</string>
 </resources>
