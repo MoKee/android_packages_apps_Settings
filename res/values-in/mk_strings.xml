@@ -50,4 +50,6 @@
   <string name="wifi_setting_frequency_band_5G">5 GHz saja</string>
   <string name="wifi_setting_frequency_band_2G">2.4 GHz saja</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Tiga jari tangkap layar</string>
+  <string name="three_finger_screenshot_summary">Geser kebawah dengan tiga jari di layar untuk menangkap layar</string>
 </resources>
