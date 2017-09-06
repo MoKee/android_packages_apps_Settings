@@ -27,11 +27,17 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">必要ありません、既に開発者向けオプションを有効にしています。</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">MoKee Centerのフリーズまたは削除はシステムサービスに影響しますので、復元して再試行してください。</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum オーバーレイ</string>
+  <string name="menu_show_substratum">オーバーレイを表示</string>
+  <string name="menu_hide_substratum">オーバーレイを非表示</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum アイコンオーバーレイ</string>
   <string name="menu_show_substratum_icons">オーバーレイアイコンを表示します。</string>
   <string name="menu_hide_substratum_icons">オーバーレイアイコンを非表示</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">すべてのテーマアプリを強制的に承認する</string>
   <string name="force_authorize_substratum_packages_summary">提供元不明のアプリのインストールを許可する</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
@@ -39,8 +45,11 @@
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_summary">使用する周波数帯域を指定する</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">周波数帯の設定に問題がありました。</string>
   <string name="wifi_setting_frequency_band_auto">オート</string>
   <string name="wifi_setting_frequency_band_5G">5GHz帯のみ</string>
   <string name="wifi_setting_frequency_band_2G">2.4GHz帯のみ</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">3本の指のスクリーンショット</string>
+  <string name="three_finger_screenshot_summary">画面上の3本の指で下にスワイプしてスクリーンショットを撮る</string>
 </resources>

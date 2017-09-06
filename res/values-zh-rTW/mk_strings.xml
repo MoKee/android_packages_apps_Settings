@@ -29,11 +29,11 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">停用或移除魔趣中心可能會影響系統服務，請恢復並重試。</string>
   <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">底層重疊</string>
+  <string name="filter_substratum_apps">Substratum 重疊</string>
   <string name="menu_show_substratum">顯示重疊</string>
   <string name="menu_hide_substratum">隱藏重疊</string>
   <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">底層圖示重疊</string>
+  <string name="filter_substratum_icons">Substratum 圖示重疊</string>
   <string name="menu_show_substratum_icons">顯示圖示重疊</string>
   <string name="menu_hide_substratum_icons">隱藏圖示重疊</string>
   <!-- Force authorize substratum packages -->
