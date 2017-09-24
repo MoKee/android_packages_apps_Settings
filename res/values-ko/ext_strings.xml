@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">대략적인 위치</string>
   <string name="app_ops_summaries_fine_location">자세한 위치</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">진동</string>
   <string name="app_ops_summaries_read_contacts">연락처 읽기</string>
   <string name="app_ops_summaries_modify_contacts">연락처 수정</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">대략적인 위치</string>
   <string name="app_ops_labels_fine_location">자세한 위치</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">진동</string>
   <string name="app_ops_labels_read_contacts">연락처 읽기</string>
   <string name="app_ops_labels_modify_contacts">연락처 수정</string>
@@ -237,6 +239,7 @@
   <string name="lockscreen_visualizer_title">음악 시각화 표시</string>
   <!-- Lock screen cover art -->
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">어디에서나 두번 두드려 화면 끄기</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">패턴 재설정</string>
   <string name="lockpattern_settings_reset_summary">주 이메일 계정과 비밀번호를 입력하여 패턴 잠금을 재설정합니다</string>
@@ -304,6 +307,7 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">이벤트</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">모든 발신자</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">선택한 호출자</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->

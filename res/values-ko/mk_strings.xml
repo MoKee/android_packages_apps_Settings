@@ -48,6 +48,8 @@
   <string name="wifi_setting_frequency_band_error">주파수 대역(밴드)을 설정하는 동안 문제가 발생했습니다.</string>
   <string name="wifi_setting_frequency_band_auto">자동</string>
   <string name="wifi_setting_frequency_band_5G">5 GHz만</string>
-  <string name="wifi_setting_frequency_band_2G">2.4 GHz 만</string>
+  <string name="wifi_setting_frequency_band_2G">2.4 GHz만</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">세 손가락 스크린샷</string>
+  <string name="three_finger_screenshot_summary">세 손가락을 아래로 밀어 스크린샷을 찍습니다</string>
 </resources>
