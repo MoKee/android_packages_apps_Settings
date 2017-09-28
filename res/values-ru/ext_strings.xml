@@ -410,4 +410,7 @@
   <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Операторы связи</string>
+  <!-- Burn in protection -->
+  <string name="burnin_protection_title">Отобразить записи в защите</string>
+  <string name="burnin_protection_summary">Периодически перемещать элементы, которые постоянно отображаются на экране, чтобы избежать чрезмерного износа экрана в этой области</string>
 </resources>
