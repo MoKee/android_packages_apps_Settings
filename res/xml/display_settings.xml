@@ -192,4 +192,11 @@
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
+<!-- Lockscreen charging -->
+    <lineageos.preference.SystemSettingSwitchPreference
+	 android:key="lockscreen_battery_info"
+	 android:title="@string/lockscreen_battery_info_title"
+	 android:summary="@string/lockscreen_battery_info_summary"
+	 android:defaultValue="true" />
+
 </PreferenceScreen>
