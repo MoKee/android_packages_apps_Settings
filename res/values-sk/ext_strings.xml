@@ -411,4 +411,6 @@
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Sieťoví operátori</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Ochrana nadmerného opotrebenia obrazovky</string>
+  <string name="burnin_protection_summary">Pravidelne presúvať položky, ktoré sú trvalo zobrazené na obrazovke, aby sa zabránilo nadmernému opotrebeniu obrazovky v tejto oblasti</string>
 </resources>

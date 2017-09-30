@@ -238,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Візуалізація під час програвання музики</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Показувати обкладинку мультимедіа</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Вимикати екран при подвійному дотику</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Скинути граф. ключ</string>
   <string name="lockpattern_settings_reset_summary">Уведіть email та пароль основного акаунту аби скинути блокування графічного ключа</string>
@@ -401,7 +403,14 @@
   <string name="sub_deactivate_failed">Помилка деактивації.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Голова: %1$s Вт/кг</string>
+  <string name="maximum_body_level">Тіло: %1$s Вт/кг</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Модель: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Оператори мережі</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Захист екрану від вигорання</string>
+  <string name="burnin_protection_summary">Періодично переміщати елементи, які постійно відображаються на екрані для уникнення надмірного зносу екрану в цій області</string>
 </resources>
