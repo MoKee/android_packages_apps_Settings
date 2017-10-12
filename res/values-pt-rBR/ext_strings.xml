@@ -411,4 +411,6 @@
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Operadoras de rede</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Proteção contra efeito burn-in</string>
+  <string name="burnin_protection_summary">Mover periodicamente itens que são permanentemente mostrados na tela para evitar desgaste excessivo da tela naquela área</string>
 </resources>

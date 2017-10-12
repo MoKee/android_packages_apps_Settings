@@ -411,4 +411,6 @@
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Operator jaringan</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Tampilkan proteksi burn-in</string>
+  <string name="burnin_protection_summary">Menampilkan proteksi burn-in secara berkala memindahkan item yang ditampilkan secara permanen di layar untuk menghindari keausan layar yang berlebihan di area itu</string>
 </resources>
