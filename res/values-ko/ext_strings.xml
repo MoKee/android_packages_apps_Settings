@@ -331,6 +331,7 @@
   <string name="sim_mobile_network_settings_category_title">모바일 네트워크 설정</string>
   <string name="sim_mobile_network_settings_title">SIM %d 설정</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">알림 강도 컨트롤</string>
   <!-- Format string for fingerprint location message -->
@@ -400,5 +401,8 @@
   <!-- SAR information -->
   <!-- IC Codes -->
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">네트워크 사업자</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">화면 번인 방지</string>
+  <string name="burnin_protection_summary">화면에 계속 표시되는 항목들을 주기적으로 움직여 영구적인 잔상을 방지합니다.</string>
 </resources>

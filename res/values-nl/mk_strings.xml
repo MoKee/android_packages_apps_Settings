@@ -48,6 +48,9 @@
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_error">Er is een probleem opgetreden bij het instellen van de regelmaatbandbreedte.</string>
   <string name="wifi_setting_frequency_band_auto">Autom.</string>
+  <string name="wifi_setting_frequency_band_5G">Enkel 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">Enkel 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Schermafbeelding met drie vingers</string>
   <string name="three_finger_screenshot_summary">Veeg op het scherm met drie vingers omlaag om een schermopname te maken</string>
 </resources>
