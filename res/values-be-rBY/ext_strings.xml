@@ -411,4 +411,6 @@
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Аператары сувязі</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Абарона экрана ад выгарання</string>
+  <string name="burnin_protection_summary">Перыядычна перамяшчаць элементы, якія пастаянна адлюстроўваюцца на экране каб пазбегнуць празмернага зносу экрана ў гэтай галіне</string>
 </resources>

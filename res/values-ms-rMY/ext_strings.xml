@@ -20,6 +20,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Launch Dev Tools -->
   <!-- Setting checkbox title for root access -->
+  <string name="root_access_none">Tidak-aktif</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
@@ -31,6 +32,7 @@
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
+  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_dialog_reset">Tetapkan semula</string>
@@ -90,7 +92,9 @@
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Lain-lain</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Tidak pernah</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 minit</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 minit</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">10 minit</string>
