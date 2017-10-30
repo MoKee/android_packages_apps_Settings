@@ -41,6 +41,7 @@
   <string name="app_ops_categories_location">Locatie</string>
   <string name="app_ops_categories_personal">Persoonlijk</string>
   <string name="app_ops_categories_messaging">Berichten</string>
+  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Apparaat</string>
   <string name="app_ops_categories_background">Achtergrond</string>
   <string name="app_ops_categories_bootup">Opstarten</string>
@@ -48,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">geschatte locatie</string>
   <string name="app_ops_summaries_fine_location">nauwkeurige locatie</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">trillen</string>
   <string name="app_ops_summaries_read_contacts">contacten lezen</string>
   <string name="app_ops_summaries_modify_contacts">contacten aanpassen</string>
@@ -71,6 +73,7 @@
   <string name="app_ops_summaries_modify_settings">instellingen aanpassen</string>
   <string name="app_ops_summaries_draw_on_top">bovenop tekenen</string>
   <string name="app_ops_summaries_access_notifications">toegang tot meldingen</string>
+  <string name="app_ops_summaries_camera">camera</string>
   <string name="app_ops_summaries_record_audio">audio opnemen</string>
   <string name="app_ops_summaries_play_audio">audio afspelen</string>
   <string name="app_ops_summaries_read_clipboard">klembord lezen</string>
@@ -117,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Geschatte locatie</string>
   <string name="app_ops_labels_fine_location">Nauwkeurige locatie</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Trillen</string>
   <string name="app_ops_labels_read_contacts">Contacten lezen</string>
   <string name="app_ops_labels_modify_contacts">Contacten aanpassen</string>
@@ -140,6 +144,7 @@
   <string name="app_ops_labels_modify_settings">Instellingen aanpassen</string>
   <string name="app_ops_labels_draw_on_top">Bovenop tekenen</string>
   <string name="app_ops_labels_access_notifications">Toegang tot meldingen</string>
+  <string name="app_ops_labels_camera">Camera</string>
   <string name="app_ops_labels_record_audio">Audio opnemen</string>
   <string name="app_ops_labels_play_audio">Audio afspelen</string>
   <string name="app_ops_labels_read_clipboard">Klembord lezen</string>
@@ -233,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Muziekvisualisaties weergeven</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Albumhoezen weergeven</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Dubbeltikken (overal) voor slaapstand</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Patroon opnieuw instellen</string>
   <string name="lockpattern_settings_reset_summary">Voer primair e-mailadres en bijbehorende wachtwoord in om patroon opnieuw in te stellen</string>
@@ -301,10 +308,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">gebeurtenissen</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">alle bellers</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">geselecteerde bellers</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">terugkerende bellers</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">alle berichten</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">geselecteerde berichten</string>
   <!-- Notification sound timeout -->
@@ -324,6 +334,7 @@
   <string name="sim_mobile_network_settings_category_title">Instellingen mobiel netwerk</string>
   <string name="sim_mobile_network_settings_title">Instellingen SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Geavanceerde meldingsinstellingen</string>
   <!-- Format string for fingerprint location message -->
@@ -343,6 +354,7 @@
   <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
   <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Zwevende meldingen</string>
   <string name="heads_up_notifications_enabled_summary">Prioriteitsmeldingen weergeven in klein zwevend venster</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Overige</string>
@@ -373,6 +385,7 @@
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dubbeltikken voor slaapstand</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk voor slaapstand</string>
+  <string name="sim_enabler_summary"><xliff:g id="text">%1$s</xliff:g>, <xliff:g id="size" example="230 kB">%2$s</xliff:g>/s</string>
   <string name="sim_enabled">ingeschakeld</string>
   <string name="sim_disabled">uitgeschakeld</string>
   <string name="sim_missing">afwezig of defect</string>
@@ -390,7 +403,14 @@
   <string name="sub_deactivate_failed">Uitschakelen mislukt.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Head: %1$s W/kg</string>
+  <string name="maximum_body_level">Body: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Model: %s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Netwerkproviders</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Beeldscherm Burn-in bescherming</string>
+  <string name="burnin_protection_summary">Periodiek verplaatsen van items die permanent worden weergegeven op het scherm om te voorkomen dat buitensporige scherm slijtage in dat gebied</string>
 </resources>
