@@ -25,13 +25,16 @@
   <!-- About phone screen, Device name -->
   <!-- About phone screen, build date -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_location">Lokasyon</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
+  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_dialog_reset">I-reset</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -48,6 +51,7 @@
   <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <!-- Protected Apps -->
+  <string name="menu_hidden_apps_delete">I-reset</string>
   <!-- title for lock screen weather preference -->
   <!-- title for lock screen blur preference -->
   <!-- Proximity wake -->
@@ -83,7 +87,9 @@
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Iba pa</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Hindi kailanman</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
