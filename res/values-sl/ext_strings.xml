@@ -411,4 +411,6 @@
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Operaterji</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Zaščita pred vtisnjenjem v zaslon</string>
+  <string name="burnin_protection_summary">Občasen premik predmetov, ki so trajno prikazani na zaslonu v izogib pretirani obrabi zaslona na tem področju</string>
 </resources>
