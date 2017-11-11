@@ -44,6 +44,8 @@ import android.widget.TextView;
 
 import com.android.settings.R;
 
+import com.mokee.utils.OperatorUtils;
+
 public class SimPreferenceDialog extends Activity {
 
     private Context mContext;
@@ -146,6 +148,10 @@ public class SimPreferenceDialog extends Activity {
         }
 
         String simCarrierName = tm.getSimOperatorName(mSubInfoRecord.getSubscriptionId());
+        if (TextUtils.isEmpty(simCarrierName)) {
+            simCarrierName = OperatorUtils.operatorReplace(
+                    simCarrierName, tm.getSimOperator(mSubInfoRecord.getSubscriptionId()));
+        }
         TextView carrierView = (TextView)mDialogLayout.findViewById(R.id.carrier);
         carrierView.setText(!TextUtils.isEmpty(simCarrierName) ? simCarrierName :
                 mContext.getString(com.android.internal.R.string.unknownName));
