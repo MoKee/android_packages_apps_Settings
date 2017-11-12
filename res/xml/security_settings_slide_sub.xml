@@ -57,4 +57,8 @@
             android:title="@string/lockscreen_blur_enabled_title"
             mk:requiresConfig="@*android:bool/config_uiBlurEnabled" />
 
+        <mokee.preference.MKSystemSettingSwitchPreference
+            android:key="show_charging_speed"
+            android:title="@string/show_charging_speed_title" />
+
 </PreferenceScreen>

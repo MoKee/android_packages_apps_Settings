@@ -62,4 +62,7 @@
     <string name="three_finger_screenshot_title">Three-finger screenshot</string>
     <string name="three_finger_screenshot_summary">Swipe down with three fingers on the screen to take a screenshot</string>
 
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Show charging speed</string>
+
 </resources>
