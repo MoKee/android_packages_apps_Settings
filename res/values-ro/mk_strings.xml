@@ -32,4 +32,5 @@
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Three finger screenshot -->
+  <!-- Show charging speed -->
 </resources>

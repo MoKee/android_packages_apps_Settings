@@ -54,4 +54,5 @@
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">Скріншот трьома пальцями</string>
   <string name="three_finger_screenshot_summary">Проведіть вниз трьома пальцями на екрані, щоб зробити знімок екрану</string>
+  <!-- Show charging speed -->
 </resources>

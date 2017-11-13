@@ -40,4 +40,5 @@
   <string name="wifi_setting_frequency_band_auto">Tự động</string>
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_summary">Vuốt ba ngón tay lên màn hình để chụp ảnh màn hình</string>
+  <!-- Show charging speed -->
 </resources>

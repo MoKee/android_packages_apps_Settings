@@ -54,4 +54,5 @@
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">Скрыншот трыма пальцамі</string>
   <string name="three_finger_screenshot_summary">Зняцце скрыншота свайпом ўніз трыма пальцамі</string>
+  <!-- Show charging speed -->
 </resources>

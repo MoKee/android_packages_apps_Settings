@@ -52,4 +52,5 @@
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">세 손가락 스크린샷</string>
   <string name="three_finger_screenshot_summary">세 손가락을 아래로 밀어 스크린샷을 찍습니다</string>
+  <!-- Show charging speed -->
 </resources>

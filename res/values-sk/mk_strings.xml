@@ -54,4 +54,5 @@
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">Snímka obrazovky tromi prstami</string>
   <string name="three_finger_screenshot_summary">Snímka obrazovky prejdením dolu tromi prstami</string>
+  <!-- Show charging speed -->
 </resources>
