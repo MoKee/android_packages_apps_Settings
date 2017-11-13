@@ -52,4 +52,6 @@
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">三指截屏</string>
   <string name="three_finger_screenshot_summary">三指同时下滑以截取屏幕</string>
+  <!-- Show charging speed -->
+  <string name="show_charging_speed_title">显示充电速度</string>
 </resources>
