@@ -54,4 +54,5 @@
   <string name="three_finger_screenshot_title">Captura de pantalla con tres dedos</string>
   <string name="three_finger_screenshot_summary">Desliza con tres dedos en la pantalla para tomar una captura de pantalla</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Mostrar velocidad de carga</string>
 </resources>
