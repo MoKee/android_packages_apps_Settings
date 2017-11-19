@@ -53,4 +53,5 @@
   <string name="three_finger_screenshot_title">Tiga jari tangkap layar</string>
   <string name="three_finger_screenshot_summary">Geser kebawah dengan tiga jari di layar untuk menangkap layar</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Tampilkan kecepatan pengisian</string>
 </resources>
