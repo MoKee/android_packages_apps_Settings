@@ -506,6 +506,7 @@ public class RunningServiceDetails extends InstrumentedFragment
         mInflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         
         mState = RunningState.getInstance(getActivity());
+        setHasOptionsMenu(true);
     }
     
     @Override
