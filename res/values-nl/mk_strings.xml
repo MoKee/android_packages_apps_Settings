@@ -54,4 +54,5 @@
   <string name="three_finger_screenshot_title">Schermafbeelding met drie vingers</string>
   <string name="three_finger_screenshot_summary">Veeg op het scherm met drie vingers omlaag om een schermopname te maken</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Toon snelheid laden</string>
 </resources>
