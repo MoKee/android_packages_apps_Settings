@@ -118,7 +118,7 @@
         android:summary="@string/doze_summary"
         mk:replacesKey="doze">
         <intent
-            android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
+            android:action="org.mokee.settings.device.DOZE_SETTINGS" />
     </mokee.preference.RemotePreference>
 
     <SwitchPreference

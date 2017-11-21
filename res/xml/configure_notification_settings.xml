@@ -15,6 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
                   android:title="@string/configure_notification_settings"
                   android:key="configure_notification_settings">
 
@@ -31,6 +32,18 @@
     <SwitchPreference
         android:key="notification_pulse"
         android:title="@string/notification_pulse_title"/>
+
+    <!-- Battery light -->
+    <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="battery_lights"
+        mk:requiresConfig="@*mokee.platform:integer/config_deviceLightCapabilities"
+        mk:requiresConfigMask="64" />
+
+    <!-- Notification lights -->
+    <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="notification_lights"
+        mk:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
+        mk:replacesKey="notification_pulse" />
 
     <!-- When device is locked -->
     <com.android.settings.notification.RestrictedDropDownPreference
