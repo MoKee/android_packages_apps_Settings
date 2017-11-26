@@ -384,13 +384,13 @@
   <string name="headset_connect_player_title">Iniciar o aplicativo de música</string>
   <string name="headset_connect_player_summary">Abrir o aplicativo de música padrão quando os fones de ouvido forem conectados</string>
   <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Toque duplo para dormir</string>
+  <string name="status_bar_double_tap_to_sleep_title">Toque duplo para silenciar</string>
   <string name="status_bar_double_tap_to_sleep_summary">Toque duplo na barra de status para desligar a tela</string>
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> é <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_enabled">habilitado</string>
   <string name="sim_disabled">desabilitado</string>
   <string name="sim_missing">faltando ou com defeito</string>
-  <string name="sim_enabler_need_disable_sim">Cartão SIM será desativado. Você quer continuar?</string>
+  <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Você quer continuar?</string>
   <string name="sim_enabler_will_disable_sim_title">Atenção</string>
   <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para o serviços de dados. Tem certeza que deseja continuar?</string>
   <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo avião estiver ativado.</string>
