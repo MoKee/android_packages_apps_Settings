@@ -70,24 +70,14 @@
                 android:title="@string/model_info"
                 android:summary="@string/device_info_default"/>
 
-        <!-- MoKee version -->
-        <Preference
-                android:key="mokee_version"
-                android:title="@string/mokee_version"
-                android:summary="@string/mokee_version_default" />
-
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- LineageOS version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
-                android:key="lineage_version" />
-
-        <!-- LineageOS API version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
-                android:key="lineage_api_level" />
+        <!-- MoKee version -->
+        <org.mokee.internal.preference.deviceinfo.MKVersionPreference
+                android:key="mk_version" />
 
         <!-- Security patch level -->
         <Preference android:key="security_patch"
@@ -116,7 +106,7 @@
                 android:summary="@string/device_info_default"/>
 
         <!-- Build date -->
-        <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
+        <org.mokee.internal.preference.deviceinfo.MKBuildDatePreference
                 android:key="build_date" />
 
         <!-- Detailed build version -->
