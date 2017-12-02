@@ -197,6 +197,7 @@
   <string name="app_ops_allowed_count">Zezwolono <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Odrzucono <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Zezwolono <xliff:g id="count">%1$s</xliff:g>, odrzucono <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_no_blockable_permissions">Brak dostępnych uprawnień do zablokowania</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Pokaż aplikacje użytkownika</string>
   <string name="app_ops_show_system_apps">Pokaż wbudowane aplikacje</string>
@@ -238,7 +239,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Stuknij dwukrotnie gdziekolwiek, aby uśpić</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Zresetuj wzór</string>
   <string name="lockpattern_settings_reset_summary">Wpisz główny adres e-mail konta i powiązane z nim hasło, aby zresetować wzór blokady</string>
@@ -401,7 +404,14 @@
   <string name="sub_deactivate_failed">Dezaktywacja nie powiodła się.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Głowa: %1$s W/kg</string>
+  <string name="maximum_body_level">Ciało: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Operatorzy sieci</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Zabezpieczenie przed wypaleniem ekranu</string>
+  <string name="burnin_protection_summary">Co jakiś czas przemieszcza trwale wyświetlane elementy, aby uniknąć nadmiernego zużycia ekranu w danym obszarze</string>
 </resources>
