@@ -29,4 +29,16 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <!-- Memory bar positions -->
+    <string-array name="recents_membar_pos_entries" translatable="false">
+        <item>@string/recents_membar_pos_top</item>
+        <item>@string/recents_membar_pos_bottom</item>
+        <item>@string/recents_membar_pos_hidden</item>
+    </string-array>
+    <string-array name="recents_membar_pos_values" translatable="false">
+        <item>top</item>
+        <item>bottom</item>
+        <item>hidden</item>
+    </string-array>
 </resources>

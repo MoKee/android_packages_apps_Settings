@@ -67,4 +67,12 @@
         android:key="apps_startup"
         android:title="@string/memory_startup_apps_title" />
 
+    <mokee.preference.MKSystemSettingListPreference
+        android:key="show_memory_bar_in_recents"
+        android:title="@string/show_memory_bar_in_recents"
+        android:summary="%s"
+        android:entries="@array/recents_membar_pos_entries"
+        android:entryValues="@array/recents_membar_pos_values"
+        android:defaultValue="top" />
+
 </PreferenceScreen>
