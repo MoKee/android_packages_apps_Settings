@@ -56,4 +56,6 @@
   <string name="three_finger_screenshot_title">Zajem zaslona s tremi prsti</string>
   <string name="three_finger_screenshot_summary">S tremi prsti podrsajte po zaslonu navzdol, da naredite posnetek zaslona</string>
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Skrito</string>
 </resources>

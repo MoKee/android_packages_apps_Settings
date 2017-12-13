@@ -56,4 +56,6 @@
   <string name="three_finger_screenshot_summary">Snímka obrazovky prejdením dolu tromi prstami</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Zobraziť rýchlosť nabíjania</string>
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Skryté</string>
 </resources>

@@ -56,4 +56,6 @@
   <string name="three_finger_screenshot_summary">Przesuń w dół ekranu trzema placami, aby wykonać zrzut ekranu</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Pokaż prędkość ładowania</string>
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Ukryty</string>
 </resources>

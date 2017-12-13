@@ -52,4 +52,6 @@
   <string name="wifi_setting_frequency_band_2G">2,4 GHz uniquement</string>
   <!-- Three finger screenshot -->
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Masqué</string>
 </resources>

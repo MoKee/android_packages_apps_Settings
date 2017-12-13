@@ -54,4 +54,9 @@
   <string name="three_finger_screenshot_summary">用三根手指向下滑動即可螢幕擷取畫面</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">顯示充電速度</string>
+  <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">在最近任務中顯示記憶體使用量</string>
+  <string name="recents_membar_pos_top">頂部</string>
+  <string name="recents_membar_pos_bottom">底部</string>
+  <string name="recents_membar_pos_hidden">隱藏</string>
 </resources>

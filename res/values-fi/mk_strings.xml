@@ -52,4 +52,6 @@
   <string name="wifi_setting_frequency_band_2G">Vain 2.4 GHz</string>
   <!-- Three finger screenshot -->
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Piilotettu</string>
 </resources>

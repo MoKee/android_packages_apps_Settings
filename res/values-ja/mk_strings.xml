@@ -53,4 +53,6 @@
   <string name="three_finger_screenshot_title">3本の指のスクリーンショット</string>
   <string name="three_finger_screenshot_summary">画面上の3本の指で下にスワイプしてスクリーンショットを撮る</string>
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">表示しない</string>
 </resources>

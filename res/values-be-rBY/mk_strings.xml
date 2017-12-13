@@ -56,4 +56,6 @@
   <string name="three_finger_screenshot_summary">Зняцце скрыншота свайпом ўніз трыма пальцамі</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Паказаць хуткасць зарадкі</string>
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Схаваць</string>
 </resources>

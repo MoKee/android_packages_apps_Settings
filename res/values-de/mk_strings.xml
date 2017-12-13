@@ -54,4 +54,6 @@
   <string name="three_finger_screenshot_title">Drei Finger Bildschirmfoto</string>
   <string name="three_finger_screenshot_summary">Mit drei Fingern nach unten wischen für ein Bildschirmfoto</string>
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Ausgeblendet</string>
 </resources>

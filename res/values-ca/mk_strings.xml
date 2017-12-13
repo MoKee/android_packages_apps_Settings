@@ -32,4 +32,6 @@
   <string name="wifi_setting_frequency_band_auto">Automàtic</string>
   <!-- Three finger screenshot -->
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Amagat</string>
 </resources>

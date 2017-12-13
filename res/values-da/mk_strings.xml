@@ -36,4 +36,6 @@
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <!-- Three finger screenshot -->
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Skjult</string>
 </resources>

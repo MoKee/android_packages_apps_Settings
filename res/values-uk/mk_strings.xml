@@ -55,4 +55,6 @@
   <string name="three_finger_screenshot_title">Скріншот трьома пальцями</string>
   <string name="three_finger_screenshot_summary">Проведіть вниз трьома пальцями на екрані, щоб зробити знімок екрану</string>
   <!-- Show charging speed -->
+  <!-- Memory bar -->
+  <string name="recents_membar_pos_hidden">Прихований</string>
 </resources>
