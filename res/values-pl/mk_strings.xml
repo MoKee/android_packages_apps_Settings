@@ -57,5 +57,8 @@
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Pokaż prędkość ładowania</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Pokaż użycie pamięci w widoku \"ostatnie\"</string>
+  <string name="recents_membar_pos_top">Góra</string>
+  <string name="recents_membar_pos_bottom">Dół</string>
   <string name="recents_membar_pos_hidden">Ukryty</string>
 </resources>
