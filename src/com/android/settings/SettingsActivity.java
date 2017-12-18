@@ -138,6 +138,8 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
+import org.mokee.internal.mkparts.PartsList;
+
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
@@ -1191,6 +1193,9 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                 BackupSettingsActivity.class.getName()), hasBackupActivity,
                 isAdmin || Utils.isCarrierDemoUser(this), pm);
+
+        setTileEnabled(new ComponentName(PartsList.MKPARTS_PACKAGE, PartsList.MKPARTS_PACKAGE + ".fingerprint.FingerprintShortcutSettings"),
+                pm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT), isAdmin, pm);
 
     }
 
