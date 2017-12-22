@@ -51,7 +51,13 @@
   <string name="wifi_setting_frequency_band_5G">Sadece 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Sadece 2.4 Ghz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Üç parka ekran görüntüsü alma</string>
+  <string name="three_finger_screenshot_summary">Ekran görüntüsü almak için üç parmağınızı ekranda aşağıya hızla kaydırın</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Şarj hızını göster</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Son işlemlerdeki bellek kullanımını göster</string>
+  <string name="recents_membar_pos_top">Üst</string>
+  <string name="recents_membar_pos_bottom">Alt</string>
   <string name="recents_membar_pos_hidden">Gizli</string>
 </resources>

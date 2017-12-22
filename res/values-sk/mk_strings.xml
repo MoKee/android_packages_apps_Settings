@@ -57,5 +57,8 @@
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Zobraziť rýchlosť nabíjania</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Zobraziť využitie pamäte v zozname nedávnych aplikácií</string>
+  <string name="recents_membar_pos_top">Hore</string>
+  <string name="recents_membar_pos_bottom">Dolu</string>
   <string name="recents_membar_pos_hidden">Skryté</string>
 </resources>
