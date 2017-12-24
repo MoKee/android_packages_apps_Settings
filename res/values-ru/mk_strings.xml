@@ -57,5 +57,8 @@
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Отображать скорость зарядки</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Отобр. использование оперативной памяти</string>
+  <string name="recents_membar_pos_top">Сверху</string>
+  <string name="recents_membar_pos_bottom">Внизу</string>
   <string name="recents_membar_pos_hidden">Не показывать</string>
 </resources>

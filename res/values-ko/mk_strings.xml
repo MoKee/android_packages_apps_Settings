@@ -53,6 +53,10 @@
   <string name="three_finger_screenshot_title">세 손가락 스크린샷</string>
   <string name="three_finger_screenshot_summary">세 손가락을 아래로 밀어 스크린샷을 찍습니다</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">충전 속도 표시</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">최근 메모리 사용량 표시</string>
+  <string name="recents_membar_pos_top">상단</string>
+  <string name="recents_membar_pos_bottom">하단</string>
   <string name="recents_membar_pos_hidden">숨김</string>
 </resources>

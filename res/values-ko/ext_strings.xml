@@ -24,7 +24,7 @@
   <string name="root_access">루트 권한</string>
   <string name="root_access_warning_title">루트 권한을 허용할까요?</string>
   <string name="root_access_warning_message">앱이 루트 권한을 요청하도록 허용하는 것은 매우 위험하며 시스템의 보안을 손상시킬 수 있습니다!</string>
-  <string name="root_access_none">사용 안 함</string>
+  <string name="root_access_none">사용 안함</string>
   <string name="root_access_apps">애플리케이션만</string>
   <string name="root_access_adb">ADB만</string>
   <string name="root_access_all">앱 및 ADB</string>
@@ -197,6 +197,7 @@
   <string name="app_ops_allowed_count"><xliff:g id="count" example="2 times">%s</xliff:g> 허용</string>
   <string name="app_ops_ignored_count"><xliff:g id="count" example="2 times">%s</xliff:g> 거부</string>
   <string name="app_ops_both_count"><xliff:g id="count">%1$s</xliff:g> 허용됨, <xliff:g id="count">%2$s</xliff:g> 거부됨</string>
+  <string name="app_ops_no_blockable_permissions">차단할 수 있는 권한 없음</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">사용자 애플리케이션 표시</string>
   <string name="app_ops_show_system_apps">내장 애플리케이션 표시</string>
@@ -238,6 +239,7 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">음악 시각화 표시</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
   <!-- Double tap to sleep on keyguard -->
   <string name="double_tap_sleep_anywhere_title">어디에서나 두번 두드려 화면 끄기</string>
   <!-- Protected apps lockpattern reset button -->
@@ -311,7 +313,9 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">선택한 호출자</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">반복 발신자</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">모든 메시지</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">선택한 메세지</string>
   <!-- Notification sound timeout -->
@@ -383,6 +387,7 @@
   <string name="status_bar_double_tap_to_sleep_title">탭하여 화면 끄기</string>
   <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄에 더블 탭하여 화면 끄기</string>
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">사용함</string>
   <string name="sim_disabled">비활성화 됨</string>
   <string name="sim_missing">SIM 카드가 없거나 잘못되었습니다</string>
   <string name="sim_enabler_need_disable_sim">SIM 카드가 비활성화됩니다. 계속하시겠습니까?</string>
@@ -399,7 +404,11 @@
   <string name="sub_deactivate_failed">비활성화 실패</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">머리: %1$s W/kg</string>
+  <string name="maximum_body_level">몸: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">모델: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">네트워크 사업자</string>
   <!-- Burn in protection -->
