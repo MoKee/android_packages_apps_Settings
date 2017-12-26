@@ -19,8 +19,14 @@
   <string name="mk_version">Bersyon ng MoKee</string>
   <string name="mk_version_default">Hindi alam</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng pag-unlad na mga setting.</item>
+    <item quantity="other">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng mga setting ng pag-unlad.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">Pinagana mo ang pag-unlad na mga setting!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">Hindi na kailangan, pinagana mo na ang pag-unlad na mga setting.</string>
   <!-- MKCenter verify -->
   <!-- Manage applications: show substratum overlays -->
   <string name="menu_show_substratum">Ipakita ang overlays</string>
