@@ -37,7 +37,7 @@ LOCAL_JAVA_LIBRARIES := \
 LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     settings-logtags \
-    org.lineageos.platform.internal
+    org.mokee.platform.internal
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 

@@ -104,7 +104,7 @@ import com.android.settingslib.RestrictedSwitchPreference;
 import com.android.settingslib.development.AbstractEnableAdbPreferenceController;
 import com.android.settingslib.drawer.CategoryKey;
 
-import lineageos.providers.LineageSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -882,8 +882,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private void updateAdbOverNetwork() {
-        int port = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, 0);
+        int port = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
         updateSwitchPreference(mAdbOverNetwork, enabled);
@@ -944,8 +944,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private void resetAdbNotifyOptions() {
-        LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_NOTIFY, 1);
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_NOTIFY, 1);
     }
 
     private void updateHdcpValues() {
@@ -2551,8 +2551,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                         .show();
                 mAdbTcpDialog.setOnDismissListener(this);
             } else {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, -1);
                 updateAdbOverNetwork();
             }
         } else if (preference == mClearAdbKeys) {
@@ -2778,8 +2778,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             }
         } else if (dialog == mAdbTcpDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, 5555);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, 5555);
             }
         }
     }
