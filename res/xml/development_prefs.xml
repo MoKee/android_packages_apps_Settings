@@ -139,7 +139,7 @@
             android:title="@string/adb_enable"
             android:summary="@string/adb_enable_summary" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="adb_notify"
             android:title="@string/adb_notify"
             android:summary="@string/adb_notify_summary"

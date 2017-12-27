@@ -80,9 +80,9 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.drawer.CategoryKey;
 
-import lineageos.providers.LineageSettings;
+import mokee.providers.MKSettings;
 
-import org.lineageos.internal.util.LineageLockPatternUtils;
+import org.mokee.internal.util.MKLockPatternUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1057,9 +1057,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 mPowerButtonInstantlyLocks.setChecked(
                         mLockPatternUtils.getPowerButtonInstantlyLocks(MY_USER_ID));
             }
-            final LineageLockPatternUtils lineageLockPatternUtils = mChooseLockSettingsHelper.lineageUtils();
+            final MKLockPatternUtils mkLockPatternUtils = mChooseLockSettingsHelper.mokeeUtils();
             if (mDirectlyShowLock != null) {
-                mDirectlyShowLock.setChecked(lineageLockPatternUtils.shouldPassToSecurityView(
+                mDirectlyShowLock.setChecked(mkLockPatternUtils.shouldPassToSecurityView(
                         MY_USER_ID));
             }
 
@@ -1213,9 +1213,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
             if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
                 mLockPatternUtils.setPowerButtonInstantlyLocks((Boolean) value, MY_USER_ID);
             } else if (KEY_DIRECTLY_SHOW_LOCK.equals(key)) {
-                final LineageLockPatternUtils lineageLockPatternUtils =
-                        mChooseLockSettingsHelper.lineageUtils();
-                lineageLockPatternUtils.setPassToSecurityView((Boolean) value, MY_USER_ID);
+                final MKLockPatternUtils mkLockPatternUtils =
+                        mChooseLockSettingsHelper.mokeeUtils();
+                mkLockPatternUtils.setPassToSecurityView((Boolean) value, MY_USER_ID);
             } else if (KEY_LOCK_AFTER_TIMEOUT.equals(key)) {
                 int timeout = Integer.parseInt((String) value);
                 try {

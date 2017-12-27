@@ -31,7 +31,7 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import org.lineageos.internal.util.LineageLockPatternUtils;
+import org.mokee.internal.util.MKLockPatternUtils;
 
 public final class ChooseLockSettingsHelper {
 
@@ -46,14 +46,14 @@ public final class ChooseLockSettingsHelper {
 
 
     @VisibleForTesting LockPatternUtils mLockPatternUtils;
-    private LineageLockPatternUtils mLineageLockPatternUtils;
+    private MKLockPatternUtils mMKLockPatternUtils;
     private Activity mActivity;
     private Fragment mFragment;
 
     public ChooseLockSettingsHelper(Activity activity) {
         mActivity = activity;
         mLockPatternUtils = new LockPatternUtils(activity);
-        mLineageLockPatternUtils = new LineageLockPatternUtils(activity);
+        mMKLockPatternUtils = new MKLockPatternUtils(activity);
     }
 
     public ChooseLockSettingsHelper(Activity activity, Fragment fragment) {
@@ -65,8 +65,8 @@ public final class ChooseLockSettingsHelper {
         return mLockPatternUtils;
     }
 
-    public LineageLockPatternUtils lineageUtils() {
-        return mLineageLockPatternUtils;
+    public MKLockPatternUtils mokeeUtils() {
+        return mMKLockPatternUtils;
     }
 
     /**
