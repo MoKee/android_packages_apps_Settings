@@ -54,6 +54,9 @@
   <string name="three_finger_screenshot_title">Drei Finger Bildschirmfoto</string>
   <string name="three_finger_screenshot_summary">Mit drei Fingern nach unten wischen für ein Bildschirmfoto</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Ladegeschwindigkeit anzeigen</string>
   <!-- Memory bar -->
+  <string name="recents_membar_pos_top">Oben</string>
+  <string name="recents_membar_pos_bottom">Unten</string>
   <string name="recents_membar_pos_hidden">Ausgeblendet</string>
 </resources>
