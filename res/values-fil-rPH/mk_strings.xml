@@ -28,17 +28,24 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Hindi na kailangan, pinagana mo na ang pag-unlad na mga setting.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Ang pag-freeze o pag-alis ng MoKee Center ay makakaapekto sa mga serbisyo ng system, maaring ibalik at subukang muli.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Mga overlay na substratum</string>
   <string name="menu_show_substratum">Ipakita ang overlays</string>
   <string name="menu_hide_substratum">Itago ang mga overlays</string>
   <!-- Manage applications: show substratum icon overlays -->
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_summary">Payagan ang mga tema ng apps mula sa hindi kilalang mga mapagkukunan</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Tukuyin ang frequency range ng operasyon</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Nagkaroon ng problema sa pagtatakda ng frequency band.</string>
   <string name="wifi_setting_frequency_band_auto">Auto</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_summary">Mag-swipe pababa gamit ang tatlong daliri sa screen upang kumuha ng screenshot</string>
   <!-- Show charging speed -->
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Ipakita ang paggamit ng memory sa Recents</string>
 </resources>
