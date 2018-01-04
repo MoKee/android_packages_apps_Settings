@@ -29,6 +29,7 @@
   <string name="app_ops_categories_location">Lokasyon</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_camera">Kamera</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
@@ -77,6 +78,10 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minuto</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">6 minuto</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
@@ -91,6 +96,9 @@
   <string name="tethering_other_category_text">Iba pa</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">Hindi kailanman</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuto</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">6 minuto</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
