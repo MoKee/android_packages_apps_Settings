@@ -24,4 +24,14 @@
         android:title="@string/owner_info_settings_title"
         android:summary="@string/owner_info_settings_summary" />
 
+    <mokee.preference.MKSecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:defaultValue="true" />
+
+    <mokee.preference.MKSecureSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/lockscreen_media_art_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
