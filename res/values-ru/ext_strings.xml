@@ -248,9 +248,9 @@
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">Сброс</string>
   <string name="menu_hidden_apps_reset_lock">Удалить граф. ключ</string>
-  <string name="protected_apps">Заблокир. приложения</string>
+  <string name="protected_apps">Защищённые приложения</string>
   <string name="protected_apps_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
-  <string name="saving_protected_components">Сохранение состояния приложений\u2026</string>
+  <string name="saving_protected_components">Сохранение состояния приложений...</string>
   <string name="launch_app">Запустить приложение</string>
   <string name="pa_login_username_hint">Имя пользователя (эл. почта)</string>
   <string name="pa_login_password_hint">Пароль</string>
@@ -309,15 +309,15 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">События</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_all_callers">все вызовы</string>
+  <string name="zen_mode_summary_all_callers">Все вызовы</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">Выбранные абоненты</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_repeat_callers">повторные вызовы</string>
+  <string name="zen_mode_summary_repeat_callers">Повторные вызовы</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_all_messages">все сообщения</string>
+  <string name="zen_mode_summary_all_messages">Все сообщения</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_selected_messages">выбранные сообщения</string>
+  <string name="zen_mode_summary_selected_messages">Выбранные сообщения</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Мин. интервал между звуками уведомлений</string>
   <string name="app_notification_sound_timeout_summary_template">Разрешить звуки или вибрацию не более чем один раз каждые <xliff:g id="duration">%1$s</xliff:g></string>

@@ -24,11 +24,18 @@
   <!-- Preference link for root appops -->
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
+  <string name="device_name">Pangalan ng device</string>
   <!-- About phone screen, build date -->
+  <string name="build_date">Petsa ng paggawa</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokasyon</string>
+  <string name="app_ops_categories_personal">Personal</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_send_sms">Magpadala ng SMS</string>
+  <string name="app_ops_labels_read_icc_sms">Magbasa ng ICC SMS</string>
+  <string name="app_ops_labels_write_icc_sms">Magsulat ng ICC SMS</string>
+  <string name="app_ops_labels_modify_settings">Baguhin ang mga setting</string>
   <string name="app_ops_labels_camera">Kamera</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
@@ -71,22 +78,31 @@
   <!-- Allow vibration in zen mode -->
   <!-- Zen mode allowed event setting summary items -->
   <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
+  <string name="zen_mode_summary_reminders">mga paalala</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">lahat ng mga mensahe</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_messages">mga piling mensahe</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 na segundo</string>
   <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
   <string name="app_notification_sound_timeout_value_5_minutes">5 minuto</string>
   <string name="app_notification_sound_timeout_value_15_minutes">6 minuto</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 na minuto</string>
   <!-- MSIM SIM status -->
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
+  <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
+  <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
+  <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->

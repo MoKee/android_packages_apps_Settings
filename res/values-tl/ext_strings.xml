@@ -30,6 +30,7 @@
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
+  <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_dialog_reset">I-reset</string>

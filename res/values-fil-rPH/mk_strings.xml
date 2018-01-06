@@ -34,18 +34,30 @@
   <string name="menu_show_substratum">Ipakita ang overlays</string>
   <string name="menu_hide_substratum">Itago ang mga overlays</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Mga overlay na icon ng substratum</string>
+  <string name="menu_show_substratum_icons">Ipakita ang overlay ng mga icon</string>
+  <string name="menu_hide_substratum_icons">Itago ang overlay ng mga icon</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Pwersahang pahintulutan ang bawat application ng tema</string>
   <string name="force_authorize_substratum_packages_summary">Payagan ang mga tema ng apps mula sa hindi kilalang mga mapagkukunan</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-fi frequency band</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_summary">Tukuyin ang frequency range ng operasyon</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_frequency_band_error">Nagkaroon ng problema sa pagtatakda ng frequency band.</string>
   <string name="wifi_setting_frequency_band_auto">Auto</string>
+  <string name="wifi_setting_frequency_band_5G">5 GHz lamang</string>
+  <string name="wifi_setting_frequency_band_2G">2.4 GHz lamang</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Pag-screenshot gamit ang tatlong daliri</string>
   <string name="three_finger_screenshot_summary">Mag-swipe pababa gamit ang tatlong daliri sa screen upang kumuha ng screenshot</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Ipakita ang bilis ng pag-charge</string>
   <!-- Memory bar -->
   <string name="show_memory_bar_in_recents">Ipakita ang paggamit ng memory sa Recents</string>
+  <string name="recents_membar_pos_top">Ibabaw</string>
+  <string name="recents_membar_pos_bottom">Ilalim</string>
+  <string name="recents_membar_pos_hidden">Nakatago</string>
 </resources>
