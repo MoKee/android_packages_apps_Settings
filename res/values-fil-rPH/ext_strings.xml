@@ -19,8 +19,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Launch Dev Tools -->
+  <string name="development_tools_title">Mga tool sa development</string>
   <!-- Setting checkbox title for root access -->
+  <string name="root_access">Access sa root</string>
   <string name="root_access_none">Huwag paganahin</string>
+  <string name="root_access_adb">ADB lamang</string>
   <!-- Preference link for root appops -->
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
@@ -30,6 +33,8 @@
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokasyon</string>
   <string name="app_ops_categories_personal">Personal</string>
+  <string name="app_ops_categories_messaging">Pagmemensahe</string>
+  <string name="app_ops_categories_su">Access sa root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_send_sms">Magpadala ng SMS</string>
@@ -37,6 +42,7 @@
   <string name="app_ops_labels_write_icc_sms">Magsulat ng ICC SMS</string>
   <string name="app_ops_labels_modify_settings">Baguhin ang mga setting</string>
   <string name="app_ops_labels_camera">Kamera</string>
+  <string name="app_ops_labels_superuser">Access sa root</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->
