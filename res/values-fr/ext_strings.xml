@@ -243,7 +243,7 @@
   <string name="double_tap_sleep_anywhere_title">Veille par double appui n\'importe où</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Réinitialiser le schéma</string>
-  <string name="lockpattern_settings_reset_summary">Entrer l\'adresse e-mail du compte principal et son mot de passe pour réinitialiser le schéma de déverrouillage</string>
+  <string name="lockpattern_settings_reset_summary">Saisir l’adresse courriel principale et le mot de passe associé pour réinitialiser le schéma de déverrouillage</string>
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">Réinitialiser</string>
   <string name="menu_hidden_apps_reset_lock">Réinitialiser schéma de déverrouillage</string>
