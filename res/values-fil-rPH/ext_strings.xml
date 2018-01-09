@@ -22,10 +22,17 @@
   <string name="development_tools_title">Mga tool sa development</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Access sa root</string>
+  <string name="root_access_warning_title">Payagan ang root access?</string>
+  <string name="root_access_warning_message">Nagpapahintulot ng mga app na humiling ng root access ay lubhang mapanganib at maaring ilagay sa panganib ang seguridad ng iyong sistema!</string>
   <string name="root_access_none">Huwag paganahin</string>
+  <string name="root_access_apps">Mga App lamang</string>
   <string name="root_access_adb">ADB lamang</string>
+  <string name="root_access_all">Mga App at ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Pamahalaan ang mga root access</string>
+  <string name="root_appops_summary">Tumanaw at kontrolin ang mga patakan ng root</string>
   <!-- About phone screen, Device model -->
+  <string name="device_model">Model na gamit</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Pangalan ng device</string>
   <!-- About phone screen, build date -->
@@ -34,17 +41,112 @@
   <string name="app_ops_categories_location">Lokasyon</string>
   <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Pagmemensahe</string>
+  <string name="app_ops_categories_media">Medya</string>
+  <string name="app_ops_categories_device">Kagamitan</string>
+  <string name="app_ops_categories_background">Background</string>
+  <string name="app_ops_categories_bootup">Bootup</string>
   <string name="app_ops_categories_su">Access sa root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_summaries_coarse_location">magaspang na lokasyon</string>
+  <string name="app_ops_summaries_fine_location">pinong lokasyon</string>
+  <string name="app_ops_summaries_gps">GPS</string>
+  <string name="app_ops_summaries_vibrate">vibrate</string>
+  <string name="app_ops_summaries_read_contacts">basahin ang mga kontaks</string>
+  <string name="app_ops_summaries_modify_contacts">baguhin ang mga kontaks</string>
+  <string name="app_ops_summaries_read_call_log">basahin ang mga log ng tawag</string>
+  <string name="app_ops_summaries_modify_call_log">baguhin ang log ng tawag</string>
+  <string name="app_ops_summaries_read_calendar">basahin ang kalendaryo</string>
+  <string name="app_ops_summaries_modify_calendar">baguhin ang kalendaryo</string>
+  <string name="app_ops_summaries_wifi_scan">Wi-Fi scan</string>
+  <string name="app_ops_summaries_notification">notipikasyon/toast</string>
+  <string name="app_ops_summaries_cell_scan">magsuri ng cell</string>
+  <string name="app_ops_summaries_call_phone">tumawag sa telepono</string>
+  <string name="app_ops_summaries_read_sms">basahin ang SMS</string>
+  <string name="app_ops_summaries_write_sms">isulat ang SMS</string>
+  <string name="app_ops_summaries_receive_sms">tumanggap ng SMS</string>
+  <string name="app_ops_summaries_receive_emergency_sms">tumanggap ng emergency SMS</string>
+  <string name="app_ops_summaries_receive_mms">tumanggap ng MMS</string>
+  <string name="app_ops_summaries_receive_wap_push">tumanggap ng WAP push</string>
+  <string name="app_ops_summaries_send_sms">magpadala ng SMS</string>
+  <string name="app_ops_summaries_read_icc_sms">basahin ang ICC SMS</string>
+  <string name="app_ops_summaries_write_icc_sms">isulat ang ICC SMS</string>
+  <string name="app_ops_summaries_modify_settings">baguhin ang mga setting</string>
+  <string name="app_ops_summaries_draw_on_top">gumuhit sa tuktok</string>
+  <string name="app_ops_summaries_access_notifications">mga pabatid ng access</string>
+  <string name="app_ops_summaries_camera">kamera</string>
+  <string name="app_ops_summaries_record_audio">mag-rekord ng audio</string>
+  <string name="app_ops_summaries_play_audio">i-play ang audio</string>
+  <string name="app_ops_summaries_read_clipboard">basahin ang clipboard</string>
+  <string name="app_ops_summaries_modify_clipboard">baguhin ang clipboard</string>
+  <string name="app_ops_summaries_media_buttons">mga media na pindutan</string>
+  <string name="app_ops_summaries_audio_focus">pokus ng audio</string>
+  <string name="app_ops_summaries_master_volume">master volume</string>
+  <string name="app_ops_summaries_voice_volume">volume ng tinig</string>
+  <string name="app_ops_summaries_ring_volume">volume ng ring</string>
+  <string name="app_ops_summaries_media_volume">volume ng medya</string>
+  <string name="app_ops_summaries_alarm_volume">volume ng alarma</string>
+  <string name="app_ops_summaries_notification_volume">volume ng notipikasyon</string>
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_gps">GPS</string>
+  <string name="app_ops_labels_wifi_scan">Wi-Fi scan</string>
   <string name="app_ops_labels_send_sms">Magpadala ng SMS</string>
   <string name="app_ops_labels_read_icc_sms">Magbasa ng ICC SMS</string>
   <string name="app_ops_labels_write_icc_sms">Magsulat ng ICC SMS</string>
   <string name="app_ops_labels_modify_settings">Baguhin ang mga setting</string>
+  <string name="app_ops_labels_access_notifications">Mga pagbatid ng access</string>
   <string name="app_ops_labels_camera">Kamera</string>
+  <string name="app_ops_labels_record_audio">Mag-record ng audio</string>
+  <string name="app_ops_labels_play_audio">I-play ang audio</string>
+  <string name="app_ops_labels_read_clipboard">Basahin ang clipboard</string>
+  <string name="app_ops_labels_modify_clipboard">Baguhin ang clipboard</string>
+  <string name="app_ops_labels_media_buttons">Mga pindutan ng media</string>
+  <string name="app_ops_labels_audio_focus">Pokus ng audio</string>
+  <string name="app_ops_labels_master_volume">Master volume</string>
+  <string name="app_ops_labels_voice_volume">Volume ng tinig</string>
+  <string name="app_ops_labels_ring_volume">Volume ng ring</string>
+  <string name="app_ops_labels_media_volume">Volume ng medya</string>
+  <string name="app_ops_labels_alarm_volume">Volume ng alarma</string>
+  <string name="app_ops_labels_notification_volume">Volume ng notipikasyon</string>
+  <string name="app_ops_labels_bluetooth_volume">Volume ng Bluetooth</string>
+  <string name="app_ops_labels_keep_awake">Panatilihing gising</string>
+  <string name="app_ops_labels_monitor_location">Lokasyon ng monitor</string>
+  <string name="app_ops_labels_monitor_high_power_location">Subaybayan ang lokasyon ng mataas ng power</string>
+  <string name="app_ops_labels_get_usage_stats">Kumuha ng mga istastika ngpaggamit</string>
+  <string name="app_ops_labels_mute_unmute_microphone">Mute/unmute ang mikropono</string>
+  <string name="app_ops_labels_toast_window">Ipakita ang mga toast</string>
+  <string name="app_ops_labels_project_media">Proyekto ng media</string>
+  <string name="app_ops_labels_activate_vpn">I-activate ang VPN</string>
+  <string name="app_ops_labels_write_wallpaper">Isulat ang wallpaper</string>
+  <string name="app_ops_labels_assist_structure">Tulungan ang istraktura</string>
+  <string name="app_ops_labels_assist_screenshot">Tulungan ang screenshot</string>
+  <string name="app_ops_labels_read_phone_state">Basahin ang kalagayan ng telepono</string>
+  <string name="app_ops_labels_add_voicemail">Magdagdag ng voicemail</string>
+  <string name="app_ops_labels_use_sip">Gamitin ang SIP</string>
+  <string name="app_ops_labels_make_call">Gumawa ng tawag</string>
+  <string name="app_ops_labels_use_fingerprint">Gamitin ang fingerprint</string>
+  <string name="app_ops_labels_use_body_sensors">Gamitin ang mga sensor ng katawan</string>
+  <string name="app_ops_labels_read_cell_broadcasts">Basahin ang mga broadcast ng cell</string>
+  <string name="app_ops_labels_mock_location">Lokasyon ng mock</string>
+  <string name="app_ops_labels_read_external_storage">Basahin ang external storage</string>
+  <string name="app_ops_labels_write_external_storage">Sulatan ang external storage</string>
+  <string name="app_ops_labels_turn_screen_on">I-turn screen on</string>
+  <string name="app_ops_labels_get_accounts">Kumuha ng mga account</string>
+  <string name="app_ops_labels_run_in_background">Paganahin sa background</string>
+  <string name="app_ops_labels_toggle_wifi">I-toggle ang Wi-Fi</string>
+  <string name="app_ops_labels_toggle_bluetooth">I-toggle ang bluetooth</string>
+  <string name="app_ops_labels_start_at_boot">Simulan sa boot</string>
+  <string name="app_ops_labels_toggle_nfc">I-toggle ang NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">I-toggle ang cellular data</string>
   <string name="app_ops_labels_superuser">Access sa root</string>
   <!-- App ops permissions -->
+  <string name="app_ops_permissions_allowed">Pinapayagan</string>
+  <string name="app_ops_permissions_ignored">Balewalain</string>
+  <string name="app_ops_permissions_always_ask">Laging magtanong</string>
   <!-- App ops detail -->
+  <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (gamitin <xliff:g id="count">%2$s</xliff:g>)</string>
+  <string name="app_ops_allowed_count">Pinapayagan <xliff:g id="count" example="2 times">%s</xliff:g></string>
+  <string name="app_ops_ignored_count">Tinanggihan <xliff:g id="count" example="2 times">%s</xliff:g></string>
+  <string name="app_ops_both_count">Pinapayagan <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
   <!-- App ops menu options -->
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
@@ -75,25 +177,51 @@
   <!-- Whether to display IME switcher notifcation -->
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
   <!-- Stylus Icon -->
+  <string name="stylus_icon_enabled_title">Magpakita ng icon kapag gamitin ang stylus</string>
+  <string name="stylus_icon_enabled_summary">Ipakita ang icon ng panturo kapag hovering o pag-drawing kasama ang stylus</string>
   <!-- Kill app long-press back -->
+  <string name="kill_app_longpress_back">Patayin ang likod na buton</string>
+  <string name="kill_app_longpress_back_summary">Patayin ang foreground app ng matagal-pindutin ang likod ng boton</string>
   <!-- Android debugging -->
+  <string name="enable_adb_cm">Android na pag-debug</string>
+  <string name="enable_adb_summary_cm">Paganahin ang Android Debug Bridge (ADB) na interface</string>
   <!-- Android debugging notification -->
+  <string name="adb_notify">I-notify ang debugging</string>
+  <string name="adb_notify_summary">I-display ang notipikasyon kapag ang USB o network debugging ay hindi pinagana</string>
   <!-- Android debugging over network -->
+  <string name="adb_over_network">ADB sa ibabaw ng network</string>
+  <string name="adb_over_network_summary">Paganahin ang TCP/IP debugging sa ibabaw ng network interfaces (Wi\u2011Fi, USB na mga network). Ang setting na ito ay naka reset sa pag-reboot</string>
+  <string name="adb_over_network_warning">BABALA: Kapag ang ADB sa ibabaw ng network ay gumagana, ang iyong telepono ay bukas para sa mga pagpasok ng walang pahintulot sa lahat ng mga konektang mga network!\n\nLamang ang gamitin ang feature kapag ikaw ay nakakonek sa mga pinagtitiwalaang mga network.\n\nGusto mo ba talagang paganahin ang katangiang ito?</string>
   <!-- Hostname setting -->
+  <string name="device_hostname">Hostname ng gamit</string>
   <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Ipataas ang volume ng ring</string>
+  <string name="increasing_ring_min_volume_title">Simulan ang volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Oras ng Ramp-up</string>
   <!-- Allow vibration in zen mode -->
+  <string name="zen_mode_vibration">Vibration</string>
+  <string name="zen_mode_vibration_never">Huwag i-vibrate</string>
+  <string name="zen_mode_vibration_calls_only">Vibrate lamang para sa mga tawag</string>
+  <string name="zen_mode_vibration_calls_and_notifications">Vibrate para sa mga tawag at mga notipikasyon</string>
   <!-- Zen mode allowed event setting summary items -->
   <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
   <string name="zen_mode_summary_reminders">mga paalala</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_events">mga pangyayari</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">lahat na mga tumatawag</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_callers">mga napiling mga tumatawag</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">inuulit na mga tawag</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_all_messages">lahat ng mga mensahe</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">mga piling mensahe</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Pinakamababang oras sa pagitan ng mga tunog ng notipikasyon</string>
+  <string name="app_notification_sound_timeout_summary_template">Hayaan ang mga tunog o panginginig ng boses hindi hihigit sa isang beses sa bawat <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Walang restriksiyon</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 na segundo</string>
   <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
@@ -101,31 +229,55 @@
   <string name="app_notification_sound_timeout_value_15_minutes">6 minuto</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 na minuto</string>
   <!-- MSIM SIM status -->
+  <string name="sim_card_status_title">SIM %d katayuan</string>
+  <string name="sim_card_lock_settings_title">SIM %d lock na mga katayuan</string>
+  <string name="sim_card_summary_empty">Hindi nakapasok ang SIM</string>
+  <string name="sim_mobile_network_settings_category_title">Mga setting ng mobile network</string>
+  <string name="sim_mobile_network_settings_title">SIM %d na mga katayuan</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
+  <string name="tuner_full_importance_settings">Mga kontrol ng power notipikasyon</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Hanapin ang fingerprint sensor sa <xliff:g id="sensor_location">%1$s</xliff:g> sa iyong telepono.</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
   <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
   <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
   <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
   <!-- Wi-Fi region code -->
+  <string name="wifi_setting_countrycode_title">Wi\u2011Fi rehiyon code</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_countrycode_summary">Tukuyin ang rehiyon code para sa Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_countrycode_error">Nagkaroon ng problema sa pagtatakda ng rehiyon ng code.</string>
   <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Gumising sa plug</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Buksan ang screen kapag kumokonek o pinuputol ang koneksiyon ng kuryente</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Naka heads-up</string>
+  <string name="heads_up_notifications_enabled_summary">Magdispley ng mga pabatid ng prayoridad sa isang maliit na floating window</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Iba pa</string>
   <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot ay nag-timeout</string>
   <string name="hotstpot_inactivity_timeout_never">Hindi kailanman</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 minuto</string>
   <string name="hotstpot_inactivity_timeout_10_minutes">6 minuto</string>
+  <string name="hotstpot_inactivity_timeout_never_summary_text">Portable Wi\u2011Fi hotspot ay hindi kailanman mag timeout</string>
+  <string name="hotstpot_inactivity_timeout_summary_text">Portable Wi\u2011Fi na hotspot ay hindi mag timeout magtapos <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Cellular data na access</string>
+  <string name="data_usage_app_restrict_wifi_category_title">Wi\u2011Fi data access</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Huwag paganahin ang lahat ng pag-access ng cellular data</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Maiwasan ang anumang paggamit ng data at ma-access gamit ang mga cellular network</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_wifi_title">Huwag paganahin ang lahat Wi\u2011Fi na data access</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Maiwasan ang anumang paggamit ng data access gamit ang mga Wi\u2011Fi networks</string>
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
   <!-- Status bar - double tap to sleep -->
