@@ -71,4 +71,6 @@
     <string name="recents_membar_pos_bottom">Bottom</string>
     <string name="recents_membar_pos_hidden">Hidden</string>
 
+    <string name="apps_no_data">No applications</string>
+
 </resources>
