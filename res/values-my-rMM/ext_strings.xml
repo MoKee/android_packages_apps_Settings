@@ -86,6 +86,7 @@
   <!-- Wake on plug -->
   <!-- Heads-up -->
   <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">အခြား</string>
   <!-- Wi-Fi tethering inactivity timeout -->
   <string name="hotstpot_inactivity_timeout_never">ဘယ်တော့မှ</string>
   <!-- Per-app data restrictions -->

@@ -86,13 +86,63 @@
   <string name="app_ops_summaries_media_volume">volume ng medya</string>
   <string name="app_ops_summaries_alarm_volume">volume ng alarma</string>
   <string name="app_ops_summaries_notification_volume">volume ng notipikasyon</string>
+  <string name="app_ops_summaries_bluetooth_volume">volume ng bluetooth</string>
+  <string name="app_ops_summaries_keep_awake">panatilihing gising</string>
+  <string name="app_ops_summaries_monitor_location">lokasyon ng monitor</string>
+  <string name="app_ops_summaries_monitor_high_power_location">subaybayan ang mataas na lokasyon ng power</string>
+  <string name="app_ops_summaries_get_usage_stats">kumuha ng app usage na istastika</string>
+  <string name="app_ops_summaries_mute_unmute_microphone">magtahimik / hindi nakatahimik ang mikropono</string>
+  <string name="app_ops_summaries_toast_window">ipakita ang mga toast</string>
+  <string name="app_ops_summaries_project_media">proyekto sa media</string>
+  <string name="app_ops_summaries_activate_vpn">i-activate ang VPN</string>
+  <string name="app_ops_summaries_write_wallpaper">isulat ang wallpaper</string>
+  <string name="app_ops_summaries_assist_structure">tulungan ang istraktura</string>
+  <string name="app_ops_summaries_assist_screenshot">tulungan ang screenshot</string>
+  <string name="app_ops_summaries_read_phone_state">basahin ang kalagayan ng telepono</string>
+  <string name="app_ops_summaries_add_voicemail">magdagdag ng voicemail</string>
+  <string name="app_ops_summaries_use_sip">gamitin ang SIP</string>
+  <string name="app_ops_summaries_make_call">gumawa ng tawag</string>
+  <string name="app_ops_summaries_use_fingerprint">gamitin ang fingerprint</string>
+  <string name="app_ops_summaries_use_body_sensors">gumamit ng mga body sensor</string>
+  <string name="app_ops_summaries_read_cell_broadcasts">basahin ang mga broadcast ng cell</string>
+  <string name="app_ops_summaries_mock_location">lokasyon ng mock</string>
+  <string name="app_ops_summaries_read_external_storage">basahin ang external storage</string>
+  <string name="app_ops_summaries_write_external_storage">sulatan ang external storage</string>
+  <string name="app_ops_summaries_turn_screen_on">i-turn on ang screen</string>
+  <string name="app_ops_summaries_get_accounts">kumuha ng mga account</string>
+  <string name="app_ops_summaries_run_in_background">buksan sa background</string>
+  <string name="app_ops_summaries_toggle_wifi">i-toggle ang Wi-Fi</string>
+  <string name="app_ops_summaries_toggle_bluetooth">i-toggle ang bluetooth</string>
+  <string name="app_ops_summaries_start_at_boot">simulan ang boot</string>
+  <string name="app_ops_summaries_toggle_nfc">i-toggle ang NFC</string>
+  <string name="app_ops_summaries_toggle_mobile_data">i-toggle ang cellular data</string>
+  <string name="app_ops_summaries_superuser">root access</string>
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_coarse_location">Magaspang na lokasyon</string>
+  <string name="app_ops_labels_fine_location">Pinong lokasyon</string>
   <string name="app_ops_labels_gps">GPS</string>
+  <string name="app_ops_labels_vibrate">Mag-vibrate</string>
+  <string name="app_ops_labels_read_contacts">Basahin ang mga kontaks</string>
+  <string name="app_ops_labels_modify_contacts">Baguhin ang mga kontaks</string>
+  <string name="app_ops_labels_read_call_log">Basahin ang log ng tawag</string>
+  <string name="app_ops_labels_modify_call_log">Baguhin ang log ng tawag</string>
+  <string name="app_ops_labels_read_calendar">Basahin ang kalendaryo</string>
+  <string name="app_ops_labels_modify_calendar">Baguhin ang kalendaryo</string>
   <string name="app_ops_labels_wifi_scan">Wi-Fi scan</string>
+  <string name="app_ops_labels_notification">Notipikasyon/toast</string>
+  <string name="app_ops_labels_cell_scan">Magsuri ng cell</string>
+  <string name="app_ops_labels_call_phone">Tumawag ng telepono</string>
+  <string name="app_ops_labels_read_sms">Basahin ang SMS</string>
+  <string name="app_ops_labels_write_sms">Isulat ang SMS</string>
+  <string name="app_ops_labels_receive_sms">Tumanggap ng SMS</string>
+  <string name="app_ops_labels_receive_emergency_sms">Tumanggap ng emergency SMS</string>
+  <string name="app_ops_labels_receive_mms">Tumanggap ng MMS</string>
+  <string name="app_ops_labels_receive_wap_push">Tumanggap ng WAP push</string>
   <string name="app_ops_labels_send_sms">Magpadala ng SMS</string>
   <string name="app_ops_labels_read_icc_sms">Magbasa ng ICC SMS</string>
   <string name="app_ops_labels_write_icc_sms">Magsulat ng ICC SMS</string>
   <string name="app_ops_labels_modify_settings">Baguhin ang mga setting</string>
+  <string name="app_ops_labels_draw_on_top">Gumuhit sa tuktok</string>
   <string name="app_ops_labels_access_notifications">Mga pagbatid ng access</string>
   <string name="app_ops_labels_camera">Kamera</string>
   <string name="app_ops_labels_record_audio">Mag-record ng audio</string>
@@ -147,35 +197,85 @@
   <string name="app_ops_allowed_count">Pinapayagan <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Tinanggihan <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Pinapayagan <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_no_blockable_permissions">Walang mga pahintulot na magagamit upang harangan</string>
   <!-- App ops menu options -->
+  <string name="app_ops_show_user_apps">Ipakita ang mga user app</string>
+  <string name="app_ops_show_system_apps">Ipakita ang built-in na mga app</string>
+  <string name="app_ops_reset_counters">I-reset payagan/hindi payagan ang mga counter</string>
+  <string name="app_ops_reset_confirm_title">Kumpirmahin ang reset na mga counter</string>
+  <string name="app_ops_reset_confirm_mesg">Sigurado ka ba na gusto mong i-reset ang mga counter?</string>
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Mga tunog ng pag-adjust ng volume</string>
   <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">Tindi ng vibrator</string>
+  <string name="vibrator_intensity_dialog_warning">Halaga ay mas malaki sa %1$d%% ay hindi inirerekomenda</string>
   <string name="vibrator_intensity_dialog_reset">I-reset</string>
   <!-- Sizes for pattern lockscreen -->
+  <string name="lock_settings_picker_pattern_size_message">Pumili ng isang huwarang laki</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+  <string name="lockpattern_settings_enable_error_path_title">Ipakita ang huwarang mali</string>
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+  <string name="lockpattern_settings_enable_dots_title">Ipakita ang huwarang tuldok</string>
   <!-- Whether the keyguard will directly show the password entry -->
+  <string name="lock_directly_show_password">Nang direkta na ipakita ang password na pagpasok</string>
   <!-- Whether the keyguard will directly show the pattern view -->
+  <string name="lock_directly_show_pattern">Nang direktang ipakita ang tanawin ng huwaran</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
+  <string name="lock_directly_show_pin">Nang direktang ipinakita ang pagpasok ng PIN</string>
   <!-- Lock screen vibrate settings -->
+  <string name="lockscreen_vibrate_enabled_title">Mag-vibrate</string>
+  <string name="lockscreen_vibrate_enabled_head">Vibrate kapag unlocking</string>
   <!-- Lights settings -->
+  <string name="lights_label">Mga ilaw</string>
   <!-- Memory -->
+  <string name="memory_startup_apps_title">Mga app na simulan sa boot</string>
   <!-- Advanced restart options -->
+  <string name="advanced_reboot_title">Advance na pagbahagi</string>
+  <string name="advanced_reboot_summary">Kapag naka-unlock, samahan ng mga opsyon sa power menu para sa restarting sa recovery, bootloader o pag-perform sa sing soft na restart</string>
   <!-- PIN scramble -->
+  <string name="unlock_scramble_pin_layout_title">Naka-iskramble na layout</string>
+  <string name="unlock_scramble_pin_layout_summary">I-iskramble ang PIN layout kung naka unlock ang gamit</string>
   <!-- lock screen visualizer -->
+  <string name="lockscreen_visualizer_title">I-display ang music visualizer</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">I-display ang medya cover na art</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Doblehin ang pag-tap para matulog kung saan</string>
   <!-- Protected apps lockpattern reset button -->
+  <string name="lockpattern_reset_button">I-reset ang huwaran</string>
+  <string name="lockpattern_settings_reset_summary">Ipasok ang unang email account at kaugnay na mga password upang i-reset ang pattern lock</string>
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">I-reset</string>
+  <string name="menu_hidden_apps_reset_lock">I-reset ang lock ng huwaran</string>
+  <string name="protected_apps">Protektadong mga app</string>
+  <string name="protected_apps_summary">Pamahalaan ang anomang mga app na nakatago sa likod ng isang matibay na kandado</string>
+  <string name="saving_protected_components">Pagliligtas sa component state\u2026</string>
+  <string name="launch_app">Ilunsad ang app</string>
+  <string name="pa_login_username_hint">Username (email)</string>
+  <string name="pa_login_password_hint">Password</string>
+  <string name="pa_login_submit_button">Mag-sign in</string>
+  <string name="pa_login_checking_password">Nagsusuri ng account\u2026</string>
+  <string name="pa_login_incorrect_login">Login ay mali</string>
+  <string name="pa_pattern_or_fingerprint_header">Kailangan na gumahit ng huwaran o gumamit ng fingerprint upang i-unlock</string>
   <!-- title for lock screen weather preference -->
+  <string name="lockscreen_weather_enabled_title">Magpakita ng lagay ng panahon</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">Lumabo na background</string>
   <!-- Proximity wake -->
+  <string name="proximity_wake_title">Maiwasan ang aksidenteng panggising</string>
+  <string name="proximity_wake_summary">I-check ang proximity na sensor bago sa wake-ups nag-trigger na gestures</string>
   <!-- High touch sensitivity -->
+  <string name="high_touch_sensitivity_title">Mataas na paghawak na sensitibo</string>
+  <string name="high_touch_sensitivity_summary">Talasan ang pakitandam ng touchscreen kaya\'t magagamit ito habang may suot na guwantes</string>
   <!-- Touchscreen hovering -->
+  <string name="touchscreen_hovering_title">Hovering ng touchscreen</string>
+  <string name="touchscreen_hovering_summary">Pinapayagan ka na mag hover sa screen na kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Selektor ng icon</string>
+  <string name="ime_switcher_notify_summary">I-display ang input method na selektor icon</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Walang buong screen na pagpatigil, peeking, tunog o panginginig. Ipakita sa ibabang ng listahan ng mga notification. Itago mula sa screen ng lock.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Magpakita ng icon kapag gamitin ang stylus</string>
   <string name="stylus_icon_enabled_summary">Ipakita ang icon ng panturo kapag hovering o pag-drawing kasama ang stylus</string>
@@ -279,11 +379,39 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_wifi_summary">Maiwasan ang anumang paggamit ng data access gamit ang mga Wi\u2011Fi networks</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Kaugnay ng ringtone &amp; notipikasyon ng mga volume</string>
   <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Magbunsod ng player ng musika</string>
+  <string name="headset_connect_player_summary">Ilunsad ang defaut player kapag ang isang headset ay nakakonekta</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_title">Magdalawang tap upang matulog</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Magdakawang tap sa status bar upang i-off ang display</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="hindi pinagana">%2$s</xliff:g></string>
+  <string name="sim_enabled">pinagana</string>
+  <string name="sim_disabled">hindi pinagana</string>
+  <string name="sim_missing">nawawala o maling</string>
+  <string name="sim_enabler_need_disable_sim">SIM card ay napapawalang-bisa. Gusto mo bang magpatuloy?</string>
+  <string name="sim_enabler_will_disable_sim_title">Pansin</string>
+  <string name="sim_enabler_need_switch_data_service">Itong SIM ay hindi pinagana at SIM <xliff:g id="slotid">%1$s</xliff:g> ay gagamitin para sa mga serbisyo ng data. Tiyak ka bang gusto mong magpatuloy?</string>
+  <string name="sim_enabler_airplane_on">Hindi maisagawa ang mga operasyon habang naka-on ang airplane mode.</string>
+  <string name="sim_enabler_in_call">Hindi maisagawa ang mga operasyon habang nasa tawag.</string>
+  <string name="sim_enabler_both_inactive">HIndi maaring hindi paganahin ang lahat ng mga SIM card</string>
+  <string name="sim_enabler_enabling">Activating\u2026</string>
+  <string name="sim_enabler_disabling">Deactivating\u2026</string>
+  <string name="sub_activate_success">Activated na SIM.</string>
+  <string name="sub_activate_failed">Nabigong aktibasyon.</string>
+  <string name="sub_deactivate_success">Napapawalang-bisa ang SIM.</string>
+  <string name="sub_deactivate_failed">Nabigong aktibasyon.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Ulo: %1$s W/kg</string>
+  <string name="maximum_body_level">Katawa: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Modelo: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Mga operator ng network</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">I-display ang burn-in na proteksyon</string>
+  <string name="burnin_protection_summary">Maya\'t maya maglipat ng mga item na tuluyang ipinapakita sa screen upang maiwasan ang labis na screen na magsuot sa lugar na iyon</string>
 </resources>

@@ -61,4 +61,5 @@
   <string name="recents_membar_pos_top">Hore</string>
   <string name="recents_membar_pos_bottom">Dolu</string>
   <string name="recents_membar_pos_hidden">Skryté</string>
+  <string name="apps_no_data">Žiadne aplikácie</string>
 </resources>

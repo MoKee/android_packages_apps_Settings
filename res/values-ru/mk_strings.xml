@@ -61,4 +61,5 @@
   <string name="recents_membar_pos_top">Сверху</string>
   <string name="recents_membar_pos_bottom">Внизу</string>
   <string name="recents_membar_pos_hidden">Не отображать</string>
+  <string name="apps_no_data">Нет приложений</string>
 </resources>

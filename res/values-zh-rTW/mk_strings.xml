@@ -59,4 +59,5 @@
   <string name="recents_membar_pos_top">頂部</string>
   <string name="recents_membar_pos_bottom">底部</string>
   <string name="recents_membar_pos_hidden">隱藏</string>
+  <string name="apps_no_data">無任何應用程式</string>
 </resources>

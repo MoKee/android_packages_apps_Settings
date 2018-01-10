@@ -104,7 +104,7 @@
   <string name="app_ops_summaries_make_call">позвонить</string>
   <string name="app_ops_summaries_use_fingerprint">использовать отпечаток пальца</string>
   <string name="app_ops_summaries_use_body_sensors">использовать нательные датчики</string>
-  <string name="app_ops_summaries_read_cell_broadcasts">прочитать сообщения оповещения населения</string>
+  <string name="app_ops_summaries_read_cell_broadcasts">Чтение сообщений сети</string>
   <string name="app_ops_summaries_mock_location">предоставить фиктивное местоположение</string>
   <string name="app_ops_summaries_read_external_storage">прочитать данные с внешнего накопителя</string>
   <string name="app_ops_summaries_write_external_storage">записать на внешний накопитель</string>
@@ -175,7 +175,7 @@
   <string name="app_ops_labels_make_call">Позвонить</string>
   <string name="app_ops_labels_use_fingerprint">Использовать отпечаток пальца</string>
   <string name="app_ops_labels_use_body_sensors">Использовать нательные датчики</string>
-  <string name="app_ops_labels_read_cell_broadcasts">Прочитать сообщения оповещения населения</string>
+  <string name="app_ops_labels_read_cell_broadcasts">Чтение сообщений сети</string>
   <string name="app_ops_labels_mock_location">Фиктивное местоположение</string>
   <string name="app_ops_labels_read_external_storage">Чтение с внешнего накопителя</string>
   <string name="app_ops_labels_write_external_storage">Запись на внешний накопитель</string>
@@ -241,7 +241,7 @@
   <!-- Lock screen cover art -->
   <string name="lockscreen_media_art_title">Отображать музыкальные обложки</string>
   <!-- Double tap to sleep on keyguard -->
-  <string name="double_tap_sleep_anywhere_title">Двойное нажатие для перевода в спящий режим</string>
+  <string name="double_tap_sleep_anywhere_title">Выключать экран при двойном нажатии</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Сбросить граф. ключ</string>
   <string name="lockpattern_settings_reset_summary">Введите адрес эл. почты основного аккаунта и соответствующий пароль для сброса граф. ключа</string>
