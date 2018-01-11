@@ -29,13 +29,13 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Настройки для разработчиков уже включены.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Замораживание или удаление MoKee центра будет влиять на системные службы, пожалуйста восстановите и повторите попытку.</string>
+  <string name="mkcenter_verify_failed_toast">Заморозка или удаление Панели MoKee повлияет на системные службы, пожалуйста, восстановите и повторите попытку.</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Слои Substratum</string>
   <string name="menu_show_substratum">Показывать слои</string>
   <string name="menu_hide_substratum">Скрыть слои</string>
   <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Значок Substratum слоёв</string>
+  <string name="filter_substratum_icons">Слои Substratum для иконок</string>
   <string name="menu_show_substratum_icons">Показать значок слоёв</string>
   <string name="menu_hide_substratum_icons">Скрыть слои иконок</string>
   <!-- Force authorize substratum packages -->

@@ -60,4 +60,5 @@
   <string name="recents_membar_pos_top">Ibabaw</string>
   <string name="recents_membar_pos_bottom">Ilalim</string>
   <string name="recents_membar_pos_hidden">Nakatago</string>
+  <string name="apps_no_data">Walang mga aplikasyon</string>
 </resources>
