@@ -25,6 +25,7 @@
   <!-- About phone screen, Device name -->
   <!-- About phone screen, build date -->
   <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_location">Lokasyon</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- User display names for app ops codes - extension of AOSP -->
   <!-- App ops permissions -->
@@ -99,11 +100,14 @@
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_data_summary">Pigilan ang anumang paggamit ng data access sa pamamagitan ng mga cellular network</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+  <string name="data_usage_app_restrict_all_wifi_summary">Pigilan ang anumang paggamit ng data access sa pamamagitan ng Wi\u2011Fi na mga network</string>
   <!-- Volume link notification -->
   <!-- Launch music player when headset is connected -->
   <!-- Status bar - double tap to sleep -->
+  <string name="sim_enabler_airplane_on">Hindi magagawa ang operasyon habang naka-on ang airplane mode.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
   <!-- IC Codes -->
