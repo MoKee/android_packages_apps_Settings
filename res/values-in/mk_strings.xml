@@ -55,5 +55,9 @@
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Tampilkan kecepatan pengisian</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Tampilkan penggunaan memori di tab terkini</string>
+  <string name="recents_membar_pos_top">Atas</string>
+  <string name="recents_membar_pos_bottom">Bawah</string>
   <string name="recents_membar_pos_hidden">Tersembunyi</string>
+  <string name="apps_no_data">Tidak ada aplikasi</string>
 </resources>

@@ -108,6 +108,8 @@
   <!-- Launch music player when headset is connected -->
   <!-- Status bar - double tap to sleep -->
   <string name="sim_enabler_airplane_on">Hindi magagawa ang operasyon habang naka-on ang airplane mode.</string>
+  <string name="sim_enabler_in_call">Hindi magagawa ang operasyon habang tumatawag.</string>
+  <string name="sim_enabler_both_inactive">Hindi ma-disable ang lahat ng mga SIM cards</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
   <!-- IC Codes -->

@@ -51,7 +51,14 @@
   <string name="wifi_setting_frequency_band_5G">5 GHz uniquement</string>
   <string name="wifi_setting_frequency_band_2G">2,4 GHz uniquement</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Capture d\'écran à 3 doigts</string>
+  <string name="three_finger_screenshot_summary">Faites glisser vers le bas 3 doigts pour prendre une capture d\'écran</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Montrer l\'état de la charge</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Montrer l\'utilisation de la mémoire dans Récent</string>
+  <string name="recents_membar_pos_top">Haut</string>
+  <string name="recents_membar_pos_bottom">Bas</string>
   <string name="recents_membar_pos_hidden">Masqué</string>
+  <string name="apps_no_data">Pas d\'applications</string>
 </resources>

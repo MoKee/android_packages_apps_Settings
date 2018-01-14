@@ -201,9 +201,9 @@
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Загруженные приложения</string>
   <string name="app_ops_show_system_apps">Системные приложения</string>
-  <string name="app_ops_reset_counters">Сбросить счетчики</string>
-  <string name="app_ops_reset_confirm_title">Подтвердите сброс счетчиков</string>
-  <string name="app_ops_reset_confirm_mesg">Данные счетчиков «операций в приложениях» будут удалены. Вы уверены, что хотите сбросить счётчики?</string>
+  <string name="app_ops_reset_counters">Сбросить счётчики</string>
+  <string name="app_ops_reset_confirm_title">Подтвердите сброс счётчиков</string>
+  <string name="app_ops_reset_confirm_mesg">Вы уверены, что хотите сбросить счётчики?</string>
   <string name="ok">Да</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
