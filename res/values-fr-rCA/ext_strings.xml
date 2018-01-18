@@ -232,7 +232,7 @@
   <string name="memory_startup_apps_title">Applications lancées au démarrage</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Redémarrage avancé</string>
-  <string name="advanced_reboot_summary">Lorsque déverrouillé, inclure dans le menu marche/arrêt les options de redémarrage en mode récupération, bootloader et redémarrage logiciel</string>
+  <string name="advanced_reboot_summary">Lorsque déverrouillé, inclure dans le menu marche/arrêt des options de redémarrage en mode récupération, chargeur d\'amorçage ou redémarrage à chaud</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
   <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement les touches lors du déverrouillage</string>
@@ -291,7 +291,7 @@
   <!-- Android debugging over network -->
   <string name="adb_over_network">ADB par réseau</string>
   <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2011Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage</string>
-  <string name="adb_over_network_warning">AVERTISSEMENT : Lorsque l\'ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés !\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez-vous vraiment activer cette fonction ?</string>
+  <string name="adb_over_network_warning">AVERTISSEMENT : lorsque l’ADB par le réseau est activée, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés !\n\nN’utiliser cette fonction que connecté sur des réseaux de confiance.\n\nVoulez-vous vraiment activer cette fonction ?</string>
   <!-- Hostname setting -->
   <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
   <!-- Increasing ring tone volume -->
@@ -393,7 +393,7 @@
   <string name="sim_enabler_need_disable_sim">La carte SIM va être désactivée. Voulez-vous continuer ?</string>
   <string name="sim_enabler_will_disable_sim_title">Avertissement</string>
   <string name="sim_enabler_need_switch_data_service">Cette carte SIM sera désactivée et la SIM <xliff:g id="slotid">%1$s</xliff:g> sera utilisé pour les services de données. Êtes-vous sûr de que vouloir continuer ?</string>
-  <string name="sim_enabler_airplane_on">Impossible d\'effectuer l\'opération tant que le mode avion est activé.</string>
+  <string name="sim_enabler_airplane_on">Impossible d’effectuer l’opération en mode avion.</string>
   <string name="sim_enabler_in_call">Impossible d\'effectuer l\'opération pendant un appel.</string>
   <string name="sim_enabler_both_inactive">Impossible de désactiver toutes les cartes SIM</string>
   <string name="sim_enabler_enabling">Activation\u2026</string>
