@@ -47,4 +47,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Stopp app-tilbake-knappen</string>
   <string name="kill_app_longpress_back_summary">Stopp aktivt program ved å trykke lenge på tilbake-knappen</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Finn fingerskanneren på <xliff:g id="sensor_location">%1$s</xliff:g> av telefonen din.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">baksiden</string>
+  <string name="security_settings_fingerprint_sensor_location_front">forsiden</string>
+  <string name="security_settings_fingerprint_sensor_location_left">venstre siden</string>
+  <string name="security_settings_fingerprint_sensor_location_right">høyre siden</string>
 </resources>

@@ -47,4 +47,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Tắt ứng dụng bằng phím back</string>
   <string name="kill_app_longpress_back_summary">Nhấn giữ phím back để tắt ứng dụng chạy nổi</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Xác định vị trí cảm biến vân tay trên <xliff:g id="sensor_location">%1$s</xliff:g> điện thoại của bạn.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">quay lại</string>
+  <string name="security_settings_fingerprint_sensor_location_front">trước</string>
+  <string name="security_settings_fingerprint_sensor_location_left">cạnh trái</string>
+  <string name="security_settings_fingerprint_sensor_location_right">cạnh phải</string>
 </resources>

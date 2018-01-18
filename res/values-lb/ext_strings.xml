@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Appe mam \"Zréck\"-Knäppchen zoumaachen</string>
   <string name="kill_app_longpress_back_summary">D\'App am Virgrond zoumaache wann den \"Zréck\"-Knäppche laang gedréckt gëtt</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

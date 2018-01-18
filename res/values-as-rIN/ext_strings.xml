@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">কিল এপ্প্ বেক বুটাম</string>
   <string name="kill_app_longpress_back_summary">বেক বুটাম দীঘলকৈ টিপি সম্মুখত থকা এপ্প্ আঁতৰাওক</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

@@ -43,4 +43,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ऐप के पीछे बटन को मृत करें</string>
   <string name="kill_app_longpress_back_summary">पीछे बटन को देर तक दबाकर अग्रभूमि ऐप को मृत करें</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

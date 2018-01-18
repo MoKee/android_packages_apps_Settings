@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">بستن برنامه‌ها با دکمه بازگشت</string>
   <string name="kill_app_longpress_back_summary">بستن برنامه پیش‌زمینه با لمس طولانی دکمه بازگشت</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

@@ -38,4 +38,6 @@
   <string name="adb_over_network_summary">নেটওয়ার্ক ইন্টারফেস (ওয়াই-ফাই, ইউএসবি নেটওয়ার্ক) দিয়ে TCP/IP ডিবাগিং সক্রিয় করুন। এই রূপান্তর নির্ধারণ পুনরায় চালুর সময় পুনঃবিন্যাস হবে।</string>
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ব্যাক বোতাম দ্বারা অ্যাপ নিস্ক্রিয় করুন</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

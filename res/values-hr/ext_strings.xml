@@ -47,4 +47,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Zatvori aplikaciju tipkom natrag</string>
   <string name="kill_app_longpress_back_summary">Zatvori pozadinske aplikacije dugim pritiskom tipke natrag</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Pronađite senzor otiska prsta na <xliff:g id="sensor_location">%1$s</xliff:g> vašeg telefona.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">stražnjoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_front">prednjoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lijevoj strani</string>
+  <string name="security_settings_fingerprint_sensor_location_right">desnoj strani</string>
 </resources>

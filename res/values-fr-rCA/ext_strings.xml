@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Outils de développement</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Appuyez pour mettre en veille</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Appuyez deux fois sur la bar de statut ou sur l\'écran de verrouillage pour mettre en veille l\'écran</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Empêcher un réveil accidentel</string>
+  <string name="proximity_wake_summary">Utiliser le capteur de proximité pour prévenir les réveils accidentels de l\'écran</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Montrer directement le champ d\'entrée du mot de passe</string>
+  <string name="lock_directly_show_password_summary">Passer le glisser vers le haut pour déverrouiller et commencer l\'entrer du mot de passe immédiatement</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Montrer directement la vue schéma</string>
+  <string name="lock_directly_show_pattern_summary">Passer le glisser vers le haut pour déverrouiller et commencer l\'entrer du mot de passe immédiatement</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Montrer directement le champ d\'entrée PIN</string>
+  <string name="lock_directly_show_pin_summary">Passer le glisser vers le haut pour déverrouiller et commencer l\'entrer du code PIN immédiatement</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
   <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement les touches lors du déverrouillage</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Fermer l\'application à l\'aide du bouton Retour</string>
   <string name="kill_app_longpress_back_summary">Tuer l\'application en premier plan par un appui long sur le bouton Retour</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">l\'arrière</string>
+  <string name="security_settings_fingerprint_sensor_location_front">la façade</string>
+  <string name="security_settings_fingerprint_sensor_location_left">le côté gauche</string>
+  <string name="security_settings_fingerprint_sensor_location_right">le côté droit</string>
 </resources>

@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Окончавање апликација</string>
   <string name="kill_app_longpress_back_summary">Окончајте активну апликацију задржавањем дугмета „Назад“.</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сензор за отисак прста се налази <xliff:g id="sensor_location">%1$s</xliff:g> телефона.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">на задњој страни</string>
+  <string name="security_settings_fingerprint_sensor_location_front">на предњој страни</string>
+  <string name="security_settings_fingerprint_sensor_location_left">с леве стране</string>
+  <string name="security_settings_fingerprint_sensor_location_right">с десне стране</string>
 </resources>

@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">قايت توپچىدا ئەپنى مەجبۇرىي تاقا</string>
   <string name="kill_app_longpress_back_summary">قايت توپچا ئۇزۇن بېسىلسا ئالدى سۇپىدا ئىجرا قىلىنىۋاتقان ئەپنى مەجبۇرىي تاقايدۇ</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

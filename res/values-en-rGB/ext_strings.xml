@@ -31,4 +31,6 @@
   <!-- Android debugging notification -->
   <!-- Android debugging over network -->
   <!-- Kill app long-press back -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>
