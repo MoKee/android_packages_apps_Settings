@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Patayin ang likod na buton</string>
   <string name="kill_app_longpress_back_summary">Patayin ang foreground app ng matagal-pindutin ang likod ng boton</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Hanapin ang fingerprint sensor sa <xliff:g id="sensor_location">%1$s</xliff:g> sa iyong telepono.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
+  <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
+  <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
+  <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
 </resources>

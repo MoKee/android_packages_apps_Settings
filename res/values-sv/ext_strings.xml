@@ -46,4 +46,9 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Döda appar med bakåtknapp</string>
   <string name="kill_app_longpress_back_summary">Döda appen i förgrunden genom att långtrycka på bakåtknappen</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">tillbaka</string>
+  <string name="security_settings_fingerprint_sensor_location_left">vänster sida</string>
+  <string name="security_settings_fingerprint_sensor_location_right">höger sida</string>
 </resources>

@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ಆಪ್ ಕೊಲ್ಲು ಹಿಂದೆ ಬಟನ್</string>
   <string name="kill_app_longpress_back_summary">ಹಿಂದೆ ಬಟನ್‍ನನ್ನು ದೀರ್ಘ-ಸ್ಪರ್ಶಿಸುವ ಮೂಲಕ ಮುನ್ನೆಲೆ ಆಪನ್ನು ಕೊಲ್ಲಿರಿ</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

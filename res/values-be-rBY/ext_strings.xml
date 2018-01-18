@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Зачыненне дадатку</string>
   <string name="kill_app_longpress_back_summary">Завяршаць працу бягучага дадатку ўтрымліваннем кнопкі \"Назад\"</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
 </resources>

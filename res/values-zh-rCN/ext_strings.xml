@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">开发工具</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">进入休眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏或锁屏以关闭屏幕</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">防止意外唤醒</string>
+  <string name="proximity_wake_summary">在唤醒屏幕前检查距离感应器</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">直接显示密码输入框</string>
+  <string name="lock_directly_show_password_summary">跳过滑动解锁屏幕直接以输入密码开始</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">直接显示图案视图</string>
+  <string name="lock_directly_show_pattern_summary">跳过滑动解锁屏幕直接以输入图案开始</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">直接显示 PIN 输入框</string>
+  <string name="lock_directly_show_pin_summary">跳过滑动解锁屏幕直接以输入PIN码开始</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">乱序布局</string>
   <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">使用返回键强行关闭应用</string>
   <string name="kill_app_longpress_back_summary">长按返回键终止前台应用</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">在您手机的 <xliff:g id="sensor_location">%1$s</xliff:g> 找到指纹传感器。</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">后置</string>
+  <string name="security_settings_fingerprint_sensor_location_front">前置</string>
+  <string name="security_settings_fingerprint_sensor_location_left">左侧</string>
+  <string name="security_settings_fingerprint_sensor_location_right">右侧</string>
 </resources>

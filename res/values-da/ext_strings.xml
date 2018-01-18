@@ -47,4 +47,9 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Luk app på knappen Tilbage</string>
   <string name="kill_app_longpress_back_summary">Luk kørende app ved langt tryk på knappen Tilbage</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">tilbage</string>
+  <string name="security_settings_fingerprint_sensor_location_left">venstre side</string>
+  <string name="security_settings_fingerprint_sensor_location_right">højre side</string>
 </resources>

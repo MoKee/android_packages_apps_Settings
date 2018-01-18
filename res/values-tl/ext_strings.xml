@@ -21,13 +21,30 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <!-- Proximity wake -->
   <!-- Whether the keyguard will directly show the password entry -->
+  <string name="lock_directly_show_password">Direktang ipakita ang password entry</string>
   <!-- Whether the keyguard will directly show the pattern view -->
+  <string name="lock_directly_show_pattern">Direktang ipakita ang pattern view</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
+  <string name="lock_directly_show_pin">Direktang ipakita ang PIN entry</string>
   <!-- PIN scramble -->
+  <string name="unlock_scramble_pin_layout_summary">I-iskramble ang PIN layout kung naka unlock ang device</string>
   <!-- Lock screen visualizer -->
+  <string name="lockscreen_visualizer_title">Ipakita ang visualizer ng kanta</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Ipakita ang cover art ng media</string>
   <!-- Android debugging -->
+  <string name="adb_enable_summary">I-enable ang Android Debug Bridge (ADB) na interface</string>
   <!-- Android debugging notification -->
+  <string name="adb_notify_summary">Magpakita ng notification kapag ang USB o network debugging ay naka-enable</string>
   <!-- Android debugging over network -->
+  <string name="adb_over_network_summary">Paganahin ang TCP/IP debugging kaysa network interfaces (Wi\u2011Fi, USB na mga network). Ang setting na ito ay naka reset sa pag-reboot</string>
+  <string name="adb_over_network_warning">BABALA: Kapag ang ADB kaysa network ay gumagana, ang iyong telepono ay bukas para sa mga pagpasok ng walang pahintulot sa lahat ng mga konektang mga network!\n\nLamang ang gamitin ang feature kapag ikaw ay nakakonek sa mga pinagtitiwalaang mga network.\n\nGusto mo ba talagang paganahin ang katangiang ito?</string>
   <!-- Kill app long-press back -->
+  <string name="kill_app_longpress_back_summary">Patayin ang foreground na app sa pamamagitan ng pagtagal-pindutin back na boton</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
+  <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
+  <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
+  <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
 </resources>

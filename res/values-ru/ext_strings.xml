@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Закрытие приложения</string>
   <string name="kill_app_longpress_back_summary">Завершать работу текущего приложения удерживанием кнопки «Назад»</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задней панели</string>
+  <string name="security_settings_fingerprint_sensor_location_front">передней панели</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левом торце</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правом торце</string>
 </resources>

@@ -35,4 +35,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Tətbiq dayandırıcı geri düyməsi</string>
   <string name="kill_app_longpress_back_summary">Geri düyməsinə uzun basaraq ön plandakı tətbiqi dayandırar</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

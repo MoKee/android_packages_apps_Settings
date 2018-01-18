@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ଆପ୍ଲିକେସନ୍‍ ବ୍ୟାକ୍‍ ବଟନ୍‍କୁ ହଟାନ୍ତୁ</string>
   <string name="kill_app_longpress_back_summary">ବ୍ୟାକ୍‍ ବଟନ୍‍କୁ ଲମ୍ବା ଦ୍ସ୍ବାଇବା ଦ୍ୱାରା ଫୋର୍‍ଗ୍ରାଉଣ୍ଡ ଆପ୍ଲିକେସନ୍ ହଟାନ୍ତୁ</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojárske nástroje</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Klepnutím uspať</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Vypnúť obrazovku dvojklikom na stavový riadok alebo na obrazovku uzamknutia</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
+  <string name="proximity_wake_summary">Kontrolovať senzor priblíženia pre zabránenie nechcenému prebudeniu</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Priamo zobraziť zadanie hesla</string>
+  <string name="lock_directly_show_password_summary">Preskočiť odomknutie obrazovky potiahnutím prsta a okamžite spustiť zadávanie hesla</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Priamo zobraziť zobrazenie vzoru</string>
+  <string name="lock_directly_show_pattern_summary">Preskočiť odomknutie obrazovky potiahnutím prsta a okamžite spustiť zadávanie vzoru</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Priamo zobraziť zadanie PINu</string>
+  <string name="lock_directly_show_pin_summary">Preskočiť odomknutie obrazovky potiahnutím prsta a okamžite spustiť zadávanie PINu</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Dynamické rozloženie</string>
   <string name="unlock_scramble_pin_layout_summary">Prehádzať rozloženie pre zadanie kódu PIN pri odomykaní zariadenia</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Ukončiť aplikáciu tlačidlom Späť</string>
   <string name="kill_app_longpress_back_summary">Dlhé stlačenie tlačidla Späť ukončí aplikáciu na popredí</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">Zadný</string>
+  <string name="security_settings_fingerprint_sensor_location_front">Predný</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ľavá strana</string>
+  <string name="security_settings_fingerprint_sensor_location_right">pravá strana</string>
 </resources>

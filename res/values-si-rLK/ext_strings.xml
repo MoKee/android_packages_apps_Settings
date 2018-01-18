@@ -37,4 +37,6 @@
   <string name="adb_over_network_summary">ජාල අතුරු මුහුණත් (Wi\u2011Fi, USB ජාල) හරහා TCP/IP නිදොස් කිරීම සබල කරන්න. මෙම සැකසීම නැවත පනගැන්වීමේදී යළි පිහිටුවෙයි</string>
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ආපසු බොත්තම යෙදුම නසයි</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>
