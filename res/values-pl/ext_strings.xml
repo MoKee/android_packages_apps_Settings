@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Narzędzia programistyczne</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Dotknij, by uśpić</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dwuklik na pasku statusu lub ekranie blokady, aby uśpić.</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
+  <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego do wybudzania ekranu</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Pokazuj bezpośrednio wpisane hasło</string>
+  <string name="lock_directly_show_password_summary">Pomiń przesunięcie, aby odblokować ekran i natychmiast rozpocznij wprowadzanie hasła</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Pokazuj bezpośrednio wzór</string>
+  <string name="lock_directly_show_pattern_summary">Pomiń przesunięcie, aby odblokować ekran i natychmiast rozpocznij wprowadzanie wzoru</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Pokazuj bezpośrednio wpisany PIN</string>
+  <string name="lock_directly_show_pin_summary">Pomiń przesunięcie, aby odblokować ekran i natychmiast rozpocznij wprowadzanie kodu PIN</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Pomieszany układ</string>
   <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Zabijaj aplikacje przyciskiem wstecz</string>
   <string name="kill_app_longpress_back_summary">Przytrzymanie przycisku wstecz zabija aktywną aplikację</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Zlokalizuj czujnik odcisków palców na <xliff:g id="sensor_location">%1$s </xliff:g> telefonu.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">tył</string>
+  <string name="security_settings_fingerprint_sensor_location_front">przód</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lewa strona</string>
+  <string name="security_settings_fingerprint_sensor_location_right">prawa strona</string>
 </resources>

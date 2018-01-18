@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">ആപ്ലിക്കേഷൻ പിന്നിലേക്ക് ബട്ടൺ നശിപ്പിക്കുക</string>
   <string name="kill_app_longpress_back_summary">ബാക്ക് ബട്ടൺ ദീര്‍ഘ നേരം അമര്‍ത്തി ആപ്ലിക്കേഷൻ നശിപ്പിക്കുക</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

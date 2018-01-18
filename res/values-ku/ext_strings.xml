@@ -41,4 +41,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">کوشتنی بەرنامە لە دوگمەی دواوە</string>
   <string name="kill_app_longpress_back_summary">کوشتنی پێشبنەما بەرنامە لەلایەن دەستنانی زۆر بە دوگمەی دواوە</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

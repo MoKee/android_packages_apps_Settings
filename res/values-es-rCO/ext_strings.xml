@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Botón atrás para cerrar la aplicación</string>
   <string name="kill_app_longpress_back_summary">Finalizar la aplicación actual al mantener pulsado el botón atrás</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Localiza el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de su teléfono.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">posterior</string>
+  <string name="security_settings_fingerprint_sensor_location_front">delante</string>
+  <string name="security_settings_fingerprint_sensor_location_left">lado izquierdo</string>
+  <string name="security_settings_fingerprint_sensor_location_right">lado derecho</string>
 </resources>

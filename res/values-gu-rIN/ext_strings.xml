@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">સંપૂર્ણપણે એપ્લિકેશન બંધ કરવાનું બૅક બટન</string>
   <string name="kill_app_longpress_back_summary">અગ્રભૂમિ પર રહેલ ઍપને સંપૂર્ણપણે બંધ કરવા માટે લંબાંણપૂર્વક બૅક બટન દબાવો</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

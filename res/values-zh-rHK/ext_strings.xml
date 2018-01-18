@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">開發工具</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">輕觸即可休眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列或鎖定來關閉螢幕</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">防止意外喚醒</string>
+  <string name="proximity_wake_summary">喚醒屏幕前檢查距離感應器</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">直接顯示密碼輸入框</string>
+  <string name="lock_directly_show_password_summary">跳過滑動解鎖螢幕，立即開始輸入密碼</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">直接顯示圖形密碼輸入</string>
+  <string name="lock_directly_show_pattern_summary">跳過滑動解鎖螢幕，立即開始模式輸入</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">直接顯示 PIN 碼輸入框</string>
+  <string name="lock_directly_show_pin_summary">跳過滑動解鎖螢幕，立即開始輸入 PIN碼</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">無序佈局</string>
   <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用無序 PIN 佈局</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">返回按鈕可終止應用程式</string>
   <string name="kill_app_longpress_back_summary">長按返回按鈕以終止前景應用程式</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">在您的手機 <xliff:g id="sensor_location">%1$s</xliff:g> 找到指紋感應器。</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">後置</string>
+  <string name="security_settings_fingerprint_sensor_location_front">前置</string>
+  <string name="security_settings_fingerprint_sensor_location_left">左側</string>
+  <string name="security_settings_fingerprint_sensor_location_right">右側</string>
 </resources>

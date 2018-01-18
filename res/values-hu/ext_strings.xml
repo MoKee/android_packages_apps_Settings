@@ -47,4 +47,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Alkalmazás bezárás</string>
   <string name="kill_app_longpress_back_summary">Alkalmazás bezárása nyomva tartott vissza gombbal</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Keresse meg az ujjlenyomat érzékelőt a telefon <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">hátulján</string>
+  <string name="security_settings_fingerprint_sensor_location_front">elején</string>
+  <string name="security_settings_fingerprint_sensor_location_left">bal oldalán</string>
+  <string name="security_settings_fingerprint_sensor_location_right">jobb oldalán</string>
 </resources>

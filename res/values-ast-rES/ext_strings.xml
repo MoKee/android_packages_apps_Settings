@@ -47,4 +47,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Botón Volver</string>
   <string name="kill_app_longpress_back_summary">Matar l\'aplicación actual al caltener primíu\'l botón Volver</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

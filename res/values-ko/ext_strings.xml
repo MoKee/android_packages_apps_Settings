@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">뒤로 버튼으로 앱 종료</string>
   <string name="kill_app_longpress_back_summary">뒤로가기를 길게 눌러 이전 앱 종료</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">휴대전화의 <xliff:g id="sensor_location">%1$s</xliff:g>에서 지문 인식 센서를 찾으세요.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">뒤쪽</string>
+  <string name="security_settings_fingerprint_sensor_location_front">앞쪽</string>
+  <string name="security_settings_fingerprint_sensor_location_left">왼쪽 측면</string>
+  <string name="security_settings_fingerprint_sensor_location_right">오른쪽 측면</string>
 </resources>

@@ -46,4 +46,6 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">అనువర్తనాన్ని తొలిగించే బ్యాక్ బటన్</string>
   <string name="kill_app_longpress_back_summary">బ్యాక్ బటనును ఎక్కువసేపు నొక్కి పట్టుకుని ఉంచడం ద్వారా ఉపయోగిస్తున్న అనువర్తనాన్ని తొలిగించవచ్చు</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
 </resources>

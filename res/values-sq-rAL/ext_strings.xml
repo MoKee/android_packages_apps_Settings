@@ -40,4 +40,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Mbyll aplikacionin me butonin Prapa</string>
   <string name="kill_app_longpress_back_summary">Mbyll aplikacionin aktual duke mbajtur shtypur butonin Prapa</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Lokalizo sensorin e shenjave të gishtave në <xliff:g id="sensor_location">%1$s</xliff:g> të telefonit tuaj.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">mbrapa</string>
+  <string name="security_settings_fingerprint_sensor_location_front">përpara</string>
+  <string name="security_settings_fingerprint_sensor_location_left">në të majtë</string>
+  <string name="security_settings_fingerprint_sensor_location_right">në të djathtë</string>
 </resources>

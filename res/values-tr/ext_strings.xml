@@ -20,14 +20,20 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Geliştirme araçları</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Uyutmak için dokunun</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna veya kilit ekran kilidine çift dokun</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
+  <string name="proximity_wake_summary">Ekranı uyandırmak için yakınlık sensörünü kontrol edin</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Doğrudan şifre girişini göster</string>
+  <string name="lock_directly_show_password_summary">Ekran kilidini açmak ve hemen parolalı giriş yapmak için kaydırmayı geçin</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Doğrudan desen görünümünü göster</string>
+  <string name="lock_directly_show_pattern_summary">Ekran kilidini açmak ve hemen desen kilidi ile giriş yapmak için kaydırmayı geçin</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Doğrudan PIN girişini göster</string>
+  <string name="lock_directly_show_pin_summary">Ekran kilidini açmak ve hemen PIN ile giriş yapmak için kaydırmayı geçin</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
@@ -48,4 +54,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Uygulama sonlandırıcı geri tuşu</string>
   <string name="kill_app_longpress_back_summary">Geri tuşuna uzun dokunarak ön plandaki uygulamayı sonlandır</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Telefonunuzdaki <xliff:g id="sensor_location">%1$s</xliff:g> üzerinde parmak izi sensörünü bulun.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">arka</string>
+  <string name="security_settings_fingerprint_sensor_location_front">ön</string>
+  <string name="security_settings_fingerprint_sensor_location_left">sol taraf</string>
+  <string name="security_settings_fingerprint_sensor_location_right">sağ taraf</string>
 </resources>

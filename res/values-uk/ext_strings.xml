@@ -48,4 +48,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Закрити програму</string>
   <string name="kill_app_longpress_back_summary">Довгий натиск на кнопку «Назад» закриє запущену програму</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Знайдіть сенсор відбитків пальців на <xliff:g id="sensor_location">%1$s </xliff:g> вашого телефону.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">назад</string>
+  <string name="security_settings_fingerprint_sensor_location_front">передня панель</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ліва сторона</string>
+  <string name="security_settings_fingerprint_sensor_location_right">права сторона</string>
 </resources>

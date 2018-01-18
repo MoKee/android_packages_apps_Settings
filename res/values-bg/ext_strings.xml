@@ -47,4 +47,11 @@
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">Спиране на приложение</string>
   <string name="kill_app_longpress_back_summary">Спиране на приложение на преден план с дълго натискане на бутон Назад</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Намерете сензора за пръстови отпечатъци <xliff:g id="sensor_location">%1$s </xliff:g> на вашия телефон.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">Отзад</string>
+  <string name="security_settings_fingerprint_sensor_location_front">Отпред</string>
+  <string name="security_settings_fingerprint_sensor_location_left">Лява страна</string>
+  <string name="security_settings_fingerprint_sensor_location_right">Дясна страна</string>
 </resources>
