@@ -27,6 +27,7 @@
   <string name="root_access_adb">ADB lamang</string>
   <string name="root_access_all">Mga app at ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Pag-manage ng mga root access</string>
   <string name="root_appops_summary">Tingnan at kontrolin ang root rules</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model ng device</string>
@@ -37,12 +38,14 @@
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Lokasyon</string>
   <string name="app_ops_categories_personal">Personal</string>
+  <string name="app_ops_categories_background">Likuran</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_modify_contacts">baguhin ang mga kontak</string>
   <string name="app_ops_summaries_read_call_log">basahin ang log ng tawag</string>
   <string name="app_ops_summaries_modify_call_log">baguhin ang log ng tawag</string>
   <string name="app_ops_summaries_read_calendar">basahin ang kalendaryo</string>
   <string name="app_ops_summaries_modify_calendar">baguhin ang kalendaryo</string>
+  <string name="app_ops_summaries_wifi_scan">Pagsuri ng Wi-Fi</string>
   <string name="app_ops_summaries_read_sms">basahin ang SMS</string>
   <string name="app_ops_summaries_write_sms">magsulat ng SMS</string>
   <string name="app_ops_summaries_receive_sms">tumanggap ng SMS</string>
@@ -58,11 +61,17 @@
   <string name="app_ops_summaries_play_audio">i-play ang audio</string>
   <string name="app_ops_summaries_read_clipboard">basahin ang clipboard</string>
   <string name="app_ops_summaries_modify_clipboard">baguhin ang clipboard</string>
+  <string name="app_ops_summaries_voice_volume">lakas ng tunog ng boses</string>
+  <string name="app_ops_summaries_ring_volume">lakas ng tunog ng ring</string>
+  <string name="app_ops_summaries_alarm_volume">lakas ng tunog ng alarma</string>
+  <string name="app_ops_summaries_monitor_location">i-monitor ang lokasyon</string>
   <string name="app_ops_summaries_monitor_high_power_location">i-monitor ang high power na lokasyon</string>
   <string name="app_ops_summaries_get_usage_stats">kumuha ng istatistika ng paggamit ng app</string>
   <string name="app_ops_summaries_mute_unmute_microphone">i-mute/i-unmute ang microphone</string>
   <string name="app_ops_summaries_toast_window">ipakita ang mga toast</string>
   <string name="app_ops_summaries_activate_vpn">i-activate ang VPN</string>
+  <string name="app_ops_summaries_assist_structure">pag-tulong sa istraktura</string>
+  <string name="app_ops_summaries_assist_screenshot">pag-tulong sa screenshot</string>
   <string name="app_ops_summaries_read_phone_state">basahin ang estado ng telepono</string>
   <string name="app_ops_summaries_add_voicemail">magdagdag ng voicemail</string>
   <string name="app_ops_summaries_use_sip">gumamit ng SIP</string>
@@ -88,6 +97,7 @@
   <string name="app_ops_labels_modify_call_log">Baguhin ang log ng tawag</string>
   <string name="app_ops_labels_read_calendar">Basahin ang calendar</string>
   <string name="app_ops_labels_modify_calendar">Baguhin ang calendar</string>
+  <string name="app_ops_labels_wifi_scan">Pagsuri ng Wi-Fi</string>
   <string name="app_ops_labels_read_sms">Basahin ang SMS</string>
   <string name="app_ops_labels_write_sms">Magsulat ng SMS</string>
   <string name="app_ops_labels_receive_sms">Tumanggap ng SMS</string>
@@ -103,8 +113,11 @@
   <string name="app_ops_labels_play_audio">I-play ang audio</string>
   <string name="app_ops_labels_read_clipboard">Basahin ang clipboard</string>
   <string name="app_ops_labels_modify_clipboard">Baguhin ang clipboard</string>
+  <string name="app_ops_labels_media_buttons">Mga pindutan na pang-media</string>
+  <string name="app_ops_labels_keep_awake">Panatilihing gising</string>
   <string name="app_ops_labels_monitor_location">I-monitor ang lokasyon</string>
   <string name="app_ops_labels_monitor_high_power_location">I-monitor ang high power na lokasyon</string>
+  <string name="app_ops_labels_get_usage_stats">Kunin ang estado ng paggamit</string>
   <string name="app_ops_labels_mute_unmute_microphone">I-mute/i-unmute ang microphone</string>
   <string name="app_ops_labels_toast_window">Ipakita ang mga toast</string>
   <string name="app_ops_labels_activate_vpn">I-activate ang VPN</string>
@@ -131,13 +144,19 @@
   <string name="app_ops_permissions_ignored">Binalewala</string>
   <string name="app_ops_permissions_always_ask">Palaging itanong</string>
   <!-- App ops detail -->
+  <string name="app_ops_allowed_count">Pinahintulutan ng <xliff:g id="count" example="2 times">%s</xliff:g></string>
+  <string name="app_ops_ignored_count">Hindi pinahintulutan ng <xliff:g id="count" example="2 times">%s</xliff:g></string>
+  <string name="app_ops_both_count">Pinahintulutan ng <xliff:g id="count">%1$s</xliff:g>, hindi pinahintulutan ng <xliff:g id="count">%2$s</xliff:g></string>
   <string name="app_ops_no_blockable_permissions">Walang mga pahintulot na maaaring gamitin para mag-block</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Ipakita ang mga app ng user</string>
   <string name="app_ops_show_system_apps">Ipakita ang built-in na mga app</string>
+  <string name="app_ops_reset_counters">Pagpahintulot sa pag-reset/pagtanggi sa mga counter</string>
+  <string name="app_ops_reset_confirm_title">Kompirmahin ang pag-reset sa mga counter</string>
   <string name="app_ops_reset_confirm_mesg">Sigurado ka ba na gusto mong i-reset ang mga counter?</string>
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Mga tunog ng pag-sasaayos ng lakas ng tunog</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_dialog_warning">Halaga na mas malaki sa %1$d%% ay hindi inirerekomenda</string>
   <string name="vibrator_intensity_dialog_reset">I-reset</string>
@@ -154,8 +173,10 @@
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Direktang ipakita ang PIN entry</string>
   <!-- Lock screen vibrate settings -->
+  <string name="lockscreen_vibrate_enabled_head">Mag-vibrate habang ina-unlock</string>
   <!-- Lights settings -->
   <!-- Memory -->
+  <string name="memory_startup_apps_title">Ang mga app ay nagsimula sa pag-boot</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_summary">Kapag naka-unlock, samahan ng mga opsyon sa power menu para sa pag-restart sa recovery, bootloader o pag-perform sa soft na restart</string>
   <!-- PIN scramble -->
@@ -275,6 +296,7 @@
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_summary">Ilunsad ang defaut na music player kapag ang isang headset ay nakakonekta</string>
   <!-- Status bar - double tap to sleep -->
+  <string name="status_bar_double_tap_to_sleep_summary">I-tap ng dalawang beses ang status bar upang i-off ang display</string>
   <string name="sim_enabled">pinagana</string>
   <string name="sim_disabled">hindi pinagana</string>
   <string name="sim_missing">nawawala o may sira</string>
