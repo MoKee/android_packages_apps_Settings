@@ -413,5 +413,5 @@
   <string name="shortcut_carrier_title">Операторы связи</string>
   <!-- Burn in protection -->
   <string name="burnin_protection_title">Защита экрана от выгорания</string>
-  <string name="burnin_protection_summary">Периодически перемещать элементы, которые постоянно отображаются на экране, чтобы избежать чрезмерного износа экрана в этой области</string>
+  <string name="burnin_protection_summary">Периодически перемещать элементы, которые постоянно отображаются на экране, чтобы избежать выгорания экрана в этой области</string>
 </resources>

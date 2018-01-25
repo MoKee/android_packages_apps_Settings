@@ -60,4 +60,5 @@
   <string name="recents_membar_pos_top">Arriba</string>
   <string name="recents_membar_pos_bottom">Abajo</string>
   <string name="recents_membar_pos_hidden">Oculto</string>
+  <string name="apps_no_data">No hay aplicaciones</string>
 </resources>
