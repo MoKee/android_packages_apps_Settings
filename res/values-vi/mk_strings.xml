@@ -29,17 +29,35 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Trung tâm MoKee sẽ ảnh hưởng đến dịch vụ hệ thống, hãy phục hồi và thử lại.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Các lớp phủ lớp dưới</string>
+  <string name="menu_show_substratum">Hiển thị các lớp phủ</string>
+  <string name="menu_hide_substratum">Ẩn các lớp phủ</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Các lớp phủ biểu tượng lớp dưới</string>
+  <string name="menu_show_substratum_icons">Hiển thị các lớp phủ biểu tượng</string>
+  <string name="menu_hide_substratum_icons">Ẩn các lớp phủ biểu tượng</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Trao quyền cho mỗi app giao diện</string>
   <string name="force_authorize_substratum_packages_summary">Cho phép cài app từ các nguồn không rõ</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Dải tần số Wi‑Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Chỉ định dải tần số hoạt động</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Đã xảy ra sự cố khi thiết đặt dải tần số.</string>
   <string name="wifi_setting_frequency_band_auto">Tự động</string>
+  <string name="wifi_setting_frequency_band_5G">Chỉ 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">chỉ 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Cử trỉ ba ngón tay chụp màn hình</string>
   <string name="three_finger_screenshot_summary">Vuốt ba ngón tay lên màn hình để chụp ảnh màn hình</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Hiển thị tình trạng sạc pin</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Hiển thị sử dụng bộ nhớ trong Số lần truy cập gần đây</string>
+  <string name="recents_membar_pos_top">Trên cùng</string>
+  <string name="recents_membar_pos_bottom">Dưới cùng</string>
+  <string name="recents_membar_pos_hidden">Ẩn</string>
+  <string name="apps_no_data">Không có ứng dụng</string>
 </resources>

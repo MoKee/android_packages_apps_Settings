@@ -227,7 +227,7 @@
   <string name="lockscreen_vibrate_enabled_title">Vibrovať</string>
   <string name="lockscreen_vibrate_enabled_head">Vibrovať pri odomknutí</string>
   <!-- Lights settings -->
-  <string name="lights_label">Svetlá</string>
+  <string name="lights_label">LED svetlá</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Aplikácie spúšťané pri štarte</string>
   <!-- Advanced restart options -->

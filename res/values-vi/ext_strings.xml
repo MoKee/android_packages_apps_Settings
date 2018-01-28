@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">vị trí gần đúng</string>
   <string name="app_ops_summaries_fine_location">vị trí chính xác</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">rung</string>
   <string name="app_ops_summaries_read_contacts">đọc số liên hệ</string>
   <string name="app_ops_summaries_modify_contacts">sửa đổi số liên hệ</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Vị trí tương đối</string>
   <string name="app_ops_labels_fine_location">Vị trí chính xác</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Rung</string>
   <string name="app_ops_labels_read_contacts">Đọc số liên lạc</string>
   <string name="app_ops_labels_modify_contacts">Sửa đổi số liên lạc</string>
@@ -195,6 +197,7 @@
   <string name="app_ops_allowed_count">Được phép <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Bị từ chối <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Được phép <xliff:g id="count">%1$s</xliff:g>, bị từ chối <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_no_blockable_permissions">Không có quyền truy cập sẵn có nào bị chặn</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Hiện ứng dụng người dùng</string>
   <string name="app_ops_show_system_apps">Hiện ứng dụng tích hợp sẵn</string>
@@ -236,7 +239,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Chạm hai lần để tắt màn hình ở bất cứ đâu</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Đặt lại mẫu hình</string>
   <string name="lockpattern_settings_reset_summary">Nhập tài khoản email chính và mật khẩu liên quan để thiết lập lại mẫu hình mở khóa</string>
@@ -304,10 +309,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">sự kiện</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">tất cả người gọi</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">người gọi đã chọn</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">lặp lại người gọi</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">tất cả tin nhắn</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">tin nhắn đã chọn</string>
   <!-- Notification sound timeout -->
@@ -327,6 +335,7 @@
   <string name="sim_mobile_network_settings_category_title">Cài đặt mạng di động</string>
   <string name="sim_mobile_network_settings_title">Cài đặt %d SIM</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Các điều khiển thông báo nguồn</string>
   <!-- Format string for fingerprint location message -->
@@ -395,7 +404,14 @@
   <string name="sub_deactivate_failed">Huỷ kích hoạt thất bại.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Đầu: %1$s W/kg</string>
+  <string name="maximum_body_level">Giữa: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Kiểu: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Nhà cung cấp dịch vụ mạng</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Bảo vệ khỏi hiện tượng lưu ảnh, bóng mờ</string>
+  <string name="burnin_protection_summary">Định kỳ di chuyển các mục được hiển thị vĩnh viễn trên màn hình để tránh bị màn hình quá mức trong khu vực đó</string>
 </resources>
