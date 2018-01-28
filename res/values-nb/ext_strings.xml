@@ -62,4 +62,20 @@
   <string name="increasing_ring_min_volume_title">Start volum</string>
   <string name="increasing_ring_ramp_up_time_title">Ramp-up tid</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> er <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">deaktivert</string>
+  <string name="sim_missing">manglende eller feil</string>
+  <string name="sim_enabler_need_disable_sim">SIM-kortet vil bli deaktivert. Vil du fortsette?</string>
+  <string name="sim_enabler_will_disable_sim_title">Oppmerksomhet</string>
+  <string name="sim_enabler_need_switch_data_service">Dette SIM-kortet vil bli deaktivert og SIM-kort <xliff:g id="slotid">%1$s</xliff:g> vil bli brukt til data servicer. Er du sikker på at du vil fortsette?</string>
+  <string name="sim_enabler_airplane_on">Kan ikke utføre operasjonen mens Flymodus er på.</string>
+  <string name="sim_enabler_in_call">Kan ikke utføre operasjonen i samtalen.</string>
+  <string name="sim_enabler_both_inactive">Kan ikke deaktivere alle SIM-kort</string>
+  <string name="sim_enabler_enabling">Aktiverer\u2026</string>
+  <string name="sim_enabler_disabling">Deaktiverer\u2026</string>
+  <string name="sub_activate_success">SIM aktivert.</string>
+  <string name="sub_activate_failed">Aktivering mislyktes.</string>
+  <string name="sub_deactivate_success">SIM deaktivert.</string>
+  <string name="sub_deactivate_failed">Deaktivering mislyktes.</string>
 </resources>

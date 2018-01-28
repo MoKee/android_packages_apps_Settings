@@ -22,21 +22,29 @@
   <string name="development_tools_title">Công cụ phát triển</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
+  <string name="advanced_reboot_summary">Bao gồm các tùy chọn trong trình đơn điện cho khởi động lại vào phục hồi và bộ nạp khởi động</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Chạm màn hình khóa để tắt màn hình</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Ngăn ngừa tình cờ mở màn hình</string>
+  <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước để mở màn hình</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Hiện mục nhập mật khẩu trực tiếp</string>
+  <string name="lock_directly_show_password_summary">Bỏ qua chế độ vuốt để mở khóa và bắt đầu nhập mật khẩu ngay lập tức</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Hiện hình mẫu trực tiếp</string>
+  <string name="lock_directly_show_pattern_summary">Bỏ qua việc vuốt để mở khóa màn hình và ngay lập tức bắt đầu nhập mô hình</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Hiện mục nhập PIN trực tiếp</string>
+  <string name="lock_directly_show_pin_summary">Bỏ qua chế độ vuốt để mở khóa và bắt đầu nhập PIN ngay lập tức</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Bố trí linh tinh</string>
   <string name="unlock_scramble_pin_layout_summary">Bố trí PIN linh tinh khi mở khóa thiết bị</string>
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
   <!-- Android debugging -->
   <string name="adb_enable">Gỡ lỗi Android</string>
   <string name="adb_enable_summary">Bật giao diện Android Debug Bridge (ADB)</string>
@@ -62,4 +70,21 @@
   <string name="increasing_ring_min_volume_title">Âm lượng khởi động</string>
   <string name="increasing_ring_ramp_up_time_title">Thời gian tăng</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Liên kết âm lượng nhạc chuông &amp; thông báo</string>
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> là <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">đã tắt</string>
+  <string name="sim_missing">thiếu hoặc bị lỗi</string>
+  <string name="sim_enabler_need_disable_sim">Thẻ SIM sẽ bị huỷ kích hoạt. Bạn có muốn tiếp tục?</string>
+  <string name="sim_enabler_will_disable_sim_title">Chú ý</string>
+  <string name="sim_enabler_need_switch_data_service">SIM này sẽ bị vô hiệu và SIM <xliff:g id="slotid">%1$s</xliff:g> sẽ được dùng cho dịch vụ dữ liệu. Bạn có chắc muốn tiếp tục?</string>
+  <string name="sim_enabler_airplane_on">Không thể thực hiện thao tác trong khi đang ở chế độ máy bay.</string>
+  <string name="sim_enabler_in_call">Không thể thực hiện thao tác trong khi đang gọi.</string>
+  <string name="sim_enabler_both_inactive">Không thể vô hiệu hóa tất cả các thẻ SIM</string>
+  <string name="sim_enabler_enabling">Đang kích hoạt\u2026</string>
+  <string name="sim_enabler_disabling">Đang huỷ kích hoạt\u2026</string>
+  <string name="sub_activate_success">Đã kích hoạt SIM.</string>
+  <string name="sub_activate_failed">Kích hoạt thất bại.</string>
+  <string name="sub_deactivate_success">Đã huỷ kích hoạt SIM.</string>
+  <string name="sub_deactivate_failed">Huỷ kích hoạt thất bại.</string>
 </resources>

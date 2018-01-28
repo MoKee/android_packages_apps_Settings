@@ -63,4 +63,20 @@
   <string name="increasing_ring_min_volume_title">Почетна јачина звука</string>
   <string name="increasing_ring_ramp_up_time_title">Време појачавања</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> је <xliff:g id="status" example="disabled">%2$s</xliff:g>.</string>
+  <string name="sim_disabled">онемогућена</string>
+  <string name="sim_missing">недостаје или је неисправна</string>
+  <string name="sim_enabler_need_disable_sim">SIM картица ће бити деактивирана. Желите ли да наставите?</string>
+  <string name="sim_enabler_will_disable_sim_title">Пажња</string>
+  <string name="sim_enabler_need_switch_data_service">Тренутна SIM картица ће бити онемогућена, а за пренос података ће бити коришћена SIM картица <xliff:g id="slotid">%1$s</xliff:g>. Заиста желите да наставите?</string>
+  <string name="sim_enabler_airplane_on">Не могу да извршим операцију док је укључен режим рада у авиону.</string>
+  <string name="sim_enabler_in_call">Не могу да извршим операцију током позива.</string>
+  <string name="sim_enabler_both_inactive">Не могу да онемогућим све SIM картице.</string>
+  <string name="sim_enabler_enabling">Активирам\u2026</string>
+  <string name="sim_enabler_disabling">Деактивирам\u2026</string>
+  <string name="sub_activate_success">SIM картица је активирана.</string>
+  <string name="sub_activate_failed">Грешка при активацији.</string>
+  <string name="sub_deactivate_success">SIM картица је деактивирана.</string>
+  <string name="sub_deactivate_failed">Грешка при деактивацији.</string>
 </resources>

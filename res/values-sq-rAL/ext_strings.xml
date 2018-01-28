@@ -52,4 +52,16 @@
   <string name="security_settings_fingerprint_sensor_location_right">në të djathtë</string>
   <!-- Increasing ring tone volume -->
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">e çaktivizuar</string>
+  <string name="sim_missing">mungon ose e prishur</string>
+  <string name="sim_enabler_will_disable_sim_title">Kujdes</string>
+  <string name="sim_enabler_need_switch_data_service">Kjo kartë SIM do të çaktivizohet dhe karta SIM <xliff:g id="slotid">%1$s</xliff:g> do të përdoret për shërbimin e internetit. A je i sigurt që do të vazhdosh?</string>
+  <string name="sim_enabler_airplane_on">Ky veprim nuk kryhet dot kur profili Avion është i aktivizuar.</string>
+  <string name="sim_enabler_enabling">Duke aktivizuar\u2026</string>
+  <string name="sim_enabler_disabling">Duke çaktivizuar\u2026</string>
+  <string name="sub_activate_success">Karta SIM u aktivizua.</string>
+  <string name="sub_activate_failed">Aktivizimi dështoi.</string>
+  <string name="sub_deactivate_success">Karta SIM u çaktivizua.</string>
+  <string name="sub_deactivate_failed">Çaktivizimi dështoi.</string>
 </resources>

@@ -52,4 +52,10 @@
   <string name="increasing_ring_min_volume_title">वोल्यूम को शुरू करें</string>
   <string name="increasing_ring_ramp_up_time_title">समय को बढ़ाएँ</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">अक्षम</string>
+  <string name="sim_missing">अनुपस्थित या दोषपूर्ण</string>
+  <string name="sim_enabler_airplane_on">विमान मोड चालू होने पर यह कार्य करने में असमर्थ।</string>
+  <string name="sim_enabler_in_call">कॉल चालू होने पर यह कार्य करने में असमर्थ।</string>
+  <string name="sim_enabler_both_inactive">सब सिम कार्डों को अक्षम नहीं कर सकते</string>
 </resources>

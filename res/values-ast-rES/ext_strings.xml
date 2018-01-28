@@ -57,4 +57,5 @@
   <string name="increasing_ring_min_volume_title">Volume inicial</string>
   <string name="increasing_ring_ramp_up_time_title">Duración d\'incrementu</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
 </resources>

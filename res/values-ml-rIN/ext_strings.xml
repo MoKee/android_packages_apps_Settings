@@ -55,4 +55,18 @@
   <string name="increasing_ring_min_volume_title">വോളിയം ആരംഭിക്കുക</string>
   <string name="increasing_ring_ramp_up_time_title">റാംപ്-അപ്പ് സമയം</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">അപ്രാപ്തമാക്കി</string>
+  <string name="sim_enabler_need_disable_sim">SIM കാർഡ് നിര്‍ജീവമാക്കുന്നതാണ്. നിങ്ങൾക്ക് തുടരണോ?</string>
+  <string name="sim_enabler_will_disable_sim_title">ശ്രദ്ധിക്കുക</string>
+  <string name="sim_enabler_need_switch_data_service">ഈ SIM അപ്രാപ്തമാക്കുകയും ഡാറ്റ സേവനങ്ങൾക്കായി SIM <xliff:g id="slotid">%1$s</xliff:g> ഉപയോഗിക്കുന്നതുമാണ്. നിങ്ങൾ തുടരണമെന്ന് ഉറപ്പാണോ?</string>
+  <string name="sim_enabler_airplane_on">എയര്‍പ്ലെയിന്‍ മോഡ് ഓണ്‍ ആയിരിക്കുന്ന സമയത്ത് പ്രവർത്തനം നടത്താൻ കഴിയുന്നില്ല.</string>
+  <string name="sim_enabler_in_call">കോളില്‍ ആയിരിക്കുന്ന സമയത്ത് പ്രവർത്തനം നടത്താൻ കഴിയുന്നില്ല.</string>
+  <string name="sim_enabler_both_inactive">എല്ലാ SIM കാർഡുകളും അപ്രാപ്തമാക്കുവാന്‍ കഴിയില്ല</string>
+  <string name="sim_enabler_enabling">സജീവമാക്കുന്നു\u2026</string>
+  <string name="sim_enabler_disabling">നിർജീവമാക്കുന്നു\u2026</string>
+  <string name="sub_activate_success">SIM സജീവമാക്കി</string>
+  <string name="sub_activate_failed">സജീവമാക്കൽ പരാജയപ്പെട്ടു.</string>
+  <string name="sub_deactivate_success">SIM നിർജീവമാക്കി.</string>
+  <string name="sub_deactivate_failed">നിർജീവമാക്കല്‍ പരാജയപ്പെട്ടു.</string>
 </resources>

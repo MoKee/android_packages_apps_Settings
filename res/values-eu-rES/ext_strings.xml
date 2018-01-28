@@ -62,4 +62,20 @@
   <string name="increasing_ring_min_volume_title">Hasierako bolumena</string>
   <string name="increasing_ring_ramp_up_time_title">Maldaren iraupena</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g> dago</string>
+  <string name="sim_disabled">ezgaituta</string>
+  <string name="sim_missing">ez dago edo hondatuta dago</string>
+  <string name="sim_enabler_need_disable_sim">SIP txartela desaktibatuko da. Jarraitu nahi duzu?</string>
+  <string name="sim_enabler_will_disable_sim_title">Adi</string>
+  <string name="sim_enabler_need_switch_data_service">SIM txartela desgaituko da eta <xliff:g id="slotid">%1$s</xliff:g> SIM txartela erabiliko da datu zerbitzuetarako. Jarraitu nahi duzu?</string>
+  <string name="sim_enabler_airplane_on">Ezin da eragiketa burutu hegaldi modua aktibo badago.</string>
+  <string name="sim_enabler_in_call">Ezin da eragiketa burutu dei batean zehar.</string>
+  <string name="sim_enabler_both_inactive">Ezin dira SIM txartel guztiak ezgaitu</string>
+  <string name="sim_enabler_enabling">Aktibatzen\u2026</string>
+  <string name="sim_enabler_disabling">Desaktibatzen\u2026</string>
+  <string name="sub_activate_success">SIMa aktibatu da.</string>
+  <string name="sub_activate_failed">Aktibazioak huts egin du.</string>
+  <string name="sub_deactivate_success">SIMa desaktibatu da.</string>
+  <string name="sub_deactivate_failed">Desaktibazioak huts egin du.</string>
 </resources>

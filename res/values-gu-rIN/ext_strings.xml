@@ -55,4 +55,20 @@
   <string name="increasing_ring_min_volume_title">શરૂઆતનું વૉલ્યુમ</string>
   <string name="increasing_ring_ramp_up_time_title">રૅમ્પ-અપ સમય</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> તે <xliff:g id="status" example="disabled">%2$s</xliff:g> છે</string>
+  <string name="sim_disabled">અક્ષમ કર્યું છે</string>
+  <string name="sim_missing">ગુમ અથવા ખામીયુક્ત</string>
+  <string name="sim_enabler_need_disable_sim">SIM કાર્ડ નિષ્ક્રિય કરવામાં આવશે. શું તમે ચાલુ રહેવા માંગો છો ?</string>
+  <string name="sim_enabler_will_disable_sim_title">ધ્યાન આપો</string>
+  <string name="sim_enabler_need_switch_data_service">આ SIM અક્ષમ કરાશે અને SIM <xliff:g id="slotid">%1$s</xliff:g> નો ઉપયોગ ડેટા સેવાઓ માટે થશે. શું તમને ખાતરી છે કે તમારે ચાલુ રાખવું છે?</string>
+  <string name="sim_enabler_airplane_on">એરપ્લેન મોડ ચાલુ હોય ત્યારે ઑપરેશન કરવામાં અક્ષમ.</string>
+  <string name="sim_enabler_in_call">કૉલ ચાલુ હોય ત્યારે ઑપરેશન કરવામાં અક્ષમ.</string>
+  <string name="sim_enabler_both_inactive">તમામ SIM કાર્ડ અક્ષમ કરી શકાયા નહીં</string>
+  <string name="sim_enabler_enabling">\u2026 સક્રિય થઈ રહ્યુ છે</string>
+  <string name="sim_enabler_disabling">\u2026 નિષ્ક્રિય થઈ રહ્યુ છે</string>
+  <string name="sub_activate_success">SIM સક્રિય કરવામાં આવ્યું.</string>
+  <string name="sub_activate_failed">ઍક્ટિવેશન નિષ્ફળ.</string>
+  <string name="sub_deactivate_success">SIM નિષ્ક્રિય કરવામાં આવ્યું.</string>
+  <string name="sub_deactivate_failed">ડિઍક્ટિવેશન નિષ્ફળ.</string>
 </resources>
