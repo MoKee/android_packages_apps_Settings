@@ -67,4 +67,18 @@
   <string name="increasing_ring_min_volume_title">Umpisahan ang lakas ng tunog</string>
   <string name="increasing_ring_ramp_up_time_title">Oras ng ramp-up</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ay <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">hindi pinagana</string>
+  <string name="sim_missing">nawawala o may sira</string>
+  <string name="sim_enabler_need_disable_sim">Ang SIM card ay madi-deactivate. Gusto mo bang magpatuloy?</string>
+  <string name="sim_enabler_need_switch_data_service">Ang SIM na ito ay madi-disable at ang SIM <xliff:g id="slotid">%1$s</xliff:g> ay gagamitin para sa data services. Sigurado ka bang gusto mong magpatuloy?</string>
+  <string name="sim_enabler_airplane_on">Hindi magagawa ang operasyon habang naka-on ang airplane mode.</string>
+  <string name="sim_enabler_in_call">Hindi magagawa ang operasyon habang tumatawag.</string>
+  <string name="sim_enabler_both_inactive">Hindi ma-disable ang lahat ng mga SIM cards</string>
+  <string name="sim_enabler_enabling">Inaaktiba ang\u2026</string>
+  <string name="sub_activate_success">Ang SIM ay naka-activate.</string>
+  <string name="sub_activate_failed">Ang pag-activate ay nabigo.</string>
+  <string name="sub_deactivate_success">Ang SIM ay naka-deactivate.</string>
+  <string name="sub_deactivate_failed">Ang pag-deactivate ay nabigo.</string>
 </resources>

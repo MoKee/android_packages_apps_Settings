@@ -55,4 +55,10 @@
   <string name="increasing_ring_min_volume_title">Lähtevaljusus</string>
   <string name="increasing_ring_ramp_up_time_title">Käivitamisetapi aeg</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">keelatud</string>
+  <string name="sim_missing">puuduv või vigane</string>
+  <string name="sim_enabler_airplane_on">Toimingut ei saa sooritada, kui lennukirežiim on aktiveeritud.</string>
+  <string name="sim_enabler_in_call">Toimingut ei saa kõne ajal sooritada.</string>
+  <string name="sim_enabler_both_inactive">Ei saa keelata kõiki SIM-kaarte</string>
 </resources>

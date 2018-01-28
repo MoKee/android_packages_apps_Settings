@@ -55,4 +55,10 @@
   <string name="increasing_ring_min_volume_title">Pradinis garsumas</string>
   <string name="increasing_ring_ramp_up_time_title">Didėjimo laikas</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">neleidžiama</string>
+  <string name="sim_missing">trūkstama arba klaidinga</string>
+  <string name="sim_enabler_airplane_on">Nepavyksta atlikti šios operacijos, kai lėktuvo režimas yra įjungtas.</string>
+  <string name="sim_enabler_in_call">Nepavyksta atlikti šios operacijos pokalbio metu.</string>
+  <string name="sim_enabler_both_inactive">Negalima neleisti visų SIM kortelių</string>
 </resources>

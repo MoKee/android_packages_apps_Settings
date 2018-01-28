@@ -55,4 +55,10 @@
   <string name="increasing_ring_min_volume_title">Start-Lautstäerkt</string>
   <string name="increasing_ring_ramp_up_time_title">Ulafzäit</string>
   <!-- Volume link notification -->
+  <!-- Manual provisioning support -->
+  <string name="sim_disabled">desaktivéiert</string>
+  <string name="sim_missing">net do oder feelerhaft</string>
+  <string name="sim_enabler_airplane_on">Dës Operatioun kann am Fligermodus net duerchgefouert ginn.</string>
+  <string name="sim_enabler_in_call">Dës Operatioun ka während engem Uruff net duerchgefouert ginn.</string>
+  <string name="sim_enabler_both_inactive">Kann net all d\'SIM-Kaarten desaktivéieren</string>
 </resources>
