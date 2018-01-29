@@ -73,10 +73,10 @@
   <string name="volume_link_notification_title">Prepojiť hlasitosti zvonenia a oznámení</string>
   <!-- Manual provisioning support -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">zakázané</string>
+  <string name="sim_disabled">zakázaná</string>
   <string name="sim_missing">chýbajúca alebo chybná</string>
   <string name="sim_enabler_need_disable_sim">SIM karta bude deaktivovaná. Chcete pokračovať?</string>
-  <string name="sim_enabler_will_disable_sim_title">Varovanie</string>
+  <string name="sim_enabler_will_disable_sim_title">Upozornenie</string>
   <string name="sim_enabler_need_switch_data_service">Táto SIM karta bude zakázaná a SIM karta <xliff:g id="slotid">%1$s</xliff:g> bude použitá pre dátové služby. Naozaj chcete pokračovať?</string>
   <string name="sim_enabler_airplane_on">Akciu nie je možné vykonať, pokiaľ je aktivovaný režim lietadlo.</string>
   <string name="sim_enabler_in_call">Počas prebiehajúceho hovoru nie je možné vykonať túto akciu.</string>
