@@ -26,6 +26,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">Uyutmak için dokunun</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna veya kilit ekran kilidine çift dokun</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Ekran Hareketleri</string>
+  <string name="touchscreen_gesture_settings_summary">Çeşitli dokunmatik hareketleri için hızlı eylemleri uygula</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Ekranı uyandırmak için yakınlık sensörünü kontrol edin</string>

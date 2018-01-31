@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">고급 다시 시작 기능</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
+  <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
   <!-- Whether the keyguard will directly show the password entry -->

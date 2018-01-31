@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Розширене перезавантаження</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Жести сенсорного екрану</string>
+  <string name="touchscreen_gesture_settings_summary">Виконувати різні жести для швидкого доступу</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
   <!-- Whether the keyguard will directly show the password entry -->

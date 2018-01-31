@@ -22,6 +22,7 @@
   <string name="development_tools_title">ବିକାଶକରଣ ଟୁଲସ୍</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">ର୍ଆକ୍ସିଡେଂଟାଲ୍‍ ୱେକ୍‍-ଅପ୍‍ ପ୍ରତିରୋଧ କରନ୍ତୁ</string>
   <!-- Whether the keyguard will directly show the password entry -->

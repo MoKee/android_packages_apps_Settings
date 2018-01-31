@@ -22,6 +22,7 @@
   <string name="development_tools_title">అభివృద్ధి సాధనాలు</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">అప్రయత్నంగా మేల్కొల్పబడటాన్ని నివారించండి</string>
   <!-- Whether the keyguard will directly show the password entry -->
