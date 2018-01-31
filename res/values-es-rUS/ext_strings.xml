@@ -26,6 +26,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">Pulsa para suspender</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado o en la pantalla de bloqueo para apagar la pantalla</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Gestos en pantalla táctil</string>
+  <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Prevenir encendido accidental</string>
   <string name="proximity_wake_summary">Comprueba el sensor de proximidad antes de encender la pantalla</string>

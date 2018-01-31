@@ -25,6 +25,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">Toque para dormir</string>
   <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status ou na tela de bloqueio para desligar a tela</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Gestos na tela sensível ao toque</string>
+  <string name="touchscreen_gesture_settings_summary">Executar vários gestos de toque na tela para ações rápidas</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Evitar despertar acidental</string>
   <string name="proximity_wake_summary">Verifique o sensor de proximidade antes de acordar tela</string>
