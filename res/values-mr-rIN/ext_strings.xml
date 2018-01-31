@@ -22,6 +22,7 @@
   <string name="development_tools_title">विकास साधने</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">अपघाताने जागे करण्यास प्रतिबंध करा</string>
   <!-- Whether the keyguard will directly show the password entry -->

@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Napredni ponovni zagon</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
+  <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
   <!-- Whether the keyguard will directly show the password entry -->

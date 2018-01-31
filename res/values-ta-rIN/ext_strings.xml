@@ -22,6 +22,7 @@
   <string name="development_tools_title">மேம்பாட்டு கருவிகள்</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">தற்செயலான விழித்தலை தடு</string>
   <!-- Whether the keyguard will directly show the password entry -->
