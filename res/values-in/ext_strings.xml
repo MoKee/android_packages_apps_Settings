@@ -25,6 +25,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">Ketuk untuk tidur</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ketukan ganda pada statusbar untuk mematikan layar</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
+  <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
   <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>

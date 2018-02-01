@@ -23,6 +23,7 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Rindezje e përparuar</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <!-- Whether the keyguard will directly show the password entry -->
   <!-- Whether the keyguard will directly show the pattern view -->

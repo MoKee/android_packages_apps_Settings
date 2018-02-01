@@ -22,6 +22,7 @@
   <string name="development_tools_title">Arendussätted</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Väldi juhuslikku ärkamist</string>
   <!-- Whether the keyguard will directly show the password entry -->

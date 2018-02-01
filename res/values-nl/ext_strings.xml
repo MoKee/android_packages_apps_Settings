@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Geavanceerd herstarten</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Touchscreen gebaren</string>
+  <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
   <!-- Whether the keyguard will directly show the password entry -->

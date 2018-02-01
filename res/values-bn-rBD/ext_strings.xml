@@ -22,6 +22,7 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">অ্যাডভান্সড রিস্টার্ট</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">আকস্মিক জেগে ওঠা প্রতিহত করুন</string>
   <!-- Whether the keyguard will directly show the password entry -->
