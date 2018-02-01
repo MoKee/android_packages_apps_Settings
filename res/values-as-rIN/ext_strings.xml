@@ -22,6 +22,7 @@
   <string name="development_tools_title">ডেভলপমেন্ট টুলচ</string>
   <!-- Advanced restart options -->
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">দুৰ্ঘটনাক্ৰমে ৱেক-আপ হোৱাটো প্ৰতিৰোধ কৰক</string>
   <!-- Whether the keyguard will directly show the password entry -->

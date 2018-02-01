@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Advance na pagbahagi</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Mga gestures ng touchscreen</string>
+  <string name="touchscreen_gesture_settings_summary">Nag-perform na various na touchscreen na mga gestures para sa madaling mga aksyon</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Maiwasan ang aksidenteng panggising</string>
   <!-- Whether the keyguard will directly show the password entry -->

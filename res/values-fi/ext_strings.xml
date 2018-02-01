@@ -23,6 +23,9 @@
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Kosketusnäytön eleet</string>
+  <string name="touchscreen_gesture_settings_summary">Tee erilaisia kosketusnäytön eleitä käyttääksesi pikatoimintoja</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Estä herätys vahingossa</string>
   <!-- Whether the keyguard will directly show the password entry -->

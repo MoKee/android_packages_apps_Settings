@@ -26,6 +26,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">輕觸即可休眠</string>
   <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列或鎖定來關閉螢幕</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
+  <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">防止意外喚醒</string>
   <string name="proximity_wake_summary">喚醒屏幕前檢查距離感應器</string>

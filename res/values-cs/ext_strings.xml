@@ -26,6 +26,9 @@
   <!-- Double tap to sleep on status bar or lockscreen -->
   <string name="status_bar_double_tap_to_sleep_title">Klepnutím uspat</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavovou lištu nebo zamykací obrazovku vypnout obrazovku</string>
+  <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
+  <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
   <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
