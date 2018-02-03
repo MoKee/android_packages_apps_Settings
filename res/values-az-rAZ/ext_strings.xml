@@ -21,6 +21,14 @@
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Tərtibatçı alətləri</string>
   <!-- Advanced restart options -->
+  <!-- Setting checkbox title for root access -->
+  <string name="root_access">Root müraciəti</string>
+  <string name="root_access_warning_title">Root müraciətinə icazə verilsin?</string>
+  <string name="root_access_warning_message">Root müraciətinə icazə vermək çox təhlükəlidir və sisteminizin təhlükəsizliyinə ziyan vura bilər!</string>
+  <string name="root_access_apps">Yalnız tətbiqetmələr</string>
+  <string name="root_access_adb">Yalnız ADB</string>
+  <string name="root_access_all">Tətbiqetmələr və ADB</string>
+  <!-- Preference link for root appops -->
   <!-- Double tap to sleep on status bar or lockscreen -->
   <!-- Touchscreen gesture settings -->
   <!-- Proximity wake -->
@@ -31,6 +39,11 @@
   <!-- PIN scramble -->
   <!-- Lock screen visualizer -->
   <!-- Lock screen cover art -->
+  <!-- Sizes for pattern lockscreen -->
+  <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+  <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+  <!-- Lock screen vibrate settings -->
+  <string name="lockscreen_vibrate_enabled_title">Titrəmə</string>
   <!-- Android debugging -->
   <!-- Android debugging notification -->
   <!-- Android debugging over network -->
@@ -45,5 +58,108 @@
   <string name="increasing_ring_min_volume_title">Başlanğıc səsi</string>
   <string name="increasing_ring_ramp_up_time_title">Artma vaxtı</string>
   <!-- Volume link notification -->
+  <!-- Memory -->
   <!-- Manual provisioning support -->
+  <!-- Names of categories of app ops tabs - extension of AOSP -->
+  <string name="app_ops_categories_location">Yer</string>
+  <string name="app_ops_categories_personal">Şəxsi</string>
+  <string name="app_ops_categories_messaging">Mesajlaşma</string>
+  <string name="app_ops_categories_device">Cihaz</string>
+  <string name="app_ops_categories_bootup">Açılış</string>
+  <string name="app_ops_categories_su">Root müraciəti</string>
+  <string name="app_ops_categories_other">Digər</string>
+  <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_summaries_coarse_location">təxmini yer</string>
+  <string name="app_ops_summaries_fine_location">dəqiq yer</string>
+  <string name="app_ops_summaries_vibrate">titrəmə</string>
+  <string name="app_ops_summaries_read_contacts">şəxsləri oxu</string>
+  <string name="app_ops_summaries_modify_contacts">şəxslərə düzəliş et</string>
+  <string name="app_ops_summaries_read_call_log">zəng qeydini oxu</string>
+  <string name="app_ops_summaries_modify_call_log">zəng qeydinə düzəliş et</string>
+  <string name="app_ops_summaries_read_calendar">təqvimi oxu</string>
+  <string name="app_ops_summaries_modify_calendar">təqvimə düzəliş et</string>
+  <string name="app_ops_summaries_cell_scan">şəbəkə axtarışı</string>
+  <string name="app_ops_summaries_call_phone">zəng etmə</string>
+  <string name="app_ops_summaries_read_sms">SMS oxuma</string>
+  <string name="app_ops_summaries_write_sms">SMS yazma</string>
+  <string name="app_ops_summaries_receive_sms">SMS qəbul etmə</string>
+  <string name="app_ops_summaries_receive_emergency_sms">təcili SMS qəbul etmə</string>
+  <string name="app_ops_summaries_receive_mms">MMS qəbul etmə</string>
+  <string name="app_ops_summaries_receive_wap_push">WAP push qəbul etmək</string>
+  <string name="app_ops_summaries_send_sms">SMS göndərmə</string>
+  <string name="app_ops_summaries_read_icc_sms">ICC SMS oxuma</string>
+  <string name="app_ops_summaries_write_icc_sms">ICC SMS yazma</string>
+  <string name="app_ops_summaries_modify_settings">tənzimləmələri dəyişdirmə</string>
+  <string name="app_ops_summaries_draw_on_top">ən üsttə göstərmə</string>
+  <string name="app_ops_summaries_access_notifications">bildirişlərə müraciət</string>
+  <string name="app_ops_summaries_camera">kamera</string>
+  <string name="app_ops_summaries_record_audio">səsyazma</string>
+  <string name="app_ops_summaries_play_audio">səs oynatma</string>
+  <string name="app_ops_summaries_read_clipboard">lövhəni oxuma</string>
+  <string name="app_ops_summaries_modify_clipboard">lövhəyə düzəliş etmə</string>
+  <string name="app_ops_summaries_media_buttons">media düymələri</string>
+  <string name="app_ops_summaries_audio_focus">səs fokusu</string>
+  <string name="app_ops_summaries_master_volume">əsas səs</string>
+  <string name="app_ops_summaries_voice_volume">danışıq səsi</string>
+  <string name="app_ops_summaries_ring_volume">zəng səsi</string>
+  <string name="app_ops_summaries_media_volume">media səsi</string>
+  <string name="app_ops_summaries_alarm_volume">zəngli saat səsi</string>
+  <string name="app_ops_summaries_notification_volume">bildiriş səsi</string>
+  <string name="app_ops_summaries_keep_awake">oyaq saxla</string>
+  <string name="app_ops_summaries_monitor_location">yeri izlə</string>
+  <string name="app_ops_summaries_monitor_high_power_location">yüksək güc yerini izlə</string>
+  <string name="app_ops_summaries_mute_unmute_microphone">mikrofonu aç/bağla</string>
+  <string name="app_ops_summaries_toast_window">bildiriş göstər</string>
+  <string name="app_ops_summaries_project_media">medianı əks etdir</string>
+  <string name="app_ops_summaries_activate_vpn">VPN\'ni aktivetmə</string>
+  <string name="app_ops_summaries_superuser">root müraciəti</string>
+  <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_vibrate">Titrəmə</string>
+  <string name="app_ops_labels_read_contacts">Şəxsləri oxu</string>
+  <string name="app_ops_labels_modify_contacts">Şəxslərə düzəliş et</string>
+  <string name="app_ops_labels_read_call_log">Zəng qeydini oxu</string>
+  <string name="app_ops_labels_modify_call_log">Zəng qeydinə düzəliş et</string>
+  <string name="app_ops_labels_read_calendar">Təqvimi oxu</string>
+  <string name="app_ops_labels_modify_calendar">Təqvimə düzəliş et</string>
+  <string name="app_ops_labels_call_phone">Zəng et</string>
+  <string name="app_ops_labels_receive_sms">SMS qəbul et</string>
+  <string name="app_ops_labels_receive_mms">MMS qəbul et</string>
+  <string name="app_ops_labels_send_sms">SMS göndər</string>
+  <string name="app_ops_labels_modify_settings">Tənzimləmələrə düzəliş et</string>
+  <string name="app_ops_labels_access_notifications">Bildirişlərə müraciət</string>
+  <string name="app_ops_labels_camera">Kamera</string>
+  <string name="app_ops_labels_record_audio">Səs yaz</string>
+  <string name="app_ops_labels_play_audio">Səs oynat</string>
+  <string name="app_ops_labels_read_clipboard">Lövhəni oxu</string>
+  <string name="app_ops_labels_modify_clipboard">Lövhəyə düzəliş et</string>
+  <string name="app_ops_labels_media_buttons">Media düymələri</string>
+  <string name="app_ops_labels_audio_focus">Səs fokusu</string>
+  <string name="app_ops_labels_master_volume">Əsas səs</string>
+  <string name="app_ops_labels_voice_volume">Danışıq səsi</string>
+  <string name="app_ops_labels_ring_volume">Zəngin səsi</string>
+  <string name="app_ops_labels_media_volume">Media səsi</string>
+  <string name="app_ops_labels_alarm_volume">Zəngli saat səsi</string>
+  <string name="app_ops_labels_notification_volume">Bildiriş səsi</string>
+  <string name="app_ops_labels_bluetooth_volume">Bluetooth səsi</string>
+  <string name="app_ops_labels_keep_awake">Oyaq saxla</string>
+  <string name="app_ops_labels_mute_unmute_microphone">Mikrofonu aç/bağla</string>
+  <string name="app_ops_labels_toast_window">Bildiriş göstər</string>
+  <string name="app_ops_labels_project_media">Medianı əks etdir</string>
+  <string name="app_ops_labels_activate_vpn">VPN\'ni aktivetmə</string>
+  <string name="app_ops_labels_superuser">Root müraciəti</string>
+  <!-- App ops permissions -->
+  <string name="app_ops_permissions_allowed">İcazə verildi</string>
+  <string name="app_ops_permissions_ignored">Rədd edildi</string>
+  <string name="app_ops_permissions_always_ask">Həmişə soruş</string>
+  <!-- App ops detail -->
+  <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (<xliff:g id="count">%2$s</xliff:g> istifadə)</string>
+  <string name="app_ops_allowed_count"><xliff:g id="count" example="2 times">%s</xliff:g> icazə verildi</string>
+  <string name="app_ops_ignored_count"><xliff:g id="count" example="2 times">%s</xliff:g> rədd edildi</string>
+  <string name="app_ops_both_count"><xliff:g id="count">%1$s</xliff:g> icazə verildi, <xliff:g id="count">%2$s</xliff:g> rədd edildi</string>
+  <!-- App ops menu options -->
+  <string name="app_ops_show_user_apps">İstifadəçi tətbiqlərini göstər</string>
+  <string name="app_ops_show_system_apps">Daxili tətbiqləri göstər</string>
+  <string name="app_ops_reset_counters">İcazə vermə/rədd etmə sayğaclarını sıfırla</string>
+  <string name="app_ops_reset_confirm_title">Sayğac sıfırlamağı təsdiqlə</string>
+  <string name="app_ops_reset_confirm_mesg">Sayğacları sıfırlamaq istədiyinizə əminsiniz?</string>
 </resources>
