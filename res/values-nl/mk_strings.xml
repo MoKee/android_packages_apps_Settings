@@ -60,4 +60,5 @@
   <string name="recents_membar_pos_top">Omhoog</string>
   <string name="recents_membar_pos_bottom">Omlaag</string>
   <string name="recents_membar_pos_hidden">Verborgen</string>
+  <string name="apps_no_data">Geen toepassingen</string>
 </resources>

@@ -71,7 +71,7 @@
   <string name="app_ops_summaries_voice_volume">lakas ng tunog ng boses</string>
   <string name="app_ops_summaries_ring_volume">lakas ng tunog ng ring</string>
   <string name="app_ops_summaries_alarm_volume">lakas ng tunog ng alarma</string>
-  <string name="app_ops_summaries_keep_awake">ipinatiling gising</string>
+  <string name="app_ops_summaries_keep_awake">panatilihing gising</string>
   <string name="app_ops_summaries_monitor_location">i-monitor ang lokasyon</string>
   <string name="app_ops_summaries_monitor_high_power_location">i-monitor ang high power na lokasyon</string>
   <string name="app_ops_summaries_get_usage_stats">kumuha ng istatistika ng paggamit ng app</string>
