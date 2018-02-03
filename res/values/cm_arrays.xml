@@ -25,7 +25,7 @@
     </string-array>
 
     <!-- Names of categories of app ops tabs - extension of AOSP -->
-    <string-array name="app_ops_categories_lineage" translatable="false">
+    <string-array name="app_ops_categories_mk" translatable="false">
         <item>@string/app_ops_categories_location</item>
         <item>@string/app_ops_categories_personal</item>
         <item>@string/app_ops_categories_messaging</item>
@@ -38,7 +38,7 @@
     </string-array>
 
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string-array name="app_ops_summaries_lineage" translatable="false">
+    <string-array name="app_ops_summaries_mk" translatable="false">
         <item>@string/app_ops_summaries_coarse_location</item>
         <item>@string/app_ops_summaries_fine_location</item>
         <item>@string/app_ops_summaries_gps</item>
@@ -118,7 +118,7 @@
     </string-array>
 
     <!-- User display names for app ops codes - extension of AOSP -->
-    <string-array name="app_ops_labels_lineage" translatable="false">
+    <string-array name="app_ops_labels_mk" translatable="false">
         <item>@string/app_ops_labels_coarse_location</item>
         <item>@string/app_ops_labels_fine_location</item>
         <item>@string/app_ops_labels_gps</item>
