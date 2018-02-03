@@ -133,7 +133,7 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         mContentContainer = container;
         mRootView = rootView;
 
-        CharSequence[] pageNames = getResources().getTextArray(R.array.app_ops_categories_lineage);
+        CharSequence[] pageNames = getResources().getTextArray(R.array.app_ops_categories_mk);
         AppOpsState.OpsTemplate[] templates = AppOpsState.ALL_PERMS_TEMPLATES;
         assert(pageNames.length == templates.length);
 

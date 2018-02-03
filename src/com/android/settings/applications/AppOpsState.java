@@ -63,8 +63,8 @@ public class AppOpsState {
         mContext = context;
         mAppOps = (AppOpsManager)context.getSystemService(Context.APP_OPS_SERVICE);
         mPm = context.getPackageManager();
-        mOpSummaries = context.getResources().getTextArray(R.array.app_ops_summaries_lineage);
-        mOpLabels = context.getResources().getTextArray(R.array.app_ops_labels_lineage);
+        mOpSummaries = context.getResources().getTextArray(R.array.app_ops_summaries_mk);
+        mOpLabels = context.getResources().getTextArray(R.array.app_ops_labels_mk);
         mPreferences = context.getSharedPreferences("appops_manager", Activity.MODE_PRIVATE);
     }
 
