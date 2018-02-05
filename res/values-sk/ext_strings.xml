@@ -85,7 +85,7 @@
   <string name="app_ops_summaries_ring_volume">hlasitosť zvonenia</string>
   <string name="app_ops_summaries_media_volume">hlasitosť médií</string>
   <string name="app_ops_summaries_alarm_volume">hlasitosť budíka</string>
-  <string name="app_ops_summaries_notification_volume">hlasitosť oznámenia</string>
+  <string name="app_ops_summaries_notification_volume">hlasitosť upozornenia</string>
   <string name="app_ops_summaries_bluetooth_volume">hlasitosť Bluetooth</string>
   <string name="app_ops_summaries_keep_awake">zabrániť zariadeniu prejsť do režimu spánku</string>
   <string name="app_ops_summaries_monitor_location">sledovať polohu</string>
@@ -129,7 +129,7 @@
   <string name="app_ops_labels_read_calendar">Čítať údaje z kalendára</string>
   <string name="app_ops_labels_modify_calendar">Upraviť údaje v kalendári</string>
   <string name="app_ops_labels_wifi_scan">Prehľadávať siete Wi-Fi</string>
-  <string name="app_ops_labels_notification">Oznámenie/Toast</string>
+  <string name="app_ops_labels_notification">Upozornenie/Toast</string>
   <string name="app_ops_labels_cell_scan">Mobilné prehľadanie</string>
   <string name="app_ops_labels_call_phone">Telefonovať</string>
   <string name="app_ops_labels_read_sms">Čítanie SMS</string>
@@ -143,7 +143,7 @@
   <string name="app_ops_labels_write_icc_sms">Napísať ICC SMS</string>
   <string name="app_ops_labels_modify_settings">Upraviť nastavenia</string>
   <string name="app_ops_labels_draw_on_top">Vykresliť do najvyššej vrstvy</string>
-  <string name="app_ops_labels_access_notifications">Pristupovať k oznámeniam</string>
+  <string name="app_ops_labels_access_notifications">Prístup k upozorneniam</string>
   <string name="app_ops_labels_camera">Fotoaparát</string>
   <string name="app_ops_labels_record_audio">Záznam zvuku</string>
   <string name="app_ops_labels_play_audio">Prehrať zvuk</string>
@@ -156,7 +156,7 @@
   <string name="app_ops_labels_ring_volume">Hlasitosť zvonenia</string>
   <string name="app_ops_labels_media_volume">Hlasitosť médií</string>
   <string name="app_ops_labels_alarm_volume">Hlasitosť budíka</string>
-  <string name="app_ops_labels_notification_volume">Hlasitosť oznámenia</string>
+  <string name="app_ops_labels_notification_volume">Hlasitosť upozornení</string>
   <string name="app_ops_labels_bluetooth_volume">Hlasitosť Bluetooth</string>
   <string name="app_ops_labels_keep_awake">Zabrániť zariadeniu prejsť do režimu spánku</string>
   <string name="app_ops_labels_monitor_location">Sledovať polohu</string>
@@ -275,7 +275,7 @@
   <string name="ime_switcher_notify">Ikona výberu metódy vstupu</string>
   <string name="ime_switcher_notify_summary">Zobraziť ikonu výberu metódy vstupu</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
-  <string name="notification_importance_very_low">Žiadne prerušenia v režime celej obrazovky, žiadny náhľad, zvuk alebo vibrácie. Zobraziť v dolnej časti zoznamu oznámenia. Odobrať  z uzamykacej obrazovky.</string>
+  <string name="notification_importance_very_low">Žiadne prerušenia v režime celej obrazovky, žiadny náhľad, zvuk alebo vibrácie. Zobraziť v dolnej časti zoznamu upozornení. Odobrať z obrazovky uzamknutia.</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">Zobraziť ikonu pri používaní stylusu</string>
   <string name="stylus_icon_enabled_summary">Zobraziť ikonu pri vznášaní alebo kreslení pomocou stylusu</string>
