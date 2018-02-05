@@ -233,6 +233,7 @@
   <string name="app_ops_labels_toggle_bluetooth">สลับบลูทูธ</string>
   <string name="app_ops_labels_start_at_boot">เริ่มต้นเมื่อบูต</string>
   <string name="app_ops_labels_toggle_nfc">สลับ NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">สลับข้อมูลโทรศัพท์มือถือ</string>
   <string name="app_ops_labels_superuser">สิทธิผู้ดูแลระบบ</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">อนุญาต</string>

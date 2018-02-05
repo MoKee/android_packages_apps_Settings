@@ -249,6 +249,7 @@
   <string name="app_ops_labels_toggle_bluetooth">הפעל/כבה Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">הפעל בעת אתחול המכשיר</string>
   <string name="app_ops_labels_toggle_nfc">הפעל/כבה NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">הפעל/כבה נתונים סלולריים</string>
   <string name="app_ops_labels_superuser">גישת שורש (Root)</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">אושר</string>

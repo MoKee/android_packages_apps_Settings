@@ -249,6 +249,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth kapcsolása</string>
   <string name="app_ops_labels_start_at_boot">Indítás rendszerbetöltéskor</string>
   <string name="app_ops_labels_toggle_nfc">NFC kapcsolása</string>
+  <string name="app_ops_labels_toggle_mobile_data">Mobilnet váltása</string>
   <string name="app_ops_labels_superuser">Rendszergazda hozzáférés</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Engedélyezett</string>

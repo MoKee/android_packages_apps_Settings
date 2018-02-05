@@ -246,6 +246,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth txandakatu</string>
   <string name="app_ops_labels_start_at_boot">Abioan hasi</string>
   <string name="app_ops_labels_toggle_nfc">NFC txandakatu</string>
+  <string name="app_ops_labels_toggle_mobile_data">Txandakatu datu mugikorrak</string>
   <string name="app_ops_labels_superuser">Root sarbidea</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Baimenduta</string>

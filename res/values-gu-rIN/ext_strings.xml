@@ -232,6 +232,7 @@
   <string name="app_ops_labels_toggle_bluetooth">bluetooth ટૉગલ કરો</string>
   <string name="app_ops_labels_start_at_boot">બૂટ પર શરૂ કરો</string>
   <string name="app_ops_labels_toggle_nfc">NFC ટૉગલ કરો</string>
+  <string name="app_ops_labels_toggle_mobile_data">મોબાઇલ ડેટા ટૉગલ કરો</string>
   <string name="app_ops_labels_superuser">રૂટ ઍક્સેસ</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">અનુમતિ પ્રાપ્ત</string>

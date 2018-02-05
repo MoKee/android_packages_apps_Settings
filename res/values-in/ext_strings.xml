@@ -260,6 +260,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Toggle bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Memulai saat boot</string>
   <string name="app_ops_labels_toggle_nfc">Toggle NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Toggle data seluler</string>
   <string name="app_ops_labels_superuser">Akses root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Di izinkan</string>

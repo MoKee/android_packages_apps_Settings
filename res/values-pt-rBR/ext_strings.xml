@@ -260,6 +260,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Alternar bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Começar na inicialização</string>
   <string name="app_ops_labels_toggle_nfc">Alternar NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Alternar dados móveis</string>
   <string name="app_ops_labels_superuser">Acesso superusuário</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permitido</string>

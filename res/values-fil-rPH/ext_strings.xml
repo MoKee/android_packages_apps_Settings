@@ -254,6 +254,7 @@
   <string name="app_ops_labels_toggle_bluetooth">I-toggle ang bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Simulan sa boot</string>
   <string name="app_ops_labels_toggle_nfc">I-toggle ang NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">I-toggle ang cellular data</string>
   <string name="app_ops_labels_superuser">Access sa root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Pinapayagan</string>

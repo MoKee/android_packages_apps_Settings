@@ -233,6 +233,7 @@
   <string name="app_ops_labels_toggle_bluetooth">புளுடூத்  நிலைமாற்று</string>
   <string name="app_ops_labels_start_at_boot">இயக்கத்தில் தொடங்கு</string>
   <string name="app_ops_labels_toggle_nfc">NFC நிலைமாற்று</string>
+  <string name="app_ops_labels_toggle_mobile_data">மொபைல் தரவு நிலைமாற்று</string>
   <string name="app_ops_labels_superuser">மூல அணுகல்</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">அனுமதிக்கப்பட்டது</string>

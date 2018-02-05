@@ -251,6 +251,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Εναλλαγή bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Έναρξη κατά την εκκίνηση</string>
   <string name="app_ops_labels_toggle_nfc">Εναλλαγή NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Εναλλαγή δεδομένων κινητής τηλεφωνίας</string>
   <string name="app_ops_labels_superuser">Πρόσβαση root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Επιτρέπεται</string>

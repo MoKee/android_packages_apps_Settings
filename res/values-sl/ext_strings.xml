@@ -254,6 +254,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Vklop/izklop Bluetootha</string>
   <string name="app_ops_labels_start_at_boot">Zaganjanje pri zagonu</string>
   <string name="app_ops_labels_toggle_nfc">Vklop/izklop NFC-ja</string>
+  <string name="app_ops_labels_toggle_mobile_data">Preklapljanje mobilnih podatkov</string>
   <string name="app_ops_labels_superuser">Skrbniški dostop</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Dovoljeno</string>

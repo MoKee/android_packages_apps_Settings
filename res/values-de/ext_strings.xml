@@ -254,6 +254,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth ein-/ausschalten</string>
   <string name="app_ops_labels_start_at_boot">Beim Booten starten</string>
   <string name="app_ops_labels_toggle_nfc">NFC ein-/ausschalten</string>
+  <string name="app_ops_labels_toggle_mobile_data">Mobile Daten ein-/ausschalten</string>
   <string name="app_ops_labels_superuser">Root-Zugriff</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Erlaubt</string>

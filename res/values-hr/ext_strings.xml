@@ -247,6 +247,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Upravljati Bluetooth-om</string>
   <string name="app_ops_labels_start_at_boot">Pokreni pri pokretanju</string>
   <string name="app_ops_labels_toggle_nfc">Uključi/isključi NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Uključi/isključi mobilne podatke</string>
   <string name="app_ops_labels_superuser">Root pristup</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Dopušteno</string>

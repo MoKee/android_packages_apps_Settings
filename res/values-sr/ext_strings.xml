@@ -250,6 +250,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Укључивање/искључивање Bluetooth-а</string>
   <string name="app_ops_labels_start_at_boot">Покретање са системом</string>
   <string name="app_ops_labels_toggle_nfc">Укључивање/искључивање NFC-а</string>
+  <string name="app_ops_labels_toggle_mobile_data">Укључивање/искључивање мобилних података</string>
   <string name="app_ops_labels_superuser">Режим суперкорисника</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Дозвољено</string>

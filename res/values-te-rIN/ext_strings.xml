@@ -231,6 +231,7 @@
   <string name="app_ops_labels_toggle_bluetooth">బ్లూటూతును ద్విక్రియ చేయుము</string>
   <string name="app_ops_labels_start_at_boot">బూట్ వద్ద ప్రారంభించుము</string>
   <string name="app_ops_labels_toggle_nfc">NFCను ద్విక్రియ చేయుము</string>
+  <string name="app_ops_labels_toggle_mobile_data">మొబైల్ డేటాను ద్విక్రియ చేయుము</string>
   <string name="app_ops_labels_superuser">మూల ప్రాప్తి</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">అనుమతించబడింది</string>

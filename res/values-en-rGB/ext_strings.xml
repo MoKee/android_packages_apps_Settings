@@ -54,6 +54,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">toggle Bluetooth</string>
   <string name="app_ops_summaries_toggle_mobile_data">toggle mobile data</string>
   <!-- User display names for app ops codes - extension of AOSP -->
+  <string name="app_ops_labels_toggle_mobile_data">Toggle mobile data</string>
   <!-- App ops permissions -->
   <!-- App ops detail -->
   <!-- App ops menu options -->

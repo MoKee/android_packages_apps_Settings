@@ -239,6 +239,7 @@
   <string name="app_ops_labels_toggle_bluetooth">تبديل بلوتوث</string>
   <string name="app_ops_labels_start_at_boot">بدء تشغيل في التمهيد</string>
   <string name="app_ops_labels_toggle_nfc">تبديل NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">تبديل البيانات الخلوية</string>
   <string name="app_ops_labels_superuser">صلاحيات الجذر</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">مسموح به</string>

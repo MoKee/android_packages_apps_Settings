@@ -248,6 +248,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Canviar el bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Inicia a l\'arrancada</string>
   <string name="app_ops_labels_toggle_nfc">Canviar l\'NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Commuta les dades mòbils</string>
   <string name="app_ops_labels_superuser">Accés Root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permès</string>

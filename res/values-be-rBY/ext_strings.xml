@@ -254,6 +254,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Пераключыць bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Запуск падчас загрузкі</string>
   <string name="app_ops_labels_toggle_nfc">Пераключыць NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">пераключыць стан сотавай сеткі</string>
   <string name="app_ops_labels_superuser">Рэжым суперкарыстальніка</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Дазваляць</string>

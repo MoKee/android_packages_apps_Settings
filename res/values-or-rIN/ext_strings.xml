@@ -231,6 +231,7 @@
   <string name="app_ops_labels_toggle_bluetooth">ବ୍ଲୁଟୁଥ୍‍ ଟୋଗଲ୍‍ କରନ୍ତୁ</string>
   <string name="app_ops_labels_start_at_boot">ବୁଟ୍‍ ସମୟରେ ଆରଂଭ କ୍ରନ୍ତୁ</string>
   <string name="app_ops_labels_toggle_nfc">NFC ଟୋଗଲ୍‍ କରନ୍ତୁ</string>
+  <string name="app_ops_labels_toggle_mobile_data">ମୋବାଇଲ୍‍ ଡାଟା ଟୋଗଲ୍‍ କରନ୍ତୁ</string>
   <string name="app_ops_labels_superuser">ରୁଟ୍‍ ଆକ୍‍ସେସ୍‍</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">ଅନୁମୋଦିତ ହୋଇଛି</string>
