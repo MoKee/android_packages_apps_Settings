@@ -231,6 +231,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth টগল কৰক</string>
   <string name="app_ops_labels_start_at_boot">এটা বুট আৰম্ভ কৰক</string>
   <string name="app_ops_labels_toggle_nfc">NFC টগল কৰক</string>
+  <string name="app_ops_labels_toggle_mobile_data">ম\'বাইল ডাটা টগল কৰক</string>
   <string name="app_ops_labels_superuser">ৰুট প্ৰৱেশ কৰক</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">অনুমতি দিয়া হল।</string>

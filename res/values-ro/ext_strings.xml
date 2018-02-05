@@ -245,6 +245,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Comută bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Pornește la boot</string>
   <string name="app_ops_labels_toggle_nfc">Comută NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Comutare date mobile</string>
   <string name="app_ops_labels_superuser">Acces root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permis</string>

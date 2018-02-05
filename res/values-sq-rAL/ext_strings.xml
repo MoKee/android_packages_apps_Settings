@@ -185,6 +185,7 @@
   <string name="app_ops_labels_run_in_background">Puno në sfond</string>
   <string name="app_ops_labels_toggle_bluetooth">Ndiz/fik bluetoothin</string>
   <string name="app_ops_labels_toggle_nfc">Ndiz/fik NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Aktivizo/çaktivizo internetin e celularit</string>
   <string name="app_ops_labels_superuser">Aksesi Root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Lejuar</string>

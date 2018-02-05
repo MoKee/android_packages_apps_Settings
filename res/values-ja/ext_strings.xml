@@ -249,6 +249,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetoothの切り替え</string>
   <string name="app_ops_labels_start_at_boot">ブート時の実行</string>
   <string name="app_ops_labels_toggle_nfc">NFCの切り替え</string>
+  <string name="app_ops_labels_toggle_mobile_data">モバイルデータの切り替え</string>
   <string name="app_ops_labels_superuser">ルートアクセス</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">許可</string>

@@ -241,6 +241,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth til/fra</string>
   <string name="app_ops_labels_start_at_boot">Start ved opstart</string>
   <string name="app_ops_labels_toggle_nfc">NFC til/fra</string>
+  <string name="app_ops_labels_toggle_mobile_data">Slå mobildata til/fra</string>
   <string name="app_ops_labels_superuser">Root-adgang</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Tilladt</string>

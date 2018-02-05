@@ -247,6 +247,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Veksle bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Start ved oppstart</string>
   <string name="app_ops_labels_toggle_nfc">NFC av/på</string>
+  <string name="app_ops_labels_toggle_mobile_data">Veksle mobildata</string>
   <string name="app_ops_labels_superuser">Root-tilgang</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Tillatt</string>

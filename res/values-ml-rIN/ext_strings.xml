@@ -230,6 +230,7 @@
   <string name="app_ops_labels_toggle_bluetooth">ടോഗിള് Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">ബൂട്ടില്‍ അരംഭിക്കുക</string>
   <string name="app_ops_labels_toggle_nfc">NFC ടോഗിൾ</string>
+  <string name="app_ops_labels_toggle_mobile_data">മൊബൈൽ ഡാറ്റ ടോഗിൾ</string>
   <string name="app_ops_labels_superuser">റൂട്ട് പ്രവേശനം</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">അനുവദനീയമായ</string>

@@ -248,6 +248,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Växla Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Starta vid uppstart</string>
   <string name="app_ops_labels_toggle_nfc">Växla NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Växla mobildata</string>
   <string name="app_ops_labels_superuser">Rootåtkomst</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Tillåten</string>

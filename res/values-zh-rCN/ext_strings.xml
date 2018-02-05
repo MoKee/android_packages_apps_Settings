@@ -185,7 +185,10 @@
   <string name="app_ops_summaries_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_summaries_get_accounts">获得帐户</string>
   <string name="app_ops_summaries_run_in_background">在后台运行</string>
+  <string name="app_ops_summaries_accessibility_volume">音频辅助功能类音量</string>
   <string name="app_ops_summaries_read_phone_numbers">读取电话号码</string>
+  <string name="app_ops_summaries_picture_in_picture">使用画中画</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">在前台启动即时应用程序</string>
   <string name="app_ops_summaries_answer_phone_calls">回应呼叫</string>
   <string name="app_ops_summaries_toggle_wifi">切换 WLAN</string>
   <string name="app_ops_summaries_toggle_bluetooth">切换蓝牙</string>
@@ -262,6 +265,7 @@
   <string name="app_ops_labels_toggle_bluetooth">切换蓝牙</string>
   <string name="app_ops_labels_start_at_boot">在开机时启动</string>
   <string name="app_ops_labels_toggle_nfc">切换 NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">切换移动数据</string>
   <string name="app_ops_labels_superuser">Root 授权</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">已允许</string>

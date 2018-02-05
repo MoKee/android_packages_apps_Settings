@@ -248,6 +248,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Ligar/Desligar o bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Iniciar no arranque</string>
   <string name="app_ops_labels_toggle_nfc">Alternar o estado do NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Alternar o estado dos dados móveis</string>
   <string name="app_ops_labels_superuser">Acesso root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permitido</string>

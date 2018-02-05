@@ -246,6 +246,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Trocar bluetooh</string>
   <string name="app_ops_labels_start_at_boot">Iniciar co arranque</string>
   <string name="app_ops_labels_toggle_nfc">Trocar NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Mudar os datos móbeis</string>
   <string name="app_ops_labels_superuser">Acceso root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permitido</string>

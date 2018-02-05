@@ -234,6 +234,7 @@
   <string name="app_ops_labels_toggle_bluetooth">ಬ್ಲೂಟೂತ್ ಟಾಗಲ್ ಮಾಡು</string>
   <string name="app_ops_labels_start_at_boot">ಬೂಟ್ ಆರಂಭಿಸು</string>
   <string name="app_ops_labels_toggle_nfc">NFC ಟಾಗಲ್ ಮಾಡು</string>
+  <string name="app_ops_labels_toggle_mobile_data">ಮೊಬೈಲ್ ಡಾಟಾ ಟಾಗಲ್ ಮಾಡು</string>
   <string name="app_ops_labels_superuser">ರೂಟ್ ಪ್ರವೇಶ</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">ಅನುಮತಿಸಿದೆ</string>

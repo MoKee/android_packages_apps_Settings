@@ -254,6 +254,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Перемикати Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Запуск при завантаженні</string>
   <string name="app_ops_labels_toggle_nfc">Перемикати NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Переключити стільникові дані</string>
   <string name="app_ops_labels_superuser">Root доступ</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Дозволено</string>

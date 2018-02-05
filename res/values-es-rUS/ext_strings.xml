@@ -187,6 +187,9 @@
   <string name="app_ops_summaries_turn_screen_on">encender pantalla</string>
   <string name="app_ops_summaries_get_accounts">obtener cuentas</string>
   <string name="app_ops_summaries_run_in_background">ejecutar en segundo plano</string>
+  <string name="app_ops_summaries_read_phone_numbers">leer números de teléfono</string>
+  <string name="app_ops_summaries_request_install_packages">solicitar instalación de paquetes</string>
+  <string name="app_ops_summaries_answer_phone_calls">contestar llamadas telefónicas</string>
   <string name="app_ops_summaries_toggle_wifi">alternar Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">alternar Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">iniciar en el arranque</string>
@@ -258,10 +261,14 @@
   <string name="app_ops_labels_turn_screen_on">Encender pantalla</string>
   <string name="app_ops_labels_get_accounts">Obtener cuentas</string>
   <string name="app_ops_labels_run_in_background">Ejecutar en segundo plano</string>
+  <string name="app_ops_labels_read_phone_numbers">Leer números de teléfono</string>
+  <string name="app_ops_labels_request_install_packages">Solicitar instalación de paquetes</string>
+  <string name="app_ops_labels_answer_phone_calls">Contestar llamadas telefónicas</string>
   <string name="app_ops_labels_toggle_wifi">Alternar Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Alternar Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Iniciar en el arranque</string>
   <string name="app_ops_labels_toggle_nfc">Alternar NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Alternar datos móviles</string>
   <string name="app_ops_labels_superuser">Acceso de Superusuario</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Permitir</string>

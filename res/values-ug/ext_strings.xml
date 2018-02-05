@@ -233,6 +233,7 @@
   <string name="app_ops_labels_toggle_bluetooth">كۆكچىشنى ئېچىش تاقاش</string>
   <string name="app_ops_labels_start_at_boot">تېلېفون ئېچىلغاندا قوزغىلىش</string>
   <string name="app_ops_labels_toggle_nfc">NFC ئېچىش تاقاش</string>
+  <string name="app_ops_labels_toggle_mobile_data">كۆچمە تورغا ئالماشتۇرۇش</string>
   <string name="app_ops_labels_superuser">Root ھوقۇقى</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">يول قويۇلدى</string>

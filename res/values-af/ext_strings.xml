@@ -241,6 +241,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Wissel bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Begin by stelsel begin</string>
   <string name="app_ops_labels_toggle_nfc">Wissel NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Skakel sellulêre data aan/af</string>
   <string name="app_ops_labels_superuser">\'Root\' toegang</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Toegelaat</string>

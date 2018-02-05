@@ -253,6 +253,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Vaihda Bluetoothin tilaa</string>
   <string name="app_ops_labels_start_at_boot">Avaa käynnistyksessä</string>
   <string name="app_ops_labels_toggle_nfc">Vaihda NFC:n tilaa</string>
+  <string name="app_ops_labels_toggle_mobile_data">Ota mobiilidata käyttöön</string>
   <string name="app_ops_labels_superuser">Root-oikeudet</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Sallittu</string>

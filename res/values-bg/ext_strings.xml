@@ -251,6 +251,7 @@
   <string name="app_ops_labels_toggle_bluetooth">Превключване на блутуут</string>
   <string name="app_ops_labels_start_at_boot">Изпълнява се при стартиране</string>
   <string name="app_ops_labels_toggle_nfc">активиране/деактивиране NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Включване / Изключване на мобилни данни</string>
   <string name="app_ops_labels_superuser">Администраторски достъп</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Позволено</string>
