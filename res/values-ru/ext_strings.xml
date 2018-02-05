@@ -88,10 +88,10 @@
   <string name="app_ops_summaries_notification_volume">громкость уведомлений</string>
   <string name="app_ops_summaries_bluetooth_volume">громкость Bluetooth-устройств</string>
   <string name="app_ops_summaries_keep_awake">активный режим</string>
-  <string name="app_ops_summaries_monitor_location">Отслеживание местоположения</string>
-  <string name="app_ops_summaries_monitor_high_power_location">Высокоточное отслеживание местоположения</string>
+  <string name="app_ops_summaries_monitor_location">отслеживание местоположения</string>
+  <string name="app_ops_summaries_monitor_high_power_location">отслеживание высокоточного местоположения</string>
   <string name="app_ops_summaries_get_usage_stats">получать статистику использования приложений</string>
-  <string name="app_ops_summaries_mute_unmute_microphone">Выключить/включить микрофон</string>
+  <string name="app_ops_summaries_mute_unmute_microphone">выключать/включать микрофон</string>
   <string name="app_ops_summaries_toast_window">отображать всплывающие уведомления</string>
   <string name="app_ops_summaries_project_media">трансляция контента</string>
   <string name="app_ops_summaries_activate_vpn">активация VPN</string>
@@ -104,7 +104,7 @@
   <string name="app_ops_summaries_make_call">позвонить</string>
   <string name="app_ops_summaries_use_fingerprint">использовать отпечаток пальца</string>
   <string name="app_ops_summaries_use_body_sensors">использовать нательные датчики</string>
-  <string name="app_ops_summaries_read_cell_broadcasts">Чтение сообщений сети</string>
+  <string name="app_ops_summaries_read_cell_broadcasts">прочитать сообщения оповещения населения</string>
   <string name="app_ops_summaries_mock_location">предоставить фиктивное местоположение</string>
   <string name="app_ops_summaries_read_external_storage">прочитать данные с внешнего накопителя</string>
   <string name="app_ops_summaries_write_external_storage">записать на внешний накопитель</string>
@@ -115,7 +115,7 @@
   <string name="app_ops_summaries_toggle_bluetooth">переключить состояние Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">запуск при загрузке</string>
   <string name="app_ops_summaries_toggle_nfc">переключить состояние модуля NFC</string>
-  <string name="app_ops_summaries_toggle_mobile_data">Переключение состояния мобильного интернета</string>
+  <string name="app_ops_summaries_toggle_mobile_data">переключить состояние мобильного интернета</string>
   <string name="app_ops_summaries_superuser">root-доступ</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Приблизительное местоположение</string>
