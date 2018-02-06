@@ -35,6 +35,8 @@
   <string name="root_appops_summary">Vizualizați și controlați regulile root-ului</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
   <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Gesturi ecran tactil</string>
+  <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe ecran pentru acţiuni rapide</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
   <!-- Whether the keyguard will directly show the password entry -->
@@ -49,6 +51,7 @@
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Afișează vizualizatorul muzicii</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Afișează coperta artistică a piesei</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Alegeți dimensiunea modelului</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -103,14 +106,18 @@
   <string name="sub_deactivate_failed">Dezactivarea a eșuat.</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Locație</string>
+  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Mesagerie</string>
+  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Dispozitiv</string>
   <string name="app_ops_categories_run_in_background">Rulați în fundal</string>
+  <string name="app_ops_categories_bootup">Pornire</string>
   <string name="app_ops_categories_su">Acces root</string>
   <string name="app_ops_categories_other">Altele</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">locație aspră</string>
   <string name="app_ops_summaries_fine_location">locație fină</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrare</string>
   <string name="app_ops_summaries_read_contacts">citește contactele</string>
   <string name="app_ops_summaries_modify_contacts">modifică contactele</string>
@@ -134,6 +141,7 @@
   <string name="app_ops_summaries_modify_settings">modifică setările</string>
   <string name="app_ops_summaries_draw_on_top">trage deasupra</string>
   <string name="app_ops_summaries_access_notifications">accesare notificări</string>
+  <string name="app_ops_summaries_camera">cameră</string>
   <string name="app_ops_summaries_record_audio">înregistrare audio</string>
   <string name="app_ops_summaries_play_audio">redare audio</string>
   <string name="app_ops_summaries_read_clipboard">citește clipboard</string>
@@ -180,6 +188,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Locație aspră</string>
   <string name="app_ops_labels_fine_location">Locație fină</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrează</string>
   <string name="app_ops_labels_read_contacts">Citește contactele</string>
   <string name="app_ops_labels_modify_contacts">modifică contactele</string>
@@ -256,6 +265,7 @@
   <string name="app_ops_allowed_count">Permis <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Respins <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Permis <xliff:g id="count">%1$s</xliff:g>, respins <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_no_blockable_permissions">Nicio permisiune disponibilă pentru a fi blocată</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Arată aplicațiile utilizatorului</string>
   <string name="app_ops_show_system_apps">Arată aplicații preinstalate</string>
