@@ -19,19 +19,47 @@
   <string name="mk_version">Versiune MoKee</string>
   <string name="mk_version_default">Necunoscut</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">Ești la <xliff:g id="step_count">%1$d</xliff:g> pas distanță de a activa opțiunile de dezvoltator.</item>
+    <item quantity="few">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași de a deveni dezvoltator.</item>
+    <item quantity="other">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași de a deveni dezvoltator.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Ai devenit dezvoltator!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Sunteți deja dezvoltator.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Îngheţarea sau eliminarea MoKee Center va afecta serviciile de sistem, vă rugăm restabiliți și încercați din nou.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Suprapuneri de substrat</string>
+  <string name="menu_show_substratum">Arată suprapuneri</string>
+  <string name="menu_hide_substratum">Ascundeţi suprapunerile</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Suprapuneri substrat pictograme</string>
+  <string name="menu_show_substratum_icons">Arată suprapuneri pictograme</string>
+  <string name="menu_hide_substratum_icons">Ascunde suprapuneri pictograme</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forțează autorizarea fiecărei aplicații de temă</string>
+  <string name="force_authorize_substratum_packages_summary">Permiteţi aplicații teme din surse necunoscute</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Bandă frecvență Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Indicați intervalul de frecvență de operare</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Problemă la setarea benzii de frecvență.</string>
+  <string name="wifi_setting_frequency_band_auto">Automat</string>
+  <string name="wifi_setting_frequency_band_5G">doar 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">doar 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Captură de ecran cu trei degete</string>
+  <string name="three_finger_screenshot_summary">Glisați în jos cu trei degete pe ecran pentru a face un screenshot</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Arată viteza de încărcare</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Arată utilizarea memoriei în recente</string>
+  <string name="recents_membar_pos_top">Sus</string>
+  <string name="recents_membar_pos_bottom">Jos</string>
+  <string name="recents_membar_pos_hidden">Ascuns</string>
+  <string name="apps_no_data">Fără aplicații</string>
 </resources>

@@ -286,8 +286,8 @@
   <string name="enable_adb_cm">Ladenie systému Android</string>
   <string name="enable_adb_summary_cm">Povoliť rozhranie Android Debug Bridge (ADB)</string>
   <!-- Android debugging notification -->
-  <string name="adb_notify">Oznámenie o ladení</string>
-  <string name="adb_notify_summary">Zobraziť oznámenie, ak je povolené ladenie cez USB alebo sieť</string>
+  <string name="adb_notify">Oznámenia o ladení</string>
+  <string name="adb_notify_summary">Zobraziť upozornenie, ak je povolené ladenie cez USB alebo sieť</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">ADB cez sieť</string>
   <string name="adb_over_network_summary">Povoliť TCP/IP ladenie cez sieť (Wi-Fi alebo USB sieť). Toto nastavenie bude obnovené po reštarte</string>
@@ -337,7 +337,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
-  <string name="tuner_full_importance_settings">Ovládacie prvky rozšíreného oznámenia</string>
+  <string name="tuner_full_importance_settings">Ovládacie prvky rozšíreného upozornenia</string>
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
   <!-- Fingerprint sensor locations -->
@@ -356,7 +356,7 @@
   <string name="wake_when_plugged_or_unplugged_summary">Zapnúť obrazovku pri pripojení alebo odpojení zdroja nabíjania</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Plávajúce upozornenia</string>
-  <string name="heads_up_notifications_enabled_summary">Zobraziť prioritné oznámenia v malom plávajúcom okne</string>
+  <string name="heads_up_notifications_enabled_summary">Zobraziť prioritné upozornenia v malom plávajúcom okne</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Iné</string>
   <!-- Wi-Fi tethering inactivity timeout -->

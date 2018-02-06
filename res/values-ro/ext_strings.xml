@@ -39,13 +39,17 @@
   <string name="build_date">Dată compilare</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Locație</string>
+  <string name="app_ops_categories_personal">Personal</string>
   <string name="app_ops_categories_messaging">Mesagerie</string>
+  <string name="app_ops_categories_media">Media</string>
   <string name="app_ops_categories_device">Dispozitiv</string>
   <string name="app_ops_categories_background">Fundal</string>
+  <string name="app_ops_categories_bootup">Pornire</string>
   <string name="app_ops_categories_su">Acces root</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">locație aspră</string>
   <string name="app_ops_summaries_fine_location">locație fină</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">vibrare</string>
   <string name="app_ops_summaries_read_contacts">citește contactele</string>
   <string name="app_ops_summaries_modify_contacts">modifică contactele</string>
@@ -69,6 +73,7 @@
   <string name="app_ops_summaries_modify_settings">modifică setările</string>
   <string name="app_ops_summaries_draw_on_top">trage deasupra</string>
   <string name="app_ops_summaries_access_notifications">accesare notificări</string>
+  <string name="app_ops_summaries_camera">cameră</string>
   <string name="app_ops_summaries_record_audio">înregistrare audio</string>
   <string name="app_ops_summaries_play_audio">redare audio</string>
   <string name="app_ops_summaries_read_clipboard">citește clipboard</string>
@@ -115,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Locație aspră</string>
   <string name="app_ops_labels_fine_location">Locație fină</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Vibrează</string>
   <string name="app_ops_labels_read_contacts">Citește contactele</string>
   <string name="app_ops_labels_modify_contacts">modifică contactele</string>
@@ -191,6 +197,7 @@
   <string name="app_ops_allowed_count">Permis <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Respins <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Permis <xliff:g id="count">%1$s</xliff:g>, respins <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_no_blockable_permissions">Nicio permisiune disponibilă pentru a fi blocată</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Arată aplicațiile utilizatorului</string>
   <string name="app_ops_show_system_apps">Arată aplicații preinstalate</string>
@@ -232,7 +239,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Afișează vizualizatorul muzicii</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Afișează coperta artistică a piesei</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Dublă apăsare oriunde pentru a opri ecranul</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Model de resetare</string>
   <string name="lockpattern_settings_reset_summary">Introduceți contul de email primar și parola asociată pentru a reseta modelul de blocare</string>
@@ -300,10 +309,13 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">evenimente</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">toți apelanții</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">apelanții selectați</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">apelanți care revin</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">toate mesajele</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">mesajele selectate</string>
   <!-- Notification sound timeout -->
@@ -323,6 +335,7 @@
   <string name="sim_mobile_network_settings_category_title">Setări rețea mobilă</string>
   <string name="sim_mobile_network_settings_title">Setări cartelă SIM %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Controale de putere a notificărilor</string>
   <!-- Format string for fingerprint location message -->
@@ -342,6 +355,7 @@
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
   <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Atenționări</string>
   <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Altele</string>
@@ -390,7 +404,14 @@
   <string name="sub_deactivate_failed">Dezactivarea a eșuat.</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">Cap: %1$s W/kg</string>
+  <string name="maximum_body_level">Corp: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Operatori de rețea</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Protecție burn-in a ecranului</string>
+  <string name="burnin_protection_summary">Mutați periodic elementele afișate permanent pe ecran pentru a evita uzura excesivă în acea zonă</string>
 </resources>

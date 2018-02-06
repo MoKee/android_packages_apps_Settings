@@ -50,7 +50,7 @@
   <string name="app_ops_summaries_coarse_location">vị trí gần đúng</string>
   <string name="app_ops_summaries_fine_location">vị trí chính xác</string>
   <string name="app_ops_summaries_gps">GPS</string>
-  <string name="app_ops_summaries_vibrate">rung</string>
+  <string name="app_ops_summaries_vibrate">Rung</string>
   <string name="app_ops_summaries_read_contacts">đọc số liên hệ</string>
   <string name="app_ops_summaries_modify_contacts">sửa đổi số liên hệ</string>
   <string name="app_ops_summaries_read_call_log">đọc nhật ký cuộc gọi</string>
