@@ -261,6 +261,8 @@
   <string name="app_ops_labels_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_labels_get_accounts">获得帐户</string>
   <string name="app_ops_labels_run_in_background">在后台运行</string>
+  <string name="app_ops_labels_read_phone_numbers">读取电话号码</string>
+  <string name="app_ops_labels_request_install_packages">请求安装软件包</string>
   <string name="app_ops_labels_toggle_wifi">切换 WLAN</string>
   <string name="app_ops_labels_toggle_bluetooth">切换蓝牙</string>
   <string name="app_ops_labels_start_at_boot">在开机时启动</string>

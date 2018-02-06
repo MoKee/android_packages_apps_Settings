@@ -25,7 +25,7 @@
   <string name="advanced_reboot_summary">Показывать дополнительные опции перезагрузки устройства (в режим загрузчика или восстановления) в меню кнопки питания</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Root-доступ</string>
-  <string name="root_access_warning_title">Разрешить использование cуперпользователя?</string>
+  <string name="root_access_warning_title">Предоставить права суперпользователя?</string>
   <string name="root_access_warning_message">Использование приложениями прав суперпользователя может быть крайне опасным и ставит под угрозу безопасность вашего устройства!</string>
   <string name="root_access_none">Отключено</string>
   <string name="root_access_apps">Только для приложений</string>
@@ -133,7 +133,7 @@
   <string name="app_ops_summaries_modify_call_log">изменение журнала вызовов</string>
   <string name="app_ops_summaries_read_calendar">чтение данных календаря</string>
   <string name="app_ops_summaries_modify_calendar">изменение календаря</string>
-  <string name="app_ops_summaries_wifi_scan">Сканирование Wi-Fi</string>
+  <string name="app_ops_summaries_wifi_scan">сканирование Wi-Fi</string>
   <string name="app_ops_summaries_notification">уведомления/всплывающие уведомления</string>
   <string name="app_ops_summaries_cell_scan">поиск мобильных сетей</string>
   <string name="app_ops_summaries_call_phone">телефонный вызов</string>
@@ -144,8 +144,8 @@
   <string name="app_ops_summaries_receive_mms">получение MMS</string>
   <string name="app_ops_summaries_receive_wap_push">получение сообщений WAP-push</string>
   <string name="app_ops_summaries_send_sms">отправка SMS</string>
-  <string name="app_ops_summaries_read_icc_sms">чтение SMS с SIM-карты</string>
-  <string name="app_ops_summaries_write_icc_sms">запись SMS на SIM-карту</string>
+  <string name="app_ops_summaries_read_icc_sms">чтение ICC SMS</string>
+  <string name="app_ops_summaries_write_icc_sms">запись ICC SMS</string>
   <string name="app_ops_summaries_modify_settings">изменение настроек</string>
   <string name="app_ops_summaries_draw_on_top">отображение поверх других элементов</string>
   <string name="app_ops_summaries_access_notifications">доступ к уведомлениям</string>
@@ -264,7 +264,7 @@
   <string name="app_ops_labels_turn_screen_on">Включение экрана</string>
   <string name="app_ops_labels_get_accounts">Получение аккаунтов</string>
   <string name="app_ops_labels_run_in_background">Работать в фоновом режиме</string>
-  <string name="app_ops_labels_accessibility_volume">изменять уровень громкости</string>
+  <string name="app_ops_labels_accessibility_volume">Доступ к изменению громкости</string>
   <string name="app_ops_labels_read_phone_numbers">Чтение телефонных номеров</string>
   <string name="app_ops_labels_request_install_packages">Разрешение на установку пакетов</string>
   <string name="app_ops_labels_picture_in_picture">Использование картинки в картинке</string>
