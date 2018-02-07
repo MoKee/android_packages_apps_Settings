@@ -19,7 +19,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Launch Dev Tools -->
-  <string name="development_tools_title">Công cụ phát triển</string>
+  <string name="development_tools_title">Công cụ nhà phát triển</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Quyền truy cập root</string>
   <string name="root_access_warning_title">Cho phép quyền truy cập root?</string>

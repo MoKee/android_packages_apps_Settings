@@ -57,5 +57,9 @@
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Паказаць хуткасць зарадкі</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Паказваць выкарыстанне памяці ў Нядаўніх</string>
+  <string name="recents_membar_pos_top">Уверсе</string>
+  <string name="recents_membar_pos_bottom">Унізе</string>
   <string name="recents_membar_pos_hidden">Схаваць</string>
+  <string name="apps_no_data">Няма праграм</string>
 </resources>
