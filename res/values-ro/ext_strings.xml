@@ -22,6 +22,7 @@
   <string name="development_tools_title">Unelte de dezvoltare</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Repornire avansată</string>
+  <string name="advanced_reboot_summary">La deblocare, se includ opțiuni în meniul power pentru repornire în modurile recovery sau bootloader</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Acces root</string>
   <string name="root_access_warning_title">Permite acces la root?</string>
@@ -34,17 +35,23 @@
   <string name="root_appops_title">Gestionați accesul root</string>
   <string name="root_appops_summary">Vizualizați și controlați regulile root-ului</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Atingeți ecranul de blocare pentru sleep</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare sau ecranul de blocare pentru a opri ecranul</string>
   <!-- Touchscreen gesture settings -->
   <string name="touchscreen_gesture_settings_title">Gesturi ecran tactil</string>
   <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe ecran pentru acţiuni rapide</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Previne trezirea accidentală</string>
+  <string name="proximity_wake_summary">Verificaţi senzorul de proximitate înainte de trezirea ecranului</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Arată direct introducere parolă</string>
+  <string name="lock_directly_show_password_summary">Treci peste glisarea pentru deblocare și începe imediat introducerea parolei</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Arată direct vizualizarea modelului</string>
+  <string name="lock_directly_show_pattern_summary">Treci peste glisarea pentru deblocare și începe imediat introducerea modelului</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Arată direct introducere PIN</string>
+  <string name="lock_directly_show_pin_summary">Treci peste glisarea pentru deblocare și începe imediat introducerea PIN-ului</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Amestecă așezarea în pagină</string>
   <string name="unlock_scramble_pin_layout_summary">Amestecă așezarea în pagină a ecranului de PIN atunci când se deblochează aparatul</string>
@@ -86,6 +93,7 @@
   <string name="increasing_ring_min_volume_title">Volum inițial</string>
   <string name="increasing_ring_ramp_up_time_title">Timp de creştere a volumului</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Leagă volumele de apel &amp; notificare</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Aplicații pornite la boot</string>
   <!-- Manual provisioning support -->
@@ -179,6 +187,12 @@
   <string name="app_ops_summaries_turn_screen_on">pornește ecranul</string>
   <string name="app_ops_summaries_get_accounts">obține conturi</string>
   <string name="app_ops_summaries_run_in_background">rulați în fundal</string>
+  <string name="app_ops_summaries_accessibility_volume">volum audio accesibilitate</string>
+  <string name="app_ops_summaries_read_phone_numbers">citește numerele de telefon</string>
+  <string name="app_ops_summaries_request_install_packages">solicită instalarea pachetelor</string>
+  <string name="app_ops_summaries_picture_in_picture">utilizează imagine în imagine</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">începe aplicația instantanee în prim-plan</string>
+  <string name="app_ops_summaries_answer_phone_calls">răspunde la apeluri</string>
   <string name="app_ops_summaries_toggle_wifi">comută Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">comută bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">pornește la boot</string>
@@ -250,6 +264,12 @@
   <string name="app_ops_labels_turn_screen_on">Pornește ecranul</string>
   <string name="app_ops_labels_get_accounts">Obține conturi</string>
   <string name="app_ops_labels_run_in_background">Rulați în fundal</string>
+  <string name="app_ops_labels_accessibility_volume">Volum audio accesibilitate</string>
+  <string name="app_ops_labels_read_phone_numbers">Citește numerele de telefon</string>
+  <string name="app_ops_labels_request_install_packages">Solicită instalarea pachetelor</string>
+  <string name="app_ops_labels_picture_in_picture">Utilizează imagine în imagine</string>
+  <string name="app_ops_labels_instant_app_start_foreground">Începe aplicația instantanee în prim-plan</string>
+  <string name="app_ops_labels_answer_phone_calls">Răspunde la apeluri</string>
   <string name="app_ops_labels_toggle_wifi">Comută Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Comută bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Pornește la boot</string>
