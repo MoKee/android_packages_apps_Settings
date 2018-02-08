@@ -55,6 +55,11 @@
             android:key="battery_saver_summary"
             android:title="@string/battery_saver"/>
 
+        <!-- Custom perf profiles settings -->
+        <org.mokee.internal.mkparts.MKPartsPreference
+            android:key="perf_profile_settings"
+            mk:replacesKey="battery_saver_summary" />
+
         <SwitchPreference
             android:key="battery_percentage"
             android:title="@string/battery_percentage"
