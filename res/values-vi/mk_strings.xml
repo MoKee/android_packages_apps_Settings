@@ -23,11 +23,11 @@
     <item quantity="other">Bạn đang <xliff:g id="step_count">%1$d </xliff:g> từng bước cho phép cài đặt nhà phát triển.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Bạn đã kích hoạt cài đặt nhà phát triển!</string>
+  <string name="show_dev_on_mk">Đã kích hoạt cài đặt nhà phát triển!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_mk">Không cần thiết, bạn đã có cho phép cài đặt nhà phát triển.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Trung tâm MoKee sẽ ảnh hưởng đến dịch vụ hệ thống, hãy phục hồi và thử lại.</string>
+  <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Cập nhật sẽ ảnh hưởng đến dịch vụ hệ thống, hãy phục hồi và thử lại.</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Các lớp phủ lớp dưới</string>
   <string name="menu_show_substratum">Hiển thị các lớp phủ</string>
