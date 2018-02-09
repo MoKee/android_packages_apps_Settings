@@ -39,12 +39,16 @@
   <string name="touchscreen_gesture_settings_summary">Выкананне розных сэнсарных жэстаў на экране для хуткіх дзеянняў</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне</string>
+  <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Адразу прапанаваць увод пароля</string>
+  <string name="lock_directly_show_password_summary">Прапускаць правядзенне пальцам уверх для разблакоўкі экрана і адразу ж пераходзіць да ўводу пароля</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Адразу прапанаваць увод графічнага ключа</string>
+  <string name="lock_directly_show_pattern_summary">Прапускаць правядзенне пальцам уверх для разблакоўкі экрана і адразу ж пераходзіць да рысоўку графічнага ключа</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Адразу прапанаваць увод PIN-кода</string>
+  <string name="lock_directly_show_pin_summary">Прапускаць правядзенне пальцам уверх для разблакоўкі экрана і адразу ж пераходзіць да ўводу PIN-кода</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Змешваць кнопкі</string>
   <string name="unlock_scramble_pin_layout_summary">Перастаўляць кнопкі ўводу PIN-кода ў выпадковым парадку</string>
@@ -86,6 +90,7 @@
   <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
   <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Звязаць гучнасць рынгтону і апавяшчэнняў</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Запушчана пры ўключэнні прылады</string>
   <!-- Manual provisioning support -->
@@ -179,6 +184,12 @@
   <string name="app_ops_summaries_turn_screen_on">уключыць экран</string>
   <string name="app_ops_summaries_get_accounts">атрымаць запісы</string>
   <string name="app_ops_summaries_run_in_background">працуе ў фоне</string>
+  <string name="app_ops_summaries_accessibility_volume">змяняць узровень гучнасці</string>
+  <string name="app_ops_summaries_read_phone_numbers">чытаць тэлефонныя нумары</string>
+  <string name="app_ops_summaries_request_install_packages">запыт усталявання пакета</string>
+  <string name="app_ops_summaries_picture_in_picture">выкарыстоўваць карцінка ў карцінцы</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">запусціць імгненную праграму</string>
+  <string name="app_ops_summaries_answer_phone_calls">адказваць на тэлефонныя званкі</string>
   <string name="app_ops_summaries_toggle_wifi">пераключыць Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">пераключыць bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">запуск падчас загрузкі</string>
@@ -250,6 +261,7 @@
   <string name="app_ops_labels_turn_screen_on">Уключыць экран</string>
   <string name="app_ops_labels_get_accounts">Атрымаць запісы</string>
   <string name="app_ops_labels_run_in_background">Працаваць ў схаваным варыянце</string>
+  <string name="app_ops_labels_accessibility_volume">Доступ да змены гучнасці</string>
   <string name="app_ops_labels_toggle_wifi">Пераключыць Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Пераключыць bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Запуск падчас загрузкі</string>

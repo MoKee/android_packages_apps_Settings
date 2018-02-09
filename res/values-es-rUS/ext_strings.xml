@@ -187,8 +187,11 @@
   <string name="app_ops_summaries_turn_screen_on">encender pantalla</string>
   <string name="app_ops_summaries_get_accounts">obtener cuentas</string>
   <string name="app_ops_summaries_run_in_background">ejecutar en segundo plano</string>
+  <string name="app_ops_summaries_accessibility_volume">volumen de accesibilidad del audio</string>
   <string name="app_ops_summaries_read_phone_numbers">leer números de teléfono</string>
   <string name="app_ops_summaries_request_install_packages">solicitar instalación de paquetes</string>
+  <string name="app_ops_summaries_picture_in_picture">usar picture in picture</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">iniciar aplicación instantánea en primer plano</string>
   <string name="app_ops_summaries_answer_phone_calls">contestar llamadas telefónicas</string>
   <string name="app_ops_summaries_toggle_wifi">alternar Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">alternar Bluetooth</string>
@@ -261,8 +264,11 @@
   <string name="app_ops_labels_turn_screen_on">Encender pantalla</string>
   <string name="app_ops_labels_get_accounts">Obtener cuentas</string>
   <string name="app_ops_labels_run_in_background">Ejecutar en segundo plano</string>
+  <string name="app_ops_labels_accessibility_volume">Volumen de accesibilidad del audio</string>
   <string name="app_ops_labels_read_phone_numbers">Leer números de teléfono</string>
   <string name="app_ops_labels_request_install_packages">Solicitar instalación de paquetes</string>
+  <string name="app_ops_labels_picture_in_picture">Usar picture in picture</string>
+  <string name="app_ops_labels_instant_app_start_foreground">Iniciar aplicación instantánea en primer plano</string>
   <string name="app_ops_labels_answer_phone_calls">Contestar llamadas telefónicas</string>
   <string name="app_ops_labels_toggle_wifi">Alternar Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Alternar Bluetooth</string>
