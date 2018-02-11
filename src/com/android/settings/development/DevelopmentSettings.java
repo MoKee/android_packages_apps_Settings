@@ -108,7 +108,7 @@ import com.android.settingslib.drawer.CategoryKey;
 
 import mokee.providers.MKSettings;
 
-import org.lineageos.internal.util.FileUtils;
+import org.mokee.internal.util.FileUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
