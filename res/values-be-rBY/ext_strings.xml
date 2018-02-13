@@ -22,6 +22,7 @@
   <string name="development_tools_title">Прылады распрацоўкі</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
+  <string name="advanced_reboot_summary">Паказваць дадатковыя опцыі перазагрузкі прылады (у рэжым загрузніка або аднаўлення) у меню кнопкі сілкавання</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Рэжым суперкарыстальніка</string>
   <string name="root_access_warning_title">Дазволіць рэжым Суперкарыстальніка?</string>
@@ -34,6 +35,8 @@
   <string name="root_appops_title">Правы суперкарыстальніка</string>
   <string name="root_appops_summary">Прагляд і кіраванне дазволамі для правоў суперкарыстальніка</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Націсніце для сну</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаваны экран, каб перавесці прыладу ў спячы рэжым</string>
   <!-- Touchscreen gesture settings -->
   <string name="touchscreen_gesture_settings_title">Сэнсарныя жэсты</string>
   <string name="touchscreen_gesture_settings_summary">Выкананне розных сэнсарных жэстаў на экране для хуткіх дзеянняў</string>
@@ -262,6 +265,11 @@
   <string name="app_ops_labels_get_accounts">Атрымаць запісы</string>
   <string name="app_ops_labels_run_in_background">Працаваць ў схаваным варыянце</string>
   <string name="app_ops_labels_accessibility_volume">Доступ да змены гучнасці</string>
+  <string name="app_ops_labels_read_phone_numbers">Чытаць тэлефонныя нумары</string>
+  <string name="app_ops_labels_request_install_packages">Запыт усталявання пакета</string>
+  <string name="app_ops_labels_picture_in_picture">Выкарыстоўваць карцінка ў карцінцы</string>
+  <string name="app_ops_labels_instant_app_start_foreground">Імгненны запуск праграм</string>
+  <string name="app_ops_labels_answer_phone_calls">Адказваць на тэлефонныя званкі</string>
   <string name="app_ops_labels_toggle_wifi">Пераключыць Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Пераключыць bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Запуск падчас загрузкі</string>

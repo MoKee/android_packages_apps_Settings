@@ -93,6 +93,7 @@
   <string name="increasing_ring_min_volume_title">初始音量</string>
   <string name="increasing_ring_ramp_up_time_title">增强时间</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">链接铃声和通知的音量</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">开机时启动的应用</string>
   <!-- Manual provisioning support -->
@@ -263,9 +264,12 @@
   <string name="app_ops_labels_turn_screen_on">点亮屏幕</string>
   <string name="app_ops_labels_get_accounts">获得帐户</string>
   <string name="app_ops_labels_run_in_background">在后台运行</string>
+  <string name="app_ops_labels_accessibility_volume">音频辅助功能类音量</string>
   <string name="app_ops_labels_read_phone_numbers">读取电话号码</string>
   <string name="app_ops_labels_request_install_packages">请求安装软件包</string>
   <string name="app_ops_labels_picture_in_picture">使用画中画</string>
+  <string name="app_ops_labels_instant_app_start_foreground">在前台启动即时应用</string>
+  <string name="app_ops_labels_answer_phone_calls">应答电话呼叫</string>
   <string name="app_ops_labels_toggle_wifi">切换 WLAN</string>
   <string name="app_ops_labels_toggle_bluetooth">切换蓝牙</string>
   <string name="app_ops_labels_start_at_boot">在开机时启动</string>
