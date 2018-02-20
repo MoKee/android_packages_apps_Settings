@@ -49,6 +49,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">приблизително местоположение</string>
   <string name="app_ops_summaries_fine_location">точно местоположение</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">вибрира</string>
   <string name="app_ops_summaries_read_contacts">Прочетете контакти</string>
   <string name="app_ops_summaries_modify_contacts">Промяна на контакти</string>
@@ -119,6 +120,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Приблизително местоположение</string>
   <string name="app_ops_labels_fine_location">точно местоположение</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Вибрация</string>
   <string name="app_ops_labels_read_contacts">Прочетете контакти</string>
   <string name="app_ops_labels_modify_contacts">Промяна на контакти</string>
@@ -236,7 +238,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Двойно почукване върху произволно място на екрана, за да заспи</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Възстановяване на шаблона</string>
   <string name="lockpattern_settings_reset_summary">Въведете основния имейл акаунт и свързаната с него парола за нулиране заключването на шаблона</string>
@@ -304,10 +308,12 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">събития</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">всички повиквания</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">избрани повиквания</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">всички съобщения</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">избрани съобщения</string>
   <!-- Notification sound timeout -->
@@ -327,6 +333,7 @@
   <string name="sim_mobile_network_settings_category_title">Настройки на мобилните мрежи</string>
   <string name="sim_mobile_network_settings_title">Настройки на СИМ карта %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <string name="tuner_full_importance_settings">Разширени настройки на уведомления</string>
   <!-- Format string for fingerprint location message -->
@@ -397,5 +404,8 @@
   <!-- SAR information -->
   <!-- IC Codes -->
   <!-- Label for settings shortcut: carrier selection -->
+  <string name="shortcut_carrier_title">Мрежови оператори</string>
   <!-- Burn in protection -->
+  <string name="burnin_protection_title">Защита на екрана от прегаряне</string>
+  <string name="burnin_protection_summary">Периодично преместете елементи, които постоянно се показват на екрана, за да избегнете изгарянето на екрана в тази област</string>
 </resources>

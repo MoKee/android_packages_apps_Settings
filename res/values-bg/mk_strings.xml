@@ -42,11 +42,22 @@
   <string name="force_authorize_substratum_packages_summary">Позволи приложения за теми от непознати източници</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi честотна лента</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Задайте честотна лента за работа</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Възникна проблем при настройката на честотна лента.</string>
   <string name="wifi_setting_frequency_band_auto">Авт.</string>
+  <string name="wifi_setting_frequency_band_5G">5 GHz само</string>
+  <string name="wifi_setting_frequency_band_2G">2.4 GHz само</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">Снимка на екрана с три пръста</string>
+  <string name="three_finger_screenshot_summary">Плъзнете надолу с три пръста за да направите снимка на екрана</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Покажи скорост на зареждането</string>
   <!-- Memory bar -->
+  <string name="recents_membar_pos_top">Най-отгоре</string>
+  <string name="recents_membar_pos_bottom">Най-отдолу</string>
   <string name="recents_membar_pos_hidden">Скрит</string>
+  <string name="apps_no_data">Няма приложения</string>
 </resources>
