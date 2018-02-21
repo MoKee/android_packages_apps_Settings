@@ -51,6 +51,7 @@
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Изберете размера на шаблона</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -116,6 +117,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">приблизително местоположение</string>
   <string name="app_ops_summaries_fine_location">точно местоположение</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">вибрира</string>
   <string name="app_ops_summaries_read_contacts">Прочетете контакти</string>
   <string name="app_ops_summaries_modify_contacts">Промяна на контакти</string>
@@ -186,6 +188,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Приблизително местоположение</string>
   <string name="app_ops_labels_fine_location">точно местоположение</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Вибрация</string>
   <string name="app_ops_labels_read_contacts">Прочетете контакти</string>
   <string name="app_ops_labels_modify_contacts">Промяна на контакти</string>
