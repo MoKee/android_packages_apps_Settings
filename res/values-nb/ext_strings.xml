@@ -269,5 +269,4 @@
   <string name="app_ops_reset_confirm_title">Bekreft tilbakestilling av tellere</string>
   <string name="app_ops_reset_confirm_mesg">Er du sikker på at du vil tilbakestille tellerne?</string>
   <string name="ok">Ok</string>
-  <!-- LineageOS legal -->
 </resources>

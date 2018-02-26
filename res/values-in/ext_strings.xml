@@ -289,5 +289,4 @@
   <string name="app_ops_reset_confirm_title">Pastikan untuk mengatur kembali gerai</string>
   <string name="app_ops_reset_confirm_mesg">Apakah Anda yakin ingin mengatur ulang penghitung?</string>
   <string name="ok">Oke</string>
-  <!-- LineageOS legal -->
 </resources>

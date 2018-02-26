@@ -302,5 +302,5 @@
   <string name="app_ops_reset_confirm_title">Conferma ripristino contatori</string>
   <string name="app_ops_reset_confirm_mesg">Sei sicuro di voler reimpostare i contatori?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">Sicurezza e privacy</string>
 </resources>

@@ -186,5 +186,4 @@
   <string name="app_ops_reset_confirm_title">काउंटर रीसेट की पुष्टि करें</string>
   <string name="app_ops_reset_confirm_mesg">क्या आपको पूरा यकीन है कि आप काउंटरों को रीसेट करना चाहते हैं?</string>
   <string name="ok">ठीक है</string>
-  <!-- LineageOS legal -->
 </resources>

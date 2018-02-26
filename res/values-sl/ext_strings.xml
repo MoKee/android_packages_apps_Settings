@@ -304,5 +304,4 @@
   <string name="app_ops_reset_confirm_title">Potrdi ponastavitev števcev</string>
   <string name="app_ops_reset_confirm_mesg">Ali res želite ponastaviti števce?</string>
   <string name="ok">V redu</string>
-  <!-- LineageOS legal -->
 </resources>

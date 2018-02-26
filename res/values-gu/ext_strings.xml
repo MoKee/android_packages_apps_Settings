@@ -256,5 +256,4 @@
   <string name="app_ops_reset_confirm_title">કાઉન્ટર રિસેટની પુષ્ટિ કરો</string>
   <string name="app_ops_reset_confirm_mesg">શું તમને ખાતરી છે કે તમારે કાઉન્ટર રિસેટ કરવા છે?</string>
   <string name="ok">ઑકે</string>
-  <!-- LineageOS legal -->
 </resources>

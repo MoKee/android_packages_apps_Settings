@@ -208,5 +208,4 @@
   <string name="app_ops_both_count">Lejuar <xliff:g id="count">%1$s</xliff:g>, refuzuar <xliff:g id="count">%2$s</xliff:g></string>
   <!-- App ops menu options -->
   <string name="app_ops_reset_confirm_mesg">A jeni të sigurt që doni të rifilloni numeratorët?</string>
-  <!-- LineageOS legal -->
 </resources>

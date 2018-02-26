@@ -256,5 +256,4 @@
   <string name="app_ops_reset_confirm_title">ยืนยันการรีเซ็ตการนับ</string>
   <string name="app_ops_reset_confirm_mesg">แน่ใจหรือไม่ว่าต้องการรีเซ็ตการนับ</string>
   <string name="ok">ตกลง</string>
-  <!-- LineageOS legal -->
 </resources>

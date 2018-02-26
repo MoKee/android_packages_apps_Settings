@@ -304,5 +304,5 @@
   <string name="app_ops_reset_confirm_title">Potvrdit nulování počítadel</string>
   <string name="app_ops_reset_confirm_mesg">Jste si jist, že chcete vynulovat čítače?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">Bezpečnost a soukromí</string>
 </resources>

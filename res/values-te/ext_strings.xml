@@ -255,5 +255,4 @@
   <string name="app_ops_reset_confirm_title">కౌంటర్ల రీసెట్ ను నిర్ధారించుము</string>
   <string name="app_ops_reset_confirm_mesg">మీరు కౌంటర్లను రీసెట్ చేయాలని నిర్ధారించుకున్నారా?</string>
   <string name="ok">సరే</string>
-  <!-- LineageOS legal -->
 </resources>

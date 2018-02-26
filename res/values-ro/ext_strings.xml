@@ -303,5 +303,4 @@
   <string name="app_ops_reset_confirm_title">Confirmare resetare contoare</string>
   <string name="app_ops_reset_confirm_mesg">Sunteți sigur că doriți să resetați contoarele?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

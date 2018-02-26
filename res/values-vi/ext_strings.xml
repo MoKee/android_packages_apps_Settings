@@ -301,5 +301,4 @@
   <string name="app_ops_reset_confirm_title">Xác nhận thiết lập lại bộ đếm</string>
   <string name="app_ops_reset_confirm_mesg">Bạn có chắc là bạn muốn thiết lập lại bộ đếm?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

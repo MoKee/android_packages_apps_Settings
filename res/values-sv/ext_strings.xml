@@ -273,5 +273,4 @@
   <string name="app_ops_reset_confirm_title">Bekräfta räknaråterställning</string>
   <string name="app_ops_reset_confirm_mesg">Är du säker på att du vill återställa räknarna?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

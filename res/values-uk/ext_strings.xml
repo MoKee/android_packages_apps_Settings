@@ -278,5 +278,4 @@
   <string name="app_ops_reset_confirm_title">Підтвердити скидання лічильників</string>
   <string name="app_ops_reset_confirm_mesg">Ви впевнені що хочете скинути лічильники?</string>
   <string name="ok">ОК</string>
-  <!-- LineageOS legal -->
 </resources>

@@ -298,5 +298,4 @@
   <string name="app_ops_reset_confirm_title">Potwierdź zresetowanie licznika</string>
   <string name="app_ops_reset_confirm_mesg">Czy na pewno chcesz zresetować liczniki?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

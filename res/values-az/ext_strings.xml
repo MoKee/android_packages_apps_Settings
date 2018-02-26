@@ -167,5 +167,4 @@
   <string name="app_ops_reset_confirm_title">Sayğac sıfırlamağı təsdiqlə</string>
   <string name="app_ops_reset_confirm_mesg">Sayğacları sıfırlamaq istədiyinizə əminsiniz?</string>
   <string name="ok">Oldu</string>
-  <!-- LineageOS legal -->
 </resources>

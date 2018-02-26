@@ -277,5 +277,4 @@
   <string name="app_ops_reset_confirm_title">カウンターのリセットの確認</string>
   <string name="app_ops_reset_confirm_mesg">カウンターをリセットしてもよろしいですか？</string>
   <string name="ok">はい</string>
-  <!-- LineageOS legal -->
 </resources>

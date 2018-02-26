@@ -166,5 +166,4 @@
   <string name="app_ops_reset_counters">পুনঃস্থাপন অনুমতি/গণনা অস্বীকৃত</string>
   <string name="app_ops_reset_confirm_title">গণনা পুনঃস্থাপন নিশ্চিত করুন</string>
   <string name="ok">ওকে</string>
-  <!-- LineageOS legal -->
 </resources>

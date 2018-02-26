@@ -302,5 +302,4 @@
   <string name="app_ops_reset_confirm_title">Потвърдете нулирането на броячите</string>
   <string name="app_ops_reset_confirm_mesg">Наистина ли желаете да нулирате броячите?</string>
   <string name="ok">Добре</string>
-  <!-- LineageOS legal -->
 </resources>

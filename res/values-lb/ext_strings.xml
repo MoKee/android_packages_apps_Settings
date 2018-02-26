@@ -228,5 +228,4 @@
   <string name="app_ops_reset_counters">Erlaabt/Verweigert-Zieleren zrécksetzen</string>
   <string name="app_ops_reset_confirm_title">Bestäteg d\'Zrécksetze vun den Zieleren</string>
   <string name="app_ops_reset_confirm_mesg">Wëlls du d\'Compteure sécher zrécksetzen?</string>
-  <!-- LineageOS legal -->
 </resources>

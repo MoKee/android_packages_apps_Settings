@@ -262,5 +262,4 @@
   <string name="app_ops_reset_confirm_title">تأكيد إعادة تعيين العدادات</string>
   <string name="app_ops_reset_confirm_mesg">هل أنت متأكد من رغبتك في إعادة تعيين العدادات؟</string>
   <string name="ok">موافق</string>
-  <!-- LineageOS legal -->
 </resources>

@@ -188,5 +188,4 @@
   <string name="app_ops_reset_confirm_title">Patvirtinkite skaitiklių atstatymą</string>
   <string name="app_ops_reset_confirm_mesg">Ar tikrai norite nustatyti iš naujo skaitiklius?</string>
   <string name="ok">Gerai</string>
-  <!-- LineageOS legal -->
 </resources>

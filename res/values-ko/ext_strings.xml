@@ -294,5 +294,4 @@
   <string name="app_ops_reset_confirm_title">카운터 초기화 확인</string>
   <string name="app_ops_reset_confirm_mesg">정말로 계수치를 초기화합니까?</string>
   <string name="ok">확인</string>
-  <!-- LineageOS legal -->
 </resources>

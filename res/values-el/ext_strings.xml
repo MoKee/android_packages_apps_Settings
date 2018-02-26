@@ -302,5 +302,4 @@
   <string name="app_ops_reset_confirm_title">Επιβεβαίωση επαναφοράς μετρητών</string>
   <string name="app_ops_reset_confirm_mesg">Είστε σίγουρος/η ότι θέλετε να κάνετε επαναφορά των μετρητών;</string>
   <string name="ok">ΟΚ</string>
-  <!-- LineageOS legal -->
 </resources>

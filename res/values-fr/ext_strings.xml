@@ -296,5 +296,4 @@
   <string name="app_ops_reset_confirm_title">Confirmer la réinitialisation des compteurs</string>
   <string name="app_ops_reset_confirm_mesg">Êtes-vous sûr de vouloir réinitialiser les compteurs ?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

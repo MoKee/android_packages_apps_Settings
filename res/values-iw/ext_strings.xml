@@ -294,5 +294,4 @@
   <string name="app_ops_reset_confirm_title">אשר איפוס מונים</string>
   <string name="app_ops_reset_confirm_mesg">בטוח שברצונך לאפס מונים?</string>
   <string name="ok">אישור</string>
-  <!-- LineageOS legal -->
 </resources>

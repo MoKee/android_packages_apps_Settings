@@ -272,5 +272,4 @@
   <string name="app_ops_reset_confirm_title">Потврда поништавања бројача</string>
   <string name="app_ops_reset_confirm_mesg">Заиста желите да поништите бројаче?</string>
   <string name="ok">У реду</string>
-  <!-- LineageOS legal -->
 </resources>

@@ -270,5 +270,4 @@
   <string name="app_ops_reset_confirm_title">Potvrdi reset brojača</string>
   <string name="app_ops_reset_confirm_mesg">Jeste li sigurni da želite ponovo postaviti brojila?</string>
   <string name="ok">U redu</string>
-  <!-- LineageOS legal -->
 </resources>

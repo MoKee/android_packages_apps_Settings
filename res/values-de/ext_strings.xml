@@ -295,5 +295,4 @@
   <string name="app_ops_reset_confirm_title">Zurücksetzen der Zähler bestätigen</string>
   <string name="app_ops_reset_confirm_mesg">Wollen Sie die Zähler wirklich zurücksetzen?</string>
   <string name="ok">Ok</string>
-  <!-- LineageOS legal -->
 </resources>

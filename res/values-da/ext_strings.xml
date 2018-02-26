@@ -274,5 +274,4 @@
   <string name="app_ops_reset_confirm_title">Bekræft nulstilling af tællere</string>
   <string name="app_ops_reset_confirm_mesg">Er du sikker på, du vil nulstille tællere?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

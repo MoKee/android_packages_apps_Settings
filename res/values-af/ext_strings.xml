@@ -264,5 +264,4 @@
   <string name="app_ops_reset_counters">Herstel toelaat/weier tellers</string>
   <string name="app_ops_reset_confirm_title">Bevestig tellers terugstel</string>
   <string name="app_ops_reset_confirm_mesg">Is jy seker jy wil tellers herstel?</string>
-  <!-- LineageOS legal -->
 </resources>

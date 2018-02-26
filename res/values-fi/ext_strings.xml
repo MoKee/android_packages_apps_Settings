@@ -281,5 +281,4 @@
   <string name="app_ops_reset_confirm_title">Vahvista laskurien nollaus</string>
   <string name="app_ops_reset_confirm_mesg">Haluatko varmasti nollata laskurit?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>

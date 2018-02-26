@@ -293,5 +293,4 @@
   <string name="app_ops_reset_confirm_title">Confirma el reinici dels comptadors</string>
   <string name="app_ops_reset_confirm_mesg">Estàs segur que vols reinicialitzar comptadors?</string>
   <string name="ok">D\'acord</string>
-  <!-- LineageOS legal -->
 </resources>

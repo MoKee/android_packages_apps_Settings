@@ -277,5 +277,4 @@
   <string name="app_ops_reset_confirm_title">Számlálók törlésének megerősítése</string>
   <string name="app_ops_reset_confirm_mesg">Biztosan szeretné alaphelyzetbe állítani a számlálókat?</string>
   <string name="ok">Rendben</string>
-  <!-- LineageOS legal -->
 </resources>

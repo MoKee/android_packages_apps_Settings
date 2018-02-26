@@ -256,5 +256,4 @@
   <string name="app_ops_reset_confirm_title">கவுண்ட்டர் மறுவமைப்பை உறுதிசெய்</string>
   <string name="app_ops_reset_confirm_mesg">நீங்கள் கவுண்ட்டர்களை மறுவமைக்க நிச்சயம் விரும்புகிறீர்களா?</string>
   <string name="ok">சரி</string>
-  <!-- LineageOS legal -->
 </resources>

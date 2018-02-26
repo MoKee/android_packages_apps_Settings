@@ -187,5 +187,4 @@
   <string name="app_ops_reset_counters">Lähtesta luba/keela loendurid</string>
   <string name="app_ops_reset_confirm_title">Kinnita loendurite lähetstamine</string>
   <string name="app_ops_reset_confirm_mesg">Kas sa oled kindel, et soovid loendurid lähtestada?</string>
-  <!-- LineageOS legal -->
 </resources>

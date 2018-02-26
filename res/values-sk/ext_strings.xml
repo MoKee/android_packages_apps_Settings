@@ -304,5 +304,4 @@
   <string name="app_ops_reset_confirm_title">Potvrdiť reset počítadiel</string>
   <string name="app_ops_reset_confirm_mesg">Naozaj chcete vyresetovať počítadlá?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
 </resources>
