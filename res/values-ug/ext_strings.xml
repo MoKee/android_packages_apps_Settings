@@ -256,5 +256,9 @@
   <string name="app_ops_reset_confirm_title">سانىغۇچنى ئەسلىگە قايتۇرۇشنى جەزملەش</string>
   <string name="app_ops_reset_confirm_mesg">سانىغۇچنى راستىنلا ئەسلىگە قايتۇرامسىز؟</string>
   <string name="ok">جەزملە</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">ئاۋاز مىقدارىنى تەڭشەش ئەسكەرتىش ئاۋازى</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">چېتىلغاندا ئويغات</string>
+  <string name="wake_when_plugged_or_unplugged_summary">توكقا چېتىلغان ياكى ئۈزۈلگەندە ئېكراننى ئاچىدۇ</string>
 </resources>

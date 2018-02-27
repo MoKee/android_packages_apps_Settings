@@ -270,5 +270,9 @@
   <string name="app_ops_reset_confirm_title">Potvrdi reset brojača</string>
   <string name="app_ops_reset_confirm_mesg">Jeste li sigurni da želite ponovo postaviti brojila?</string>
   <string name="ok">U redu</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Zvuk podešavanja glasnoće</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Buđenje pri priključivanju</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Uključite zaslon prilikom spajanja ili odspajanja izvora napajanja</string>
 </resources>

@@ -264,5 +264,9 @@
   <string name="app_ops_reset_counters">Herstel toelaat/weier tellers</string>
   <string name="app_ops_reset_confirm_title">Bevestig tellers terugstel</string>
   <string name="app_ops_reset_confirm_mesg">Is jy seker jy wil tellers herstel?</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume verander klanke</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Word wakker op in/uit prop</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Skakel die skerm aan met die koppeling of ontkoppeling van \'n kragbron</string>
 </resources>

@@ -301,5 +301,9 @@
   <string name="app_ops_reset_confirm_title">確認重設計數器</string>
   <string name="app_ops_reset_confirm_mesg">您確定要重設計數器？</string>
   <string name="ok">確定</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">音量調整指示音</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">接上或移除電源時喚醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">接上或拔除電源時喚醒螢幕</string>
 </resources>

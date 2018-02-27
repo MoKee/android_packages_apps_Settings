@@ -304,5 +304,10 @@
   <string name="app_ops_reset_confirm_title">Potvrdit nulování počítadel</string>
   <string name="app_ops_reset_confirm_mesg">Jste si jist, že chcete vynulovat čítače?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">Bezpečnost a soukromí</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Zvuk při změně hlasitosti</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení nabíječky</string>
 </resources>

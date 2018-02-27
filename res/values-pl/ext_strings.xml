@@ -298,5 +298,9 @@
   <string name="app_ops_reset_confirm_title">Potwierdź zresetowanie licznika</string>
   <string name="app_ops_reset_confirm_mesg">Czy na pewno chcesz zresetować liczniki?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Dźwięk regulacji głośności</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania od źródła zasilania</string>
 </resources>

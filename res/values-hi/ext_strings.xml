@@ -186,5 +186,9 @@
   <string name="app_ops_reset_confirm_title">काउंटर रीसेट की पुष्टि करें</string>
   <string name="app_ops_reset_confirm_mesg">क्या आपको पूरा यकीन है कि आप काउंटरों को रीसेट करना चाहते हैं?</string>
   <string name="ok">ठीक है</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">वोल्यूम समायोजन ध्वनियाँ</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">प्लग करने पर जागना</string>
+  <string name="wake_when_plugged_or_unplugged_summary">पावर स्रोत से कनेक्ट करते समय या उससे डिसकनेक्ट करते समय स्क्रीन को चालू करें</string>
 </resources>

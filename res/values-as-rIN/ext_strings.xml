@@ -255,5 +255,9 @@
   <string name="app_ops_reset_confirm_title">কাউণ্টাৰ ৰিছেট নিশ্চিত কৰক</string>
   <string name="app_ops_reset_confirm_mesg">কাউণ্টাৰ ৰিছেট কৰিবলৈ আপুনি নিশ্চিত নে?</string>
   <string name="ok">ঠিক</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">ভলিউম মিলোৱাৰ ধ্বনি</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">প্লাগ কৰিলে ৱেক কৰক</string>
+  <string name="wake_when_plugged_or_unplugged_summary">পাৱাৰ উৎসৰ সৈতে সংযোগ কৰিলে বা সংযোগহীন কৰিলে স্ক্ৰীণ অন কৰক</string>
 </resources>

@@ -228,5 +228,9 @@
   <string name="app_ops_reset_counters">Erlaabt/Verweigert-Zieleren zrécksetzen</string>
   <string name="app_ops_reset_confirm_title">Bestäteg d\'Zrécksetze vun den Zieleren</string>
   <string name="app_ops_reset_confirm_mesg">Wëlls du d\'Compteure sécher zrécksetzen?</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Lautstäerktännerungstoun</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Beim Astieche waakreg maachen</string>
+  <string name="wake_when_plugged_or_unplugged_summary">De Schierm uschalte wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
 </resources>

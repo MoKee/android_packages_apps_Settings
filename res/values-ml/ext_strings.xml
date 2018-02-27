@@ -254,5 +254,9 @@
   <string name="app_ops_reset_confirm_title">കൗണ്ടറുകൾ പുനഃക്രമീകരിക്കുന്നത് സ്ഥിരീകരിക്കുക</string>
   <string name="app_ops_reset_confirm_mesg">കൗണ്ടറുകൾ പുനഃക്രമീകരിക്കണമെന്ന് നിങ്ങള്‍ക്ക് ഉറപ്പാണോ?</string>
   <string name="ok">ശരി</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">വോളിയം ക്രമീകരണ ശബ്ദങ്ങൾ</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">വേക്ക് ഓൺ പ്ലഗ്</string>
+  <string name="wake_when_plugged_or_unplugged_summary">ഒരു ഊര്‍ജ്ജ സ്രോതസ്സില്‍ ബന്ധിപ്പിക്കുമ്പോള്‍ അല്ലെങ്കില്‍ വിച്ഛേദിക്കുമ്പോൾ സ്ക്രീന്‍ ഓണ്‍ ചെയ്യുക</string>
 </resources>

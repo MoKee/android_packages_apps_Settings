@@ -296,5 +296,9 @@
   <string name="app_ops_reset_confirm_title">Confirmer la réinitialisation des compteurs</string>
   <string name="app_ops_reset_confirm_mesg">Êtes-vous sûr de vouloir réinitialiser les compteurs ?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Émettre un son lors du réglage du volume</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Allume l\'écran lorsque l\'appareil est branché ou débranché d\'une source d\'alimentation</string>
 </resources>

@@ -293,5 +293,9 @@
   <string name="app_ops_reset_counters">Repor os contadores de permitir/negar</string>
   <string name="app_ops_reset_confirm_title">Confirmar reposição dos contadores</string>
   <string name="app_ops_reset_confirm_mesg">Tem a certeza que quer reiniciar os contadores?</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Sons de ajuste do volume</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Ligar ecrã ao detetar carregador</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Ativar o ecrã quando conectar ou desconectar uma fonte de energia</string>
 </resources>

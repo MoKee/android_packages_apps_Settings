@@ -277,5 +277,9 @@
   <string name="app_ops_reset_confirm_title">カウンターのリセットの確認</string>
   <string name="app_ops_reset_confirm_mesg">カウンターをリセットしてもよろしいですか？</string>
   <string name="ok">はい</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">音量調整の音</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">接続時にスリープ解除</string>
+  <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯する</string>
 </resources>

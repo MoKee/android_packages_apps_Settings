@@ -258,5 +258,9 @@
   <string name="app_ops_reset_confirm_title">ಕೌಂಟರ್ಸ್ ಮರುಹೊಂದಿಕೆ ಖಚಿತಪಡಿಸಿ</string>
   <string name="app_ops_reset_confirm_mesg">ನೀವು ಖಚಿತವೇ ನೀವು ಕೌಂಟರ್ಸನ್ನು ಮರುಹೊಂದಿಸಲು ಬಯಸುತ್ತೀರಾ?</string>
   <string name="ok">ಆಯ್ತು</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">ವಾಲ್ಯೂಂ ಹೊಂದಾಣಿಕೆ ಶಬ್ಧಗಳು</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">ಪ್ಲಗ್‍ಮಾಡಿದಾಗ ಎಚ್ಚರವಾಗು</string>
+  <string name="wake_when_plugged_or_unplugged_summary">ವಿದ್ಯುತ್ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ ಅಥವಾ ಅಸಂಪರ್ಕಿಸಿದಾಗ ಪರದೆಯನ್ನು ಆನ್ ಮಾಡು</string>
 </resources>

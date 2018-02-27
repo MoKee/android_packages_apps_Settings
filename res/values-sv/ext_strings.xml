@@ -273,5 +273,9 @@
   <string name="app_ops_reset_confirm_title">Bekräfta räknaråterställning</string>
   <string name="app_ops_reset_confirm_mesg">Är du säker på att du vill återställa räknarna?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Ljud vid volymjustering</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning till eller frånkoppling från strömkälla</string>
 </resources>

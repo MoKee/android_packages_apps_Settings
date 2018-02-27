@@ -274,5 +274,9 @@
   <string name="app_ops_reset_confirm_title">Bekræft nulstilling af tællere</string>
   <string name="app_ops_reset_confirm_mesg">Er du sikker på, du vil nulstille tællere?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Lyd for lydstyrkejustering</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Væk ved strøm</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Tænd skærmen, når du tilslutter eller frakobler en strømkilde</string>
 </resources>

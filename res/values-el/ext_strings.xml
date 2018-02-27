@@ -302,5 +302,9 @@
   <string name="app_ops_reset_confirm_title">Επιβεβαίωση επαναφοράς μετρητών</string>
   <string name="app_ops_reset_confirm_mesg">Είστε σίγουρος/η ότι θέλετε να κάνετε επαναφορά των μετρητών;</string>
   <string name="ok">ΟΚ</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Ήχοι πλήκτρων έντασης</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Ενεργοποίηση της οθόνης κατά την σύνδεση ή αποσύνδεση μιας πηγής ισχύος</string>
 </resources>

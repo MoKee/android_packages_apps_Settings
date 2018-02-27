@@ -182,5 +182,9 @@
   <string name="app_ops_reset_confirm_title">ڕێکخستنه‌وه‌ی دڵنیابونی باڵانس</string>
   <string name="app_ops_reset_confirm_mesg">ئایا دڵنیای کە ئەتەوێت هەژمارەکە ڕێکبخەیتەوە?</string>
   <string name="ok">باشە</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">دەستکاریکردنی دەنگ</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">هەڵسان لە پلاگ</string>
+  <string name="wake_when_plugged_or_unplugged_summary">کردنەوەی ڕۆشای ڕوونماکە لە کاتی پەیوەندکردن یان پچڕانی لەکارەبا</string>
 </resources>

@@ -302,5 +302,9 @@
   <string name="app_ops_reset_confirm_title">Потвърдете нулирането на броячите</string>
   <string name="app_ops_reset_confirm_mesg">Наистина ли желаете да нулирате броячите?</string>
   <string name="ok">Добре</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Звуци при регулиране на силата на звука</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Събуждане при зареждане</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Включване на екрана, когато включвате или изключвате източник на захранване</string>
 </resources>

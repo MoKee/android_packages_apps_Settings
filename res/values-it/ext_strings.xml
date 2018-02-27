@@ -302,5 +302,10 @@
   <string name="app_ops_reset_confirm_title">Conferma ripristino contatori</string>
   <string name="app_ops_reset_confirm_mesg">Sei sicuro di voler reimpostare i contatori?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">Sicurezza e privacy</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Suono regolazione volume</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega l\'alimentazione</string>
 </resources>

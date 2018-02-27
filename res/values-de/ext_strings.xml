@@ -295,5 +295,9 @@
   <string name="app_ops_reset_confirm_title">Zurücksetzen der Zähler bestätigen</string>
   <string name="app_ops_reset_confirm_mesg">Wollen Sie die Zähler wirklich zurücksetzen?</string>
   <string name="ok">Ok</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Ton bei Lautstärkeänderung</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle den Bildschirm einschalten</string>
 </resources>

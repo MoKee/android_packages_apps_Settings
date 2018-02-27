@@ -302,5 +302,9 @@
   <string name="app_ops_reset_confirm_title">Sayaçları sıfırlamayı onayla</string>
   <string name="app_ops_reset_confirm_mesg">Sayaçları sıfırlamak istiyor musunuz?</string>
   <string name="ok">Tamam</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Ses arttırma tonları</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
 </resources>

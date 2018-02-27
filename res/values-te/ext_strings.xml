@@ -255,5 +255,9 @@
   <string name="app_ops_reset_confirm_title">కౌంటర్ల రీసెట్ ను నిర్ధారించుము</string>
   <string name="app_ops_reset_confirm_mesg">మీరు కౌంటర్లను రీసెట్ చేయాలని నిర్ధారించుకున్నారా?</string>
   <string name="ok">సరే</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">వాల్యూమ్ సవరణ శబ్దాలు</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">మేల్కొలుపు ప్లగ్</string>
+  <string name="wake_when_plugged_or_unplugged_summary">విద్యుత్ ఆధారాన్ని అనుసంధానం చేసేటప్పుడు లేదా తొలిగించేటప్పుడు స్క్రీనును ఆన్ చేయండి</string>
 </resources>

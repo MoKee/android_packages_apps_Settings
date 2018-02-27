@@ -289,5 +289,9 @@
   <string name="app_ops_reset_confirm_title">Pastikan untuk mengatur kembali gerai</string>
   <string name="app_ops_reset_confirm_mesg">Apakah Anda yakin ingin mengatur ulang penghitung?</string>
   <string name="ok">Oke</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Penyesuaian volume suara</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan sumber daya</string>
 </resources>

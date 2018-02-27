@@ -294,5 +294,9 @@
   <string name="app_ops_reset_confirm_title">אשר איפוס מונים</string>
   <string name="app_ops_reset_confirm_mesg">בטוח שברצונך לאפס מונים?</string>
   <string name="ok">אישור</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">צליל שינוי עוצמת קול</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
+  <string name="wake_when_plugged_or_unplugged_summary">הפעל את המסך כאשר מקור חשמל מתחבר או מתנתק מהמכשיר</string>
 </resources>

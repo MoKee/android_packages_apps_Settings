@@ -281,5 +281,9 @@
   <string name="app_ops_reset_confirm_title">Vahvista laskurien nollaus</string>
   <string name="app_ops_reset_confirm_mesg">Haluatko varmasti nollata laskurit?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Äänenvoimakkuuden säädön merkkiääni</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Herää laturista</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Käynnistä näyttö kun virtalähde liitetään tai irrotetaan</string>
 </resources>

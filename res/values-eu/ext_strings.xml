@@ -271,5 +271,9 @@
   <string name="app_ops_reset_confirm_title">Zenbatzaileak berrezarri</string>
   <string name="app_ops_reset_confirm_mesg">Ziur kontagailuak hustu nahi dituzula?</string>
   <string name="ok">Ados</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Bolumen doitze soinuak</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Esnatu kargadorearekin</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Piztu pantaila kargadorea konektatu edo deskonektatzean</string>
 </resources>

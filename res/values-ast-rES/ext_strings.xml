@@ -244,5 +244,9 @@
   <string name="app_ops_reset_confirm_title">Confirma\'l reaniciu de los contadores</string>
   <string name="app_ops_reset_confirm_mesg">¿De xuru que quies reafitar los contadores?</string>
   <string name="ok">Aceutar</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Sonios d\'axuste de volume</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Prender con cargador</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Prender la pantalla al coneutar o desconeutar el cargador</string>
 </resources>

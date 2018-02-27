@@ -283,5 +283,9 @@
   <string name="app_ops_reset_confirm_title">Tellers opnieuw instellen?</string>
   <string name="app_ops_reset_confirm_mesg">Weet u zeker dat u de tellers opnieuw wilt instellen?</string>
   <string name="ok">Oké</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Aanpassingsgeluid volume</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
 </resources>

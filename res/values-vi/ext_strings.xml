@@ -301,5 +301,10 @@
   <string name="app_ops_reset_confirm_title">Xác nhận thiết lập lại bộ đếm</string>
   <string name="app_ops_reset_confirm_mesg">Bạn có chắc là bạn muốn thiết lập lại bộ đếm?</string>
   <string name="ok">OK</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">An ninh &amp; bảo mật</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Âm thanh điều chỉnh âm lượng</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Bật màn hình khi cắm sạc</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
 </resources>

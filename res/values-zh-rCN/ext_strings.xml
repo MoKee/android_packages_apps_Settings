@@ -301,5 +301,10 @@
   <string name="app_ops_reset_confirm_title">确认重置计数器</string>
   <string name="app_ops_reset_confirm_mesg">您确定要重置计数器？</string>
   <string name="ok">确定</string>
-  <!-- LineageOS legal -->
+  <string name="security_privacy_settings_title">安全 &amp; 隐私</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">音量调节提示音</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
 </resources>

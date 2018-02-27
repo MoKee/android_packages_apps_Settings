@@ -272,5 +272,9 @@
   <string name="app_ops_reset_confirm_title">Потврда поништавања бројача</string>
   <string name="app_ops_reset_confirm_mesg">Заиста желите да поништите бројаче?</string>
   <string name="ok">У реду</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Звук при подешавању јачине звука</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Буђење при пуњењу</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Укључује екран при повезивању или прекиду везе са извором напајања.</string>
 </resources>

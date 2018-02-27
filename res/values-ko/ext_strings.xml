@@ -294,5 +294,9 @@
   <string name="app_ops_reset_confirm_title">카운터 초기화 확인</string>
   <string name="app_ops_reset_confirm_mesg">정말로 계수치를 초기화합니까?</string>
   <string name="ok">확인</string>
-  <!-- LineageOS legal -->
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">소리 크기 조정</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">충전 시 켜짐</string>
+  <string name="wake_when_plugged_or_unplugged_summary">전원이 연결되거나 분리될 때 화면 켜기</string>
 </resources>
