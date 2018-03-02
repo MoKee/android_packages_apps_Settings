@@ -267,4 +267,5 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>
   <string name="wake_when_plugged_or_unplugged_summary">تشغيل الشاشة عند الاتصال أو قطع الاتصال بمصدر الطاقة</string>
+  <!-- Heads-up -->
 </resources>

@@ -307,4 +307,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
   <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Üst bildirim</string>
+  <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
 </resources>

@@ -303,4 +303,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
   <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania od źródła zasilania</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Wyskakujące powiadomienia</string>
+  <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
 </resources>

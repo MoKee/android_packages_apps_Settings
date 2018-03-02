@@ -307,4 +307,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Αφύπνιση κατά τη σύνδεση</string>
   <string name="wake_when_plugged_or_unplugged_summary">Ενεργοποίηση της οθόνης κατά την σύνδεση ή αποσύνδεση μιας πηγής ισχύος</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Αναδυόμενες ειδοποιήσεις</string>
+  <string name="heads_up_notifications_enabled_summary">Εμφάνιση ειδοποιήσεων προτεραιότητας σε ένα μικρό αιωρούμενο παράθυρο</string>
 </resources>

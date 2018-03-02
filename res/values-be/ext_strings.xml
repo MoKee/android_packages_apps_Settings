@@ -303,4 +303,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
   <string name="wake_when_plugged_or_unplugged_summary">Уключаць экран пры падключэнні або адключэнні крыніцы сілкавання</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Усплывальныя апавяшчэння</string>
+  <string name="heads_up_notifications_enabled_summary">Паказваць прыярытэтныя апавяшчэння невялікімі ўсплывальнымі вокнамі</string>
 </resources>

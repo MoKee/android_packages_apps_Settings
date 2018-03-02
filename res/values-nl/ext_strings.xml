@@ -288,4 +288,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
   <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Zwevende meldingen</string>
+  <string name="heads_up_notifications_enabled_summary">Prioriteitsmeldingen weergeven in klein zwevend venster</string>
 </resources>

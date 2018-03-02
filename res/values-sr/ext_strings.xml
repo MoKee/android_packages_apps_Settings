@@ -277,4 +277,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Буђење при пуњењу</string>
   <string name="wake_when_plugged_or_unplugged_summary">Укључује екран при повезивању или прекиду везе са извором напајања.</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Искачућа обавештења</string>
+  <string name="heads_up_notifications_enabled_summary">Приказује приоритетна обавештења у малим искачућим прозорима.</string>
 </resources>

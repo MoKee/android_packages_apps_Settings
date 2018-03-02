@@ -278,4 +278,5 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
   <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning till eller frånkoppling från strömkälla</string>
+  <!-- Heads-up -->
 </resources>

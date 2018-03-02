@@ -299,4 +299,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">충전 시 켜짐</string>
   <string name="wake_when_plugged_or_unplugged_summary">전원이 연결되거나 분리될 때 화면 켜기</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">헤드업 알림</string>
+  <string name="heads_up_notifications_enabled_summary">작은 플로팅 창에 중요 알림 표시</string>
 </resources>

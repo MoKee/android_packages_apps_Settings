@@ -261,4 +261,5 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">વેક ઑન પ્લગ</string>
   <string name="wake_when_plugged_or_unplugged_summary">પાવર સ્ત્રોત જોડો અથવા પરવાનગીું પાડો ત્યારે સ્ક્રીન ચાલુ કરો</string>
+  <!-- Heads-up -->
 </resources>

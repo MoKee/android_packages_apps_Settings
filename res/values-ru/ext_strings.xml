@@ -304,9 +304,13 @@
   <string name="app_ops_reset_confirm_title">Подтвердите сброс счётчиков</string>
   <string name="app_ops_reset_confirm_mesg">Вы уверены, что хотите сбросить счётчики?</string>
   <string name="ok">ОК</string>
+  <string name="security_privacy_settings_title">Безопасность и конфиденциальность</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
+  <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими всплывающими окнами</string>
 </resources>

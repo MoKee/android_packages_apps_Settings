@@ -179,7 +179,7 @@
   <string name="app_ops_summaries_mute_unmute_microphone">activer/désactiver le microphone</string>
   <string name="app_ops_summaries_toast_window">afficher les toasts</string>
   <string name="app_ops_summaries_project_media">projeter média</string>
-  <string name="app_ops_summaries_activate_vpn">activer le VPN</string>
+  <string name="app_ops_summaries_activate_vpn">activer le RPV</string>
   <string name="app_ops_summaries_write_wallpaper">appliquer le fond d\'écran</string>
   <string name="app_ops_summaries_assist_structure">assister la structure</string>
   <string name="app_ops_summaries_assist_screenshot">assister la capture d\'écran</string>
@@ -255,7 +255,7 @@
   <string name="app_ops_labels_mute_unmute_microphone">Activer/désactiver le microphone</string>
   <string name="app_ops_labels_toast_window">Afficher les toasts</string>
   <string name="app_ops_labels_project_media">Projeter média</string>
-  <string name="app_ops_labels_activate_vpn">Activer le VPN</string>
+  <string name="app_ops_labels_activate_vpn">Activer le RPV</string>
   <string name="app_ops_labels_write_wallpaper">Appliquer le fond d\'écran</string>
   <string name="app_ops_labels_assist_structure">Assister la structure</string>
   <string name="app_ops_labels_assist_screenshot">Assister la capture d\'écran</string>
@@ -301,4 +301,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allume l\'écran lorsque l\'appareil est branché ou débranché d\'une source d\'alimentation</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Notifications flottantes</string>
+  <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
 </resources>

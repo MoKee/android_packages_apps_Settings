@@ -261,4 +261,5 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">چېتىلغاندا ئويغات</string>
   <string name="wake_when_plugged_or_unplugged_summary">توكقا چېتىلغان ياكى ئۈزۈلگەندە ئېكراننى ئاچىدۇ</string>
+  <!-- Heads-up -->
 </resources>

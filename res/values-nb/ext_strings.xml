@@ -274,4 +274,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Våkne ved tilkobling av strøm</string>
   <string name="wake_when_plugged_or_unplugged_summary">Slå skjermen på når du kobler til eller kobler fra en strømkilde</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Varselvindu</string>
+  <string name="heads_up_notifications_enabled_summary">Vis prioriterte varsler i et lite flytende vindu</string>
 </resources>

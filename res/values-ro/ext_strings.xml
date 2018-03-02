@@ -308,4 +308,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>
   <string name="wake_when_plugged_or_unplugged_summary">Aprinde ecranul când se conectează sau deconectează sursa de alimentare</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Atenționări</string>
+  <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
 </resources>

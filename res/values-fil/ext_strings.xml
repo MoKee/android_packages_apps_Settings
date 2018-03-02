@@ -287,4 +287,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Gumising sa plug</string>
   <string name="wake_when_plugged_or_unplugged_summary">Buksan ang screen kapag kumokonek o pinuputol ang koneksiyon ng kuryente</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Naka heads-up</string>
+  <string name="heads_up_notifications_enabled_summary">Magdispley ng mga pabatid ng prayoridad sa isang maliit na floating window</string>
 </resources>

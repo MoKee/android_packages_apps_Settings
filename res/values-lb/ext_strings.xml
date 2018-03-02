@@ -233,4 +233,5 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Beim Astieche waakreg maachen</string>
   <string name="wake_when_plugged_or_unplugged_summary">De Schierm uschalte wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
+  <!-- Heads-up -->
 </resources>

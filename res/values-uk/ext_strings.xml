@@ -283,4 +283,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Екран прокидається при підключені</string>
   <string name="wake_when_plugged_or_unplugged_summary">Вмикати екрани при підключенні і відключенні зарядного пристрою</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Спливаючі сповіщення</string>
+  <string name="heads_up_notifications_enabled_summary">Відображати пріоритетні сповіщення у невеликому плаваючому вікні</string>
 </resources>

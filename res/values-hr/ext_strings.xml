@@ -275,4 +275,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Buđenje pri priključivanju</string>
   <string name="wake_when_plugged_or_unplugged_summary">Uključite zaslon prilikom spajanja ili odspajanja izvora napajanja</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Plutajuće obavijesti</string>
+  <string name="heads_up_notifications_enabled_summary">Prikazuje prioritetne obavijesti u malim plutajućim prozorima</string>
 </resources>

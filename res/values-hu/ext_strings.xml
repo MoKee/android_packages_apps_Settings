@@ -282,4 +282,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>
   <string name="wake_when_plugged_or_unplugged_summary">A képernyő bekapcsolása a töltő csatlakoztatása/eltávolítása után</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Lebegő értesítés</string>
+  <string name="heads_up_notifications_enabled_summary">Kiemelt értesítések megjelenítése egy kis lebegő ablakban</string>
 </resources>

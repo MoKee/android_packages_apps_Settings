@@ -249,4 +249,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Prender con cargador</string>
   <string name="wake_when_plugged_or_unplugged_summary">Prender la pantalla al coneutar o desconeutar el cargador</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Avisos emerxentes</string>
+  <string name="heads_up_notifications_enabled_summary">Amuesa los avisos prioritarios nuna ventana pequeña flotante</string>
 </resources>

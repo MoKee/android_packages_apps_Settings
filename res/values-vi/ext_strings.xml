@@ -307,4 +307,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Bật màn hình khi cắm sạc</string>
   <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">Thông báo nổi</string>
+  <string name="heads_up_notifications_enabled_summary">Hiển thị các thông báo ưu tiên trong một cửa sổ nổi nhỏ</string>
 </resources>

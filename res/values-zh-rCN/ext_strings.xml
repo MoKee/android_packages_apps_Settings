@@ -307,4 +307,7 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
   <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
+  <!-- Heads-up -->
+  <string name="heads_up_notifications_enabled_title">浮动通知</string>
+  <string name="heads_up_notifications_enabled_summary">在一个小的浮动窗口中显示优先通知</string>
 </resources>
