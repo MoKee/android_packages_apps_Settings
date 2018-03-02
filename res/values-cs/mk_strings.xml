@@ -20,9 +20,10 @@
   <string name="mk_version_default">Neznámá</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
-    <item quantity="few">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
-    <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> krok od povolení nastavení pro vývojáře.</item>
+    <item quantity="one">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> krok od povolení nastavení pro vývojáře.</item>
+    <item quantity="few">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroky od povolení nastavení pro vývojáře.</item>
+    <item quantity="many">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
+    <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">Vývojářské nastavení je povoleno!</string>

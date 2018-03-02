@@ -94,7 +94,7 @@
   <string name="app_ops_summaries_mute_unmute_microphone">activer/désactiver le microphone</string>
   <string name="app_ops_summaries_toast_window">afficher les popups</string>
   <string name="app_ops_summaries_project_media">projeter média</string>
-  <string name="app_ops_summaries_activate_vpn">activer le VPN</string>
+  <string name="app_ops_summaries_activate_vpn">activer le RPV</string>
   <string name="app_ops_summaries_write_wallpaper">appliquer le fond d\'écran</string>
   <string name="app_ops_summaries_assist_structure">assister la structure</string>
   <string name="app_ops_summaries_assist_screenshot">aide à la capture d\'écran</string>
@@ -165,7 +165,7 @@
   <string name="app_ops_labels_mute_unmute_microphone">Activer/désactiver le microphone</string>
   <string name="app_ops_labels_toast_window">Afficher les popups</string>
   <string name="app_ops_labels_project_media">Projeter média</string>
-  <string name="app_ops_labels_activate_vpn">Activer le VPN</string>
+  <string name="app_ops_labels_activate_vpn">Activer le RPV</string>
   <string name="app_ops_labels_write_wallpaper">Appliquer le fond d\'écran</string>
   <string name="app_ops_labels_assist_structure">Assister la structure</string>
   <string name="app_ops_labels_assist_screenshot">Aide à la capture d\'écran</string>

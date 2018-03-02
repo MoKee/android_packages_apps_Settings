@@ -78,7 +78,7 @@
   <string name="app_ops_summaries_play_audio">phát âm thanh</string>
   <string name="app_ops_summaries_read_clipboard">đọc bảng tạm</string>
   <string name="app_ops_summaries_modify_clipboard">sửa đổi bảng tạm</string>
-  <string name="app_ops_summaries_media_buttons">các nút phương tiện</string>
+  <string name="app_ops_summaries_media_buttons">nút đa phương tiện</string>
   <string name="app_ops_summaries_audio_focus">trọng tâm âm thanh</string>
   <string name="app_ops_summaries_master_volume">âm lượng tổng thể</string>
   <string name="app_ops_summaries_voice_volume">âm lượng giọng nói</string>
@@ -88,8 +88,8 @@
   <string name="app_ops_summaries_notification_volume">âm lượng thông báo</string>
   <string name="app_ops_summaries_bluetooth_volume">âm lượng bluetooth</string>
   <string name="app_ops_summaries_keep_awake">giữ màn hình sáng</string>
-  <string name="app_ops_summaries_monitor_location">vị trí màn hình</string>
-  <string name="app_ops_summaries_monitor_high_power_location">vị trí năng suất cao của màn hình</string>
+  <string name="app_ops_summaries_monitor_location">giám sát vị trí</string>
+  <string name="app_ops_summaries_monitor_high_power_location">giám sát vị trí sử dụng nhiều pin</string>
   <string name="app_ops_summaries_get_usage_stats">lấy thống kê sử dụng ứng dụng</string>
   <string name="app_ops_summaries_mute_unmute_microphone">tắt/bật tiếng micro</string>
   <string name="app_ops_summaries_toast_window">hiển thị thông báo nhanh</string>
@@ -149,7 +149,7 @@
   <string name="app_ops_labels_play_audio">Phát âm thanh</string>
   <string name="app_ops_labels_read_clipboard">Đọc bảng tạm</string>
   <string name="app_ops_labels_modify_clipboard">Sửa đổi bảng tạm</string>
-  <string name="app_ops_labels_media_buttons">Các nút phương tiện</string>
+  <string name="app_ops_labels_media_buttons">Các phím đa phương tiện</string>
   <string name="app_ops_labels_audio_focus">Trọng tâm âm thanh</string>
   <string name="app_ops_labels_master_volume">Âm lượng tổng thể</string>
   <string name="app_ops_labels_voice_volume">Âm lượng giọng nói</string>
@@ -235,7 +235,7 @@
   <string name="advanced_reboot_summary">Khi đã mở khóa, bao gồm các tùy chọn trong trình đơn nguồn để khởi động lại vào recovery, bootloader hoặc thực hiện một khởi động lại mềm</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Bố trí ngẫu nhiên</string>
-  <string name="unlock_scramble_pin_layout_summary">Bố trí PIN ngẫu nhiên khi mở khóa thiết bị</string>
+  <string name="unlock_scramble_pin_layout_summary">Bố trí mã PIN ngẫu nhiên khi mở khóa thiết bị</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
   <!-- Lock screen cover art -->

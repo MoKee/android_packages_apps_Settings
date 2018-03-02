@@ -22,6 +22,7 @@
   <plurals name="show_dev_countdown_mk">
     <item quantity="one">Вы в <xliff:g id="step_count">%1$d</xliff:g> шаге от включения настроек для разработчиков.</item>
     <item quantity="few">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+    <item quantity="many">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
     <item quantity="other">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->

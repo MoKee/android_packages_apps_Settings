@@ -117,6 +117,7 @@
   <string name="app_ops_labels_write_icc_sms">Magsulat ng ICC SMS</string>
   <string name="app_ops_labels_modify_settings">Baguhin ang mga setting</string>
   <string name="app_ops_labels_access_notifications">I-access ang mga notification</string>
+  <string name="app_ops_labels_camera">Ang kamera</string>
   <string name="app_ops_labels_record_audio">Mag-record ng audio</string>
   <string name="app_ops_labels_play_audio">I-play ang audio</string>
   <string name="app_ops_labels_read_clipboard">Basahin ang clipboard</string>
