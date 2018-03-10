@@ -19,6 +19,14 @@
   <string name="mk_version">إصدار موكي</string>
   <string name="mk_version_default">غير معروف</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="zero">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+    <item quantity="one">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+    <item quantity="two">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+    <item quantity="few">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+    <item quantity="many">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+    <item quantity="other">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_mk">لقد قمت بتمكين إعدادات المطور!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
@@ -47,6 +55,14 @@
   <string name="wifi_setting_frequency_band_5G">5 غيغاهرتز فقط</string>
   <string name="wifi_setting_frequency_band_2G">2.4 جيغاهرتز فقط</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">ثلاث أصابع للقطة الشاشة</string>
+  <string name="three_finger_screenshot_summary">أسحب للاسفل بثلاثة أصابع لأخذ لقطة للشاشة</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">إظهار سرعة الشحن</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">إظهار استخدام الذاكرة في التطبيقات الحديثة</string>
+  <string name="recents_membar_pos_top">أعلى</string>
+  <string name="recents_membar_pos_bottom">أسفل</string>
+  <string name="recents_membar_pos_hidden">مخفي</string>
+  <string name="apps_no_data">لا توجد تطبيقات</string>
 </resources>
