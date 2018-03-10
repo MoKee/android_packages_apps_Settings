@@ -302,6 +302,7 @@
   <string name="app_ops_reset_confirm_title">Sayaçları sıfırlamayı onayla</string>
   <string name="app_ops_reset_confirm_mesg">Sayaçları sıfırlamak istiyor musunuz?</string>
   <string name="ok">Tamam</string>
+  <string name="security_privacy_settings_title">Güvenlik &amp; gizlilik</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Ses arttırma tonları</string>
   <!-- Wake on plug -->

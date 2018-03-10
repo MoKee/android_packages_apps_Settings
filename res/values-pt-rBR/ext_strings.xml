@@ -302,6 +302,7 @@
   <string name="app_ops_reset_confirm_title">Confirmar zerar contadores</string>
   <string name="app_ops_reset_confirm_mesg">Tem certeza que deseja zerar os contadores?</string>
   <string name="ok">OK</string>
+  <string name="security_privacy_settings_title">Segurança e privacidade</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Som de ajuste do volume</string>
   <!-- Wake on plug -->
