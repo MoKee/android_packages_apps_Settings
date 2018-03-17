@@ -298,6 +298,7 @@
   <string name="app_ops_reset_confirm_title">Пацверджанне скіду</string>
   <string name="app_ops_reset_confirm_mesg">Вы ўпэўнены, што хочаце скінуць лічыльнікі?</string>
   <string name="ok">Добра</string>
+  <string name="security_privacy_settings_title">Бяспека і канфідэнцыяльнасць</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Гук пры рэгулёўцы гучнасці</string>
   <!-- Wake on plug -->
