@@ -44,18 +44,23 @@
   <string name="root_appops_title">Root-Zugriffe verwalten</string>
   <string name="root_appops_summary">Anzeigen und Kontrollieren der Root-Regeln</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Doppeltippen für Standby (DT2S)</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf Statusleiste oder Sperrbildschirm tippen, um das Display auszuschalten</string>
   <!-- Touchscreen gesture settings -->
   <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
   <string name="touchscreen_gesture_settings_summary">Führen Sie verschiedene Bildschirmgesten für einige schnelle Aktionen aus</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+  <string name="proximity_wake_summary">Vor dem Aufwecken des Gerätes Näherungssensor überprüfen</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Passwort-Abfrage direkt anzeigen</string>
+  <string name="lock_directly_show_password_summary">Wischen zum Entsperren des Bildschirms überspringen und Passworteingabe direkt beginnen</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Muster-Abfrage direkt anzeigen</string>
+  <string name="lock_directly_show_pattern_summary">Wischen zum Entsperren des Bildschirms überspringen und Mustereingabe direkt beginnen</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">PIN-Abfrage direkt anzeigen</string>
+  <string name="lock_directly_show_pin_summary">Wischen zum Entsperren des Bildschirms überspringen und PIN-Eingabe direkt beginnen</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
   <string name="unlock_scramble_pin_layout_summary">Bei jedem Entsperrversuch die Ziffernanordnung zufällig neu wählen</string>
@@ -97,6 +102,7 @@
   <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
   <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Klingelton- und &amp; Benachrichtigungslautstärke verknüpfen</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Beim Booten gestartete Apps</string>
   <!-- Manual provisioning support -->
@@ -271,6 +277,7 @@
   <string name="app_ops_labels_read_phone_numbers">Telefonnummern lesen</string>
   <string name="app_ops_labels_request_install_packages">Installation von Paketen anfordern</string>
   <string name="app_ops_labels_picture_in_picture">Bild im Bild verwenden</string>
+  <string name="app_ops_labels_instant_app_start_foreground">Instant-App im Vordergrund starten</string>
   <string name="app_ops_labels_answer_phone_calls">Anrufe beantworten</string>
   <string name="app_ops_labels_toggle_wifi">WLAN ein-/ausschalten</string>
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth ein-/ausschalten</string>
@@ -295,6 +302,7 @@
   <string name="app_ops_reset_confirm_title">Zurücksetzen der Zähler bestätigen</string>
   <string name="app_ops_reset_confirm_mesg">Wollen Sie die Zähler wirklich zurücksetzen?</string>
   <string name="ok">Ok</string>
+  <string name="security_privacy_settings_title">Sicherheit &amp; Datenschutz</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Ton bei Lautstärkeänderung</string>
   <!-- Wake on plug -->
