@@ -75,7 +75,7 @@
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings"/>
 
-        <mokee.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="feature_touch_hovering"
             android:title="@string/touchscreen_hovering_title"
             android:summary="@string/touchscreen_hovering_summary"
