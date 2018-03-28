@@ -30,23 +30,35 @@
   <!-- MKCenter verify -->
   <string name="mkcenter_verify_failed_toast">Sérült MoKee központ, állítsa vissza és próbálja újra.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum rétegek</string>
   <string name="menu_show_substratum">Fedvények megjelenítése</string>
   <string name="menu_hide_substratum">Fedvények elrejtése</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum ikonrétegek</string>
   <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
   <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Minden téma kényszerített engedélyezése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_title">Wi-Fi frekvencia sáv</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">Adja meg a működésifrekvencia-tartományt</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">Hiba történt a frekvenciasáv beállítása során.</string>
   <string name="wifi_setting_frequency_band_auto">Automata</string>
   <string name="wifi_setting_frequency_band_5G">Csak 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Csak 2.4 GHz</string>
   <!-- Three finger screenshot -->
   <string name="three_finger_screenshot_title">Három ujjas képernyőkép</string>
+  <string name="three_finger_screenshot_summary">Képernyőkép készítéséhez húzza egyszerre három ujját lefelé a képernyőn</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Töltéssebesség megjelenítése</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Memóriahasználat kijelzése az Előzményekben</string>
+  <string name="recents_membar_pos_top">Oldal tetején</string>
+  <string name="recents_membar_pos_bottom">Oldal alján</string>
+  <string name="recents_membar_pos_hidden">Rejtett</string>
+  <string name="apps_no_data">Nincsenek alkalmazások</string>
 </resources>
