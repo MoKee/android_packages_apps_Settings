@@ -31,6 +31,7 @@
   <string name="development_tools_title">Fejlesztőeszközök</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Speciális újraindítás</string>
+  <string name="advanced_reboot_summary">Feloldott kijelzőnél a Recovery és a Bootloader újraindítási mód is jelenjen meg a kikapcsoló menüben</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Rendszergazda hozzáférés</string>
   <string name="root_access_warning_title">Engedélyezi a rendszergazdai hozzáférést?</string>
@@ -43,15 +44,23 @@
   <string name="root_appops_title">Root hozzáférések kezelése</string>
   <string name="root_appops_summary">Root szabályok megtekintése és kezelése</string>
   <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Alvómód Állapotsor érintésével</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dupla érintés az állapotsoron vagy a záróképernyőn a képernyő kikapcsolásához</string>
   <!-- Touchscreen gesture settings -->
+  <string name="touchscreen_gesture_settings_title">Érintőképernyő kézmozdulatvezérlés</string>
+  <string name="touchscreen_gesture_settings_summary">Különböző képernyő-mozdulatvezérlések végrehajtása a gyorsműveletekhez</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
+  <string name="proximity_wake_summary">Ellenőrizze a közelségérzékelőt a képernyő ébredése előtt</string>
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Közvetlen jelszó megadás megjelenítése</string>
+  <string name="lock_directly_show_password_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a jelszavas belépéssel</string>
   <!-- Whether the keyguard will directly show the pattern view -->
   <string name="lock_directly_show_pattern">Közvetlen minta nézet megjelenítése</string>
+  <string name="lock_directly_show_pattern_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a feloldómintás belépéssel</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Közvetlen PIN megadás megjelenítése</string>
+  <string name="lock_directly_show_pin_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a PIN kódos belépéssel</string>
   <!-- PIN scramble -->
   <string name="unlock_scramble_pin_layout_title">Szoros elrendezés</string>
   <string name="unlock_scramble_pin_layout_summary">PIN szoros elrendezése az eszköz feloldásakor</string>
@@ -93,6 +102,7 @@
   <string name="increasing_ring_min_volume_title">Kezdeti hangerő</string>
   <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
   <!-- Volume link notification -->
+  <string name="volume_link_notification_title">Csengő és értesítési hangok összekapcsolása</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Rendszerindításkor indult alkalmazások</string>
   <!-- Manual provisioning support -->
@@ -124,6 +134,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">pontatlan hely</string>
   <string name="app_ops_summaries_fine_location">pontos hely</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">rezgés</string>
   <string name="app_ops_summaries_read_contacts">névjegyek olvasása</string>
   <string name="app_ops_summaries_modify_contacts">névjegyek módosítása</string>
@@ -185,6 +196,12 @@
   <string name="app_ops_summaries_turn_screen_on">képernyő bekapcsolása</string>
   <string name="app_ops_summaries_get_accounts">fiókok lekérdezése</string>
   <string name="app_ops_summaries_run_in_background">futtatás a háttérben</string>
+  <string name="app_ops_summaries_accessibility_volume">kisegítő hangerő</string>
+  <string name="app_ops_summaries_read_phone_numbers">telefonszám beolvasása</string>
+  <string name="app_ops_summaries_request_install_packages">telepítőcsomagok kérése</string>
+  <string name="app_ops_summaries_picture_in_picture">kép a képben mód használata</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">azonnali alkalmazás indítása az előtérben</string>
+  <string name="app_ops_summaries_answer_phone_calls">telefonhívás fogadása</string>
   <string name="app_ops_summaries_toggle_wifi">Wi-Fi kapcsolása</string>
   <string name="app_ops_summaries_toggle_bluetooth">bluetooth kapcsolása</string>
   <string name="app_ops_summaries_start_at_boot">indítás rendszerbetöltéskor</string>
@@ -194,6 +211,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">Pontatlan hely</string>
   <string name="app_ops_labels_fine_location">Pontos hely</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">Rezgés</string>
   <string name="app_ops_labels_read_contacts">Névjegyek olvasása</string>
   <string name="app_ops_labels_modify_contacts">Névjegyek módosítása</string>
@@ -255,6 +273,12 @@
   <string name="app_ops_labels_turn_screen_on">Képernyő bekapcsolása</string>
   <string name="app_ops_labels_get_accounts">Fiókok lekérdezése</string>
   <string name="app_ops_labels_run_in_background">Futtatás a háttérben</string>
+  <string name="app_ops_labels_accessibility_volume">Kisegítő hangerő</string>
+  <string name="app_ops_labels_read_phone_numbers">Telefonszám beolvasása</string>
+  <string name="app_ops_labels_request_install_packages">Telepítőcsomagok kérése</string>
+  <string name="app_ops_labels_picture_in_picture">Kép a képben mód használata</string>
+  <string name="app_ops_labels_instant_app_start_foreground">Az azonnali alkalmazások az előtérben induljanak</string>
+  <string name="app_ops_labels_answer_phone_calls">Telefonhívás fogadása</string>
   <string name="app_ops_labels_toggle_wifi">Wi-Fi kapcsolása</string>
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth kapcsolása</string>
   <string name="app_ops_labels_start_at_boot">Indítás rendszerbetöltéskor</string>
@@ -270,6 +294,7 @@
   <string name="app_ops_allowed_count">Engedélyezve <xliff:g id="count" example="2 times">%s</xliff:g> alkalommal</string>
   <string name="app_ops_ignored_count">Megtagadva <xliff:g id="count" example="2 times">%s</xliff:g> alkalommal</string>
   <string name="app_ops_both_count">Engedélyezve <xliff:g id="count">%1$s</xliff:g>, megtagadva <xliff:g id="count">%2$s</xliff:g> alkalommal</string>
+  <string name="app_ops_no_blockable_permissions">Nincs a blokkoláshoz elérhető engedély</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Felhasználói alkalmazások megjelenítése</string>
   <string name="app_ops_show_system_apps">Rendszeralkalmazások megjelenítése</string>
@@ -277,6 +302,7 @@
   <string name="app_ops_reset_confirm_title">Számlálók törlésének megerősítése</string>
   <string name="app_ops_reset_confirm_mesg">Biztosan szeretné alaphelyzetbe állítani a számlálókat?</string>
   <string name="ok">Rendben</string>
+  <string name="security_privacy_settings_title">Biztonság és adatvédelem</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Hangerő állítási hangok</string>
   <!-- Wake on plug -->
