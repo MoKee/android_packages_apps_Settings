@@ -303,6 +303,7 @@
   <string name="app_ops_reset_confirm_title">Confirmare resetare contoare</string>
   <string name="app_ops_reset_confirm_mesg">Sunteți sigur că doriți să resetați contoarele?</string>
   <string name="ok">OK</string>
+  <string name="security_privacy_settings_title">Securitate &amp; confidențialitate</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Sunet ajustare volum</string>
   <!-- Wake on plug -->

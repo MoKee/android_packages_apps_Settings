@@ -19,6 +19,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_cm">
+    <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыкаў.</item>
+    <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+    <item quantity="many">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+    <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_cm">Налады для распрацоўшчыкаў ўключаны!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
