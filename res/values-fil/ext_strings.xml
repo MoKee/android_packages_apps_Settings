@@ -290,4 +290,10 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Naka heads-up</string>
   <string name="heads_up_notifications_enabled_summary">Magdispley ng mga pabatid ng prayoridad sa isang maliit na floating window</string>
+  <!-- High touch sensitivity -->
+  <string name="high_touch_sensitivity_title">Mataas na paghawak na sensitibo</string>
+  <string name="high_touch_sensitivity_summary">Talasan ang pakitandam ng touchscreen kaya\'t magagamit ito habang may suot na guwantes</string>
+  <!-- Touchscreen hovering -->
+  <string name="touchscreen_hovering_title">Hovering ng touchscreen</string>
+  <string name="touchscreen_hovering_summary">Pinapayagan ka na mag hover sa screen na kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
 </resources>

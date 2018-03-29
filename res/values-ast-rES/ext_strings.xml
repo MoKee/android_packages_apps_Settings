@@ -252,4 +252,10 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Avisos emerxentes</string>
   <string name="heads_up_notifications_enabled_summary">Amuesa los avisos prioritarios nuna ventana pequeña flotante</string>
+  <!-- High touch sensitivity -->
+  <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
+  <string name="high_touch_sensitivity_summary">Incrementar la sensibilidá del panel táctil pa que pueda usase llevando guantes</string>
+  <!-- Touchscreen hovering -->
+  <string name="touchscreen_hovering_title">Pantalla táctil eslizante</string>
+  <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
 </resources>
