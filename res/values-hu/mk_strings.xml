@@ -38,7 +38,7 @@
   <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
   <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
   <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Minden téma kényszerített engedélyezése</string>
+  <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás kényszerített engedélyezése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
