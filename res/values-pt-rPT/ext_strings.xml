@@ -46,6 +46,7 @@
   <string name="app_ops_categories_background">Imagem de fundo</string>
   <string name="app_ops_categories_bootup">Inicialização</string>
   <string name="app_ops_categories_su">Acesso root</string>
+  <string name="app_ops_categories_other">Outro</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Localização imprecisa</string>
   <string name="app_ops_summaries_fine_location">Localização precisa</string>

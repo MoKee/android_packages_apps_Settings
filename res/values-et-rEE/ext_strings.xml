@@ -43,6 +43,7 @@
   <string name="app_ops_categories_device">Seade</string>
   <string name="app_ops_categories_bootup">Alglaadimine</string>
   <string name="app_ops_categories_su">Root ligipääs</string>
+  <string name="app_ops_categories_other">Muud</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Umbmäärane asukoht</string>
   <string name="app_ops_summaries_fine_location">Hea asukoht</string>

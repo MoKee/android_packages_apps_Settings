@@ -24,25 +24,25 @@
     <item quantity="other">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Sikeresen engedélyezted a fejlesztői beállításokat!</string>
+  <string name="show_dev_on_mk">Sikeresen engedélyezte a fejlesztői beállításokat!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Nincs rá szükség, már korábban engedélyezted a fejlesztői beállításokat.</string>
+  <string name="show_dev_already_mk">Nincs rá szükség, már korábban engedélyezte a fejlesztői beállításokat.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Sérült MoKee központ, állítsa vissza és próbálja újra.</string>
+  <string name="mkcenter_verify_failed_toast">A lefagyott vagy megsérült MoKee központ hatással lesz a rendszer szolgáltatásaira, állítsa helyre és próbálja újra.</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum rétegek</string>
-  <string name="menu_show_substratum">Fedvények megjelenítése</string>
-  <string name="menu_hide_substratum">Fedvények elrejtése</string>
+  <string name="menu_show_substratum">Rétegek megjelenítése</string>
+  <string name="menu_hide_substratum">Rétegek elrejtése</string>
   <!-- Manage applications: show substratum icon overlays -->
   <string name="filter_substratum_icons">Substratum ikonrétegek</string>
-  <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
-  <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
+  <string name="menu_show_substratum_icons">Ikon-fedőrétegek megjelenítése</string>
+  <string name="menu_hide_substratum_icons">Ikon-fedőrétegek elrejtése</string>
   <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás kényszerített engedélyezése</string>
+  <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás kényszerített hitelesítése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Wi-Fi frekvencia sáv</string>
+  <string name="wifi_setting_frequency_band_title">Wi-Fi frekvenciasáv</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_summary">Adja meg a működésifrekvencia-tartományt</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -51,8 +51,8 @@
   <string name="wifi_setting_frequency_band_5G">Csak 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Csak 2.4 GHz</string>
   <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Három ujjas képernyőkép</string>
-  <string name="three_finger_screenshot_summary">Képernyőkép készítéséhez húzza egyszerre három ujját lefelé a képernyőn</string>
+  <string name="three_finger_screenshot_title">Háromujjas képernyőmentés</string>
+  <string name="three_finger_screenshot_summary">Képernyőmentés készítéséhez húzza egyszerre három ujját lefelé a képernyőn</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Töltéssebesség megjelenítése</string>
   <!-- Memory bar -->

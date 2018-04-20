@@ -46,6 +46,7 @@
   <string name="app_ops_categories_background">Arrière plan</string>
   <string name="app_ops_categories_bootup">Démarrage</string>
   <string name="app_ops_categories_su">Accès root</string>
+  <string name="app_ops_categories_other">Autres</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">localisation approximative</string>
   <string name="app_ops_summaries_fine_location">localisation précise</string>

@@ -45,6 +45,7 @@
   <string name="app_ops_categories_device">Ang aparato</string>
   <string name="app_ops_categories_background">Likuran</string>
   <string name="app_ops_categories_su">Pahintulot sa root</string>
+  <string name="app_ops_categories_other">Iba pa</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_modify_contacts">baguhin ang mga kontak</string>
   <string name="app_ops_summaries_read_call_log">basahin ang log ng tawag</string>

@@ -41,6 +41,7 @@
   <string name="app_ops_categories_background">ব্যাকগ্রাউন্ড</string>
   <string name="app_ops_categories_bootup">বুটআপ</string>
   <string name="app_ops_categories_su">রুট এক্সেস</string>
+  <string name="app_ops_categories_other">অন্যান্য</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">কর্কশ অবস্থান</string>
   <string name="app_ops_summaries_fine_location">সূক্ষ অবস্থান</string>

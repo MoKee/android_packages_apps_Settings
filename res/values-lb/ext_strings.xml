@@ -43,6 +43,7 @@
   <string name="app_ops_categories_device">Apparat</string>
   <string name="app_ops_categories_bootup">Systemstart</string>
   <string name="app_ops_categories_su">Root-Zougrëff</string>
+  <string name="app_ops_categories_other">Aner</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">Ongeféiere Standuert</string>
   <string name="app_ops_summaries_fine_location">Geneeë Standuert</string>

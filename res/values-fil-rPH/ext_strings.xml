@@ -46,6 +46,7 @@
   <string name="app_ops_categories_background">Background</string>
   <string name="app_ops_categories_bootup">Bootup</string>
   <string name="app_ops_categories_su">Access sa root</string>
+  <string name="app_ops_categories_other">Iba pa</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">magaspang na lokasyon</string>
   <string name="app_ops_summaries_fine_location">pinong lokasyon</string>

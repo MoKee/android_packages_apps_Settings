@@ -46,6 +46,7 @@
   <string name="app_ops_categories_background">Achtergrond</string>
   <string name="app_ops_categories_bootup">Opstarten</string>
   <string name="app_ops_categories_su">Root-toegang</string>
+  <string name="app_ops_categories_other">Anders</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">geschatte locatie</string>
   <string name="app_ops_summaries_fine_location">nauwkeurige locatie</string>

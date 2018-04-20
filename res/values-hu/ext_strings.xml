@@ -46,6 +46,7 @@
   <string name="app_ops_categories_background">Háttérkép</string>
   <string name="app_ops_categories_bootup">Indításkor</string>
   <string name="app_ops_categories_su">Rendszergazda hozzáférés</string>
+  <string name="app_ops_categories_other">Egyéb</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">pontatlan hely</string>
   <string name="app_ops_summaries_fine_location">pontos hely</string>
@@ -97,7 +98,7 @@
   <string name="app_ops_summaries_activate_vpn">VPN aktiválása</string>
   <string name="app_ops_summaries_write_wallpaper">háttérkép írása</string>
   <string name="app_ops_summaries_assist_structure">struktúra asszisztens</string>
-  <string name="app_ops_summaries_assist_screenshot">képernyőkép asszisztens</string>
+  <string name="app_ops_summaries_assist_screenshot">képernyőmentés-asszisztens</string>
   <string name="app_ops_summaries_read_phone_state">telefon állapotának olvasása</string>
   <string name="app_ops_summaries_add_voicemail">hangposta hozzáadása</string>
   <string name="app_ops_summaries_use_sip">SIP használata</string>
@@ -168,7 +169,7 @@
   <string name="app_ops_labels_activate_vpn">VPN aktiválása</string>
   <string name="app_ops_labels_write_wallpaper">Háttérkép írása</string>
   <string name="app_ops_labels_assist_structure">Struktúra asszisztens</string>
-  <string name="app_ops_labels_assist_screenshot">Képernyőkép asszisztens</string>
+  <string name="app_ops_labels_assist_screenshot">Képernyőmentés-asszisztens</string>
   <string name="app_ops_labels_read_phone_state">Telefon állapotának olvasása</string>
   <string name="app_ops_labels_add_voicemail">Hangposta hozzáadása</string>
   <string name="app_ops_labels_use_sip">SIP használata</string>
@@ -234,8 +235,8 @@
   <string name="advanced_reboot_title">Speciális újraindítás</string>
   <string name="advanced_reboot_summary">Feloldott képernyő esetén, a kikapcsoló menüben a recovery, bootloader, vagy a lágy újraindítás módok megjelenítése</string>
   <!-- PIN scramble -->
-  <string name="unlock_scramble_pin_layout_title">Szoros elrendezés</string>
-  <string name="unlock_scramble_pin_layout_summary">PIN szoros elrendezése az eszköz feloldásakor</string>
+  <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
+  <string name="unlock_scramble_pin_layout_summary">Összekeveri a beviteli mezőn a számok elrendezését az eszköz feloldásakor</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Zenei vizualítás megjelenítése</string>
   <!-- Lock screen cover art -->
