@@ -62,8 +62,8 @@
   <string name="lock_directly_show_pin">Közvetlen PIN megadás megjelenítése</string>
   <string name="lock_directly_show_pin_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a PIN kódos belépéssel</string>
   <!-- PIN scramble -->
-  <string name="unlock_scramble_pin_layout_title">Szoros elrendezés</string>
-  <string name="unlock_scramble_pin_layout_summary">PIN szoros elrendezése az eszköz feloldásakor</string>
+  <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
+  <string name="unlock_scramble_pin_layout_summary">Összekeveri a beviteli mezőn a számok elrendezését az eszköz feloldásakor</string>
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Zenei vizualítás megjelenítése</string>
   <!-- Lock screen cover art -->
@@ -182,7 +182,7 @@
   <string name="app_ops_summaries_activate_vpn">VPN aktiválása</string>
   <string name="app_ops_summaries_write_wallpaper">háttérkép írása</string>
   <string name="app_ops_summaries_assist_structure">struktúra asszisztens</string>
-  <string name="app_ops_summaries_assist_screenshot">képernyőkép asszisztens</string>
+  <string name="app_ops_summaries_assist_screenshot">képernyőmentés-asszisztens</string>
   <string name="app_ops_summaries_read_phone_state">telefon állapotának olvasása</string>
   <string name="app_ops_summaries_add_voicemail">hangposta hozzáadása</string>
   <string name="app_ops_summaries_use_sip">SIP használata</string>
@@ -259,7 +259,7 @@
   <string name="app_ops_labels_activate_vpn">VPN aktiválása</string>
   <string name="app_ops_labels_write_wallpaper">Háttérkép írása</string>
   <string name="app_ops_labels_assist_structure">Struktúra asszisztens</string>
-  <string name="app_ops_labels_assist_screenshot">Képernyőkép asszisztens</string>
+  <string name="app_ops_labels_assist_screenshot">Képernyőmentés-asszisztens</string>
   <string name="app_ops_labels_read_phone_state">Telefon állapotának olvasása</string>
   <string name="app_ops_labels_add_voicemail">Hangposta hozzáadása</string>
   <string name="app_ops_labels_use_sip">SIP használata</string>
