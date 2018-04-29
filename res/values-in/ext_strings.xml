@@ -179,15 +179,15 @@
   <string name="app_ops_labels_read_cell_broadcasts">Baca siaran seluler</string>
   <string name="app_ops_labels_mock_location">Palsukan lokasi</string>
   <string name="app_ops_labels_read_external_storage">Membaca penyimpanan eksternal</string>
-  <string name="app_ops_labels_write_external_storage">Menulis penyimpanan luar</string>
-  <string name="app_ops_labels_turn_screen_on">Hidupkan layar</string>
+  <string name="app_ops_labels_write_external_storage">Menulis ppenyimpanan eksternal</string>
+  <string name="app_ops_labels_turn_screen_on">Menghidupkan layar</string>
   <string name="app_ops_labels_get_accounts">Mendapatkan akun</string>
   <string name="app_ops_labels_run_in_background">Berjalan di latar belakang</string>
-  <string name="app_ops_labels_toggle_wifi">Toggle Wi-Fi</string>
-  <string name="app_ops_labels_toggle_bluetooth">Toggle bluetooth</string>
+  <string name="app_ops_labels_toggle_wifi">Hidup/matikan Wi-Fi</string>
+  <string name="app_ops_labels_toggle_bluetooth">Hidup/matikan bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Memulai saat boot</string>
-  <string name="app_ops_labels_toggle_nfc">Toggle NFC</string>
-  <string name="app_ops_labels_toggle_mobile_data">Toggle data seluler</string>
+  <string name="app_ops_labels_toggle_nfc">Hidup/matikan NFC</string>
+  <string name="app_ops_labels_toggle_mobile_data">Hidup/matikan data seluler</string>
   <string name="app_ops_labels_superuser">Akses root</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">Di izinkan</string>
@@ -198,7 +198,7 @@
   <string name="app_ops_allowed_count">Diizinkan: <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Ditolak: <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Diizinkan: <xliff:g id="count">%1$s</xliff:g>; ditolak: <xliff:g id="count">%2$s</xliff:g></string>
-  <string name="app_ops_no_blockable_permissions">Blokir tidak di izinkan</string>
+  <string name="app_ops_no_blockable_permissions">Tidak ada izin yang tersedia untuk diblok</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Tampilkan aplikasi pengguna</string>
   <string name="app_ops_show_system_apps">Tampilkan aplikasi bawaan</string>

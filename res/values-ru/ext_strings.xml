@@ -46,7 +46,7 @@
   <string name="app_ops_categories_background">Фоновый режим</string>
   <string name="app_ops_categories_bootup">Загрузка</string>
   <string name="app_ops_categories_su">Root-доступ</string>
-  <string name="app_ops_categories_other">Другой</string>
+  <string name="app_ops_categories_other">Другие</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">приблизительное местоположение</string>
   <string name="app_ops_summaries_fine_location">точное местоположение</string>
@@ -249,7 +249,7 @@
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">Сброс</string>
   <string name="menu_hidden_apps_reset_lock">Удалить граф. ключ</string>
-  <string name="protected_apps">Защищённые приложения</string>
+  <string name="protected_apps">Защищенные приложения</string>
   <string name="protected_apps_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
   <string name="saving_protected_components">Сохранение состояния приложений...</string>
   <string name="launch_app">Запустить приложение</string>
@@ -394,7 +394,7 @@
   <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
   <string name="sim_enabler_will_disable_sim_title">Внимание</string>
   <string name="sim_enabler_need_switch_data_service">Текущая SIM-карта будет отключена, а для передачи данных будет использоваться SIM-карта <xliff:g id="slotid">%1$s </xliff:g>. Продолжить?</string>
-  <string name="sim_enabler_airplane_on">Выполнение операции невозможно при включённом режиме полёта.</string>
+  <string name="sim_enabler_airplane_on">Выполнение операции невозможно при включённом режиме полета.</string>
   <string name="sim_enabler_in_call">Выполнение операции невозможно во время вызова.</string>
   <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
   <string name="sim_enabler_enabling">Включение\u2026</string>

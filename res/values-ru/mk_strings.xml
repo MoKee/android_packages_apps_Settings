@@ -37,8 +37,8 @@
   <string name="menu_hide_substratum">Скрыть слои</string>
   <!-- Manage applications: show substratum icon overlays -->
   <string name="filter_substratum_icons">Слои Substratum для иконок</string>
-  <string name="menu_show_substratum_icons">Показать значок слоёв</string>
-  <string name="menu_hide_substratum_icons">Скрыть слои иконок</string>
+  <string name="menu_show_substratum_icons">Показать наложение значков</string>
+  <string name="menu_hide_substratum_icons">Скрыть наложение значков</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
   <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>
