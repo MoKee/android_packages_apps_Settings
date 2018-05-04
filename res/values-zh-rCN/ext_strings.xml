@@ -23,14 +23,14 @@
     <item quantity="other">现在只需再执行 <xliff:g id="step_count">%1$d</xliff:g> 步操作即可进入开发者模式。</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">您现在处于开发者模式！</string>
+  <string name="show_dev_on_cm">您现在已处于开发者模式！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <string name="show_dev_already_cm">您已处于开发者模式，无需进行此操作。</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">开发工具</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">高级重启</string>
-  <string name="advanced_reboot_summary">设备已解锁时，在电源菜单的重启选项下加入重启至恢复模式与引导程序的选项</string>
+  <string name="advanced_reboot_summary">设备已解锁时，在电源菜单的重启选项下加入重启至 Recovery 与 Bootloader 的选项</string>
   <!-- Setting checkbox title for root access -->
   <string name="root_access">Root 授权</string>
   <string name="root_access_warning_title">允许 Root 授权请求？</string>
@@ -75,7 +75,7 @@
   <string name="lockpattern_settings_enable_dots_title">显示图案圆点</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">振动</string>
-  <string name="lockscreen_vibrate_enabled_head">解锁时震动</string>
+  <string name="lockscreen_vibrate_enabled_head">解锁时振动</string>
   <!-- Android debugging -->
   <string name="adb_enable">Android 调试</string>
   <string name="adb_enable_summary">启用 Android Debug Bridge (ADB) 接口</string>
