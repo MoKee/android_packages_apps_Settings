@@ -202,8 +202,8 @@
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Tampilkan aplikasi pengguna</string>
   <string name="app_ops_show_system_apps">Tampilkan aplikasi bawaan</string>
-  <string name="app_ops_reset_counters">Atur ulang gerai izinkan/tolak</string>
-  <string name="app_ops_reset_confirm_title">Konfirmasi ulang counter</string>
+  <string name="app_ops_reset_counters">Atur ulang hitungan izinkan/tolak</string>
+  <string name="app_ops_reset_confirm_title">Konfirmasi penghitung ulang</string>
   <string name="app_ops_reset_confirm_mesg">Apakah Anda yakin ingin mengatur ulang penghitung?</string>
   <string name="ok">Oke</string>
   <!-- Volume settings - Volume adjustment sound -->
@@ -211,7 +211,7 @@
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Intensitas penggetar</string>
   <string name="vibrator_intensity_dialog_warning">Nilai lebih tinggi dari %1$d%% tidak direkomendasikan</string>
-  <string name="vibrator_intensity_dialog_reset">Atur kembali</string>
+  <string name="vibrator_intensity_dialog_reset">Setel ulang</string>
   <!-- Sizes for pattern lockscreen -->
   <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -219,18 +219,18 @@
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
   <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>
   <!-- Whether the keyguard will directly show the password entry -->
-  <string name="lock_directly_show_password">Secara langsung tampilkan entri kata sandi</string>
+  <string name="lock_directly_show_password">Langsung tampilkan entri kata sandi</string>
   <!-- Whether the keyguard will directly show the pattern view -->
-  <string name="lock_directly_show_pattern">Secara langsung tampilkan gambaran pola</string>
+  <string name="lock_directly_show_pattern">Langsung tampilkan titik pola</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
-  <string name="lock_directly_show_pin">Langsung tampilkan entri nomor identifikasi pribadi</string>
+  <string name="lock_directly_show_pin">Langsung tampilkan entri PIN</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Getar</string>
   <string name="lockscreen_vibrate_enabled_head">Bergetar saat membuka</string>
   <!-- Lights settings -->
   <string name="lights_label">Lampu</string>
   <!-- Memory -->
-  <string name="memory_startup_apps_title">Aplikasi yang dimulai saat boot</string>
+  <string name="memory_startup_apps_title">Aplikasi dimulai saat boot</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Mulai ulang lanjutan</string>
   <string name="advanced_reboot_summary">Ketika tidak terkunci, sertakan opsi dalam menu power untuk memulai ulang ke recovery, bootloader, atau mulai ulang cepat</string>
@@ -308,7 +308,7 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
   <string name="zen_mode_summary_reminders">pengingat</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_events">kegiatan</string>
+  <string name="zen_mode_summary_events">acara</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_all_callers">semua penelepon</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
@@ -349,12 +349,12 @@
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">Kode wilayah Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_countrycode_summary">Tentukan kode wilayah untuk Wi\u2011Fi</string>
+  <string name="wifi_setting_countrycode_summary">Tentukan wilayah kode untuk Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_countrycode_error">Ada masalah saat mengatur kode wilayah.</string>
+  <string name="wifi_setting_countrycode_error">Ada masalah pada setelan kode wilayah.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan sumber daya</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan pengisi daya</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Notifikasi mengambang</string>
   <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
