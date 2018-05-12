@@ -25,18 +25,18 @@
   <string name="root_access_warning_title">Root erişimine izin ver?</string>
   <string name="root_access_warning_message">Root erişimine izin vermek çok tehlikelidir ve sisteminizin güvenliğini tehlikeye atabilir!</string>
   <string name="root_access_none">Devre dışı</string>
-  <string name="root_access_apps">Sadece uygulamalar</string>
-  <string name="root_access_adb">Sadece ADB</string>
+  <string name="root_access_apps">Yalnızca uygulamalar</string>
+  <string name="root_access_adb">Yalnızca ADB</string>
   <string name="root_access_all">Uygulamalar ve ADB</string>
   <!-- Preference link for root appops -->
   <string name="root_appops_title">Root erişimini yönet</string>
-  <string name="root_appops_summary">Root kurallarını görüntüle ve kontrol et</string>
+  <string name="root_appops_summary">Root erişimi kurallarını görüntüle ve kontrol et</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Cihaz modeli</string>
   <!-- About phone screen, Device name -->
-  <string name="device_name">Cihaz ismi</string>
+  <string name="device_name">Cihaz adı</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">İnşa tarihi</string>
+  <string name="build_date">Yapı tarihi</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Konum</string>
   <string name="app_ops_categories_personal">Kişisel</string>
@@ -138,7 +138,7 @@
   <string name="app_ops_labels_receive_sms">SMS al</string>
   <string name="app_ops_labels_receive_emergency_sms">Acil durum SMS alımı</string>
   <string name="app_ops_labels_receive_mms">MMS al</string>
-  <string name="app_ops_labels_receive_wap_push">WAP push alma</string>
+  <string name="app_ops_labels_receive_wap_push">WAP bildirimi al</string>
   <string name="app_ops_labels_send_sms">SMS gönder</string>
   <string name="app_ops_labels_read_icc_sms">ICC SMS okuma</string>
   <string name="app_ops_labels_write_icc_sms">ICC SMS yazma</string>
@@ -163,11 +163,11 @@
   <string name="app_ops_labels_monitor_location">Konumu izle</string>
   <string name="app_ops_labels_monitor_high_power_location">Yüksek güç konumu izle</string>
   <string name="app_ops_labels_get_usage_stats">Kullanım istatistiklerini al</string>
-  <string name="app_ops_labels_mute_unmute_microphone">Mikrofonu aç/kapa</string>
+  <string name="app_ops_labels_mute_unmute_microphone">Mikrofonu aç/kapat</string>
   <string name="app_ops_labels_toast_window">Bildirim göster</string>
   <string name="app_ops_labels_project_media">Ortamı yansıt</string>
   <string name="app_ops_labels_activate_vpn">VPN\'yi etkinleştir</string>
-  <string name="app_ops_labels_write_wallpaper">Duvar kağıdı yaz</string>
+  <string name="app_ops_labels_write_wallpaper">Duvar kağıdına yaz</string>
   <string name="app_ops_labels_assist_structure">Yardımcı yapısı</string>
   <string name="app_ops_labels_assist_screenshot">Ekran görüntüsü yardımcısı</string>
   <string name="app_ops_labels_read_phone_state">Telefon durumunu oku</string>
@@ -191,7 +191,7 @@
   <string name="app_ops_labels_superuser">Root erişimi</string>
   <!-- App ops permissions -->
   <string name="app_ops_permissions_allowed">İzin verildi</string>
-  <string name="app_ops_permissions_ignored">Görmezden gelindi</string>
+  <string name="app_ops_permissions_ignored">Reddedildi</string>
   <string name="app_ops_permissions_always_ask">Her zaman sor</string>
   <!-- App ops detail -->
   <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (<xliff:g id="count">%2$s</xliff:g> kullanım)</string>
@@ -207,13 +207,13 @@
   <string name="app_ops_reset_confirm_mesg">Sayaçları sıfırlamak istiyor musunuz?</string>
   <string name="ok">Tamam</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Ses arttırma tonları</string>
+  <string name="volume_adjust_sounds_title">Ses ayarlama sesleri</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Titreşim yoğunluğu</string>
   <string name="vibrator_intensity_dialog_warning">%1$d%% den büyük değerler tavsiye edilmez</string>
   <string name="vibrator_intensity_dialog_reset">Sıfırla</string>
   <!-- Sizes for pattern lockscreen -->
-  <string name="lock_settings_picker_pattern_size_message">Bir desen boyutu seçin</string>
+  <string name="lock_settings_picker_pattern_size_message">Desen boyutu seçin</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Desen hatasını göster</string>
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -221,26 +221,26 @@
   <!-- Whether the keyguard will directly show the password entry -->
   <string name="lock_directly_show_password">Doğrudan şifre girişini göster</string>
   <!-- Whether the keyguard will directly show the pattern view -->
-  <string name="lock_directly_show_pattern">Doğrudan desen görünümünü göster</string>
+  <string name="lock_directly_show_pattern">Doğrudan desen girişini göster</string>
   <!-- Whether the keyguard will directly show the PIN entry -->
   <string name="lock_directly_show_pin">Doğrudan PIN girişini göster</string>
   <!-- Lock screen vibrate settings -->
   <string name="lockscreen_vibrate_enabled_title">Titre</string>
-  <string name="lockscreen_vibrate_enabled_head">Kilidi açarken titreşim</string>
+  <string name="lockscreen_vibrate_enabled_head">Kilidi açarken titret</string>
   <!-- Lights settings -->
   <string name="lights_label">Işıklar</string>
   <!-- Memory -->
   <string name="memory_startup_apps_title">Açılışta başlatılan uygulamalar</string>
   <!-- Advanced restart options -->
   <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
-  <string name="advanced_reboot_summary">Kilitli değilken; kapatma menüsüne, kurtarma kipi, ön yükleyici ve yazılımsal yeniden başlatma seçeneklerini dahil et</string>
+  <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya önyükleme modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
   <!-- PIN scramble -->
-  <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
+  <string name="unlock_scramble_pin_layout_title">Karışık düzen</string>
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Müzik görselleştiriciyi görüntüle</string>
   <!-- Lock screen cover art -->
-  <string name="lockscreen_media_art_title">Kilit ekranında göster</string>
+  <string name="lockscreen_media_art_title">Medya kapak resmini görüntüle</string>
   <!-- Double tap to sleep on keyguard -->
   <string name="double_tap_sleep_anywhere_title">Uyutmak için herhangi bir yere iki defa dokunun</string>
   <!-- Protected apps lockpattern reset button -->
@@ -262,15 +262,15 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Hava durumunu göster</string>
   <!-- title for lock screen blur preference -->
-  <string name="lockscreen_blur_enabled_title">Bulanık Arkaplan</string>
+  <string name="lockscreen_blur_enabled_title">Bulanık arkaplan</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
-  <string name="proximity_wake_summary">Jestler tarafından tetiklenen uyanmadan önce yakınlık sensörünü kontrol edin</string>
+  <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
   <!-- High touch sensitivity -->
-  <string name="high_touch_sensitivity_title">Yüksek dokunma hassasiyeti</string>
+  <string name="high_touch_sensitivity_title">Yüksek dokunmatik hassasiyeti</string>
   <string name="high_touch_sensitivity_summary">Dokunmatik ekran hassasiyetini arttırarak eldiven ile kullanıma olanak verir</string>
   <!-- Touchscreen hovering -->
-  <string name="touchscreen_hovering_title">Dokunmatik ekrana dokunmadan gezinme</string>
+  <string name="touchscreen_hovering_title">Temassız gezinme</string>
   <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Seçici simgesi</string>
@@ -281,20 +281,20 @@
   <string name="stylus_icon_enabled_title">Kalem kullanırken simge göster</string>
   <string name="stylus_icon_enabled_summary">Çizerken ya da üzerinde dururken işaretçi simgesi göster</string>
   <!-- Kill app long-press back -->
-  <string name="kill_app_longpress_back">Uygulama sonlandırıcı geri tuşu</string>
-  <string name="kill_app_longpress_back_summary">Geri tuşuna uzun dokunarak ön plandaki uygulamayı sonlandır</string>
+  <string name="kill_app_longpress_back">Uygulama sonlandırma tuşu</string>
+  <string name="kill_app_longpress_back_summary">Geri tuşuna uzun basarak ön plandaki uygulamaları sonlandır</string>
   <!-- Android debugging -->
   <string name="enable_adb_cm">Android hata ayıklama</string>
   <string name="enable_adb_summary_cm">Android Hata Ayıklama (ADB) arabirimini etkinleştir</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">Hata ayıklama bildirimi</string>
-  <string name="adb_notify_summary">USB veya ağ üzerinden hata ayıklama etkin olduğunda bir bildirim görüntüle</string>
+  <string name="adb_notify_summary">USB veya ağ üzerinden hata ayıklama etkin olduğunda bildirim görüntüle</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">Ağ üzerinden ADB</string>
   <string name="adb_over_network_summary">Ağ arayüzleri (Wi\u2011Fi, USB ağları) üzerinde TCP/IP hata ayıklamayı etkinleştir. Bu ayar yeniden başlatılmada sıfırlanır</string>
   <string name="adb_over_network_warning">Uyarı: Ağ üzerinden ADB etkinken, telefonunuz tüm bağlantılı ağlar üzerinde yetkisiz erişimlere açıktır!\n\nBu özelliği sadece güvenli ağlar üzerindeyken kullanın.\n\nGerçekten bu işlevi kullanmak istiyor musunuz?</string>
   <!-- Hostname setting -->
-  <string name="device_hostname">Cihaz ağ adı</string>
+  <string name="device_hostname">Cihaz ana makine adı</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Artan zil sesi</string>
   <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
@@ -310,11 +310,11 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">etkinlikler</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_all_callers">Tüm arayanlar</string>
+  <string name="zen_mode_summary_all_callers">tüm arayanlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">seçili arayanlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
-  <string name="zen_mode_summary_repeat_callers">Tekrar arayanlar</string>
+  <string name="zen_mode_summary_repeat_callers">tekrar arayanlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_all_messages">tüm mesajlar</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
@@ -354,9 +354,9 @@
   <string name="wifi_setting_countrycode_error">Bölge kodunu ayarlarken sorun oluştu.</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Şarj aleti takıldığında ya da çıkarıldığında ekranı aç</string>
   <!-- Heads-up -->
-  <string name="heads_up_notifications_enabled_title">Üst bildirim</string>
+  <string name="heads_up_notifications_enabled_title">Bildirim pencereleri</string>
   <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Diğer</string>
@@ -380,13 +380,13 @@
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <string name="data_usage_app_restrict_all_wifi_summary">Herhangi bir Wi\u2011Fi veri erişiminden kaçın</string>
   <!-- Volume link notification -->
-  <string name="volume_link_notification_title">Zilsesi &amp; bildirim ses düzeyini bağla</string>
+  <string name="volume_link_notification_title">Zil sesi ve bildirim sesini bağla</string>
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Müzik uygulamasını başlat</string>
   <string name="headset_connect_player_summary">Kulaklık takıldığında varsayılan müzik uygulamasını başlat</string>
   <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Uyku için çift dokunun</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna çift dokun</string>
+  <string name="status_bar_double_tap_to_sleep_title">Çift dokunuşla uyutma</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Cihazı uyutmak için durum çubuğuna iki kez hafifçe dokunun</string>
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_enabled">etkin</string>
   <string name="sim_disabled">devre dışı</string>
@@ -395,7 +395,7 @@
   <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
   <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve SIM <xliff:g id="slotid">%1$s</xliff:g> veri hizmetleri için kullanılacak. Devam etmek istediğinizden emin misiniz?</string>
   <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem yapılamıyor.</string>
-  <string name="sim_enabler_in_call">Görüşmedeyken işlem yapılamıyor.</string>
+  <string name="sim_enabler_in_call">Arama sırasında işlem yapılamıyor.</string>
   <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
   <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
   <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
@@ -409,7 +409,7 @@
   <string name="maximum_body_level">Vücut: %1$s W/kg</string>
   <!-- IC Codes -->
   <string name="ic_code_model">Model: %1$s</string>
-  <string name="ic_code_full">Simge: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">Ağ operatörleri</string>
   <!-- Burn in protection -->

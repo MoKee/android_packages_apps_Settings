@@ -16,29 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
-  <string name="mk_version">MoKee Versiyonu</string>
-  <string name="mk_version_default">Bilinmeyen</string>
+  <string name="mk_version">MoKee sürümü</string>
+  <string name="mk_version_default">Bilinmiyor</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
-    <item quantity="other">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+    <item quantity="one">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+    <item quantity="other">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Artık bir geliştiricisiniz!</string>
+  <string name="show_dev_on_mk">Geliştirici seçeneklerini etkinleştirdiniz!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Gerek yok, zaten geliştirici ayarlarını etkinleştirdiniz.</string>
+  <string name="show_dev_already_mk">Geliştirici seçenekleri zaten etkin.</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Donma veya MoKee Center\'ı kaldırma sistem servislerini etkiler, lütfen geri yükleyin ve tekrar deneyin.</string>
+  <string name="mkcenter_verify_failed_toast">MoKee Center\'ın dondurulması veya kaldırılması sistem servislerini etkileyecektir, lütfen geri yükleyin ve tekrar deneyin.</string>
   <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum bindirmeleri</string>
-  <string name="menu_show_substratum">Bindirmeleri göster</string>
-  <string name="menu_hide_substratum">Bindirmeleri gizle</string>
+  <string name="filter_substratum_apps">Substratum temaları</string>
+  <string name="menu_show_substratum">Temaları göster</string>
+  <string name="menu_hide_substratum">Temaları gizle</string>
   <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum simge bindirmeleri</string>
-  <string name="menu_show_substratum_icons">Simge bindirmelerini göster</string>
-  <string name="menu_hide_substratum_icons">Simge bindirmelerini gizle</string>
+  <string name="filter_substratum_icons">Substratum simge temaları</string>
+  <string name="menu_show_substratum_icons">Tema simgelerini göster</string>
+  <string name="menu_hide_substratum_icons">Tema simgelerini gizle</string>
   <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Her tema uygulamanın yetkisini zorla</string>
+  <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
   <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
@@ -51,12 +51,12 @@
   <string name="wifi_setting_frequency_band_5G">Sadece 5 GHz</string>
   <string name="wifi_setting_frequency_band_2G">Sadece 2.4 Ghz</string>
   <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Üç parka ekran görüntüsü alma</string>
+  <string name="three_finger_screenshot_title">Üç parmak hareketi</string>
   <string name="three_finger_screenshot_summary">Ekran görüntüsü almak için üç parmağınızı ekranda aşağıya hızla kaydırın</string>
   <!-- Show charging speed -->
   <string name="show_charging_speed_title">Şarj hızını göster</string>
   <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Son işlemlerdeki bellek kullanımını göster</string>
+  <string name="show_memory_bar_in_recents">Son uygulamlar ekranında bellek kullanım çubuğunu göster</string>
   <string name="recents_membar_pos_top">Üst</string>
   <string name="recents_membar_pos_bottom">Alt</string>
   <string name="recents_membar_pos_hidden">Gizli</string>
