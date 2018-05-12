@@ -286,4 +286,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Задржавање прста</string>
   <string name="touchscreen_hovering_summary">Омогућава радње при задржавању прста изнад елемената интерфејса у веб-прегледачима или другим апликацијама.</string>
+  <!-- Per-app data restrictions -->
 </resources>

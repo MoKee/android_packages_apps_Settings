@@ -319,4 +319,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
   <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
+  <!-- Per-app data restrictions -->
 </resources>

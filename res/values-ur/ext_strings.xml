@@ -63,4 +63,5 @@
   <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_summary">آپ کو ویب براؤزرز، ریموٹ ڈیسک ٹاپ وغیرہ وغیرہ میں اسکرین کو ہورانے کی اجازت دیتا ہے</string>
+  <!-- Per-app data restrictions -->
 </resources>

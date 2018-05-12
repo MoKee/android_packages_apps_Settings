@@ -285,4 +285,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Pantailaren gainetik pasatu</string>
   <string name="touchscreen_hovering_summary">Sagua bailitzan pantailaren gainetik pasatzea ahalbidetzen dizu, nabigatzaileetan, urruneko mahaigainetan, eta abar</string>
+  <!-- Per-app data restrictions -->
 </resources>

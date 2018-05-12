@@ -317,4 +317,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Touch a puntamento</string>
   <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser e nei desktop remoti</string>
+  <!-- Per-app data restrictions -->
 </resources>

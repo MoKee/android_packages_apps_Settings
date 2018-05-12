@@ -257,4 +257,5 @@
   <string name="high_touch_sensitivity_summary">Dagdagan ang touchscreen kaya\'t magagamit ito habang may suot na mga glab</string>
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_summary">Bigyan ka na mag-hover sa screen kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
+  <!-- Per-app data restrictions -->
 </resources>

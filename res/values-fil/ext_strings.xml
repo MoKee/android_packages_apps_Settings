@@ -296,4 +296,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Hovering ng touchscreen</string>
   <string name="touchscreen_hovering_summary">Pinapayagan ka na mag hover sa screen na kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
+  <!-- Per-app data restrictions -->
 </resources>

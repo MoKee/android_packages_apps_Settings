@@ -319,4 +319,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
   <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
+  <!-- Per-app data restrictions -->
 </resources>

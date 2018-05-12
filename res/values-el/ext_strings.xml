@@ -317,4 +317,5 @@
   <!-- Touchscreen hovering -->
   <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>
   <string name="touchscreen_hovering_summary">Σας επιτρέπει να αιωρείτε πάνω από την οθόνη όπως ένα ποντίκι σε προγράμματα περιήγησης στο web, απομακρυσμένες επιφάνειες εργασίας, κλπ</string>
+  <!-- Per-app data restrictions -->
 </resources>
