@@ -323,4 +323,8 @@
   <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
   <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">بيانات شبكة الجوّال</string>
+  <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات الخلوية</string>
+  <string name="data_usage_app_restrict_wifi">بيانات WiFi</string>
+  <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات WiFi</string>
 </resources>

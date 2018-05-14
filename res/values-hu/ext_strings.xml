@@ -318,4 +318,8 @@
   <string name="touchscreen_hovering_title">Lebegő érintés</string>
   <string name="touchscreen_hovering_summary">Engedélyezi a lebegéssel való vezérlést, mint egy egérrel a böngészőknél, távoli asztaloknál, stb.</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobiladat-kapcsolat</string>
+  <string name="data_usage_app_restrict_data_summary">Mobiladat-használat engedélyezése</string>
+  <string name="data_usage_app_restrict_wifi">Wi-Fi kapcsolat</string>
+  <string name="data_usage_app_restrict_wifi_summary">Wi-Fi adatkapcsolat engedélyezése</string>
 </resources>

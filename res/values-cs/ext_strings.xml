@@ -320,4 +320,8 @@
   <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
   <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobilní data</string>
+  <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
+  <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+  <string name="data_usage_app_restrict_wifi_summary">Povolit použití dat Wi\u2011Fi</string>
 </resources>
