@@ -36,7 +36,7 @@
   <!-- About phone screen, Device name -->
   <string name="device_name">Eszköz neve</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">Build dátuma</string>
+  <string name="build_date">Kiadás dátuma</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">Helymeghatározás</string>
   <string name="app_ops_categories_personal">Személyes</string>
