@@ -180,6 +180,7 @@
   <string name="app_ops_summaries_turn_screen_on">aktivera skärmen</string>
   <string name="app_ops_summaries_get_accounts">hämta konton</string>
   <string name="app_ops_summaries_run_in_background">kör i bakgrunden</string>
+  <string name="app_ops_summaries_picture_in_picture">använd bild i bild</string>
   <string name="app_ops_summaries_toggle_wifi">växla Wi\u2011Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">växla Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">starta vid uppstart</string>
