@@ -317,4 +317,8 @@
   <string name="touchscreen_hovering_title">觸控螢幕懸浮</string>
   <string name="touchscreen_hovering_summary">允許您把手指懸浮在螢幕上，像滑鼠般控制瀏覽器、遠程桌面等</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">行動數據</string>
+  <string name="data_usage_app_restrict_data_summary">啟用行動網路</string>
+  <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 資料</string>
+  <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 資料</string>
 </resources>
