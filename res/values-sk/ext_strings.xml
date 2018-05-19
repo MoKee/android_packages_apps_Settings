@@ -320,4 +320,5 @@
   <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
   <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobilné dáta</string>
 </resources>
