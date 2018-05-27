@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Overlays di Substratum</string>
   <string name="menu_show_substratum">Mostra overlays</string>
   <string name="menu_hide_substratum">Nascondi overlays</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Terminare o rimuovere Mokee Center influirà su alcuni servizi di sistema, ripristina e riprova.</string>
 </resources>

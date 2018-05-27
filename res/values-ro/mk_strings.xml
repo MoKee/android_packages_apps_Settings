@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Suprapuneri de substrat</string>
   <string name="menu_show_substratum">Arată suprapuneri</string>
   <string name="menu_hide_substratum">Ascundeţi suprapunerile</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Îngheţarea sau eliminarea MoKee Center va afecta serviciile de sistem, vă rugăm restabiliți și încercați din nou.</string>
 </resources>

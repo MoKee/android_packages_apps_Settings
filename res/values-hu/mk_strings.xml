@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum rétegek</string>
   <string name="menu_show_substratum">Rétegek megjelenítése</string>
   <string name="menu_hide_substratum">Rétegek elrejtése</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">A lefagyott vagy megsérült MoKee központ hatással lesz a rendszer szolgáltatásaira, állítsa helyre és próbálja újra.</string>
 </resources>

@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Mga overlay na substratum</string>
   <string name="menu_show_substratum">Ipakita ang overlays</string>
   <string name="menu_hide_substratum">Itago ang mga overlays</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Ang pag-freeze o pag-alis ng MoKee Center ay makakaapekto sa mga serbisyo ng system, maaring ibalik at subukang muli.</string>
 </resources>

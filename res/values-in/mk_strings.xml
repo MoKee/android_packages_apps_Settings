@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum overlay</string>
   <string name="menu_show_substratum">Tampilkan overlay</string>
   <string name="menu_hide_substratum">Sembunyikan overlay</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Menonaktifkan atau menghapus MoKee Center akan mempengaruhi layanan sistem, silakan memulihkan dan coba lagi.</string>
 </resources>

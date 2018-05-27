@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Capas de Substratum</string>
   <string name="menu_show_substratum">Mostrar capas</string>
   <string name="menu_hide_substratum">Ocultar capas</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Congelar o remover \"Centro de MoKee\" afectara los servicios del sistema, por favor restaurela y vuelva a intentarlo.</string>
 </resources>

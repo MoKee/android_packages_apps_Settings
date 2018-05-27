@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Surcouches Substratum</string>
   <string name="menu_show_substratum">Afficher les surcouches</string>
   <string name="menu_hide_substratum">Masquer les surcouches</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Geler ou supprimer le Centre MoKee affectera les services système, veuillez restaurer et réessayer.</string>
 </resources>

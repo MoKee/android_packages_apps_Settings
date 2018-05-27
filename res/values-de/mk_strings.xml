@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum Overlays</string>
   <string name="menu_show_substratum">Overlays anzeigen</string>
   <string name="menu_hide_substratum">Overlays ausblenden</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Das Einfrieren oder Entfernen von MoKee Center beeinträchtigt die Systemdienste. Bitte wiederherstellen und erneut versuchen.</string>
 </resources>

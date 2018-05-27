@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum 오버레이</string>
   <string name="menu_show_substratum">오버레이 보이기</string>
   <string name="menu_hide_substratum">오버레이 숨기기</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">MoKee Center를 삭제하거나 사용안함할 경우, 시스템에 영향응 줄 수 있습니다. 복원한 후 다시 진행해주세요</string>
 </resources>

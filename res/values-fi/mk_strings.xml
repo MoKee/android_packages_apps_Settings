@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum ulkoasut</string>
   <string name="menu_show_substratum">Näytä ulkoasut</string>
   <string name="menu_hide_substratum">Piilota ulkoasut</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Poistamalla MoKee Centerin, vaikutat järjestelmään joten palauta se käyttöön ja yritä uudelleen.</string>
 </resources>

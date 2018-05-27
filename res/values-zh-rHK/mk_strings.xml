@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">底層覆蓋</string>
   <string name="menu_show_substratum">顯示覆蓋</string>
   <string name="menu_hide_substratum">隱藏覆蓋</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">停用或移除 Mokee 中心可能會影響系統服務，請恢復並重試。</string>
 </resources>

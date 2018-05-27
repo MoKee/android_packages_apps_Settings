@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Nakładki substratum</string>
   <string name="menu_show_substratum">Pokaż nakładki</string>
   <string name="menu_hide_substratum">Ukryj nakładki</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Zamrażanie albo usuwanie Centrum MoKee wpłynie na stabilność usług systemu. Przywróć je i spróbuj ponownie.</string>
 </resources>

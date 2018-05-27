@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum prekrytia</string>
   <string name="menu_show_substratum">Zobraziť prekrytia</string>
   <string name="menu_hide_substratum">Skryť prekrytia</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Zmrazenie alebo odstránenie MoKee Centra môže ovplyvniť systémové služby, prosím obnovte a skúste znovu.</string>
 </resources>

@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum слоеве</string>
   <string name="menu_show_substratum">Покажи слоеве</string>
   <string name="menu_hide_substratum">Скрий слоеве</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Замразяване или премахване на MoKee център ще засегне системни услуги, моля възстановете и опитайте отново.</string>
 </resources>

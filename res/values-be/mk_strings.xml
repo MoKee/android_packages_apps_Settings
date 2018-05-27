@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Пласты Substratum</string>
   <string name="menu_show_substratum">Паказваць пласты</string>
   <string name="menu_hide_substratum">Схаваць пласты</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка аднавіце і паспрабуйце ізноў.</string>
 </resources>

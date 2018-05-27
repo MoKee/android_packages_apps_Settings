@@ -23,4 +23,6 @@
   <string name="filter_substratum_apps">Substratum penindahan</string>
   <string name="menu_show_substratum">Memaparkan penindihan</string>
   <string name="menu_hide_substratum">Menyembungi penindihan</string>
+  <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">Membekukan atau megeluarkan MoKee Center akan menjejaskan servis sistem, sila memulihkan dan mencuba lagi.</string>
 </resources>
