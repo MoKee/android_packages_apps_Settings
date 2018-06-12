@@ -88,7 +88,7 @@
         android:title="@string/screen_zoom_title"
         settings:keywords="@string/screen_zoom_keywords" />
 
-    <org.mokee.internal.mkparts.LineagePartsPreference
+    <org.mokee.internal.mkparts.MKPartsPreference
         android:key="long_screen_settings"
         mk:requiresConfig="@*mokee.platform:bool/config_haveHigherAspectRatioScreen" />
 
