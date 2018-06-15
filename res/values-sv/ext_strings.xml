@@ -181,6 +181,7 @@
   <string name="app_ops_summaries_get_accounts">hämta konton</string>
   <string name="app_ops_summaries_run_in_background">kör i bakgrunden</string>
   <string name="app_ops_summaries_picture_in_picture">använd bild i bild</string>
+  <string name="app_ops_summaries_answer_phone_calls">svara på telefonsamtal</string>
   <string name="app_ops_summaries_toggle_wifi">växla Wi\u2011Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">växla Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">starta vid uppstart</string>
@@ -252,6 +253,7 @@
   <string name="app_ops_labels_turn_screen_on">Aktivera skärmen</string>
   <string name="app_ops_labels_get_accounts">Hämta konton</string>
   <string name="app_ops_labels_run_in_background">Kör i bakgrunden</string>
+  <string name="app_ops_labels_answer_phone_calls">Besvara telefonsamtal</string>
   <string name="app_ops_labels_toggle_wifi">Växla Wi\u2011Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">Växla Bluetooth</string>
   <string name="app_ops_labels_start_at_boot">Starta vid uppstart</string>
@@ -287,4 +289,5 @@
   <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
   <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobildata</string>
 </resources>
