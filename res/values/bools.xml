@@ -48,4 +48,7 @@
 
     <!--Whether help links are defined. -->
     <bool name="config_has_help">false</bool>
+
+    <!-- Whether to disable eab provision -->
+    <bool name="config_is_eab_provisioned">true</bool>
 </resources>
