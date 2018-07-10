@@ -31,7 +31,9 @@
   <string name="show_dev_already_cm">Není potřeba, vývojářské nastavení je již povoleno.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Platforma</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Celkem RAM</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Vývojářské nástroje</string>
   <!-- Advanced restart options -->

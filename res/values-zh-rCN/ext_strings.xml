@@ -28,7 +28,9 @@
   <string name="show_dev_already_cm">您已处于开发者模式，无需进行此操作。</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">平台</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">内存总计</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">开发工具</string>
   <!-- Advanced restart options -->
