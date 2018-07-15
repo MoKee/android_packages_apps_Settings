@@ -32,6 +32,7 @@
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Skupno pomnilnika</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Razvojna orodja</string>
   <!-- Advanced restart options -->
@@ -323,4 +324,5 @@
   <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
   <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobilni podatki</string>
 </resources>
