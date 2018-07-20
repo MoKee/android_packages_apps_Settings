@@ -88,6 +88,10 @@
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
+        <!-- Vendor security patch level -->
+        <org.mokee.internal.preference.deviceinfo.MKVendorSecurityPatchPreference
+                android:key="mk_vendor_security_patch"/>
+
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"
