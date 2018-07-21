@@ -20,4 +20,10 @@
     <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary_mk">Languages, time, backup</string>
 
+    <!-- OP like Navigation Gestures -->
+    <string name="gesture_settings_title">Custom navigation gestures</string>
+    <string name="gesture_settings_info">Navigation bar must be disabled!\n\nAvailable gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
+    <string name="use_bottom_gesture_title">Navigation gestures</string>
+    <string name="use_bottom_gesture_summary">Use bottom swipe up gestures for navigation</string>
+
 </resources>
