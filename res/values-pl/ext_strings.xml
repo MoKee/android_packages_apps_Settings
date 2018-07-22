@@ -31,7 +31,9 @@
   <string name="show_dev_already_cm">Wystarczy, już włączono opcje programistyczne.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Platforma</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Całkowicie RAM</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Narzędzia programistyczne</string>
   <!-- Advanced restart options -->
