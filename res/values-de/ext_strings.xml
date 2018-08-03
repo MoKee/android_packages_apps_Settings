@@ -29,7 +29,9 @@
   <string name="show_dev_already_cm">Unnötig, Sie sind bereits Entwickler.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Plattform</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Gesamter Arbeitsspeicher</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Entwicklerwerkzeuge</string>
   <!-- Advanced restart options -->
@@ -321,4 +323,8 @@
   <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
   <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data">Mobile Daten</string>
+  <string name="data_usage_app_restrict_data_summary">Mobile Datennutzung aktivieren</string>
+  <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+  <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi Datennutzung erlauben</string>
 </resources>
