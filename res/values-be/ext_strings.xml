@@ -102,6 +102,8 @@
   <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
   <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
   <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
+  <!-- Hostname setting -->
+  <string name="device_hostname">Сеткавае імя прылады</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Нарастальная гучнасць званку</string>
   <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>

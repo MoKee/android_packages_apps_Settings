@@ -93,6 +93,8 @@
   <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
   <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
   <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
+  <!-- Hostname setting -->
+  <string name="device_hostname">Hostname ng gamit</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Ipataas ang volume ng ring</string>
   <string name="increasing_ring_min_volume_title">Simulan ang volume</string>

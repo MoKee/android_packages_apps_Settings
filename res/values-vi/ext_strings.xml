@@ -99,6 +99,8 @@
   <string name="security_settings_fingerprint_sensor_location_front">trước</string>
   <string name="security_settings_fingerprint_sensor_location_left">cạnh trái</string>
   <string name="security_settings_fingerprint_sensor_location_right">cạnh phải</string>
+  <!-- Hostname setting -->
+  <string name="device_hostname">Tên máy chủ của thiết bị</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Tăng âm lượng chuông</string>
   <string name="increasing_ring_min_volume_title">Âm lượng khởi động</string>

@@ -78,6 +78,8 @@
   <string name="kill_app_longpress_back_summary">Matar l\'aplicación actual al caltener primíu\'l botón Volver</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <!-- Hostname setting -->
+  <string name="device_hostname">Nome del preséu</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Volume de timbre ascendente</string>
   <string name="increasing_ring_min_volume_title">Volume inicial</string>

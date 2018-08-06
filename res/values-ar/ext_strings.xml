@@ -106,6 +106,8 @@
   <string name="security_settings_fingerprint_sensor_location_front">الأمام</string>
   <string name="security_settings_fingerprint_sensor_location_left">الجانب الأيسر</string>
   <string name="security_settings_fingerprint_sensor_location_right">الجانب الأيمن</string>
+  <!-- Hostname setting -->
+  <string name="device_hostname">اسم مضيف الجهاز</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">حجم الصوت متزايد</string>
   <string name="increasing_ring_min_volume_title">حجم الصوت البدئيّ</string>
