@@ -184,6 +184,11 @@
   <string name="app_ops_summaries_turn_screen_on">укључивање екрана</string>
   <string name="app_ops_summaries_get_accounts">добави налоге</string>
   <string name="app_ops_summaries_run_in_background">рад у позадини</string>
+  <string name="app_ops_summaries_accessibility_volume">јачина звука за приступачност</string>
+  <string name="app_ops_summaries_read_phone_numbers">читај бројеве телефона</string>
+  <string name="app_ops_summaries_picture_in_picture">користи слику у слици</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">покрените инстант апликацију у предњем плану</string>
+  <string name="app_ops_summaries_answer_phone_calls">одговори на телефонске позиве</string>
   <string name="app_ops_summaries_toggle_wifi">укључивање/искључивање Wi-Fi-а</string>
   <string name="app_ops_summaries_toggle_bluetooth">укључивање/искључивање Bluetooth-а</string>
   <string name="app_ops_summaries_start_at_boot">покретање са системом</string>

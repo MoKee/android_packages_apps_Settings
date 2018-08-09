@@ -189,6 +189,8 @@
   <string name="app_ops_summaries_turn_screen_on">вмикати екран</string>
   <string name="app_ops_summaries_get_accounts">отримати доступ до облікових записів</string>
   <string name="app_ops_summaries_run_in_background">працювати у фоновому режимі</string>
+  <string name="app_ops_summaries_read_phone_numbers">переглядати номери телефону</string>
+  <string name="app_ops_summaries_picture_in_picture">використовувати картинку в картинці</string>
   <string name="app_ops_summaries_toggle_wifi">переключити Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">переключити Bluetooth</string>
   <string name="app_ops_summaries_start_at_boot">запуск при завантаженні</string>

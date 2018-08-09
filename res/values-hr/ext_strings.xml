@@ -183,6 +183,11 @@
   <string name="app_ops_summaries_turn_screen_on">uključi zaslon</string>
   <string name="app_ops_summaries_get_accounts">pridobi račune</string>
   <string name="app_ops_summaries_run_in_background">pokreni u pozadini</string>
+  <string name="app_ops_summaries_accessibility_volume">dostupnost glasnoći zvuka</string>
+  <string name="app_ops_summaries_read_phone_numbers">pročitati brojeve telefona</string>
+  <string name="app_ops_summaries_picture_in_picture">korištenje slike u slici</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">pokrenuti instant aplikaciju u u prvom planu</string>
+  <string name="app_ops_summaries_answer_phone_calls">odgovoriti na telefonske pozive</string>
   <string name="app_ops_summaries_toggle_wifi">upravljati Wi-Fi-em</string>
   <string name="app_ops_summaries_toggle_bluetooth">upravljati Bluetooth-om</string>
   <string name="app_ops_summaries_start_at_boot">pokreni pri pokretanju</string>

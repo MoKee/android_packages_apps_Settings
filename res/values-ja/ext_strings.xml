@@ -189,6 +189,11 @@
   <string name="app_ops_summaries_turn_screen_on">画面の点灯</string>
   <string name="app_ops_summaries_get_accounts">アカウントの取得</string>
   <string name="app_ops_summaries_run_in_background">バックグラウンドでの実行</string>
+  <string name="app_ops_summaries_accessibility_volume">補助音声ボリューム</string>
+  <string name="app_ops_summaries_read_phone_numbers">電話番号の読み取り</string>
+  <string name="app_ops_summaries_picture_in_picture">ピクチャー イン ピクチャーの使用</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">フォアグラウンドでのインスタントアプリの起動</string>
+  <string name="app_ops_summaries_answer_phone_calls">電話に応答</string>
   <string name="app_ops_summaries_toggle_wifi">Wi-Fiの切り替え</string>
   <string name="app_ops_summaries_toggle_bluetooth">Bluetoothの切り替え</string>
   <string name="app_ops_summaries_start_at_boot">ブート時の実行</string>

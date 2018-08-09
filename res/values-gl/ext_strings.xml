@@ -184,6 +184,11 @@
   <string name="app_ops_summaries_turn_screen_on">acender a pantalla</string>
   <string name="app_ops_summaries_get_accounts">obter contas</string>
   <string name="app_ops_summaries_run_in_background">abrir en segundo plano</string>
+  <string name="app_ops_summaries_accessibility_volume">volume do son de accesibilidade</string>
+  <string name="app_ops_summaries_read_phone_numbers">ler números de teléfono</string>
+  <string name="app_ops_summaries_picture_in_picture">empregar imaxe sobre imaxe</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">iniciar unha aplicación instantaneamente en primeiro plano</string>
+  <string name="app_ops_summaries_answer_phone_calls">responder chamadas de teléfono</string>
   <string name="app_ops_summaries_toggle_wifi">trocar wifi</string>
   <string name="app_ops_summaries_toggle_bluetooth">trocar bluetooh</string>
   <string name="app_ops_summaries_start_at_boot">iniciar co arranque</string>

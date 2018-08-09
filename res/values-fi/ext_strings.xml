@@ -193,6 +193,11 @@
   <string name="app_ops_summaries_turn_screen_on">avaa näyttö</string>
   <string name="app_ops_summaries_get_accounts">lue käyttäjiä</string>
   <string name="app_ops_summaries_run_in_background">avaa taustalla</string>
+  <string name="app_ops_summaries_accessibility_volume">äänen esteettömyys voimakkuus</string>
+  <string name="app_ops_summaries_read_phone_numbers">lukea puhelinnumeroita</string>
+  <string name="app_ops_summaries_picture_in_picture">käytä kuva-kuvassa toimintoa</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">aloittaa pikasovelluksen etualalla</string>
+  <string name="app_ops_summaries_answer_phone_calls">puheluihin vastaaminen</string>
   <string name="app_ops_summaries_toggle_wifi">ota Wi-Fi:n käyttöön</string>
   <string name="app_ops_summaries_toggle_bluetooth">ota Bluetoothin käyttöön</string>
   <string name="app_ops_summaries_start_at_boot">avaa käynnistyksessä</string>
