@@ -50,6 +50,11 @@
   <string name="three_finger_screenshot_title">Скріншот трьома пальцями</string>
   <string name="three_finger_screenshot_summary">Проведіть вниз трьома пальцями на екрані, щоб зробити знімок екрану</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">Показати швидкість зарядки</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">Показати нещодавно використану пам\'ять</string>
+  <string name="recents_membar_pos_top">Верх</string>
+  <string name="recents_membar_pos_bottom">Низ</string>
   <string name="recents_membar_pos_hidden">Прихований</string>
+  <string name="apps_no_data">Додатки відсутні</string>
 </resources>
