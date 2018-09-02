@@ -28,7 +28,9 @@
   <string name="show_dev_already_cm">Tidak perlu, anda sudah mengaktifkan opsi pengembang.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Platform</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Total RAM</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Alat pengembangan</string>
   <!-- Advanced restart options -->
