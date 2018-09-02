@@ -16,7 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+    xmlns:mk="http://schemas.android.com/apk/res/mokee.platform"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="display_settings_screen"
     android:title="@string/display_settings"
@@ -107,12 +107,12 @@
         android:fragment="com.android.settings.display.AmbientDisplaySettings"
         settings:userRestriction="no_ambient_display" />
 
-    <lineageos.preference.RemotePreference
+    <mokee.preference.RemotePreference
         android:key="doze_device_settings"
         android:title="@string/ambient_display_screen_title"
-        lineage:replacesKey="ambient_display">
-        <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
-    </lineageos.preference.RemotePreference>
+        mk:replacesKey="ambient_display">
+        <intent android:action="org.mokee.settings.device.DOZE_SETTINGS" />
+    </mokee.preference.RemotePreference>
 
     <!-- Hide night mode for now
     <ListPreference
@@ -138,7 +138,7 @@
         android:summary="@string/tap_to_wake_summary" />
 
     <!-- Double tap to sleep -->
-    <lineageos.preference.LineageSystemSettingSwitchPreference
+    <mokee.preference.MKSystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
