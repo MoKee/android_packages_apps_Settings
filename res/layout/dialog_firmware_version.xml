@@ -39,6 +39,26 @@
 
         <TextView
             style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@*mokee.platform:string/mk_version"/>
+        <org.mokee.internal.preference.deviceinfo.MKVersionTextView
+            style="@style/device_info_dialog_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@*mokee.platform:string/mk_api_level"/>
+        <org.mokee.internal.preference.deviceinfo.MKAPIVersionTextView
+            style="@style/device_info_dialog_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
             android:id="@+id/security_patch_level_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +70,16 @@
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:textColor="?android:attr/colorAccent"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@*mokee.platform:string/mk_vendor_security_patch"/>
+        <org.mokee.internal.preference.deviceinfo.MKVendorSecurityPatchTextView
+            style="@style/device_info_dialog_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -72,6 +102,16 @@
         <TextView
             style="@style/device_info_dialog_value"
             android:id="@+id/kernel_version_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@*mokee.platform:string/build_date"/>
+        <org.mokee.internal.preference.deviceinfo.MKBuildDateTextView
+            style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

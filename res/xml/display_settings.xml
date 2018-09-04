@@ -96,6 +96,10 @@
         android:title="@string/show_operator_name_title"
         android:summary="@string/show_operator_name_summary" />
 
+    <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="long_screen_settings"
+        mk:requiresConfig="@*mokee.platform:bool/config_haveHigherAspectRatioScreen" />
+
     <Preference
         android:key="screensaver"
         android:title="@string/screensaver_settings_title"
@@ -143,6 +147,20 @@
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
+
+    <mokee.preference.MKGlobalSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wake_when_plugged_or_unplugged_title"
+        android:summary="@string/wake_when_plugged_or_unplugged_summary"
+        android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
+
+    <!-- Prevent accidental wake-up -->
+    <mokee.preference.MKSystemSettingSwitchPreference
+        android:key="proximity_on_wake"
+        android:title="@string/proximity_wake_title"
+        android:summary="@string/proximity_wake_summary"
+        android:defaultValue="false"
+        mk:requiresConfig="@*mokee.platform:bool/config_proximityCheckOnWake" />
 
     <ListPreference
         android:key="theme"
