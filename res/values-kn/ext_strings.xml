@@ -19,8 +19,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_cm">
+    <item quantity="one">ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಈಗ ನೀವು ಒಂದು ಹಂತ ದೂರವಿರುವಿರಿ <xliff:g id="ಹಂತ_ಎಣಿಕೆ">%1$d</xliff:g>.</item>
+    <item quantity="other">ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಈಗ ನೀವು ಕೆಲವು ಹಂತಗಳ ದೂರವಿರುವಿರಿ <xliff:g id="ಹಂತ_ಎಣಿಕೆ">%1$d</xliff:g>.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_cm">ನೀವು ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_cm">ನೀವು ಈಗಾಗಲೇ ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ, ಇದರ ಅಗತ್ಯವಿಲ್ಲ.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->

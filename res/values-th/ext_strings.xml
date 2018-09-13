@@ -104,12 +104,14 @@
   <string name="app_ops_categories_messaging">ข้อความ</string>
   <string name="app_ops_categories_media">สื่อ</string>
   <string name="app_ops_categories_device">อุปกรณ์</string>
+  <string name="app_ops_categories_run_in_background">ทำงานในเบื้องหลัง</string>
   <string name="app_ops_categories_bootup">เปิดเครื่อง</string>
   <string name="app_ops_categories_su">สิทธิผู้ดูแลระบบ</string>
   <string name="app_ops_categories_other">อื่น ๆ</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">พิกัดที่ตั้งหยาบ</string>
   <string name="app_ops_summaries_fine_location">พิกัดที่ตั้งละเอียด</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">สั่น</string>
   <string name="app_ops_summaries_read_contacts">อ่านรายชื่อ</string>
   <string name="app_ops_summaries_modify_contacts">แก้ไขรายชื่อ</string>
@@ -170,6 +172,7 @@
   <string name="app_ops_summaries_write_external_storage">เขียนที่เก็บข้อมูลภายนอก</string>
   <string name="app_ops_summaries_turn_screen_on">เปิดหน้าจอ</string>
   <string name="app_ops_summaries_get_accounts">เข้าถึงบัญชี</string>
+  <string name="app_ops_summaries_run_in_background">ทำงานในเบื้องหลัง</string>
   <string name="app_ops_summaries_toggle_wifi">สลับ Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">สลับบลูทูธ</string>
   <string name="app_ops_summaries_start_at_boot">เริ่มต้นเมื่อบูต</string>
@@ -179,6 +182,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">พิกัดที่ตั้งหยาบ</string>
   <string name="app_ops_labels_fine_location">พิกัดที่ตั้งละเอียด</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">สั่น</string>
   <string name="app_ops_labels_read_contacts">อ่านรายชื่อ</string>
   <string name="app_ops_labels_modify_contacts">แก้ไขรายชื่อ</string>
@@ -239,6 +243,7 @@
   <string name="app_ops_labels_write_external_storage">เขียนที่เก็บข้อมูลภายนอก</string>
   <string name="app_ops_labels_turn_screen_on">เปิดหน้าจอ</string>
   <string name="app_ops_labels_get_accounts">เข้าถึงบัญชี</string>
+  <string name="app_ops_labels_run_in_background">ทำงานในเบื้องหลัง</string>
   <string name="app_ops_labels_toggle_wifi">สลับ Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">สลับบลูทูธ</string>
   <string name="app_ops_labels_start_at_boot">เริ่มต้นเมื่อบูต</string>

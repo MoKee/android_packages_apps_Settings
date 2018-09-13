@@ -20,12 +20,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_cm">
-    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
+    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_cm">開発者向けオプションが有効になりました。</string>
+  <string name="show_dev_on_cm">開発者向けオプションが有効になりました！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_cm">必要ありません、既に開発者向けオプションを有効にしています。</string>
+  <string name="show_dev_already_cm">必要ありません。既に開発者向けオプションを有効にしています。</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
@@ -84,7 +84,7 @@
   <string name="kill_app_longpress_back">戻るボタンでアプリを終了</string>
   <string name="kill_app_longpress_back_summary">戻るボタンの長押しでフォアグラウンドアプリを終了する</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋認証センサーを探します。</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋認証センサーを探します</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">背面</string>
   <string name="security_settings_fingerprint_sensor_location_front">前面</string>
@@ -106,15 +106,15 @@
   <string name="sim_enabler_need_disable_sim">SIMカードはアクティベート解除されます。続けますか？</string>
   <string name="sim_enabler_will_disable_sim_title">注意</string>
   <string name="sim_enabler_need_switch_data_service">このSIMは無効になり、SIM <xliff:g id="slotid">%1$s</xliff:g>がデータサービスに使用されます。続けてもよろしいですか？</string>
-  <string name="sim_enabler_airplane_on">機内モードがONになっている間はこの操作を実行することはできません。</string>
-  <string name="sim_enabler_in_call">通話中はこの操作を実行することはできません。</string>
+  <string name="sim_enabler_airplane_on">機内モードがONになっている間はこの操作を実行することはできません</string>
+  <string name="sim_enabler_in_call">通話中はこの操作を実行することはできません</string>
   <string name="sim_enabler_both_inactive">すべてのSIMカードを無効にはできません</string>
   <string name="sim_enabler_enabling">アクティベート中...</string>
   <string name="sim_enabler_disabling">アクティベート解除中\u2026</string>
-  <string name="sub_activate_success">SIMをアクティベートしました。</string>
-  <string name="sub_activate_failed">アクティベートできませんでした。</string>
-  <string name="sub_deactivate_success">SIMをアクティベート解除しました。</string>
-  <string name="sub_deactivate_failed">アクティベート解除できませんでした。</string>
+  <string name="sub_activate_success">SIMをアクティベートしました</string>
+  <string name="sub_activate_failed">アクティベートできませんでした</string>
+  <string name="sub_deactivate_success">SIMをアクティベート解除しました</string>
+  <string name="sub_deactivate_failed">アクティベート解除できませんでした</string>
   <!-- Names of categories of app ops tabs - extension of AOSP -->
   <string name="app_ops_categories_location">位置情報</string>
   <string name="app_ops_categories_personal">個人情報</string>

@@ -28,7 +28,9 @@
   <string name="show_dev_already_cm">Không cần thiết, bạn đã có cho phép cài đặt nhà phát triển.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Nền tảng</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Tổng số RAM</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Công cụ phát triển</string>
   <!-- Advanced restart options -->
