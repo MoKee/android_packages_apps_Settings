@@ -20,24 +20,24 @@
   <string name="mk_version_default">不明</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_mk">
-    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
+    <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">開発者向けオプションが有効になりました。</string>
+  <string name="show_dev_on_mk">開発者向けオプションが有効になりました！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">必要ありません、既に開発者向けオプションを有効にしています。</string>
+  <string name="show_dev_already_mk">必要ありません。既に開発者向けオプションを有効にしています。</string>
   <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">MoKee Centerのフリーズまたは削除はシステムサービスに影響しますので、復元して再試行してください。</string>
+  <string name="mkcenter_verify_failed_toast">MoKee Centerのフリーズまたは削除はシステムサービスに影響しますので復元して再試行して下さい</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum オーバーレイ</string>
   <string name="menu_show_substratum">オーバーレイを表示</string>
   <string name="menu_hide_substratum">オーバーレイを非表示</string>
   <!-- Manage applications: show substratum icon overlays -->
   <string name="filter_substratum_icons">Substratum アイコンオーバーレイ</string>
-  <string name="menu_show_substratum_icons">オーバーレイアイコンを表示します。</string>
+  <string name="menu_show_substratum_icons">オーバーレイアイコンを表示します</string>
   <string name="menu_hide_substratum_icons">オーバーレイアイコンを非表示</string>
   <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">すべてのテーマアプリを強制的に承認する</string>
+  <string name="force_authorize_substratum_packages_title">全てのテーマアプリを強制的に承認する</string>
   <string name="force_authorize_substratum_packages_summary">提供元不明のアプリのインストールを許可する</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
@@ -45,7 +45,7 @@
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <string name="wifi_setting_frequency_band_summary">使用する周波数帯域を指定する</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">周波数帯の設定に問題がありました。</string>
+  <string name="wifi_setting_frequency_band_error">周波数帯の設定に問題がありました</string>
   <string name="wifi_setting_frequency_band_auto">オート</string>
   <string name="wifi_setting_frequency_band_5G">5GHz帯のみ</string>
   <string name="wifi_setting_frequency_band_2G">2.4GHz帯のみ</string>
@@ -53,6 +53,11 @@
   <string name="three_finger_screenshot_title">3本の指のスクリーンショット</string>
   <string name="three_finger_screenshot_summary">画面上の3本の指で下にスワイプしてスクリーンショットを撮る</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">充電速度の表示</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">アプリ履歴にメモリバーを表示する</string>
+  <string name="recents_membar_pos_top">上部</string>
+  <string name="recents_membar_pos_bottom">下部</string>
   <string name="recents_membar_pos_hidden">表示しない</string>
+  <string name="apps_no_data">アプリなし</string>
 </resources>

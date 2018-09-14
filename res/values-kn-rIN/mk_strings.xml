@@ -16,19 +16,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About version and support -->
+  <string name="mk_version">MoKee ಆವೃತ್ತಿ</string>
   <string name="mk_version_default">ಅಪರಿಚಿತ</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_mk">
+    <item quantity="one">ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಈಗ ನೀವು ಒಂದು ಹಂತ ದೂರವಿರುವಿರಿ <xliff:g id="ಹಂತ_ಎಣಿಕೆ">%1$d</xliff:g>.</item>
+    <item quantity="other">ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಈಗ ನೀವು ಕೆಲವು ಹಂತಗಳ ದೂರವಿರುವಿರಿ <xliff:g id="ಹಂತ_ಎಣಿಕೆ">%1$d</xliff:g>.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_mk">ನೀವು ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_mk">ನೀವು ಈಗಾಗಲೇ ಅಭಿವೃದ್ಧಿ ಸಂಯೋಜನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ, ಇದರ ಅಗತ್ಯವಿಲ್ಲ.</string>
   <!-- MKCenter verify -->
+  <string name="mkcenter_verify_failed_toast">MoKee ಕೇಂದ್ರವನ್ನು ಘನೀಕರಿಸುವುದರಿಂದ ಅಥವಾ ತೆಗೆದು ಹಾಕುವುದರಿಂದ ಸಿಸ್ಟಮ್ ಸೇವೆಗಳ ಮೇಲೆ ಪರಿಣಮಿಸಬಹುದು, ದಯವಿಟ್ಟು ಮರುಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">ತಳಹದಿಯ ಪದರಗಳು</string>
+  <string name="menu_show_substratum">ಪರದೆಗಳನ್ನು ತೋರಿಸಿ</string>
+  <string name="menu_hide_substratum">ಪರದೆಗಳನ್ನು ಮರೆಮಾಡಿ</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">ತಳಹದಿಯ ಚಿಹ್ನೆ ಪರದೆಗಳು</string>
+  <string name="menu_show_substratum_icons">ಚಿಹ್ನೆ ಪರದೆಗಳನ್ನು ತೋರಿಸು</string>
+  <string name="menu_hide_substratum_icons">ಚಿಹ್ನೆ ಪರದೆಗಳನ್ನು ಮರೆಮಾಡು</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">ಪ್ರತಿ ವಿಷಯ ತಂತ್ರಾಂಶಕ್ಕೆ ಅಧಿಕಾರವನ್ನು ಒತ್ತಾಯಿಸಿ</string>
+  <string name="force_authorize_substratum_packages_summary">ಅಪರಿಚಿತ ಮೂಲಗಳಿಂದ ವಿಷಯ ತಂತ್ರಾಂಶಗಳನ್ನು ಅನುಮತಿಸಿ</string>
   <!-- frequency band control -->
   <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_title">Wi-Fi ತರಂಗಗಳ ಪಟ್ಟಿ</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+  <string name="wifi_setting_frequency_band_summary">ಕಾರ್ಯನಿರತ ತರಂಗಗಳ ಶ್ರೇಣಿಯನ್ನು ಸೂಚಿಸಿ</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+  <string name="wifi_setting_frequency_band_error">ತರಂಗಗಳ ಪಟ್ಟಿಯನ್ನು ಸಂಯೋಜಿಸುವಲ್ಲಿ ಒಂದು ದೋಷವಿತ್ತು.</string>
+  <string name="wifi_setting_frequency_band_auto">ಸ್ವಯಂ</string>
+  <string name="wifi_setting_frequency_band_5G">ಕೇವಲ 5 GHz</string>
+  <string name="wifi_setting_frequency_band_2G">ಕೇವಲ 2.4 GHz</string>
   <!-- Three finger screenshot -->
+  <string name="three_finger_screenshot_title">ಮೂರು-ಬೆರಳುಗಳ ಪರದೆ</string>
+  <string name="three_finger_screenshot_summary">ಮೂರು ಬೆರಳುಗಳಿಂದ ಪರದೆಯ ಚಿತ್ರವನ್ನು ತೆಗೆಯಲು ಪರದೆಯ ಕೆಳಗೆ ಜರುಗಿಸಿ</string>
   <!-- Show charging speed -->
+  <string name="show_charging_speed_title">ಚಾರ್ಜಿಂಗ್ ವೇಗವನ್ನು ತೋರಿಸಿ</string>
   <!-- Memory bar -->
+  <string name="show_memory_bar_in_recents">ಇತ್ತೀಚಿನ ಸಂಗ್ರಹಣೆ ಬಳಕೆಯನ್ನು ತೋರಿಸಿ</string>
+  <string name="recents_membar_pos_top">ಮೇಲೆ</string>
+  <string name="recents_membar_pos_bottom">ಕೆಳಗೆ</string>
+  <string name="recents_membar_pos_hidden">ಅಡಗಿದ</string>
+  <string name="apps_no_data">ಯಾವುದೇ ತಂತ್ರಾಂಶಗಳಿಲ್ಲ</string>
 </resources>

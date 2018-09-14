@@ -41,11 +41,14 @@
   <string name="app_ops_categories_messaging">ข้อความ</string>
   <string name="app_ops_categories_media">สื่อ</string>
   <string name="app_ops_categories_device">อุปกรณ์</string>
+  <string name="app_ops_categories_background">พื้นหลัง</string>
   <string name="app_ops_categories_bootup">เปิดเครื่อง</string>
   <string name="app_ops_categories_su">สิทธิผู้ดูแลระบบ</string>
+  <string name="app_ops_categories_other">อื่น ๆ</string>
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_summaries_coarse_location">พิกัดที่ตั้งหยาบ</string>
   <string name="app_ops_summaries_fine_location">พิกัดที่ตั้งละเอียด</string>
+  <string name="app_ops_summaries_gps">GPS</string>
   <string name="app_ops_summaries_vibrate">สั่น</string>
   <string name="app_ops_summaries_read_contacts">อ่านรายชื่อ</string>
   <string name="app_ops_summaries_modify_contacts">แก้ไขรายชื่อ</string>
@@ -106,6 +109,7 @@
   <string name="app_ops_summaries_write_external_storage">เขียนที่เก็บข้อมูลภายนอก</string>
   <string name="app_ops_summaries_turn_screen_on">เปิดหน้าจอ</string>
   <string name="app_ops_summaries_get_accounts">เข้าถึงบัญชี</string>
+  <string name="app_ops_summaries_run_in_background">ทำงานในเบื้องหลัง</string>
   <string name="app_ops_summaries_toggle_wifi">สลับ Wi-Fi</string>
   <string name="app_ops_summaries_toggle_bluetooth">สลับบลูทูธ</string>
   <string name="app_ops_summaries_start_at_boot">เริ่มต้นเมื่อบูต</string>
@@ -115,6 +119,7 @@
   <!-- User display names for app ops codes - extension of AOSP -->
   <string name="app_ops_labels_coarse_location">พิกัดที่ตั้งหยาบ</string>
   <string name="app_ops_labels_fine_location">พิกัดที่ตั้งละเอียด</string>
+  <string name="app_ops_labels_gps">GPS</string>
   <string name="app_ops_labels_vibrate">สั่น</string>
   <string name="app_ops_labels_read_contacts">อ่านรายชื่อ</string>
   <string name="app_ops_labels_modify_contacts">แก้ไขรายชื่อ</string>
@@ -175,6 +180,7 @@
   <string name="app_ops_labels_write_external_storage">เขียนที่เก็บข้อมูลภายนอก</string>
   <string name="app_ops_labels_turn_screen_on">เปิดหน้าจอ</string>
   <string name="app_ops_labels_get_accounts">เข้าถึงบัญชี</string>
+  <string name="app_ops_labels_run_in_background">ทำงานในเบื้องหลัง</string>
   <string name="app_ops_labels_toggle_wifi">สลับ Wi-Fi</string>
   <string name="app_ops_labels_toggle_bluetooth">สลับบลูทูธ</string>
   <string name="app_ops_labels_start_at_boot">เริ่มต้นเมื่อบูต</string>
@@ -285,17 +291,21 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">กิจกรรม</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">ผู้โทรทั้งหมด</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">ผู้โทรที่เลือก</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">ข้อความทั้งหมด</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">ข้อความที่เลือก</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_value_10_seconds">10 วินาที</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 วินาที</string>
   <string name="app_notification_sound_timeout_value_1_minute">1 นาที</string>
   <string name="app_notification_sound_timeout_value_5_minutes">5 นาที</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 นาที</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 นาที</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">สถานะซิม %d</string>
   <string name="sim_card_lock_settings_title">ตั้งค่าการล็อคซิม %d</string>
@@ -303,6 +313,7 @@
   <string name="sim_mobile_network_settings_category_title">การตั้งค่าเครือข่ายโทรศัพท์</string>
   <string name="sim_mobile_network_settings_title">การตั้งค่าซิม %d</string>
   <!-- NFC PreferenceCategory title -->
+  <string name="nfc_title_category">NFC</string>
   <!-- Notification importance -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
