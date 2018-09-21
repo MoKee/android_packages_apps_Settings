@@ -198,6 +198,7 @@
   <string name="app_ops_allowed_count"><xliff:g id="count" example="2 times">%s</xliff:g>許可しました</string>
   <string name="app_ops_ignored_count"><xliff:g id="count" example="2 times">%s</xliff:g>拒否しました</string>
   <string name="app_ops_both_count"><xliff:g id="count">%1$s</xliff:g>許可、<xliff:g id="count">%2$s</xliff:g>拒否しました</string>
+  <string name="app_ops_no_blockable_permissions">ブロックする権限がありません</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">ユーザーアプリを表示</string>
   <string name="app_ops_show_system_apps">内蔵アプリを表示</string>
@@ -239,7 +240,9 @@
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">音楽ビジュアライザを表示</string>
   <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">メディアのカバーアートを表示</string>
   <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">どこでもダブルタップでスリープ</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">パターンをリセット</string>
   <string name="lockpattern_settings_reset_summary">パターンをリセットするにはプライマリメールアカウントと関連付けられているパスワードを入力して下さい</string>
@@ -276,7 +279,7 @@
   <string name="notification_importance_very_low">全画面表示の中断、ポップアップ通知、通知音、バイブレーションが無効になります。通知リストの一番下に表示されます。ロック画面から非表示になります。</string>
   <!-- Stylus Icon -->
   <string name="stylus_icon_enabled_title">スタイラス使用時にアイコンを表示</string>
-  <string name="stylus_icon_enabled_summary">スタイラスでホバリングまたは描写しているときにポインターアイコンを表示する</string>
+  <string name="stylus_icon_enabled_summary">スタイラスでホバリングまたは描写している時にポインターアイコンを表示する</string>
   <!-- Kill app long-press back -->
   <string name="kill_app_longpress_back">戻るボタンでアプリを終了</string>
   <string name="kill_app_longpress_back_summary">戻るボタンの長押しでフォアグラウンドアプリを終了する</string>
@@ -285,11 +288,11 @@
   <string name="enable_adb_summary_cm">Android Debug Bridge（ADB）インターフェースを有効にする</string>
   <!-- Android debugging notification -->
   <string name="adb_notify">デバッグ通知</string>
-  <string name="adb_notify_summary">USBデバッグまたはネットワークデバッグが有効になっているときに通知を表示する</string>
+  <string name="adb_notify_summary">USBデバッグまたはネットワークデバッグが有効になっている時に通知を表示する</string>
   <!-- Android debugging over network -->
   <string name="adb_over_network">ネットワーク経由のADB</string>
   <string name="adb_over_network_summary">ネットワークインターフェース（Wi\u2011Fi、USBネットワーク）経由でのTCP/IPデバッグを有効にします。この設定は再起動時にリセットされます。</string>
-  <string name="adb_over_network_warning">警告: ネットワーク経由のADBが有効になっているとき、端末は接続している全てのネットワーク上で侵入に対して無防備になります。\n\n信頼できるネットワーク接続しているときにのみ、この機能を使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
+  <string name="adb_over_network_warning">警告: ネットワーク経由のADBが有効になっている時、端末は接続している全てのネットワーク上で侵入に対して無防備になります。\n\n信頼できるネットワーク接続している時にのみ、この機能を使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
   <!-- Hostname setting -->
   <string name="device_hostname">端末のホスト名</string>
   <!-- Increasing ring tone volume -->
@@ -311,7 +314,9 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">選択した発信者</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">同一発信者による再発信</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">全てのメッセージ</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">選択したメッセージ</string>
   <!-- Notification sound timeout -->
@@ -349,7 +354,7 @@
   <string name="wifi_setting_countrycode_error">地域コードの設定中に問題が発生しました</string>
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">接続時にスリープ解除</string>
-  <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯する</string>
+  <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断した時に画面を点灯する</string>
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">ヘッドアップ</string>
   <string name="heads_up_notifications_enabled_summary">小さなフローティングウインドウに重要な通知を表示する</string>
@@ -400,7 +405,10 @@
   <string name="sub_deactivate_failed">アクティベート解除できませんでした</string>
   <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
   <!-- SAR information -->
+  <string name="maximum_head_level">頭部: %1$s W/kg</string>
+  <string name="maximum_body_level">身体: %1$s W/kg</string>
   <!-- IC Codes -->
+  <string name="ic_code_model">モデル: %1$s</string>
   <string name="ic_code_full">IC: %1$s</string>
   <!-- Label for settings shortcut: carrier selection -->
   <string name="shortcut_carrier_title">携帯通信会社</string>
