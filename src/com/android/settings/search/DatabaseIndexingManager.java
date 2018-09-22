@@ -83,7 +83,6 @@ import android.database.sqlite.SQLiteException;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.SystemProperties;
 import android.provider.SearchIndexableData;
 import android.provider.SearchIndexableResource;
 import android.provider.SearchIndexablesContract;
@@ -174,7 +173,7 @@ public class DatabaseIndexingManager {
                 mContext.getPackageManager().queryIntentContentProviders(intent, 0);
 
         final String localeStr = Locale.getDefault().toString();
-        final String fingerprint = SystemProperties.get("ro.build.date", Build.FINGERPRINT);
+        final String fingerprint = Build.TIME;
         final String providerVersionedNames =
                 IndexDatabaseHelper.buildProviderVersionedNames(providers);
 
