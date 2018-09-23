@@ -31,7 +31,9 @@
   <string name="show_dev_already_cm">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Платформа</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+  <string name="total_ram">Усяго АЗП</string>
   <!-- Launch Dev Tools -->
   <string name="development_tools_title">Прылады распрацоўкі</string>
   <!-- Advanced restart options -->
