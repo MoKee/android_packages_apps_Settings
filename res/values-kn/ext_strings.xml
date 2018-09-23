@@ -79,6 +79,10 @@
   <string name="kill_app_longpress_back_summary">ಹಿಂದೆ ಬಟನ್‍ನನ್ನು ದೀರ್ಘ-ಸ್ಪರ್ಶಿಸುವ ಮೂಲಕ ಮುನ್ನೆಲೆ ಆಪನ್ನು ಕೊಲ್ಲಿರಿ</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">ಹಿಂದೆ</string>
+  <string name="security_settings_fingerprint_sensor_location_front">ಮುಂದೆ</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ಎಡ ಬದಿ</string>
+  <string name="security_settings_fingerprint_sensor_location_right">ಬಲ ಬದಿ</string>
   <!-- Hostname setting -->
   <string name="device_hostname">ಸಾಧನ ಹಾಸ್ಟ್ ಹೆಸರು</string>
   <!-- Increasing ring tone volume -->
