@@ -238,6 +238,7 @@
   <string name="menu_hidden_apps_reset_lock">ನಮೂನೆ ಲಾಕ್ ಮರುಹೊಂದಿಸಿ</string>
   <string name="protected_apps">ಸಂರಕ್ಷಿತ ಆಪ್ಸ್</string>
   <string name="saving_protected_components">ಘಟಕ ಸ್ಥಿತಿಯನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ\u2026</string>
+  <string name="launch_app">ತಂತ್ರಾಂಶ ಬಿಡುಗಡೆ ಮಾಡಿ</string>
   <string name="pa_login_username_hint">ಬಳಕೆದಾರಹೆಸರು (ಇಮೇಲ್)</string>
   <string name="pa_login_password_hint">ಪ್ರವೇಶಪದ</string>
   <string name="pa_login_submit_button">ಸೈನ್ ಇನ್</string>
@@ -247,6 +248,7 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">ಹವಾಮಾನ ಪ್ರದರ್ಶಿಸು</string>
   <!-- title for lock screen blur preference -->
+  <string name="lockscreen_blur_enabled_title">ಹಿಂದಿನ ಪರದೆಯನ್ನು ಮಬ್ಬುಗೊಳಿಸಿ</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆ</string>
   <!-- High touch sensitivity -->
@@ -287,13 +289,24 @@
   <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_events">ಈವೆಂಟ್‌ಗಳು</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">ಎಲ್ಲ ಕರೆದಾರರಿಗೆ</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_callers">ಆಯ್ಕೆಮಾಡಲಾದ ಕರೆದಾರರು</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">ಕರೆದಾರರನ್ನು ಪುನರಾವರ್ತಿಸಿ</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">ಎಲ್ಲ ಸಂದೇಶಗಳು</string>
   <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
   <string name="zen_mode_summary_selected_messages">ಆಯ್ಕೆ ಮಾಡಿದ ಸಂದೇಶಗಳು</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">ಅಧಿಸೂಚನೆಗಳ ಶಬ್ದಗಳ ಕನಿಷ್ಠ ಸಮಯದ ಅಂತರ</string>
+  <string name="app_notification_sound_timeout_value_none">ಯಾವುದೇ ನಿರ್ಬಂಧಗಳಿಲ್ಲ</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 ಸೆಕೆಂಡುಗಳು</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 ಸೆಕೆಂಡುಗಳು</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 ನಿಮಿಷ</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 ನಿಮಿಷಗಳು</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 ನಿಮಿಷಗಳು</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 ನಿಮಿಷಗಳು</string>
   <!-- MSIM SIM status -->
   <string name="sim_card_status_title">ಸಿಮ್ %d ಸ್ಥಿತಿ</string>
   <string name="sim_card_lock_settings_title">ಸಿಮ್ %d ಲಾಕ್ ಸೆಟ್ಟಿಂಗ್ಸ್</string>
@@ -303,8 +316,13 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">ಎನ್ಎಫ್‍ಸಿ</string>
   <!-- Notification importance -->
+  <string name="tuner_full_importance_settings">ವಿದ್ಯುತ್ ಅಧಿಸೂಚನೆಗಳ ನಿಯಂತ್ರಕಗಳು</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">ಹಿಂದೆ</string>
+  <string name="security_settings_fingerprint_sensor_location_front">ಮುಂದೆ</string>
+  <string name="security_settings_fingerprint_sensor_location_left">ಎಡ ಬದಿ</string>
+  <string name="security_settings_fingerprint_sensor_location_right">ಬಲ ಬದಿ</string>
   <!-- Wi-Fi region code -->
   <string name="wifi_setting_countrycode_title">ವೈ\u2011ಫೈ ಪ್ರದೇಶ ಕೋಡ್</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
@@ -321,6 +339,7 @@
   <string name="hotstpot_inactivity_timeout_never">ಎಂದಿಗೂ ಬೇಡ</string>
   <string name="hotstpot_inactivity_timeout_1_minute">1 ನಿಮಿಷ</string>
   <string name="hotstpot_inactivity_timeout_5_minutes">5 ನಿಮಿಷಗಳು</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 ನಿಮಿಷಗಳು</string>
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
