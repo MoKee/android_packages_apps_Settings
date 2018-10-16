@@ -205,6 +205,7 @@
   <string name="app_ops_summaries_read_phone_numbers">telefoonnummers lezen</string>
   <string name="app_ops_summaries_request_install_packages">installatiepakketten aanvragen</string>
   <string name="app_ops_summaries_picture_in_picture">Beeld-in-beeld gebruiken</string>
+  <string name="app_ops_summaries_instant_app_start_foreground">Start instant app op de voorgrond</string>
   <string name="app_ops_summaries_answer_phone_calls">telefoonoproepen beantwoorden</string>
   <string name="app_ops_summaries_toggle_wifi">wifi aan-/uitzetten</string>
   <string name="app_ops_summaries_toggle_bluetooth">Bluetooth aan-/uitzetten</string>
