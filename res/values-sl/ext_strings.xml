@@ -31,6 +31,7 @@
   <string name="show_dev_already_cm">Ni potrebno, ste že omogočili možnosti za razvijalce.</string>
   <!-- Hardware info -->
   <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+  <string name="platform_revision">Platforma</string>
   <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
   <string name="total_ram">Skupno pomnilnika</string>
   <!-- Launch Dev Tools -->
