@@ -15,52 +15,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">MoKee različica</string>
-  <string name="mk_version_default">Neznano</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> korak vstran, da omogočite možnosti za razvijalce.</item>
-    <item quantity="two">Ste <xliff:g id="step_count">%1$d</xliff:g> koraka vstran, do omogočenja možnosti za razvijalce.</item>
-    <item quantity="few">Ste <xliff:g id="step_count">%1$d</xliff:g> korake vstran, do omogočenja možnosti za razvijalce.</item>
-    <item quantity="other">Ste <xliff:g id="step_count">%1$d</xliff:g> korakov vstran, do omogočenja možnosti za razvijalce.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Omogočili ste možnosti za razvijalce!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Ni potrebno, ste že omogočili možnosti za razvijalce.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Zamrznitev ali odstranjevanje MoKee Centra, bo vplivalo na sistemske storitve, prosim obnovite in poskusite znova.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum prosojnice</string>
-  <string name="menu_show_substratum">Prikaži prosojnice</string>
-  <string name="menu_hide_substratum">Skrij prosojnice</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum prosojnice ikon</string>
-  <string name="menu_show_substratum_icons">Prikaži prosojnice ikon</string>
-  <string name="menu_hide_substratum_icons">Skrij prosojnice ikon</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Prisilno odobri vsako aplikacijo za teme</string>
-  <string name="force_authorize_substratum_packages_summary">Dovoli aplikacije za teme iz neznanega vira</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Frekvenčni pas Wi-Fi</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Določite frekvenčno območje delovanja</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Pri nastavitvi frekvenčnega pasu je prišlo do težave.</string>
-  <string name="wifi_setting_frequency_band_auto">Samodejno</string>
-  <string name="wifi_setting_frequency_band_5G">Le 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">Le 2,4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Zajem zaslona s tremi prsti</string>
-  <string name="three_finger_screenshot_summary">S tremi prsti podrsajte po zaslonu navzdol, da naredite posnetek zaslona</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Prikaži hitrost polnjenja</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Prikaži uporabo polnilnika v nedavno</string>
-  <string name="recents_membar_pos_top">Zgoraj</string>
-  <string name="recents_membar_pos_bottom">Spodaj</string>
-  <string name="recents_membar_pos_hidden">Skrito</string>
-  <string name="apps_no_data">Ni aplikacij</string>
+    <!-- About version and support -->
+    <string name="mk_version">MoKee različica</string>
+    <string name="mk_version_default">Neznano</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> korak vstran, da omogočite možnosti za razvijalce.</item>
+        <item quantity="two">Ste <xliff:g id="step_count">%1$d</xliff:g> koraka vstran, do omogočenja možnosti za razvijalce.</item>
+        <item quantity="few">Ste <xliff:g id="step_count">%1$d</xliff:g> korake vstran, do omogočenja možnosti za razvijalce.</item>
+        <item quantity="other">Ste <xliff:g id="step_count">%1$d</xliff:g> korakov vstran, do omogočenja možnosti za razvijalce.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Omogočili ste možnosti za razvijalce!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Ni potrebno, ste že omogočili možnosti za razvijalce.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Zamrznitev ali odstranjevanje MoKee Centra, bo vplivalo na sistemske storitve, prosim obnovite in poskusite znova.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum prosojnice</string>
+    <string name="menu_show_substratum">Prikaži prosojnice</string>
+    <string name="menu_hide_substratum">Skrij prosojnice</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Substratum prosojnice ikon</string>
+    <string name="menu_show_substratum_icons">Prikaži prosojnice ikon</string>
+    <string name="menu_hide_substratum_icons">Skrij prosojnice ikon</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Prisilno odobri vsako aplikacijo za teme</string>
+    <string name="force_authorize_substratum_packages_summary">Dovoli aplikacije za teme iz neznanega vira</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Frekvenčni pas Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Določite frekvenčno območje delovanja</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Pri nastavitvi frekvenčnega pasu je prišlo do težave.</string>
+    <string name="wifi_setting_frequency_band_auto">Samodejno</string>
+    <string name="wifi_setting_frequency_band_5G">Le 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">Le 2,4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Zajem zaslona s tremi prsti</string>
+    <string name="three_finger_screenshot_summary">S tremi prsti podrsajte po zaslonu navzdol, da naredite posnetek zaslona</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Prikaži hitrost polnjenja</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Prikaži uporabo polnilnika v nedavno</string>
+    <string name="recents_membar_pos_top">Zgoraj</string>
+    <string name="recents_membar_pos_bottom">Spodaj</string>
+    <string name="recents_membar_pos_hidden">Skrito</string>
+    <string name="apps_no_data">Ni aplikacij</string>
 </resources>

@@ -15,50 +15,50 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">Bersyon ng MoKee</string>
-  <string name="mk_version_default">Hindi tiyak</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng pag-unlad na mga setting.</item>
-    <item quantity="other">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng mga setting ng pag-unlad.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Pinagana mo ang development na mga setting!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Hindi na kailangan, pinagana mo na ang development na mga setting.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Ang pag-freeze at pag-alis sa MoKee Center ay makaka-apekto sa system services, mangyaring ibalik at subukan muli.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum na overlays</string>
-  <string name="menu_show_substratum">Ipakita ang overlays</string>
-  <string name="menu_hide_substratum">Itago ang overlays</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum icon na overlays</string>
-  <string name="menu_show_substratum_icons">Ipakita ang icon overlays</string>
-  <string name="menu_hide_substratum_icons">Itago ang icon overlays</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Pwersahang pahintulutan ang bawat theme app</string>
-  <string name="force_authorize_substratum_packages_summary">Pahintulutan ang theme apps mula sa mga hindi kilala na mga sources</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Wi-Fi frequency band</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Tukuyin ang frequency range ng operasyon</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Nagkaroon ng problema sa pag-set sa frequency band.</string>
-  <string name="wifi_setting_frequency_band_auto">Auto</string>
-  <string name="wifi_setting_frequency_band_5G">5 GHz lamang</string>
-  <string name="wifi_setting_frequency_band_2G">2.4 GHz lamang</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Screenshot gamit ang tatlong daliri</string>
-  <string name="three_finger_screenshot_summary">I-swipe pababa gamit ang tatlong daliri sa screen upang kumuha ng screenshot</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Ipakita ang bilis ng pag-charge</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Ipakita ang paggamit sa memory sa Recents</string>
-  <string name="recents_membar_pos_top">Ibabaw</string>
-  <string name="recents_membar_pos_bottom">Ibaba</string>
-  <string name="recents_membar_pos_hidden">Nakatago</string>
-  <string name="apps_no_data">Walang mga application</string>
+    <!-- About version and support -->
+    <string name="mk_version">Bersyon ng MoKee</string>
+    <string name="mk_version_default">Hindi tiyak</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng pag-unlad na mga setting.</item>
+        <item quantity="other">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng mga setting ng pag-unlad.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Pinagana mo ang development na mga setting!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Hindi na kailangan, pinagana mo na ang development na mga setting.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Ang pag-freeze at pag-alis sa MoKee Center ay makaka-apekto sa system services, mangyaring ibalik at subukan muli.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum na overlays</string>
+    <string name="menu_show_substratum">Ipakita ang overlays</string>
+    <string name="menu_hide_substratum">Itago ang overlays</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Substratum icon na overlays</string>
+    <string name="menu_show_substratum_icons">Ipakita ang icon overlays</string>
+    <string name="menu_hide_substratum_icons">Itago ang icon overlays</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Pwersahang pahintulutan ang bawat theme app</string>
+    <string name="force_authorize_substratum_packages_summary">Pahintulutan ang theme apps mula sa mga hindi kilala na mga sources</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Wi-Fi frequency band</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Tukuyin ang frequency range ng operasyon</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Nagkaroon ng problema sa pag-set sa frequency band.</string>
+    <string name="wifi_setting_frequency_band_auto">Auto</string>
+    <string name="wifi_setting_frequency_band_5G">5 GHz lamang</string>
+    <string name="wifi_setting_frequency_band_2G">2.4 GHz lamang</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Screenshot gamit ang tatlong daliri</string>
+    <string name="three_finger_screenshot_summary">I-swipe pababa gamit ang tatlong daliri sa screen upang kumuha ng screenshot</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Ipakita ang bilis ng pag-charge</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Ipakita ang paggamit sa memory sa Recents</string>
+    <string name="recents_membar_pos_top">Ibabaw</string>
+    <string name="recents_membar_pos_bottom">Ibaba</string>
+    <string name="recents_membar_pos_hidden">Nakatago</string>
+    <string name="apps_no_data">Walang mga application</string>
 </resources>

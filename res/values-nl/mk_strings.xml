@@ -15,50 +15,50 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">MoKee versie</string>
-  <string name="mk_version_default">Onbekend</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
-    <item quantity="other">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Niet nodig, u heeft de ontwikkelaarsopties al ingeschakeld.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Bevriezing of verwijderen van MoKee Center zal invloed hebben op systeemservices, gelieve te herstellen en probeer het opnieuw.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Bedekking van Substratum</string>
-  <string name="menu_show_substratum">Bedekkingen weergeven</string>
-  <string name="menu_hide_substratum">Bedekkingen verbergen</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Pictogrambedekkingen van Substratum</string>
-  <string name="menu_show_substratum_icons">Pictogrambedekkingen weergeven</string>
-  <string name="menu_hide_substratum_icons">Pictogrambedekkingen verbergen</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Machtiging afdwingen voor alle thematoepassingen</string>
-  <string name="force_authorize_substratum_packages_summary">Thematoepassingen toestaan uit onbekende bronnen</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Bandbreedteregelmaat voor Wi-Fi</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Regelmaatbewerkingsbereik opgeven</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Er is een probleem opgetreden bij het instellen van de regelmaatbandbreedte.</string>
-  <string name="wifi_setting_frequency_band_auto">Autom.</string>
-  <string name="wifi_setting_frequency_band_5G">Enkel 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">Enkel 2.4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Schermafbeelding met drie vingers</string>
-  <string name="three_finger_screenshot_summary">Veeg op het scherm met drie vingers omlaag om een schermopname te maken</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Toon snelheid laden</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Geheugengebruik bij Onlangs weergeven</string>
-  <string name="recents_membar_pos_top">Omhoog</string>
-  <string name="recents_membar_pos_bottom">Omlaag</string>
-  <string name="recents_membar_pos_hidden">Verborgen</string>
-  <string name="apps_no_data">Geen toepassingen</string>
+    <!-- About version and support -->
+    <string name="mk_version">MoKee versie</string>
+    <string name="mk_version_default">Onbekend</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
+        <item quantity="other">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Niet nodig, u heeft de ontwikkelaarsopties al ingeschakeld.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Bevriezing of verwijderen van MoKee Center zal invloed hebben op systeemservices, gelieve te herstellen en probeer het opnieuw.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Bedekking van Substratum</string>
+    <string name="menu_show_substratum">Bedekkingen weergeven</string>
+    <string name="menu_hide_substratum">Bedekkingen verbergen</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Pictogrambedekkingen van Substratum</string>
+    <string name="menu_show_substratum_icons">Pictogrambedekkingen weergeven</string>
+    <string name="menu_hide_substratum_icons">Pictogrambedekkingen verbergen</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Machtiging afdwingen voor alle thematoepassingen</string>
+    <string name="force_authorize_substratum_packages_summary">Thematoepassingen toestaan uit onbekende bronnen</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Bandbreedteregelmaat voor Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Regelmaatbewerkingsbereik opgeven</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Er is een probleem opgetreden bij het instellen van de regelmaatbandbreedte.</string>
+    <string name="wifi_setting_frequency_band_auto">Autom.</string>
+    <string name="wifi_setting_frequency_band_5G">Enkel 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">Enkel 2.4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Schermafbeelding met drie vingers</string>
+    <string name="three_finger_screenshot_summary">Veeg op het scherm met drie vingers omlaag om een schermopname te maken</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Toon snelheid laden</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Geheugengebruik bij Onlangs weergeven</string>
+    <string name="recents_membar_pos_top">Omhoog</string>
+    <string name="recents_membar_pos_bottom">Omlaag</string>
+    <string name="recents_membar_pos_hidden">Verborgen</string>
+    <string name="apps_no_data">Geen toepassingen</string>
 </resources>

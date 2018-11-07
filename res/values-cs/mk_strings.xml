@@ -15,52 +15,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">Verze MoKee</string>
-  <string name="mk_version_default">Neznámá</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> krok od povolení nastavení pro vývojáře.</item>
-    <item quantity="few">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroky od povolení nastavení pro vývojáře.</item>
-    <item quantity="many">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
-    <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Vývojářské nastavení je povoleno!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Není potřeba, vývojářské nastavení je již povoleno.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Zmrazení nebo odstranění MoKee centrum může mít vliv na systémové služby, prosím obnovte a opakujte akci.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum překrytí</string>
-  <string name="menu_show_substratum">Zobrazit překrytí</string>
-  <string name="menu_hide_substratum">Skrýt překrytí</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
-  <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
-  <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Vyžadovat povolení pro každý motiv</string>
-  <string name="force_authorize_substratum_packages_summary">Povolit instalaci motivů z neznámých zdrojů</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Frekvenční pásmo Wi-Fi</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Uveďte provozní frekvenční rozsah</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Při nastavení frekvenčního pásma došlo k problému.</string>
-  <string name="wifi_setting_frequency_band_auto">Autom.</string>
-  <string name="wifi_setting_frequency_band_5G">Pouze 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">Pouze 2.4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Snímek obrazovky třemi prsty</string>
-  <string name="three_finger_screenshot_summary">Snímek obrazovky přejetím dolů třemi prsty</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Zobrazit rychlost nabíjení</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Zobrazit využití paměti v seznamu nedávných</string>
-  <string name="recents_membar_pos_top">Nahoře</string>
-  <string name="recents_membar_pos_bottom">Dole</string>
-  <string name="recents_membar_pos_hidden">Skryté</string>
-  <string name="apps_no_data">Žádné aplikace</string>
+    <!-- About version and support -->
+    <string name="mk_version">Verze MoKee</string>
+    <string name="mk_version_default">Neznámá</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> krok od povolení nastavení pro vývojáře.</item>
+        <item quantity="few">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroky od povolení nastavení pro vývojáře.</item>
+        <item quantity="many">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
+        <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Vývojářské nastavení je povoleno!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Není potřeba, vývojářské nastavení je již povoleno.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Zmrazení nebo odstranění MoKee centrum může mít vliv na systémové služby, prosím obnovte a opakujte akci.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum překrytí</string>
+    <string name="menu_show_substratum">Zobrazit překrytí</string>
+    <string name="menu_hide_substratum">Skrýt překrytí</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
+    <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
+    <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Vyžadovat povolení pro každý motiv</string>
+    <string name="force_authorize_substratum_packages_summary">Povolit instalaci motivů z neznámých zdrojů</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Frekvenční pásmo Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Uveďte provozní frekvenční rozsah</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Při nastavení frekvenčního pásma došlo k problému.</string>
+    <string name="wifi_setting_frequency_band_auto">Autom.</string>
+    <string name="wifi_setting_frequency_band_5G">Pouze 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">Pouze 2.4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Snímek obrazovky třemi prsty</string>
+    <string name="three_finger_screenshot_summary">Snímek obrazovky přejetím dolů třemi prsty</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Zobrazit rychlost nabíjení</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Zobrazit využití paměti v seznamu nedávných</string>
+    <string name="recents_membar_pos_top">Nahoře</string>
+    <string name="recents_membar_pos_bottom">Dole</string>
+    <string name="recents_membar_pos_hidden">Skryté</string>
+    <string name="apps_no_data">Žádné aplikace</string>
 </resources>

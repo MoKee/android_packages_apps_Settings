@@ -15,35 +15,35 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">Έκδοση MoKee</string>
-  <string name="mk_version_default">Άγνωστο</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήμα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
-    <item quantity="other">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήματα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Ενεργοποιήσατε την λειτουργία για προγραμματιστές!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Δεν χρειάζεται, έχετε ήδη ενεργοποιήσει τη λειτουργία για προγραμματιστές.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum overlays</string>
-  <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>
-  <string name="menu_hide_substratum">Απόκρυψη επικαλύψεων</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Επικαλύψεις εικονιδίου Substratum</string>
-  <string name="menu_show_substratum_icons">Εμφάνιση επικαλύψεων εικονιδίου</string>
-  <string name="menu_hide_substratum_icons">Απόκρυψη επικαλύψεων εικονιδίου</string>
-  <!-- Force authorize substratum packages -->
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_auto">Αυτόματο</string>
-  <!-- Three finger screenshot -->
-  <!-- Show charging speed -->
-  <!-- Memory bar -->
+    <!-- About version and support -->
+    <string name="mk_version">Έκδοση MoKee</string>
+    <string name="mk_version_default">Άγνωστο</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήμα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
+        <item quantity="other">Είστε <xliff:g id="step_count">%1$d </xliff:g> βήματα μακριά από την ενεργοποίηση λειτουργίας για προγραμματιστές.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Ενεργοποιήσατε την λειτουργία για προγραμματιστές!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Δεν χρειάζεται, έχετε ήδη ενεργοποιήσει τη λειτουργία για προγραμματιστές.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum overlays</string>
+    <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>
+    <string name="menu_hide_substratum">Απόκρυψη επικαλύψεων</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Επικαλύψεις εικονιδίου Substratum</string>
+    <string name="menu_show_substratum_icons">Εμφάνιση επικαλύψεων εικονιδίου</string>
+    <string name="menu_hide_substratum_icons">Απόκρυψη επικαλύψεων εικονιδίου</string>
+    <!-- Force authorize substratum packages -->
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_auto">Αυτόματο</string>
+    <!-- Three finger screenshot -->
+    <!-- Show charging speed -->
+    <!-- Memory bar -->
 </resources>

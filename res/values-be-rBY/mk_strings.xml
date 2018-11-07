@@ -15,52 +15,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">Версiя MoKee</string>
-  <string name="mk_version_default">Невядома</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыкаў.</item>
-    <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
-    <item quantity="many">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
-    <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Налады для распрацоўшчыкаў ўключаны!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка аднавіце і паспрабуйце ізноў.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Пласты Substratum</string>
-  <string name="menu_show_substratum">Паказваць пласты</string>
-  <string name="menu_hide_substratum">Схаваць пласты</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Значок Substratum пластоў</string>
-  <string name="menu_show_substratum_icons">Паказаць значок пластоў</string>
-  <string name="menu_hide_substratum_icons">Схаваць значок пластоў</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
-  <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Дыяпазон частаты Wi-Fi</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Удакладніць рабочы дыяпазон частот</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Праблема налады дыяпазону частот.</string>
-  <string name="wifi_setting_frequency_band_auto">Аўта</string>
-  <string name="wifi_setting_frequency_band_5G">Толькі 5 ГГц</string>
-  <string name="wifi_setting_frequency_band_2G">Толькі 2,4 ГГц</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Скрыншот трыма пальцамі</string>
-  <string name="three_finger_screenshot_summary">Зняцце скрыншота свайпом ўніз трыма пальцамі</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Паказаць хуткасць зарадкі</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Паказваць выкарыстанне памяці ў Нядаўніх</string>
-  <string name="recents_membar_pos_top">Уверсе</string>
-  <string name="recents_membar_pos_bottom">Унізе</string>
-  <string name="recents_membar_pos_hidden">Схаваць</string>
-  <string name="apps_no_data">Няма праграм</string>
+    <!-- About version and support -->
+    <string name="mk_version">Версiя MoKee</string>
+    <string name="mk_version_default">Невядома</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="many">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Налады для распрацоўшчыкаў ўключаны!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Не трэба, налады для распрацоўнікаў ужо ўключаны.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Замарожванне або выдаленне MoKee цэнтра будзе ўплываць на сістэмныя службы, калі ласка аднавіце і паспрабуйце ізноў.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Пласты Substratum</string>
+    <string name="menu_show_substratum">Паказваць пласты</string>
+    <string name="menu_hide_substratum">Схаваць пласты</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Значок Substratum пластоў</string>
+    <string name="menu_show_substratum_icons">Паказаць значок пластоў</string>
+    <string name="menu_hide_substratum_icons">Схаваць значок пластоў</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
+    <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Дыяпазон частаты Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Удакладніць рабочы дыяпазон частот</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Праблема налады дыяпазону частот.</string>
+    <string name="wifi_setting_frequency_band_auto">Аўта</string>
+    <string name="wifi_setting_frequency_band_5G">Толькі 5 ГГц</string>
+    <string name="wifi_setting_frequency_band_2G">Толькі 2,4 ГГц</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Скрыншот трыма пальцамі</string>
+    <string name="three_finger_screenshot_summary">Зняцце скрыншота свайпом ўніз трыма пальцамі</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Паказаць хуткасць зарадкі</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Паказваць выкарыстанне памяці ў Нядаўніх</string>
+    <string name="recents_membar_pos_top">Уверсе</string>
+    <string name="recents_membar_pos_bottom">Унізе</string>
+    <string name="recents_membar_pos_hidden">Схаваць</string>
+    <string name="apps_no_data">Няма праграм</string>
 </resources>

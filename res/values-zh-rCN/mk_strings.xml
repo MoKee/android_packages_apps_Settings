@@ -15,49 +15,49 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">魔趣版本</string>
-  <string name="mk_version_default">未知</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="other">现在只需再执行 <xliff:g id="step_count">%1$d</xliff:g> 步操作即可进入开发者模式。</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">您现在处于开发者模式！</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">您已处于开发者模式，无需进行此操作。</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">禁用或移除魔趣中心将影响系统关键功能，请还原后再开启程序。</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum 叠加层</string>
-  <string name="menu_show_substratum">显示叠加层</string>
-  <string name="menu_hide_substratum">隐藏叠加层</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum 图标叠加层</string>
-  <string name="menu_show_substratum_icons">显示图标叠加层</string>
-  <string name="menu_hide_substratum_icons">隐藏图标叠加层</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">强制授权所有主题</string>
-  <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的应用</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">WLAN 频段</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">设置 WLAN 频率范围</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">设置频段时出现问题</string>
-  <string name="wifi_setting_frequency_band_auto">自动</string>
-  <string name="wifi_setting_frequency_band_5G">仅 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">仅 2.4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">三指截屏</string>
-  <string name="three_finger_screenshot_summary">三指同时下滑以截取屏幕</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">显示充电速度</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">在最近任务中显示内存使用情况</string>
-  <string name="recents_membar_pos_top">顶部</string>
-  <string name="recents_membar_pos_bottom">底部</string>
-  <string name="recents_membar_pos_hidden">不显示</string>
-  <string name="apps_no_data">没有应用程序</string>
+    <!-- About version and support -->
+    <string name="mk_version">魔趣版本</string>
+    <string name="mk_version_default">未知</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="other">现在只需再执行 <xliff:g id="step_count">%1$d</xliff:g> 步操作即可进入开发者模式。</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">您现在处于开发者模式！</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">您已处于开发者模式，无需进行此操作。</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">禁用或移除魔趣中心将影响系统关键功能，请还原后再开启程序。</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum 叠加层</string>
+    <string name="menu_show_substratum">显示叠加层</string>
+    <string name="menu_hide_substratum">隐藏叠加层</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Substratum 图标叠加层</string>
+    <string name="menu_show_substratum_icons">显示图标叠加层</string>
+    <string name="menu_hide_substratum_icons">隐藏图标叠加层</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">强制授权所有主题</string>
+    <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的应用</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">WLAN 频段</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">设置 WLAN 频率范围</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">设置频段时出现问题</string>
+    <string name="wifi_setting_frequency_band_auto">自动</string>
+    <string name="wifi_setting_frequency_band_5G">仅 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">仅 2.4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">三指截屏</string>
+    <string name="three_finger_screenshot_summary">三指同时下滑以截取屏幕</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">显示充电速度</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">在最近任务中显示内存使用情况</string>
+    <string name="recents_membar_pos_top">顶部</string>
+    <string name="recents_membar_pos_bottom">底部</string>
+    <string name="recents_membar_pos_hidden">不显示</string>
+    <string name="apps_no_data">没有应用程序</string>
 </resources>

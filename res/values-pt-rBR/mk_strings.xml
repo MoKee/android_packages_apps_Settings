@@ -15,50 +15,50 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">Versão MoKee</string>
-  <string name="mk_version_default">Desconhecido</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
-    <item quantity="other">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Você ativou as configurações de desenvolvimento!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">Não é necessário, você já ativou as configurações de desenvolvimento.</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">Congelar ou remover o MoKee Center afetará os serviços do sistema, restaure e tente novamente.</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Sobreposições do substratum</string>
-  <string name="menu_show_substratum">Mostrar sobreposições</string>
-  <string name="menu_hide_substratum">Esconder sobreposições</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Sobreposições de ícone do substratum</string>
-  <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
-  <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Forçar autorização a cada app de tema</string>
-  <string name="force_authorize_substratum_packages_summary">Permitir aplicativos de tema de fontes desconhecidas</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Banda de frequência Wi-Fi</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">Especifique a faixa de frequência da operação</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">Houve um erro ao configurar a banda de frequência.</string>
-  <string name="wifi_setting_frequency_band_auto">Automático</string>
-  <string name="wifi_setting_frequency_band_5G">Apenas 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">Apenas 2,4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">Captura de tela com 3 dedos</string>
-  <string name="three_finger_screenshot_summary">Tirar uma captura de tela ao deslizar três dedos</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">Mostrar a velocidade de carregamento</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">Mostrar o uso de memória em Aplicativos Recentes</string>
-  <string name="recents_membar_pos_top">Topo</string>
-  <string name="recents_membar_pos_bottom">Em baixo</string>
-  <string name="recents_membar_pos_hidden">Oculto</string>
-  <string name="apps_no_data">Não há aplicativos</string>
+    <!-- About version and support -->
+    <string name="mk_version">Versão MoKee</string>
+    <string name="mk_version_default">Desconhecido</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
+        <item quantity="other">Você está agora a um passo de ativar as configurações de desenvolvimento.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Você ativou as configurações de desenvolvimento!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">Não é necessário, você já ativou as configurações de desenvolvimento.</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">Congelar ou remover o MoKee Center afetará os serviços do sistema, restaure e tente novamente.</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Sobreposições do substratum</string>
+    <string name="menu_show_substratum">Mostrar sobreposições</string>
+    <string name="menu_hide_substratum">Esconder sobreposições</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">Sobreposições de ícone do substratum</string>
+    <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
+    <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Forçar autorização a cada app de tema</string>
+    <string name="force_authorize_substratum_packages_summary">Permitir aplicativos de tema de fontes desconhecidas</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Banda de frequência Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">Especifique a faixa de frequência da operação</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">Houve um erro ao configurar a banda de frequência.</string>
+    <string name="wifi_setting_frequency_band_auto">Automático</string>
+    <string name="wifi_setting_frequency_band_5G">Apenas 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">Apenas 2,4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">Captura de tela com 3 dedos</string>
+    <string name="three_finger_screenshot_summary">Tirar uma captura de tela ao deslizar três dedos</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">Mostrar a velocidade de carregamento</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">Mostrar o uso de memória em Aplicativos Recentes</string>
+    <string name="recents_membar_pos_top">Topo</string>
+    <string name="recents_membar_pos_bottom">Em baixo</string>
+    <string name="recents_membar_pos_hidden">Oculto</string>
+    <string name="apps_no_data">Não há aplicativos</string>
 </resources>

@@ -15,49 +15,49 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">MoKee 版本</string>
-  <string name="mk_version_default">不明</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發者選項</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">您已經啟用開發人員選項</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_mk">不需要，您已經啟用開發人員選項。</string>
-  <!-- MKCenter verify -->
-  <string name="mkcenter_verify_failed_toast">停用或移除 Mokee 中心可能會影響系統服務，請恢復並重試。</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">底層覆蓋</string>
-  <string name="menu_show_substratum">顯示覆蓋</string>
-  <string name="menu_hide_substratum">隱藏覆蓋</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">底層圖示覆蓋</string>
-  <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
-  <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">強制授權每個主題應用程式</string>
-  <string name="force_authorize_substratum_packages_summary">允許來源不明的主題應用程式</string>
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_title">Wi-Fi 頻帶</string>
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <string name="wifi_setting_frequency_band_summary">指定作業的頻率範圍</string>
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_frequency_band_error">設定頻帶時遇到了問題。</string>
-  <string name="wifi_setting_frequency_band_auto">自動</string>
-  <string name="wifi_setting_frequency_band_5G">僅 5 GHz</string>
-  <string name="wifi_setting_frequency_band_2G">僅 2.4 GHz</string>
-  <!-- Three finger screenshot -->
-  <string name="three_finger_screenshot_title">三指螢幕擷取畫面</string>
-  <string name="three_finger_screenshot_summary">用三根手指向下滑動即可螢幕擷取畫面</string>
-  <!-- Show charging speed -->
-  <string name="show_charging_speed_title">顯示充電速度</string>
-  <!-- Memory bar -->
-  <string name="show_memory_bar_in_recents">在最近任務中顯示記憶體使用量</string>
-  <string name="recents_membar_pos_top">頂部</string>
-  <string name="recents_membar_pos_bottom">底部</string>
-  <string name="recents_membar_pos_hidden">隱藏</string>
-  <string name="apps_no_data">無任何應用程式</string>
+    <!-- About version and support -->
+    <string name="mk_version">MoKee 版本</string>
+    <string name="mk_version_default">不明</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發者選項</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">您已經啟用開發人員選項</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_mk">不需要，您已經啟用開發人員選項。</string>
+    <!-- MKCenter verify -->
+    <string name="mkcenter_verify_failed_toast">停用或移除 Mokee 中心可能會影響系統服務，請恢復並重試。</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">底層覆蓋</string>
+    <string name="menu_show_substratum">顯示覆蓋</string>
+    <string name="menu_hide_substratum">隱藏覆蓋</string>
+    <!-- Manage applications: show substratum icon overlays -->
+    <string name="filter_substratum_icons">底層圖示覆蓋</string>
+    <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
+    <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">強制授權每個主題應用程式</string>
+    <string name="force_authorize_substratum_packages_summary">允許來源不明的主題應用程式</string>
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_title">Wi-Fi 頻帶</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_frequency_band_summary">指定作業的頻率範圍</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_frequency_band_error">設定頻帶時遇到了問題。</string>
+    <string name="wifi_setting_frequency_band_auto">自動</string>
+    <string name="wifi_setting_frequency_band_5G">僅 5 GHz</string>
+    <string name="wifi_setting_frequency_band_2G">僅 2.4 GHz</string>
+    <!-- Three finger screenshot -->
+    <string name="three_finger_screenshot_title">三指螢幕擷取畫面</string>
+    <string name="three_finger_screenshot_summary">用三根手指向下滑動即可螢幕擷取畫面</string>
+    <!-- Show charging speed -->
+    <string name="show_charging_speed_title">顯示充電速度</string>
+    <!-- Memory bar -->
+    <string name="show_memory_bar_in_recents">在最近任務中顯示記憶體使用量</string>
+    <string name="recents_membar_pos_top">頂部</string>
+    <string name="recents_membar_pos_bottom">底部</string>
+    <string name="recents_membar_pos_hidden">隱藏</string>
+    <string name="apps_no_data">無任何應用程式</string>
 </resources>

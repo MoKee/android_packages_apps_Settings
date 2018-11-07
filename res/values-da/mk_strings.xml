@@ -15,27 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About version and support -->
-  <string name="mk_version">MoKee-version</string>
-  <string name="mk_version_default">Ukendt</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-  <plurals name="show_dev_countdown_mk">
-    <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
-    <item quantity="other">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere indstillinger for udviklere.</item>
-  </plurals>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_mk">Du har aktiveret Indstillinger for udviklere!</string>
-  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <!-- MKCenter verify -->
-  <!-- Manage applications: show substratum overlays -->
-  <!-- Manage applications: show substratum icon overlays -->
-  <!-- Force authorize substratum packages -->
-  <!-- frequency band control -->
-  <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <!-- Three finger screenshot -->
-  <!-- Show charging speed -->
-  <!-- Memory bar -->
-  <string name="recents_membar_pos_hidden">Skjult</string>
+    <!-- About version and support -->
+    <string name="mk_version">MoKee-version</string>
+    <string name="mk_version_default">Ukendt</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_mk">
+        <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
+        <item quantity="other">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere indstillinger for udviklere.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_mk">Du har aktiveret Indstillinger for udviklere!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <!-- MKCenter verify -->
+    <!-- Manage applications: show substratum overlays -->
+    <!-- Manage applications: show substratum icon overlays -->
+    <!-- Force authorize substratum packages -->
+    <!-- frequency band control -->
+    <!-- Wi-Fi settings screen, setting title for setting the band [CHAR LIMIT=50]-->
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <!-- Three finger screenshot -->
+    <!-- Show charging speed -->
+    <!-- Memory bar -->
+    <string name="recents_membar_pos_hidden">Skjult</string>
 </resources>

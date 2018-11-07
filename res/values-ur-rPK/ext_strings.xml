@@ -18,96 +18,96 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Launch Dev Tools -->
-  <!-- Setting checkbox title for root access -->
-  <string name="root_access_warning_message">جڑ تک رسائی کی درخواست کرنے کیلئے ایپس کی اجازت دینے میں بہت خطرناک ہے اور آپ کے سسٹم کی حفاظت کو سمجھا سکتا ہے!</string>
-  <!-- Preference link for root appops -->
-  <!-- About phone screen, Device model -->
-  <!-- About phone screen, Device name -->
-  <!-- About phone screen, build date -->
-  <!-- Names of categories of app ops tabs - extension of AOSP -->
-  <!-- User display names for app ops codes - extension of AOSP -->
-  <!-- User display names for app ops codes - extension of AOSP -->
-  <!-- App ops permissions -->
-  <!-- App ops detail -->
-  <!-- App ops menu options -->
-  <!-- Volume settings - Volume adjustment sound -->
-  <!-- Vibrator intensity -->
-  <string name="vibrator_intensity_dialog_reset">دوبارہ ترتیب دیں</string>
-  <!-- Sizes for pattern lockscreen -->
-  <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-  <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-  <!-- Whether the keyguard will directly show the password entry -->
-  <!-- Whether the keyguard will directly show the pattern view -->
-  <!-- Whether the keyguard will directly show the PIN entry -->
-  <!-- Lock screen vibrate settings -->
-  <!-- Lights settings -->
-  <!-- Memory -->
-  <!-- Advanced restart options -->
-  <string name="advanced_reboot_summary">کب کھلا ہے، وصولی، بوٹ لوڈر میں دوبارہ شروع کرنے کے لئے پاور مینو میں اختیارات شامل ہیں یا نرم دوبارہ شروع کرنے کے لۓ</string>
-  <!-- PIN scramble -->
-  <!-- lock screen visualizer -->
-  <!-- Lock screen cover art -->
-  <!-- Double tap to sleep on keyguard -->
-  <!-- Protected apps lockpattern reset button -->
-  <string name="lockpattern_settings_reset_summary">کب کھلا ہے، وصولی، بوٹ لوڈر میں دوبارہ شروع کرنے کے لئے پاور مینو میں اختیارات شامل ہیں یا نرم دوبارہ شروع کرنے کے لۓ</string>
-  <!-- Protected Apps -->
-  <string name="menu_hidden_apps_delete">دوبارہ ترتیب دیں</string>
-  <string name="pa_pattern_or_fingerprint_header">پیٹرن ڈرائیو یا انلاک کرنے کے لئے فنگر پرنٹ استعمال کرنا ضروری ہے</string>
-  <!-- title for lock screen weather preference -->
-  <!-- title for lock screen blur preference -->
-  <!-- Proximity wake -->
-  <string name="proximity_wake_summary">اشارے کی طرف سے پیدا ہونے والی جڑ اپ سے پہلے قربت سینسر کی جانچ پڑتال کریں</string>
-  <!-- High touch sensitivity -->
-  <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>
-  <!-- Touchscreen hovering -->
-  <string name="touchscreen_hovering_summary">آپ کو ویب براؤزرز، ریموٹ ڈیسک ٹاپ وغیرہ وغیرہ میں اسکرین کو ہورانے کی اجازت دیتا ہے</string>
-  <!-- Whether to display IME switcher notifcation -->
-  <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
-  <string name="notification_importance_very_low">کوئی مکمل اسکرین مداخلت، پیسنے، آواز، یا کمپن نہیں. نوٹیفیکیشن کی فہرست کے نیچے دکھائیں. تالا اسکرین سے چھپائیں.</string>
-  <!-- Stylus Icon -->
-  <string name="stylus_icon_enabled_summary">ہیلی کاپٹر کے ساتھ ہورڈنگ یا ڈرائنگ کرتے وقت پوائنٹر آئکن دکھائیں</string>
-  <!-- Kill app long-press back -->
-  <!-- Android debugging -->
-  <!-- Android debugging notification -->
-  <!-- Android debugging over network -->
-  <string name="adb_over_network_warning">انتباہ: جب ای ڈی بی نیٹ ورک پر فعال ہو تو، آپ کا فون تمام منسلک نیٹ ورکوں کے اندرونی مداخلت کے لئے کھلی ہے! \ n \ n جب آپ باضابطہ نیٹ ورک پر منسلک ہوجائیں تو اس خصوصیت کا استعمال کریں.\n\n کیا آپ واقعی اس فنکشن کو فعال کرنا چاہتے ہیں؟</string>
-  <!-- Hostname setting -->
-  <!-- Increasing ring tone volume -->
-  <!-- Allow vibration in zen mode -->
-  <!-- Zen mode allowed event setting summary items -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
-  <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
-  <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
-  <!-- Notification sound timeout -->
-  <!-- MSIM SIM status -->
-  <!-- NFC PreferenceCategory title -->
-  <!-- Notification importance -->
-  <!-- Format string for fingerprint location message -->
-  <!-- Fingerprint sensor locations -->
-  <!-- Wi-Fi region code -->
-  <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-  <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-  <!-- Wake on plug -->
-  <!-- Heads-up -->
-  <!-- Tethering & portable hotspot other category -->
-  <!-- Wi-Fi tethering inactivity timeout -->
-  <!-- Per-app data restrictions -->
-  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-  <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
-  <!-- Volume link notification -->
-  <!-- Launch music player when headset is connected -->
-  <!-- Status bar - double tap to sleep -->
-  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
-  <!-- SAR information -->
-  <!-- IC Codes -->
-  <!-- Label for settings shortcut: carrier selection -->
-  <!-- Burn in protection -->
-  <string name="burnin_protection_summary">وقفے وقفے سے اشیاء کو منتقل کریں جو مستقل طور پر اسکرین پر دکھایا جاسکتا ہے تاکہ اس علاقے میں زیادہ سے زیادہ سکرین لباس سے بچنے کے لۓ</string>
+    <!-- Launch Dev Tools -->
+    <!-- Setting checkbox title for root access -->
+    <string name="root_access_warning_message">جڑ تک رسائی کی درخواست کرنے کیلئے ایپس کی اجازت دینے میں بہت خطرناک ہے اور آپ کے سسٹم کی حفاظت کو سمجھا سکتا ہے!</string>
+    <!-- Preference link for root appops -->
+    <!-- About phone screen, Device model -->
+    <!-- About phone screen, Device name -->
+    <!-- About phone screen, build date -->
+    <!-- Names of categories of app ops tabs - extension of AOSP -->
+    <!-- User display names for app ops codes - extension of AOSP -->
+    <!-- User display names for app ops codes - extension of AOSP -->
+    <!-- App ops permissions -->
+    <!-- App ops detail -->
+    <!-- App ops menu options -->
+    <!-- Volume settings - Volume adjustment sound -->
+    <!-- Vibrator intensity -->
+    <string name="vibrator_intensity_dialog_reset">دوبارہ ترتیب دیں</string>
+    <!-- Sizes for pattern lockscreen -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Whether the keyguard will directly show the password entry -->
+    <!-- Whether the keyguard will directly show the pattern view -->
+    <!-- Whether the keyguard will directly show the PIN entry -->
+    <!-- Lock screen vibrate settings -->
+    <!-- Lights settings -->
+    <!-- Memory -->
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_summary">کب کھلا ہے، وصولی، بوٹ لوڈر میں دوبارہ شروع کرنے کے لئے پاور مینو میں اختیارات شامل ہیں یا نرم دوبارہ شروع کرنے کے لۓ</string>
+    <!-- PIN scramble -->
+    <!-- lock screen visualizer -->
+    <!-- Lock screen cover art -->
+    <!-- Double tap to sleep on keyguard -->
+    <!-- Protected apps lockpattern reset button -->
+    <string name="lockpattern_settings_reset_summary">کب کھلا ہے، وصولی، بوٹ لوڈر میں دوبارہ شروع کرنے کے لئے پاور مینو میں اختیارات شامل ہیں یا نرم دوبارہ شروع کرنے کے لۓ</string>
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">دوبارہ ترتیب دیں</string>
+    <string name="pa_pattern_or_fingerprint_header">پیٹرن ڈرائیو یا انلاک کرنے کے لئے فنگر پرنٹ استعمال کرنا ضروری ہے</string>
+    <!-- title for lock screen weather preference -->
+    <!-- title for lock screen blur preference -->
+    <!-- Proximity wake -->
+    <string name="proximity_wake_summary">اشارے کی طرف سے پیدا ہونے والی جڑ اپ سے پہلے قربت سینسر کی جانچ پڑتال کریں</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_summary">آپ کو ویب براؤزرز، ریموٹ ڈیسک ٹاپ وغیرہ وغیرہ میں اسکرین کو ہورانے کی اجازت دیتا ہے</string>
+    <!-- Whether to display IME switcher notifcation -->
+    <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+    <string name="notification_importance_very_low">کوئی مکمل اسکرین مداخلت، پیسنے، آواز، یا کمپن نہیں. نوٹیفیکیشن کی فہرست کے نیچے دکھائیں. تالا اسکرین سے چھپائیں.</string>
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_summary">ہیلی کاپٹر کے ساتھ ہورڈنگ یا ڈرائنگ کرتے وقت پوائنٹر آئکن دکھائیں</string>
+    <!-- Kill app long-press back -->
+    <!-- Android debugging -->
+    <!-- Android debugging notification -->
+    <!-- Android debugging over network -->
+    <string name="adb_over_network_warning">انتباہ: جب ای ڈی بی نیٹ ورک پر فعال ہو تو، آپ کا فون تمام منسلک نیٹ ورکوں کے اندرونی مداخلت کے لئے کھلی ہے! \ n \ n جب آپ باضابطہ نیٹ ورک پر منسلک ہوجائیں تو اس خصوصیت کا استعمال کریں.\n\n کیا آپ واقعی اس فنکشن کو فعال کرنا چاہتے ہیں؟</string>
+    <!-- Hostname setting -->
+    <!-- Increasing ring tone volume -->
+    <!-- Allow vibration in zen mode -->
+    <!-- Zen mode allowed event setting summary items -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
+    <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+    <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
+    <!-- Notification sound timeout -->
+    <!-- MSIM SIM status -->
+    <!-- NFC PreferenceCategory title -->
+    <!-- Notification importance -->
+    <!-- Format string for fingerprint location message -->
+    <!-- Fingerprint sensor locations -->
+    <!-- Wi-Fi region code -->
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <!-- Wake on plug -->
+    <!-- Heads-up -->
+    <!-- Tethering & portable hotspot other category -->
+    <!-- Wi-Fi tethering inactivity timeout -->
+    <!-- Per-app data restrictions -->
+    <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+    <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+    <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+    <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+    <!-- Volume link notification -->
+    <!-- Launch music player when headset is connected -->
+    <!-- Status bar - double tap to sleep -->
+    <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+    <!-- SAR information -->
+    <!-- IC Codes -->
+    <!-- Label for settings shortcut: carrier selection -->
+    <!-- Burn in protection -->
+    <string name="burnin_protection_summary">وقفے وقفے سے اشیاء کو منتقل کریں جو مستقل طور پر اسکرین پر دکھایا جاسکتا ہے تاکہ اس علاقے میں زیادہ سے زیادہ سکرین لباس سے بچنے کے لۓ</string>
 </resources>
