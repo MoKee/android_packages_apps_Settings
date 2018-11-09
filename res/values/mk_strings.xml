@@ -28,4 +28,7 @@
 
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Freezing or removing MoKee Center will affect system services, please restore and try again.</string>
+
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="system_dashboard_summary_mk">Languages, time, backup</string>
 </resources>
