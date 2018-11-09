@@ -25,4 +25,5 @@
     <string name="menu_hide_substratum">Скрыть слои</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Заморозка или удаление Панели MoKee повлияет на системные службы, пожалуйста, восстановите и повторите попытку.</string>
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

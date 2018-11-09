@@ -25,4 +25,5 @@
     <string name="menu_hide_substratum">Overlays ausblenden</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Das Einfrieren oder Entfernen von MoKee Center beeinträchtigt die Systemdienste. Bitte wiederherstellen und erneut versuchen.</string>
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

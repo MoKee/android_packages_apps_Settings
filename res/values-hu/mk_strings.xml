@@ -25,4 +25,5 @@
     <string name="menu_hide_substratum">Rétegek elrejtése</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">A lefagyott vagy megsérült MoKee központ hatással lesz a rendszer szolgáltatásaira, állítsa helyre és próbálja újra.</string>
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>
