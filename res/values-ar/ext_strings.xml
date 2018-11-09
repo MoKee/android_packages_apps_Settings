@@ -316,7 +316,7 @@
     <string name="ok">موافق</string>
     <string name="security_privacy_settings_title">الأمان والخصوصية</string>
     <!-- Volume settings - Volume adjustment sound -->
-    <string name="volume_adjust_sounds_title">أصوات تعديل حجم الصوت</string>
+    <string name="volume_adjust_sounds_title">أصوات تعديل حجم الصوت </string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>
     <string name="wake_when_plugged_or_unplugged_summary">تشغيل الشاشة عند الاتصال أو قطع الاتصال بمصدر الطاقة</string>

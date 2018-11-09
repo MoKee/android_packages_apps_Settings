@@ -25,4 +25,5 @@
     <string name="menu_hide_substratum">ಪರದೆಗಳನ್ನು ಮರೆಮಾಡಿ</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">MoKee ಕೇಂದ್ರವನ್ನು ಘನೀಕರಿಸುವುದರಿಂದ ಅಥವಾ ತೆಗೆದು ಹಾಕುವುದರಿಂದ ಸಿಸ್ಟಮ್ ಸೇವೆಗಳ ಮೇಲೆ ಪರಿಣಮಿಸಬಹುದು, ದಯವಿಟ್ಟು ಮರುಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

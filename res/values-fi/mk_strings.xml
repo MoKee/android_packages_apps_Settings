@@ -25,4 +25,5 @@
     <string name="menu_hide_substratum">Piilota ulkoasut</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Poistamalla MoKee Centerin, vaikutat järjestelmään joten palauta se käyttöön ja yritä uudelleen.</string>
+    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>
