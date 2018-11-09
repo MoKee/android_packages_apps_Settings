@@ -25,5 +25,4 @@
     <string name="menu_hide_substratum">إخفاء الطبقات</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">تجميد أو إزالة مركز موكي سوف يؤثر على خدمات النظام، الرجاء الاستعادة و المحاولة مرة أخرى.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

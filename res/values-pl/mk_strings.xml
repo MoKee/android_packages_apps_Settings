@@ -25,5 +25,4 @@
     <string name="menu_hide_substratum">Ukryj nakładki</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Zamrażanie albo usuwanie Centrum MoKee wpłynie na stabilność usług systemu. Przywróć je i spróbuj ponownie.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

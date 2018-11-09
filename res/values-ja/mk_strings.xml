@@ -25,5 +25,4 @@
     <string name="menu_hide_substratum">オーバーレイを非表示</string>
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">MoKee Centerのフリーズまたは削除はシステムサービスに影響しますので復元して再試行してください</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>
