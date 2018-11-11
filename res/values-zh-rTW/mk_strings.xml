@@ -26,4 +26,5 @@
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">停用或移除 MoKee 中心可能會影響系統服務，請恢復並重試。</string>
     <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="system_dashboard_summary_mk">語言、時間、備份</string>
 </resources>
