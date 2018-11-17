@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fce034c_4fc67119",
+        "filename": "res/values/mk_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-11-17T20:04:14Z",
+      "side": 0,
+      "message": "blacklist_harassment_numbers_title 强迫症出没",
+      "range": {
+        "startLine": 60,
+        "startChar": 18,
+        "endLine": 60,
+        "endChar": 48
+      },
+      "revId": "216f87b3fcfe15c6a637d3a8d40b7a3afb2b76c7",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fce034c_6fcb2d1e",
+        "filename": "res/values/mk_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2018-11-17T20:04:14Z",
+      "side": 0,
+      "message": "blacklist_harassment_numbers_summary 强迫症出没",
+      "range": {
+        "startLine": 61,
+        "startChar": 18,
+        "endLine": 61,
+        "endChar": 50
+      },
+      "revId": "216f87b3fcfe15c6a637d3a8d40b7a3afb2b76c7",
+      "serverId": "83d63960-fecf-4fd1-a7f6-e01518638a62",
+      "unresolved": false
+    }
+  ]
+}
