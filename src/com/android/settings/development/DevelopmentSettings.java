@@ -1033,8 +1033,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         String oldValue = SystemProperties.get(ROOT_ACCESS_PROPERTY, "0");
         SystemProperties.set(ROOT_ACCESS_PROPERTY, newValue.toString());
         if (Integer.valueOf(newValue.toString()) < 2 && !oldValue.equals(newValue)
-                && "1".equals(SystemProperties.get("service.adb.root", "0"))) {
-            SystemProperties.set("service.adb.root", "0");
+                && "1".equals(SystemProperties.get("mk.service.adb.root", "0"))) {
+            SystemProperties.set("mk.service.adb.root", "0");
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.ADB_ENABLED, 0);
             Settings.Secure.putInt(getActivity().getContentResolver(),
@@ -1046,8 +1046,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private void resetRootAccessOptions() {
         String oldValue = SystemProperties.get(ROOT_ACCESS_PROPERTY, "0");
         SystemProperties.set(ROOT_ACCESS_PROPERTY, "0");
-        if (!oldValue.equals("0") && "1".equals(SystemProperties.get("service.adb.root", "0"))) {
-            SystemProperties.set("service.adb.root", "0");
+        if (!oldValue.equals("0") &&
+            "1".equals(SystemProperties.get("mk.service.adb.root", "0"))) {
+            SystemProperties.set("mk.service.adb.root", "0");
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.ADB_ENABLED, 0);
             Settings.Secure.putInt(getActivity().getContentResolver(),
