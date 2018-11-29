@@ -376,7 +376,7 @@
     <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
     <string name="data_usage_app_restrict_all_data_summary">Evitar qualquer uso de acesso a dados através de redes celulares</string>
     <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
-    <string name="data_usage_app_restrict_all_wifi_title">Desabilitar todos Wi\u2011Fi os acessos de dados no</string>
+    <string name="data_usage_app_restrict_all_wifi_title">Desabilitar todos Wi\u2011Fi os acessos de dados no </string>
     <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
     <string name="data_usage_app_restrict_all_wifi_summary">Evitar qualquer uso de acesso a dados através de redes Wi\u2011Fi</string>
     <!-- Volume link notification -->

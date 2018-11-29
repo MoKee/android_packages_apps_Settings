@@ -319,7 +319,7 @@
     <string name="hotstpot_inactivity_timeout_5_minutes">5 నిమిషాలు</string>
     <string name="hotstpot_inactivity_timeout_10_minutes">10 నిమిషాలు</string>
     <string name="hotstpot_inactivity_timeout_never_summary_text">పోర్టబుల్ Wifi\u2011Fi హాట్స్పాట్ ఎప్పుడూ గడువు ముగియడానికి ఉంటుంది</string>
-    <string name="hotstpot_inactivity_timeout_summary_text">పోర్టబుల్ Wifi\u2011Fi హాట్స్పాట్ <xliff:g id="timeout">%1$s</xliff:g> తరువాత గడువు ముగియడానికి ఉంటుంది</string>
+    <string name="hotstpot_inactivity_timeout_summary_text">పోర్టబుల్ Wifi\u2011Fi హాట్స్పాట్ <xliff:g id="timeout">%1$s</xliff:g> తరువాత గడువు ముగియడానికి ఉంటుంది </string>
     <!-- Per-app data restrictions -->
     <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
     <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->

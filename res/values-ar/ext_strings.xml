@@ -207,7 +207,7 @@
     <string name="app_ops_reset_confirm_mesg">هل أنت متأكد من رغبتك في إعادة تعيين العدادات؟</string>
     <string name="ok">موافق</string>
     <!-- Volume settings - Volume adjustment sound -->
-    <string name="volume_adjust_sounds_title">أصوات تعديل حجم الصوت</string>
+    <string name="volume_adjust_sounds_title">أصوات تعديل حجم الصوت </string>
     <!-- Vibrator intensity -->
     <string name="vibrator_intensity_title">شدة الاهتزاز</string>
     <string name="vibrator_intensity_dialog_warning">لا ينصح باستخدام قيم أعلى من %1$d%%</string>
@@ -274,7 +274,7 @@
     <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
     <!-- Whether to display IME switcher notifcation -->
     <string name="ime_switcher_notify">رمز التحديد</string>
-    <string name="ime_switcher_notify_summary">عرض رمز تحديد طريقة الإدخال</string>
+    <string name="ime_switcher_notify_summary">عرض رمز تحديد طريقة الإدخال </string>
     <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
     <string name="notification_importance_very_low">عدم المقاطعة بملء الشاشة أو الظهور الخاطف أو الصوت أو الاهتزاز. العرض أسفل قائمة الإشعارات. الإخفاء من شاشة التأمين.</string>
     <!-- Stylus Icon -->

@@ -267,7 +267,7 @@
     <string name="proximity_wake_title">Previne trezirea accidentală</string>
     <string name="proximity_wake_summary">Verifică senzorul de proximitate înainte de wake-up-uri declanșate de gesturi</string>
     <!-- High touch sensitivity -->
-    <string name="high_touch_sensitivity_title">Sensibilitate tactilă înaltă</string>
+    <string name="high_touch_sensitivity_title">Sensibilitate tactilă înaltă </string>
     <string name="high_touch_sensitivity_summary">Crește sensibilitatea ecranului tactil, astfel încât acesta poate fi utilizat în timp ce se poartă mănuși</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Plutire peste ecran</string>
