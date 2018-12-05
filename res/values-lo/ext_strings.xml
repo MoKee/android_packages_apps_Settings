@@ -20,13 +20,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">ເຈົ້າໄດ້ເປີດການຕັ້ງຄ່ານັກພັດທະນາ!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">ບໍ່ຈຳເປັນ, ເຈົ້າໄດ້ເປີດການຕັ້ງຄ່ານັກພັດທະນາແລ້ວ.</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <!-- Launch Dev Tools -->
     <!-- Advanced restart options -->
     <!-- Setting checkbox title for root access -->
+    <string name="root_access_none">ປິດໃຊ້ງານ</string>
     <!-- Preference link for root appops -->
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
@@ -53,6 +56,8 @@
     <!-- Memory -->
     <!-- Manual provisioning support -->
     <!-- Names of categories of app ops tabs - extension of AOSP -->
+    <string name="app_ops_categories_location">ສະຖານທີ່</string>
+    <string name="app_ops_categories_other">ອື່ນໆ</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_camera">ກ້ອງ</string>
