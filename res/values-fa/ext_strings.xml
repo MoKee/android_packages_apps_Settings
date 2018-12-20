@@ -101,6 +101,7 @@
     <string name="app_ops_categories_device">دستگاه</string>
     <string name="app_ops_categories_bootup">راه‌اندازی</string>
     <string name="app_ops_categories_su">دسترسی روت</string>
+    <string name="app_ops_categories_other">غیره</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_summaries_coarse_location">مکان تقریبی</string>
     <string name="app_ops_summaries_fine_location">مکان دقیق</string>
@@ -142,10 +143,12 @@
     <string name="app_ops_summaries_keep_awake">بیدار نگه داشتن</string>
     <string name="app_ops_summaries_monitor_location">کنترل مکان</string>
     <string name="app_ops_summaries_monitor_high_power_location">کنترل مکان دارای مصرف بالای باتری</string>
+    <string name="app_ops_summaries_get_usage_stats">دریافت وضعیت استفاده از برنامه‌ها</string>
     <string name="app_ops_summaries_mute_unmute_microphone">قطع/وصل کردن صدای میکروفون</string>
     <string name="app_ops_summaries_toast_window">نمایش متن‌های کوچک</string>
     <string name="app_ops_summaries_project_media">پخش رسانه</string>
     <string name="app_ops_summaries_activate_vpn">فعال کردن وی‌پی‌ان</string>
+    <string name="app_ops_summaries_toggle_nfc">روشن و خاموش کردن ان‌اف‌سی</string>
     <string name="app_ops_summaries_superuser">دسترسی روت</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_gps">جی‌پی‌اس</string>

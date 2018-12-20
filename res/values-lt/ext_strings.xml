@@ -138,10 +138,12 @@
     <string name="app_ops_summaries_keep_awake">budėti</string>
     <string name="app_ops_summaries_monitor_location">stebėti vietovę</string>
     <string name="app_ops_summaries_monitor_high_power_location">stebėti didelės galios vietovę</string>
+    <string name="app_ops_summaries_get_usage_stats">gauti programos naudojimo statistiką</string>
     <string name="app_ops_summaries_mute_unmute_microphone">nutildyti / įjungti mikrofoną</string>
     <string name="app_ops_summaries_toast_window">Rodyti informacinius langelius</string>
     <string name="app_ops_summaries_project_media">medijos projektas</string>
     <string name="app_ops_summaries_activate_vpn">suaktyvinti VPN</string>
+    <string name="app_ops_summaries_toggle_nfc">Įjungti / išjungti NFC</string>
     <string name="app_ops_summaries_superuser">„root“ prieiga</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_vibrate">Vibruoti</string>

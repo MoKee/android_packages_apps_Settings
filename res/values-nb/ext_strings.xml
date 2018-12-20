@@ -47,6 +47,8 @@
     <string name="root_appops_summary">Se over og endre root reglene</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
+    <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
+    <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Hindre utilsiktet vekking</string>
     <!-- Whether the keyguard will directly show the password entry -->

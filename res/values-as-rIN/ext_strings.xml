@@ -156,6 +156,7 @@
     <string name="app_ops_summaries_keep_awake">জাগ্ৰত ৰাখক</string>
     <string name="app_ops_summaries_monitor_location">নিৰীক্ষণ স্থান</string>
     <string name="app_ops_summaries_monitor_high_power_location">উচ্চ শক্তিৰ স্থান নিৰীক্ষণ কৰক</string>
+    <string name="app_ops_summaries_get_usage_stats">এপ্প্‌ ব্যৱহাৰৰ পৰিসংখ্যা পোৱা</string>
     <string name="app_ops_summaries_mute_unmute_microphone">মাইক্ৰ\'ফোন মিউট/আনমিউট কৰক</string>
     <string name="app_ops_summaries_toast_window">টোষ্ট প্ৰদৰ্শন কৰক</string>
     <string name="app_ops_summaries_project_media">প্ৰজেক্ট মিডিয়া</string>

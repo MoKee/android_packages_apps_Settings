@@ -28,6 +28,7 @@
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Ailgychwyn arbennig</string>
     <!-- Setting checkbox title for root access -->
+    <string name="root_access_none">Wedi\'i analluogi</string>
     <!-- Preference link for root appops -->
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
@@ -58,8 +59,17 @@
     <!-- Names of categories of app ops tabs - extension of AOSP -->
     <string name="app_ops_categories_run_in_background">Rhedeg yn y cefndir</string>
     <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_summaries_record_audio">recordio sain</string>
+    <string name="app_ops_summaries_play_audio">chwarae sain</string>
+    <string name="app_ops_summaries_get_usage_stats">cael ystadegau defnydd apiau</string>
+    <string name="app_ops_summaries_project_media">taflunio cyfrwng</string>
+    <string name="app_ops_summaries_use_fingerprint">defnyddio ôl bys</string>
+    <string name="app_ops_summaries_use_body_sensors">defnyddio synwyryddion corff</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">darllen darllediadau neges destun</string>
+    <string name="app_ops_summaries_read_external_storage">darllen storfa allanol</string>
     <string name="app_ops_summaries_run_in_background">rhedeg yn y cefndir</string>
     <string name="app_ops_summaries_picture_in_picture">defnyddio llun o fewn llun</string>
+    <string name="app_ops_summaries_toggle_nfc">toglo NFC</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_run_in_background">Rhedeg yn y cefndir</string>
     <!-- App ops permissions -->

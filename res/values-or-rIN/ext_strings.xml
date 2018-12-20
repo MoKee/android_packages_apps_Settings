@@ -156,6 +156,7 @@
     <string name="app_ops_summaries_keep_awake">ସଜାଗ ରଖନ୍ତୁ</string>
     <string name="app_ops_summaries_monitor_location">ଅବସ୍ଥାନ ମନିଟର୍</string>
     <string name="app_ops_summaries_monitor_high_power_location">ଉଚ୍ଚ ପାୱାର ଅବସ୍ଥାନ ମନିଟର୍ କରନ୍ତୁ</string>
+    <string name="app_ops_summaries_get_usage_stats">ଆପ୍ଲିକେସନ୍‍ ବ୍ୟବହାରର ପରିସଂଖ୍ୟାନ ପ୍ରାପ୍ତ କରନ୍ତୁ</string>
     <string name="app_ops_summaries_mute_unmute_microphone">ମାଇକ୍ରୋଫୋନ୍ ମ୍ୟୁଟ୍/ଅନମ୍ୟୁଟ୍ କରନ୍ତୁ</string>
     <string name="app_ops_summaries_toast_window">ଟୋଷ୍ଟ ଡିସ୍‍ପ୍ଲେ କରନ୍ତୁ</string>
     <string name="app_ops_summaries_project_media">ପ୍ରୋଜେକ୍ଟ ମିଡିଆ</string>

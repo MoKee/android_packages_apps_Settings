@@ -116,6 +116,9 @@
     <string name="app_ops_summaries_keep_awake">neaizmigt</string>
     <string name="app_ops_summaries_monitor_location">pārraudzīt atrašanās vietu</string>
     <string name="app_ops_summaries_monitor_high_power_location">pārraudzīt lieljaudas atrašanās vietu</string>
+    <string name="app_ops_summaries_get_usage_stats">saņemt lietotnes lietošanas statistiku</string>
+    <string name="app_ops_summaries_project_media">medija projekts</string>
+    <string name="app_ops_summaries_toggle_nfc">pārslēgt NFC</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_vibrate">Vibrēt</string>
     <string name="app_ops_labels_read_contacts">Lasīt kontaktus</string>

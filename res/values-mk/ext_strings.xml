@@ -27,9 +27,12 @@
     <!-- Launch Dev Tools -->
     <!-- Advanced restart options -->
     <!-- Setting checkbox title for root access -->
+    <string name="root_access_none">Оневозможено</string>
     <!-- Preference link for root appops -->
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
+    <string name="touchscreen_gesture_settings_title">Гестови на допир</string>
+    <string name="touchscreen_gesture_settings_summary">Изведување на различни гестови на допир за брзо дејство</string>
     <!-- Proximity wake -->
     <!-- Whether the keyguard will directly show the password entry -->
     <!-- Whether the keyguard will directly show the pattern view -->
@@ -53,11 +56,24 @@
     <!-- Memory -->
     <!-- Manual provisioning support -->
     <!-- Names of categories of app ops tabs - extension of AOSP -->
+    <string name="app_ops_categories_media">Медиа</string>
     <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_summaries_record_audio">снима звук</string>
+    <string name="app_ops_summaries_play_audio">репродуцира звук</string>
+    <string name="app_ops_summaries_get_usage_stats">добива статистика за користење на апликацијата</string>
+    <string name="app_ops_summaries_project_media">проектира медија</string>
+    <string name="app_ops_summaries_use_fingerprint">користи отпечаток</string>
+    <string name="app_ops_summaries_use_body_sensors">употребува сензори</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">чита мобилни емитувања</string>
+    <string name="app_ops_summaries_read_external_storage">го чита надворешното складирање</string>
+    <string name="app_ops_summaries_run_in_background">работи во позадина</string>
+    <string name="app_ops_summaries_toggle_nfc">уклучува/исклучува NFC</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <!-- App ops permissions -->
     <!-- App ops detail -->
     <!-- App ops menu options -->
+    <string name="app_ops_show_system_apps">Прикажи вградени апликации</string>
+    <string name="ok">ОК</string>
     <!-- Volume settings - Volume adjustment sound -->
     <!-- Wake on plug -->
     <!-- Heads-up -->

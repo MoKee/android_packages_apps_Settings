@@ -139,10 +139,12 @@
     <string name="app_ops_summaries_keep_awake">जागते रहें</string>
     <string name="app_ops_summaries_monitor_location">स्थान को मॉनिटर करें</string>
     <string name="app_ops_summaries_monitor_high_power_location">उच्च शक्ति वाले स्थान को मॉनिटर करें</string>
+    <string name="app_ops_summaries_get_usage_stats">ऐप उपयोग आँकड़े प्राप्त करें</string>
     <string name="app_ops_summaries_mute_unmute_microphone">माइक्रोफ़ोन को मूक/वाचाल करें</string>
     <string name="app_ops_summaries_toast_window">टोस्ट दिखाएँ</string>
     <string name="app_ops_summaries_project_media">परियोजना माध्यम</string>
     <string name="app_ops_summaries_activate_vpn">वीपीएन को सक्रिय करें</string>
+    <string name="app_ops_summaries_toggle_nfc">एनएफसी को बंद-चालू करें</string>
     <string name="app_ops_summaries_superuser">मूल पहुँच</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_gps">जीपीएस</string>

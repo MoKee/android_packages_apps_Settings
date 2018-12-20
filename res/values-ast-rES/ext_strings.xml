@@ -47,6 +47,8 @@
     <string name="root_appops_summary">Mira y controla les regles root</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
+    <string name="touchscreen_gesture_settings_title">Xestos de pantalla táutil</string>
+    <string name="touchscreen_gesture_settings_summary">Fai dellos xestos táutiles p\'aiciones rápides</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Evitar esconsueñu accidental</string>
     <!-- Whether the keyguard will directly show the password entry -->

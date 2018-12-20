@@ -155,6 +155,7 @@
     <string name="app_ops_summaries_keep_awake">cum ’na dhùisg</string>
     <string name="app_ops_summaries_monitor_location">cum sùil air an ionad</string>
     <string name="app_ops_summaries_monitor_high_power_location">sùil a chumail air ionad àrd-chumhachd</string>
+    <string name="app_ops_summaries_get_usage_stats">stats air caitheamh aplacaidean fhaighinn</string>
     <string name="app_ops_summaries_mute_unmute_microphone">fuaim a’ mhicreofon a mhùchadh/thilleadh</string>
     <string name="app_ops_summaries_toast_window">toasts a shealltainn</string>
     <string name="app_ops_summaries_project_media">meadhanan a thilgeil</string>

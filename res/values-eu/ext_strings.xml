@@ -132,6 +132,7 @@
     <string name="app_ops_categories_location">Kokalekua</string>
     <string name="app_ops_categories_personal">Pertsonala</string>
     <string name="app_ops_categories_messaging">Mezularitza</string>
+    <string name="app_ops_categories_media">Multimedia</string>
     <string name="app_ops_categories_device">Gailua</string>
     <string name="app_ops_categories_run_in_background">Exekutatu bigarren planoan</string>
     <string name="app_ops_categories_bootup">Abioa</string>

@@ -60,6 +60,7 @@
     <!-- Android debugging -->
     <!-- Android debugging notification -->
     <!-- Android debugging over network -->
+    <string name="adb_over_network">Şəbəkə üzərindən ADB</string>
     <string name="adb_over_network_warning">XƏBƏRDARLIQ: Şəbəkə üzərindən ADB fəal olduğu halda, telefonunuz bütün bağlanmış şəbəkələrdə icazəsiz müraciətlərə açıqdır!\n\nBu özəlliyi yalnız etibarlı şəbəkələrə bağlı olduğunuz zaman istifadə edin.\n\nHəqiqətən də bu özəliyi fəallaşdırmaq istəyirsiniz?</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Tətbiq dayandırıcı geri düyməsi</string>
@@ -123,10 +124,12 @@
     <string name="app_ops_summaries_keep_awake">oyaq saxla</string>
     <string name="app_ops_summaries_monitor_location">yeri izlə</string>
     <string name="app_ops_summaries_monitor_high_power_location">yüksək güc yerini izlə</string>
+    <string name="app_ops_summaries_get_usage_stats">tətbiq istifadə statistikalarını al</string>
     <string name="app_ops_summaries_mute_unmute_microphone">mikrofonu aç/bağla</string>
     <string name="app_ops_summaries_toast_window">bildiriş göstər</string>
     <string name="app_ops_summaries_project_media">medianı əks etdir</string>
     <string name="app_ops_summaries_activate_vpn">VPN\'ni aktivetmə</string>
+    <string name="app_ops_summaries_toggle_nfc">NFC aç bağla</string>
     <string name="app_ops_summaries_superuser">root müraciəti</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_vibrate">Titrəmə</string>

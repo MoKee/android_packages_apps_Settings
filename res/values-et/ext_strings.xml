@@ -142,10 +142,16 @@
     <string name="app_ops_summaries_keep_awake">hoia ärkvel</string>
     <string name="app_ops_summaries_monitor_location">jälgi asukohta</string>
     <string name="app_ops_summaries_monitor_high_power_location">Jälgi eriti täpaet asukohta</string>
+    <string name="app_ops_summaries_get_usage_stats">saada rakenduse kasutamise statistikat</string>
     <string name="app_ops_summaries_mute_unmute_microphone">Mikrofoni heli välja/sisse</string>
     <string name="app_ops_summaries_toast_window">Kuva hüpikud</string>
     <string name="app_ops_summaries_project_media">projekteerida meediat</string>
     <string name="app_ops_summaries_activate_vpn">Aktiveeri VPN</string>
+    <string name="app_ops_summaries_use_fingerprint">kasuta sõrmejälge</string>
+    <string name="app_ops_summaries_use_body_sensors">kasutada biosensoreid</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">lugeda võrguteateid</string>
+    <string name="app_ops_summaries_read_external_storage">lugeda väliselt andmekandjalt</string>
+    <string name="app_ops_summaries_toggle_nfc">lülitada NFC</string>
     <string name="app_ops_summaries_superuser">Root ligipääs</string>
     <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_vibrate">Vibreeri</string>

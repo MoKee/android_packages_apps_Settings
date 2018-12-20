@@ -47,6 +47,8 @@
     <string name="root_appops_summary">Kyk na en beheer die root reëls</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Touchscreen gesture settings -->
+    <string name="touchscreen_gesture_settings_title">Raakskerm gebare</string>
+    <string name="touchscreen_gesture_settings_summary">Verrig verskeie raakskerm gebare vir vinnige aksies</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Voorkom toevallige wakker word</string>
     <!-- Whether the keyguard will directly show the password entry -->

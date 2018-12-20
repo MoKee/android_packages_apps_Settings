@@ -44,6 +44,7 @@
     <!-- Android debugging -->
     <!-- Android debugging notification -->
     <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB üle võrgu</string>
     <!-- Kill app long-press back -->
     <!-- Format string for fingerprint location message -->
     <!-- Fingerprint sensor locations -->
