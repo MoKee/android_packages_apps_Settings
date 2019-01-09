@@ -26,4 +26,5 @@
     <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Geler ou supprimer le Centre MoKee affectera les services système, veuillez restaurer et réessayer.</string>
     <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="system_dashboard_summary_mk">Langues, date et heure, sauvegarde</string>
 </resources>

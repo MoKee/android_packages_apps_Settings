@@ -181,6 +181,12 @@
     <string name="app_ops_summaries_write_external_storage">ಬಾಹ್ಯ ಸಂಗ್ರಹಗೆ ಬರೆ</string>
     <string name="app_ops_summaries_turn_screen_on">ಪರದೆ ಆನ್ ಮಾಡು</string>
     <string name="app_ops_summaries_get_accounts">ಖಾತೆಗಳನ್ನು ಪಡೆ</string>
+    <string name="app_ops_summaries_run_in_background">ಹಿಂಬದಿಯಲ್ಲಿ ಚಲಾಯಿಸಿ</string>
+    <string name="app_ops_summaries_accessibility_volume">ಧ್ವನಿ ಪ್ರವೇಶದ ಗಾತ್ರ</string>
+    <string name="app_ops_summaries_read_phone_numbers">ದೂರವಾಣಿ ಸಂಖ್ಯೆಗಳನ್ನು ಓದು</string>
+    <string name="app_ops_summaries_picture_in_picture">ಚಿತ್ರದಲ್ಲಿ ಚಿತ್ರ ಬಳಸು</string>
+    <string name="app_ops_summaries_instant_app_start_foreground">ತ್ವರಿತ ಕಿರು ತಂತ್ರಾಂಶವನ್ನು ಮುನ್ನೆಲೆಯಲ್ಲಿ ಆರಂಭಿಸು</string>
+    <string name="app_ops_summaries_answer_phone_calls">ದೂರವಾಣಿ ಕರೆಗಳನ್ನು ಉತ್ತರಿಸು</string>
     <string name="app_ops_summaries_toggle_wifi">Wi-Fi ಟಾಗಲ್ ಮಾಡು</string>
     <string name="app_ops_summaries_toggle_bluetooth">ಬ್ಲೂಟೂತ್ ಟಾಗಲ್ ಮಾಡು</string>
     <string name="app_ops_summaries_start_at_boot">ಬೂಟ್ ಆರಂಭಿಸು</string>
