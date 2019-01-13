@@ -1,1 +1,2 @@
+res/values-*/ext_plurals.xml merge=ours
 res/values-*/ext_strings.xml merge=ours
