@@ -92,7 +92,7 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
     <!-- Android debugging over network -->
     <string name="adb_over_network">ADB par réseau</string>
     <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2011Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage</string>
-    <string name="adb_over_network_warning">AVERTISSEMENT : Lorsque l\'ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés !\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez-vous vraiment activer cette fonction ?</string>
+    <string name="adb_over_network_warning">AVERTISSEMENT : Lorsque l\'ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés !\n\n Utilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\n Voulez-vous vraiment activer cette fonction ?</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Fermer l\'application à l\'aide du bouton Retour</string>
     <string name="kill_app_longpress_back_summary">Tuer l\'application en premier plan par un appui long sur le bouton Retour</string>
