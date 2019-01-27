@@ -254,6 +254,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Appuyez pour mettre en veille</string>
     <string name="status_bar_double_tap_to_sleep_summary">Appuyez deux fois sur la bar de statut ou sur l\'écran de verrouillage pour mettre en veille l\'écran</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localiser le capteur d’empreintes digitales sur <xliff:g id="sensor_location">%1$s </xliff:g> de votre téléphone.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">l\'arrière</string>
+    <string name="security_settings_fingerprint_sensor_location_front">la façade</string>
+    <string name="security_settings_fingerprint_sensor_location_left">le côté gauche</string>
+    <string name="security_settings_fingerprint_sensor_location_right">le côté droit</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
     <!-- Increasing ring tone volume -->

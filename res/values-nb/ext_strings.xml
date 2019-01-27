@@ -191,6 +191,13 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">Ikke nødvendig, du allerede har aktivert utviklingsinnstillinger.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Finn fingerskanneren på <xliff:g id="sensor_location">%1$s</xliff:g> av telefonen din.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">baksiden</string>
+    <string name="security_settings_fingerprint_sensor_location_front">forsiden</string>
+    <string name="security_settings_fingerprint_sensor_location_left">venstre siden</string>
+    <string name="security_settings_fingerprint_sensor_location_right">høyre siden</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Enhetens vertsnavn</string>
     <!-- Increasing ring tone volume -->

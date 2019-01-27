@@ -192,6 +192,13 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">Hindi na kailangan, pinagana mo na ang pag-unlad na mga setting.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Hanapin ang fingerprint sensor sa <xliff:g id="sensor_location">%1$s</xliff:g> sa iyong telepono.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
+    <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
+    <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
+    <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Hostname ng gamit</string>
     <!-- Increasing ring tone volume -->

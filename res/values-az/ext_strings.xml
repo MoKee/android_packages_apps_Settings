@@ -138,6 +138,8 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">Artıq tərtibatçı tənzimləmələrini fəallaşdırmısınız.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <!-- Fingerprint sensor locations -->
     <!-- Hostname setting -->
     <string name="device_hostname">Cihaz şəbəkə adı</string>
     <!-- Increasing ring tone volume -->

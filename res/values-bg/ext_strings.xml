@@ -206,6 +206,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Натиснете, за заспиване</string>
     <string name="status_bar_double_tap_to_sleep_summary">Докоснете двукратно лентата на състоянието или заключващия екран, за да изключите дисплея</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Намерете сензора за пръстови отпечатъци <xliff:g id="sensor_location">%1$s </xliff:g> на вашия телефон.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">Отзад</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Отпред</string>
+    <string name="security_settings_fingerprint_sensor_location_left">Лява страна</string>
+    <string name="security_settings_fingerprint_sensor_location_right">Дясна страна</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Хост име на устройството</string>
     <!-- Increasing ring tone volume -->

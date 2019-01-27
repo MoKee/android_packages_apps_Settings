@@ -206,6 +206,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tippen für Standby</string>
     <string name="status_bar_double_tap_to_sleep_summary">Doppeltippe auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> des Geräts.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">Rückseite</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Front</string>
+    <string name="security_settings_fingerprint_sensor_location_left">linken Seite</string>
+    <string name="security_settings_fingerprint_sensor_location_right">rechten Seite</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Hostname des Geräts</string>
     <!-- Increasing ring tone volume -->

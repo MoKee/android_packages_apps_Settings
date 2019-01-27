@@ -208,6 +208,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Націсніце для сну</string>
     <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаваны экран, каб перавесці прыладу ў спячы рэжым</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+    <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+    <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+    <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Сеткавае імя прылады</string>
     <!-- Increasing ring tone volume -->

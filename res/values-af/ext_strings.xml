@@ -191,6 +191,13 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">Nie nodig, het jy reeds die ontwikkeling opsies geaktiveer.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Vind die vingerafdruk sensor op die <xliff:g id="sensor_location">%1$s </xliff:g> van jou foon.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">terug</string>
+    <string name="security_settings_fingerprint_sensor_location_front">voorkant</string>
+    <string name="security_settings_fingerprint_sensor_location_left">linkerkant</string>
+    <string name="security_settings_fingerprint_sensor_location_right">regte kant</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Toestel gasheernaam</string>
     <!-- Increasing ring tone volume -->

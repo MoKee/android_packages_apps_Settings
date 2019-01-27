@@ -254,6 +254,8 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+    <!-- Format string for fingerprint location message -->
+    <!-- Fingerprint sensor locations -->
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
     <!-- Increasing ring tone volume -->

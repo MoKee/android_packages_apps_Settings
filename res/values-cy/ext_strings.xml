@@ -185,6 +185,12 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Taro i gysgu</string>
     <string name="status_bar_double_tap_to_sleep_summary">Taro dwywaith ar y bar statws neu\'r sgrin cloi i droi\'r sgrin i ffwrdd</string>
+    <!-- Format string for fingerprint location message -->
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">nôl</string>
+    <string name="security_settings_fingerprint_sensor_location_front">blaen</string>
+    <string name="security_settings_fingerprint_sensor_location_left">ochr chwith</string>
+    <string name="security_settings_fingerprint_sensor_location_right">ochr dde</string>
     <!-- Hostname setting -->
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Uchder sain yn cynyddu</string>

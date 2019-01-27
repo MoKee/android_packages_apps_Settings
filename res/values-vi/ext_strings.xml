@@ -205,6 +205,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Chạm để tắt màn hình</string>
     <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái hoặc màn hình khoá để tắt màn hình</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Xác định vị trí cảm biến vân tay trên <xliff:g id="sensor_location">%1$s</xliff:g> điện thoại của bạn.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">quay lại</string>
+    <string name="security_settings_fingerprint_sensor_location_front">trước</string>
+    <string name="security_settings_fingerprint_sensor_location_left">cạnh trái</string>
+    <string name="security_settings_fingerprint_sensor_location_right">cạnh phải</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Tên máy chủ của thiết bị</string>
     <!-- Increasing ring tone volume -->

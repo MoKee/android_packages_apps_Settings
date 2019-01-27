@@ -206,6 +206,13 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Πατήστε για αναστολή</string>
     <string name="status_bar_double_tap_to_sleep_summary">Πατήστε δύο φορές στη γραμμή κατάστασης ή την οθόνη κλειδώματος για αναστολή της συσκευής</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Εντοπίστε τον αισθητήρα μοναδικού χαρακτηριστικού <xliff:g id="sensor_location">%1$s</xliff:g> του τηλεφώνου σας.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">στο πίσω μέρος</string>
+    <string name="security_settings_fingerprint_sensor_location_front">στο μπροστινό μέρος</string>
+    <string name="security_settings_fingerprint_sensor_location_left">στην αριστερή πλευρά</string>
+    <string name="security_settings_fingerprint_sensor_location_right">στη δεξιά πλευρά</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Hostname συσκευής</string>
     <!-- Increasing ring tone volume -->

@@ -184,6 +184,8 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">అవసరం లేదు, మీరు ఇప్పటికే డెవలప్మెంట్ సెట్టింగులను ప్రారంభించేశారు.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <!-- Fingerprint sensor locations -->
     <!-- Hostname setting -->
     <string name="device_hostname">పరికరం అతిధేయ నామం</string>
     <!-- Increasing ring tone volume -->

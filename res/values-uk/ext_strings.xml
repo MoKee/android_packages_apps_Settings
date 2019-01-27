@@ -53,8 +53,10 @@
     <string name="app_ops_summaries_access_notifications">доступ до повідомлень</string>
     <string name="app_ops_summaries_activate_vpn">активувати VPN</string>
     <string name="app_ops_summaries_add_voicemail">додавати голосову пошту</string>
+    <string name="app_ops_summaries_app_start_foreground">моментальний запуск додатку на передньому плані</string>
     <string name="app_ops_summaries_assist_screenshot">допоміжний скріншот</string>
     <string name="app_ops_summaries_assist_structure">допоміжні структури</string>
+    <string name="app_ops_summaries_audio_accessibility_volume">доступ до налаштувань гучності</string>
     <string name="app_ops_summaries_auto_start">запуск при включені пристрою</string>
     <string name="app_ops_summaries_change_wallpaper">зміна шпалер</string>
     <string name="app_ops_summaries_coarse_location">приблизне місце розташування</string>
@@ -191,6 +193,13 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">Немає необхідності, ви вже увімкнули налаштування для розробників.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сканер відбитку пальців розташовано на <xliff:g id="sensor_location">%1$s</xliff:g> вашого телефону.</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">задній панелі</string>
+    <string name="security_settings_fingerprint_sensor_location_front">передній панелі</string>
+    <string name="security_settings_fingerprint_sensor_location_left">ліва сторона</string>
+    <string name="security_settings_fingerprint_sensor_location_right">права сторона</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Ім’я пристрою</string>
     <!-- Increasing ring tone volume -->
