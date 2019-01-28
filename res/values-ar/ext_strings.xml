@@ -259,6 +259,8 @@
     <string name="status_bar_double_tap_to_sleep_title">اضغط للنوم</string>
     <string name="status_bar_double_tap_to_sleep_summary">الضغط مرتين فوق شريط الحالة لإطفاء الشاشة</string>
     <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">حدد موقع حساس بصمة الأصبع على <xliff:g id="sensor_location">%1$s</xliff:g> من جهازك اللوحي.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">حدد موقع حساس بصمة الأصبع على <xliff:g id="sensor_location">%1$s</xliff:g> من جهازك.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">حدد موقع حساس بصمة الأصبع <xliff:g id="sensor_location">%1$s</xliff:g> من هاتفك.</string>
     <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">الخلف</string>
