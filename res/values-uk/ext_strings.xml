@@ -193,6 +193,7 @@
     <string name="app_ops_summaries_read_phone_numbers">переглядати номери телефону</string>
     <string name="app_ops_summaries_picture_in_picture">використовувати картинку в картинці</string>
     <string name="app_ops_summaries_instant_app_start_foreground">моментальний запуск додатку на передньому плані</string>
+    <string name="app_ops_summaries_answer_phone_calls">відповідати на телефонні виклики</string>
     <string name="app_ops_summaries_toggle_wifi">переключити Wi-Fi</string>
     <string name="app_ops_summaries_toggle_bluetooth">переключити Bluetooth</string>
     <string name="app_ops_summaries_start_at_boot">запуск при завантаженні</string>

@@ -119,7 +119,7 @@
     <string name="sim_enabler_need_disable_sim">SIM-kártya deaktiválva lesz. Szeretné folytatni?</string>
     <string name="sim_enabler_will_disable_sim_title">Figyelem</string>
     <string name="sim_enabler_need_switch_data_service">Ez a SIM tiltásra kerül és a SIM <xliff:g id="slotid">%1$s</xliff:g> kerül adatszolgáltatáshoz használva. Biztosan folytatni kívánja?</string>
-    <string name="sim_enabler_airplane_on">Nem sikerült végrehajtani a műveletet, amíg a repülőgép üzemmód aktív.</string>
+    <string name="sim_enabler_airplane_on">Nem lehetséges végrehajtani a műveletet, amíg a repülőgép-üzemmód aktív.</string>
     <string name="sim_enabler_in_call">Nem sikerült végrehajtani a műveletet, hívás közben.</string>
     <string name="sim_enabler_both_inactive">Nem tiltható le az összes SIM-kártya</string>
     <string name="sim_enabler_enabling">Aktiválás\u2026</string>
