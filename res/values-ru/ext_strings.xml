@@ -257,6 +257,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Коснитесь для сна</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния или экрана блокировки, чтобы перевести устройство в спящий режим</string>
     <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
     <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">задней панели</string>

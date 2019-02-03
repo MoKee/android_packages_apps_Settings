@@ -81,6 +81,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">відстеження високоточного позиціонування</string>
     <string name="app_ops_summaries_monitor_location">відстеження місця розташування</string>
     <string name="app_ops_summaries_mute_unmute_microphone">увімк./вимк. мікрофон</string>
+    <string name="app_ops_summaries_phone_calls">відповідати на телефонні виклики</string>
     <string name="app_ops_summaries_picture_in_picture">використовувати картинку в картинці</string>
     <string name="app_ops_summaries_play_audio">відтворювати аудіо</string>
     <string name="app_ops_summaries_post_notification">виводити сповіщення</string>

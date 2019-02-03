@@ -20,10 +20,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
-    <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya önyükleme modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
+    <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya ön yükleyici modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
     <!-- App ops permissions -->
     <string name="app_ops_permissions_allowed">İzin verildi</string>
-    <string name="app_ops_permissions_ignored">Görmezden gelindi</string>
+    <string name="app_ops_permissions_ignored">Reddedildi</string>
     <string name="app_ops_permissions_always_ask">Her zaman sor</string>
     <!-- App ops detail -->
     <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (<xliff:g id="count">%2$s</xliff:g> kullanım)</string>
@@ -255,6 +255,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Uyutmak için dokunun</string>
     <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna veya kilit ekranına çift dokunun</string>
     <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Tabletinizin üzerinde bulunan <xliff:g id="sensor_location">%1$s</xliff:g> parmak izi sensörünü bulun.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Telefonunuzun üzerinde bulunan <xliff:g id="sensor_location">%1$s</xliff:g> parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Telefonunuzdaki <xliff:g id="sensor_location">%1$s</xliff:g> üzerinde parmak izi sensörünü bulun.</string>
     <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">arka</string>

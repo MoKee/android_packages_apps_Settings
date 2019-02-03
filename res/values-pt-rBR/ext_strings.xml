@@ -59,6 +59,7 @@
     <string name="app_ops_summaries_assist_structure">estrutura de assistência</string>
     <string name="app_ops_summaries_audio_accessibility_volume">volume do áudio de acessibilidade</string>
     <string name="app_ops_summaries_auto_start">iniciar ao ligar</string>
+    <string name="app_ops_summaries_bluetooth_scan">Pesquisa por Bluetooth</string>
     <string name="app_ops_summaries_change_wallpaper">mudar o papel de parede</string>
     <string name="app_ops_summaries_coarse_location">localização imprecisa</string>
     <string name="app_ops_summaries_delete_call_log">apagar o seu registro de chamadas</string>
@@ -97,13 +98,17 @@
     <string name="app_ops_summaries_read_phone_numbers">ler os números de telefone</string>
     <string name="app_ops_summaries_read_phone_state">ler o estado do telefone</string>
     <string name="app_ops_summaries_read_sms">ler SMS</string>
+    <string name="app_ops_summaries_receive_emergency_broadcast">receber transmissões de emergência</string>
     <string name="app_ops_summaries_receive_sms">receber SMS</string>
     <string name="app_ops_summaries_record_audio">gravar áudio</string>
+    <string name="app_ops_summaries_request_delete_packages">solicitar exclusão de pacotes</string>
+    <string name="app_ops_summaries_run_any_in_background">executar qualquer um em segundo plano</string>
     <string name="app_ops_summaries_run_in_background">executar em segundo plano</string>
     <string name="app_ops_summaries_scan_wifi">procurar por redes Wi-Fi</string>
     <string name="app_ops_summaries_send_mms">enviar uma mensagem MMS</string>
     <string name="app_ops_summaries_send_sms">enviar SMS</string>
     <string name="app_ops_summaries_start_at_bootup">iniciar ao ligar</string>
+    <string name="app_ops_summaries_start_foreground">iniciar em primeiro plano</string>
     <string name="app_ops_summaries_su">obter acesso super usuário</string>
     <string name="app_ops_summaries_toast_window">exibir avisos flutuantes na tela</string>
     <string name="app_ops_summaries_toggle_bluetooth">alternar Bluetooth</string>
@@ -128,6 +133,7 @@
     <string name="app_ops_summaries_write_mms">escrever uma mensagem MMS</string>
     <string name="app_ops_summaries_write_sms">escrever SMS</string>
     <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_labels_access_camera">Acessar a câmera</string>
     <string name="app_ops_labels_access_notifications">Acessar notificações</string>
     <string name="app_ops_labels_activate_vpn">Ativar VPN</string>
     <string name="app_ops_labels_add_voicemail">Adicionar correio de voz</string>
@@ -135,12 +141,22 @@
     <string name="app_ops_labels_assist_screenshot">Assistente de captura da tela</string>
     <string name="app_ops_labels_assist_structure">Estrutura de assistência</string>
     <string name="app_ops_labels_audio_accessibility_volume">Volume do áudio de acessibilidade</string>
+    <string name="app_ops_labels_auto_start">Iniciar ao ligar o dispositivo</string>
+    <string name="app_ops_labels_bluetooth_scan">Procura por Bluetooth</string>
+    <string name="app_ops_labels_change_wallpaper">Mudar o papel de parede</string>
     <string name="app_ops_labels_coarse_location">Localização imprecisa</string>
+    <string name="app_ops_labels_delete_call_log">Apagar seu registro de chamadas</string>
+    <string name="app_ops_labels_delete_contacts">Excluir seus contatos</string>
+    <string name="app_ops_labels_delete_mms">Deletar as suas mensagens MMS</string>
+    <string name="app_ops_labels_delete_sms">Deletar as suas mensagens SMS</string>
     <string name="app_ops_labels_draw_on_top">Desenhar em cima</string>
     <string name="app_ops_labels_fine_location">Localização precisa</string>
     <string name="app_ops_labels_get_accounts">Obter as contas</string>
     <string name="app_ops_labels_get_usage_stats">Obter estatísticas de uso</string>
     <string name="app_ops_labels_gps">GPS</string>
+    <string name="app_ops_labels_install_packages">Instalar pacotes</string>
+    <string name="app_ops_labels_keep_device_awake">Manter o seu dispositivo acordado</string>
+    <string name="app_ops_labels_make_phone_call">Fazer uma chamada</string>
     <string name="app_ops_labels_mock_location">Simular a localização</string>
     <string name="app_ops_labels_modify_calendar">Modificar calendário</string>
     <string name="app_ops_labels_modify_call_log">Modificar registro de chamdas</string>
@@ -153,6 +169,7 @@
     <string name="app_ops_labels_phone_calls">Atender chamadas telefônicas</string>
     <string name="app_ops_labels_picture_in_picture">Usar o modo imagem em imagem (PIP)</string>
     <string name="app_ops_labels_play_audio">Tocar áudio</string>
+    <string name="app_ops_labels_post_notification">Exibir uma notificação</string>
     <string name="app_ops_labels_project_media">Projetar mídia</string>
     <string name="app_ops_labels_read_calendar">Ler calendário</string>
     <string name="app_ops_labels_read_call_log">Ler registro de chamadas</string>
@@ -165,15 +182,34 @@
     <string name="app_ops_labels_read_sms">Ler SMS</string>
     <string name="app_ops_labels_receive_sms">Receber SMS</string>
     <string name="app_ops_labels_record_audio">Gravar áudio</string>
+    <string name="app_ops_labels_run_any_in_background">Executar em segundo plano</string>
     <string name="app_ops_labels_run_in_background">Executar em segundo plano</string>
+    <string name="app_ops_labels_scan_wifi">Procurar rede Wi-Fi</string>
+    <string name="app_ops_labels_send_mms">Enviar uma mensagem MMS</string>
     <string name="app_ops_labels_send_sms">Enviar SMS</string>
+    <string name="app_ops_labels_start_at_bootup">Iniciar ao ligar o dispositivo</string>
+    <string name="app_ops_labels_start_foreground">Iniciar em primeiro plano</string>
+    <string name="app_ops_labels_su">Obter acesso root</string>
     <string name="app_ops_labels_toast_window">Exibir avisos na tela</string>
     <string name="app_ops_labels_toggle_mobile_data">Alternar dados de celular</string>
     <string name="app_ops_labels_toggle_nfc">Alternar NFC</string>
     <string name="app_ops_labels_toggle_wifi">Alternar Wi-Fi</string>
+    <string name="app_ops_labels_turn_on_screen">Ligar a tela</string>
+    <string name="app_ops_labels_use_alarm_volume">Controlar o volume do alarme</string>
+    <string name="app_ops_labels_use_audio_focus">Controlar o foco do áudio</string>
+    <string name="app_ops_labels_use_bluetooth_volume">Controlar o volume Bluetooth</string>
     <string name="app_ops_labels_use_body_sensors">Usar sensores corporais</string>
     <string name="app_ops_labels_use_fingerprint">Usar a impressão digital</string>
+    <string name="app_ops_labels_use_master_volume">Controlar o volume principal</string>
+    <string name="app_ops_labels_use_media_buttons">Usar os botões de mídia</string>
+    <string name="app_ops_labels_use_media_volume">Controlar o volume de mídia</string>
+    <string name="app_ops_labels_use_notification_volume">Controlar o volume de notificação</string>
+    <string name="app_ops_labels_use_ring_volume">Controlar o volume do toque</string>
+    <string name="app_ops_labels_use_vibrate">Use feedback tátil</string>
+    <string name="app_ops_labels_use_voice_volume">Controlar o volume de chamadas de voz</string>
+    <string name="app_ops_labels_wifi_change">Alterar o estado do Wi-Fi</string>
     <string name="app_ops_labels_write_external_storage">Gravar no armazenamento externo</string>
+    <string name="app_ops_labels_write_mms">Escrever uma mensagem MMS</string>
     <string name="app_ops_labels_write_sms">Escrever SMS</string>
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_settings_picker_pattern_size_message">Escolha um tamanho para o padrão</string>
@@ -207,6 +243,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
     <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status ou na tela de bloqueio para desligar a tela</string>
     <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localize o sensor de impressão digital <xliff:g id="sensor_location">%1$s</xliff:g> do seu Tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localize o sensor de impressão digital <xliff:g id="sensor_location">%1$s</xliff:g> do seu dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localize o sensor de impressão digital sobre o(a) <xliff:g id="sensor_location">%1$s </xliff:g> do seu telefone.</string>
     <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">traseira</string>
