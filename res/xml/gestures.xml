@@ -23,6 +23,9 @@
     android:title="@string/gesture_preference_title">
 
     <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="bottom_gesture_navigation_settings" />
+
+    <org.mokee.internal.mkparts.MKPartsPreference
         android:key="touchscreen_gesture_settings"
         mk:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
