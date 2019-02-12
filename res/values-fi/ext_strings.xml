@@ -327,5 +327,6 @@
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">Mobiilidata</string>
     <string name="data_usage_app_restrict_data_summary">Ota mobiilidata käyttöön</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Ota Wi\u2011Fi data käyttöön</string>
 </resources>
