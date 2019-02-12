@@ -144,6 +144,13 @@
     <string name="app_ops_summaries_toast_window">टोस्ट दिखाएँ</string>
     <string name="app_ops_summaries_project_media">परियोजना माध्यम</string>
     <string name="app_ops_summaries_activate_vpn">वीपीएन को सक्रिय करें</string>
+    <string name="app_ops_summaries_use_fingerprint">फ़िंगरप्रिंट का उपयोग करें</string>
+    <string name="app_ops_summaries_use_body_sensors">शरीर सेंसर का प्रयोग करें</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">कक्ष प्रसारण पढ़ें</string>
+    <string name="app_ops_summaries_read_external_storage">बाह्य भंडारण पढ़ें</string>
+    <string name="app_ops_summaries_run_in_background">पृष्ठभूमि में चलाएं</string>
+    <string name="app_ops_summaries_read_phone_numbers">फ़ोन नंबर पढ़ें</string>
+    <string name="app_ops_summaries_instant_app_start_foreground">अग्रभूमि में त्वरित एप्लीकेशन प्रारंभ करें</string>
     <string name="app_ops_summaries_toggle_nfc">एनएफसी को बंद-चालू करें</string>
     <string name="app_ops_summaries_superuser">मूल पहुँच</string>
     <!-- User display names for app ops codes - extension of AOSP -->
