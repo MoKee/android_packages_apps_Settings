@@ -47,7 +47,9 @@
     <string name="app_ops_summaries_access_camera">कैमरे में पहुँचें</string>
     <string name="app_ops_summaries_access_notifications">अधिसूचनाओं में जाएँ</string>
     <string name="app_ops_summaries_activate_vpn">वीपीएन को सक्रिय करें</string>
+    <string name="app_ops_summaries_app_start_foreground">अग्रभूमि में त्वरित एप्लीकेशन प्रारंभ करें</string>
     <string name="app_ops_summaries_auto_start">पावर अप के दौरान चालू करें</string>
+    <string name="app_ops_summaries_change_wallpaper">वॉलपेपर बदलें</string>
     <string name="app_ops_summaries_coarse_location">असटीक स्थान</string>
     <string name="app_ops_summaries_delete_call_log">अपने कॉल लॉग को हटाएँ</string>
     <string name="app_ops_summaries_delete_contacts">अपने संपर्कों को हटाएँ</string>
@@ -72,12 +74,17 @@
     <string name="app_ops_summaries_project_media">परियोजना माध्यम</string>
     <string name="app_ops_summaries_read_calendar">कैलेंडर को पढ़ें</string>
     <string name="app_ops_summaries_read_call_log">कॉल लॉग को पढ़ें</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">कक्ष प्रसारण पढ़ें</string>
     <string name="app_ops_summaries_read_clipboard">क्लिपबोर्ड को पढ़ें</string>
     <string name="app_ops_summaries_read_contacts">संपर्कों को पढ़ें</string>
+    <string name="app_ops_summaries_read_external_storage">बाह्य भंडारण पढ़ें</string>
     <string name="app_ops_summaries_read_mms">अपने एमएमएस संदेशों को पढ़ें</string>
+    <string name="app_ops_summaries_read_phone_numbers">फ़ोन नंबर पढ़ें</string>
     <string name="app_ops_summaries_read_sms">एसएमएस पढ़ें</string>
     <string name="app_ops_summaries_receive_sms">एसएमएस प्राप्त करें</string>
     <string name="app_ops_summaries_record_audio">ऑडियो रिकॉर्ड करें</string>
+    <string name="app_ops_summaries_run_in_background">पृष्ठभूमि में चलाएं</string>
+    <string name="app_ops_summaries_scan_wifi">वाईफाई नेटवर्क खोजें</string>
     <string name="app_ops_summaries_send_mms">एमएमएस संदेश भेजें</string>
     <string name="app_ops_summaries_send_sms">एसएमएस भेजें</string>
     <string name="app_ops_summaries_start_at_bootup">पावर अप के दौरान चालू करें</string>
@@ -85,9 +92,12 @@
     <string name="app_ops_summaries_toast_window">टोस्ट दिखाएँ</string>
     <string name="app_ops_summaries_toggle_bluetooth">ब्लूटूथ को बंद-चालू करें</string>
     <string name="app_ops_summaries_toggle_nfc">एनएफसी को बंद-चालू करें</string>
+    <string name="app_ops_summaries_turn_on_screen">स्क्रीन चालू करें</string>
     <string name="app_ops_summaries_use_alarm_volume">अलार्म वोल्यूम को नियंत्रित करें</string>
     <string name="app_ops_summaries_use_audio_focus">ऑडियो फ़ोकस को नियंत्रित करें</string>
     <string name="app_ops_summaries_use_bluetooth_volume">ब्लूटूथ वोल्यूम को नियंत्रित करें</string>
+    <string name="app_ops_summaries_use_body_sensors">शरीर सेंसर का प्रयोग करें</string>
+    <string name="app_ops_summaries_use_fingerprint">फ़िंगरप्रिंट का उपयोग करें</string>
     <string name="app_ops_summaries_use_master_volume">मास्टर वोल्यूम को नियंत्रित करें</string>
     <string name="app_ops_summaries_use_media_buttons">माध्यम बटनों का उपयोग करें</string>
     <string name="app_ops_summaries_use_media_volume">माध्यम वोल्यूम को नियंत्रित करें</string>
@@ -95,6 +105,7 @@
     <string name="app_ops_summaries_use_ring_volume">रिंगटोन वोल्यूम को नियंत्रित करें</string>
     <string name="app_ops_summaries_use_vibrate">हैप्टिक फ़ीडबैक का उपयोग करें</string>
     <string name="app_ops_summaries_use_voice_volume">वोइल कॉल वोल्यूम को नियंत्रित करें</string>
+    <string name="app_ops_summaries_wifi_change">वाईफाई की स्थिति परिवर्तित करे</string>
     <string name="app_ops_summaries_write_mms">एक एमएमएस संदेश लिखें</string>
     <string name="app_ops_summaries_write_sms">एसएमएस लिखें</string>
     <!-- User display names for app ops codes - extension of AOSP -->
