@@ -59,6 +59,7 @@
     <string name="app_ops_summaries_assist_structure">Strukturassistent</string>
     <string name="app_ops_summaries_audio_accessibility_volume">Bedienungshilfen-Lautstärke</string>
     <string name="app_ops_summaries_auto_start">automatisch zu starten</string>
+    <string name="app_ops_summaries_bluetooth_scan">bluetooth-Suche</string>
     <string name="app_ops_summaries_change_wallpaper">Hintergrundbild zu ändern</string>
     <string name="app_ops_summaries_coarse_location">Ungefährer Standort</string>
     <string name="app_ops_summaries_delete_call_log">Ihre Anrufliste zu löschen</string>
@@ -104,6 +105,7 @@
     <string name="app_ops_summaries_send_mms">eine MMS zu senden</string>
     <string name="app_ops_summaries_send_sms">SMS senden</string>
     <string name="app_ops_summaries_start_at_bootup">automatisch zu starten</string>
+    <string name="app_ops_summaries_start_foreground">im Vordergrund starten</string>
     <string name="app_ops_summaries_su">Root-Zugriff zu erhalten</string>
     <string name="app_ops_summaries_toast_window">Pop-ups anzeigen</string>
     <string name="app_ops_summaries_toggle_bluetooth">Bluetooth ein-/auszuschalten</string>
