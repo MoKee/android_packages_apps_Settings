@@ -18,21 +18,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Ailgychwyn arbennig</string>
-    <!-- App ops permissions -->
     <string name="app_ops_permissions_allowed">Caniateir</string>
     <string name="app_ops_permissions_ignored">Anwybyddwyd</string>
     <string name="app_ops_permissions_always_ask">Gofyn pob tro</string>
-    <!-- App ops detail -->
     <string name="app_ops_allowed_count">Caniateir <xliff:g id="count" example="2 times">%s</xliff:g></string>
     <string name="app_ops_both_count">Caniateir <xliff:g id="count">%1$s</xliff:g>, gwrthodwyd <xliff:g id="count">%2$s</xliff:g></string>
-    <!-- App ops menu options -->
     <string name="app_ops_show_user_apps">Dangos apiau defnyddiwr</string>
     <string name="app_ops_reset_counters">Ailosod rhifyddion caniatáu/gwrthod</string>
     <string name="app_ops_reset_confirm_mesg">Wyt ti\'n bendant eisiau ailosod rhifyddion?</string>
-    <!-- Memory -->
-    <!-- Names of categories of app ops tabs - extension of AOSP -->
     <string name="app_ops_categories_location">Lleoliad</string>
     <string name="app_ops_categories_personal">Personol</string>
     <string name="app_ops_categories_messaging">Negesu</string>
@@ -41,7 +35,6 @@
     <string name="app_ops_categories_run_in_background">Rhedeg yn y cefndir</string>
     <string name="app_ops_categories_su">Mynediad craidd</string>
     <string name="app_ops_categories_other">Arall</string>
-    <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_summaries_accept_handover">trosglwyddiad galwad o ap arall</string>
     <string name="app_ops_summaries_access_camera">mynediad at dy gamera</string>
     <string name="app_ops_summaries_activate_vpn">rhoi VPN ar waith</string>
@@ -107,7 +100,6 @@
     <string name="app_ops_summaries_wifi_change">newid cyflwr Wi-Fi</string>
     <string name="app_ops_summaries_write_mms">ysgrifennu neges MMS</string>
     <string name="app_ops_summaries_write_sms">ysgrifennu SMS</string>
-    <!-- User display names for app ops codes - extension of AOSP -->
     <string name="app_ops_labels_accept_handover">Trosglwyddiad galwad o ap arall</string>
     <string name="app_ops_labels_activate_vpn">Rhoi VPN ar waith</string>
     <string name="app_ops_labels_add_voicemail">Ychwanegu lleisbost</string>
@@ -166,53 +158,29 @@
     <string name="app_ops_labels_wifi_change">Newid cyflwr Wi-Fi</string>
     <string name="app_ops_labels_write_mms">Ysgrifennu neges MMS</string>
     <string name="app_ops_labels_write_sms">Ysgrifennu SMS</string>
-    <!-- Sizes for pattern lockscreen -->
     <string name="lock_settings_picker_pattern_size_message">Dewisa maint patrwm</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <!-- Lock screen vibrate settings -->
     <string name="lockscreen_vibrate_enabled_title">Dirgrynu</string>
-    <!-- Android debugging -->
     <string name="adb_enable">Dadfygio Android</string>
-    <!-- Android debugging notification -->
-    <!-- Android debugging over network -->
     <string name="adb_over_network">ADB dros rwydwaith</string>
     <string name="adb_over_network_summary">Galluogi dadfygio TCP/IP dros ryngwynebau rhwydwaith (Wi\u2011Fi, rhwydweithiau USB). Mae\'r gosodiad yn cael ei ail-osod wrth ail-gychwyn y ddyfais.</string>
     <string name="adb_over_network_warning">RHYBUDD: Tra bod ADB dros rwydwaith wedi\'i alluogi, mae dy ffôn ar gael ac yn agor i ymyrraeth ar bob rhwydwaith mae wedi cysylltu â nhw!\n\nDefnyddia\'r nodwedd hon dim ond pan wyt wedi cysylltu â rhwydweithiau rwyt yn ymddiried ynddynt.\n\nWyt ti wir eisiau parhau i alluogi\'r nodwedd hon?</string>
-    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
-    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Taro i gysgu</string>
     <string name="status_bar_double_tap_to_sleep_summary">Taro dwywaith ar y bar statws neu\'r sgrin cloi i droi\'r sgrin i ffwrdd</string>
-    <!-- Format string for fingerprint location message -->
-    <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">nôl</string>
     <string name="security_settings_fingerprint_sensor_location_front">blaen</string>
     <string name="security_settings_fingerprint_sensor_location_left">ochr chwith</string>
     <string name="security_settings_fingerprint_sensor_location_right">ochr dde</string>
-    <!-- Hostname setting -->
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Uchder sain yn cynyddu</string>
     <string name="increasing_ring_min_volume_title">Uchder sain i ddechrau</string>
     <string name="increasing_ring_ramp_up_time_title">Amser i gynyddu</string>
-    <!-- Kill app long-press back -->
-    <!-- Launch Dev Tools -->
-    <!-- Lock screen cover art -->
-    <!-- Lock screen visualizer -->
-    <!-- Manual provisioning support -->
     <string name="sim_enabler_airplane_on">Nid yw\'n bosib cyflawni\'r dasg tra ym modd awyren.</string>
     <string name="sim_enabler_in_call">Nid yw\'n bosib cyflawni\'r dasg tra bod galwad ar y gweill.</string>
     <string name="sim_enabler_enabling">Yn rhoi ar waith\u2026</string>
     <string name="sub_activate_failed">Methwyd â\'i roi ar waith.</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">Data symudol</string>
     <string name="data_usage_app_restrict_data_summary">Galluogi defnydd data symudol</string>
     <string name="data_usage_app_restrict_wifi">Data Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Galluogi defnydd data Wi\u2011Fi</string>
-    <!-- PIN scramble -->
-    <!-- Proximity wake -->
-    <!-- Setting checkbox title for root access -->
     <string name="root_access">Mynediad craidd</string>
     <string name="root_access_warning_title">Caniatáu mynediad craidd?</string>
     <string name="root_access_warning_message">Mae caniatáu i apiau gael mynediad craidd yn hynod beryglus a gall peryglu diogelwch dy ddyfais!</string>
@@ -220,14 +188,8 @@
     <string name="root_access_apps">Apiau yn unig</string>
     <string name="root_access_adb">ADB yn unig</string>
     <string name="root_access_all">Apiau ac ADB</string>
-    <!-- Preference link for root appops -->
-    <!-- Touchscreen gesture settings -->
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Deffro wrth gysylltu â phŵer</string>
     <string name="wake_when_plugged_or_unplugged_summary">Troi\'r sgrin ymlaen wrth gysylltu neu ddatgysylltu â phŵer</string>
-    <!-- High touch sensitivity -->
-    <!-- Touchscreen hovering -->
-    <!-- Whether the keyguard will directly show the lock entry -->
     <string name="directly_show_lock">Datgloi uniongyrchol</string>
     <string name="directly_show_lock_summary">Neidio\'r sgrin llithro i ddatgloi a dechrau yn hytrach yn syth gyda\'r sgrin gosod allwedd</string>
 </resources>
