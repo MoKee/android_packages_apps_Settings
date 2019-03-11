@@ -17,11 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="app_ops_count">
-        <item quantity="zero">%d troeon</item>
-        <item quantity="one">unwaith</item>
-        <item quantity="two">dwywaith</item>
-        <item quantity="few">%d gwaith</item>
-        <item quantity="many">%d gwaith</item>
-        <item quantity="other">%d gwaith</item>
+        <item quantity="one">once</item>
+        <item quantity="other">%d times</item>
     </plurals>
 </resources>
