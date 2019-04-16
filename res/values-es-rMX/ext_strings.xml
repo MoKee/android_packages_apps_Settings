@@ -43,6 +43,7 @@
     <string name="app_ops_categories_bootup">Ejecución</string>
     <string name="app_ops_categories_su">Acceso administrativo</string>
     <string name="app_ops_categories_other">Otros</string>
+    <string name="app_ops_summaries_accept_handover">entrega de una llamada de otra aplicación</string>
     <string name="app_ops_summaries_access_camera">acceder a la cámara</string>
     <string name="app_ops_summaries_access_notifications">acceder a las notificaciones</string>
     <string name="app_ops_summaries_activate_vpn">activar VPN</string>
@@ -52,6 +53,7 @@
     <string name="app_ops_summaries_assist_structure">ayudar a la estructura</string>
     <string name="app_ops_summaries_audio_accessibility_volume">volumen de accesibilidad de audio</string>
     <string name="app_ops_summaries_auto_start">ejecutar al inicio</string>
+    <string name="app_ops_summaries_bind_accessibility_service">enlazar a un servicio de accesibilidad</string>
     <string name="app_ops_summaries_bluetooth_scan">escaneo bluetooth</string>
     <string name="app_ops_summaries_change_wallpaper">cambiar fondo de pantalla</string>
     <string name="app_ops_summaries_coarse_location">ubicación aproximada</string>
@@ -67,6 +69,7 @@
     <string name="app_ops_summaries_install_packages">instalar paquetes</string>
     <string name="app_ops_summaries_keep_device_awake">mantener tu dispositivo encendido</string>
     <string name="app_ops_summaries_make_phone_call">realizar una llamada</string>
+    <string name="app_ops_summaries_manage_ipsec_tunnels">administrar túneles ipsec</string>
     <string name="app_ops_summaries_mock_location">ubicación falsa</string>
     <string name="app_ops_summaries_modify_calendar">modificar el calendario</string>
     <string name="app_ops_summaries_modify_call_log">modificar registro de llamadas</string>
@@ -91,6 +94,7 @@
     <string name="app_ops_summaries_read_phone_numbers">leer números de teléfono</string>
     <string name="app_ops_summaries_read_phone_state">leer estado del teléfono</string>
     <string name="app_ops_summaries_read_sms">leer tus mensajes SMS</string>
+    <string name="app_ops_summaries_receive_emergency_broadcast">recibir un mensaje de transmisión de emergencias</string>
     <string name="app_ops_summaries_receive_sms">recibir mensajes SMS</string>
     <string name="app_ops_summaries_record_audio">grabar sonido</string>
     <string name="app_ops_summaries_request_delete_packages">solicitar eliminación de paquetes</string>
@@ -100,6 +104,7 @@
     <string name="app_ops_summaries_send_mms">enviar un mensaje MMS</string>
     <string name="app_ops_summaries_send_sms">enviar mensajes SMS</string>
     <string name="app_ops_summaries_start_at_bootup">ejecutar al inicio</string>
+    <string name="app_ops_summaries_start_foreground">inicio en primer plano</string>
     <string name="app_ops_summaries_su">obtener acceso administrativo</string>
     <string name="app_ops_summaries_toast_window">mostrar notificaciones emergentes</string>
     <string name="app_ops_summaries_toggle_bluetooth">alternar Bluetooth</string>
