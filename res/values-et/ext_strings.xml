@@ -115,6 +115,12 @@
     <string name="app_ops_summaries_use_body_sensors">kasutada biosensoreid</string>
     <string name="app_ops_summaries_read_cell_broadcasts">lugeda võrguteateid</string>
     <string name="app_ops_summaries_read_external_storage">lugeda väliselt andmekandjalt</string>
+    <string name="app_ops_summaries_run_in_background">taustal käitamine</string>
+    <string name="app_ops_summaries_accessibility_volume">abistava heli tugevus</string>
+    <string name="app_ops_summaries_read_phone_numbers">telefoninumbrite lugemine</string>
+    <string name="app_ops_summaries_picture_in_picture">pilt-pildis režiimi kasutamine</string>
+    <string name="app_ops_summaries_instant_app_start_foreground">installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_summaries_answer_phone_calls">vasta kõnedele</string>
     <string name="app_ops_summaries_toggle_nfc">lülitada NFC</string>
     <string name="app_ops_summaries_superuser">Root ligipääs</string>
     <string name="app_ops_labels_vibrate">Vibreeri</string>
