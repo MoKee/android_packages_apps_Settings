@@ -44,6 +44,7 @@
     <string name="app_ops_summaries_access_notifications">juurdepääsu teavitused</string>
     <string name="app_ops_summaries_activate_vpn">Aktiveeri VPN</string>
     <string name="app_ops_summaries_app_start_foreground">installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_summaries_audio_accessibility_volume">abistava heli tugevus</string>
     <string name="app_ops_summaries_auto_start">sisselülitamisel käivitamine</string>
     <string name="app_ops_summaries_bind_accessibility_service">juurdepääsetavusteenuse ühendamine</string>
     <string name="app_ops_summaries_bluetooth_scan">Bluetoothi skannimine</string>
@@ -87,6 +88,7 @@
     <string name="app_ops_summaries_receive_sms">Võta vastu SMS</string>
     <string name="app_ops_summaries_record_audio">salvesta heli</string>
     <string name="app_ops_summaries_run_any_in_background">mistahes taustal käitamine</string>
+    <string name="app_ops_summaries_run_in_background">taustal käitamine</string>
     <string name="app_ops_summaries_scan_wifi">Wi-Fi võrkude otsimine</string>
     <string name="app_ops_summaries_send_mms">MMS sõnumi saatmine</string>
     <string name="app_ops_summaries_send_sms">saada SMS</string>
