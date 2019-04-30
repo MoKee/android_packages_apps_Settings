@@ -291,4 +291,5 @@
     <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
     <string name="directly_show_lock">Doğrudan kilit aç</string>
     <string name="directly_show_lock_summary">Ekranın kilidini açmak için kaydırmayı atlayın ve hemen tuşlamaya başlayın</string>
+    <string name="open_lockscreen_tuner">Kısayolları değiştir</string>
 </resources>
