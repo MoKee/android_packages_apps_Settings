@@ -219,4 +219,7 @@
     <string name="high_touch_sensitivity_summary">Verhoog skerm sensitiwiteit, sodat dit kan gebruik word met die dra van handskoene</string>
     <string name="touchscreen_hovering_title">Raakskerm swewing</string>
     <string name="touchscreen_hovering_summary">Laat toe om bo die sekrm te sweef soos \'n muis in die web blaaiers, Remote desktops, ens</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
 </resources>
