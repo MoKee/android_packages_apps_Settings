@@ -42,13 +42,13 @@ public class BluetoothAudioChannelModePreferenceController extends
     @Override
     protected String[] getListValues() {
         return mContext.getResources().getStringArray(
-                R.array.lineage_bluetooth_a2dp_codec_channel_mode_values);
+                R.array.mokee_bluetooth_a2dp_codec_channel_mode_values);
     }
 
     @Override
     protected String[] getListSummaries() {
         return mContext.getResources().getStringArray(
-                R.array.lineage_bluetooth_a2dp_codec_channel_mode_summaries);
+                R.array.mokee_bluetooth_a2dp_codec_channel_mode_summaries);
     }
 
     @Override
