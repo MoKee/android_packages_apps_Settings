@@ -17,12 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_ops_categories_run_in_background">ფონურად გაშვება</string>
-    <string name="app_ops_summaries_run_in_background">ფონურად გაშვება</string>
-    <string name="app_ops_labels_gps">GPS</string>
-    <string name="app_ops_labels_read_call_log">ზარების ჩანაწერების წაკითხვა</string>
-    <string name="app_ops_labels_call_phone">სატელეფონო ზარი</string>
-    <string name="app_ops_labels_modify_settings">პარამეტრების შეცვლა</string>
-    <string name="app_ops_labels_run_in_background">ფონურად გაშვება</string>
-    <string name="ok">კარგი</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Tvíbankaðu á stöðustikuna eða læsiskjáinn til að slökkva á skjánum</string>
+    <string name="app_ops_summaries_access_notifications">fá aðgang að tilkynningum</string>
+    <string name="app_ops_labels_access_notifications">Fá aðgang að tilkynningum</string>
 </resources>
