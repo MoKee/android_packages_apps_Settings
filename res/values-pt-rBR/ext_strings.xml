@@ -234,6 +234,7 @@
     <string name="increasing_ring_volume_option_title">Aumentando volume do toque</string>
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Intervalo de aumento</string>
+    <string name="volume_link_notification_title">Associar volumes de toque e notificação</string>
     <string name="kill_app_longpress_back">Fechar aplicativo com botão voltar</string>
     <string name="kill_app_longpress_back_summary">Fecha o aplicativo aberto ao manter pressionado o botão voltar</string>
     <string name="development_tools_title">Ferramentas de desenvolvedor</string>

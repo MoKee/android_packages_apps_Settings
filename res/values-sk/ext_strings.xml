@@ -206,6 +206,7 @@
     <string name="increasing_ring_volume_option_title">Zvyšovanie hlasitosti zvonenia</string>
     <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zvyšovania</string>
+    <string name="volume_link_notification_title">Prepojiť hlasitosti zvonenia a oznámení</string>
     <string name="kill_app_longpress_back">Ukončiť aplikáciu tlačidlom Späť</string>
     <string name="kill_app_longpress_back_summary">Dlhé stlačenie tlačidla Späť ukončí aplikáciu na popredí</string>
     <string name="development_tools_title">Vývojárske nástroje</string>

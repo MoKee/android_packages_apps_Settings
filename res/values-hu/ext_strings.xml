@@ -246,6 +246,7 @@
     <string name="increasing_ring_volume_option_title">Emelkedő csengőhang</string>
     <string name="increasing_ring_min_volume_title">Kezdeti hangerő</string>
     <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
+    <string name="volume_link_notification_title">Csengő és értesítési hangok összekapcsolása</string>
     <string name="kill_app_longpress_back">Alkalmazás bezárás</string>
     <string name="kill_app_longpress_back_summary">Alkalmazás bezárása nyomva tartott vissza gombbal</string>
     <string name="development_tools_title">Fejlesztőeszközök</string>
@@ -292,4 +293,6 @@
     <string name="directly_show_lock">Közvetlen feloldás</string>
     <string name="directly_show_lock_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a kódos belépéssel</string>
     <string name="open_lockscreen_tuner">Paracsikon-változtatás</string>
+    <string name="location_mode_battery_saving_title">Energiatakarékos mód</string>
+    <string name="location_mode_battery_saving_summary">Wi‑Fi, Bluetooth és mobilhálózatok használata a tartózkodási hely megállapításához (kevésbé pontos)</string>
 </resources>
