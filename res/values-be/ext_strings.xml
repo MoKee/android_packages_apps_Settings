@@ -198,6 +198,7 @@
     <string name="increasing_ring_volume_option_title">Нарастальная гучнасць званку</string>
     <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
     <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
+    <string name="volume_link_notification_title">Звязаць гучнасць рынгтону і апавяшчэнняў</string>
     <string name="kill_app_longpress_back">Зачыненне дадатку</string>
     <string name="kill_app_longpress_back_summary">Завяршаць працу бягучага дадатку ўтрымліваннем кнопкі \"Назад\"</string>
     <string name="development_tools_title">Прылады распрацоўкі</string>

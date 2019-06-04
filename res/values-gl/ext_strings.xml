@@ -196,6 +196,7 @@
     <string name="increasing_ring_volume_option_title">Aumentando o volume de chamada</string>
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Intervalo de aumento</string>
+    <string name="volume_link_notification_title">Asociar volumes do ton de chamada e notificacións</string>
     <string name="kill_app_longpress_back">Terminar aplicación co botón Atrás</string>
     <string name="kill_app_longpress_back_summary">Peche a aplicación en primeiro plano mantendo presionado o botón Atrás</string>
     <string name="development_tools_title">Ferramentas de desenvolvemento</string>

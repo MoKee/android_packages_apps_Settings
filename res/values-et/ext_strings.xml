@@ -18,6 +18,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
     <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
     <string name="app_ops_permissions_allowed">Lubatud</string>
     <string name="app_ops_permissions_ignored">Eira</string>
@@ -26,16 +27,19 @@
     <string name="app_ops_allowed_count">Lubatud <xliff:g id="count" example="2 times">%s</xliff:g></string>
     <string name="app_ops_ignored_count">Keelatud <xliff:g id="count" example="2 times">%s</xliff:g></string>
     <string name="app_ops_both_count">Lubatud <xliff:g id="count">%1$s</xliff:g>, keelatud<xliff:g id="count">%2$s</xliff:g></string>
+    <string name="app_ops_no_blockable_permissions">Blokeerimiseks pole õigusi</string>
     <string name="app_ops_show_user_apps">Kuva kasutaja rakendusi</string>
     <string name="app_ops_show_system_apps">Kuva sisse-ehitatud rakendused</string>
     <string name="app_ops_reset_counters">Lähtesta luba/keela loendurid</string>
     <string name="app_ops_reset_confirm_title">Kinnita loendurite lähetstamine</string>
     <string name="app_ops_reset_confirm_mesg">Kas sa oled kindel, et soovid loendurid lähtestada?</string>
+    <string name="memory_startup_apps_title">Rakendused käivitati käivitamisel</string>
     <string name="app_ops_categories_location">Asukoht</string>
     <string name="app_ops_categories_personal">Isiklik</string>
     <string name="app_ops_categories_messaging">Sõnumiside</string>
     <string name="app_ops_categories_media">Meedia</string>
     <string name="app_ops_categories_device">Seade</string>
+    <string name="app_ops_categories_run_in_background">Taustal käitamine</string>
     <string name="app_ops_categories_bootup">Alglaadimine</string>
     <string name="app_ops_categories_su">Root ligipääs</string>
     <string name="app_ops_categories_other">Muud</string>
@@ -43,7 +47,10 @@
     <string name="app_ops_summaries_access_camera">ligipääs kaamerale</string>
     <string name="app_ops_summaries_access_notifications">juurdepääsu teavitused</string>
     <string name="app_ops_summaries_activate_vpn">Aktiveeri VPN</string>
+    <string name="app_ops_summaries_add_voicemail">lisa kõneposti</string>
     <string name="app_ops_summaries_app_start_foreground">installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_summaries_assist_screenshot">abistav ekraanipilt</string>
+    <string name="app_ops_summaries_assist_structure">abistruktuur</string>
     <string name="app_ops_summaries_audio_accessibility_volume">abistava heli tugevus</string>
     <string name="app_ops_summaries_auto_start">sisselülitamisel käivitamine</string>
     <string name="app_ops_summaries_bind_accessibility_service">juurdepääsetavusteenuse ühendamine</string>
@@ -56,12 +63,14 @@
     <string name="app_ops_summaries_delete_sms">SMS sõnumite kustutamine</string>
     <string name="app_ops_summaries_draw_on_top">joonistada kõige peale</string>
     <string name="app_ops_summaries_fine_location">Hea asukoht</string>
+    <string name="app_ops_summaries_get_accounts">kontode hankimine</string>
     <string name="app_ops_summaries_get_usage_stats">saada rakenduse kasutamise statistikat</string>
     <string name="app_ops_summaries_gps">GPS</string>
     <string name="app_ops_summaries_install_packages">pakettide paigaldamine</string>
     <string name="app_ops_summaries_keep_device_awake">seadme ärkvelhoidmine</string>
     <string name="app_ops_summaries_make_phone_call">telefonikõne tegemine</string>
     <string name="app_ops_summaries_manage_ipsec_tunnels">IPsec tunnelite haldamine</string>
+    <string name="app_ops_summaries_mock_location">tehislik asukoht</string>
     <string name="app_ops_summaries_modify_calendar">muuda kalendrit</string>
     <string name="app_ops_summaries_modify_call_log">muuda kõnelogi</string>
     <string name="app_ops_summaries_modify_clipboard">Muuda lõikelauda</string>
@@ -70,6 +79,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">Jälgi eriti täpaet asukohta</string>
     <string name="app_ops_summaries_monitor_location">jälgi asukohta</string>
     <string name="app_ops_summaries_mute_unmute_microphone">Mikrofoni heli välja/sisse</string>
+    <string name="app_ops_summaries_neighboring_cells">külgnevad jaamad</string>
     <string name="app_ops_summaries_phone_calls">telefonikõnedele vastamine</string>
     <string name="app_ops_summaries_picture_in_picture">pilt-pildis režiimi kasutamine</string>
     <string name="app_ops_summaries_play_audio">mängi heli</string>
@@ -83,10 +93,12 @@
     <string name="app_ops_summaries_read_external_storage">lugeda väliselt andmekandjalt</string>
     <string name="app_ops_summaries_read_mms">MMS sõnumite lugemine</string>
     <string name="app_ops_summaries_read_phone_numbers">telefoninumbrite lugemine</string>
+    <string name="app_ops_summaries_read_phone_state">telefoni oleku lugemine</string>
     <string name="app_ops_summaries_read_sms">loe SMS</string>
     <string name="app_ops_summaries_receive_emergency_broadcast">hädaolukorra teatiste vastuvõtmine</string>
     <string name="app_ops_summaries_receive_sms">Võta vastu SMS</string>
     <string name="app_ops_summaries_record_audio">salvesta heli</string>
+    <string name="app_ops_summaries_request_delete_packages">pakettide eemaldamise taotlemine</string>
     <string name="app_ops_summaries_run_any_in_background">mistahes taustal käitamine</string>
     <string name="app_ops_summaries_run_in_background">taustal käitamine</string>
     <string name="app_ops_summaries_scan_wifi">Wi-Fi võrkude otsimine</string>
@@ -97,7 +109,9 @@
     <string name="app_ops_summaries_su">ligipääs juurkasutajale</string>
     <string name="app_ops_summaries_toast_window">Kuva hüpikud</string>
     <string name="app_ops_summaries_toggle_bluetooth">Bluetoothi sisse-välja lülitamine</string>
+    <string name="app_ops_summaries_toggle_mobile_data">lülita mobiilne andmeside sisse-välja</string>
     <string name="app_ops_summaries_toggle_nfc">lülitada NFC</string>
+    <string name="app_ops_summaries_toggle_wifi">Wi-Fi sisse-välja lülitamine</string>
     <string name="app_ops_summaries_turn_on_screen">ekraani sisselülitamine</string>
     <string name="app_ops_summaries_use_alarm_volume">äratuse helitugevuse muutmine</string>
     <string name="app_ops_summaries_use_audio_focus">helifookuse muutmine</string>
@@ -112,33 +126,46 @@
     <string name="app_ops_summaries_use_vibrate">vibratsiooni kasutamine</string>
     <string name="app_ops_summaries_use_voice_volume">telefonikõne helitugevuse muutmine</string>
     <string name="app_ops_summaries_wifi_change">Wi-Fi oleku muutmine</string>
+    <string name="app_ops_summaries_write_external_storage">kirjutada välisele andmekandjale</string>
     <string name="app_ops_summaries_write_mms">MMS sõnumi kirjutamine</string>
     <string name="app_ops_summaries_write_sms">kirjuta SMS</string>
     <string name="app_ops_labels_accept_handover">Teiselt rakenduselt kõne ülevõtmine</string>
     <string name="app_ops_labels_access_camera">Ligipääs kaamerale</string>
     <string name="app_ops_labels_access_notifications">juurdepääsu teavitused</string>
     <string name="app_ops_labels_activate_vpn">Aktiveeri VPN</string>
+    <string name="app_ops_labels_add_voicemail">Kõneposti lisamine</string>
     <string name="app_ops_labels_app_start_foreground">Installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_labels_assist_screenshot">Abistav ekraanipilt</string>
+    <string name="app_ops_labels_assist_structure">Abistruktuur</string>
+    <string name="app_ops_labels_audio_accessibility_volume">Abistava heli tugevus</string>
     <string name="app_ops_labels_auto_start">Sisselülitamisel käivitamine</string>
     <string name="app_ops_labels_bind_accessibility_service">Juurdepääsetavusteenuse ühendamine</string>
     <string name="app_ops_labels_bluetooth_scan">Bluetoothi skannimine</string>
     <string name="app_ops_labels_change_wallpaper">Taustapildi muutmine</string>
+    <string name="app_ops_labels_coarse_location">Ligikaudne asukoht</string>
     <string name="app_ops_labels_delete_call_log">Kõnelogi kustutamine</string>
     <string name="app_ops_labels_delete_contacts">Kontaktide kustutamine</string>
     <string name="app_ops_labels_delete_mms">MMS sõnumite kustutamine</string>
     <string name="app_ops_labels_delete_sms">SMS sõnumite kustutamine</string>
     <string name="app_ops_labels_draw_on_top">joonistada kõige peale</string>
+    <string name="app_ops_labels_fine_location">Täpne asukoht</string>
+    <string name="app_ops_labels_get_accounts">Kontode hankimine</string>
+    <string name="app_ops_labels_get_usage_stats">Kasutusstatistika hankimine</string>
     <string name="app_ops_labels_gps">GPS</string>
     <string name="app_ops_labels_install_packages">Pakettide paigaldamine</string>
     <string name="app_ops_labels_keep_device_awake">Seadme ärkvelhoidmine</string>
     <string name="app_ops_labels_make_phone_call">Telefonikõne tegemine</string>
     <string name="app_ops_labels_manage_ipsec_tunnels">IPsec tunnelite haldamine</string>
+    <string name="app_ops_labels_mock_location">Tehislik asukoht</string>
     <string name="app_ops_labels_modify_calendar">Muuda kalendrit</string>
     <string name="app_ops_labels_modify_call_log">Muuda kõnelogi</string>
     <string name="app_ops_labels_modify_clipboard">Muuda lõikelauda</string>
     <string name="app_ops_labels_modify_contacts">Muuda kontakte</string>
     <string name="app_ops_labels_modify_settings">Muuda seadeid</string>
+    <string name="app_ops_labels_monitor_high_power_location">Jälgi eriti täpset asukohta</string>
+    <string name="app_ops_labels_monitor_location">Jälgi asukohta</string>
     <string name="app_ops_labels_mute_unmute_microphone">Mikrofoni heli välja/sisse</string>
+    <string name="app_ops_labels_neighboring_cells">Külgnevad jaamad</string>
     <string name="app_ops_labels_phone_calls">Telefonikõnedele vastamine</string>
     <string name="app_ops_labels_picture_in_picture">Pilt-pildis režiimi kasutamine</string>
     <string name="app_ops_labels_play_audio">Mängi heli</string>
@@ -146,14 +173,20 @@
     <string name="app_ops_labels_project_media">projekteerida meediat</string>
     <string name="app_ops_labels_read_calendar">Loe kalendrist</string>
     <string name="app_ops_labels_read_call_log">Loe kõnelogi</string>
+    <string name="app_ops_labels_read_cell_broadcasts">Kärjeteadete lugemine</string>
     <string name="app_ops_labels_read_clipboard">Loe lõikelaualt</string>
     <string name="app_ops_labels_read_contacts">Loe kontakte</string>
+    <string name="app_ops_labels_read_external_storage">Lugeda väliselt andmekandjalt</string>
     <string name="app_ops_labels_read_mms">MMS sõnumite lugemine</string>
     <string name="app_ops_labels_read_phone_numbers">Telefoninumbrite lugemine</string>
+    <string name="app_ops_labels_read_phone_state">Telefoni oleku lugemine</string>
+    <string name="app_ops_labels_read_sms">Loe SMS-e</string>
     <string name="app_ops_labels_receive_emergency_broadcast">Hädaolukorra teatiste vastuvõtmine</string>
     <string name="app_ops_labels_receive_sms">Võta vastu SMS</string>
     <string name="app_ops_labels_record_audio">Salvesta heli</string>
+    <string name="app_ops_labels_request_delete_packages">Pakettide eemaldamise taotlemine</string>
     <string name="app_ops_labels_run_any_in_background">Mistahes taustal käitamine</string>
+    <string name="app_ops_labels_run_in_background">Taustal käitamine</string>
     <string name="app_ops_labels_scan_wifi">Wi-Fi võrkude otsimine</string>
     <string name="app_ops_labels_send_mms">MMS sõnumi saatmine</string>
     <string name="app_ops_labels_send_sms">Saada SMS</string>
@@ -162,10 +195,15 @@
     <string name="app_ops_labels_su">Ligipääs juurkasutajale</string>
     <string name="app_ops_labels_toast_window">Kuva hüpikud</string>
     <string name="app_ops_labels_toggle_bluetooth">Bluetoothi sisse-välja lülitamine</string>
+    <string name="app_ops_labels_toggle_mobile_data">Lülita mobiilne andmeside sisse-välja</string>
+    <string name="app_ops_labels_toggle_nfc">NFC sisse-välja lülitamine</string>
+    <string name="app_ops_labels_toggle_wifi">Wi-Fi sisse-välja lülitamine</string>
     <string name="app_ops_labels_turn_on_screen">Ekraani sisselülitamine</string>
     <string name="app_ops_labels_use_alarm_volume">Äratuse helitugevuse muutmine</string>
     <string name="app_ops_labels_use_audio_focus">Helifookuse muutmine</string>
     <string name="app_ops_labels_use_bluetooth_volume">Bluetooth\'i helitugevuse muutmine</string>
+    <string name="app_ops_labels_use_body_sensors">Kasuta biosensoreid</string>
+    <string name="app_ops_labels_use_fingerprint">Kasuta sõrmejälge</string>
     <string name="app_ops_labels_use_master_volume">Üldise helitugevuse muutmine</string>
     <string name="app_ops_labels_use_media_buttons">Meedianuppude kasutamine</string>
     <string name="app_ops_labels_use_media_volume">Meedia helitugevuse muutmine</string>
@@ -174,11 +212,16 @@
     <string name="app_ops_labels_use_vibrate">Vibratsiooni kasutamine</string>
     <string name="app_ops_labels_use_voice_volume">Telefonikõne helitugevuse muutmine</string>
     <string name="app_ops_labels_wifi_change">Wi-Fi oleku muutmine</string>
+    <string name="app_ops_labels_write_external_storage">Kirjutada välisele andmekandjale</string>
     <string name="app_ops_labels_write_mms">MMS sõnumi kirjutamine</string>
+    <string name="app_ops_labels_write_sms">SMS-i kirjutamine</string>
+    <string name="lock_settings_picker_pattern_size_message">Vali mustri suurus</string>
     <string name="lockpattern_settings_enable_error_path_title">Näita mustri vigu</string>
     <string name="lockpattern_settings_enable_dots_title">Näita mustri punkte</string>
     <string name="lockscreen_vibrate_enabled_title">Vibreeri</string>
+    <string name="lockscreen_vibrate_enabled_head">Vibreeri lahtilukustamisel</string>
     <string name="adb_enable">Androidi silumine</string>
+    <string name="adb_enable_summary">Luba Android Debug Bridge (ADB) liides</string>
     <string name="adb_notify">Silumise teavitus</string>
     <string name="adb_notify_summary">Kuva teavitus, kui USB või võrgu silumine on lubatud</string>
     <string name="adb_over_network">ADB üle võrgu</string>
@@ -192,20 +235,36 @@
     <string name="show_dev_already_cm">Ei ole vaja, arendussätted juba aktiveeritud.</string>
     <string name="status_bar_double_tap_to_sleep_title">Koputa unerežiimiks</string>
     <string name="status_bar_double_tap_to_sleep_summary">Topeltkoputa olekuriba või lukustuskuva ekraani väljalülitamiseks</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Leia sõrmejäljeandur oma tahvelarvuti <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Leia sõrmejäljeandur oma seadme <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Leidke sõrmejäljeandur oma telefoni <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">tagasi</string>
+    <string name="security_settings_fingerprint_sensor_location_front">ees</string>
+    <string name="security_settings_fingerprint_sensor_location_left">vasak külg</string>
+    <string name="security_settings_fingerprint_sensor_location_right">parem külg</string>
     <string name="device_hostname">Seadme hostname</string>
     <string name="increasing_ring_volume_option_title">Kasvav helisemistugevus</string>
     <string name="increasing_ring_min_volume_title">Lähtevaljusus</string>
     <string name="increasing_ring_ramp_up_time_title">Käivitamisetapi aeg</string>
+    <string name="volume_link_notification_title">Ühenda helina &amp; teadete helitugevus</string>
     <string name="kill_app_longpress_back">Välju rakendusest tagasi nupuga</string>
     <string name="kill_app_longpress_back_summary">Sulge esiplaani rakendus pikalt vajutades tagasi nuppu</string>
     <string name="development_tools_title">Arendussätted</string>
     <string name="lockscreen_media_art_title">Näita meedia kaanepilti</string>
     <string name="lockscreen_visualizer_title">Näita muusika visualiseerijat</string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> on <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">keelatud</string>
     <string name="sim_missing">puuduv või vigane</string>
+    <string name="sim_enabler_need_disable_sim">SIM-kaart muudetakse mitteaktiivseks. Olete kindel?</string>
     <string name="sim_enabler_airplane_on">Toimingut ei saa sooritada, kui lennukirežiim on aktiveeritud.</string>
     <string name="sim_enabler_in_call">Toimingut ei saa kõne ajal sooritada.</string>
     <string name="sim_enabler_both_inactive">Ei saa keelata kõiki SIM-kaarte</string>
+    <string name="sim_enabler_enabling">Aktiveerin\u2026</string>
+    <string name="sim_enabler_disabling">Desaktiveerin\u2026</string>
+    <string name="sub_activate_success">SIM on aktiveeritud.</string>
+    <string name="sub_activate_failed">Aktiveerimine ebaõnnestus.</string>
+    <string name="sub_deactivate_success">SIM on desaktiveeritud.</string>
+    <string name="sub_deactivate_failed">Deaktiveerimine ebaõnnestus.</string>
     <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
     <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
@@ -221,6 +280,8 @@
     <string name="root_access_apps">Ainult rakendused</string>
     <string name="root_access_adb">Ainult ADB</string>
     <string name="root_access_all">Rakendused ja ADB</string>
+    <string name="root_appops_title">Juurdepääsu haldamine</string>
+    <string name="root_appops_summary">Vaadake ja kontrollige juurreegleid</string>
     <string name="touchscreen_gesture_settings_title">Puuteekraani žestid</string>
     <string name="touchscreen_gesture_settings_summary">Soorita mitmeid puuteekraani žeste kiirtoimingute teostamiseks</string>
     <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
@@ -231,4 +292,7 @@
     <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
     <string name="directly_show_lock">Vahetu avamine</string>
     <string name="directly_show_lock_summary">Jäta vahele ekraani lahtilukustamiseks vajalik viibe ning alusta kohe koodi sisestamist</string>
+    <string name="open_lockscreen_tuner">Muuda otseteid</string>
+    <string name="location_mode_battery_saving_title">Aku säästmise režiim</string>
+    <string name="location_mode_battery_saving_summary">Kasutage asukoha määramiseks ainult Wi\u2011Fi, Bluetooth või mobiilsidevõrke (vähem täpne)</string>
 </resources>

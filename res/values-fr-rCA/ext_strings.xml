@@ -246,6 +246,7 @@
     <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
     <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
     <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
+    <string name="volume_link_notification_title">Lier le volume de la sonnerie &amp; et des notifications</string>
     <string name="kill_app_longpress_back">Fermer l\'application à l\'aide du bouton Retour</string>
     <string name="kill_app_longpress_back_summary">Tuer l\'application en premier plan par un appui long sur le bouton Retour</string>
     <string name="development_tools_title">Outils de développement</string>

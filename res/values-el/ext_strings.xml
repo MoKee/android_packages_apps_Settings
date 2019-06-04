@@ -196,6 +196,7 @@
     <string name="increasing_ring_volume_option_title">Αυξανόμενη ένταση κουδουνίσματος</string>
     <string name="increasing_ring_min_volume_title">Αρχική ένταση</string>
     <string name="increasing_ring_ramp_up_time_title">Χρονικό διάστημα αύξησης</string>
+    <string name="volume_link_notification_title">Σύνδεση εντάσεων ήχου κλήσης &amp; ειδοποίησης</string>
     <string name="kill_app_longpress_back">Τερμ. με πλήκτρο πίσω</string>
     <string name="kill_app_longpress_back_summary">Πιέζοντας παρατεταμένα το πλήκτρο πίσω, τερματίζετε την τρέχουσα εφαρμογή</string>
     <string name="development_tools_title">Εργαλεία ανάπτυξης</string>
