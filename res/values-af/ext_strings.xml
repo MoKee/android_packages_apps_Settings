@@ -151,6 +151,11 @@
     <string name="app_ops_summaries_turn_screen_on">skakel skerm aan</string>
     <string name="app_ops_summaries_get_accounts">kry rekeninge</string>
     <string name="app_ops_summaries_run_in_background">loop in die agtergrond</string>
+    <string name="app_ops_summaries_accessibility_volume">umsindo wokufikeleleka komsindo</string>
+    <string name="app_ops_summaries_read_phone_numbers">Funda inombolo yefowuni</string>
+    <string name="app_ops_summaries_picture_in_picture">Sebenzisa umfanekiso kumfanekiso</string>
+    <string name="app_ops_summaries_instant_app_start_foreground">qalisa isicelo sesikhathi sangempela ngaphambili</string>
+    <string name="app_ops_summaries_answer_phone_calls">Phendula ifowuni</string>
     <string name="app_ops_summaries_toggle_wifi">wissel Wi-Fi</string>
     <string name="app_ops_summaries_toggle_bluetooth">wissel bluetooth</string>
     <string name="app_ops_summaries_start_at_boot">begin by stelsel begin</string>
