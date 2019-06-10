@@ -294,5 +294,4 @@
     <string name="directly_show_lock_summary">Hagyja ki a csúsztatással való feloldást és azonnal kezdje a kódos belépéssel</string>
     <string name="open_lockscreen_tuner">Paracsikon-változtatás</string>
     <string name="location_mode_battery_saving_title">Energiatakarékos mód</string>
-    <string name="location_mode_battery_saving_summary">Wi‑Fi, Bluetooth és mobilhálózatok használata a tartózkodási hely megállapításához (kevésbé pontos)</string>
 </resources>

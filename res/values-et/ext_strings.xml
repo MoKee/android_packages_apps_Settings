@@ -294,5 +294,4 @@
     <string name="directly_show_lock_summary">Jäta vahele ekraani lahtilukustamiseks vajalik viibe ning alusta kohe koodi sisestamist</string>
     <string name="open_lockscreen_tuner">Muuda otseteid</string>
     <string name="location_mode_battery_saving_title">Aku säästmise režiim</string>
-    <string name="location_mode_battery_saving_summary">Kasutage asukoha määramiseks ainult Wi\u2011Fi, Bluetooth või mobiilsidevõrke (vähem täpne)</string>
 </resources>

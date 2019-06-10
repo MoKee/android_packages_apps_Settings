@@ -297,4 +297,5 @@
     <string name="directly_show_lock">فتح القفل مباشرة</string>
     <string name="directly_show_lock_summary">تخطي التمرير لفتح قفل الشاشة والبدء فوراً في إدخال كلمة المرور</string>
     <string name="open_lockscreen_tuner">تغيير الاختصارات</string>
+    <string name="location_mode_battery_saving_title">وضع توفير البطارية</string>
 </resources>

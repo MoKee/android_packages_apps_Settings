@@ -293,5 +293,5 @@
     <string name="directly_show_lock_summary">跳过滑动解锁屏幕直接开始输入密码</string>
     <string name="open_lockscreen_tuner">更改快捷键</string>
     <string name="location_mode_battery_saving_title">省电模式</string>
-    <string name="location_mode_battery_saving_summary">仅仅使用Wi-Fi，蓝牙或移动网络来确定位置</string>
+    <string name="location_mode_battery_saving_summary">使用GPS、Wi-Fi、蓝牙或蜂窝网络来确定位置。</string>
 </resources>
