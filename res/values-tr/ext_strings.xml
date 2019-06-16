@@ -294,4 +294,5 @@
     <string name="directly_show_lock_summary">Ekranın kilidini açmak için kaydırmayı atlayın ve hemen tuşlamaya başlayın</string>
     <string name="open_lockscreen_tuner">Kısayolları değiştir</string>
     <string name="location_mode_battery_saving_title">Pil tasarrufu modu</string>
+    <string name="location_mode_battery_saving_summary">Konum belirlemek için yalnızca Wi\u2011Fi, Bluetooth veya hücresel ağları kullanın (daha az doğru)</string>
 </resources>

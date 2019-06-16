@@ -296,4 +296,5 @@
     <string name="directly_show_lock_summary">Пропускать свайп разблокировки экрана и сразу же переходить ко вводу ключа</string>
     <string name="open_lockscreen_tuner">Изменить ярлыки</string>
     <string name="location_mode_battery_saving_title">Режим экономии батареи</string>
+    <string name="location_mode_battery_saving_summary">Использовать только Wi-Fi, Bluetooth или мобильные сети для определения местоположения (менее точно)</string>
 </resources>

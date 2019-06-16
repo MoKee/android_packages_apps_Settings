@@ -296,4 +296,5 @@
     <string name="directly_show_lock_summary">Přeskočit odemčení obrazovky přejetím a okamžitě spustit zadávání</string>
     <string name="open_lockscreen_tuner">Změnit zkratky</string>
     <string name="location_mode_battery_saving_title">Úsporný režim baterie</string>
+    <string name="location_mode_battery_saving_summary">K určování polohy používat pouze Wi\u2011Fi, Bluetooth nebo mobilní sítě (méně přesné)</string>
 </resources>
