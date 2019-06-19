@@ -16,7 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">三指截屏</string>
     <string name="swipe_to_screenshot_gesture_summary">三指下拉以获取屏幕截图</string>
 </resources>
