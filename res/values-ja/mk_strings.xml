@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">全てのテーマアプリを強制的に承認する</string>
     <string name="force_authorize_substratum_packages_summary">提供元不明のアプリのインストールを許可する</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Substratum オーバーレイ</string>
     <string name="menu_show_substratum">オーバーレイを表示</string>
     <string name="menu_hide_substratum">オーバーレイを非表示</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">MoKee Centerのフリーズまたは削除はシステムサービスに影響しますので復元して再試行してください</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary_mk">言語、時刻、バックアップ</string>
 </resources>

@@ -16,14 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Trao quyền cho mỗi app giao diện</string>
     <string name="force_authorize_substratum_packages_summary">Cho phép cài app từ các nguồn không rõ</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Các lớp phủ lớp dưới</string>
     <string name="menu_show_substratum">Hiển thị các lớp phủ</string>
     <string name="menu_hide_substratum">Ẩn các lớp phủ</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Cập nhật sẽ ảnh hưởng đến dịch vụ hệ thống.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

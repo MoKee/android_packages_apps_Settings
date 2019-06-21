@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Erzwinge Autorisierung jeder Themen App</string>
     <string name="force_authorize_substratum_packages_summary">Erlaube Theme Apps von unbekannten Quellen</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Substratum Overlays</string>
     <string name="menu_show_substratum">Overlays anzeigen</string>
     <string name="menu_hide_substratum">Overlays ausblenden</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Das Einfrieren oder Entfernen von MoKee Center beeinträchtigt die Systemdienste. Bitte wiederherstellen und erneut versuchen.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary_mk">Sprachen, Zeit, Backup</string>
 </resources>

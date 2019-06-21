@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
     <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Substratum temaları</string>
     <string name="menu_show_substratum">Temaları göster</string>
     <string name="menu_hide_substratum">Temaları gizle</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">MoKee Merkezin dondurulması veya kaldırılması sistem servislerini etkileyecektir, lütfen geri yükleyin ve tekrar deneyin.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary_mk">Diller, zamanlama, yedekleme</string>
 </resources>

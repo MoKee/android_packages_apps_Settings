@@ -16,8 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
-    <!-- Manage applications: show substratum overlays -->
-    <!-- MKCenter verify -->
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="force_authorize_substratum_packages_title">Teema rakendusi jõuga autoriseerima</string>
+    <string name="force_authorize_substratum_packages_summary">Luba teemarakendusi tundmatutelt allikatelt</string>
+    <string name="filter_substratum_apps">Substratumi ülekatted</string>
+    <string name="menu_show_substratum">Näita ülekatteid</string>
+    <string name="menu_hide_substratum">Peida ülekatted</string>
+    <string name="mkcenter_verify_failed_toast">MoKee keskuse külmutamine või eemaldamine mõjutab süsteemi teenuseid, palun taastage ja proovige uuesti.</string>
+    <string name="system_dashboard_summary_mk">Keeled, aeg, varukoopia</string>
 </resources>

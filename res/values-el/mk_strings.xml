@@ -16,12 +16,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Substratum overlays</string>
     <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>
     <string name="menu_hide_substratum">Απόκρυψη επικαλύψεων</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Παγώνοντας ή σβήνοντας το κέντρο MoKee θα επηρεάσει τις υπηρεσίες συστήματος, παρακαλούμε επαναφέρετε και ξανα προσπαθήστε.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

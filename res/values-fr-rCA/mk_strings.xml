@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Forcé la demande d\'autorisation pour chaque thème</string>
     <string name="force_authorize_substratum_packages_summary">Autorise les applications de thème à partir de sources inconnues</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Surcouches Substratum</string>
     <string name="menu_show_substratum">Afficher les superpositions</string>
     <string name="menu_hide_substratum">Masquer les superpositions</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Geler ou supprimer le Centre MoKee va affecter les services système, veuillez s’il vous plaît restaurer et réessayez.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary_mk">Langues, date et heure, sauvegarde</string>
 </resources>

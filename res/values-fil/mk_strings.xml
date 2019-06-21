@@ -16,14 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Pwersahang pahintulutan ang bawat application ng tema</string>
     <string name="force_authorize_substratum_packages_summary">Payagan ang mga tema ng apps mula sa hindi kilalang mga mapagkukunan</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Mga overlay na substratum</string>
     <string name="menu_show_substratum">Ipakita ang overlays</string>
     <string name="menu_hide_substratum">Itago ang mga overlays</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Ang pag-freeze o pag-alis ng MoKee Center ay makakaapekto sa mga serbisyo ng system, maaring ibalik at subukang muli.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>

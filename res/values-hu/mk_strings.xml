@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás kényszerített hitelesítése</string>
     <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
-    <!-- Manage applications: show substratum overlays -->
-    <string name="filter_substratum_apps">Substratum rétegek</string>
-    <string name="menu_show_substratum">Rétegek megjelenítése</string>
-    <string name="menu_hide_substratum">Rétegek elrejtése</string>
-    <!-- MKCenter verify -->
-    <string name="mkcenter_verify_failed_toast">A lefagyott vagy megsérült MoKee központ hatással lesz a rendszer szolgáltatásaira, állítsa helyre és próbálja újra.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
+    <string name="filter_substratum_apps">Substratum-rétegek</string>
+    <string name="menu_show_substratum">A rétegek megjelenítése</string>
+    <string name="menu_hide_substratum">A rétegek elrejtése</string>
+    <string name="mkcenter_verify_failed_toast">A lefagyott vagy eltávolított MoKee-központ hatással lesz a rendszer szolgáltatásaira, állítsa helyre és próbálja újra.</string>
     <string name="system_dashboard_summary_mk">Nyelvezetek, idő, mentések</string>
 </resources>

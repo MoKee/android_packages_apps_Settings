@@ -16,14 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Machtiging afdwingen voor alle thematoepassingen</string>
     <string name="force_authorize_substratum_packages_summary">Thematoepassingen toestaan uit onbekende bronnen</string>
-    <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Bedekking van Substratum</string>
     <string name="menu_show_substratum">Bedekkingen weergeven</string>
     <string name="menu_hide_substratum">Bedekkingen verbergen</string>
-    <!-- MKCenter verify -->
     <string name="mkcenter_verify_failed_toast">Bevriezing of verwijderen van MoKee Center zal invloed hebben op systeemservices, gelieve te herstellen en probeer het opnieuw.</string>
-    <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
 </resources>
