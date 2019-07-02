@@ -24,6 +24,8 @@
     </plurals>
     <string name="show_dev_on_cm">¡Has activado los ajustes de desarrollo!</string>
     <string name="show_dev_already_cm">No es necesario. Las opciones de desarrollo ya están activadas.</string>
+    <string name="platform_revision">Plataforma</string>
+    <string name="total_ram">RAM Total</string>
     <string name="development_tools_title">Herramientas de desarrollo</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Al desbloquear, incluir las opciones de reiniciar en modo de recuperación, gestor de arranque y modo descarga</string>
@@ -277,4 +279,8 @@
     <string name="high_touch_sensitivity_summary">Incrementar la sensibilidad del panel táctil para que pueda usarse llevando guantes</string>
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Te permitirá deslizar por la pantalla como un ratón en navegadores, escritorios remotos, etc.</string>
+    <string name="data_usage_app_restrict_data">Datos moviles</string>
+    <string name="data_usage_app_restrict_data_summary">Habilitar el uso de datos móviles</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Habilitar el uso de datos Wi\u2011Fi</string>
 </resources>
