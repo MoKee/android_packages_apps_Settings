@@ -295,4 +295,8 @@
     <string name="open_lockscreen_tuner">Kısayolları değiştir</string>
     <string name="location_mode_battery_saving_title">Pil tasarrufu modu</string>
     <string name="location_mode_battery_saving_summary">Konum belirlemek için yalnızca Wi\u2011Fi, Bluetooth veya hücresel ağları kullanın (daha az doğru)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 saniye</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 dakika</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 dakika</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 dakika</string>
 </resources>

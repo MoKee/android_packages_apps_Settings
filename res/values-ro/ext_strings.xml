@@ -291,4 +291,8 @@
     <string name="touchscreen_hovering_summary">Vă permite să plutiți degetul peste ecran ca un mouse în browserele web, remote desktop-uri, etc</string>
     <string name="directly_show_lock">Deblocare directă</string>
     <string name="directly_show_lock_summary">Treci peste glisarea pentru deblocare și începe imediat introducerea codului</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 secunde</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minute</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minute</string>
 </resources>

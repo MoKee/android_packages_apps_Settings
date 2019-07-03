@@ -297,4 +297,8 @@
     <string name="open_lockscreen_tuner">Изменить ярлыки</string>
     <string name="location_mode_battery_saving_title">Режим экономии батареи</string>
     <string name="location_mode_battery_saving_summary">Использовать только Wi-Fi, Bluetooth или мобильные сети для определения местоположения (менее точно)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 сек.</string>
+    <string name="app_notification_sound_timeout_value_1_minute">Через 1 минуту</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">Через 5 минут</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">Через 10 минут</string>
 </resources>

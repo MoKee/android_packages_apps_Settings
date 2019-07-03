@@ -297,4 +297,8 @@
     <string name="open_lockscreen_tuner">Změnit zkratky</string>
     <string name="location_mode_battery_saving_title">Úsporný režim baterie</string>
     <string name="location_mode_battery_saving_summary">K určování polohy používat pouze Wi\u2011Fi, Bluetooth nebo mobilní sítě (méně přesné)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
 </resources>

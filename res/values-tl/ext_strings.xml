@@ -203,4 +203,8 @@
     <string name="high_touch_sensitivity_title">Mataas na pagkamapagdamdam sa paghawak</string>
     <string name="high_touch_sensitivity_summary">Dagdagan ang touchscreen kaya\'t magagamit ito habang may suot na mga glab</string>
     <string name="touchscreen_hovering_summary">Bigyan ka na mag-hover sa screen kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuto</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuto</string>
 </resources>

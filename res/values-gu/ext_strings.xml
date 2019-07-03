@@ -202,4 +202,5 @@
     <string name="high_touch_sensitivity_summary">ટચસ્ક્રીન સંવેદનશીલતા વધારો જેથી હાથમોજા પહેરીને તેનો ઉપયોગ થઈ શકે</string>
     <string name="touchscreen_hovering_title">ટચસ્ક્રીન ભમવું</string>
     <string name="touchscreen_hovering_summary">વેબ બ્રાઉઝરો, રિમોટ ડેસ્કટૉપ વગેરેમાં માઉસ હોય તે પ્રમાણે તમને સ્ક્રીન પર ભમતાં રહેવાની છૂટ આપે છે</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 સેકન્ડ્સ</string>
 </resources>

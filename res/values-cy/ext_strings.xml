@@ -192,4 +192,7 @@
     <string name="wake_when_plugged_or_unplugged_summary">Troi\'r sgrin ymlaen wrth gysylltu neu ddatgysylltu â phŵer</string>
     <string name="directly_show_lock">Datgloi uniongyrchol</string>
     <string name="directly_show_lock_summary">Neidio\'r sgrin llithro i ddatgloi a dechrau yn hytrach yn syth gyda\'r sgrin gosod allwedd</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 eiliad</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 munud</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 munud</string>
 </resources>

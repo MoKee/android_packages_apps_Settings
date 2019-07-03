@@ -292,4 +292,8 @@
     <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
     <string name="directly_show_lock">Déverrouillage direct</string>
     <string name="directly_show_lock_summary">Passer l\'étape du glisser pour déverrouiller l\'écran et entrer directement le code</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
 </resources>

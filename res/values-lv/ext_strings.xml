@@ -119,4 +119,8 @@
     <string name="wake_when_plugged_or_unplugged_summary">Pievienojot, vai atvienojot no barošanas avota, ieslēgt ekrānu</string>
     <string name="high_touch_sensitivity_title">Augsta pieskāriena jutība</string>
     <string name="high_touch_sensitivity_summary">Palielināt skārienekrāna jutību, lai to varētu lietot, valkājot cimdus</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundes</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minūte</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minūtes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minūtes</string>
 </resources>

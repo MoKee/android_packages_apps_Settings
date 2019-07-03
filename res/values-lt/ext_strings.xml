@@ -151,4 +151,8 @@
     <string name="high_touch_sensitivity_summary">Padidinti liečiamojo ekrano jautrumą tam, kad juo būtų galima naudotis dėvint pirštines</string>
     <string name="touchscreen_hovering_title">Jutiklinio ekrano slankiojimas</string>
     <string name="touchscreen_hovering_summary">Leidžia slankioti ekraną kaip pelę internetinėse naršyklėse, nuotoliniuose staliniuose kompiuteriuose ir kt.</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundžių</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 min.</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 min.</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 min.</string>
 </resources>

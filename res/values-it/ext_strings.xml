@@ -295,4 +295,8 @@
     <string name="open_lockscreen_tuner">Imposta scorciatoie</string>
     <string name="location_mode_battery_saving_title">Modalità risparmio energetico</string>
     <string name="location_mode_battery_saving_summary">Utilizza solo Wi\u2011Fi, Bluetooth o reti dati per stabilire la posizione (meno accurata)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 secondi</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuti</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuti</string>
 </resources>

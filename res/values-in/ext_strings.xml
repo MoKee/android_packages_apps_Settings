@@ -289,4 +289,8 @@
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
     <string name="directly_show_lock">Buka Langsung</string>
     <string name="directly_show_lock_summary">Lewati usapan untuk membuka kunci layar dan segera mulai masukkan kunci</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 detik</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 menit</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 menit</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 menit</string>
 </resources>

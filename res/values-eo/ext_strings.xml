@@ -20,4 +20,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_ops_categories_location">Loko</string>
     <string name="app_ops_categories_device">Aparato</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundoj</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutoj</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutoj</string>
 </resources>

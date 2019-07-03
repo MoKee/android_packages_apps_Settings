@@ -51,4 +51,8 @@
     <string name="show_dev_on_cm">Anda telah mendayakan seting pembangunan!</string>
     <string name="show_dev_already_cm">Tidak perlu, anda telah mendayakan seting pembangunan.</string>
     <string name="root_access_none">Tidak-aktif</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 saat</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minit</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minit</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minit</string>
 </resources>

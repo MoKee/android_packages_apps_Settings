@@ -284,4 +284,8 @@
     <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
     <string name="directly_show_lock">Desbloquéu direutu</string>
     <string name="directly_show_lock_summary">Omitir l\'esbarie pa destorgar la pantalla y entamar darréu la introducción de la clave</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minutu</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
 </resources>

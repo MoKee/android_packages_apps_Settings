@@ -240,4 +240,8 @@
     <string name="high_touch_sensitivity_summary">Areagotu pantailaren sentsibilitatea, eskularruekin erabilgarria izan dadin</string>
     <string name="touchscreen_hovering_title">Pantailaren gainetik pasatu</string>
     <string name="touchscreen_hovering_summary">Sagua bailitzan pantailaren gainetik pasatzea ahalbidetzen dizu, nabigatzaileetan, urruneko mahaigainetan, eta abar</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+    <string name="app_notification_sound_timeout_value_1_minute">minutu 1</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutu</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutu</string>
 </resources>

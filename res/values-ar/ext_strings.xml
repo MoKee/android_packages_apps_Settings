@@ -299,4 +299,8 @@
     <string name="open_lockscreen_tuner">تغيير الاختصارات</string>
     <string name="location_mode_battery_saving_title">وضع توفير البطارية</string>
     <string name="location_mode_battery_saving_summary">إستخدام فقط شبكات WiFi أو بلوتوث أو الجوّال لتحديد الموقع (أقل دقة)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 ثوانٍ</string>
+    <string name="app_notification_sound_timeout_value_1_minute">دقيقة واحدة</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 دقائق</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 دقائق</string>
 </resources>

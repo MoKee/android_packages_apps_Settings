@@ -155,4 +155,8 @@
     <string name="high_touch_sensitivity_summary">افزایش حساسیت صفحه به لمس تا هنگام پوشیدن دستکش نیز قابل استفاده باشد</string>
     <string name="touchscreen_hovering_title">لمس شناور صفحه</string>
     <string name="touchscreen_hovering_summary">به شما اجازه می‌دهد مانند عملکرد ماوس در مرورگرهای وب، ریموت دسکتاپ و غیره، صفحه نمایش را به صورت شناور کنترل کنید</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">۱۰ ثانیه</string>
+    <string name="app_notification_sound_timeout_value_1_minute">۱ دقیقه</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">۵ دقیقه</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">۱۰ دقیقه</string>
 </resources>

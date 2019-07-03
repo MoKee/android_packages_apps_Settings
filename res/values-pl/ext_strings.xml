@@ -294,4 +294,8 @@
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
     <string name="directly_show_lock">Bezpośrednie odblokowanie</string>
     <string name="directly_show_lock_summary">Pomiń przesunięcie po ekranie i natychmiast umożliw wprowadzanie kodu</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
 </resources>

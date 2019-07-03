@@ -295,4 +295,8 @@
     <string name="open_lockscreen_tuner">Paracsikon-változtatás</string>
     <string name="location_mode_battery_saving_title">Energiatakarékos mód</string>
     <string name="location_mode_battery_saving_summary">Tartózkodási hely megállapítása csak Wi‑Fi, Bluetooth és mobilhálózatok használatával (kevésbé pontos)</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 másodperc</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 perc után</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 perc után</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 perc után</string>
 </resources>

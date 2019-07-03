@@ -240,4 +240,8 @@
     <string name="high_touch_sensitivity_summary">Gevoeligheid van het scherm verhogen, zodat het bediend kan worden met handschoenen</string>
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 seconden</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuten</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuten</string>
 </resources>

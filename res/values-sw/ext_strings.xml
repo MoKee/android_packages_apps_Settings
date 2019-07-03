@@ -19,4 +19,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_ops_categories_location">Eneo</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">Sekunde 10</string>
+    <string name="app_notification_sound_timeout_value_1_minute">Dakika 1</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">Dakika 5</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">Dakika 1</string>
 </resources>

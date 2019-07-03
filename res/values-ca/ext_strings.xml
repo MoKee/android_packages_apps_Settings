@@ -240,4 +240,8 @@
     <string name="high_touch_sensitivity_summary">Incrementa la sensibilitat de la pantalla tàctil de manera que pugui utilitzar-se si es porten guants</string>
     <string name="touchscreen_hovering_title">Sura per sobre la pantalla tàctil</string>
     <string name="touchscreen_hovering_summary">Et permet surar per sobre la pantalla com un ratolí en els navegadors web, escriptoris remots, etc</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segons</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuts</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuts</string>
 </resources>

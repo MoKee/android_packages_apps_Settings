@@ -240,4 +240,8 @@
     <string name="high_touch_sensitivity_summary">Αύξηση της ευαισθησίας της οθόνης αφής έτσι ώστε να μπορεί να χρησιμοποιηθεί φορώντας γάντια</string>
     <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>
     <string name="touchscreen_hovering_summary">Σας επιτρέπει να αιωρείτε πάνω από την οθόνη όπως ένα ποντίκι σε προγράμματα περιήγησης στο web, απομακρυσμένες επιφάνειες εργασίας, κλπ</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 δευτερόλεπτα</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 λεπτό</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 λεπτά</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 λεπτά</string>
 </resources>

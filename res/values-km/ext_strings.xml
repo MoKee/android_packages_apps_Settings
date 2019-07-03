@@ -19,4 +19,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_ops_categories_location">ទីកន្លែង</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">១០ វិនាទី</string>
+    <string name="app_notification_sound_timeout_value_1_minute">១ នាទី</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">៥ នាទី</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">១០ នាទី</string>
 </resources>

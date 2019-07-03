@@ -218,4 +218,8 @@
     <string name="high_touch_sensitivity_summary">Forøger skærmens følsomhed, så den kan bruges med handsker</string>
     <string name="touchscreen_hovering_title">Brug skærmen som mus</string>
     <string name="touchscreen_hovering_summary">Gør det muligt at bevæge skærmen og bruge den som mus f.eks. i en browser, på fjernskriveborde m.v.</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutter</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutter</string>
 </resources>

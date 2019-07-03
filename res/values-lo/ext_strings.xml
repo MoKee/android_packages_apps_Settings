@@ -23,4 +23,8 @@
     <string name="show_dev_on_cm">ເຈົ້າໄດ້ເປີດການຕັ້ງຄ່ານັກພັດທະນາ!</string>
     <string name="show_dev_already_cm">ບໍ່ຈຳເປັນ, ເຈົ້າໄດ້ເປີດການຕັ້ງຄ່ານັກພັດທະນາແລ້ວ.</string>
     <string name="root_access_none">ປິດໃຊ້ງານ</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 ວິນາທີ</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 ນາທີ</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 ນາທີ</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 ນາທີ</string>
 </resources>

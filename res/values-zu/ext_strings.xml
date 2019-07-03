@@ -19,4 +19,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_ops_categories_location">Indawo</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 amasekhondi</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 iminithi</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 amaminithi</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 amaminithi</string>
 </resources>

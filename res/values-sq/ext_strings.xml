@@ -173,4 +173,5 @@
     <string name="touchscreen_gesture_settings_title">Gjestet me prekje ekrani</string>
     <string name="touchscreen_gesture_settings_summary">Kryej gjeste të ndryshme duke prekur ekranin për veprime të shpejta</string>
     <string name="high_touch_sensitivity_title">Ndjesi e lartë e prekjes</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekonda</string>
 </resources>
