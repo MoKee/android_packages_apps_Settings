@@ -297,8 +297,13 @@
     <string name="open_lockscreen_tuner">Изменить ярлыки</string>
     <string name="location_mode_battery_saving_title">Режим экономии батареи</string>
     <string name="location_mode_battery_saving_summary">Использовать только Wi-Fi, Bluetooth или мобильные сети для определения местоположения (менее точно)</string>
+    <string name="app_notification_sound_timeout_title">Минимальный интервал между звуками уведомлений</string>
+    <string name="app_notification_sound_timeout_summary_template">Разрешить звуки или вибрацию не более чем один раз каждые <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Без ограничений</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 сек.</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
     <string name="app_notification_sound_timeout_value_1_minute">Через 1 минуту</string>
     <string name="app_notification_sound_timeout_value_5_minutes">Через 5 минут</string>
     <string name="app_notification_sound_timeout_value_15_minutes">Через 10 минут</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
 </resources>

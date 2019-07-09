@@ -296,8 +296,11 @@
     <string name="directly_show_lock_summary">Preskoči poteg za odklepanje zaslona in takoj začni z vnosom ključa</string>
     <string name="open_lockscreen_tuner">Spremeni bližnjice</string>
     <string name="location_mode_battery_saving_title">Način varčevanje z energijo akumulatorja</string>
+    <string name="app_notification_sound_timeout_value_none">Brez omejitve</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
 </resources>

@@ -294,8 +294,13 @@
     <string name="open_lockscreen_tuner">更改快捷鍵</string>
     <string name="location_mode_battery_saving_title">省電模式</string>
     <string name="location_mode_battery_saving_summary">僅使用 Wi\u2011Fi、藍芽或行動網路來確定位置（準確度較低）</string>
+    <string name="app_notification_sound_timeout_title">通知聲音之間的最短時間</string>
+    <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允許聲音或振動不超過一次</string>
+    <string name="app_notification_sound_timeout_value_none">無限制</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 分鐘</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 分鐘</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 分鐘</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 分鐘</string>
 </resources>
