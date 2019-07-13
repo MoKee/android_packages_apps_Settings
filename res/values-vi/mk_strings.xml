@@ -22,4 +22,5 @@
     <string name="menu_show_substratum">Hiển thị các lớp phủ</string>
     <string name="menu_hide_substratum">Ẩn các lớp phủ</string>
     <string name="mkcenter_verify_failed_toast">Ngủ đông hoặc xoá Cập nhật sẽ ảnh hưởng đến dịch vụ hệ thống.</string>
+    <string name="system_dashboard_summary_mk">Ngôn ngữ, thời gian, sao lưu</string>
 </resources>
