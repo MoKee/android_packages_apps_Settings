@@ -123,7 +123,7 @@
     <string name="app_ops_summaries_use_media_volume">控制媒體音量</string>
     <string name="app_ops_summaries_use_notification_volume">控制通知音量</string>
     <string name="app_ops_summaries_use_ring_volume">控制鈴聲音量</string>
-    <string name="app_ops_summaries_use_vibrate">使用觸覺回饋</string>
+    <string name="app_ops_summaries_use_vibrate">使用觸控震動</string>
     <string name="app_ops_summaries_use_voice_volume">控制語音通話音量</string>
     <string name="app_ops_summaries_wifi_change">變更 Wi-Fi 狀態</string>
     <string name="app_ops_summaries_write_external_storage">寫入外部儲存空間</string>
@@ -209,7 +209,7 @@
     <string name="app_ops_labels_use_media_volume">控制媒體音量</string>
     <string name="app_ops_labels_use_notification_volume">控制通知音量</string>
     <string name="app_ops_labels_use_ring_volume">控制鈴聲音量</string>
-    <string name="app_ops_labels_use_vibrate">使用觸控震動</string>
+    <string name="app_ops_labels_use_vibrate">使用觸控振動</string>
     <string name="app_ops_labels_use_voice_volume">控制語音通話音量</string>
     <string name="app_ops_labels_wifi_change">變更 Wi-Fi 狀態</string>
     <string name="app_ops_labels_write_external_storage">寫入外部儲存空間</string>
@@ -218,8 +218,8 @@
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖案大小</string>
     <string name="lockpattern_settings_enable_error_path_title">顯示解鎖圖案錯誤</string>
     <string name="lockpattern_settings_enable_dots_title">顯示解鎖圖案節點</string>
-    <string name="lockscreen_vibrate_enabled_title">震動</string>
-    <string name="lockscreen_vibrate_enabled_head">解鎖時震動</string>
+    <string name="lockscreen_vibrate_enabled_title">振動</string>
+    <string name="lockscreen_vibrate_enabled_head">解鎖時振動</string>
     <string name="adb_enable">Android 偵錯</string>
     <string name="adb_enable_summary">啟用 Android Debug Bridge (ADB) 介面</string>
     <string name="adb_notify">偵錯通知</string>
