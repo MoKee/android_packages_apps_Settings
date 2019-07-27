@@ -16,6 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="swipe_to_screenshot_gesture_title">滑動截圖</string>
-    <string name="swipe_to_screenshot_gesture_summary">在螢幕上下滑三指以獲取截圖</string>
+    <string name="swipe_to_screenshot_gesture_title">滑動以擷取螢幕畫面</string>
+    <string name="swipe_to_screenshot_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
 </resources>

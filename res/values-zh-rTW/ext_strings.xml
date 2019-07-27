@@ -3,7 +3,7 @@
 <!--
      Copyright (C) 2012-2019 The MoKee Open Source Project
      Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -266,6 +266,8 @@
     <string name="sub_deactivate_failed">停用失敗。</string>
     <string name="data_usage_app_restrict_data">行動數據</string>
     <string name="data_usage_app_restrict_data_summary">啟用行動數據</string>
+    <string name="data_usage_app_restrict_vpn">VPN 數據</string>
+    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 數據</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
     <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據</string>
     <string name="unlock_scramble_pin_layout_title">亂序佈局</string>
@@ -293,9 +295,9 @@
     <string name="directly_show_lock_summary">跳過滑動解鎖螢幕，直接開始輸入密碼</string>
     <string name="open_lockscreen_tuner">更改快捷鍵</string>
     <string name="location_mode_battery_saving_title">省電模式</string>
-    <string name="location_mode_battery_saving_summary">僅使用 Wi\u2011Fi、藍芽或行動網路來確定位置（準確度較低）</string>
+    <string name="location_mode_battery_saving_summary">僅使用 Wi\u2011Fi、藍芽或行動網路來確定位置 (準確度較低)</string>
     <string name="app_notification_sound_timeout_title">通知聲音之間的最短時間</string>
-    <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允許聲音或振動不超過一次</string>
+    <string name="app_notification_sound_timeout_summary_template">允許音效或震動每一次不超過 <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">無限制</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>

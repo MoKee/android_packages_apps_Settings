@@ -3,7 +3,7 @@
 <!--
      Copyright (C) 2012-2019 The MoKee Open Source Project
      Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -269,6 +269,8 @@
     <string name="sub_deactivate_failed">Ошибка при отключении.</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить использование мобильных данных</string>
+    <string name="data_usage_app_restrict_vpn">Данные VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
     <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
     <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>

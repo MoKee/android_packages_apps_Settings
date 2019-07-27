@@ -3,7 +3,7 @@
 <!--
      Copyright (C) 2012-2019 The MoKee Open Source Project
      Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -267,6 +267,8 @@
     <string name="sub_deactivate_failed">Deaktiveerimine ebaõnnestus.</string>
     <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
     <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
+    <string name="data_usage_app_restrict_vpn">VPN andmed</string>
+    <string name="data_usage_app_restrict_vpn_summary">Lubage VPN andmete kasutus</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
     <string name="data_usage_app_restrict_wifi_summary">Luba Wi\u2011Fi andmeside kasutus</string>
     <string name="unlock_scramble_pin_layout_title">Segatud paigutus</string>
