@@ -79,6 +79,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">sledovať polohu v režime vysokej spotreby</string>
     <string name="app_ops_summaries_monitor_location">sledovať polohu</string>
     <string name="app_ops_summaries_mute_unmute_microphone">stlmiť/zrušiť stlmenie mikrofónu</string>
+    <string name="app_ops_summaries_neighboring_cells">susedné bunky</string>
     <string name="app_ops_summaries_phone_calls">prijať telefónny hovor</string>
     <string name="app_ops_summaries_picture_in_picture">použiť obraz v obraze (PiP) </string>
     <string name="app_ops_summaries_play_audio">prehrávať zvuk</string>
@@ -128,6 +129,8 @@
     <string name="app_ops_summaries_write_external_storage">zapisovať do externého úložiska</string>
     <string name="app_ops_summaries_write_mms">napísať správu MMS</string>
     <string name="app_ops_summaries_write_sms">vytvoriť SMS</string>
+    <string name="app_ops_labels_accept_handover">Odovzdať hovor z inej aplikácie</string>
+    <string name="app_ops_labels_access_camera">Prístup k fotoparátu</string>
     <string name="app_ops_labels_access_notifications">Pristup k upozorneniam</string>
     <string name="app_ops_labels_activate_vpn">Aktivovať VPN</string>
     <string name="app_ops_labels_add_voicemail">Pridať hlasovú poštu</string>
@@ -135,12 +138,24 @@
     <string name="app_ops_labels_assist_screenshot">Asistent snímky obrazovky</string>
     <string name="app_ops_labels_assist_structure">Asistent štruktúry</string>
     <string name="app_ops_labels_audio_accessibility_volume">Prístup k hlasitosti zvuku</string>
+    <string name="app_ops_labels_auto_start">Spustiť pri štaťte</string>
+    <string name="app_ops_labels_bind_accessibility_service">Nadviazať na službu dostupnosti</string>
+    <string name="app_ops_labels_bluetooth_scan">Skenovanie Bluetooth</string>
+    <string name="app_ops_labels_change_wallpaper">Zmeniť tapetu</string>
     <string name="app_ops_labels_coarse_location">Získať približnú polohu</string>
+    <string name="app_ops_labels_delete_call_log">Vymazať denník hovorov</string>
+    <string name="app_ops_labels_delete_contacts">Mazať kontakty</string>
+    <string name="app_ops_labels_delete_mms">Vymazať MMS správy</string>
+    <string name="app_ops_labels_delete_sms">Vymazať SMS správy</string>
     <string name="app_ops_labels_draw_on_top">Vykresliť do najvyššej vrstvy</string>
     <string name="app_ops_labels_fine_location">Získať presnú polohu</string>
     <string name="app_ops_labels_get_accounts">Získať účty</string>
     <string name="app_ops_labels_get_usage_stats">Získať štatistiky používania</string>
     <string name="app_ops_labels_gps">GPS</string>
+    <string name="app_ops_labels_install_packages">Inštalovať balíky</string>
+    <string name="app_ops_labels_keep_device_awake">Ponechať zariadenie prebudené</string>
+    <string name="app_ops_labels_make_phone_call">Uskutočniť hovor</string>
+    <string name="app_ops_labels_manage_ipsec_tunnels">Spravovať tunely ipsec</string>
     <string name="app_ops_labels_mock_location">Falšovať polohu</string>
     <string name="app_ops_labels_modify_calendar">Upraviť údaje v kalendári</string>
     <string name="app_ops_labels_modify_call_log">Upraviť denník hovorov</string>
@@ -150,9 +165,11 @@
     <string name="app_ops_labels_monitor_high_power_location">Sledovať polohu v režime vysokej spotreby</string>
     <string name="app_ops_labels_monitor_location">Sledovať polohu</string>
     <string name="app_ops_labels_mute_unmute_microphone">Stlmiť/zrušiť stlmenie mikrofónu</string>
+    <string name="app_ops_labels_neighboring_cells">Susedné bunky</string>
     <string name="app_ops_labels_phone_calls">Priiímanie telefónnych hovorov</string>
     <string name="app_ops_labels_picture_in_picture">Použitie obrazu v obraze (PiP) </string>
     <string name="app_ops_labels_play_audio">Prehrať zvuk</string>
+    <string name="app_ops_labels_post_notification">Odoslať oznámenie</string>
     <string name="app_ops_labels_project_media">Premietať médiá</string>
     <string name="app_ops_labels_read_calendar">Čítať údaje z kalendára</string>
     <string name="app_ops_labels_read_call_log">Čítať denník hovorov</string>
@@ -160,20 +177,43 @@
     <string name="app_ops_labels_read_clipboard">Čítať údaje zo schránky</string>
     <string name="app_ops_labels_read_contacts">Čítať údaje z kontaktov</string>
     <string name="app_ops_labels_read_external_storage">Čítať externé úložisko</string>
+    <string name="app_ops_labels_read_mms">Čítať správy MMS</string>
     <string name="app_ops_labels_read_phone_numbers">Čítanie telefónnych čísiel</string>
     <string name="app_ops_labels_read_phone_state">Čítať stav telefónu</string>
     <string name="app_ops_labels_read_sms">Čítanie SMS</string>
+    <string name="app_ops_labels_receive_emergency_broadcast">Prijímať správy núdzového vysielania</string>
     <string name="app_ops_labels_receive_sms">Prijať SMS</string>
     <string name="app_ops_labels_record_audio">Záznam zvuku</string>
+    <string name="app_ops_labels_request_delete_packages">Žiadať o zmazanie balíčkov</string>
+    <string name="app_ops_labels_run_any_in_background">Spustiť čokoľvek na pozadí</string>
     <string name="app_ops_labels_run_in_background">Otvoriť na pozadí</string>
+    <string name="app_ops_labels_scan_wifi">Prehľadať Wi-Fi siete</string>
+    <string name="app_ops_labels_send_mms">Odoslielať MMS správy</string>
     <string name="app_ops_labels_send_sms">Odoslať SMS</string>
+    <string name="app_ops_labels_start_at_bootup">Spustiť pri štaťte</string>
+    <string name="app_ops_labels_start_foreground">Spustiť na popredí</string>
+    <string name="app_ops_labels_su">Získať prístup k Rootovaniu</string>
     <string name="app_ops_labels_toast_window">Zobraziť vyskakovacie upozornenia</string>
+    <string name="app_ops_labels_toggle_bluetooth">Prepínať Bluetooth</string>
     <string name="app_ops_labels_toggle_mobile_data">Prepnúť mobilné dáta</string>
     <string name="app_ops_labels_toggle_nfc">Prepnúť NFC</string>
     <string name="app_ops_labels_toggle_wifi">Prepnúť Wi-Fi</string>
+    <string name="app_ops_labels_turn_on_screen">Zapnúť obrazovku</string>
+    <string name="app_ops_labels_use_alarm_volume">Ovládať hlasitosť budíka</string>
+    <string name="app_ops_labels_use_audio_focus">Ovládať zvukové zdroje</string>
+    <string name="app_ops_labels_use_bluetooth_volume">Ovládať hlasitosť Bluetooh</string>
     <string name="app_ops_labels_use_body_sensors">Použiť telové senzory</string>
     <string name="app_ops_labels_use_fingerprint">Použiť odtlačok prsta</string>
+    <string name="app_ops_labels_use_master_volume">Ovládať celkovú hlasitosť</string>
+    <string name="app_ops_labels_use_media_buttons">Používať tlačidlá médií</string>
+    <string name="app_ops_labels_use_media_volume">Ovládať hlasitosť médií</string>
+    <string name="app_ops_labels_use_notification_volume">Ovládať hlasitosť oznámení</string>
+    <string name="app_ops_labels_use_ring_volume">Ovládať hlasitosť zvonenia</string>
+    <string name="app_ops_labels_use_vibrate">Používať dotykovú odozvu</string>
+    <string name="app_ops_labels_use_voice_volume">Ovládať hlasitosť hovoru</string>
+    <string name="app_ops_labels_wifi_change">Zmeniť stav WiFI</string>
     <string name="app_ops_labels_write_external_storage">Zapisovať do externého úložiska</string>
+    <string name="app_ops_labels_write_mms">Vytvoriť MMS správu</string>
     <string name="app_ops_labels_write_sms">Písanie SMS</string>
     <string name="lock_settings_picker_pattern_size_message">Zvoliť veľkosť vzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Zobraziť chybu vzoru</string>
@@ -197,6 +237,8 @@
     <string name="show_dev_already_cm">Netreba, už ste povolili možnosti pre vývojárov.</string>
     <string name="status_bar_double_tap_to_sleep_title">Kliknutím uspať</string>
     <string name="status_bar_double_tap_to_sleep_summary">Vypnúť obrazovku dvojklikom na stavový riadok alebo na obrazovku uzamknutia</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Vyhľadajte snímač odtlačkov prstov <xliff:g id="sensor_location">%1$s</xliff:g> na telefóne.</string>
     <string name="security_settings_fingerprint_sensor_location_back">Zadný</string>
     <string name="security_settings_fingerprint_sensor_location_front">Predný</string>
@@ -227,6 +269,8 @@
     <string name="sub_deactivate_failed">Deaktivácia zlyhala.</string>
     <string name="data_usage_app_restrict_data">Mobilné dáta</string>
     <string name="data_usage_app_restrict_data_summary">Povoliť používanie mobilných dát</string>
+    <string name="data_usage_app_restrict_vpn">Dáta VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povoliť používanie dát VPN</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dáta</string>
     <string name="data_usage_app_restrict_wifi_summary">Povoliť používanie Wi\u2011Fi dát</string>
     <string name="unlock_scramble_pin_layout_title">Dynamické rozloženie</string>
@@ -250,8 +294,18 @@
     <string name="high_touch_sensitivity_summary">Zvýšiť citlivosť dotykovej obrazovky, takže ju bude možné používať pri nosení rukavíc</string>
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
+    <string name="directly_show_lock">Priame odomknutie</string>
+    <string name="directly_show_lock_summary">Preskočiť odomknutie obrazovky potiahnutím prsta a okamžite spustiť zadávanie</string>
+    <string name="open_lockscreen_tuner">Zmeniť skratky</string>
+    <string name="location_mode_battery_saving_title">Režim šetrenia batérie</string>
+    <string name="location_mode_battery_saving_summary">Pre zisťovanie polohy používať GPS, Wi-Fi, Bluetooth alebo mobilné siete</string>
+    <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi upozornenia</string>
+    <string name="app_notification_sound_timeout_summary_template">Povoliť zvuky alebo vibrácie nie viac ako raz za <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Bez obmedzení</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekúnd</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekúnd</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 minúta</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 minút</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minút</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minút</string>
 </resources>
