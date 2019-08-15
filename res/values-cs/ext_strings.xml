@@ -269,6 +269,8 @@
     <string name="sub_deactivate_failed">Deaktivace selhala.</string>
     <string name="data_usage_app_restrict_data">Mobilní data</string>
     <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
     <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
