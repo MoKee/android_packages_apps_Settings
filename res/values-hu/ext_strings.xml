@@ -306,4 +306,6 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 perc után</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 perc után</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 perc</string>
+    <string name="tethering_allow_vpn_upstreams_title">Engedélyezi a klienseknek a VPN-használatot</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Engedélyezze a hotspot-klienseknek, hogy a készülék VPN-kapcsolatait felfelé csatlakoztathassák</string>
 </resources>
