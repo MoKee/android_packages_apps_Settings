@@ -52,6 +52,7 @@
     <string name="app_ops_summaries_assist_structure">assist structure</string>
     <string name="app_ops_summaries_audio_accessibility_volume">audio accessibility volume</string>
     <string name="app_ops_summaries_auto_start">start at power up</string>
+    <string name="app_ops_summaries_change_wallpaper">change the wallpaper</string>
     <string name="app_ops_summaries_coarse_location">coarse location</string>
     <string name="app_ops_summaries_delete_call_log">delete your call log</string>
     <string name="app_ops_summaries_delete_contacts">delete your contacts</string>
@@ -62,6 +63,9 @@
     <string name="app_ops_summaries_get_accounts">get accounts</string>
     <string name="app_ops_summaries_get_usage_stats">get app usage stats</string>
     <string name="app_ops_summaries_gps">GPS</string>
+    <string name="app_ops_summaries_install_packages">install packages</string>
+    <string name="app_ops_summaries_keep_device_awake">keep your device awake</string>
+    <string name="app_ops_summaries_make_phone_call">make a phone call</string>
     <string name="app_ops_summaries_mock_location">mock location</string>
     <string name="app_ops_summaries_modify_calendar">modify calendar</string>
     <string name="app_ops_summaries_modify_call_log">modify call log</string>
