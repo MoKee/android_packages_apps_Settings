@@ -78,6 +78,7 @@
     <string name="app_ops_summaries_phone_calls">answer phone calls</string>
     <string name="app_ops_summaries_picture_in_picture">use picture in picture</string>
     <string name="app_ops_summaries_play_audio">play audio</string>
+    <string name="app_ops_summaries_post_notification">post a notifaction</string>
     <string name="app_ops_summaries_project_media">project media</string>
     <string name="app_ops_summaries_read_calendar">read calendar</string>
     <string name="app_ops_summaries_read_call_log">read call log</string>
@@ -85,6 +86,7 @@
     <string name="app_ops_summaries_read_clipboard">read clipboard</string>
     <string name="app_ops_summaries_read_contacts">read contacts</string>
     <string name="app_ops_summaries_read_external_storage">read external storage</string>
+    <string name="app_ops_summaries_read_mms">read your MMS messages</string>
     <string name="app_ops_summaries_read_phone_numbers">read phone numbers</string>
     <string name="app_ops_summaries_read_phone_state">read phone state</string>
     <string name="app_ops_summaries_read_sms">read SMS</string>
@@ -99,7 +101,9 @@
     <string name="app_ops_summaries_toggle_wifi">toggle Wi-Fi</string>
     <string name="app_ops_summaries_use_body_sensors">use body sensors</string>
     <string name="app_ops_summaries_use_fingerprint">use fingerprint</string>
+    <string name="app_ops_summaries_wifi_change">change Wi-Fi state</string>
     <string name="app_ops_summaries_write_external_storage">write to external storage</string>
+    <string name="app_ops_summaries_write_mms">write an MMS message</string>
     <string name="app_ops_summaries_write_sms">write SMS</string>
     <string name="app_ops_labels_access_notifications">Access notifications</string>
     <string name="app_ops_labels_activate_vpn">Activate VPN</string>
