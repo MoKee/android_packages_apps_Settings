@@ -35,6 +35,9 @@ public class MKVendorSecurityPatchLevelPreferenceController extends BasePreferen
     private static final String KEY_AOSP_VENDOR_SECURITY_PATCH =
             "ro.vendor.build.security_patch";
 
+    private static final String KEY_MK_VENDOR_SECURITY_PATCH =
+            "ro.mk.build.vendor_security_patch";
+
     private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
             "ro.lineage.build.vendor_security_patch";
 
@@ -52,7 +55,10 @@ public class MKVendorSecurityPatchLevelPreferenceController extends BasePreferen
         String patchLevel = SystemProperties.get(KEY_AOSP_VENDOR_SECURITY_PATCH);
 
         if (patchLevel.isEmpty()) {
-            patchLevel = SystemProperties.get(KEY_LINEAGE_VENDOR_SECURITY_PATCH);
+            patchLevel = SystemProperties.get(KEY_MK_VENDOR_SECURITY_PATCH);
+            if (patchLevel.isEmpty()) {
+                patchLevel = SystemProperties.get(KEY_LINEAGE_VENDOR_SECURITY_PATCH);
+            }
         }
 
         if (!patchLevel.isEmpty()) {
