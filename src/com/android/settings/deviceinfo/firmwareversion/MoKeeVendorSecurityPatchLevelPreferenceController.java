@@ -38,6 +38,9 @@ public class MoKeeVendorSecurityPatchLevelPreferenceController extends BasePrefe
     private static final String KEY_MOKEE_VENDOR_SECURITY_PATCH =
             "ro.mk.build.vendor_security_patch";
 
+    private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
+            "ro.lineage.build.vendor_security_patch";
+
     public MoKeeVendorSecurityPatchLevelPreferenceController(Context context, String key) {
         super(context, key);
     }
@@ -53,6 +56,9 @@ public class MoKeeVendorSecurityPatchLevelPreferenceController extends BasePrefe
 
         if (patchLevel.isEmpty()) {
             patchLevel = SystemProperties.get(KEY_MOKEE_VENDOR_SECURITY_PATCH);
+            if (patchLevel.isEmpty()) {
+                patchLevel = SystemProperties.get(KEY_LINEAGE_VENDOR_SECURITY_PATCH);
+            }
         }
 
         if (!patchLevel.isEmpty()) {
