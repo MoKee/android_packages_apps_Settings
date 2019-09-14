@@ -17,14 +17,18 @@
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
+import android.os.SystemProperties;
 
+import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class LineageApiVersionPreferenceController extends BasePreferenceController {
+public class MKBuildDatePreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "LineageApiVersionCtrl";
+    private static final String TAG = "MKBuildDateCtrl";
 
-    public LineageApiVersionPreferenceController(Context context, String key) {
+    private static final String KEY_BUILD_DATE_PROP = "ro.build.date";
+
+    public MKBuildDatePreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -35,10 +39,7 @@ public class LineageApiVersionPreferenceController extends BasePreferenceControl
 
     @Override
     public CharSequence getSummary() {
-        final int sdk = lineageos.os.Build.LINEAGE_VERSION.SDK_INT;
-        StringBuilder builder = new StringBuilder();
-        builder.append(lineageos.os.Build.getNameForSDKInt(sdk))
-                .append(" (" + sdk + ")");
-        return builder.toString();
+        return SystemProperties.get(KEY_BUILD_DATE_PROP,
+                mContext.getString(R.string.unknown));
     }
 }

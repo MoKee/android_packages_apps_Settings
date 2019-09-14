@@ -116,7 +116,7 @@ public class DisplaySettings extends DashboardFragment {
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     if (!context.getResources().getBoolean(
-                            org.lineageos.platform.internal.R.bool.config_proximityCheckOnWake)) {
+                            org.mokee.platform.internal.R.bool.config_proximityCheckOnWake)) {
                         keys.add(KEY_PROXIMITY_ON_WAKE);
                     }
                     return keys;

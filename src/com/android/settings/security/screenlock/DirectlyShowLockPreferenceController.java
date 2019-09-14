@@ -27,9 +27,9 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import lineageos.providers.LineageSettings;
+import mokee.providers.MKSettings;
 
-import org.lineageos.internal.util.LineageLockPatternUtils;
+import org.mokee.internal.util.MKLockPatternUtils;
 
 public class DirectlyShowLockPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
@@ -38,14 +38,14 @@ public class DirectlyShowLockPreferenceController extends AbstractPreferenceCont
 
     private final int mUserId;
     private final LockPatternUtils mLockPatternUtils;
-    private final LineageLockPatternUtils mLineageLockPatternUtils;
+    private final MKLockPatternUtils mMKLockPatternUtils;
 
     public DirectlyShowLockPreferenceController(Context context, int userId,
             LockPatternUtils lockPatternUtils) {
         super(context);
         mUserId = userId;
         mLockPatternUtils = lockPatternUtils;
-        mLineageLockPatternUtils = new LineageLockPatternUtils(context);
+        mMKLockPatternUtils = new MKLockPatternUtils(context);
     }
 
     @Override
@@ -70,7 +70,7 @@ public class DirectlyShowLockPreferenceController extends AbstractPreferenceCont
     @Override
     public void updateState(Preference preference) {
         ((TwoStatePreference) preference).setChecked(
-                mLineageLockPatternUtils.shouldPassToSecurityView(mUserId));
+                mMKLockPatternUtils.shouldPassToSecurityView(mUserId));
     }
 
     @Override
@@ -80,7 +80,7 @@ public class DirectlyShowLockPreferenceController extends AbstractPreferenceCont
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        mLineageLockPatternUtils.setPassToSecurityView((Boolean) newValue, mUserId);
+        mMKLockPatternUtils.setPassToSecurityView((Boolean) newValue, mUserId);
         return true;
     }
 }

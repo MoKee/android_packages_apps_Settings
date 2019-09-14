@@ -36,7 +36,7 @@ import com.android.settings.Utils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 
-import lineageos.providers.LineageSettings;
+import mokee.providers.MKSettings;
 
 public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceController
         implements PreferenceControllerMixin {
@@ -81,8 +81,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
             if (((SwitchPreference) mPreference).isChecked()) {
                 WirelessAdbWarningDialog.show(mFragment);
             } else {
-                LineageSettings.Secure.putInt(mContext.getContentResolver(),
-                       LineageSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(mContext.getContentResolver(),
+                       MKSettings.Secure.ADB_PORT, -1);
                 updatePreference();
             }
             return true;
@@ -98,8 +98,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
     }
 
     public void onWirelessAdbDialogConfirmed() {
-        LineageSettings.Secure.putInt(mContext.getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, 5555);
+        MKSettings.Secure.putInt(mContext.getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 5555);
         updatePreference();
     }
 
@@ -108,8 +108,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
     }
 
     private void updatePreference() {
-        int port = LineageSettings.Secure.getInt(mContext.getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, -1);
+        int port = MKSettings.Secure.getInt(mContext.getContentResolver(),
+                MKSettings.Secure.ADB_PORT, -1);
         boolean enabled = port > 0;
         WifiInfo wifiInfo = mWifiManager.getConnectionInfo();
 

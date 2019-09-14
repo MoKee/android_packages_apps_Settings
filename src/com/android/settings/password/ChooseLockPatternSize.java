@@ -35,7 +35,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.utils.SettingsDividerItemDecoration;
 import com.google.android.setupdesign.GlifPreferenceLayout;
 
-import org.lineageos.internal.logging.LineageMetricsLogger;
+import org.mokee.internal.logging.MKMetricsLogger;
 
 public class ChooseLockPatternSize extends SettingsActivity {
 
@@ -151,7 +151,7 @@ public class ChooseLockPatternSize extends SettingsActivity {
 
         @Override
         public int getMetricsCategory() {
-            return LineageMetricsLogger.CHOOSE_LOCK_PATTERN_SIZE;
+            return MKMetricsLogger.CHOOSE_LOCK_PATTERN_SIZE;
         }
     }
 }

@@ -17,18 +17,14 @@
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
-import android.os.SystemProperties;
 
-import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class LineageBuildDatePreferenceController extends BasePreferenceController {
+public class MKApiVersionPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "LineageBuildDateCtrl";
+    private static final String TAG = "MKApiVersionCtrl";
 
-    private static final String KEY_BUILD_DATE_PROP = "ro.build.date";
-
-    public LineageBuildDatePreferenceController(Context context, String key) {
+    public MKApiVersionPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -39,7 +35,10 @@ public class LineageBuildDatePreferenceController extends BasePreferenceControll
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_BUILD_DATE_PROP,
-                mContext.getString(R.string.unknown));
+        final int sdk = mokee.os.Build.MK_VERSION.SDK_INT;
+        StringBuilder builder = new StringBuilder();
+        builder.append(mokee.os.Build.getNameForSDKInt(sdk))
+                .append(" (" + sdk + ")");
+        return builder.toString();
     }
 }
