@@ -30,21 +30,21 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
+    <!-- MoKee version -->
     <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
+        android:key="mk_version"
+        android:title="@*mokee.platform:string/mk_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MKVersionDetailPreferenceController"/>
 
-    <!-- Lineage API version -->
+    <!-- MoKee API version -->
     <Preference
-        android:key="lineage_api_version"
-        android:title="@*lineageos.platform:string/lineage_api_level"
+        android:key="mk_api_version"
+        android:title="@*mokee.platform:string/mk_api_level"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MKApiVersionPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
@@ -56,9 +56,9 @@
     <!-- Vendor security patch -->
     <Preference
         android:key="vendor_security_key"
-        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
+        android:title="@*mokee.platform:string/mk_vendor_security_patch"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MKVendorSecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
     <Preference
@@ -87,10 +87,10 @@
     <!-- Build date -->
     <Preference
         android:key="os_build_date"
-        android:title="@*lineageos.platform:string/build_date"
+        android:title="@*mokee.platform:string/build_date"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MKBuildDatePreferenceController"/>
 
     <!-- Build -->
     <Preference

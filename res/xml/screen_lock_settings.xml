@@ -46,7 +46,7 @@
         android:title="@string/directly_show_lock"
         android:summary="@string/directly_show_lock_summary" />
 
-    <!-- Lineage additions, available in pin/pattern/password/slide -->
+    <!-- MoKee additions, available in pin/pattern/password/slide -->
     <SwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"

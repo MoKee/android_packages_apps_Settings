@@ -28,9 +28,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class LineageVendorSecurityPatchLevelPreferenceController extends BasePreferenceController {
+public class MKVendorSecurityPatchLevelPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "LineageVendorSecurityPatchCtrl";
+    private static final String TAG = "MKVendorSecurityPatchCtrl";
 
     private static final String KEY_AOSP_VENDOR_SECURITY_PATCH =
             "ro.vendor.build.security_patch";
@@ -38,7 +38,7 @@ public class LineageVendorSecurityPatchLevelPreferenceController extends BasePre
     private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
             "ro.lineage.build.vendor_security_patch";
 
-    public LineageVendorSecurityPatchLevelPreferenceController(Context context, String key) {
+    public MKVendorSecurityPatchLevelPreferenceController(Context context, String key) {
         super(context, key);
     }
 

@@ -15,7 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+                  xmlns:mokee="http://schemas.android.com/apk/res/mokee.platform"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
                   android:title="@string/configure_notification_settings"
                   android:key="configure_notification_settings">
@@ -104,16 +104,16 @@
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
         <!-- Battery light -->
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="battery_lights"
-            lineage:requiresConfig="@*lineageos.platform:integer/config_deviceLightCapabilities"
-            lineage:requiresConfigMask="64" />
+            mokee:requiresConfig="@*mokee.platform:integer/config_deviceLightCapabilities"
+            mokee:requiresConfigMask="64" />
 
         <!-- Notification lights -->
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
+        <org.mokee.internal.mkparts.MKPartsPreference
             android:key="notification_lights"
-            lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
-            lineage:replacesKey="notification_pulse" />
+            mokee:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
+            mokee:replacesKey="notification_pulse" />
 
         <!-- Default notification ringtone -->
         <com.android.settings.DefaultRingtonePreference

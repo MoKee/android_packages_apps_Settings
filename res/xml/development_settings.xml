@@ -35,7 +35,7 @@
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary"
@@ -148,7 +148,7 @@
             android:title="@string/adb_enable"
             android:summary="@string/adb_enable_summary" />
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="adb_notify"
             android:title="@string/adb_notify"
             android:summary="@string/adb_notify_summary"
@@ -164,7 +164,7 @@
         <Preference android:key="clear_adb_keys"
                     android:title="@string/clear_adb_keys" />
 
-        <org.lineageos.internal.preference.HostnamePreference
+        <org.mokee.internal.preference.HostnamePreference
             android:key="device_hostname"
             android:title="@string/device_hostname"
             android:dialogTitle="@string/device_hostname"
@@ -596,7 +596,7 @@
             android:title="@string/notification_bubbles_title"
             android:summary="@string/notification_bubbles_developer_setting_summary"/>
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MKSecureSettingSwitchPreference
             android:key="kill_app_longpress_back"
             android:title="@string/kill_app_longpress_back"
             android:summary="@string/kill_app_longpress_back_summary"

@@ -16,7 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+    xmlns:mokee="http://schemas.android.com/apk/res/mokee.platform"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="display_settings_screen"
     android:title="@string/display_settings"
@@ -113,9 +113,9 @@
         android:title="@string/show_operator_name_title"
         android:summary="@string/show_operator_name_summary" />
 
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
+    <org.mokee.internal.mkparts.MKPartsPreference
         android:key="long_screen_settings"
-        lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
+        mokee:requiresConfig="@*mokee.platform:bool/config_haveHigherAspectRatioScreen" />
 
     <Preference
         android:key="screensaver"
@@ -145,7 +145,7 @@
         android:summary="@string/tap_to_wake_summary" />
 
     <!-- Double tap to sleep -->
-    <lineageos.preference.LineageSystemSettingSwitchPreference
+    <mokee.preference.MKSystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
