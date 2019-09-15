@@ -267,6 +267,8 @@
     <string name="sub_deactivate_failed">Disattivazione fallita.</string>
     <string name="data_usage_app_restrict_data">Dati mobili</string>
     <string name="data_usage_app_restrict_data_summary">Abilita l\'utilizzo dei dati mobili</string>
+    <string name="data_usage_app_restrict_vpn">Dati VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Abilita l\'uso dei dati VPN</string>
     <string name="data_usage_app_restrict_wifi">Dati Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Abilita l\'uso dei dati Wi\u2011Fi</string>
     <string name="unlock_scramble_pin_layout_title">Mescola disposizione</string>
@@ -295,8 +297,15 @@
     <string name="open_lockscreen_tuner">Imposta scorciatoie</string>
     <string name="location_mode_battery_saving_title">Modalità risparmio energetico</string>
     <string name="location_mode_battery_saving_summary">Utilizza solo Wi\u2011Fi, Bluetooth o reti dati per stabilire la posizione (meno accurata)</string>
+    <string name="app_notification_sound_timeout_title">Tempo minimo tra suoni di notifica</string>
+    <string name="app_notification_sound_timeout_summary_template">Consenti suoni o vibrazioni non più di una volta ogni <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Nessuna restrizione</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 secondi</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 secondi</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 minuti</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minuti</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minuti</string>
+    <string name="tethering_allow_vpn_upstreams_title">Consenti ai client di utilizzare le VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Consenti ai client hotspot di utilizzare le connessioni VPN di questo dispositivo per la connettività</string>
 </resources>

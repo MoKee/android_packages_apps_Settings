@@ -53,7 +53,7 @@
     <string name="app_ops_summaries_assist_structure">структура помоћи</string>
     <string name="app_ops_summaries_audio_accessibility_volume">јачина звука за приступачност</string>
     <string name="app_ops_summaries_auto_start">покретање са системом</string>
-    <string name="app_ops_summaries_bind_accessibility_service">везати услугу приступачности</string>
+    <string name="app_ops_summaries_bind_accessibility_service">користити услугу приступачности</string>
     <string name="app_ops_summaries_bluetooth_scan">bluetooth скенирање</string>
     <string name="app_ops_summaries_change_wallpaper">мењање позадине</string>
     <string name="app_ops_summaries_coarse_location">оквирна локација</string>
@@ -155,6 +155,7 @@
     <string name="app_ops_labels_install_packages">Инсталирај пакете</string>
     <string name="app_ops_labels_keep_device_awake">Држи уређај будним</string>
     <string name="app_ops_labels_make_phone_call">Обави телефонски позив</string>
+    <string name="app_ops_labels_manage_ipsec_tunnels">Прилагоди ipsec tunnels</string>
     <string name="app_ops_labels_mock_location">Лажирање локације</string>
     <string name="app_ops_labels_modify_calendar">Мењање календара</string>
     <string name="app_ops_labels_modify_call_log">Мењање евиденције позива</string>
@@ -164,9 +165,11 @@
     <string name="app_ops_labels_monitor_high_power_location">Прати локацију високе снаге</string>
     <string name="app_ops_labels_monitor_location">Праћење локације</string>
     <string name="app_ops_labels_mute_unmute_microphone">Искључивање/укључивање звука микрофона</string>
+    <string name="app_ops_labels_neighboring_cells">Суседне ћелије</string>
     <string name="app_ops_labels_phone_calls">Одговори на телефонске позиве</string>
     <string name="app_ops_labels_picture_in_picture">Користи слику у слици</string>
     <string name="app_ops_labels_play_audio">Пуштање аудио-записа</string>
+    <string name="app_ops_labels_post_notification">Постави обавештење</string>
     <string name="app_ops_labels_project_media">Медији за пројекат</string>
     <string name="app_ops_labels_read_calendar">Читање календара</string>
     <string name="app_ops_labels_read_call_log">Читање евиденције позива</string>
@@ -174,21 +177,43 @@
     <string name="app_ops_labels_read_clipboard">Читање меморије</string>
     <string name="app_ops_labels_read_contacts">Читање контаката</string>
     <string name="app_ops_labels_read_external_storage">Читање екстерног меморијског простора</string>
+    <string name="app_ops_labels_read_mms">Читање MMS порука</string>
     <string name="app_ops_labels_read_phone_numbers">Читај бројеве телефона</string>
     <string name="app_ops_labels_read_phone_state">Читање стања телефона</string>
     <string name="app_ops_labels_read_sms">Читање SMS порука</string>
+    <string name="app_ops_labels_receive_emergency_broadcast">Прими хитне поруке</string>
     <string name="app_ops_labels_receive_sms">Пријем SMS порука</string>
     <string name="app_ops_labels_record_audio">Снимање аудио-записа</string>
+    <string name="app_ops_labels_request_delete_packages">Захтевање брисања пакета</string>
+    <string name="app_ops_labels_run_any_in_background">Извршавање у позадини</string>
     <string name="app_ops_labels_run_in_background">Рад у позадини</string>
+    <string name="app_ops_labels_scan_wifi">Скенирање Wi-Fi мрежа</string>
+    <string name="app_ops_labels_send_mms">Слање MMS порука</string>
     <string name="app_ops_labels_send_sms">Слање SMS порука</string>
     <string name="app_ops_labels_start_at_bootup">Покретање са системом</string>
+    <string name="app_ops_labels_start_foreground">Покретање у првом плану</string>
+    <string name="app_ops_labels_su">Rооt приступ</string>
     <string name="app_ops_labels_toast_window">Приказивање искачућих порука</string>
+    <string name="app_ops_labels_toggle_bluetooth">Пребаци Bluetooth</string>
     <string name="app_ops_labels_toggle_mobile_data">Укључивање/искључивање мобилних података</string>
     <string name="app_ops_labels_toggle_nfc">Укључивање/искључивање NFC-а</string>
     <string name="app_ops_labels_toggle_wifi">Укључивање/искључивање Wi-Fi-а</string>
+    <string name="app_ops_labels_turn_on_screen">Укључивање екрана</string>
+    <string name="app_ops_labels_use_alarm_volume">Контрола јачине аларма</string>
+    <string name="app_ops_labels_use_audio_focus">Управљање аудио-фокусом</string>
+    <string name="app_ops_labels_use_bluetooth_volume">Управљање јачином звука Bluetooth-а</string>
     <string name="app_ops_labels_use_body_sensors">Коришћење сензора за тело</string>
     <string name="app_ops_labels_use_fingerprint">Коришћење отиска прста</string>
+    <string name="app_ops_labels_use_master_volume">Управљање главном јачином звука</string>
+    <string name="app_ops_labels_use_media_buttons">Коришћење дугмади за медије</string>
+    <string name="app_ops_labels_use_media_volume">Контрола јачине за медије</string>
+    <string name="app_ops_labels_use_notification_volume">Управљање јачином звука обавештења</string>
+    <string name="app_ops_labels_use_ring_volume">Управљање јачином звука звона</string>
+    <string name="app_ops_labels_use_vibrate">Користи повратне информације</string>
+    <string name="app_ops_labels_use_voice_volume">Управљање јачином звука позива</string>
+    <string name="app_ops_labels_wifi_change">Промена стања Wi-Fi-а</string>
     <string name="app_ops_labels_write_external_storage">Упис података у екстерни меморијски простор</string>
+    <string name="app_ops_labels_write_mms">Писање MMS порука</string>
     <string name="app_ops_labels_write_sms">Писање SMS порука</string>
     <string name="lock_settings_picker_pattern_size_message">Изаберите величину шаблона</string>
     <string name="lockpattern_settings_enable_error_path_title">Прикажи грешку шаблона</string>
@@ -211,6 +236,8 @@
     <string name="show_dev_already_cm">Нема потебе, опције за програмера су већ омогућене.</string>
     <string name="status_bar_double_tap_to_sleep_title">Додир за спавање</string>
     <string name="status_bar_double_tap_to_sleep_summary">Додирните двапут на статусну траку или на закључани екран да бисте искључили екран</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Пронађите сензор за отиске прстију <xliff:g id="sensor_location">%1$s</xliff:g> вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Пронађите сензор за отиске прстију <xliff:g id="sensor_location">%1$s</xliff:g> вашег телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сензор за отисак прста се налази <xliff:g id="sensor_location">%1$s</xliff:g> телефона.</string>
     <string name="security_settings_fingerprint_sensor_location_back">на задњој страни</string>
     <string name="security_settings_fingerprint_sensor_location_front">на предњој страни</string>
@@ -241,6 +268,8 @@
     <string name="sub_deactivate_failed">Грешка при деактивацији.</string>
     <string name="data_usage_app_restrict_data">Подаци преко целуларне мреже</string>
     <string name="data_usage_app_restrict_data_summary">Дозволи употребу података преко целуларне мреже</string>
+    <string name="data_usage_app_restrict_vpn">Веза преко ВПН</string>
+    <string name="data_usage_app_restrict_vpn_summary">Дозволи употребу података преко ВПН-а</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi подаци</string>
     <string name="data_usage_app_restrict_wifi_summary">Дозволи употребу Wi\u2011Fi података</string>
     <string name="unlock_scramble_pin_layout_title">Насумични распоред</string>
@@ -264,8 +293,20 @@
     <string name="high_touch_sensitivity_summary">Повећава осетљивост екрана ради коришћења уређаја у рукавицама.</string>
     <string name="touchscreen_hovering_title">Задржавање прста</string>
     <string name="touchscreen_hovering_summary">Дозвољава ти да лебдиш екраном као миш у веб претраживачу, удаљеном десктопу, итд</string>
+    <string name="directly_show_lock">Директно откључавање</string>
+    <string name="directly_show_lock_summary">Прескочи укључење екрана прстом и иди дирекно на унос</string>
+    <string name="open_lockscreen_tuner">Промени пречице</string>
+    <string name="location_mode_battery_saving_title">Уштеда батерије мод</string>
+    <string name="location_mode_battery_saving_summary">Користите Wi-Fi, Bluetooth или мобилне мреже за одређивање локације.( мање прецизно)</string>
+    <string name="app_notification_sound_timeout_title">Минимални период између звука обавештавања</string>
+    <string name="app_notification_sound_timeout_summary_template">Звуци и вибрација не чешће од једном сваких <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Без ограничења</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 секунди</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунди</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 минут</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 минута</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 минута</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 минута</string>
+    <string name="tethering_allow_vpn_upstreams_title">Дозволи клијенту да користи ВПН</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе ВПН везе овог уређаја за повезивање на интернет</string>
 </resources>
