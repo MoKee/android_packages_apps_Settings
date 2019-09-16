@@ -17,9 +17,23 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mokee="http://schemas.android.com/apk/res/mokee.platform"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="gesture_settings_screen"
     android:title="@string/gesture_preference_title">
+
+    <org.mokee.internal.mkparts.MKPartsPreference
+        android:key="touchscreen_gesture_settings"
+        mokee:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES" />
+
+    <mokee.preference.RemotePreference
+            android:key="device_touchscreen_gesture_settings"
+            android:title="@string/touchscreen_gesture_settings_title"
+            android:summary="@string/touchscreen_gesture_settings_summary"
+            mokee:replacesKey="touchscreen_gesture_settings"
+            mokee:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES">
+        <intent android:action="org.mokee.settings.device.GESTURE_SETTINGS" />
+    </mokee.preference.RemotePreference>
 
     <Preference
         android:key="gesture_assist_input_summary"
