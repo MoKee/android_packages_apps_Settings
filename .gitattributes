@@ -1,0 +1,3 @@
+res/values-*/ext_arrays.xml merge=ours
+res/values-*/ext_strings.xml merge=ours
+res/values-*/ext_strings.xml merge=ours
