@@ -104,6 +104,7 @@
     <string name="app_ops_categories_other">Ostalo</string>
     <string name="app_ops_summaries_coarse_location">gruba lokacija</string>
     <string name="app_ops_summaries_fine_location">dobra lokacija</string>
+    <string name="app_ops_summaries_gps">GPS</string>
     <string name="app_ops_summaries_vibrate">vibriranje</string>
     <string name="app_ops_summaries_read_contacts">pročitaj kontakte</string>
     <string name="app_ops_summaries_modify_contacts">izmjeni kontakte</string>
@@ -179,6 +180,7 @@
     <string name="app_ops_summaries_superuser">root pristup</string>
     <string name="app_ops_labels_coarse_location">Gruba lokacija</string>
     <string name="app_ops_labels_fine_location">Dobra lokacija</string>
+    <string name="app_ops_labels_gps">GPS</string>
     <string name="app_ops_labels_vibrate">Vibracija</string>
     <string name="app_ops_labels_read_contacts">Čitaj kontakte</string>
     <string name="app_ops_labels_modify_contacts">Izmjeni kontakte</string>
