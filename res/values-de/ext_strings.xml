@@ -43,6 +43,7 @@
     <string name="app_ops_categories_bootup">Systemstart</string>
     <string name="app_ops_categories_su">Root-Zugriff</string>
     <string name="app_ops_categories_other">Andere</string>
+    <string name="app_ops_summaries_accept_handover">Übergabe eines Anrufs aus einer anderen App</string>
     <string name="app_ops_summaries_access_camera">auf die Kamera zuzugreifen</string>
     <string name="app_ops_summaries_access_notifications">Auf Benachrichtigungen zugreifen</string>
     <string name="app_ops_summaries_activate_vpn">VPN aktivieren</string>
@@ -52,6 +53,7 @@
     <string name="app_ops_summaries_assist_structure">Strukturassistent</string>
     <string name="app_ops_summaries_audio_accessibility_volume">Bedienungshilfen-Lautstärke</string>
     <string name="app_ops_summaries_auto_start">automatisch zu starten</string>
+    <string name="app_ops_summaries_bind_accessibility_service">Bedienungshilfen</string>
     <string name="app_ops_summaries_bluetooth_scan">bluetooth-Suche</string>
     <string name="app_ops_summaries_change_wallpaper">Hintergrundbild zu ändern</string>
     <string name="app_ops_summaries_coarse_location">Ungefährer Standort</string>
@@ -67,6 +69,7 @@
     <string name="app_ops_summaries_install_packages">Pakete zu installieren</string>
     <string name="app_ops_summaries_keep_device_awake">den Ruhezustand zu deaktivieren</string>
     <string name="app_ops_summaries_make_phone_call">Anrufe zu tätigen</string>
+    <string name="app_ops_summaries_manage_ipsec_tunnels">IPSec-Tunnel verwalten</string>
     <string name="app_ops_summaries_mock_location">Standorte simulieren</string>
     <string name="app_ops_summaries_modify_calendar">Kalender ändern</string>
     <string name="app_ops_summaries_modify_call_log">Anrufprotokoll ändern</string>
