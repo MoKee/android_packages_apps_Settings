@@ -21,6 +21,6 @@
     <string name="filter_substratum_apps">Substratum теме</string>
     <string name="menu_show_substratum">Прикажи теме</string>
     <string name="menu_hide_substratum">Сакриј теме</string>
-    <string name="mkcenter_verify_failed_toast">Замрзаванје или уклањање MoKee Center-а може да наруши стање система. Вратите у предходно стање и онда покушајте поново.</string>
+    <string name="mkcenter_verify_failed_toast">Замрзавање или уклањање MoKee Center-а може да наруши стање система. Вратите у предходно стање и онда покушајте поново.</string>
     <string name="system_dashboard_summary_mk">Језици, временске зоне, чување података</string>
 </resources>
