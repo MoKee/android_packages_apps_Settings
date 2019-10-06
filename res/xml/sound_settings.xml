@@ -65,7 +65,7 @@
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="ring_volume"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/ic_audio_ring"
         android:title="@string/ring_volume_option_title"
         android:order="-160"
         settings:controller="com.android.settings.notification.RingVolumePreferenceController"/>
@@ -86,6 +86,29 @@
         android:title="@string/notification_volume_option_title"
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
+
+    <!-- Link ringtone and notification volumes -->
+    <mokee.preference.SecureSettingSwitchPreference
+        android:key="volume_link_notification"
+        android:title="@string/volume_link_notification_title"
+        android:defaultValue="true"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
+
+    <!-- Increasing ring -->
+    <mokee.preference.MKSystemSettingSwitchPreference
+        android:key="increasing_ring"
+        android:title="@string/increasing_ring_volume_option_title"
+        android:order="-136"
+        settings:controller="com.android.settings.notification.IncreasingRingPreferenceController" />
+
+    <!-- Increasing ring volume -->
+    <com.android.settings.notification.IncreasingRingVolumePreference
+        android:key="increasing_ring_volume"
+        android:icon="@drawable/ring_notif_increasing"
+        android:dependency="increasing_ring"
+        android:order="-135"
+        settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
     <!-- Also vibrate for calls -->
     <SwitchPreference
@@ -140,6 +163,23 @@
         android:persistent="false"
         android:ringtoneType="alarm"
         android:order="-80"/>
+
+    <!-- Interruptions -->
+    <com.android.settingslib.RestrictedPreference
+        android:key="zen_mode"
+        android:title="@string/zen_mode_settings_title"
+        android:fragment="com.android.settings.notification.ZenModeSettings"
+        android:order="-120"
+        settings:useAdminDisabledSummary="true"
+        settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
+        settings:allowDividerAbove="true"/>
+
+    <Preference
+        android:key="gesture_prevent_ringing_sound"
+        android:title="@string/gesture_prevent_ringing_sound_title"
+        android:order="-110"
+        android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
+        settings:controller="com.android.settings.gestures.PreventRingingPreferenceController" />
 
     <!-- Other sounds -->
     <PreferenceCategory
