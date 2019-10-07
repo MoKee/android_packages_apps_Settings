@@ -38,14 +38,6 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MKVersionDetailPreferenceController"/>
 
-    <!-- MoKee API version -->
-    <Preference
-        android:key="mk_api_version"
-        android:title="@*mokee.platform:string/mk_api_level"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MKApiVersionPreferenceController"/>
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"
