@@ -56,8 +56,8 @@
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖形大小</string>
     <string name="lockpattern_settings_enable_error_path_title">顯示解鎖圖形錯誤</string>
     <string name="lockpattern_settings_enable_dots_title">顯示解鎖圖形點</string>
-    <string name="lockscreen_vibrate_enabled_title">震動</string>
-    <string name="lockscreen_vibrate_enabled_head">解鎖時震動</string>
+    <string name="lockscreen_vibrate_enabled_title">振動</string>
+    <string name="lockscreen_vibrate_enabled_head">解鎖時振動</string>
     <string name="adb_enable">Android 偵錯</string>
     <string name="adb_enable_summary">啟用 Android Debug Bridge (ADB) 介面</string>
     <string name="adb_notify">偵錯通知</string>
@@ -105,7 +105,7 @@
     <string name="app_ops_summaries_coarse_location">約略位置</string>
     <string name="app_ops_summaries_fine_location">精確位置</string>
     <string name="app_ops_summaries_gps">GPS</string>
-    <string name="app_ops_summaries_vibrate">震動</string>
+    <string name="app_ops_summaries_vibrate">振動</string>
     <string name="app_ops_summaries_read_contacts">讀取聯絡人</string>
     <string name="app_ops_summaries_modify_contacts">修改聯絡人</string>
     <string name="app_ops_summaries_read_call_log">讀取通話紀錄</string>
@@ -181,7 +181,7 @@
     <string name="app_ops_labels_coarse_location">粗略位置</string>
     <string name="app_ops_labels_fine_location">精確位置</string>
     <string name="app_ops_labels_gps">GPS</string>
-    <string name="app_ops_labels_vibrate">震動</string>
+    <string name="app_ops_labels_vibrate">振動</string>
     <string name="app_ops_labels_read_contacts">讀取聯絡人資料</string>
     <string name="app_ops_labels_modify_contacts">修改聯絡人資料</string>
     <string name="app_ops_labels_read_call_log">讀取通話紀錄</string>
