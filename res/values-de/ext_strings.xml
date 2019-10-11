@@ -94,8 +94,11 @@
     <string name="app_ops_summaries_read_phone_numbers">Telefonnummern lesen</string>
     <string name="app_ops_summaries_read_phone_state">Telefonstatus lesen</string>
     <string name="app_ops_summaries_read_sms">SMS lesen</string>
+    <string name="app_ops_summaries_receive_emergency_broadcast">Notfall-Broadcasts Nachricht empfangen</string>
     <string name="app_ops_summaries_receive_sms">SMS empfangen</string>
     <string name="app_ops_summaries_record_audio">Audio aufzeichnen</string>
+    <string name="app_ops_summaries_request_delete_packages">Löschen von Paketen anfordern</string>
+    <string name="app_ops_summaries_run_any_in_background">Irgendetwas im Hintergrund ausführen</string>
     <string name="app_ops_summaries_run_in_background">im Hintergrund ausgeführt zu werden</string>
     <string name="app_ops_summaries_scan_wifi">WLAN-Netzwerke zu scannen</string>
     <string name="app_ops_summaries_send_mms">eine MMS zu senden</string>
