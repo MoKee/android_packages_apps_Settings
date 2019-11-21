@@ -49,16 +49,6 @@
 
         <TextView
             style="@style/device_info_dialog_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@*mokee.platform:string/mk_api_level"/>
-        <org.mokee.internal.preference.deviceinfo.MKAPIVersionTextView
-            style="@style/device_info_dialog_value"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            style="@style/device_info_dialog_label"
             android:id="@+id/security_patch_level_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
