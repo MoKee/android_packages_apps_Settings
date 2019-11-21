@@ -44,7 +44,7 @@ public class BatteryPercentagePreferenceControllerTest {
     }
 
     private int getPercentageSetting() {
-        return Settings.System.getInt(mContext.getContentResolver(), SHOW_BATTERY_PERCENT, 0);
+        return Settings.System.getInt(mContext.getContentResolver(), SHOW_BATTERY_PERCENT, 1);
     }
 
     @Test
