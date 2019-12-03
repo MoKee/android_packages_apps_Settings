@@ -99,5 +99,5 @@
         android:key="swipe_to_screenshot"
         android:title="@string/swipe_to_screenshot_gesture_title"
         android:summary="@string/swipe_to_screenshot_gesture_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 </PreferenceScreen>
