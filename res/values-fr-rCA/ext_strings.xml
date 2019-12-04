@@ -267,6 +267,8 @@
     <string name="sub_deactivate_failed">La désactivation a échoué.</string>
     <string name="data_usage_app_restrict_data">Données mobiles</string>
     <string name="data_usage_app_restrict_data_summary">Activer l\'utilisation des données mobiles</string>
+    <string name="data_usage_app_restrict_vpn">Données VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activer l\'utilisation des données VPN</string>
     <string name="data_usage_app_restrict_wifi">Données Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Activer l\'utilisation des données Wi\u2011Fi</string>
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
@@ -292,8 +294,19 @@
     <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
     <string name="directly_show_lock">Déverrouillage direct</string>
     <string name="directly_show_lock_summary">Passer l\'étape du glisser pour déverrouiller l\'écran et entrer directement le code</string>
+    <string name="open_lockscreen_tuner">Modifier les raccourcis</string>
+    <string name="location_mode_battery_saving_title">Mode économie d\'énergie</string>
+    <string name="location_mode_battery_saving_summary">Utilisez uniquement les réseaux Wi\u2011Fi, Bluetooth ou réseau cellulaire pour déterminer l\'emplacement (moins précis)</string>
+    <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
+    <string name="app_notification_sound_timeout_summary_template">Permettre des sons ou des vibrations pas plus d’une fois chaque <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 secondes</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+    <string name="tethering_allow_vpn_upstreams_title">Autoriser les clients à utiliser des VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil pour la connectivité en amont</string>
+    <string name="network_settings_shortcut_title">Réseau mobile</string>
 </resources>
