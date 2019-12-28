@@ -309,4 +309,5 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 минута</string>
     <string name="tethering_allow_vpn_upstreams_title">Дозволи клијенту да користи ВПН</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе ВПН везе овог уређаја за повезивање на интернет</string>
+    <string name="network_settings_shortcut_title">Мобилна мрежа</string>
 </resources>

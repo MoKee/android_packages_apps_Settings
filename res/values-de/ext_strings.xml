@@ -128,6 +128,7 @@
     <string name="app_ops_summaries_write_external_storage">auf externen Speicher schreiben</string>
     <string name="app_ops_summaries_write_mms">eine MMS zu schreiben</string>
     <string name="app_ops_summaries_write_sms">SMS schreiben</string>
+    <string name="app_ops_labels_access_camera">Auf die Kamera zugreifen</string>
     <string name="app_ops_labels_access_notifications">Auf Benachrichtigungen zugreifen</string>
     <string name="app_ops_labels_activate_vpn">VPN aktivieren</string>
     <string name="app_ops_labels_add_voicemail">Sprachnachricht hinzufügen</string>
@@ -135,6 +136,7 @@
     <string name="app_ops_labels_assist_screenshot">Screenshotassistent</string>
     <string name="app_ops_labels_assist_structure">Strukturassistent</string>
     <string name="app_ops_labels_audio_accessibility_volume">Bedienungshilfen-Lautstärke</string>
+    <string name="app_ops_labels_auto_start">Beim Gerätestart ausführen</string>
     <string name="app_ops_labels_coarse_location">Ungefährer Standort</string>
     <string name="app_ops_labels_draw_on_top">Über anderen Apps einblenden</string>
     <string name="app_ops_labels_fine_location">Genauer Standort</string>
@@ -167,6 +169,7 @@
     <string name="app_ops_labels_record_audio">Audio aufzeichnen</string>
     <string name="app_ops_labels_run_in_background">Im Hintergrund ausführen</string>
     <string name="app_ops_labels_send_sms">SMS senden</string>
+    <string name="app_ops_labels_start_at_bootup">Beim Gerätestart ausführen</string>
     <string name="app_ops_labels_toast_window">Pop-ups anzeigen</string>
     <string name="app_ops_labels_toggle_mobile_data">Mobile Daten ein-/ausschalten</string>
     <string name="app_ops_labels_toggle_nfc">NFC ein-/ausschalten</string>
