@@ -23,6 +23,8 @@
     <string name="advanced_reboot_summary">Показывать дополнительные опции перезагрузки устройства (в режим загрузчика или восстановления) в меню кнопки питания</string>
     <string name="adb_enable">Режим отладки</string>
     <string name="adb_enable_summary">Включить отладочный интерфейс Android Debug Bridge (ADB)</string>
+    <string name="adb_enable_root">Корневая отладка</string>
+    <string name="adb_enable_summary_root">Разрешить запуск Android отладки как root</string>
     <string name="adb_notify">Уведомление об отладке</string>
     <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
     <string name="adb_over_network">Отладка по сети</string>

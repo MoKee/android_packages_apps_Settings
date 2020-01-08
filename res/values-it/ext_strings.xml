@@ -23,6 +23,8 @@
     <string name="advanced_reboot_summary">Quando sbloccato, mostra le opzioni per il riavvio in recovery o bootloader nel menù di accensione</string>
     <string name="adb_enable">Debug Android</string>
     <string name="adb_enable_summary">Attiva l\'interfaccia di Android Debug Bridge (ADB)</string>
+    <string name="adb_enable_root">Rooted debugging</string>
+    <string name="adb_enable_summary_root">Consenti l\'esecuzione del debugging di Android come root</string>
     <string name="adb_notify">Notifica di debug</string>
     <string name="adb_notify_summary">Visualizza una notifica quando il debug USB o rete è attivo</string>
     <string name="adb_over_network">ADB attraverso la rete</string>
