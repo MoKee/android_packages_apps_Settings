@@ -46,6 +46,7 @@
     <string name="app_ops_summaries_access_notifications">mga pabatid ng access</string>
     <string name="app_ops_summaries_activate_vpn">i-activate ang VPN</string>
     <string name="app_ops_summaries_add_voicemail">magdagdag ng voicemail</string>
+    <string name="app_ops_summaries_app_start_foreground">paganahin instant app Sa foreground</string>
     <string name="app_ops_summaries_assist_screenshot">tulungan ang screenshot</string>
     <string name="app_ops_summaries_assist_structure">tulungan ang istraktura</string>
     <string name="app_ops_summaries_auto_start">simulan sa power up</string>

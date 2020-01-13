@@ -79,6 +79,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">Standort mit hohem Stromverbrauch beobachten</string>
     <string name="app_ops_summaries_monitor_location">Standort beobachten</string>
     <string name="app_ops_summaries_mute_unmute_microphone">Mikrofon ein-/ausschalten</string>
+    <string name="app_ops_summaries_neighboring_cells">Benachbarte Netze</string>
     <string name="app_ops_summaries_phone_calls">Anrufe beantworten</string>
     <string name="app_ops_summaries_picture_in_picture">Bild im Bild verwenden</string>
     <string name="app_ops_summaries_play_audio">Audio wiedergeben</string>
@@ -128,6 +129,7 @@
     <string name="app_ops_summaries_write_external_storage">auf externen Speicher schreiben</string>
     <string name="app_ops_summaries_write_mms">eine MMS zu schreiben</string>
     <string name="app_ops_summaries_write_sms">SMS schreiben</string>
+    <string name="app_ops_labels_accept_handover">Übergabe eines Anrufs aus einer anderen App</string>
     <string name="app_ops_labels_access_camera">Auf die Kamera zugreifen</string>
     <string name="app_ops_labels_access_notifications">Auf Benachrichtigungen zugreifen</string>
     <string name="app_ops_labels_activate_vpn">VPN aktivieren</string>
@@ -137,12 +139,23 @@
     <string name="app_ops_labels_assist_structure">Strukturassistent</string>
     <string name="app_ops_labels_audio_accessibility_volume">Bedienungshilfen-Lautstärke</string>
     <string name="app_ops_labels_auto_start">Beim Gerätestart ausführen</string>
+    <string name="app_ops_labels_bind_accessibility_service">Anbindung an den Service für Bedienungshilfen</string>
+    <string name="app_ops_labels_bluetooth_scan">Bluetooth-Suche</string>
+    <string name="app_ops_labels_change_wallpaper">Hintergrundbild ändern</string>
     <string name="app_ops_labels_coarse_location">Ungefährer Standort</string>
+    <string name="app_ops_labels_delete_call_log">Anrufprotokoll löschen</string>
+    <string name="app_ops_labels_delete_contacts">Ihre Kontakte löschen</string>
+    <string name="app_ops_labels_delete_mms">Ihre MMS-Nachrichten löschen</string>
+    <string name="app_ops_labels_delete_sms">Ihre SMS-Nachricht löschen</string>
     <string name="app_ops_labels_draw_on_top">Über anderen Apps einblenden</string>
     <string name="app_ops_labels_fine_location">Genauer Standort</string>
     <string name="app_ops_labels_get_accounts">Konten abrufen</string>
     <string name="app_ops_labels_get_usage_stats">Nutzungsstatistiken abrufen</string>
     <string name="app_ops_labels_gps">GPS</string>
+    <string name="app_ops_labels_install_packages">Anwendungen installieren</string>
+    <string name="app_ops_labels_keep_device_awake">Ihr Gerät wach halten</string>
+    <string name="app_ops_labels_make_phone_call">Einen Anruf tätigen</string>
+    <string name="app_ops_labels_manage_ipsec_tunnels">IPSec-Tunnel verwalten</string>
     <string name="app_ops_labels_mock_location">Simulierte Standorte</string>
     <string name="app_ops_labels_modify_calendar">Kalender ändern</string>
     <string name="app_ops_labels_modify_call_log">Anrufprotokoll ändern</string>
@@ -152,9 +165,11 @@
     <string name="app_ops_labels_monitor_high_power_location">Standort mit hohem Stromverbrauch beobachten</string>
     <string name="app_ops_labels_monitor_location">Standort beobachten</string>
     <string name="app_ops_labels_mute_unmute_microphone">Mikrofon ein-/ausschalten</string>
+    <string name="app_ops_labels_neighboring_cells">Benachbarte Netze</string>
     <string name="app_ops_labels_phone_calls">Anrufe beantworten</string>
     <string name="app_ops_labels_picture_in_picture">Bild im Bild verwenden</string>
     <string name="app_ops_labels_play_audio">Audio wiedergeben</string>
+    <string name="app_ops_labels_post_notification">Eine Benachrichtigung erstellen</string>
     <string name="app_ops_labels_project_media">Medien projizieren</string>
     <string name="app_ops_labels_read_calendar">Kalender lesen</string>
     <string name="app_ops_labels_read_call_log">Anrufprotokoll lesen</string>
@@ -162,21 +177,43 @@
     <string name="app_ops_labels_read_clipboard">Zwischenablage lesen</string>
     <string name="app_ops_labels_read_contacts">Kontakte lesen</string>
     <string name="app_ops_labels_read_external_storage">Externen Speicher lesen</string>
+    <string name="app_ops_labels_read_mms">Ihre MMS-Nachrichten lesen</string>
     <string name="app_ops_labels_read_phone_numbers">Telefonnummern lesen</string>
     <string name="app_ops_labels_read_phone_state">Telefonstatus lesen</string>
     <string name="app_ops_labels_read_sms">SMS lesen</string>
+    <string name="app_ops_labels_receive_emergency_broadcast">Notfall-Broadcast Nachricht empfangen</string>
     <string name="app_ops_labels_receive_sms">SMS empfangen</string>
     <string name="app_ops_labels_record_audio">Audio aufzeichnen</string>
+    <string name="app_ops_labels_request_delete_packages">Löschen von Paketen anfordern</string>
+    <string name="app_ops_labels_run_any_in_background">Im Hintergrund ausführen lassen</string>
     <string name="app_ops_labels_run_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_labels_scan_wifi">WLAN-Netzwerke suchen</string>
+    <string name="app_ops_labels_send_mms">Eine MMS-Nachricht senden</string>
     <string name="app_ops_labels_send_sms">SMS senden</string>
     <string name="app_ops_labels_start_at_bootup">Beim Gerätestart ausführen</string>
+    <string name="app_ops_labels_start_foreground">Im Vordergrund starten</string>
+    <string name="app_ops_labels_su">Root-Zugriff erhalten</string>
     <string name="app_ops_labels_toast_window">Pop-ups anzeigen</string>
+    <string name="app_ops_labels_toggle_bluetooth">Bluetooth ein-/ausschalten</string>
     <string name="app_ops_labels_toggle_mobile_data">Mobile Daten ein-/ausschalten</string>
     <string name="app_ops_labels_toggle_nfc">NFC ein-/ausschalten</string>
     <string name="app_ops_labels_toggle_wifi">WLAN ein-/ausschalten</string>
+    <string name="app_ops_labels_turn_on_screen">Den Bildschirm einschalten</string>
+    <string name="app_ops_labels_use_alarm_volume">Weckerlautstärke einstellen</string>
+    <string name="app_ops_labels_use_audio_focus">Audio-Wiedergabepriorität ändern</string>
+    <string name="app_ops_labels_use_bluetooth_volume">Bluetooth-Lautstärke ändern</string>
     <string name="app_ops_labels_use_body_sensors">Körpersensoren verwenden</string>
     <string name="app_ops_labels_use_fingerprint">Fingerabdruck nutzen</string>
+    <string name="app_ops_labels_use_master_volume">Gesamtlautstärke ändern</string>
+    <string name="app_ops_labels_use_media_buttons">Medienschaltflächen verwenden</string>
+    <string name="app_ops_labels_use_media_volume">Medienlautstärke ändern</string>
+    <string name="app_ops_labels_use_notification_volume">Benachrichtigungs-Lautstärke ändern</string>
+    <string name="app_ops_labels_use_ring_volume">Klingelton-Lautstärke ändern</string>
+    <string name="app_ops_labels_use_vibrate">Haptisches Feedback verwenden</string>
+    <string name="app_ops_labels_use_voice_volume">Anruf-Lautstärke ändern</string>
+    <string name="app_ops_labels_wifi_change">WLAN-Status ändern</string>
     <string name="app_ops_labels_write_external_storage">Auf externen Speicher schreiben</string>
+    <string name="app_ops_labels_write_mms">Eine MMS-Nachricht schreiben</string>
     <string name="app_ops_labels_write_sms">SMS schreiben</string>
     <string name="lock_settings_picker_pattern_size_message">Größe des Musters auswählen</string>
     <string name="lockpattern_settings_enable_error_path_title">Sperrmuster-Fehler anzeigen</string>
@@ -198,6 +235,8 @@
     <string name="show_dev_already_cm">Nicht nötig, Sie haben die Entwicklereinstellungen bereits aktiviert.</string>
     <string name="status_bar_double_tap_to_sleep_title">Tippen für Standby</string>
     <string name="status_bar_double_tap_to_sleep_summary">Doppeltippe auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> Ihres Tablets.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> Ihres Geräts.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Suchen Sie den Fingerabdrucksensor auf der <xliff:g id="sensor_location">%1$s</xliff:g> des Geräts.</string>
     <string name="security_settings_fingerprint_sensor_location_back">Rückseite</string>
     <string name="security_settings_fingerprint_sensor_location_front">Front</string>
@@ -228,6 +267,8 @@
     <string name="sub_deactivate_failed">Deaktivierung fehlgeschlagen.</string>
     <string name="data_usage_app_restrict_data">Mobilfunkdaten</string>
     <string name="data_usage_app_restrict_data_summary">Mobilfunkdatenzugriff erlauben</string>
+    <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
+    <string name="data_usage_app_restrict_vpn_summary">Nutzung von VPN-Daten erlauben</string>
     <string name="data_usage_app_restrict_wifi">WLAN-Daten</string>
     <string name="data_usage_app_restrict_wifi_summary">WLAN-Datenzugriff erlauben</string>
     <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
@@ -251,8 +292,21 @@
     <string name="high_touch_sensitivity_summary">Touch-Empfindlichkeit erhöhen, um den Touchscreen auch mit Handschuhen bedienen zu können</string>
     <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
     <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
+    <string name="directly_show_lock">Direkt entsperren</string>
+    <string name="directly_show_lock_summary">Wischen zum Entsperren des Bildschirms überspringen und direkt mit der PIN-Eingabe beginnen</string>
+    <string name="open_lockscreen_tuner">Verknüpfungen ändern</string>
+    <string name="location_mode_battery_saving_title">Energiesparmodus</string>
+    <string name="location_mode_battery_saving_summary">Nur WLAN, Bluetooth oder Mobilfunknetze zur Standortbestimmung nutzen (weniger genau)</string>
+    <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungstönen</string>
+    <string name="app_notification_sound_timeout_summary_template">Töne und Vibrationen nur alle <xliff:g id="duration">%1$s</xliff:g> zulassen</string>
+    <string name="app_notification_sound_timeout_value_none">Keine Beschränkung</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 Sekunden</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 Sekunden</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 Minute</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 Minuten</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 Minuten</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 Minuten</string>
+    <string name="tethering_allow_vpn_upstreams_title">Clients erlauben VPN zu verwenden</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Erlaubt Hotspot-Clients die VPN-Verbindungen dieses Gerätes für die Upstream-Konnektivität zu verwenden</string>
+    <string name="network_settings_shortcut_title">Mobile Netzwerke</string>
 </resources>

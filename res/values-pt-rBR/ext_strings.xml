@@ -54,7 +54,7 @@
     <string name="app_ops_summaries_audio_accessibility_volume">volume do áudio de acessibilidade</string>
     <string name="app_ops_summaries_auto_start">iniciar ao ligar</string>
     <string name="app_ops_summaries_bind_accessibility_service">vincular o serviço de acessibilidade</string>
-    <string name="app_ops_summaries_bluetooth_scan">Pesquisa por Bluetooth</string>
+    <string name="app_ops_summaries_bluetooth_scan">Procura por dispositivos bluetooth</string>
     <string name="app_ops_summaries_change_wallpaper">mudar o papel de parede</string>
     <string name="app_ops_summaries_coarse_location">localização imprecisa</string>
     <string name="app_ops_summaries_delete_call_log">apagar o seu registro de chamadas</string>
@@ -306,4 +306,7 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir que todos os clientes usem VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes utilizem a conexão deste dispositivo\u2019s para se conectar a VPN.</string>
+    <string name="network_settings_shortcut_title">Redes móveis</string>
 </resources>
