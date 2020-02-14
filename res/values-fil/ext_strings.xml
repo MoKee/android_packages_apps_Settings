@@ -157,6 +157,7 @@
     <string name="app_ops_summaries_turn_screen_on">i-turn on ang screen</string>
     <string name="app_ops_summaries_get_accounts">kumuha ng mga account</string>
     <string name="app_ops_summaries_run_in_background">buksan sa background</string>
+    <string name="app_ops_summaries_instant_app_start_foreground">paganahin instant app Sa foreground</string>
     <string name="app_ops_summaries_toggle_wifi">i-toggle ang Wi-Fi</string>
     <string name="app_ops_summaries_toggle_bluetooth">i-toggle ang bluetooth</string>
     <string name="app_ops_summaries_start_at_boot">simulan ang boot</string>
