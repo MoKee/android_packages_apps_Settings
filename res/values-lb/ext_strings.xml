@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">Usteigend Schelltounlautstäerkt</string>
     <string name="increasing_ring_min_volume_title">Start-Lautstäerkt</string>
     <string name="increasing_ring_ramp_up_time_title">Ulafzäit</string>
+    <string name="lockscreen_visualizer_title">Musek-Visualiséierung uweisen</string>
     <string name="lockpattern_settings_enable_error_path_title">Musterfeeler uweisen</string>
     <string name="lockpattern_settings_enable_dots_title">Musterpunkten uweisen</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 Sekonnen</string>

@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">A’ cur an àirde fuaim na seirme</string>
     <string name="increasing_ring_min_volume_title">Àirde na fuaime thòiseachail</string>
     <string name="increasing_ring_ramp_up_time_title">Àm ramp-up</string>
+    <string name="lockscreen_visualizer_title">Seall fir-chlis a’ chiùil</string>
     <string name="lockpattern_settings_enable_error_path_title">Seall mearachd a’ phàtrain</string>
     <string name="lockpattern_settings_enable_dots_title">Seall dotagan a’ phàtrain</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 diogan</string>

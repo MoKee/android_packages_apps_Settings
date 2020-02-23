@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">Volumi fillestar</string>
     <string name="increasing_ring_ramp_up_time_title">Kohëzgjatja e rritjes</string>
     <string name="lockscreen_media_art_title">Shfaq ikonën e albumit</string>
+    <string name="lockscreen_visualizer_title">Trego vizualizuesin e muzikës</string>
     <string name="lock_settings_picker_pattern_size_message">Zgjidh madhësinë e modelit</string>
     <string name="lockpattern_settings_enable_error_path_title">Shfaq gabimet në vizatimin e modelit</string>
     <string name="lockpattern_settings_enable_dots_title">Shfaq pikat e modelit</string>

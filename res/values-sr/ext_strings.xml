@@ -36,6 +36,7 @@
     <string name="increasing_ring_min_volume_title">Почетна јачина звука</string>
     <string name="increasing_ring_ramp_up_time_title">Време појачавања</string>
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
+    <string name="lockscreen_visualizer_title">Визуелизација спектра музике</string>
     <string name="lock_settings_picker_pattern_size_message">Изаберите величину шаблона</string>
     <string name="lockpattern_settings_enable_error_path_title">Прикажи грешку шаблона</string>
     <string name="lockpattern_settings_enable_dots_title">Прикажи тачкице шаблона</string>

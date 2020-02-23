@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">Didėjantis skambėjimo garsumas</string>
     <string name="increasing_ring_min_volume_title">Pradinis garsumas</string>
     <string name="increasing_ring_ramp_up_time_title">Didėjimo laikas</string>
+    <string name="lockscreen_visualizer_title">Rodyti muzikos vizualizaciją</string>
     <string name="lockpattern_settings_enable_error_path_title">Rodyti modelio klaidą</string>
     <string name="lockpattern_settings_enable_dots_title">Rodyti modelio taškus</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekundžių</string>

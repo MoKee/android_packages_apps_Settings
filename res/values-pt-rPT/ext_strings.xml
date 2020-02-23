@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Intervalo de aumento</string>
     <string name="lockscreen_media_art_title">Mostrar capa do álbum</string>
+    <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
     <string name="lock_settings_picker_pattern_size_message">Escolha um tamanho para o padrão</string>
     <string name="lockpattern_settings_enable_error_path_title">Mostrar erro no padrão</string>
     <string name="lockpattern_settings_enable_dots_title">Mostrar os pontos do padrão</string>

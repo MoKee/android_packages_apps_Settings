@@ -36,6 +36,7 @@
     <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
     <string name="increasing_ring_ramp_up_time_title">Wydłużenie odstępu</string>
     <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
+    <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
     <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
     <string name="lockpattern_settings_enable_dots_title">Pokazuj punkty wzoru</string>

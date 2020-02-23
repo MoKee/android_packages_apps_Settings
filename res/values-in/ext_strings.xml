@@ -35,6 +35,7 @@
     <string name="increasing_ring_min_volume_title">Volume awal</string>
     <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
     <string name="lockscreen_media_art_title">Tampilkan sampul media</string>
+    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
     <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
     <string name="lockpattern_settings_enable_error_path_title">Tunjukkan galat pola</string>
     <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>

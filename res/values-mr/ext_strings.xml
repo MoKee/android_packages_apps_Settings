@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">रिंग ध्वनी वाढवणे</string>
     <string name="increasing_ring_min_volume_title">प्रारंभ ध्वनी</string>
     <string name="increasing_ring_ramp_up_time_title">रॅम्प-अप वेळ</string>
+    <string name="lockscreen_visualizer_title">संगीत व्हिज्युअलायझर प्रदर्शित करा</string>
     <string name="lockpattern_settings_enable_error_path_title">पॅटर्न त्रुटी दर्शवा</string>
     <string name="lockpattern_settings_enable_dots_title">पॅटर्न डॉट्स दर्शवा</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 सेकंद</string>

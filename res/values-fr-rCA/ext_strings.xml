@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
     <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
     <string name="lockscreen_media_art_title">Afficher la couverture du média</string>
+    <string name="lockscreen_visualizer_title">Afficher le visualiseur de musique</string>
     <string name="lock_settings_picker_pattern_size_message">Choisir la taille du motif</string>
     <string name="lockpattern_settings_enable_error_path_title">Afficher l\'erreur de schéma</string>
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>

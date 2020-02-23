@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">ৰিং ভলিউম বৃদ্ধি কৰক</string>
     <string name="increasing_ring_min_volume_title">ৰিং ভলিউম</string>
     <string name="increasing_ring_ramp_up_time_title">ৰেম্প-আপ সময়</string>
+    <string name="lockscreen_visualizer_title">সংগীত ভিজুৱেলাইজাৰ প্ৰদৰ্শন কৰক</string>
     <string name="lockpattern_settings_enable_error_path_title">পেটাৰ্ণৰ ত্ৰুটি প্ৰদৰ্শন কৰক</string>
     <string name="lockpattern_settings_enable_dots_title">পেটাৰ্ণৰ ডটবোৰ প্ৰদৰ্শন কৰক</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 চেকেণ্ড</string>

@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">Hasierako bolumena</string>
     <string name="increasing_ring_ramp_up_time_title">Maldaren iraupena</string>
     <string name="lockscreen_media_art_title">Bistaratu azalaren irudia</string>
+    <string name="lockscreen_visualizer_title">Bistaratu musika irudikatzea</string>
     <string name="lock_settings_picker_pattern_size_message">Aukeratu ereduaren tamaina</string>
     <string name="lockpattern_settings_enable_error_path_title">Erakutsi eredu errorea</string>
     <string name="lockpattern_settings_enable_dots_title">Erakutsi ereduaren puntuak</string>

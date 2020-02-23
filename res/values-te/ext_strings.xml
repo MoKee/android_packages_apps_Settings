@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">రింగ్ వాల్యూమును పెంచడం</string>
     <string name="increasing_ring_min_volume_title">ప్రారంభ వాల్యూమ్</string>
     <string name="increasing_ring_ramp_up_time_title">రాంప్-అప్ సమయం</string>
+    <string name="lockscreen_visualizer_title">సంగీత వీక్షకాన్ని ప్రదర్శించుము</string>
     <string name="lockpattern_settings_enable_error_path_title">నమూనా దోషాన్ని చూపుము</string>
     <string name="lockpattern_settings_enable_dots_title">నమూనా చుక్కలను చూపుము</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 సెకనులు</string>

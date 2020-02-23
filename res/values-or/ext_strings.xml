@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">ରିଙ୍ଗ୍‍ ଭୋଲ୍ୟୁମ୍‍ ବଢାଯାଉଛି</string>
     <string name="increasing_ring_min_volume_title">ଭୋଲ୍ୟୁମ୍‍ ଆରଭ କରନ୍ତୁ</string>
     <string name="increasing_ring_ramp_up_time_title">ସମୟ ରାମ୍ପ୍‍-ଅପ୍‍ କରନ୍ତୁ</string>
+    <string name="lockscreen_visualizer_title">ମ୍ୟୁଜିକ୍‍ ଭିଜୁଆଲାଇଜର୍‍ ପ୍ରଦର୍ଶନ କରନ୍ତୁ</string>
     <string name="lockpattern_settings_enable_error_path_title">ପ୍ୟାଟର୍ଣ୍ଣ ତ୍ରୁଟି ଦେଖାନ୍ତୁ</string>
     <string name="lockpattern_settings_enable_dots_title">ପାଟର୍ଣ୍ଣ ଡ୍ଟ୍ସ ଦେଖାନ୍ତୁ</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 ସେକେଣ୍ଡ</string>

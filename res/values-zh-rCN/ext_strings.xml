@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">初始音量</string>
     <string name="increasing_ring_ramp_up_time_title">增强时间</string>
     <string name="lockscreen_media_art_title">显示媒体艺术封面</string>
+    <string name="lockscreen_visualizer_title">显示音乐可视化</string>
     <string name="lock_settings_picker_pattern_size_message">选择图案大小</string>
     <string name="lockpattern_settings_enable_error_path_title">显示图案错误</string>
     <string name="lockpattern_settings_enable_dots_title">显示图案圆点</string>

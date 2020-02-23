@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">حجم الصوت البدئيّ</string>
     <string name="increasing_ring_ramp_up_time_title">زمن التدرج</string>
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
+    <string name="lockscreen_visualizer_title">عرض صورة الغلاف للموسيقى</string>
     <string name="lock_settings_picker_pattern_size_message">اختر حجم النمط</string>
     <string name="lockpattern_settings_enable_error_path_title">إظهار خطأ النمط</string>
     <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>

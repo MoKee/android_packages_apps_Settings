@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Kezdeti hangerő</string>
     <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
     <string name="lockscreen_media_art_title">Média borítójának megjelenítése</string>
+    <string name="lockscreen_visualizer_title">Zenei vizualizáció megjelenítése</string>
     <string name="lock_settings_picker_pattern_size_message">Válassza ki a minta méretét</string>
     <string name="lockpattern_settings_enable_error_path_title">Hibás minta megjelenítése</string>
     <string name="lockpattern_settings_enable_dots_title">Feloldási pontok megjelenítése</string>

@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Volume iniziale</string>
     <string name="increasing_ring_ramp_up_time_title">Tempo di aumento</string>
     <string name="lockscreen_media_art_title">Mostra copertina album</string>
+    <string name="lockscreen_visualizer_title">Mostra visualizzatore musicale</string>
     <string name="lock_settings_picker_pattern_size_message">Scegli la dimensione della sequenza</string>
     <string name="lockpattern_settings_enable_error_path_title">Mostra sequenza errata</string>
     <string name="lockpattern_settings_enable_dots_title">Mostra punti sequenza</string>

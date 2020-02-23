@@ -36,6 +36,7 @@
     <string name="increasing_ring_min_volume_title">Начална сила на звука</string>
     <string name="increasing_ring_ramp_up_time_title">Време на увеличение</string>
     <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
+    <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
     <string name="lock_settings_picker_pattern_size_message">Изберете размера на шаблона</string>
     <string name="lockpattern_settings_enable_error_path_title">Покажи модела на грешката</string>
     <string name="lockpattern_settings_enable_dots_title">Покажи точките на модела</string>

@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Αρχική ένταση</string>
     <string name="increasing_ring_ramp_up_time_title">Χρονικό διάστημα αύξησης</string>
     <string name="lockscreen_media_art_title">Προβολή εξώφυλλου άλμπουμ</string>
+    <string name="lockscreen_visualizer_title">Εμφάνιση οπτικοποίησης μουσικής</string>
     <string name="lock_settings_picker_pattern_size_message">Επιλέξτε ένα μέγεθος μοτίβου</string>
     <string name="lockpattern_settings_enable_error_path_title">Εμφάνιση λάθος μοτίβου</string>
     <string name="lockpattern_settings_enable_dots_title">Εμφάνιση τελειών μοτίβου</string>

@@ -33,6 +33,7 @@
     <string name="increasing_ring_volume_option_title">การเพิ่มเสียงเรียกเข้า</string>
     <string name="increasing_ring_min_volume_title">ระดับเสียงเริ่มต้น</string>
     <string name="increasing_ring_ramp_up_time_title">ระยะเวลาที่ดังเพิ่มขึ้น</string>
+    <string name="lockscreen_visualizer_title">แสดงเส้นจังหวะเพลง</string>
     <string name="lockpattern_settings_enable_error_path_title">แสดงลายเส้นที่ผิดพลาด</string>
     <string name="lockpattern_settings_enable_dots_title">แสดงจุดที่ลากผ่าน</string>
     <string name="app_notification_sound_timeout_title">ระยะเวลาขั้นต่ำระหว่างเสียงการแจ้งเตือน</string>

@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">صدای صعودی زنگ</string>
     <string name="increasing_ring_min_volume_title">میزان صدا هنگام شروع</string>
     <string name="increasing_ring_ramp_up_time_title">زمان افزایش صدا</string>
+    <string name="lockscreen_visualizer_title">نمایش رقص نور موسیقی</string>
     <string name="lockpattern_settings_enable_error_path_title">نمایش الگوی نادرست</string>
     <string name="lockpattern_settings_enable_dots_title">نمایش نقطه‌های الگو</string>
     <string name="app_notification_sound_timeout_value_10_seconds">۱۰ ثانیه</string>

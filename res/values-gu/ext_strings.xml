@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">રિંગ વૉલ્યુમ વધારી રહ્યા છે</string>
     <string name="increasing_ring_min_volume_title">શરૂઆતનું વૉલ્યુમ</string>
     <string name="increasing_ring_ramp_up_time_title">રૅમ્પ-અપ સમય</string>
+    <string name="lockscreen_visualizer_title">મ્યુઝિક વિઝ્યુઅલાઇઝર દર્શાવો</string>
     <string name="lockpattern_settings_enable_error_path_title">પૅટર્ન ખામી દર્શાવો</string>
     <string name="lockpattern_settings_enable_dots_title">પૅટર્ન ડોટ્સ દર્શાવો</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 સેકન્ડ્સ</string>

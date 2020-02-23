@@ -33,6 +33,7 @@
     <string name="increasing_ring_min_volume_title">Simulan ang volume</string>
     <string name="increasing_ring_ramp_up_time_title">Oras ng Ramp-up</string>
     <string name="lockscreen_media_art_title">I-display ang medya cover na art</string>
+    <string name="lockscreen_visualizer_title">I-display ang music visualizer</string>
     <string name="lock_settings_picker_pattern_size_message">Pumili ng isang huwarang laki</string>
     <string name="lockpattern_settings_enable_error_path_title">Ipakita ang huwarang mali</string>
     <string name="lockpattern_settings_enable_dots_title">Ipakita ang huwarang tuldok</string>

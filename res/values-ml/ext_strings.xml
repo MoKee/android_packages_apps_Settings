@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">വര്‍ദ്ധിക്കുന്ന റിംഗ് വോളിയം</string>
     <string name="increasing_ring_min_volume_title">വോളിയം ആരംഭിക്കുക</string>
     <string name="increasing_ring_ramp_up_time_title">റാംപ്-അപ്പ് സമയം</string>
+    <string name="lockscreen_visualizer_title">സംഗീതം വിഷ്വലൈസർ പ്രദര്‍ശനം ചെയ്യുക</string>
     <string name="lockpattern_settings_enable_error_path_title">പാറ്റേൺ പിശക് ദൃശ്യമാക്കുക</string>
     <string name="lockpattern_settings_enable_dots_title">ഡോട്ടുകൾ പാറ്റേൺ ദൃശ്യമാക്കുക</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 സെക്കൻഡ്</string>

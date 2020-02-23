@@ -33,6 +33,7 @@
     <string name="increasing_ring_min_volume_title">Start volum</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up tid</string>
     <string name="lockscreen_media_art_title">Vis media coverbilde</string>
+    <string name="lockscreen_visualizer_title">Vis musikk visualizer</string>
     <string name="lock_settings_picker_pattern_size_message">Velg størrelse på mønster</string>
     <string name="lockpattern_settings_enable_error_path_title">Vis feil</string>
     <string name="lockpattern_settings_enable_dots_title">Vis mønster prikker</string>

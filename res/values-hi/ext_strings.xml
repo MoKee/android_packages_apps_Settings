@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">बढ़ता हुआ रिंगटोन वोल्यूम</string>
     <string name="increasing_ring_min_volume_title">वोल्यूम को शुरू करें</string>
     <string name="increasing_ring_ramp_up_time_title">समय को बढ़ाएँ</string>
+    <string name="lockscreen_visualizer_title">संगीत दृश्यांकक को प्रदर्शित करें</string>
     <string name="lockpattern_settings_enable_error_path_title">पैटर्न त्रुटि दिखाएँ</string>
     <string name="lockpattern_settings_enable_dots_title">पैटर्न बिंदु दिखाएँ</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 सेकंड</string>

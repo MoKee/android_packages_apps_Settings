@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">増幅時間</string>
     <string name="lockscreen_media_art_title">メディアのカバーアートを表示</string>
+    <string name="lockscreen_visualizer_title">音楽ビジュアライザを表示</string>
     <string name="lock_settings_picker_pattern_size_message">パターンサイズを選択してください</string>
     <string name="lockpattern_settings_enable_error_path_title">間違えたパターンを表示</string>
     <string name="lockpattern_settings_enable_dots_title">パターンのドットを表示</string>

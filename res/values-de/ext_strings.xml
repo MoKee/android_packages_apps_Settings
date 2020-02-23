@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
     <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
     <string name="lockscreen_media_art_title">Albumcover anzeigen</string>
+    <string name="lockscreen_visualizer_title">Musikvisualisierung anzeigen</string>
     <string name="lock_settings_picker_pattern_size_message">Größe des Musters auswählen</string>
     <string name="lockpattern_settings_enable_error_path_title">Sperrmuster-Fehler anzeigen</string>
     <string name="lockpattern_settings_enable_dots_title">Sperrmuster-Punkte anzeigen</string>

@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">ரிங் வால்யூமை அதிகரித்தல்</string>
     <string name="increasing_ring_min_volume_title">வால்யூமை தொடங்கு</string>
     <string name="increasing_ring_ramp_up_time_title">ராம்ப்-அப் நேரம்</string>
+    <string name="lockscreen_visualizer_title">காட்சி இசை விஷூவலைஸர்</string>
     <string name="lockpattern_settings_enable_error_path_title">பேட்டர்ன் பிழையை காட்டு</string>
     <string name="lockpattern_settings_enable_dots_title">பேட்டர்ன் புள்ளிகளை காட்டு</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 நொடிகள்</string>

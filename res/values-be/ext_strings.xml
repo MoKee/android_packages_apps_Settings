@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
     <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
     <string name="lockscreen_media_art_title">Адлюстроўваць вокладку мультымедыя</string>
+    <string name="lockscreen_visualizer_title">Візуалізацыя спектра музыкі</string>
     <string name="lock_settings_picker_pattern_size_message">Абяры памер графічнага ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Паказваць няправільны ўвод</string>
     <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі</string>

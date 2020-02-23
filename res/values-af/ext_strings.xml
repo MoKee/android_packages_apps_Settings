@@ -33,6 +33,7 @@
     <string name="increasing_ring_min_volume_title">Begin volume</string>
     <string name="increasing_ring_ramp_up_time_title">Tydsduur</string>
     <string name="lockscreen_media_art_title">Wys media kuns</string>
+    <string name="lockscreen_visualizer_title">Vertoon musiek visualiseerder</string>
     <string name="lock_settings_picker_pattern_size_message">Kies \'n patroongrootte</string>
     <string name="lockpattern_settings_enable_error_path_title">Wys patroon fout</string>
     <string name="lockpattern_settings_enable_dots_title">Wys patroon kolle</string>

@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">עוצמה התחלתית</string>
     <string name="increasing_ring_ramp_up_time_title">אורך זמן ההגברה</string>
     <string name="lockscreen_media_art_title">הצג תמונת אלבום/מדיה</string>
+    <string name="lockscreen_visualizer_title">הצג אפקטים בעת השמעת מוזיקה</string>
     <string name="lock_settings_picker_pattern_size_message">בחר גודל תבנית</string>
     <string name="lockpattern_settings_enable_error_path_title">הצג שגיאות דפוס</string>
     <string name="lockpattern_settings_enable_dots_title">הצג נקודות דפוס</string>

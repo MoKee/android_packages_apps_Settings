@@ -36,6 +36,7 @@
     <string name="increasing_ring_min_volume_title">Startvolume</string>
     <string name="increasing_ring_ramp_up_time_title">Ophoogtijd</string>
     <string name="lockscreen_media_art_title">Albumhoezen weergeven</string>
+    <string name="lockscreen_visualizer_title">Muziekvisualisaties weergeven</string>
     <string name="lock_settings_picker_pattern_size_message">Grootte patroon kiezen</string>
     <string name="lockpattern_settings_enable_error_path_title">Patroonfout weergeven</string>
     <string name="lockpattern_settings_enable_dots_title">Patroonknoppen weergeven</string>

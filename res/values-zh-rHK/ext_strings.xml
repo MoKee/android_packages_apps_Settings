@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
     <string name="lockscreen_media_art_title">鎖屏界面顯示專輯封面</string>
+    <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖形大小</string>
     <string name="lockpattern_settings_enable_error_path_title">顯示圖樣錯誤</string>
     <string name="lockpattern_settings_enable_dots_title">顯示圖樣圓點</string>

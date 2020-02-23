@@ -38,6 +38,7 @@
     <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
     <string name="increasing_ring_ramp_up_time_title">Yükselme zamanı</string>
     <string name="lockscreen_media_art_title">Medya kapak resmini göster</string>
+    <string name="lockscreen_visualizer_title">Müzik görselleştiriciyi görüntüle</string>
     <string name="lock_settings_picker_pattern_size_message">Bir desen boyutu seçin</string>
     <string name="lockpattern_settings_enable_error_path_title">Desen hatasını göster</string>
     <string name="lockpattern_settings_enable_dots_title">Desen noktalarını göster</string>

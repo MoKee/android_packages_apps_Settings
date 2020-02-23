@@ -30,6 +30,7 @@
     <string name="increasing_ring_volume_option_title">قوڭغۇراق ئاۋازىنى تەدرىجىي كۈچەيتىش</string>
     <string name="increasing_ring_min_volume_title">باشلاش ئاۋازى</string>
     <string name="increasing_ring_ramp_up_time_title">كۈچەيتىش ۋاقتى</string>
+    <string name="lockscreen_visualizer_title">نەغمە كۆرۈنۈشچانلىقىنى كۆرسەت</string>
     <string name="lockpattern_settings_enable_error_path_title">ئەندىزە خاتالىقىنى كۆرسىتىش</string>
     <string name="lockpattern_settings_enable_dots_title">ئەندىزە نۇقتىسىنى كۆرسىتىش</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 سېكۇنت</string>

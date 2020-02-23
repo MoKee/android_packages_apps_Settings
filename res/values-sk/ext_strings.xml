@@ -34,6 +34,7 @@
     <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zvyšovania</string>
     <string name="lockscreen_media_art_title">Zobraziť obal médií</string>
+    <string name="lockscreen_visualizer_title">Zobraziť hudobnú vizualizáciu</string>
     <string name="lock_settings_picker_pattern_size_message">Zvoliť veľkosť vzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Zobraziť chybu vzoru</string>
     <string name="lockpattern_settings_enable_dots_title">Zobraziť body vzoru</string>
