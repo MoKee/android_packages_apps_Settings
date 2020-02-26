@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2019 The MoKee Open Source Project
+     Copyright (C) 2013-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="swipe_to_screenshot_gesture_title">Свайп для создания скриншота</string>
-    <string name="swipe_to_screenshot_gesture_summary">Проведите по экрану тремя пальцами вниз для создания скриншота</string>
+    <plurals name="app_ops_count">
+        <item quantity="one">raz</item>
+        <item quantity="few">%d razy</item>
+        <item quantity="many">%d razy</item>
+        <item quantity="other">%d razy</item>
+    </plurals>
 </resources>
