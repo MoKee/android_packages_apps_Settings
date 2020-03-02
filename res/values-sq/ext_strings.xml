@@ -62,4 +62,5 @@
     <string name="touchscreen_gesture_settings_title">Gjestet me prekje në ekran</string>
     <string name="touchscreen_gesture_settings_summary">Kryej gjeste të ndryshme duke prekur ekranin për veprime të shpejta</string>
     <string name="proximity_wake_summary">Kontrollo sensorin e afërsisë para se të ndezësh ekranin</string>
+    <string name="high_touch_sensitivity_title">Ndjesi e lartë e prekjes</string>
 </resources>

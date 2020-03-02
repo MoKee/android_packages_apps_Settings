@@ -68,4 +68,8 @@
     <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
     <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>
     <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan sumber daya</string>
+    <string name="high_touch_sensitivity_title">Kepekaan sentuh tinggi</string>
+    <string name="high_touch_sensitivity_summary">Tingkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
+    <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
+    <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
 </resources>

@@ -18,4 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="adb_over_network_warning">انتباہ: جب ای ڈی بی نیٹ ورک پر فعال ہو تو، آپ کا فون تمام منسلک نیٹ ورکوں کے اندرونی مداخلت کے لئے کھلی ہے! \ n \ n جب آپ باضابطہ نیٹ ورک پر منسلک ہوجائیں تو اس خصوصیت کا استعمال کریں.\n\n کیا آپ واقعی اس فنکشن کو فعال کرنا چاہتے ہیں؟</string>
+    <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>
+    <string name="touchscreen_hovering_summary">آپ کو ویب براؤزرز، ریموٹ ڈیسک ٹاپ وغیرہ وغیرہ میں اسکرین کو ہورانے کی اجازت دیتا ہے</string>
 </resources>

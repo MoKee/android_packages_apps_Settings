@@ -67,4 +67,8 @@
     <string name="proximity_wake_summary">Kontsultatu gertutasun sentsorea pantaila piztu baino lehen</string>
     <string name="wake_when_plugged_or_unplugged_title">Esnatu kargadorearekin</string>
     <string name="wake_when_plugged_or_unplugged_summary">Piztu pantaila kargadorea konektatu edo deskonektatzean</string>
+    <string name="high_touch_sensitivity_title">Ukipen sentsibilitate altua</string>
+    <string name="high_touch_sensitivity_summary">Areagotu pantailaren sentsibilitatea, eskularruekin erabilgarria izan dadin</string>
+    <string name="touchscreen_hovering_title">Pantailaren gainetik pasatu</string>
+    <string name="touchscreen_hovering_summary">Sagua bailitzan pantailaren gainetik pasatzea ahalbidetzen dizu, nabigatzaileetan, urruneko mahaigainetan, eta abar</string>
 </resources>

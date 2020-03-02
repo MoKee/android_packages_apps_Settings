@@ -53,4 +53,8 @@
     <string name="proximity_wake_title">Maiwasan ang aksidenteng panggising</string>
     <string name="wake_when_plugged_or_unplugged_title">Gumising sa plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Buksan ang screen kapag kumokonek o pinuputol ang koneksiyon ng kuryente</string>
+    <string name="high_touch_sensitivity_title">Mataas na paghawak na sensitibo</string>
+    <string name="high_touch_sensitivity_summary">Talasan ang pakitandam ng touchscreen kaya\'t magagamit ito habang may suot na guwantes</string>
+    <string name="touchscreen_hovering_title">Hovering ng touchscreen</string>
+    <string name="touchscreen_hovering_summary">Pinapayagan ka na mag hover sa screen na kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
 </resources>

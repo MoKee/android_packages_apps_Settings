@@ -63,4 +63,8 @@
     <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
     <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
     <string name="wake_when_plugged_or_unplugged_summary">הפעל את המסך כאשר מקור חשמל מתחבר או מתנתק מהמכשיר</string>
+    <string name="high_touch_sensitivity_title">רגישות גבוהה למגע</string>
+    <string name="high_touch_sensitivity_summary">הגבר את רגישות מסך המגע, כך שניתן יהיה להשתמש בו בעת לבישת כפפות</string>
+    <string name="touchscreen_hovering_title">מגע בריחוף</string>
+    <string name="touchscreen_hovering_summary">מאפשר להעביר את האצבע מעל המסך כמו עכבר של מחשב בדפדפנים, בעמדות שליטה מרחוק וכד\'</string>
 </resources>

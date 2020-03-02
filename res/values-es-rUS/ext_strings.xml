@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Comprobar el sensor de proximidad antes de encender la pantalla</string>
     <string name="wake_when_plugged_or_unplugged_title">Encender al conectar el cargador</string>
     <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconectar el cargador</string>
+    <string name="high_touch_sensitivity_title">Alta sensibilidad táctil</string>
+    <string name="high_touch_sensitivity_summary">Aumentar la sensibilidad del panel táctil para que pueda usarse con guantes</string>
+    <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
+    <string name="touchscreen_hovering_summary">Permite deslizarse por la pantalla como un ratón en navegadores, escritorios remotos, etc</string>
 </resources>

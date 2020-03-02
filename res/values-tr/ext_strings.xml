@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
     <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
     <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
+    <string name="high_touch_sensitivity_title">Yüksek dokunmatik hassasiyeti</string>
+    <string name="high_touch_sensitivity_summary">Dokunmatik ekran hassasiyetini arttırarak eldiven ile kullanıma olanak verir</string>
+    <string name="touchscreen_hovering_title">Temassız gezinme</string>
+    <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
 </resources>

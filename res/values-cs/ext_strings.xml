@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
     <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>
     <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení nabíječky</string>
+    <string name="high_touch_sensitivity_title">Vysoká citlivost dotyku</string>
+    <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje použít rukavice</string>
+    <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
+    <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
 </resources>

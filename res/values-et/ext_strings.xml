@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Kontrolli lähedussensorit enne ekraani äratamist</string>
     <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
     <string name="wake_when_plugged_or_unplugged_summary">Lülita ekraan sisse kui ühendatakse või eemaldatakse toite allikas</string>
+    <string name="high_touch_sensitivity_title">Kõrge puutetundlikus</string>
+    <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
+    <string name="touchscreen_hovering_title">Puuteekraani hõljumine</string>
+    <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
 </resources>

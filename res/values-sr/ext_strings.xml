@@ -69,4 +69,8 @@
     <string name="proximity_wake_summary">Провери сензор близине пре буђења екрана</string>
     <string name="wake_when_plugged_or_unplugged_title">Буђење при пуњењу</string>
     <string name="wake_when_plugged_or_unplugged_summary">Укључује екран при повезивању или прекиду везе са извором напајања.</string>
+    <string name="high_touch_sensitivity_title">Велика осетљивост на додир</string>
+    <string name="high_touch_sensitivity_summary">Повећава осетљивост екрана ради коришћења уређаја у рукавицама.</string>
+    <string name="touchscreen_hovering_title">Задржавање прста</string>
+    <string name="touchscreen_hovering_summary">Дозвољава ти да лебдиш екраном као миш у веб претраживачу, удаљеном десктопу, итд</string>
 </resources>

@@ -68,4 +68,8 @@
     <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
     <string name="wake_when_plugged_or_unplugged_title">충전 시 켜짐</string>
     <string name="wake_when_plugged_or_unplugged_summary">전원이 연결되거나 분리될 때 화면 켜기</string>
+    <string name="high_touch_sensitivity_title">터치 감도 높이기</string>
+    <string name="high_touch_sensitivity_summary">장갑을 착용해도 터치할 수 있도록 터치스크린 감도를 향상</string>
+    <string name="touchscreen_hovering_title">터치스크린 호버링</string>
+    <string name="touchscreen_hovering_summary">웹 브라우저나 원격 데스크톱과 같은 앱에서 마우스처럼 화면에 호버링하여 사용할 수 있습니다.</string>
 </resources>

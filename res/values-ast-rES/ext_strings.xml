@@ -67,4 +67,8 @@
     <string name="proximity_wake_summary">Comprueba\'l sensor de proximidá enantes de prender la pantalla</string>
     <string name="wake_when_plugged_or_unplugged_title">Esconsoñar al enchufar</string>
     <string name="wake_when_plugged_or_unplugged_summary">Prender la pantalla al coneutar o desconeutar el cargador</string>
+    <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
+    <string name="high_touch_sensitivity_summary">Incrementar la sensibilidá del panel táctil pa que pueda usase llevando guantes</string>
+    <string name="touchscreen_hovering_title">Pantalla táctil eslizante</string>
+    <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
 </resources>

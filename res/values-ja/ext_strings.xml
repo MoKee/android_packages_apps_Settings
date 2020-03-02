@@ -67,4 +67,8 @@
     <string name="proximity_wake_summary">スリープ解除する前に接近センサーで確認する</string>
     <string name="wake_when_plugged_or_unplugged_title">接続時にスリープ解除</string>
     <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯します</string>
+    <string name="high_touch_sensitivity_title">高感度タッチ</string>
+    <string name="high_touch_sensitivity_summary">手袋を着けたまま使用できるようにタッチ画面の感度を向上させる</string>
+    <string name="touchscreen_hovering_title">タッチ画面のホバリング</string>
+    <string name="touchscreen_hovering_summary">ウェブブラウザやリモードデスクトップなどでマウスのようにホバリングできるようにする</string>
 </resources>

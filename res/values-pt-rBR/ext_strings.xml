@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar a tela</string>
     <string name="wake_when_plugged_or_unplugged_title">Acordar ao plugar</string>
     <string name="wake_when_plugged_or_unplugged_summary">Ativar a tela ao ligar ou desligar do carregador</string>
+    <string name="high_touch_sensitivity_title">Toque de alta sensibilidade</string>
+    <string name="high_touch_sensitivity_summary">Aumenta a sensibilidade da tela para poder ser usada com luvas</string>
+    <string name="touchscreen_hovering_title">Flutuar o dedo na tela</string>
+    <string name="touchscreen_hovering_summary">Permite que você flutue o dedo na tela como um mouse em navegadores web, desktops remotos, etc</string>
 </resources>

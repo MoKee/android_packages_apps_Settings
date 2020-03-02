@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Проверка датчика приближения перед включением экрана</string>
     <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
     <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
+    <string name="high_touch_sensitivity_title">Режим перчаток</string>
+    <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
+    <string name="touchscreen_hovering_title">Наведение пальца</string>
+    <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
 </resources>

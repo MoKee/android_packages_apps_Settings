@@ -53,4 +53,7 @@
     <string name="proximity_wake_summary">I-check ang proximity sensor bago pa sa paggising sa screen</string>
     <string name="wake_when_plugged_or_unplugged_title">Gumising sa plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Buksan ang screen kapag kumokonek o pinuputol ang koneksiyon ng power source</string>
+    <string name="high_touch_sensitivity_title">Mataas na pagkamapagdamdam sa paghawak</string>
+    <string name="high_touch_sensitivity_summary">Dagdagan ang touchscreen kaya\'t magagamit ito habang may suot na mga glab</string>
+    <string name="touchscreen_hovering_summary">Bigyan ka na mag-hover sa screen kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
 </resources>

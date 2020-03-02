@@ -71,4 +71,8 @@
     <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
     <string name="wake_when_plugged_or_unplugged_title">Zbudi ob priključitvi napajalnika</string>
     <string name="wake_when_plugged_or_unplugged_summary">Vklopi zaslon ob priključitvi/izključitvi napajanja</string>
+    <string name="high_touch_sensitivity_title">Visoka občutljivost dotika</string>
+    <string name="high_touch_sensitivity_summary">Povečaj občutljivost dotika, tako da ga lahko uporabite, ko nosite rokavice</string>
+    <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
+    <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
 </resources>

@@ -65,4 +65,8 @@
     <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi mở màn hình</string>
     <string name="wake_when_plugged_or_unplugged_title">Sáng màn hình khi cắm sạc</string>
     <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
+    <string name="high_touch_sensitivity_title">Độ nhạy cảm ứng cao</string>
+    <string name="high_touch_sensitivity_summary">Tăng độ nhạy màn hình cảm ứng để nó có thể được sử dụng trong khi đeo găng tay</string>
+    <string name="touchscreen_hovering_title">Di trên màn hình cảm ứng</string>
+    <string name="touchscreen_hovering_summary">Cho phép bạn di trên màn hình như chuột trong trình duyệt web, điều khiển máy tính từ xa, v.v.</string>
 </resources>

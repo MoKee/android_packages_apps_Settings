@@ -60,4 +60,8 @@
     <string name="proximity_wake_title">Forhindr utilsigtet vækning</string>
     <string name="wake_when_plugged_or_unplugged_title">Vågn ved tilslutning</string>
     <string name="wake_when_plugged_or_unplugged_summary">Tænd for skærmen, ved tilslutning til, eller afbrydelse fra en strømkilde</string>
+    <string name="high_touch_sensitivity_title">Høj berøringsfølsomhed</string>
+    <string name="high_touch_sensitivity_summary">Forøger skærmens følsomhed, så den kan bruges med handsker</string>
+    <string name="touchscreen_hovering_title">Brug skærmen som mus</string>
+    <string name="touchscreen_hovering_summary">Gør det muligt at bevæge skærmen og bruge den som mus f.eks. i en browser, på fjernskriveborde m.v.</string>
 </resources>
