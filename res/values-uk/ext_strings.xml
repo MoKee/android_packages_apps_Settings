@@ -22,6 +22,8 @@
     <string name="advanced_reboot_summary">Показувати додаткові опції перезавантаження пристрою (в режим завантажувача або відновлення) в меню кнопки живлення</string>
     <string name="adb_enable">Налагодження Android</string>
     <string name="adb_enable_summary">Увімкнути інтерфейс Android Debug Bridge (ADB)</string>
+    <string name="adb_enable_root">Налагодження суперкористувачем</string>
+    <string name="adb_enable_summary_root">Дозволити запуск налагодження Android з правами суперкористувача</string>
     <string name="adb_notify">Сповіщення налагодження</string>
     <string name="adb_notify_summary">Відображати сповіщення, коли налагодження USB або по мережі увімкнено</string>
     <string name="adb_over_network">ADB по мережі</string>
@@ -30,6 +32,8 @@
     <string name="kill_app_longpress_back">Закрити програму</string>
     <string name="kill_app_longpress_back_summary">Довгий натиск на кнопку «Назад» закриє запущену програму</string>
     <string name="device_hostname">Ім’я пристрою</string>
+    <string name="tethering_allow_vpn_upstreams_title">Дозволити клієнтам користуватися VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Дозволити клієнтам hotspot використовувати цей пристрій\u2019 VPN з\'єднаннями для підключення до вихідного потоку</string>
     <string name="increasing_ring_volume_option_title">Наростаюча гучність дзвінка</string>
     <string name="increasing_ring_min_volume_title">Початкова гучність</string>
     <string name="increasing_ring_ramp_up_time_title">Час збільшення</string>
@@ -49,14 +53,22 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 хвилин</string>
     <string name="unlock_scramble_pin_layout_title">Перемішана розкладка</string>
     <string name="unlock_scramble_pin_layout_summary">Перемішувати розкладку PIN-коду під час розблокування пристрою</string>
+    <string name="volume_link_notification_title">Зв\'язати гучності рінгтона і сповіщень</string>
+    <string name="directly_show_lock">Пряме розблокування</string>
+    <string name="directly_show_lock_summary">Пропускати свайп розблокування екрану і відразу ж переходити до введення ключа</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Сканер відбитків пальців розташований на <xliff:g id="sensor_location">%1$s</xliff:g> вашого телефону.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Сканер відбитків пальців розташований на <xliff:g id="sensor_location">%1$s</xliff:g> вашого телефону.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сканер відбитку пальців розташовано на <xliff:g id="sensor_location">%1$s</xliff:g> вашого телефону.</string>
     <string name="security_settings_fingerprint_sensor_location_back">задній панелі</string>
     <string name="security_settings_fingerprint_sensor_location_front">передній панелі</string>
     <string name="security_settings_fingerprint_sensor_location_left">ліва сторона</string>
     <string name="security_settings_fingerprint_sensor_location_right">права сторона</string>
+    <string name="status_bar_double_tap_to_sleep_title">Торкніться для сну</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Двічі торкніться рядка стану, щоб перевести пристрій у сплячий режим</string>
     <string name="touchscreen_gesture_settings_title">Жести сенсорного екрану</string>
     <string name="touchscreen_gesture_settings_summary">Виконувати різні жести для швидкого доступу</string>
     <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
+    <string name="proximity_wake_summary">Перевіряти датчик наближення перед включенням екрану</string>
     <string name="wake_when_plugged_or_unplugged_title">Екран прокидається при підключені</string>
     <string name="wake_when_plugged_or_unplugged_summary">Екран прокидається при підключені до зарядного пристрою</string>
     <string name="high_touch_sensitivity_title">Висока чутливість дотику</string>
