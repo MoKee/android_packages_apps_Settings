@@ -207,6 +207,8 @@
     <string name="root_access_apps">ಆಪ್ಸ್ ಮಾತ್ರ</string>
     <string name="root_access_adb">ಎಡಿಬಿ ಮಾತ್ರ</string>
     <string name="root_access_all">ಆಪ್ಸ್ ಮತ್ತು ಎಡಿಬಿ</string>
+    <string name="touchscreen_gesture_settings_title">ಸ್ಪರ್ಷಪರದೆಯ ಸನ್ನೆಗಳು</string>
+    <string name="touchscreen_gesture_settings_summary">ತ್ವರಿತ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಸ್ಪರ್ಶಪರದೆ ಮೇಲೆ ವಿವಿಧ ಸನ್ನೆಗಳನ್ನು ಮಾಡು</string>
     <string name="wake_when_plugged_or_unplugged_title">ಪ್ಲಗ್‍ಮಾಡಿದಾಗ ಎಚ್ಚರವಾಗು</string>
     <string name="wake_when_plugged_or_unplugged_summary">ವಿದ್ಯುತ್ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ ಅಥವಾ ಅಸಂಪರ್ಕಿಸಿದಾಗ ಪರದೆಯನ್ನು ಆನ್ ಮಾಡು</string>
     <string name="high_touch_sensitivity_title">ಅಧಿಕ ಸ್ಪರ್ಶ ಸಂವೇದನೆ</string>
