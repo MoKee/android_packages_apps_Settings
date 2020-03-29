@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="suggestion_button_close">ಮುಚ್ಚು</string>
+    <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
     <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ಮರುಚೇತರಿಕೆ ಅಥವಾ Bootloaderನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಶಕ್ತಿ-ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸು</string>
     <string name="adb_enable">ಆಂಡ್ರಾಯ್ಡ್ ಡೀಬಗ್ಗಿಂಗ್</string>
     <string name="adb_notify">ಡೀಬಗ್ಗಿಂಗ್ ಸೂಚನೆ</string>
