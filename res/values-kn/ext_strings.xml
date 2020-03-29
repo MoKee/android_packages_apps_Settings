@@ -17,6 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
+    <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ರಿಕವರಿ ಅಥವಾ ಬೂಟ್‌ಲೋಡರ್‌ನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಮೆನುವಿನಲ್ಲಿ ಸೇರಿಸು</string>
     <string name="app_ops_permissions_allowed">ಅನುಮತಿಸಿದೆ</string>
     <string name="app_ops_permissions_ignored">ನಿರ್ಲಕ್ಷಿಸಿದೆ</string>
     <string name="app_ops_permissions_always_ask">ಎಂದಿಗೂ ಕೇಳು</string>
@@ -172,6 +174,8 @@
     </plurals>
     <string name="show_dev_on_cm">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಘಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ!</string>
     <string name="show_dev_already_cm">ಅಗತ್ಯವಿಲ್ಲ, ನೀವು ಈಗಾಗಲೇ ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ.</string>
+    <string name="status_bar_double_tap_to_sleep_title">ನಿದ್ರಿಸಲು ತಟ್ಟಿ</string>
+    <string name="status_bar_double_tap_to_sleep_summary">ಪರದೆಯನ್ನು ನಂದಿಸಲು ಸ್ಥಿತಿಪಟ್ಟಿ ಅಥವಾ ಲಾಕ್ ಸ್ಕ್ರೀನ್‌ ಮೇಲೆ ಎರಡು ಸಲ ತಟ್ಟಿ</string>
     <string name="security_settings_fingerprint_sensor_location_back">ಹಿಂದೆ</string>
     <string name="security_settings_fingerprint_sensor_location_front">ಮುಂದೆ</string>
     <string name="security_settings_fingerprint_sensor_location_left">ಎಡ ಬದಿ</string>
@@ -200,6 +204,7 @@
     <string name="unlock_scramble_pin_layout_title">ವಿನ್ಯಾಸವನ್ನು ಅಸ್ತವ್ಯಸ್ತಗೊಳಿಸು</string>
     <string name="unlock_scramble_pin_layout_summary">ಸಾಧನವನ್ನು ಅನ್‍ಲಾಕ್ ಮಾಡುವಾಗ ಪಿನ್ ವಿನ್ಯಾಸವನ್ನು ಅಸ್ತವ್ಯಸ್ತಗೊಳಿಸು</string>
     <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆ</string>
+    <string name="proximity_wake_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸುವ ಮೊದಲು ಸಾಮೀಪ್ಯ ಸಂವೇದಕವನ್ನು ಪರಿಶೀಲಿಸು</string>
     <string name="root_access">ರೂಟ್ ಪ್ರವೇಶ</string>
     <string name="root_access_warning_title">ರೂಟ್ ಪ್ರವೇಶ ಅನುಮತಿಸು?</string>
     <string name="root_access_warning_message">ಆಪ್‍ಗಳಿಗೆ ರೂಟ್ ಪ್ರವೇಶಕ್ಕಾಗಿ ವಿನಂತಿಸುವುದನ್ನು ಅನುಮತಿಸುವುದು ಬಹಳ ಅಪಾಯಕಾರಿ ಹಾಗು ನಿಮ್ಮ ಸಿಸ್ಟಂನ ಭದ್ರತೆಯ ಜೊತೆ ರಾಜಿಯಾಗಬಹುದು!</string>
@@ -207,6 +212,8 @@
     <string name="root_access_apps">ಆಪ್ಸ್ ಮಾತ್ರ</string>
     <string name="root_access_adb">ಎಡಿಬಿ ಮಾತ್ರ</string>
     <string name="root_access_all">ಆಪ್ಸ್ ಮತ್ತು ಎಡಿಬಿ</string>
+    <string name="root_appops_title">ಮೂಲ ಪ್ರವೇಶ ನಿರ್ವಹಿಸು</string>
+    <string name="root_appops_summary">ಮೂಲ ನಿಯಮಗಳನ್ನು ವೀಕ್ಷಿಸು ಮತ್ತು ನಿಯಂತ್ರಿಸು</string>
     <string name="touchscreen_gesture_settings_title">ಸ್ಪರ್ಷಪರದೆಯ ಸನ್ನೆಗಳು</string>
     <string name="touchscreen_gesture_settings_summary">ತ್ವರಿತ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಸ್ಪರ್ಶಪರದೆ ಮೇಲೆ ವಿವಿಧ ಸನ್ನೆಗಳನ್ನು ಮಾಡು</string>
     <string name="wake_when_plugged_or_unplugged_title">ಪ್ಲಗ್‍ಮಾಡಿದಾಗ ಎಚ್ಚರವಾಗು</string>
