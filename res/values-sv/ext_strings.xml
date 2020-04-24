@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Du är nu <xliff:g id="step_count">%1$d</xliff:g> steg från att aktivera utvecklingsinställningar.</item>
+        <item quantity="other">Du är nu <xliff:g id="step_count">%1$d</xliff:g> steg från att aktivera utvecklingsinställningar.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Du har aktiverat utvecklingsinställningar!</string>
+    <string name="show_dev_already_cm">Det behövs inte, du har redan aktiverat utvecklingsinställningar.</string>
     <string name="suggestion_button_close">Stäng</string>
     <string name="advanced_reboot_title">Avancerad omstart</string>
     <string name="adb_enable">Felsökning av Android</string>
@@ -51,6 +57,7 @@
     <string name="security_settings_fingerprint_sensor_location_right">höger sida</string>
     <string name="status_bar_double_tap_to_sleep_title">Dubbeltryck för att släcka skärmen</string>
     <string name="touchscreen_gesture_settings_title">Skärmgester</string>
+    <string name="data_usage_app_restrict_data">Mobildata</string>
     <string name="proximity_wake_title">Förhindra oavsiktlig väckning</string>
     <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
     <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning till eller frånkoppling från strömkälla</string>

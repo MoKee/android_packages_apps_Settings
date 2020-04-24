@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Tha thu <xliff:g id="step_count">%1$d</xliff:g> cheum air falbh o bhith a’ cur an comas nan roghainnean leasachaidh.</item>
+        <item quantity="two">Tha thu <xliff:g id="step_count">%1$d</xliff:g> cheum air falbh o bhith a’ cur an comas nan roghainnean leasachaidh.</item>
+        <item quantity="few">Tha thu <xliff:g id="step_count">%1$d</xliff:g> ceuman air falbh o bhith a’ cur an comas nan roghainnean leasachaidh.</item>
+        <item quantity="other">Tha thu <xliff:g id="step_count">%1$d</xliff:g> ceum air falbh o bhith a’ cur an comas nan roghainnean leasachaidh.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Chuir thu na roghainnean leasachaidh an comas!</string>
+    <string name="show_dev_already_cm">Cha leig thu leas, chuir thu na roghainnean leasachaidh an comas mu thràth.</string>
     <string name="advanced_reboot_summary">Mur eil e glaiste, gabh a-steach roghainnean air clàr-taice na cumhachd airson ath-thòiseachadh gun mhodh aisig no bootloader</string>
     <string name="adb_enable">Dì-bhugachadh Android</string>
     <string name="adb_notify">Brath dì-bhugachaidh</string>
@@ -41,6 +49,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Thoir gnogag dhùbailte air bàr na staid no air an sgrìn-ghlasaidh gus an uidheam-taisbeanaidh a chur dheth</string>
     <string name="touchscreen_gesture_settings_title">Gluasadan na sgrìn-suathaidh</string>
     <string name="touchscreen_gesture_settings_summary">Cleachd gluasadan sgrìn-glasaidh airson gnìomhan luatha</string>
+    <string name="data_usage_app_restrict_data">Dàta mobile</string>
+    <string name="data_usage_app_restrict_data_summary">Cuir an comas cleachdadh dàta mobile</string>
+    <string name="data_usage_app_restrict_wifi">Dàta WiFi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Cuir an comas cleachdadh dàta WiFi</string>
     <string name="proximity_wake_title">Caisg dùsgadh air mhearachd</string>
     <string name="proximity_wake_summary">Dearbh le mothaichear na fagasachd mus dèid an sgrìn a dhùsgadh</string>
     <string name="wake_when_plugged_or_unplugged_title">Dùisg nuair a cheanglar ri bun-dealain</string>

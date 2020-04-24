@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stap verwijderd van de opties voor ontwikkelaars.</item>
+        <item quantity="other">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
+    </plurals>
+    <string name="show_dev_on_cm">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
+    <string name="show_dev_already_cm">Niet nodig, u heeft de ontwikkelaarsopties al ingeschakeld.</string>
     <string name="suggestion_button_close">Sluiten</string>
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>
@@ -61,6 +67,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk of schermvergrendeling om het scherm uit te schakelen</string>
     <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
     <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>
+    <string name="data_usage_app_restrict_data">Mobiele gegevens</string>
+    <string name="data_usage_app_restrict_data_summary">Gebruik van mobiele gegevens inschakelen</string>
+    <string name="data_usage_app_restrict_wifi">Gegevens via wifi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Gebruik van gegevens via wifi inschakelen</string>
     <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
     <string name="proximity_wake_summary">Nabijheidssensor checken voorafgaand aan ontwaken van scherm</string>
     <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>

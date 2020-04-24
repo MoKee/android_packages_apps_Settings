@@ -17,6 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_dev_on_cm">تۆ ڕێکخستنی گەشەپێدەریت چالاککرد!</string>
+    <string name="show_dev_already_cm">پێویست ناکا، تۆ پێشتر چالاکت کردوە.</string>
     <string name="adb_enable">ڕاستكردنه‌وه‌ی ئەندرۆید</string>
     <string name="adb_notify">تێبینی هەڵدۆزین</string>
     <string name="adb_notify_summary">پیشاندانی تێبینی کاتێک USB یان تۆڕی هەڵدۆزین چالاکرا</string>

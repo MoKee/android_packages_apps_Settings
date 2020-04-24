@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
+        <item quantity="other">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt fra at aktivere Indstillinger for udviklere.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Du har aktiveret Instillinger for udviklere!</string>
+    <string name="show_dev_already_cm">Du behøves ikke gøre dette. Du har allerede aktiveret Indstillinger for udviklere.</string>
     <string name="suggestion_button_close">Luk</string>
     <string name="advanced_reboot_title">Avanceret genstart</string>
     <string name="adb_enable">Android-fejlretning</string>

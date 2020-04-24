@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">డెవలప్మెంట్ సెట్టింగులను ప్రారంభించడానికి ఇప్పుడు మీరు <xliff:g id="step_count">%1$d</xliff:g> అడుగు దూరంలో ఉన్నారు.</item>
+        <item quantity="other">డెవలప్మెంట్ సెట్టింగులను ప్రారంభించడానికి ఇప్పుడు మీరు <xliff:g id="step_count">%1$d</xliff:g> అడుగుల దూరంలో ఉన్నారు.</item>
+    </plurals>
+    <string name="show_dev_on_cm">మీరు ఇప్పుడు డెవలప్మెంట్ సెట్టింగులను ప్రారంభించారు!</string>
+    <string name="show_dev_already_cm">అవసరం లేదు, మీరు ఇప్పటికే డెవలప్మెంట్ సెట్టింగులను ప్రారంభించేశారు.</string>
     <string name="suggestion_button_close">మూసివేయి</string>
     <string name="adb_enable">Android డీబగ్గింగ్</string>
     <string name="adb_notify">డీబగ్గింగ్ తెలియజేయడం</string>

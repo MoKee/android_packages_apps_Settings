@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">আপুনি এতিয়া ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰাৰ পৰা <xliff:g id="step_count">%1$d</xliff:g>টা পদক্ষেপ দূৰত আছে।</item>
+        <item quantity="other">আপুনি এতিয়া ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰাৰ পৰা <xliff:g id="step_count">%1$d</xliff:g>টা পদক্ষেপ দূৰত আছে।</item>
+    </plurals>
+    <string name="show_dev_on_cm">আপুনি ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰিলে!</string>
+    <string name="show_dev_already_cm">আৱশ্যক নাই, আপুনি ইতিমধ্যে ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰিলে।</string>
     <string name="suggestion_button_close">বন্ধ</string>
     <string name="adb_enable">Android ডিবাগিং</string>
     <string name="adb_notify">ডিবাগিং অধিসূচনা</string>

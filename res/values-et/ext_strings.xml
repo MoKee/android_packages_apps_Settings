@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Olete <xliff:g id="step_count">%1$d</xliff:g> sammu kaugusel arendussätete lubamisest.</item>
+        <item quantity="other">Olete <xliff:g id="step_count">%1$d</xliff:g> sammu kaugusel arendussätete lubamisest.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Arendussätted aktiveeritud!</string>
+    <string name="show_dev_already_cm">Ei ole vaja, arendussätted juba aktiveeritud.</string>
     <string name="suggestion_button_close">Sulgemine</string>
     <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
     <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Topeltkoputa olekuriba või lukustuskuva ekraani väljalülitamiseks</string>
     <string name="touchscreen_gesture_settings_title">Puuteekraani žestid</string>
     <string name="touchscreen_gesture_settings_summary">Soorita mitmeid puuteekraani žeste kiirtoimingute teostamiseks</string>
+    <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
+    <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
+    <string name="data_usage_app_restrict_vpn">VPN andmed</string>
+    <string name="data_usage_app_restrict_vpn_summary">Lubage VPN andmete kasutus</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
+    <string name="data_usage_app_restrict_wifi_summary">Luba Wi\u2011Fi andmeside kasutus</string>
     <string name="proximity_wake_title">Väldi juhuslikku ärkamist</string>
     <string name="proximity_wake_summary">Kontrolli lähedussensorit enne ekraani äratamist</string>
     <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>

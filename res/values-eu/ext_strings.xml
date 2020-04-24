@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Garatzaileen aukerak gaitzeko urrats <xliff:g id="step_count">%1$d</xliff:g>era zaude.</item>
+        <item quantity="other">Garatzaileen aukerak gaitzeko <xliff:g id="step_count">%1$d</xliff:g> urratsera zaude.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Garatzaileen aukerak gaitu dituzu!</string>
+    <string name="show_dev_already_cm">Ez da behar, aurretik gaitu dituzu garatzaileek aukerak.</string>
     <string name="suggestion_button_close">Itxi</string>
     <string name="advanced_reboot_title">Berrabiarazte aurreratua</string>
     <string name="advanced_reboot_summary">Desblokeatutako gailuetan, berreskuratze eta abiarazle moduetan berrabiatzeko aukerak gehitu itzaltze menuan</string>
@@ -63,6 +69,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Sakatu birritan egoera-barra edo blokeo-pantaila pantaila itzaltzeko</string>
     <string name="touchscreen_gesture_settings_title">Ukitze-pantailaren keinuak</string>
     <string name="touchscreen_gesture_settings_summary">Egin ukimen-pantailako keinuak ekintza azkarretarako</string>
+    <string name="data_usage_app_restrict_data">Datu mugikorrak</string>
+    <string name="data_usage_app_restrict_data_summary">Gaitu datu mugikorren erabilera</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi datuak</string>
+    <string name="data_usage_app_restrict_wifi_summary">Gaitu of Wi\u2011Fi datuen erabilera</string>
     <string name="proximity_wake_title">Eragotzi ustekabeko esnatzea</string>
     <string name="proximity_wake_summary">Kontsultatu gertutasun sentsorea pantaila piztu baino lehen</string>
     <string name="wake_when_plugged_or_unplugged_title">Esnatu kargadorearekin</string>

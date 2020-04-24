@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+        <item quantity="other">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Geliştirici seçenekleri etkinleştirildi!</string>
+    <string name="show_dev_already_cm">Geliştirici seçenekleri zaten etkin.</string>
     <string name="suggestion_button_close">Kapat</string>
     <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
     <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya önyükleme modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna veya kilit ekranına çift dokunun</string>
     <string name="touchscreen_gesture_settings_title">Ekran hareketleri</string>
     <string name="touchscreen_gesture_settings_summary">Hızlı işlemler için çeşitli dokunmatik ekran hareketleri gerçekleştirin</string>
+    <string name="data_usage_app_restrict_data">Hücresel veri</string>
+    <string name="data_usage_app_restrict_data_summary">Hücresel veri kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_vpn">VPN verileri</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN veri kullanımını etkinleştir</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi veri</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştir</string>
     <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
     <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
     <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>

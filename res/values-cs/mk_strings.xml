@@ -15,6 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="swipe_to_screenshot_gesture_title">Přejetím pořídit snímek obrazovky</string>
+    <string name="swipe_to_screenshot_gesture_title">Gesto třemi prsty</string>
     <string name="swipe_to_screenshot_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
 </resources>

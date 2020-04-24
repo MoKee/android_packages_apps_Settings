@@ -17,6 +17,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發人員選項</item>
+    </plurals>
+    <string name="show_dev_on_cm">您已經啟用開發人員選項</string>
+    <string name="show_dev_already_cm">不需要，您已經啟用開發人員選項。</string>
     <string name="suggestion_button_close">關閉</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
     <string name="advanced_reboot_summary">解鎖後，在電源選單加入重新啟動進入 recovery 或 bootloader 的選項</string>
@@ -67,6 +72,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列或鎖定來關閉螢幕</string>
     <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
     <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
+    <string name="data_usage_app_restrict_data">行動數據</string>
+    <string name="data_usage_app_restrict_data_summary">啟用行動數據</string>
+    <string name="data_usage_app_restrict_vpn">VPN 數據</string>
+    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 數據</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
+    <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據</string>
     <string name="proximity_wake_title">防止意外喚醒</string>
     <string name="proximity_wake_summary">喚醒螢幕前檢查接近感應器</string>
     <string name="wake_when_plugged_or_unplugged_title">接上或拔除電源時喚醒</string>

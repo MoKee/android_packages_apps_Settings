@@ -17,6 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_dev_on_cm">Jūs įgalinote kūrėjo parinktys!</string>
+    <string name="show_dev_already_cm">Nereikia, jūs jau įgalinote kūrėjo parinktys.</string>
     <string name="suggestion_button_close">Uždaryti</string>
     <string name="adb_enable">„Android“ derinimas</string>
     <string name="adb_notify">Derinimo pranešimas</string>

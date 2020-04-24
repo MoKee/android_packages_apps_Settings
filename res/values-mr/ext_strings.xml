@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">विकास सेटिंग्ज सक्षम करण्यापासून तुम्ही <xliff:g id="step_count">%1$d</xliff:g> पायरी अनुपस्थित आहात.</item>
+        <item quantity="other">विकास सेटिंग्ज सक्षम करण्यापासून तुम्ही <xliff:g id="step_count">%1$d</xliff:g> पायऱ्या अनुपस्थित आहात.</item>
+    </plurals>
+    <string name="show_dev_on_cm">तुम्ही विकास सेटिंग्ज सक्षम केली आहेत!</string>
+    <string name="show_dev_already_cm">गरज नाही, तुम्ही आधीच विकास सेटिंग्ज सक्षम केली आहेत.</string>
     <string name="suggestion_button_close">बंद करा</string>
     <string name="adb_enable">Android डिबगिंग</string>
     <string name="adb_notify">डिबगिंग सूचित करा</string>

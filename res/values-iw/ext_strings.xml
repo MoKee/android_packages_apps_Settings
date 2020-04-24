@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">רק עוד צעד <xliff:g id="step_count">%1$d</xliff:g> מהפעלת אפשרויות מפתח.</item>
+        <item quantity="two">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
+        <item quantity="many">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
+        <item quantity="other">רק עוד <xliff:g id="step_count">%1$d</xliff:g> צעדים מהפעלת אפשרויות מפתח.</item>
+    </plurals>
+    <string name="show_dev_on_cm">אפשרויות מפתח פעילות!</string>
+    <string name="show_dev_already_cm">אין צורך. כבר הפעלת את אפשרויות המפתח.</string>
     <string name="suggestion_button_close">סגור</string>
     <string name="advanced_reboot_title">אתחול מתקדם</string>
     <string name="advanced_reboot_summary">כאשר פתוח, הוסף אפשרויות של הפעלה מחדש ל־מצב שחזור (Recovery) או Bootloader</string>
@@ -59,6 +67,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב או על מסך נעילה בכדי לכבות את המסך</string>
     <string name="touchscreen_gesture_settings_title">מחוות מגע</string>
     <string name="touchscreen_gesture_settings_summary">השתמש במחוות מגע שונות לפעולות מהירות</string>
+    <string name="data_usage_app_restrict_data">נתונים סלולריים</string>
+    <string name="data_usage_app_restrict_data_summary">אפשר שימוש בנתונים סלולריים</string>
+    <string name="data_usage_app_restrict_wifi">‏נתוני Wi‑Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">אפשר שימוש בנתוני Wi‑Fi</string>
     <string name="proximity_wake_title">מנע התעוררות מקרית</string>
     <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
     <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>

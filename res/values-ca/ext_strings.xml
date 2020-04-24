@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> pas d\'habilitar les configuracions de desenvolupament.</item>
+        <item quantity="other">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> passos d\'habilitar les configuracions de desenvolupament.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Has habilitat les configuracions de desenvolupament!</string>
+    <string name="show_dev_already_cm">No fa falta, ja has habilitat les configuracions de desenvolupament.</string>
     <string name="suggestion_button_close">Tanca</string>
     <string name="advanced_reboot_title">Reinici avançat</string>
     <string name="advanced_reboot_summary">Quan està desbloquejat, inclou opcions al menú d\'apagat per reiniciar en mode recuperació o al bootloader</string>
@@ -67,6 +73,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat o a la pantalla de bloqueig per apagar la pantalla</string>
     <string name="touchscreen_gesture_settings_title">Gestos a la pantalla tàctil</string>
     <string name="touchscreen_gesture_settings_summary">Fes diversos gestos a la pantalla tàctil per fer accions ràpides</string>
+    <string name="data_usage_app_restrict_data">Dades mòbils</string>
+    <string name="data_usage_app_restrict_data_summary">Activa l\'ús de dades mòbils</string>
+    <string name="data_usage_app_restrict_wifi">Dades Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activa l\'ús de dades Wi\u2011Fi</string>
     <string name="proximity_wake_title">Evita l\'encesa accidental</string>
     <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
     <string name="wake_when_plugged_or_unplugged_title">Encén en endollar</string>

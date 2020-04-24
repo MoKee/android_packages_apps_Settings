@@ -17,6 +17,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="other">Anda sekarang <xliff:g id="step_count">%1$d</xliff:g> langkah jauh untuk membolehkan seting pembangunan.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Anda telah mendayakan seting pembangunan!</string>
+    <string name="show_dev_already_cm">Tidak perlu, anda telah mendayakan seting pembangunan.</string>
     <string name="suggestion_button_close">Tutup</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 saat</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 minit</string>

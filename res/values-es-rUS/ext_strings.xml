@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toque para habilitar las opciones de desarrollador.</item>
+        <item quantity="other">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toques para habilitar las opciones de desarrollador.</item>
+    </plurals>
+    <string name="show_dev_on_cm">¡Has activado las opciones de desarrollador!</string>
+    <string name="show_dev_already_cm">No es necesario, ya has activado las opciones de desarrollador.</string>
     <string name="suggestion_button_close">Cerrar</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Al desbloquear, se incluirán opciones en el menú de energía para reiniciar en modo de recuperación o gestor de arranque</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Pulsa dos veces en la barra de estado o en la pantalla de bloqueo para apagar la pantalla</string>
     <string name="touchscreen_gesture_settings_title">Gestos de pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en la pantalla para acciones rápidas</string>
+    <string name="data_usage_app_restrict_data">Datos móviles</string>
+    <string name="data_usage_app_restrict_data_summary">Activar el uso de datos móviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Habilitar el uso de datos VPN</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activar el uso de datos Wi\u2011Fi</string>
     <string name="proximity_wake_title">Prevenir encendido accidental</string>
     <string name="proximity_wake_summary">Comprobar el sensor de proximidad antes de encender la pantalla</string>
     <string name="wake_when_plugged_or_unplugged_title">Encender al conectar el cargador</string>

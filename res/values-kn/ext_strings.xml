@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸ್ ಸಕ್ರಿಯಗೊಳಿಸಲು <xliff:g id="step_count">%1$d</xliff:g> ಹಂತದಷ್ತು ದೂರವಿದ್ದೀರಿ.</item>
+        <item quantity="other">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸ್ ಸಕ್ರಿಯಗೊಳಿಸಲು <xliff:g id="step_count">%1$d</xliff:g> ಹಂತಗಳಷ್ಟು ದೂರವಿದ್ದೀರಿ.</item>
+    </plurals>
+    <string name="show_dev_on_cm">ನೀವು ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಘಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ!</string>
+    <string name="show_dev_already_cm">ಅಗತ್ಯವಿಲ್ಲ, ನೀವು ಈಗಾಗಲೇ ಡೆವಲಪ್‍ಮೆಂಟ್ ಸೆಟ್ಟಿಂಗ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದೀರಿ.</string>
     <string name="suggestion_button_close">ಮುಚ್ಚು</string>
     <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
     <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ಮರುಚೇತರಿಕೆ ಅಥವಾ Bootloaderನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಶಕ್ತಿ-ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸು</string>

@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> essai pour autoriser les réglages du mode développeur.</item>
+        <item quantity="other">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> essais pour autoriser les réglages du mode développeur.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Vous avez autoriser les réglages du mode développeur !</string>
+    <string name="show_dev_already_cm">Inutile, vous avez déjà autoriser les réglages du mode développeur.</string>
     <string name="suggestion_button_close">Fermer</string>
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Lorsque déverrouillé, inclure dans le menu marche/arrêt des options de redémarrage en mode récupération ou chargeur d\'amorçage</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Appuyez deux fois sur la bar de statut ou sur l\'écran de verrouillage pour mettre en veille l\'écran</string>
     <string name="touchscreen_gesture_settings_title">Gestes tactiles</string>
     <string name="touchscreen_gesture_settings_summary">Dessiner différents gestes sur l\'écran tactile pour créer des actions rapides</string>
+    <string name="data_usage_app_restrict_data">Données mobiles</string>
+    <string name="data_usage_app_restrict_data_summary">Activer l\'utilisation des données mobiles</string>
+    <string name="data_usage_app_restrict_vpn">Données VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activer l\'utilisation des données VPN</string>
+    <string name="data_usage_app_restrict_wifi">Données Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activer l\'utilisation des données Wi\u2011Fi</string>
     <string name="proximity_wake_title">Empêcher un réveil accidentel</string>
     <string name="proximity_wake_summary">Utiliser le capteur de proximité pour prévenir les réveils accidentels de l\'écran</string>
     <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>

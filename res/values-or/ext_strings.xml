@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">ଉନ୍ନତି ସେଟିଂସମୂହ‍ ସଷମ କରାଯିବା ଠାରୁ ଆପଣ ବର୍ତ୍ତମାନ <xliff:g id="step_count">%1$d</xliff:g> ପର୍ଯ୍ୟାୟ ଦୂରରେ ଅଛନ୍ତି।</item>
+        <item quantity="other">ଉନ୍ନତି ସେଟିଂସମୂହ ସଷମ କରାଯିବା ଠାରୁ ଆପଣ ବର୍ତ୍ତମାନ <xliff:g id="step_count">%1$d</xliff:g> ପର୍ଯ୍ୟାୟ ଦୂରରେ ଅଛନ୍ତି।</item>
+    </plurals>
+    <string name="show_dev_on_cm">ଆପଣ ଉନ୍ନତି ସେଟିଂସ୍‍ ସଷମ କରିଛନ୍ତି!</string>
+    <string name="show_dev_already_cm">ଆବଶ୍ୟକ ନାହିଁ, ଆପଣ ଆଗରୁ ଉନ୍ନତି ସେଟିଂସମୂହ ସଷମ କରିସାରିଛନ୍ତି।</string>
     <string name="suggestion_button_close">ବନ୍ଦ</string>
     <string name="adb_enable">ଆଣଡ୍ରଏଡ୍‍ ଡିବଗିଂ</string>
     <string name="adb_notify">ଡିବଗିଂ ସୂଚୀତ କରନ୍ତୁ</string>

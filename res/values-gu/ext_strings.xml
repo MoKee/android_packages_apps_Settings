@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">હવે તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરવાથી <xliff:g id="step_count">%1$d</xliff:g> પગલા દૂર છો.</item>
+        <item quantity="other">હવે તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરવાથી <xliff:g id="step_count">%1$d</xliff:g> પગલાં દૂર છો.</item>
+    </plurals>
+    <string name="show_dev_on_cm">તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કર્યું!</string>
+    <string name="show_dev_already_cm">જરૂર નથી, તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરી ચુક્યા છો.</string>
     <string name="suggestion_button_close">બંધ કરો</string>
     <string name="adb_enable">એન્ડ્રૉઇડ ડિબગિંગ</string>
     <string name="adb_notify">ડિબગિંગ સૂચન કરો</string>

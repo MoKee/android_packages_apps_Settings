@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+        <item quantity="other">Kehittäjäasetukset otetaan käyttöön <xliff:g id="step_count">%1$d</xliff:g> vaiheen päästä.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Kehittäjäasetukset ovat nyt käytössä!</string>
+    <string name="show_dev_already_cm">Olet jo ottanut kehittäjäasetukset käyttöön.</string>
     <string name="suggestion_button_close">Sulje</string>
     <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
     <string name="advanced_reboot_summary">Lisää mahdollisuuden käynnistää uudelleenkäynnistämisen yhteydessä recovery- tai bootloader-tilaan</string>
@@ -63,6 +69,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Sulje laitteen näyttö tuplanapauttamalla tilapalkkia tai lukitusnäyttöä</string>
     <string name="touchscreen_gesture_settings_title">Kosketusnäytön eleet</string>
     <string name="touchscreen_gesture_settings_summary">Tee erilaisia kosketusnäytön eleitä käyttääksesi pikatoimintoja</string>
+    <string name="data_usage_app_restrict_data">Mobiilidata</string>
+    <string name="data_usage_app_restrict_data_summary">Ota mobiilidata käyttöön</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Ota Wi\u2011Fi data käyttöön</string>
     <string name="proximity_wake_title">Estä herätys vahingossa</string>
     <string name="proximity_wake_summary">Tarkista lähesyysanturi ennen laitteen herättämistä</string>
     <string name="wake_when_plugged_or_unplugged_title">Herää laturista</string>

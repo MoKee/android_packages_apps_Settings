@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ste <xliff:g id="step_count">%1$d</xliff:g> krok od zapnutia vývojárskych nastavení.</item>
+        <item quantity="few">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolenia nastavení pre vývojárov.</item>
+        <item quantity="many">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> kroky/ov od povolenia nastavení pre vývojárov.</item>
+        <item quantity="other">Teraz ste <xliff:g id="step_count">%1$d</xliff:g> krokov od povolenia nastavení pre vývojárov.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Povolili ste nastavenia pre vývojárov!</string>
+    <string name="show_dev_already_cm">Nie je potreba, už ste povolili nastavenia pre vývojárov.</string>
     <string name="suggestion_button_close">Zavrieť</string>
     <string name="advanced_reboot_title">Rozšířený reštart</string>
     <string name="advanced_reboot_summary">Ak je povolené, do ponuky tlačidla Napájanie budú pridané ďalšie voľby pre reštart do Recovery alebo Bootloadera</string>
@@ -63,6 +71,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Vypnúť obrazovku dvojklikom na stavový riadok alebo na obrazovku uzamknutia</string>
     <string name="touchscreen_gesture_settings_title">Gestá na obrazovke</string>
     <string name="touchscreen_gesture_settings_summary">Možnosť spustiť rýchlu akciu pomocou rôzných gest na obrazovce</string>
+    <string name="data_usage_app_restrict_data">Mobilné dáta</string>
+    <string name="data_usage_app_restrict_data_summary">Povoliť používanie mobilných dát</string>
+    <string name="data_usage_app_restrict_vpn">Dáta VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povoliť používanie dát VPN</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dáta</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povoliť používanie Wi\u2011Fi dát</string>
     <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
     <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
     <string name="wake_when_plugged_or_unplugged_title">Prebudiť po pripojení</string>

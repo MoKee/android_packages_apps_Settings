@@ -17,6 +17,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="other">คุณเหลืออีก <xliff:g id="step_count">%1$d</xliff:g> ขั้นก่อนจะสามารถเปิดใช้งานการตั้งค่าการพัฒนา</item>
+    </plurals>
+    <string name="show_dev_on_cm">คุณเปิดใช้งานการตั้งค่าการพัฒนาแล้ว!</string>
+    <string name="show_dev_already_cm">ไม่จำเป็น คุณได้เปิดใช้งานการตั้งค่าการพัฒนาแล้ว</string>
     <string name="suggestion_button_close">ปิด</string>
     <string name="advanced_reboot_summary">เมื่อปลดล็อค รวมตัวเลือกในเมนูปิดระบบเครื่องเพื่อเริ่มใหม่ในโหมดกู้คืนหรือโหมดดาวน์โหลด</string>
     <string name="adb_enable">แก้ไขข้อบกพร่องแอนดรอยด์</string>

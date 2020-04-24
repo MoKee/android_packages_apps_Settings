@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроці від увімкнення налаштувань розробника.</item>
+        <item quantity="few">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроках від увімкнення налаштувань розробника.</item>
+        <item quantity="many">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроках від увімкнення налаштувань розробника.</item>
+        <item quantity="other">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроках від увімкнення налаштувань розробника.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Ви увімкнули налаштування розробника!</string>
+    <string name="show_dev_already_cm">Налаштування для розробників вже включені.</string>
     <string name="suggestion_button_close">Закрити</string>
     <string name="advanced_reboot_title">Розширене перезавантаження</string>
     <string name="advanced_reboot_summary">Показувати додаткові опції перезавантаження пристрою (в режим завантажувача або відновлення) в меню кнопки живлення</string>
@@ -67,6 +75,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Двічі торкніться рядка стану, щоб перевести пристрій у сплячий режим</string>
     <string name="touchscreen_gesture_settings_title">Жести сенсорного екрану</string>
     <string name="touchscreen_gesture_settings_summary">Виконувати різні жести для швидкого доступу</string>
+    <string name="data_usage_app_restrict_data">Мобільні дані</string>
+    <string name="data_usage_app_restrict_data_summary">Увімкнути використання мобільних даних</string>
+    <string name="data_usage_app_restrict_vpn">Дані VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Увімкнути використання даних VPN</string>
+    <string name="data_usage_app_restrict_wifi">Дані Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Увімкнути використання даних Wi-Fi</string>
     <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
     <string name="proximity_wake_summary">Перевіряти датчик наближення перед включенням екрану</string>
     <string name="wake_when_plugged_or_unplugged_title">Екран прокидається при підключені</string>

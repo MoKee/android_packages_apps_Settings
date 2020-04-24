@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Você agora está a <xliff:g id="step_count">%1$d </xliff:g> passo de ativar as configurações de desenvolvimento.</item>
+        <item quantity="other">Você agora está a <xliff:g id="step_count">%1$d </xliff:g> passos de ativar as configurações de desenvolvimento.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Você ativou as configurações de desenvolvedor!</string>
+    <string name="show_dev_already_cm">Não é preciso, você já ativou as configurações de desenvolvedor.</string>
     <string name="suggestion_button_close">Fechar</string>
     <string name="advanced_reboot_title">Reinicialização avançada</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu de desligamento para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status ou na tela de bloqueio para desligar a tela</string>
     <string name="touchscreen_gesture_settings_title">Gestos na tela</string>
     <string name="touchscreen_gesture_settings_summary">Faça vários gestos na tela para ações rápidas</string>
+    <string name="data_usage_app_restrict_data">Dados móveis</string>
+    <string name="data_usage_app_restrict_data_summary">Permitir o uso de dados móveis</string>
+    <string name="data_usage_app_restrict_vpn">Dados Rede Privada Virtual (VPN)</string>
+    <string name="data_usage_app_restrict_vpn_summary">Habilitar o uso de dados VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Permitir o uso de dados Wi\u2011Fi</string>
     <string name="proximity_wake_title">Evitar despertar acidental</string>
     <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar a tela</string>
     <string name="wake_when_plugged_or_unplugged_title">Acordar ao plugar</string>

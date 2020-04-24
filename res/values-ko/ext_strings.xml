@@ -17,6 +17,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="other">개발자 설정을 활성화하려면 <xliff:g id="step_count">%1$d</xliff:g>회 더 누르세요.</item>
+    </plurals>
+    <string name="show_dev_on_cm">개발자 설정이 활성화되었습니다.</string>
+    <string name="show_dev_already_cm">이미 개발자 설정이 활성화되어 있습니다.</string>
     <string name="suggestion_button_close">닫기</string>
     <string name="advanced_reboot_title">고급 다시 시작 기능</string>
     <string name="advanced_reboot_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
@@ -64,6 +69,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 두드려 화면 끄기</string>
     <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
     <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>
+    <string name="data_usage_app_restrict_data">모바일 데이터</string>
+    <string name="data_usage_app_restrict_data_summary">모바일 데이터를 사용합니다.</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 데이터</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi 데이터를 사용합니다.</string>
     <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
     <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
     <string name="wake_when_plugged_or_unplugged_title">충전 시 켜짐</string>

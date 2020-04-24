@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Está agora a <xliff:g id="step_count">%1$d</xliff:g> passo de ativar as opções de programador.</item>
+        <item quantity="other">Está agora a <xliff:g id="step_count">%1$d</xliff:g> passos de ativar as opções de programador.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Ativou as opções de programador!</string>
+    <string name="show_dev_already_cm">Não é necessário, já ativou as opções de programador.</string>
     <string name="suggestion_button_close">Fechar</string>
     <string name="advanced_reboot_title">Reinicialização avançada</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
@@ -67,6 +73,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado ou ecrã de bloqueio para desligar o ecrã</string>
     <string name="touchscreen_gesture_settings_title">Gestos do ecrã</string>
     <string name="touchscreen_gesture_settings_summary">Executar vários gestos no ecrã para ações rápidas</string>
+    <string name="data_usage_app_restrict_data">Dados de rede móvel</string>
+    <string name="data_usage_app_restrict_data_summary">Ativar a utilização de dados de rede móvel</string>
+    <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Ativar a utilização de dados Wi\u2011Fi</string>
     <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
     <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
     <string name="wake_when_plugged_or_unplugged_title">Ligar ecrã ao detetar carregador</string>

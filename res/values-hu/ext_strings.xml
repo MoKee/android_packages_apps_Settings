@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
+        <item quantity="other">Ön <xliff:g id="step_count">%1$d</xliff:g> lépésre van attól, hogy engedélyezze a fejlesztői beállításokat.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Sikeresen engedélyezte a fejlesztői beállításokat!</string>
+    <string name="show_dev_already_cm">Már korábban engedélyezte a fejlesztői beállításokat.</string>
     <string name="suggestion_button_close">Bezárás</string>
     <string name="advanced_reboot_title">Speciális újraindítás</string>
     <string name="advanced_reboot_summary">Feloldott kijelzőnél a Recovery és a Bootloader újraindítási mód is jelenjen meg a kikapcsoló menüben</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Az állapotsor vagy a záróképernyő dupla érintésére kikapcsol a képernyő</string>
     <string name="touchscreen_gesture_settings_title">Érintőképernyő-mozdulatvezérlés</string>
     <string name="touchscreen_gesture_settings_summary">Különböző képernyő-mozdulatvezérlések végrehajtása a gyorsműveletekhez</string>
+    <string name="data_usage_app_restrict_data">Mobiladat-kapcsolat</string>
+    <string name="data_usage_app_restrict_data_summary">Mobiladat-használat engedélyezése</string>
+    <string name="data_usage_app_restrict_vpn">VPN-adatok</string>
+    <string name="data_usage_app_restrict_vpn_summary">A VPN-adathasználat engedélyezése</string>
+    <string name="data_usage_app_restrict_wifi">Wi-Fi-kapcsolat</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi-Fi-adatkapcsolat engedélyezése</string>
     <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
     <string name="proximity_wake_summary">Közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
     <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>

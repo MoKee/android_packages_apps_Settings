@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">شما اکنون <xliff:g id="step_count">%1$d</xliff:g> ضربه با فعال‌سازی ابزارهای توسعه فاصله دارید.</item>
+        <item quantity="other">شما اکنون <xliff:g id="step_count">%1$d</xliff:g> ضربه با فعال‌سازی ابزارهای توسعه فاصله دارید.</item>
+    </plurals>
+    <string name="show_dev_on_cm">شما ابزارهای توسعه را فعال کرده‌اید!</string>
+    <string name="show_dev_already_cm">نیازی نیست، ابزارهای توسعه قبلا فعال شده‌اند.</string>
     <string name="suggestion_button_close">بستن</string>
     <string name="adb_enable">اشکال‌زدایی اندروید</string>
     <string name="adb_notify">اعلان اشکال‌زدایی</string>

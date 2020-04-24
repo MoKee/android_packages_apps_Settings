@@ -17,6 +17,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ești la <xliff:g id="step_count">%1$d</xliff:g> pas distanță de a activa opțiunile de dezvoltator.</item>
+        <item quantity="few">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași distanță de a activa opțiunile de dezvoltator.</item>
+        <item quantity="other">Ești la <xliff:g id="step_count">%1$d</xliff:g> pași distanță de a activa opțiunile de dezvoltator.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Ați deblocat setările de dezvoltator!</string>
+    <string name="show_dev_already_cm">Nu este nevoie, deja ai deblocat setările de dezvoltator.</string>
     <string name="suggestion_button_close">Închide</string>
     <string name="advanced_reboot_title">Repornire avansată</string>
     <string name="advanced_reboot_summary">La deblocare, se includ opțiuni în meniul power pentru repornire în modurile recuperare sau bootloader</string>
@@ -67,6 +74,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare sau ecranul de blocare pentru a opri ecranul</string>
     <string name="touchscreen_gesture_settings_title">Gesturi touchscreen</string>
     <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe touchscreen pentru acţiuni rapide</string>
+    <string name="data_usage_app_restrict_data">Date celulare</string>
+    <string name="data_usage_app_restrict_data_summary">Permite utilizarea de date celulare</string>
+    <string name="data_usage_app_restrict_wifi">Date Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Permite utilizarea datelor Wi\u2011Fi</string>
     <string name="proximity_wake_title">Previne trezirea accidentală</string>
     <string name="proximity_wake_summary">Verificaţi senzorul de proximitate înainte de a trezi ecranul</string>
     <string name="wake_when_plugged_or_unplugged_title">Trezire la alimentare</string>

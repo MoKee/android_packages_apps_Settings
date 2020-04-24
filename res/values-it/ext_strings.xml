@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ora sei ad <xliff:g id="step_count">%1$d</xliff:g> passo dall\'attivare le impostazioni di sviluppo.</item>
+        <item quantity="other">Ora sei a <xliff:g id="step_count">%1$d</xliff:g> passi dall\'attivare le impostazioni di sviluppo.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Hai attivato le impostazioni di sviluppo!</string>
+    <string name="show_dev_already_cm">Non è necessario, hai già attivato le impostazioni di sviluppo.</string>
     <string name="suggestion_button_close">Chiudi</string>
     <string name="advanced_reboot_title">Riavvio avanzato</string>
     <string name="advanced_reboot_summary">Quando sbloccato, mostra le opzioni per il riavvio in recovery o bootloader nel menù di accensione</string>
@@ -67,6 +73,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato o la schermata di sblocco per spegnere lo schermo</string>
     <string name="touchscreen_gesture_settings_title">Gesture sullo schermo</string>
     <string name="touchscreen_gesture_settings_summary">Esegui varie gesture sullo schermo per azioni rapide</string>
+    <string name="data_usage_app_restrict_data">Dati mobili</string>
+    <string name="data_usage_app_restrict_data_summary">Abilita l\'utilizzo dei dati mobili</string>
+    <string name="data_usage_app_restrict_vpn">Dati VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Abilita l\'uso dei dati VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dati Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Abilita l\'uso dei dati Wi\u2011Fi</string>
     <string name="proximity_wake_title">Previeni risvegli accidentali</string>
     <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo</string>
     <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>

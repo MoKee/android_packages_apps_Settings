@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കുന്നതിന് നിങ്ങള്‍ %1$d ഘട്ടം അകലെയാണ്.</item>
+        <item quantity="other">ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കുന്നതിന് നിങ്ങള്‍ <xliff:g id="step_count">%1$d</xliff:g> ഘട്ടങ്ങൾ അകലെയാണ്.</item>
+    </plurals>
+    <string name="show_dev_on_cm">നിങ്ങൾ ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി!</string>
+    <string name="show_dev_already_cm">ആവശ്യമില്ല, നിങ്ങൾ ഇതിനകം ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി.</string>
     <string name="suggestion_button_close">അടയ്‌ക്കുക</string>
     <string name="adb_enable">ആൻഡ്രോയിഡ് ഡീബഗ്ഗിംഗ്</string>
     <string name="adb_notify">ഡീബഗ്ഗിംഗ് അറിയിപ്പ്</string>

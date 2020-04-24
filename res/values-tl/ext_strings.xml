@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng pag-unlad na mga setting.</item>
+        <item quantity="other">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng mga setting ng pag-unlad.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Pinagana mo ang development na mga setting!</string>
+    <string name="show_dev_already_cm">Hindi na kailangan, pinagana mo na ang development na mga setting.</string>
     <string name="suggestion_button_close">Isara</string>
     <string name="advanced_reboot_title">Advance na restart</string>
     <string name="adb_enable">Pag-debug ng android</string>

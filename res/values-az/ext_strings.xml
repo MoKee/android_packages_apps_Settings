@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Tərtibatçı tənzimləmələrinin fəallaşdırılmasına <xliff:g id="step_count">%1$d</xliff:g> addım qaldı.</item>
+        <item quantity="other">Tərtibatçı tənzimləmələrinin fəallaşdırılmasına <xliff:g id="step_count">%1$d</xliff:g> addım qaldı.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Tərtibatçı tənzimləmələrini fəallaşdırdınız!</string>
+    <string name="show_dev_already_cm">Artıq tərtibatçı tənzimləmələrini fəallaşdırmısınız.</string>
     <string name="suggestion_button_close">Bağla</string>
     <string name="advanced_reboot_title">Qabaqcıl yenidən başlatma</string>
     <string name="advanced_reboot_summary">Kilid açılanda, bərpa və ya ön yükləmə rejimində yenidən başlatmaq üçün güc düyməsinə seçimlər əlavə edir</string>

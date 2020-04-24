@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="many">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Налады для распрацоўнікаў улучаны!</string>
+    <string name="show_dev_already_cm">Не патрэбна, налады для распрацоўнікаў ужо ўлучаны.</string>
     <string name="suggestion_button_close">Зачыніць</string>
     <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
     <string name="advanced_reboot_summary">Паказваць дадатковыя опцыі перазагрузкі прылады (у рэжым загрузніка або аднаўлення) у меню кнопкі сілкавання</string>
@@ -54,6 +62,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаваны экран, каб перавесці прыладу ў спячы рэжым</string>
     <string name="touchscreen_gesture_settings_title">Сэнсарныя жэсты</string>
     <string name="touchscreen_gesture_settings_summary">Выкананне розных сэнсарных жэстаў на экране для хуткіх дзеянняў</string>
+    <string name="data_usage_app_restrict_data">Перадача дадзеных</string>
+    <string name="data_usage_app_restrict_data_summary">Уключыць выкарыстанне мабільных дадзеных</string>
+    <string name="data_usage_app_restrict_wifi">Дадзеныя Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Уключыць выкарыстанне дадзеных Wi-Fi</string>
     <string name="proximity_wake_title">Прадухіляць выпадковае ўлучэнне</string>
     <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
     <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>

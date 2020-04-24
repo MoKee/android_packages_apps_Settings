@@ -17,6 +17,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="zero">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+        <item quantity="one">أنت الآن على بُعد خطوة واحدة من تمكين خيارات المطور.</item>
+        <item quantity="two">أنت الآن على بُعد خطوتين من تمكين خيارات المطور.</item>
+        <item quantity="few">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تمكين خيارات المطور.</item>
+        <item quantity="many">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
+        <item quantity="other">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
+    </plurals>
+    <string name="show_dev_on_cm">مكّنتَ خيارات المطور!</string>
+    <string name="show_dev_already_cm">لا داعي، فخيارات المطور مفعّلة.</string>
     <string name="suggestion_button_close">إغلاق</string>
     <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
     <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع الاسترداد او وضع محمل الاقلاع</string>
@@ -67,6 +77,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">الضغط مرتين فوق شريط الحالة لإطفاء الشاشة</string>
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لأعمال سريعة</string>
+    <string name="data_usage_app_restrict_data">بيانات شبكة الجوّال</string>
+    <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات الخلوية</string>
+    <string name="data_usage_app_restrict_vpn">بيانات الـ VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات الـ VPN</string>
+    <string name="data_usage_app_restrict_wifi">بيانات WiFi</string>
+    <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات WiFi</string>
     <string name="proximity_wake_title">منع الاستيقاظ العشوائي</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
     <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>

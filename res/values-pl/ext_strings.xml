@@ -17,6 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> krok od włączenia opcji programistycznych.</item>
+        <item quantity="few">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> kroki od włączenia opcji programistycznych.</item>
+        <item quantity="many">Pozostało Ci <xliff:g id="step_count">%1$d</xliff:g> kroków do włączenia opcji programistycznych.</item>
+        <item quantity="other">Jesteś o <xliff:g id="step_count">%1$d</xliff:g> kroków od włączenia opcji programistycznych.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Aktywowałeś opcje programistyczne!</string>
+    <string name="show_dev_already_cm">Wystarczy, już jesteś programistą.</string>
     <string name="suggestion_button_close">Zamknij</string>
     <string name="advanced_reboot_title">Zaawansowany restart</string>
     <string name="advanced_reboot_summary">Kiedy urządzenie jest odblokowane, dodaj opcję ponownego uruchomienia w trybie recovery lub bootloadera do menu zasilania</string>
@@ -67,6 +75,12 @@
     <string name="status_bar_double_tap_to_sleep_summary">Kliknij dwukrotnie na pasku statusu lub ekranie blokady aby wyłączyć ekran</string>
     <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
     <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>
+    <string name="data_usage_app_restrict_data">Komórkowa transmisja danych</string>
+    <string name="data_usage_app_restrict_data_summary">Włącz użycie danych komórkowych</string>
+    <string name="data_usage_app_restrict_vpn">Dane VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Włącz użycie danych poprzez VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dane Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Włącz użycie danych Wi\u2011Fi</string>
     <string name="proximity_wake_title">Zapobiega przypadkowemu wybudzeniu</string>
     <string name="proximity_wake_summary">Sprawdź czujnik zbliżeniowy przed wybudzeniem ekranu</string>
     <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>

@@ -17,6 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_dev_on_cm">ئىجادكارلار تەڭشەكلىرىنى قوزغاتتىڭىز!</string>
+    <string name="show_dev_already_cm">ھاجەتسىز، سىز ئاللىبۇرۇن ئىجادكارلار تەڭشەكلىرىنى قوزغاتقان.</string>
     <string name="suggestion_button_close">تاقاش</string>
     <string name="adb_enable">Android سازلاش</string>
     <string name="adb_notify">سازلاش ئۇقتۇرۇشى</string>
