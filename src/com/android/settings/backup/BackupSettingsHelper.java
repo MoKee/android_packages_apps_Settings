@@ -19,8 +19,11 @@ package com.android.settings.backup;
 
 import android.app.backup.BackupManager;
 import android.app.backup.IBackupManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
@@ -182,7 +185,15 @@ public class BackupSettingsHelper {
     @VisibleForTesting
     boolean isIntentProvidedByTransport() {
         Intent intent = getIntentFromBackupTransport();
-        return intent != null && intent.resolveActivity(mContext.getPackageManager()) != null;
+        if (intent == null || intent.resolveActivity(mContext.getPackageManager() == null) {
+            return false;
+        }
+        ComponentName cn = intent.getComponent();
+        if (cn == null) {
+            return false;
+        }
+        final ApplicationInfo info = getApplicationInfo(mContext, cn.getPackageName(), 0);
+        return info != null && info.enabled;
     }
 
     /**
@@ -252,5 +263,17 @@ public class BackupSettingsHelper {
             Log.e(TAG, "Error getting data management summary", e);
         }
         return null;
+    }
+
+    private static ApplicationInfo getApplicationInfo(final Context context,
+                                                     final String packageName, final int flags) {
+        final PackageManager packageManager = mContext.getPackageManager();
+        ApplicationInfo info;
+        try {
+            info = packageManager.getApplicationInfo(packageName, flags);
+        } catch (PackageManager.NameNotFoundException e) {
+            info = null;
+        }
+        return info;
     }
 }
