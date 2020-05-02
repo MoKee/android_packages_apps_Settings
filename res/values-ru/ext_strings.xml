@@ -50,6 +50,7 @@
     <string name="lock_settings_picker_pattern_size_message">Выберите размер граф. ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Показывать неверный ввод</string>
     <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Полупрозрачные фоновые уведомления</string>
     <string name="app_notification_sound_timeout_title">Частота звуковых уведомлений</string>
     <string name="app_notification_sound_timeout_summary_template">Звуки и вибрация не чаще, чем раз в <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Без ограничений</string>
@@ -89,4 +90,8 @@
     <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
     <string name="touchscreen_hovering_title">Наведение пальца</string>
     <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
+    <string name="update_recovery_title">Обновить Recovery</string>
+    <string name="update_recovery_summary">Обновить встроенный Recovry при обновлении системы</string>
+    <string name="update_recovery_on_warning">ЗАМЕЧАНИЕ. При включении этой функции, установленное Recovery будет заменено на тот, который включен в текущую версию работающей ОС.\n\nВаше Recovery будет обновлено вместе с обновлениями для вашей системы, помогая обеспечить совместимость с будущими версиями.\n\nВы хотите включить эту функцию?</string>
+    <string name="update_recovery_off_warning">ПРЕДУПРЕЖДЕНИЕ: Если эта функция отключена, установленный вами Recovery не будет обновляться при обновлении ОС.\n\nБудущие обновления ОС могут не устанавливаться с устаревшими или пользовательскими версиями восстановления.\n\nВы действительно хотите отключить эту функцию?</string>
 </resources>

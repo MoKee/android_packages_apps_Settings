@@ -50,6 +50,7 @@
     <string name="lock_settings_picker_pattern_size_message">Zvolit velikost vzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Zobrazit cestu chybného gesta</string>
     <string name="lockpattern_settings_enable_dots_title">Zobrazit body gesta</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Průsvitné pozadí oznámení</string>
     <string name="app_notification_sound_timeout_title">Minimální doba mezi zvuky oznámení</string>
     <string name="app_notification_sound_timeout_summary_template">Povolit zvuky nebo vibrace ne více než jednou každých <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Bez omezení</string>
@@ -89,4 +90,8 @@
     <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje použít rukavice</string>
     <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
     <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
+    <string name="update_recovery_title">Aktualizovat recovery oddíl</string>
+    <string name="update_recovery_summary">Aktualizovat oddíl recovery pomocí aktualizace systému</string>
+    <string name="update_recovery_on_warning">OZNÁMENÍ: Tato funkce je povolena, vaše instalovaná recovery bude nahrazena jednou součástí aktuální verze OS.\n\nVaše recovery bude aktualizována spolu s aktualizacemi systému, čímž bude zajištěna kompatibilita s budoucími verzemi.\n\nChcete povolit tuto funkci?</string>
+    <string name="update_recovery_off_warning">VAROVÁNÍ: Pokud je tato funkce zakázána, vaše naistalovaná recovery nebude aktualizována spolu s OS aktualizacemi.\n\nBudoucí OS aktualizace nemusejí být naistalovány se zastaralými nebo vlastními verzemi recovery.\n\nChcete opravdu tuto funkci zakázat?</string>
 </resources>

@@ -48,6 +48,7 @@
     <string name="lock_settings_picker_pattern_size_message">Válassza ki a minta méretét</string>
     <string name="lockpattern_settings_enable_error_path_title">Hibás minta megjelenítése</string>
     <string name="lockpattern_settings_enable_dots_title">Feloldási pontok megjelenítése</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Áttetsző értesítésháttér</string>
     <string name="app_notification_sound_timeout_title">Értesítési hangok közötti minimum időtartam</string>
     <string name="app_notification_sound_timeout_summary_template">Hang vagy rezgés ismétlődésének engedélyezése: <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Nincs korlátozás</string>
@@ -87,4 +88,8 @@
     <string name="high_touch_sensitivity_summary">Érintőképernyő érzékenységének növelése, így kesztyű viselése esetén is használható</string>
     <string name="touchscreen_hovering_title">Lebegő érintés</string>
     <string name="touchscreen_hovering_summary">Engedélyezi a lebegéssel való vezérlést, mint egy egérrel a böngészőknél, távoli asztaloknál, stb.</string>
+    <string name="update_recovery_title">Recovery-frissítés</string>
+    <string name="update_recovery_summary">Rendszerfrissítések telepítése közben frissítse a Recovery-t</string>
+    <string name="update_recovery_on_warning">FIGYELMEZTETÉS: Ha ez a funkció engedélyezve van, a jelenleg telepített Recovery-t lecseréli az operációs rendszer alapértelmezettjére.\n\nA nem gyári Recovery-t felülírja a rendszer frissítéseivel együtt, biztosítva a jövőbeni verziókkal való kompatibilitást.\n\nKívánja engedélyezni ezt a funkciót?</string>
+    <string name="update_recovery_off_warning">FIGYELMEZTETÉS: Ha ez a funkció le van tiltva, a telepített Recovery-t nem módosítják az operációs rendszer frissítései.\n\nLehet, hogy az operációs rendszer jövőbeni frissítései nem lesznek telepítve az elavult vagy egyéni Recovery miatt.\n\nBiztosan le kívánja tiltani ezt a funkciót?</string>
 </resources>

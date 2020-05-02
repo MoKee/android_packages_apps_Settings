@@ -48,6 +48,7 @@
     <string name="lock_settings_picker_pattern_size_message">Vali mustri suurus</string>
     <string name="lockpattern_settings_enable_error_path_title">Näita mustri vigu</string>
     <string name="lockpattern_settings_enable_dots_title">Näita mustri punkte</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Läbipaistev märguannete taust</string>
     <string name="app_notification_sound_timeout_title">Väikseim aeg teavitushelide vahel</string>
     <string name="app_notification_sound_timeout_summary_template">Ära luba heli või vibratsiooni rohkem kui üks kord iga <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Piiranguta</string>
@@ -87,4 +88,8 @@
     <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
     <string name="touchscreen_hovering_title">Puuteekraani hõljumine</string>
     <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
+    <string name="update_recovery_title">Uuenda taastamine</string>
+    <string name="update_recovery_summary">Uuenda sisseehitatud taastamine süsteemi värskendustega</string>
+    <string name="update_recovery_on_warning">MÄRKUS. Kui see funktsioon on lubatud, asendatakse installitud taastamine sellega, mis sisaldub töötava OS-i praeguses versioonis.\n\nTeie taastamist värskendatakse koos teie süsteemi täiendustega, mis aitab tagada ühilduvuse tulevaste versioonidega.\n\nKas soovite selle funktsiooni lubada?</string>
+    <string name="update_recovery_off_warning">HOIATUS. Kui see funktsioon on keelatud, ei värskendata teie installitud taastamist operatsioonisüsteemi versiooniuuendustega.\n\nTulevasi OS-i värskendusi ei pruugi vananenud või kohandatud taastamisversioonidega installida.\n\nKas soovite selle funktsiooni tõesti välja lülitada?</string>
 </resources>

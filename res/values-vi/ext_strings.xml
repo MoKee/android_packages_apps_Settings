@@ -47,6 +47,7 @@
     <string name="lock_settings_picker_pattern_size_message">Chọn một kích cỡ mẫu hình</string>
     <string name="lockpattern_settings_enable_error_path_title">Hiện lỗi mẫu hình</string>
     <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Thông báo mờ nền</string>
     <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
     <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Không giới hạn</string>
@@ -86,4 +87,8 @@
     <string name="high_touch_sensitivity_summary">Tăng độ nhạy màn hình cảm ứng để nó có thể được sử dụng trong khi đeo găng tay</string>
     <string name="touchscreen_hovering_title">Di trên màn hình cảm ứng</string>
     <string name="touchscreen_hovering_summary">Cho phép bạn di trên màn hình như chuột trong trình duyệt web, điều khiển máy tính từ xa, v.v.</string>
+    <string name="update_recovery_title">Cập nhật trình phục hồi</string>
+    <string name="update_recovery_summary">Trình phục hồi được tích hợp sẵn với các bản cập nhật hệ thống</string>
+    <string name="update_recovery_on_warning">THÔNG BÁO: Khi tính năng này được bật, trình phục hồi đã cài đặt của bạn sẽ được thay thế bằng một phiên bản hiện có của HĐH đang chạy.\n\n Trình phục hồi của bạn sẽ được cập nhật cùng với các bản nâng cấp cho hệ thống của bạn, giúp đảm bảo khả năng tương thích với các phiên bản trong tương lai.\n\nBạn có muốn kích hoạt tính năng này không?</string>
+    <string name="update_recovery_off_warning">CẢNH BÁO: Khi tính năng này bị tắt, trình phục hồi đã cài đặt của bạn sẽ không được cập nhật cùng với bản nâng cấp hệ điều hành.\n\nCác bản cập nhật hệ điều hành trong tương lai có thể sẽ không được cài đặt trên các phiên bản phục hồi lỗi thời hoặc tùy chỉnh.\n\nBạn có thật sự muốn tắt tính năng này không?</string>
 </resources>

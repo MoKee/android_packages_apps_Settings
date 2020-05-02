@@ -47,6 +47,7 @@
     <string name="lock_settings_picker_pattern_size_message">选择图案大小</string>
     <string name="lockpattern_settings_enable_error_path_title">显示图案错误</string>
     <string name="lockpattern_settings_enable_dots_title">显示图案圆点</string>
+    <string name="translucent_lockscreen_notifications_bg_title">半透明通知背景</string>
     <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
     <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
     <string name="app_notification_sound_timeout_value_none">无限制</string>
@@ -73,11 +74,11 @@
     <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
     <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>
     <string name="data_usage_app_restrict_data">移动数据</string>
-    <string name="data_usage_app_restrict_data_summary">启用移动网络流量使用统计</string>
+    <string name="data_usage_app_restrict_data_summary">允许使用移动网络流量</string>
     <string name="data_usage_app_restrict_vpn">VPN 数据</string>
-    <string name="data_usage_app_restrict_vpn_summary">启用 VPN 数据流量使用统计</string>
+    <string name="data_usage_app_restrict_vpn_summary">允许使用 VPN 数据流量</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 数据</string>
-    <string name="data_usage_app_restrict_wifi_summary">启用 Wi\u2011Fi 流量使用统计</string>
+    <string name="data_usage_app_restrict_wifi_summary">允许使用 Wi\u2011Fi 网络流量</string>
     <string name="proximity_wake_title">防止意外唤醒</string>
     <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
     <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>

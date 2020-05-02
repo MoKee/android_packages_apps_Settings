@@ -47,6 +47,7 @@
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖形大小</string>
     <string name="lockpattern_settings_enable_error_path_title">顯示圖樣錯誤</string>
     <string name="lockpattern_settings_enable_dots_title">顯示圖樣圓點</string>
+    <string name="translucent_lockscreen_notifications_bg_title">半透明的通知背景</string>
     <string name="app_notification_sound_timeout_title">通知聲音之間的最短時間</string>
     <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允許聲音或振動不超過一次</string>
     <string name="app_notification_sound_timeout_value_none">無限制</string>
@@ -86,4 +87,8 @@
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，戴著手套也可以使用手機</string>
     <string name="touchscreen_hovering_title">觸控螢幕懸浮</string>
     <string name="touchscreen_hovering_summary">允許您把手指懸浮在螢幕上，像滑鼠般控制瀏覽器、遠程桌面等</string>
+    <string name="update_recovery_title">更新 Recovery</string>
+    <string name="update_recovery_summary">使用系統更新來更新內置 Recovery</string>
+    <string name="update_recovery_on_warning">注意：當此功能啟用時，您安裝的 Recovery 將被當前執行的作業系統版本中包含的 Recovery 所取代\n\n。您的 Recovery 將隨著系統的升級而更新，這有助於確保與未來版本的相容性。\n\n您要啟用此功能嗎？</string>
+    <string name="update_recovery_off_warning">警告：當此功能被禁用時，您安裝的 Recovery 將不會隨作業系統升級而更新。\n\n未來的作業系統更新可能不會安裝過時的或自定義的 Recovery 版本。\n\n您真的要禁用此功能嗎？</string>
 </resources>
