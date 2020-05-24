@@ -50,6 +50,7 @@
     <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
     <string name="lockpattern_settings_enable_dots_title">Pokazuj punkty wzoru</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Przezroczyste tło powiadomień</string>
     <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
     <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz co każde <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
@@ -89,4 +90,8 @@
     <string name="high_touch_sensitivity_summary">Zwiększa czułość ekranu dotykowego, więc możesz go używać podczas noszenia rękawiczek</string>
     <string name="touchscreen_hovering_title">Wskazywanie ekranu dotykowego</string>
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
+    <string name="update_recovery_title">Aktualizacja recovery</string>
+    <string name="update_recovery_summary">Aktualizuj wbudowany recovery z aktualizacjami systemowymi</string>
+    <string name="update_recovery_on_warning">UWAGA: Jeśli funkcja ta jest włączona, zainstalowane recovery zostanie zastąpione przez włączone do bieżącej wersji systemu operacyjnego.\n\nTwoje recovery będzie aktualizowane wraz z aktualizacjami systemu, pomagając w zapewnieniu kompatybilności z przyszłymi wersjami.\n\nCzy chcesz włączyć tę funkcję?</string>
+    <string name="update_recovery_off_warning">OSTRZEŻENIE: Jeśli funkcja ta jest wyłączona, zainstalowane recovery nie będzie aktualizowane wraz z aktualizacjami systemu operacyjnego.\n\nPrzyszłe aktualizacje systemu operacyjnego mogą nie zainstalować się wraz z przestarzałymi bądź niestandardowymi wersjami recovery.\n\n Czy na prawdę chcesz wyłączyć tę funkcję?</string>
 </resources>

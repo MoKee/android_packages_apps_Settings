@@ -27,6 +27,8 @@
     <string name="advanced_reboot_summary">Ketika tidak terkunci, berisi pilihan pada menu daya untuk mulai ulang ke recovery atau bootloader</string>
     <string name="adb_enable">Android debugging</string>
     <string name="adb_enable_summary">Aktifkan antarmuka Android Debug Bridge (ADB)</string>
+    <string name="adb_enable_root">Debugging Root</string>
+    <string name="adb_enable_summary_root">Izinkan menjalankan debugging Android sebagai root</string>
     <string name="adb_notify">Pemberitahuan debugging</string>
     <string name="adb_notify_summary">Tampilkan pemberitahuan bila USB atau jaringan debugging diaktifkan</string>
     <string name="adb_over_network">ADB melalui jaringan</string>
@@ -36,6 +38,7 @@
     <string name="kill_app_longpress_back_summary">Matikan aplikasi latar dengan menahan tombol kembali</string>
     <string name="device_hostname">Nama host perangkat</string>
     <string name="tethering_allow_vpn_upstreams_title">Izinkan klien menggunakan VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019 ini untuk konektivitas upstream</string>
     <string name="increasing_ring_volume_option_title">Meningkatkan volume dering</string>
     <string name="increasing_ring_min_volume_title">Volume awal</string>
     <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
@@ -44,6 +47,7 @@
     <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
     <string name="lockpattern_settings_enable_error_path_title">Tunjukkan galat pola</string>
     <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Latar belakang notifikasi sedikit transparan</string>
     <string name="app_notification_sound_timeout_title">Waktu minimum antara suara pemberitahuan</string>
     <string name="app_notification_sound_timeout_summary_template">Memungkinkan suara atau getaran tidak lebih dari sekali setiap <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Tidak ada pembatasan</string>
@@ -71,6 +75,8 @@
     <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
     <string name="data_usage_app_restrict_data">Data seluler</string>
     <string name="data_usage_app_restrict_data_summary">Aktifkan penggunaan data seluler</string>
+    <string name="data_usage_app_restrict_vpn">Data VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Aktifkan penggunaan data VPN</string>
     <string name="data_usage_app_restrict_wifi">Data Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Aktifkan penggunaan data Wi\u2011Fi</string>
     <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
@@ -81,4 +87,8 @@
     <string name="high_touch_sensitivity_summary">Tingkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
     <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
+    <string name="update_recovery_title">Perbarui recovery</string>
+    <string name="update_recovery_summary">Perbarui Recovery terintegrasi dengan pembaruan sistem</string>
+    <string name="update_recovery_on_warning">PERHATIAN: Ketika fitur ini dinyalakan,recovery yang terinstall akan diganti dengan yang disediakan dengan OS yang sekarang.\n\nRecovery Anda akan diperbarui bersamaan dengan Pembaruan ke sistem Anda,membantu untuk memastikan kompatibilitas dengan versi terbaru.\n\nApakah anda ingin menyalakan fitur ini?</string>
+    <string name="update_recovery_off_warning">PERINGATAN: Ketika fitur ini dimatikan,recovery yang terinstall tidak akan diperbarui bersamaan pembaruan OS.\n\nOS Terbaru tidak akan terinstall dengan recovery usang atau versi recovery kustom.\n\nApakah Anda yakin ingin mematikan fitur ini?</string>
 </resources>

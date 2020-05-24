@@ -48,6 +48,7 @@
     <string name="lock_settings_picker_pattern_size_message">Escolha um tamanho para o padrão</string>
     <string name="lockpattern_settings_enable_error_path_title">Exibir erro de padrão</string>
     <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Fundo de notificações translúcidas</string>
     <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
     <string name="app_notification_sound_timeout_summary_template">Permitir sons ou vibrações apenas uma vez a cada <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Sem restrição</string>
@@ -87,4 +88,8 @@
     <string name="high_touch_sensitivity_summary">Aumenta a sensibilidade da tela para poder ser usada com luvas</string>
     <string name="touchscreen_hovering_title">Flutuar o dedo na tela</string>
     <string name="touchscreen_hovering_summary">Permite que você flutue o dedo na tela como um mouse em navegadores web, desktops remotos, etc</string>
+    <string name="update_recovery_title">Atualizar recuperação</string>
+    <string name="update_recovery_summary">Atualize a recuperação interna com atualizações do sistema</string>
+    <string name="update_recovery_on_warning">AVISO: Quando este recurso está ativado, seu recovery instalado será substituído por um incluído na versão atual do sistema operacional em execução.\n\nSua recuperação será atualizada juntamente com as atualizações do seu sistema, ajudando a garantir a compatibilidade com versões futuras.\n\nVocê gostaria de habilitar este recurso?</string>
+    <string name="update_recovery_off_warning">AVISO: Quando este recurso está desativado, sua recuperação não será atualizada com as atualizações do SO.\n\nAtualizações Future OS podem não instalar com versões de recuperação desatualizadas ou personalizadas.\n\nVocê realmente deseja desativar esta função?</string>
 </resources>

@@ -75,6 +75,8 @@
     <string name="touchscreen_gesture_settings_summary">Executar vários gestos no ecrã para ações rápidas</string>
     <string name="data_usage_app_restrict_data">Dados de rede móvel</string>
     <string name="data_usage_app_restrict_data_summary">Ativar a utilização de dados de rede móvel</string>
+    <string name="data_usage_app_restrict_vpn">Dados VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Ativar a utilização do VPN</string>
     <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Ativar a utilização de dados Wi\u2011Fi</string>
     <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>

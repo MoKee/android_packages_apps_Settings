@@ -87,4 +87,8 @@
     <string name="high_touch_sensitivity_summary">增加触摸屏的灵敏度，以便在戴手套时使用</string>
     <string name="touchscreen_hovering_title">悬空操作</string>
     <string name="touchscreen_hovering_summary">允许您将手指悬停在屏幕上作为浏览器、远程桌面等处的鼠标指针</string>
+    <string name="update_recovery_title">更新恢复模式</string>
+    <string name="update_recovery_summary">使用系统更新来更新内置的恢复模式</string>
+    <string name="update_recovery_on_warning">注意：启用此功能后，您已安装的恢复模式会被正在运行的系统所包含的恢复模式所替换。\n\n您的恢复模式会随着系统一起更新，以确保对未来版本的兼容性。\n\n您确定启用此功能？</string>
+    <string name="update_recovery_off_warning">警告：此功能被禁用后，您已安装的恢复模式将不会随着系统一起更新。\n\n未来的系统更新可能不支持用过旧或自制的恢复模式安装。\n\n您确定要禁用此功能？</string>
 </resources>
