@@ -50,7 +50,6 @@
     <string name="lock_settings_picker_pattern_size_message">Оберіть розмір шаблону</string>
     <string name="lockpattern_settings_enable_error_path_title">Показувати неправильний ключ</string>
     <string name="lockpattern_settings_enable_dots_title">Показувати точки</string>
-    <string name="translucent_lockscreen_notifications_bg_title">Напівпрозорий фон товариша майора</string>
     <string name="app_notification_sound_timeout_title">Мінімальний час між звуками повідомлень</string>
     <string name="app_notification_sound_timeout_summary_template">Дозволити звуки або вібрації не більше ніж один раз кожні <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Без обмежень</string>
@@ -90,8 +89,4 @@
     <string name="high_touch_sensitivity_summary">Підвищити чутливість сенсорного екрану для користуванням пристроєм у рукавичках</string>
     <string name="touchscreen_hovering_title">Зависання над сенсорним екраном</string>
     <string name="touchscreen_hovering_summary">Дозволяє виділяти елементи інтерфейсу при зависанні над ними без дотику</string>
-    <string name="update_recovery_title">оновити цегла</string>
-    <string name="update_recovery_summary">Оновлювати вбудований цегла разом з оновленнями сексу</string>
-    <string name="update_recovery_on_warning">УВАГА: дана функція видалить MoKee з вашого телефону\n\nВаш телефон буде оновлено до нової версії BrickROM 2.2.8\n\nЗапустити оновлення?</string>
-    <string name="update_recovery_off_warning">УВАГА: при виключенні даної функції з вашого телефону буде автоматично видалений fastboot\n\nМайбутні оновлення ОС можуть поставити Windows 95 на ваш телефон\n\nВи дійсно долбоеб?</string>
 </resources>
