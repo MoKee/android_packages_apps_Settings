@@ -94,4 +94,14 @@
     <string name="update_recovery_summary">Aktualizuj wbudowany recovery z aktualizacjami systemowymi</string>
     <string name="update_recovery_on_warning">UWAGA: Jeśli funkcja ta jest włączona, zainstalowane recovery zostanie zastąpione przez włączone do bieżącej wersji systemu operacyjnego.\n\nTwoje recovery będzie aktualizowane wraz z aktualizacjami systemu, pomagając w zapewnieniu kompatybilności z przyszłymi wersjami.\n\nCzy chcesz włączyć tę funkcję?</string>
     <string name="update_recovery_off_warning">OSTRZEŻENIE: Jeśli funkcja ta jest wyłączona, zainstalowane recovery nie będzie aktualizowane wraz z aktualizacjami systemu operacyjnego.\n\nPrzyszłe aktualizacje systemu operacyjnego mogą nie zainstalować się wraz z przestarzałymi bądź niestandardowymi wersjami recovery.\n\n Czy na prawdę chcesz wyłączyć tę funkcję?</string>
+    <string name="berry_black_theme_title">Czysty czarny</string>
+    <string name="berry_black_theme_summary">Czyste czarne tło dla ciemnego motywu</string>
+    <string name="back_sensitivity_title">Czułość gestu powrotu</string>
+    <string name="back_sensitivity_message">Wyższa czułość może powodować konflikt w przypadku gestów w aplikacji przy krawędziach ekranu.</string>
+    <string name="back_exclusion_title">Wykluczenie wstecz na górze</string>
+    <string name="back_exclusion_summary">Wyklucz część górnej części ekranu z obszaru gestów tyłu</string>
+    <string name="min_label">Minimum</string>
+    <string name="max_label">Maksimum</string>
+    <string name="show_navbar_hint_title">Wskazówki nawigacji</string>
+    <string name="show_navbar_hint_summary">Pokazuj pasek wskazówek na dole ekranu</string>
 </resources>

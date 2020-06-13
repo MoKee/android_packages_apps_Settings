@@ -94,4 +94,15 @@
     <string name="update_recovery_summary">Aktualizovat oddíl recovery pomocí aktualizace systému</string>
     <string name="update_recovery_on_warning">OZNÁMENÍ: Tato funkce je povolena, vaše instalovaná recovery bude nahrazena jednou součástí aktuální verze OS.\n\nVaše recovery bude aktualizována spolu s aktualizacemi systému, čímž bude zajištěna kompatibilita s budoucími verzemi.\n\nChcete povolit tuto funkci?</string>
     <string name="update_recovery_off_warning">VAROVÁNÍ: Pokud je tato funkce zakázána, vaše naistalovaná recovery nebude aktualizována spolu s OS aktualizacemi.\n\nBudoucí OS aktualizace nemusejí být naistalovány se zastaralými nebo vlastními verzemi recovery.\n\nChcete opravdu tuto funkci zakázat?</string>
+    <string name="berry_black_theme_title">Čistě černý</string>
+    <string name="berry_black_theme_summary">Čistě černé pozadí pro tmavý motiv</string>
+    <string name="back_sensitivity_title">Citlivost na zpětné gesto</string>
+    <string name="back_sensitivity_message">Vyšší citlivost může narušovat gesta v aplikacích prováděná u okrajů obrazovky.</string>
+    <string name="back_exclusion_title">Vyloučení gesta Zpět nahoře</string>
+    <string name="back_exclusion_summary">Vyloučit část horní části obrazovky z oblasti gesta Zpět</string>
+    <string name="min_label">Min.</string>
+    <string name="max_label">Max.</string>
+    <string name="show_navbar_hint_title">Navigační nápověda</string>
+    <string name="show_navbar_hint_summary">Zobrazit navigační nápovědu ve spodní části obrazovky</string>
+    <string name="keywords_notification_log">oznámení, protokol oznámení</string>
 </resources>

@@ -92,4 +92,15 @@
     <string name="update_recovery_summary">Uuenda sisseehitatud taastamine süsteemi värskendustega</string>
     <string name="update_recovery_on_warning">MÄRKUS. Kui see funktsioon on lubatud, asendatakse installitud taastamine sellega, mis sisaldub töötava OS-i praeguses versioonis.\n\nTeie taastamist värskendatakse koos teie süsteemi täiendustega, mis aitab tagada ühilduvuse tulevaste versioonidega.\n\nKas soovite selle funktsiooni lubada?</string>
     <string name="update_recovery_off_warning">HOIATUS. Kui see funktsioon on keelatud, ei värskendata teie installitud taastamist operatsioonisüsteemi versiooniuuendustega.\n\nTulevasi OS-i värskendusi ei pruugi vananenud või kohandatud taastamisversioonidega installida.\n\nKas soovite selle funktsiooni tõesti välja lülitada?</string>
+    <string name="berry_black_theme_title">Täitsa must</string>
+    <string name="berry_black_theme_summary">Täitsa must taust tumeda teema jaoks</string>
+    <string name="back_sensitivity_title">Vähendage puutetundlikust</string>
+    <string name="back_sensitivity_message">Suurem tundlikkus võib olla vastuolus rakenduse žestidega ekraani servas.</string>
+    <string name="back_exclusion_title">Eemaldage välistamine ülaosas</string>
+    <string name="back_exclusion_summary">Eemaldage osa ekraani ülaservast tagumise žesti piirkonnast</string>
+    <string name="min_label">Min</string>
+    <string name="max_label">Max</string>
+    <string name="show_navbar_hint_title">Navigeerimise vihje</string>
+    <string name="show_navbar_hint_summary">Kuva navigeerimis vihje riba ekraani allosas</string>
+    <string name="keywords_notification_log">teated, teadete logi</string>
 </resources>

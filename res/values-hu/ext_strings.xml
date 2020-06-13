@@ -92,4 +92,15 @@
     <string name="update_recovery_summary">Rendszerfrissítések telepítése közben frissítse a Recovery-t</string>
     <string name="update_recovery_on_warning">FIGYELMEZTETÉS: Ha ez a funkció engedélyezve van, a jelenleg telepített Recovery-t lecseréli az operációs rendszer alapértelmezettjére.\n\nA nem gyári Recovery-t felülírja a rendszer frissítéseivel együtt, biztosítva a jövőbeni verziókkal való kompatibilitást.\n\nKívánja engedélyezni ezt a funkciót?</string>
     <string name="update_recovery_off_warning">FIGYELMEZTETÉS: Ha ez a funkció le van tiltva, a telepített Recovery-t nem módosítják az operációs rendszer frissítései.\n\nLehet, hogy az operációs rendszer jövőbeni frissítései nem lesznek telepítve az elavult vagy egyéni Recovery miatt.\n\nBiztosan le kívánja tiltani ezt a funkciót?</string>
+    <string name="berry_black_theme_title">Valódi fekete</string>
+    <string name="berry_black_theme_summary">Egy igazán fekete háttér a fekete témákhoz</string>
+    <string name="back_sensitivity_title">A „vissza” vezérlés érzékenysége</string>
+    <string name="back_sensitivity_message">Előfordulhat, hogy néhány alkalmazásban a magasabb érzékenység problémát okoz a képernyőszéli mozdulatok során.</string>
+    <string name="back_exclusion_title">\"Vissza-mentes\" sáv felül</string>
+    <string name="back_exclusion_summary">Kizárhatja a felső rész egy területét, ahol nem fog működni a \"vissza\"-vezérlés</string>
+    <string name="min_label">Minimális</string>
+    <string name="max_label">Maximális</string>
+    <string name="show_navbar_hint_title">Navigációs tipp</string>
+    <string name="show_navbar_hint_summary">A navigáció ajánlásait a képernyő alján jelenítse meg</string>
+    <string name="keywords_notification_log">értesítések, értesítési jegyzék</string>
 </resources>
