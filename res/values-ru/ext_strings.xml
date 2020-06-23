@@ -94,4 +94,15 @@
     <string name="update_recovery_summary">Обновить встроенный Recovry при обновлении системы</string>
     <string name="update_recovery_on_warning">ЗАМЕЧАНИЕ. При включении этой функции, установленное Recovery будет заменено на тот, который включен в текущую версию работающей ОС.\n\nВаше Recovery будет обновлено вместе с обновлениями для вашей системы, помогая обеспечить совместимость с будущими версиями.\n\nВы хотите включить эту функцию?</string>
     <string name="update_recovery_off_warning">ПРЕДУПРЕЖДЕНИЕ: Если эта функция отключена, установленный вами Recovery не будет обновляться при обновлении ОС.\n\nБудущие обновления ОС могут не устанавливаться с устаревшими или пользовательскими версиями восстановления.\n\nВы действительно хотите отключить эту функцию?</string>
+    <string name="berry_black_theme_title">Чистый черный</string>
+    <string name="berry_black_theme_summary">Чистый черный фон для темной темы</string>
+    <string name="back_sensitivity_title">Чувствительность жеста возврата</string>
+    <string name="back_sensitivity_message">При высокой чувствительности могут не работать жесты по краям экрана в приложении.</string>
+    <string name="back_exclusion_title">Отключить жест возврата сверху</string>
+    <string name="back_exclusion_summary">Исключить часть верхней части экрана из области жестов возврата</string>
+    <string name="min_label">Мин.</string>
+    <string name="max_label">Макс.</string>
+    <string name="show_navbar_hint_title">Советы по навигации</string>
+    <string name="show_navbar_hint_summary">Показывать советы по навигации внизу экрана</string>
+    <string name="keywords_notification_log">уведомления, журнал уведомлений</string>
 </resources>

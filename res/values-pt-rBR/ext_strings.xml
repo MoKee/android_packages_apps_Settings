@@ -92,4 +92,15 @@
     <string name="update_recovery_summary">Atualize a recuperação interna com atualizações do sistema</string>
     <string name="update_recovery_on_warning">AVISO: Quando este recurso está ativado, seu recovery instalado será substituído por um incluído na versão atual do sistema operacional em execução.\n\nSua recuperação será atualizada juntamente com as atualizações do seu sistema, ajudando a garantir a compatibilidade com versões futuras.\n\nVocê gostaria de habilitar este recurso?</string>
     <string name="update_recovery_off_warning">AVISO: Quando este recurso está desativado, sua recuperação não será atualizada com as atualizações do SO.\n\nAtualizações Future OS podem não instalar com versões de recuperação desatualizadas ou personalizadas.\n\nVocê realmente deseja desativar esta função?</string>
+    <string name="berry_black_theme_title">Preto puro</string>
+    <string name="berry_black_theme_summary">Fundo preto puro para tema escuro</string>
+    <string name="back_sensitivity_title">Sensibilidade ao voltar</string>
+    <string name="back_sensitivity_message">Maior sensibilidade pode entrar em conflito com qualquer gesto do aplicativo ao longo das bordas da tela.</string>
+    <string name="back_exclusion_title">Exclusão de volta no topo</string>
+    <string name="back_exclusion_summary">Excluir parte do topo da tela da área traseira</string>
+    <string name="min_label">Mín.</string>
+    <string name="max_label">Máx.</string>
+    <string name="show_navbar_hint_title">Dica de navegação</string>
+    <string name="show_navbar_hint_summary">Mostrar barra de dicas de navegação na parte inferior da tela</string>
+    <string name="keywords_notification_log">notificações, registro de notificação</string>
 </resources>

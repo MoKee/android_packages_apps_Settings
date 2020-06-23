@@ -99,4 +99,7 @@
     <string name="back_exclusion_summary">屏幕上部不作为返回手势触发区域</string>
     <string name="min_label">最小</string>
     <string name="max_label">最大</string>
+    <string name="show_navbar_hint_title">导航提示</string>
+    <string name="show_navbar_hint_summary">在屏幕底部显示导航提示栏</string>
+    <string name="keywords_notification_log">通知，通知日志</string>
 </resources>

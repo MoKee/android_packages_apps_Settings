@@ -91,4 +91,15 @@
     <string name="update_recovery_summary">Trình phục hồi được tích hợp sẵn với các bản cập nhật hệ thống</string>
     <string name="update_recovery_on_warning">THÔNG BÁO: Khi tính năng này được bật, trình phục hồi đã cài đặt của bạn sẽ được thay thế bằng một phiên bản hiện có của HĐH đang chạy.\n\n Trình phục hồi của bạn sẽ được cập nhật cùng với các bản nâng cấp cho hệ thống của bạn, giúp đảm bảo khả năng tương thích với các phiên bản trong tương lai.\n\nBạn có muốn kích hoạt tính năng này không?</string>
     <string name="update_recovery_off_warning">CẢNH BÁO: Khi tính năng này bị tắt, trình phục hồi đã cài đặt của bạn sẽ không được cập nhật cùng với bản nâng cấp hệ điều hành.\n\nCác bản cập nhật hệ điều hành trong tương lai có thể sẽ không được cài đặt trên các phiên bản phục hồi lỗi thời hoặc tùy chỉnh.\n\nBạn có thật sự muốn tắt tính năng này không?</string>
+    <string name="berry_black_theme_title">Đen thuần</string>
+    <string name="berry_black_theme_summary">Màu đen thuần túy cho nền chế độ tối</string>
+    <string name="back_sensitivity_title">Độ nhạy cử chỉ quay lại</string>
+    <string name="back_sensitivity_message">Độ nhạy cao hơn có thể xung đột với mọi cử chỉ trong ứng dụng dọc theo các cạnh màn hình.</string>
+    <string name="back_exclusion_title">Vô hiệu cử chỉ trên cùng</string>
+    <string name="back_exclusion_summary">Vô hiệu hoá cử chỉ quay lại ở phần trên cùng màn hình</string>
+    <string name="min_label">Tối thiểu</string>
+    <string name="max_label">Tối đa</string>
+    <string name="show_navbar_hint_title">Chỉ dẫn điều hướng</string>
+    <string name="show_navbar_hint_summary">Hiển thị thanh gợi ý điều hướng ở dưới cùng của màn hình</string>
+    <string name="keywords_notification_log">thông báo, báo cáo thông báo</string>
 </resources>
