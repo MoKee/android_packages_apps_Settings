@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2012-2019 The MoKee Open Source Project
      Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,9 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="suggestion_button_close">დახურვა</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 წამი</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 წუთი</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 წუთი</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">10 წუთი</string>
+    <string name="directly_show_lock_summary">გადასმის გამოტოვება ეკრანის გასახსნელად და პირდაპირ გასაღების შეყვანა</string>
+    <string name="data_usage_app_restrict_data">ფიჭური ინტერნეტი</string>
+    <string name="data_usage_app_restrict_data_summary">ფიჭური ინტერნეტის მოხმარების ჩართვა</string>
 </resources>
