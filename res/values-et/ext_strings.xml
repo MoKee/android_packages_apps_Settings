@@ -103,4 +103,5 @@
     <string name="show_navbar_hint_title">Navigeerimise vihje</string>
     <string name="show_navbar_hint_summary">Kuva navigeerimis vihje riba ekraani allosas</string>
     <string name="keywords_notification_log">teated, teadete logi</string>
+    <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
 </resources>

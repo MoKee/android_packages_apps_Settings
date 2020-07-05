@@ -103,4 +103,5 @@
     <string name="show_navbar_hint_title">Navigációs tipp</string>
     <string name="show_navbar_hint_summary">A navigáció ajánlásait a képernyő alján jelenítse meg</string>
     <string name="keywords_notification_log">értesítések, értesítési jegyzék</string>
+    <string name="connected_tws_device_saved_title">Mentett Earbuds fülhallgatók</string>
 </resources>

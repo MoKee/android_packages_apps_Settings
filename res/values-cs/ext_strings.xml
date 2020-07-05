@@ -105,4 +105,5 @@
     <string name="show_navbar_hint_title">Navigační nápověda</string>
     <string name="show_navbar_hint_summary">Zobrazit navigační nápovědu ve spodní části obrazovky</string>
     <string name="keywords_notification_log">oznámení, protokol oznámení</string>
+    <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
 </resources>
