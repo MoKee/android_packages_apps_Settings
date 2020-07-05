@@ -17,6 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockscreen_vibrate_enabled_title">جھنجھنانا</string>
     <string name="adb_over_network_warning">انتباہ: جب ای ڈی بی نیٹ ورک پر فعال ہو تو، آپ کا فون تمام منسلک نیٹ ورکوں کے اندرونی مداخلت کے لئے کھلی ہے! \ n \ n جب آپ باضابطہ نیٹ ورک پر منسلک ہوجائیں تو اس خصوصیت کا استعمال کریں.\n\n کیا آپ واقعی اس فنکشن کو فعال کرنا چاہتے ہیں؟</string>
     <string name="root_access_warning_message">جڑ تک رسائی کی درخواست کرنے کیلئے ایپس کی اجازت دینے میں بہت خطرناک ہے اور آپ کے سسٹم کی حفاظت کو سمجھا سکتا ہے!</string>
     <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>

@@ -215,6 +215,10 @@
     <string name="sub_activate_failed">Aktivacija nije uspjela.</string>
     <string name="sub_deactivate_success">SIM deaktiviran.</string>
     <string name="sub_deactivate_failed">Deaktivacija nije uspjela.</string>
+    <string name="data_usage_app_restrict_data">Mobilni podatci</string>
+    <string name="data_usage_app_restrict_data_summary">Omogući upotrebu mobilnih podataka</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi podatci</string>
+    <string name="data_usage_app_restrict_wifi_summary">Omogući upotrebu Wi\u2011Fi podataka</string>
     <string name="unlock_scramble_pin_layout_title">Nasumičan raspored</string>
     <string name="unlock_scramble_pin_layout_summary">Nasumičan PIN raspored pri otključavanju uređaja</string>
     <string name="proximity_wake_title">Sprječavanje slučajnog buđenja</string>

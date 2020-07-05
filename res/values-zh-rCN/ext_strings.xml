@@ -264,11 +264,11 @@
     <string name="sub_deactivate_success">SIM 卡已禁用。</string>
     <string name="sub_deactivate_failed">停用失败。</string>
     <string name="data_usage_app_restrict_data">移动数据</string>
-    <string name="data_usage_app_restrict_data_summary">启用移动网络流量使用统计</string>
+    <string name="data_usage_app_restrict_data_summary">允许使用移动网络流量</string>
     <string name="data_usage_app_restrict_vpn">VPN 数据</string>
-    <string name="data_usage_app_restrict_vpn_summary">启用 VPN 数据流量使用统计</string>
+    <string name="data_usage_app_restrict_vpn_summary">允许使用 VPN 数据流量</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 数据</string>
-    <string name="data_usage_app_restrict_wifi_summary">启用 Wi\u2011Fi 流量使用统计</string>
+    <string name="data_usage_app_restrict_wifi_summary">允许使用 Wi\u2011Fi 网络流量</string>
     <string name="unlock_scramble_pin_layout_title">乱序布局</string>
     <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
     <string name="proximity_wake_title">防止意外唤醒</string>
