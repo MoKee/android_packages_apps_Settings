@@ -74,6 +74,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Topeltkoputa olekuriba või lukustuskuva ekraani väljalülitamiseks</string>
     <string name="touchscreen_gesture_settings_title">Puuteekraani žestid</string>
     <string name="touchscreen_gesture_settings_summary">Soorita mitmeid puuteekraani žeste kiirtoimingute teostamiseks</string>
+    <string name="data_usage_app_restrict_all">Lubage võrgule juurdepääs</string>
+    <string name="data_usage_app_restrict_all_summary">Luba võrgu kasutamine</string>
     <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
     <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
     <string name="data_usage_app_restrict_vpn">VPN andmed</string>

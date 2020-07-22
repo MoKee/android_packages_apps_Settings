@@ -76,6 +76,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavovou lištu nebo zamykací obrazovku vypnout obrazovku</string>
     <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
     <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
+    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
+    <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
     <string name="data_usage_app_restrict_data">Mobilní data</string>
     <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
     <string name="data_usage_app_restrict_vpn">VPN data</string>
