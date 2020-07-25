@@ -74,6 +74,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Az állapotsor vagy a záróképernyő dupla érintésére kikapcsol a képernyő</string>
     <string name="touchscreen_gesture_settings_title">Érintőképernyő-mozdulatvezérlés</string>
     <string name="touchscreen_gesture_settings_summary">Különböző képernyő-mozdulatvezérlések végrehajtása a gyorsműveletekhez</string>
+    <string name="data_usage_app_restrict_all">Hálózat-hozzáférés engedélyezése</string>
+    <string name="data_usage_app_restrict_all_summary">Lehetővé teszi a hálózathasználatot</string>
     <string name="data_usage_app_restrict_data">Mobiladat-kapcsolat</string>
     <string name="data_usage_app_restrict_data_summary">Mobiladat-használat engedélyezése</string>
     <string name="data_usage_app_restrict_vpn">VPN-adatok</string>
