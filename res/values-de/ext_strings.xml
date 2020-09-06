@@ -92,4 +92,6 @@
     <string name="berry_black_theme_summary">Rein schwarzer Hintergrund für dunkles Design</string>
     <string name="min_label">Min</string>
     <string name="max_label">Max</string>
+    <string name="heads_up_notifications_enabled_title">Pop-up</string>
+    <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
 </resources>

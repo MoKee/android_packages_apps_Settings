@@ -103,4 +103,6 @@
     <string name="show_navbar_hint_title">Dica de navegação</string>
     <string name="show_navbar_hint_summary">Mostrar barra de dicas de navegação na parte inferior da tela</string>
     <string name="keywords_notification_log">notificações, registro de notificação</string>
+    <string name="heads_up_notifications_enabled_title">Notificações pop-up</string>
+    <string name="heads_up_notifications_enabled_summary">Mostrar notificações prioritárias numa pequena janela flutuante</string>
 </resources>

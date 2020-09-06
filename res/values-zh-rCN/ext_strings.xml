@@ -104,4 +104,6 @@
     <string name="show_navbar_hint_title">导航提示</string>
     <string name="show_navbar_hint_summary">在屏幕底部显示导航提示条</string>
     <string name="keywords_notification_log">通知，通知日志</string>
+    <string name="heads_up_notifications_enabled_title">浮动通知</string>
+    <string name="heads_up_notifications_enabled_summary">在一个小的浮动窗口中显示优先通知</string>
 </resources>

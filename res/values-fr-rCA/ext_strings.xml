@@ -87,4 +87,6 @@
     <string name="high_touch_sensitivity_summary">Augmenter la sensibilité de l\'écran permettant ainsi le port de gants</string>
     <string name="touchscreen_hovering_title">Survol de l\'écran tactile</string>
     <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
+    <string name="heads_up_notifications_enabled_title">Notifications flottantes</string>
+    <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
 </resources>

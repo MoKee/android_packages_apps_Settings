@@ -102,4 +102,6 @@
     <string name="show_navbar_hint_title">Chỉ dẫn điều hướng</string>
     <string name="show_navbar_hint_summary">Hiển thị thanh gợi ý điều hướng ở dưới cùng của màn hình</string>
     <string name="keywords_notification_log">thông báo, báo cáo thông báo</string>
+    <string name="heads_up_notifications_enabled_title">Thông báo nổi</string>
+    <string name="heads_up_notifications_enabled_summary">Hiển thị các thông báo ưu tiên trong một cửa sổ nổi nhỏ</string>
 </resources>

@@ -91,4 +91,6 @@
     <string name="update_recovery_summary">Perbarui Recovery terintegrasi dengan pembaruan sistem</string>
     <string name="update_recovery_on_warning">PERHATIAN: Ketika fitur ini dinyalakan,recovery yang terinstall akan diganti dengan yang disediakan dengan OS yang sekarang.\n\nRecovery Anda akan diperbarui bersamaan dengan Pembaruan ke sistem Anda,membantu untuk memastikan kompatibilitas dengan versi terbaru.\n\nApakah anda ingin menyalakan fitur ini?</string>
     <string name="update_recovery_off_warning">PERINGATAN: Ketika fitur ini dimatikan,recovery yang terinstall tidak akan diperbarui bersamaan pembaruan OS.\n\nOS Terbaru tidak akan terinstall dengan recovery usang atau versi recovery kustom.\n\nApakah Anda yakin ingin mematikan fitur ini?</string>
+    <string name="heads_up_notifications_enabled_title">Notifikasi mengambang</string>
+    <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
 </resources>

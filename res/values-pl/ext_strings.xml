@@ -104,4 +104,6 @@
     <string name="max_label">Maksimum</string>
     <string name="show_navbar_hint_title">Wskazówki nawigacji</string>
     <string name="show_navbar_hint_summary">Pokazuj pasek wskazówek na dole ekranu</string>
+    <string name="heads_up_notifications_enabled_title">Wyskakujące powiadomienia</string>
+    <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
 </resources>

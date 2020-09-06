@@ -79,4 +79,6 @@
     <string name="high_touch_sensitivity_summary">Gevoeligheid van het scherm verhogen, zodat het bediend kan worden met handschoenen</string>
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
+    <string name="heads_up_notifications_enabled_title">Zwevende meldingen</string>
+    <string name="heads_up_notifications_enabled_summary">Prioriteitsmeldingen weergeven in klein zwevend venster</string>
 </resources>

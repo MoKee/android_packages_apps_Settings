@@ -85,4 +85,6 @@
     <string name="high_touch_sensitivity_summary">Zvýšiť citlivosť dotykovej obrazovky, takže ju bude možné používať pri nosení rukavíc</string>
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
+    <string name="heads_up_notifications_enabled_title">Plávajúce upozornenia</string>
+    <string name="heads_up_notifications_enabled_summary">Zobraziť prioritné upozornenia v malom plávajúcom okne</string>
 </resources>

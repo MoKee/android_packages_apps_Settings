@@ -68,4 +68,6 @@
     <string name="high_touch_sensitivity_summary">Øk berøringsskjermens følsomhet slik at den kan brukes med hansker</string>
     <string name="touchscreen_hovering_title">Berøringsskjerm hovring</string>
     <string name="touchscreen_hovering_summary">Lar deg hovre over skjermen som en mus på en nettleser, eksternt skrivebord osv</string>
+    <string name="heads_up_notifications_enabled_title">Varselvindu</string>
+    <string name="heads_up_notifications_enabled_summary">Vis prioriterte varsler i et lite flytende vindu</string>
 </resources>

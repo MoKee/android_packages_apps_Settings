@@ -81,4 +81,6 @@
     <string name="high_touch_sensitivity_summary">Incrementar la sensibilidad del panel táctil para que pueda usarse llevando guantes</string>
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Te permitirá deslizar por la pantalla como un ratón en navegadores, escritorios remotos, etc.</string>
+    <string name="heads_up_notifications_enabled_title">Notificaciones emergentes</string>
+    <string name="heads_up_notifications_enabled_summary">Mostrar las notificaciones prioritarias en una pequeña ventana flotante</string>
 </resources>

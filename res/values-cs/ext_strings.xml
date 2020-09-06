@@ -108,4 +108,6 @@
     <string name="show_navbar_hint_summary">Zobrazit navigační nápovědu ve spodní části obrazovky</string>
     <string name="keywords_notification_log">oznámení, protokol oznámení</string>
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <string name="heads_up_notifications_enabled_title">Plovoucí upozornění</string>
+    <string name="heads_up_notifications_enabled_summary">Zobrazit prioritní oznámení v malém plovoucím okně</string>
 </resources>

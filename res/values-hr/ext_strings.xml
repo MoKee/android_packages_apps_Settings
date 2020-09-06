@@ -78,4 +78,6 @@
     <string name="high_touch_sensitivity_summary">Povećaj osjetljivost na dodir tako da se mogu koristiti rukavice</string>
     <string name="touchscreen_hovering_title">Lebdenje zaslonom</string>
     <string name="touchscreen_hovering_summary">Dopušta vam da lebdite zaslonom kao miš u web pretraživaču, udaljenom desktopu, itd</string>
+    <string name="heads_up_notifications_enabled_title">Plutajuće obavijesti</string>
+    <string name="heads_up_notifications_enabled_summary">Prikazuje prioritetne obavijesti u malim plutajućim prozorima</string>
 </resources>

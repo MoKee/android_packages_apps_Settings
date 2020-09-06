@@ -62,4 +62,5 @@
     <string name="high_touch_sensitivity_title">Mataas na pagkamapagdamdam sa paghawak</string>
     <string name="high_touch_sensitivity_summary">Dagdagan ang touchscreen kaya\'t magagamit ito habang may suot na mga glab</string>
     <string name="touchscreen_hovering_summary">Bigyan ka na mag-hover sa screen kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
+    <string name="heads_up_notifications_enabled_summary">Ipakita ang prayoridad na mga notification sa isang maliit na lumulutang na window</string>
 </resources>

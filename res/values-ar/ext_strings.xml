@@ -91,4 +91,6 @@
     <string name="high_touch_sensitivity_summary">زيادة حساسية شاشة اللمس حتى يمكن استخدامها أثناء ارتداء القفازات</string>
     <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
     <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
+    <string name="heads_up_notifications_enabled_title">الإشعارات العائمة</string>
+    <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في إطار عائم صغير</string>
 </resources>

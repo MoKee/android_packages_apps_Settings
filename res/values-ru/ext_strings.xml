@@ -76,6 +76,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния или экрана блокировки, чтобы перевести устройство в спящий режим</string>
     <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
     <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
+    <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
+    <string name="data_usage_app_restrict_all_summary">Включить отслеживание использования сети</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить использование мобильных данных</string>
     <string name="data_usage_app_restrict_vpn">Данные VPN</string>
@@ -106,4 +108,6 @@
     <string name="show_navbar_hint_summary">Показывать советы по навигации внизу экрана</string>
     <string name="keywords_notification_log">уведомления, журнал уведомлений</string>
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
+    <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими всплывающими окнами</string>
 </resources>
