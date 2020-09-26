@@ -104,6 +104,9 @@
     <string name="show_navbar_hint_title">导航提示</string>
     <string name="show_navbar_hint_summary">在屏幕底部显示导航提示条</string>
     <string name="keywords_notification_log">通知，通知日志</string>
+    <string name="connected_tws_device_saved_title">已保存的耳机</string>
     <string name="heads_up_notifications_enabled_title">浮动通知</string>
     <string name="heads_up_notifications_enabled_summary">在一个小的浮动窗口中显示优先通知</string>
+    <string name="fod_gesture_title">熄屏指纹</string>
+    <string name="fod_gesture_summary">无需唤醒屏幕即可解锁设备</string>
 </resources>

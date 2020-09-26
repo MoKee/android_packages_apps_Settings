@@ -108,4 +108,6 @@
     <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
     <string name="heads_up_notifications_enabled_title">Etteteavitus</string>
     <string name="heads_up_notifications_enabled_summary">Kuvage prioriteetsed teated väikeses ujuvas aknas</string>
+    <string name="fod_gesture_title">Sõrmejäljeskanneriga saab töötada ainult siis, kui ekraan on välja lülitatud</string>
+    <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
 </resources>
