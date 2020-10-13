@@ -12203,4 +12203,13 @@
     <string name="bluetooth_phonebook_access_dialog_title">Allow access to contacts and call log?</string>
     <!-- Bluetooth phonebook permission alert for dialog content [CHAR LIMIT=none] -->
     <string name="bluetooth_phonebook_access_dialog_content">An untrusted Bluetooth device, <xliff:g id="device_name" example="My device">%1$s</xliff:g>, wants to access your contacts and call log. This includes data about incoming and outgoing calls.\n\nYou haven\u2019t connected to <xliff:g id="device_name" example="My device">%2$s</xliff:g> before.</string>
+
+    <!-- Title of selecting NR mode in developer options settings [CHAR LIMIT=NONE]-->
+    <string name="prefer_5G_nr_mode_title">Prefer 5G NR Mode</string>
+    <!-- Summary of selecting NR mode in developer options settings [CHAR LIMIT=NONE]-->
+    <string name="prefer_5G_nr_mode_summary">Enable 5G if you want to select 5G mode</string>
+    <!-- String for NSA, NSA, NSA+SA [CHAR LIMIT=NONE]-->
+    <string name="nr_nsa_sa">NSA + SA</string>
+    <string name="nr_nsa">NSA</string>
+    <string name="nr_sa">SA</string>
 </resources>
