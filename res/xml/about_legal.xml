@@ -35,11 +35,6 @@
         android:title="@string/license_title"
         settings:controller="com.android.settings.deviceinfo.legal.LicensePreferenceController" />
 
-    <!-- MoKee License information -->
-    <PreferenceScreen
-        android:key="mokeelicense"
-        android:title="@string/mokeelicense_title" />
-
     <!-- Terms and conditions -->
     <Preference
         android:key="terms"

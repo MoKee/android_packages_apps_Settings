@@ -17,11 +17,6 @@
 package com.android.settings;
 
 import android.app.settings.SettingsEnums;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.SystemProperties;
-import android.util.Log;
-import androidx.preference.Preference;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -32,9 +27,6 @@ public class LegalSettings extends DashboardFragment {
 
     private static final String TAG = "LegalSettings";
 
-    private static final String PROPERTY_MOKEELICENSE_URL = "ro.mokeelegal.url";
-    private static final String KEY_MOKEE_LICENSE = "mokeelicense";
-
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.ABOUT_LEGAL_SETTINGS;
@@ -43,22 +35,6 @@ public class LegalSettings extends DashboardFragment {
     @Override
     protected String getLogTag() {
         return TAG;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference.getKey().equals(KEY_MOKEE_LICENSE)) {
-            String userMoKeeLicenseUrl = SystemProperties.get(PROPERTY_MOKEELICENSE_URL);
-            final Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.addCategory(Intent.CATEGORY_DEFAULT);
-            intent.setData(Uri.parse(userMoKeeLicenseUrl));
-            try {
-                startActivity(intent);
-            } catch (Exception e) {
-                Log.e(TAG, "Unable to start activity " + intent.toString());
-            }
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
