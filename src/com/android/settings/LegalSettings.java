@@ -32,8 +32,8 @@ public class LegalSettings extends DashboardFragment {
 
     private static final String TAG = "LegalSettings";
 
-    private static final String PROPERTY_LINEAGELICENSE_URL = "ro.lineagelegal.url";
-    private static final String KEY_LINEAGE_LICENSE = "lineagelicense";
+    private static final String PROPERTY_MOKEELICENSE_URL = "ro.mokeelegal.url";
+    private static final String KEY_MOKEE_LICENSE = "mokeelicense";
 
     @Override
     public int getMetricsCategory() {
@@ -47,11 +47,11 @@ public class LegalSettings extends DashboardFragment {
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference.getKey().equals(KEY_LINEAGE_LICENSE)) {
-            String userLineageLicenseUrl = SystemProperties.get(PROPERTY_LINEAGELICENSE_URL);
+        if (preference.getKey().equals(KEY_MOKEE_LICENSE)) {
+            String userMoKeeLicenseUrl = SystemProperties.get(PROPERTY_MOKEELICENSE_URL);
             final Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.addCategory(Intent.CATEGORY_DEFAULT);
-            intent.setData(Uri.parse(userLineageLicenseUrl));
+            intent.setData(Uri.parse(userMoKeeLicenseUrl));
             try {
                 startActivity(intent);
             } catch (Exception e) {

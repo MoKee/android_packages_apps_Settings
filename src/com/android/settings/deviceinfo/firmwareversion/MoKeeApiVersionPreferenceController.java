@@ -20,11 +20,11 @@ import android.content.Context;
 
 import com.android.settings.core.BasePreferenceController;
 
-public class LineageApiVersionPreferenceController extends BasePreferenceController {
+public class MoKeeApiVersionPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "LineageApiVersionCtrl";
+    private static final String TAG = "MoKeeApiVersionCtrl";
 
-    public LineageApiVersionPreferenceController(Context context, String key) {
+    public MoKeeApiVersionPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -35,9 +35,9 @@ public class LineageApiVersionPreferenceController extends BasePreferenceControl
 
     @Override
     public CharSequence getSummary() {
-        final int sdk = lineageos.os.Build.LINEAGE_VERSION.SDK_INT;
+        final int sdk = mokee.os.Build.MOKEE_VERSION.SDK_INT;
         StringBuilder builder = new StringBuilder();
-        builder.append(lineageos.os.Build.getNameForSDKInt(sdk))
+        builder.append(mokee.os.Build.getNameForSDKInt(sdk))
                 .append(" (" + sdk + ")");
         return builder.toString();
     }

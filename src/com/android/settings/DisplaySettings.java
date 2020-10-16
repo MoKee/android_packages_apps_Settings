@@ -37,7 +37,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
-import lineageos.hardware.LineageHardwareManager;
+import mokee.hardware.MKHardwareManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -104,13 +104,13 @@ public class DisplaySettings extends DashboardFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
-                    LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+                    MKHardwareManager hardware = MKHardwareManager.getInstance(context);
                     if (!context.getResources().getBoolean(
-                            org.lineageos.platform.internal.R.bool.config_proximityCheckOnWake)) {
+                            org.mokee.platform.internal.R.bool.config_proximityCheckOnWake)) {
                         keys.add(KEY_PROXIMITY_ON_WAKE);
                     }
                     if (!hardware.isSupported(
-                            LineageHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+                            MKHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
                         keys.add(KEY_HIGH_TOUCH_SENSITIVITY);
                     }
                     return keys;
