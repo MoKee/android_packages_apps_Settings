@@ -22,13 +22,13 @@ import android.os.SystemProperties;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class LineageBuildDatePreferenceController extends BasePreferenceController {
+public class MoKeeBuildDatePreferenceController extends BasePreferenceController {
 
     private static final String TAG = "LineageBuildDateCtrl";
 
     private static final String KEY_BUILD_DATE_PROP = "ro.build.date";
 
-    public LineageBuildDatePreferenceController(Context context, String key) {
+    public MoKeeBuildDatePreferenceController(Context context, String key) {
         super(context, key);
     }
 

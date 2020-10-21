@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2017 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ package com.android.settings.security.screenlock;
 
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
+
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 
@@ -25,54 +26,49 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import mokee.providers.MKSettings;
-
-public class PinScramblePreferenceController extends AbstractPreferenceController
+public abstract class AbstractPatternSwitchPreferenceController
+        extends AbstractPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
-    static final String KEY_LOCKSCREEN_SCRAMBLE_PIN_LAYOUT = "lockscreen_scramble_pin_layout";
-
+    private final String mKey;
     private final int mUserId;
     private final LockPatternUtils mLockPatternUtils;
 
-    public PinScramblePreferenceController(Context context, int userId,
-            LockPatternUtils lockPatternUtils) {
+    public AbstractPatternSwitchPreferenceController(Context context, String key,
+            int userId, LockPatternUtils lockPatternUtils) {
         super(context);
+        mKey = key;
         mUserId = userId;
         mLockPatternUtils = lockPatternUtils;
     }
 
     @Override
     public boolean isAvailable() {
-        return isPinLock();
+        return isPatternLock();
     }
 
     @Override
     public String getPreferenceKey() {
-        return KEY_LOCKSCREEN_SCRAMBLE_PIN_LAYOUT;
+        return mKey;
     }
 
     @Override
     public void updateState(Preference preference) {
-        ((TwoStatePreference) preference).setChecked(MKSettings.System.getInt(
-                mContext.getContentResolver(),
-                MKSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
-                0) == 1);
+        ((TwoStatePreference) preference).setChecked(isEnabled(mLockPatternUtils, mUserId));
     }
 
-    private boolean isPinLock() {
-        int quality = mLockPatternUtils.getKeyguardStoredPasswordQuality(mUserId);
-        boolean hasPin = quality == DevicePolicyManager.PASSWORD_QUALITY_NUMERIC ||
-                quality == DevicePolicyManager.PASSWORD_QUALITY_NUMERIC_COMPLEX;
-        return mLockPatternUtils.isSecure(mUserId) && hasPin;
+    private boolean isPatternLock() {
+        return mLockPatternUtils.isSecure(mUserId)
+                && mLockPatternUtils.getKeyguardStoredPasswordQuality(mUserId)
+                == DevicePolicyManager.PASSWORD_QUALITY_SOMETHING;
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        MKSettings.System.putInt(
-                mContext.getContentResolver(),
-                MKSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
-                (Boolean) newValue ? 1 : 0);
+        setEnabled(mLockPatternUtils, mUserId, (Boolean) newValue);
         return true;
     }
+
+    protected abstract boolean isEnabled(LockPatternUtils utils, int userId);
+    protected abstract void setEnabled(LockPatternUtils utils, int userId, boolean enabled);
 }

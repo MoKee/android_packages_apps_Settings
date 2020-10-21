@@ -35,7 +35,7 @@ public class MoKeeApiVersionPreferenceController extends BasePreferenceControlle
 
     @Override
     public CharSequence getSummary() {
-        final int sdk = mokee.os.Build.MOKEE_VERSION.SDK_INT;
+        final int sdk = mokee.os.Build.MK_VERSION.SDK_INT;
         StringBuilder builder = new StringBuilder();
         builder.append(mokee.os.Build.getNameForSDKInt(sdk))
                 .append(" (" + sdk + ")");
