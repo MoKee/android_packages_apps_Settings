@@ -110,12 +110,6 @@
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <!-- Battery light -->
-        <org.mokee.internal.mkparts.MKPartsPreference
-            android:key="battery_lights"
-            mokee:requiresConfig="@*mokee.platform:integer/config_deviceLightCapabilities"
-            mokee:requiresConfigMask="64" />
-
         <!-- Notification lights -->
         <org.mokee.internal.mkparts.MKPartsPreference
             android:key="notification_lights"
