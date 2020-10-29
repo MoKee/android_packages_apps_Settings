@@ -84,12 +84,12 @@
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             settings:searchable="false"/>
 
-        <mokee.preference.MKSecureSettingSwitchPreference
+        <mokee.preference.MoKeeSecureSettingSwitchPreference
             android:key="feature_touch_hovering"
             android:title="@string/touchscreen_hovering_title"
             android:summary="@string/touchscreen_hovering_summary"
             android:defaultValue="false"
-            mokee:requiresFeature="mkhardware:FEATURE_TOUCH_HOVERING" />
+            mokee:requiresFeature="mokeehardware:FEATURE_TOUCH_HOVERING" />
 
     </PreferenceCategory>
 

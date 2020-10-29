@@ -23,14 +23,14 @@
 
     <org.mokee.internal.mokeeparts.MoKeePartsPreference
         android:key="touchscreen_gesture_settings"
-        mokee:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES" />
+        mokee:requiresFeature="mokeehardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
     <mokee.preference.RemotePreference
             android:key="device_touchscreen_gesture_settings"
             android:title="@string/touchscreen_gesture_settings_title"
             android:summary="@string/touchscreen_gesture_settings_summary"
             mokee:replacesKey="touchscreen_gesture_settings"
-            mokee:requiresFeature="mkhardware:FEATURE_TOUCHSCREEN_GESTURES">
+            mokee:requiresFeature="mokeehardware:FEATURE_TOUCHSCREEN_GESTURES">
         <intent android:action="org.mokee.settings.device.GESTURE_SETTINGS" />
     </mokee.preference.RemotePreference>
 
