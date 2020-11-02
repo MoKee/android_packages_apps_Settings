@@ -99,7 +99,7 @@
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
     <!-- Increasing ring -->
-    <mokee.preference.LineageSystemSettingSwitchPreference
+    <mokee.preference.MoKeeSystemSettingSwitchPreference
         android:key="increasing_ring"
         android:title="@string/increasing_ring_volume_option_title"
         android:order="-136"
