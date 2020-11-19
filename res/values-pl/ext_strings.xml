@@ -76,6 +76,8 @@
     <string name="status_bar_double_tap_to_sleep_summary">Kliknij dwukrotnie na pasku statusu lub ekranie blokady aby wyłączyć ekran</string>
     <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
     <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>
+    <string name="data_usage_app_restrict_all">Zezwól na dostęp do sieci</string>
+    <string name="data_usage_app_restrict_all_summary">Włącz użycie sieci</string>
     <string name="data_usage_app_restrict_data">Komórkowa transmisja danych</string>
     <string name="data_usage_app_restrict_data_summary">Włącz użycie danych komórkowych</string>
     <string name="data_usage_app_restrict_vpn">Dane VPN</string>
@@ -104,6 +106,10 @@
     <string name="max_label">Maksimum</string>
     <string name="show_navbar_hint_title">Wskazówki nawigacji</string>
     <string name="show_navbar_hint_summary">Pokazuj pasek wskazówek na dole ekranu</string>
+    <string name="keywords_notification_log">powiadomienia, dziennik powiadomień</string>
+    <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
     <string name="heads_up_notifications_enabled_title">Wyskakujące powiadomienia</string>
     <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
+    <string name="fod_gesture_title">Odcisk palca na wyłączonym ekranie</string>
+    <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
 </resources>
