@@ -110,4 +110,6 @@
     <string name="heads_up_notifications_enabled_summary">Kiemelt értesítések megjelenítése egy kis lebegő ablakban</string>
     <string name="fod_gesture_title">Képernyő-feloldás ujjlenyomattal</string>
     <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb felébresztené a képernyőt</string>
+    <string name="backup_transport_setting_label">Mentési-szolgáltatás megváltoztatása</string>
+    <string name="backup_transport_title">Mentési-szolgáltatás kiválasztása</string>
 </resources>

@@ -109,4 +109,6 @@
     <string name="heads_up_notifications_enabled_summary">在一个小的浮动窗口中显示优先通知</string>
     <string name="fod_gesture_title">熄屏指纹</string>
     <string name="fod_gesture_summary">无需唤醒屏幕即可解锁设备</string>
+    <string name="backup_transport_setting_label">更改备份提供商</string>
+    <string name="backup_transport_title">选择备份提供商</string>
 </resources>
