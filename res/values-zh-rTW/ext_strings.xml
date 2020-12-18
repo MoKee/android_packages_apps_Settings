@@ -109,4 +109,6 @@
     <string name="heads_up_notifications_enabled_summary">在一個小的浮動視窗中顯示優先通知</string>
     <string name="fod_gesture_title">在螢幕關閉下進行指紋辨識</string>
     <string name="fod_gesture_summary">無需先打開螢幕即可解鎖裝置</string>
+    <string name="backup_transport_setting_label">變更備份服務提供者</string>
+    <string name="backup_transport_title">選擇備份服務提供者</string>
 </resources>

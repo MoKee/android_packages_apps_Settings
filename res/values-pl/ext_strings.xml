@@ -112,4 +112,6 @@
     <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
     <string name="fod_gesture_title">Odcisk palca na wyłączonym ekranie</string>
     <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
+    <string name="backup_transport_setting_label">Zmień dostawcę kopii zapasowej</string>
+    <string name="backup_transport_title">Wybierz dostawcę kopii zapasowej</string>
 </resources>
