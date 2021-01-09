@@ -96,7 +96,10 @@
     <string name="update_recovery_off_warning">UYARI: Bu özelliği devre dışı bıraktığınızda, yüklü kurtarma modunuz işletim sistemi yükseltmeleri ile birlikte güncelleştirilemeyecektir.\n\nYeni İşletim Sistemi güncelleştirmeleri sırasında güncel olmayan veya özelleştirilmiş kurtarma sürümleri yüklenemeyebilir.\n\nBu özelliği devre dışı bırakmak istediğinizden emin misiniz?</string>
     <string name="berry_black_theme_title">Saf siyah</string>
     <string name="berry_black_theme_summary">Karanlık tema için saf siyah arka plan</string>
+    <string name="back_sensitivity_title">Geri hassasiyeti</string>
     <string name="back_sensitivity_message">Daha yüksek hassasiyet, ekranın kenarlarındaki uygulama hareketleriyle çakışabilir.</string>
+    <string name="back_exclusion_title">Üstte geri hareketini hariç tut</string>
+    <string name="back_exclusion_summary">Ekranın üst kısmının bir kısmını geri hareket alanından hariç tutar</string>
     <string name="min_label">Minimum</string>
     <string name="max_label">Maksimum</string>
     <string name="show_navbar_hint_title">Gezinme ipuçları</string>
@@ -105,4 +108,8 @@
     <string name="connected_tws_device_saved_title">Kayıtlı kulaklıklar</string>
     <string name="heads_up_notifications_enabled_title">Bildirim pencereleri</string>
     <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
+    <string name="fod_gesture_title">Kapalı ekran parmak izi</string>
+    <string name="fod_gesture_summary">Önce ekranı uyandırmak zorunda kalmadan cihazın kilidini açmaya izin verir</string>
+    <string name="backup_transport_setting_label">Yedekleme sağlayıcısını değiştir</string>
+    <string name="backup_transport_title">Yedekleme sağlayıcı seçin</string>
 </resources>
