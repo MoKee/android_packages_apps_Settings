@@ -135,7 +135,7 @@
         android:title="@string/debug_debugging_category"
         android:order="200">
 
-        <org.lineageos.internal.preference.HostnamePreference
+        <org.mokee.internal.preference.HostnamePreference
             android:key="device_hostname"
             android:title="@string/device_hostname"
             android:dialogTitle="@string/device_hostname"

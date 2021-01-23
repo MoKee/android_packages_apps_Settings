@@ -18,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+    xmlns:mokee="http://schemas.android.com/apk/res/mokee.platform"
     android:title="@string/language_settings"
     settings:initialExpandedChildrenCount="3">
 
@@ -84,12 +84,12 @@
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             settings:searchable="false"/>
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
+        <mokee.preference.MoKeeSecureSettingSwitchPreference
             android:key="feature_touch_hovering"
             android:title="@string/touchscreen_hovering_title"
             android:summary="@string/touchscreen_hovering_summary"
             android:defaultValue="false"
-            lineage:requiresFeature="lineagehardware:FEATURE_TOUCH_HOVERING" />
+            mokee:requiresFeature="mokeehardware:FEATURE_TOUCH_HOVERING" />
 
     </PreferenceCategory>
 

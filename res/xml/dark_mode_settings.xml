@@ -55,7 +55,7 @@
         settings:allowDividerBelow="true"
         settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
 
-    <lineageos.preference.LineageSystemSettingSwitchPreference
+    <mokee.preference.MoKeeSystemSettingSwitchPreference
         android:key="berry_black_theme"
         android:title="@string/berry_black_theme_title"
         android:summary="@string/berry_black_theme_summary"

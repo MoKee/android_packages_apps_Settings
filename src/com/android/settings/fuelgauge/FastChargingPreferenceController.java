@@ -25,7 +25,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.settings.core.BasePreferenceController;
 
-import vendor.lineage.fastcharge.V1_0.IFastCharge;
+import vendor.mokee.fastcharge.V1_0.IFastCharge;
 
 import java.util.NoSuchElementException;
 

@@ -28,17 +28,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class LineageVendorSecurityPatchLevelPreferenceController extends BasePreferenceController {
+public class MoKeeVendorSecurityPatchLevelPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "LineageVendorSecurityPatchCtrl";
+    private static final String TAG = "MoKeeVendorSecurityPatchCtrl";
 
     private static final String KEY_AOSP_VENDOR_SECURITY_PATCH =
             "ro.vendor.build.security_patch";
 
-    private static final String KEY_LINEAGE_VENDOR_SECURITY_PATCH =
-            "ro.lineage.build.vendor_security_patch";
+    private static final String KEY_MOKEE_VENDOR_SECURITY_PATCH =
+            "ro.mk.build.vendor_security_patch";
 
-    public LineageVendorSecurityPatchLevelPreferenceController(Context context, String key) {
+    public MoKeeVendorSecurityPatchLevelPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -52,7 +52,7 @@ public class LineageVendorSecurityPatchLevelPreferenceController extends BasePre
         String patchLevel = SystemProperties.get(KEY_AOSP_VENDOR_SECURITY_PATCH);
 
         if (patchLevel.isEmpty()) {
-            patchLevel = SystemProperties.get(KEY_LINEAGE_VENDOR_SECURITY_PATCH);
+            patchLevel = SystemProperties.get(KEY_MOKEE_VENDOR_SECURITY_PATCH);
         }
 
         if (!patchLevel.isEmpty()) {
