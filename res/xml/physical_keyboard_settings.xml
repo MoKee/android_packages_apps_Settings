@@ -15,7 +15,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+    xmlns:mokee="http://schemas.android.com/apk/res/mokee.platform"
     android:title="@string/physical_keyboard_title">
     <!-- Additional preference screens are inserted here programmatically
          with low order values to set the key map of each attached keyboard. -->
@@ -39,13 +39,13 @@
         android:key="keyboard_extras_category"
         android:title="@string/keyboard_extras_title" >
 
-        <lineageos.preference.RemotePreference
+        <mokee.preference.RemotePreference
             android:key="advanced_keyboard_settings"
             android:title="@string/advanced_keyboard_settings_title"
-            lineage:requiresAction="org.lineageos.settings.device.ADVANCED_KEYBOARD_SETTINGS">
+            mokee:requiresAction="org.mokee.settings.device.ADVANCED_KEYBOARD_SETTINGS">
             <intent
-                android:action="org.lineageos.settings.device.ADVANCED_KEYBOARD_SETTINGS" />
-        </lineageos.preference.RemotePreference>
+                android:action="org.mokee.settings.device.ADVANCED_KEYBOARD_SETTINGS" />
+        </mokee.preference.RemotePreference>
 
     </PreferenceCategory>
 
