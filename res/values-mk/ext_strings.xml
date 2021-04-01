@@ -58,6 +58,7 @@
     <string name="app_ops_summaries_use_voice_volume">го контролира звукот на гласовениот повик</string>
     <string name="app_ops_summaries_wifi_change">промена на Wi-Fi состојбата</string>
     <string name="app_ops_summaries_write_mms">испраќа MMS порака</string>
+    <string name="lockscreen_vibrate_enabled_title">Вибрирај</string>
     <string name="root_access_none">Оневозможено</string>
     <string name="touchscreen_gesture_settings_title">Гестови на допир</string>
     <string name="touchscreen_gesture_settings_summary">Изведување на различни гестови на допир за брзо дејство</string>

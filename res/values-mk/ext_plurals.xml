@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2019 The MoKee Open Source Project
-     Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2017-2019 The LineageOS Project
+     Copyright (C) 2013-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_ops_summaries_bluetooth_scan">bluetooth skeniranje</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundi</string>
+    <plurals name="app_ops_count">
+        <item quantity="one">еднаш</item>
+        <item quantity="other">%d времиња</item>
+    </plurals>
 </resources>

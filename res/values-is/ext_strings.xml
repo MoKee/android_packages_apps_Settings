@@ -32,5 +32,6 @@
     <string name="app_ops_summaries_receive_emergency_broadcast">taka á móti útvörpuðum neyðarskilaboðum</string>
     <string name="app_ops_summaries_request_delete_packages">biðja um eyðingu pakka</string>
     <string name="app_ops_summaries_run_any_in_background">keyra hvað sem er í bakgrunni</string>
+    <string name="app_ops_summaries_start_at_bootup">ræsast í ræsingu</string>
     <string name="app_ops_summaries_start_foreground">ræsast í forgrunni</string>
 </resources>

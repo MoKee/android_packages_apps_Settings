@@ -37,6 +37,7 @@
     <string name="app_ops_categories_media">Meadhanan</string>
     <string name="app_ops_categories_device">Uidheam</string>
     <string name="app_ops_categories_su">Inntrigeadh root</string>
+    <string name="app_ops_categories_other">Eile</string>
     <string name="app_ops_summaries_access_camera">cothrom air a’ chamara</string>
     <string name="app_ops_summaries_access_notifications">cothrom fhaighinn air brathan</string>
     <string name="app_ops_summaries_activate_vpn">VPN a ghnìomhachadh</string>

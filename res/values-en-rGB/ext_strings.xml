@@ -218,4 +218,5 @@
     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
     <string name="touchscreen_hovering_title">Touchscreen hovering</string>
     <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 seconds</string>
 </resources>
