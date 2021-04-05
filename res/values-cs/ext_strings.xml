@@ -24,7 +24,7 @@
         <item quantity="other">Jste nyní <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení nastavení pro vývojáře.</item>
     </plurals>
     <string name="show_dev_on_cm">Vývojářské nastavení je povoleno!</string>
-    <string name="show_dev_already_cm">Není potřeba, vývojářské nastavení je již povoleno.</string>
+    <string name="show_dev_already_cm">Vývojářské nastavení je již povoleno.</string>
     <string name="suggestion_button_close">Zavřít</string>
     <string name="advanced_reboot_title">Rozšířený restart</string>
     <string name="advanced_reboot_summary">Pokud je povoleno, v nabídce vypnutí jsou také možnosti restartovat zařízení do recovery nebo bootloaderu</string>
@@ -83,7 +83,7 @@
     <string name="data_usage_app_restrict_vpn">VPN data</string>
     <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
-    <string name="data_usage_app_restrict_wifi_summary">Povolit použití dat Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
     <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
     <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
     <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>
@@ -114,4 +114,6 @@
     <string name="fod_gesture_summary">Umožňuje odemknutí zařízení, aniž by bylo nutné nejprve obrazovku probudit</string>
     <string name="backup_transport_setting_label">Změnit poskytovatele zálohování</string>
     <string name="backup_transport_title">Nastavit poskytovatele zálohování</string>
+    <string name="fast_charging_title">Rychlé nabíjení</string>
+    <string name="fast_charging_summary">Vypnutím snížíte teplo produkované zařízením během nabíjení nebo prodloužíte životnost baterie</string>
 </resources>

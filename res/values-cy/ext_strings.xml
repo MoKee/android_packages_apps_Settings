@@ -17,6 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="suggestion_button_close">Cau</string>
     <string name="advanced_reboot_title">Ailgychwyn arbennig</string>
     <string name="advanced_reboot_summary">Pan wedi datgloi, cynnwys opsiynau yn y ddewislen pŵer i ailgychwyn y system neu ailgychwyn i\'r modd adfer</string>
     <string name="adb_enable">Dadfygio Android</string>

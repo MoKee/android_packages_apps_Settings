@@ -112,4 +112,6 @@
     <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
     <string name="backup_transport_setting_label">Muuda varunduste pakkujat</string>
     <string name="backup_transport_title">Vali varunduste pakkuja</string>
+    <string name="fast_charging_title">Kiire laadimine</string>
+    <string name="fast_charging_summary">Keelake seade laadimise ajal tekkiva kuumuse vähendamiseks või aku eluea pikendamiseks </string>
 </resources>

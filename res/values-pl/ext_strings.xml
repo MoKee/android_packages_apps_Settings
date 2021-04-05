@@ -114,4 +114,6 @@
     <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
     <string name="backup_transport_setting_label">Zmień dostawcę kopii zapasowej</string>
     <string name="backup_transport_title">Wybierz dostawcę kopii zapasowej</string>
+    <string name="fast_charging_title">Szybkie ładowanie</string>
+    <string name="fast_charging_summary">Wyłącz, aby zmniejszyć ilość ciepła wytwarzanego przez urządzenie podczas ładowania lub wydłużyć żywotność baterii</string>
 </resources>

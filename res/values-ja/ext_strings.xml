@@ -18,9 +18,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです</item>
+        <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
     </plurals>
-    <string name="show_dev_on_cm">開発者向けオプションが有効になりました！</string>
+    <string name="show_dev_on_cm">開発者向けオプションが有効になりました。</string>
     <string name="show_dev_already_cm">必要ありません、開発者向けオプションは既に有効になっています。</string>
     <string name="suggestion_button_close">閉じる</string>
     <string name="advanced_reboot_title">高度な再起動</string>

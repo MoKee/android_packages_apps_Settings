@@ -18,9 +18,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="other">僅需 <xliff:g id="Step_COUNT">%1$d</xliff:g> 步操作即可啟用開發人員選項</item>
+        <item quantity="other">您僅需完成剩餘的 <xliff:g id="step_count">%1$d</xliff:g> 個步驟啟用開發人員選項。</item>
     </plurals>
-    <string name="show_dev_on_cm">您已經啟用開發人員選項</string>
+    <string name="show_dev_on_cm">您已啟用開發人員選項。</string>
     <string name="show_dev_already_cm">不需要，您已經啟用開發人員選項。</string>
     <string name="suggestion_button_close">關閉</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
@@ -88,7 +88,7 @@
     <string name="high_touch_sensitivity_title">高觸控靈敏度</string>
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，因此戴著手套也可以使用手機</string>
     <string name="touchscreen_hovering_title">懸浮操作</string>
-    <string name="touchscreen_hovering_summary">允許您把手指懸停在螢幕上作為瀏覽器、遠端桌面等的滑鼠</string>
+    <string name="touchscreen_hovering_summary">允許您把手指懸停在螢幕上作為瀏覽器、遠程桌面等的滑鼠</string>
     <string name="update_recovery_title">更新 Recovery</string>
     <string name="update_recovery_summary">使用系統更新來更新內置 Recovery</string>
     <string name="update_recovery_on_warning">注意：當此功能啟用時，您安裝的 Recovery 將被當前執行的作業系統版本中包含的 Recovery 所取代\n\n。您的 Recovery 將隨著系統的升級而更新，這有助於確保與未來版本的相容性。\n\n您要啟用此功能嗎？</string>

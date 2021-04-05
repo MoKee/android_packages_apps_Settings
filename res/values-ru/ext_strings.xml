@@ -18,13 +18,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">Вы в <xliff:g id="step_count">%1$d</xliff:g> шаге от включения настроек для разработчиков.</item>
-        <item quantity="few">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
-        <item quantity="many">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
-        <item quantity="other">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+        <item quantity="one">Нажмите еще <xliff:g id="step_count">%1$d</xliff:g> раз, чтобы включить настройки для разработчиков.</item>
+        <item quantity="few">Нажмите еще <xliff:g id="step_count">%1$d</xliff:g> раза, чтобы включить настройки для разработчиков.</item>
+        <item quantity="many">Нажмите еще <xliff:g id="step_count">%1$d</xliff:g> раз, чтобы включить настройки для разработчиков.</item>
+        <item quantity="other">Нажмите еще <xliff:g id="step_count">%1$d</xliff:g> раз, чтобы включить настройки для разработчиков.</item>
     </plurals>
     <string name="show_dev_on_cm">Настройки для разработчиков включены!</string>
-    <string name="show_dev_already_cm">Настройки для разработчиков уже включены.</string>
+    <string name="show_dev_already_cm">Не нужно, настройки для разработчиков уже включены.</string>
     <string name="suggestion_button_close">Закрыть</string>
     <string name="advanced_reboot_title">Варианты перезапуска</string>
     <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в режим восстановления и загрузчик</string>
@@ -82,8 +82,8 @@
     <string name="data_usage_app_restrict_data_summary">Включить использование мобильных данных</string>
     <string name="data_usage_app_restrict_vpn">Данные VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
-    <string name="data_usage_app_restrict_wifi">Данные Wi-Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
     <string name="proximity_wake_title">Предотвращать случайное включение</string>
     <string name="proximity_wake_summary">Проверка датчика приближения перед включением экрана</string>
     <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>

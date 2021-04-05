@@ -44,7 +44,7 @@
     <string name="increasing_ring_min_volume_title">Kezdeti hangerő</string>
     <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
     <string name="lockscreen_media_art_title">Média borítójának megjelenítése</string>
-    <string name="lockscreen_visualizer_title">Zenei vizualizáció megjelenítése</string>
+    <string name="lockscreen_visualizer_title">Zenei vizualítás megjelenítése</string>
     <string name="lock_settings_picker_pattern_size_message">Válassza ki a minta méretét</string>
     <string name="lockpattern_settings_enable_error_path_title">Hibás minta megjelenítése</string>
     <string name="lockpattern_settings_enable_dots_title">Feloldási pontok megjelenítése</string>
@@ -80,8 +80,8 @@
     <string name="data_usage_app_restrict_data_summary">Mobiladat-használat engedélyezése</string>
     <string name="data_usage_app_restrict_vpn">VPN-adatok</string>
     <string name="data_usage_app_restrict_vpn_summary">A VPN-adathasználat engedélyezése</string>
-    <string name="data_usage_app_restrict_wifi">Wi-Fi-kapcsolat</string>
-    <string name="data_usage_app_restrict_wifi_summary">Wi-Fi-adatkapcsolat engedélyezése</string>
+    <string name="data_usage_app_restrict_wifi">Wi-Fi kapcsolat</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi-Fi adatkapcsolat engedélyezése</string>
     <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
     <string name="proximity_wake_summary">Közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
     <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>
@@ -112,4 +112,6 @@
     <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb felébresztené a képernyőt</string>
     <string name="backup_transport_setting_label">Mentési-szolgáltatás megváltoztatása</string>
     <string name="backup_transport_title">Mentési-szolgáltatás kiválasztása</string>
+    <string name="fast_charging_title">Gyorstöltés</string>
+    <string name="fast_charging_summary">Ne engedélyezze, ha csökkentené a készülék töltés közbeni melegedését, vagy meghosszabbítaná az akkumulátor élettartamát</string>
 </resources>

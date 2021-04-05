@@ -24,7 +24,7 @@
         <item quantity="other">Ви в даний час на <xliff:g id="step_count">%1$d </xliff:g> кроках від увімкнення налаштувань розробника.</item>
     </plurals>
     <string name="show_dev_on_cm">Ви увімкнули налаштування розробника!</string>
-    <string name="show_dev_already_cm">Налаштування для розробників вже включені.</string>
+    <string name="show_dev_already_cm">Немає необхідності, ви вже увімкнули налаштування для розробників.</string>
     <string name="suggestion_button_close">Закрити</string>
     <string name="advanced_reboot_title">Розширене перезавантаження</string>
     <string name="advanced_reboot_summary">Показувати додаткові опції перезавантаження пристрою (в режим завантажувача або відновлення) в меню кнопки живлення</string>

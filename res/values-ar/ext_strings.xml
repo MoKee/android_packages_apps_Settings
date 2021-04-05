@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="zero">أنت الآن على بعد خطوات <xliff:g id="step_count">%1$d </xliff:g> عن تمكين إعدادات المطور.</item>
+        <item quantity="zero">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تمكين خيارات المطور.</item>
         <item quantity="one">أنت الآن على بُعد خطوة واحدة من تمكين خيارات المطور.</item>
         <item quantity="two">أنت الآن على بُعد خطوتين من تمكين خيارات المطور.</item>
         <item quantity="few">أنت الآن على بُعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تمكين خيارات المطور.</item>
@@ -78,7 +78,7 @@
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لأعمال سريعة</string>
     <string name="data_usage_app_restrict_data">بيانات شبكة الجوّال</string>
-    <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات الخلوية</string>
+    <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات</string>
     <string name="data_usage_app_restrict_vpn">بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_wifi">بيانات WiFi</string>

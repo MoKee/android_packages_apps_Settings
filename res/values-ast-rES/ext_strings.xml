@@ -69,6 +69,10 @@
     <string name="status_bar_double_tap_to_sleep_summary">Calca dos vegaes na barra d\'estáu o pantalla de bloquéu p\'apagar la pantalla</string>
     <string name="touchscreen_gesture_settings_title">Xestos de pantalla táutil</string>
     <string name="touchscreen_gesture_settings_summary">Fai dellos xestos táutiles p\'aiciones rápides</string>
+    <string name="data_usage_app_restrict_data">Datos móviles</string>
+    <string name="data_usage_app_restrict_data_summary">Activar l\'usu de los datos móviles</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activar l\'usu de los datos Wi\u2011Fi</string>
     <string name="proximity_wake_title">Evitar esconsueñu accidental</string>
     <string name="proximity_wake_summary">Comprueba\'l sensor de proximidá enantes de prender la pantalla</string>
     <string name="wake_when_plugged_or_unplugged_title">Esconsoñar al enchufar</string>

@@ -18,11 +18,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toque para habilitar las opciones de desarrollador.</item>
-        <item quantity="other">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> toques para habilitar las opciones de desarrollador.</item>
+        <item quantity="one">Estás a <xliff:g id="step_count">%1$d</xliff:g> paso de activar los ajustes de desarrollo.</item>
+        <item quantity="other">Estás a <xliff:g id="step_count">%1$d</xliff:g> pasos de activar los ajustes de desarrollo.</item>
     </plurals>
-    <string name="show_dev_on_cm">¡Has activado las opciones de desarrollador!</string>
-    <string name="show_dev_already_cm">No es necesario, ya has activado las opciones de desarrollador.</string>
+    <string name="show_dev_on_cm">¡Has activado los ajustes de desarrollo!</string>
+    <string name="show_dev_already_cm">No es necesario. Los ajustes de desarrollo ya están activos.</string>
     <string name="suggestion_button_close">Cerrar</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Al desbloquear, se incluirán opciones en el menú de energía para reiniciar en modo de recuperación o gestor de arranque</string>

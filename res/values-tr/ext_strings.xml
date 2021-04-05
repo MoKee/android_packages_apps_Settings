@@ -18,11 +18,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
-        <item quantity="other">Geliştirci seçeneklerinin etkinleştirilmesine <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+        <item quantity="one">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
+        <item quantity="other">Geliştirici ayarlarının etkinleştirilmesi için <xliff:g id="step_count">%1$d</xliff:g> adım kaldı.</item>
     </plurals>
-    <string name="show_dev_on_cm">Geliştirici seçenekleri etkinleştirildi!</string>
-    <string name="show_dev_already_cm">Geliştirici seçenekleri zaten etkin.</string>
+    <string name="show_dev_on_cm">Geliştirici ayarlarını etkinleştirdiniz!</string>
+    <string name="show_dev_already_cm">Gerek yok, zaten geliştirme ayarlarını etkinleştirdiniz.</string>
     <string name="suggestion_button_close">Kapat</string>
     <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
     <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya önyükleme modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
@@ -86,9 +86,9 @@
     <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
     <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
     <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
-    <string name="high_touch_sensitivity_title">Yüksek dokunmatik hassasiyeti</string>
+    <string name="high_touch_sensitivity_title">Yüksek dokunma hassasiyeti</string>
     <string name="high_touch_sensitivity_summary">Dokunmatik ekran hassasiyetini arttırarak eldiven ile kullanıma olanak verir</string>
-    <string name="touchscreen_hovering_title">Temassız gezinme</string>
+    <string name="touchscreen_hovering_title">Dokunmatik ekrana dokunmadan gezinme</string>
     <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
     <string name="update_recovery_title">Kurtarma modunu güncelle</string>
     <string name="update_recovery_summary">Sistem güncellemesi ile kurtarma modunu güncelle</string>
@@ -112,4 +112,6 @@
     <string name="fod_gesture_summary">Önce ekranı uyandırmak zorunda kalmadan cihazın kilidini açmaya izin verir</string>
     <string name="backup_transport_setting_label">Yedekleme sağlayıcısını değiştir</string>
     <string name="backup_transport_title">Yedekleme sağlayıcı seçin</string>
+    <string name="fast_charging_title">Hızlı şarj</string>
+    <string name="fast_charging_summary">Cihazın şarj ederken ürettiği ısıyı azaltmak veya pilin ömrünü uzatmak için devre dışı bırakın</string>
 </resources>

@@ -26,6 +26,7 @@
     <string name="suggestion_button_close">மூடு</string>
     <string name="advanced_reboot_title">மேம்பட்ட மறுதொடக்கம்</string>
     <string name="adb_enable">ஆண்ட்ராய்டு பிழைநீக்கல்</string>
+    <string name="adb_enable_summary">ஆண்ட்ராய்டு பிழைநீக்கல் பாள (ADB) இடைமுகத்தைச் செயற்படுத்து</string>
     <string name="adb_notify">பிழைநீக்கல் அறிவுறுத்தல்</string>
     <string name="adb_notify_summary">USB அல்லது நெட்வொர்க் பிழைநீக்கல் செயல்படுத்தப்பட்டு இருகும்போது அறிவுறுத்தலை திரையிடவும்</string>
     <string name="adb_over_network">பிணையத்தின் மீது ADB</string>

@@ -22,7 +22,7 @@
         <item quantity="other">U bent nog <xliff:g id="step_count">%1$d</xliff:g> stappen verwijderd van de opties voor ontwikkelaars.</item>
     </plurals>
     <string name="show_dev_on_cm">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
-    <string name="show_dev_already_cm">Niet nodig, u heeft de ontwikkelaarsopties al ingeschakeld.</string>
+    <string name="show_dev_already_cm">Niet nodig, u hebt de opties voor ontwikkelaars al ingeschakeld.</string>
     <string name="suggestion_button_close">Sluiten</string>
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>

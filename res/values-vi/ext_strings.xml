@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="show_dev_countdown_cm">
-        <item quantity="other">Bạn đang <xliff:g id="step_count">%1$d </xliff:g> từng bước cho phép cài đặt nhà phát triển.</item>
+        <item quantity="other">Hiện tại bạn còn <xliff:g id="step_count">%1$d</xliff:g> bước nữa để bật cài đặt nhà phát triển.</item>
     </plurals>
     <string name="show_dev_on_cm">Bạn đã bật cài đặt nhà phát triển!</string>
     <string name="show_dev_already_cm">Không cần thiết, bạn đã bật cài đặt nhà phát triển.</string>
@@ -111,4 +111,6 @@
     <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình</string>
     <string name="backup_transport_setting_label">Thay đổi nhà cung cấp sao lưu</string>
     <string name="backup_transport_title">Chọn nhà cung cấp để sao lưu</string>
+    <string name="fast_charging_title">Đang sạc nhanh</string>
+    <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
 </resources>

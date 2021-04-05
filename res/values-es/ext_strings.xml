@@ -36,6 +36,8 @@
     <string name="kill_app_longpress_back">Botón atrás para cerrar la aplicación</string>
     <string name="kill_app_longpress_back_summary">Finalizar la aplicación actual al mantener pulsado el botón atrás</string>
     <string name="device_hostname">Nombre del dispositivo</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de punto de acceso usar este dispositivo\u2019conexiones VPN para conectividad de flujo principal</string>
     <string name="increasing_ring_volume_option_title">Volumen de timbre ascendente</string>
     <string name="increasing_ring_min_volume_title">Volumen inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Tiempo de incremento</string>
@@ -58,6 +60,7 @@
     <string name="volume_link_notification_title">Vincular tono y volumen de notificaciones</string>
     <string name="directly_show_lock">Desbloqueo directo</string>
     <string name="directly_show_lock_summary">Omite el deslizamiento para desbloquear la pantalla e inicia inmediatamente la entrada del pin</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localiza el sensor de huella dactilar en <xliff:g id="sensor_location">%1$s</xliff:g> de tu tableta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localiza el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de su teléfono.</string>
     <string name="security_settings_fingerprint_sensor_location_back">posterior</string>
     <string name="security_settings_fingerprint_sensor_location_front">delante</string>
