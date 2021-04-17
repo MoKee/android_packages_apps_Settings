@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,13 +23,13 @@
     </plurals>
     <string name="show_dev_on_cm">Kehittäjäasetukset ovat nyt käytössä!</string>
     <string name="show_dev_already_cm">Olet jo ottanut kehittäjäasetukset käyttöön.</string>
+    <string name="keyboard_extras_title">Ekstrat</string>
     <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
     <string name="advanced_reboot_summary">Lisää mahdollisuuden käynnistää uudelleenkäynnistämisen yhteydessä recovery- tai bootloader-tilaan</string>
     <string name="adb_enable_root">Vianetsintä root-tilassa</string>
     <string name="adb_enable_summary_root">Sallii Androidin virheenkorjauksen root-tilassa</string>
     <string name="berry_black_theme_title">Kokonaan musta</string>
     <string name="berry_black_theme_summary">Kokonaan musta tausta tummalle teemalle</string>
-    <string name="lineagelicense_title">LineageOSin lakiasiat</string>
     <string name="status_bar_double_tap_to_sleep_title">Sammuta näyttö napauttamalla</string>
     <string name="status_bar_double_tap_to_sleep_summary">Sulje laitteen näyttö tuplanapauttamalla tilapalkkia tai lukitusnäyttöä</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Paikanna sormenjälkitunnistin tablettisi <xliff:g id="sensor_location">%1$s</xliff:g>.</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,9 +23,11 @@
     </plurals>
     <string name="show_dev_on_cm">U hebt de opties voor ontwikkelaars ingeschakeld!</string>
     <string name="show_dev_already_cm">Niet nodig, u hebt de opties voor ontwikkelaars al ingeschakeld.</string>
+    <string name="keyboard_extras_title">Extra\'s</string>
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>
-    <string name="lineagelicense_title">Juridische informatie van LineageOS</string>
+    <string name="status_bar_double_tap_to_sleep_title">Tikken voor slaapstand</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk of schermvergrendeling om het scherm uit te schakelen</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Vind de vingerafdruksensor op de <xliff:g id="sensor_location">%1$s</xliff:g> van uw telefoon.</string>
     <string name="security_settings_fingerprint_sensor_location_back">achterkant</string>
     <string name="security_settings_fingerprint_sensor_location_front">voorkant</string>
@@ -59,8 +62,11 @@
     <string name="unlock_scramble_pin_layout_title">Lay-out husselen</string>
     <string name="unlock_scramble_pin_layout_summary">PIN-lay-out door elkaar husselen bij apparaat ontgrendelen</string>
     <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
+    <string name="proximity_wake_summary">Nabijheidssensor checken voorafgaand aan ontwaken van scherm</string>
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
+    <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
+    <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>
     <string name="volume_link_notification_title">Volume beltoon en meldingen koppelen</string>
     <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
     <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>

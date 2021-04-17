@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +19,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="show_dev_on_cm">تۆ ڕێکخستنی گەشەپێدەریت چالاککرد!</string>
     <string name="show_dev_already_cm">پێویست ناکا، تۆ پێشتر چالاکت کردوە.</string>
-    <string name="lineagelicense_title">یاسای وەشانەکە</string>
     <string name="high_touch_sensitivity_title">هەستیاری ساوانی بەرز</string>
     <string name="high_touch_sensitivity_summary">هەستیاری ساوڕوونما برز بکەوە، ئەوە ئەتوانرێ بەکاربهێنرێت کاتێک دەستەوانت لە دەستدایە</string>
     <string name="device_hostname">ناوی میوانی ئامێر</string>
@@ -27,6 +27,10 @@
     <string name="increasing_ring_ramp_up_time_title">هەڵسانی کات</string>
     <string name="lockpattern_settings_enable_error_path_title">پیشاندانی هەڵەی چنراو</string>
     <string name="lockpattern_settings_enable_dots_title">پیشاندانی خاڵەکانی چنراو</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">١٠ چرکە</string>
+    <string name="app_notification_sound_timeout_value_1_minute">١ خوله‌ک</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">٥ خوله‌ک</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">١٠ خولەک</string>
     <string name="unlock_scramble_pin_layout_title">ته‌خته‌ی تێکه‌ڵ</string>
     <string name="unlock_scramble_pin_layout_summary">ته‌خته‌ی PIN تێکه‌ڵ له‌کاتی کردنه‌وه‌ی ئامێره‌که‌</string>
     <string name="proximity_wake_title">قه‌ده‌غه‌کردنی هه‌ستانی ڕێکه‌وت</string>

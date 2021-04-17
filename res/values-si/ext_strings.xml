@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,10 +17,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineagelicense_title">LineageOS නීතිමය තොරතුරු</string>
     <string name="high_touch_sensitivity_title">ඉහළ ස්පර්ශ සංවේදිතාව</string>
     <string name="high_touch_sensitivity_summary">ස්පර්ශ තීරයේ සංවේදීතාව වැඩිකරන්න, එබැවින් අත්මේස් පළඳා ඇතිවිට එය භාවිතාකලහැකිය</string>
     <string name="device_hostname">උපාංගයේ ආගන්තුක නාමය</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">තත්පර 10</string>
+    <string name="app_notification_sound_timeout_value_1_minute">මිනිත්තු 1</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">මිනිත්තු 5</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">මිනිත්තු 10</string>
     <string name="unlock_scramble_pin_layout_title">සැලැස්ම පටලවන්න</string>
     <string name="unlock_scramble_pin_layout_summary">උපාංගය අගුළු අරින විට PIN සැලැස්ම පටලවන්න</string>
     <string name="proximity_wake_title">අහඹු අවදි වීම් වළක්වන්න</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +28,6 @@
     <string name="adb_enable_summary_root">อนุญาตการดีบัก Android ในฐานะรูท</string>
     <string name="berry_black_theme_title">ดำสนิท</string>
     <string name="berry_black_theme_summary">พื้นหลังสีดำสนิทสำหรับธีมมืด</string>
-    <string name="lineagelicense_title">เกี่ยวกับกฎหมาย LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">แตะเพื่อหลับ</string>
     <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อพักหน้าจอ</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">ค้นหาเซ็นเซอร์ลายนิ้วมือบน <xliff:g id="sensor_location">%1$s</xliff:g> ของแท็บเล็ตของคุณ</string>

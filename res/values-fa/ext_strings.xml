@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,6 @@
     </plurals>
     <string name="show_dev_on_cm">شما ابزارهای توسعه را فعال کرده‌اید!</string>
     <string name="show_dev_already_cm">نیازی نیست، ابزارهای توسعه قبلا فعال شده‌اند.</string>
-    <string name="lineagelicense_title">موارد حقوقی سایانوژن‌مود</string>
     <string name="high_touch_sensitivity_title">حساسیت بالا به لمس</string>
     <string name="high_touch_sensitivity_summary">افزایش حساسیت صفحه به لمس تا هنگام پوشیدن دستکش نیز قابل استفاده باشد</string>
     <string name="device_hostname">نام هاست دستگاه</string>
@@ -32,6 +32,10 @@
     <string name="lockpattern_settings_enable_error_path_title">نمایش الگوی نادرست</string>
     <string name="lockpattern_settings_enable_dots_title">نمایش نقطه‌های الگو</string>
     <string name="lockscreen_visualizer_title">نمایش رقص نور موسیقی</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">۱۰ ثانیه</string>
+    <string name="app_notification_sound_timeout_value_1_minute">۱ دقیقه</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">۵ دقیقه</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">۱۰ دقیقه</string>
     <string name="unlock_scramble_pin_layout_title">چینش درهم</string>
     <string name="unlock_scramble_pin_layout_summary">چینش درهم پین هنگام باز کردن قفل دستگاه</string>
     <string name="proximity_wake_title">جلوگیری از بیدار شدن تصادفی</string>

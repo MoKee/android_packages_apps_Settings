@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,9 +22,13 @@
     </plurals>
     <string name="show_dev_on_cm">Anda adalah seorang pengembang!</string>
     <string name="show_dev_already_cm">Tidak perlu, Anda telah mengaktifkan opsi pengembang.</string>
+    <string name="keyboard_extras_title">Ekstra</string>
     <string name="advanced_reboot_title">Mulai ulang lanjutan</string>
     <string name="advanced_reboot_summary">Ketika tidak terkunci, berisi pilihan pada menu daya untuk mulai ulang ke recovery atau bootloader</string>
-    <string name="lineagelicense_title">Hukum LineageOS</string>
+    <string name="adb_enable_root">Debugging Root</string>
+    <string name="adb_enable_summary_root">Izinkan menjalankan debugging Android sebagai root</string>
+    <string name="berry_black_theme_title">Hitam</string>
+    <string name="berry_black_theme_summary">Latar belakang hitam untuk tema gelap</string>
     <string name="status_bar_double_tap_to_sleep_title">Ketuk untuk tidur</string>
     <string name="status_bar_double_tap_to_sleep_summary">Ketukan ganda pada bilah status atau layar kunci untuk mematikan layar</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Tempatkan sensor sidik jari pada <xliff:g id="sensor_location">%1$s</xliff:g> tablet Anda.</string>
@@ -42,11 +47,14 @@
     <string name="increasing_ring_min_volume_title">Volume awal</string>
     <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
     <string name="tethering_allow_vpn_upstreams_title">Izinkan klien menggunakan VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019 ini untuk konektivitas upstream</string>
     <string name="lock_settings_picker_pattern_size_message">Pilih ukuran pola</string>
     <string name="lockpattern_settings_enable_error_path_title">Tunjukkan galat pola</string>
     <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>
     <string name="lockscreen_media_art_title">Tampilkan sampul media</string>
     <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
+    <string name="show_navbar_hint_title">Isyarat navigasi</string>
+    <string name="show_navbar_hint_summary">Tampilkan bar isyarat navigasi di bagian bawah layar</string>
     <string name="app_notification_sound_timeout_title">Waktu minimum antara suara pemberitahuan</string>
     <string name="app_notification_sound_timeout_summary_template">Memungkinkan suara atau getaran tidak lebih dari sekali setiap <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Tidak ada pembatasan</string>
@@ -73,4 +81,9 @@
     <string name="volume_link_notification_title">Hubungkan volume dering &amp; pemberitahuan</string>
     <string name="wake_when_plugged_or_unplugged_title">Bangun saat pengisi daya di pasang</string>
     <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar ketika menghubungkan atau melepaskan sumber daya</string>
+    <string name="backup_transport_setting_label">Ubah penyedia cadangan</string>
+    <string name="backup_transport_title">Pilih penyedia cadangan</string>
+    <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
+    <string name="fod_gesture_title">Sidik jari saat layar mati</string>
+    <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,13 +26,13 @@
     </plurals>
     <string name="show_dev_on_cm">Omogočili ste nastavitve za razvijalce!</string>
     <string name="show_dev_already_cm">Ni potrebe, ste že omogočili nastavitve za razvijalce.</string>
+    <string name="keyboard_extras_title">Dodatki</string>
     <string name="advanced_reboot_title">Napredni vnovičen zagon</string>
     <string name="advanced_reboot_summary">Ko je odklenjeno, v meni izklopa vključi možnosti za vnovičen zagon v obnovitev ali zagonski nalagalnik</string>
     <string name="adb_enable_root">Skrbniško razhroščevanje</string>
     <string name="adb_enable_summary_root">Dovoli izvajanje Android razhroščevanja kot skrbnik</string>
     <string name="berry_black_theme_title">Popolnoma črna</string>
     <string name="berry_black_theme_summary">Popolnoma črno ozadje za temno temo</string>
-    <string name="lineagelicense_title">Pravna obvestila LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Tap za spanje</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dvakrat tapnite na vrstico stanja ali zaklenjen zaslon, da izklopite zaslon</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Poiščite tipalo za prstne odtise na <xliff:g id="sensor_location">%1$s</xliff:g> vašega tabličnega računalnika.</string>

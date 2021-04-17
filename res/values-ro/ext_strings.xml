@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,13 +25,13 @@
     </plurals>
     <string name="show_dev_on_cm">Ați deblocat setările de dezvoltator!</string>
     <string name="show_dev_already_cm">Nu este nevoie, deja ai deblocat setările de dezvoltator.</string>
+    <string name="keyboard_extras_title">Mai multe</string>
     <string name="advanced_reboot_title">Repornire avansată</string>
     <string name="advanced_reboot_summary">La deblocare, se includ opțiuni în meniul power pentru repornire în modurile recuperare sau bootloader</string>
     <string name="adb_enable_root">Depanare ca root</string>
     <string name="adb_enable_summary_root">Permite depanării sistemului Android să ruleze în modul root</string>
     <string name="berry_black_theme_title">Negru pur</string>
     <string name="berry_black_theme_summary">Fundal negru pur pentru tema întunecată</string>
-    <string name="lineagelicense_title">Juridic LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Atingeți pentru sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare sau ecranul de blocare pentru a opri ecranul</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localizați senzorul de amprentă în <xliff:g id="sensor_location">%1$s</xliff:g> tabletei dumneavoastră.</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +19,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="show_dev_on_cm">Jūs įgalinote kūrėjo parinktys!</string>
     <string name="show_dev_already_cm">Nereikia, jūs jau įgalinote kūrėjo parinktys.</string>
-    <string name="lineagelicense_title">Teisinė „LineageOS“ informacija</string>
     <string name="high_touch_sensitivity_title">Didelis lietimo jautrumas</string>
     <string name="high_touch_sensitivity_summary">Padidinti liečiamojo ekrano jautrumą tam, kad juo būtų galima naudotis dėvint pirštines</string>
     <string name="device_hostname">Įrenginio vardas tinkle</string>
@@ -28,6 +28,10 @@
     <string name="lockpattern_settings_enable_error_path_title">Rodyti modelio klaidą</string>
     <string name="lockpattern_settings_enable_dots_title">Rodyti modelio taškus</string>
     <string name="lockscreen_visualizer_title">Rodyti muzikos vizualizaciją</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundžių</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 min.</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 min.</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 min.</string>
     <string name="unlock_scramble_pin_layout_title">Sumaišyti išdėstymą</string>
     <string name="unlock_scramble_pin_layout_summary">Atrakinant įrenginį sumaišyti PIN išdėstymą</string>
     <string name="proximity_wake_title">Išvengti atsitiktinio pažadinimo</string>

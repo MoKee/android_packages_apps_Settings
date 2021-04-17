@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +30,6 @@
     <string name="adb_enable_summary_root">Android sazlamanın rootlu olaraq işləməsinə icazə ver</string>
     <string name="berry_black_theme_title">Təmiz qara</string>
     <string name="berry_black_theme_summary">Tünd tema üçün təmiz qara arxaplan</string>
-    <string name="lineagelicense_title">LineageOS qanuni</string>
     <string name="status_bar_double_tap_to_sleep_title">Yuxlatmaq üçün toxun</string>
     <string name="status_bar_double_tap_to_sleep_summary">Ekranı söndürmək üçün vəziyyət sətrinə və ya kilid ekranına cüt toxunun</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Planşetinizdəki <xliff:g id="sensor_location">%1$s</xliff:g> barmaq izi sensorunu tapın.</string>

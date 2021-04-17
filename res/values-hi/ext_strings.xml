@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,6 @@
     </plurals>
     <string name="show_dev_on_cm">आपने विकास सेटिंग को सक्षम किया है!</string>
     <string name="show_dev_already_cm">इसकी ज़रूरत नहीं है, आपने पहले ही विकास सेटिंग को सक्षम कर दिया है।</string>
-    <string name="lineagelicense_title">सियानोजेनमोड क़ानूनी</string>
     <string name="high_touch_sensitivity_title">उच्च स्पर्श संवेदनशीलता</string>
     <string name="high_touch_sensitivity_summary">स्पर्श स्क्रीन संवेदनशीलता को बढ़ाएँ ताकि दस्ताने पहने हुए हाथ से उसका उपयोग किया जा सके</string>
     <string name="device_hostname">उपकरण मेजबान नाम</string>
@@ -32,6 +32,10 @@
     <string name="lockpattern_settings_enable_error_path_title">पैटर्न त्रुटि दिखाएँ</string>
     <string name="lockpattern_settings_enable_dots_title">पैटर्न बिंदु दिखाएँ</string>
     <string name="lockscreen_visualizer_title">संगीत दृश्यांकक को प्रदर्शित करें</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 सेकंड</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 मिनट</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 मिनट</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 मिनट</string>
     <string name="unlock_scramble_pin_layout_title">विन्यास को बेतरतीब करें</string>
     <string name="unlock_scramble_pin_layout_summary">उपकरण को अनलॉक करते समय पिन विन्यास को बेतरतीब कर दें</string>
     <string name="proximity_wake_title">ग़लती से जगाए जाने को रोकें</string>

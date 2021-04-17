@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,13 +24,13 @@
     </plurals>
     <string name="show_dev_on_cm">Has habilitat les configuracions de desenvolupament!</string>
     <string name="show_dev_already_cm">No fa falta, ja has habilitat les configuracions de desenvolupament.</string>
+    <string name="keyboard_extras_title">Extres</string>
     <string name="advanced_reboot_title">Reinici avançat</string>
     <string name="advanced_reboot_summary">Quan està desbloquejat, inclou opcions al menú d\'apagat per reiniciar en mode recuperació o al bootloader</string>
     <string name="adb_enable_root">Depuració arrelada</string>
     <string name="adb_enable_summary_root">Permet executar la depuració d\'Android com a root</string>
     <string name="berry_black_theme_title">Negre pur</string>
     <string name="berry_black_theme_summary">Fons negre pur per al tema fosc</string>
-    <string name="lineagelicense_title">Llicència LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Pica per posar en repòs</string>
     <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat o a la pantalla de bloqueig per apagar la pantalla</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localitza el sensor d\'empremtes digitals al <xliff:g id="sensor_location">%1$s</xliff:g> de la teva tauleta.</string>

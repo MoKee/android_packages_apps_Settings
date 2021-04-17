@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,13 +24,14 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
     </plurals>
     <string name="show_dev_on_cm">Vous avez activé les paramètres de développement !</string>
     <string name="show_dev_already_cm">Inutile, vous avez déjà activé les paramètres de développement.</string>
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Parmètres avancés</string>
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure les options de redémarrage en mode recovery et bootloader dans le menu Marche/Arrêt lorsque l\'appareil est déverrouillé</string>
     <string name="adb_enable_root">Débogage rooté</string>
     <string name="adb_enable_summary_root">Autoriser le débogage Android en tant que root</string>
     <string name="berry_black_theme_title">Noir pur</string>
     <string name="berry_black_theme_summary">Fond noir pur pour le thème sombre</string>
-    <string name="lineagelicense_title">Infos légales LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Appuyer pour mettre en veille</string>
     <string name="status_bar_double_tap_to_sleep_summary">Appuyer deux fois sur la barre d\'état ou sur l\'écran de verrouillage pour éteindre l\'écran</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre tablette.</string>
@@ -54,6 +56,8 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>
     <string name="lockscreen_media_art_title">Afficher la couverture du média</string>
     <string name="lockscreen_visualizer_title">Afficher le visualiseur de musique</string>
+    <string name="show_navbar_hint_title">Navigation intuitive</string>
+    <string name="show_navbar_hint_summary">Afficher la barre de navigation intuitive en bas de l\'écran</string>
     <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
     <string name="app_notification_sound_timeout_summary_template">Ne pas permettre plus d\'un son ou une vibration toutes les <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
@@ -83,4 +87,6 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
     <string name="backup_transport_setting_label">Modifier le fournisseur de sauvegarde</string>
     <string name="backup_transport_title">Sélectionner un fournisseur de sauvegarde</string>
     <string name="connected_tws_device_saved_title">Écouteurs sans fil enregistrés</string>
+    <string name="fod_gesture_title">Analyse de l\'empreinte écran éteint</string>
+    <string name="fod_gesture_summary">Autoriser le déverrouillage de l\'appareil sans devoir allumer l\'écran d\'abord</string>
 </resources>

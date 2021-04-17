@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="advanced_reboot_title">অ্যাডভান্সড রিস্টার্ট</string>
-    <string name="lineagelicense_title">সায়ানোজেনমড বৈধতা</string>
     <string name="heads_up_notifications_enabled_title">Heads-up</string>
     <string name="heads_up_notifications_enabled_summary">ছোট ভাসমান উইন্ডোতে অগ্রাধিকার প্রজ্ঞাপন প্রদর্শন করুন</string>
     <string name="high_touch_sensitivity_title">উচ্চ স্পর্শ সংবেদনশীলতা</string>

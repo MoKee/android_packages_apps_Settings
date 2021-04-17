@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +24,6 @@
     <string name="show_dev_on_cm">Jy het die ontwikkeling opsies geaktiveer!</string>
     <string name="show_dev_already_cm">Nie nodig, het jy reeds die ontwikkeling opsies geaktiveer.</string>
     <string name="advanced_reboot_title">Gevorderde herlaai</string>
-    <string name="lineagelicense_title">LineageOS Regs</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Vind die vingerafdruk sensor op die <xliff:g id="sensor_location">%1$s </xliff:g> van jou foon.</string>
     <string name="security_settings_fingerprint_sensor_location_back">terug</string>
     <string name="security_settings_fingerprint_sensor_location_front">voorkant</string>
@@ -56,6 +56,8 @@
     <string name="proximity_wake_title">Voorkom toevallige wakker word</string>
     <string name="touchscreen_hovering_title">Raakskerm swewing</string>
     <string name="touchscreen_hovering_summary">Laat toe om bo die sekrm te sweef soos \'n muis in die web blaaiers, Remote desktops, ens</string>
+    <string name="touchscreen_gesture_settings_title">Raakskerm gebare</string>
+    <string name="touchscreen_gesture_settings_summary">Verrig verskeie raakskerm gebare vir vinnige aksies</string>
     <string name="wake_when_plugged_or_unplugged_title">Word wakker op in/uit prop</string>
     <string name="wake_when_plugged_or_unplugged_summary">Skakel die skerm aan met die koppeling of ontkoppeling van \'n kragbron</string>
 </resources>

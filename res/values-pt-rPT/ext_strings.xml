@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,13 +24,14 @@
     </plurals>
     <string name="show_dev_on_cm">Ativou as opções de programador!</string>
     <string name="show_dev_already_cm">Não é necessário, já ativou as opções de programador.</string>
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Definições avançadas</string>
     <string name="advanced_reboot_title">Reinicialização avançada</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
     <string name="adb_enable_root">Depuração root</string>
     <string name="adb_enable_summary_root">Permitir a execução da depuração Android como root</string>
     <string name="berry_black_theme_title">Preto puro</string>
     <string name="berry_black_theme_summary">Fundo em preto puro para tema escuro</string>
-    <string name="lineagelicense_title">Licença LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar o ecrã</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado ou ecrã de bloqueio para desligar o ecrã</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localize o sensor de impressões digitais na <xliff:g id="sensor_location">%1$s</xliff:g> do seu tablet.</string>
@@ -88,4 +90,6 @@
     <string name="backup_transport_setting_label">Alterar provedor de cópia de segurança</string>
     <string name="backup_transport_title">Selecionar provedor de cópia de segurança</string>
     <string name="connected_tws_device_saved_title">Auriculares Bluetooth guardados</string>
+    <string name="fod_gesture_title">Impressão digital com ecrã desligado</string>
+    <string name="fod_gesture_summary">Permite desbloquear o dispositivo sem ter que acordar o ecrã primeiro</string>
 </resources>

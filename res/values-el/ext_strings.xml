@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +32,6 @@
     <string name="adb_enable_summary_root">Επιτρέψτε την εκτέλεση του εντοπισμού σφαλμάτων Android ως root</string>
     <string name="berry_black_theme_title">Αμιγές μαύρο</string>
     <string name="berry_black_theme_summary">Αμιγές μαύρο παρασκήνιο για το σκοτεινό θέμα</string>
-    <string name="lineagelicense_title">Νομικές πληροφορίες LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Πατήστε για αναστολή</string>
     <string name="status_bar_double_tap_to_sleep_summary">Πατήστε δύο φορές στη γραμμή κατάστασης ή την οθόνη κλειδώματος για αναστολή της συσκευής</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Εντοπίστε τον αισθητήρα δαχτυλικού αποτυπώματος στην <xliff:g id="sensor_location">%1$s</xliff:g> πλευρά του tablet σας.</string>

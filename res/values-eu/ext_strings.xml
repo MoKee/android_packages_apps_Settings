@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +25,6 @@
     <string name="show_dev_already_cm">Ez da behar, aurretik gaitu dituzu garatzaileek aukerak.</string>
     <string name="advanced_reboot_title">Berrabiarazte aurreratua</string>
     <string name="advanced_reboot_summary">Desblokeatutako gailuetan, berreskuratze eta abiarazle moduetan berrabiatzeko aukerak gehitu itzaltze menuan</string>
-    <string name="lineagelicense_title">LineageOS lizentzia</string>
     <string name="status_bar_double_tap_to_sleep_title">Sakatu lokartzeko</string>
     <string name="status_bar_double_tap_to_sleep_summary">Sakatu birritan egoera-barra edo blokeo-pantaila pantaila itzaltzeko</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Kokatu hatz-marken sentsorea zure tabletaren <xliff:g id="sensor_location">%1$s</xliff:g>.</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,10 +17,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="many">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+        <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыкаў.</item>
+    </plurals>
     <string name="show_dev_on_cm">Налады для распрацоўнікаў улучаны!</string>
     <string name="show_dev_already_cm">Не патрэбна, налады для распрацоўнікаў ужо ўлучаны.</string>
+    <string name="keyboard_extras_title">Дапаўненні</string>
     <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
-    <string name="lineagelicense_title">Палітыка прыватнасці LineageOS</string>
+    <string name="advanced_reboot_summary">Паказваць дадатковыя опцыі перазагрузкі прылады (у рэжым загрузніка або аднаўлення) у меню кнопкі сілкавання</string>
+    <string name="status_bar_double_tap_to_sleep_title">Націсніце для сну</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаваны экран, каб перавесці прыладу ў спячы рэжым</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+    <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+    <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+    <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
+    <string name="heads_up_notifications_enabled_title">Усплывальныя апавяшчэння</string>
+    <string name="heads_up_notifications_enabled_summary">Паказваць прыярытэтныя апавяшчэння невялікімі ўсплывальнымі вокнамі</string>
     <string name="high_touch_sensitivity_title">Рэжым пальчаткаў</string>
     <string name="high_touch_sensitivity_summary">Павялічваць адчувальнасць экрана для магчымасці працы ў пальчатках</string>
     <string name="device_hostname">Сеткавае імя прылады</string>
@@ -29,12 +46,23 @@
     <string name="lock_settings_picker_pattern_size_message">Абяры памер графічнага ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Паказваць няправільны ўвод</string>
     <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі</string>
+    <string name="lockscreen_media_art_title">Адлюстроўваць вокладку мультымедыя</string>
     <string name="lockscreen_visualizer_title">Візуалізацыя спектра музыкі</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секундаў</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 хвіліна</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 хвілін</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 хвілін</string>
+    <string name="data_usage_app_restrict_wifi">Дадзеныя Wi-Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Уключыць выкарыстанне дадзеных Wi-Fi</string>
     <string name="unlock_scramble_pin_layout_title">Змешваць кнопкі</string>
     <string name="unlock_scramble_pin_layout_summary">Перастаўляць кнопкі ўводу PIN-кода ў выпадковым парадку</string>
     <string name="proximity_wake_title">Прадухіляць выпадковае ўлучэнне</string>
+    <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
     <string name="touchscreen_hovering_title">Навядзенне пальца</string>
     <string name="touchscreen_hovering_summary">Распазнаваць набліжэнне пальца да экрана для падзей навядзення курсора ў браўзары ці іншых дадатках</string>
+    <string name="touchscreen_gesture_settings_title">Сэнсарныя жэсты</string>
+    <string name="touchscreen_gesture_settings_summary">Выкананне розных сэнсарных жэстаў на экране для хуткіх дзеянняў</string>
+    <string name="volume_link_notification_title">Звязаць гучнасць рынгтону і апавяшчэнняў</string>
     <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
     <string name="wake_when_plugged_or_unplugged_summary">Улучаць экран пры падлучэнні ці адключэнні крыніцы сілкавання</string>
 </resources>

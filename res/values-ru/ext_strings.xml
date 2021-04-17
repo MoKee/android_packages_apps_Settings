@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,13 +26,14 @@
     </plurals>
     <string name="show_dev_on_cm">Настройки для разработчиков включены!</string>
     <string name="show_dev_already_cm">Нет необходимости, вы уже включили параметры разработки.</string>
+    <string name="keyboard_extras_title">Дополнения</string>
+    <string name="advanced_keyboard_settings_title">Расширенные настройки</string>
     <string name="advanced_reboot_title">Варианты перезапуска</string>
     <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в режим восстановления и загрузчик</string>
     <string name="adb_enable_root">Отладка суперпользователем</string>
     <string name="adb_enable_summary_root">Разрешить запуск отладки Android с правами суперпользователя</string>
     <string name="berry_black_theme_title">Натурально черный</string>
     <string name="berry_black_theme_summary">Натурально черный фон для темной темы</string>
-    <string name="lineagelicense_title">Политика конфиденциальности LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Коснитесь для сна</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния или экрана блокировки, чтобы перевести устройство в спящий режим</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s</xliff:g> вашего планшета.</string>
@@ -90,4 +92,6 @@
     <string name="backup_transport_setting_label">Сменить поставщика резервного копирования</string>
     <string name="backup_transport_title">Выберите поставщика резервного копирования</string>
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <string name="fod_gesture_title">Работа сканера отпечатка пальца только с выключенным экраном</string>
+    <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
 </resources>

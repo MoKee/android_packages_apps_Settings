@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,10 +17,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineagelicense_title">LineageOS atbildība</string>
     <string name="high_touch_sensitivity_title">Augsta pieskāriena jutība</string>
     <string name="high_touch_sensitivity_summary">Palielināt skārienekrāna jutību, lai to varētu lietot, valkājot cimdus</string>
     <string name="device_hostname">Iekārtas nosaukums tīklā</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundes</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minūte</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minūtes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minūtes</string>
     <string name="unlock_scramble_pin_layout_title">Samaisīt izkārtojumu</string>
     <string name="unlock_scramble_pin_layout_summary">Atslēdzot iekārtu, samaisīt PIN izkārtojumu</string>
     <string name="proximity_wake_title">Novērsiet nejaušu pamodināšanu</string>

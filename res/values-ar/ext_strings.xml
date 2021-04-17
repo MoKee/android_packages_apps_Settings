@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,9 +27,11 @@
     </plurals>
     <string name="show_dev_on_cm">مكّنتَ خيارات المطور!</string>
     <string name="show_dev_already_cm">لا داعي، فخيارات المطور مفعّلة.</string>
+    <string name="keyboard_extras_title">الإضافات</string>
     <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
     <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع الاسترداد او وضع محمل الاقلاع</string>
-    <string name="lineagelicense_title">قانون LineageOS</string>
+    <string name="adb_enable_root">تصحيح الجذر</string>
+    <string name="adb_enable_summary_root">السماح بتشغيل تصحيح أخطاء Android كجذر</string>
     <string name="status_bar_double_tap_to_sleep_title">اضغط للنوم</string>
     <string name="status_bar_double_tap_to_sleep_summary">الضغط مرتين فوق شريط الحالة لإطفاء الشاشة</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">حدد موقع حساس بصمة الأصبع على <xliff:g id="sensor_location">%1$s</xliff:g> من جهازك اللوحي.</string>

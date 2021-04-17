@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,6 @@
     </plurals>
     <string name="show_dev_on_cm">നിങ്ങൾ ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി!</string>
     <string name="show_dev_already_cm">ആവശ്യമില്ല, നിങ്ങൾ ഇതിനകം ഡെവലപ്പ്മെന്റ് ക്രമീകരണങ്ങൾ പ്രാപ്തമാക്കി.</string>
-    <string name="lineagelicense_title">LineageOS ലീഗല്‍</string>
     <string name="high_touch_sensitivity_title">ഉയര്‍ന്ന സ്പര്‍ശന സംവേദനക്ഷമത</string>
     <string name="high_touch_sensitivity_summary">കയ്യുറകൾ ധരിച്ചിരിക്കുമ്പോള്‍ ഉപയോഗിക്കുന്നതിനായി ടച്ച്സ്ക്രീൻ സെന്‍സിറ്റിവിറ്റി വര്‍ദ്ധിപ്പിക്കുക</string>
     <string name="device_hostname">ഉപകരണ ഹോസ്റ്റ്നെയിം</string>
@@ -32,6 +32,7 @@
     <string name="lockpattern_settings_enable_error_path_title">പാറ്റേൺ പിശക് ദൃശ്യമാക്കുക</string>
     <string name="lockpattern_settings_enable_dots_title">ഡോട്ടുകൾ പാറ്റേൺ ദൃശ്യമാക്കുക</string>
     <string name="lockscreen_visualizer_title">സംഗീതം വിഷ്വലൈസർ പ്രദര്‍ശനം ചെയ്യുക</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 സെക്കൻഡ്</string>
     <string name="unlock_scramble_pin_layout_title">സ്ക്രാമ്പിള്‍ ചെയ്ത ലേഔട്ട്</string>
     <string name="unlock_scramble_pin_layout_summary">ഉപകരണം അൺലോക്ക് ചെയ്യുമ്പോൾ PIN ലേയൌട്ട് സ്ക്രാമ്പിള്‍ ചെയ്യുക</string>
     <string name="proximity_wake_title">യാദൃച്ഛികമായി സജീവമാകുന്നത് തടയുക</string>

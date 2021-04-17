@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,13 +23,14 @@
     </plurals>
     <string name="show_dev_on_cm">Você ativou as configurações de desenvolvedor!</string>
     <string name="show_dev_already_cm">Não é preciso, você já ativou as configurações de desenvolvedor.</string>
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Configurações avançadas</string>
     <string name="advanced_reboot_title">Reinicialização avançada</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu de desligamento para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
     <string name="adb_enable_root">Depuração como superusuário</string>
     <string name="adb_enable_summary_root">Permitir a depuração do Android como superusuário</string>
     <string name="berry_black_theme_title">Preto puro</string>
     <string name="berry_black_theme_summary">Preto puro como cor de fundo para tema escuro</string>
-    <string name="lineagelicense_title">Licença LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
     <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status ou na tela de bloqueio para desligar a tela</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localize o sensor de impressão digital no(a) <xliff:g id="sensor_location">%1$s </xliff:g> do seu tablet.</string>
@@ -53,6 +55,8 @@
     <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
     <string name="lockscreen_media_art_title">Exibir capa do álbum</string>
     <string name="lockscreen_visualizer_title">Mostrar o visualizador de música</string>
+    <string name="show_navbar_hint_title">Dica de navegação</string>
+    <string name="show_navbar_hint_summary">Mostrar barra de dicas de navegação na parte inferior da tela</string>
     <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
     <string name="app_notification_sound_timeout_summary_template">Permitir sons ou vibrações apenas uma vez a cada <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Sem restrição</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,13 +23,13 @@
     </plurals>
     <string name="show_dev_on_cm">개발자 설정이 활성화되었습니다.</string>
     <string name="show_dev_already_cm">이미 개발자 설정이 활성화되어 있습니다.</string>
+    <string name="keyboard_extras_title">추가 기능</string>
     <string name="advanced_reboot_title">고급 다시 시작 기능</string>
     <string name="advanced_reboot_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
     <string name="adb_enable_root">디버깅 시 루트 권한 사용</string>
     <string name="adb_enable_summary_root">ADB와 같은 디버깅 모드 사용시 루트 권한을 사용합니다.</string>
     <string name="berry_black_theme_title">검정색</string>
     <string name="berry_black_theme_summary">어두운 테마 사용 시 완전 검정색 배경 사용</string>
-    <string name="lineagelicense_title">LineageOS 법적 고지</string>
     <string name="status_bar_double_tap_to_sleep_title">두드려 화면 끄기</string>
     <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 두드려 화면 끄기</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">태블릿의 <xliff:g id="sensor_location">%1$s</xliff:g>에서 지문 센서를 찾으세요.</string>

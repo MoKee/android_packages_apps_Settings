@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,6 @@
     </plurals>
     <string name="show_dev_on_cm">আপুনি ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰিলে!</string>
     <string name="show_dev_already_cm">আৱশ্যক নাই, আপুনি ইতিমধ্যে ডেভেলপমেণ্ট ছেটিংচ সক্ষম কৰিলে।</string>
-    <string name="lineagelicense_title">LineageOS আইনী</string>
     <string name="high_touch_sensitivity_title">উচ্চ স্পৰ্শ সংবেদনশীলতা</string>
     <string name="high_touch_sensitivity_summary">টাচ্চস্ক্ৰীণৰ সংবেদনশীলতা বৃদ্ধি কৰক যাতে হাতমোজা পিন্ধি থাকিলেও ইয়াক ব্যৱহাৰ কৰিব পাৰি</string>
     <string name="device_hostname">ডিভাইচৰ হোষ্টনেম</string>
@@ -32,6 +32,7 @@
     <string name="lockpattern_settings_enable_error_path_title">পেটাৰ্ণৰ ত্ৰুটি প্ৰদৰ্শন কৰক</string>
     <string name="lockpattern_settings_enable_dots_title">পেটাৰ্ণৰ ডটবোৰ প্ৰদৰ্শন কৰক</string>
     <string name="lockscreen_visualizer_title">সংগীত ভিজুৱেলাইজাৰ প্ৰদৰ্শন কৰক</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 চেকেণ্ড</string>
     <string name="unlock_scramble_pin_layout_title">স্ক্ৰেম্বল লেআউট</string>
     <string name="unlock_scramble_pin_layout_summary">ডিভাইচ আনলকিং কৰোতে PIN লেআউট স্ক্ৰেম্বল কৰক</string>
     <string name="proximity_wake_title">দুৰ্ঘটনাক্ৰমে ৱেক-আপ হোৱাটো প্ৰতিৰোধ কৰক</string>

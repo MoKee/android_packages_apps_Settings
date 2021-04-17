@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,13 +26,14 @@
     </plurals>
     <string name="show_dev_on_cm">Vývojářské nastavení je povoleno!</string>
     <string name="show_dev_already_cm">Vývojářské nastavení je již povoleno.</string>
+    <string name="keyboard_extras_title">Doplňky</string>
+    <string name="advanced_keyboard_settings_title">Pokročilá nastavení</string>
     <string name="advanced_reboot_title">Rozšířený restart</string>
     <string name="advanced_reboot_summary">Pokud je povoleno, v nabídce vypnutí jsou také možnosti restartovat zařízení do recovery nebo bootloaderu</string>
     <string name="adb_enable_root">Ladění s\u00a0právy root</string>
     <string name="adb_enable_summary_root">Povolit spuštění ladění Androidu s\u00a0právy root</string>
     <string name="berry_black_theme_title">Čistě černý</string>
     <string name="berry_black_theme_summary">Čistě černé pozadí při tmavém motivu</string>
-    <string name="lineagelicense_title">Právní ujednání LineageOS</string>
     <string name="status_bar_double_tap_to_sleep_title">Klepnutím uspat</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavovou lištu nebo zamykací obrazovku vypnout obrazovku</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Vyhledejte snímač otisku prstů <xliff:g id="sensor_location">%1$s</xliff:g> vašeho tabletu.</string>
@@ -90,4 +92,8 @@
     <string name="backup_transport_setting_label">Změnit poskytovatele zálohování</string>
     <string name="backup_transport_title">Vyberte poskytovatele zálohování</string>
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <string name="fast_charging_title">Rychlé nabíjení</string>
+    <string name="fast_charging_summary">Vypnutím snížíte teplo produkované zařízením během nabíjení nebo prodloužíte životnost baterie</string>
+    <string name="fod_gesture_title">Otisky prstů při vypnuté obrazovce</string>
+    <string name="fod_gesture_summary">Umožňuje odemknutí zařízení, aniž by bylo nutné nejprve obrazovku probudit</string>
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +24,6 @@
     <string name="show_dev_on_cm">Du har aktiveret udvikler-indstillinger!</string>
     <string name="show_dev_already_cm">Intet behov, da du allerede har aktiveret udvikler-indstillinger.</string>
     <string name="advanced_reboot_title">Avanceret genstart</string>
-    <string name="lineagelicense_title">LineageOS-juridisk</string>
     <string name="status_bar_double_tap_to_sleep_title">Tryk for at slumre</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dobbelt-tryk på statusbjælken eller låseskærmen, for at slukke for skærmen</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Lokalisér fingeraftrykssensoren på <xliff:g id="sensor_location">%1$s</xliff:g> af din telefon.</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,15 +24,25 @@
     </plurals>
     <string name="show_dev_on_cm">Arendussätted aktiveeritud!</string>
     <string name="show_dev_already_cm">Ei ole vaja, arendussätted juba aktiveeritud.</string>
+    <string name="keyboard_extras_title">Komponendid</string>
+    <string name="advanced_keyboard_settings_title">Täpsemad seaded</string>
+    <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
     <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
     <string name="adb_enable_root">Juurkasutajaga silumine</string>
     <string name="adb_enable_summary_root">Luba Androidi silumist juurkasutajaga</string>
     <string name="berry_black_theme_title">Täiesti must</string>
     <string name="berry_black_theme_summary">Täiesti must taust tumeda teema jaoks</string>
-    <string name="lineagelicense_title">LineageOS juriidiline info</string>
     <string name="status_bar_double_tap_to_sleep_title">Koputa unerežiimiks</string>
     <string name="status_bar_double_tap_to_sleep_summary">Topeltkoputa olekuriba või lukustuskuva ekraani väljalülitamiseks</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Leia sõrmejäljeandur oma tahvelarvuti <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Leia sõrmejäljeandur oma seadme <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Leidke sõrmejäljeandur oma telefoni <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">tagasi</string>
+    <string name="security_settings_fingerprint_sensor_location_front">ees</string>
+    <string name="security_settings_fingerprint_sensor_location_left">vasak külg</string>
+    <string name="security_settings_fingerprint_sensor_location_right">parem külg</string>
     <string name="heads_up_notifications_enabled_title">Hüpikmärguanded</string>
+    <string name="heads_up_notifications_enabled_summary">Kuvage prioriteetsed teated väikeses ujuvas aknas</string>
     <string name="high_touch_sensitivity_title">Kõrge puutetundlikus</string>
     <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
     <string name="device_hostname">Seadme hostname</string>
@@ -40,6 +51,7 @@
     <string name="increasing_ring_ramp_up_time_title">Käivitamisetapi aeg</string>
     <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
     <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
+    <string name="lock_settings_picker_pattern_size_message">Vali mustri suurus</string>
     <string name="lockpattern_settings_enable_error_path_title">Näita mustri vigu</string>
     <string name="lockpattern_settings_enable_dots_title">Näita mustri punkte</string>
     <string name="lockscreen_media_art_title">Näita meedia kaanepilti</string>
@@ -47,6 +59,15 @@
     <string name="min_refresh_rate_title">Minimaalne värskendussagedus</string>
     <string name="show_navbar_hint_title">Navigeerimise vihje</string>
     <string name="show_navbar_hint_summary">Kuva navigeerimise vihjeriba ekraani allosas</string>
+    <string name="app_notification_sound_timeout_title">Väikseim aeg teavitushelide vahel</string>
+    <string name="app_notification_sound_timeout_summary_template">Ära luba heli või vibratsiooni rohkem kui üks kord iga <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Piiranguta</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundit</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekundit</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutit</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutit</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutit</string>
     <string name="data_usage_app_restrict_all">Luba võrgujuurdepääs</string>
     <string name="data_usage_app_restrict_all_summary">Luba võrgukasutus</string>
     <string name="data_usage_app_restrict_mobile">Mobiilne andmeside</string>
@@ -69,4 +90,8 @@
     <string name="backup_transport_setting_label">Muuda varunduste pakkujat</string>
     <string name="backup_transport_title">Vali varunduste pakkuja</string>
     <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
+    <string name="fast_charging_title">Kiire laadimine</string>
+    <string name="fast_charging_summary">Keelake seade laadimise ajal tekkiva kuumuse vähendamiseks või aku eluea pikendamiseks </string>
+    <string name="fod_gesture_title">Sõrmejäljeskanneriga saab töötada ainult siis, kui ekraan on välja lülitatud</string>
+    <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
 </resources>

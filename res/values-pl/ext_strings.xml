@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="mobile_data_settings_summary_unavailable">Brak dostępnej karty SIM</string>
     <plurals name="show_dev_countdown_cm">
         <item quantity="one">Jesteś o <xliff:g id="step_count">%1$d</xliff:g> krok od włączenia ustawień programisty.</item>
         <item quantity="few">Jesteś <xliff:g id="step_count">%1$d</xliff:g> kroki od włączenia ustawień programisty.</item>
@@ -24,11 +26,14 @@
     </plurals>
     <string name="show_dev_on_cm">Aktywowałeś opcje programistyczne!</string>
     <string name="show_dev_already_cm">Wystarczy, już jesteś programistą.</string>
+    <string name="keyboard_extras_title">Dodatki</string>
+    <string name="advanced_keyboard_settings_title">Ustawienia zaawansowane</string>
     <string name="advanced_reboot_title">Zaawansowany restart</string>
     <string name="advanced_reboot_summary">Kiedy urządzenie jest odblokowane, dodaj opcję ponownego uruchomienia w trybie recovery lub bootloadera do menu zasilania</string>
     <string name="adb_enable_root">Debugowanie jako root</string>
     <string name="adb_enable_summary_root">Zezwól na debugowanie Androida jako root</string>
-    <string name="lineagelicense_title">Informacje prawne LineageOS</string>
+    <string name="berry_black_theme_title">Czysty czarny</string>
+    <string name="berry_black_theme_summary">Czyste czarne tło dla ciemnego motywu</string>
     <string name="status_bar_double_tap_to_sleep_title">Dotknij, by uśpić</string>
     <string name="status_bar_double_tap_to_sleep_summary">Kliknij dwukrotnie na pasku statusu lub ekranie blokady aby wyłączyć ekran</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Zlokalizuj czytnik linii papilarnych na <xliff:g id="sensor_location">%1$s </xliff:g> Twojego tabletu.</string>
@@ -53,6 +58,9 @@
     <string name="lockpattern_settings_enable_dots_title">Pokazuj punkty wzoru</string>
     <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
     <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
+    <string name="min_refresh_rate_title">Minimalna częstotliwość odświeżania</string>
+    <string name="show_navbar_hint_title">Wskazówki nawigacji</string>
+    <string name="show_navbar_hint_summary">Pokazuj pasek wskazówek na dole ekranu</string>
     <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
     <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz co każde <xliff:g id="duration">%1$s </xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
@@ -62,6 +70,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 min</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 min</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
+    <string name="data_usage_app_restrict_all">Zezwól na dostęp do sieci</string>
+    <string name="data_usage_app_restrict_all_summary">Włącz użycie sieci</string>
+    <string name="data_usage_app_restrict_mobile">Dane mobilne</string>
+    <string name="data_usage_app_restrict_mobile_summary">Włącz użycie danych mobilnych</string>
     <string name="data_usage_app_restrict_vpn">Dane VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Włącz użycie danych VPN</string>
     <string name="data_usage_app_restrict_wifi">Dane Wi-Fi</string>
@@ -77,4 +89,11 @@
     <string name="volume_link_notification_title">Połącz głośność dzwonka i powiadomień</string>
     <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
     <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania od źródła zasilania</string>
+    <string name="backup_transport_setting_label">Zmień dostawcę kopii zapasowej</string>
+    <string name="backup_transport_title">Wybierz dostawcę kopii zapasowej</string>
+    <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
+    <string name="fast_charging_title">Szybkie ładowanie</string>
+    <string name="fast_charging_summary">Wyłącz, aby zmniejszyć ilość ciepła wytwarzanego przez urządzenie podczas ładowania lub wydłużyć żywotność baterii</string>
+    <string name="fod_gesture_title">Odcisk palca na wyłączonym ekranie</string>
+    <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
 </resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
+     Copyright (C) 2017-2021 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng pag-unlad na mga setting.</item>
+        <item quantity="other">Ikaw ngayon ay <xliff:g id="step_count">%1$d</xliff:g> hakbang na layo mula sa pagpapagana ng mga setting ng pag-unlad.</item>
+    </plurals>
+    <string name="show_dev_on_cm">Pinagana mo ang pag-unlad na mga setting!</string>
+    <string name="show_dev_already_cm">Hindi na kailangan, pinagana mo na ang pag-unlad na mga setting.</string>
+    <string name="keyboard_extras_title">Mga eksta</string>
+    <string name="advanced_reboot_title">Advance na pagbahagi</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Hanapin ang fingerprint sensor sa <xliff:g id="sensor_location">%1$s</xliff:g> sa iyong telepono.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">likuran</string>
+    <string name="security_settings_fingerprint_sensor_location_front">harapan</string>
+    <string name="security_settings_fingerprint_sensor_location_left">kaliwang bahagi</string>
+    <string name="security_settings_fingerprint_sensor_location_right">kanang bahagi</string>
+    <string name="heads_up_notifications_enabled_title">Naka heads-up</string>
+    <string name="heads_up_notifications_enabled_summary">Magdispley ng mga pabatid ng prayoridad sa isang maliit na floating window</string>
+    <string name="high_touch_sensitivity_title">Mataas na paghawak na sensitibo</string>
+    <string name="high_touch_sensitivity_summary">Talasan ang pakitandam ng touchscreen kaya\'t magagamit ito habang may suot na guwantes</string>
+    <string name="device_hostname">Hostname ng gamit</string>
+    <string name="increasing_ring_volume_option_title">Ipataas ang volume ng ring</string>
+    <string name="increasing_ring_min_volume_title">Simulan ang volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Oras ng Ramp-up</string>
+    <string name="lock_settings_picker_pattern_size_message">Pumili ng isang huwarang laki</string>
+    <string name="lockpattern_settings_enable_error_path_title">Ipakita ang huwarang mali</string>
+    <string name="lockpattern_settings_enable_dots_title">Ipakita ang huwarang tuldok</string>
+    <string name="lockscreen_media_art_title">I-display ang medya cover na art</string>
+    <string name="lockscreen_visualizer_title">I-display ang music visualizer</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundo</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuto</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">6 minuto</string>
+    <string name="unlock_scramble_pin_layout_title">Naka-iskramble na layout</string>
+    <string name="unlock_scramble_pin_layout_summary">I-iskramble ang PIN layout kung naka unlock ang gamit</string>
+    <string name="proximity_wake_title">Maiwasan ang aksidenteng panggising</string>
+    <string name="touchscreen_hovering_title">Hovering ng touchscreen</string>
+    <string name="touchscreen_hovering_summary">Pinapayagan ka na mag hover sa screen na kagaya ng mouse sa mga web browser, mga remote desktop, atbp</string>
+    <string name="touchscreen_gesture_settings_title">Mga gestures ng touchscreen</string>
+    <string name="touchscreen_gesture_settings_summary">Nag-perform na various na touchscreen na mga gestures para sa madaling mga aksyon</string>
+    <string name="wake_when_plugged_or_unplugged_title">Gumising sa plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Buksan ang screen kapag kumokonek o pinuputol ang koneksiyon ng kuryente</string>
+</resources>

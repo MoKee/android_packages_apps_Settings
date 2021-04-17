@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,6 @@
     </plurals>
     <string name="show_dev_on_cm">તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કર્યું!</string>
     <string name="show_dev_already_cm">જરૂર નથી, તમે ડેવેલપમેન્ટ સેટિંગ્સ સક્ષમ કરી ચુક્યા છો.</string>
-    <string name="lineagelicense_title">LineageOS lકાયદાકીય</string>
     <string name="high_touch_sensitivity_title">ઉચ્ચ ટચ સંવેદનશીલતા</string>
     <string name="high_touch_sensitivity_summary">ટચસ્ક્રીન સંવેદનશીલતા વધારો જેથી હાથમોજા પહેરીને તેનો ઉપયોગ થઈ શકે</string>
     <string name="device_hostname">ડિવાઇસ હોસ્ટનેમ</string>
@@ -32,6 +32,7 @@
     <string name="lockpattern_settings_enable_error_path_title">પૅટર્ન ખામી દર્શાવો</string>
     <string name="lockpattern_settings_enable_dots_title">પૅટર્ન ડોટ્સ દર્શાવો</string>
     <string name="lockscreen_visualizer_title">મ્યુઝિક વિઝ્યુઅલાઇઝર દર્શાવો</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 સેકન્ડ્સ</string>
     <string name="unlock_scramble_pin_layout_title">લેઆઉટ આમતેમ કરો</string>
     <string name="unlock_scramble_pin_layout_summary">ડિવાઇસ અનલૉક કરો ત્યારે PIN લેઆઉટ આમતેમ કરો</string>
     <string name="proximity_wake_title">આકસ્મિક વેક અપ રોકો</string>
