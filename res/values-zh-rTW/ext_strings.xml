@@ -111,4 +111,6 @@
     <string name="fod_gesture_summary">無需先打開螢幕即可解鎖裝置</string>
     <string name="backup_transport_setting_label">變更備份服務提供者</string>
     <string name="backup_transport_title">選擇備份服務提供者</string>
+    <string name="fast_charging_title">快速充電</string>
+    <string name="fast_charging_summary">禁用以減少裝置在充電時產生的熱量或延長電池的使用壽命</string>
 </resources>
