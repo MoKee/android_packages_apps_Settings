@@ -42,7 +42,6 @@
     <string name="heads_up_notifications_enabled_summary">Amosar notificacions de prioridad nunha pequena xanela flotante</string>
     <string name="high_touch_sensitivity_title">Alta sensibilidade</string>
     <string name="high_touch_sensitivity_summary">Aumentar a sensibilidade da pantalla para poder utilizalo con luvas</string>
-    <string name="device_hostname">Nome do dispositivo</string>
     <string name="increasing_ring_volume_option_title">Aumentando o volume de chamada</string>
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Intervalo de aumento</string>

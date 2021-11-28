@@ -34,7 +34,6 @@
     <string name="heads_up_notifications_enabled_summary">Magdispley ng mga pabatid ng prayoridad sa isang maliit na floating window</string>
     <string name="high_touch_sensitivity_title">Mataas na paghawak na sensitibo</string>
     <string name="high_touch_sensitivity_summary">Talasan ang pakitandam ng touchscreen kaya\'t magagamit ito habang may suot na guwantes</string>
-    <string name="device_hostname">Hostname ng gamit</string>
     <string name="increasing_ring_volume_option_title">Ipataas ang volume ng ring</string>
     <string name="increasing_ring_min_volume_title">Simulan ang volume</string>
     <string name="increasing_ring_ramp_up_time_title">Oras ng Ramp-up</string>

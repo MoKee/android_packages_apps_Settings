@@ -43,7 +43,6 @@
     <string name="heads_up_notifications_enabled_summary">작은 플로팅 창에 중요 알림 표시</string>
     <string name="high_touch_sensitivity_title">터치 감도 높이기</string>
     <string name="high_touch_sensitivity_summary">장갑을 착용해도 터치할 수 있도록 터치스크린 감도를 향상</string>
-    <string name="device_hostname">장치 호스트명</string>
     <string name="increasing_ring_volume_option_title">점점 커지는 벨 소리</string>
     <string name="increasing_ring_min_volume_title">시작 벨소리</string>
     <string name="increasing_ring_ramp_up_time_title">소리 커짐 시간</string>

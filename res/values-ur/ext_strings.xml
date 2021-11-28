@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,5 +17,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">‏کچھ مواد کے لیے 60 سے %1$d Hz تک ریفریش کی شرح خودکار طور پر بڑھ جاتی ہے۔ بیٹری کے استعمال میں اضافہ کرتا ہے۔</string>
+    <string name="high_touch_sensitivity_summary">ٹچ اسکرین سنویدنشیلتا میں اضافہ کریں تاکہ اس دستانے پہننے کے دوران استعمال کیا جا سکے</string>
+    <string name="touchscreen_hovering_summary">آپ کو ویب براؤزرز، ریموٹ ڈیسک ٹاپ وغیرہ وغیرہ میں اسکرین کو ہورانے کی اجازت دیتا ہے</string>
 </resources>

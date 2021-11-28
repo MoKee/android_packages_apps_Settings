@@ -47,7 +47,6 @@
     <string name="heads_up_notifications_enabled_summary">Zobrazit prioritní oznámení v malém plovoucím okně</string>
     <string name="high_touch_sensitivity_title">Vysoká citlivost dotyku</string>
     <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje použít rukavice</string>
-    <string name="device_hostname">Hostitelské jméno zařízení</string>
     <string name="increasing_ring_volume_option_title">Zvyšující se hlasitost vyzvánění</string>
     <string name="increasing_ring_min_volume_title">Počáteční hlasitost</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zesilování</string>
@@ -70,6 +69,8 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
+    <string name="auto_brightness_one_shot_title">Rychlé nastavení autom. jasu</string>
+    <string name="auto_brightness_one_shot_summary">K nastavení jasu dojde pouze v okamžiku zapnutí obrazovky</string>
     <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
     <string name="data_usage_app_restrict_all_summary">Povolit využití sítě</string>
     <string name="data_usage_app_restrict_mobile">Mobilní data</string>
@@ -94,6 +95,5 @@
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
     <string name="fast_charging_title">Rychlé nabíjení</string>
     <string name="fast_charging_summary">Vypnutím snížíte teplo produkované zařízením během nabíjení nebo prodloužíte životnost baterie</string>
-    <string name="fod_gesture_title">Otisky prstů při vypnuté obrazovce</string>
-    <string name="fod_gesture_summary">Umožňuje odemknutí zařízení, aniž by bylo nutné nejprve obrazovku probudit</string>
+    <string name="wifi_setup_wizard_title">Vyberte síť Wi-Fi</string>
 </resources>

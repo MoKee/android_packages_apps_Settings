@@ -44,7 +44,6 @@
     <string name="heads_up_notifications_enabled_summary">在一个小的浮动窗口中显示优先通知</string>
     <string name="high_touch_sensitivity_title">触摸屏高灵敏度</string>
     <string name="high_touch_sensitivity_summary">增加触摸屏的灵敏度，以便在戴手套时使用</string>
-    <string name="device_hostname">设备网络名</string>
     <string name="increasing_ring_volume_option_title">铃声音量渐强</string>
     <string name="increasing_ring_min_volume_title">初始音量</string>
     <string name="increasing_ring_ramp_up_time_title">增强时间</string>
@@ -91,6 +90,4 @@
     <string name="connected_tws_device_saved_title">已保存的耳机</string>
     <string name="fast_charging_title">快速充电</string>
     <string name="fast_charging_summary">禁用以减少设备在充电时产生的热量或延长电池的使用寿命</string>
-    <string name="fod_gesture_title">熄屏指纹</string>
-    <string name="fod_gesture_summary">无需唤醒屏幕即可解锁设备</string>
 </resources>

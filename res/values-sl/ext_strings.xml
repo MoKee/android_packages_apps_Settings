@@ -46,7 +46,6 @@
     <string name="heads_up_notifications_enabled_summary">Prikaži prednostna obvestila v majhnem lebdečem oknu</string>
     <string name="high_touch_sensitivity_title">Visoka občutljivost dotika</string>
     <string name="high_touch_sensitivity_summary">Povečaj občutljivost dotika, tako da ga lahko uporabite, ko nosite rokavice</string>
-    <string name="device_hostname">Gostiteljsko ime naprave</string>
     <string name="increasing_ring_volume_option_title">Naraščajoča glasnost zvonjenja</string>
     <string name="increasing_ring_min_volume_title">Začetna glasnost</string>
     <string name="increasing_ring_ramp_up_time_title">Čas povečanja</string>

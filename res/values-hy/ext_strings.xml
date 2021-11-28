@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,5 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">Որոշակի բովանդակության համար թարմացման հաճախականությունը 60-ից կդառնա %1$d Հց։ Երկարացնում է մարտկոցի օգտագործման ժամանակը։</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 վայրկյան</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 րոպե</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 րոպե</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 րոպե</string>
 </resources>

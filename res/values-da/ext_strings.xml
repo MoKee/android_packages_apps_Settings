@@ -35,7 +35,6 @@
     <string name="heads_up_notifications_enabled_summary">Vis prioriterede notifikationer i et lille svævende vindue</string>
     <string name="high_touch_sensitivity_title">Høj berøringsfølsomhed</string>
     <string name="high_touch_sensitivity_summary">Forøg berøringsfølsom skærms følsomhed, så den kan bruges med handsker på</string>
-    <string name="device_hostname">Enheds værtsnavn</string>
     <string name="increasing_ring_volume_option_title">Stigende ringe-lydstyrke</string>
     <string name="increasing_ring_min_volume_title">Start-lydstyrke</string>
     <string name="increasing_ring_ramp_up_time_title">Opvarmningstid</string>

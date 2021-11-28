@@ -47,7 +47,6 @@
     <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими всплывающими окнами</string>
     <string name="high_touch_sensitivity_title">Режим перчаток</string>
     <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
-    <string name="device_hostname">Сетевое имя устройства</string>
     <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
     <string name="increasing_ring_min_volume_title">Начальная громкость</string>
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
@@ -92,6 +91,4 @@
     <string name="backup_transport_setting_label">Сменить поставщика резервного копирования</string>
     <string name="backup_transport_title">Выберите поставщика резервного копирования</string>
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
-    <string name="fod_gesture_title">Работа сканера отпечатка пальца только с выключенным экраном</string>
-    <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
 </resources>

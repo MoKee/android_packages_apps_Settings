@@ -17,6 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="mobile_data_settings_summary_unavailable">Hiện không có thẻ SIM</string>
     <plurals name="show_dev_countdown_cm">
         <item quantity="other">Hiện tại bạn còn <xliff:g id="step_count">%1$d</xliff:g> bước nữa để bật cài đặt nhà phát triển.</item>
     </plurals>
@@ -43,7 +44,6 @@
     <string name="heads_up_notifications_enabled_summary">Hiển thị các thông báo ưu tiên trong một cửa sổ nổi nhỏ</string>
     <string name="high_touch_sensitivity_title">Độ nhạy cảm ứng cao</string>
     <string name="high_touch_sensitivity_summary">Tăng độ nhạy màn hình cảm ứng để nó có thể được sử dụng trong khi đeo găng tay</string>
-    <string name="device_hostname">Tên máy chủ của thiết bị</string>
     <string name="increasing_ring_volume_option_title">Tăng âm lượng chuông</string>
     <string name="increasing_ring_min_volume_title">Âm lượng khởi động</string>
     <string name="increasing_ring_ramp_up_time_title">Thời gian tăng</string>
@@ -54,6 +54,7 @@
     <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
     <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
     <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
+    <string name="min_refresh_rate_title">Tốc độ làm mới tối thiểu</string>
     <string name="show_navbar_hint_title">Chỉ dẫn điều hướng</string>
     <string name="show_navbar_hint_summary">Hiển thị thanh gợi ý điều hướng ở dưới cùng của màn hình</string>
     <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
@@ -67,6 +68,8 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 phút</string>
     <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
     <string name="data_usage_app_restrict_all_summary">Bật mức sử dụng mạng di động</string>
+    <string name="data_usage_app_restrict_mobile">Dữ liệu di động</string>
+    <string name="data_usage_app_restrict_mobile_summary">Bật mức sử dụng dữ liệu mạng di động</string>
     <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Cho phép sử dụng dữ liệu VPN</string>
     <string name="data_usage_app_restrict_wifi">Dữ liệu Wi\u2011Fi</string>
@@ -87,6 +90,4 @@
     <string name="connected_tws_device_saved_title">Những tai nghe đã lưu</string>
     <string name="fast_charging_title">Đang sạc nhanh</string>
     <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
-    <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
-    <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình</string>
 </resources>

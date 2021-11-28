@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2016 The CyanogenMod Project
-     Copyright (C) 2017-2021 The LineageOS Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,5 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">Ayrim kontent uchun ekranning yangilanish chastotasi 60-%1$d Gs orasida almashib turadi. Batareya tezroq sarflanadi.</string>
+    <string name="fod_gesture_title">Képernyő-feloldás ujjlenyomattal</string>
+    <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb felébresztené a képernyőt</string>
 </resources>

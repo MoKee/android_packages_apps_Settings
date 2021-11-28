@@ -42,7 +42,6 @@
     <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
     <string name="high_touch_sensitivity_title">Kepekaan sentuh tinggi</string>
     <string name="high_touch_sensitivity_summary">Tingkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
-    <string name="device_hostname">Nama host perangkat</string>
     <string name="increasing_ring_volume_option_title">Meningkatkan volume dering</string>
     <string name="increasing_ring_min_volume_title">Volume awal</string>
     <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
@@ -84,6 +83,4 @@
     <string name="backup_transport_setting_label">Ubah penyedia cadangan</string>
     <string name="backup_transport_title">Pilih penyedia cadangan</string>
     <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
-    <string name="fod_gesture_title">Sidik jari saat layar mati</string>
-    <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
 </resources>

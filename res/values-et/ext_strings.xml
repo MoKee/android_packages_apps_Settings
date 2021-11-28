@@ -45,7 +45,6 @@
     <string name="heads_up_notifications_enabled_summary">Kuvage prioriteetsed teated väikeses ujuvas aknas</string>
     <string name="high_touch_sensitivity_title">Kõrge puutetundlikus</string>
     <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
-    <string name="device_hostname">Seadme hostname</string>
     <string name="increasing_ring_volume_option_title">Kasvav helisemistugevus</string>
     <string name="increasing_ring_min_volume_title">Lähtevaljusus</string>
     <string name="increasing_ring_ramp_up_time_title">Käivitamisetapi aeg</string>
@@ -68,6 +67,8 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutit</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutit</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutit</string>
+    <string name="auto_brightness_one_shot_title">Ühekordne automaatne heledus</string>
+    <string name="auto_brightness_one_shot_summary">Heledust reguleeritakse vaid hetkel, mil ekraan sisse lülitatakse</string>
     <string name="data_usage_app_restrict_all">Luba võrgujuurdepääs</string>
     <string name="data_usage_app_restrict_all_summary">Luba võrgukasutus</string>
     <string name="data_usage_app_restrict_mobile">Mobiilne andmeside</string>
@@ -92,6 +93,5 @@
     <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
     <string name="fast_charging_title">Kiire laadimine</string>
     <string name="fast_charging_summary">Keelake seade laadimise ajal tekkiva kuumuse vähendamiseks või aku eluea pikendamiseks </string>
-    <string name="fod_gesture_title">Sõrmejäljeskanneriga saab töötada ainult siis, kui ekraan on välja lülitatud</string>
-    <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
+    <string name="wifi_setup_wizard_title">Vali Wi\u2011Fi võrk</string>
 </resources>

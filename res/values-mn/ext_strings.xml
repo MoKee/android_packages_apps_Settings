@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,5 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">Зарим контентын сэргээх хурдыг автоматаар 60-с %1$d Гц болгож өсгөнө. Батарей ашиглалтыг нэмэгдүүлнэ.</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 минут</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
 </resources>

@@ -47,7 +47,6 @@
     <string name="heads_up_notifications_enabled_summary">Wyświetlaj ważne powiadomienia w małym oknie pływającym</string>
     <string name="high_touch_sensitivity_title">Wysoka czułość dotyku</string>
     <string name="high_touch_sensitivity_summary">Zwiększa czułość ekranu dotykowego, więc możesz go używać podczas noszenia rękawiczek</string>
-    <string name="device_hostname">Nazwa hosta urządzenia</string>
     <string name="increasing_ring_volume_option_title">Narastająca głośność dzwonka</string>
     <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
     <string name="increasing_ring_ramp_up_time_title">Wydłużenie odstępu</string>
@@ -94,6 +93,4 @@
     <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
     <string name="fast_charging_title">Szybkie ładowanie</string>
     <string name="fast_charging_summary">Wyłącz, aby zmniejszyć ilość ciepła wytwarzanego przez urządzenie podczas ładowania lub wydłużyć żywotność baterii</string>
-    <string name="fod_gesture_title">Odcisk palca na wyłączonym ekranie</string>
-    <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
 </resources>

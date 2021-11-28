@@ -17,6 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="mobile_data_settings_summary_unavailable">Nessuna scheda SIM disponibile</string>
     <plurals name="show_dev_countdown_cm">
         <item quantity="one">Ora sei ad <xliff:g id="step_count">%1$d</xliff:g> passo dall\'attivare le impostazioni di sviluppo.</item>
         <item quantity="other">Ora sei a <xliff:g id="step_count">%1$d</xliff:g> passi dall\'attivare le impostazioni di sviluppo.</item>
@@ -44,7 +45,6 @@
     <string name="heads_up_notifications_enabled_summary">Visualizza le notifiche prioritarie in una piccola finestra fluttuante</string>
     <string name="high_touch_sensitivity_title">Tocco ad alta sensibilità</string>
     <string name="high_touch_sensitivity_summary">Aumenta la sensibilità del touchscreen per l\'utilizzo con i guanti</string>
-    <string name="device_hostname">Hostname dispositivo</string>
     <string name="increasing_ring_volume_option_title">Suoneria incrementale</string>
     <string name="increasing_ring_min_volume_title">Volume iniziale</string>
     <string name="increasing_ring_ramp_up_time_title">Tempo di aumento</string>
@@ -55,6 +55,7 @@
     <string name="lockpattern_settings_enable_dots_title">Mostra punti sequenza</string>
     <string name="lockscreen_media_art_title">Mostra copertina album</string>
     <string name="lockscreen_visualizer_title">Mostra visualizzatore musicale</string>
+    <string name="min_refresh_rate_title">Frequenza d\'aggiornamento minima</string>
     <string name="show_navbar_hint_title">Indicatore navigazione</string>
     <string name="show_navbar_hint_summary">Mostra l\'indicatore di navigazione in fondo allo schermo</string>
     <string name="app_notification_sound_timeout_title">Tempo minimo tra suoni di notifica</string>
@@ -66,8 +67,12 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minuti</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minuti</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minuti</string>
+    <string name="auto_brightness_one_shot_title">Luminosità automatica in un colpo</string>
+    <string name="auto_brightness_one_shot_summary">La regolazione della luminosità si verificherà solo al momento d\'accensione dello schermo</string>
     <string name="data_usage_app_restrict_all">Consenti accesso alla rete</string>
     <string name="data_usage_app_restrict_all_summary">Abilita l\'utilizzo della rete</string>
+    <string name="data_usage_app_restrict_mobile">Dati mobili</string>
+    <string name="data_usage_app_restrict_mobile_summary">Abilita l\'uso dei dati mobili</string>
     <string name="data_usage_app_restrict_vpn">Dati VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Abilita utilizzo dati VPN</string>
     <string name="data_usage_app_restrict_wifi">Dati Wi\u2011Fi</string>
@@ -86,4 +91,7 @@
     <string name="backup_transport_setting_label">Cambia gestore di backup</string>
     <string name="backup_transport_title">Seleziona un gestore di backup</string>
     <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <string name="fast_charging_title">Ricarica rapida</string>
+    <string name="fast_charging_summary">Disabilita per ridurre il calore prodotto dal dispositivo caricandolo o per estendere la durata della batteria</string>
+    <string name="wifi_setup_wizard_title">Seleziona la rete Wi\u2011Fi</string>
 </resources>

@@ -39,7 +39,6 @@
     <string name="heads_up_notifications_enabled_summary">Shfaq njoftimet kryesore në një dritare të vogël lundruese</string>
     <string name="high_touch_sensitivity_title">Ndjesi e lartë e prekjes</string>
     <string name="high_touch_sensitivity_summary">Rrit ndjeshmërinë e prekjes kështu që mund të përdoret kur keni dorashka</string>
-    <string name="device_hostname">Emri i pajisjes</string>
     <string name="increasing_ring_volume_option_title">Volum me rritje graduale</string>
     <string name="increasing_ring_min_volume_title">Volumi fillestar</string>
     <string name="increasing_ring_ramp_up_time_title">Kohëzgjatja e rritjes</string>

@@ -41,7 +41,6 @@
     <string name="heads_up_notifications_enabled_summary">在一個小的浮動視窗中顯示優先通知</string>
     <string name="high_touch_sensitivity_title">高觸碰靈敏度</string>
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，戴著手套也可以使用手機</string>
-    <string name="device_hostname">裝置主機名稱</string>
     <string name="increasing_ring_volume_option_title">漸強鈴聲音量</string>
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>

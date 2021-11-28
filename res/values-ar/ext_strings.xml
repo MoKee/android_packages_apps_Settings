@@ -45,7 +45,6 @@
     <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في إطار عائم صغير</string>
     <string name="high_touch_sensitivity_title">حساسية ذات لمس عالي</string>
     <string name="high_touch_sensitivity_summary">زيادة حساسية شاشة اللمس حتى يمكن استخدامها أثناء ارتداء القفازات</string>
-    <string name="device_hostname">اسم مضيف الجهاز</string>
     <string name="increasing_ring_volume_option_title">حجم الصوت متزايد</string>
     <string name="increasing_ring_min_volume_title">حجم الصوت البدئيّ</string>
     <string name="increasing_ring_ramp_up_time_title">زمن التدرج</string>

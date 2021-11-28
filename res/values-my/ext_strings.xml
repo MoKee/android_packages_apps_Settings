@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2021 The MoKee Open Source Project
      Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,5 +17,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">အကြောင်းအရာအချို့အတွက် ပြန်လည်စတင်နှုန်းကို ၆၀ မှ ၉၀ Hz သို့ အလိုအလျောက် တိုးပေးသည်။ ဘက်ထရီ အသုံးပြုမှု တိုးလာပါမည်။</string>
+    <string name="show_dev_already_cm">မလိုတော့ပါ၊ development setting ကို ဖွင့်ပြီးပါပြီ</string>
 </resources>

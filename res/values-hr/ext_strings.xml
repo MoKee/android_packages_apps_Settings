@@ -38,7 +38,6 @@
     <string name="heads_up_notifications_enabled_summary">Prikazuje prioritetne obavijesti u malim plutajućim prozorima</string>
     <string name="high_touch_sensitivity_title">Visoka osjetljivost na dodir</string>
     <string name="high_touch_sensitivity_summary">Povećaj osjetljivost na dodir tako da se mogu koristiti rukavice</string>
-    <string name="device_hostname">Naziv uređaja</string>
     <string name="increasing_ring_volume_option_title">Pojačavanje glasnoće zvona</string>
     <string name="increasing_ring_min_volume_title">Početna jačina zvuka</string>
     <string name="increasing_ring_ramp_up_time_title">Vrijeme podizanja</string>

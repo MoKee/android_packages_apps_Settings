@@ -43,7 +43,6 @@
     <string name="heads_up_notifications_enabled_summary">在一個小的浮動視窗中顯示優先通知</string>
     <string name="high_touch_sensitivity_title">高觸控靈敏度</string>
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，因此戴著手套也可以使用手機</string>
-    <string name="device_hostname">裝置主機名稱</string>
     <string name="increasing_ring_volume_option_title">漸強鈴聲音量</string>
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
@@ -85,6 +84,6 @@
     <string name="backup_transport_setting_label">變更備份服務提供者</string>
     <string name="backup_transport_title">選擇備份服務提供者</string>
     <string name="connected_tws_device_saved_title">已儲存的耳機</string>
-    <string name="fod_gesture_title">在螢幕關閉下進行指紋辨識</string>
-    <string name="fod_gesture_summary">無需先打開螢幕即可解鎖裝置</string>
+    <string name="fast_charging_title">快速充電</string>
+    <string name="fast_charging_summary">禁用以減少裝置在充電時產生的熱量或延長電池的使用壽命</string>
 </resources>
