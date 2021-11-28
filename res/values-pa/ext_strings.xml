@@ -16,5 +16,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="peak_refresh_rate_summary_custom">Որոշակի բովանդակության համար թարմացման հաճախականությունը 60-ից կդառնա %1$d Հց։ Երկարացնում է մարտկոցի օգտագործման ժամանակը։</string>
+    <string name="peak_refresh_rate_summary_custom">ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਕੁਝ ਸਮੱਗਰੀਆਂ ਲਈ ਰਿਫ੍ਰੈਸ਼ ਦਰ ਨੂੰ 60 ਤੋਂ ਵਧਾ ਕੇ %1$d Hz ਕਰ ਦਿੰਦਾ ਹੈ। ਬੈਟਰੀ ਵਰਤੋਂ ਵੱਧ ਜਾਂਦੀ ਹੈ।</string>
 </resources>
