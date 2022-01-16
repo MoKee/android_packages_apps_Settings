@@ -109,4 +109,5 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
     <string name="fod_gesture_summary">Autoriser le déverrouillage de l\'appareil sans devoir allumer l\'écran d\'abord</string>
     <string name="backup_transport_setting_label">Changer le fournisseur de sauvegarde</string>
     <string name="backup_transport_title">Sélectionner un fournisseur de sauvegarde</string>
+    <string name="fast_charging_title">Charge rapide</string>
 </resources>
