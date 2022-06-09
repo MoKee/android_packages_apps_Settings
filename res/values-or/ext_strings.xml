@@ -40,8 +40,15 @@
     <string name="lockpattern_settings_enable_error_path_title">ପ୍ୟାଟର୍ଣ୍ଣ ତ୍ରୁଟି ଦେଖାନ୍ତୁ</string>
     <string name="lockpattern_settings_enable_dots_title">ପାଟର୍ଣ୍ଣ ଡ୍ଟ୍ସ ଦେଖାନ୍ତୁ</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 ସେକେଣ୍ଡ</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">୩୦ ସେକେଣ୍ଡ</string>
+    <string name="app_notification_sound_timeout_value_1_minute">୧ ମିନିଟ୍</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">୫ ମିନିଟ୍</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">୧୦ ମିନିଟ୍</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">୩୦ ମିନିଟ୍</string>
     <string name="unlock_scramble_pin_layout_title">ସ୍କ୍ରାମେବୁଲ୍‍ ଲେଆଉଟ୍‍</string>
     <string name="unlock_scramble_pin_layout_summary">ଡିଭାଇସ୍‍ ଅ୍ନ୍‍ଲକ୍‍ କରିବା ସମୟରେ ସ୍କ୍ରାମେବୁଲ୍ PIN ଲେଆଉଟ୍‍</string>
+    <string name="security_settings_fingerprint_sensor_location_left">ବାମ ପାର୍ଶ୍ୱ</string>
+    <string name="security_settings_fingerprint_sensor_location_right">ଡାହାଣ ପାର୍ଶ୍ୱ</string>
     <string name="proximity_wake_title">ର୍ଆକ୍ସିଡେଂଟାଲ୍‍ ୱେକ୍‍-ଅପ୍‍ ପ୍ରତିରୋଧ କରନ୍ତୁ</string>
     <string name="wake_when_plugged_or_unplugged_title">ପ୍ଲଗ୍‍କୁ ଉଠାନ୍ତୁ</string>
     <string name="wake_when_plugged_or_unplugged_summary">ଏକ ପାୱାର୍‍ ଉତ୍ସ ସଂଯୋଗ ବା ବିଛିନ୍ନ କରିବା ସମୟରେ ସ୍କ୍ରିନ୍‍ ଅନ୍‍ କରନ୍ତୁ</string>
